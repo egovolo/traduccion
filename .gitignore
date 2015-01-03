@@ -1,0 +1,8 @@
+
+
+# python compiled files
+*.pyc
+
+# temporal files
+*~
+*.DS_Store
