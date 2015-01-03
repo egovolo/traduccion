@@ -35,7 +35,7 @@ class ReplaceEngine(object):
 		translateBuffer = "" # buffer where to store translatable text
 		prevc = ""
 		for line in source:
-			if "dm" not in line and "DM" not in line and "sql" not in line and "QString" not in line:		
+			if "qstring" not in line and "fieldbyname" not in line and "dm" not in line and "DM" not in line and "sql" not in line and "QString" not in line:		
 				for c in line:		# iterate chars
 					if translateTarget: # if we are reading a translation candidate...
 						if c == "\"" or c== prevc: 	# case of end of translation

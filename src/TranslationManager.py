@@ -64,6 +64,45 @@ class TranslationManager(dict):
                     self[line] = unicode(buff,"ISO-8859-1")
         self.saveToFile()
 
+    def specialTranslate(self, f):
+        buff = ""
+        prevc = ""
+        translateTarget = False
+        translateBuffer = ""
+        for i in range(len(f)):
+            line = f[i]
+            if "qstring" not in line and "fieldbyname" not in line and "DM" not in line and "dm" not in line and "sql" not in line and "QString" not in line:       # lines that deal with data base are not selected                   
+                for c in line:      # iterate chars
+                    if translateTarget: # if we are reading a translation candidate...
+                        if c == prevc:
+                            translateTarget = not translateTarget
+                            if unicode(translateBuffer,"ISO-8859-1") in self.keys():
+                                if self[unicode(translateBuffer,"ISO-8859-1")] == '""' or self[unicode(translateBuffer,"ISO-8859-1")]=="''" or self[unicode(translateBuffer,"ISO-8859-1")]=="":
+                                    print "Insert translation for \"", unicode(translateBuffer,"ISO-8859-1"), "\""
+                                    print ""
+                                    print "Context"
+                                    if i > 0:
+                                        print f[i-1]
+                                    print "-> " + unicode(line,"ISO-8859-1")
+                                    if i+1 < len(f):
+                                        print unicode(f[i+1],"ISO-8859-1")
+                                    buff = raw_input()
+                                    if buff == "--stop":
+                                        self.saveToFile()
+                                        return
+                                    elif buff == "--keep":
+                                        self[unicode(translateBuffer,"ISO-8859-1")] = unicode(translateBuffer,"ISO-8859-1")   
+                                    else:
+                                        self[unicode(translateBuffer,"ISO-8859-1")] = unicode(buff,"ISO-8859-1")
+                            translateBuffer=""
+                        else:
+                            translateBuffer += c # keep going reading translation candidate
+                    elif c == "\"" or c=="'": # if reading quotes then change the state
+                        translateTarget = not translateTarget
+                        prevc = c
+        self.saveToFile()
+        
+
 if __name__ == "__main__":
     path = "../To Translate"
     path2 = "../Translations"
@@ -74,7 +113,7 @@ if __name__ == "__main__":
         os.mkdir(path2)
     sc = ScanEngine.ScanEngine("")
     
-    file_to_translate = raw_input("Write the file's full name to translate:\n")
+    file_to_translate = raw_input("Put the name of the file to translate\n")
     
     dictionary = sc.begin(path,file_to_translate,"_trans.json")
     
@@ -85,9 +124,10 @@ if __name__ == "__main__":
         # print json_file
         
         tm.update(dictionary)
-        tm.translate()
+        # tm.translate()
+        tm.specialTranslate(sc.getFile())
         
-        print "Do you wish to translate the file? (if the file doesn't have a dictionary setted up this will fail.)"
+        print "Do you want to translate the file (if the file doesn't have the dictionary mounted this will fail)"
         print "0 > No"
         print "1 > Yes"
         choice = raw_input()

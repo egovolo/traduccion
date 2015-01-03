@@ -8,6 +8,7 @@ class ScanEngine:
         self.__sourceFile = sourceFile
         self.translateBuffer = ""
         self.dictionary = {}
+        self.__file = []
         
     
     '''
@@ -46,6 +47,9 @@ class ScanEngine:
             self.translateBuffer=""
             prevc = ""
             for line in source:
+                self.__file.append(line)
+            '''
+            for line in source:
                 if "DM" not in line and "dm" not in line and "sql" not in line and "QString" not in line:       # lines that deal with data base are not selected                   
                     for c in line:      # iterate chars
                         if translateTarget: # if we are reading a translation candidate...
@@ -58,7 +62,23 @@ class ScanEngine:
                                 self.translateBuffer += c # keep going reading translation candidate
                         elif c == "\"" or c=="'": # if reading quotes then change the state
                             translateTarget = not translateTarget
-                            prevc = c                
+                            prevc = c
+            '''
+            for i in range(len(self.__file)):
+                line = self.__file[i]
+                if "qstring" not in line and "fieldbyname" not in line and "DM" not in line and "dm" not in line and "sql" not in line and "QString" not in line:       # lines that deal with data base are not selected                   
+                    for c in line:      # iterate chars
+                        if translateTarget: # if we are reading a translation candidate...
+                            if c == prevc:
+                                translateTarget = not translateTarget
+                                if unicode(self.translateBuffer,"ISO-8859-1") not in dictionary.keys():
+                                    dictionary[unicode(self.translateBuffer,"ISO-8859-1")] = ""
+                                self.translateBuffer=""
+                            else:
+                                self.translateBuffer += c # keep going reading translation candidate
+                        elif c == "\"" or c=="'": # if reading quotes then change the state
+                            translateTarget = not translateTarget
+                            prevc = c
             source.close()
             #self.translateBuffer+="}"
         except Exception, e:
@@ -74,6 +94,9 @@ class ScanEngine:
         f.write(self.translateBuffer)
         f.close()
         return True
+        
+    def getFile(self):
+        return self.__file
         
     def reconfig(self, sourceFile):
         self.__sourceFile = sourceFile
