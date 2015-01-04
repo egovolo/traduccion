@@ -82,7 +82,7 @@ class TranslationManager(dict):
                                     print ""
                                     print "Context"
                                     if i > 0:
-                                        print f[i-1]
+                                        print unicode(f[i-1],"ISO-8859-1")
                                     print "-> " + unicode(line,"ISO-8859-1")
                                     if i+1 < len(f):
                                         print unicode(f[i+1],"ISO-8859-1")
