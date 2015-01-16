@@ -3,9 +3,7 @@ object FTests_ansiedad: TFTests_ansiedad
   Top = 138
   BorderIcons = [biSystemMenu]
   BorderStyle = bsNone
-  Caption = 
-    '::: gENIO® ::: Comunicación Bio-Instrumental | Electro Dinámica ' +
-    'Cuántica ::: Exámenes psicológicos ::: '
+  Caption = '::: gENIO® ::: Exámenes psicológicos ::: '
   ClientHeight = 747
   ClientWidth = 1035
   Color = clSilver

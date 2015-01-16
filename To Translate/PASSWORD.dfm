@@ -25,7 +25,7 @@ object PasswordDlg: TPasswordDlg
     Left = 0
     Top = 0
     Width = 256
-    Height = 196
+    Height = 195
     Cursor = crHandPoint
     Transparent = True
     OnDblClick = Image3DblClick
@@ -297,8 +297,8 @@ object PasswordDlg: TPasswordDlg
     Visible = False
   end
   object Label9: TLabel
-    Left = 409
-    Top = 130
+    Left = 405
+    Top = 106
     Width = 96
     Height = 13
     Cursor = crHandPoint
@@ -314,8 +314,8 @@ object PasswordDlg: TPasswordDlg
     OnClick = Label9Click
   end
   object Label11: TLabel
-    Left = 485
-    Top = 144
+    Left = 481
+    Top = 124
     Width = 20
     Height = 13
     Cursor = crHandPoint
@@ -329,23 +329,6 @@ object PasswordDlg: TPasswordDlg
     ParentFont = False
     Transparent = True
     OnClick = Label11Click
-  end
-  object Label12: TLabel
-    Left = 413
-    Top = 116
-    Width = 92
-    Height = 13
-    Cursor = crHandPoint
-    Alignment = taRightJustify
-    Caption = 'Acuerdo de licencia'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsUnderline]
-    ParentFont = False
-    Transparent = True
-    OnClick = Label12Click
   end
   object Label34: TLabel
     Left = 4
@@ -361,23 +344,6 @@ object PasswordDlg: TPasswordDlg
     ParentFont = False
     Visible = False
   end
-  object Label2: TLabel
-    Left = 367
-    Top = 102
-    Width = 138
-    Height = 13
-    Cursor = crHandPoint
-    Alignment = taRightJustify
-    Caption = 'Limitación de responsabilidad'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsUnderline]
-    ParentFont = False
-    Transparent = True
-    OnClick = Label2Click
-  end
   object B_Aniversario: TButton
     Left = 260
     Top = 162
@@ -392,43 +358,9 @@ object PasswordDlg: TPasswordDlg
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 10
     Visible = False
     OnClick = B_AniversarioClick
-  end
-  object Button12: TButton
-    Left = 336
-    Top = 16
-    Width = 33
-    Height = 27
-    Cursor = crHandPoint
-    Hint = 'Añade ondas subespaciales extras para ayudar durante terapia.'
-    Caption = 'Añadir personalidad resonante'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clYellow
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 12
-    Visible = False
-  end
-  object Button3: TButton
-    Left = 332
-    Top = 16
-    Width = 33
-    Height = 27
-    Cursor = crHandPoint
-    Hint = 'Pulsar para visualizar un consejo.'
-    Caption = 'Consejo del día'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clYellow
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 11
-    Visible = False
   end
   object Password: TEdit
     Left = 316
@@ -447,7 +379,7 @@ object PasswordDlg: TPasswordDlg
     HideSelection = False
     ParentFont = False
     PasswordChar = '*'
-    TabOrder = 10
+    TabOrder = 8
   end
   object OKBtn: TBitBtn
     Left = 468
@@ -464,27 +396,11 @@ object PasswordDlg: TPasswordDlg
     Font.Style = [fsBold]
     ModalResult = 1
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 7
     OnClick = OKBtnClick
     Margin = 2
     NumGlyphs = 2
     Spacing = -1
-  end
-  object ButtonsavePassword: TButton
-    Left = 332
-    Top = 16
-    Width = 33
-    Height = 27
-    Cursor = crHandPoint
-    Caption = 'Cambiar contraseña'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clYellow
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 8
-    Visible = False
   end
   object MediaPlayer1: TMediaPlayer
     Left = 16
@@ -518,7 +434,7 @@ object PasswordDlg: TPasswordDlg
     Height = 20
     Cursor = crIBeam
     BorderStyle = bsNone
-    Color = clWhite
+    Color = clLime
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
@@ -537,7 +453,7 @@ object PasswordDlg: TPasswordDlg
     Cursor = crIBeam
     Hint = 'Escriba nombre o empresa.'
     BorderStyle = bsNone
-    Color = clWhite
+    Color = clLime
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
@@ -599,12 +515,12 @@ object PasswordDlg: TPasswordDlg
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 13
+    TabOrder = 9
     Visible = False
     OnClick = btn_resetClick
   end
   object P_contrasena2: TPanel
-    Left = 276
+    Left = 264
     Top = 0
     Width = 249
     Height = 197
@@ -612,7 +528,7 @@ object PasswordDlg: TPasswordDlg
     Color = clWhite
     Ctl3D = True
     ParentCtl3D = False
-    TabOrder = 7
+    TabOrder = 6
     Visible = False
     object L_old_pass: TLabel
       Left = 43
@@ -663,7 +579,7 @@ object PasswordDlg: TPasswordDlg
       Height = 26
       AutoSize = False
       BorderStyle = bsNone
-      Color = clBtnFace
+      Color = clYellow
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -27
@@ -712,7 +628,7 @@ object PasswordDlg: TPasswordDlg
       Height = 26
       AutoSize = False
       BorderStyle = bsNone
-      Color = clBtnFace
+      Color = clLime
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -27
@@ -729,7 +645,7 @@ object PasswordDlg: TPasswordDlg
       Height = 26
       AutoSize = False
       BorderStyle = bsNone
-      Color = clBtnFace
+      Color = clLime
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -27
@@ -739,247 +655,6 @@ object PasswordDlg: TPasswordDlg
       PasswordChar = '*'
       TabOrder = 2
     end
-  end
-  object Memo1: TMemo
-    Left = 0
-    Top = 0
-    Width = 523
-    Height = 195
-    Cursor = crHandPoint
-    Align = alClient
-    BorderStyle = bsNone
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clNavy
-    Font.Height = -9
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    Lines.Strings = (
-      'ACUERDO DE LICENCIA PARA EL USUARIO FINAL DEL SOFTWARE'
-      
-        '                                                                ' +
-        '              Pulse una vez sobre este panel para ocultarlo.'
-      ''
-      
-        'AVISO: LEA DETENIDAMENTE EL SIGUIENTE ACUERDO LEGAL EL CUAL CONT' +
-        'IENE DERECHOS Y '
-      
-        'RESTRICCIONES ASOCIADOS AL USO DEL SOFTWARE gENIO(c) (EN ADELANT' +
-        'E, EL "SOFTWARE") Y '
-      
-        'LA DOCUMENTACION, QUE PONE A SU DISPOSICION FRANCISCO MARTíNEZ (' +
-        '"OTORGANTE DE LA '
-      
-        'LICENCIA U OTORGANTE"). LA INSTALACION O UTILIZACION DEL SOFTWAR' +
-        'E CONSTITUYE LA '
-      
-        'ACEPTACION DE ESTOS TERMINOS. SI USTED ("USUARIO FINAL") NO ESTA' +
-        ' CONFORME CON LOS '
-      'TERMINOS DE ESTE ACUERDO, NO INSTALE NI UTILICE EL SOFTWARE.'
-      ''
-      
-        'ESTE CONTRATO SE FIRMA DE MANERA CONJUNTA CON LA COMPRA POR PART' +
-        'E DEL USUARIO '
-      
-        'FINAL DE PRODUCTOS DEL OTORGANTE DE LA LICENCIA Y COMO TAL LOS T' +
-        'ÉRMINOS Y '
-      
-        'CONDICIONES GENERALES Y/O VARIOS DEL CONTRATO DE COMPRA QUE RIJA' +
-        'N DICHA '
-      
-        'TRANSACCIÓN Y QUE NO SEAN INCOMPATIBLES CON LOS TÉRMINOS DE ESTE' +
-        ' CONTRATO SE '
-      'INCORPORARÁN A ESTE DOCUMENTO COMO REFERENCIA.'
-      ''
-      
-        'El Software ha sido desarrollado y registrado por FRANCISCO MART' +
-        'íNEZ, y su licencia se ha otorgado a '
-      
-        'Laboratorio Tecnonatura, S.A.S. (COLOMBIA).  El Software se cede' +
-        ' bajo licencia al usted, el Usuario final, no '
-      
-        'constituye una venta. Si el Usuario final no avisa por escrito a' +
-        'l Otorgante de la licencia sobre su rechazo al '
-      
-        'Software en un plazo de diez (10) dias a partir de la fecha de r' +
-        'ecepcion o descarga del Software por parte del '
-      
-        'Usuario final, se entendera que el Usuario final acepta el Softw' +
-        'are. EL UNICO Y EXCLUSIVO RECURSO DEL '
-      
-        'USUARIO FINAL EN CASO DE QUE RECHACE EL SOFTWARE SERA EL REEMBOL' +
-        'SO DEL IMPORTE DE '
-      'LA LICENCIA ABONADO POR EL USUARIO FINAL, EN CASO DE EXISTIR.'
-      ''
-      
-        'Sujeto a los términos de este Contrato, el otorgante de la licen' +
-        'cia garantiza al usuario final una licencia limitada, '
-      
-        'no exclusiva y no transferible a (i) instalar y usar el Software' +
-        ' en formato de codigo de objeto en un solo '
-      
-        'ordenador como usuario final exclusivo, (ii) realizar una (1) co' +
-        'pia del Software con fines de copia de seguridad '
-      
-        'y de archivo, y (iii) usar la Documentacion solo junto con el us' +
-        'o del Software. El Usuario final reconoce que '
-      
-        'debe adquirir del Otorgante, con arreglo a un acuerdo independie' +
-        'nte por escrito con el Otorgante, una licencia '
-      
-        'para cada usuario simultaneo del Software, y que esta prohibido ' +
-        'el uso simultaneo por varios usuarios cuyo '
-      
-        'numero supere la cantidad de licencias adquiridas al Otorgante. ' +
-        'El Usuario final representa y garantiza al '
-      
-        'Otorgante que no permitira que el numero de usuarios simultaneos' +
-        ' del Software exceda el numero de licencias '
-      
-        'adquiridas al Otorgante. El Usuario final acepta permitir que el' +
-        ' Otorgante, o un tercero acordado mutuamente, '
-      
-        'realice auditorias periodicas para determinar el cumplimiento de' +
-        ' este Acuerdo por parte del Usuario final.'
-      ''
-      
-        'El usuario final no modificará, alquilará, cederá, mostrará públ' +
-        'icamente, ejecutará públicamente ni distribuirá el '
-      
-        'software. El Usuario final no tiene permiso para realizar ingeni' +
-        'eria inversa, descompilar ni desensamblar el '
-      
-        'Software. El Usuario final no tiene permiso para sublicenciar a ' +
-        'terceros ninguno de los derechos concedidos al '
-      
-        'Usuario final en el presente Acuerdo. El Usuario final no tiene ' +
-        'permiso para copiar ninguno de los materiales '
-      
-        'electronicos o la documentacion que acompana al Software, si hub' +
-        'iera. El Usuario final no podra eliminar '
-      
-        'ninguna marca de copyright ni ninguna marca o leyenda de propied' +
-        'ad incluida en el Software.'
-      ''
-      
-        'El Software es informacion confidencial con derechos de autor y,' +
-        ' excepto por las licencias otorgadas en el '
-      
-        'mismo, todos los derechos, titulos e intereses en y para el Soft' +
-        'ware, asi como todas las copias del mismo y la '
-      
-        'documentacion del Software, permaneceran en poder del Otorgante ' +
-        'o en sus otorgantes. El Usuario final '
-      
-        'incluira todas las marcas o leyendas de propiedad y de copyright' +
-        ' que se incluyan en el software tal y como las '
-      
-        'proporciona el Otorgante al Usuario final en una copia de seguri' +
-        'dad del software realizada por el propio Usuario '
-      'final.'
-      ''
-      
-        'El Otorgante garantiza durante noventa (90) dias a partir de la ' +
-        'fecha de compra del Software por el Usuario final '
-      
-        'que el soporte donde esta grabado el Software esta sustancialmen' +
-        'te libre de defectos. En caso de '
-      
-        'incumplimiento de esta garantia, el Otorgante reemplazara el sop' +
-        'orte si coste alguno, siempre que se devuelva '
-      
-        'el soporte defectuoso y el justificante de compra al Otorgante a' +
-        'ntes de los noventa (90) dias posteriores a la '
-      
-        'fecha de adquisicion. El recurso anterior sera el recurso unico ' +
-        'y exclusivo del Usuario final en caso de '
-      
-        'incumplimiento de la garantia segun lo estipulado en esta Seccio' +
-        'n. La garantia anterior quedara anulada si el '
-      
-        'fallo del soporte se ha producido debido a un accidente o a un m' +
-        'al uso.'
-      ''
-      
-        'El usuario final acepta toda responsabilidad por el contenido, m' +
-        'ensaje, imágenes y archivos creados mediante '
-      
-        'el uso del software. El usuario final reconoce que puede ser un ' +
-        'delito crear contenido, mensajes, imágenes o '
-      
-        'archivos que incluyan lenguaje que pueda considerarse difamador,' +
-        ' calumnioso, obsceno u ofensivo, según '
-      
-        'definan ordenanzas o estatutos locales, nacionales o comunitario' +
-        's.'
-      ''
-      
-        'EL OTORGANTE RECHAZA CUALQUIER OTRA GARANTIA, YA SEA EXPRESA O I' +
-        'MPLICITA, INCLUIDAS '
-      
-        'PERO SIN LIMITARSE A, LAS GARANTIAS IMPLICITAS DE COMERCIABILIDA' +
-        'D Y ADECUACION PARA UN '
-      'FIN PARTICULAR Y AUSENCIA DE INFRACCION.'
-      ''
-      
-        'LA RESPONSABILIDAD MAXIMA DEL OTORGANTE QUE SURJA DE O ESTE RELA' +
-        'CIONADA CON ESTE '
-      
-        'ACUERDO SE LIMITA AL IMPORTE DE LA LICENCIA PAGADO POR EL USUARI' +
-        'O FINAL AL OTORGANTE '
-      
-        'EN VIRTUD DE ESTE ACUERDO, SI HUBIERA. EN NINGUN CASO EL OTORGAN' +
-        'TE SERA RESPONSABLE '
-      
-        'ANTE EL USUARIO FINAL O ANTE TERCEROS POR LOS DANOS ESPECIALES, ' +
-        'CONSECUENTES, '
-      
-        'INCIDENTALES, INDIRECTOS, EJEMPLARES O PUNITIVOS QUE HAYAN SIDO ' +
-        'CAUSADOS, YA SEA POR '
-      
-        'INCUMPLIMIENTO DE CONTRATO, AGRAVIO, NEGLIGENCIA, RESPONSABILIDA' +
-        'D ESTRICTA DEL '
-      
-        'PRODUCTO O DE OTRA INDOLE (INCLUYENDO, SIN LIMITACIONES, LOS DAN' +
-        'OS BASADOS EN LA '
-      
-        'PERDIDA DE BENEFICIOS O DE OPORTUNIDADES DE NEGOCIO ), INCLUSO S' +
-        'I EL OTORGANTE HA '
-      
-        'SIDO ADVERTIDO SOBRE LA POSIBILIDAD DE DICHOS DANOS. ESTA LIMITA' +
-        'CION SE APLICARA PESE A '
-      
-        'CUALQUIER FALLO DEL PROPOSITO ESENCIAL DE ALGUN REMEDIO O RECURS' +
-        'O LIMITADO '
-      'PROPORCIONADO EN EL PRESENTE DOCUMENTO.'
-      ''
-      
-        'El Usuario final puede rescindir este Acuerdo en cualquier momen' +
-        'to mediante la destruccion de todas las '
-      
-        'copias del Software y la certificacion por escrito de dicha dest' +
-        'ruccion al Otorgante. Este Acuerdo quedara '
-      
-        'inmediatamente rescindido sin previo aviso por parte del Otorgan' +
-        'te si el Usuario final no acata cualquiera de las '
-      
-        'disposiciones del mismo. Cuando se produzca la rescision, el Usu' +
-        'ario final debera destruir todas las copias del '
-      
-        'Software y certificar dicha destruccion por escrito al Otorgante' +
-        '. La validez, cumplimiento e interpretacion de '
-      
-        'este Acuerdo se regira con arreglo a la legislacion del Estado d' +
-        'e COLOMBIA, como se aplican a los acuerdos '
-      
-        'que se definen y que deben establecerse integramente en COLOMBIA' +
-        ' entre los residentes de dicho estado.')
-    ParentFont = False
-    ReadOnly = True
-    ScrollBars = ssVertical
-    TabOrder = 6
-    Visible = False
-    OnClick = Memo1Click
   end
   object Panel1: TPanel
     Left = 0
@@ -994,7 +669,7 @@ object PasswordDlg: TPasswordDlg
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 11
     Visible = False
     object Label1: TLabel
       Left = 16
@@ -1013,7 +688,7 @@ object PasswordDlg: TPasswordDlg
     end
     object Memo2: TMemo
       Left = 12
-      Top = 36
+      Top = 32
       Width = 501
       Height = 121
       BorderStyle = bsNone
@@ -1098,55 +773,6 @@ object PasswordDlg: TPasswordDlg
       OnClick = Panel2Click
     end
   end
-  object Memo3: TMemo
-    Left = 0
-    Top = 0
-    Width = 523
-    Height = 195
-    Align = alClient
-    BorderStyle = bsNone
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clNavy
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    Lines.Strings = (
-      ''
-      
-        'Este sistema se debe usar como un sistema multimedia de ‘Biofeed' +
-        'back’.  Se ha diseñado para la detección '
-      
-        'y reducción del estrés.  El sistema no diagnostica ninguna condi' +
-        'ción.  El estrés tiene muchas formas y estas '
-      
-        'se pueden visualizar con el sistema. Solo un Doctor colegiado pu' +
-        'ede diagnosticar una condición.'
-      ''
-      
-        'El sistema está calibrado para medir las más mínimas y sutiles r' +
-        'eacciones eléctricas a un grupo de '
-      
-        'compuestos biológicos y homeopáticos.  El sistema detecta los si' +
-        'gnos iniciales del estrés, por lo que a veces '
-      
-        'los resultados pueden estar por debajo de la comprensión del usu' +
-        'ario.  Los resultados deben ser evaluados '
-      'solo por personal cualificado.  '
-      ''
-      
-        'Es aconsejable realizar exámenes adicionales usando otra aparato' +
-        'logía para confirmar los resultados del '
-      
-        'sistema.  No se hace ninguna reclamación de tipo curativo o médi' +
-        'co sobre este sistema.'
-      ''
-      'Pulse una vez sobre este panel para ocultarlo.')
-    ParentFont = False
-    TabOrder = 16
-    Visible = False
-    OnClick = Memo3Click
-  end
   object Timer1: TTimer
     Left = 452
     Top = 24
@@ -1158,8 +784,8 @@ object PasswordDlg: TPasswordDlg
     Top = 36
   end
   object MainMenu1: TMainMenu
-    Left = 476
-    Top = 148
+    Left = 412
+    Top = 240
     object Documentacin1: TMenuItem
       Caption = 'Documentación'
       Visible = False
@@ -1183,7 +809,6 @@ object PasswordDlg: TPasswordDlg
       end
       object Contratodelicenciadelsoftware1: TMenuItem
         Caption = 'Contrato de licencia del software'
-        OnClick = Contratodelicenciadelsoftware1Click
       end
       object Certificidodecalidad1: TMenuItem
         Caption = 'Certificado de calidad'
@@ -1220,8 +845,8 @@ object PasswordDlg: TPasswordDlg
     OnExpiration = mxProtector1Expiration
     OnDayTrial = mxProtector1DayTrial
     OnInvalidSystemTime = mxProtector1InvalidSystemTime
-    Left = 492
-    Top = 124
+    Left = 448
+    Top = 228
     UniqueCodeID = 
       '7A333B363434454A48274F353D372224542456395426265E342B23582F2B2B65' +
       '6016671D135B'
@@ -1231,7 +856,7 @@ object PasswordDlg: TPasswordDlg
   end
   object DiskInfo1: TDiskInfo
     DriveLetter = 'c'
-    Left = 477
-    Top = 53
+    Left = 441
+    Top = 65
   end
 end

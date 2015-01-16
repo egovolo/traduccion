@@ -510,7 +510,7 @@ end;
 
 procedure TFRecompensa.IContinuarClick(Sender: TObject);
 begin
-Showmessage(testform1.Label254.Caption+', solo usa esta función si tienes la absoluta seguridad de entender lo que estás haciendo.');
+Showmessage(testform1.Label254.Caption+', only use this function if you are absolutely sure to know what you are doing.');
 Button2.Enabled := True;
 end;
 

@@ -209,8 +209,6 @@ Begin
  Decode:=tmp;
 end;
 
-
-
 Function WName(S : String): Boolean ;
 Begin
   Reg.WriteString('CName',Encode(S));
@@ -251,8 +249,6 @@ Begin
 
 end;
 
-
-
 Function WCredit(S : String): Boolean;     { Reszletfizetes }
 Begin
   Reg.WriteString('CreditClasp',Encode(S));
@@ -292,10 +288,6 @@ Function WSCIOtype(S : String): Boolean ;
 Begin
   Reg.WriteString('SCIOtype',S);
 end;
-
-
-{ READ }
-
 
 Function RName : String ;
 Begin

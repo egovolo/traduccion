@@ -3,9 +3,7 @@ object NumerologiaForm: TNumerologiaForm
   Top = 180
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Numerología :::'
+  Caption = '::: gENiO® iOS ::: Numerología :::'
   ClientHeight = 696
   ClientWidth = 1037
   Color = clWhite
@@ -1189,9 +1187,9 @@ object NumerologiaForm: TNumerologiaForm
   end
   object Edit1: TEdit
     Left = 8
-    Top = 32
+    Top = 34
     Width = 309
-    Height = 18
+    Height = 16
     BorderStyle = bsNone
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
@@ -1239,9 +1237,9 @@ object NumerologiaForm: TNumerologiaForm
   end
   object Edit2: TEdit
     Left = 520
-    Top = 32
+    Top = 34
     Width = 309
-    Height = 18
+    Height = 16
     Cursor = crIBeam
     BorderStyle = bsNone
     Color = clWhite

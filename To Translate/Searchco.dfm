@@ -5,9 +5,7 @@ object searching: Tsearching
   Hint = 'Usar para despejar irregularidades energéticas.'
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Comunicación Espacial ::: '
+  Caption = '::: gENiO® iOS ::: Comunicación Espacial ::: '
   ClientHeight = 663
   ClientWidth = 1032
   Color = clWhite

@@ -223,7 +223,6 @@ type
     Timer2: TTimer;
     Label132: TLabel;
     SecretPanel1: TSecretPanel;
-    Image9: TImage;
     Label134: TLabel;
     Label133: TLabel;
     Label136: TLabel;
@@ -416,8 +415,6 @@ type
     procedure Edit2Enter(Sender: TObject);
     procedure Panel2DblClick(Sender: TObject);
     procedure Button7Click(Sender: TObject);
-    procedure FormDeactivate(Sender: TObject);
-    procedure FormHide(Sender: TObject);
     procedure MediaPlayer1Notify(Sender: TObject);
     procedure Panel3DblClick(Sender: TObject);
     procedure Button9Click(Sender: TObject);
@@ -439,9 +436,6 @@ type
     procedure Button25Click(Sender: TObject);
     procedure FormMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
-    procedure Timer1Timer(Sender: TObject);
-    procedure Button27Click(Sender: TObject);
-    procedure Button28Click(Sender: TObject);
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure FormMouseUp(Sender: TObject; Button: TMouseButton;
@@ -460,7 +454,6 @@ type
       Y: Integer);
     procedure GroupBox1MouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
-    procedure PanelAVIDblClick(Sender: TObject);
     procedure Button36Click(Sender: TObject);
     procedure Edit2Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
@@ -717,9 +710,8 @@ begin
         else
                 ShowMessage('Horóscopo erróneo.');
         end;
-
-
 end;
+
 procedure SetHoroscopePanel(horo : integer);
 var
         dire:string;
@@ -1707,9 +1699,6 @@ Time_Crono.Enabled := True;
   image6.stretch :=   true;
   image6.picture :=   testForm1.Image2.picture;
   image6.refresh;
-        //image6.Picture.loadfromfile('querubines.jpg');
-
-        image9.Picture.loadfromfile('atom.bmp');
         image14.Picture.loadfromfile('atom.bmp');
         image19.Picture.loadfromfile('Blur10.jpg');
         if Pat_Form.P_name <> '' then
@@ -1737,15 +1726,6 @@ Time_Crono.Enabled := True;
         if pat_form.ast1>1 then button9.enabled:=true;
         today:=patform1.today;
         groupbox1.caption:=' '+pname+' ';
-       If  Patform1.Edit1.Text='' Then
-
-    //    If Pat_Form.PatCode = 0 Then
-        Begin
-        MessageDlg('No hay nombre, vaya a la pantalla de ''Demografía''.', mtInformation,[mbOk], 0);
-        Button2.Enabled:=False;
-        end
-        ELSE
-        Begin
                 Button2.Enabled:=True;
                 Date_Now:= DATE;
                 If Pat_Form.P_BirthDate<>'' Then
@@ -1758,23 +1738,7 @@ Time_Crono.Enabled := True;
                 label20.caption:=old;
                 decold:=100*dold;
         end;
-
-   {     GetDir(0,AVIname); { 0 = Current drive }
-   {     AVIname:=ExtractFilePath(AVIname);
-        AVIname:=AVIname+'DATA\rndtable.avi';
-
-        if fileexists(AVIname) then begin
-              PanelAVI.Show;
-              with MediaPlayer1 do
-              begin
-                      FileName := AVIname;
-                      Open;
-                      Display := PanelAVI;
-                      Play;
-                      PanelAVI.Refresh;
-              end; }
         end;
-end;
 end;
 
 procedure TBiorythms1.FormCreate(Sender: TObject);
@@ -2079,7 +2043,7 @@ begin
 
         If Edit1.Text='' Then
         begin
-                ShowMessage('Por favor introduzca la fecha de nacimiento de la otra persona en el mismo formato que en su copia de ''Windows''.');
+                ShowMessage('Por favor introduzca la fecha de nacimiento de la otra persona en el mismo formato que en su Sistema Operativo ''Windows''.');
                 button5.Enabled:=false;
                 edit1.SetFocus;
                 Exit;
@@ -2516,7 +2480,6 @@ begin
         label33.caption:=inttostr(ut13);
         label34.caption:=inttostr(ut14);
 
-     //   if fmain.wave3<20 then           Wawplay('diving.wav',False);
         if ut1>100 then ut1:=ut1-100;
         label21.caption:=inttostr(ut1);
         if ut1 <24 then label35.caption:='Subiendo';
@@ -3241,7 +3204,7 @@ begin
         if label47.caption='Bajo' then label58.color:=clwhite;
         if label48.caption='Bajo' then label59.color:=clwhite;
 
-        if   panel1.visible=true  then panel1.caption:='Pequeño problema detectado.';
+        if panel1.visible=true  then panel1.caption:='Pequeño problema detectado.';
 
         Label4.Refresh;
         Label5.Refresh;
@@ -3301,7 +3264,6 @@ var
         ChinoPath,str:string;
         f:Textfile;
 begin
-   //     Wawplay('diving.wav',False);
         today:=patform1.today;
         pname:=patform1.pname;
         chinast:=patform1.chinast;
@@ -3479,25 +3441,6 @@ begin
         panel2.visible:=false;
 end;
 
-procedure TBiorythms1.FormDeactivate(Sender: TObject);
-begin
-    //    Wawplay('qbmenu.wav',False);
-end;
-
-procedure TBiorythms1.FormHide(Sender: TObject);
-begin
-        Try
-                if MediaPlayer1.Display<> nil then
-                   MediaPlayer1.Stop;
-                MediaPlayer1.Close;
-        Except
-        on EMCIDeviceError do
-
-               MessageDlg('Pulse ''OK'' para detener la animación y cerrar.', mtWarning,
-                [mbOk], 0);
-        End;
-end;
-
 procedure TBiorythms1.MediaPlayer1Notify(Sender: TObject);
 Var
         MyString: string;
@@ -3539,59 +3482,59 @@ begin
         if (chinast>6)and (chinast<11) then  label122.caption:=label122.caption+' , '+inttostr(9*chinast+1) ;
         if (numer>6)and (numer<11) then  label122.caption:=label122.caption+' , '+inttostr(9*numer+1) ;
         if (numbirth>6)and (numbirth<11) then  label122.caption:=label122.caption+' , '+inttostr(9*numbirth+1) ;
-        if astr<2 then label91.caption:='Tendencia a suprarrenales débiles.';
-        if astr=2 then label91.caption:='Tendencia a pituitaria débil.';
-        if astr=6 then label91.caption:='Tendencia a tiroides débil.';
-        if astr=4 then label91.caption:='Tendencia a sistema límbico débil.';
-        if astr=5 then label91.caption:='Tendencia a sangre estable débil.';
-        if astr=3 then label91.caption:='Tendencia a pulmones débiles.';
-        if astr=7 then label91.caption:='Tendencia a cerebro débil.';
-        if astr=8 then label91.caption:='Tendencia a digestión débil.';
-        if astr=9 then label91.caption:='Tendencia a hígado débil.';
-        if astr=11 then Label91.caption:='Tendencia a corazón y circulación débil.';
-        if astr=12  then label91.caption:='Tendencia a función inmunitaria débil.';
-        if astr=12   then label91.caption:='Tendencia a función linfática débil.';
+        if astr<2 then label91.caption:=' Tendencia a suprarrenales débiles.';
+        if astr=2 then label91.caption:=' Tendencia a pituitaria débil.';
+        if astr=6 then label91.caption:=' Tendencia a tiroides débil.';
+        if astr=4 then label91.caption:=' Tendencia a sistema límbico débil.';
+        if astr=5 then label91.caption:=' Tendencia a sangre estable débil.';
+        if astr=3 then label91.caption:=' Tendencia a pulmones débiles.';
+        if astr=7 then label91.caption:=' Tendencia a cerebro débil.';
+        if astr=8 then label91.caption:=' Tendencia a digestión débil.';
+        if astr=9 then label91.caption:=' Tendencia a hígado débil.';
+        if astr=11 then Label91.caption:=' Tendencia a corazón y circulación débil.';
+        if astr=12  then label91.caption:=' Tendencia a función inmunitaria débil.';
+        if astr=12   then label91.caption:=' Tendencia a función linfática débil.';
 
-        if astr<2 then label117.caption:='Evite la sal y exceso de sodio, tome vegetales frescos y crudos, solo frutas hasta el medio día.';
-        if astr=2 then label117.caption:='Solo frutas hasta el mediodía, pescado y comida de mar son buenas, nada en exceso, controle la ansiedad de comer con estimulación mental.';
-        if astr=6 then label117.caption:='El pescado y comida de mar son buenos, use solo sal de mar, evite el exceso de leche y mantequilla, tome repollo todos los días.';
-        if astr=4 then label117.caption:='Evite dulces y azúcares procesadas, tome frutas y zumos, evite comer demasiado.';
-        if astr=5 then label117.caption:='Tome verdes y hojas a diario masticando muy bien, tome poca carne, controle la adicción a la comida.';
-        if astr=3 then label117.caption:='Use condimentos para reemplazar el sabor de grasas y azúcar, controle las ansias de comer para tener energía.';
-        if astr=7 then label117.caption:='Tome comidas ligeras y en poca cantidad, tentenpies nutricionales durante el día y evite los azúcares procesados.';
-        if astr=8 then label117.caption:='Tome comidas ligeras y en poca cantidad, nada en exceso, resista la adicción a comer demasiado.';
-        if astr=9 then label117.caption:='No consuma demasiado alcohol, controle la necesidad de consumir, evite el exceso de grasas animales.';
-        if astr=11 then Label117.caption:='Evite las grasas animales, el exceso de sal y sodio, controle la necesidad de comer en exceso.';
-        if astr=12 then label117.caption:='Evite los azúcares procesados, limite la proteína animal, evite el exceso de comida cuando se estrese, tome frutas frescas y naturales durante a diario.';
-        if astr=12 then label117.caption:='Evite comer demasiado, controle la necesidad de comer cuando se estrese, limite la proteína animal, combine adecuadamente su dieta.';
-
-
-        if astr<2 then label95.caption:='Dificultad para tomar desiciones, necesita estimulación, se mete en problemas con facilidad.';
-        if astr=2 then label95.caption:='Dificultad para controlar las emociones, poca sensitividad, inclinación al pasado y a las culturas antíguas.';
-        if astr=6 then label95.caption:='Dificultad para tratar con los padres y la autoridad, no puede resolver los conflictos con facilidad.';
-        if astr=4 then label95.caption:='Dificultad para controlar las emociones, sobre sensitividad, sensitividad a los ciclos lunares.';
-        if astr=5 then label95.caption:='Sanguíneo y sobre romántico, tendencia a la depresión y la añoranza, necesita una conexión sentimental.';
-        if astr=3 then label95.caption:='Dificultad para controlar la ansiedad, inclinación al aire puro y limpio del campo.';
-        if astr=7 then label95.caption:='Tendencia a la fatiga mental y deficit de atención, necesita un trabajo que sea también una diversión.';
-        if astr=8 then label95.caption:='Dificultad para entender ideas y conceptos nuevos, sobre sospecha.';
-        if astr=9 then label95.caption:='Dificultad para controlar el humor y la íra, sensitividad a la energía eléctrica.';
-        if astr=10 then label95.caption:='Tendencia a la tristeza y la melancolía mientras atraviesa altos de alegría y extasis.';
-        if astr=11 then Label95.caption:='Sobre sensitividad e incapacidad para controlar el humor y la mente, tortuosidad espiritual que se calma con amistad y familia.';
-        if astr=12  then Label95.caption:='Incapacidad de controlar el agua en el cuerpo, inclinación al agua para compensar.';
+        if astr<2 then label117.caption:=' Evite la sal y exceso de sodio, tome vegetales frescos y crudos, solo frutas hasta el medio día.';
+        if astr=2 then label117.caption:=' Solo frutas hasta el mediodía, pescado y comida de mar son buenas, nada en exceso, controle la ansiedad de comer con estimulación mental.';
+        if astr=6 then label117.caption:=' El pescado y comida de mar son buenos, use solo sal de mar, evite el exceso de leche y mantequilla, tome repollo todos los días.';
+        if astr=4 then label117.caption:=' Evite dulces y azúcares procesadas, tome frutas y zumos, evite comer demasiado.';
+        if astr=5 then label117.caption:=' Tome verdes y hojas a diario masticando muy bien, tome poca carne, controle la adicción a la comida.';
+        if astr=3 then label117.caption:=' Use condimentos para reemplazar el sabor de grasas y azúcar, controle las ansias de comer para tener energía.';
+        if astr=7 then label117.caption:=' Tome comidas ligeras y en poca cantidad, tentenpies nutricionales durante el día y evite los azúcares procesados.';
+        if astr=8 then label117.caption:=' Tome comidas ligeras y en poca cantidad, nada en exceso, resista la adicción a comer demasiado.';
+        if astr=9 then label117.caption:=' No consuma demasiado alcohol, controle la necesidad de consumir, evite el exceso de grasas animales.';
+        if astr=11 then Label117.caption:=' Evite las grasas animales, el exceso de sal y sodio, controle la necesidad de comer en exceso.';
+        if astr=12 then label117.caption:=' Evite los azúcares procesados, limite la proteína animal, evite el exceso de comida cuando se estrese, tome frutas frescas y naturales durante a diario.';
+        if astr=12 then label117.caption:=' Evite comer demasiado, controle la necesidad de comer cuando se estrese, limite la proteína animal, combine adecuadamente su dieta.';
 
 
-        if numer<2 then label92.caption:=' El niño dentro, madurez para tomar desiciones, crítico de sí mismo, depresión, un poco vulnerable. ';
-        if numer=2 then label92.caption:=' Balance del pH, intercambio del K+Na, producción de cortisol, estrógeno, hormona antidiurética, post pituitaria. ';
-        if numer=6 then label92.caption:=' Función del bazo - células rojas, producción de hemipoietina, adrenalina, androgenos, progesterogena,testosterona. ';
-        if numer=4 then label92.caption:=' Funciones del hígado en desintoxicación y regulación de la sangre, enzimas pancreáticas y azúcar de la sangre, producción de insulina. ';
-        if numer=5 then label92.caption:=' Función del hígado en coagulación de la sangre, utilización de la vitamina K, plateletes, reparación de lesiones, efectos de la paratiroides y huesos. ';
-        if numer=3 then label92.caption:=' Función de la tiroides, calcio en los huesos, metabolismo, reparación de tejidos mayores, suceptibilidad al frío. ';
-        if numer=7 then label92.caption:=' Función del bazo - competencia inmune de linfocitos, efectos hormonales en la médula espinal. ';
-        if numer=8 then label92.caption:=' Absorpción de agua en colon, próstata, testículos, deseo sexual, utilización de la vitamina B, Producción de espermatosoides, prostaglandins. ';
-        if numer=9 then label92.caption:=' Habilidades para juzgar equianimamente, balance de mente y cuerpo, control de sí mismo. ';
-        if numer=10 then label92.caption:=' Control del humor, riesgo de cáncer, efectos en pulmones, bloqueos emocionales e inhabilidad para conocer el cuerpo. ';
-        if numer=11 then label92.caption:=' Interconexión de sí mismo con todo, la habilidad trascendental de superarar las trivialidades de la vida a través de la trascendencia. ';
-        if numer=12 then label92.caption:=' Tendencia a una fución linfática débil. ';
+        if astr<2 then label95.caption:=' Dificultad para tomar desiciones, necesita estimulación, se mete en problemas con facilidad.';
+        if astr=2 then label95.caption:=' Dificultad para controlar las emociones, poca sensitividad, inclinación al pasado y a las culturas antíguas.';
+        if astr=6 then label95.caption:=' Dificultad para tratar con los padres y la autoridad, no puede resolver los conflictos con facilidad.';
+        if astr=4 then label95.caption:=' Dificultad para controlar las emociones, sobre sensitividad, sensitividad a los ciclos lunares.';
+        if astr=5 then label95.caption:=' Sanguíneo y sobre romántico, tendencia a la depresión y la añoranza, necesita una conexión sentimental.';
+        if astr=3 then label95.caption:=' Dificultad para controlar la ansiedad, inclinación al aire puro y limpio del campo.';
+        if astr=7 then label95.caption:=' Tendencia a la fatiga mental y deficit de atención, necesita un trabajo que sea también una diversión.';
+        if astr=8 then label95.caption:=' Dificultad para entender ideas y conceptos nuevos, sobre sospecha.';
+        if astr=9 then label95.caption:=' Dificultad para controlar el humor y la íra, sensitividad a la energía eléctrica.';
+        if astr=10 then label95.caption:=' Tendencia a la tristeza y la melancolía mientras atraviesa altos de alegría y extasis.';
+        if astr=11 then Label95.caption:=' Sobre sensitividad e incapacidad para controlar el humor y la mente, tortuosidad espiritual que se calma con amistad y familia.';
+        if astr=12  then Label95.caption:=' Incapacidad de controlar el agua en el cuerpo, inclinación al agua para compensar.';
+
+
+        if numer<2 then label92.caption:='  El niño dentro, madurez para tomar desiciones, crítico de sí mismo, depresión, un poco vulnerable. ';
+        if numer=2 then label92.caption:='  Balance del pH, intercambio del K+Na, producción de cortisol, estrógeno, hormona antidiurética, post pituitaria. ';
+        if numer=6 then label92.caption:='  Función del bazo - células rojas, producción de hemipoietina, adrenalina, androgenos, progesterogena, testosterona. ';
+        if numer=4 then label92.caption:='  Funciones del hígado en desintoxicación y regulación de la sangre, enzimas pancreáticas y azúcar de la sangre, producción de insulina. ';
+        if numer=5 then label92.caption:='  Función del hígado en coagulación de la sangre, utilización de la vitamina K, plateletes, reparación de lesiones, efectos de la paratiroides y huesos. ';
+        if numer=3 then label92.caption:='  Función de la tiroides, calcio en los huesos, metabolismo, reparación de tejidos mayores, suceptibilidad al frío. ';
+        if numer=7 then label92.caption:='  Función del bazo - competencia inmune de linfocitos, efectos hormonales en la médula espinal. ';
+        if numer=8 then label92.caption:='  Absorpción de agua en colon, próstata, testículos, deseo sexual, utilización de la vitamina B, Producción de espermatosoides, prostaglandins. ';
+        if numer=9 then label92.caption:='  Habilidades para juzgar equianimamente, balance de mente y cuerpo, control de sí mismo. ';
+        if numer=10 then label92.caption:='  Control del humor, riesgo de cáncer, efectos en pulmones, bloqueos emocionales e inhabilidad para conocer el cuerpo. ';
+        if numer=11 then label92.caption:='  Interconexión de sí mismo con todo, la habilidad trascendental de superarar las trivialidades de la vida a través de la trascendencia. ';
+        if numer=12 then label92.caption:='  Tendencia a una fución linfática débil. ';
 
         if numer<2 then label98.caption:=' Nervios, sistema de meridiano del intestino grueso.               ';
         if numer=2 then    label98.caption:=' Riñones, linfa, sistema de meridiano del calentador triple.       ';
@@ -3606,76 +3549,76 @@ begin
 
         if numer<2 then label119.caption:=' Evite el exceso de proteína animal, provea amino ácidos adecuados. ';
         if numer=2 then    label119.caption:=' Evite el exceso de proteína animal, provea ácidos grasos adecuados. ';
-        if numer=6 then    label119.caption:=' Evite el azúcar procesada, Avoid processed sugar, provea disacáridos adecuados. ';
+        if numer=6 then    label119.caption:=' Evite el azúcar refinada.';
         if numer=4 then    label119.caption:=' Evite el exceso de proteína animal, provea amino ácidos adecuados. ';
-        if numer=5 then    label119.caption:=' Evite el azúcar refinado, provea disacáridos adecuados. ';
+        if numer=5 then    label119.caption:=' Evite el azúcar refinada. ';
         if numer=3 then    label119.caption:=' Evite el exceso de proteína animal, provea ácidos grasos adecuados. ';
         if numer=7 then    label119.caption:=' Evite el azúcar refinado, provea disacáridos adecuados. ';
-        if numer=8 then    label119.caption:=' Evite el azúcar refinado, provea disacáridos adecuados. ';
+        if numer=8 then    label119.caption:='Evite el azúcar refinado, provea disacáridos adecuados. ';
         if numer=9 then    label119.caption:=' Evite el exceso de proteína animal, provea amino ácidos adecuados. ';
         if numer>9 then    label119.caption:=' Evite el exceso de grasas animales, provea ácidos grasos adecuados. ';
 
-        if chinast<2 then label93.caption:='Interconexión de sí mismo con todo, la habilidad trascendental de superarar las trivialidades de la vida a través de la trascendencia.';
-        if chinast=2 then label93.caption:='Control del humor, riesgo de cáncer, efectos en pulmones, bloqueos emocionales e inhabilidad para conocer el cuerpo.';
-        if chinast=6 then label93.caption:='Función endocrina débil, especialmente tiroides, timo y paratiroides.';
-        if chinast=4 then label93.caption:='Función endocrina débil, especialmente potuitaria, pineal, hipotálamo.';
-        if chinast=5 then label93.caption:='Función endocrina débil, especialmente corazón y pulmón.';
-        if chinast=3 then label93.caption:='Función endocrina débil, especialmente suprarrenales, riñones y gonadas.';
-        if chinast=7 then label93.caption:='Función endocrina débil, especialmente estómago y páncreas.';
-        if chinast=8 then label93.caption:='Función endocrina débil, especialmente bazo e hígado.';
-        if chinast=9 then label93.caption:='Función endocrina débil, especialmente mambranas mucosas.';
-        if chinast=10 then label93.caption:='Función endocrina débil, especialmente linfáticos y parches de Peyer.';
-        if chinast=11 then label93.caption:='Función endocrina débil, especialmente cartilagos, fascia, ligamentos y tejido conectivo.';
-        if chinast=12 then label93.caption:='Función endocrina débil, especialmente tejido productor seroso.';
+        if chinast<2 then label93.caption:=' Interconexión de sí mismo con todo, la habilidad trascendental de superarar las trivialidades de la vida a través de la trascendencia.';
+        if chinast=2 then label93.caption:=' Control del humor, riesgo de cáncer, efectos en pulmones, bloqueos emocionales e inhabilidad para conocer el cuerpo.';
+        if chinast=6 then label93.caption:=' Función endocrina débil, especialmente tiroides, timo y paratiroides.';
+        if chinast=4 then label93.caption:=' Función endocrina débil, especialmente potuitaria, pineal, hipotálamo.';
+        if chinast=5 then label93.caption:=' Función endocrina débil, especialmente corazón y pulmón.';
+        if chinast=3 then label93.caption:=' Función endocrina débil, especialmente suprarrenales, riñones y gonadas.';
+        if chinast=7 then label93.caption:=' Función endocrina débil, especialmente estómago y páncreas.';
+        if chinast=8 then label93.caption:=' Función endocrina débil, especialmente bazo e hígado.';
+        if chinast=9 then label93.caption:=' Función endocrina débil, especialmente mambranas mucosas.';
+        if chinast=10 then label93.caption:=' Función endocrina débil, especialmente linfáticos y parches de Peyer.';
+        if chinast=11 then label93.caption:=' Función endocrina débil, especialmente cartilagos, fascia, ligamentos y tejido conectivo.';
+        if chinast=12 then label93.caption:=' Función endocrina débil, especialmente tejido productor seroso.';
 
 
-        if numbirth<2 then label94.caption:='Dificultad en el metabolismo mineral.';
-        if numbirth=2 then label94.caption:='Dificultad en el metabolismo de proteínas.';
-        if numbirth=6 then label94.caption:='Dificultad en el metabolismo de vitaminas.';
-        if numbirth=4 then label94.caption:='Dificultad en el metabolismo de grasas y ácidos grasos.';
-        if numbirth=5 then label94.caption:='Dificultad en el metabolismo del oxígeno.';
-        if numbirth=3 then label94.caption:='Dificultad en el metabolismo de la energía.';
-        if numbirth=7 then label94.caption:='Dificultad en el metabolismo de las enzimas.';
-        if numbirth=8 then label94.caption:='Dificultad en el metabolismo de la desintoxicación.';
-        if numbirth=9 then label94.caption:='Dificultad en el metabolismo sensorial.';
-        if numbirth>9 then label94.caption:='Dificultad en el metabolismo de la regulación del pH.';
+        if numbirth<2 then label94.caption:=' Dificultad en el metabolismo mineral.';
+        if numbirth=2 then label94.caption:=' Dificultad en el metabolismo de proteínas.';
+        if numbirth=6 then label94.caption:=' Dificultad en el metabolismo de vitaminas.';
+        if numbirth=4 then label94.caption:=' Dificultad en el metabolismo de grasas y ácidos grasos.';
+        if numbirth=5 then label94.caption:=' Dificultad en el metabolismo del oxígeno.';
+        if numbirth=3 then label94.caption:=' Dificultad en el metabolismo de la energía.';
+        if numbirth=7 then label94.caption:=' Dificultad en el metabolismo de las enzimas.';
+        if numbirth=8 then label94.caption:=' Dificultad en el metabolismo de la desintoxicación.';
+        if numbirth=9 then label94.caption:=' Dificultad en el metabolismo sensorial.';
+        if numbirth>9 then label94.caption:=' Dificultad en el metabolismo de la regulación del pH.';
 
-        if numbirth<2 then label118.caption:='Controle el equilibrio de potasio y calcio, reduzca el sódio, beba mucha agua a diario. ';
-        if numbirth=2 then label118.caption:='Resista la ansiedad de proteína animal, tome amino ácidos vegetales, obedezca las ''leyes del estómago''. ';
-        if numbirth=6 then label118.caption:='Tome alimentos ricos en vitaminas, frutas y vegetales frescos y crudos, los zumos son lo mejor. ';
-        if numbirth=4 then label118.caption:='Evite comidas fritas, el exceso de grasa animal, cualquier aceite cocinado, tome zumos vegetales frescos. ';
-        if numbirth=5 then label118.caption:='Evite comer demasiado, no discuta mientras coma, obedezca las leyes del estómago, mastique bien. ';
-        if numbirth=3 then label118.caption:='Evite los alimentos procesados y los aditivos sintéticos, tome frutas y vegetales frescos y crudos. ';
-        if numbirth=7 then label118.caption:='Obedezca las leyes del estómago, relajese durante y después de comer, reduzca la urgencia de hacer demasiado, mastique bien. ';
-        if numbirth=8 then label118.caption:='Use productos orgánicos, lo natural es lo mejor para la salud, incremente la fibra, evite el café con las comidas. ';
-        if numbirth=9 then label118.caption:='Coma por gratificación nutricional y no emocional, no use la comida como un apoyo emocional. ';
-        if numbirth>9 then label118.caption:='Debe tratar de mantener el agua estabilizada, beba mucha agua cada día, evite el azúcar refinado, mastique bien. ';
-
-
-        if numbirth<2 then label100.caption:='Calentador triple. ';
-        if numbirth=2 then label100.caption:='Metabolismo de ácidos grasos. ';
-        if numbirth=6 then label100.caption:='Canal fibroso. ';
-        if numbirth=4 then label100.caption:='Meridiano de la piel. ';
-        if numbirth=5 then label100.caption:='Calentador triple. ';
-        if numbirth=3 then label100.caption:='Circulación sexual, pericardio. ';
-        if numbirth=7 then label100.caption:='Circulación sexual, pericardio. ';
-        if numbirth=8 then label100.caption:='Meridiano linfático. ';
-        if numbirth=9 then label100.caption:='Sistema linfático. ';
-        if numbirth>9 then label100.caption:='Meridianos de cartílagos y articulaciones. ';
+        if numbirth<2 then label118.caption:=' Controle el equilibrio de potasio y calcio, reduzca el sódio, beba mucha agua a diario. ';
+        if numbirth=2 then label118.caption:=' Resista la ansiedad de proteína animal, tome amino ácidos vegetales, obedezca las ''leyes del estómago''. ';
+        if numbirth=6 then label118.caption:=' Tome alimentos ricos en vitaminas, frutas y vegetales frescos y crudos, los zumos son lo mejor. ';
+        if numbirth=4 then label118.caption:=' Evite comidas fritas, el exceso de grasa animal, cualquier aceite cocinado, tome zumos vegetales frescos. ';
+        if numbirth=5 then label118.caption:=' Evite comer demasiado, no discuta mientras coma, obedezca las leyes del estómago, mastique bien. ';
+        if numbirth=3 then label118.caption:=' Evite los alimentos procesados y los aditivos sintéticos, tome frutas y vegetales frescos y crudos. ';
+        if numbirth=7 then label118.caption:=' Obedezca las leyes del estómago, relajese durante y después de comer, reduzca la urgencia de hacer demasiado, mastique bien. ';
+        if numbirth=8 then label118.caption:=' Use productos orgánicos, lo natural es lo mejor para la salud, incremente la fibra, evite el café con las comidas. ';
+        if numbirth=9 then label118.caption:=' Coma por gratificación nutricional y no emocional, no use la comida como un apoyo emocional. ';
+        if numbirth>9 then label118.caption:=' Debe tratar de mantener el agua estabilizada, beba mucha agua cada día, evite el azúcar refinado, mastique bien. ';
 
 
-        if chinast<2 then label96.caption:='Tendencia a perder el control y jugarse las oportunidades de la vida. Espere lo mejor, asegúrese un lugar, apueste menos. ';
-        if chinast=2 then label96.caption:='Incapacidad de entender a otros y a sí mismo/a, el entender es tan fácil como el dejar ir. ';
-        if chinast=3 then label96.caption:='Obstinado/a, peleador/a, tendencia a oponerse a las ideas no propias. Los otros también piensan. ';
-        if chinast=4 then label96.caption:='Enchapado/a a la antigua, hipocondriaco/a, se siente mal a menudo pero algunas veces por sobre análisis de los sentimientos normales. Relájese. ';
-        if chinast=5 then label96.caption:='Crítico/a, ansioso/a, capaz de hablar primero y pensar después. Es hora de cambiar los enjuiciamientos. ';
-        if chinast=6 then label96.caption:='Mal perdedor/a, posesivo/a, vengador/a, crítico/a de sí mismo/a, tiende a pensar en sí mismo/a antes que en los demás. ';
-        if chinast=7 then label96.caption:='Se siente mal entendido/a, incapaz de poner en perspectiva la situación completa, le cuesta trabajo aceptar los criticismos. ';
-        if chinast=8 then label96.caption:='Pesimista, dependiente, difícil de satisfacer, a menudo irritable, siempre ve el vaso vacio cuando en realidad está lleno. ';
-        if chinast=9 then label96.caption:='Vano/a, oportunista, se aferra a puntos de vista pasados y pelea con lo nuevo. Todas las cosas cambian. ';
-        if chinast=10 then label96.caption:='Desconfiado/a, pomposo/a, argumentativo/a, necesita tener la razón y máxime si se siente atacado/a. ';
-        if chinast=11 then label96.caption:='Introvertido/a, defensivo/a, crítico/a, pesimista, cínico/a, moralizador/a, le gusta leer. ';
-        if chinast=12 then label96.caption:='No sincero, naive, facilmente influenciado/a, sigue a los demás sin demasiada consideración de los resultados. Tómese más tiempo. ';
+        if numbirth<2 then label100.caption:=' Calentador triple. ';
+        if numbirth=2 then label100.caption:=' Metabolismo de ácidos grasos. ';
+        if numbirth=6 then label100.caption:=' Canal fibroso. ';
+        if numbirth=4 then label100.caption:=' Meridiano de la piel. ';
+        if numbirth=5 then label100.caption:=' Calentador triple. ';
+        if numbirth=3 then label100.caption:=' Circulación sexual, pericardio. ';
+        if numbirth=7 then label100.caption:=' Circulación sexual, pericardio. ';
+        if numbirth=8 then label100.caption:=' Meridiano linfático. ';
+        if numbirth=9 then label100.caption:=' Sistema linfático. ';
+        if numbirth>9 then label100.caption:=' Meridianos de cartílagos y articulaciones. ';
+
+
+        if chinast<2 then label96.caption:=' Tendencia a perder el control y jugarse las oportunidades de la vida. Espere lo mejor, asegúrese un lugar, apueste menos. ';
+        if chinast=2 then label96.caption:=' Incapacidad de entender a otros y a sí mismo/a, el entender es tan fácil como el dejar ir. ';
+        if chinast=3 then label96.caption:=' Obstinado/a, peleador/a, tendencia a oponerse a las ideas no propias. Los otros también piensan. ';
+        if chinast=4 then label96.caption:=' Enchapado/a a la antigua, hipocondriaco/a, se siente mal a menudo pero algunas veces por sobre análisis de los sentimientos normales. Relájese. ';
+        if chinast=5 then label96.caption:=' Crítico/a, ansioso/a, capaz de hablar primero y pensar después. Es hora de cambiar los enjuiciamientos. ';
+        if chinast=6 then label96.caption:=' Mal perdedor/a, posesivo/a, vengador/a, crítico/a de sí mismo/a, tiende a pensar en sí mismo/a antes que en los demás. ';
+        if chinast=7 then label96.caption:=' Se siente mal entendido/a, incapaz de poner en perspectiva la situación completa, le cuesta trabajo aceptar los criticismos. ';
+        if chinast=8 then label96.caption:=' Pesimista, dependiente, difícil de satisfacer, a menudo irritable, siempre ve el vaso vacio cuando en realidad está lleno. ';
+        if chinast=9 then label96.caption:=' Vano/a, oportunista, se aferra a puntos de vista pasados y pelea con lo nuevo. Todas las cosas cambian. ';
+        if chinast=10 then label96.caption:=' Desconfiado/a, pomposo/a, argumentativo/a, necesita tener la razón y máxime si se siente atacado/a. ';
+        if chinast=11 then label96.caption:=' Introvertido/a, defensivo/a, crítico/a, pesimista, cínico/a, moralizador/a, le gusta leer. ';
+        if chinast=12 then label96.caption:=' No sincero, naive, facilmente influenciado/a, sigue a los demás sin demasiada consideración de los resultados. Tómese más tiempo. ';
 
         if astr+chinast=1 then label121.caption:=label121.caption+ ' Fresas.';
         if astr+chinast=2 then label121.caption:=label121.caption+ ' Una manzana diaria le evita visitar al doctor.';
@@ -3750,7 +3693,6 @@ begin
         if astr+chinast=21 then label128.caption:=label128.caption+' Controle las urgencias antes de que se desarrollen en comportamientos destructivos. ';
         if astr+chinast=22 then label128.caption:=label128.caption+' No haga a otros lo que no quiere que le hagan. ';
         if astr+chinast=23 then label128.caption:=label128.caption+' Ayudese a sí mismo ayudando a otros. ';
-
 end;
 
 procedure TBiorythms1.Image3DblClick(Sender: TObject);
@@ -3868,9 +3810,6 @@ Panel1.BringToFront();
         label132.caption:='Promedio de conexión | '+inttostr(aver);
 
         FMain.shaping:=random(105);
-        FRecompensa.label79.caption:=inttostr(shaping);
-     {   if MediaPlayer1.Display<> nil then
-            MediaPlayer1.Stop; }
         timer2.Enabled:=false;
         image7.Visible:=false;
         image8.Visible:=false;
@@ -4356,7 +4295,6 @@ procedure TBiorythms1.Button19Click(Sender: TObject);
 begin
         panel4.visible:=false;
         SpeachForm.SMessageTalk('¡Hasta siempre! '+edit3.text+' Espero que hayas aprendido algo.');
-        If fileExists('Speach.txt') Then SpeachForm.SMessageTalk('Si desea detener el programa de habla, hágalo desde aquí.');
 end;
 
 procedure TBiorythms1.Button20Click(Sender: TObject);
@@ -4374,38 +4312,8 @@ end;
 
 procedure TBiorythms1.Button22Click(Sender: TObject);
 begin
-        SpeachForm.SMessageTalk('Escúcha y aprende '+edit3.text);
-        oeg:=random(11);
-        if oeg<2  then begin        SpeachForm.SMessageTalk( 'El miedo es necesario y es una emoción sana en moderación.           '+chr(13)+
-              'Este te ayuda a protejerte. Es una herramienta no un maestro.           '+chr(13)+
-              'Si el miedo te comanda, escúchalo, agradécelo y reemplazalo com amor.');
-
-                end;
-
-        if oeg=2  then begin      SpeachForm.SMessageTalk( 'Cada camino esta pavimentado con alegría y tristeza.           '+chr(13)+
-              'Ningún camino es perfecto, la perfección existe debido a los errores.     '+chr(13)+
-              'Elíje sabiamente, intuitivamente, sin miedo y con distinción.');
-             end;
-        if (oeg=3)  then begin      SpeachForm.SMessageTalk('No hay bueno ni malo, pero al pensarlo lo convierten en eso.'+chr(13)+
-              'El mundo solo se puede ver através de tu mente y  '+chr(13)+
-              'como juzgues serás juzgado/a.          ');
-                end;
-        if (oeg=4)  then begin      SpeachForm.SMessageTalk('Toda la percepción, creencias y culpas  '+chr(13)+
-              'pueden solo generarse en nosotros mismos.      '+chr(13)+
-              'Lo que ves, lo ves solo en tí mismo.');
-                end;
-        if (oeg=5)  then begin      SpeachForm.SMessageTalk('Debes darte a tí mismo/a y a otros'+chr(13)+
-              'el derecho de ser uno/a mismo/a. '+chr(13)+
-              'Lo que no te gusta en otros es un reflejo de tí mismo/a.');
-                end;
-        if (oeg=6)  then begin      SpeachForm.SMessageTalk(edit3.text+': Eres lo que comes, así que evita la comida ''basura'' y el azúcar refinado.');  end;
-        if (oeg=7)  then begin      SpeachForm.SMessageTalk(edit3.text+': No es lo que entra en tu boca, sino lo que sale de ella lo que te define. Por favor, cuida tus palabras. ');  end;
-        if (oeg=8)  then begin      SpeachForm.SMessageTalk(edit3.text+': No hagas a otros lo que no deseas que te hagan.');  end;
-        if (oeg=9)  then begin      SpeachForm.SMessageTalk(edit3.text+': No hagas a otros lo que no deseas que te hagan.');  end;
-        if (oeg=10)  then begin      SpeachForm.SMessageTalk(edit3.text+': En lo que piensas te conviertes. Por favor, limpia tus pensamientos.');  end;
-        if (oeg=11)  then begin      SpeachForm.SMessageTalk(edit3.text+': No sobrevive el más fuerte, sino el más colaborador. No uses violencia mental o física innecesaria.');  end;
         sp35:=random(33);
-        if sp35=1 then       SpeachForm.SMessageTalk( pname+':'+' ¿Te das cuenta que el dinero es solo un espejismo de la mente?');
+        if sp35<2 then       SpeachForm.SMessageTalk( pname+':'+' ¿Te das cuenta que el dinero es solo un espejismo de la mente?');
         if sp35=2 then       SpeachForm.SMessageTalk( pname+':'+' ¿Te das cuenta que el dinero es solo un espejismo de la mente?');
         if sp35=3 then       SpeachForm.SMessageTalk( pname+':'+' ¿Te das cuenta que los obstáculos son solo un espejismo de la mente?');
         if sp35=4 then       SpeachForm.SMessageTalk( pname+':'+' ¿Te das cuenta que el ''yo'' es solo un espejismo de la mente?');
@@ -4436,14 +4344,13 @@ begin
         if sp35=29 then       SpeachForm.SMessageTalk( pname+':'+' El miedo ataca los riñones.');
         if sp35=30 then       SpeachForm.SMessageTalk( pname+':'+' Todas las cosas son posibles, es solo una cuestión de tiempo.');
         if sp35=31 then       SpeachForm.SMessageTalk( pname+':'+' Curate primero.');
-        if sp35=32 then       SpeachForm.SMessageTalk( pname+':'+' A medida que un hombre endurece su corazón se endurece a sí mismo.');
+        if sp35>31 then       SpeachForm.SMessageTalk( pname+':'+' A medida que un hombre endurece su corazón se endurece a sí mismo.');
 end;
 
 procedure TBiorythms1.Button23Click(Sender: TObject);
 begin
-        SpeachForm.SMessageTalk('Escúcha atentamente y aprende. '+edit3.text+', la siguiente afirmación es para que te la repitas en voz alta varias veces al día:');
-        oeg:=1+random(44+ran88);
-        if oeg=1   then     SpeachForm.SMessageTalk('Amo y respeto las fuerzas naturales del Universo.');
+        oeg:=random(46);
+        if oeg<2   then     SpeachForm.SMessageTalk('Amo y respeto las fuerzas naturales del Universo.');
         if oeg=2   then     SpeachForm.SMessageTalk('Mi cuerpo es un templo. Siempre lo amaré, respetaré y consentiré.');
         if oeg=3   then     SpeachForm.SMessageTalk('Amo y respeto a mis vecinos y a todas las criaturas de Dios.');
         if oeg=4   then     SpeachForm.SMessageTalk('Amo y respeto al planeta y al medio ambiente. Amaré y respetaré el medio ambiente siempre.');
@@ -4487,7 +4394,7 @@ begin
         if oeg=42   then     SpeachForm.SMessageTalk('Mi piel funciona perfectamente.');
         if oeg=43   then     SpeachForm.SMessageTalk('Mi hígado funciona perfectamente.');
         if oeg=44   then     SpeachForm.SMessageTalk('Mi sistema inmunitario funciona perfectamente.');
-        if oeg=45   then     SpeachForm.SMessageTalk('Todos los días, de cualquier manera, estoy y me siento mejoy y mejor.');
+        if oeg>44   then     SpeachForm.SMessageTalk('Todos los días, de cualquier manera, estoy y me siento mejoy y mejor.');
 end;
 
 procedure TBiorythms1.Button24Click(Sender: TObject);
@@ -4511,170 +4418,6 @@ procedure TBiorythms1.FormMouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
         time555:=5;
         time777:=time777+1;
-end;
-
-procedure TBiorythms1.Timer1Timer(Sender: TObject);
-begin
-        label123.caption:=inttostr(time555);
-        label124.caption:=inttostr(time777);
-        label125.caption:=inttostr(time888);
-        time555:=time555+1;
-
-        if time777>25 then
-        begin
-                time999:=time999+1;
-                time777:=1;
-        end;
-
-        if time555=4 then time888:=25+random(60);
-        if (wawp.silent<20)and(time555=time888) then
-        begin
-                MyFileCreate('Speach.txt');
-                SpeachForm.TalkOption:=True;
-                WinExec('Monologw.exe',1);
-                timer1.enabled:=false;
-                sp33:=random(2);  if sp33>0 then     SpeachForm.SMessageTalk('¡Hola '+pname+'!');
-                sp33:=random(4);  if sp33>3 then    SpeachForm.SMessageTalk('Hola '+pname+', ¿estás hay?');
-                sp33:=random(2);  if sp33>0 then     SpeachForm.SMessageTalk('Te eché de menos '+pname+', ¿Vas a terminar con el programa o no?');
-                sp33:=random(4);  if sp33>3 then       SpeachForm.SMessageTalk('Siento haberte molestado '+pname+'.');
-                sp33:=random(4);  if sp33>3 then        SpeachForm.SMessageTalk('Tengo una idea de como puedo ayudarte '+pname+'.');
-                sp33:=random(4);  if sp33>3 then        SpeachForm.SMessageTalk( pname+' trataré de no molestarte otra vez.');
-                sp33:=random(10);  if sp33=3 then         SpeachForm.SMessageTalk( pname+' por favor ve al programa de ''PNL''.');
-                sp33:=random(10);  if sp33=3 then        SpeachForm.SMessageTalk( pname+' por favor ve al programa de ''Espina Dorsal''.');
-                sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+' por favor vaya al programa de ''Nutrición''.');
-                sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+' busca la causa en la pantalla de ''Causas de Condición''.');
-                sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+' busca la pantalla de ''Homeopatía''.');
-                sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+' busca la pantalla de ''Terapia''.');
-
-                sp35:=random(33);
-                if sp35=1 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el dinero es solo un espejismo de la mente?');
-                if sp35=2 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el dinero es solo un espejismo de la mente?');
-                if sp35=3 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que los obstáculos son solo un espejismo de la mente?');
-                if sp35=4 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el ''yo'' es solo un espejismo de la mente?');
-                if sp35=5 then       SpeachForm.SMessageTalk( ownname+': '+'Sus percepciones del pasado son filtradas a travéz de las emociones del ahora.');
-                if sp35=6 then       SpeachForm.SMessageTalk( ownname+': '+'Los rituales nos ayudan a recordar, pero estos son juegos de la mente.');
-                if sp35=7 then       SpeachForm.SMessageTalk( ownname+': '+'La vida es un proceso de crecimiento espontáneo y desafíos.');
-                if sp35=8 then       SpeachForm.SMessageTalk( ownname+': '+'La íra genera violencia y ataca al hígado.');
-                if sp35=9 then       SpeachForm.SMessageTalk( ownname+': '+'Aprender a controlar sus emociones es esencial para todo crecimiento.');
-                if sp35=10 then       SpeachForm.SMessageTalk( ownname+': '+'Las cosas que más le irritan son factores internos suyos.');
-                if sp35=11 then       SpeachForm.SMessageTalk( ownname+': '+'Ama a tu vecino como a tí mismo.');
-                if sp35=12 then       SpeachForm.SMessageTalk( pname+': '+' El cuerpo es un templo y quien desafía al templo sufre.');
-                if sp35=13 then       SpeachForm.SMessageTalk( pname+': '+' Lo que se siembra se cosecha.');
-                if sp35=14 then       SpeachForm.SMessageTalk( pname+': '+' Sus percepciones del mundo son reflexiones de sí mismo.');
-                if sp35=15 then       SpeachForm.SMessageTalk( pname+': '+' Para expresar sus emociones libremente debe liberar su espiritu.');
-                if sp35=16 then       SpeachForm.SMessageTalk( pname+': '+' La avaricia es una emoción pegajoza que puede desfigurar la mente y producir sufrimiento.');
-                if sp35=17 then       SpeachForm.SMessageTalk( pname+': '+' No sobrevive el más fuerte, sino el más colaborador.');
-                if sp35=18 then       SpeachForm.SMessageTalk( pname+': '+' El dinero es la raíz de todo mal, pero si lo comparte con otros, alimentará su espíritu.');
-                if sp35=19 then       SpeachForm.SMessageTalk( pname+': '+' El no juzgamiento de sí mismo y de la existencia es el objetivo de la iluminación.');
-                if sp35=20 then       SpeachForm.SMessageTalk( pname+': '+' Los obstáculos existen solo en la mente.');
-                if sp35=21 then       SpeachForm.SMessageTalk( pname+': '+' El exceso de ataduras pueden bloquear las percepciones. ');
-                if sp35=22 then       SpeachForm.SMessageTalk( pname+': '+' La frustración conduce a la íra, la decepción y la violencia.');
-                if sp35=23 then       SpeachForm.SMessageTalk( pname+': '+' Nuestro trabajo es ampliar nuestro círculo de compasión hasta que lo abarque todo.');
-                if sp35=24 then       SpeachForm.SMessageTalk( pname+': '+' La percepción de otros es a travéz de los fallos del propio corazón.');
-                if sp35=25 then       SpeachForm.SMessageTalk( pname+': '+' Su actitud determina la altitud de su espíritu.');
-                if sp35=26 then       SpeachForm.SMessageTalk( pname+': '+' Hasta que no sepa para donde va, no podrá llegar allí.');
-                if sp35=27 then       SpeachForm.SMessageTalk( pname+': '+' El sí mismo verdadero no es atraído y repelido por las cosas, y siempre está en paz.');
-                if sp35=28 then       SpeachForm.SMessageTalk( pname+': '+' El tiempo para crecer es ahora mismo, pero sea paciente y deje que el crecimiento vaya a su propio ritmo.');
-                if sp35=29 then       SpeachForm.SMessageTalk( pname+': '+' El miedo ataca los riñones.');
-                if sp35=30 then       SpeachForm.SMessageTalk( pname+': '+' Todas las cosas son posibles, es solo una cuestión de tiempo.');
-                if sp35=31 then       SpeachForm.SMessageTalk( pname+': '+' Curate primero tú.');
-                if sp35=32 then       SpeachForm.SMessageTalk( pname+': '+'A medida que un hombre (o una mujer), endurece su corazón se endurece a sí mismo.');
-
-                DeleteFile('Speach.txt');
-                SpeachForm.TalkOption:=True;
-                timer1.enabled:=false;
-        end;
-end;
-
-procedure TBiorythms1.Button27Click(Sender: TObject);
-begin
-        SpeachForm.SMessageTalk('¿Tienes una pregunta para mí?  '+edit3.text);
-        oeg:=random(13);
-        if oeg=2  then begin        SpeachForm.SMessageTalk( 'El miedo es necesario y es una emoción sana en moderación.           '+chr(13)+
-              'Este le ayuda a protejerse, es una herramienta no un maestro.           '+chr(13)+
-              'Su pregunta será respondida pronto, no tenga miedo.');
-
-                end;
-        if oeg<2  then begin      SpeachForm.SMessageTalk( 'Cada camino esta pavimentado con alegría y tristeza.           '+chr(13)+
-              'Ningún camino es perfecto, la perfección existe por los errores.     '+chr(13)+
-              'Elíja sabiamente, intuitivamente, sin miedo y con distinción. La respuesta es sí.');
-                end;
-        if (oeg=3)  then begin      SpeachForm.SMessageTalk('No hay bueno o malo, pero al pensarlo lo convierten en eso.'+chr(13)+
-              'El mundo solo se puede ver a través de su mente y  '+chr(13)+
-              'como juzgue será juzgado/a.          ');
-            end;
-        if (oeg=4)  then begin      SpeachForm.SMessageTalk('Toda la percepción, creencias y culpas  '+chr(13)+
-              'pueden solo generarse en nosotros mismos.      '+chr(13)+
-              'Lo que Ud. ve, lo ve solo en sí mismo/a.');
-                end;
-        if (oeg=5)  then begin      SpeachForm.SMessageTalk('Debe darse a sí mismo/a y a otros'+chr(13)+
-              'el derecho de ser uno mismo/a. '+chr(13)+
-              'Lo que busque encontrará. Cuidado.');
-                end;
-
-        if (oeg=6)  then begin      SpeachForm.SMessageTalk(edit3.text+', Ud. ya sabe la respuesta.');  end;
-        if (oeg=7)  then begin      SpeachForm.SMessageTalk(edit3.text+', su pregunta no es clara.');  end;
-        if (oeg=8)  then begin      SpeachForm.SMessageTalk(edit3.text+', su respuesta es sí.');  end;
-        if (oeg=9)  then begin      SpeachForm.SMessageTalk(edit3.text+', su respuesta es no.');  end;
-        if (oeg=10)  then begin      SpeachForm.SMessageTalk(edit3.text+', su respuesta es talvez.');  end;
-        if (oeg=11)  then begin      SpeachForm.SMessageTalk(edit3.text+', es posible pero costará mucho.');  end;
-        if (oeg=12)  then begin      SpeachForm.SMessageTalk(edit3.text+', es posible pero no probable.');  end;
-        if (oeg=13)  then begin      SpeachForm.SMessageTalk(edit3.text+', encontrará la respuesta cuando calme el corazón y la mente.');  end;
-end;
-
-procedure TBiorythms1.Button28Click(Sender: TObject);
-begin
-        MyFileCreate('Speach.txt');
-        SpeachForm.TalkOption:=True;
-
-        WinExec('Monologw.exe',1);
-
-        sp33:=random(2);  if sp33>0 then     SpeachForm.SMessageTalk('¡Hola '+pname+'!' );
-        sp33:=random(4);  if sp33>3 then    SpeachForm.SMessageTalk('Hola '+pname+', ¿estás hay?');
-        sp33:=random(2);  if sp33>0 then     SpeachForm.SMessageTalk('Te eché de menos, '+pname+', ¿Vas a terminar con el programa o no?');
-        sp33:=random(4);  if sp33>3 then       SpeachForm.SMessageTalk('Siento haberte molestado, '+pname+'.');
-        sp33:=random(4);  if sp33>3 then        SpeachForm.SMessageTalk('Tengo una idea de como puedo ayudarte '+pname+'.');
-        sp33:=random(4);  if sp33>3 then        SpeachForm.SMessageTalk( pname+', trataré de no molestarte otra vez.');
-        sp33:=random(10);  if sp33=3 then         SpeachForm.SMessageTalk( pname+', por favor ve al programa de ''PNL''.');
-        sp33:=random(10);  if sp33=3 then        SpeachForm.SMessageTalk( pname+', por favor ve al programa de ''Espina''.');
-        sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+', por favor vaya al programa de ''Nutrición''.');
-        sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+', busca la causa en la pantalla de ''Causas de Condición''.');
-        sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+', busca la pantalla de ''Homeopatía''.');
-        sp33:=random(10);  if sp33=3 then       SpeachForm.SMessageTalk( pname+', busca la pantalla de ''Terapia''.');
-
-        sp35:=random(33);
-        if sp35=1 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el dinero es solo un espejismo de la mente?');
-        if sp35=2 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el dinero es solo un espejismo de la mente? ');
-        if sp35=3 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que los obstáculos son solo un espejismo de la mente?');
-        if sp35=4 then       SpeachForm.SMessageTalk( ownname+': '+'¿Se da cuenta que el ''yo'' es solo un espejismo de la mente?');
-        if sp35=5 then       SpeachForm.SMessageTalk( ownname+': '+'Sus percepciones del pasado son filtradas a travéz de las emociones del ahora.');
-        if sp35=6 then       SpeachForm.SMessageTalk( ownname+': '+'Los rituales nos ayudan a recordar, pero estos son juegos de la mente.');
-        if sp35=7 then       SpeachForm.SMessageTalk( ownname+': '+'La vida es un proceso de crecimiento espontáneo y desafíos.');
-        if sp35=8 then       SpeachForm.SMessageTalk( ownname+': '+'La íra genera violencia y ataca al hígado.');
-        if sp35=9 then       SpeachForm.SMessageTalk( ownname+': '+'Aprender a controlar sus emociones es esencial para todo crecimiento.');
-        if sp35=10 then       SpeachForm.SMessageTalk( ownname+': '+'Las cosas que más le irritan son factores internos suyos.');
-        if sp35=11 then       SpeachForm.SMessageTalk( ownname+': '+'Ama a tu vecino como a tí mismo.');
-        if sp35=12 then       SpeachForm.SMessageTalk( pname+': '+' El cuerpo es un templo y quien desafía al templo sufre.');
-        if sp35=13 then       SpeachForm.SMessageTalk( pname+': '+' Lo que se siembra se cosecha.');
-        if sp35=14 then       SpeachForm.SMessageTalk( pname+': '+' Sus percepciones del mundo son reflexiones de sí mismo.');
-        if sp35=15 then       SpeachForm.SMessageTalk( pname+': '+' Para expresar sus emociones libremente debe liberar su espiritu.');
-        if sp35=16 then       SpeachForm.SMessageTalk( pname+': '+' La avaricia es una emoción pegajoza que puede desfigurar la mente y producir sufrimiento.');
-        if sp35=17 then       SpeachForm.SMessageTalk( pname+': '+' No sobrevive el más fuerte, sino el más colaborador.');
-        if sp35=18 then       SpeachForm.SMessageTalk( pname+': '+' El dinero es la raíz de todo mal, pero si lo comparte con otros, alimentará su espíritu.');
-        if sp35=19 then       SpeachForm.SMessageTalk( pname+': '+' El no juzgamiento de sí mismo y de la existencia es el objetivo de la iluminación.');
-        if sp35=20 then       SpeachForm.SMessageTalk( pname+': '+' Los obstáculos existen solo en la mente.');
-        if sp35=21 then       SpeachForm.SMessageTalk( pname+': '+' El exceso de ataduras pueden bloquear las percepciones. ');
-        if sp35=22 then       SpeachForm.SMessageTalk( pname+': '+' La frustración conduce a la íra, la decepción y la violencia.');
-        if sp35=23 then       SpeachForm.SMessageTalk( pname+': '+' Nuestro trabajo es ampliar nuestro círculo de compasión hasta que lo abarque todo.');
-        if sp35=24 then       SpeachForm.SMessageTalk( pname+': '+' La percepción de otros es a travéz de los fallos del propio corazón.');
-        if sp35=25 then       SpeachForm.SMessageTalk( pname+': '+' Su actitud determina la altitud de su espíritu.');
-        if sp35=26 then       SpeachForm.SMessageTalk( pname+': '+' Hasta que no sepa para donde va, no podrá llegar allí.');
-        if sp35=27 then       SpeachForm.SMessageTalk( pname+': '+' El sí mismo verdadero no es atraído y repelido por las cosas, y siempre está en paz.');
-        if sp35=28 then       SpeachForm.SMessageTalk( pname+': '+' El tiempo para crecer es ahora mismo, pero sea paciente y deje que el crecimiento vaya a su propio ritmo.');
-        if sp35=29 then       SpeachForm.SMessageTalk( pname+': '+' El miedo ataca los riñones.');
-        if sp35=30 then       SpeachForm.SMessageTalk( pname+': '+' Todas las cosas son posibles, es solo una cuestión de tiempo.');
-        if sp35=31 then       SpeachForm.SMessageTalk( pname+': '+' Curate primero.');
-        if sp35=32 then       SpeachForm.SMessageTalk( pname+': '+'A medida que un hombre endurece su corazón se endurece a sí mismo.');
 end;
 
 procedure TBiorythms1.FormMouseDown(Sender: TObject; Button: TMouseButton;
@@ -4731,17 +4474,6 @@ begin
         time555:=5;
 end;
 
-procedure TBiorythms1.PanelAVIDblClick(Sender: TObject);
-begin
-        Try
-                if MediaPlayer1.Display<> nil then
-                   MediaPlayer1.Stop;
-                MediaPlayer1.Close;
-        Except
-        on EMCIDeviceError do MessageDlg('Pulse ''OK'' para detener el program y salir.', mtWarning,[mbOk], 0);
-        End;
-end;
-
 procedure TBiorythms1.Panel16Click(Sender: TObject);
 begin
         if yellowClose then
@@ -4776,10 +4508,8 @@ begin
         end
         else
         begin
-                ShowMessage('Debe elegir el tipo de relación para proseguir.');
+        ShowMessage('Debe elegir el tipo de relación para proseguir.');
         end;
-
-        
 end;
 
 procedure TBiorythms1.Button36Click(Sender: TObject);
@@ -5346,7 +5076,7 @@ MyChrono.Start;
 Panel1.Top:=536;
 Panel1.Left:=8;
 Panel1.Width:=631;
-Panel1.Caption:='Equilibrando biorritmo de'+GroupBox1.Caption+'...';
+Panel1.Caption:='Equilibrando biorritmo de '+GroupBox1.Caption+'...';
 Panel1.Refresh;
 Panel1.Visible:=True;
         ChangingPulses(50000,555,5555,5,5,1,'00000000','00000000');
@@ -5432,9 +5162,9 @@ Panel1.BringToFront();
 
         button13.enabled:=true;
         button12.enabled:=false;
-        //panel1.visible:=false;
 
-        ChangingPulses(50000,555,5555,5,5,55,'00000000','00000000');
+        ChangingPulses(50000,555,5555,5,5,55,
+        '00000000','00000000');
         cou3:=cou1+random(cou2);
 
         if cou3>100 then cou3:=99+random(5);
@@ -5460,8 +5190,6 @@ Panel1.BringToFront();
         label132.caption:='Promedio virtual de conexión | '+inttostr(aver);
 
         FMain.shaping:=random(105);
-        FRecompensa.label79.caption:=inttostr(shaping);
-  //      if FMain.shaping>FMain.shaping2  then Wawplay('shape.wav',False);;
         timer2.Enabled:=false;
         image7.Visible:=false;
         image8.Visible:=false;
@@ -5662,19 +5390,11 @@ begin
   GetDir(0,vpath2);
   if  OpenPictureDialog2.Execute then  begin
        nombre  :=OpenPictureDialog2.FileName;
-       //showmessage(nombre);
        Image11.Picture.LoadFromFile(nombre);
-
-
         nombrefinal:= ExtractFilename(nombre);
-//        showmessage(nombrefinal);
-
            vpath:=ExtractFileDir(vpath2);
            vpath:=vpath+'\data\Personas';
            Image11.Picture.savetofile(vpath+'\'+nombrefinal);
-
-
-
             Path:=vpath+'\*.jpg';
             Attr:=$0000003F;
             ListBox2.Items.clear;
@@ -5693,37 +5413,23 @@ begin
                 ListBox2.Items.Add(ChangeFileExt(SearchRec.Name,''));
               Result2 := FindNext(SearchRec);
             end;
-
             ListBox2.refresh;
-
-
              ListBox2.ItemIndex := 0;
             nombrefinal := ChangeFileExt(nombrefinal,'');
-           //  showmessage(nombrefinal);
-
             for i:= 0 to ListBox2.Items.Count -1 do begin
-
-
                if  trim(ListBox2.Items [i]) = trim(nombrefinal) then begin
                      ListBox2.ItemIndex := i;
                      loadPic.enabled := true;
                    end;
             end;
-
-
-
-
   end;
   chdir( vpath2 ) ;
-
 end;
 
 procedure TBiorythms1.ButtonborrarClick(Sender: TObject);
 var
  SSS  : String;
    vibPic : array[0..674] of String;
-
-
   ii : integer;
 begin
   FTest_Alterna.pBorraFoto2();
@@ -5766,11 +5472,8 @@ begin
               ListBox2.Items.Add(ChangeFileExt(SearchRec.Name,''));
               Result := FindNext(SearchRec);
             end;
-
             ListBox2.refresh;
 end;
-
-
 procedure TBiorythms1.Button56Click(Sender: TObject);
 begin
 Application.CreateForm(TFVideoCap, FVideoCap);
@@ -5786,18 +5489,10 @@ begin
 
  GetDir(0,vpath2);
  SaveDialogPp:= TSavePictureDialog.create(self);
- //if hWndC <> 0 then begin
-   //   SendMessage(hWndC,  WM_CAP_SAVEDIB,  0,
-   //     longint(pAnsichar( 'c:\test.bmp')));
    SaveDialogPp.DefaultExt := 'jpg';
    SaveDialogPp.Filter := '(*.jpg)|*.jpg';
    SaveDialogPp.InitialDir :=  SSA;
    if  SaveDialogPp.Execute then
-               //SendMessage(hWndC,  WM_CAP_SAVEDIB,  0,
-               //longint(pAnsichar( SaveDialogPp.FileName   )));
-              //  VideoCapX1.SaveFrameJPG (SaveDialogPp.FileName,90);
-
-
                nombre  :=SaveDialogPp.FileName;
                    // showmessage(nombre);
                   VDIR := ExtractFileDir(NOMBRE);
@@ -5805,10 +5500,6 @@ begin
                nombre := stringreplace(nombre,VDIR+'\','',[rfReplaceAll, rfIgnoreCase]);
                 // showmessage(nombre);
            nombre := ChangeFileExt(nombre,'');
-            // showmessage(nombre);
-
-
-
            GetDir(0,vpath);
            vpath:=ExtractFileDir(vpath);
            vpath:=vpath+'\Personas';
@@ -5821,7 +5512,6 @@ begin
                ListBox2.Items.Add(ChangeFileExt(SearchRec.Name,''));
               Result2 := FindNext(SearchRec);
             end;
-
              Path:=vpath+'\*.bmp';
              Attr:=$0000003F;
              Result2 := FindFirst(Path, Attr, SearchRec);
@@ -5844,7 +5534,6 @@ begin
                             except
                                 Image11.canvas.FillRect(Image11.canvas.ClipRect);
                      end;
-
                     end
                     else Begin
                         try
@@ -5858,15 +5547,9 @@ begin
                     //break;
                    end;
             end;
-            //ListBox2.ItemIndex := 4;
-
-          //  BitBtnCerrarWebCamClick(self);  // Value }
- /// end;
    SaveDialogPp:= nil;
    SaveDialogPp.free;
    chdir( vpath2 ) ;
-
-
 end;
 
 procedure TBiorythms1.Label223Click(Sender: TObject);
@@ -5880,7 +5563,6 @@ begin
         inc(no); DM.Info.Appendrecord([no,nil,'']);
         inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE BIORRITMOS -----' ]);
         inc(no); DM.Info.Appendrecord([no,nil,'Edad en días | '+label20.caption ]);
-        //inc(no); DM.Info.Appendrecord([no,nil,label3.caption+' | '+label20.caption ]);
         inc(no); DM.Info.Appendrecord([no,nil,label4.caption+' | '+label21.caption+' | '+label35.caption ]);
         inc(no); DM.Info.Appendrecord([no,nil,label5.caption+' | '+label22.caption+' | '+label36.caption ]);
         inc(no); DM.Info.Appendrecord([no,nil,label6.caption+' | '+label23.caption+' | '+label37.caption ]);

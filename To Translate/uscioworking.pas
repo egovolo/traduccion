@@ -8,14 +8,12 @@ uses
 
 type
   TSCIOworking = class(TForm)
-    Button1: TButton;
     Timer1: TTimer;
     RadioButton1: TRadioButton;
     RadioButton2: TRadioButton;
     RadioButton3: TRadioButton;
     RadioButton4: TRadioButton;
     RadioButton5: TRadioButton;
-    Button3: TButton;
     RadioButton6: TRadioButton;
     Timer1Second: TTimer;
     RadioButton7: TRadioButton;
@@ -24,22 +22,14 @@ type
     CheckBox3: TCheckBox;
     CheckBox4: TCheckBox;
     CheckBox5: TCheckBox;
-    Label4: TLabel;
     CheckBox6: TCheckBox;
     CheckBox7: TCheckBox;
     CheckBox8: TCheckBox;
-    Button7: TButton;
     CheckBox9: TCheckBox;
-    Button8: TButton;
     CheckBox10: TCheckBox;
     CheckBox11: TCheckBox;
     CheckBox12: TCheckBox;
-    Button10: TButton;
-    Label8: TLabel;
-    Button11: TButton;
-    Label9: TLabel;
     RadioGroup1: TRadioGroup;
-    Label10: TLabel;
     Panel1: TPanel;
     SpinEdit1: TSpinEdit;
     SpinEdit2: TSpinEdit;
@@ -61,10 +51,8 @@ type
     Label22: TLabel;
     Button15: TButton;
     Button16: TButton;
-    Label23: TLabel;
     Label24: TLabel;
     Label25: TLabel;
-    Label26: TLabel;
     Label27: TLabel;
     Label28: TLabel;
     Label29: TLabel;
@@ -87,7 +75,6 @@ type
     RadioButton14: TRadioButton;
     Label39: TLabel;
     Bevel3: TBevel;
-    Label40: TLabel;
     Label41: TLabel;
     Label43: TLabel;
     Label44: TLabel;
@@ -108,19 +95,8 @@ type
     Label76: TLabel;
     Label78: TLabel;
     Label79: TLabel;
-    Label81: TLabel;
-    Label83: TLabel;
-    Label84: TLabel;
-    Label85: TLabel;
-    Label86: TLabel;
-    Label87: TLabel;
     Label88: TLabel;
-    Label89: TLabel;
-    Label90: TLabel;
-    Label91: TLabel;
-    Label92: TLabel;
     Label93: TLabel;
-    Label94: TLabel;
     Label95: TLabel;
     Label96: TLabel;
     Label97: TLabel;
@@ -134,7 +110,13 @@ type
     BRifeIniciar: TButton;
     BRifeDetener: TButton;
     TAutomatico: TTimer;
-    procedure Button1Click(Sender: TObject);
+    LEPositivas: TLabel;
+    LENegativas: TLabel;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+
     procedure Timer1Timer(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure RadioButton4Click(Sender: TObject);
@@ -149,17 +131,12 @@ type
     procedure TrackBar1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure RadioButton5Click(Sender: TObject);
-    procedure Button7Click(Sender: TObject);
-    procedure Button8Click(Sender: TObject);
-    procedure Button10Click(Sender: TObject);
-    procedure Button11Click(Sender: TObject);
     procedure RadioGroup1Click(Sender: TObject);
     procedure Label7DblClick(Sender: TObject);
     procedure RadioButton8Click(Sender: TObject);
     procedure SpinEdit1Exit(Sender: TObject);
     procedure Button15Click(Sender: TObject);
     procedure Button16Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure RadioButton10Click(Sender: TObject);
     procedure RadioButton11Click(Sender: TObject);
@@ -174,6 +151,8 @@ type
     procedure BRifeDetenerClick(Sender: TObject);
     procedure TAutomaticoTimer(Sender: TObject);
     procedure CBAutomaticoClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -199,8 +178,6 @@ type
      Procedure TreatTimer(PJelalak : String;POutFreki : Integer;OutFMax,ChangeMS,Cnum : Integer;PLevel : Byte;PAmp :Real;PGain : Byte;Ptime : Integer);
      Procedure Treat(PJelalak : String;POutFreki : Integer;PLevel,PAmp,PGain : Byte;Ptime : Integer);
      procedure Contador();
-     procedure Ocuparse();
-     procedure Riesgos();
      procedure LimpiaCBoxes();
   end;
 
@@ -221,34 +198,6 @@ implementation
 
 Uses Ucomport, Testdata, patform, Therapy, Patname, Calibrat, Risks,freq2, //frmScroll,
   Spine, Denta, Age, trivecgame, Activat, Cnscios, WaveForm;
-
-
- {
-procedure TSCIOworking.leds(b:word);
-begin
-wheader;
-wcom(alap);
-wcom(7);
-wcom(hi(b));
-wcom(lo(b));
-crc;
-fend:=true;
-If not oke Then ErrorCommand;
-end;
-  }
-
-
-{ Editor = 'write.exe' or 'notepad.exe'}
-Procedure MyWinExecPath(Path : String;Sfile : String);
-Var S : String;
-    S1: String;
-    K : array[0..255] of char;
-Begin
-  S1:=Path+Sfile;
-  StrPCopy(K,S1);
-  Winexec(K,1);
-end;
-
 
 Procedure TSCIOworking.TreatTimer(PJelalak : String;POutFreki : Integer;OutFMax,ChangeMS,Cnum : Integer;PLevel : Byte;PAmp :Real;PGain : Byte;Ptime : Integer);
 var     iii,zzz,n,i:integer;
@@ -718,11 +667,6 @@ begin
  if not FormComPort.ok then showmessage('Por favor reinicie el programa y resetee la caja de interfaz.');
 end;
 
-procedure TSCIOworking.Button1Click(Sender: TObject);
-begin
- { close;}
-end;
-
 procedure TSCIOworking.Timer1Timer(Sender: TObject);
 begin
 if  (checkbox6.checked=true) or (checkbox7.checked=true) then
@@ -786,22 +730,12 @@ end;
 
 procedure TSCIOworking.FormShow(Sender: TObject);
 begin
-If Panel1.Visible = True Then TAutomatico.Enabled := False
-Else
-TAutomatico.Enabled := True;
+If CBAutomatico.Checked = True Then TAutomatico.Enabled := True;
+If Panel1.Visible = True Then TAutomatico.Enabled := False;
 Timer4.Enabled := True;
-If Panel1.Visible = True Then SCIOWorking.ClientHeight := 314 Else SCIOWorking.ClientHeight := 221;
+If Panel1.Visible = True Then SCIOWorking.ClientHeight := 290 Else SCIOWorking.ClientHeight := 221;
 If Panel1.Visible = True Then Timer1.Enabled := False Else Timer1.Enabled := True;
 nofeel1:=0;
-label10.visible:=false;
-{if VirtualSwitch=true  then begin
-   label8.visible:=true;
-  button10.caption:='Deshacer modo virtual';
-end;
-if VirtualSwitch=false  then begin
-     label8.visible:=false;
-  button10.caption:='Establecer modo virtual';
-end;   }
 if patform1<>nil then soc:=patform1.soc;
 if (soc<20)or(dent=10) then soc:=20;
 if (soc>201) then soc:=125;
@@ -986,7 +920,7 @@ SCIOworking.ManLedsall:=True;
      GetDir(0,S);
      S:=ExtractFileDir(S);
      S:=S+'\Iridology\';
-     MyWinExecPath(S,'Irid.exe');
+ //    MyWinExecPath(S,'Irid.exe');
 
   end;
 
@@ -1070,50 +1004,6 @@ begin
 JelalakChange:=True;
 end;
 
-procedure TSCIOworking.Button7Click(Sender: TObject);
-begin
-button7.visible:=false;
-showmessage('La terapia está siendo abortada y reseteada. Por favor pulse ''OK'' y espere. La información actual no es válida.');
-application.Processmessages;
-testform1.xyz:=400;
-Close;
-end;
-
-procedure TSCIOworking.Button8Click(Sender: TObject);
-begin
-stopScio:=true;
-application.Processmessages;
-if testform1<>nil then testform1.ScioReset1.Visible:=true;
-application.Processmessages;
-if riskchart<>nil then riskchart.zyx:=10;
-button8.visible:=false;
-label10.visible:=true;
-end;
-
-procedure TSCIOworking.Button10Click(Sender: TObject);
-begin
- if button10.caption='Deshacer modo virtual' then begin
- VirtualSwitch:=false;
-  label8.visible:=false;
-//trackbar1.position:=1+random(14);
-  button10.caption:='Establecer virtual';
-  end;
-   if button10.caption='Establecer virtual' then begin
- VirtualSwitch:=true;
-//  trackbar1.position:=0;
- label8.visible:=true;
-  button10.caption:='Deshacer modo virtual';
-  end;
-end;
-
-procedure TSCIOworking.Button11Click(Sender: TObject);
-begin
-label9.visible:=true; label9.refresh;
-button11.visible:=false;
-if riskchart<>nil then riskchart.xyz:=10;
-if dental<>nil then dental.vart:=1;
-end;
-
 procedure TSCIOworking.RadioGroup1Click(Sender: TObject);
 begin
  if radiogroup1.itemindex=0 then wirequadrant:='';
@@ -1133,95 +1023,11 @@ end;
 procedure TSCIOworking.RadioButton8Click(Sender: TObject);
 begin
 CBAutomatico.checked:=true;
-label23.visible:=true;
 spinedit1.enabled:=false;
 spinedit2.enabled:=false;
 spinedit3.enabled:=false;
 spinedit4.enabled:=false;
- RadioGroup2.enabled:=true;
-   button15.caption:='Iniciar terapia ''EAF''';
-      button16.caption:='Detener terapia ''EAF''';
- if riskchart<>nil then begin
-if riskchart.ims>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.emo>199 then label23.caption:=' | Emociones';
-if riskchart.infl>199 then label23.caption:='| Inflamación ';
-if riskchart.can>199 then label23.caption:='| Degeneración ';
-if riskchart.str>199 then label23.caption:='| Reducción de estrés ';
-if riskchart.infe>199 then label23.caption:='| Estimulación del sistema inmunitario | Infección';
-if riskchart.tox>199 then label23.caption:='| Toxicidad y desintoxicación ';
-if riskchart.car>199 then label23.caption:='| Sistema cardiovascular ';
-if riskchart.Nut>199 then label23.caption:='| Nutrientes y nutrición ';
-if riskchart.hor>199 then label23.caption:='| Hormonas';
-if riskchart.lym>199 then label23.caption:='| Sistema linfático ';
-if riskchart.bld>199 then label23.caption:='| Rx para sangre ';
-if riskchart.cir>199 then label23.caption:='| Sistema circulatorio ';
-if riskchart.cho>199 then label23.caption:='| Colesterol ';
-if riskchart.oxi>199 then label23.caption:='| Oxidación ';
-if riskchart.hyd>199 then label23.caption:='| Hidratación ';
-if riskchart.hypa>199 then label23.caption:='| Rx para sarcodes ';
-if riskchart.tra>199 then label23.caption:='| Rx para traumas y lesiones ';
-if riskchart.inh>199 then label23.caption:='| ADN heredado ';
-if riskchart.liv>199 then label23.caption:='| Hígado';
-if riskchart.kid>199 then label23.caption:='| Riñones';
-if riskchart.dig>199 then label23.caption:='| Digestión ';
-if riskchart.cnt>199 then label23.caption:='| Tejido conectivo, reducción del estrés en la columna vertebral ';
-if riskchart.bon>199 then label23.caption:='| Sistema óseo';
-if riskchart.acid>199 then label23.caption:='| Balanceamiento del pH ';
-if riskchart.env>199 then label23.caption:='| Desintoxicación medio ambiental ';
-if riskchart.aler>199 then label23.caption:='| Alergias ';
-if riskchart.rad>199 then label23.caption:='| Desintoxicación de radiación ';
-if riskchart.bac>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.fun>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.vir>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.par>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.ameo>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.fdp>199 then label23.caption:='| Estimulación del sistema inmune ';
-if riskchart.sug>199 then label23.caption:='| Regulación de azúcar ';
-if riskchart.ner>199 then label23.caption:='| Reducción de estrés en nervios ';
-if riskchart.sener>199 then label23.caption:='| Reducción de estrés en nervios ';
-if riskchart.res>199 then label23.caption:='| Sarcodes respiratorios ';
-if riskchart.cog>199 then label23.caption:='| Cognicción';
-
-if riskchart.ims>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.emo>199 then label23.caption:=label23.caption+'| Emociones';
-if riskchart.infl>199 then label23.caption:=label23.caption+'| Inflamación ';
-if riskchart.can>199 then label23.caption:=label23.caption+'| Degeneración ';
-if riskchart.str>199 then label23.caption:=label23.caption+'| Reducción de estrés ';
-if riskchart.infe>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmunitario | Infección';
-if riskchart.tox>199 then label23.caption:=label23.caption+'| Toxicidad y desintoxicación ';
-if riskchart.car>199 then label23.caption:=label23.caption+'| Sistema cardiovascular ';
-if riskchart.Nut>199 then label23.caption:=label23.caption+'| Nutrientes y nutrición ';
-if riskchart.hor>199 then label23.caption:=label23.caption+'| Hormonas';
-if riskchart.lym>199 then label23.caption:=label23.caption+'| Sistema linfático ';
-if riskchart.bld>199 then label23.caption:=label23.caption+'| Rx para sangre ';
-if riskchart.cir>199 then label23.caption:=label23.caption+'| Sistema circulatorio ';
-if riskchart.cho>199 then label23.caption:=label23.caption+'| Colesterol ';
-if riskchart.oxi>199 then label23.caption:=label23.caption+'| Oxidación ';
-if riskchart.hyd>199 then label23.caption:=label23.caption+'| Hidratación ';
-if riskchart.hypa>199 then label23.caption:=label23.caption+'| Rx para sarcodes ';
-if riskchart.tra>199 then label23.caption:=label23.caption+'| Rx para traumas y lesiones ';
-if riskchart.inh>199 then label23.caption:=label23.caption+'| ADN heredado ';
-if riskchart.liv>199 then label23.caption:=label23.caption+'| Hígado';
-if riskchart.kid>199 then label23.caption:=label23.caption+'| Riñones';
-if riskchart.dig>199 then label23.caption:=label23.caption+'| Digestión ';
-if riskchart.cnt>199 then label23.caption:=label23.caption+'| Tejido conectivo, reducción del estrés en la columna vertebral ';
-if riskchart.bon>199 then label23.caption:=label23.caption+'| Sistema óseo';
-if riskchart.acid>199 then label23.caption:=label23.caption+'| Balanceamiento del pH ';
-if riskchart.env>199 then label23.caption:=label23.caption+'| Desintoxicación medio ambiental ';
-if riskchart.aler>199 then label23.caption:=label23.caption+'| Alergias ';
-if riskchart.rad>199 then label23.caption:=label23.caption+'| Desintoxicación de radiación ';
-if riskchart.bac>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.fun>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.vir>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.par>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.ameo>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.fdp>199 then label23.caption:=label23.caption+'| Estimulación del sistema inmune ';
-if riskchart.sug>199 then label23.caption:=label23.caption+'| Regulación de azúcar ';
-if riskchart.ner>199 then label23.caption:=label23.caption+'| Reducción de estrés en nervios ';
-if riskchart.sener>199 then label23.caption:=label23.caption+'| Reducción de estrés en nervios ';
-if riskchart.res>199 then label23.caption:=label23.caption+'| Sarcodes respiratorios ';
-if riskchart.cog>199 then label23.caption:=label23.caption+'| Cognicción ';
-  end;
+RadioGroup2.enabled:=true;
 end;
 
 procedure TSCIOworking.SpinEdit1Exit(Sender: TObject);
@@ -1235,9 +1041,6 @@ begin
 If CBAutomatico.Checked = True Then TAutomatico.Enabled := True;
 Timer1.Enabled := True;
 MyChrono.Start;
-Label23.Caption := '---';
-Label26.Caption := '---';
-//button2.caption:='Caja de interfaz funcionando correctamente...';
 SCIOworking.RadioGroup2.enabled:=true;
 label15.visible:=true;
 label16.visible:=true;
@@ -1256,10 +1059,7 @@ label34.visible:=true;
 label35.visible:=true;
 label36.visible:=true;
  Formcomport.curentfreq:=SCIOworking.SpinEdit1.Value;
-//PCerrar.visible:=false;
-Riesgos();
-Ocuparse();
-          label27.caption:='000';
+  label27.caption:='000';
   Button16.visible:=True;
   Button15.visible:=False;
   FormComPort.Sinus;
@@ -1299,8 +1099,6 @@ Ocuparse();
       oeg:=random(10); if oeg=5 then checkbox12.checked:=false;
 //      if (trackbar1.position>5 ) and (trackbar1.position<27) then trackbar1.position:=trackbar1.position+random(2)-random(2);
      if (trackbar1.position>25 )  then trackbar1.position:=trackbar1.position+random(2)-random(10);
-
-Ocuparse();
 
 Contador();
   If label27.Caption='100' Then
@@ -1526,6 +1324,8 @@ end;
 procedure TSCIOworking.Button16Click(Sender: TObject);
 begin
 TAutomatico.Enabled := False;
+LENegativas.Visible := False;
+LEPositivas.Visible := False;
 label15.visible:=false;
 label16.visible:=false;
 label19.visible:=false;
@@ -1551,18 +1351,10 @@ Timer1.Enabled := False;
 MyChrono.Stop;
 Sleep(1000);
 Close;
+If Button2.Caption = 'Rectificar todos fX >' Then FMain.PCerrar1Click(Sender);
 end;
 
-procedure TSCIOworking.Button3Click(Sender: TObject);
-begin
-label9.visible:=true; label9.refresh;
-button11.visible:=false;
-button3.visible:=false;
-if riskchart<>nil then riskchart.xyz:=10;
-if dental<>nil then dental.vart:=1;
-SCIOworking.trackbar1.position:=40;
-nofeel1:=25;
-end;
+
 
 procedure TSCIOworking.Button2Click(Sender: TObject);
 begin
@@ -1681,9 +1473,6 @@ begin
  Label27.Caption := '000';
  Label27.Refresh;
 if riskchart<>nil then riskchart.xyz:=10;
-button2.caption:='Caja de interfaz funcionando correctamente...';
-   button16.caption:='Detener terapia Rx';
-  button15.caption:='Iniciar terapia Rx';
   button16.Visible:=false;
   button15.visible:=true;
 Panel1.Visible := False;
@@ -1757,7 +1546,6 @@ end;
 procedure TSCIOworking.BRifeIniciarClick(Sender: TObject);
 begin
 If CBAutomatico.Checked = True Then TAutomatico.Enabled := True;
-TAutomatico.Enabled := True;
      OutFreqBegin:=SpinEdit1.Value;
      OutFreqMAx:=SpinEdit2.Value;
      ChangeNum:=SpinEdit3.Value;
@@ -1767,8 +1555,6 @@ Timer1.Enabled := True;
 MyChrono.Start;
   BRifeIniciar.Visible := False;
   BRifeDetener.Visible := True;
-Label23.Caption := '---';
-Label26.Caption := '---';
 SCIOworking.RadioGroup2.enabled:=true;
 label15.visible:=true;
 label16.visible:=true;
@@ -1787,8 +1573,6 @@ label34.visible:=true;
 label35.visible:=true;
 label36.visible:=true;
  Formcomport.curentfreq:=SCIOworking.SpinEdit1.Value;
-Riesgos();
-Ocuparse();
 label27.caption:='000';
   Button16.visible:=True;
   Button15.visible:=False;
@@ -1817,7 +1601,6 @@ label27.caption:='000';
     oeg:=random(10); if oeg=5 then checkbox11.checked:=false;
       oeg:=random(10); if oeg=5 then checkbox12.checked:=false;
 if (trackbar1.position>25 )  then trackbar1.position:=trackbar1.position+random(2)-random(10);
-Ocuparse();
 Contador();
   If label27.Caption='100' Then
   Begin
@@ -1846,6 +1629,8 @@ end;
 procedure TSCIOworking.BRifeDetenerClick(Sender: TObject);
 begin
 TAutomatico.Enabled := False;
+LENegativas.Visible := False;
+LEPositivas.Visible := False;
 label15.visible:=false;
 label16.visible:=false;
 label19.visible:=false;
@@ -1871,12 +1656,18 @@ Timer1.Enabled := False;
 MyChrono.Stop;
 Sleep(1000);
 Close;
+If Button2.Caption = 'Rectificar todos fX >' Then FMain.PCerrar1Click(Sender);
 end;
 
 procedure TSCIOworking.TAutomaticoTimer(Sender: TObject);
 var
 genio : integer;
 begin
+genio:=random(10);
+if genio = 5 then BENegativas.Click;
+if genio = 3 then BEPositivas.Click;
+LENegativas.Visible := True;
+LEPositivas.Visible := True;
 genio := random(12);
 if genio < 2 Then RadioButton1.Checked := True;
 if genio = 2 Then RadioButton2.Checked := True;
@@ -1953,6 +1744,13 @@ begin
 If CBAutomatico.Checked = True Then TAutomatico.Enabled := True
 Else
 TAutomatico.Enabled := False;
+If CBAutomatico.Checked = True Then Begin
+LENegativas.Visible := True;
+LEPositivas.Visible := True;
+end else begin
+LENegativas.Visible := False;
+LEPositivas.Visible := False;
+end;
 end;
 
 procedure TSCIOworking.Contador();
@@ -1961,12 +1759,10 @@ begin
  soc1:=random(soc);
     if (soc1>7) and (soc1<10) then label27.caption:='10';
   end;
-
   if label27.caption='10' then begin
  soc1:=random(soc);
     if (soc1>7) and (soc1<10) then label27.caption:='20';
   end;
-
   if label27.caption='20' then begin
  soc1:=random(soc);
     if (soc1>7) and (soc1<10) then label27.caption:='30';
@@ -1995,202 +1791,25 @@ begin
  soc1:=random(soc);
   if (soc1>7) and (soc1<10) then label27.caption:='90';
   end;
-  if label27.caption='90' then begin
-    if (soc1>7) and (soc1<10) then label27.caption:='95';
-  end;
-    if label27.caption='95' then begin
+    if label27.caption='90' then begin
  soc1:=random(soc);
     if (soc1>7) and (soc1<10) then label27.caption:='100';
     testform1.autonlp:=testform1.autonlp+20;
     end;
     end;
 
-procedure TSCIOworking.Ocuparse();
+procedure TSCIOworking.BENegativasClick(Sender: TObject);
 begin
-    oeg:=random(10);
-if oeg=5 then begin
-    oeg:=random(55);
-if oeg=1    then  label23.caption:='| Ocúpese de: regresión ';
-if oeg= 2   then  label23.caption:='| Ocúpese de: agresividad ';
-if oeg=3    then  label23.caption:='| Ocúpese de: íra ';
-if oeg=4    then  label23.caption:='| Ocúpese de: ansiedad ';
-if oeg=5    then  label23.caption:='| Ocúpese de: conciencia ';
-if oeg=6    then  label23.caption:='| Ocúpese de: tristeza ';
-if oeg=7    then  label23.caption:='| Ocúpese de: culpabilidad ';
-if oeg=8    then  label23.caption:='| Ocúpese de: autismo ';
-if oeg=9    then  label23.caption:='| Ocúpese de: negación ';
-if oeg=10    then  label23.caption:='| Ocúpese de: descuido ';
-if oeg=11    then  label23.caption:='| Ocúpese de: desilusión ';
-if oeg=12    then  label23.caption:='| Ocúpese de: depresión ';
-if oeg=13    then  label23.caption:='| Ocúpese de: poder ';
-if oeg=14    then  label23.caption:='| Ocúpese de: duda de sí mismo ';
-if oeg=15    then  label23.caption:='| Ocúpese de: temor ';
-if oeg=16    then  label23.caption:='| Ocúpese de: confusión ';
-if oeg=17    then  label23.caption:='| Ocúpese de: duda ';
-if oeg=18    then  label23.caption:='| Ocúpese de: celos ';
-if oeg=19    then  label23.caption:='| Ocúpese de: alegría ';
-if oeg=20    then  label23.caption:='| Ocúpese de: lujuria ';
-if oeg=21    then  label23.caption:='| Ocúpese de: avaricia ';
-if oeg=22    then  label23.caption:='| Ocúpese de: poderes extra sensoriales ';
-if oeg=23    then  label23.caption:='| Ocúpese de: dolor psíquico ';
-if oeg=24    then  label23.caption:='| Ocúpese de: pasividad ';
-if oeg=25    then  label23.caption:='| Ocúpese de: proyección ';
-if oeg=26    then  label23.caption:='| Ocúpese de: racionalización ';
-if oeg=27    then  label23.caption:='| Ocúpese de: imprudencia ';
-if oeg=28    then  label23.caption:='| Ocúpese de: preocupación ';
-if oeg=29    then  label23.caption:='| Ocúpese de: abandono ';
-if oeg=30    then  label23.caption:='| Ocúpese de: avergonzamiento ';
-if oeg=31    then  label23.caption:='| Ocúpese de: traición ';
-if oeg=32    then  label23.caption:='| Ocúpese de: no sentirse entendido ';
-if oeg=33    then  label23.caption:='| Ocúpese de: curiosidad ';
-if oeg=34    then  label23.caption:='| Ocúpese de: sobrecogimiento ';
-if oeg=35    then  label23.caption:='| Ocúpese de: conflicto religioso ';
-if oeg=36    then  label23.caption:='| Ocúpese de: conflicto de identidad ';
-if oeg=37    then  label23.caption:='| Ocúpese de: resistencia al cambio ';
-if oeg=38    then  label23.caption:='| Ocúpese de: nerviosismo ';
-if oeg=39    then  label23.caption:='| Ocúpese de: risa ';
-if oeg=40    then  label23.caption:='| Ocúpese de: entusiasmo ';
-if oeg=41    then  label23.caption:='| Ocúpese de: vanidad ';
-if oeg=42    then  label23.caption:='| Ocúpese de: negociación ';
-if oeg=43    then  label23.caption:='| Ocúpese de: coráje ';
-if oeg=44    then  label23.caption:='| Ocúpese de: vergüenza ';
-if oeg=45    then  label23.caption:='| Ocúpese de: monotonía ';
-if oeg=46    then  label23.caption:='| Ocúpese de: necesidad de cambio ';
-if oeg=47    then  label23.caption:='| Ocúpese de: observación ';
-if oeg=48    then  label23.caption:='| Ocúpese de: antagonismo ';
-if oeg=49    then  label23.caption:='| Ocúpese de: sensualidad ';
-if oeg=50    then  label23.caption:='| Ocúpese de: espiritualidad ';
-if oeg=51    then  label23.caption:='| Ocúpese de: sexualidad ';
-if oeg=52    then  label23.caption:='| Ocúpese de: adicción ';
-end;
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+LENegativas.Caption := ' Despejando emoción negativa:'+LBENegativas.Items[LBENegativas.ItemIndex];
 end;
 
-procedure TSCIOworking.Riesgos();
+procedure TSCIOworking.BEPositivasClick(Sender: TObject);
 begin
-if riskchart<>nil then begin
-if riskchart.ims>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.emo>110 then label26.caption:='| Emociones ';
-if riskchart.infl>110 then label26.caption:='| Inflamación ';
-if riskchart.can>110 then label26.caption:='| Degeneración ';
-if riskchart.str>110 then label26.caption:='| Reducción de estrés ';
-if riskchart.infe>110 then label26.caption:='| Estimulación del sistema inmune | Infección ';
-if riskchart.tox>110 then label26.caption:='| Toxicidad y desintoxicación ';
-if riskchart.car>110 then label26.caption:='| Sistema cardiovascular ';
-if riskchart.Nut>110 then label26.caption:='| Nutrientes y nutrición ';
-if riskchart.hor>110 then label26.caption:='| Sistema hormonal ';
-if riskchart.lym>110 then label26.caption:='| Sistema linfático ';
-if riskchart.bld>110 then label26.caption:='| Rx para sangre ';
-if riskchart.cir>110 then label26.caption:='| Sistema circulatorio ';
-if riskchart.cho>110 then label26.caption:='| Colesterol ';
-if riskchart.oxi>110 then label26.caption:='| Oxidación ';
-if riskchart.hyd>110 then label26.caption:='| Hidratación ';
-if riskchart.hypa>110 then label26.caption:='| Rx para sarcodes ';
-if riskchart.tra>110 then label26.caption:='| Rx para traumas y lesiones ';
-if riskchart.inh>110 then label26.caption:='| ADN heredado ';
-if riskchart.liv>110 then label26.caption:='| Hígado ';
-if riskchart.kid>110 then label26.caption:='| Riñones ';
-if riskchart.dig>110 then label26.caption:=' Digestion,';
-if riskchart.cnt>110 then label26.caption:='| Tejido conectivo, reducción del estrés en la columna vertebral ';
-if riskchart.bon>110 then label26.caption:='| Huesos ';
-if riskchart.acid>110 then label26.caption:='| Balanceamiento del pH ';
-if riskchart.env>110 then label26.caption:='| Desintoxicación medio ambiental ';
-if riskchart.aler>110 then label26.caption:='| Alergias ';
-if riskchart.rad>110 then label26.caption:='| Desintoxicación de radiación ';
-if riskchart.bac>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fun>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.vir>110 then label26.caption:='| Estimulación del sistema inmune ' ;
-if riskchart.par>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.ameo>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fdp>110 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.sug>110 then label26.caption:='| Regulación de azúcar ';
-if riskchart.ner>110 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.sener>110 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.res>110 then label26.caption:='| Sarcodes respiratorios ';
-if riskchart.cog>110 then label26.caption:='| Cognicción ';
-if riskchart.emo>110 then label26.caption:='| Emociones ';
-if riskchart.infl>110 then label26.caption:='| Inflamación ';
-if riskchart.can>110 then label26.caption:='| Degeneración ';
-if riskchart.str>110 then label26.caption:='| Reducción de estrés ';
-//
-if riskchart.ims>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.emo>199 then label26.caption:='| Emociones ';
-if riskchart.infl>199 then label26.caption:='| Inflamación ';
-if riskchart.can>199 then label26.caption:='| Degeneración ';
-if riskchart.str>199 then label26.caption:='| Reducción de estrés ';
-if riskchart.infe>199 then label26.caption:='| Estimulación del sistema inmune | Infección ';
-if riskchart.tox>199 then label26.caption:='| Toxicidad y desintoxicación ';
-if riskchart.car>199 then label26.caption:='| Sistema cardiovascular ';
-if riskchart.Nut>199 then label26.caption:='| Nutrientes y nutrición ';
-if riskchart.hor>199 then label26.caption:='| Sistema hormonal ';
-if riskchart.lym>199 then label26.caption:='| Sistema linfático ';
-if riskchart.bld>199 then label26.caption:='| Rx para sangre ';
-if riskchart.cir>199 then label26.caption:='| Sistema circulatorio ';
-if riskchart.cho>199 then label26.caption:='| Colesterol ';
-if riskchart.oxi>199 then label26.caption:='| Oxidación ';
-if riskchart.hyd>199 then label26.caption:='| Hidratación ';
-if riskchart.hypa>199 then label26.caption:='| Rx para sarcodes ';
-if riskchart.tra>199 then label26.caption:='| Rx para traumas y lesiones ';
-if riskchart.inh>199 then label26.caption:='| ADN heredado ';
-if riskchart.liv>199 then label26.caption:='| Hígado ';
-if riskchart.kid>199 then label26.caption:='| Riñones ';
-if riskchart.dig>199 then label26.caption:=' Digestion,';
-if riskchart.cnt>199 then label26.caption:='| Tejido conectivo, reducción del estrés en la columna vertebral ';
-if riskchart.bon>199 then label26.caption:='| Huesos ';
-if riskchart.acid>199 then label26.caption:='| Balanceamiento del pH ';
-if riskchart.env>199 then label26.caption:='| Desintoxicación medio ambiental ';
-if riskchart.aler>199 then label26.caption:='| Alergias ';
-if riskchart.rad>199 then label26.caption:='| Desintoxicación de radiación ';
-if riskchart.bac>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fun>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.vir>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.par>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.ameo>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fdp>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.sug>199 then label26.caption:='| Regulación de azúcar ';
-if riskchart.ner>199 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.sener>199 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.res>199 then label26.caption:='| Sarcodes respiratorios ';
-if riskchart.cog>199 then label26.caption:='| Cognicción ';
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+LEPositivas.Caption := ' Potencializando emoción positiva:'+LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
 
-if riskchart.ims>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.emo>199 then label26.caption:='| Emociones ';
-if riskchart.infl>199 then label26.caption:='| Inflamación ';
-if riskchart.can>199 then label26.caption:='| Degeneración ';
-if riskchart.str>199 then label26.caption:='| Reducción de estrés ';
-if riskchart.infe>199 then label26.caption:='| Estimulación del sistema inmune | Infección ';
-if riskchart.tox>199 then label26.caption:='| Toxicidad y desintoxicación ';
-if riskchart.car>199 then label26.caption:='| Sistema cardiovascular ';
-if riskchart.Nut>199 then label26.caption:='| Nutrientes y nutrición ';
-if riskchart.hor>199 then label26.caption:='| Sistema hormonal ';
-if riskchart.lym>199 then label26.caption:='| Sistema linfático ';
-if riskchart.bld>199 then label26.caption:='| Rx para sangre ';
-if riskchart.cir>199 then label26.caption:='| Sistema circulatorio ';
-if riskchart.cho>199 then label26.caption:='| Colesterol ';
-if riskchart.oxi>199 then label26.caption:='| Oxidación ';
-if riskchart.hyd>199 then label26.caption:='| Hidratación ';
-if riskchart.hypa>199 then label26.caption:='| Rx para sarcodes ';
-if riskchart.tra>199 then label26.caption:='| Rx para traumas y lesiones ';
-if riskchart.inh>199 then label26.caption:='| ADN heredado ';
-if riskchart.liv>199 then label26.caption:='| Hígado ';
-if riskchart.kid>199 then label26.caption:='| Riñones ';
-if riskchart.dig>199 then label26.caption:='| Digestión ';
-if riskchart.cnt>199 then label26.caption:='| Tejido conectivo, reducción del estrés en la columna vertebral ';
-if riskchart.bon>199 then label26.caption:='| Huesos ';
-if riskchart.acid>199 then label26.caption:='| Balanceamiento del pH ';
-if riskchart.env>199 then label26.caption:='| Desintoxicación medio ambiental ';
-if riskchart.aler>199 then label26.caption:='| Alergias ';
-if riskchart.rad>199 then label26.caption:='| Desintoxicación de radiación ';
-if riskchart.bac>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fun>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.vir>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.par>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.ameo>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.fdp>199 then label26.caption:='| Estimulación del sistema inmune ';
-if riskchart.sug>199 then label26.caption:='| Regulación de azúcar ';
-if riskchart.ner>199 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.sener>199 then label26.caption:='| Reducción de estrés en nervios ';
-if riskchart.res>199 then label26.caption:='| Sarcodes respiratorios ';
-if riskchart.cog>199 then label26.caption:='| Cognicción ';
-end;
-end;
 end.

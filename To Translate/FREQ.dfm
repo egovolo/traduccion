@@ -1,12 +1,10 @@
 object freq1: Tfreq1
-  Left = 53
-  Top = 209
+  Left = 64
+  Top = 141
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Frecuencias + Patrones Eléctricos ::: '
-  ClientHeight = 625
+  Caption = '::: gENiO® iOS ::: Frecuencias + Patrones Eléctricos ::: '
+  ClientHeight = 709
   ClientWidth = 1004
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -27,13 +25,13 @@ object freq1: Tfreq1
     Left = 0
     Top = 0
     Width = 1004
-    Height = 613
+    Height = 697
     Align = alClient
     Stretch = True
   end
   object Label41: TLabel
     Left = 32
-    Top = 360
+    Top = 344
     Width = 169
     Height = 16
     Caption = 'CAMPO NULO PROTEGIDO'
@@ -47,13 +45,13 @@ object freq1: Tfreq1
     Visible = False
   end
   object Label4: TLabel
-    Left = 16
-    Top = 416
+    Left = 8
+    Top = 498
     Width = 103
     Height = 13
     Caption = 'Frecuencia promedio:'
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
+    Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
@@ -61,15 +59,15 @@ object freq1: Tfreq1
     Transparent = True
   end
   object Label55: TLabel
-    Left = 12
-    Top = 684
+    Left = 1004
+    Top = 284
     Width = 4
     Height = 13
     Caption = '-'
   end
   object Label153: TLabel
     Left = 140
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '1'
@@ -83,7 +81,7 @@ object freq1: Tfreq1
   end
   object Label154: TLabel
     Left = 168
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '2'
@@ -97,7 +95,7 @@ object freq1: Tfreq1
   end
   object Label155: TLabel
     Left = 196
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '3'
@@ -111,7 +109,7 @@ object freq1: Tfreq1
   end
   object Label156: TLabel
     Left = 224
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '4'
@@ -125,7 +123,7 @@ object freq1: Tfreq1
   end
   object Label157: TLabel
     Left = 252
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '5'
@@ -139,7 +137,7 @@ object freq1: Tfreq1
   end
   object Label158: TLabel
     Left = 284
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '6'
@@ -153,7 +151,7 @@ object freq1: Tfreq1
   end
   object Label159: TLabel
     Left = 316
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '7'
@@ -167,7 +165,7 @@ object freq1: Tfreq1
   end
   object Label160: TLabel
     Left = 348
-    Top = 327
+    Top = 311
     Width = 7
     Height = 15
     Caption = '8'
@@ -179,9 +177,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label27: TLabel
-    Left = 16
-    Top = 436
+  object LCausas: TLabel
+    Left = 4
+    Top = 514
     Width = 12
     Height = 13
     Caption = '---'
@@ -193,9 +191,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label28: TLabel
-    Left = 16
-    Top = 454
+  object LOrganosGlandulas: TLabel
+    Left = 4
+    Top = 530
     Width = 12
     Height = 13
     Caption = '---'
@@ -207,9 +205,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label29: TLabel
-    Left = 16
-    Top = 528
+  object LEPositivas: TLabel
+    Left = 4
+    Top = 594
     Width = 12
     Height = 13
     Caption = '---'
@@ -221,9 +219,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label30: TLabel
-    Left = 16
-    Top = 548
+  object LENegativas: TLabel
+    Left = 4
+    Top = 610
     Width = 12
     Height = 13
     Caption = '---'
@@ -235,9 +233,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label31: TLabel
-    Left = 16
-    Top = 472
+  object LAVM: TLabel
+    Left = 4
+    Top = 546
     Width = 12
     Height = 13
     Caption = '---'
@@ -249,9 +247,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label34: TLabel
-    Left = 16
-    Top = 568
+  object LToxinas: TLabel
+    Left = 4
+    Top = 626
     Width = 12
     Height = 13
     Caption = '---'
@@ -263,9 +261,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label35: TLabel
-    Left = 16
-    Top = 490
+  object LMeridianos: TLabel
+    Left = 4
+    Top = 562
     Width = 12
     Height = 13
     Hint = '--'
@@ -278,9 +276,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label36: TLabel
-    Left = 16
-    Top = 588
+  object LSistemas: TLabel
+    Left = 4
+    Top = 642
     Width = 12
     Height = 13
     Caption = '---'
@@ -292,9 +290,9 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
-  object Label54: TLabel
-    Left = 16
-    Top = 508
+  object LProcesos: TLabel
+    Left = 4
+    Top = 578
     Width = 12
     Height = 13
     Caption = '---'
@@ -307,8 +305,8 @@ object freq1: Tfreq1
     Transparent = True
   end
   object LRectificado: TLabel
-    Left = 660
-    Top = 584
+    Left = 672
+    Top = 672
     Width = 83
     Height = 16
     Caption = 'Rectificado |'
@@ -321,8 +319,8 @@ object freq1: Tfreq1
     Transparent = True
   end
   object Label42: TLabel
-    Left = 452
-    Top = 586
+    Left = 468
+    Top = 674
     Width = 54
     Height = 13
     Alignment = taRightJustify
@@ -336,8 +334,8 @@ object freq1: Tfreq1
     Transparent = True
   end
   object Label56: TLabel
-    Left = 536
-    Top = 586
+    Left = 552
+    Top = 674
     Width = 87
     Height = 13
     Alignment = taRightJustify
@@ -351,8 +349,8 @@ object freq1: Tfreq1
     Transparent = True
   end
   object IContinuar: TImage
-    Left = 788
-    Top = 577
+    Left = 800
+    Top = 665
     Width = 30
     Height = 30
     Cursor = crHandPoint
@@ -361,8 +359,8 @@ object freq1: Tfreq1
     OnClick = IContinuarClick
   end
   object Button_start: TSpeedButton
-    Left = 684
-    Top = 532
+    Left = 428
+    Top = 792
     Width = 72
     Height = 17
     Cursor = crHandPoint
@@ -378,12 +376,13 @@ object freq1: Tfreq1
     OnClick = Button_startClick
   end
   object Label1: TLabel
-    Left = 704
-    Top = 420
-    Width = 58
+    Left = 93
+    Top = 404
+    Width = 69
     Height = 13
     Cursor = crHandPoint
-    Caption = 'Biofeedback'
+    Alignment = taRightJustify
+    Caption = 'Biofeedback >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -394,12 +393,13 @@ object freq1: Tfreq1
     OnClick = Label1Click
   end
   object Label5: TLabel
-    Left = 627
-    Top = 436
-    Width = 135
+    Left = 16
+    Top = 420
+    Width = 146
     Height = 13
     Cursor = crHandPoint
-    Caption = 'Estimulación Neuro-Cerebral'
+    Alignment = taRightJustify
+    Caption = 'Estimulación Neuro-Cerebral >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -410,12 +410,13 @@ object freq1: Tfreq1
     OnClick = Label5Click
   end
   object Label6: TLabel
-    Left = 697
-    Top = 452
+    Left = 97
+    Top = 436
     Width = 65
     Height = 13
     Cursor = crHandPoint
-    Caption = 'Recompensar'
+    Alignment = taRightJustify
+    Caption = 'Repositorio >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -426,12 +427,13 @@ object freq1: Tfreq1
     OnClick = Label6Click
   end
   object Label22: TLabel
-    Left = 677
-    Top = 468
-    Width = 85
+    Left = 66
+    Top = 452
+    Width = 96
     Height = 13
     Cursor = crHandPoint
-    Caption = 'Rejuvenecimiento'
+    Alignment = taRightJustify
+    Caption = 'Rejuvenecimiento >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -442,11 +444,12 @@ object freq1: Tfreq1
     OnClick = Label22Click
   end
   object Label24: TLabel
-    Left = 683
-    Top = 484
+    Left = 83
+    Top = 468
     Width = 79
     Height = 13
     Cursor = crHandPoint
+    Alignment = taRightJustify
     Caption = 'Realizar Informe'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -458,8 +461,8 @@ object freq1: Tfreq1
     OnClick = Label24Click
   end
   object Label62: TLabel
-    Left = 368
-    Top = 586
+    Left = 384
+    Top = 674
     Width = 38
     Height = 13
     Alignment = taRightJustify
@@ -472,26 +475,119 @@ object freq1: Tfreq1
     ParentFont = False
     Transparent = True
   end
+  object LCNutricionales: TLabel
+    Left = 4
+    Top = 658
+    Width = 12
+    Height = 13
+    Caption = '---'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object LHomeopatia: TLabel
+    Left = 4
+    Top = 674
+    Width = 12
+    Height = 13
+    Caption = '---'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Lnombre: TLabel
+    Left = 744
+    Top = 399
+    Width = 74
+    Height = 13
+    Cursor = crHandPoint
+    Caption = 'Ver por nombre'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = LnombreClick
+  end
+  object Lvalor: TLabel
+    Left = 676
+    Top = 399
+    Width = 62
+    Height = 13
+    Cursor = crHandPoint
+    Caption = 'Ver por valor'
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = LvalorClick
+  end
+  object Lorden: TLabel
+    Left = 604
+    Top = 399
+    Width = 66
+    Height = 13
+    Cursor = crHandPoint
+    Caption = 'Ver por orden'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = LordenClick
+  end
+  object Label27: TLabel
+    Left = 568
+    Top = 399
+    Width = 29
+    Height = 13
+    Cursor = crHandPoint
+    Caption = 'Filtros'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = Label27Click
+  end
   object Panel8: TPanel
-    Left = 776
-    Top = 416
-    Width = 205
-    Height = 141
+    Left = 408
+    Top = 576
+    Width = 117
+    Height = 81
     BevelOuter = bvNone
     BevelWidth = 2
-    TabOrder = 3
+    TabOrder = 2
     object Image15: TImage
       Left = 0
       Top = 0
-      Width = 205
-      Height = 141
+      Width = 117
+      Height = 81
       Align = alClient
       Stretch = True
     end
   end
   object TNotebook: TTabbedNotebook
-    Left = 8
-    Top = 24
+    Left = 12
+    Top = 8
     Width = 977
     Height = 385
     Cursor = crHandPoint
@@ -549,9 +645,9 @@ object freq1: Tfreq1
       object Label73: TLabel
         Left = 304
         Top = 204
-        Width = 97
+        Width = 102
         Height = 13
-        Caption = 'Afecciones comunes'
+        Caption = 'Condiciones comunes'
         Transparent = True
       end
       object Button3: TButton
@@ -7308,7 +7404,7 @@ object freq1: Tfreq1
           TabOrder = 16
         end
         object CBAreas: TCheckBox
-          Left = 136
+          Left = 180
           Top = 12
           Width = 65
           Height = 17
@@ -7346,8 +7442,8 @@ object freq1: Tfreq1
     end
   end
   object Panel5: TPanel
-    Left = 825
-    Top = 581
+    Left = 837
+    Top = 669
     Width = 157
     Height = 22
     BevelOuter = bvNone
@@ -7358,7 +7454,7 @@ object freq1: Tfreq1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
     object LCrono: TLabel
       Left = 84
       Top = 4
@@ -7392,30 +7488,15 @@ object freq1: Tfreq1
       ParentFont = False
     end
   end
-  object Edit2: TEdit
-    Left = 142
-    Top = 417
-    Width = 7
-    Height = 14
-    BorderStyle = bsNone
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 5
-  end
   object Edit_A_freq: TEdit
-    Left = 122
-    Top = 417
-    Width = 55
-    Height = 14
+    Left = 114
+    Top = 499
+    Width = 43
+    Height = 12
     BorderStyle = bsNone
-    Color = clWhite
+    Color = clSilver
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
@@ -7423,35 +7504,19 @@ object freq1: Tfreq1
     TabOrder = 1
     Text = '0'
   end
-  object Panel3: TPanel
-    Left = 0
-    Top = 0
-    Width = 1004
-    Height = 14
-    BevelOuter = bvNone
-    Color = clLime
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 2
-    Visible = False
-  end
   object ed_valor: TEdit
-    Left = 204
-    Top = 416
+    Left = 1000
+    Top = 264
     Width = 57
     Height = 17
     BorderStyle = bsNone
-    TabOrder = 6
+    TabOrder = 4
     Text = '10'
     Visible = False
   end
   object CBTAutomatica: TCheckBox
-    Left = 512
-    Top = 586
+    Left = 528
+    Top = 674
     Width = 12
     Height = 12
     Alignment = taLeftJustify
@@ -7461,18 +7526,18 @@ object freq1: Tfreq1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 5
   end
   object CBTExtendida: TCheckBox
-    Left = 628
-    Top = 586
+    Left = 644
+    Top = 674
     Width = 12
     Height = 12
-    TabOrder = 8
+    TabOrder = 6
   end
   object SETiempo: TSpinEdit
-    Left = 408
-    Top = 584
+    Left = 424
+    Top = 672
     Width = 33
     Height = 19
     Font.Charset = DEFAULT_CHARSET
@@ -7483,17 +7548,17 @@ object freq1: Tfreq1
     MaxValue = 10
     MinValue = 2
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 7
     Value = 2
   end
   object Panel10: TPanel
     Left = 0
-    Top = 613
+    Top = 697
     Width = 1004
     Height = 12
     Align = alBottom
     BevelOuter = bvNone
-    TabOrder = 10
+    TabOrder = 8
     object GProgreso: TGauge
       Left = 150
       Top = 0
@@ -7530,91 +7595,2392 @@ object freq1: Tfreq1
       TabOrder = 0
     end
   end
+  object e_buscar: TEdit
+    Left = 828
+    Top = 399
+    Width = 89
+    Height = 16
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    Text = 'Buscar ítem:'
+    OnChange = e_buscarChange
+    OnEnter = e_buscarEnter
+    OnExit = e_buscarExit
+  end
+  object DBGrid3: TDBGrid
+    Left = 276
+    Top = 420
+    Width = 717
+    Height = 126
+    BorderStyle = bsNone
+    DataSource = DM.ConscidaDS
+    FixedColor = clHighlightText
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = False
+    TabOrder = 11
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = DBGrid3CellClick
+    OnColEnter = DBGrid3ColEnter
+    OnDrawDataCell = DBGrid3DrawDataCell
+    OnDblClick = DBGrid3DblClick
+    OnKeyDown = DBGrid3KeyDown
+    OnKeyPress = DBGrid3KeyPress
+    OnKeyUp = DBGrid3KeyUp
+  end
+  object GoToNo: TButton
+    Left = 964
+    Top = 399
+    Width = 29
+    Height = 18
+    Cursor = crHandPoint
+    Hint = 
+      'Para que encuentre el ítem el filtro debe ser el de la matríz pr' +
+      'incipal.'
+    Caption = 'Ir >'
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    OnClick = GoToNoClick
+  end
+  object E_Ir: TEdit
+    Left = 924
+    Top = 399
+    Width = 36
+    Height = 16
+    Cursor = crIBeam
+    Hint = 
+      'Para buscar un ítem por número. Asegúrese de estar en el filtro ' +
+      #39'Matriz Principal'#39'.'
+    AutoSize = False
+    BorderStyle = bsNone
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    OnChange = E_IrChange
+    OnEnter = E_IrEnter
+    OnKeyPress = E_IrKeyPress
+  end
+  object GroupBox8: TGroupBox
+    Left = 532
+    Top = 572
+    Width = 465
+    Height = 85
+    Caption = ' Items extras para terapia '
+    TabOrder = 15
+    object LT1: TLabel
+      Left = 180
+      Top = 18
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT1Click
+    end
+    object LT2: TLabel
+      Left = 180
+      Top = 34
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT2Click
+    end
+    object LT3: TLabel
+      Left = 180
+      Top = 50
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT3Click
+    end
+    object LT4: TLabel
+      Left = 180
+      Top = 66
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT4Click
+    end
+    object LT5: TLabel
+      Left = 416
+      Top = 18
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT5Click
+    end
+    object LT6: TLabel
+      Left = 416
+      Top = 34
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT6Click
+    end
+    object LT7: TLabel
+      Left = 416
+      Top = 50
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT7Click
+    end
+    object LT8: TLabel
+      Left = 416
+      Top = 66
+      Width = 39
+      Height = 11
+      Caption = 'Transferir'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = LT8Click
+    end
+    object EdConsida4: TEdit
+      Left = 8
+      Top = 65
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnChange = EdConsida4Change
+      OnClick = EdConsida4Click
+    end
+    object EdConsida3: TEdit
+      Left = 8
+      Top = 49
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnChange = EdConsida3Change
+      OnClick = EdConsida3Click
+    end
+    object EdConsida2: TEdit
+      Left = 8
+      Top = 33
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnChange = EdConsida2Change
+      OnClick = EdConsida2Click
+    end
+    object EdConsida1: TEdit
+      Left = 8
+      Top = 17
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnChange = EdConsida1Change
+      OnClick = EdConsida1Click
+    end
+    object EdConsida5: TEdit
+      Left = 244
+      Top = 17
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnChange = EdConsida5Change
+      OnClick = EdConsida5Click
+    end
+    object EdConsida6: TEdit
+      Left = 244
+      Top = 33
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      OnChange = EdConsida6Change
+      OnClick = EdConsida6Click
+    end
+    object EdConsida7: TEdit
+      Left = 244
+      Top = 49
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnChange = EdConsida7Change
+      OnClick = EdConsida7Click
+    end
+    object EdConsida8: TEdit
+      Left = 244
+      Top = 65
+      Width = 170
+      Height = 14
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+      OnChange = EdConsida8Change
+      OnClick = EdConsida8Click
+    end
+  end
+  object MDescripcion: TDBMemo
+    Left = 276
+    Top = 550
+    Width = 717
+    Height = 18
+    BorderStyle = bsNone
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 16
+  end
+  object PFiltros: TPanel
+    Left = 276
+    Top = 396
+    Width = 717
+    Height = 173
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 12
+    Visible = False
+    object L_ag: TLabel
+      Left = 52
+      Top = 20
+      Width = 66
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Acidos grasos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_agClick
+    end
+    object L_ad: TLabel
+      Left = 52
+      Top = 34
+      Width = 50
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Adicciones'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_adClick
+    end
+    object L_af: TLabel
+      Left = 52
+      Top = 48
+      Width = 52
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Afecciones'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_afClick
+    end
+    object L_agtb: TLabel
+      Left = 52
+      Top = 62
+      Width = 89
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Agentes biológicos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_agtbClick
+    end
+    object L_ab: TLabel
+      Left = 52
+      Top = 76
+      Width = 47
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Alersodes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_abClick
+    end
+    object L_ac: TLabel
+      Left = 52
+      Top = 90
+      Width = 62
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Amino ácidos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_acClick
+    end
+    object L_ay: TLabel
+      Left = 52
+      Top = 104
+      Width = 47
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Ayurveda'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_ayClick
+    end
+    object L_bc: TLabel
+      Left = 52
+      Top = 118
+      Width = 44
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Bacterias'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_bcClick
+    end
+    object L_ba: TLabel
+      Left = 52
+      Top = 132
+      Width = 83
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Buenos alimentos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_baClick
+    end
+    object L_ca: TLabel
+      Left = 52
+      Top = 146
+      Width = 34
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Cáncer'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_caClick
+    end
+    object L_cr: TLabel
+      Left = 184
+      Top = 34
+      Width = 61
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Cromosomas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_crClick
+    end
+    object L_dt: TLabel
+      Left = 184
+      Top = 48
+      Width = 51
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Dentadura'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_dtClick
+    end
+    object L_dg: TLabel
+      Left = 184
+      Top = 62
+      Width = 44
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Digestión'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_dgClick
+    end
+    object L_em: TLabel
+      Left = 184
+      Top = 76
+      Width = 50
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Emociones'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_emClick
+    end
+    object L_ep: TLabel
+      Left = 184
+      Top = 20
+      Width = 96
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'C. Electromagnética'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_epClick
+    end
+    object L_en: TLabel
+      Left = 184
+      Top = 104
+      Width = 38
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Enzimas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_enClick
+    end
+    object L_ef: TLabel
+      Left = 184
+      Top = 90
+      Width = 79
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Esencias florales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_efClick
+    end
+    object L_fn: TLabel
+      Left = 184
+      Top = 132
+      Width = 37
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Fenoles'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_fnClick
+    end
+    object L_Fb: TLabel
+      Left = 184
+      Top = 146
+      Width = 70
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Flores de Bach'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_FbClick
+    end
+    object L_fg: TLabel
+      Left = 316
+      Top = 20
+      Width = 66
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Fungosidades'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_fgClick
+    end
+    object L_ho: TLabel
+      Left = 316
+      Top = 34
+      Width = 86
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Hierbas orientales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_hoClick
+    end
+    object L_hi: TLabel
+      Left = 316
+      Top = 48
+      Width = 97
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Hom. imponderables'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_hiClick
+    end
+    object L_vtm: TLabel
+      Left = 580
+      Top = 62
+      Width = 45
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Vitaminas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_vtmClick
+    end
+    object L_Vr: TLabel
+      Left = 580
+      Top = 48
+      Width = 23
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Virus'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_VrClick
+    end
+    object L_vt: TLabel
+      Left = 580
+      Top = 34
+      Width = 47
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Vertebras'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_vtClick
+    end
+    object L_vn: TLabel
+      Left = 580
+      Top = 20
+      Width = 41
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Venénos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_vnClick
+    end
+    object L_slv: TLabel
+      Left = 448
+      Top = 146
+      Width = 47
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Solventes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_slvClick
+    end
+    object L_scr: TLabel
+      Left = 448
+      Top = 132
+      Width = 44
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Sarcodes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_scrClick
+    end
+    object L_sngr: TLabel
+      Left = 448
+      Top = 118
+      Width = 34
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Sangre'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_sngrClick
+    end
+    object L_res: TLabel
+      Left = 448
+      Top = 104
+      Width = 101
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Resistencia al cambio'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_resClick
+    end
+    object L_rem: TLabel
+      Left = 184
+      Top = 118
+      Width = 88
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Factores mentales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_remClick
+    end
+    object L_po: TLabel
+      Left = 448
+      Top = 90
+      Width = 51
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Policrestos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_poClick
+    end
+    object L_pa: TLabel
+      Left = 448
+      Top = 76
+      Width = 44
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Parásitos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_paClick
+    end
+    object L_No: TLabel
+      Left = 448
+      Top = 62
+      Width = 85
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Nosodes dentales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_NoClick
+    end
+    object L_mus: TLabel
+      Left = 448
+      Top = 48
+      Width = 43
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Músculos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_musClick
+    end
+    object L_mr: TLabel
+      Left = 448
+      Top = 34
+      Width = 45
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Minerales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_mrClick
+    end
+    object L_mp: TLabel
+      Left = 448
+      Top = 20
+      Width = 80
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Metales pesados'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_mpClick
+    end
+    object L_mc: TLabel
+      Left = 316
+      Top = 146
+      Width = 85
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'M. de acupuntura'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_mcClick
+    end
+    object L_ma: TLabel
+      Left = 316
+      Top = 132
+      Width = 114
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Medicaciones alopáticas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_maClick
+    end
+    object L_id: TLabel
+      Left = 316
+      Top = 118
+      Width = 76
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Isodes dentales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_idClick
+    end
+    object L_if: TLabel
+      Left = 316
+      Top = 104
+      Width = 55
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Infecciones'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_ifClick
+    end
+    object L_hc: TLabel
+      Left = 316
+      Top = 90
+      Width = 84
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Huesos craneales'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_hcClick
+    end
+    object L_hu: TLabel
+      Left = 316
+      Top = 76
+      Width = 35
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Huesos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_huClick
+    end
+    object L_hm: TLabel
+      Left = 316
+      Top = 62
+      Width = 48
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Hormonas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = L_hmClick
+    end
+    object Todos: TLabel
+      Left = 580
+      Top = 76
+      Width = 87
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Matriz principal'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = TodosClick
+    end
+    object Panel15: TPanel
+      Left = 691
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      TabOrder = 0
+      OnClick = Panel15Click
+    end
+  end
+  object PBasesDeDatos: TPanel
+    Left = 12
+    Top = 8
+    Width = 409
+    Height = 409
+    TabOrder = 9
+    Visible = False
+    object LBOrganosGlandulas: TListBox
+      Left = 16
+      Top = 48
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Bazo.'
+        ' Cerebro.'
+        ' Circuitos de la memoria.'
+        ' Corazón.'
+        ' Dentadura.'
+        ' Estómago.'
+        ' Gónadas.'
+        ' Hígado.'
+        ' Hipotálamo.'
+        ' Intestino delgado.'
+        ' Intestino grueso.'
+        ' Lengua.'
+        ' Lóbulo frontal del cerebro.'
+        ' Lóbulo occipital del cerebro.'
+        ' Lóbulo parietal del cerebro.'
+        ' Lóbulo temporal del cerebro.'
+        ' Médula espinal.'
+        ' Médula oblongata.'
+        ' Oído.'
+        ' Ojos.'
+        ' Páncreas.'
+        ' Paratiroides.'
+        ' Piel.'
+        ' Pineal.'
+        ' Pituitaria.'
+        ' Pulmones.'
+        ' Riñón.'
+        ' Sangre.'
+        ' Senos nasales.'
+        ' Sistema límbico.'
+        ' Sistema linfático.'
+        ' Suprarrenales.'
+        ' Timo.'
+        ' Tiroides.'
+        ' Vejiga.')
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+    end
+    object BOrganosGlandulas: TButton
+      Left = 216
+      Top = 48
+      Width = 180
+      Height = 26
+      Caption = 'BOrganosGlandulas'
+      TabOrder = 1
+      OnClick = BOrganosGlandulasClick
+    end
+    object LBCausas: TListBox
+      Left = 16
+      Top = 12
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acciones de voluntad opuestas.'
+        ' Acciones disonantes.'
+        ' Acumulación de energía superflua.'
+        ' Agentes químicos.'
+        ' Ahogo de sentimientos.'
+        ' Alimentación incorrecta.'
+        ' Alteración cromosómica cualitativa.'
+        ' Alteración cromosómica cuantitativa.'
+        ' Alteración estructural de algún órgano.'
+        ' Alteración funcional de algún órgano.'
+        ' Alteración genética.'
+        ' Amebas.'
+        ' Bacteria.'
+        ' Balance del pH.'
+        ' Condiciones hereditarias.'
+        ' Contaminación electromagnética.'
+        ' Contaminación medio ambiental.'
+        ' Deficiencia en dieta.'
+        ' Deficiencia o exceso nutricional.'
+        ' Deseo excesivo.'
+        ' Desquilibrio en el pH.'
+        ' Elementos nutritivos (exceso o deficiencia).'
+        ' Estrés físico.'
+        ' Estrés mental.'
+        ' Exceso de azúcar.'
+        ' Exceso de energía.'
+        ' Factores hereditarios.'
+        ' Factores mecánicos traumáticos.'
+        ' Factores mentales.'
+        ' Factores psicológicos.'
+        ' Fases lunares.'
+        ' Hemorragia.'
+        ' Hidratación.'
+        ' Hiperreactividad.'
+        ' Hipertensión.'
+        ' Hipertermia general.'
+        ' Hipertermia local.'
+        ' Hipotensión.'
+        ' Hipotermia general.'
+        ' Hipotermia local.'
+        ' Impureza en sangre.'
+        ' Incredulidad.'
+        ' Infección.'
+        ' Inquietudes excesivas.'
+        ' Interacciones medio ambiantes.'
+        ' Interacciones sociales.'
+        ' Irritación, cólera, enfado.'
+        ' Medicaciones alopáticas.'
+        ' Metales pesados.'
+        ' Miasma / Predisposición.'
+        ' Opresión espiritual.'
+        ' Parásitos.'
+        ' Patógenos.'
+        ' Pensamientos discordantes.'
+        ' Pensamientos negativos.'
+        ' Postura incorrecta al caminar.'
+        ' Postura incorrecta al dormir.'
+        ' Postura incorrecta al sentarse.'
+        ' Priones.'
+        ' Procesos biológicos.'
+        ' Producción hormonal.'
+        ' Propósitos negativos.'
+        ' Protozoos.'
+        ' Radiaciones ionizantes.'
+        ' Repercusión kármica.'
+        ' Resistencia inconciente a cambiar o explorarse a sí mismo.'
+        ' Respiración incorrecta.'
+        ' Sentimientos disonantes.'
+        ' Shock.'
+        ' Supresión alopática.'
+        ' Tensión muscular.'
+        ' Toma de conciencia.'
+        ' Toxinas medioambientales.'
+        ' Toxinas propias.'
+        ' Transferencia de oxígeno.'
+        ' Trauma no sanado.'
+        ' Trauma o lesión.'
+        ' Virus.')
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object BCausas: TButton
+      Left = 216
+      Top = 12
+      Width = 180
+      Height = 26
+      Caption = 'BCausas'
+      TabOrder = 3
+      Visible = False
+      OnClick = BCausasClick
+    end
+    object LBMeridianos: TListBox
+      Left = 16
+      Top = 120
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Merdiano del Vaso Gobernador.'
+        ' Meridiano Circulación + Sexualidad.'
+        ' Meridiano de la Vejiga.'
+        ' Meridiano de la Vesícula Biliar.'
+        ' Meridiano del Bazo-Páncreas.'
+        ' Meridiano del Corazón.'
+        ' Meridiano del Estómago.'
+        ' Meridiano del Hígado.'
+        ' Meridiano del Intestino Delgado.'
+        ' Meridiano del Intestino Grueso.'
+        ' Meridiano del Maestro del Corazón o Pericardio.'
+        ' Meridiano del Pulmón.'
+        ' Meridiano del Riñón.'
+        ' Meridiano del Triple Calefactor.'
+        ' Meridiano del Vaso Concepción.')
+      ParentFont = False
+      TabOrder = 4
+    end
+    object BMeridianos: TButton
+      Left = 216
+      Top = 120
+      Width = 180
+      Height = 26
+      Caption = 'BMeridianos'
+      TabOrder = 5
+      OnClick = BMeridianosClick
+    end
+    object LBENegativas: TListBox
+      Left = 16
+      Top = 228
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Aburrimiento.'
+        ' Adicción.'
+        ' Agresión.'
+        ' Alteración.'
+        ' Ansiedad.'
+        ' Antagonismo.'
+        ' Apatía.'
+        ' Apego.'
+        ' Arrogancia.'
+        ' Asco.'
+        ' Autismo.'
+        ' Avaricia.'
+        ' Aversión.'
+        ' Catastrofismo.'
+        ' Celos.'
+        ' Codicia.'
+        ' Cólera.'
+        ' Conciencia.'
+        ' Concientización.'
+        ' Conflicto de identidad.'
+        ' Conflicto religioso.'
+        ' Confusión.'
+        ' Congoja.'
+        ' Conmoción.'
+        ' Coráje.'
+        ' Crítica.'
+        ' Culpa.'
+        ' Curiosidad.'
+        ' Decepción.'
+        ' Depresión.'
+        ' Desamor.'
+        ' Desamparo.'
+        ' Desánimo.'
+        ' Desasosiego.'
+        ' Desconcierto.'
+        ' Desconfianza.'
+        ' Desconsuelo.'
+        ' Descuido.'
+        ' Deseo (agudo).'
+        ' Deseo de que las cosas sean diferentes.'
+        ' Desesperación.'
+        ' Desgano.'
+        ' Desidia.'
+        ' Desilusión.'
+        ' Desolación.'
+        ' Desprecio.'
+        ' Dolor.'
+        ' Dominación.'
+        ' Duda de sí mismo.'
+        ' Duda.'
+        ' Duelo.'
+        ' Enfado.'
+        ' Enfoque mental.'
+        ' Enojo.'
+        ' Entusiasmo.'
+        ' Envidia.'
+        ' Espanto.'
+        ' Espiritualidad.'
+        ' Estupor (agudo).'
+        ' Extasis.'
+        ' Falta de concentración.'
+        ' Fastidio.'
+        ' Fobia.'
+        ' Frustración.'
+        ' Hostilidad.'
+        ' Hostilidad encubierta.'
+        ' Impaciencia.'
+        ' Impulsividad.'
+        ' Inadaptabilidad.'
+        ' Indiferencia.'
+        ' Indignación.'
+        ' Inquietud.'
+        ' Inseguridad.'
+        ' Intriga.'
+        ' Ira.'
+        ' Irrealismo.'
+        ' Irritación.'
+        ' Lealtad.'
+        ' Lujuria.'
+        ' Manías.'
+        ' Melancolía.'
+        ' Mezquindad.'
+        ' Miedo.'
+        ' Monotonía.'
+        ' Necesidad de cambio.'
+        ' Negación.'
+        ' Negociación.'
+        ' Nerviosismo.'
+        ' Nostalgia.'
+        ' Obnubilación.'
+        ' Observación.'
+        ' Obsesividad.'
+        ' Obstinación.'
+        ' Odio.'
+        ' Omnipotencia.'
+        ' Orgullo.'
+        ' Pánico.'
+        ' Pasividad.'
+        ' Pena.'
+        ' Pereza.'
+        ' Perfeccionismo.'
+        ' Pesimismo.'
+        ' Poder.'
+        ' Preocupación.'
+        ' Prepotencia.'
+        ' Proyección.'
+        ' Rabia.'
+        ' Racionalización.'
+        ' Rebeldía.'
+        ' Recelo.'
+        ' Rechazo.'
+        ' Regresión.'
+        ' Rencor.'
+        ' Repudio.'
+        ' Resentimiento.'
+        ' Resignación.'
+        ' Resistencia al cambio.'
+        ' Resquemor.'
+        ' Risa nerviosa.'
+        ' Sensualidad.'
+        ' Sentimiento de abandono.'
+        ' Sentimiento de incompresión.'
+        ' Sexualidad.'
+        ' Sobrecogimiento.'
+        ' Sumisión.'
+        ' Temerosidad.'
+        ' Temor.'
+        ' Terror.'
+        ' Timidez.'
+        ' Traición.'
+        ' Tristeza.'
+        ' Vacío existencial.'
+        ' Vanidad.'
+        ' Venganza.'
+        ' Vergüenza.')
+      ParentFont = False
+      TabOrder = 6
+    end
+    object BENegativas: TButton
+      Left = 216
+      Top = 228
+      Width = 180
+      Height = 26
+      Caption = 'BENegativas'
+      TabOrder = 7
+      OnClick = BENegativasClick
+    end
+    object LBEPositivas: TListBox
+      Left = 16
+      Top = 192
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Admiración.'
+        ' Afecto.'
+        ' Alegría.'
+        ' Alivio.'
+        ' Amor.'
+        ' Ampliación.'
+        ' Añoranza.'
+        ' Armonía.'
+        ' Arrojo.'
+        ' Asombro.'
+        ' Autoelogio.'
+        ' Buen humor.'
+        ' Calma.'
+        ' Cambio.'
+        ' Cariño.'
+        ' Compartir.'
+        ' Compasión.'
+        ' Conciliación.'
+        ' Confianza.'
+        ' Construcción.'
+        ' Creatividad.'
+        ' Curiosidad.'
+        ' Deseo.'
+        ' Diversión.'
+        ' Ecuanimidad.'
+        ' Empatía.'
+        ' Ensimismamiento.'
+        ' Entusiasmo.'
+        ' Esperanza.'
+        ' Euforia.'
+        ' Excitación.'
+        ' Extasis.'
+        ' Felicidad.'
+        ' Fortaleza.'
+        ' Generosidad.'
+        ' Gratitud.'
+        ' Humildad.'
+        ' Inspiración.'
+        ' Interés por la vida.'
+        ' Optimismo.'
+        ' Orgullo.'
+        ' Paciencia.'
+        ' Pasión.'
+        ' Percepción.'
+        ' Perdón.'
+        ' Placer.'
+        ' Plenitud.'
+        ' Regocijo.'
+        ' Saboreo.'
+        ' Sanidad.'
+        ' Satisfacción.'
+        ' Seguridad.'
+        ' Serenidad.'
+        ' Sociego.'
+        ' Solidaridad.'
+        ' Sorpresa.'
+        ' Templanza.'
+        ' Ternura.'
+        ' Tranquilidad.'
+        ' Valentía.')
+      ParentFont = False
+      TabOrder = 8
+    end
+    object BEPositivas: TButton
+      Left = 216
+      Top = 192
+      Width = 180
+      Height = 26
+      Caption = 'BEPositivas'
+      TabOrder = 9
+      OnClick = BEPositivasClick
+    end
+    object LBProcesos: TListBox
+      Left = 16
+      Top = 156
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Adherencia celular.'
+        ' Alfa oxidación.'
+        ' Beta oxidación'
+        ' Circulación.'
+        ' Comunicación celular.'
+        ' Crecimiento celular.'
+        ' Diferenciación celular.'
+        ' Digestión.'
+        ' Enlaces moleculares.'
+        ' Estructura molecular.'
+        ' Expresión genética.'
+        ' Factores energéticos.'
+        ' Fermentación.'
+        ' Hidroxilación.'
+        ' Metabolismo: anabolismo.'
+        ' Metabolismo: catabolismo.'
+        ' Morfogénesis.'
+        ' Omega oxidación.'
+        ' Oxidación de ácidos grasos.'
+        ' Pigmentación.'
+        ' Proceso fisiológico celular.'
+        ' Procesos fisiológicos.'
+        ' Procesos químicos inducidos.'
+        ' Procesos termodinámicos.'
+        ' Producción de enzimas.'
+        ' Reconocimiento celular.'
+        ' Replicación del ADN.'
+        ' Reproducción.'
+        ' Respiración.'
+        ' Respuesta a estímulos.'
+        ' Salivación.'
+        ' Secreción.'
+        ' Síntesis de glúcidos.'
+        ' Síntesis de lípidos.'
+        ' Síntesis de proteínas.'
+        ' Síntesis del ARN.'
+        ' Transpiración.')
+      ParentFont = False
+      TabOrder = 10
+      Visible = False
+    end
+    object BProcesos: TButton
+      Left = 216
+      Top = 156
+      Width = 180
+      Height = 26
+      Caption = 'BProcesos'
+      TabOrder = 11
+      OnClick = BProcesosClick
+    end
+    object LBAVM: TListBox
+      Left = 16
+      Top = 84
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acetogeninas annonáceas.'
+        ' Acido lipoico.'
+        ' Acido lisofosratídico.'
+        ' Acidos (alquifuranil)acilcarboxilicos (urofánicos).'
+        ' Acidos (alquifuranil)acilcarboxilicos (wyerona).'
+        ' Acidos grasos acetilénicos (ácido taririco).'
+        ' Acidos grasos cis.'
+        ' Acidos grasos de cadena impar (C13-C33).'
+        ' Acidos grasos endocíclicos (ácido endiándrico).'
+        ' Acidos grasos endocíclicos (ácido malválico).'
+        ' Acidos grasos endocíclicos prostanoides (eclonialactonas).'
+        ' Acidos grasos endocíclicos prostanoides (jasmonoides).'
+        ' Acidos grasos endocíclicos prostanoides (prostaglandinas).'
+        ' Acidos grasos endocíclicos prostanoides (tromboxanos).'
+        ' Acidos grasos insaturados.'
+        ' Acidos grasos monoinsaturados (ácido oleico).'
+        ' Acidos grasos poliinsaturados (ácido araquidónico).'
+        ' Acidos grasos poliinsaturados (ácido linoleico).'
+        ' Acidos grasos poliinsaturados (ácido linolénico).'
+        ' Acidos grasos ramificados (ácidos isoalquil).'
+        ' Acidos grasos ramificados (ácidos polimetilados).'
+        ' Acidos grasos ramificados (anteisoalquilcarboxílicos).'
+        ' Acidos grasos ramificados (metilcarboxílicos).'
+        ' Acidos grasos saturados cadena corta (ácido butírico).'
+        ' Acidos grasos saturados cadena corta (ácido isobutírico).'
+        ' Acidos grasos saturados cadena corta (ácido isovalérico).'
+        ' Acidos grasos saturados cadena corta (ácido nonanoico).'
+        ' Acidos grasos saturados cadena corta (ácido pirúvico).'
+        ' Acidos grasos saturados cadena corta (ácido valérico).'
+        ' Acidos grasos saturados cadena larga (ácido esteárico).'
+        ' Acidos grasos saturados cadena larga (ácido mirístico).'
+        ' Acidos grasos saturados cadena larga (ácido palmítico).'
+        ' Acidos grasos saturados de cadena media (C12-C14).'
+        ' Acidos grasos trans.'
+        ' Acidos grasos w-cíclicos arilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloclohexilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloheptilalquilcarboxílicos.'
+        
+          ' Acidos grasos w-cíclicos ciclopentenialquilcarboxílicos (ácido ' +
+          'hidnocárpico).'
+        ' Acidos grasos w-cíclicos hachijodinas.'
+        ' Acilhomoserinlactonas.'
+        ' ADN ligasa.'
+        ' Albúmina sérica.'
+        ' Alcoholes + Aldehídos grasos.'
+        ' Amidas grasas.'
+        ' Amilasa.'
+        ' Amiloglucosidasas.'
+        ' Aniones Cl-.'
+        ' Aniones CO3/2-.'
+        ' Aniones HCO3-.'
+        ' Aniones PO4/3-.'
+        ' Antocianinas.'
+        ' Auronas.'
+        ' Biocitina.'
+        ' Boro.'
+        ' Calcio.'
+        ' Carbonato cálcico.'
+        ' Cardiolipina.'
+        ' Catalasas.'
+        ' Cationes Ca2+.'
+        ' Cationes K+.'
+        ' Cationes Mg2+.'
+        ' Cationes Na+.'
+        ' Cationes NH4+.'
+        ' Celulasas.'
+        ' Chalconas'
+        ' Cianolípidos.'
+        ' Cobre.'
+        ' Coenzima A.'
+        ' Coenzima B12.'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        
+          ' Condensación de ácidos grasos (ácidos alquitricarboxílicos - ác' +
+          'ido agárico).'
+        ' Condensación de ácidos grasos (acilonas).'
+        ' Condensación de ácidos grasos (alquiltetronatos).'
+        
+          ' Condensación de ácidos grasos (anhídridos alquilsuccínicos - ca' +
+          'nadensólido).'
+        ' Condensación de ácidos grasos (esfingoides - esfingosa).'
+        ' Condensación de ácidos grasos (lipstanina).'
+        ' Condensación de ácidos grasos (macrocetonas - civetona).'
+        ' Condensación de ácidos grasos (nonádridos - rubratoxina).'
+        ' Cromo.'
+        ' Cuerpos cetónicos.'
+        ' Depósitos de triglicéridos.'
+        ' Diacilglicerol.'
+        ' Diacilglicerol-acil-transferasa (DGAT).'
+        ' Dihidroflavonoles.'
+        ' EC1 Oxidorreductasas.'
+        ' EC2 Transferasas.'
+        ' EC3Hidrolasas.'
+        ' EC4 Liasas.'
+        ' EC5 Isomerasas.'
+        ' EC6 Ligasas.'
+        ' Enzimas producidas por bacterias.'
+        ' Epoxidación (ácido vernólico).'
+        ' Escisión oxidativa (ácido traumático).'
+        ' Esfingolípidos.'
+        ' Espirocetales (chalcogranas).'
+        ' Esteres de ácidos grasos hidroxilados.'
+        ' Esteres de glicerol.'
+        ' Esteres simples.'
+        ' FAD (flavín-adenín dinucleótido).'
+        ' FH4 (ácido tetrafólico).'
+        ' Flavandioles.'
+        ' Flavanonas.'
+        ' Flavonas.'
+        ' Flavonoides.'
+        ' Flavonoles.'
+        ' Flúor.'
+        ' FMN (flavín mononucleótido).'
+        ' Fosfatdilinositol.'
+        ' Fosfatidilcolina.'
+        ' Fosfatidiletanolamina.'
+        ' Fosfatidilglicerol.'
+        ' Fosfatidilserina.'
+        ' Fosfato de calcio.'
+        ' Fósforo.'
+        ' Glicerina.'
+        ' Glucanasa.'
+        ' Glucosa isomerasa.'
+        ' Hepatocitos.'
+        ' Hidroxilasas (alcoholes acetilénicos).'
+        ' Hidroxilasas (hepoxilinas).'
+        ' Hidroxilasas (leucotrienos).'
+        ' Hidroxilasas (neuroprotectinas).'
+        ' Hidroxilasas (resolvinas).'
+        ' Hierro.'
+        ' Inhibición enzimática irreversible.'
+        ' Inhibición enzimática reversible acompetitivas.'
+        ' Inhibición enzimática reversible competitivas.'
+        ' Inhibición enzimática reversible mixtas.'
+        ' Isoflavonoides.'
+        ' Lactasas.'
+        ' Lactonas cucujólidos.'
+        ' Lactonas volátiles.'
+        ' Ligninasas.'
+        ' Lipasas.'
+        ' Lipoproteínas de muy baja densidad (VLDL).'
+        ' Lipoproteínas.'
+        ' Magnesio.'
+        ' Manganeso.'
+        ' Molibdeno.'
+        ' NAD+ (nicotín-adenín dinucleótido)'
+        ' NADP+ (nicotín-adenín dinucleótido fosfato).'
+        ' Neoflavonoides.'
+        ' Papaina.'
+        ' Pectinasas.'
+        ' PLP (fosfato de piridoxal).'
+        ' PMP (fosfato de piridoxamina).'
+        ' Polimerasas.'
+        ' Proteasas.'
+        ' Pululanasas.'
+        ' Renina.'
+        ' Retículo endoplásmico.'
+        ' Selenio.'
+        ' Silicatos.'
+        ' Sodio + Potasio.'
+        ' Sulfuro.'
+        ' Taninos condensados.'
+        ' Tejido adiposo (adipositos).'
+        ' TPP (pirofosfato de tiamina).'
+        ' Trigliceridos.'
+        ' Tripsina.'
+        ' Vitamina A (retinolflalina).'
+        ' Vitamina B1 (tiamina).'
+        ' Vitamina B12.'
+        ' Vitamina B2 (riboflavina).'
+        ' Vitamina B3 (niacina o ácidonicotínico).'
+        ' Vitamina B5 (ácido pantoténico).'
+        ' Vitamina B6 (piridoxina).'
+        ' Vitamina B7 (Biotina).'
+        ' Vitamina B9 (ácido fólico).'
+        ' Vitamina C (ácido ascórbico).'
+        ' Vitamina D (calciferol).'
+        ' Vitamina E (tocoferol).'
+        ' Vitamina K (antihemorrágica).'
+        ' Vitamina K1 (filoquinona).'
+        ' Xilanasas.'
+        ' Yodo.'
+        ' Zinc.')
+      ParentFont = False
+      TabOrder = 12
+    end
+    object BAVM: TButton
+      Left = 216
+      Top = 84
+      Width = 180
+      Height = 26
+      Caption = 'BAVM'
+      TabOrder = 13
+      OnClick = BAVMClick
+    end
+    object LBSistemas: TListBox
+      Left = 16
+      Top = 300
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Sistema cardiovascular.'
+        ' Sistema circulatorio.'
+        ' Sistema digestivo.'
+        ' Sistema endocrino.'
+        ' Sistema esquelético.'
+        ' Sistema hormonal.'
+        ' Sistema inmunitario.'
+        ' Sistema linfático.'
+        ' Sistema muscular.'
+        ' Sistema nervioso.'
+        ' Sistema neurológico.'
+        ' Sistema óseo.'
+        ' Sistema reproductivo.'
+        ' Sistema respiratorio.'
+        ' Sistema sensorial.'
+        ' Sistema urinario.'
+        ' Tejido conectivo.')
+      ParentFont = False
+      TabOrder = 14
+    end
+    object BSistemas: TButton
+      Left = 216
+      Top = 300
+      Width = 180
+      Height = 26
+      Caption = 'BSistemas'
+      TabOrder = 15
+      OnClick = BSistemasClick
+    end
+    object LBToxinas: TListBox
+      Left = 16
+      Top = 264
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Toxinas de medicaciones alopáticas.'
+        ' Contaminación medio ambiental.'
+        ' Toxicidad alcaloide o por cafeína.'
+        ' Toxicidad por radiación.'
+        ' Toxinas causadas por estrés.'
+        ' Mercurio y metales pesados.'
+        ' Toxinas esteroides.'
+        ' Toxinas biológicas.'
+        ' Toxinas físicas (carbón, asbestos, otros).'
+        ' Toxinas no identificadas.'
+        ' Toxinas propias.'
+        ' Pigmentaciones en piel.')
+      ParentFont = False
+      TabOrder = 16
+    end
+    object BToxinas: TButton
+      Left = 216
+      Top = 264
+      Width = 180
+      Height = 26
+      Caption = 'BToxinas'
+      TabOrder = 17
+      OnClick = BToxinasClick
+    end
+    object LBCNutricionales: TListBox
+      Left = 16
+      Top = 336
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          ' Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas' +
+          ' de patata en la frente.'
+        
+          ' Cuando tengas dolor de estómago, toma tus alimentos desaliñados' +
+          ', sin lácteos ni azúcares.'
+        
+          ' Para desintoxicar el hígado toma una limonada en ayunas endulza' +
+          'da con miel de abejas.'
+        
+          ' Para el dolor de garganta exprime un limón en agua caliente con' +
+          ' miel de abeja y bébelo.'
+        
+          ' La aplicación de compresas de leche en las rodillas reduce su i' +
+          'nflamación.'
+        
+          ' Uno o dos plátanos comidos al día son un buen remedio para la c' +
+          'olitis ulcerosa.'
+        
+          ' En caso de molestias estomacales, el yogurt es más fácil de dig' +
+          'erir que la leche.'
+        
+          ' Para normalizar los niveles de azúcar toma una vez a la semana ' +
+          'una mandarina licuada con cascara en un vaso de agua.'
+        
+          ' Si estas nervioso/a, no comas, espera a sentirte y estar relaja' +
+          'do/a.'
+        
+          ' Los pies son estructuras complejas. No uses los mismos zapatos ' +
+          'todos los días.'
+        
+          ' Escoge zapatos hechos de fibras o materiales naturales para per' +
+          'mitir a tus pies respirar.'
+        
+          ' La cafeína es una droga que se encuentra naturalmente en 60 dif' +
+          'erentes tipos de plantas.'
+        
+          ' El café no hace que una persona ebria se ponga sobria, solo hac' +
+          'e que se despierte.'
+        
+          ' 2 latas de bebidas gaseosas al día pueden causar ansiedad y red' +
+          'ucen la capacidad para dormir.'
+        
+          ' El café no filtrado puede elevar los niveles de colesterol en l' +
+          'a sangre.'
+        
+          ' Usa zapatos con suficiente espacio para los dedos, de manera qu' +
+          'e puedas moverlos dentro.'
+        
+          ' El exceso de cafeína puede aumentar el riesgo de osteoporosis y' +
+          ' fracturas.'
+        
+          ' La fibra es buena para la constipación porque ayuda a evacuar l' +
+          'os intestinos.'
+        
+          ' Cuando te recuperes de una afección larga, el caminar será tu m' +
+          'ejor ejercicio para recuperar fuerzas.'
+        
+          ' Camina con la cabeza en alto, el cuerpo recto y respira semi pr' +
+          'ofundamente para evitar el mareo.'
+        
+          ' Las fuentes más comunes de cafeína son el café, el té, las bebi' +
+          'das gaseosas y las bebidas energéticas.'
+        
+          ' El caminar es un excelente ejercicio que ayuda siempre a recupe' +
+          'rar el ritmo de la vida después de un padecimiento.'
+        
+          ' La sopa de pollo con muchos vegetales, cebolla y ajo, es un ali' +
+          'mento esencial durante un resfrío o gripe.'
+        
+          ' Para un alivio inmediato durante la picazón de las mordeduras d' +
+          'e mosquitos aplica jabón en el área.'
+        
+          ' Bebe un par de vasos de agua antes de ejercitarte para evitar e' +
+          'l deshidratarse demasiado rápido.'
+        
+          ' Si tus codos están oscuros y resecos, mezcla glicerina con zumo' +
+          ' de limón y masajéala en el área.'
+        
+          ' El exceso de cafeína produce ansiedad, depresión, inquietud, pa' +
+          'lpitaciones, dolor de estómago y dolor de cabeza.'
+        
+          ' El aceite de oliva virgen es además de un alimento, útil para l' +
+          'a piel porque tiene propiedades rejuvenecedoras.'
+        
+          ' Los masajes funcionan a nivel físico y a nivel mental porque la' +
+          ' mente responde al toque humano.'
+        
+          ' Aprende a controlar tus emociones ante las dificultades, o esta' +
+          'rás condenado a ser esclavo de las circunstancias.'
+        
+          ' Una dieta sana debe proporcionar niveles óptimos de nutrientes ' +
+          'para el mantenimiento y regeneración del organismo.'
+        
+          ' Ingiere alimentos en pequeñas cantidades y de forma frecuente d' +
+          'urante el día.'
+        
+          ' Condimenta tus alimentos con zumo de limón o de naranja, o espe' +
+          'cias no picantes para mejorar su sabor.'
+        ' Lávate los dientes y la boca después de cada comida.'
+        ' No te acuestes inmediatamente después de haber comido.'
+        
+          ' Procura que tu dieta sea variada y rica en calorías. Añade a tu' +
+          's alimentos: aceite virgen de oliva, miel, mermelada.'
+        ' Lava muy bien las frutas y verduras que vayas a consumir.'
+        
+          ' La pérdida de peso ha de ser lenta pero progresiva.  No convien' +
+          'e que sea rápida.'
+        ' La obesidad aumenta la mortalidad y la movilidad.'
+        
+          ' Descongela los alimentos en el refrigerador. No pongas juntos a' +
+          'limentos crudos con cocidos.'
+        ' Siempre lávate las manos antes de comer. Bendice tus alimentos.'
+        
+          ' Todos los aceites no engordan lo mismo. Evita reutilizar los ac' +
+          'eites.'
+        
+          ' Si tienes sobre peso estas en riesgo de sufrir diabetes, hipert' +
+          'ensión y afecciones cardiovasculares.'
+        
+          ' La cocción al vapor conserva las vitaminas y minerales de los a' +
+          'limentos; además su aroma, sabor, color y textura.'
+        
+          ' La '#39#39'Moderación'#39#39' y NO la '#39#39'Privación'#39#39' te conducirán a una mej' +
+          'or calidad de vida.'
+        ' Mantén control de tu peso y de tu presión arterial.'
+        
+          ' Perder peso es una cosa, mantenerlo después de tanto esfuerzo e' +
+          's otra.'
+        
+          ' El agua no aporta energía pero es un factor indispensable dentr' +
+          'o de una dieta balanceada.'
+        
+          ' Todas las vitaminas son indispensables y deben obtenerse de los' +
+          ' alimentos.'
+        
+          ' Ni las vitaminas ni los minerales poseen calorías, por lo tanto' +
+          ' no engordan.'
+        
+          ' Nuestro organismo necesita cada día ácidos grasos esenciales. T' +
+          'odos los aceites vegetales los contienen.'
+        
+          ' Los carbohidratos de absorción rápida están en la fruta, zumos,' +
+          ' leche y derivados.'
+        
+          ' El aceite virgen de oliva es recomendado por su riqueza en ácid' +
+          'o oleico.'
+        
+          ' La dieta mediterránea es rica en grasas insaturadas procedentes' +
+          ' de pescados azules, aceite de oliva y frutos secos.'
+        
+          ' Los alimentos ricos en carbohidratos complejos deben ser los má' +
+          's abundantes: cereales y derivados, legumbres y arroz.'
+        
+          ' Los alimentos de una dieta deben ser variados, evitando la mono' +
+          'tonía y la exclusión.'
+        
+          ' Algunas hortalizas como la patata y los boniatos son ricos en h' +
+          'idratos de carbono.'
+        
+          ' Para mantener un peso óptimo, el contenido energético de la ali' +
+          'mentación debe ser proporcional al gasto energético diario.'
+        
+          ' La alimentación debe ser variada, suficiente en energía y sin e' +
+          'xcesos, para evitar obesidad o afecciones carenciales.'
+        
+          ' Existe una estrecha relación entre una dieta adecuada y balance' +
+          'ada, y un excelente estado de salud.'
+        
+          ' Los hábitos dietéticos sanos influyen de forma importante en nu' +
+          'estra salud.'
+        
+          ' La cantidad de energía en la alimentación depende de la edad, s' +
+          'exo, altura, actividad física y estado fisiológico.'
+        
+          ' Los 3 nutrientes principales de una dieta sana son: hidratos de' +
+          ' carbono, lípidos o grasas y proteínas.'
+        
+          ' El ácido oleico es un ácido graso mono insaturado que contribuy' +
+          'e al equilibrio del aporte diario de grasas.'
+        
+          ' La fibra dietética es un compuesto de los alimentos que no pued' +
+          'e ser digerido por las enzimas del tubo digestivo.'
+        
+          ' Los alimentos vegetales contienen 2 tipos de fibra, insoluble y' +
+          ' soluble, con efectos biológicos diferentes.'
+        
+          ' Los resultados de la composición corporal son una consecuencia ' +
+          'directa de lo que comes y bebes.'
+        
+          ' Los zumos naturales son una buena fuente de carbohidratos duran' +
+          'te las comidas.'
+        
+          ' Comer sanamente significa proporcionar al organismo lo que nece' +
+          'sita en la cantidad y proporción adecuadas.'
+        
+          ' La dieta mediterránea se correlaciona con una menor incidencia ' +
+          'de ciertos tipos de cáncer y afecciones cardiovasculares.'
+        
+          ' Los carbohidratos complejos (de absorción lenta) y simples (de ' +
+          'absorción rápida), aportan energía al organismo.'
+        
+          ' La dieta mediterránea se caracteriza por un consumo moderado de' +
+          ' carnes y grasas de origen animal.'
+        
+          ' El aceite virgen de oliva es eficaz en la prevención de afeccio' +
+          'nes como la arterosclerosis coronaria.'
+        
+          ' El valor nutritivo del pescado azul es semejante al de la carne' +
+          ' pero las proteínas se asimilan más fácil.'
+        
+          ' La ingesta de ajo, cebolla, tomate y frutos secos, aportan anti' +
+          'oxidantes y nutrientes protectores.'
+        
+          ' El consumo de pescado azul y aceite de oliva son beneficiosos p' +
+          'or la calidad y proporción de los lípidos que aportan.'
+        
+          ' Las necesidades hídricas son de 3 litros por día: 50% contenida' +
+          ' en los alimentos y 50% consumida en forma de bebida.'
+        
+          ' Acude a un especialista que te confeccione una dieta adecuada a' +
+          ' tus aspectos únicos e individuales.'
+        
+          ' Cuando necesites aumentar tu ingesta de carbohidratos, consider' +
+          'a el tomar fruta fresca después de una comida.'
+        
+          ' La fibra favorece la evacuación intestinal, la sensación de sac' +
+          'iedad y el crecimiento y reproducción de bacterias intestinales ' +
+          'protectoras.'
+        
+          ' Para evitar los calambres en las piernas es recomendable comer ' +
+          'un plátano diario.'
+        ' Toma frijoles y lentejas por lo menos dos veces a la semana.'
+        
+          ' Si te resfrías, bebe muchos líquidos como agua o zumos naturale' +
+          's.'
+        
+          ' En pequeñas inflamaciones de la piel aplique rodajas de patata ' +
+          'cruda. También mejora la cicatrización.'
+        
+          ' Conviértelo en un pasatiempo el encontrar maneras de mover tu c' +
+          'uerpo y ejercitarte tanto como puedas.'
+        
+          ' Busca algo que te inspire, eleva tu nivel de conciencia, motíva' +
+          'te y satisface tu alma.'
+        ' Ejercita tu cerebro. Lee, estudia, resuelve problemas. '
+        
+          ' El cerebro es un órgano que también se atrofia por falta de uso' +
+          '.'
+        
+          ' La fibra dietética en personas diabéticas disminuye los niveles' +
+          ' de glucosa en la sangre.'
+        
+          ' Sustituye total o parcialmente las harinas o panes molidos refi' +
+          'nados por sus presentaciones integrales.'
+        
+          ' Está comprobado científicamente que reírse incrementa la vida. ' +
+          'A reírse, vivir más alegra a cualquiera.'
+        
+          ' Para maximizar los beneficios de la fibra bebe mucha agua para ' +
+          'mejorar los movimientos intestinales.'
+        
+          ' La fibra dietética ayuda a disminuir el colesterol y previene e' +
+          'l cáncer de colon.')
+      ParentFont = False
+      TabOrder = 18
+    end
+    object BCNutricionales: TButton
+      Left = 216
+      Top = 336
+      Width = 180
+      Height = 26
+      Caption = 'BCNutricionales'
+      TabOrder = 19
+      OnClick = BCNutricionalesClick
+    end
+    object LBHomeopatia: TListBox
+      Left = 16
+      Top = 372
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acanthosis Venom'
+        ' Aconite'
+        ' Antimony'
+        ' Apis Mel'
+        ' Arsenicum'
+        ' Aurum'
+        ' Belladonna'
+        ' Bothrops Venom'
+        ' Bryonia'
+        ' Buthus Venom'
+        ' Calcarea'
+        ' Carbolic Acidum'
+        ' Chinona'
+        ' Crotalis Venom'
+        ' Cuprum'
+        ' Ferrum'
+        ' Gelsemium'
+        ' Glonine'
+        ' Iodium'
+        ' Ipecacuanha'
+        ' Lachesis Venom'
+        ' Lactrodectus Venom'
+        ' Merc'
+        ' Mercury'
+        ' Naja Venom'
+        ' Notechis Venom'
+        ' Nux Vox'
+        ' Ophiophagus Venom'
+        ' Opium'
+        ' Passiflora'
+        ' Phosphorus'
+        ' Plutonium'
+        ' Pulsatilla'
+        ' Rhus Tox'
+        ' Sepia'
+        ' Sepia'
+        ' Silica'
+        ' Silver'
+        ' Stannum'
+        ' Sulphur'
+        ' Thuja'
+        ' Vespa Venom'
+        ' Zinc')
+      TabOrder = 20
+    end
+    object BHomeopatia: TButton
+      Left = 216
+      Top = 372
+      Width = 180
+      Height = 26
+      Caption = 'BHomeopatia'
+      TabOrder = 21
+      OnClick = BHomeopatiaClick
+    end
+  end
   object Timer1: TTimer
     Enabled = False
     Interval = 1
     OnTimer = Timer1Timer
-    Left = 424
-    Top = 452
+    Left = 1000
+    Top = 108
   end
   object MyChrono: TYRChronometre
-    Left = 392
-    Top = 420
+    Left = 1032
+    Top = 20
   end
   object Timer2: TTimer
-    Left = 456
-    Top = 452
+    Left = 1000
+    Top = 136
   end
   object TOndas: TTimer
     Enabled = False
     OnTimer = TOndasTimer
-    Left = 424
-    Top = 420
+    Left = 1000
+    Top = 76
   end
   object TSNP: TTimer
     Enabled = False
     OnTimer = TSNPTimer
-    Left = 456
-    Top = 420
+    Left = 1032
+    Top = 48
   end
   object TSNA: TTimer
     Enabled = False
     OnTimer = TSNATimer
-    Left = 488
-    Top = 420
+    Left = 1032
+    Top = 76
   end
   object TSNAEspecificos: TTimer
     Enabled = False
     OnTimer = TSNAEspecificosTimer
-    Left = 520
-    Top = 420
+    Left = 1032
+    Top = 104
   end
   object TSNC: TTimer
     Enabled = False
     OnTimer = TSNCTimer
-    Left = 552
-    Top = 420
+    Left = 1000
+    Top = 200
   end
   object TPEvocados: TTimer
     Enabled = False
     OnTimer = TPEvocadosTimer
-    Left = 584
-    Top = 420
+    Left = 1032
+    Top = 168
   end
   object TECG: TTimer
     Enabled = False
     OnTimer = TECGTimer
-    Left = 584
-    Top = 452
+    Left = 1032
+    Top = 200
   end
   object TASNA: TTimer
     Enabled = False
     OnTimer = TASNATimer
-    Left = 488
-    Top = 452
+    Left = 1000
+    Top = 168
   end
   object TAreas: TTimer
     Enabled = False
     OnTimer = TAreasTimer
-    Left = 520
-    Top = 452
+    Left = 1000
+    Top = 232
   end
   object TAreasSNA: TTimer
     Enabled = False
     OnTimer = TAreasSNATimer
-    Left = 552
-    Top = 452
+    Left = 1032
+    Top = 136
   end
   object TPE: TTimer
     Enabled = False
     OnTimer = TPETimer
-    Left = 392
-    Top = 452
+    Left = 1000
+    Top = 48
   end
   object TDesmielinizacion: TTimer
     Enabled = False
     OnTimer = TDesmielinizacionTimer
-    Left = 392
-    Top = 484
+    Left = 1000
+    Top = 20
+  end
+  object Q_Filtro: TQuery
+    Left = 1064
+    Top = 49
+  end
+  object DS_Filtro: TDataSource
+    DataSet = Q_Filtro
+    Left = 1064
+    Top = 19
+  end
+  object Query1: TQuery
+    Left = 1064
+    Top = 111
+  end
+  object DataSource1: TDataSource
+    Left = 1064
+    Top = 81
   end
 end

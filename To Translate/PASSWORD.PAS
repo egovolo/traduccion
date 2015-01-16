@@ -15,7 +15,6 @@ type
     Edit1: TEdit;
     Button2: TButton;
     Edit2: TEdit;
-    Memo1: TMemo;
     Image3: TImage;
     Label27: TLabel;
     Label29: TLabel;
@@ -34,11 +33,8 @@ type
     Ed_new_pass: TEdit;
     Ed_new_pass2: TEdit;
     Label5: TLabel;
-    ButtonsavePassword: TButton;
     OKBtn: TBitBtn;
     Password: TEdit;
-    Button3: TButton;
-    Button12: TButton;
     Label25: TLabel;
     MainMenu1: TMainMenu;
     Documentacin1: TMenuItem;
@@ -72,21 +68,16 @@ type
     Label9: TLabel;
     Label11: TLabel;
     RegistrodelsofwareenlaCEE1: TMenuItem;
-    Label12: TLabel;
     B_Aniversario: TButton;
     Label34: TLabel;
     Panel1: TPanel;
     Memo2: TMemo;
     Label1: TLabel;
-    Label2: TLabel;
-    Memo3: TMemo;
     B_Aniversario2: TButton;
     Memo4: TMemo;
     Panel2: TPanel;
 
-    procedure Contratodelicenciadelsoftware1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Memo1Click(Sender: TObject);
     procedure FormDeactivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -105,11 +96,8 @@ type
     procedure btn_resetClick(Sender: TObject);
     procedure Label9Click(Sender: TObject);
     procedure Label11Click(Sender: TObject);
-    procedure Label12Click(Sender: TObject);
     procedure Label15Click(Sender: TObject);
     procedure B_AniversarioClick(Sender: TObject);
-    procedure Label2Click(Sender: TObject);
-    procedure Memo3Click(Sender: TObject);
     procedure B_Aniversario2Click(Sender: TObject);
     procedure Panel2Click(Sender: TObject);
 
@@ -346,20 +334,10 @@ var
   + IntToStr(Day);
 end;
 
-procedure TPasswordDlg.Contratodelicenciadelsoftware1Click(Sender: TObject);
-begin
-Memo1.Visible:=True;
-end;
-
 procedure TPasswordDlg.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
 timer1.enabled:=false;
-end;
-
-procedure TPasswordDlg.Memo1Click(Sender: TObject);
-begin
-memo1.visible:=false;
 end;
 
 procedure TPasswordDlg.FormDeactivate(Sender: TObject);
@@ -663,14 +641,10 @@ sec:=random(799)+111;
    label26.visible:=false;
    label27.visible:=false;
    label28.visible:=false;
-  // password.enabled:=true;
-   memo1.visible:=false;
    button4.visible:=false;  // I agree to all terms
    
 End;
   If fileExists('neutral.dll') then
-//     label25.visible:=true; //NULL filed protected
-      //ConvertToDEMO;
 if not(DM.T_INI.active) then
    DM.T_INI.active := true;
 If DM.T_INI.RecordCount<>0 Then
@@ -725,7 +699,7 @@ Memo2.Lines[0]:='¡Felíz año nuevo!  '+
 'Espero que hayas tenido una buena celebración en compañía de los tuyos.  '+
 'Has de este año que comienza el mejor y más productivo de tu vida.  '+
 'Concéntrate en ayudar a otros y en aprender de ello.  Recuerda que eres una '+
-'persona muy afortunada porque otros te dan la oportunidad de ayudarles y por '+
+'persona muy afortunada porque otros te dan la oportunidad de ayudarles, '+
 'debes estar muy agradecido y darles las gracias.';
 Memo2.Refresh;
 end;
@@ -745,7 +719,7 @@ Memo2.Lines[0]:='Hoy es el aniversario del nacimiento de Søren Peter Lauritz Sør
 'describió dos nuevos métodos para medir la acidez.  El primer método estaba basado '+
 'en electrodos, mientras el segundo implicado la comparación de los colores de muestras '+
 'y un juego preseleccionado de indicadores.  El se encargó de obtener la formula para poder '+
-'manejar números enteros en el PH.Se subdividia en alcalinas, neutras y dulces.';
+'manejar números enteros en el PH.  Se subdividía en alcalinas, neutras y dulces.';
 Memo2.Refresh;
 end;
 
@@ -755,10 +729,10 @@ B_Aniversario.visible:=true;
 Memo2.Lines.Clear;
 Memo2.Lines[0]:='Hoy es el aniversario del nacimiento de Benjamin Franklin.  '+
 '(Boston - EE.UU., 17 de enero de 1706 | Filadelfia - EE.UU., 17 de abril de 1790).  '+
-'Político, científico e inventor. Es uno de los padres fundadores de los Estados '+
+'Político, científico e inventor.  Es uno de los padres fundadores de los Estados '+
 'Unidos de Norteamérica.  Además del pararrayos, inventó los lentes bifocales, el '+
 'humidificador, el cuentakilómetros, la armónica de cristal y uno de los primeros '+
-'catéteres urinarios flexibles. Fué el primero en describir la Corriente del Golfo.';
+'catéteres urinarios flexibles.  Fué el primero en describir la Corriente del Golfo.';
 Memo2.Refresh;
 end;
 
@@ -1353,7 +1327,6 @@ end;
 
 procedure TPasswordDlg.Button4Click(Sender: TObject);
 begin
-   memo1.visible:=false;
    button4.visible:=false;
    button2.visible:=true;
    Password.SetFocus;
@@ -1619,7 +1592,6 @@ procedure TPasswordDlg.Edit2Change(Sender: TObject);
 begin
 IF button2.caption <> 'Cargar código por días' Then
 button2.caption:= 'Cargar código';
-memo1.visible:=false;
 end;
 
 procedure TPasswordDlg.Edit1Click(Sender: TObject);
@@ -1818,11 +1790,6 @@ begin
 Close;
 end;
 
-procedure TPasswordDlg.Label12Click(Sender: TObject);
-begin
-Memo1.Visible := True;
-end;
-
 procedure TPasswordDlg.Label15Click(Sender: TObject);
 begin
 Memo2.visible:=false;
@@ -1834,26 +1801,17 @@ begin
 Panel1.Visible := True;
 end;
 
-procedure TPasswordDlg.Label2Click(Sender: TObject);
-begin
-Memo3.Visible := True;
-end;
-
-procedure TPasswordDlg.Memo3Click(Sender: TObject);
-begin
-Memo3.Visible := False;
-end;
-
 procedure TPasswordDlg.B_Aniversario2Click(Sender: TObject);
 begin
 Memo4.Visible := True;
-B_Aniversario2.Visible := True;
+B_Aniversario2.Visible := false;
 end;
 
 procedure TPasswordDlg.Panel2Click(Sender: TObject);
 begin
 mxProtector1.reset;
 Panel1.Visible := False;
+B_Aniversario.Visible := true;
 end;
 
 end.

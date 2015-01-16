@@ -3,9 +3,7 @@ object FTests_alcohol: TFTests_alcohol
   Top = 141
   BorderIcons = [biSystemMenu]
   BorderStyle = bsNone
-  Caption = 
-    '::: gENIO® ::: Comunicación Bio-Instrumental | Electro Dinámica ' +
-    'Cuántica ::: Exámenes psicológicos ::: '
+  Caption = '::: gENIO® ::: Exámenes psicológicos ::: '
   ClientHeight = 749
   ClientWidth = 1034
   Color = clSilver
@@ -1064,9 +1062,9 @@ object FTests_alcohol: TFTests_alcohol
           'na.'
         ''
         
-          '1. Tengo una enfermedad hepática ( daño en el hígado) ya diagnos' +
-          'ticada por un médico y me han dicho que está relacionada con el ' +
-          'consumo de'
+          '1. Tengo una enfermedad hepática (daño en el hígado) ya diagnost' +
+          'icada por un médico y me han dicho que está relacionada con el c' +
+          'onsumo de'
         '    alcohol.'
         ''
         

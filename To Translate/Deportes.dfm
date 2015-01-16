@@ -2373,7 +2373,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -2389,7 +2389,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3587,7 +3587,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3831,7 +3831,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3847,7 +3847,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3880,7 +3880,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3896,7 +3896,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3912,7 +3912,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3945,7 +3945,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3961,7 +3961,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -3977,7 +3977,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4010,7 +4010,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4026,7 +4026,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4042,7 +4042,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4075,7 +4075,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4091,7 +4091,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4107,7 +4107,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4140,7 +4140,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4156,7 +4156,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4172,7 +4172,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4205,7 +4205,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4221,7 +4221,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4237,7 +4237,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4270,7 +4270,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4286,7 +4286,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4302,7 +4302,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4335,7 +4335,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4351,7 +4351,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4367,7 +4367,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4400,7 +4400,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4416,7 +4416,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4432,7 +4432,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4465,7 +4465,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4481,7 +4481,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Rx'
+    Caption = 'fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4497,7 +4497,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = '+Rx'
+    Caption = '+fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4530,7 +4530,7 @@ object FDeportes: TFDeportes
     Height = 14
     Cursor = crHandPoint
     Hint = 'Use to reset Player Focus'
-    Caption = 'Px'
+    Caption = '-fX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -4588,8 +4588,8 @@ object FDeportes: TFDeportes
   end
   object Panel13: TPanel
     Left = 6
-    Top = 4
-    Width = 533
+    Top = 28
+    Width = 423
     Height = 365
     BevelOuter = bvNone
     BevelWidth = 3
@@ -4604,29 +4604,16 @@ object FDeportes: TFDeportes
     Visible = False
     object Image27: TImage
       Left = 232
-      Top = 24
-      Width = 281
-      Height = 205
+      Top = 92
+      Width = 149
+      Height = 189
       Stretch = True
-    end
-    object Label188: TLabel
-      Left = 12
-      Top = 12
-      Width = 116
-      Height = 13
-      Caption = 'Listado de imágenes'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
     end
     object ListBox2: TListBox
       Left = 12
-      Top = 32
+      Top = 44
       Width = 209
-      Height = 237
+      Height = 249
       Cursor = crHandPoint
       BorderStyle = bsNone
       Color = clWhite
@@ -4638,55 +4625,6 @@ object FDeportes: TFDeportes
       ItemHeight = 13
       ParentFont = False
       TabOrder = 0
-    end
-    object RadioButton33: TRadioButton
-      Left = 308
-      Top = 252
-      Width = 81
-      Height = 17
-      Cursor = crHandPoint
-      Caption = 'Horizontal'
-      Checked = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 1
-      TabStop = True
-      Visible = False
-    end
-    object Button49: TButton
-      Left = 304
-      Top = 316
-      Width = 209
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Cerrar'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 2
-    end
-    object loadPic: TButton
-      Left = 12
-      Top = 276
-      Width = 209
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Cargar imagen'
-      Enabled = False
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
     end
     object Button94: TButton
       Left = 12
@@ -4701,7 +4639,7 @@ object FDeportes: TFDeportes
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 1
     end
     object Buttonborrar: TButton
       Left = 12
@@ -4716,53 +4654,21 @@ object FDeportes: TFDeportes
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 2
     end
-    object Button56: TButton
-      Left = 304
-      Top = 244
-      Width = 209
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Activar cámara Web'
+    object EBuscar: TEdit
+      Left = 12
+      Top = 20
+      Width = 121
+      Height = 16
+      BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
-    end
-    object BtnCaptura: TButton
-      Left = 304
-      Top = 268
-      Width = 209
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Capturar imagen Web'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-    end
-    object BitBtnCerrarWebCam: TBitBtn
-      Left = 304
-      Top = 292
-      Width = 209
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Cerrar cámara Web'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 8
-      Visible = False
+      TabOrder = 3
     end
   end
   object MyChrono: TYRChronometre

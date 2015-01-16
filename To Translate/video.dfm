@@ -4,9 +4,7 @@ object FVideoCap: TFVideoCap
   Width = 733
   Height = 641
   BorderIcons = [biSystemMenu]
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Podología :::'
+  Caption = '::: gENiO® iOS ::: Reflexología Podal :::'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -556,7 +554,7 @@ object FVideoCap: TFVideoCap
     Left = 676
     Top = 529
     Width = 37
-    Height = 22
+    Height = 19
     Hint = 'Tiempo máximo de terapia 20 min.'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack

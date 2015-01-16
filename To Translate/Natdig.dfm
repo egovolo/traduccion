@@ -3,9 +3,7 @@ object natdiag1: Tnatdiag1
   Top = 123
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Auriculoterapia :::'
+  Caption = '::: gENiO® iOS :::'
   ClientHeight = 687
   ClientWidth = 1061
   Color = clInactiveCaption
@@ -213,7 +211,7 @@ object natdiag1: Tnatdiag1
     Font.Style = []
     ItemHeight = 13
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     OnClick = ListBox1Click
   end
   object Button5: TButton
@@ -230,7 +228,7 @@ object natdiag1: Tnatdiag1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     OnClick = Button5Click
   end
   object Panel1: TPanel
@@ -240,7 +238,7 @@ object natdiag1: Tnatdiag1
     Height = 209
     BevelOuter = bvNone
     Color = clFuchsia
-    TabOrder = 4
+    TabOrder = 3
     object RadioButton2: TRadioButton
       Tag = 2
       Left = 4
@@ -477,7 +475,7 @@ object natdiag1: Tnatdiag1
     Height = 22
     Cursor = crHandPoint
     Caption = 'Terapia Personalizada'
-    TabOrder = 7
+    TabOrder = 6
     OnClick = Button1Click
   end
   object POreja: TPanel
@@ -486,7 +484,7 @@ object natdiag1: Tnatdiag1
     Width = 550
     Height = 400
     BevelOuter = bvNone
-    TabOrder = 8
+    TabOrder = 7
     Visible = False
     object IOreja: TImage
       Left = 0
@@ -1062,7 +1060,7 @@ object natdiag1: Tnatdiag1
     Height = 12
     Align = alBottom
     BevelOuter = bvNone
-    TabOrder = 9
+    TabOrder = 8
     object GProgreso: TGauge
       Left = 150
       Top = 0
@@ -1106,7 +1104,7 @@ object natdiag1: Tnatdiag1
     Height = 675
     BevelOuter = bvNone
     Color = clInactiveCaption
-    TabOrder = 11
+    TabOrder = 10
     Visible = False
     object Image4: TImage
       Left = 0
@@ -1779,7 +1777,7 @@ object natdiag1: Tnatdiag1
     Height = 22
     BevelOuter = bvNone
     Color = clBlack
-    TabOrder = 3
+    TabOrder = 2
     object LCrono2: TLabel
       Left = 84
       Top = 4
@@ -1818,7 +1816,7 @@ object natdiag1: Tnatdiag1
     Top = 652
     Width = 14
     Height = 14
-    TabOrder = 5
+    TabOrder = 4
     OnClick = CBAutomaticoClick
   end
   object CBTerapiaExtendida: TCheckBox
@@ -1826,7 +1824,7 @@ object natdiag1: Tnatdiag1
     Top = 652
     Width = 14
     Height = 14
-    TabOrder = 6
+    TabOrder = 5
   end
   object Panel2: TPanel
     Left = 868
@@ -1835,7 +1833,7 @@ object natdiag1: Tnatdiag1
     Height = 125
     BevelOuter = bvNone
     Color = clAppWorkSpace
-    TabOrder = 10
+    TabOrder = 9
     object Image3: TImage
       Left = 0
       Top = 0
@@ -1844,22 +1842,6 @@ object natdiag1: Tnatdiag1
       Align = alClient
       Stretch = True
     end
-  end
-  object PDesarrollo: TPanel
-    Left = 0
-    Top = 0
-    Width = 1061
-    Height = 14
-    BevelOuter = bvNone
-    Color = clLime
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 0
-    Visible = False
   end
   object SETiempo: TSpinEdit
     Left = 492
@@ -1876,7 +1858,7 @@ object natdiag1: Tnatdiag1
     MaxValue = 20
     MinValue = 3
     ParentFont = False
-    TabOrder = 12
+    TabOrder = 11
     Value = 3
   end
   object Timer2: TTimer

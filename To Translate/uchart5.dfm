@@ -1,12 +1,10 @@
 object FChart5: TFChart5
-  Left = 83
-  Top = 136
+  Left = 37
+  Top = 119
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Terapias para la reducción del estrés ::: '
-  ClientHeight = 619
+  Caption = '::: gENiO® iOS ::: Terapias para la reducción del estrés ::: '
+  ClientHeight = 600
   ClientWidth = 1040
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -30,7 +28,7 @@ object FChart5: TFChart5
     Left = 0
     Top = 0
     Width = 1040
-    Height = 607
+    Height = 588
     Align = alClient
     Stretch = True
   end
@@ -337,20 +335,6 @@ object FChart5: TFChart5
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
-    object SubspaceActive2: TLabel
-      Left = 8
-      Top = 104
-      Width = 12
-      Height = 13
-      Caption = '|||'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clAqua
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
     object IContinuar: TImage
       Left = 992
       Top = 348
@@ -444,14 +428,6 @@ object FChart5: TFChart5
       Visible = False
       OnClick = Button1Click
     end
-    object MediaPlayer1: TMediaPlayer
-      Left = 608
-      Top = 16
-      Width = 253
-      Height = 20
-      Visible = False
-      TabOrder = 1
-    end
     object CBAutomatico: TCheckBox
       Left = 972
       Top = 348
@@ -459,7 +435,7 @@ object FChart5: TFChart5
       Height = 14
       Color = clWhite
       ParentColor = False
-      TabOrder = 2
+      TabOrder = 1
     end
     object CBTExtendida: TCheckBox
       Left = 972
@@ -468,7 +444,8 @@ object FChart5: TFChart5
       Height = 13
       Color = clWhite
       ParentColor = False
-      TabOrder = 3
+      TabOrder = 2
+      OnClick = CBTExtendidaClick
     end
     object SETiempo: TSpinEdit
       Left = 984
@@ -486,7 +463,7 @@ object FChart5: TFChart5
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 4
+      TabOrder = 3
       Value = 4
     end
     object Series1: TPointSeries
@@ -687,6 +664,20 @@ object FChart5: TFChart5
     View3DWalls = False
     BevelOuter = bvNone
     TabOrder = 1
+    object SubspaceActive2: TLabel
+      Left = 8
+      Top = 186
+      Width = 12
+      Height = 13
+      Caption = '|||'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clAqua
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
     object Series6: TFastLineSeries
       Marks.ArrowLength = 8
       Marks.Font.Charset = DEFAULT_CHARSET
@@ -710,175 +701,6 @@ object FChart5: TFChart5
       YValues.Order = loNone
     end
   end
-  object GroupBox2: TGroupBox
-    Left = 4
-    Top = 304
-    Width = 1029
-    Height = 153
-    Caption = ' Introducir datos adicionales a terapia  '
-    Color = clSilver
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentColor = False
-    ParentFont = False
-    TabOrder = 2
-    Visible = False
-    object Edit1: TEdit
-      Left = 12
-      Top = 22
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-      Text = 'Nosode/s: '
-      OnClick = Edit1Click
-    end
-    object Edit2: TEdit
-      Left = 12
-      Top = 38
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      Text = 'Isode/s: '
-      OnClick = Edit2Click
-    end
-    object Edit3: TEdit
-      Left = 12
-      Top = 54
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 2
-      Text = 'Alersode/s: '
-      OnClick = Edit3Click
-    end
-    object Edit4: TEdit
-      Left = 12
-      Top = 70
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
-      Text = 'Síntoma/s: '
-      OnClick = Edit4Click
-    end
-    object Button51: TButton
-      Left = 616
-      Top = 124
-      Width = 189
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Cargar sugestiones'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 4
-      OnClick = AddPiggyBackTherapies1Click
-    end
-    object Edit5: TEdit
-      Left = 12
-      Top = 86
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 5
-      Text = 'Sarcode/s: '
-      OnChange = Edit5Change
-    end
-    object Edit6: TEdit
-      Left = 12
-      Top = 102
-      Width = 985
-      Height = 14
-      Cursor = crIBeam
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 6
-      Text = 'Clásico/s o herbal/es: '
-      OnChange = Edit6Change
-    end
-    object Button14: TButton
-      Left = 808
-      Top = 124
-      Width = 189
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Borrar cajetines de edición'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-      OnClick = Button14Click
-    end
-    object Panel1: TPanel
-      Left = 1002
-      Top = 14
-      Width = 22
-      Height = 22
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 8
-      OnClick = Panel1Click
-    end
-  end
   object GBTerapiaPersonalizada: TGroupBox
     Left = 112
     Top = 20
@@ -887,7 +709,7 @@ object FChart5: TFChart5
     Caption = ' Terapia personalizada '
     Color = clSilver
     ParentColor = False
-    TabOrder = 4
+    TabOrder = 3
     Visible = False
     object LPersonalizar: TLabel
       Left = 12
@@ -960,7 +782,7 @@ object FChart5: TFChart5
     Anchors = [akTop, akRight]
     BevelOuter = bvNone
     Color = clBlack
-    TabOrder = 3
+    TabOrder = 2
     object LCrono2: TLabel
       Left = 84
       Top = 4
@@ -995,13 +817,13 @@ object FChart5: TFChart5
     end
   end
   object PAdicciones: TPanel
-    Left = 36
-    Top = 568
+    Left = 32
+    Top = 416
     Width = 899
     Height = 28
     BevelOuter = bvNone
-    Color = clSilver
-    TabOrder = 5
+    Color = clYellow
+    TabOrder = 4
     Visible = False
     object Label3: TLabel
       Left = 25
@@ -1033,7 +855,7 @@ object FChart5: TFChart5
     Caption = ' Terapia personalizada '
     Color = clSilver
     ParentColor = False
-    TabOrder = 6
+    TabOrder = 5
     Visible = False
     object Label1: TLabel
       Left = 12
@@ -1099,12 +921,12 @@ object FChart5: TFChart5
   end
   object Panel10: TPanel
     Left = 0
-    Top = 607
+    Top = 588
     Width = 1040
     Height = 12
     Align = alBottom
     BevelOuter = bvNone
-    TabOrder = 7
+    TabOrder = 6
     object GProgreso: TGauge
       Left = 150
       Top = 0
@@ -1195,7 +1017,7 @@ object FChart5: TFChart5
             end
             object Bebidadgaseosas1: TMenuItem
               Tag = 8
-              Caption = 'Bebidad gaseosas'
+              Caption = 'Bebidas gaseosas'
               OnClick = Bebidadgaseosas1Click
             end
             object CafTena1: TMenuItem
@@ -1451,7 +1273,7 @@ object FChart5: TFChart5
       end
     end
     object OrganSystems1: TMenuItem
-      Caption = 'Funciones orgánicas'
+      Caption = 'Funciones motoras'
       Hint = 'Se debe cerrar un programa antes de abrir otro.'
       object Explorar2: TMenuItem
         Caption = 'Explorar...'
@@ -1564,7 +1386,6 @@ object FChart5: TFChart5
         Hint = 
           'Usar para ver las elecciones inconscientes de ondas extras añadi' +
           'das a terapia.'
-        OnClick = AddPiggyBackTherapies1Click
       end
       object Personalizar4: TMenuItem
         Caption = 'Personalizar...'
@@ -2465,7 +2286,7 @@ object FChart5: TFChart5
       end
     end
     object Additional1: TMenuItem
-      Caption = 'Organos'
+      Caption = 'Funciones orgánicas'
       object Explorar3: TMenuItem
         Caption = 'Explorar...'
         OnClick = Explorar3Click
@@ -2535,10 +2356,10 @@ object FChart5: TFChart5
         Caption = 'Garganta'
         OnClick = Throat1Click
       end
-      object Male1: TMenuItem
+      object Female1: TMenuItem
         Tag = 8
-        Caption = 'Genitales'
-        OnClick = Male1Click
+        Caption = 'Gónadas'
+        OnClick = Female1Click
       end
       object Liver1: TMenuItem
         Tag = 8
@@ -2623,11 +2444,6 @@ object FChart5: TFChart5
           'ción, u órganos intoxicados.'
         OnClick = Knee1Click
       end
-      object Female1: TMenuItem
-        Tag = 8
-        Caption = 'Senos'
-        OnClick = Female1Click
-      end
       object Sinus1: TMenuItem
         Tag = 8
         Caption = 'Senos nasales'
@@ -2685,11 +2501,11 @@ object FChart5: TFChart5
         OnClick = Dehipnosis1Click
       end
       object RemoteViewing1: TMenuItem
-        Caption = 'Protección contra visión remota moderada'
+        Caption = 'Protejer contra visión remota moderada'
         OnClick = RemoteViewing1Click
       end
       object RemoteViewing21: TMenuItem
-        Caption = 'Protección contra visión remota dañina'
+        Caption = 'Protejer contra visión remota dañina'
         OnClick = RemoteViewing21Click
       end
     end
@@ -2831,11 +2647,6 @@ object FChart5: TFChart5
       object N4: TMenuItem
         Caption = '-'
       end
-      object Allergy1: TMenuItem
-        Tag = 8
-        Caption = 'Alergias'
-        OnClick = Allergy1Click
-      end
       object ArteriasyVenas1: TMenuItem
         Tag = 8
         Caption = 'Arterias y Venas'
@@ -2892,7 +2703,7 @@ object FChart5: TFChart5
       end
       object Habilidadesextrasensoriales1: TMenuItem
         Tag = 8
-        Caption = 'Habilidades extra sensoriales'
+        Caption = 'Habilidades extra sensoriales - ESP'
         RadioItem = True
         OnClick = Habilidadesextrasensoriales1Click
       end
@@ -2905,6 +2716,11 @@ object FChart5: TFChart5
         Tag = 8
         Caption = 'Heridas'
         OnClick = Woundrepair1Click
+      end
+      object Allergy1: TMenuItem
+        Tag = 8
+        Caption = 'Hiperreactividad'
+        OnClick = Allergy1Click
       end
       object Inflamacin1: TMenuItem
         Tag = 8
@@ -3102,6 +2918,10 @@ object FChart5: TFChart5
         Caption = 'Psiquiatricos'
         OnClick = Pensamiento1Click
       end
+    end
+    object Repositorio1: TMenuItem
+      Caption = 'Repositorio >'
+      OnClick = Repositorio1Click
     end
   end
   object MyChrono: TYRChronometre

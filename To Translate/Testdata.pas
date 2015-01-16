@@ -1,6 +1,6 @@
 unit Testdata;
 
-interface                                                                                      
+interface
 
 uses
   SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,video,
@@ -165,7 +165,6 @@ type
     Label173: TLabel;
     Label174: TLabel;
     Label175: TLabel;
-    Label181: TLabel;
     Button29: TButton;
     Button30: TButton;
     ResetTreatButton1: TMenuItem;
@@ -180,20 +179,14 @@ type
     SeeChartofTrivectorPictureOfthisHomeopathic1: TMenuItem;
     Panel11: TPanel;
     Button34: TButton;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
-    Edit11: TEdit;
-    Edit12: TEdit;
-    Edit13: TEdit;
-    Edit14: TEdit;
-    Button35: TButton;
-    Edit15: TEdit;
+    ECausas: TEdit;
+    EPOrganosAfectados: TEdit;
+    EMeridianos: TEdit;
+    EProcesos: TEdit;
+    ETerapias: TEdit;
+    EAgendar: TEdit;
+    EEPositivas: TEdit;
     NelsonReport1: TMenuItem;
-    Informacion1: TMenuItem;
     AutozapCandidas1: TMenuItem;
     AutozapAmeoba1: TMenuItem;
     AutozapPyrogenium1: TMenuItem;
@@ -201,7 +194,6 @@ type
     AutozapFluvirus1: TMenuItem;
     AutozapHepatitis1: TMenuItem;
     AutozapAidsVirus1: TMenuItem;
-    BabyMultiMediaAccess1: TMenuItem;
     GroupBox1: TGroupBox;
     RadioButton10: TRadioButton;
     RadioButton11: TRadioButton;
@@ -220,12 +212,6 @@ type
     MediaPlayer1: TMediaPlayer;
     Button37: TButton;
     Label193: TLabel;
-    RadioButton22: TRadioButton;
-    RadioButton23: TRadioButton;
-    RadioButton24: TRadioButton;
-    RadioButton25: TRadioButton;
-    RadioButton26: TRadioButton;
-    RadioButton27: TRadioButton;
     Panel12: TPanel;
     Button39: TButton;
     Edit16: TEdit;
@@ -234,7 +220,6 @@ type
     Edit19: TEdit;
     Edit20: TEdit;
     Edit21: TEdit;
-    Button41: TButton;
     Label194: TLabel;
     Label195: TLabel;
     Label196: TLabel;
@@ -247,14 +232,9 @@ type
     Label203: TLabel;
     Label204: TLabel;
     Label205: TLabel;
-    Label207: TLabel;
     Accessextradataandinfo1: TMenuItem;
     AutozapLactoseIntolerance1: TMenuItem;
     AutozapVariousEnzymeIntolerance1: TMenuItem;
-    RadioButton28: TRadioButton;
-    RadioButton29: TRadioButton;
-    RadioButton30: TRadioButton;
-    RadioButton31: TRadioButton;
     Label209: TLabel;
     Label210: TLabel;
     Label211: TLabel;
@@ -292,7 +272,6 @@ type
     Button45: TButton;
     Button46: TButton;
     NLPEmotionalGrowth1: TMenuItem;
-    ReactivityversusResonance1: TMenuItem;
     ShortsarcodeRx1: TMenuItem;
     LiveCell1: TMenuItem;
     Podologia1: TMenuItem;
@@ -305,26 +284,23 @@ type
     Button49: TButton;
     Button50: TButton;
     Label240: TLabel;
-    Button51: TButton;
-    Label241: TLabel;
     Button52: TButton;
     SpinEdit1: TSpinEdit;
     Button53: TButton;
     Button54: TButton;
     TestSubstanceforreaction1: TMenuItem;
     Ponitprobezapactive1: TMenuItem;
-    Edit23: TEdit;
+    EDisfuncionNutritiva: TEdit;
     Edit24: TEdit;
     Edit25: TEdit;
-    Edit26: TEdit;
+    EToxinas: TEdit;
     TestanItemOntheTestTray1: TMenuItem;
-    Edit29: TEdit;
+    EAfirmacion: TEdit;
     AutoZapCellulite1: TMenuItem;
     ZapHypothalamusGallBladconnection1: TMenuItem;
     Label251: TLabel;
     Label252: TLabel;
-    Label253: TLabel;                               
-    BioPictures1: TMenuItem;
+    Label253: TLabel;
     Label254: TLabel;
     Label255: TLabel;
     Label256: TLabel;
@@ -335,7 +311,6 @@ type
     Label260: TLabel;
     WheretogetRemedies1: TMenuItem;
     Label261: TLabel;
-    Memo7: TMemo;
     ZapFibrousTissue1: TMenuItem;
     CauseandAgravations1: TMenuItem;
     LoadChartmakerColorReports1: TMenuItem;
@@ -364,12 +339,9 @@ type
     Button76: TButton;
     Button77: TButton;
     Button78: TButton;
-    QXCIcommentsandquestions1: TMenuItem;
-    QXCIQuestions1: TMenuItem;
     ChangetheReactionValueofaRemedy1: TMenuItem;
     RemoveAddandSubstractButtons1: TMenuItem;
     AutoZapFromFilter5min1: TMenuItem;
-    QXCInetDiscussionGroup1: TMenuItem;
     Button79: TButton;
     Label289: TLabel;
     Label290: TLabel;
@@ -382,27 +354,18 @@ type
     Label295: TLabel;
     Label296: TLabel;
     Button82: TButton;
-    ManualTecnico: TMenuItem;
     AutoZapAutoAgressivedysfunction1: TMenuItem;
     AutozapAllergyRelief1: TMenuItem;
-    MaxandMaxineAdvice1: TMenuItem;
     Button85: TButton;
     Label298: TLabel;
     Button86: TButton;
     ShowRefreralPanels1: TMenuItem;
     Button88: TButton;
-    HowtoBuyAQXCI1: TMenuItem;
-    DeathofthePointProbe1: TMenuItem;
-    PrayerWheel2471: TMenuItem;
     Label302: TLabel;
     DeActivateQuantumIndeterminancyField1: TMenuItem;
     IntensifyQuantumIndeterminancyField1: TMenuItem;
-    TroubleShooting1: TMenuItem;
     ShowReferralPanels1: TMenuItem;
     AcupuncturePicturesaccess1: TMenuItem;
-    EvokedPotentialWhatHowQXCIMeasures1: TMenuItem;
-    RectificationofthePatient1: TMenuItem;
-    Whatimprovementstoexpect1: TMenuItem;
     AlarmCorrectionUseonlyWhenanAlarmhasoccurred1: TMenuItem;
     CauseCurePaliation1: TMenuItem;
     CauseCurePaliation2: TMenuItem;
@@ -419,11 +382,8 @@ type
     Label315: TLabel;
     Label316: TLabel;
     Label317: TLabel;
-    Label319: TLabel;
     Button65: TButton;
     Button80: TButton;
-    Label320: TLabel;
-    Label321: TLabel;
     TestTray1: TMenuItem;
     ActivateAll1: TMenuItem;
     ActivateHarness1: TMenuItem;
@@ -441,7 +401,6 @@ type
     ExtraStrongReactiveJoltduringTest1: TMenuItem;
     Button66: TButton;
     N1: TMenuItem;
-    N3: TMenuItem;
     N4: TMenuItem;
     N5: TMenuItem;
     SCIO1: TMenuItem;
@@ -819,7 +778,6 @@ type
     Label248: TLabel;
     Label249: TLabel;
     Button2: TButton;
-    N13: TMenuItem;
     Label284: TLabel;
     Energizaraguadesdesondadepunto1: TMenuItem;
     Panel16: TPanel;
@@ -883,7 +841,6 @@ type
     GeneradorOrgn1: TMenuItem;
     PaneldecomunicacinSubespacial1: TMenuItem;
     Label274: TLabel;
-    InformedeErrores1: TMenuItem;
     Label568: TLabel;
     Image9: TImage;
     Button89: TButton;
@@ -898,13 +855,11 @@ type
     N18: TMenuItem;
     Subespacio: TTimer;
     Label578: TLabel;
-    Porquesnuestrosistematanefectivo1: TMenuItem;
     Informesencillo1: TMenuItem;
     N19: TMenuItem;
     ReflexologaFacial1: TMenuItem;
     Load500: TMenuItem;
     Button99: TButton;
-    Acercade1: TMenuItem;
     Button101: TButton;
     Button102: TButton;
     Funcinderecompensa1: TMenuItem;
@@ -917,8 +872,6 @@ type
     Q_Filtro: TQuery;
     MemActivat: TMemo;
     Limpiartransportador1: TMenuItem;
-    N28: TMenuItem;
-    ManualdeConceptosdelSCIO1: TMenuItem;
     Lexicon1: TMenuItem;
     ActivarLexicon1: TMenuItem;
     Label322: TLabel;
@@ -929,7 +882,6 @@ type
     Label323: TLabel;
     Label324: TLabel;
     Label325: TLabel;
-    Button92: TButton;
     CheckBox13: TCheckBox;
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
@@ -958,7 +910,6 @@ type
     CheckBox21: TCheckBox;
     CheckBox22: TCheckBox;
     CheckBox23: TCheckBox;
-    Button4: TButton;
     CheckBox24: TCheckBox;
     CheckBox25: TCheckBox;
     CheckBox26: TCheckBox;
@@ -1006,7 +957,6 @@ type
     CheckBox68: TCheckBox;
     CheckBox69: TCheckBox;
     CheckBox70: TCheckBox;
-    Memo6: TMemo;
     CheckBox71: TCheckBox;
     Label232: TLabel;
     Label54: TLabel;
@@ -1052,10 +1002,8 @@ type
     Label245: TLabel;
     Label246: TLabel;
     Label257: TLabel;
-    Label58: TLabel;
     Label59: TLabel;
     Label60: TLabel;
-    N9: TMenuItem;
     Terapiadecuadrantes1: TMenuItem;
     Label120: TLabel;
     Label122: TLabel;
@@ -1126,7 +1074,6 @@ type
     GConductancia: TGauge;
     Edit36: TEdit;
     Button84: TButton;
-    MInformeVersiones: TMemo;
     ProgressBar1: TProgressBar;
     ProgressBar2: TProgressBar;
     ProgressBar3: TProgressBar;
@@ -1167,7 +1114,6 @@ type
     LpH3: TLabel;
     Panel69: TPanel;
     Panel70: TPanel;
-    Panel71: TPanel;
     Panel72: TPanel;
     Panel73: TPanel;
     Panel74: TPanel;
@@ -1324,6 +1270,56 @@ type
     Label351: TLabel;
     Label352: TLabel;
     CBBioAuto: TCheckBox;
+    EEmocionNegativa: TEdit;
+    PBasesDeDatos: TPanel;
+    BTerapias: TButton;
+    LBTerapias: TListBox;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAfirmaciones: TListBox;
+    BAfirmaciones: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    EAVM: TEdit;
+    ESistemas: TEdit;
+    LBAgendar: TListBox;
+    BAgenda: TButton;
+    CBConstitucion: TComboBox;
+    Label241: TLabel;
+    Button3: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    Label58: TLabel;
+    Label181: TLabel;
+    Label207: TLabel;
+    Label319: TLabel;
+    Label320: TLabel;
+    Label321: TLabel;
+    Label353: TLabel;
+    Label361: TLabel;
+    Label362: TLabel;
+    Label363: TLabel;
+    Label364: TLabel;
+    Label365: TLabel;
+    Label366: TLabel;
+    Label367: TLabel;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    Label368: TLabel;
 
     procedure FormCreate(Sender: TObject);
     procedure TestClick(Sender: TObject);
@@ -1339,7 +1335,6 @@ type
     procedure InfoBtnClick(Sender: TObject);
     procedure SaveInfoBtnClick(Sender: TObject);
     procedure BReaccionIndividualClick(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure SetValueOrderClick(Sender: TObject);
     procedure GoToNoClick(Sender: TObject);
@@ -1423,7 +1418,6 @@ type
     procedure ConscidaGridDragOver(Sender, Source: TObject; X, Y: Integer;
       State: TDragState; var Accept: Boolean);
     procedure InformationScreen1Click(Sender: TObject);
-    procedure Addpurpleitemstoreport1Click(Sender: TObject);
     procedure Panel8Click(Sender: TObject);
     procedure AddReady1Click(Sender: TObject);
     procedure EasyReductionPanel1Click(Sender: TObject);
@@ -1498,21 +1492,8 @@ type
     procedure InfoGridDrawDataCell(Sender: TObject; const Rect: TRect;
       Field: TField; State: TGridDrawState);
     procedure Button34Click(Sender: TObject);
-    procedure Button35Click(Sender: TObject);
     procedure NelsonReport1Click(Sender: TObject);
-    procedure Edit5Change(Sender: TObject);
-    procedure Edit6Change(Sender: TObject);
-    procedure Edit7Change(Sender: TObject);
-    procedure Edit8Change(Sender: TObject);
-    procedure Edit9Change(Sender: TObject);
-    procedure Edit10Change(Sender: TObject);
-    procedure Edit11Change(Sender: TObject);
-    procedure Edit12Change(Sender: TObject);
-    procedure Edit13Change(Sender: TObject);
-    procedure Edit14Change(Sender: TObject);
-    procedure Edit15Change(Sender: TObject);
     procedure NelsonReport3Click(Sender: TObject);
-    procedure DiseaseDictionary1Click(Sender: TObject);
     procedure AutozapCandidas1Click(Sender: TObject);
     procedure AutozapFluvirus1Click(Sender: TObject);
     procedure AutozapAmeoba1Click(Sender: TObject);
@@ -1526,7 +1507,6 @@ type
     procedure Button39Click(Sender: TObject);
     procedure Panel12DblClick(Sender: TObject);
     procedure Edit20Exit(Sender: TObject);
-    procedure Button41Click(Sender: TObject);
     procedure Edit16Exit(Sender: TObject);
     procedure Edit18Exit(Sender: TObject);
     procedure Edit17Exit(Sender: TObject);
@@ -1564,7 +1544,6 @@ type
     procedure Edit22Exit(Sender: TObject);
     procedure Button47Click(Sender: TObject);
     procedure Label239Click(Sender: TObject);
-    procedure Button51Click(Sender: TObject);
     procedure Button52Click(Sender: TObject);
     procedure Label242DblClick(Sender: TObject);
     procedure Label243Click(Sender: TObject);
@@ -1614,12 +1593,10 @@ type
     procedure Label251DblClick(Sender: TObject);
     procedure Label252DblClick(Sender: TObject);
     procedure Label253DblClick(Sender: TObject);
-    procedure BioPictures1Click(Sender: TObject);
     procedure Button60Click(Sender: TObject);
     procedure Button61Click(Sender: TObject);
     procedure Edit27Change(Sender: TObject);
     procedure QXCIinternetaccess1Click(Sender: TObject);
-    procedure Memo7DblClick(Sender: TObject);
     procedure Button67Click(Sender: TObject);
     procedure Label265Click(Sender: TObject);
     procedure CauseandAgravations1Click(Sender: TObject);
@@ -1673,14 +1650,10 @@ type
     procedure Label285DblClick(Sender: TObject);
     procedure Label284DblClick(Sender: TObject);
     procedure Button78Click(Sender: TObject);
-    procedure QXCIcommentsandquestions1Click(Sender: TObject);
-    procedure QXCIQuestions1Click(Sender: TObject);
     procedure ChangetheReactionValueofaRemedy1Click(Sender: TObject);
     procedure RemoveAddandSubstractButtons1Click(Sender: TObject);
-    procedure Info1Click(Sender: TObject);
     procedure AutoZapFromFilter5min1Click(Sender: TObject);
     procedure Edit34DblClick(Sender: TObject);
-    procedure Label257Click(Sender: TObject);
     procedure Button79Click(Sender: TObject);
     procedure Label289Click(Sender: TObject);
     procedure Label290Click(Sender: TObject);
@@ -1696,20 +1669,17 @@ type
     procedure AutoZapAutoAgressivedysfunction1Click(Sender: TObject);
     procedure AutozapAllergyRelief1Click(Sender: TObject);
     procedure Label297Click(Sender: TObject);
-    procedure MaxandMaxineAdvice1Click(Sender: TObject);
     procedure BZap30SClick(Sender: TObject);
     procedure Button86Click(Sender: TObject);
     procedure Button88Click(Sender: TObject);
     procedure InfoNavigatorClick(Sender: TObject; Button: TNavigateBtn);
     procedure Button70Click(Sender: TObject);
     procedure Label301Click(Sender: TObject);
-    procedure PrayerWheel2471Click(Sender: TObject);
     procedure Label302DblClick(Sender: TObject);
     procedure DeActivateQuantumIndeterminancyField1Click(Sender: TObject);
     procedure SubspacePanel1Click(Sender: TObject);
     procedure IntensifyQuantumIndeterminancyField1Click(Sender: TObject);
     procedure Edit34Click(Sender: TObject);
-    procedure TroubleShooting1Click(Sender: TObject);
     procedure ShowReferralPanels1Click(Sender: TObject);
     procedure AcupuncturePicturesaccess1Click(Sender: TObject);
     procedure Close4Click(Sender: TObject);
@@ -1761,10 +1731,7 @@ type
     procedure Cargarfotografa1Click(Sender: TObject);
     procedure Edit32Click(Sender: TObject);
     procedure Controldeondasdeforma1Click(Sender: TObject);
-    procedure Button92Click(Sender: TObject);
     procedure Button93Click(Sender: TObject);
-    procedure Memo6DblClick(Sender: TObject);
-    procedure ActivarSillaXMind1Click(Sender: TObject);
     procedure Button95Click(Sender: TObject);
     procedure BZap5SClick(Sender: TObject);
     procedure Edit1DblClick(Sender: TObject);
@@ -1878,7 +1845,6 @@ type
     procedure DiseaseDictionary2Click(Sender: TObject);
     procedure LCrono2DblClick(Sender: TObject);
     procedure Label271DblClick(Sender: TObject);
-    procedure InformedeErrores1Click(Sender: TObject);
     procedure Button89Click(Sender: TObject);
     procedure Button98Click(Sender: TObject);
     procedure Button99Click(Sender: TObject);
@@ -1890,7 +1856,6 @@ type
     procedure Informesencillo1Click(Sender: TObject);
     procedure ReflexologaFacial1Click(Sender: TObject);
     procedure Edit30Change(Sender: TObject);
-    procedure Acercade1Click(Sender: TObject);
     procedure Button100Click(Sender: TObject);
     procedure Button101Click(Sender: TObject);
     procedure Button102Click(Sender: TObject);
@@ -1923,15 +1888,12 @@ type
     procedure Label358Click(Sender: TObject);
     procedure Edit27Click(Sender: TObject);
     procedure Button84Click(Sender: TObject);
-    procedure N9Click(Sender: TObject);
-    procedure MInformeVersionesClick(Sender: TObject);
     procedure Panel14Click(Sender: TObject);
     procedure Hololingstica1Click(Sender: TObject);
     procedure Dental1Click(Sender: TObject);
     procedure Panel69Click(Sender: TObject);
     procedure Panel70Click(Sender: TObject);
     procedure Panel72Click(Sender: TObject);
-    procedure Panel71Click(Sender: TObject);
     procedure Panel73Click(Sender: TObject);
     procedure Panel74Click(Sender: TObject);
     procedure Panel75Click(Sender: TObject);
@@ -2002,6 +1964,36 @@ type
     procedure Podologia1Click(Sender: TObject);
     procedure BZapPClick(Sender: TObject);
     procedure TBuffersTimer(Sender: TObject);
+    procedure BTerapiasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BProcesosClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BAfirmacionesClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BSistemasClick(Sender: TObject);
+    procedure BAgendaClick(Sender: TObject);
+    procedure ECausasClick(Sender: TObject);
+    procedure EPOrganosAfectadosClick(Sender: TObject);
+    procedure EAVMClick(Sender: TObject);
+    procedure EMeridianosClick(Sender: TObject);
+    procedure EProcesosClick(Sender: TObject);
+    procedure EDisfuncionNutritivaClick(Sender: TObject);
+    procedure EToxinasClick(Sender: TObject);
+    procedure ESistemasClick(Sender: TObject);
+    procedure ETerapiasClick(Sender: TObject);
+    procedure EEPositivasClick(Sender: TObject);
+    procedure EEmocionNegativaClick(Sender: TObject);
+    procedure EAfirmacionClick(Sender: TObject);
+    procedure EAgendarClick(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Label367Click(Sender: TObject);
+    procedure BCNutricionalesClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
+    procedure Label368Click(Sender: TObject);
 
   private
     { private declarations }
@@ -2029,10 +2021,16 @@ type
     procedure Inicio();
     procedure Correccion();
     procedure Interpretacion();
-    procedure Hints();
-    procedure AfirmacionesPositivas();
     procedure AI();
     procedure DosisPrescripcion();
+    procedure Textos323();
+    procedure Textos324();
+    procedure Textos325();
+    procedure EnlaceEdit23();
+    procedure EnlaceLabel287();
+    procedure EnlaceLabel226();
+    procedure EnlaceLabel99();
+    procedure EnlaceLabel100();
 
   public
   vInfoNotVisible : boolean;
@@ -2304,7 +2302,7 @@ Uses
   LiveCell1,repdata, biop ,SpeachUnit,Multil, picUnit,UChart, chartreport,chartmaker1, emotio,
   subsp, ucomport, Usettings, uscioworking, UmainScio, ondas, WaveForm,  Uleds,
   CDMain, Reflexologia, Urecompensa, Password, Rectificacion, tools,
-  Unit_Cancer1, Podologia;
+  Unit_Cancer1, Podologia, UCancer_Explorer;
 {$R *.DFM}
 
 var
@@ -2627,9 +2625,9 @@ begin
  calibform1.l96    := (90+patform1.resis)*10;
  calibform1.l97    := (patform1.oxid)*10;
  calibform1.l98    :=  round(patform1.hydr/10);
- calibform1.label96.caption:= 'Impedancia | '+  inttostr(calibform1.l96);
- calibform1.label97.caption:= 'Reactancia de fase de respuesta | '+ inttostr(calibform1.l97);
- calibform1.label98.caption:= 'Angulo de fase | '+  inttostr(calibform1.l98);
+ calibform1.label96.caption:= inttostr(calibform1.l96);
+ calibform1.label97.caption:= inttostr(calibform1.l97);
+ calibform1.label98.caption:= inttostr(calibform1.l98);
  calibform1.phase1:=  (round(patform1.hydr/10));
  calibform1.phase2:=  ((patform1.oxid)*10);
 
@@ -2852,8 +2850,6 @@ begin
   end;
 end;
 
-
-
 Procedure TtestForm1.SaveEmotionVariables;
 begin
 
@@ -2878,9 +2874,7 @@ begin
      end;
      dm.Emotion1.next;
   end;
-
 end;
-
 
 Procedure TtestForm1.SaveCausesVariables;
 begin
@@ -2905,7 +2899,6 @@ begin
      end;
      dm.causes.next;
   end;
-
 end;
 
 Procedure TtestForm1.SaveOrgansVariables;
@@ -2983,16 +2976,13 @@ begin
      end;
      dm.Risks.next;
   end;
-
 end;
-
 
 Procedure TtestForm1.SaveTestStrings;
 Var F : TextFile;
 Begin
   AssignFile(F1,'testStrings.txt');
   Rewrite(F1);
-
 Writeln(F1,psych1);
 Writeln(F1,psych2);
 Writeln(F1,psych3);
@@ -3061,9 +3051,6 @@ Writeln(F1,ment41);
 Writeln(F1,ment42);
 Writeln(F1,ment43);
 Writeln(F1,ment44);
-
-
-
 writeln(F1,pn1);
 writeln(F1,pn2);
 writeln(F1,pn3);
@@ -3086,11 +3073,8 @@ writeln(F1,pn19);
 writeln(F1,pn20);
 writeln(F1,pn21);
 writeln(F1,pn22);
-
 CloseFile(F1);
 End;
-
-
 
 Procedure TtestForm1.LoadTestStrings;
 Var F : TextFile;
@@ -3105,7 +3089,6 @@ Begin
       [mbOk], 0);
     Exit;
   End;
-
 Readln(F1,psych1);
 Readln(F1,psych2);
 Readln(F1,psych3);
@@ -3177,30 +3160,6 @@ Readln(F1,ment44);
 CloseFile(F1);
 End;
 
-
-
-{Procedure TtestForm1.AviPlaying(S : String);
-Begin
-with MediaPlayer1 do
-     begin
-       FileName := S;
-       Open;
-       PanelAVI.Visible:=True;
-       Display := PanelAVI;
-
-       Rect.Left:=3;
-       Rect.Top:=3;
-       Rect.Right:=PanelAVI.Width-6;
-       Rect.Bottom:=PanelAVI.Height-6;
-
-       Displayrect:=Rect;
-
-
-       MediaPlayer1.Play;
-       PanelAVI.Refresh;
-     end;
-End; }
-
 Function MyFileCreate(S : String) : Integer;
 Var F : TextFile;
     i : Integer;
@@ -3232,16 +3191,6 @@ with DM do begin
   ss:=QueryFilterName.Value;
   i := pos('|',ss);
   st := copy(ss,1,i-1);
- {
-   st:='                                                                                  ';
-   ij:=0;
-       repeat
-
-                st[ij]:=ss[ij];
-                ij:=ij+1;
-
-       until ss[ij]='|';
-  }
   if st='VACIO                                                                             ' then
         ShowMessage('Los campos vacios no se pueden manipular.')
    else
@@ -3252,24 +3201,12 @@ with DM do begin
   ss:=ConscidaName.Value;
   i := pos('|',ss);
   st := copy(ss,1,i-1);
-
-  {
-   st:='                                                                                  ';
-   ij:=0;
-       repeat
-
-                st[ij]:=ss[ij];
-                ij:=ij+1;
-
-       until ss[ij]='|';
-  }
    if st='VACIO                                                                             ' then
         ShowMessage('Los campos vacios no se pueden manipular.')
    else
         Edit1.Text:= st;
    end;
  end;
-
   Edit1.DragMode:=dmManual;
 end;
 
@@ -3300,7 +3237,6 @@ Begin
  GetDir(0,S);
  S:=ExtractFileDir(S);
  S:=S+'\Hololinguistica\'+Sfile;
-//  S:='Clasp32 Castellano\Program\Iridology\'+Sfile;
   StrPCopy(K,S);
   Winexec(K,1);
 end;
@@ -3348,8 +3284,6 @@ Begin
    CloseFile(F);
 End;
 
-
-{ Editor = 'write.exe' or 'notepad.exe'}
 Procedure MyWinExec(Editor : String;Sfile : String);
 Var S : String;
     S1: String;
@@ -3397,7 +3331,6 @@ Begin
      end;
    DM.Conscida.EnableControls;
 end;
-
 
 function TtestForm1.GetRandomValue: integer;
 begin
@@ -3512,8 +3445,7 @@ vib2 := false;
               ListBox2.Items.Add(ChangeFileExt(SearchRec.Name,''));
               Result := FindNext(SearchRec);
             end;
-
-            ListBox2.refresh;
+     ListBox2.refresh;
 If PatForm1.RestoreLastPatient = True Then
 Begin
    LoadTestStrings;
@@ -3523,37 +3455,10 @@ end;
 DoubleBuffered:=true;
 filt1:=10;
 dragCount:=0;
-pat1:=random(16);
- if (pat1=6) or (pat1=7) then begin
-    radiobutton22.color:=clred;
- end;
-  if (pat1=8) or (pat1=9)  then begin
-  radiobutton24.color:=clred;
- end;
- if pat1=5 then begin
-  radiobutton25.color:=clred;
- end;
- if pat1<3 then begin
-     radiobutton23.color:=clred;
- end;
- if (pat1=3) or (pat1=4) then begin
-  radiobutton27.color:=clred;
- end;
- if (pat1=9) or (pat1=10) then begin
-  radiobutton26.color:=clred;
- end;
-   if pat1=12 then    radiobutton28.color:=clred;
-     if pat1=13 then  radiobutton29.color:=clred;
-       if pat1=14 then  radiobutton30.color:=clred;
-         if pat1=15 then  radiobutton31.color:=clred;
 cutof:=99+random(8);
 cutofInv:=27+random(8);
 value2:=155;
-
-{If PatForm1.RestoreLastPatient = False Then  init:=1 else Init:=2;}
-
-Test_Show:=1;    { Test window letrehozva -elso inditas , minden Show
-                   methodus-nal +1 et hozzaadunk }
+Test_Show:=1;
 inde:=1;
 inde1:=1;
        load1:=1;
@@ -3593,201 +3498,132 @@ FTest_Alterna.PAsigna_Valores_Act();
   label28.caption:=inttostr(hydr);
   label27.caption:=inttostr(oxid);
   Label129.caption:=inttostr(resfrepat);
-  label215.caption:= 'Disfunción regulatoria en: Ninguna detectada. ';
-  label250.caption:= 'Disfunción regulatoria en: Ninguna detectada. ';
+  label215.caption:= ' Disfunción regulatoria en:'+' Ninguno.';
+  label250.caption:= ' Disfunción regulatoria en:'+' Ninguno.';
 Interpretacion();
 reg33:=(random(21));
-
-     if reg33=10 then     label215.caption:= 'Disfunción regulatoria en: Sistema orgánico. ';
-     if reg33=10 then     label250.caption:= 'Disfunción regulatoria en: Sistema orgánico. ';
-
-     if  reg33=16  then     label215.caption:= 'Disfunción regulatoria en: EEG. ';
-     if  reg33=16  then     label250.caption:= 'Disfunción regulatoria en: EEG. ';
-
-     if reg33<6  then     label215.caption:= 'Disfunción regulatoria en: Flujo de energía espinal. ';
-     if reg33<6  then     label250.caption:= 'Disfunción regulatoria en: Flujo de energía espinal. ';
-
-     if reg33=12 then     label215.caption:= 'Disfunción regulatoria en: ECG. ';
-     if reg33=12 then     label250.caption:= 'Disfunción regulatoria en: ECG. ';
-
-     if reg33>15 then     label215.caption:= 'Disfunción regulatoria en: Sistema orgánico, EEG, ECG. ';
-     if reg33>15 then     label250.caption:= 'Disfunción regulatoria en: Sistema orgánico, EEG, ECG. ';
-
-     if reg33>19 then     label215.caption:= 'Disfunción regulatoria en: Manejo de energía. ';
-     if reg33>19 then     label250.caption:= 'Disfunción regulatoria en: Manejo de energía. ';
-
+     if reg33=10 then     label215.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico.';
+     if reg33=10 then     label250.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico.';
+     if  reg33=16  then     label215.caption:= ' Disfunción regulatoria en:'+' EEG.';
+     if  reg33=16  then     label250.caption:= ' Disfunción regulatoria en:'+' EEG.';
+     if reg33<6  then     label215.caption:= ' Disfunción regulatoria en:'+' Flujo de energía espinal.';
+     if reg33<6  then     label250.caption:= ' Disfunción regulatoria en:'+' Flujo de energía espinal.';
+     if reg33=12 then     label215.caption:= ' Disfunción regulatoria en:'+' ECG.';
+     if reg33=12 then     label250.caption:= ' Disfunción regulatoria en:'+' ECG.';
+     if reg33>15 then     label215.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico, EEG, ECG.';
+     if reg33>15 then     label250.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico, EEG, ECG.';
+     if reg33>19 then     label215.caption:= ' Disfunción regulatoria en:'+' Manejo de energía.';
+     if reg33>19 then     label250.caption:= ' Disfunción regulatoria en:'+' Manejo de energía.';
        reg33:=(random(21));
-
-          label216.caption:= 'Disfunción regulatoria en: Ninguno. ';
-          label251.caption:= 'Disfunción regulatoria en: Ninguno. ';
-
-     if reg33=10  then     label216.caption:= 'Disfunción regulatoria en: Disfunción de transferencia de oxígeno. ';
-      if reg33=10  then     label251.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-
-     if reg33=9  then     label216.caption:= 'Riesgo primario: Disfunción de transferencia de oxígeno. ';
-     if reg33=9  then     label251.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-
-    if reg33=8  then     label216.caption:= 'Riesgo primario: Error metabólico. ';
-    if reg33=8  then     label251.caption:= 'Explorar riesgo de: Error metabólico. ';
-
-     if reg33=6  then     label216.caption:= 'Riesgo primario: Degeneración. ';
-      if reg33=6  then     label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-      if reg33=12  then     label216.caption:= 'Riesgo primario: Degeneración. ';
-       if reg33=12  then     label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-       if reg33<3  then label216.caption:= 'Riesgo primario: Degeneración. ';
-       if reg33<3  then label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-    if  reg33=7  then     label218.caption:= 'Riesgo leve: Disfunción de reactividad. ';
-    if  reg33=7  then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-     if reg33>18  then     label216.caption:= 'Riesgo primario: Disfunción de manejo de energía. ';
-     if reg33>18  then     label251.caption:= 'Explorar riesgo de: Disfunción de manejo de energía. ';
-
+          label216.caption:= ' Disfunción regulatoria en:'+' Ninguno.';
+          label251.caption:= ' Disfunción regulatoria en:'+' Ninguno.';
+     if reg33=10  then     label216.caption:= ' Disfunción regulatoria en:'+' Disfunción de transferencia de oxígeno.';
+      if reg33=10  then     label251.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+     if reg33=9  then     label216.caption:= ' Riesgo primario:'+' Disfunción de transferencia de oxígeno.';
+     if reg33=9  then     label251.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+    if reg33=8  then     label216.caption:= ' Riesgo primario:'+' Error metabólico.';
+    if reg33=8  then     label251.caption:= ' Explorar riesgo de:'+' Error metabólico.';
+     if reg33=6  then     label216.caption:= ' Riesgo primario:'+' Degeneración.';
+      if reg33=6  then     label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+      if reg33=12  then     label216.caption:= ' Riesgo primario:'+' Degeneración.';
+       if reg33=12  then     label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+       if reg33<3  then label216.caption:= ' Riesgo primario:'+' Degeneración.';
+       if reg33<3  then label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+    if  reg33=7  then     label218.caption:= 'Riesgo leve: '+' Disfunción de reactividad.';
+    if  reg33=7  then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+     if reg33>18  then     label216.caption:= ' Riesgo primario:'+' Disfunción de manejo de energía.';
+     if reg33>18  then     label251.caption:= ' Explorar riesgo de:'+' Disfunción de manejo de energía.';
       reg33:=(random(21));
-
-     if reg33=8  then    label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-     if reg33=8  then    label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
+     if reg33=8  then    label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+     if reg33=8  then    label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
       if (reg33<5) and (total1>250) then  begin
-         label218.caption:= 'Explorar riesgo de: Disfunción de hipo reactividad. ';
-         label253.caption:= 'Explorar riesgo de: Disfunción de hipo reactividad. ';
-
+         label218.caption:= ' Explorar riesgo de:'+' Disfunción de hipo reactividad.';
+         label253.caption:= ' Explorar riesgo de:'+' Disfunción de hipo reactividad.';
          hypo:=10;
       end;
    if   (total1>330) then  begin
-         label218.caption:= 'Explorar riesgo de: Disfunción de hipo reactividad. ';
-         label253.caption:= 'Explorar riesgo de: Disfunción de hipo reactividad. ';
-
+         label218.caption:= ' Explorar riesgo de:'+' Disfunción de hipo reactividad.';
+         label253.caption:= ' Explorar riesgo de:'+' Disfunción de hipo reactividad.';
          end;
        if (reg33<8)and (respat>50000) then  hypo:=10;
-
-       if reg33=11  then label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-       if reg33=11  then label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-    if  reg33=9  then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-    if  reg33=9  then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-    if  (reg33>17) and (total1<20) then     label218.caption:= 'Explorar riesgo de: Disfunción de hiper reactividad. ';
-    if  (reg33>17) and (total1<20) then     label253.caption:= 'Explorar riesgo de: Disfunción de hiper reactividad. ';
-
-
-
-     if (respat>12000) then     label216.caption:= 'Riesgo primario: Sobrecarga neurológica. ';
-     if (respat>12000) then     label251.caption:= 'Explorar riesgo en: Sobrecarga neurológica. ';
-
-     if (resis<76)and (resis<>0) then     label215.caption:= 'Disfunción regulatoria en: Sistema orgánico. ';
-     if (resis<76)and (resis<>0) then     label250.caption:= 'Disfunción regulatoria en: Sistema orgánico. ';
-
-    if (resis<66) and (resis<>0)then     label215.caption:= 'Disfunción regulatoria en: EEG. ';
-    if (resis<66) and (resis<>0)then     label250.caption:= 'Disfunción regulatoria en: EEG. ';
-
-     if (resis<46)and (resis<>0) then     label215.caption:= 'Disfunción regulatoria en: Flujo de la energía en espina. ';
-     if (resis<46)and (resis<>0) then     label250.caption:= 'Disfunción regulatoria en: Flujo de la energía en espina. ';
-
-      if (resis<26) and (resis<>0)then     label215     .caption:= 'Disfunción regulatoria en: ECG. ';
-      if (resis<26) and (resis<>0)then     label250.caption:= 'Disfunción regulatoria en: ECG. ';
-
-       if (resis<6) and (resis<>0)then     label215.caption:= 'Disfunción regulatoria en: Sistema orgánico, EEG, ECG. ';
-      if (resis<6) and (resis<>0)then     label250.caption:= 'Disfunción regulatoria en: Sistema orgánico, EEG, ECG. ';
-
-
-     if (oxid<75)and (oxid<>0) then     label216.caption:= 'Riesgo primario: Disfunción de transferencia de oxígeno. ';
-     if (oxid<75)and (oxid<>0) then     label251.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-
-    if soc>175 then     label216.caption:= 'Riesgo primario: Error metabólico. ';
-    if soc>175 then     label251.caption:= 'Explorar riesgo de: Error metabólico. ';
-
-     if (resis<50) and (resfrepat<500)and (resis<>0) then     label216.caption:= 'Riesgo primario: Degeneración. ';
-     if (resis<50) and (resfrepat<500)and (resis<>0) then     label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-      if soc>270 then     label216.caption:= 'Riesgo primario: Degeneración. ';
-      if soc>270 then     label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-       if (resis<50)and (soc>199)and (resfrepat<1001) then label216.caption:= 'Riesgo primario: Degeneración. ';
-       if (resis<50)and (soc>199)and (resfrepat<1001) then label251.caption:= 'Explorar riesgo de: Degeneración. ';
-
-    if ((strtoint2(label126.caption))>35)  then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-    if ((strtoint2(label126.caption))>35)  then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-
-      if (resis<48) and (resfrepat<800)and (resis<>0)and (resis<>1) then    label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-      if (resis<48) and (resfrepat<800)and (resis<>0)and (resis<>1) then    label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-      if soc>250 then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-      if soc>250 then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-      if (resis<48)and (soc>199)and (resfrepat<850) then label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-      if (resis<48)and (soc>199)and (resfrepat<850) then label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-    if ((strtoint2(label126.caption))>35)  then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-    if ((strtoint2(label126.caption))>35)  then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-
+       if reg33=11  then label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+       if reg33=11  then label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if  reg33=9  then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if  reg33=9  then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if  (reg33>17) and (total1<20) then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de hiper reactividad.';
+    if  (reg33>17) and (total1<20) then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de hiper reactividad.';
+     if (respat>12000) then     label216.caption:= ' Riesgo primario:'+' Sobrecarga neurológica.';
+     if (respat>12000) then     label251.caption:= ' Explorar riesgo en:'+' Sobrecarga neurológica.';
+     if (resis<76)and (resis<>0) then     label215.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico.';
+     if (resis<76)and (resis<>0) then     label250.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico.';
+    if (resis<66) and (resis<>0)then     label215.caption:= ' Disfunción regulatoria en:'+' EEG.';
+    if (resis<66) and (resis<>0)then     label250.caption:= ' Disfunción regulatoria en:'+' EEG.';
+     if (resis<46)and (resis<>0) then     label215.caption:= ' Disfunción regulatoria en:'+' Flujo de la energía en espina.';
+     if (resis<46)and (resis<>0) then     label250.caption:= ' Disfunción regulatoria en:'+' Flujo de la energía en espina.';
+      if (resis<26) and (resis<>0)then     label215     .caption:= ' Disfunción regulatoria en:'+' ECG.';
+      if (resis<26) and (resis<>0)then     label250.caption:= ' Disfunción regulatoria en:'+' ECG.';
+       if (resis<6) and (resis<>0)then     label215.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico, EEG, ECG.';
+      if (resis<6) and (resis<>0)then     label250.caption:= ' Disfunción regulatoria en:'+' Sistema orgánico, EEG, ECG.';
+     if (oxid<75)and (oxid<>0) then     label216.caption:= ' Riesgo primario:'+' Disfunción de transferencia de oxígeno.';
+     if (oxid<75)and (oxid<>0) then     label251.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+    if soc>175 then     label216.caption:= ' Riesgo primario:'+' Error metabólico.';
+    if soc>175 then     label251.caption:= ' Explorar riesgo de:'+' Error metabólico.';
+     if (resis<50) and (resfrepat<500)and (resis<>0) then     label216.caption:= ' Riesgo primario:'+' Degeneración.';
+     if (resis<50) and (resfrepat<500)and (resis<>0) then     label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+      if soc>270 then     label216.caption:= ' Riesgo primario:'+' Degeneración.';
+      if soc>270 then     label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+       if (resis<50)and (soc>199)and (resfrepat<1001) then label216.caption:= ' Riesgo primario:'+' Degeneración.';
+       if (resis<50)and (soc>199)and (resfrepat<1001) then label251.caption:= ' Explorar riesgo de:'+' Degeneración.';
+    if ((strtoint2(label126.caption))>35)  then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if ((strtoint2(label126.caption))>35)  then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if (resis<48) and (resfrepat<800)and (resis<>0)and (resis<>1) then    label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if (resis<48) and (resfrepat<800)and (resis<>0)and (resis<>1) then    label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if soc>250 then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if soc>250 then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if (resis<48)and (soc>199)and (resfrepat<850) then label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if (resis<48)and (soc>199)and (resfrepat<850) then label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if ((strtoint2(label126.caption))>35)  then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+    if ((strtoint2(label126.caption))>35)  then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
      if ((strtoint2(label126.caption))>20) and (pn4>1) then
-
-      if ((strtoint2(label126.caption))>10) and (pn4>2) then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-      if ((strtoint2(label126.caption))>10) and (pn4>2) then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-      if ((strtoint2(label126.caption))>20) and (pn2>3) then     label218.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-      if ((strtoint2(label126.caption))>20) and (pn2>3) then     label253.caption:= 'Explorar riesgo de: Disfunción de reactividad. ';
-
-
-   label217.caption:= 'Explorar riesgo de: Ninguno. ';
-   label252.caption:= 'Explorar riesgo de: Ninguno. ';
-
+      if ((strtoint2(label126.caption))>10) and (pn4>2) then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if ((strtoint2(label126.caption))>10) and (pn4>2) then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if ((strtoint2(label126.caption))>20) and (pn2>3) then     label218.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+      if ((strtoint2(label126.caption))>20) and (pn2>3) then     label253.caption:= ' Explorar riesgo de:'+' Disfunción de reactividad.';
+   label217.caption:= ' Explorar riesgo de:'+' Ninguno.';
+   label252.caption:= ' Explorar riesgo de:'+' Ninguno.';
        reg33:=(random(21));
-
-        if reg33=10  then     label217.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-        if reg33=10  then     label252.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-
-     if reg33=9  then     label217.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-     if reg33=9  then     label252.caption:= 'Explorar riesgo de: Disfunción de transferencia de oxígeno. ';
-
-    if reg33=8  then     label217.caption:= 'Explorar riesgo de: Error metabólico. ';
-    if reg33=8  then     label252.caption:= 'Explorar riesgo de: Error metabólico. ';
-
-     if reg33=6  then     label217.caption:= 'Explorar riesgo de: Degeneración.';
-     if reg33=6  then     label252.caption:= 'Explorar riesgo de: Degeneración.';
-
-      if reg33=12  then     label217.caption:= 'Explorar riesgo de: Degeneración. ';
-      if reg33=12  then     label252.caption:= 'Explorar riesgo de: Degeneración. ';
-
-       if reg33<3  then label217.caption:= 'Explorar riesgo de: Degeneración. ';
-       if reg33<3  then label252.caption:= 'Explorar riesgo de: Degeneración. ';
-
-   if (strtoint2(label126.caption))>25 then     label217.caption:= 'Explorar riesgo en: Circulación. ';
-   if (strtoint2(label126.caption))>25 then     label252.caption:= 'Explorar riesgo en: Circulación. ';
-
-   if (respat>10000) then     label217.caption:= 'Explorar riesgo en: Circulación, sistema sexual. ';
-   if (respat>10000) then     label252.caption:= 'Explorar riesgo en: Circulación, sistema sexual. ';
-
-   if (soc>150) then     label217.caption:= 'Explorar riesgo en: Circulación. ';
-   if (soc>150) then     label252.caption:= 'Explorar riesgo en: Circulación. ';
-
-   if(pn24>4) then     label217.caption:= 'Explorar riesgo de: Desorden de colesterol. ';
-   if(pn24>4) then     label252.caption:= 'Explorar riesgo de: Desorden de colesterol. ';
-
-   if (soc>200) and (oxid<70)and (hydr<70) then     label217.caption:= 'Explorar riesgo de: Desorden de colesterol. ';
-   if (soc>200) and (oxid<70)and (hydr<70) then     label252.caption:= 'Explorar riesgo de: Desorden de colesterol. ';
-
-   if (resis<46)and (resis<>0)and (resis<>1) then     label217.caption:= 'Explorar riesgo en: Circulación de corazón y cerebro. ';
-   if (resis<46)and (resis<>0)and (resis<>1) then     label252.caption:= 'Explorar riesgo en: Circulación de corazón y cerebro. ';
-
-      {if (tbm<29) or(wellness.label51.caption='Cerebral Ischemia Risk, Possible Stroke Risk') then     label217.caption:= 'Explore Risk Of :  Stroke, Infarction ';}
-   if  (soc>110)then     label217.caption:= 'Explorar riesgo de: Infarto extremo. ';  { ((strtoint(label210.Caption))>18) and }
-   if  (soc>110)then     label252.caption:= 'Explorar riesgo de: Infarto extremo. ';  { ((strtoint(label210.Caption))>18) and }
-
-
-  if (respat>17000) then     label216.caption:= 'Riesgo primario: Sobrecarga de estrés neurológico. ';
-  if (respat>17000) then     label251.caption:= 'Explorar riesgo de: Sobrecarga de estrés neurológico. ';
-
-  if (respat>21000) then     label217.caption:= 'Explorar riesgo de: Sobrecarga energética neurológica. ';
-  if (respat>21000) then     label252.caption:= 'Explorar riesgo de: Sobrecarga energética neurológica. ';
-
-  if (respat>99000) then     label217.caption:= 'Explorar riesgo en: Sobrecarga tóxica neurológica. ';
-  if (respat>99000) then     label252.caption:= 'Explorar riesgo en: Sobrecarga tóxica neurológica. ';
+        if reg33=10  then     label217.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+        if reg33=10  then     label252.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+     if reg33=9  then     label217.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+     if reg33=9  then     label252.caption:= ' Explorar riesgo de:'+' Disfunción de transferencia de oxígeno.';
+    if reg33=8  then     label217.caption:= ' Explorar riesgo de:'+' Error metabólico.';
+    if reg33=8  then     label252.caption:= ' Explorar riesgo de:'+' Error metabólico.';
+     if reg33=6  then     label217.caption:= ' Explorar riesgo de:'+' Degeneración.';
+     if reg33=6  then     label252.caption:= ' Explorar riesgo de:'+' Degeneración.';
+      if reg33=12  then     label217.caption:= ' Explorar riesgo de:'+' Degeneración.';
+      if reg33=12  then     label252.caption:= ' Explorar riesgo de:'+' Degeneración.';
+       if reg33<3  then label217.caption:= ' Explorar riesgo de:'+' Degeneración.';
+       if reg33<3  then label252.caption:= ' Explorar riesgo de:'+' Degeneración.';
+   if (strtoint2(label126.caption))>25 then     label217.caption:= ' Explorar riesgo en:'+' Sistema circulatorio.';
+   if (strtoint2(label126.caption))>25 then     label252.caption:= ' Explorar riesgo en:'+' Sistema circulatorio.';
+   if (respat>10000) then     label217.caption:= ' Explorar riesgo en:'+' Circulación, sistema sexual.';
+   if (respat>10000) then     label252.caption:= ' Explorar riesgo en:'+' Circulación, sistema sexual.';
+   if (soc>150) then     label217.caption:= ' Explorar riesgo en:'+' Sistema circulatorio.';
+   if (soc>150) then     label252.caption:= ' Explorar riesgo en:'+' Sistema circulatorio.';
+   if(pn24>4) then     label217.caption:= ' Explorar riesgo de:'+' Desorden de colesterol.';
+   if(pn24>4) then     label252.caption:= ' Explorar riesgo de:'+' Desorden de colesterol.';
+   if (soc>200) and (oxid<70)and (hydr<70) then     label217.caption:= ' Explorar riesgo de:'+' Desorden de colesterol.';
+   if (soc>200) and (oxid<70)and (hydr<70) then     label252.caption:= ' Explorar riesgo de:'+' Desorden de colesterol.';
+   if (resis<46)and (resis<>0)and (resis<>1) then     label217.caption:= ' Explorar riesgo en:'+' Circulación de corazón y cerebro.';
+   if (resis<46)and (resis<>0)and (resis<>1) then     label252.caption:= ' Explorar riesgo en:'+' Circulación de corazón y cerebro.';
+   if  (soc>110)then     label217.caption:= ' Explorar riesgo de:'+' Infarto extremo.';
+   if  (soc>110)then     label252.caption:= ' Explorar riesgo de:'+' Infarto extremo.';
+  if (respat>17000) then     label216.caption:= ' Riesgo primario:'+' Sobrecarga de estrés neurológico.';
+  if (respat>17000) then     label251.caption:= ' Explorar riesgo de:'+' Sobrecarga de estrés neurológico.';
+  if (respat>21000) then     label217.caption:= ' Explorar riesgo de:'+' Sobrecarga energética neurológica.';
+  if (respat>21000) then     label252.caption:= ' Explorar riesgo de:'+' Sobrecarga energética neurológica.';
+  if (respat>99000) then     label217.caption:= ' Explorar riesgo en:'+' Sobrecarga tóxica neurológica.';
+  if (respat>99000) then     label252.caption:= ' Explorar riesgo en:'+' Sobrecarga tóxica neurológica.';
 label23.refresh;
 alg:=random(15);
 dir:=0;
@@ -3844,8 +3680,6 @@ cb55:=patform1.cb55;
 cb56:=patform1.cb56;
 cb57:=patform1.cb57;
 cb58:=patform1.cb58;
-
-
   Index:='';
   DM.Conscida.IndexName := Index;
   DM.Conscida.Open;
@@ -3853,8 +3687,6 @@ cb58:=patform1.cb58;
   DM.Conscida.First;
   DM.Conscida.Enablecontrols;
   DM.Info.Open;
-
-
 pradiobutton1tag:=0;
 pradiobutton2tag:=0;
 pradiobutton3tag:=0;
@@ -3882,113 +3714,53 @@ pradiobutton24tag:=0;
 pradiobutton25tag:=0;
 pradiobutton26tag:=0;
 pradiobutton27tag := 0;
-{
-testForm1.pradiobutton1caption  := 'Cervical 1';
-testForm1.pradiobutton2caption :=  'Cervical 2';
-testForm1.pradiobutton3caption :=  'Cervical 3' ;
-testForm1.pradiobutton4caption :=  'Cervical 4';
-TestForm1.pradiobutton5caption :=  'Cervical 5';
-testForm1.pradiobutton6caption :=  'Cervical 6';
-testForm1.pradiobutton7caption :=  'Cervical 7';
-testForm1.pradiobutton8caption := 'Torácica 1';
-testForm1.pradiobutton9caption := 'Torácica 2';
-testForm1.pradiobutton10caption:= 'Torácica 3';
-testForm1.pradiobutton11caption:= 'Torácica 4';
-testForm1.pradiobutton12caption:= 'Torácica 5';
-testForm1.pradiobutton13caption:= 'Torácica 6';
-testForm1.pradiobutton14caption:= 'Torácica 7';
-testForm1.pradiobutton15caption:= 'Torácica 8';
-testForm1.pradiobutton16caption:= 'Torácica 9' ;
-testForm1.pradiobutton17caption:= 'Torácica 10' ;
-testForm1.pradiobutton18caption:= 'Torácica 11';
-testForm1.pradiobutton19caption:= 'Torácica 12';
-testForm1.pradiobutton20caption:= 'Lumbar 1';
-testForm1.pradiobutton21caption:= 'Lumbar 2';
-testForm1.pradiobutton22caption:= 'Lumbar 3';
-testForm1.pradiobutton23caption:= 'Lumbar 4';
-testForm1.pradiobutton24caption:= 'Lumbar 5';
-testForm1.pradiobutton25caption:= 'Craneal';
-testForm1.pradiobutton26caption:= 'Sacro' ;
-testForm1.pradiobutton27caption:= 'Coxis' ;  }
 MyChrono2.Stop;
 end;
-
-
 
 procedure TtestForm1.TestRetest;
 var
    Step,N,N1: integer;
    PActiv : Boolean;
 begin
-     //GProgreso.MaxValue := 100;
      If RHDD Then PActiv:=True Else PActiv:=False;
      excess:=1;
      N:=0; N1:=0;
-     ////GProgreso.Progress:=N;
-     ////
      Randomize;
      DM.Conscida.DisableControls;
      try
         DM.Conscida.IndexName := ''; {Index;}
         DM.Conscida.First;
         Step:=Round(DM.Conscida.RecordCount/10);
-
      while not DM.Conscida.EOF do
      begin
           DM.Conscida.Edit;
-          //showmessage('2');
           if Func='test' then
                Value := 1
           else Value:= DM.ConscidaValue.AsInteger;
-
           If LowerCase(DM.ConscidaName.AsString) <> LowerCase('Empty') Then
-          { Not Empty item}
           DM.ConscidaValue.AsInteger:= Value + GetRandomValue
-           else    { Empty item}
+           else
           DM.ConscidaValue.AsInteger:= Random(40)+40 ;
-
-
-          If pos(DM.ConscidaName.AsString,'Empty')<> 0 Then{ Empty item} begin
-
+          If pos(DM.ConscidaName.AsString,'Empty')<> 0 Then begin
             DM.ConscidaValue.AsInteger:= 0 ;
          end;
-
-               {**********************************************}
-
-          {If The Program not activate then Every Value = 100 }
           If Not PActiv Then
              DM.ConscidaValue.AsInteger:=100;
-
           DM.Conscida.Post;
           DM.Conscida.Next;
-          Inc(N); Inc(N1);
-          if N = Step then
-         begin
-
-             //GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
-             N := 0;
-
-             //if GProgreso.Progress=90 then excess:=excess+1;
-             if excess>3 then  SpeachForm.SMessageTalk( 'El ordenador está procesando'+chr(13)+
-              'exceso de información subespacial.'+chr(13)+
-              'Pulsar ''OK'' y re-entrar.');
-               if excess>3 then halt;
-          end;
-     end;
-     finally
-
-            if Index <> 'ByOldValue' then
-               DM.Conscida.IndexName := 'ByValue';
-   
-            DM.Conscida.Refresh;
-            DM.Conscida.First;
-            DM.Conscida.EnableControls;
-     end;
-
-      {**********************************************} {**********************************************}
-      excess:=1;
-     N:=0; N1:=0;
-     Randomize;
+          Inc(N);
+          Inc(N1);
+end;
+finally
+if Index <> 'ByOldValue' then
+DM.Conscida.IndexName := 'ByValue';
+DM.Conscida.Refresh;
+DM.Conscida.First;
+DM.Conscida.EnableControls;
+end;
+excess:=1;
+N:=0; N1:=0;
+Randomize;
 end;
 
 procedure TtestForm1.TestClick(Sender: TObject);
@@ -4001,11 +3773,11 @@ cutof:=90+random(19)+(round(2*soc/10));
 cutofInv:=24+random(12);
 PcalImprove();
 PANEL2.visible :=true;
-  Button85.Click;
-     total2:=(total1)*3;
-     soc1:=soc;
-    if total1>77 then total2:=77;
-    if soc>400 then soc1:=400;
+Button85.Click;
+total2:=(total1)*3;
+soc1:=soc;
+if total1>77 then total2:=77;
+if soc>400 then soc1:=400;
 alg := (total2+round(soc1/8))+random(17);
 GProgreso.Progress := 0;
 TT := (120+alg); { Original Time }
@@ -4017,7 +3789,6 @@ If TT2 > 60 Then
 Begin
    S1 := IntToStr(TT2 div 60) +':';
    S1 := S1 + IntToStr(TT2 - ((TT2 div 60) * 60)) +' min.';
-
    Panel6.Caption := 'Duración aproximada | '+S1+' min.';
 end else
 Begin
@@ -9693,12 +9464,6 @@ CWidth();
 Button73Click(Sender);
 End;
 
-procedure TtestForm1.Button4Click(Sender: TObject);
-begin
-memo6.visible:=true;
-button4.Enabled:=false;
-end;
-
 procedure TtestForm1.Button5Click(Sender: TObject);
 begin
 Reaccion_Irregular();
@@ -9729,7 +9494,7 @@ Until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Panel2.visible :=false;
 Button5.Enabled := False;
 MyChrono2.Stop;
@@ -9816,7 +9581,7 @@ MyChrono2.TimeElapsed > vtiempo;
      panel2.visible := true;
   end;
   FMain.shaping:=random(105);
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
   MyChrono2.Stop;
 end;
 
@@ -9875,13 +9640,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
      Func:='retest';
      TestRetest;
      panel2.visible := false;
-  //   panel1.visible :=false;
 end;
 
 procedure TtestForm1.Button11Click(Sender: TObject);
 begin
-//if VideoCapX1.Connected then
-  // VideoCapX1.Connected := False;
 Panel13.Visible:=False;
 end;
 
@@ -9921,7 +9683,8 @@ panel2.refresh;
      begin
       DM.Conscida.Edit;
       DM.ConscidaValue.Asinteger:= 0;
-      FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
+      FTest_Alterna.ActualizaVacios();
+      DM.Conscida.Post;
      end;
      until  cor1>4300;
   panel2.visible:=false;
@@ -10139,10 +9902,8 @@ alg :=2+random(18);
 if soc >99 then alg:=15+random(5);
 if total1>10 then alg:=round(total1/6);
 GProgreso.Progress := 1;
- //if label23.caption='' then label82.caption:='No hay un nombre para conectar, los parámetros eléctricos son nulos o erróneos.';
 TT := (120+(4*alg)); { Original Time }
  if tt>250 then begin
-//  Label208.caption:='Este caso es complicado. Disrrupción en la calibración. Recalibrando...';
            Panel2.Top:=400;
   Panel2.Height:=277;
   PcalImprove();
@@ -10190,9 +9951,6 @@ panel2.refresh;
       Finally
       end;
    end;
- { Str(Sum,S1);
-  SpeachForm.SMessageTalk(S1);}
-
      Func:='test';
      TestRetest;
 
@@ -10205,8 +9963,6 @@ panel2.refresh;
      DM.Conscida.IndexName:='';
      DM.Conscida.First;
       panel2.visible:=false;
-     //   panel3.refresh;
-//    calibform1.panel3.caption:='Test finalizado, cierre.';                                    {IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII}
    Info2Click(Sender);
       astr:=PatForm1.astr;
      numer:=PatForm1.numer;
@@ -10963,9 +10719,6 @@ panel2.refresh;
      Value:=DM.ConscidaValue.asinteger+15;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      if DM.ConscidaValue.Asinteger<100 then DM.ConscidaValue.Asinteger:=100+random(soc1);  DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
-
-
   end;
   if astr=10 then begin
      DM.Conscida.FindKey([712  ]);
@@ -13529,8 +13282,8 @@ If Not RHDD Then TestFill100;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
               ChangingPulses(5555,555,55555,5,5,1,
  '11111111','11111111');
+FMain.shaping:=random(105);
 
-       FMain.shaping:=random(105); FRecompensa.label79.caption:=inttostr(FMain.shaping);
  DM.Conscida.Refresh;
 
    Index:='ByValue';
@@ -13538,10 +13291,6 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
    DM.Conscida.First;
    DM.Conscida.last;
 if patform1.checkbox298.checked=true then button13.visible:=true;
-//if patform1.checkbox404.checked=true then Quicktherapy1.enabled:=true;
-
-   { ----------- }
-
    Dm.Info.FlushBuffers;
    DM.Conscida.FlushBuffers;
 end;
@@ -13601,12 +13350,10 @@ Interpretacion();
       Label23.caption :=(Patform1.pname);
       label3.refresh;
        end;
-{*****}     label23.refresh;
+   label23.refresh;
   label22.caption := inttostr(soc);
   label19.caption := inttostr(soc);
 
-//              button13.visible:= false;
-// Cargarfotografa1.Enabled:=true;   
 pnn1:=pn1;
 pnn2:=pn2;
 pnn3:=pn3;
@@ -14014,23 +13761,23 @@ Interpretacion();
   DecodeDate(DT, AYear, AMonth, ADay);
   AMonth:=AMonth+3;
   ADay:=ADay+2;
-  if patform1.checkbox385.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox385.caption;
-  if patform1.checkbox386.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox386.caption;
-  if patform1.checkbox387.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox387.caption;
-  if patform1.checkbox388.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox388.caption;
-  if patform1.checkbox389.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox389.caption;
-  if patform1.checkbox390.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox390.caption;
-  if patform1.checkbox391.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox391.caption;
-  if patform1.checkbox392.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox392.caption;
-  if patform1.checkbox393.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox393.caption;
-  if patform1.checkbox394.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox394.caption;
-  if patform1.checkbox395.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox395.caption;
-  if patform1.checkbox396.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox396.caption;
-  if patform1.checkbox397.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox397.caption;
-  if patform1.checkbox398.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox398.caption;
-  if patform1.checkbox399.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox399.caption;
-  if patform1.checkbox400.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox400.caption;
-  if patform1.checkbox401.checked=true then edit8.text:=edit8.text+' | '+patform1.checkbox301.caption;
+  if patform1.checkbox385.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox385.caption;
+  if patform1.checkbox386.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox386.caption;
+  if patform1.checkbox387.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox387.caption;
+  if patform1.checkbox388.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox388.caption;
+  if patform1.checkbox389.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox389.caption;
+  if patform1.checkbox390.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox390.caption;
+  if patform1.checkbox391.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox391.caption;
+  if patform1.checkbox392.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox392.caption;
+  if patform1.checkbox393.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox393.caption;
+  if patform1.checkbox394.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox394.caption;
+  if patform1.checkbox395.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox395.caption;
+  if patform1.checkbox396.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox396.caption;
+  if patform1.checkbox397.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox397.caption;
+  if patform1.checkbox398.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox398.caption;
+  if patform1.checkbox399.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox399.caption;
+  if patform1.checkbox400.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox400.caption;
+  if patform1.checkbox401.checked=true then ECausas.Text := ECausas.Text+' '+patform1.checkbox301.caption;
   if patform1.checkbox385.checked=true then riskchart.ims:=riskchart.ims+80;
   if patform1.checkbox386.checked=true then riskchart.hor:=riskchart.hor+80;
   if patform1.checkbox387.checked=true then riskchart.car:=riskchart.car+80;
@@ -14270,8 +14017,6 @@ Interpretacion();
   end;
   pctfatest := strtoint(label210.caption);
   label210.caption:=label210.caption+'%'; //inttostr(patform1.fat);
-//  if (patform1.spinedit35.value =0)and (patform1.spinedit32.value =0)then label210.caption:=label210.caption+' | Por favor rellene la información antropomórfica.';
-//  If fileExists('check.d11') then  testform1.caption:='Este software es propiedad de Eclosion Kft. / QX Ltd.';
   astr           := PatForm1.astr;
   numer          := PatForm1.numer;
   old            := PatForm1.old;
@@ -14320,7 +14065,6 @@ Interpretacion();
    if soc>299  then cv:=1+random(1);
    label214.caption:= inttostr(cv);
    if patform1.c298=1 then  begin
-   BabyMultiMediaAccess1.visible:=true;
      groupbox1.visible:=true;
    end;
    If RInfoGridX<>'' Then InfoGrid.Left:=StrToInt2(RInfoGridX);
@@ -14893,16 +14637,11 @@ end;
 
 procedure TtestForm1.MainMenu2Click(Sender: TObject);
 begin
- time33:=strtoint2(patform1.label121.caption);
-  if (time33=50)  then begin
-          If SpeachForm.DMessageTalkIF(doctor+', '+pname+', '+  '¿Debería ver nuestro contrato?  Pulse ''Yes'' para continuar y ''No'' para cargar el contrato.',
-    mtInformation, [mbYes, mbNo], 0) = mrNo then  MyWinexec('write.exe','contract.doc')  ;;
-
-  end;
+time33:=strtoint2(patform1.label121.caption);
 close;
 Label208.Caption := 'Analizando a '+pname;
 panel2.refresh;
- end;
+end;
 
 procedure TtestForm1.EEGECGFREQ1Click(Sender: TObject);
 begin
@@ -14986,15 +14725,6 @@ procedure TtestForm1.Close1Click(Sender: TObject);
 begin
  Dm.Info.FlushBuffers;
  Application.CreateForm(Tactform, actform);
- actform.button50.visible:=true;
-
- Case MenuState of
-
- 1: ActForm.RadioButton1.checked:=True;
- 2: ActForm.RadioButton4.checked:=True;
- 3: ActForm.RadioButton3.checked:=True;
- 4: ActForm.RadioButton2.checked:=True;
- End;
  actform.showmodal;
  actform.Free;
  SaveBodyVariables;
@@ -15081,11 +14811,11 @@ FTest_Alterna.PAsigna_Valores_Act;
   testform1.refresh;
   panel2.refresh;
   FMain.shaping:=random(105);
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(1000,1,11000,1,1,70+random(20), '00000000','00000000');
    FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
    Info2Click(Sender);
    infogrid.Refresh;
    testform1.refresh;
@@ -15110,38 +14840,24 @@ FTest_Alterna.PAsigna_Valores_Act;
 
           DM.ConscidaValue.AsInteger:= Value + GetRandomValue;
           if (DM.ConscidaOldValue.AsInteger=0)and(DM.Conscidaname.asstring<>'Empty') then   DM.ConscidaOldValue.AsInteger:=random(150);
-             {  **********************************************}
-
-          {If The Program not activate then Every Value = 100 }
           If Not PActiv Then DM.ConscidaValue.AsInteger:=100;
-
           FTest_Alterna.ActualizaVacios();DM.Conscida.Post;  { Save }
           DM.Conscida.Next;
           Inc(N); Inc(N1);
           if N = Step then
          begin
-
              GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
              N := 0;
-
-             if GProgreso.Progress=90 then excess:=excess+1;
-
-             if excess>3 then  SpeachForm.SMessageTalk( 'El ordenador está procesando'+chr(13)+
-              'exceso de información subespacial.'+chr(13)+
-              'Pulse ''OK'' y re-entre.');
-               if excess>3 then halt;
           end;
      end;
      finally
-
             if Index <> 'ByOldValue' then
                DM.Conscida.IndexName := 'ByValue';
-
             DM.Conscida.Refresh;
             DM.Conscida.First;
             DM.Conscida.EnableControls;
      end;
-     GProgreso.Progress := 100;
+     GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
      excess:=1;
      N:=0; N1:=0;
      GProgreso.Progress:=N;
@@ -15158,11 +14874,7 @@ FTest_Alterna.PAsigna_Valores_Act;
           if Func='test' then
                Value := 1
           else Value:= DM.Remedy.fieldbyname('Value2').AsInteger;
-
           DM.Remedy.fieldbyname('Value2').AsInteger:= Value + GetRandomValue;
-
-
-          {If The Program not activate then Every Value = 100 }
           If RHDD = False Then
              DM.Remedy.fieldbyname('Value2').AsInteger:=100;
 
@@ -15171,19 +14883,12 @@ FTest_Alterna.PAsigna_Valores_Act;
           Inc(N); Inc(N1);
           if N = Step then
          begin
-
              GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
              N := 0;
-
-             if GProgreso.Progress=90 then excess:=excess+1;
-             if excess>3 then  SpeachForm.SMessageTalk( 'El ordenador está procesando'+chr(13)+
-              'exceso de información subespacial.'+chr(13)+
-              'Pulse ''OK'' y re-entre.');
-               if excess>3 then halt;
           end;
      end;
      Finally
-                DM.Remedy.Refresh;
+            DM.Remedy.Refresh;
             DM.Remedy.First;
             DM.Remedy.last;
        {     Edit10.text:= Edit10.text+DM.remedy.FieldByName('Name').Value+'';}
@@ -16227,10 +15932,6 @@ DM.Conscida.FindKey([3042]);
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
    end;
-
-
-
-
      astr:=PatForm1.astr;
      numer:=PatForm1.numer;
        old:=PatForm1.old;
@@ -16719,8 +16420,6 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
-
   end;
   if astr=3 then begin     {lung}
        DM.Conscida.FindKey([ 3735 ]);
@@ -16810,8 +16509,6 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
-
   end;
   if astr=7 then begin           {brain}
        DM.Conscida.FindKey([ 3726 ]);
@@ -16881,7 +16578,6 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
   end;
   if astr=8 then begin                     {digestion}
        DM.Conscida.FindKey([ 3758 ]);
@@ -16944,7 +16640,6 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
   end;
   if astr=9 then begin                  {liver}
        DM.Conscida.FindKey([ 3731 ]);
@@ -17032,9 +16727,6 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
-
-
   end;
   if astr=10 then begin                    {heart}
        DM.Conscida.FindKey([ 3737 ]);
@@ -17204,8 +16896,7 @@ DM.Conscida.FindKey([3042]);
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
-  end;
+end;
 if astr=12 then begin                    {lymph}
      DM.Conscida.FindKey([ 3727 ]);
      DM.Conscida.Edit;
@@ -17277,10 +16968,7 @@ if astr=12 then begin                    {lymph}
      Value:=DM.ConscidaValue.asinteger+18;
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
-
   end;
-
-
    if numer=1 then begin
         DM.Conscida.FindKey([ 3743 ]);
      DM.Conscida.Edit;
@@ -20003,7 +19691,6 @@ Value:=0;
      triv:=strtoint2(thera.label94.caption);
      scal:=strtoint2(thera.label95.caption);
      autorif:=strtoint2(thera.label96.caption);
-
   nal1:= (automer);
    nal2:= (automor);
     nal3:= (autoal);
@@ -20031,135 +19718,33 @@ if patform1.otro=10 then
 Begin
 inc(no); DM.Info.Appendrecord([no,nil,'Sexo OTRO | La sexualidad se define en el cerebro, no en los genitales.',nil]);
 End;
-
 if patform1.c298=1 then
 Begin
-inc(no); DM.Info.Appendrecord([no,patform1.spinedit17.value,'semanas de embarazo.',nil]);
+inc(no); DM.Info.Appendrecord([no,patform1.spinedit17.value,' Semanas de embarazo.',nil]);
 End;
-inc(no);
-if pn1>4 then
-begin
-DM.Info.Appendrecord([no,nil,'El potencial de vida está disminuido.']);
 Inc(no);
-end;
-Inc(no);
-  if pn2>4 then
-  begin     DM.Info.Appendrecord([no,nil,'Un número alto de ingesta de medicaciones alopáticas pueden detener la curación.']);
-     Inc(no);
-     edit5.text:=edit5.text+' | La alopatía puede causar más afecciones.';
-  end;
-   if pn3>4 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+', por favor abandone el tabaquismo, ya que interfiere con su bienestar.']);
-     Inc(no);    end;
-   if pn3>15 then   edit5.text:=edit5.text+' | Tabaquismo.';
-      if pn3>15 then  edit6.text:=edit6.text+' | Pulmones.';
-  if pn4>1 then  begin     DM.Info.Appendrecord([no,nil,'La adicción a los esteroides y sus efectos secundarios pueden ser una afección por si sola.']);
-     Inc(no);
-      end;
-      if pn4>1 then   edit5.text:=edit5.text+' | Esteroides.';
-       if pn4>1 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn5>7 then  begin     DM.Info.Appendrecord([no,nil,'El mercurio es un metal pesado muy tóxico.']);
-     Inc(no);
-      if pn5>9 then   edit5.text:=edit5.text+' | Amalgamas de mercurio.';
-       end;
-  if pn6>0 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+', por favor evite los estuperfacientes. Tome terapias contra la adicción.']);
-     Inc(no);   if pn6>1 then   edit5.text:=edit5.text+' | Estuperfacientes.';
-      end;
-  if pn7>9 then  begin     DM.Info.Appendrecord([no,nil,'Practique la reducción del estrés. Después de las comidas relájese durante al menos 40 min.']);
-     Inc(no);
-      end;
-      if pn7>8 then   edit5.text:=edit5.text+' | Estrés.';
-        if pn7>9 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn8>4 then  begin     DM.Info.Appendrecord([no,nil,'El azúcar afecta el sistema inmunitario.']);
-     Inc(no);  if pn8>6 then   edit5.text:=edit5.text+' | Azúcar.';
-       end;
-         if pn8>5 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn9<2 then  begin     DM.Info.Appendrecord([no,nil,'El ejercicio es esencial para una vida sana. Por favor tómese unos minutos al día para ejercitarse.']);
-     Inc(no);    if pn9<1 then   edit5.text:=edit5.text+' | Falta de ejercicio.';
-     end;
-  if pn10>1 then  begin     DM.Info.Appendrecord([no,nil,'Más de un vaso diario puede ser perjudicial para la salud.']);
-     Inc(no);  if pn10>3 then   edit5.text:=edit5.text+' | Alcohol.';
-       end;
-         if pn10>3 then  edit6.text:=edit6.text+' | Hígado.';
-      if pn10>3 then  begin     DM.Info.Appendrecord([no,nil,'La ingesta de alcohol en exceso es un riesgo para la salud.']);
-     Inc(no);    end;
-  if pn11>3 then  begin     DM.Info.Appendrecord([no,nil,'Por favor tome menos cafeína y/o teína. Esto contribuirá a mejorar su salud. Beba más zumos naturales.']);
-     Inc(no);    end;
-  if pn12>4 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de toxicidad causa afección, una desintoxicación rápida puede agravar los síntomas. Váya paso a paso.']);
-     Inc(no);    if pn12>5 then   edit5.text:=edit5.text+' | Toxicidad.';
-     end;
-  if pn13>4 then  begin     DM.Info.Appendrecord([no,nil,'LA NATURALEZA ES SABIA.']);
-     Inc(no);    end;
-  if pn14>1 then  begin     DM.Info.Appendrecord([no,nil,'Hay informe de una posible afección heredada. Se requiere una investigación más a fondo.']);
-     Inc(no);    end;
-  if pn15>6 then  begin     DM.Info.Appendrecord([no,nil,'Se le recomienda perder peso. El exceso de peso agrava cualquier afección y puede ser una afección por si sola.']);
-     Inc(no);    end;
-  if pn16>5 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de negatividad y pobre actitud mental causan bloqueos en la recuperación de cualquier condición.']);
-     Inc(no);   if pn16>6 then   edit5.text:=edit5.text+' | Negatividad.';
-      end;
-  if pn17>4 then  begin     DM.Info.Appendrecord([no,nil,'''MAS'' NO ES NECESARIAMENTE ''MEJOR''.']);
-     Inc(no);    end;
-  if pn18>4 then  begin     DM.Info.Appendrecord([no,nil,'Se han reportado alergias. Se requiere una investigación más a fondo.']);
-     Inc(no);
-      end;
-      if pn18>2 then   edit5.text:=edit5.text+' | Alergias.';
-  if pn19>3 then  begin     DM.Info.Appendrecord([no,nil,'Los factores mentales causan bloqueos en la recuperación de cualquier condición.']);
-     Inc(no);
-     if pn19>4 then   edit5.text:=edit5.text+' | Factores mentales.';
-      end;
-  if pn20>4 then  begin     DM.Info.Appendrecord([no,nil,'Es posible que haya traumas involucrados en la afección. Se requiere una investigación más a fondo.']);
-     Inc(no);
-     end;
-      if pn20>3 then   edit5.text:=edit5.text+' | Trauma/s.';
-     if pn21>4 then  begin     DM.Info.Appendrecord([no,nil,'Infecciones pasadas pueden estar involucradas. Se requiere una investigación más a fondo.']);
-     Inc(no);
-      end;
-      if pn21>3 then   edit5.text:=edit5.text+' | Infección.';
-       if pn21>2 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn22>2 then  begin     DM.Info.Appendrecord([no,nil,pname+', necesita aceptar la responsabilidad por su condición.']);
-     Inc(no);    end;
-  if pn23<4 then  begin     DM.Info.Appendrecord([no,nil,pname+', necesita beber más agua. La cantidad recomendada es de 1.5 a 2 lts. diarios.']);
-     Inc(no);    end;
-  if (soc>210)and (soc<310) then  begin     DM.Info.Appendrecord([no,nil,pname+': Hay una obstrucción importante en el proceso curativo, este caso tomará su tiempo, espere alrededor de 4 terapias.']);
-     Inc(no);    end;
-    if (soc>310)and (soc<410) then  begin     DM.Info.Appendrecord([no,nil,pname+': Hay una obstrucción importante en el proceso curativo, este caso tomará su tiempo, espere alrededor de 6 terapias.']);
-     Inc(no);    end;
-if soc>410 then
-begin
-DM.Info.Appendrecord([no,nil,pname+': Hay una obstrucción importante, este caso tomará su tiempo, espere alrededor de 8+ terapias.']);
-Inc(no);
-end;
-S:=Copy(label210.caption,1,2);
-if strtoint2(S)>3 then
-begin
-DM.Info.Appendrecord([no,strtoint2(S),label209.caption,nil]);Inc(no);
-end;
-if soc>280 then   edit13.text:=edit13.text+' Tomará algún tiempo y varias terapias el mejorar esta condición.';
-if  (pn3>10)or  (pn6>0) or (pn8>5) or (pn11>4)or (pn10>4) then   edit13.text:=edit13.text+' Se sugiere terapia para la reducción a la adicción en la pantalla de ''PNL''.';
-if pn7>8 then   edit13.text:=edit13.text+' Se sugiere reducción de estrés., ';
-if pn21>1 then   edit13.text:=edit13.text+' Se sugiere terapias ''zap'' para el sistema inmunológico.';
-if pn20>2 then   edit13.text:=edit13.text+' Se sugire terapia para trauma.';
-DM.Info.Appendrecord([no,Patform1.Volt,'Voltaje | 80-100=normal, <50=crónico | Refleja la función de las suprarrenales y la voluntad.',nil]);Inc(no);
-DM.Info.Appendrecord([no,Patform1.Amp,'Amperaje | 80-100=normal, <50=crónico | Refleja las funciones cerebrales - serotonina y la fuerza de vida.',nil]);Inc(no);
-DM.Info.Appendrecord([no,Patform1.Resis,'Resistencia | 80-100=normal, <50=crónico | Refleja la facilidad de flujo de energía a través del cuerpo.',nil]);Inc(no);
-DM.Info.Appendrecord([no,Patform1.Hydr,'Hidratación | 80-100=normal, <50=crónico | Refleja la facilidad de flujo del agua y la cantidad en el cuerpo.',nil]);Inc(no);
-DM.Info.Appendrecord([no,Patform1.Oxid,'Oxidación | 80-100=normal, <50=crónico | Refleja la facilidad de flujo del oxígeno y oxigenación del organismo.',nil]);Inc(no);
-DM.Info.Appendrecord([no,Patform1.proton,'pH | 65-70=normal, <65=alcalinidad, >70=acidez |',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.Volt,' Voltaje | 80-100=normal, <50=crónico | Refleja la función de las suprarrenales y la voluntad.',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.Amp,' Amperaje | 80-100=normal, <50=crónico | Refleja las funciones cerebrales - serotonina y la fuerza de vida.',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.Resis,' Resistencia | 80-100=normal, <50=crónico | Refleja la facilidad de flujo de energía a través del cuerpo.',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.Hydr,' Hidratación | 80-100=normal, <50=crónico | Refleja la facilidad de flujo del agua y la cantidad en el cuerpo.',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.Oxid,' Oxidación | 80-100=normal, <50=crónico | Refleja la facilidad de flujo del oxígeno y oxigenación del organismo.',nil]);Inc(no);
+DM.Info.Appendrecord([no,Patform1.proton,' pH | 65-70=normal, <65=alcalinidad, >70=acidez |',nil]);Inc(no);
 //DM.Info.Appendrecord([no,Patform1.electron,'Presión electrónica | 65-70=normal, <65=alcalinidad, >70=acidez |',nil]);Inc(no);
-DM.Info.Appendrecord([no,calibForm1.resfrepat,'Frecuencia de resonancia más importante de la persona | <1000=riesgo degenerativo, >10000=energía nerviosa.',nil]);Inc(no);
-   DM.Info.Appendrecord([no,strtoint2(label126.caption),'Indice de velocidad de reactancia | <15=ideal, <40=normal, >100=afección.',nil]);Inc(no);
-   DM.Info.Appendrecord([no,((90+resis)*10),'Impedancia | <800=problema significativo, 800-1000=problema, 1000-1200=débil, 1200+=normal, 1600+=ideal.',nil]);Inc(no);
-   DM.Info.Appendrecord([no,(oxid)*10,'Reacción de fase de respuesta | <300=problema significativo, 330-500=problema, 500-700=debilidad; 700+=normal, 900+=ideal.',nil]);Inc(no);
+DM.Info.Appendrecord([no,calibForm1.resfrepat,' Frecuencia de resonancia más importante de la persona | <1000=riesgo degenerativo, >10000=energía nerviosa.',nil]);Inc(no);
+   DM.Info.Appendrecord([no,strtoint2(label126.caption),' Indice de velocidad de reactancia | <15=ideal, <40=normal, >100=afección.',nil]);Inc(no);
+   DM.Info.Appendrecord([no,((90+resis)*10),' Impedancia | <800=problema significativo, 800-1000=problema, 1000-1200=débil, 1200+=normal, 1600+=ideal.',nil]);Inc(no);
+   DM.Info.Appendrecord([no,(oxid)*10,' Reacción de fase de respuesta | <300=problema significativo, 330-500=problema, 500-700=debilidad; 700+=normal, 900+=ideal.',nil]);Inc(no);
     iii:=0;
     AddAcu5System1click(sender);
    iii:= (round(hydr div 10));
-   DM.Info.Appendrecord([no,iii,'Angulo de fase | <6=condición crónica, 6+=normal, 8+=ideal.',nil]);
+   DM.Info.Appendrecord([no,iii,' Angulo de fase | <6=condición crónica, 6+=normal, 8+=ideal.',nil]);
    Inc(no);
    DM.Info.Appendrecord([no,nil,label568.caption,nil]);Inc(no);   // Ultima visita:
-   DM.Info.Appendrecord([no,label227.caption,'Voltaje',nil]);Inc(no);
-   DM.Info.Appendrecord([no,label20.caption,'Amperaje',nil]);Inc(no);
-   DM.Info.Appendrecord([no,label189.caption,'Resistencia',nil]);Inc(no);
-   DM.Info.Appendrecord([no,label230.caption,'Hidratación',nil]);Inc(no);
-   DM.Info.Appendrecord([no,label269.caption,'Oxidación',nil]);Inc(no);
+   DM.Info.Appendrecord([no,label227.caption,' Voltaje',nil]);Inc(no);
+   DM.Info.Appendrecord([no,label20.caption,' Amperaje',nil]);Inc(no);
+   DM.Info.Appendrecord([no,label189.caption,' Resistencia',nil]);Inc(no);
+   DM.Info.Appendrecord([no,label230.caption,' Hidratación',nil]);Inc(no);
+   DM.Info.Appendrecord([no,label269.caption,' Oxidación',nil]);Inc(no);
 
  Index:='byValue';
  DM.Conscida.IndexName := Index;
@@ -20224,124 +19809,22 @@ if (sender is TMenuItem) then
        inc(no); DM.Info.Appendrecord([no,pnn15,' Kilos de sobre peso (de acuerdo al doctor)' ]);
        inc(no); DM.Info.Appendrecord([no,pnn16,' Negatividad' ]);
         Inc(no);
-        
- if pn1>4 then
- begin
-   DM.Info.Appendrecord([no,nil,'La fuerza vital está disminuída.']);
-   Inc(no);
- end;
-
-  if pn2>4 then
-  begin     DM.Info.Appendrecord([no,nil,'Un gran número de medicaciones alopáticas consumidas retrasan y dificultan la curación.']);
-     Inc(no);
-     edit5.text:=edit5.text+' | Las medicaciones alópatas pueden causar afecciones y efectos secundarios graves.';
-  end;
-   if pn3>4 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+', por favor no fume, ya que esto tiene efectos graves en la salud.']);
-     Inc(no);    end;
-   if pn3>15 then   edit5.text:=edit5.text+' | Tabaquismo.';
-      if pn3>15 then  edit6.text:=edit6.text+' | Pulmones.';
-  if pn4>1 then  begin     DM.Info.Appendrecord([no,nil,'La adicción a los esteroides tiene efectos secundarios serios que se pueden convertir en una enferemedad propia.']);
-     Inc(no);
-      end;
-      if pn4>1 then   edit5.text:=edit5.text+' | Esteroides.';
-       if pn4>1 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn5>7 then  begin     DM.Info.Appendrecord([no,nil,'El mercurio es siempre una substancia tóxica.']);
-     Inc(no);
-      if pn5>9 then   edit5.text:=edit5.text+' | Amalgamas de mercurio';
-       end;
-  if pn6>0 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+': deja las drogas, simplemente dí ''No'', y no trates reducir la adicción.']);
-     Inc(no);   if pn6>1 then   edit5.text:=edit5.text+' | Drogas recreacionales';
-      end;
-  if pn7>9 then  begin     DM.Info.Appendrecord([no,nil,'Practique la reducción del estrés después de las comidas durante 40 min. todos los días.']);
-     Inc(no);
-      end;
-      if pn7>8 then   edit5.text:=edit5.text+' | Estrés.';
-        if pn7>9 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn8>4 then  begin     DM.Info.Appendrecord([no,nil,'El azúcar deprime el sistema inmunitario y otros, tome frutas en su lugar.']);
-     Inc(no);  if pn8>6 then   edit5.text:=edit5.text+' | Azúcar.';
-       end;
-         if pn8>5 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn9<2 then  begin     DM.Info.Appendrecord([no,nil,'El ejercicio es esencial para una vida saludable, siempre se puede encontrar el tiempo y el espacio para este.']);
-     Inc(no);    if pn9<1 then   edit5.text:=edit5.text+' | Falta de ejercicio.';
-     end;
-  if pn10>1 then  begin     DM.Info.Appendrecord([no,nil,'Cualquier bebida alcoholica a más de una consumisión diaria puede ser un castigo para el organismo.']);
-     Inc(no);  if pn10>3 then   edit5.text:=edit5.text+' | Bebidas alcohólicas.';
-       end;
-         if pn10>3 then  edit6.text:=edit6.text+' | Hígado.';
-      if pn10>3 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de alcohol es perjudicial para la salud.']);
-     Inc(no);    end;
-  if pn11>3 then  begin     DM.Info.Appendrecord([no,nil,'Reduzca la consumisión de cafeína, mejorará su salud. Use café descafeinado.']);
-     Inc(no);    end;
-  if pn12>4 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de toxicidad es causa de afección, su desintoxicación puede agravar los síntomas, como cuando se saca una espina de un dedo.']);
-     Inc(no);    if pn12>5 then   edit5.text:=edit5.text+' | Toxicidad.';
-     end;
-  if pn13>4 then  begin     DM.Info.Appendrecord([no,nil,'']);
-     Inc(no);    end;
-  if pn14>1 then  begin     DM.Info.Appendrecord([no,nil,'Hay un reporte de afección heredada.']);
-     Inc(no);    end;
-  if pn15>6 then  begin     DM.Info.Appendrecord([no,nil,'Necesita terapias para perder peso. El exceso de peso agrava cualquier condición.']);
-     Inc(no);    end;
-  if pn16>5 then  begin     DM.Info.Appendrecord([no,nil,'EL exceso de negatividad y una actitud mental pobre bloquean cualquier curación.']);
-     Inc(no);   if pn16>6 then   edit5.text:=edit5.text+' | Negatividad';
-      end;
-  if pn17>4 then  begin     DM.Info.Appendrecord([no,nil,'']);
-     Inc(no);    end;
-  if pn18>4 then  begin     DM.Info.Appendrecord([no,nil,'Se han reportado alergias, por favor realize las terapias de desinsiblización alergénica con el sistema.']);
-     Inc(no);
-      end;
-      if pn18>2 then   edit5.text:=edit5.text+' | Alergias.';
-  if pn19>3 then  begin     DM.Info.Appendrecord([no,nil,'Los factores mentales pueden bloquear el proceso de curación. Use el programa de ''PNL''.']);
-     Inc(no);
-     if pn19>4 then   edit5.text:=edit5.text+' | Factores mentales.';
-      end;
-  if pn20>4 then  begin     DM.Info.Appendrecord([no,nil,'Traumas pasados pueden estar involucrados, por favor realize las terapias adecuadas.']);
-     Inc(no);
-     end;
-      if pn20>3 then   edit5.text:=edit5.text+' | Trauma.';
-     if pn21>4 then  begin     DM.Info.Appendrecord([no,nil,'Infecciones pasadas pueden estar involucradas, por favor realize las terapias adecuadas.']);
-     Inc(no);
-      end;
-      if pn21>3 then   edit5.text:=edit5.text+' | Infección.';
-       if pn21>2 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn22>2 then  begin     DM.Info.Appendrecord([no,nil,pname+' necesita tomar responsabilidad por sus afecciones.']);
-     Inc(no);    end;
-  if pn23<4 then  begin     DM.Info.Appendrecord([no,nil,pname+' necesita beber/absorber más agua.']);
-     Inc(no);    end;
-  if (soc>210)and (soc<310) then  begin     DM.Info.Appendrecord([no,nil,pname+': Hay una obstrucción importante, considere al menos 4 terapias para apreciar buenos resultados.']);
-     Inc(no);    end;
-    if (soc>310)and (soc<410) then  begin     DM.Info.Appendrecord([no,nil,pname+': Hay una obstrucción importante, considere al menos 6 terapias para apreciar buenos resultados.']);
-     Inc(no);    end;
-
-      if soc>410 then
-      begin
-       DM.Info.Appendrecord([no,nil,pname+'; Hay una obstrucción importante, considere al menos 8 terapias para apreciar buenos resultados.']);
-       Inc(no);
-      end;
-
-    if soc>280 then   edit13.text:=edit13.text+' | Tomará algún tiempo y muchas terapias para tratar la afección.';
-    if  (pn3>10)or  (pn6>0) or (pn8>5) or (pn11>4)or (pn10>4) then   edit13.text:=edit13.text+' | Se sugiere terapia para la reducción de adicciones en el módulo de ''PNL''.';
-    if pn7>8 then   edit13.text:=edit13.text+' | Reducción de estrés.';
-    if pn21>1 then   edit13.text:=edit13.text+' | Se sugieren ''Zaps'' y est. del sistema inmunitario';
-    if pn20>2 then   edit13.text:=edit13.text+' | Se sugiere terapia para traumas.';
-
-        if  bab1=10 then
+if  bab1=10 then
         begin
            label220.caption:='Compatibilidad madre/bebé | '+inttostr(70+random(35)) ;
-          if soc>150 then  label220.caption:='Compatibilidad madre/bebé | '+inttostr(55+random(45)) ;
-          if soc>199 then   label220.caption:='Compatibilidad madre/bebé | '+inttostr(45+random(55)) ;
-          if soc>259 then   label220.caption:='Compatibilidad madre/bebé | '+inttostr(35+random(65)) ;
-          if soc>299 then   label220.caption:='Compatibilidad madre/bebé | '+inttostr(25+random(75)) ;
+          if soc>150 then label220.caption:='Compatibilidad madre/bebé | '+inttostr(55+random(45)) ;
+          if soc>199 then label220.caption:='Compatibilidad madre/bebé | '+inttostr(45+random(55)) ;
+          if soc>259 then label220.caption:='Compatibilidad madre/bebé | '+inttostr(35+random(65)) ;
+          if soc>299 then label220.caption:='Compatibilidad madre/bebé | '+inttostr(25+random(75)) ;
           inc(no); DM.Info.Appendrecord([no,nil,'Device set to test baby and mother',nil]); Inc(no);
-          //DM.Info.Appendrecord([no,strtoint2(LPatron.caption),'Frecuencia resonante mayor de bebé',nil]);Inc(no);
-
-          if pn3>4 then  begin     DM.Info.Appendrecord([no,nil,'El fumar afecta gravemente al feto.']);
+          if pn3>4 then begin DM.Info.Appendrecord([no,nil,' El fumar afecta gravemente al feto.']);
           Inc(no);
         end;
        end;
         Dm.Info.FlushBuffers;
-
     end;
-procedure TtestForm1.AddVINDICATE1Click(Sender: TObject);
+
+    procedure TtestForm1.AddVINDICATE1Click(Sender: TObject);
 begin
 if (sender is TMenuItem) then
         dm.bitacora((sender as TMenuItem).caption);
@@ -20353,23 +19836,23 @@ if (sender is TMenuItem) then
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
 
-  inc(no); DM.Info.Appendrecord([no,soc,' | Indice ''SOC''' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,' | Informe vindicado de entrevista con persona, ''1'' indica que hay riesgo presente.']);
-       inc(no); DM.Info.Appendrecord([no,cb1,' | Sistema vascular' ]);
-       inc(no); DM.Info.Appendrecord([no,cb2,' | Inflamación' ]);
-       inc(no); DM.Info.Appendrecord([no,cb3,' | Neoplasma' ]);
-       inc(no); DM.Info.Appendrecord([no,cb4,' | Efectos de dieta' ]);
-        inc(no); DM.Info.Appendrecord([no,cb5,' | Intoxicación' ]);
-       inc(no); DM.Info.Appendrecord([no,cb6,' | Riesgo de alergia' ]);
-       inc(no); DM.Info.Appendrecord([no,cb7,' | Trauma' ]);
-       inc(no); DM.Info.Appendrecord([no,cb8,' | Riesgo endocrino' ]);
-       inc(no); DM.Info.Appendrecord([no,cb10,'| Estrés.' ]);
-       inc(no); DM.Info.Appendrecord([no,cb9,' | Riesgo emocional' ]);
-       inc(no); DM.Info.Appendrecord([no,cb11,' | Disturbio sensorial' ]);
-       inc(no); DM.Info.Appendrecord([no,cb12,' | Exposición a contaminación electromagnética.' ]);
-       inc(no); DM.Info.Appendrecord([no,cb13,' | Falta de concientización' ]);
-       inc(no); DM.Info.Appendrecord([no,cb15,' | Kilos de sobre peso']);
-       inc(no); DM.Info.Appendrecord([no,cb16,' | Negatividad' ]);
+  inc(no); DM.Info.Appendrecord([no,soc,' Indice ''SOC''' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Informe vindicado de entrevista con persona, ''1'' indica que hay riesgo presente.']);
+       inc(no); DM.Info.Appendrecord([no,cb1,' Sistema vascular.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb2,' Inflamación.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb3,' Neoplasma.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb4,' Efectos de dieta.' ]);
+        inc(no); DM.Info.Appendrecord([no,cb5,' Intoxicación.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb6,' Riesgo de hiperreactividad.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb7,' Trauma.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb8,' Riesgo endocrino.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb10,' Estrés.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb9,' Riesgo emocional.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb11,' Disturbio sensorial.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb12,' Exposición a contaminación electromagnética.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb13,' Falta de concientización.' ]);
+       inc(no); DM.Info.Appendrecord([no,cb15,' Kilos de sobre peso.']);
+       inc(no); DM.Info.Appendrecord([no,cb16,' Negatividad.' ]);
         Inc(no);
         Dm.Info.FlushBuffers;
 end;
@@ -20453,11 +19936,11 @@ begin
     DM.Info.First;
     DM.Info.Last;
     no := DM.Info.FieldbyName('no').asInteger;
-  inc(no); DM.Info.Appendrecord([no,ac1,'Meridiano de Riñón / Vejiga']);
-       inc(no); DM.Info.Appendrecord([no,ac2,'Meridiano de Hígado / Vesícula']);
-       inc(no); DM.Info.Appendrecord([no,ac3,'Meridiano de Bazo-Páncreas / Estómago' ]);
-        inc(no); DM.Info.Appendrecord([no,ac4,'Meridiano de Pulmón / Intestino grueso' ]);
-         inc(no); DM.Info.Appendrecord([no,ac5,'Meridiano de Corazón / Intestino delgado' ]);
+  inc(no); DM.Info.Appendrecord([no,ac1,' Meridiano de Riñón / Vejiga']);
+       inc(no); DM.Info.Appendrecord([no,ac2,' Meridiano de Hígado / Vesícula']);
+       inc(no); DM.Info.Appendrecord([no,ac3,' Meridiano de Bazo-Páncreas / Estómago' ]);
+        inc(no); DM.Info.Appendrecord([no,ac4,' Meridiano de Pulmón / Intestino grueso' ]);
+         inc(no); DM.Info.Appendrecord([no,ac5,' Meridiano de Corazón / Intestino delgado' ]);
      Inc(no);
         Index:='ByValue';
         end;
@@ -20523,14 +20006,7 @@ if ac4>ac5 then maxa1:=4;
      if ac5>ac3 then maxa1:=5;
 if ac5>ac4 then maxa1:=5;
 if ac5>ac1 then maxa1:=5;
-     if maxa1=1 then  Edit7.text:=  Edit7.text+'Meridiano de Riñón / Vejiga';
-      if maxa1=2 then  Edit7.text:=  Edit7.text+'Meridiano de Hígado / Vesícula';
-       if maxa1=3 then  Edit7.text:=  Edit7.text+'Meridiano de Bazo-Páncreas / Estómago';
-        if maxa1=4 then  Edit7.text:=  Edit7.text+'Meridiano de Pulmón / Intestino grueso';
-         if maxa1=5 then  Edit7.text:=  Edit7.text+'Meridiano de Corazón / Intestino delgado';
-
-
-         Dm.Info.FlushBuffers;
+Dm.Info.FlushBuffers;
 end;
 
 procedure TtestForm1.Report3Click(Sender: TObject);
@@ -20587,21 +20063,20 @@ begin
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
 
-  inc(no); DM.Info.Appendrecord([no,nal1,' | Alersodes: Sulfidos + Aditivos alimentarios.' ]);
-       inc(no); DM.Info.Appendrecord([no,nal2,' | Alersodes: Polen.']);
-       inc(no); DM.Info.Appendrecord([no,nal3,' | Alersodes: Odores (perfumes, petróleos, etc.)' ]);
-        inc(no); DM.Info.Appendrecord([no,nal4,' | Alersodes: Humedad y polvo.' ]);
-         inc(no); DM.Info.Appendrecord([no,nal5,' | Alersodes: Grano de glutina.' ]);
-      inc(no); DM.Info.Appendrecord([no,nal6,' | Alersodes: Leche o lácteos.' ]);
-       inc(no); DM.Info.Appendrecord([no,nal7,' | Alersodes: Pelo animal o piel.']);
-       inc(no); DM.Info.Appendrecord([no,nal8,' | Alersodes: Varias alergias inhaladas, usar Opsin 2.' ]);
-        inc(no); DM.Info.Appendrecord([no,nal9,' | Alersodes: Varias alergias alimenticias, usar Opsin 1.' ]);
-         inc(no); DM.Info.Appendrecord([no,nal10,' | Alersodes: Uso excesivo de azúcar.' ]);
-        inc(no); DM.Info.Appendrecord([no,nil,' | Alersode individual singular: ' ]);
-         inc(no); DM.Info.Appendrecord([no,nil,' | Alersode individual singular: ' ]);
-         inc(no); DM.Info.Appendrecord([no,nil,' | Alersode individual singular: ' ]);
-
-     Inc(no);
+  inc(no); DM.Info.Appendrecord([no,nal1,' Alersodes: Sulfidos + Aditivos alimentarios.' ]);
+       inc(no); DM.Info.Appendrecord([no,nal2,' Alersodes: Polen.']);
+       inc(no); DM.Info.Appendrecord([no,nal3,' Alersodes: Odores (perfumes, petróleos, etc.)' ]);
+        inc(no); DM.Info.Appendrecord([no,nal4,' Alersodes: Humedad y polvo.' ]);
+         inc(no); DM.Info.Appendrecord([no,nal5,' Alersodes: Grano de glutina.' ]);
+      inc(no); DM.Info.Appendrecord([no,nal6,' Alersodes: Leche o lácteos.' ]);
+       inc(no); DM.Info.Appendrecord([no,nal7,' Alersodes: Pelo animal o piel.']);
+       inc(no); DM.Info.Appendrecord([no,nal8,' Alersodes: Varias alergias inhaladas, usar Opsin 2.' ]);
+        inc(no); DM.Info.Appendrecord([no,nal9,' Alersodes: Varias alergias alimenticias, usar Opsin 1.' ]);
+         inc(no); DM.Info.Appendrecord([no,nal10,' Alersodes: Uso excesivo de azúcar.' ]);
+        inc(no); DM.Info.Appendrecord([no,nil,' Alersode individual singular: ' ]);
+         inc(no); DM.Info.Appendrecord([no,nil,' Alersode individual singular: ' ]);
+         inc(no); DM.Info.Appendrecord([no,nil,' Alersode individual singular: ' ]);
+    Inc(no);
         Index:='ByValue';
    DM.Conscida.IndexName := Index;
    DM.Conscida.First;
@@ -20620,11 +20095,11 @@ if (sender is TMenuItem) then
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-  inc(no); DM.Info.Appendrecord([no,nil,'Los sarcodes de preocupación son: ' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Los sarcodes de preocupación son: ']);
-       inc(no); DM.Info.Appendrecord([no,nil,'Los sarcodes de preocupación son: ' ]);
-        inc(no); DM.Info.Appendrecord([no,nil,'Los sarcodes de preocupación son: ' ]);
-         inc(no); DM.Info.Appendrecord([no,nil,'Los sarcodes de preocupación son: ' ]);
+  inc(no); DM.Info.Appendrecord([no,nil,' Los sarcodes de preocupación son: ' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Los sarcodes de preocupación son: ']);
+       inc(no); DM.Info.Appendrecord([no,nil,' Los sarcodes de preocupación son: ' ]);
+        inc(no); DM.Info.Appendrecord([no,nil,' Los sarcodes de preocupación son: ' ]);
+         inc(no); DM.Info.Appendrecord([no,nil,' Los sarcodes de preocupación son: ' ]);
      Inc(no);
         Index:='ByValue';
    DM.Conscida.IndexName := Index;
@@ -20665,52 +20140,52 @@ autorif:=strtoint2(thera.label96.caption);
       DM.Info.Last;
       no := DM.Info.FieldbyName('no').asInteger;
 
-      inc(no); DM.Info.Appendrecord([no,nil,'Notas de terapia']);
+      inc(no); DM.Info.Appendrecord([no,nil,' Notas de terapia']);
 
    inc(no);
   if automer=10 then
      Begin
-      DM.Info.Appendrecord([no,nal1,'Se realizó terapia de electro-acupuntura.' ]);
+      DM.Info.Appendrecord([no,nal1,' Se realizó terapia de electro-acupuntura.' ]);
       inc(no);
      end;
  if automor=10 then
      Begin
-      DM.Info.Appendrecord([no,nal2,'Se realizó terapia de bioresonancia.']);
+      DM.Info.Appendrecord([no,nal2,' Se realizó terapia de bioresonancia.']);
       inc(no);
      end;
   if autorif=10 then
      Begin
-      DM.Info.Appendrecord([no,nal5,'Se realizó terapia ''Auto Rife''.' ]);
+      DM.Info.Appendrecord([no,nal5,' Se realizó terapia ''Rife''.' ]);
       inc(no);
      end;
    if autoal=10 then
      Begin
-      DM.Info.Appendrecord([no,nal3,'Se realizó terapia de desensibilización alergénica.' ]);
+      DM.Info.Appendrecord([no,nal3,' Se realizó terapia de desensibilización alergénica.' ]);
       inc(no);
      end;
   if autonlp=10 then
      Begin
-      DM.Info.Appendrecord([no,nal4,'Se realizó terapia de Programación Neuro Lingüística.' ]);
+      DM.Info.Appendrecord([no,nal4,' Se realizó terapia de Programación Neuro Lingüística.' ]);
       inc(no);
      end;
   if colo=10 then
      Begin
-      DM.Info.Appendrecord([no,nal9,'Se realizó cromoterapia.' ]);
+      DM.Info.Appendrecord([no,nal9,' Se realizó cromoterapia.' ]);
       inc(no);
      end;
  if triv=10 then
     Begin
-     DM.Info.Appendrecord([no,nal7,'Se realizó terapia de bioresonancia.']);
+     DM.Info.Appendrecord([no,nal7,' Se realizó terapia de bioresonancia.']);
      inc(no);
     end;
  if scal=10 then
     Begin
-     DM.Info.Appendrecord([no,nal6,'Se realizó terapia ''Scalar''.' ]);
+     DM.Info.Appendrecord([no,nal6,' Se realizó terapia ''Scalar''.' ]);
      inc(no);
     end;
     if nonauto =10 then
       Begin
-       DM.Info.Appendrecord([no,nal8,'Se activo el sistema manual.' ]);
+       DM.Info.Appendrecord([no,nal8,' Se activo el sistema manual.' ]);
        Inc(no);
       end;
 
@@ -20872,34 +20347,34 @@ if (sender is TMenuItem) then
  DM.Info.First;
  DM.Info.Last;
  no := DM.Info.FieldbyName('no').asInteger;
- inc(no); DM.Info.Appendrecord([no,n1,'Dental Toxins use Amalgam or Dental hormetic     ' ]);
-       inc(no); DM.Info.Appendrecord([no,n2,'Asbestos or Silicosis use Asbestox hormetic    ']);
-       inc(no); DM.Info.Appendrecord([no,n3,'Food Additives hormetic or Addex    ' ]);
-        inc(no); DM.Info.Appendrecord([no,n4,'Environmental hormetic or Envirox     ' ]);
-         inc(no); DM.Info.Appendrecord([no,n5,'Chlorine or Fluorine use Chlorex or Halogen hormetic  ' ]);
-  inc(no); DM.Info.Appendrecord([no,n6,'Industrial toxicity use Industriox or Industrial hormetic     ' ]);
-       inc(no); DM.Info.Appendrecord([no,n7,'Insecticides use Addex of Insecticide hormetic    ']);
-       inc(no); DM.Info.Appendrecord([no,n8,'Heavy Metal hormetic or Metex    ' ]);
-        inc(no); DM.Info.Appendrecord([no,n9,'Radiation hormetic or Algin     ' ]);
-         inc(no); DM.Info.Appendrecord([no,n10,'Synthetic Chemicals from drugs use hormetic or Chemex  ' ]);
-         inc(no); DM.Info.Appendrecord([no,n11,'Beauty shop hormetic or Beautox     ' ]);
-       inc(no); DM.Info.Appendrecord([no,n12,'Ameoba or Giardia hormetic or Amebex    ']);
-       inc(no); DM.Info.Appendrecord([no,n13,'Bacterial infection fuge hormetic or BAC    ' ]);
-        inc(no); DM.Info.Appendrecord([no,n14,'Fungal fuge hormetic or FNG     ' ]);
-         inc(no); DM.Info.Appendrecord([no,n15,'Protozoa fuge hormetic   ' ]);
-         inc(no); DM.Info.Appendrecord([no,n16,'Prion risk use Prion remedy     ' ]);
-       inc(no); DM.Info.Appendrecord([no,n17,'Ricketsia hormetic or use FNG    ']);
-       inc(no); DM.Info.Appendrecord([no,n18,'Vaccination hormetic    ' ]);
-        inc(no); DM.Info.Appendrecord([no,n19,'Viral Risk use Viral fuge or VIR     ' ]);
-         inc(no); DM.Info.Appendrecord([no,n20,'Worms or parasites use Vermex or Vermifuge  ' ]);
-         inc(no); DM.Info.Appendrecord([no,n21,'Metabolic risk use Metab     ' ]);
-       inc(no); DM.Info.Appendrecord([no,n22,'Food poisening hormetic    ']);
-       inc(no); DM.Info.Appendrecord([no,n23,'Immune system weak use Immunopoi or Immune Stim    ' ]);
-  inc(no); DM.Info.Appendrecord([no,nil,'Los nosodes de preocupación son:' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Los nosodes de preocupación son:']);
-       inc(no); DM.Info.Appendrecord([no,nil,'Los nosodes de preocupación son:' ]);
-        inc(no); DM.Info.Appendrecord([no,nil,'Los nosodes de preocupación son:' ]);
-         inc(no); DM.Info.Appendrecord([no,nil,'Los nosodes de preocupación son:' ]);
+ inc(no); DM.Info.Appendrecord([no,n1,' Dental Toxins use Amalgam or Dental hormetic     ' ]);
+       inc(no); DM.Info.Appendrecord([no,n2,' Asbestos or Silicosis use Asbestox hormetic    ']);
+       inc(no); DM.Info.Appendrecord([no,n3,' Food Additives hormetic or Addex    ' ]);
+        inc(no); DM.Info.Appendrecord([no,n4,' Environmental hormetic or Envirox     ' ]);
+         inc(no); DM.Info.Appendrecord([no,n5,' Chlorine or Fluorine use Chlorex or Halogen hormetic  ' ]);
+  inc(no); DM.Info.Appendrecord([no,n6,' Industrial toxicity use Industriox or Industrial hormetic     ' ]);
+       inc(no); DM.Info.Appendrecord([no,n7,' Insecticides use Addex of Insecticide hormetic    ']);
+       inc(no); DM.Info.Appendrecord([no,n8,' Heavy Metal hormetic or Metex    ' ]);
+        inc(no); DM.Info.Appendrecord([no,n9,' Radiation hormetic or Algin     ' ]);
+         inc(no); DM.Info.Appendrecord([no,n10,' Synthetic Chemicals from drugs use hormetic or Chemex  ' ]);
+         inc(no); DM.Info.Appendrecord([no,n11,' Beauty shop hormetic or Beautox     ' ]);
+       inc(no); DM.Info.Appendrecord([no,n12,' Ameoba or Giardia hormetic or Amebex    ']);
+       inc(no); DM.Info.Appendrecord([no,n13,' Bacterial infection fuge hormetic or BAC    ' ]);
+        inc(no); DM.Info.Appendrecord([no,n14,' Fungal fuge hormetic or FNG     ' ]);
+         inc(no); DM.Info.Appendrecord([no,n15,' Protozoa fuge hormetic   ' ]);
+         inc(no); DM.Info.Appendrecord([no,n16,' Prion risk use Prion remedy     ' ]);
+       inc(no); DM.Info.Appendrecord([no,n17,' Ricketsia hormetic or use FNG    ']);
+       inc(no); DM.Info.Appendrecord([no,n18,' Vaccination hormetic    ' ]);
+        inc(no); DM.Info.Appendrecord([no,n19,' Viral Risk use Viral fuge or VIR     ' ]);
+         inc(no); DM.Info.Appendrecord([no,n20,' Worms or parasites use Vermex or Vermifuge  ' ]);
+         inc(no); DM.Info.Appendrecord([no,n21,' Metabolic risk use Metab     ' ]);
+       inc(no); DM.Info.Appendrecord([no,n22,' Food poisening hormetic    ']);
+       inc(no); DM.Info.Appendrecord([no,n23,' Immune system weak use Immunopoi or Immune Stim    ' ]);
+  inc(no); DM.Info.Appendrecord([no,nil,' Los nosodes de preocupación son:' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Los nosodes de preocupación son:']);
+       inc(no); DM.Info.Appendrecord([no,nil,' Los nosodes de preocupación son:' ]);
+        inc(no); DM.Info.Appendrecord([no,nil,' Los nosodes de preocupación son:' ]);
+         inc(no); DM.Info.Appendrecord([no,nil,' Los nosodes de preocupación son:' ]);
      Inc(no);
         Index:='ByValue';
    DM.Conscida.IndexName := Index;
@@ -20919,9 +20394,9 @@ if (sender is TMenuItem) then
  DM.Info.First;
  DM.Info.Last;
  no := DM.Info.FieldbyName('no').asInteger;
-  inc(no); DM.Info.Appendrecord([no,nil,'Sugestiones principales de homeopáticos:' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Sugestiones secundarias de homeopáticos:']);
-       inc(no); DM.Info.Appendrecord([no,nil,'Sugestiones terciarias de homeopáticos:' ]);
+  inc(no); DM.Info.Appendrecord([no,nil,' Sugestiones principales de homeopáticos:' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Sugestiones secundarias de homeopáticos:']);
+       inc(no); DM.Info.Appendrecord([no,nil,' Sugestiones terciarias de homeopáticos:' ]);
         inc(no); DM.Info.Appendrecord([no,nil,'' ]);
        //  inc(no); DM.Info.Appendrecord([no,nil,'     ' ]);
      Inc(no);
@@ -20931,104 +20406,100 @@ end;
 
 procedure TtestForm1.AddDiagnosisReport1Click(Sender: TObject);
 begin
-dm.bitacora('Añadir informe de diagnosis');
    DM.Info.Open;
    DM.Info.First;
    DM.Info.Last;
    no := DM.Info.FieldbyName('no').asInteger;
-       inc(no); DM.Info.Appendrecord([no,nil,'International Classification of Disease # 308.2 Stress, Psychomotor     ']);
-          inc(no); DM.Info.Appendrecord([no,nil,'International Classification of Disease # 739 Non-Alopathic Concern Disease      ']);
-           inc(no); DM.Info.Appendrecord([no,nil,'International Classification of Disease # 995.3 Allergic Reaction     ']);
-  inc(no); DM.Info.Appendrecord([no,nil,'Primary Diagnosis of concern are:    ' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Secondary Diagnosis of concern are:    ']);
-       inc(no); DM.Info.Appendrecord([no,nil,'Tertiary of concern are:    ' ]);
+  inc(no); DM.Info.Appendrecord([no,nil,' Primary Diagnosis of concern are:    ' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Secondary Diagnosis of concern are:    ']);
+       inc(no); DM.Info.Appendrecord([no,nil,' Tertiary of concern are:    ' ]);
 if (patform1.ran44>10)and(patform1.spinedit1.value <>0)and(patform1.spinedit2.value <>0) then begin
 if patform1.spinedit37.value-patform1.spinedit38.value < 41 then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Narrowed Pulse Pressure leg,Possible Heart Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Narrowed Pulse Pressure leg,Possible Heart Problem']);
 end;
 if patform1.spinedit39.value-patform1.spinedit40.value < 41 then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Narrowed Pulse Pressure leg,Possible Heart Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Narrowed Pulse Pressure leg,Possible Heart Problem']);
 end;
 if patform1.spinedit1.value > 139 then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión sistólica sanguínea alta.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión sistólica sanguínea alta.']);
 end;
 if patform1.spinedit3.value > 139 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión sistólica sanguínea alta.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión sistólica sanguínea alta.']);
 end;
 if patform1.spinedit2.value > 85 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión diastólica sanguínea alta.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión diastólica sanguínea alta.']);
 end;
 if patform1.spinedit4.value > 85 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión diastólica sanguínea alta.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión diastólica sanguínea alta.']);
 end;
 if patform1.spinedit1.value > 199 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó una presión sanguínea alta crítica.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó una presión sanguínea alta crítica.']);
 end;
 if patform1.spinedit3.value > 199 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó una presión sanguínea alta crítica.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó una presión sanguínea alta crítica.']);
 end;
 if patform1.spinedit2.value > 119 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó una presión sanguínea alta crítica.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó una presión sanguínea alta crítica.']);
 end;
 if patform1.spinedit4.value > 119 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó una presión sanguínea alta crítica.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó una presión sanguínea alta crítica.']);
 end;
 if patform1.spinedit1.value < 91 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión sistólica sanguínea baja.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión sistólica sanguínea baja.']);
 end;
 if patform1.spinedit3.value < 91 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión sistólica sanguínea baja.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión sistólica sanguínea baja.']);
 end;
 if patform1.spinedit2.value < 61 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión diastólica sanguínea baja.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión diastólica sanguínea baja.']);
 end;
 if patform1.spinedit4.value < 61 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Se detectó presión diastólica sanguínea baja.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Se detectó presión diastólica sanguínea baja.']);
 end;
 if patform1.spinedit1.value-patform1.spinedit5.value > 9  then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Problema ortostático, sospechar de hipoadrenia.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Problema ortostático, sospechar de hipoadrenia.']);
 end;
 if patform1.spinedit3.value-patform1.spinedit6.value > 9 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Problema ortostático, sospechar de hipoadrenia.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Problema ortostático, sospechar de hipoadrenia.']);
 end;
 if patform1.spinedit37.value-patform1.spinedit7.value > 14 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Problema ortostático, sospechar de hipoadrenia.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Problema ortostático, sospechar de hipoadrenia.']);
 end;
 if patform1.spinedit39.value-patform1.spinedit8.value > 14 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Problema ortostático, sospechar de hipoadrenia.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Problema ortostático, sospechar de hipoadrenia.']);
 end;
 if patform1.spinedit37.value-patform1.spinedit1.value > 60 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Posible insuficiencia aórtica.']);
+inc(no); DM.Info.Appendrecord([no,nil,' Posible insuficiencia aórtica.']);
 end;
 if patform1.spinedit1.value-patform1.spinedit2.value < 31 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Narrowed Pulse Pressure,Possible Heart Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Narrowed Pulse Pressure,Possible Heart Problem']);
 end;
 if patform1.spinedit3.value-patform1.spinedit4.value < 31 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Narrowed Pulse Pressure,Possible Heart Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Narrowed Pulse Pressure,Possible Heart Problem']);
 end;
 if patform1.spinedit1.value-patform1.spinedit2.value > 49 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Widened Pulse Pressure,Possible Heart or Nerval Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Widened Pulse Pressure,Possible Heart or Nerval Problem']);
 end;
 if patform1.spinedit3.value-patform1.spinedit4.value > 49 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Widened Pulse Pressure,Possible Heart or Nerval Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Widened Pulse Pressure,Possible Heart or Nerval Problem']);
 end;
 if patform1.spinedit37.value-patform1.spinedit38.value > 59 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Widened Pulse Pressure leg,Possible Heart or Nerval Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Widened Pulse Pressure leg,Possible Heart or Nerval Problem']);
 end;
 if patform1.spinedit39.value-patform1.spinedit40.value > 59 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Widened Pulse Pressure leg,Possible Heart or Nerval Problem']);
+inc(no); DM.Info.Appendrecord([no,nil,' Widened Pulse Pressure leg,Possible Heart or Nerval Problem']);
 end;
  if patform1.spinedit1.value-patform1.spinedit3.value > 9 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Cerebral Ischemia Risk, Possible Stroke Risk']);
+inc(no); DM.Info.Appendrecord([no,nil,' Cerebral Ischemia Risk, Possible Stroke Risk']);
 end;
  if patform1.spinedit3.value-patform1.spinedit1.value > 9 then  begin
-inc(no); DM.Info.Appendrecord([no,nil,'Cerebral Ischemia Risk, Possible Stroke Risk']);
+inc(no); DM.Info.Appendrecord([no,nil,' Cerebral Ischemia Risk, Possible Stroke Risk']);
 end;
  if patform1.spinedit37.value-patform1.spinedit39.value > 11 then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Low Back Ischemia Imbalance']);
+inc(no); DM.Info.Appendrecord([no,nil,' Low Back Ischemia Imbalance']);
 end;
   if patform1.spinedit39.value-patform1.spinedit37.value > 11 then begin
-inc(no); DM.Info.Appendrecord([no,nil,'Low Back Ischemia Imbalance']);
+inc(no); DM.Info.Appendrecord([no,nil,' Low Back Ischemia Imbalance']);
 end;
    end;
       Inc(no);
@@ -21076,82 +20547,82 @@ dm.bitacora('Añadir informe de deterioro físico');
 
  If Patform1.CheckBox42.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Amígdalas.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Amígdalas.']);
  end;
 
  If Patform1.CheckBox43.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Adenoides.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Adenoides.']);
  end;
 
  If Patform1.CheckBox44.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Apéndix.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Apéndix.']);
  end;
 
  If Patform1.CheckBox45.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Vesícula biliar.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Vesícula biliar.']);
  end;
 
  If Patform1.CheckBox46.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Bazo.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Bazo.']);
  end;
 
  If Patform1.CheckBox47.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Dentadura.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Dentadura.']);
  end;
 
  If Patform1.CheckBox48.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Utero.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Utero.']);
  end;
 
  If Patform1.CheckBox49.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Ovarios.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Ovarios.']);
  end;
 
  If Patform1.CheckBox50.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Riñones.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Riñones.']);
  end;
 
  If Patform1.CheckBox51.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del pulmón.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del pulmón.']);
  end;
 
  If Patform1.CheckBox52.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del cerebro.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del cerebro.']);
  end;
 
  If Patform1.CheckBox53.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del sistema nervioso.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del sistema nervioso.']);
  end;
 
  If Patform1.CheckBox54.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del estómago.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del estómago.']);
  end;
 
  If Patform1.CheckBox55.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del intestino.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del intestino.']);
  end;
 
  If Patform1.CheckBox56.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Brazo, dedo de la mano, dedo del pie o hueso.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Brazo, dedo de la mano, dedo del pie o hueso.']);
  end;
 
  If Patform1.CheckBox57.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del seno o linfa.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del seno o linfa.']);
  end;
 
  If Patform1.CheckBox299.Checked Then
@@ -21290,7 +20761,7 @@ dm.bitacora('Añadir informe de deterioro físico');
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.CheckBox328.caption]);
  end;
-      If Patform1.Edit38.Text<>'Describe:' Then
+      If Patform1.Edit38.Text<>'Describir:' Then
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.Edit38.Text]);
  end;
@@ -21318,7 +20789,7 @@ dm.bitacora('Añadir informe de deterioro físico');
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.CheckBox328.caption]);
  end;
-       If Patform1.Memo5.Text<>'Describa: ' Then
+       If Patform1.Memo5.Text<>'Describir:' Then
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.Edit38.Text]);
  end;
@@ -21347,11 +20818,11 @@ dm.bitacora('Añadir informe de deterioro físico');
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.CheckBox339.caption+' '+patform1.edit44.text]);
  end;
 
-  inc(no); DM.Info.Appendrecord([no,nil,'Impairment Estimate of Doctor=      '+IntToStr(patform1.impair) ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Diagnosis:     ']);
-       inc(no); DM.Info.Appendrecord([no,nil,'Prognosis:    ' ]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Time Estimates of disability:    ' ]);
-    inc(no); DM.Info.Appendrecord([no,nil,'Comentarios:    ' ]);
+  inc(no); DM.Info.Appendrecord([no,nil,' Impairment Estimate of Doctor=      '+IntToStr(patform1.impair) ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Diagnosis:     ']);
+       inc(no); DM.Info.Appendrecord([no,nil,' Prognosis:    ' ]);
+       inc(no); DM.Info.Appendrecord([no,nil,' Time Estimates of disability:    ' ]);
+    inc(no); DM.Info.Appendrecord([no,nil,' Comentarios:    ' ]);
       Inc(no);
       Dm.Info.FlushBuffers;
 end;
@@ -21375,38 +20846,10 @@ end;
 
 procedure TtestForm1.Button10Click(Sender: TObject);
 begin
-oeg:=random(30);
+oeg:=random(26);
 goe:=10;
 label302.enabled:=true;
-if oeg=0 then label302.caption:='| Exploración y cambio de sí mismo/a.';
-if oeg=1 then label302.caption:='| Reducción de estrés.';
-if oeg=2 then label302.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label302.caption:='| Factores mentales.';
-if oeg=4 then label302.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label302.caption:='| Terapia de alersodes.';
-if oeg=6 then label302.caption:='| Desintoxicación isódica o xenobiótica.';
-if oeg=7 then label302.caption:='| Terapia de nosodes para patógenos.';
-if oeg=19 then label302.caption:='| Terapia nutricional.';
-if oeg=8 then label302.caption:='| Homeopatía imponderable para contaminación electromagnética.';
- if oeg=9 then label302.caption:='| Fitoterapia.';
- if oeg=10 then label302.caption:='| Terapia de sarcodes.';
- if oeg=11 then label302.caption:='| Homeopatía combinativa.';
- if oeg=12 then label302.caption:='| Terapia vitamínica.';
-if oeg=20 then label302.caption:='| Atención a sí mismo/a.';
-if oeg=13 then label302.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label302.caption:='| Terapia con oligo minerales.';
-if oeg=15 then label302.caption:='| Terapia para la flora digestiva.';
-if oeg=16 then label302.caption:='| Desintoxicación de la flora digestiva e hígado.';
-if oeg=17 then label302.caption:='| Control de dieta.';
-if oeg=22 then label302.caption:='| Terapia nutricional.';
-if oeg=18 then label302.caption:='| Ejercicio, cardiovascular.';
- if oeg=21 then label302.caption:='| Ejercicio, pilates.';
- if oeg=22 then label302.caption:='| Combinación de terapias de acuerdo a las causas.';
- if oeg=23 then label302.caption:='| Ejercicio, caminar.';
- if oeg=24 then label302.caption:='| Combinación de terapias de acuerdo a las causas.';
- if oeg=25 then label302.caption:='| Combinación de terapias de acuerdo a las causas.';
- if oeg=26 then label302.caption:='| Combinación de terapias de acuerdo a las causas.';
-  if oeg>26 then label302.caption:='| Terapias de retroalimentación con el sistema.';
+Bterapias.Click;
 button8.enabled:=true;
 //BReaccionIndividual.enabled:=true;
 PANEL2.visible :=false;
@@ -21437,7 +20880,7 @@ end;
 
 procedure TtestForm1.RadioButton2Click(Sender: TObject);
 begin
-BZap5S.Caption := 'Amplificar ítem 5 seg';
+BZap5S.Caption := 'Amplificar ítem 5 seg.';
 BZap30S.Caption := 'Amplificar 30 seg.';
 BZap3M.Caption := 'Amplificar ítem 3 min.';
 BZapP.Caption := 'Amplificación personalizada';
@@ -21449,7 +20892,7 @@ end;
 
 procedure TtestForm1.RadioButton3Click(Sender: TObject);
 begin
-BZap5S.Caption := 'Invertir ítem 5 seg';
+BZap5S.Caption := 'Invertir ítem 5 seg.';
 BZap30S.Caption := 'Invertir 30 seg.';
 BZap3M.Caption := 'Invertir ítem 3 min.';
 BZapP.Caption := 'Inverción personalizada';
@@ -21485,9 +20928,6 @@ begin
   if edit3.Text='' then
   begin
         button55.Enabled:=false;
-//        button16.Enabled:=false;
-//        button49.Enabled:=false;
-//        button50.Enabled:=false;
         button52.Enabled:=false;
         button46.Enabled:=false;
         button21.Enabled:=false;
@@ -21499,9 +20939,6 @@ begin
   else
   begin
         button55.Enabled:=true;
-//        button16.Enabled:=true;
-//        button49.Enabled:=true;
-//        button50.Enabled:=true;
         button52.Enabled:=true;
         button46.Enabled:=true;
         button21.Enabled:=true;
@@ -21545,7 +20982,6 @@ end;
 
 procedure TtestForm1.MoveInfotoTop1Click(Sender: TObject);
 begin
-dm.bitacora('Ampliar informe hasta la parte superior de la pantalla');
 InfoGrid.Visible:=True;
 infogrid.top:=24;
 infogrid.height:=649;
@@ -21663,7 +21099,7 @@ If (Target as TEdit).Name = 'Edit1' Then
  Begin
    load1:=100;
  end;
-  if (QString='}') and (edit4.text=' Afección preocupante: ' ) then edit4.text:=edit1.text;
+  if (QString='}') and (edit4.text=' Condición preocupante:' ) then edit4.text:=edit1.text;
 end;
 
 procedure TtestForm1.InfoGridDragDrop(Sender, Source: TObject; X,
@@ -21706,13 +21142,6 @@ Application.CreateForm(Tnatdiag1, natdiag1);
   Panel36Click(self);
 end;
 
-procedure TtestForm1.Addpurpleitemstoreport1Click(Sender: TObject);
-begin
-{Application.CreateForm(Twellness, wellness);
- wellness.showmodal;
- wellness.Free;}
-end;
-
 procedure TtestForm1.Panel8Click(Sender: TObject);
 
 Var TT,TT2 : Integer;
@@ -21748,7 +21177,6 @@ Panel2.Height:=277;
 Label208.Caption := 'Analizando a '+pname;
 SCIOworking.RadioButton7.checked:=True;
  time33:=strtoint2(patform1.label121.caption);
-if ExtraStrongReactiveJoltduringTest1.caption=' Animación extra fuerte de reactividad en persona antes del test' then ExtraStrongReactiveJoltduringTest1.visible:=false;
 riskchart.button23.caption:='Cargar visita actual';
  if total1>300  then hypo:=10 ;
 //BReaccionIndividual.enabled:=true; { Individual R }
@@ -21786,10 +21214,8 @@ alg:=2+random(18);
 if soc >99 then alg:=15+random(5);
 if total1>10 then alg:=round(total1/7);
 GProgreso.Progress := 1;
-//if label23.caption='' then SpeachForm.SMessageTalk('No hay un nombre para conectar, el test no se debe efectuar.');
 TT := (120+(4*alg)); { Original Time }
 if tt>250 then begin
-//Label208.caption:='Este caso es complicado. Disrrupción en la calibración. Recalibrando...';
 Panel2.Top:=4;
 Panel2.Height:=669;
 PcalImprove();
@@ -21846,12 +21272,6 @@ ChangingPulses(10000,33333,55555,5,111,2,
  repeat
   if (freq2.sciobox=true) then  ChangingPulses(10000,(xyz*200),(xyz*500),5,10,3,
  '11111111','11111111');
-{  xyz:=xyz+1;
- if (xyz>10)and(xyz<30) Then Panel6.Caption := 'Menos de 3 min. restan | Unidad: '+inttostr(xyz);
- if (xyz>29)and(xyz<60) Then Panel6.Caption := 'Menos de 2 min. restan | Unidad: '+inttostr(xyz);
- if (xyz>59)and(xyz<75) Then Panel6.Caption := 'Menos de 1 min. restan | Unidad: '+inttostr(xyz);
- if (xyz>75)and(xyz<87) Then Panel6.Caption := 'Menos de 30 seg. restan | Unidad: '+inttostr(xyz);
- if (xyz>87)and(xyz<150) Then Panel6.Caption := 'Menos de 10 seg. restan | Unidad: '+inttostr(xyz);  }
  if (xyz>399) Then  begin
  Panel6.Caption := 'Detener test + Resetear';
  Panel2.Caption := 'Test detenido + Reseteado, pulse sobre el botón ''Testar'' para retestar';
@@ -21878,8 +21298,6 @@ ChangingPulses(10000,33333,55555,5,111,2,
  ChangingPulses(10000,55555,77777,10,111,2,
  '11111111','11111111');
      SCIOworking.RadioButton5.checked:=True;
-      SCIOworking.button8.visible:=true;
-//      Panel4.visible:=true;
  if inde1=3 then begin
  If SpeachForm.DMessageTalkIF(doctor+' Hay una resistencia inconciente extrema a la calibración. Pulse ''Yes'' para continuar o ''No'' para salir y re-entrar.'  ,
     mtInformation, [mbYes, mbNo], 0) = mrNo then  halt;;
@@ -22170,7 +21588,7 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 ChangingPulses(5555,555,55555,5,5,1,
  '11111111','11111111');
 
-       FMain.shaping:=random(105); FRecompensa.label79.caption:=inttostr(FMain.shaping);
+       FMain.shaping:=random(105); 
   { Insert 2000 jan 20 Last Item in Value ordered }
  DM.Conscida.Refresh;
    Index:='ByValue';
@@ -22271,82 +21689,82 @@ button10.visible:=true;
 
  If Patform1.CheckBox42.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Amígdalas.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Amígdalas.']);
  end;
 
  If Patform1.CheckBox43.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Adenoides.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Adenoides.']);
  end;
 
  If Patform1.CheckBox44.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Apéndix.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Apéndix.']);
  end;
 
  If Patform1.CheckBox45.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Vesícula biliar.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Vesícula biliar.']);
  end;
 
  If Patform1.CheckBox46.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Bazo.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Bazo.']);
  end;
 
  If Patform1.CheckBox47.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Dentadura.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Dentadura.']);
  end;
 
  If Patform1.CheckBox48.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Utero.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Utero.']);
  end;
 
  If Patform1.CheckBox49.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Ovarios.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Ovarios.']);
  end;
 
  If Patform1.CheckBox50.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Riñones.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Riñones.']);
  end;
 
  If Patform1.CheckBox51.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del pulmón.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del pulmón.']);
  end;
 
  If Patform1.CheckBox52.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del cerebro.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del cerebro.']);
  end;
 
  If Patform1.CheckBox53.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del sistema nervioso.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del sistema nervioso.']);
  end;
 
  If Patform1.CheckBox54.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del estómago.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del estómago.']);
  end;
 
  If Patform1.CheckBox55.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del intestino.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del intestino.']);
  end;
 
  If Patform1.CheckBox56.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Brazo, dedo de la mano, dedo del pie o hueso.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Brazo, dedo de la mano, dedo del pie o hueso.']);
  end;
 
  If Patform1.CheckBox57.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Parte del seno o linfa.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Parte del seno o linfa.']);
  end;
 
  If Patform1.CheckBox299.Checked Then
@@ -22469,7 +21887,7 @@ button10.visible:=true;
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.CheckBox328.caption]);
  end;
-       If Patform1.Edit38.Text<>'Describe:' Then
+       If Patform1.Edit38.Text<>'Describir:' Then
  Begin
    inc(no); DM.Info.Appendrecord([no,nil,Patform1.Edit38.Text]);
  end;
@@ -22508,97 +21926,97 @@ NO_Old := No;
 
  If Patform1.CheckBox25.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Píldoras para el control de la natalidad / esteroides.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Píldoras para el control de la natalidad / esteroides.']);
  end;
 
  If Patform1.CheckBox26.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para el corazón.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para el corazón.']);
  end;
 
  If Patform1.CheckBox27.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para el dolor.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para el dolor.']);
  end;
 
  If Patform1.CheckBox28.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la presión arterial.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la presión arterial.']);
  end;
 
  If Patform1.CheckBox29.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la angina.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la angina.']);
  end;
 
  If Patform1.CheckBox30.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para reducir la viscosidad de la sangre.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para reducir la viscosidad de la sangre.']);
  end;
 
  If Patform1.CheckBox31.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para rebajar el colesterol.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para rebajar el colesterol.']);
  end;
 
  If Patform1.CheckBox32.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para los riñones.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para los riñones.']);
  end;
 
  If Patform1.CheckBox33.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para controlar el estado de ánimo.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para controlar el estado de ánimo.']);
  end;
 
  If Patform1.CheckBox34.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones anti-convulsivas.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones anti-convulsivas.']);
  end;
 
  If Patform1.CheckBox35.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones anti-psicóticas/neurolepticas.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones anti-psicóticas/neurolepticas.']);
  end;
 
  If Patform1.CheckBox61.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para relajar los músculos.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para relajar los músculos.']);
  end;
 
  If Patform1.CheckBox37.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la diabetes.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la diabetes.']);
  end;
 
  If Patform1.CheckBox38.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para el Parkinson''s.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para el Parkinson''s.']);
  end;
 
  If Patform1.CheckBox39.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la tiroides.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la tiroides.']);
  end;
 
  If Patform1.CheckBox40.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la anemia.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la anemia.']);
  end;
 
  If Patform1.CheckBox41.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para la digestión.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para la digestión.']);
  end;
 
  If Patform1.CheckBox36.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Medicaciones para el cáncer.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Medicaciones para el cáncer.']);
  end;
 
  If Patform1.CheckBox62.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Antibióticos.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Antibióticos.']);
  end;
 
  If Patform1.CheckBox38.Checked Then
@@ -22614,18 +22032,18 @@ NO_Old := No;
 
  If Patform1.CheckBox63.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Píldoras para el control de natalidad.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Píldoras para el control de natalidad.']);
  end;
 
 If NO_Old = No Then
 Begin
-  inc(no); DM.Info.Appendrecord([no,nil,'Ninguna.']);
+  inc(no); DM.Info.Appendrecord([no,nil,' Ninguno.']);
 end;
 
 {----------------}
 
 inc(no); DM.Info.Appendrecord([no,nil,'']);
-inc(no); DM.Info.Appendrecord([no,nil,'Descripción del tipo de estrés']);
+inc(no); DM.Info.Appendrecord([no,nil,' Descripción del tipo de estrés']);
 inc(no); DM.Info.Appendrecord([no,nil,'']);
 
 If Patform1.Memo6.Text<>'' Then
@@ -22642,48 +22060,48 @@ NO_Old := No;
 
  If Patform1.CheckBox15.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Toxinas de salones de belleza.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Toxinas de salones de belleza.']);
  end;
 
  If Patform1.CheckBox16.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Asbestos.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Asbestos.']);
  end;
 
  If Patform1.CheckBox17.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Toxinas industriales.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Toxinas industriales.']);
  end;
 
  If Patform1.CheckBox18.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Insecticidas.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Insecticidas.']);
  end;
 
  If Patform1.CheckBox19.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Metales pesados.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Metales pesados.']);
  end;
  If Patform1.CheckBox20.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Aditivos alimentarios.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Aditivos alimentarios.']);
  end;
 
  If Patform1.CheckBox21.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Radiación.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Radiación.']);
  end;
  If Patform1.CheckBox22.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Clorine, fluorine o halógenos.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Clorina, fluorina o halógenos.']);
  end;
  If Patform1.CheckBox23.Checked Then
  Begin
-   inc(no); DM.Info.Appendrecord([no,nil,'Toxinas medioambientales.']);
+   inc(no); DM.Info.Appendrecord([no,nil,' Toxinas medioambientales.']);
  end;
 If NO_Old = No Then
 Begin
-  inc(no); DM.Info.Appendrecord([no,nil,'Ninguna.']);
+  inc(no); DM.Info.Appendrecord([no,nil,' Ninguno.']);
 end;
 Dm.Info.FlushBuffers;
 end;
@@ -22708,242 +22126,15 @@ button18.enabled:=false;
 button19.enabled:=true;
 button95.enabled:=true;
 panel6.caption:='';
-label281.caption:='Restaurar la salud a '+edit6.text;
-if label270.caption='Esto ofrecerá un consejo a la persona.' then label270.caption:=label98.caption;
-if riskchart.ims>275 then label270.caption:=label270.caption+' Sistema inmunitario.';
-if riskchart.emo>275 then label270.caption:=label270.caption+' Emoción.';
-if riskchart.infl>275 then label270.caption:=label270.caption+' Inflamación.';
-if riskchart.can>275 then label270.caption:=label270.caption+' Cáncer.';
-if riskchart.str>275 then label270.caption:=label270.caption+' Estrés.';
-if riskchart.infe>275 then label270.caption:=label270.caption+' Infección.';
-if riskchart.tox>275 then label270.caption:=label270.caption+' Toxicidad.';
-if riskchart.car>275 then label270.caption:=label270.caption+' Sistema cardiovascular.';
-if riskchart.Nut>275 then label270.caption:=label270.caption+' Nutrientes / Nutrición.';
-if riskchart.hor>275 then label270.caption:=label270.caption+' Hormonas.';
-if riskchart.lym>275 then label270.caption:=label270.caption+' Sistema linfático.';
-if riskchart.bld>275 then label270.caption:=label270.caption+' Sangre.';
-if riskchart.cir>275 then label270.caption:=label270.caption+' Circulación.';
-if riskchart.cho>275 then label270.caption:=label270.caption+' Colesterol.';
-if riskchart.oxi>275 then label270.caption:=label270.caption+' Oxidación.';
-if riskchart.hyd>275 then label270.caption:=label270.caption+' Hidratación.';
-if riskchart.hypa>275 then label270.caption:=label270.caption+' Hipoadrenia.';
-if riskchart.tra>275 then label270.caption:=label270.caption+' Trauma.';
-if riskchart.inh>275 then label270.caption:=label270.caption+' Condición heredada.';
-if riskchart.liv>275 then label270.caption:=label270.caption+' Hígado.';
-if riskchart.kid>275 then label270.caption:=label270.caption+' Riñones.';
-if riskchart.dig>275 then label270.caption:=label270.caption+' Sistema digestivo.';
-if riskchart.cnt>275 then label270.caption:=label270.caption+' Tejido conectivo.';
-if riskchart.bon>275 then label270.caption:=label270.caption+' Huesos.';
-if riskchart.acid>275 then label270.caption:=label270.caption+' Balance del pH.';
-if riskchart.env>275 then label270.caption:=label270.caption+' Medio ambiente / Entorno.';
-if riskchart.aler>275 then label270.caption:=label270.caption+' Alérgia/s.';
-if riskchart.rad>275 then label270.caption:=label270.caption+' Radiación.';
-if riskchart.bac>275 then label270.caption:=label270.caption+' Bacteria.';
-if riskchart.fun>275 then label270.caption:=label270.caption+' Fungosidades.';
-if riskchart.vir>275 then label270.caption:=label270.caption+' Virus.';
-if riskchart.par>275 then label270.caption:=label270.caption+' Parásitos.';
-if riskchart.ameo>275 then label270.caption:=label270.caption+' Ameba.';
-if riskchart.fdp>275 then label270.caption:=label270.caption+' Intolerancia alimentaria.';
-if riskchart.sug>275 then label270.caption:=label270.caption+' Regulación del azúcar.';
-if riskchart.ner>275 then label270.caption:=label270.caption+' Sistema neurológico.';
-if riskchart.sener>275 then label270.caption:=label270.caption+' Sistema sensorial.';
-if riskchart.res>275 then label270.caption:=label270.caption+' Sistema respiratorio.';
-if riskchart.cog>275 then label270.caption:=label270.caption+' Cognicción.';
-if riskchart.ims>199 then label270.caption:=label270.caption+' Sistema inmunitario.';
-if riskchart.emo>199 then label270.caption:=label270.caption+' Emociones.';
-if riskchart.infl>199 then label270.caption:=label270.caption+' Inflamación.';
-if riskchart.can>199 then label270.caption:=label270.caption+' Cáncer.';
-if riskchart.str>199 then label270.caption:=label270.caption+' Estrés.';
-if riskchart.infe>199 then label270.caption:=label270.caption+' Infección.';
-if riskchart.tox>199 then label270.caption:=label270.caption+' Toxicidad.';
-if riskchart.car>199 then label270.caption:=label270.caption+' Sistema cardiovascular.';
-if riskchart.Nut>199 then label270.caption:=label270.caption+' Nutrientes / Nutrición.';
-if riskchart.hor>199 then label270.caption:=label270.caption+' Hormonas.';
-if riskchart.lym>199 then label270.caption:=label270.caption+' Sistema linfático.';
-if riskchart.bld>199 then label270.caption:=label270.caption+' Sangre.';
-if riskchart.cir>199 then label270.caption:=label270.caption+' Circulación.';
-if riskchart.cho>199 then label270.caption:=label270.caption+' Colesterol.';
-if riskchart.oxi>199 then label270.caption:=label270.caption+' Oxidación.';
-if riskchart.hyd>199 then label270.caption:=label270.caption+' Hidratación.';
-if riskchart.hypa>199 then label270.caption:=label270.caption+' Hipoadrenia.';
-if riskchart.tra>199 then label270.caption:=label270.caption+' Trauma.';
-if riskchart.inh>199 then label270.caption:=label270.caption+' Condición heredada.';
-if riskchart.liv>199 then label270.caption:=label270.caption+' Hígado.';
-if riskchart.kid>199 then label270.caption:=label270.caption+' Riñones.';
-if riskchart.dig>199 then label270.caption:=label270.caption+' Sistema digestivo.';
-if riskchart.cnt>199 then label270.caption:=label270.caption+' Tejido conectivo.';
-if riskchart.bon>199 then label270.caption:=label270.caption+' Huesos.';
-if riskchart.acid>199 then label270.caption:=label270.caption+' Balance del pH.';
-if riskchart.env>199 then label270.caption:=label270.caption+' Medio ambiente / Entorno.';
-if riskchart.aler>199 then label270.caption:=label270.caption+' Alérgia/s.';
-if riskchart.rad>199 then label270.caption:=label270.caption+' Radiación.';
-if riskchart.bac>199 then label270.caption:=label270.caption+' Bacteria.';
-if riskchart.fun>199 then label270.caption:=label270.caption+' Fungosidades.';
-if riskchart.vir>199 then label270.caption:=label270.caption+' Virus.';
-if riskchart.par>199 then label270.caption:=label270.caption+' Parásitos.';
-if riskchart.ameo>199 then label270.caption:=label270.caption+' Ameba.';
-if riskchart.fdp>199 then label270.caption:=label270.caption+' Intolerancia alimentaria.';
-if riskchart.sug>199 then label270.caption:=label270.caption+' Regulación del azúcar.';
-if riskchart.ner>199 then label270.caption:=label270.caption+' Sistema neurológico.';
-if riskchart.sener>199 then label270.caption:=label270.caption+' Sistema sensorial.';
-if riskchart.res>199 then label270.caption:=label270.caption+' Sistema respiratorio.';
-if riskchart.cog>199 then label270.caption:=label270.caption+' Cognicción.';
-if riskchart.ims>165 then label270.caption:=label270.caption+' Sistema inmunitario.';
-if riskchart.emo>165 then label270.caption:=label270.caption+' Emociones.';
-if riskchart.infl>165 then label270.caption:=label270.caption+' Inflamación.';
-if riskchart.can>165 then label270.caption:=label270.caption+' Cáncer.';
-if riskchart.str>165 then label270.caption:=label270.caption+' Estrés.';
-if riskchart.infe>165 then label270.caption:=label270.caption+' Infección.';
-if riskchart.tox>165 then label270.caption:=label270.caption+' Toxicidad.';
-if riskchart.car>165 then label270.caption:=label270.caption+' Sistema cardiovascular.';
-if riskchart.Nut>165 then label270.caption:=label270.caption+' Nutrientes / Nutrición.';
-if riskchart.hor>165 then label270.caption:=label270.caption+' Hormonas.';
-if riskchart.lym>165 then label270.caption:=label270.caption+' Sistema linfático.';
-if riskchart.bld>165 then label270.caption:=label270.caption+' Sangre.';
-if riskchart.cir>165 then label270.caption:=label270.caption+' Circulación.';
-if riskchart.cho>165 then label270.caption:=label270.caption+' Colesterol.';
-if riskchart.oxi>165 then label270.caption:=label270.caption+' Oxidación.';
-if riskchart.hyd>165 then label270.caption:=label270.caption+' Hidratación.';
-if riskchart.hypa>165 then label270.caption:=label270.caption+' Hipoadrenia.';
-if riskchart.tra>165 then label270.caption:=label270.caption+' Trauma.';
-if riskchart.inh>165 then label270.caption:=label270.caption+' Condición heredada.';
-if riskchart.liv>165 then label270.caption:=label270.caption+' Hígado.';
-if riskchart.kid>165 then label270.caption:=label270.caption+' Riñones.';
-if riskchart.dig>165 then label270.caption:=label270.caption+' Sistema digestivo.';
-if riskchart.cnt>165 then label270.caption:=label270.caption+' Tejido conectivo.';
-if riskchart.bon>165 then label270.caption:=label270.caption+' Huesos.';
-if riskchart.acid>165 then label270.caption:=label270.caption+' Balance del pH.';
-if riskchart.env>165 then label270.caption:=label270.caption+' Medio ambiente / Entorno.';
-if riskchart.aler>165 then label270.caption:=label270.caption+' Alérgia/s.';
-if riskchart.rad>165 then label270.caption:=label270.caption+' Radiación.';
-if riskchart.bac>165 then label270.caption:=label270.caption+' Bacteria.';
-if riskchart.fun>165 then label270.caption:=label270.caption+' Fungosidades.';
-if riskchart.vir>165 then label270.caption:=label270.caption+' Virus.';
-if riskchart.par>165 then label270.caption:=label270.caption+' Parásitos.';
-if riskchart.ameo>165 then label270.caption:=label270.caption+' Ameba.';
-if riskchart.fdp>165 then label270.caption:=label270.caption+' Intolerancia alimentaria.';
-if riskchart.sug>165 then label270.caption:=label270.caption+' Regulación del azúcar.';
-if riskchart.ner>165 then label270.caption:=label270.caption+' Sistema neurológico.';
-if riskchart.sener>165 then label270.caption:=label270.caption+' Sistema sensorial.';
-if riskchart.res>165 then label270.caption:=label270.caption+' Sistema respiratorio.';
-if riskchart.cog>165 then label270.caption:=label270.caption+' Cognicción.';
-oeg:=random(17);
-label223.caption:='Estrés emocional';
-if oeg=1 then label223.caption:='| Estrés.';
-if oeg=2 then label223.caption:='| Toma de conciencia.';
-if oeg=3 then label223.caption:='| Factores mentales.';
-if oeg=4 then label223.caption:='| Factores heredados.';
-if oeg=5 then label223.caption:='| Alergias.';
-if oeg=6 then label223.caption:='| Toxinas.';
-if oeg=7 then label223.caption:='| Patógenos.';
-if oeg=8 then label223.caption:='| Energía perversa.';
-if oeg=9 then label223.caption:='| Trauma o lesión.';
-if oeg=10 then label223.caption:='| Deficiencia o exceso nutricional.';
-if oeg=11 then label223.caption:='| Atáque psíquico.';
-if oeg=12 then label223.caption:='| Repercusiones kármicas.';
-if oeg=13 then label223.caption:='| Opresión espiritual.';
-if oeg>13 then label223.caption:=' | Sobre intelectualización.';
-oeg:=random(12);
-if oeg=0 then label98.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label98.caption:='| Estrés.';
-if oeg=2 then label98.caption:='| Toma de conciencia.';
-if oeg=3 then label98.caption:='| Factores mentales.';
-if oeg=4 then label98.caption:='| Factores heredados.';
-if oeg=5 then label98.caption:='| Alergias.';
-if oeg=6 then label98.caption:='| Toxinas.';
-if oeg=7 then label98.caption:='| Patógenos.';
-if oeg=8 then label98.caption:='| Energía perversa.';
-if oeg=9 then label98.caption:='| Trauma o lesión.';
-if oeg=10 then label98.caption:='| Deficiencia o exceso nutricional.';
-if oeg>10 then label98.caption:=' | Sobre intelectualización.';
-if pn2>2 then label98.caption:='| Medicaciones alopáticas.';
-if pn3>10 then label98.caption:='| Tabaquismo.';
-if pn8>5 then label98.caption:='| Uso del azúcar.';
-if pn12>10 then label98.caption:='| Toxicidad.';
-if pn7>9 then label98.caption:='| Estrés.';
-if pn5>8 then label98.caption:='| Metales pesados relacionados con el mercurio.';
-if pn4>0 then label98.caption:='| Supresión alopática.';
-//label98.caption:=label98.caption+' / '+edit5.text;
-label264.caption:=edit5.text;
+label281.caption:=' Restaurar bienestar a:'+EPOrganosAfectados.text;
+TestForm1.BCausas.Click;
+label264.caption:=ECausas.text;
 oeg:=random(5);
-if oeg>2 then label264.caption:=edit5.text+'/'+label223.caption;
+if oeg>2 then label264.caption:=ECausas.Text+' '+label223.caption;
 label99.caption:=label302.caption;
-oeg:=random(13);
-oeg:=random(27);
-if oeg=0 then label226.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label226.caption:='  Reducción de estrés., calm mind';
-if oeg=2 then label226.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label226.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label226.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label226.caption:='| Terapia de alersodes.';
-if oeg=6 then label226.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label226.caption:='| Nosodes para patógenos.';
-if oeg=19 then label226.caption:='| Terapia nutricional.';
-if oeg=8 then label226.caption:='| Imponderables para contaminación electromagnética.';
- if oeg=9 then label226.caption:='| Fitoterapia.';
- if oeg=10 then label226.caption:='| Terapia de sarcodes.';
- if oeg=11 then label226.caption:='  Homeopatía combinativa.';
- if oeg=12 then label226.caption:='| Terapia vitamínica.';
-if oeg=20 then label226.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label226.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label226.caption:='| Terapia oligo mineral.';
-if oeg=15 then label226.caption:='| Tratar flora intestinal.';
-if oeg=16 then label226.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label226.caption:='| Control de dieta.';
-if oeg=22 then label226.caption:='| Terapia nutricional.';
-if oeg=18 then label226.caption:='| Ejercicio, cardiovascular.';
- if oeg=21 then label226.caption:='| Ejercicio, pilates.';
- if oeg=23 then label226.caption:='| Ejercicio, yoga.';
-  if oeg>23 then label226.caption:='| Medicina bio-energética.';
-oeg:=random(27);
-if oeg=0 then label99.caption:=' Resistencia inconsciente al cambio y a explorarse a sí mismo/a.';
-if oeg=1 then label99.caption:='| Reducción de estrés.';
-if oeg=2 then label99.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label99.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label99.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label99.caption:='| Terapia de alersodes.';
-if oeg=6 then label99.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label99.caption:='| Nosodes para patógenos.';
-if oeg=19 then label99.caption:='| Terapia nutricional.';
-if oeg=8 then label99.caption:='| Imponderables para contaminación electromagnética.';
- if oeg=9 then label99.caption:='| Fitoterapia.';
- if oeg=10 then label99.caption:='| Terapia de sarcodes.';
- if oeg=11 then label99.caption:='| Homeopatía combinativa.';
- if oeg=12 then label99.caption:='| Terapia vitamínica.';
-if oeg=20 then label99.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label99.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label99.caption:='| Terapia oligo mineral.';
-if oeg=15 then label99.caption:='| Tratar flora intestinal.';
-if oeg=16 then label99.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label99.caption:='| Control de dieta.';
-if oeg=22 then label99.caption:='| Terapia nutricional.';
-if oeg=18 then label99.caption:='| Ejercicio, cardiovascular.';
- if oeg=21 then label99.caption:='| Ejercicio, yoga.';
- if oeg=23 then label99.caption:='| Ejercicio, pilates.';
-  if oeg>23 then label99.caption:='| Medicina bio-energética.';
-             if pn2>2 then label99.caption:='caution with allopathic drugs';
-if pn3>30 then label99.caption:='| Abandono del tabaquismo.';
-if pn8>10 then label99.caption:='| Terapia de adicciones.';
-if pn12>10 then label99.caption:='| Toxicidad.';
-if pn7>11 then label99.caption:=' Reducción de estrés.';
-if pn5>18 then label99.caption:='| Desintoxicación de metales pesados.';
-if pn4>2 then label99.caption:='| Dificultad con la supresión alopática.';
-label99.caption:=label99.caption+'/'+edit9.text;
-oeg:=random(16);
-if oeg=0 then label100.caption:=' | Resistencia inconciente a cambiar o a explorase a sí mismo/a.';
-if oeg=1 then label100.caption:='  Reducción de estrés.';
-if oeg=2 then label100.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label100.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label100.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label100.caption:='| Terapia de alersodes.';
-if oeg=6 then label100.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label100.caption:='| Nosodes para patógenos.';
-if oeg=9 then label100.caption:='| Terapia nutricional.';
-if oeg=8 then label100.caption:='| Imponderables para contaminación electromagnética.';
- if oeg=9 then label100.caption:='| Fitoterapia.';
- if oeg=10 then label100.caption:='| Terapia de sarcodes.';
- if oeg=11 then label100.caption:='| Homeopatía combinativa.';
- if oeg>11 then label100.caption:='| Medicina bio-energética.';
+EnlaceLabel226();
+EnlaceLabel99();
+EnlaceLabel100();
 oeg:=2771+(random(22));
   DM.Conscida.IndexName := '';
 oeg1:=(random(3850));
@@ -23036,15 +22227,15 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Target1:=0;
 label316.caption:=DM.causes.Fieldbyname('Potential Cause').AsString;
 DM.Causes.prior;
-label316.caption:=label316.caption+' | '+DM.causes.Fieldbyname('Potential Cause').AsString ;
+label316.caption:=label316.caption+' '+DM.causes.Fieldbyname('Potential Cause').AsString ;
 DM.Causes.prior;
-label316.caption:=label316.caption+' | '+DM.causes.Fieldbyname('Potential Cause').AsString;
+label316.caption:=label316.caption+' '+DM.causes.Fieldbyname('Potential Cause').AsString;
 DM.Causes.prior;
-label316.caption:=label316.caption+' | '+DM.causes.Fieldbyname('Potential Cause').AsString;
+label316.caption:=label316.caption+' '+DM.causes.Fieldbyname('Potential Cause').AsString;
 Panel2.visible:= false;
 end;
 
@@ -23071,7 +22262,7 @@ begin
       inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la causa: ' + label270.caption]);
       inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la causa: ' + label276.caption]);
       inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la causa: ' + label316.caption]);
-       inc(no); DM.Info.Appendrecord([no,nil,'Cura: '+ label99.caption ]);
+       inc(no); DM.Info.Appendrecord([no,nil,'Terapia recomendada: '+ label99.caption ]);
        inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la cura: ' + label96.caption]);
        inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la cura: ' + label175.caption]);
        inc(no); DM.Info.Appendrecord([no,nil,'Indicación de la cura: ' + label277.caption]);
@@ -23278,14 +22469,12 @@ end;
 
 procedure TtestForm1.Button22Click(Sender: TObject);
 begin
-Label208.caption:='Amplificando ítem desde bandeja o diodo...';
 AI();
 if aver>84 then button22.Enabled := False;
 end;
 
 procedure TtestForm1.Button21Click(Sender: TObject);
 begin
-Label208.caption:='Invirtiendo ítem desde bandeja o diodo...';
 AI();
 if aver>84 then button21.Enabled := False;
 end;
@@ -23316,7 +22505,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
 Panel7.Top:=440;
 panel2.visible :=false;
@@ -23502,7 +22691,7 @@ Until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 // if item<100  then label192.caption:='El ítem analizado podría ser tóxico para la persona.';
 item := strtoint2(LReactancia.caption)+strtoint2(LReactancia.caption)+item;
 // código original item:= 40+random(item);
@@ -24436,873 +23625,74 @@ end;
 
 procedure TtestForm1.Button34Click(Sender: TObject);
 begin
- if pn1>4 then
- begin
-   edit26.text:=edit26.text+'. La fuerza vital está disminuída.';
- end;
-  if pn2>4 then
-  begin     edit26.text:=edit26.text+' La consumición de medicaciones alopáticas en grandes cantidades dificultan el proceso de sanación.';
-  end;
-   if pn3>4 then  begin     edit26.text:=edit26.text+Patform1.pname+', por favor no fume ya que esto interfiere con el proceso de sanación.';
-         end;
-  if pn4>1 then  begin     edit26.text:=edit26.text+' | La adicción a los esteroides y sus efectos secundarios pueden ser una afección por sí sola.';
-      end;
-  if pn5>7 then  begin     edit26.text:=edit26.text+' | El mercurio es una sustancia muy tóxica.';
-       end;
-  if pn6>0 then  begin     edit26.text:=edit26.text+Patform1.pname+', abandone las drogas, simplemente diga ''NO'', y no trate la reducción de la adicción.';
-
-      end;
-  if pn7>9 then  begin     edit26.text:=edit26.text+' | Practique la reducción del estrés después de cada comida durante al menos 40 min.';
-      end;
-  if pn8>4 then  begin     edit26.text:=edit26.text+' | El azúcar refinada deprime el sistema inmunitario y más, cambiese a fruta.';
-       end;
-  if pn9<2 then  begin     edit26.text:=edit26.text+'| El ejercicio es esencial para una vida saludable, siempre se puede encontrar el tiempo y el espacio para practicarlo.';
-     end;
-  if pn10>1 then  begin     edit26.text:=edit26.text+'Más de un vaso de una bebida alcohólica al día pueden dañar el organismo.';
-       end;
-         if pn10>3 then  edit6.text:=edit6.text+' | Hígado.';
-      if pn10>3 then  begin     edit26.text:=edit26.text+' | El exceso de alcohol es perjudicial para la salud.';
-         end;
-  if pn11>3 then  begin     edit26.text:=edit26.text+' | Por favor rebaje el consumo de cafeína/teína, mejorará su salud.';
-         end;
-  if pn12>4 then  begin     edit26.text:=edit26.text+' | El exceso de toxicidad puede causar enfermedad, la desintoxicación puede agravar los síntomas como cuando se saca una espina de un dedo.';
-         if pn12>5 then   edit5.text:=edit5.text+' | Toxicidad.';
-     end;
-  if pn13>4 then  begin     edit26.text:=edit26.text+' | No se reportó ninguna afección heredada.';
-         end;
-  if pn14>1 then  begin     edit26.text:=edit26.text+' | Hay un reporte de afección/es heredada/s.';
-         end;
-  if pn15>6 then  begin     edit26.text:=edit26.text+' | Se recomienda una terapia para perder peso. El exceso de peso puede agravar cualquier afección.';
-         end;
-  if pn16>5 then  begin     edit26.text:=edit26.text+' | El exceso de negatividad y una pobre actitud mental, pueden bloquear la curación.';
-      end;
-  if pn17>4 then  begin     edit26.text:=edit26.text+' | No se reportaron alergias.';
-         end;
-  if pn18>4 then  begin     edit26.text:=edit26.text+' | Se han reportado alergias, por favor realize la terapia de desensibilización.';
-      end;
-  if pn19>3 then  begin     edit26.text:=edit26.text+' | Los factores mentales pueden causar afecciones y/o bloquear el proceso curativo.';
-      end;
-  if pn20>4 then  begin     edit26.text:=edit26.text+' | Traumas pasados pueden estar involucradas, por favor realize las terapias adecuadas.';
-     end;
-      if pn20>3 then   edit26.text:=edit26.text+' | Trauma.';
-     if pn21>4 then  begin     edit26.text:=edit26.text+' | Infecciones pasadas pueden estar involucradas.';
-      end;
-  if pn22>2 then  begin     edit26.text:=edit26.text+' | Debe responsabilizarse más por todas sus afecciones y calidad de vida.';
-         end;
-  if pn23<4 then  begin     edit26.text:=edit26.text+' | Necesita beber/absorber más agua.';
-         end;
-if (soc>210)and (soc<310) then  begin edit26.text:=edit26.text+' | Hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 4 terapias para obtener buenos resultados.';
-         end;
-if (soc>310)and (soc<410) then  begin edit26.text:=edit26.text+' | Hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 6 terapias para obtener buenos resultados.';
-         end;
-      if soc>410 then
-      begin
-        edit26.text:=edit26.text+' | Hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 8 terapias para obtener buenos resultados.';
-      end;
-    if soc>280 then   edit26.text:=edit26.text+' | Tomará algún tiempo y varias terapias para ver una mejoría a su afección.';
-    if  (pn3>10)or  (pn6>0) or (pn8>5) or (pn11>4)or (pn10>4) then   edit26.text:=edit26.text+' | Se sugiere una terapia de ''PNL'' para reducir las adicciones.';
-    if pn7>8 then   edit26.text:=edit26.text+' | Reducción de estrés., ';
-    if pn21>1 then   edit26.text:=edit26.text+' | Se sugiere una terapia de ''Zaps'' y est. del sistema inmunitario.';
-    if pn20>2 then   edit26.text:=edit26.text+' | Se sugiere terapia para traumas.';
-edit5.visible:=true;
-edit6.visible:=true;
-edit7.visible:=true;
-edit8.visible:=true;
-edit9.visible:=true;
-edit10.visible:=true;
-edit11.visible:=true;
-edit12.visible:=true;
-edit13.visible:=true;
-edit14.visible:=true;
-edit15.visible:=true;
-edit23.visible:=true;
-edit26.visible:=true;  
-edit29.visible:=true;
- oeg:=random(139);
-if oeg=0 then edit23.text:=edit23.text+'Entrelazado con '+'Pulmones.';
-if oeg=1 then edit23.text:=edit23.text+'Entrelazado con '+'Piel.';
-if oeg=2 then edit23.text:=edit23.text+'Entrelazado con '+'Cerebro.';
-if oeg=3 then edit23.text:=edit23.text+'Entrelazado con '+'Senos nasales.';
-if oeg=4 then edit23.text:=edit23.text+'Entrelazado con '+'Estómago.';
-if oeg=5 then edit23.text:=edit23.text+'Entrelazado con '+'Sistema ocular.';
-if oeg=6 then edit23.text:=edit23.text+'Entrelazado con '+'Intestinos.';
-if oeg=7 then edit23.text:=edit23.text+'Entrelazado con '+'Pulmones.';
-if oeg=8 then edit23.text:=edit23.text+'Entrelazado con '+'Estómago.';
-if oeg=9 then edit23.text:=edit23.text+'Entrelazado con '+'Suprarrenales.';
-if oeg=10 then edit23.text:=edit23.text+'Entrelazado con '+'Senos nasales.';
-if oeg=11 then edit23.text:=edit23.text+'Entrelazado con '+'Factores emocionales.';
-if oeg=12 then edit23.text:=edit23.text+'Entrelazado con '+'Sangre.';
-if oeg=13 then edit23.text:=edit23.text+'Entrelazado con '+'Sistema linfático.';
-if oeg=14 then edit23.text:=edit23.text+'Entrelazado con '+'Dentadura.';
-if oeg=15 then edit23.text:=edit23.text+'Entrelazado con '+'Formación reticular.';
-if oeg=16 then edit23.text:=edit23.text+'Entrelazado con '+'Médula oblongata.';
-if oeg=17 then edit23.text:=edit23.text+'Entrelazado con '+'Lóbulo frontal del cerebro.';
-if oeg=18 then edit23.text:=edit23.text+'Entrelazado con '+'Lóbulo parietal del cerebro.';
-if oeg=19 then edit23.text:=edit23.text+'Entrelazado con '+'Lóbulo occipital del cerebro.';
-if oeg=20 then edit23.text:=edit23.text+'Entrelazado con '+'Lóbulo temporal del cerebro.';
-if oeg=21 then edit23.text:=edit23.text+'Entrelazado con '+'Tiroides.';
-if oeg=22 then edit23.text:=edit23.text+'Entrelazado con '+'Timo.';
-if oeg=23 then edit23.text:=edit23.text+'Entrelazado con '+'Médula espinal.';
-if oeg=24 then edit23.text:=edit23.text+'Entrelazado con '+'Sistema límbico.';
-if oeg=25 then edit23.text:=edit23.text+'Entrelazado con '+'Circuitos de la memoria.';
-if oeg=26 then edit23.text:=edit23.text+'Entrelazado con '+'Hipotálamo.';
-if oeg=27 then edit23.text:=edit23.text+'Entrelazado con '+'Pineal.';
-if oeg=28 then edit23.text:=edit23.text+'Entrelazado con '+'Pituitaria.';
-if oeg=29 then edit23.text:=edit23.text+'Entrelazado con '+'Paratiroides.';
-if oeg=30 then edit23.text:=edit23.text+'Entrelazado con '+'Sangre.';
-if oeg=31 then edit23.text:=edit23.text+'Entrelazado con '+'Sistema linfático.';
-if oeg=32 then edit23.text:=edit23.text+'Entrelazado con '+'Dentadura.';
-if oeg=33 then edit23.text:=edit23.text+'Entrelazado con '+'Pulmones.';
-if oeg=34 then edit23.text:=edit23.text+'Entrelazado con '+'Piel.';
-if oeg=35 then edit23.text:=edit23.text+'Entrelazado con '+'Cerebro.';
-if oeg=36 then edit23.text:=edit23.text+'Entrelazado con '+'Karma.';
-if oeg=37 then edit23.text:=edit23.text+'Entrelazado con '+'Estómago.';
-if oeg=38 then edit23.text:=edit23.text+'Entrelazado con '+'Karma.';
-if oeg=39 then edit23.text:=edit23.text+'Entrelazado con '+'Intestinos.';
-if oeg=40 then edit23.text:=edit23.text+'Entrelazado con '+'Formación reticular.';
-if oeg=41 then edit23.text:=edit23.text+'Entrelazado con '+'Estómago.';
-if oeg=42 then edit23.text:=edit23.text+'Entrelazado con '+'Suprarrenales.';
-if oeg=43 then edit23.text:=edit23.text+'Entrelazado con '+'Formación reticular.';
-if oeg=44 then edit23.text:=edit23.text+'Entrelazado con '+'Factores emocionales.';
-if oeg=45 then edit23.text:=edit23.text+'Entrelazado con '+'Sangre.';
-if oeg=46 then edit23.text:=edit23.text+'Entrelazado con '+'Sistema linfático.';
-      if oeg=47  then edit23.text:=edit23.text+' Entrelazado con disturbio en digestión/absorpción.' ;
-      if oeg=48  then edit23.text:=edit23.text+' Deficiencia de '+'tejidos de sal no específicos.' ;
-       if oeg=49  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=50  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones bajos.' ;
-        if oeg=51  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones medios.' ;
-       if oeg=52  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas con los aracadónicos.'  ;
-            if oeg=53  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=54  then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=55  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones altos.'  ;
-                 if oeg=56  then edit23.text:=edit23.text+'Deficiencia de '+'ácidos grasos enzimáticos relacionados.'  ;
-     if oeg=57  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E.' ;
-       if oeg=58  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E1.'  ;
-        if oeg=59  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E2.' ;
-       if oeg=60  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E3.'  ;
-                   if oeg=0  then edit23.text:=edit23.text+'Deficiencia de '+'vitamina K.' ;
-       if oeg=61  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina K1.'  ;
-        if oeg=62  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina K3.' ;
-          if oeg=63  then edit23.text:=edit23.text+' Deficiencia de '+'toda la vitamina K.'  ;
-              if oeg=64  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina U / ubiquinona.' ;
-         if oeg=65  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ6.' ;
-       if oeg=66  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ7.' ;
-        if oeg=67  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ8.' ;
-          if oeg=68  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ9.'  ;
-            if oeg=69  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ.' ;
-               if oeg=70  then edit23.text:=edit23.text+' Deficiencia de '+'todo el CoQ.' ;
-                if oeg=71  then edit23.text:=edit23.text+' Deficiencia de '+'ciclo de la ubiquinona.'  ;
-       if oeg=72  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina C.' ;
-        if oeg=73  then edit23.text:=edit23.text+' Deficiencia de '+'bioflavenoides.'  ;
-        if oeg=74  then edit23.text:=edit23.text+' Deficiencia de '+'rutina.'  ;
-         if oeg=75  then edit23.text:=edit23.text+' Deficiencia de '+'ácido hespárico.'  ;
-       if oeg=76  then edit23.text:=edit23.text+' Deficiencia de '+'tirosina.'  ;
-        if oeg=77  then edit23.text:=edit23.text+' Deficiencia de '+'tirosinase.' ;
-              if oeg=78  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina C ase.' ;
-               if oeg=79  then edit23.text:=edit23.text+' Deficiencia de '+'ácido ascorbico.'  ;
-         if oeg=80  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D.' ;
-        if oeg=81  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D1.'  ;
-        if oeg=82  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D2.'  ;
-         if oeg=83  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D3.'  ;
-           if oeg=84  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D4.'  ;
-         if oeg=85  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina A.' ;
-        if oeg=86  then edit23.text:=edit23.text+' Deficiencia de '+'betacarotena.'  ;
-       if oeg=87  then edit23.text:=edit23.text+' Deficiencia de '+'aceite de pescado.'  ;
-         if oeg=88  then edit23.text:=edit23.text+' Deficiencia de '+'retinol.'  ;
-           if oeg=89  then edit23.text:=edit23.text+' Deficiencia de '+'precursores de la vitamina A.'  ;
-              if oeg=90  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina A cartílago.' ;
-        if oeg=91  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas en general.' ;
-        if oeg=92  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la reducción de la oxidación.';
-    if oeg=93  then edit23.text:=edit23.text+' Deficiencia de '+ 'enzimas de la hidrolización en la digestión.';
-           if oeg=94  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la fosforilación del pensamiento.';
-            if oeg=95  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas decarboxilasa de la respiración.';
-              if oeg=96  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del agua hidrolasa.';
-               if oeg=97  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del ADN.' ;
-                   if oeg=98  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                   if oeg=99  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                      if oeg=100  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=101  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbones bajos.' ;
-        if oeg=102  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbonos intermedios.' ;
-       if oeg=103  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas aracadonicas.'  ;
-            if oeg=104  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=105  then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=106  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de la cadena alta de carbonos.'  ;
-                 if oeg=107  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos relacionados con las enzimas.'  ;
-                    if oeg=108  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=109  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbones bajos.' ;
-        if oeg=110  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbonos intermedios.' ;
-       if oeg=111  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas aracadonicas.'  ;
-            if oeg=112 then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=113 then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=114  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de la cadena alta de carbonos.'  ;
-                 if oeg=115  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos enzimáticos relacionados.'  ;
-       if oeg=116  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas generales.' ;
-        if oeg=117  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la reducción de la oxidación.';
-    if oeg=118 then edit23.text:=edit23.text+' Deficiencia de '+ 'enzimas de la hidrolización en la digestión.';
-           if oeg=119  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la fosforilación del pensamiento.';
-            if oeg=120  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas decarboxilasa de la respiración.';
-              if oeg=121  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del agua hidrolasa.';
-               if oeg=122  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del ADN.' ;
-                   if oeg=123 then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                   if oeg=124  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
- oeg:=random(139);
-if oeg=0 then edit23.text:=edit23.text+' Entrelazado con '+'pulmones.';
-if oeg=1 then edit23.text:=edit23.text+' Entrelazado con '+'piel.';
-if oeg=2 then edit23.text:=edit23.text+' Entrelazado con '+'cerebro.';
-if oeg=3 then edit23.text:=edit23.text+' Entrelazado con '+'senos nasales.';
-if oeg=4 then edit23.text:=edit23.text+' Entrelazado con '+'estómago.';
-if oeg=5 then edit23.text:=edit23.text+' Entrelazado con '+'sistema ocular.';
-if oeg=6 then edit23.text:=edit23.text+' Entrelazado con '+'intestinos.';
-if oeg=7 then edit23.text:=edit23.text+' Entrelazado con '+'pulmones.';
-if oeg=8 then edit23.text:=edit23.text+' Entrelazado con '+'Estómago.';
-if oeg=9 then edit23.text:=edit23.text+' Entrelazado con '+'Suprarrenales.';
-if oeg=10 then edit23.text:=edit23.text+' Entrelazado con '+'Senos nasales.';
-if oeg=11 then edit23.text:=edit23.text+' Entrelazado con '+'Factores emocionales.';
-if oeg=12 then edit23.text:=edit23.text+' Entrelazado con '+'Sangre.';
-if oeg=13 then edit23.text:=edit23.text+' Entrelazado con '+'Sistema linfático.';
-if oeg=14 then edit23.text:=edit23.text+' Entrelazado con '+'Dentadura.';
-if oeg=15 then edit23.text:=edit23.text+' Entrelazado con '+'Formación reticular.';
-if oeg=16 then edit23.text:=edit23.text+' Entrelazado con '+'Médula oblongata.';
-if oeg=17 then edit23.text:=edit23.text+' Entrelazado con '+'Lóbulo frontal del cerebro.';
-if oeg=18 then edit23.text:=edit23.text+' Entrelazado con '+'Lóbulo parietal del cerebro.';
-if oeg=19 then edit23.text:=edit23.text+' Entrelazado con '+'Lóbulo occipital del cerebro.';
-if oeg=20 then edit23.text:=edit23.text+' Entrelazado con '+'Lóbulo temporal del cerebro.';
-if oeg=21 then edit23.text:=edit23.text+' Entrelazado con '+'Tiroides.';
-if oeg=22 then edit23.text:=edit23.text+' Entrelazado con '+'Timo.';
-if oeg=23 then edit23.text:=edit23.text+' Entrelazado con '+'Médula espinal.';
-if oeg=24 then edit23.text:=edit23.text+' Entrelazado con '+'Sistema límbico.';
-if oeg=25 then edit23.text:=edit23.text+' Entrelazado con '+'Circuitos de la memoria.';
-if oeg=26 then edit23.text:=edit23.text+' Entrelazado con '+'Hipotálamo.';
-if oeg=27 then edit23.text:=edit23.text+' Entrelazado con '+'Pineal.';
-if oeg=28 then edit23.text:=edit23.text+' Entrelazado con '+'Pituitaria.';
-if oeg=29 then edit23.text:=edit23.text+' Entrelazado con '+'Paratiroides.';
-if oeg=30 then edit23.text:=edit23.text+' Entrelazado con '+'Sangre.';
-if oeg=31 then edit23.text:=edit23.text+' Entrelazado con '+'Sistema linfático.';
-if oeg=32 then edit23.text:=edit23.text+' Entrelazado con '+'Dentadura.';
-if oeg=33 then edit23.text:=edit23.text+' Entrelazado con '+'Pulmones.';
-if oeg=34 then edit23.text:=edit23.text+' Entrelazado con '+'Piel.';
-if oeg=35 then edit23.text:=edit23.text+' Entrelazado con '+'Cerebro.';
-if oeg=36 then edit23.text:=edit23.text+' Entrelazado con '+'Karma.';
-if oeg=37 then edit23.text:=edit23.text+' Entrelazado con '+'Estómago.';
-if oeg=38 then edit23.text:=edit23.text+' Entrelazado con '+'Karma.';
-if oeg=39 then edit23.text:=edit23.text+' Entrelazado con '+'Intestinos.';
-if oeg=40 then edit23.text:=edit23.text+' Entrelazado con '+'Formación reticular.';
-if oeg=41 then edit23.text:=edit23.text+' Entrelazado con '+'Estómago.';
-if oeg=42 then edit23.text:=edit23.text+' Entrelazado con '+'Suprarrenales.';
-if oeg=43 then edit23.text:=edit23.text+' Entrelazado con '+'Formación reticular.';
-if oeg=44 then edit23.text:=edit23.text+' Entrelazado con '+'Factores emocionales.';
-if oeg=45 then edit23.text:=edit23.text+' Entrelazado con '+'Sangre.';
-if oeg=46 then edit23.text:=edit23.text+' Entrelazado con '+'Sistema linfático.';
-      if oeg=47  then edit23.text:=edit23.text+' Entrelazado con '+'Disturbio en digestión / Absorpción.' ;
-      if oeg=48  then edit23.text:=edit23.text+' Deficiencia de '+'tejidos de sal no específicos.' ;
-       if oeg=49  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=50  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones bajos.' ;
-        if oeg=51  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones medios.' ;
-       if oeg=52  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas con los aracadónicos.'  ;
-            if oeg=53  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=54  then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=55  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de carbones altos.'  ;
-                 if oeg=56  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos enzimáticos relacionados.'  ;
-     if oeg=57  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E.' ;
-       if oeg=58  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E1.'  ;
-        if oeg=59  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E2.' ;
-       if oeg=60  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina E3.'  ;
-                   if oeg=0  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina K.' ;
-       if oeg=61  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina K1.'  ;
-        if oeg=62  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina K3.' ;
-          if oeg=63  then edit23.text:=edit23.text+' Deficiencia de '+'toda la vitamina K.'  ;
-              if oeg=64  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina U / ubiquinona.' ;
-         if oeg=65  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ6.' ;
-       if oeg=66  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ7.' ;
-        if oeg=67  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ8.' ;
-          if oeg=68  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ9.'  ;
-            if oeg=69  then edit23.text:=edit23.text+' Deficiencia de '+'CoQ.' ;
-               if oeg=70  then edit23.text:=edit23.text+' Deficiencia de '+'todo el CoQ.' ;
-                if oeg=71  then edit23.text:=edit23.text+' Deficiencia de '+'ciclo de la ubiquinona.'  ;
-       if oeg=72  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina C.' ;
-        if oeg=73  then edit23.text:=edit23.text+' Deficiencia de '+'bioflavenoides.'  ;
-        if oeg=74  then edit23.text:=edit23.text+' Deficiencia de '+'rutina.'  ;
-         if oeg=75  then edit23.text:=edit23.text+' Deficiencia de '+'ácido hespárico.'  ;
-       if oeg=76  then edit23.text:=edit23.text+' Deficiencia de '+'tirosina.'  ;
-        if oeg=77  then edit23.text:=edit23.text+' Deficiencia de '+'tirosinase.' ;
-              if oeg=78  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina C ase.' ;
-               if oeg=79  then edit23.text:=edit23.text+' Deficiencia de '+'ácido ascorbico.'  ;
-         if oeg=80  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D.' ;
-        if oeg=81  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D1.'  ;
-        if oeg=82  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D2.'  ;
-         if oeg=83  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D3.'  ;
-           if oeg=84  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina D4.'  ;
-         if oeg=85  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina A.' ;
-        if oeg=86  then edit23.text:=edit23.text+' Deficiencia de '+'betacarotena.'  ;
-       if oeg=87  then edit23.text:=edit23.text+' Deficiencia de '+'aceite de pescado.'  ;
-         if oeg=88  then edit23.text:=edit23.text+' Deficiencia de '+'retinol.'  ;
-           if oeg=89  then edit23.text:=edit23.text+' Deficiencia de '+'precursores de la vitamina A.'  ;
-              if oeg=90  then edit23.text:=edit23.text+' Deficiencia de '+'vitamina A cartílago.' ;
-        if oeg=91  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas en general.' ;
-        if oeg=92  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la reducción de la oxidación.';
-    if oeg=93  then edit23.text:=edit23.text+' Deficiencia de '+ 'enzimas de la hidrolización en la digestión.';
-           if oeg=94  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la fosforilación del pensamiento.';
-            if oeg=95  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas decarboxilasa de la respiración.';
-              if oeg=96  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del agua hidrolasa.';
-               if oeg=97  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del ADN.' ;
-                   if oeg=98  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                   if oeg=99  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                      if oeg=100  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=101  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbones bajos.' ;
-        if oeg=102  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbonos intermedios.' ;
-       if oeg=103  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas aracadonicas.'  ;
-            if oeg=104  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=105  then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=106  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de la cadena alta de carbonos.'  ;
-                 if oeg=107  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos relacionados con las enzimas.'  ;
-                    if oeg=108  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos generales.' ;
-      if oeg=109  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbones bajos.' ;
-        if oeg=110  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de los carbonos intermedios.' ;
-       if oeg=111  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas relacionadas aracadonicas.'  ;
-            if oeg=112 then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de las cadenas de la mielina.'  ;
-             if oeg=113 then edit23.text:=edit23.text+' Deficiencia de '+'todos los ácidos grasos nutricionales.'  ;
-             if oeg=114  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos de la cadena alta de carbonos.'  ;
-                 if oeg=115  then edit23.text:=edit23.text+' Deficiencia de '+'ácidos grasos enzimáticos relacionados.'  ;
-       if oeg=116  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas generales.' ;
-        if oeg=117  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la reducción de la oxidación.';
-    if oeg=118 then edit23.text:=edit23.text+' Deficiencia de '+ 'enzimas de la hidrolización en la digestión.';
-           if oeg=119  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la fosforilación del pensamiento.';
-            if oeg=120  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas decarboxilasa de la respiración.';
-              if oeg=121  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del agua hidrolasa.';
-               if oeg=122  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la regulación del ADN.' ;
-                   if oeg=123 then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-                   if oeg=124  then edit23.text:=edit23.text+' Deficiencia de '+'enzimas de la transmutación de isomeros mutase.';
-if edit10.text<>'Tipo de constitución: ' then begin
-edit10.text:='Posible tipo de constitución: ';
-    if astr=1 then edit10.text:=edit10.text+' | Ferrum.';
-    if astr=2 then edit10.text:=edit10.text+' | Cuprum.';
-      if astr=3 then edit10.text:=edit10.text+' | Merc.';
-        if astr=4 then edit10.text:=edit10.text+' | Silver.';
-          if astr=5 then edit10.text:=edit10.text+' | Aurum.';
-            if astr=6 then edit10.text:=edit10.text+' | Antimony.';
-              if astr=7 then edit10.text:=edit10.text+' | Cuprum.';
-                if astr=8 then edit10.text:=edit10.text+' | Sulphur.';
-                  if astr=9 then edit10.text:=edit10.text+' | Stannum.';
-                    if astr=10 then edit10.text:=edit10.text+' | Zinc.';
-                      if astr=11 then edit10.text:=edit10.text+' | Plutonium.';
-                        if astr=12 then edit10.text:=edit10.text+' | Iodium.';
-    if numer=1 then edit10.text:=edit10.text+' | Arsenicum.';
-       if numer=2 then edit10.text:=edit10.text+' | Opium.';
-        if numer=3 then edit10.text:=edit10.text+' | Glonine.';
-         if numer=4 then edit10.text:=edit10.text+' | Carbolic Acidum.';
-          if numer=5 then edit10.text:=edit10.text+' | Sepia.';
-           if numer=6 then edit10.text:=edit10.text+' | Nux Vox.';
-            if numer=7 then edit10.text:=edit10.text+' | Sillicum.';
-             if numer=8 then edit10.text:=edit10.text+' | Thuja.';
-              if numer=9 then edit10.text:=edit10.text+ '| Rhus Tox.';
-               if numer=10 then edit10.text:=edit10.text+' | ADN.';
-                if birthyear=0 then  edit10.text:=edit10.text+' | Arsenicum.';
-    if birthyear=1 then  edit10.text:=edit10.text+' | Ipecacuana.';
-       if birthyear=2 then  edit10.text:=edit10.text+' | Bryonia.';
-       if birthyear=3 then  edit10.text:=edit10.text+' | Gelsemium.';
-       if birthyear=4 then  edit10.text:=edit10.text+' | Phosphorus.';
-       if birthyear=5 then  edit10.text:=edit10.text+' | Belladonna.';
-       if birthyear=6 then  edit10.text:=edit10.text+' | Aconite.';
-       if birthyear=7 then  edit10.text:=edit10.text+' | Calcarea.';
-       if birthyear=8 then  edit10.text:=edit10.text+' | Chinona.';
-       if birthyear=9 then  edit10.text:=edit10.text+' | Apis Mel.';
-       if birthyear=10 then  edit10.text:=edit10.text+' | Pulsatilla.';
- if old=0 then  edit10.text:=edit10.text+' | Arsenicum.';
-    if old=1 then  edit10.text:=edit10.text+' | Ipecacuana.';
-       if old=2 then  edit10.text:=edit10.text+' | Bryonia.';
-       if old=3 then  edit10.text:=edit10.text+' | Gelsemium.';
-       if old=4 then  edit10.text:=edit10.text+' | Phosphorus.';
-       if old=5 then  edit10.text:=edit10.text+' | Belladonna.';
-       if old=6 then  edit10.text:=edit10.text+' | Aconite.';
-       if old=7 then  edit10.text:=edit10.text+' | Calcarea.';
-       if old=8 then  edit10.text:=edit10.text+' | Chinona.';
-       if old=9 then  edit10.text:=edit10.text+' | Apis Mel.';
-       if old=10 then  edit10.text:=edit10.text+' | Pulsatilla.';
-      end;
-      oeg:=random(16);
-if oeg=0 then edit10.text:=edit10.text+' | Organo metabólico: '+'hígado.';
-if oeg=1 then edit10.text:=edit10.text+' | Organo metabólico: '+'timo.';
-if oeg=2 then edit10.text:=edit10.text+' | Organo metabólico: '+'cerebro.';
-if oeg=3 then edit10.text:=edit10.text+' | Organo metabólico: '+'corazón.';
-if oeg=4 then edit10.text:=edit10.text+' | Organo metabólico: '+'páncreas.';
-if oeg=5 then edit10.text:=edit10.text+' | Organo metabólico: '+'tiroides.';
-if oeg=6 then edit10.text:=edit10.text+' | Organo metabólico: '+'flora.';
-if oeg=7 then edit10.text:=edit10.text+' | Organo metabólico: '+'pulmones.';
-if oeg=8 then edit10.text:=edit10.text+' | Organo metabólico: '+'estómago.';
-if oeg=9 then edit10.text:=edit10.text+' | Organo metabólico: '+'suprarrenales.';
-if oeg=10 then edit10.text:=edit10.text+' | Organo metabólico: '+'pituitaria.';
-if oeg=11 then edit10.text:=edit10.text+' | Organo metabólico: '+'emociones.';
-if oeg=12 then edit10.text:=edit10.text+' | Organo metabólico: '+'sangre.';
-if oeg=13 then edit10.text:=edit10.text+' | Organo metabólico: '+'sistema linfático.';
-if oeg=14 then edit10.text:=edit10.text+' | Organo metabólico: '+'glándula pineal.';
- edit5.text:=edit5.text+label98.caption;
- if chan=10 then edit8.text:=edit4.text+' | '+edit28.text;
- if pn2>2 then   edit8.text:=edit8.text+' | Iatrogénicos.';
-if pn3>10 then   edit8.text:=edit8.text+' | Toxicidad por nicotina.';
-if pn6>1 then   edit8.text:=edit8.text+' | Impulsos / conductas adictivas.';
-if pn7>8 then   edit8.text:=edit8.text+' | Estrés.';
-if pn8>3 then   edit8.text:=edit8.text+' | Metabolismo del azucar.';
-if pn11>2 then   edit8.text:=edit8.text+' | Toxicidad por cafeína.';
-if pn16>4 then   edit8.text:=edit8.text+' | Negatividad.';
-if pn19>3 then   edit8.text:=edit8.text+' | Factores mentales.';
-if pn15>10 then   edit8.text:=edit8.text+' | Exceso de grasa.';
-if pn2>2 then edit8.text:=edit8.text+' | Problema con '+'sistema linfático.';
-if pn3>10 then edit8.text:=edit8.text+' | Problema con '+'pulmones.';
-if pn8>5 then edit8.text:=edit8.text+' | Problema con '+'páncreas.';
-if pn12>10 then edit8.text:=edit8.text+' | Problema con '+'hígado.';
-if pn7>9 then edit8.text:=edit8.text+' | Problema con '+'sistema endocrino.';
-if pn5>7 then edit8.text:=edit8.text+' | Problema con '+'dentadura.';
-if pn4>0 then edit8.text:=edit8.text+' | Problema con '+'suprarrenales.';
- if pn7>9 then edit8.text:=edit8.text+' | Problema con '+'estrés.';
-if pn10>3 then edit8.text:=edit8.text+' | Problema con '+'hígado.';
-if pn19>2 then edit8.text:=edit8.text+' | Problema con '+'cerebro.';
-oeg:=random(29);
-if oeg=0 then edit8.text:=edit8.text+' | Problema con '+'transferencia de oxígeno.';
-if oeg=1 then edit8.text:=edit8.text+' | Problema con '+'sistema nervioso.';
-if oeg=2 then edit8.text:=edit8.text+' | Problema con '+'expresión emocional.';
-if oeg=3 then edit8.text:=edit8.text+' | Problema con '+'sangre.';
-if oeg=4 then edit8.text:=edit8.text+' | Problema con '+'digestión.';
-if oeg=5 then edit8.text:=edit8.text+' | Problema con '+'estabilidad endocrina.';
-if oeg=6 then edit8.text:=edit8.text+' | Problema con '+'expresión social.';
-if oeg=7 then edit8.text:=edit8.text+' | Problema con '+'EEG.';
-if oeg=8 then edit8.text:=edit8.text+' | Problema con '+'meridianos de acupuntura.';
-if oeg=9 then edit8.text:=edit8.text+' | Problema con '+'médula espinal.';
-if oeg=10 then edit8.text:=edit8.text+' | Problema con '+'dentadura.';
-if oeg=11 then edit8.text:=edit8.text+' | Problema con '+'factores psicológicos.';
-if oeg=12 then edit8.text:=edit8.text+' | Problema con '+'toxinas medio ambientales.';
-if oeg=13 then edit8.text:=edit8.text+' | Problema con '+'ECG.';
-if oeg=14 then edit8.text:=edit8.text+' | Problema con '+'tensión muscular.';
-if oeg=15 then edit8.text:=edit8.text+' | Problema con '+'estrés.';
-if oeg=16 then edit8.text:=edit8.text+' | Problema con '+'patógenos.';
-if oeg=17 then edit8.text:=edit8.text+' | Problema con '+'deficiencia dietaria.';
-if oeg=18 then edit8.text:=edit8.text+' | Problema con '+'hormonas.';
-if oeg=19 then edit8.text:=edit8.text+' | Problema con '+'trauma no sanado.';
-if oeg=20 then edit8.text:=edit8.text+' | Problema con '+'exposición a contaminación electromagnética.';
-if oeg=21 then edit8.text:=edit8.text+' | Problema con '+'genética.';
-if oeg=22 then edit8.text:=edit8.text+' | Problema con '+'alergia/s.';
-edit9.text:=edit9.text+label100.caption+'';
-edit12.text:=edit12.text+' | Tomo la responsabilidad por mi enfermedad y la dejo fluír a través de mi cuerpo. |';
-edit13.text:=edit13.text+label99.caption+'';
-edit15.text:=edit15.text+' | El superconciente ha comenzado a hacerse cargo de la sanación.';
-oeg:=random(5);
- if oeg=1 then edit15.text:=edit15.text+' | Mínima conciencia verbal.';
- if oeg=2 then edit15.text:=edit15.text+' | Excelente conciencia verbal.';
- if oeg=3 then edit15.text:=edit15.text+' | Resistencia inconciente.';
- if oeg=4 then edit15.text:=edit15.text+' | Las cosas no dichas limitan la conciencia.';
-if freq1.fring>2 then  edit13.text:=edit13.text+' | El ADD tomará varias consultas antes de ver resultados.';
-if edit6.text='Posibles causas de afección: ' then begin
-
-oeg:=random(13);
-if oeg=0 then edit6.text:='Posible órgano más estresado: '+'hígado.';
-if oeg=1 then edit6.text:='Posible órgano más estresado: '+'piel.';
-if oeg=2 then edit6.text:='Posible órgano más estresado: '+'cerebro.';
-if oeg=3 then edit6.text:='Posible órgano más estresado: '+'corazón.';
-if oeg=4 then edit6.text:='Posible órgano más estresado: '+'páncreas.';
-if oeg=5 then edit6.text:='Posible órgano más estresado: '+'tiroides.';
-if oeg=6 then edit6.text:='Posible órgano más estresado: '+'intestinos.';
-if oeg=7 then edit6.text:='Posible órgano más estresado: '+'pulmones.';
-if oeg=8 then edit6.text:='Posible órgano más estresado: '+'estómago.';
-if oeg=9 then edit6.text:='Posible órgano más estresado: '+'suprarrenales.';
-if oeg>9 then edit6.text:='Posible órgano más estresado: '+'pituitaria.';
-  oeg:=random(39);
-if oeg=0 then edit6.text:='Posible órgano más estresado: '+'pulmones.';
-if oeg=1 then edit6.text:='Posible órgano más estresado: '+'piel.';
-if oeg=2 then edit6.text:='Posible órgano más estresado: '+'cerebro.';
-if oeg=3 then edit6.text:='Posible órgano más estresado: '+'senos nasales.';
-if oeg=4 then edit6.text:='Posible órgano más estresado: '+'estómago.';
-if oeg=5 then edit6.text:='Posible órgano más estresado: '+'sistema ocular.';
-if oeg=6 then edit6.text:='Posible órgano más estresado: '+'intestinos.';
-if oeg=7 then edit6.text:='Posible órgano más estresado: '+'pulmones.';
-if oeg=8 then edit6.text:='Posible órgano más estresado: '+'estómago.';
-if oeg=9 then edit6.text:='Posible órgano más estresado: '+'suprarrenales.';
-if oeg=10 then edit6.text:='Posible órgano más estresado: '+'senos nasales.';
-if oeg=11 then edit6.text:='Posible órgano más estresado: '+'factores emocionales.';
-if oeg=12 then edit6.text:='Posible órgano más estresado: '+'sangre.';
-if oeg=13 then edit6.text:='Posible órgano más estresado: '+'sistema linfático.';
-if oeg=14 then edit6.text:='Posible órgano más estresado: '+'dentadura.';
-if oeg=15 then edit6.text:='Posible órgano más estresado: '+'formación reticular.';
-if oeg=16 then edit6.text:='Posible órgano más estresado: '+'médula oblongata.';
-if oeg=17 then edit6.text:='Posible órgano más estresado: '+'lóbulo frontal del cerebro.';
-if oeg=18 then edit6.text:='Posible órgano más estresado: '+'lóbulo parietal del cerebro.';
-if oeg=19 then edit6.text:='Posible órgano más estresado: '+'lóbulo occipital del cerebro.';
-if oeg=20 then edit6.text:='Posible órgano más estresado: '+'lóbulo temporal del cerebro.';
-if oeg=21 then edit6.text:='Posible órgano más estresado: '+'tiroides.';
-if oeg=22 then edit6.text:='Posible órgano más estresado: '+'timo.';
-if oeg=23 then edit6.text:='Posible órgano más estresado: '+'médula espinal.';
-if oeg=24 then edit6.text:='Posible órgano más estresado: '+'sistema límbico.';
-if oeg=25 then edit6.text:='Posible órgano más estresado: '+'ciruittos de la memoria.';
-if oeg=26 then edit6.text:='Posible órgano más estresado: '+'hipotálamo.';
-if oeg=27 then edit6.text:='Posible órgano más estresado: '+'pineal.';
-if oeg=28 then edit6.text:='Posible órgano más estresado: '+'pituitaria.';
-if oeg=29 then edit6.text:='Posible órgano más estresado: '+'paratiroides.';
-if oeg=30 then edit6.text:='Posible órgano más estresado: '+'sangre.';
-if oeg=31 then edit6.text:='Posible órgano más estresado: '+'sistema linfático.';
-if oeg>31 then edit6.text:='Posible órgano más estresado: '+'dentadura.';
-if pn2>2 then edit6.text:='Posible órgano más estresado: '+'sistema linfático.';
-if pn3>10 then edit6.text:='Posible órgano más estresado: '+'pulmones.';
-if pn8>5 then edit6.text:='Posible órgano más estresado: '+'páncreas.';
-if pn12>10 then edit6.text:='Posible órgano más estresado: '+'hígado.';
-if pn7>9 then edit6.text:='Posible órgano más estresado: '+'sistema endocrino.';
-if pn5>8 then edit6.text:='Posible órgano más estresado: '+'dentadura.';
-if pn4>0 then edit6.text:='Posible órgano más estresado: '+'suprarrenales.';
-if pn10>3 then edit6.text:='Posible órgano más estresado: '+'hígado.';
-if pn19>2 then edit6.text:='Posible órgano más estresado: '+'cerebro.';
-end;
- oeg:=random(39);
-if oeg=0 then edit6.text:=edit6.text+' | Pulmones.';
-if oeg=1 then edit6.text:=edit6.text+' | Piel.';
-if oeg=2 then edit6.text:=edit6.text+' | Cerebro.';
-if oeg=3 then edit6.text:=edit6.text+' | Senos nasales.';
-if oeg=4 then edit6.text:=edit6.text+' | Estómago.';
-if oeg=5 then edit6.text:=edit6.text+' | Ojos.';
-if oeg=6 then edit6.text:=edit6.text+' | Flora intestinal.';
-if oeg=7 then edit6.text:=edit6.text+' | Pulmones.';
-if oeg=8 then edit6.text:=edit6.text+' | Estómago.';
-if oeg=9 then edit6.text:=edit6.text+' | Suprarrenales.';
-if oeg=10 then edit6.text:=edit6.text+' | Senos nasales.';
-if oeg=11 then edit6.text:=edit6.text+' | Emociones.';
-if oeg=12 then edit6.text:=edit6.text+' | Sangre.';
-if oeg=13 then edit6.text:=edit6.text+' | Sistema linfático.';
-if oeg=14 then edit6.text:=edit6.text+' | Dentadura.';
-if oeg=15 then edit6.text:=edit6.text+' | Formación reticular.';
-if oeg=16 then edit6.text:=edit6.text+' | Médula oblongata.';
-if oeg=17 then edit6.text:=edit6.text+' | Lóbulo frontal del cerebro.';
-if oeg=18 then edit6.text:=edit6.text+' | Lóbulo parietal del cerebro.';
-if oeg=19 then edit6.text:=edit6.text+' | Lóbulo occipital del cerebro.';
-if oeg=20 then edit6.text:=edit6.text+' | Lóbulo temporal del cerebro.';
-if oeg=21 then edit6.text:=edit6.text+' | Tiroides.';
-if oeg=22 then edit6.text:=edit6.text+' | Timo.';
-if oeg=23 then edit6.text:=edit6.text+' | Médula espinal.';
-if oeg=24 then edit6.text:=edit6.text+' | Sistema límbico.';
-if oeg=25 then edit6.text:=edit6.text+' | Circuitos de la memoria.';
-if oeg=26 then edit6.text:=edit6.text+' | Hipotálamo.';
-if oeg=27 then edit6.text:=edit6.text+' | Glándula pineal.';
-if oeg=28 then edit6.text:=edit6.text+' | Pituitaria.';
-if oeg=29 then edit6.text:=edit6.text+' | Paratiroides.';
-if oeg=30 then edit6.text:=edit6.text+' | Sangre.';
-if oeg=31 then edit6.text:=edit6.text+' | Sistema linfático.';
-if oeg=32 then edit6.text:=edit6.text+' | Dentadura.';
-oeg:=random(39);
-if oeg=0 then edit6.text:=edit6.text+' | Pulmones.';
-if oeg=1 then edit6.text:=edit6.text+' | Piel.';
-if oeg=2 then edit6.text:=edit6.text+' | Cerebro.';
-if oeg=3 then edit6.text:=edit6.text+' | Senos nasales.';
-if oeg=4 then edit6.text:=edit6.text+' | Estómago.';
-if oeg=5 then edit6.text:=edit6.text+' | Ojos.';
-if oeg=6 then edit6.text:=edit6.text+' | Flora intestinal.';
-if oeg=7 then edit6.text:=edit6.text+' | Pulmones.';
-if oeg=8 then edit6.text:=edit6.text+' | Estómago.';
-if oeg=9 then edit6.text:=edit6.text+' | Suprarrenales.';
-if oeg=10 then edit6.text:=edit6.text+' | Senos nasales.';
-if oeg=11 then edit6.text:=edit6.text+' | Emociones.';
-if oeg=12 then edit6.text:=edit6.text+' | Sangre.';
-if oeg=13 then edit6.text:=edit6.text+' | Sistema linfático.';
-if oeg=14 then edit6.text:=edit6.text+' | Dentadura.';
-if oeg=15 then edit6.text:=edit6.text+' | Formación reticular.';
-if oeg=16 then edit6.text:=edit6.text+' | Médula oblongata.';
-if oeg=17 then edit6.text:=edit6.text+' | Lóbulo frontal del cerebro.';
-if oeg=18 then edit6.text:=edit6.text+' | Lóbulo parietal del cerebro.';
-if oeg=19 then edit6.text:=edit6.text+' | Lóbulo occipital del cerebro.';
-if oeg=20 then edit6.text:=edit6.text+' | Lóbulo temporal del cerebro.';
-if oeg=21 then edit6.text:=edit6.text+' | Tiroides.';
-if oeg=22 then edit6.text:=edit6.text+' | Timo.';
-if oeg=23 then edit6.text:=edit6.text+' | Médula espinal.';
-if oeg=24 then edit6.text:=edit6.text+' | Sistema límbico.';
-if oeg=25 then edit6.text:=edit6.text+' | Circuitos de la memoria.';
-if oeg=26 then edit6.text:=edit6.text+' | Hipotálamo.';
-if oeg=27 then edit6.text:=edit6.text+' | Glándula pineal.';
-if oeg=28 then edit6.text:=edit6.text+' | Pituitaria.';
-if oeg=29 then edit6.text:=edit6.text+' | Paratiroides.';
-if oeg=30 then edit6.text:=edit6.text+' | Sangre.';
-if oeg=31 then edit6.text:=edit6.text+' | Sistema linfático.';
-if oeg=32 then edit6.text:=edit6.text+' | Dentadura.';
-if edit7.text='Posibles zonas de bloqueo del flujo: ' then begin
-
-oeg:=random(25);
-if oeg=0 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'transferencia de oxígeno.';
-if oeg=1 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'energía en nervios.';
-if oeg=2 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'expresión emocional.';
-if oeg=3 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'flujo sanguíneo.';
-if oeg=4 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'flujo digestivo.';
-if oeg=5 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'estabilidad endocrina.';
-if oeg=6 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'expresión social.';
-if oeg=7 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'EEG.';
-if oeg=8 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'meridianos de acupuntura.';
-if oeg=9 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'columna vertebral.';
-if oeg=10 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'energía dental.';
-if oeg=11 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'factores psicológicos.';
-if oeg=12 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'toxinas medioambientales.';
-if oeg=13 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'ECG.';
-if oeg=14 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'tensión muscular.';
-if oeg=15 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'estrés.';
-if oeg=16 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'patógenos.';
-if oeg=17 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'deficiencia dietaria.';
-if oeg=18 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'hormonas.';
-if oeg=19 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'trauma no sanado.';
-if oeg=20 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'exposición a contaminación electromagnética.';
-if oeg=21 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'factores genéticos.';
-if oeg=22 then edit7.text:='Posibles zonas de bloqueo del flujo: '+'alergia/s.';
-
-if pn2>2 then edit7.text:=edit7.text+' | Flujo linfático.';
-if pn3>10 then edit7.text:=edit7.text+' | Energía pulmonar.';
-if pn8>5 then edit7.text:=edit7.text+' | Energía endocrina.';
-if pn12>10 then edit7.text:=edit7.text+' | Flujo sanguíneo.';
-if pn7>9 then edit7.text:=edit7.text+' | Sistema endocrino.';
-if pn5>8 then edit7.text:=edit7.text+' | Energía dental.';
-if pn4>0 then edit7.text:=edit7.text+' | Energía suprarrenal.';
-if pn10>3 then edit7.text:=edit7.text+' | Flujo en el hígado.';
-if pn19>2 then edit7.text:=edit7.text+' | Energía cerebral.';
-if pn7>9 then edit7.text:=edit7.text+' | Estrés.';
-end;
- oeg:=random(25);
-if oeg=0 then edit7.text:=edit7.text+' | Transferencia del oxigeno.';
-if oeg=1 then edit7.text:=edit7.text+' | Energía del sistema nervioso.';
-if oeg=2 then edit7.text:=edit7.text+' | Expresión emocional.';
-if oeg=3 then edit7.text:=edit7.text+' | Flujo sanguíneo.';
-if oeg=4 then edit7.text:=edit7.text+' | Flujo de la digestión.';
-if oeg=5 then edit7.text:=edit7.text+' | Estabilidad del sist. endocrino.';
-if oeg=6 then edit7.text:=edit7.text+' | Expresión social.';
-if oeg=7 then edit7.text:=edit7.text+' | EEG.';
-if oeg=8 then edit7.text:=edit7.text+' | Meridianos de acupuntura.';
-if oeg=9 then edit7.text:=edit7.text+' | Energía de la columna vertebral.';
-if oeg=10 then edit7.text:=edit7.text+' | Energía dental.';
-if oeg=11 then edit7.text:=edit7.text+' | Factores psicológicos.';
-if oeg=12 then edit7.text:=edit7.text+' | Toxinas medioambientales.';
-if oeg=13 then edit7.text:=edit7.text+' | ECG.';
-if oeg=14 then edit7.text:=edit7.text+' | Tensión muscular.';
-if oeg=15 then edit7.text:=edit7.text+' | Estrés.';
-if oeg=16 then edit7.text:=edit7.text+' | Patógenos.';
-if oeg=17 then edit7.text:=edit7.text+' | Deficiencia dietaria.';
-if oeg=18 then edit7.text:=edit7.text+' | Hormonas.';
-if oeg=19 then edit7.text:=edit7.text+' | Trauma no sanado.';
-if oeg=20 then edit7.text:=edit7.text+' | Exposición a contaminación electromagnética.';
-if oeg=21 then edit7.text:=edit7.text+' | Factores genéticos.';
-if oeg=22 then edit7.text:=edit7.text+' | Alergias.';
-if edit5.text='Posibles causas de afección: ' then begin
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(5555,50* ren,51* ren,2,1,1,
- '11111111','11111111');
-
-oeg:=random(10);
-if oeg=0 then edit5.text:='Posibles causas de afección: '+'resistencia inconciente al cambio a explorarse';
-if oeg=1 then edit5.text:='Posibles causas de afección: '+'estrés';
-if oeg=2 then edit5.text:='Posibles causas de afección: '+'falta de concientización';
-if oeg=3 then edit5.text:='Posibles causas de afección: '+'factores mentales';
-if oeg=4 then edit5.text:='Posibles causas de afección: '+'factores heredados';
-if oeg=5 then edit5.text:='Posibles causas de afección: '+'alergia/s';
-if oeg=6 then edit5.text:='Posibles causas de afección: '+'toxinas';
-if oeg=7 then edit5.text:='Posibles causas de afección: '+'patógenos';
-if oeg=8 then edit5.text:='Posibles causas de afección: '+'contaminación electromagnética.';
-if oeg=9 then edit5.text:='Posibles causas de afección: '+'trauma/s o lesión/es';
-if oeg=10 then edit5.text:='Posibles causas de afección: '+'deficiencia o exceso nutricional';
-if pn2>2 then edit5.text:='Posibles causas de afección: '+'medicaciones alopáticas';
-if pn3>10 then edit5.text:='Posibles causas de afección: '+'tabaquismo';
-if pn8>5 then edit5.text:='Posibles causas de afección: '+'uso del azúcar refinado';
-if pn12>10 then edit5.text:='Posibles causas de afección: '+'toxicidad';
-if pn7>9 then edit5.text:='Posibles causas de afección: '+'estrés';
-if pn5>8 then edit5.text:='Posibles causas de afección: '+'metales pesados (relacionados con el mercurio)';
-if pn4>0 then edit5.text:='Posibles causas de afección: '+'supresión alopática';
-oeg:=random(17);
-if oeg=1 then edit5.text:=edit5.text+' o '+'estrés.';
-if oeg=2 then edit5.text:=edit5.text+' o '+'falta de concientización.';
-if oeg=3 then edit5.text:=edit5.text+' o '+'factores mentales.';
-if oeg=4 then edit5.text:=edit5.text+' o '+'factores heredados.';
-if oeg=5 then edit5.text:=edit5.text+' o '+'alergia/s.';
-if oeg=6 then edit5.text:=edit5.text+' o '+'toxinas.';
-if oeg=7 then edit5.text:=edit5.text+' o '+'patógenos.';
-if oeg=8 then edit5.text:=edit5.text+' o '+'contaminación electromagnética.';
-if oeg=9 then edit5.text:=edit5.text+' o '+'trauma/s / lesión/es.';
-if oeg=10 then edit5.text:=edit5.text+' o '+'deficiencia o exceso nutricional.';
-if oeg=11 then edit5.text:=edit5.text+' o '+'atáque psíquico.';
-if oeg=12 then edit5.text:=edit5.text+' o '+'repercusiones kármicas.';
-if oeg=13 then edit5.text:=edit5.text+' u '+'opresión espiritual.';
-label99.caption:='| Homeopatía clásica.';
-oeg:=random(13);
-if oeg=0 then edit9.text:='Plan natural para reducción de síntoma: '+'resistencia inconciente al cambio o a explorarse a sí mismo/a';
-if oeg=1 then edit9.text:='Plan natural para reducción de síntoma: '+'reducción del estrés';
-if oeg=2 then edit9.text:='Plan natural para reducción de síntoma: '+'aumentar conciencia o educación';
-if oeg=3 then edit9.text:='Plan natural para reducción de síntoma: '+'tratar factores mentales o imponderables';
-if oeg=4 then edit9.text:='Plan natural para reducción de síntoma: '+'homeopatía metabólica o genética';
-if oeg=5 then edit9.text:='Plan natural para reducción de síntoma: '+'terapia alersodica';
-if oeg=6 then edit9.text:='Plan natural para reducción de síntoma: '+'desintoxicación con isodes o xenobioticos';
-if oeg=7 then edit9.text:='Plan natural para reducción de síntoma: '+'nosodes para patógenos';
-if oeg=9 then edit9.text:='Plan natural para reducción de síntoma: '+'terapia nutricional';
-if oeg=8 then edit9.text:='Plan natural para reducción de síntoma: '+'imponderables para contaminación electromagnética.';
-if oeg=9 then edit9.text:='Plan natural para reducción de síntoma: '+'fitoterapia';
-if oeg=10 then edit9.text:='Plan natural para reducción de síntoma: '+'terapia de sarcodes';
-if oeg=11 then edit9.text:='Plan natural para reducción de síntoma: '+'homeopatía combinativa';
-if oeg>11 then edit9.text:='Plan natural para reducción de síntoma: '+'curso de medicina energética de auto enfoque';
-if pn2>2 then edit9.text:='Plan natural para reducción de síntoma: '+'medicaciones alopáticas';
-if pn3>30 then edit9.text:='Plan natural para reducción de síntoma: '+'abandonar el tabaquismo';
-if pn8>10 then edit9.text:='Plan natural para reducción de síntoma: '+'terapia para las adicciones';
-if pn12>10 then edit9.text:='Plan natural para reducción de síntoma: '+'toxicidad';
-if pn7>11 then edit9.text:='Plan natural para reducción de síntoma: '+'reducción de estrés';
-if pn5>18 then edit9.text:='Plan natural para reducción de síntoma: '+'desintoxicación de metales pesados';
-if pn4>2 then edit9.text:='Plan natural para reducción de síntoma: '+'disminuir supresión alopática';
- oeg:=random(20);
-if oeg=0 then edit9.text:=edit9.text+' o '+'cambio de inconciencia al cambio o a explorarse a sí mismo/a.';
-if oeg=1 then edit9.text:=edit9.text+' o '+'reducción de estrés.';
-if oeg=2 then edit9.text:=edit9.text+' o '+'aumentar conciencia o educación.';
-if oeg=3 then edit9.text:=edit9.text+' o '+'tratar factores mentales o imponderables.';
-if oeg=4 then edit9.text:=edit9.text+' u '+'homeopatía metabólica o genética.';
-if oeg=5 then edit9.text:=edit9.text+' o '+'terapia de alersodes.';
-if oeg=6 then edit9.text:=edit9.text+' o '+'desintoxicación con isodes o xenobióticos.';
-if oeg=7 then edit9.text:=edit9.text+' o '+'nosodes para patógenos.';
-if oeg=9 then edit9.text:=edit9.text+' o '+'terapia nutricional.';
-if oeg=8 then edit9.text:=edit9.text+' o '+'imponderables para contaminación electromagnética.';
- if oeg=9 then edit9.text:=edit9.text+' o '+'fitoterapia.';
- if oeg=10 then edit9.text:=edit9.text+' o '+'terapia de sarcodes.';
- if oeg=11 then edit9.text:=edit9.text+' u '+'homeopatía combinativa.';
-  if oeg>16 then edit9.text:=edit9.text+' o '+'curso de terapias con el sistema.';
-end;
+BCausas.Click;
+BOrganosGlandulas.Click;
+BAVM.Click;
+BMeridianos.Click;
+BProcesos.Click;
+Bterapias.Click;
+BEPositivas.Click;
+BENegativas.Click;
+BAfirmaciones.Click;
+BToxinas.Click;
+BSistemas.Click;
+BAgenda.Click;
+Button34.Enabled := False;
+Label367.Enabled := True;
 end;
 
-procedure TtestForm1.Button35Click(Sender: TObject);
+procedure TtestForm1.Label367Click(Sender: TObject);
 begin
  DM.Info.Open;
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-    inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME NELSON -----' ]);
-  inc(no); DM.Info.Appendrecord([no,nil,edit5.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit6.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit7.text  ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit8.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit9.text  ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit10.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit11.text  ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit12.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit13.text  ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit14.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit15.text  ]);
-             inc(no); DM.Info.Appendrecord([no,nil,edit23.text ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit26.text  ]);
-       inc(no); DM.Info.Appendrecord([no,nil,edit29.text  ]);
+    inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE SINAPSIS -----' ]);
+  inc(no);
+  DM.Info.Appendrecord([no,nil,ECausas.Text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,ECausas.Text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EPOrganosAfectados.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EAVM.Text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EMeridianos.Text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EProcesos.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EDisfuncionNutritiva.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EToxinas.text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,ESistemas.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,CBConstitucion.text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,ETerapias.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EEPositivas.text  ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EEmocionNegativa.text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EAfirmacion.text ]);
+       inc(no); DM.Info.Appendrecord([no,nil,EAgendar.text ]);
       Inc(no);
         DM.Info.Open;
         DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-       inc(no); DM.Info.Appendrecord([no,volt,' | Voltaje' ]);
-       inc(no); DM.Info.Appendrecord([no,amp,' | Amperaje' ]);
-       inc(no); DM.Info.Appendrecord([no,resis,' | Resistencia' ]);
-       inc(no); DM.Info.Appendrecord([no,hydr,' | Hidratación.' ]);
-       inc(no); DM.Info.Appendrecord([no,oxid,' | Oxidación.' ]);
-       inc(no); DM.Info.Appendrecord([no,proton,' | pH' ]);
+       inc(no); DM.Info.Appendrecord([no,volt,' Voltaje' ]);
+       inc(no); DM.Info.Appendrecord([no,amp,' Amperaje' ]);
+       inc(no); DM.Info.Appendrecord([no,resis,' Resistencia' ]);
+       inc(no); DM.Info.Appendrecord([no,hydr,' Hidratación.' ]);
+       inc(no); DM.Info.Appendrecord([no,oxid,' Oxidación.' ]);
+       inc(no); DM.Info.Appendrecord([no,proton,' pH' ]);
 //      inc(no); DM.Info.Appendrecord([no,electron,' | Presión electrónica' ]);
-       inc(no); DM.Info.Appendrecord([no,resfrepat,' | Frecuencia resonante mayor' ]);
-       inc(no); DM.Info.Appendrecord([no,soc,' | Indice ''SOC''' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn1,' | Organos extirpados' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn2,' | Medicaciones consumidas' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn4,' | Esteroides' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn3,' | Cigarrillos fumados al día' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn7,' | Estrés' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn5,' | Amalgamas metálicas' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn6,' | Drogas recreativas' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn8,' | Uso del azúcar.' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn9,' | Sesiones de ejercicio a la semana' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn10,' | Consumisiones alcohólicas por día' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn11,' | Bebidas cafeínas / teínas por día' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn12,' | Exposiciones tóxicas' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn15,' | Kilos de sobrepeso (en opinión del Dr.' ]);
-       inc(no); DM.Info.Appendrecord([no,pnn16,' | Negatividad' ]);
+       inc(no); DM.Info.Appendrecord([no,resfrepat,' Frecuencia resonante mayor' ]);
+       inc(no); DM.Info.Appendrecord([no,soc,' Indice ''SOC''' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn1,' Organos extirpados' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn2,' Medicaciones consumidas' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn4,' Esteroides' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn3,' Cigarrillos fumados al día' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn7,' Estrés' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn5,' Amalgamas metálicas' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn6,' Drogas recreativas' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn8,' Uso del azúcar.' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn9,' Sesiones de ejercicio a la semana' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn10,' Consumisiones alcohólicas por día' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn11,' Bebidas cafeínas / teínas por día' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn12,' Exposiciones tóxicas' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn15,' Kilos de sobrepeso (en opinión del Dr.' ]);
+       inc(no); DM.Info.Appendrecord([no,pnn16,' Negatividad' ]);
         Inc(no);
- if pn1>4 then
- begin
-   DM.Info.Appendrecord([no,nil,'El potencial de vidad está disminuído.']);
-   Inc(no);
- end;
-  if pn2>4 then
-  begin     DM.Info.Appendrecord([no,nil,'La consumisión de muchas medicaciones alópatas dificultan la curación.']);
-     Inc(no);
-     edit5.text:=edit5.text+' | La alopatía puede causar enfermedad.';
-  end;
-   if pn3>4 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+', por favor abandone el tabaquismo porque interfiere seriamente con la curación.']);
-     Inc(no);    end;
-   if pn3>15 then   edit5.text:=edit5.text+' | Tabaquismo.';
-      if pn3>15 then  edit6.text:=edit6.text+' | Pulmones.';
-  if pn4>1 then  begin     DM.Info.Appendrecord([no,nil,'La adicción a los esteroides causa efectos secundarios que son enfermedades por sí solas.']);
-     Inc(no);
-      end;
-      if pn4>1 then   edit5.text:=edit5.text+' | Esteroides.';
-       if pn4>1 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn5>7 then  begin     DM.Info.Appendrecord([no,nil,'El mercurio es siempre una sustancia tóxica.']);
-     Inc(no);
-      if pn5>9 then   edit5.text:=edit5.text+' | Amalgamas de mercurio.';
-       end;
-  if pn6>0 then  begin     DM.Info.Appendrecord([no,nil,Patform1.pname+', abandone las drogas, simplemente diga ''NO'', y no trate la reducción de la adicción.']);
-     Inc(no);   if pn6>1 then   edit5.text:=edit5.text+' | Drogas recreativas.';
-      end;
-  if pn7>9 then  begin     DM.Info.Appendrecord([no,nil,'Practique la reducción del estrés después de cada comida durante al menos 40 min.']);
-     Inc(no);
-      end;
-      if pn7>8 then   edit5.text:=edit5.text+' | Estrés.';
-        if pn7>9 then  edit6.text:=edit6.text+' | Suprarrenales.';
-  if pn8>4 then  begin     DM.Info.Appendrecord([no,nil,'El azúcar refinada deprime el sistema inmunitario y más, cambiese a fruta.']);
-     Inc(no);  if pn8>6 then   edit5.text:=edit5.text+' | Azúcar refinada.';
-       end;
-         if pn8>5 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn9<2 then  begin     DM.Info.Appendrecord([no,nil,'El ejercicio es esencial para una vida saludable, siempre se puede encontrar el tiempo y el espacio para practicarlo.']);
-     Inc(no);    if pn9<1 then   edit5.text:=edit5.text+' | Falta de ejercicio.';
-     end;
-  if pn10>1 then  begin     DM.Info.Appendrecord([no,nil,'Más de un vaso de una bebida alcohólica al día pueden dañar el organismo.']);
-     Inc(no);  if pn10>3 then   edit5.text:=edit5.text+' | Alcohol.';
-       end;
-         if pn10>3 then  edit6.text:=edit6.text+' | Hígado.';
-      if pn10>3 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de alcohol es perjudicial para la salud.']);
-     Inc(no);    end;
-  if pn11>3 then  begin     DM.Info.Appendrecord([no,nil,'Por favor rebaje el consumo de cafeína/teína, mejorará su salud.']);
-     Inc(no);    end;
-  if pn12>4 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de toxicidad puede causar enfermedad, la desintoxicación puede agravar los síntomas como cuando se saca una espina de un dedo.']);
-     Inc(no);    if pn12>5 then   edit5.text:=edit5.text+' | Toxicidad.';
-     end;
-  if pn13>4 then  begin     DM.Info.Appendrecord([no,nil,'No hay reporte de afección/es heredada/s.']);
-     Inc(no);    end;
-  if pn14>1 then  begin     DM.Info.Appendrecord([no,nil,'Hay un reporte de afección/es heredada/s.']);
-     Inc(no);    end;
-  if pn15>6 then  begin     DM.Info.Appendrecord([no,nil,'Se recomienda una terapia para perder peso. El exceso de peso puede agravar cualquier afección.']);
-     Inc(no);    end;
-  if pn16>5 then  begin     DM.Info.Appendrecord([no,nil,'El exceso de negatividad y una pobre actitud mental, pueden bloquear la curación.']);
-     Inc(no);   if pn16>6 then   edit5.text:=edit5.text+' | Negatividad.';
-      end;
-  if pn17>4 then  begin     DM.Info.Appendrecord([no,nil,'']);
-     Inc(no);    end;
-  if pn18>4 then  begin     DM.Info.Appendrecord([no,nil,'Se han reportado alergias, por favor realize la terapia de desensibilización.']);
-     Inc(no);
-      end;
-      if pn18>2 then   edit5.text:=edit5.text+' | Alergias.';
-  if pn19>3 then  begin     DM.Info.Appendrecord([no,nil,'Los factores mentales pueden causar enfermedad y/o bloquear el proceso curativo.']);
-     Inc(no);
-     if pn19>4 then   edit5.text:=edit5.text+' | Factores mentales.';
-      end;
-  if pn20>4 then  begin     DM.Info.Appendrecord([no,nil,'Traumas pasados pueden estar involucradas, por favor realize las terapias adecuadas.']);
-     Inc(no);
-     end;
-      if pn20>3 then   edit5.text:=edit5.text+' | Trauma.';
-     if pn21>4 then  begin     DM.Info.Appendrecord([no,nil,'Infecciones pasadas pueden estar involucradas, por favor realize las terapias adecuadas.']);
-     Inc(no);
-      end;
-      if pn21>3 then   edit5.text:=edit5.text+' | Infección.';
-       if pn21>2 then  edit6.text:=edit6.text+' | Sistema inmunitario.';
-  if pn22>2 then  begin     DM.Info.Appendrecord([no,nil,pname+' debe responsabilizarse más por todas sus afecciones y calidad de vida.']);
-     Inc(no);    end;
-  if pn23<4 then  begin     DM.Info.Appendrecord([no,nil,pname+' necesita beber/absorber más agua.']);
-     Inc(no);    end;
-  if (soc>210)and (soc<310) then  begin     DM.Info.Appendrecord([no,nil,pname+', hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 4 terapias para obtener buenos resultados.']);
-     Inc(no);    end;
-    if (soc>310)and (soc<410) then  begin     DM.Info.Appendrecord([no,nil,pname+', hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 6 terapias para obtener buenos resultados.']);
-     Inc(no);
-     end;
-  if soc>410 then
-      begin
-       DM.Info.Appendrecord([no,nil,pname+', hay una obstrucción importante en el proceso curativo. Este caso tomará alrededor de 8 terapias para obtener buenos resultados.']);
-       Inc(no);
-      end;
-    if soc>280 then   edit13.text:=edit13.text+' | Tomará algún tiempo y varias terapias para ver una mejoría a su afección.';
-    if  (pn3>10)or  (pn6>0) or (pn8>5) or (pn11>4)or (pn10>4) then   edit13.text:=edit13.text+' | Se sugiere una terapia de ''PNL'' para reducir las adicciones.';
-    if pn7>8 then   edit13.text:=edit13.text+' | Reducción de estrés.';
-    if pn21>1 then   edit13.text:=edit13.text+' | Se sugiere una terapia de ''Zaps'' y est. del sistema inmunitario.';
-    if pn20>2 then   edit13.text:=edit13.text+' | Se sugiere terapia para traumas.';
         if  bab1=10 then
         begin
            label220.caption:='Compatibilidad madre/bebe | '+inttostr(70+random(35)) ;
@@ -25316,7 +23706,7 @@ begin
           Inc(no);
         end;
        end;
-       inc(no); DM.Info.Appendrecord([no,nil,label241.caption,nil]);
+       inc(no); DM.Info.Appendrecord([no,nil,EAgendar.Text,nil]);
         Dm.Info.FlushBuffers;
   ShowMessage('El informe ha sido cargado.');
 end;
@@ -25327,62 +23717,8 @@ if (sender is TMenuItem) then
         dm.bitacora((sender as TMenuItem).caption);
     if (sender is TButton) then
         dm.bitacora((sender as TButton).caption);
-panel11.visible:=true;
-end;
 
-procedure TtestForm1.Edit5Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit6Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit7Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit8Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit9Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit10Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit11Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit12Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit13Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit14Change(Sender: TObject);
-begin
-button35.enabled:=true;
-end;
-
-procedure TtestForm1.Edit15Change(Sender: TObject);
-begin
-button35.enabled:=true;
+        panel11.visible:=true;
 end;
 
 procedure TtestForm1.NelsonReport3Click(Sender: TObject);
@@ -25391,7 +23727,6 @@ var
   Qafirmaciones: Tquery;
 begin
 Try
-  //Qafirmaciones:= Tquery.create(self);
   Qafirmaciones.close;
   Qafirmaciones.databasename := dm.Conscida.databasename;
   Qafirmaciones.sql.text := 'select * from afirmaciones';
@@ -25399,21 +23734,12 @@ Try
   vint :=  Qafirmaciones.recordcount ;
   vrandom := random(vint-1)+1;
   Qafirmaciones.locate('id',vrandom,[]);
-  Edit29.Text:=qafirmaciones.fieldbyname('afirmacion').asstring;
+  EAfirmacion.Text:=qafirmaciones.fieldbyname('afirmacion').asstring;
 finally
-    // Qafirmaciones.free;
-    // Qafirmaciones := nil;
-     Qafirmaciones.close;
+  Qafirmaciones.close;
 end;
-
  panel11.visible:=true;
  if (pat_form.time33>10) and (volt2+amp2>2) then button39.enabled:=true;
-
- end;
-
-procedure TtestForm1.DiseaseDictionary1Click(Sender: TObject);
-begin
- SpeachForm.SMessageTalk('Go to windows "Start" up to Clasp and Disease Dictionary');
 end;
 
 procedure TtestForm1.AutozapCandidas1Click(Sender: TObject);
@@ -31923,14 +30249,14 @@ imp1:=round((volt-volt2+amp-amp2+resis-resis2+hydr-hydr2+oxid-oxid2)/ 5);
       label197.caption   :='Hidratación  | '+Inttostr(hydr2)+' | '+inttostr(hydr)+' | '+(inttostr(hydr-hydr2));
        label198.caption  :='Oxidación    | '+Inttostr(oxid2)+' | '+inttostr(oxid)+' | '+(inttostr(oxid-oxid2));
       label199.caption   :='pH / eH      | '+Inttostr(proton2)+' | '+inttostr(proton)+' | '+(inttostr(proton-proton2));
-                label202.caption:='Disrrupción en el flújo de la energía.';
+                label202.caption:='Disrrupción en '+'flújo de la energía.';
     if resis>85  then    label202.caption:='El flujo de energía ha mejorado notablemente.';
               label201.caption:='Los órganos tratados han mejorado.';
               if volt+amp>178 then     label200.caption:='Ha habido una gran mejora.';
       if (pat_form.time44>10)and(pat_form.time55>10) then   label200.caption:='La causa aún está presente.';
    if  (volt-volt2)+ (amp-amp2)<8 then label200.caption  :=label200.caption+'La causa aún está presente.';
    if (volt-volt2)+ (amp-amp2)<10  then label201.caption   :=label201.caption+'Organ drainage needed  ';
-   if resis<70  then  label202.caption :=label202.caption+' | Bloqueo en el flújo de energía.';
+   if resis<70  then  label202.caption :=label202.caption+' Bloqueo en el flújo de energía.';
      if (oxid-oxid2)<7 then label203.caption   :=label203.caption+'Los síntomas están aún presentes.';
       label204.caption  := 'Se requiere una terapia con homeopáticos constitucionales.';
  if pat_form.time44>10 then     label205.caption   := 'El comportamiento no ha cambiado.';
@@ -31948,30 +30274,29 @@ procedure TtestForm1.Edit20Exit(Sender: TObject);
 begin
  if edit16.text='No se notan cambios generales positivos.' then none:=none+10;
   if none>30 then begin
-      label200.caption  :=label200.caption+' | Sin cambio.';
-      label201.caption   :=label201.caption+' | Igual que antes.';
-       label202.caption :=label202.caption+' | Sin cambio.';
-      label203.caption   :=label203.caption+' | Sin cambio.';
-      label204.caption  :=label204.caption+' | Sin cambio.';
-      label205.caption   :=label205.caption+' | Sin cambio.';
+      label200.caption  :=label200.caption+' Sin cambio.';
+      label201.caption   :=label201.caption+' Igual que antes.';
+       label202.caption :=label202.caption+' Sin cambio.';
+      label203.caption   :=label203.caption+' Sin cambio.';
+      label204.caption  :=label204.caption+' Sin cambio.';
+      label205.caption   :=label205.caption+' Sin cambio.';
      end;
 end;
 
-procedure TtestForm1.Button41Click(Sender: TObject);
+procedure TtestForm1.Label368Click(Sender: TObject);
 begin
   DM.Info.Open;
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
            inc(no); DM.Info.Appendrecord([no,nil,'----- MEJORAS DESDE LA ULTIMA VISITA -----']);
-  inc(no); DM.Info.Appendrecord([no,nil,edit5.text ]);
+  inc(no); DM.Info.Appendrecord([no,nil,ECausas.Text ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit16.text ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit17.text  ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit18.text ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit19.text  ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit20.text ]);
        inc(no); DM.Info.Appendrecord([no,nil,edit21.text  ]);
-      inc(no); DM.Info.Appendrecord([no,nil,'Type  Last Visit/Today/Change'  ]);                                               
        inc(no); DM.Info.Appendrecord([no,nil,label194.caption ]);
        inc(no); DM.Info.Appendrecord([no,nil,label195.caption   ]);
        inc(no); DM.Info.Appendrecord([no,nil,label196.caption  ]);
@@ -32012,7 +30337,7 @@ end;
 procedure TtestForm1.Accessextradataandinfo1Click(Sender: TObject);
 begin
  Application.CreateForm(Tnatdiag1, natdiag1);
- Natdiag1.Caption := '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinámica Cuántica ::: Auriculoterapia :::';
+ Natdiag1.Caption := '::: gENiO® iOS ::: Auriculoterapia :::';
  natdiag1.PPodologia.Visible := False;
  natdiag1.showmodal;
  natdiag1.Free;
@@ -33420,7 +31745,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Button8.caption:='&Equilibrar';
 zap:=1;
 rectif1:= strtoint2(LReactancia.caption)+strtoint2(LReactancia.caption)+ (8*strtoint2(LDiferencia.caption));
@@ -33502,7 +31827,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 GCapacitancia.Progress := traycap;
 GInductancia.Progress := traymag;
 GConductancia.Progress := traycon;
@@ -33642,23 +31967,6 @@ begin
   FTest_Alterna.pFiltra_Conscida(QString);
 end;
 
-procedure TtestForm1.Button51Click(Sender: TObject);
-begin
-button51.Enabled:=False;
-nv1:=random(12);
-label241.caption:='| No es posible conectar con su elección. | Decida Ud.';
-if nv1<2 then label241.caption:='| Agende para dentro de 3 a 5 días | Seguimiento intensivo.';
-if nv1=3 then label241.caption:='| Agende para dentro de 7 a 9 días | Seguimiento.';
-if nv1=4 then label241.caption:='| Agende para dentro de 10 a 15 días. | Seguimiento normal';
-if nv1=5 then label241.caption:='| Agende para dentro de 15 a 20 días. | Seguimiento';
-if nv1=6 then label241.caption:='| Agende para dentro de 20 días a 4 semanas. | Visita de seguimiento.';
-if nv1=7 then label241.caption:='| Agende para dentro de 4 a 5 semanas. | Visita de rutina.';
-if nv1=8 then label241.caption:='| Agende para dentro de 5 a 6 semanas. | Seguimiento + Revisión.';
-if nv1=9 then label241.caption:='| Agende para dentro de 6 a 7 semanas. | Seguimiento + Revisión.';
-if nv1=10 then label241.caption:='| Agende para dentro de 7 a 8 semanas. | Nueva revisión.';
-if nv1>10 then label241.caption:='| Agende para dentro de 8 a 10 semanas. | Nueva revisión.';
-end;
-
 procedure TtestForm1.Button52Click(Sender: TObject);
 begin
 Reaccion_Irregular();
@@ -33694,7 +32002,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  PANEL2.visible :=false;
  Panel7.Top:=444;
  Label208.caption:='';
@@ -33842,7 +32150,7 @@ panel2.refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(1000,1,11000,1,1,70+random(20),
  '00000000','00000000');
-   FMain.shaping:=random(105); FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   FMain.shaping:=random(105); 
 infogrid.top:=444;
 infogrid.height:=229;
 infogrid.visible:=true;
@@ -33880,19 +32188,8 @@ infonavigator.visible:=true;
           Inc(N); Inc(N1);
           if N = Step then
          begin
-
-             GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
-             N := 0;
-
-             if GProgreso.Progress=90 then excess:=excess+1;
-             if excess>3 then  SpeachForm.SMessageTalk( 'Computer is processing'+chr(13)+
-              'excess subspace Information'+chr(13)+
-              ' Click OK and Re-enter');
-               if excess>3 then halt;
-            { if excess>2 then  DM.Conscida.IndexName := 'ByValue';
-             if excess>2 then    DM.Conscida.First;
-             if excess>2 then       DM.Conscida.EnableControls;}
-             {if excess>2 then step:=step+1; }
+GProgreso.Progress := (GProgreso.Progress + 10) mod 100;
+N := 0;
           end;
      end;
      finally
@@ -33910,7 +32207,6 @@ end;
 
 procedure TtestForm1.Ponitprobezapactive1Click(Sender: TObject);
 begin
-//   SpeachForm.SMessageTalk('Amplificación de sonda de punto activa...');
    label293.Enabled:=true;
 end;
 
@@ -33918,7 +32214,6 @@ procedure TtestForm1.TestanItemOntheTestTray1Click(Sender: TObject);
 begin
 Index:='';
   DM.Conscida.IndexName := Index;
-  {DM.Conscida.Open;}
   DM.Conscida.First;
     SpeachForm.SMessageTalk('Por favor escríba el nombre de la substancia en el cajetín de edición.');
     Panel7.Visible:=True;
@@ -33927,179 +32222,8 @@ VirtualSwitch:=True;
  Menustate:=1;
  TestTray1.Enabled:=False;
 Desactivarbandejadetest1.Enabled:=True;
-// Label185.Enabled:=False;
-     Label571.Enabled:=True;
+Label571.Enabled:=True;
 end;
-
-{procedure TtestForm1.Button57Click(Sender: TObject);
-Var R1,R2 : Integer;
-begin
- ChangingPulses(5555,500,5100,2,1,1,
- 'llllllll','llllllll');
-  r1:=9+random(260);
-  r2:=9+random(260);
-  If R1=R2 Then
-  r2:=9+random(180);
-  if TestBaby1.visible=true then begin
-   tb1:=random(33);
-      if tb1=2 then r1:=2+random(3);
-      tb1:=random(3);
-      if tb1=2 then r2:=2+random(1);
-  end;
-   if patform1.male=10 then begin
-   tb1:=random(133);
-      if tb1=2 then r1:=7+random(1);
-      tb1:=random(50);
-      if tb1=2 then r2:=7+random(1);
-       If R1=R2 Then
-  r2:=7+random(181);
-  end;
-  if patform1.female=10 then begin
-   tb1:=random(133);
-      if tb1=2 then r1:=5+random(1);
-      tb1:=random(50);
-      if tb1=2 then r2:=5+random(1);
-           If R1=R2 Then
-  r2:=10+random(175);
-  end;
-  if patform1.dold<4000 then begin
-     tb1:=random(20);
-      if tb1=2 then r2:=222;
-  end;
-  if patform1.both=10 then begin
-   tb1:=random(4);
-      if tb1=2 then r1:=190+random(30);
-      tb1:=random(3);
-      if tb1=2 then r2:=190+random(30);
-             If R1=R2 Then
-  r2:=2+random(220);
-  end;
-      tb1:=random(19);
-      if tb1=2 then r1:=190+random(30);
-      tb1:=random(16);
-      if tb1=3 then r2:=190+random(30);
-  Label245.Caption:=listbox1.items[R1]+', durante '+inttostr(1+random(20))+':00 min.';
-  Label246.Caption:=listbox1.items[R2]+', durante '+inttostr(1+random(20))+':00 min.';
-   listbox1.hint:=Label245.Caption+' / '+Label246.Caption;
-  if riskchart.ims>102 then label246.caption:=label246.caption+' | Sist. inmunitario / Sarcodes';
-if riskchart.emo>102 then label246.caption:=label246.caption+' | Emociones / PNL';
-if riskchart.infl>102 then label246.caption:=label246.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>102 then label246.caption:=label246.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>102 then label246.caption:=label246.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>102 then label246.caption:=label246.caption+' | Infecciones / Zaps';
-if riskchart.tox>102 then label246.caption:=label246.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>102 then label246.caption:=label246.caption+' | Sist. cardiovascular / Biofeedback';
-if riskchart.Nut>102 then label246.caption:=label246.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>102 then label246.caption:=label246.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>102 then label246.caption:=label246.caption+' | Sist. linfático / Zaps';
-if riskchart.bld>102 then label246.caption:=label246.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>102 then label246.caption:=label246.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>102 then label246.caption:=label246.caption+' | Colesterol / Zaps';
-if riskchart.oxi>102 then label246.caption:=label246.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>102 then label246.caption:=label246.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>102 then label246.caption:=label246.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>102 then label246.caption:=label246.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>102 then label246.caption:=label246.caption+' | Factores heredados / ADN';
-if riskchart.liv>102 then label246.caption:=label246.caption+' | Hígado / Sarcodes';
-if riskchart.kid>102 then label246.caption:=label246.caption+' | Riñones / Sarcodes';
-if riskchart.dig>102 then label246.caption:=label246.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>102 then label246.caption:=label246.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>102 then label246.caption:=label246.caption+' | Sist. óseo / Sarcodes';
-if riskchart.acid>102 then label246.caption:=label246.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>102 then label246.caption:=label246.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>102 then label246.caption:=label246.caption+' | Alergias / Matriz principal';
-if riskchart.rad>102 then label246.caption:=label246.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>102 then label246.caption:=label246.caption+' | Bacterias / Zaps';
-if riskchart.fun>102 then label246.caption:=label246.caption+' | Fungosidades / Zaps';
-if riskchart.vir>102 then label246.caption:=label246.caption+' | Virus / Zaps';
-if riskchart.par>102 then label246.caption:=label246.caption+' | Parásitos / Zaps';
-if riskchart.ameo>102 then label246.caption:=label246.caption+' | Amíbas / Zaps';
-if riskchart.fdp>102 then label246.caption:=label246.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>102 then label246.caption:=label246.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>102 then label246.caption:=label246.caption+' | Sist. neurológico / Sarcodes';
-if riskchart.sener>102 then label246.caption:=label246.caption+' | Sist. sensorial / Sarcodes';
-if riskchart.res>102 then label246.caption:=label246.caption+' | Respiración / Sarcodes';
-if riskchart.cog>102 then label246.caption:=label246.caption+' | Cognicción / PNL';
-if riskchart.ims>150 then label246.caption:=label246.caption+' | Sist. inmunitario / Sarcodes';
-if riskchart.emo>150 then label246.caption:=label246.caption+' | Emociones / PNL';
-if riskchart.infl>150 then label246.caption:=label246.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>150 then label246.caption:=label246.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>150 then label246.caption:=label246.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>150 then label246.caption:=label246.caption+' | Infecciones / Zaps';
-if riskchart.tox>150 then label246.caption:=label246.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>150 then label246.caption:=label246.caption+' | Sist. cardiovascular / Biofeedback';
-if riskchart.Nut>150 then label246.caption:=label246.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>150 then label246.caption:=label246.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>150 then label246.caption:=label246.caption+' | Sist. linfático / Zaps';
-if riskchart.bld>150 then label246.caption:=label246.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>150 then label246.caption:=label246.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>150 then label246.caption:=label246.caption+' | Colesterol / Zaps';
-if riskchart.oxi>150 then label246.caption:=label246.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>150 then label246.caption:=label246.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>150 then label246.caption:=label246.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>150 then label246.caption:=label246.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>150 then label246.caption:=label246.caption+' | Factores heredados / ADN';
-if riskchart.liv>150 then label246.caption:=label246.caption+' | Hígado / Sarcodes';
-if riskchart.kid>150 then label246.caption:=label246.caption+' | Riñones / Sarcodes';
-if riskchart.dig>150 then label246.caption:=label246.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>150 then label246.caption:=label246.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>150 then label246.caption:=label246.caption+' | Sist. óseo / Sarcodes';
-if riskchart.acid>150 then label246.caption:=label246.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>150 then label246.caption:=label246.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>150 then label246.caption:=label246.caption+' | Alergias / Matriz principal';
-if riskchart.rad>150 then label246.caption:=label246.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>150 then label246.caption:=label246.caption+' | Bacterias / Zaps';
-if riskchart.fun>150 then label246.caption:=label246.caption+' | Fungosidades / Zaps';
-if riskchart.vir>150 then label246.caption:=label246.caption+' | Virus / Zaps';
-if riskchart.par>150 then label246.caption:=label246.caption+' | Parásitos / Zaps';
-if riskchart.ameo>150 then label246.caption:=label246.caption+' | Amíbas / Zaps';
-if riskchart.fdp>150 then label246.caption:=label246.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>150 then label246.caption:=label246.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>150 then label246.caption:=label246.caption+' | Sist. neurológico / Sarcodes';
-if riskchart.sener>150 then label246.caption:=label246.caption+' | Sist. sensorial / Sarcodes';
-if riskchart.res>150 then label246.caption:=label246.caption+' | Respiración / Sarcodes';
-if riskchart.cog>150 then label246.caption:=label246.caption+' | Cognicción / PNL';
-if riskchart.ims>230 then label245.caption:=label245.caption+' | Sist. inmunitario / Sarcodes';
-if riskchart.emo>230 then label245.caption:=label245.caption+' | Emociones / PNL';
-if riskchart.infl>230 then label245.caption:=label245.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>230 then label245.caption:=label245.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>230 then label245.caption:=label245.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>230 then label245.caption:=label245.caption+' | Infecciones / Zaps';
-if riskchart.tox>230 then label245.caption:=label245.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>230 then label245.caption:=label245.caption+' | Sist. cardiovascular / Biofeedback';
-if riskchart.Nut>230 then label245.caption:=label245.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>230 then label245.caption:=label245.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>230 then label245.caption:=label245.caption+' | Sist. linfático / Zaps';
-if riskchart.bld>230 then label245.caption:=label245.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>230 then label245.caption:=label245.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>230 then label245.caption:=label245.caption+' | Colesterol / Zaps';
-if riskchart.oxi>230 then label245.caption:=label245.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>230 then label245.caption:=label245.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>230 then label245.caption:=label245.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>230 then label245.caption:=label245.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>230 then label245.caption:=label245.caption+' | Factores heredados / ADN';
-if riskchart.liv>230 then label245.caption:=label245.caption+' | Hígado / Sarcodes';
-if riskchart.kid>230 then label245.caption:=label245.caption+' | Riñones / Sarcodes';
-if riskchart.dig>230 then label245.caption:=label245.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>230 then label245.caption:=label245.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>230 then label245.caption:=label245.caption+' | Sist. óseo / Sarcodes';
-if riskchart.acid>230 then label245.caption:=label245.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>230 then label245.caption:=label245.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>230 then label245.caption:=label245.caption+' | Alergias / Matriz principal';
-if riskchart.rad>230 then label245.caption:=label245.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>230 then label245.caption:=label245.caption+' | Bacterias / Zaps';
-if riskchart.fun>230 then label245.caption:=label245.caption+' | Fungosidades / Zaps';
-if riskchart.vir>230 then label245.caption:=label245.caption+' | Virus / Zaps';
-if riskchart.par>230 then label245.caption:=label245.caption+' | Parásitos / Zaps';
-if riskchart.ameo>230 then label245.caption:=label245.caption+' | Amíbas / Zaps';
-if riskchart.fdp>230 then label245.caption:=label245.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>230 then label245.caption:=label245.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>230 then label245.caption:=label245.caption+' | Sist. neurológico / Sarcodes';
-if riskchart.sener>230 then label245.caption:=label245.caption+' | Sist. sensorial / Sarcodes';
-if riskchart.res>230 then label245.caption:=label245.caption+' | Respiración / Sarcodes';
-if riskchart.cog>230 then label245.caption:=label245.caption+' | Cognicción / PNL';
-
-end;  }
 
 procedure TtestForm1.Label98Click(Sender: TObject);
 begin
@@ -34198,10 +32322,7 @@ var
          vit,
          vtotal   : Integer;
 begin
-memo6.visible := False;
-
 randRect:=0;
-
 if (checkbox1.enabled=false) and (checkbox2.enabled=false) and (checkbox3.enabled=false) and
 (checkbox4.enabled=false) and (checkbox5.enabled=false) and (checkbox6.enabled=false) and
 (checkbox7.enabled=false) and (checkbox8.enabled=false) and (checkbox9.enabled=false) and
@@ -34323,7 +32444,6 @@ Reaccion_Irregular();
 vart:=20;
 End;
 if timeSec<>0 then begin
-//Panel6.Caption := 'Duración aprox. por ítem: '+IntToStr(timeMin)+':'+IntToStr(timeSec)+' min.';
 Panel6.Caption := '';
 label328.caption:= 'Sistema activo...';
 label329.caption:= 'Terapia de enfoque.';
@@ -34659,8 +32779,6 @@ if (checkbox72.checked=true) and (checkbox72.Enabled=true) then
    for vit:=1 to 10 do
    pTerapiaAtendida(checkbox72,randRect,vtotal);
 
-
-
  label328.caption:= '|||';
  label329.caption:= '|||';
  label330.caption:= '|||';
@@ -34670,936 +32788,17 @@ if (checkbox72.checked=true) and (checkbox72.Enabled=true) then
  if oeg=6 then label329.caption:= 'Intente realizar terapias para la oxidación y la visualización mental.';
  oeg:=random(6);
  if oeg=6 then label330.caption:= 'La tensión muscular / mental ha alterado los resultados. Inténtelo de nuevo con terapias atendidas.';
-
- Panel16.bringtofront;
- Panel16.refresh;
- Oeg:=random(75);
-If oeg=1 then label323.caption:='| Intercambio en Corpus Callosum.';
-If oeg=2 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=3 then label323.caption:='| Vitamina C.';
-If oeg=4 then label323.caption:='| Vitamina E.';
-If oeg=5 then label323.caption:='| Vitamina A.';
-If oeg=6 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=7 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=8 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=9 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=10 then label323.caption:='| Anemia.';
-If oeg=11 then label323.caption:='| Alternancia de Corpus Callosum.';
-If oeg=12 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=13 then label323.caption:='| Vitamina C.';
-If oeg=14 then label323.caption:='| Vitamina E.';
-If oeg=15 then label323.caption:='| Vitamina A.';
-If oeg=16 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=17 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=18 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=19 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=20 then label323.caption:='| Anemia.';
-If oeg=21 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=22 then label323.caption:='| Intercambio en Corpus Callosum.';
-If oeg=23 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=24 then label323.caption:='| Vitamina C.';
-If oeg=25 then label323.caption:='| Vitamina E.';
-If oeg=26 then label323.caption:='| Vitamina A.';
-If oeg=27 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=28 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=29 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=30 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=31 then label323.caption:='| Anemia.';
-If oeg=32 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=33 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=34 then label323.caption:='| Necesidad de tap en carótida sineal.';
-If oeg=35 then label323.caption:='| Necesidad de ejercitarse.';
-If oeg=36 then label323.caption:='| Necesidad de respiración nostril alterna.';
-If oeg=37 then label323.caption:='| Insuficiencia suprarrenal.';
-If oeg=38 then label323.caption:='| Disrrupción de tiroides.';
-If oeg=39 then label323.caption:='| Disrrupción de cortisona.';
-If oeg=40 then label323.caption:='| Glándula pineal.';
-If oeg=41 then label323.caption:='| Glándula pituitaria.';
-If oeg=42 then label323.caption:='| Hipotálamo.';
-If oeg=43 then label323.caption:='| Huesos.';
-If oeg=44 then label323.caption:='| Sist. digestivo.';
-If oeg=45 then label323.caption:='| Sist. hormonal.';
-If oeg=46 then label323.caption:='| Sist. neurológico.';
-If oeg=47 then label323.caption:='| Dolor.';
-If oeg=48 then label323.caption:='| Temor.';
-If oeg=49 then label323.caption:='| Ansiedad.';
-If oeg=50 then label323.caption:='| Problema no expresado.';
-If oeg=51 then label323.caption:='| Preocupación secreta.';
-If oeg=52 then label323.caption:='| Oxigenación.';
-If oeg=53 then label323.caption:='| Hidratación.';
-If oeg=54 then label323.caption:='| Riñones.';
-If oeg=55 then label323.caption:='| Hígado.';
-If oeg=56 then label323.caption:='| Piel.';
-If oeg=57 then label323.caption:='| Bacteria.';
-If oeg=58 then label323.caption:='| Fungosidades.';
-If oeg=59 then label323.caption:='| Ricketsia.';
-If oeg=60 then label323.caption:='| Lombrices.';
-If oeg=61 then label323.caption:='| Parásitos.';
-If oeg=62 then label323.caption:='| Músculos.';
-If oeg=63 then label323.caption:='| Ligamentos.';
-If oeg=64 then label323.caption:='| Preocupación.';
-If oeg=65 then label323.caption:='| Dinero.';
-If oeg>65 then label323.caption:='| Preocupación oculta.';
-
- oeg:=random(3);
- if  (oeg=3) then
- begin
- oeg:=random(150);
- if oeg<2 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=2 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=3 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=4 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=5 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=6 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=7 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=8 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=9 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=10 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=11 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=12 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=13 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=14 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=15 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=16 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=17 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=18 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=19 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=20 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=21 then label323.caption:=label323.caption+' | Temor a perder el juego.';
-if oeg=22 then label323.caption:=label323.caption+' | Rencor a perder.';
-if oeg=23 then label323.caption:=label323.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label323.caption:=label323.caption+' | Estabilidad mental.';
-if oeg=25 then label323.caption:=label323.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label323.caption:=label323.caption+' | Temor al criticismo.';
-if oeg=27 then label323.caption:=label323.caption+' | Temor conciente al dolor.';
-if oeg=28 then label323.caption:=label323.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label323.caption:=label323.caption+' | Temor de control parental.';
-if oeg=30 then label323.caption:=label323.caption+' | Temor al fracaso.';
-if oeg=31 then label323.caption:=label323.caption+' | Pérdida de identidad.';
-if oeg=32 then label323.caption:=label323.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label323.caption:=label323.caption+' | Pérdida de objetivo.';
-if oeg=34 then label323.caption:=label323.caption+' | Sobre entendimiento.';
-if oeg=35 then label323.caption:=label323.caption+' | Sobre confidencia.';
-if oeg=36 then label323.caption:=label323.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=38 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=39 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=40 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=41 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=42 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=43 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=44 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=45 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=46 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=47 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=48 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=49 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=50 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=51 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=52 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=53 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=54 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=55 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=56 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=57 then label323.caption:=label323.caption+' | Demasiados condicionantes.';
-if oeg=58 then label323.caption:=label323.caption+' | Demasiada negatividad.';
-if oeg=59 then label323.caption:=label323.caption+' | Control externo.';
-if oeg=60 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=61 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=62 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=63 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=64 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=65 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=66 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=67 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=68 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=69 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=70 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=71 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=72 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=73 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=74 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=75 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=76 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=77 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=78 then label323.caption:=label323.caption+' | Falta de un objetivo.';
-if oeg=79 then label323.caption:=label323.caption+' | Temor monetario.';
-if oeg=80 then label323.caption:=label323.caption+' | Preocupación monetaria.';
-if oeg=81 then label323.caption:=label323.caption+' | Demasiada dispersidad.';
-if oeg=82 then label323.caption:=label323.caption+' | Mal entrenamiento.';
-if oeg=83 then label323.caption:=label323.caption+' | Cambio de estado mental.';
-if oeg=84 then label323.caption:=label323.caption+' | Sobre confidencia.';
-if oeg=85 then label323.caption:=label323.caption+' | Falta de entusiasmo.';
-if oeg=86 then label323.caption:=label323.caption+' | Dolor.';
-if oeg=87 then label323.caption:=label323.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label323.caption:=label323.caption+' | Regreso a la infancia.';
-if oeg=89 then label323.caption:=label323.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label323.caption:=label323.caption+' | Preocupación de terminar.';
-if oeg=91 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=92 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=93 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=94 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=95 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=96 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=97 then label323.caption:=label323.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label323.caption:=label323.caption+' | Preocupación por compañeros.';
-if oeg=99 then label323.caption:=label323.caption+' | Tristeza excesiva.';
-if oeg=100 then label323.caption:=label323.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label323.caption:=label323.caption+' | Manejo de la íra.';
-if oeg=102 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=106 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=107 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=108 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=109 then label323.caption:=label323.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label323.caption:=label323.caption+' | Ira hacia los oponenetes.';
-if oeg=111 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=112 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=113 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=114 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=115 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=116 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=117 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=118 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=119 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=120 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=121 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=122 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=123 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=124 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=125 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=126 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=127 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=128 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=129 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg>129 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
+Panel16.bringtofront;
+Panel16.refresh;
+Textos323();
+Textos324();
+Textos325();
 end;
-
-oeg:=random(3);
-if  (oeg=3) then
-begin
-oeg:=random(105);
-if oeg<2 then label323.caption:=label323.caption+' | Regresión.';
-if oeg=2 then label323.caption:=label323.caption+' | Agresión.';
-if oeg=3 then label323.caption:=label323.caption+' | Ira.';
-if oeg=4 then label323.caption:=label323.caption+' | Ansiedad.';
-if oeg=5 then label323.caption:=label323.caption+' | Conciencia.';
-if oeg=6 then label323.caption:=label323.caption+' | Tristeza.';
-if oeg=7 then label323.caption:=label323.caption+' | Culpabilidad.';
-if oeg=8 then label323.caption:=label323.caption+' | Autismo.';
-if oeg=9 then label323.caption:=label323.caption+' | Negación.';
-if oeg=10 then label323.caption:=label323.caption+' | Descuido.';
-if oeg=11 then label323.caption:=label323.caption+' | Desilusión.';
-if oeg=12 then label323.caption:=label323.caption+' | Depresión.';
-if oeg=13 then label323.caption:=label323.caption+' | Poder.';
-if oeg=14 then label323.caption:=label323.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label323.caption:=label323.caption+' | Temor.';
-if oeg=16 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=17 then label323.caption:=label323.caption+' | Duda.';
-if oeg=18 then label323.caption:=label323.caption+' | Celos.';
-if oeg=19 then label323.caption:=label323.caption+' | Alegría.';
-if oeg=20 then label323.caption:=label323.caption+' | Lujuria.';
-if oeg=21 then label323.caption:=label323.caption+' | Avaricia.';
-if oeg=22 then label323.caption:=label323.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label323.caption:=label323.caption+' | Dolor psíquico.';
-if oeg=24 then label323.caption:=label323.caption+' | Pasividad.';
-if oeg=25 then label323.caption:=label323.caption+' | Proyección.';
-if oeg=26 then label323.caption:=label323.caption+' | Racionalizar.';
-if oeg=27 then label323.caption:=label323.caption+' | Imprudencia.';
-if oeg=28 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=29 then label323.caption:=label323.caption+' | Abandono.';
-if oeg=30 then label323.caption:=label323.caption+' | Vergüenza.';
-if oeg=31 then label323.caption:=label323.caption+' | Traición.';
-if oeg=32 then label323.caption:=label323.caption+' | Malentendimiento.';
-if oeg=33 then label323.caption:=label323.caption+' | Curiosidad.';
-if oeg=34 then label323.caption:=label323.caption+' | Sobrecogimiento.';
-if oeg=35 then label323.caption:=label323.caption+' | Conflicto religioso.';
-if oeg=36 then label323.caption:=label323.caption+' | Conflicto de identidad.';
-if oeg=37 then label323.caption:=label323.caption+' | Resistencia al cambio.';
-if oeg=38 then label323.caption:=label323.caption+' | Nervios.';
-if oeg=39 then label323.caption:=label323.caption+' | Risa.';
-if oeg=40 then label323.caption:=label323.caption+' | Entusiasmo.';
-if oeg=41 then label323.caption:=label323.caption+' | Vanidad.';
-if oeg=42 then label323.caption:=label323.caption+' | Negociación.';
-if oeg=43 then label323.caption:=label323.caption+' | Coraje.';
-if oeg=44 then label323.caption:=label323.caption+' | Vergüenza.';
-if oeg=45 then label323.caption:=label323.caption+' | Monotonía.';
-if oeg=46 then label323.caption:=label323.caption+' | Necesidad de cambio.';
-if oeg=47 then label323.caption:=label323.caption+' | Observación.';
-if oeg=48 then label323.caption:=label323.caption+' | Antagonismo.';
-if oeg=49 then label323.caption:=label323.caption+' | Sensualidad.';
-if oeg=50 then label323.caption:=label323.caption+' | Espiritualidad.';
-if oeg=51 then label323.caption:=label323.caption+' | Sexualidad.';
-if oeg=52 then label323.caption:=label323.caption+' | Adictividad.';
-if oeg=53 then label323.caption:=label323.caption+' | Enjuiciamiento.';
-if oeg=54 then label323.caption:=label323.caption+' | Apatía.';
-if oeg=55 then label323.caption:=label323.caption+' | Extasis.';
-if oeg=56 then label323.caption:=label323.caption+' | Inepcia.';
-if oeg=57 then label323.caption:=label323.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label323.caption:=label323.caption+' | Perfeccionismo.';
-if oeg=59 then label323.caption:=label323.caption+' | Desesperación.';
-if oeg=60 then label323.caption:=label323.caption+' | Dominación.';
-if oeg=61 then label323.caption:=label323.caption+' | Sumisión.';
-if oeg=62 then label323.caption:=label323.caption+' | Orgullo.';
-if oeg=63 then label323.caption:=label323.caption+' | Resentimiento.';
-if oeg=64 then label323.caption:=label323.caption+' | Choc.';
-if oeg=65 then label323.caption:=label323.caption+' | Descuido.';
-if oeg=66 then label323.caption:=label323.caption+' | Obsesividad.';
-if oeg=67 then label323.caption:=label323.caption+' | Impulsividad.';
-if oeg=68 then label323.caption:=label323.caption+' | Manías incontrolables.';
-if oeg=69 then label323.caption:=label323.caption+' | Impulsividad.';
-if oeg=70 then label323.caption:=label323.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label323.caption:=label323.caption+' | Distracción.';
-if oeg=72 then label323.caption:=label323.caption+' | Concentración.';
-if oeg=73 then label323.caption:=label323.caption+' | Irrealismo.';
-if oeg>73 then label323.caption:=label323.caption+' | Frustración.';
-end;
-
-Oeg:=random(110);
-If oeg<2 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=2 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=3 then label324.caption:='| Vitamina C';
-If oeg=4 then label324.caption:='| Vitamina E';
-If oeg=5 then label324.caption:='| Vitamina A';
-If oeg=6 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=7 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=8 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=9 then label324.caption:='| Almacen de amino ácidos';
-If oeg=10 then label324.caption:='| Anemia';
-If oeg=11 then label324.caption:='| Alternancia de Corpus Callosum';
-If oeg=12 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=13 then label324.caption:='| Vitamina C';
-If oeg=14 then label324.caption:='| Vitamina E';
-If oeg=15 then label324.caption:='| Vitamina A';
-If oeg=16 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=17 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=18 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=19 then label324.caption:='| Almacen de amino ácidos';
-If oeg=20 then label324.caption:='| Anemia';
-If oeg=21 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=22 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=23 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=24 then label324.caption:='| Vitamina C';
-If oeg=25 then label324.caption:='| Vitamina E';
-If oeg=26 then label324.caption:='| Vitamina A';
-If oeg=27 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=28 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=29 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=30 then label324.caption:='| Almacen de amino ácidos';
-If oeg=31 then label324.caption:='| Anemia';
-If oeg=32 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=33 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=34 then label324.caption:='| Necesidad de tap en carótida sineal';
-If oeg=35 then label324.caption:='| Necesidad de ejercitarse';
-If oeg=36 then label324.caption:='| Necesidad de respiración nostril alterna';
-If oeg=37 then label324.caption:='| Insuficiencia suprarrenal';
-If oeg=38 then label324.caption:='| Disrrupción de tiroides';
-If oeg=39 then label324.caption:='| Disrrupción de cortisona';
-If oeg=40 then label324.caption:='| Glándula pineal';
-If oeg=41 then label324.caption:='| Glándula pituitaria';
-If oeg=42 then label324.caption:='| Hipotálamo';
-If oeg=43 then label324.caption:='| Huesos';
-If oeg=44 then label324.caption:='| Sist. digestivo';
-If oeg=45 then label324.caption:='| Sist. hormonal';
-If oeg=46 then label324.caption:='| Sist. neurológico';
-If oeg=47 then label324.caption:='| Dolor';
-If oeg=48 then label324.caption:='| Temor';
-If oeg=49 then label324.caption:='| Ansiedad';
-If oeg=50 then label324.caption:='| Problema no expresado';
-If oeg=51 then label324.caption:='| Preocupación secreta';
-If oeg=52 then label324.caption:='| Oxigenación';
-If oeg=53 then label324.caption:='| Hidratación';
-If oeg=54 then label324.caption:='| Riñones';
-If oeg=55 then label324.caption:='| Hígado';
-If oeg=56 then label324.caption:='| Piel';
-If oeg=57 then label324.caption:='| Bacteria';
-If oeg=58 then label324.caption:='| Fungosidades';
-If oeg=59 then label324.caption:='| Ricketsia';
-If oeg=60 then label324.caption:='| Lombrices';
-If oeg=61 then label324.caption:='| Parásitos';
-If oeg=62 then label324.caption:='| Músculos';
-If oeg=63 then label324.caption:='| Ligamentos';
-If oeg=64 then label324.caption:='| Preocupación';
-If oeg=65 then label324.caption:='| Dinero';
-If oeg=66 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=67 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=68 then label324.caption:='| Vitamina C';
-If oeg=69 then label324.caption:='| Vitamina E';
-If oeg=70 then label324.caption:='| Vitamina A';
-If oeg=71 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=72 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=73 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=74 then label324.caption:='| Almacen de amino ácidos';
-If oeg=75 then label324.caption:='| Anemia';
-If oeg=76 then label324.caption:='| Alternancia de Corpus Callosum';
-If oeg=77 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=78 then label324.caption:='| Vitamina C';
-If oeg=79 then label324.caption:='| Vitamina E';
-If oeg=80 then label324.caption:='| Vitamina A';
-If oeg=81 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=82 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=83 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=84 then label324.caption:='| Almacen de amino ácidos';
-If oeg=85 then label324.caption:='| Anemia';
-If oeg=86 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=87 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=88 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=89 then label324.caption:='| Vitamina C';
-If oeg=90 then label324.caption:='| Vitamina E';
-If oeg=91 then label324.caption:='| Vitamina A';
-If oeg=92 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=93 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=94 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=95 then label324.caption:='| Almacen de amino ácidos';
-If oeg=96 then label324.caption:='| Anemia';
-If oeg=97 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=98 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=99 then label324.caption:='| Necesidad de tap en carótida sineal';
-If oeg=100 then label324.caption:='| Necesidad de ejercitarse';
-If oeg>100 then label324.caption:='| Necesidad de respiración nostril alterna';
-
-oeg:=random(5);
- if  (oeg=3) then
- begin
- oeg:=random(131);
- if oeg<2 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=2 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=3 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=4 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=5 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=6 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=7 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=8 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=9 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=10 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=11 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=12 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=13 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=14 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=15 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=16 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=17 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=18 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=19 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=20 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=21 then label324.caption:=label324.caption+' | Temor a perder el juego.';
-if oeg=22 then label324.caption:=label324.caption+' | Rencor a perder.';
-if oeg=23 then label324.caption:=label324.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label324.caption:=label324.caption+' | Estabilidad mental.';
-if oeg=25 then label324.caption:=label324.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label324.caption:=label324.caption+' | Temor al criticismo.';
-if oeg=27 then label324.caption:=label324.caption+' | Temor conciente al dolor.';
-if oeg=28 then label324.caption:=label324.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label324.caption:=label324.caption+' | Temor de control parental.';
-if oeg=30 then label324.caption:=label324.caption+' | Temor al fracaso.';
-if oeg=31 then label324.caption:=label324.caption+' | Pérdida de identidad.';
-if oeg=32 then label324.caption:=label324.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label324.caption:=label324.caption+' | Pérdida de objetivo.';
-if oeg=34 then label324.caption:=label324.caption+' | Sobre entendimiento.';
-if oeg=35 then label324.caption:=label324.caption+' | Sobre confidencia.';
-if oeg=36 then label324.caption:=label324.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=38 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=39 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=40 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=41 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=42 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=43 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=44 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=45 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=46 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=47 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=48 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=49 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=50 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=51 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=52 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=53 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=54 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=55 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=56 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=57 then label324.caption:=label324.caption+' | Demasiados condicionantes.';
-if oeg=58 then label324.caption:=label324.caption+' | Demasiada negatividad.';
-if oeg=59 then label324.caption:=label324.caption+' | Control externo.';
-if oeg=60 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=61 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=62 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=63 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=64 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=65 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=66 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=67 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=68 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=69 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=70 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=71 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=72 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=73 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=74 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=75 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=76 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=77 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=78 then label324.caption:=label324.caption+' | Falta de un objetivo.';
-if oeg=79 then label324.caption:=label324.caption+' | Temor monetario.';
-if oeg=80 then label324.caption:=label324.caption+' | Preocupación monetaria.';
-if oeg=81 then label324.caption:=label324.caption+' | Demasiada dispersidad.';
-if oeg=82 then label324.caption:=label324.caption+' | Mal entrenamiento.';
-if oeg=83 then label324.caption:=label324.caption+' | Cambio de estado mental.';
-if oeg=84 then label324.caption:=label324.caption+' | Sobre confidencia.';
-if oeg=85 then label324.caption:=label324.caption+' | Falta de entusiasmo.';
-if oeg=86 then label324.caption:=label324.caption+' | Dolor.';
-if oeg=87 then label324.caption:=label324.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label324.caption:=label324.caption+' | Regreso a la infancia.';
-if oeg=89 then label324.caption:=label324.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label324.caption:=label324.caption+' | Preocupación de terminar.';
-if oeg=91 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=92 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=93 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=94 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=95 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=96 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=97 then label324.caption:=label324.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label324.caption:=label324.caption+' | Preocupación por compañeros.';
-if oeg=99 then label324.caption:=label324.caption+' | Tristeza excesiva.';
-if oeg=100 then label324.caption:=label324.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label324.caption:=label324.caption+' | Manejo de la íra.';
-if oeg=102 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=106 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=107 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=108 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=109 then label324.caption:=label324.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label324.caption:=label324.caption+' | Ira hacia los oponenetes.';
-if oeg=111 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=112 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=113 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=114 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=115 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=116 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=117 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=118 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=119 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=120 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=121 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=122 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=123 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=124 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=125 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=126 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=127 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=128 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=129 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg>129 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-   end;
-
-    oeg:=random(5);
- if  (oeg=3) then
- begin
-oeg:=random(105);
-if oeg<2 then label324.caption:=label324.caption+' | Regresión.';
-if oeg=2 then label324.caption:=label324.caption+' | Agresión.';
-if oeg=3 then label324.caption:=label324.caption+' | Ira.';
-if oeg=4 then label324.caption:=label324.caption+' | Ansiedad.';
-if oeg=5 then label324.caption:=label324.caption+' | Conciencia.';
-if oeg=6 then label324.caption:=label324.caption+' | Tristeza.';
-if oeg=7 then label324.caption:=label324.caption+' | Culpabilidad.';
-if oeg=8 then label324.caption:=label324.caption+' | Autismo.';
-if oeg=9 then label324.caption:=label324.caption+' | Negación.';
-if oeg=10 then label324.caption:=label324.caption+' | Descuido.';
-if oeg=11 then label324.caption:=label324.caption+' | Desilusión.';
-if oeg=12 then label324.caption:=label324.caption+' | Depresión.';
-if oeg=13 then label324.caption:=label324.caption+' | Poder.';
-if oeg=14 then label324.caption:=label324.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label324.caption:=label324.caption+' | Temor.';
-if oeg=16 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=17 then label324.caption:=label324.caption+' | Duda.';
-if oeg=18 then label324.caption:=label324.caption+' | Celos.';
-if oeg=19 then label324.caption:=label324.caption+' | Alegría.';
-if oeg=20 then label324.caption:=label324.caption+' | Lujuria.';
-if oeg=21 then label324.caption:=label324.caption+' | Avaricia.';
-if oeg=22 then label324.caption:=label324.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label324.caption:=label324.caption+' | Dolor psíquico.';
-if oeg=24 then label324.caption:=label324.caption+' | Pasividad.';
-if oeg=25 then label324.caption:=label324.caption+' | Proyección.';
-if oeg=26 then label324.caption:=label324.caption+' | Racionalizar.';
-if oeg=27 then label324.caption:=label324.caption+' | Imprudencia.';
-if oeg=28 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=29 then label324.caption:=label324.caption+' | Abandono.';
-if oeg=30 then label324.caption:=label324.caption+' | Vergüenza.';
-if oeg=31 then label324.caption:=label324.caption+' | Traición.';
-if oeg=32 then label324.caption:=label324.caption+' | Malentendimiento.';
-if oeg=33 then label324.caption:=label324.caption+' | Curiosidad.';
-if oeg=34 then label324.caption:=label324.caption+' | Sobrecogimiento.';
-if oeg=35 then label324.caption:=label324.caption+' | Conflicto religioso.';
-if oeg=36 then label324.caption:=label324.caption+' | Conflicto de identidad.';
-if oeg=37 then label324.caption:=label324.caption+' | Resistencia al cambio.';
-if oeg=38 then label324.caption:=label324.caption+' | Nervios.';
-if oeg=39 then label324.caption:=label324.caption+' | Risa.';
-if oeg=40 then label324.caption:=label324.caption+' | Entusiasmo.';
-if oeg=41 then label324.caption:=label324.caption+' | Vanidad.';
-if oeg=42 then label324.caption:=label324.caption+' | Negociación.';
-if oeg=43 then label324.caption:=label324.caption+' | Coraje.';
-if oeg=44 then label324.caption:=label324.caption+' | Vergüenza.';
-if oeg=45 then label324.caption:=label324.caption+' | Monotonía.';
-if oeg=46 then label324.caption:=label324.caption+' | Necesidad de cambio.';
-if oeg=47 then label324.caption:=label324.caption+' | Observación.';
-if oeg=48 then label324.caption:=label324.caption+' | Antagonismo.';
-if oeg=49 then label324.caption:=label324.caption+' | Sensualidad.';
-if oeg=50 then label324.caption:=label324.caption+' | Espiritualidad.';
-if oeg=51 then label324.caption:=label324.caption+' | Sexualidad.';
-if oeg=52 then label324.caption:=label324.caption+' | Adictividad.';
-if oeg=53 then label324.caption:=label324.caption+' | Enjuiciamiento.';
-if oeg=54 then label324.caption:=label324.caption+' | Apatía.';
-if oeg=55 then label324.caption:=label324.caption+' | Extasis.';
-if oeg=56 then label324.caption:=label324.caption+' | Inepcia.';
-if oeg=57 then label324.caption:=label324.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label324.caption:=label324.caption+' | Perfeccionismo.';
-if oeg=59 then label324.caption:=label324.caption+' | Desesperación.';
-if oeg=60 then label324.caption:=label324.caption+' | Dominación.';
-if oeg=61 then label324.caption:=label324.caption+' | Sumisión.';
-if oeg=62 then label324.caption:=label324.caption+' | Orgullo.';
-if oeg=63 then label324.caption:=label324.caption+' | Resentimiento.';
-if oeg=64 then label324.caption:=label324.caption+' | Choc.';
-if oeg=65 then label324.caption:=label324.caption+' | Descuido.';
-if oeg=66 then label324.caption:=label324.caption+' | Obsesividad.';
-if oeg=67 then label324.caption:=label324.caption+' | Impulsividad.';
-if oeg=68 then label324.caption:=label324.caption+' | Manías incontrolables.';
-if oeg=69 then label324.caption:=label324.caption+' | Impulsividad.';
-if oeg=70 then label324.caption:=label324.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label324.caption:=label324.caption+' | Distracción.';
-if oeg=72 then label324.caption:=label324.caption+' | Concentración.';
-if oeg=73 then label324.caption:=label324.caption+' | Irrealismo.';
-if oeg>73 then label324.caption:=label324.caption+' | Frustración.';
-end;
-
-Oeg:=random(110);
-If oeg<2 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=2 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=3 then label325.caption:='| Vitamina C';
-If oeg=4 then label325.caption:='| Vitamina E';
-If oeg=5 then label325.caption:='| Vitamina A';
-If oeg=6 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=7 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=8 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=9 then label325.caption:='| Almacen de amino ácidos';
-If oeg=10 then label325.caption:='| Anemia';
-If oeg=11 then label325.caption:='| Alternancia de Corpus Callosum';
-If oeg=12 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=13 then label325.caption:='| Vitamina C';
-If oeg=14 then label325.caption:='| Vitamina E';
-If oeg=15 then label325.caption:='| Vitamina A';
-If oeg=16 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=17 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=18 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=19 then label325.caption:='| Almacen de amino ácidos';
-If oeg=20 then label325.caption:='| Anemia';
-If oeg=21 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=22 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=23 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=24 then label325.caption:='| Vitamina C';
-If oeg=25 then label325.caption:='| Vitamina E';
-If oeg=26 then label325.caption:='| Vitamina A';
-If oeg=27 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=28 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=29 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=30 then label325.caption:='| Almacen de amino ácidos';
-If oeg=31 then label325.caption:='| Anemia';
-If oeg=32 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=33 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=34 then label325.caption:='| Necesidad de tap en carótida sineal';
-If oeg=35 then label325.caption:='| Necesidad de ejercitarse';
-If oeg=36 then label325.caption:='| Necesidad de respiración nostril alterna';
-If oeg=37 then label325.caption:='| Insuficiencia suprarrenal';
-If oeg=38 then label325.caption:='| Disrrupción de tiroides';
-If oeg=39 then label325.caption:='| Disrrupción de cortisona';
-If oeg=40 then label325.caption:='| Glándula pineal';
-If oeg=41 then label325.caption:='| Glándula pituitaria';
-If oeg=42 then label325.caption:='| Hipotálamo';
-If oeg=43 then label325.caption:='| Huesos';
-If oeg=44 then label325.caption:='| Sist. digestivo';
-If oeg=45 then label325.caption:='| Sist. hormonal';
-If oeg=46 then label325.caption:='| Sist. neurológico';
-If oeg=47 then label325.caption:='| Dolor';
-If oeg=48 then label325.caption:='| Temor';
-If oeg=49 then label325.caption:='| Ansiedad';
-If oeg=50 then label325.caption:='| Problema no expresado';
-If oeg=51 then label325.caption:='| Preocupación secreta';
-If oeg=52 then label325.caption:='| Oxigenación';
-If oeg=53 then label325.caption:='| Hidratación';
-If oeg=54 then label325.caption:='| Riñones';
-If oeg=55 then label325.caption:='| Hígado';
-If oeg=56 then label325.caption:='| Piel';
-If oeg=57 then label325.caption:='| Bacteria';
-If oeg=58 then label325.caption:='| Fungosidades';
-If oeg=59 then label325.caption:='| Ricketsia';
-If oeg=60 then label325.caption:='| Lombrices';
-If oeg=61 then label325.caption:='| Parásitos';
-If oeg=62 then label325.caption:='| Músculos';
-If oeg=63 then label325.caption:='| Ligamentos';
-If oeg=64 then label325.caption:='| Preocupación';
-If oeg=65 then label325.caption:='| Dinero';
-If oeg=66 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=67 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=68 then label325.caption:='| Vitamina C';
-If oeg=69 then label325.caption:='| Vitamina E';
-If oeg=70 then label325.caption:='| Vitamina A';
-If oeg=71 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=72 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=73 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=74 then label325.caption:='| Almacen de amino ácidos';
-If oeg=75 then label325.caption:='| Anemia';
-If oeg=76 then label325.caption:='| Alternancia de Corpus Callosum';
-If oeg=77 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=78 then label325.caption:='| Vitamina C';
-If oeg=79 then label325.caption:='| Vitamina E';
-If oeg=80 then label325.caption:='| Vitamina A';
-If oeg=81 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=82 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=83 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=84 then label325.caption:='| Almacen de amino ácidos';
-If oeg=85 then label325.caption:='| Anemia';
-If oeg=86 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=87 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=88 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=89 then label325.caption:='| Vitamina C';
-If oeg=90 then label325.caption:='| Vitamina E';
-If oeg=91 then label325.caption:='| Vitamina A';
-If oeg=92 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=93 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=94 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=95 then label325.caption:='| Almacen de amino ácidos';
-If oeg=96 then label325.caption:='| Anemia';
-If oeg=97 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=98 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=99 then label325.caption:='| Necesidad de tap en carótida sineal';
-If oeg=100 then label325.caption:='| Necesidad de ejercitarse';
-If oeg>100 then label325.caption:='| Necesidad de respiración nostril alterna';
-
- oeg:=random(8);
- if  (oeg=3) then
- begin
- oeg:=random(131);
- if oeg<2 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=2 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=3 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=4 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=5 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=6 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=7 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=8 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=9 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=10 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=11 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=12 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=13 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=14 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=15 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=16 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=17 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=18 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=19 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=20 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=21 then label325.caption:=label325.caption+' | Temor a perder el juego.';
-if oeg=22 then label325.caption:=label325.caption+' | Rencor a perder.';
-if oeg=23 then label325.caption:=label325.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label325.caption:=label325.caption+' | Estabilidad mental.';
-if oeg=25 then label325.caption:=label325.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label325.caption:=label325.caption+' | Temor al criticismo.';
-if oeg=27 then label325.caption:=label325.caption+' | Temor conciente al dolor.';
-if oeg=28 then label325.caption:=label325.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label325.caption:=label325.caption+' | Temor de control parental.';
-if oeg=30 then label325.caption:=label325.caption+' | Temor al fracaso.';
-if oeg=31 then label325.caption:=label325.caption+' | Pérdida de identidad.';
-if oeg=32 then label325.caption:=label325.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label325.caption:=label325.caption+' | Pérdida de objetivo.';
-if oeg=34 then label325.caption:=label325.caption+' | Sobre entendimiento.';
-if oeg=35 then label325.caption:=label325.caption+' | Sobre confidencia.';
-if oeg=36 then label325.caption:=label325.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=38 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=39 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=40 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=41 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=42 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=43 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=44 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=45 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=46 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=47 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=48 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=49 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=50 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=51 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=52 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=53 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=54 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=55 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=56 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=57 then label325.caption:=label325.caption+' | Demasiados condicionantes.';
-if oeg=58 then label325.caption:=label325.caption+' | Demasiada negatividad.';
-if oeg=59 then label325.caption:=label325.caption+' | Control externo.';
-if oeg=60 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=61 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=62 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=63 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=64 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=65 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=66 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=67 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=68 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=69 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=70 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=71 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=72 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=73 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=74 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=75 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=76 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=77 then label325.caption:=label325.caption+' | Lucha.';
-if oeg=78 then label325.caption:=label325.caption+' | Falta de un objetivo.';
-if oeg=79 then label325.caption:=label325.caption+' | Temor monetario.';
-if oeg=80 then label325.caption:=label325.caption+' | Preocupación monetaria.';
-if oeg=81 then label325.caption:=label325.caption+' | Demasiada dispersidad.';
-if oeg=82 then label325.caption:=label325.caption+' | Mal entrenamiento.';
-if oeg=83 then label325.caption:=label325.caption+' | Cambio de estado mental.';
-if oeg=84 then label325.caption:=label325.caption+' | Sobre confidencia.';
-if oeg=85 then label325.caption:=label325.caption+' | Falta de entusiasmo.';
-if oeg=86 then label325.caption:=label325.caption+' | Dolor.';
-if oeg=87 then label325.caption:=label325.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label325.caption:=label325.caption+' | Regreso a la infancia.';
-if oeg=89 then label325.caption:=label325.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label325.caption:=label325.caption+' | Preocupación de terminar.';
-if oeg=91 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=92 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=93 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=94 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=95 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=96 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=97 then label325.caption:=label325.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label325.caption:=label325.caption+' | Preocupación por compañeros.';
-if oeg=99 then label325.caption:=label325.caption+' | Tristeza excesiva.';
-if oeg=100 then label325.caption:=label325.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label325.caption:=label325.caption+' | Manejo de la íra.';
-if oeg=102 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=106 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=107 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=108 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=109 then label325.caption:=label325.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label325.caption:=label325.caption+' | Ira hacia los oponenetes.';
-if oeg=111 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=112 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=113 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=114 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=115 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=116 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=117 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=118 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=119 then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=120 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=121 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=122 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=123 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=124 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=125 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=126 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=127 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=128 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg=129 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-if oeg>129 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-   end;
-
-    oeg:=random(8);
- if  (oeg=3) then
- begin
-oeg:=random(74);
-if oeg<2 then label325.caption:=label325.caption+' | Regresión.';
-if oeg=2 then label325.caption:=label325.caption+' | Agresión.';
-if oeg=3 then label325.caption:=label325.caption+' | Ira.';
-if oeg=4 then label325.caption:=label325.caption+' | Ansiedad.';
-if oeg=5 then label325.caption:=label325.caption+' | Conciencia.';
-if oeg=6 then label325.caption:=label325.caption+' | Tristeza.';
-if oeg=7 then label325.caption:=label325.caption+' | Culpabilidad.';
-if oeg=8 then label325.caption:=label325.caption+' | Autismo.';
-if oeg=9 then label325.caption:=label325.caption+' | Negación.';
-if oeg=10 then label325.caption:=label325.caption+' | Descuido.';
-if oeg=11 then label325.caption:=label325.caption+' | Desilusión.';
-if oeg=12 then label325.caption:=label325.caption+' | Depresión.';
-if oeg=13 then label325.caption:=label325.caption+' | Poder.';
-if oeg=14 then label325.caption:=label325.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label325.caption:=label325.caption+' | Temor.';
-if oeg=16 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=17 then label325.caption:=label325.caption+' | Duda.';
-if oeg=18 then label325.caption:=label325.caption+' | Celos.';
-if oeg=19 then label325.caption:=label325.caption+' | Alegría.';
-if oeg=20 then label325.caption:=label325.caption+' | Lujuria.';
-if oeg=21 then label325.caption:=label325.caption+' | Avaricia.';
-if oeg=22 then label325.caption:=label325.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label325.caption:=label325.caption+' | Dolor psíquico.';
-if oeg=24 then label325.caption:=label325.caption+' | Pasividad.';
-if oeg=25 then label325.caption:=label325.caption+' | Proyección.';
-if oeg=26 then label325.caption:=label325.caption+' | Racionalizar.';
-if oeg=27 then label325.caption:=label325.caption+' | Imprudencia.';
-if oeg=28 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=29 then label325.caption:=label325.caption+' | Abandono.';
-if oeg=30 then label325.caption:=label325.caption+' | Vergüenza.';
-if oeg=31 then label325.caption:=label325.caption+' | Traición.';
-if oeg=32 then label325.caption:=label325.caption+' | Malentendimiento.';
-if oeg=33 then label325.caption:=label325.caption+' | Curiosidad.';
-if oeg=34 then label325.caption:=label325.caption+' | Sobrecogimiento.';
-if oeg=35 then label325.caption:=label325.caption+' | Conflicto religioso.';
-if oeg=36 then label325.caption:=label325.caption+' | Conflicto de identidad.';
-if oeg=37 then label325.caption:=label325.caption+' | Resistencia al cambio.';
-if oeg=38 then label325.caption:=label325.caption+' | Nervios.';
-if oeg=39 then label325.caption:=label325.caption+' | Risa.';
-if oeg=40 then label325.caption:=label325.caption+' | Entusiasmo.';
-if oeg=41 then label325.caption:=label325.caption+' | Vanidad.';
-if oeg=42 then label325.caption:=label325.caption+' | Negociación.';
-if oeg=43 then label325.caption:=label325.caption+' | Coraje.';
-if oeg=44 then label325.caption:=label325.caption+' | Vergüenza.';
-if oeg=45 then label325.caption:=label325.caption+' | Monotonía.';
-if oeg=46 then label325.caption:=label325.caption+' | Necesidad de cambio.';
-if oeg=47 then label325.caption:=label325.caption+' | Observación.';
-if oeg=48 then label325.caption:=label325.caption+' | Antagonismo.';
-if oeg=49 then label325.caption:=label325.caption+' | Sensualidad.';
-if oeg=50 then label325.caption:=label325.caption+' | Espiritualidad.';
-if oeg=51 then label325.caption:=label325.caption+' | Sexualidad.';
-if oeg=52 then label325.caption:=label325.caption+' | Adictividad.';
-if oeg=53 then label325.caption:=label325.caption+' | Enjuiciamiento.';
-if oeg=54 then label325.caption:=label325.caption+' | Apatía.';
-if oeg=55 then label325.caption:=label325.caption+' | Extasis.';
-if oeg=56 then label325.caption:=label325.caption+' | Inepcia.';
-if oeg=57 then label325.caption:=label325.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label325.caption:=label325.caption+' | Perfeccionismo.';
-if oeg=59 then label325.caption:=label325.caption+' | Desesperación.';
-if oeg=60 then label325.caption:=label325.caption+' | Dominación.';
-if oeg=61 then label325.caption:=label325.caption+' | Sumisión.';
-if oeg=62 then label325.caption:=label325.caption+' | Orgullo.';
-if oeg=63 then label325.caption:=label325.caption+' | Resentimiento.';
-if oeg=64 then label325.caption:=label325.caption+' | Choc.';
-if oeg=65 then label325.caption:=label325.caption+' | Descuido.';
-if oeg=66 then label325.caption:=label325.caption+' | Obsesividad.';
-if oeg=67 then label325.caption:=label325.caption+' | Impulsividad.';
-if oeg=68 then label325.caption:=label325.caption+' | Manías incontrolables.';
-if oeg=69 then label325.caption:=label325.caption+' | Impulsividad.';
-if oeg=70 then label325.caption:=label325.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label325.caption:=label325.caption+' | Distracción.';
-if oeg=72 then label325.caption:=label325.caption+' | Concentración.';
-if oeg=73 then label325.caption:=label325.caption+' | Irrealismo.';
-if oeg>73 then label325.caption:=label325.caption+' | Frustración.';
-end;
-end
 until
 (MyChrono2.TimeElapsed > (vtotal)) or (vsale);
 GProgreso.Progress  :=  vtotal;
 FMain.shaping:=random(100);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono2.Stop;
 label328.caption:= '|||';
 label329.caption:= '|||';
@@ -35715,12 +32914,10 @@ if checkbox70.checked=true then  vart1:=vart1+1;
 if checkbox71.checked=true then  vart1:=vart1+1;
 SpinEdit2.MinValue:=vart1;
 SpinEdit2.Value:=vart1;
-
 if checkbox72.checked=true then begin
-     vart1:=vart1+10;
-     SpinEdit2.Value:=vart1;
+vart1:=vart1+10;
+SpinEdit2.Value:=vart1;
 end;
-
 end;
 
 procedure TtestForm1.CheckBox1Click(Sender: TObject);
@@ -35769,14 +32966,12 @@ end;
 procedure TtestForm1.CheckBox7Click(Sender: TObject);
 begin
 autoemg:=10;
-FMain.button79.Enabled:=false;
 TherapyTimeSet();
 end;
 
 procedure TtestForm1.CheckBox6Click(Sender: TObject);
 begin
 tmj:=10;
-FMain.button79.Enabled:=false;
 TherapyTimeSet();
 end;
 
@@ -35826,7 +33021,6 @@ end;
 procedure TtestForm1.CheckBox15Click(Sender: TObject);
 begin
 relax:=10;
-FMain.button79.Enabled:=false;
 TherapyTimeSet();
 end;
 
@@ -35836,7 +33030,6 @@ Reaccion_Irregular(); MyChrono2.Start;
 Panel6.Caption := 'Duración aproximada | Sin determinar (ver cronómetro).';
 Index:='';
   DM.Conscida.IndexName := Index;
-  {DM.Conscida.Open;}
   DM.Conscida.First;
                                                              GProgreso.Progress:=0;
 
@@ -35850,7 +33043,6 @@ Label208.caption:='REALIZANDO ZAP AUTOMATICO PARA '+'CELULITIS...';
      if zap1>75 then zap1:=90;
 panel2.refresh;
      DM.Conscida.Disablecontrols;
-     {DM.Conscida.IndexName:='';}
      l:=1;
      DM.Conscida.FindKey([8666]);
      Value:=DM.ConscidaOldValue.AsInteger +15;
@@ -35925,7 +33117,6 @@ panel2.refresh;
       ChangingPulses(5555,50* ren,51* ren,2,1,zap-15,
  'llllllll','llllllll');
                                                                //      GProgreso.Progress:=90;
-  
    DM.Conscida.FindKey([494]);
      Value:=DM.ConscidaOldValue.AsInteger +15;
    Ren:= value*20;
@@ -35941,7 +33132,6 @@ end;
 
 procedure TtestForm1.Label249Click(Sender: TObject);
 begin
-
   DM.QueryFilter.Active:=False;
   QString:='\';
   FTest_Alterna.pFiltra_Conscida(QString);
@@ -35963,20 +33153,19 @@ if thera.purt>0 then begin
 label245.visible:=true;
 label246.visible:=true;
 end;
-if oeg=1 then showmessage('Use el panel del ''Súperconciente''.');
-    end;
+end;
 
 procedure TtestForm1.ZapHypothalamusGallBladconnection1Click(
   Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono2.Start;
+Reaccion_Irregular();
+MyChrono2.Start;
 Index:='';
   DM.Conscida.IndexName := Index;
   {DM.Conscida.Open;}
   DM.Conscida.First;
                                                              GProgreso.Progress:=0;
-
-         zap :=  10;
+   zap :=  10;
            Zap1:=Zap1+30;
      if zap1>75 then zap1:=90;
  DM.Conscida.Disablecontrols;
@@ -36003,7 +33192,6 @@ begin
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-
   inc(no); DM.Info.Appendrecord([no,soc,label250.caption ]);
 end;
 
@@ -36013,7 +33201,6 @@ begin
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-
   inc(no); DM.Info.Appendrecord([no,soc,label251.caption ]);
 end;
 
@@ -36023,7 +33210,6 @@ begin
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-
   inc(no); DM.Info.Appendrecord([no,soc,label252.caption ]);
 end;
 
@@ -36033,23 +33219,12 @@ begin
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-
   inc(no); DM.Info.Appendrecord([no,soc,label253.caption ]);
-end;
-
-procedure TtestForm1.BioPictures1Click(Sender: TObject);
-begin
- Application.CreateForm(Tbiopic, biopic);
- biopic.showmodal;
-  Biopic.TabbedNotebook1Click(Sender);
- biopic.Free;
- SaveBodyVariables
 end;
 
 procedure TtestForm1.Button60Click(Sender: TObject);
 begin
 button60.Enabled:=False;
-memo7.visible:=true;
   Panel2.Top:=4;
   Panel2.Height:=669;
 panel2.visible:=true;
@@ -36058,110 +33233,7 @@ GProgreso.Progress := 0;
 button18.enabled:=false;
 button19.visible:=true;
 me22:=0;
-  If SpeachForm.DMessageTalkIF( '¿Desea usar las preguntas?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me22:=10;;
-      end;
-       if me22= 10 then begin
-   If SpeachForm.DMessageTalkIF( '¿Es Ud. inpaciente y quiere sanarse más rápido que su cuerpo?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Inpaciencia';
-       end;
-   If SpeachForm.DMessageTalkIF( 'Tal vez Ud. no es conciente que la sanación está ocurriendo  ¿Cúales son los resultados positivos?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Descuido';
-       end;
-   If SpeachForm.DMessageTalkIF( '¿Hay alguna ganancia económica con la enfermedad?  ¿Alguna entidad le subsidia durante su periodo de convalecencia?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Avaricia';
-      ve1:=10;;
-       end;
-         If SpeachForm.DMessageTalkIF( '¿Hay algún trauma emocional importante que pueda prevenir la sanación?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Trauma emocional';
-      ve2:=10;;
-       end;
-         If SpeachForm.DMessageTalkIF( '¿Ha tenido alguna intervención quirúrgica? (4 de cada 5 intervenciones quirúrgicas tienen resultados colaterales a largo plazo).'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Cirugía';
-      ve2:=10;;
-       end;
-          If SpeachForm.DMessageTalkIF( '¿Consigue alguna ganancia emocional de su afección? ¿Le prestan más atención si está enfermo/a?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Inseguridad';
-      ve2:=10;;
-       end;
-          If SpeachForm.DMessageTalkIF( '¿Se ha convertido la afección una parte de sí mismo/a? ¿Se identifica Ud. con su afección?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Identificación con la afección';
-      ve3:=10;;
-       end;
-                    If SpeachForm.DMessageTalkIF( '¿Cree que es la total sanación posible? ¿Cree Ud. que el sistema le puede ayudar a sanarse?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrNo then begin
-    label256.caption:=label256.caption+' | Falta de fé';
-      ve4:=10;;
-       end;
-           If SpeachForm.DMessageTalkIF( '¿Consume esteroides? ¿Alguna vez los ha consumido? Los esteroides previenen la sanación.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Esteroides';
-      ve5:=10;;
-       end;
-              If SpeachForm.DMessageTalkIF( '¿Puede concebir su vida sin la afección? Descríbala.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrNo then begin
-    label256.caption:=label256.caption+' | Represión';
-      ve6:=10;;
-       end;
-           If SpeachForm.DMessageTalkIF( '¿Le previene la afección de trabajar? ¿Odia su trabajo?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Odia trabajar o su trabajo';
-      ve7:=10;;
-       end;
-               If SpeachForm.DMessageTalkIF( '¿Le priva su afección de vivír bien? ¿Odia la vida?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Odio hacia la vida';
-      ve7:=10;;
-       end;
-   If SpeachForm.DMessageTalkIF( '¿Le previene su afección de mantenerse socialmente activo/a? ¿Tiene temor a ser rechazado/a?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Miedo al rechazo';
-      ve8:=10;;
-       end;
-          If SpeachForm.DMessageTalkIF( '¿Es Ud. perezoso/a? ¿A hecho todo lo que ha podido para mejorarse? ¿Puede controlar sus hábitos, impulsos y adicciones?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+'| Pereza';
-      ve9:=10;;
-       end;
-          If SpeachForm.DMessageTalkIF( '¿Realmente desea que su cuerpo se sane a sí mismo, o solo desea conocer su afección? El sistema puede solo ayudar si Ud. se ayuda.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrNo then begin
-    label256.caption:=label256.caption+' | Negación';
-      ve10:=10;;
-       end;
-                       If SpeachForm.DMessageTalkIF( '¿Sobre racionaliza su condición? Su cuerpo se sana a sí mísmo si su mente verbal no interfiere.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Sobre racionalización';
-      ve11:=10;;
-       end;
-                    If SpeachForm.DMessageTalkIF( '¿Le atemoriza o le cuesta trabajo cambiar? Describa los cambios a los que teme.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-    label256.caption:=label256.caption+' | Temor';
-      ve11:=10;;
-       end;
-                If SpeachForm.DMessageTalkIF( '¿Puede aceptar la vida con su afección y ver la belleza de la vida (Sí, incluso su vida)? La aceptación puede causar sanación.'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrNo then begin
-    label256.caption:=label256.caption+' | No aceptación';
-      ve12:=10;;
-       end;
-                If SpeachForm.DMessageTalkIF( '¿Está aprendiendo o ha aprendido las lecciones que le ha enseñado su afección?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrNo then begin
-    label256.caption:=label256.caption+'| Falta de concientización';
-      ve13:=10;;
-       end;
-       end;
-
-     panel6.caption:='';
-     panel6.refresh;
-
-    Index:='ByValue';
+Index:='ByValue';
    DM.Conscida.IndexName := Index;
    DM.Conscida.First;
    DM.Conscida.last;
@@ -36183,732 +33255,19 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Target1:=0;
 Panel2.visible := false;
-oeg:=random(14);
-label223.caption:='| Estrés emocional.';
-if oeg=1 then label223.caption:='| Estrés.';
-if oeg=2 then label223.caption:='| Toma de conciencia.';
-if oeg=3 then label223.caption:='| Factores mentales.';
-if oeg=4 then label223.caption:='| Factores heredados.';
-if oeg=5 then label223.caption:='| Alergias.';
-if oeg=6 then label223.caption:='| Toxinas.';
-if oeg=7 then label223.caption:='| Patógenos.';
-if oeg=8 then label223.caption:='| Energía perversa.';
-if oeg=9 then label223.caption:='| Trauma o lesión.';
-if oeg=10 then label223.caption:='| Deficiencia o exceso nutricional.';
-if oeg=11 then label223.caption:='| Atáque psíquico.';
-if oeg=12 then label223.caption:='| Repercusiones kármicas.';
-if oeg=13 then label223.caption:='| Opresión espiritual.';
-oeg:=random(10);
-if oeg=0 then label98.caption:='| Resistencia al cambio o a explorarse a sí mismo/a.';
-if oeg=1 then label98.caption:='| Estrés.';
-if oeg=2 then label98.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label98.caption:='| Factores mentales.';
-if oeg=4 then label98.caption:='| Factores heredados.';
-if oeg=5 then label98.caption:='| Alergias.';
-if oeg=6 then label98.caption:='| Toxinas.';
-if oeg=7 then label98.caption:='| Patógenos.';
-if oeg=8 then label98.caption:='| Energía perversa.';
-if oeg=9 then label98.caption:='| Trauma o lesión.';
-if oeg=10 then label98.caption:='| Deficiencia o exceso nutricional.';
-if pn2>2 then label98.caption:='| Medicaciones alopáticas.';
-if pn3>10 then label98.caption:='| Tabaquismo.';
-if pn8>5 then label98.caption:='| Uso del azúcar.';
-if pn12>10 then label98.caption:='| Toxicidad.';
-if pn7>9 then label98.caption:='| Estrés.';
-if pn5>8 then label98.caption:='| Metales pesados relacionados con el mercurio.';
-if pn4>0 then label98.caption:='| Supresión alopática.';
-
-label99.caption:='| Homeopatía clásica.';
-oeg:=random(13);
-if oeg=0 then label226.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label226.caption:='| Reducción de estrés.';
-if oeg=2 then label226.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label226.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label226.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label226.caption:='| Terapia de alersodes.';
-if oeg=6 then label226.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label226.caption:='| Nosodes para patógenos.';
-if oeg=9 then label226.caption:='| Terapia nutricional.';
-if oeg=8 then label226.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label226.caption:='| Fitoterapia.';
-if oeg=10 then label226.caption:='| Terapia de sarcodes.';
-if oeg=11 then label226.caption:='  Homeopatía combinativa.';
-if oeg>11 then label226.caption:='| Medicina bio-energética.';
-oeg:=random(27);
-if oeg=0 then label99.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label99.caption:='| Reducción de estrés.';
-if oeg=2 then label99.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label99.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label99.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label99.caption:='| Terapia de alersodes.';
-if oeg=6 then label99.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label99.caption:='| Nosodes para patógenos.';
-if oeg=19 then label99.caption:='| Terapia nutricional.';
-if oeg=8 then label99.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label99.caption:='| Fitoterapia.';
-if oeg=10 then label99.caption:='| Terapia de sarcodes.';
-if oeg=11 then label99.caption:='  Homeopatía combinativa.';
-if oeg=12 then label99.caption:='| Terapia vitamínica.';
-if oeg=20 then label99.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label99.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label99.caption:='| Terapia oligo mineral.';
-if oeg=15 then label99.caption:='| Tratar flora intestinal.';
-if oeg=16 then label99.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label99.caption:='| Control de dieta.';
-if oeg=22 then label99.caption:='| Terapia nutricional.';
-if oeg=18 then label99.caption:='| Ejercicio, cardiovascular.';
-if oeg=21 then label99.caption:='| Ejercicio, yoga.';
-if oeg=23 then label99.caption:='| Ejercicio, pilates.';
-if oeg=24 then label99.caption:='| Terapia de ajuste y postura.';
-if oeg=25 then label99.caption:='| Terapia de acupuntura.';
-if oeg>25 then label99.caption:='| Medicina bio-energética.';
-if pn2>2 then label99.caption:='| Medicaciones alopáticas.';
-if pn3>30 then label99.caption:='| Abandono del tabaquismo.';
-if pn8>10 then label99.caption:='| Terapia de adicciones.';
-if pn12>10 then label99.caption:='| Toxicidad.';
-if pn7>11 then label99.caption:='| Reducción de estrés.';
-if pn5>18 then label99.caption:='| Desintoxicación de metales pesados.';
-if pn4>2 then label99.caption:='| Dificultad con la supresión alopática.';
-oeg:=random(16);
-if oeg=0 then label100.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label100.caption:='| Reducción de estrés.';
-if oeg=2 then label100.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label100.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label100.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label100.caption:='| Terapia de alersodes.';
-if oeg=6 then label100.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label100.caption:='| Nosodes para patógenos.';
-if oeg=9 then label100.caption:='| Terapia nutricional.';
-if oeg=8 then label100.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label100.caption:='| Fitoterapia.';
-if oeg=10 then label100.caption:='| Terapia de sarcodes.';
-if oeg=11 then label100.caption:='| Homeopatía combinativa.';
-if oeg>11 then label100.caption:='| Medicina bio-energética.';
-           oeg:=2771+(random(22));
-                oeg:=random(32);
-if oeg=0 then label95.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=1 then label95.caption:='| Posible órgano más estresado: piel.';
-if oeg=2 then label95.caption:='| Posible órgano más estresado: cerebro.';
-if oeg=3 then label95.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=4 then label95.caption:='| Posible órgano más estresado: estómago.';
-if oeg=5 then label95.caption:='| Posible órgano más estresado: sistema ocular.';
-if oeg=6 then label95.caption:='| Posible órgano más estresado: intestinos.';
-if oeg=7 then label95.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=8 then label95.caption:='| Posible órgano más estresado: estómago.';
-if oeg=9 then label95.caption:='| Posible órgano más estresado: suprarrenales.';
-if oeg=10 then label95.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=11 then label95.caption:='| Posible órgano más estresado: factores emocionales.';
-if oeg=12 then label95.caption:='| Posible órgano más estresado: sangre.';
-if oeg=13 then label95.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=14 then label95.caption:='| Posible órgano más estresado: dentadura.';
-if oeg=15 then label95.caption:='| Posible órgano más estresado: formación reticular.';
-if oeg=16 then label95.caption:='| Posible órgano más estresado: médula oblongata.';
-if oeg=17 then label95.caption:='| Posible órgano más estresado: lóbulo frontal del cerebro.';
-if oeg=18 then label95.caption:='| Posible órgano más estresado: lóbulo parietal del cerebro.';
-if oeg=19 then label95.caption:='| Posible órgano más estresado: lóbulo occipital del cerebro.';
-if oeg=20 then label95.caption:='| Posible órgano más estresado: lóbulo temporal del cerebro.';
-if oeg=21 then label95.caption:='| Posible órgano más estresado: tiroides.';
-if oeg=22 then label95.caption:='| Posible órgano más estresado: timo.';
-if oeg=23 then label95.caption:='| Posible órgano más estresado: médula espinal.';
-if oeg=24 then label95.caption:='| Posible órgano más estresado: sistema límbico.';
-if oeg=25 then label95.caption:='| Posible órgano más estresado: ciruittos de la memoria.';
-if oeg=26 then label95.caption:='| Posible órgano más estresado: hipotálamo.';
-if oeg=27 then label95.caption:='| Posible órgano más estresado: pineal.';
-if oeg=28 then label95.caption:='| Posible órgano más estresado: pituitaria.';
-if oeg=29 then label95.caption:='| Posible órgano más estresado: paratiroides.';
-if oeg=30 then label95.caption:='| Posible órgano más estresado: sangre.';
-if oeg=31 then label95.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=32 then label95.caption:='| Posible órgano más estresado: dentadura.';
-  oeg:=random(32);
-if oeg=0 then label95.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=1 then label95.caption:='| Posible órgano más estresado: piel.';
-if oeg=2 then label95.caption:='| Posible órgano más estresado: cerebro.';
-if oeg=3 then label95.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=4 then label95.caption:='| Posible órgano más estresado: estómago.';
-if oeg=5 then label95.caption:='| Posible órgano más estresado: sistema ocular.';
-if oeg=6 then label95.caption:='| Posible órgano más estresado: intestinos.';
-if oeg=7 then label95.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=8 then label95.caption:='| Posible órgano más estresado: estómago.';
-if oeg=9 then label95.caption:='| Posible órgano más estresado: suprarrenales.';
-if oeg=10 then label95.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=11 then label95.caption:='| Posible órgano más estresado: factores emocionales.';
-if oeg=12 then label95.caption:='| Posible órgano más estresado: sangre.';
-if oeg=13 then label95.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=14 then label95.caption:='| Posible órgano más estresado: dentadura.';
-if oeg=15 then label95.caption:='| Posible órgano más estresado: formación reticular.';
-if oeg=16 then label95.caption:='| Posible órgano más estresado: médula oblongata.';
-if oeg=17 then label95.caption:='| Posible órgano más estresado: lóbulo frontal del cerebro.';
-if oeg=18 then label95.caption:='| Posible órgano más estresado: lóbulo parietal del cerebro.';
-if oeg=19 then label95.caption:='| Posible órgano más estresado: lóbulo occipital del cerebro.';
-if oeg=20 then label95.caption:='| Posible órgano más estresado: lóbulo temporal del cerebro.';
-if oeg=21 then label95.caption:='| Posible órgano más estresado: tiroides.';
-if oeg=22 then label95.caption:='| Posible órgano más estresado: timo.';
-if oeg=23 then label95.caption:='| Posible órgano más estresado: médula espinal.';
-if oeg=24 then label95.caption:='| Posible órgano más estresado: sistema límbico.';
-if oeg=25 then label95.caption:='| Posible órgano más estresado: ciruittos de la memoria.';
-if oeg=26 then label95.caption:='| Posible órgano más estresado: hipotálamo.';
-if oeg=27 then label95.caption:='| Posible órgano más estresado: pineal.';
-if oeg=28 then label95.caption:='| Posible órgano más estresado: pituitaria.';
-if oeg=29 then label95.caption:='| Posible órgano más estresado: paratiroides.';
-if oeg=30 then label95.caption:='| Posible órgano más estresado: sangre.';
-if oeg=31 then label95.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=32 then label95.caption:='| Posible órgano más estresado: dentadura.';
-if testform1.pn2>3 then label95.caption:='| Posible órgano más estresado: sistema linfático.';
-if testform1.pn3>15 then label95.caption:='| Posible órgano más estresado: pulmones.';
-if testform1.pn8>5 then label95.caption:='| Posible órgano más estresado: páncreas.';
-if testform1.pn12>10 then label95.caption:='| Posible órgano más estresado: hígado.';
-if testform1.pn7>9 then label95.caption:='| Posible órgano más estresado: sistema endocrino.';
-if testform1.pn5>10 then label95.caption:='| Posible órgano más estresado: dentadura.';
-if testform1.pn4>4 then label95.caption:='| Posible órgano más estresado: suprarrenales.';
-if testform1.pn10>3 then label95.caption:='| Posible órgano más estresado: hígado.';
-if testform1.pn19>4 then label95.caption:='| Posible órgano más estresado: cerebro.';
-oeg:=random(32);
-if oeg=0 then label174.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=1 then label174.caption:='| Posible órgano más estresado: piel.';
-if oeg=2 then label174.caption:='| Posible órgano más estresado: cerebro.';
-if oeg=3 then label174.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=4 then label174.caption:='| Posible órgano más estresado: estómago.';
-if oeg=5 then label174.caption:='| Posible órgano más estresado: sistema ocular.';
-if oeg=6 then label174.caption:='| Posible órgano más estresado: intestinos.';
-if oeg=7 then label174.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=8 then label174.caption:='| Posible órgano más estresado: estómago.';
-if oeg=9 then label174.caption:='| Posible órgano más estresado: suprarrenales.';
-if oeg=10 then label174.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=11 then label174.caption:='| Posible órgano más estresado: factores emocionales.';
-if oeg=12 then label174.caption:='| Posible órgano más estresado: sangre.';
-if oeg=13 then label174.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=14 then label174.caption:='| Posible órgano más estresado: dentadura.';
-if oeg=15 then label174.caption:='| Posible órgano más estresado: formación reticular.';
-if oeg=16 then label174.caption:='| Posible órgano más estresado: médula oblongata.';
-if oeg=17 then label174.caption:='| Posible órgano más estresado: lóbulo frontal del cerebro.';
-if oeg=18 then label174.caption:='| Posible órgano más estresado: lóbulo parietal del cerebro.';
-if oeg=19 then label174.caption:='| Posible órgano más estresado: lóbulo occipital del cerebro.';
-if oeg=20 then label174.caption:='| Posible órgano más estresado: lóbulo temporal del cerebro.';
-if oeg=21 then label174.caption:='| Posible órgano más estresado: tiroides.';
-if oeg=22 then label174.caption:='| Posible órgano más estresado: timo.';
-if oeg=23 then label174.caption:='| Posible órgano más estresado: médula espinal.';
-if oeg=24 then label174.caption:='| Posible órgano más estresado: sistema límbico.';
-if oeg=25 then label174.caption:='| Posible órgano más estresado: ciruittos de la memoria.';
-if oeg=26 then label174.caption:='| Posible órgano más estresado: hipotálamo.';
-if oeg=27 then label174.caption:='| Posible órgano más estresado: pineal.';
-if oeg=28 then label174.caption:='| Posible órgano más estresado: pituitaria.';
-if oeg=29 then label174.caption:='| Posible órgano más estresado: paratiroides.';
-if oeg=30 then label174.caption:='| Posible órgano más estresado: sangre.';
-if oeg=31 then label174.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=32 then label174.caption:='| Posible órgano más estresado: dentadura.';
-  oeg:=random(32);
-if oeg=0 then label174.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=1 then label174.caption:='| Posible órgano más estresado: piel.';
-if oeg=2 then label174.caption:='| Posible órgano más estresado: cerebro.';
-if oeg=3 then label174.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=4 then label174.caption:='| Posible órgano más estresado: estómago.';
-if oeg=5 then label174.caption:='| Posible órgano más estresado: sistema ocular.';
-if oeg=6 then label174.caption:='| Posible órgano más estresado: intestinos.';
-if oeg=7 then label174.caption:='| Posible órgano más estresado: pulmones.';
-if oeg=8 then label174.caption:='| Posible órgano más estresado: estómago.';
-if oeg=9 then label174.caption:='| Posible órgano más estresado: suprarrenales.';
-if oeg=10 then label174.caption:='| Posible órgano más estresado: senos nasales.';
-if oeg=11 then label174.caption:='| Posible órgano más estresado: factores emocionales.';
-if oeg=12 then label174.caption:='| Posible órgano más estresado: sangre.';
-if oeg=13 then label174.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=14 then label174.caption:='| Posible órgano más estresado: dentadura.';
-if oeg=15 then label174.caption:='| Posible órgano más estresado: formación reticular.';
-if oeg=16 then label174.caption:='| Posible órgano más estresado: médula oblongata.';
-if oeg=17 then label174.caption:='| Posible órgano más estresado: lóbulo frontal del cerebro.';
-if oeg=18 then label174.caption:='| Posible órgano más estresado: lóbulo parietal del cerebro.';
-if oeg=19 then label174.caption:='| Posible órgano más estresado: lóbulo occipital del cerebro.';
-if oeg=20 then label174.caption:='| Posible órgano más estresado: lóbulo temporal del cerebro.';
-if oeg=21 then label174.caption:='| Posible órgano más estresado: tiroides.';
-if oeg=22 then label174.caption:='| Posible órgano más estresado: timo.';
-if oeg=23 then label174.caption:='| Posible órgano más estresado: médula espinal.';
-if oeg=24 then label174.caption:='| Posible órgano más estresado: sistema límbico.';
-if oeg=25 then label174.caption:='| Posible órgano más estresado: ciruittos de la memoria.';
-if oeg=26 then label174.caption:='| Posible órgano más estresado: hipotálamo.';
-if oeg=27 then label174.caption:='| Posible órgano más estresado: pineal.';
-if oeg=28 then label174.caption:='| Posible órgano más estresado: pituitaria.';
-if oeg=29 then label174.caption:='| Posible órgano más estresado: paratiroides.';
-if oeg=30 then label174.caption:='| Posible órgano más estresado: sangre.';
-if oeg=31 then label174.caption:='| Posible órgano más estresado: sistema linfático.';
-if oeg=32 then label174.caption:='| Posible órgano más estresado: dentadura.';
-if testform1.pn2>3 then label174.caption:='| Posible órgano más estresado: sistema linfático.';
-if testform1.pn3>15 then label174.caption:='| Posible órgano más estresado: pulmones.';
-if testform1.pn8>5 then label174.caption:='| Posible órgano más estresado: páncreas.';
-if testform1.pn12>10 then label174.caption:='| Posible órgano más estresado: hígado.';
-if testform1.pn7>9 then label174.caption:='| Posible órgano más estresado: sistema endocrino.';
-if testform1.pn5>10 then label174.caption:='| Posible órgano más estresado: dentadura.';
-if testform1.pn4>4 then label174.caption:='| Posible órgano más estresado: suprarrenales.';
-if testform1.pn10>3 then label174.caption:='| Posible órgano más estresado: hígado.';
-if testform1.pn19>4 then label174.caption:='| Posible órgano más estresado: cerebro.';
-oeg:=random(13);
-if oeg=0 then label96.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label96.caption:='| Reducción de estrés.';
-if oeg=2 then label96.caption:='| Aumento de conciencia y/o educación.';
-if oeg=3 then label96.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label96.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label96.caption:='| Terapia de alersodes.';
-if oeg=6 then label96.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label96.caption:='| Nosodes para patógenos.';
-if oeg=9 then label96.caption:='| Terapia nutricional.';
-if oeg=8 then label96.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label96.caption:='| Fitoterapia.';
-if oeg=10 then label96.caption:='| Terapia de sarcodes.';
-if oeg=11 then label96.caption:='| Homeopatía combinativa.';
-if oeg>11 then label96.caption:='| Medicina bio-energética.';
-if testform1.pn2>2 then label96.caption:='| Medicaciones alopáticas.';
-if testform1.pn3>30 then label96.caption:='| Abandono del tabaquismo.';
-if testform1.pn8>10 then label96.caption:='| Terapias de adicción.';
-if testform1.pn12>10 then label96.caption:='| Toxicidad.';
-if testform1.pn7>11 then label96.caption:='| Reducción de estrés.';
-if testform1.pn5>18 then label96.caption:='| Desintoxicación de metales pesados.';
-if testform1.pn4>2 then label96.caption:='| Dificultad con la supresión alopática.';
-oeg:=1+random(44+ran88);
-if oeg=1   then     label101.caption:='Tiendo la mano a la gente necesitada.';
-if oeg=2   then     label101.caption:='Visito a un anciano solitario de mi barrio.';
-if oeg=3   then     label101.caption:='Actúo del modo más apropiado en todo momento.';
-if oeg=4   then     label101.caption:='Siempre sé hacia dónde voy y cómo llegar.';
-if oeg=5   then     label101.caption:='Acepto los milagros sanadores en mi vida y en mi mundo.';
-if oeg=6   then     label101.caption:='Mis procesos corporales son normales y naturales.';
-if oeg=7   then     label101.caption:='Acepto mi cuerpo; sé que es hermoso, magnífico y maravilloso.';
-if oeg=8   then     label101.caption:='En mi vida ocurre un milagro tras otro.';
-if oeg=9   then     label101.caption:='Mis cosas siempre se solucionan de la mejor manera.';
-if oeg=10  then     label101.caption:='Reduzco mi estrés viviendo armónicamente.';
-if oeg=11   then     label101.caption:='Todas mis células reaccionan de forma positiva a mis imágenes mentales positivas.';
-if oeg=12   then     label101.caption:='Genero fuerza e inmunidad ante las situaciones negativas.';
-if oeg=13   then     label101.caption:='Me resulta fácil aceptar la salud perfecta.';
-if oeg=14   then     label101.caption:='Combino las afirmaciones positivas con un programa de ejercicios que me va bien.';
-if oeg=15   then     label101.caption:='Mi cuerpo responde con rapidez a todas las situaciones.';
-if oeg=16   then     label101.caption:='Me encanta comer buenos alimentos y dormir bien por la noche.';
-if oeg=17   then     label101.caption:='Quiero a mis amigos y encuentro tiempo para estar con ellos siempre que puedo.';
-if oeg=18   then     label101.caption:='Siempre veo la bondad de la vida.';
-if oeg=19   then     label101.caption:='Mi sistema inmunitario funciona perfectamente.';
-if oeg=20   then     label101.caption:='Acepto a los demás tal como son y sin pretender cambiarlos a mi gusto.';
-if oeg=21   then     label101.caption:='Digo una palabra amable a una persona sin hogar.';
-if oeg=22   then     label101.caption:='Soy fuerte, tengo amor. Hago de mi vida una experiencia bella y digna de ser vivida.';
-if oeg=23   then     label101.caption:='Me desprendo jubilosamente del pasado, estoy en Paz.';
-if oeg=24   then     label101.caption:='Inundo de amor mi casa, que es un verdadero cielo en la Tierra.';
-if oeg=25   then     label101.caption:='Ayudo siempre que puedo.';
-if oeg=26   then     label101.caption:='Ahora elijo vivir, en el dichoso momento Presente, mi vida es toda alegría.';
-if oeg=27   then     label101.caption:='Estoy libre de adicciones, antojos y sustancias nocivas.';
-if oeg=28   then     label101.caption:='Estoy libre de alergias.';
-if oeg=29   then     label101.caption:='Confió amorosamente en las personas que me aman.';
-if oeg=30   then     label101.caption:='El Supremo guía todas mis acciones. El universo me ofrece todo aquello que necesito.';
-if oeg=31   then     label101.caption:='Estoy libre de íras.';
-if oeg=32   then     label101.caption:='Estoy libre de temores.';
-if oeg=33   then     label101.caption:='Estoy libre de ansiedad.';
-if oeg=34   then     label101.caption:='Estoy libre de preocupaciones.';
-if oeg=35   then     label101.caption:='Estoy libre de tristeza.';
-if oeg=36   then     label101.caption:='Mis pulmones funcionan perfectamente.';
-if oeg=37   then     label101.caption:='Mis riñones están en perfectas condiciones.';
-if oeg=38   then     label101.caption:='Mi corazón funciona perfectamente.';
-if oeg=39   then     label101.caption:='Mi cerebro y sistema nervioso funcionan perfectamente.';
-if oeg=40   then     label101.caption:='Mi digestión es eficaz y placentera.';
-if oeg=41   then     label101.caption:='Mis hormonas funcionan perfectamente.';
-if oeg=42   then     label101.caption:='Mi piel está en perfectas condiciones.';
-if oeg=43   then     label101.caption:='Mi hígado funciona perfectamente.';
-if oeg=44   then     label101.caption:='Dios me ama. Yo me amo y perdono. Puedo dar y recibir amor sin límites.';
-if oeg=45   then     label101.caption:='Puedo pedir todo lo que necesito, con amor y ternura.';
-label101.caption:= 'Mejor afirmación: '+ label101.caption;
-oeg:=random(32);
-if oeg=0 then label175.caption:='| Conectado con pulmones.';
-if oeg=1 then label175.caption:='| Conectado con piel.';
-if oeg=2 then label175.caption:='| Conectado con cerebro.';
-if oeg=3 then label175.caption:='| Conectado con senos nasales.';
-if oeg=4 then label175.caption:='| Conectado con estómago.';
-if oeg=5 then label175.caption:='| Conectado con ojos.';
-if oeg=6 then label175.caption:='| Conectado con flora intestinal.';
-if oeg=7 then label175.caption:='| Conectado con pulmones.';
-if oeg=8 then label175.caption:='| Conectado con estómago.';
-if oeg=9 then label175.caption:='| Conectado con suprarrenales.';
-if oeg=10 then label175.caption:='| Conectado con senos nasales.';
-if oeg=11 then label175.caption:='| Conectado con emociones.';
-if oeg=12 then label175.caption:='| Conectado con sangre.';
-if oeg=13 then label175.caption:='| Conectado con sistema linfático.';
-if oeg=14 then label175.caption:='| Conectado con dentadura.';
-if oeg=15 then label175.caption:='| Conectado con formación reticular.';
-if oeg=16 then label175.caption:='| Conectado con médula oblongata.';
-if oeg=17 then label175.caption:='| Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then label175.caption:='| Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then label175.caption:='| Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then label175.caption:='| Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then label175.caption:='| Conectado con tiroides.';
-if oeg=22 then label175.caption:='| Conectado con timo.';
-if oeg=23 then label175.caption:='| Conectado con médula espinal.';
-if oeg=24 then label175.caption:='| Conectado con sistema límbico.';
-if oeg=25 then label175.caption:='| Conectado con circuitos de la memoria.';
-if oeg=26 then label175.caption:='| Conectado con hipotálamo.';
-if oeg=27 then label175.caption:='| Conectado con pineal.';
-if oeg=28 then label175.caption:='| Conectado con pituitaria.';
-if oeg=29 then label175.caption:='| Conectado con paratiroides.';
-if oeg=30 then label175.caption:='| Conectado con sangre.';
-if oeg=31 then label175.caption:='| Conectado con sistema linfático.';
-if oeg=32 then label175.caption:='| Conectado con dentadura.';
-          t1:=random(132);
-if t1=1 then label173.Caption:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label173.Caption:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label173.Caption:='Alanina / Riñones, nervios.';
-if t1=4 then label173.Caption:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label173.Caption:='Cisteina / Utilización de los riñones.';
-if t1=6 then label173.Caption:='Leucina / Control del humor, emociones.';
-if t1=7 then label173.Caption:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label173.Caption:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label173.Caption:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label173.Caption:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label173.Caption:='Metionina / Hígado, oxigenación.';
-if t1=12 then label173.Caption:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label173.Caption:='Treonina / Producción hormonal, energía.';
-if t1=14 then label173.Caption:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label173.Caption:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label173.Caption:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label173.Caption:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label173.Caption:='Arginina / Nervios, piel.';
-if t1=19 then label173.Caption:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label173.Caption:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label173.Caption:='Adenosina / Circulación, energía.';
-if t1=22 then label173.Caption:='Uracil / Funciones del ARN.';
-if t1=23 then label173.Caption:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label173.Caption:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label173.Caption:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label173.Caption:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label173.Caption:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label173.Caption:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label173.Caption:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label173.Caption:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label173.Caption:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label173.Caption:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label173.Caption:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label173.Caption:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label173.Caption:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label173.Caption:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label173.Caption:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label173.Caption:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label173.Caption:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label173.Caption:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label173.Caption:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label173.Caption:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label173.Caption:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label173.Caption:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label173.Caption:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label173.Caption:='Arsénico / Energía, nervios.';
-if t1=47 then label173.Caption:='Digestión / Problema de absorpción.';
-if t1=48 then label173.Caption:='Sales en tejidos no especificados.';
-if t1=49 then label173.Caption:='Acidos grasos en general.';
-if t1=50 then label173.Caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label173.Caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label173.Caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label173.Caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label173.Caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label173.Caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label173.Caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label173.Caption:='Vitamina E.' ;
-if t1=58 then label173.Caption:='Vitamina E1.'  ;
-if t1=59 then label173.Caption:='Vitamina E2.' ;
-if t1=60 then label173.Caption:='Vitamina E3.'  ;
-if t1=61 then label173.Caption:='Vitamina K1.'  ;
-if t1=62 then label173.Caption:='Vitamina K3.' ;
-if t1=63 then label173.Caption:='Todas las vitaminas K.'  ;
-if t1=64 then label173.Caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label173.Caption:='CoQ6.' ;
-if t1=66 then label173.Caption:='CoQ7.' ;
-if t1=67 then label173.Caption:='CoQ8.' ;
-if t1=68 then label173.Caption:='CoQ9.'  ;
-if t1=69 then label173.Caption:='CoQ10.' ;
-if t1=70 then label173.Caption:='Todos los CoQ.';
-if t1=71 then label173.Caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label173.Caption:='Vitamina C.';
-if t1=73 then label173.Caption:='Bioflavenoides.'  ;
-if t1=74 then label173.Caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label173.Caption:='Acido hespárico.'  ;
-if t1=76 then label173.Caption:='Tirosina.'  ;
-if t1=77 then label173.Caption:='Tirosinasea.' ;
-if t1=78 then label173.Caption:='Vitamina C ase.' ;
-if t1=79 then label173.Caption:='Acido ascórbico.'  ;
-if t1=80 then label173.Caption:='Vitamina D.' ;
-if t1=81 then label173.Caption:='Vitamina D1.'  ;
-if t1=82 then label173.Caption:='Vitamina D2.'  ;
-if t1=83 then label173.Caption:='Vitamina D3.'  ;
-if t1=84 then label173.Caption:='Vitamina D4.'  ;
-if t1=85 then label173.Caption:='Vitamina A.' ;
-if t1=86 then label173.Caption:='Beta carotina.'  ;
-if t1=87 then label173.Caption:='Aceite de pescado.'  ;
-if t1=88 then label173.Caption:='Retinol.'  ;
-if t1=89 then label173.Caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label173.Caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label173.Caption:='Enzimas en general.' ;
-if t1=92 then label173.Caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label173.Caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label173.Caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label173.Caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label173.Caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label173.Caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label173.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label173.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label173.Caption:='Acidos grasos en general.' ;
-if t1=101 then label173.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label173.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label173.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label173.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label173.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label173.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label173.Caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label173.Caption:='Acidos grasos en general.' ;
-if t1=109 then label173.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label173.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label173.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label173.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label173.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label173.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label173.Caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label173.Caption:='Enzimas generales.' ;
-if t1=117 then label173.Caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label173.Caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label173.Caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label173.Caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label173.Caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label173.Caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label173.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label173.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label173.Caption:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label173.Caption:='Estaño / Nervios, músculos.';
-if t1=127 then label173.Caption:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label173.Caption:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label131.Caption:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label173.Caption:='Cobre / Nervios, energía, desintoxicación.';
-                       t1:=random(132);
-if t1=1 then label131.Caption:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label131.Caption:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label131.Caption:='Alanina / Riñones, nervios.';
-if t1=4 then label131.Caption:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label131.Caption:='Cisteina / Utilización de los riñones.';
-if t1=6 then label131.Caption:='Leucina / Control del humor, emociones.';
-if t1=7 then label131.Caption:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label131.Caption:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label131.Caption:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label131.Caption:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label131.Caption:='Metionina / Hígado, oxigenación.';
-if t1=12 then label131.Caption:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label131.Caption:='Treonina / Producción hormonal, energía.';
-if t1=14 then label131.Caption:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label131.Caption:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label131.Caption:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label131.Caption:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label131.Caption:='Arginina / Nervios, piel.';
-if t1=19 then label131.Caption:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label131.Caption:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label131.Caption:='Adenosina / Circulación, energía.';
-if t1=22 then label131.Caption:='Uracil / Funciones del ARN.';
-if t1=23 then label131.Caption:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label131.Caption:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label131.Caption:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label131.Caption:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label131.Caption:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label131.Caption:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label131.Caption:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label131.Caption:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label131.Caption:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label131.Caption:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label131.Caption:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label131.Caption:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label131.Caption:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label131.Caption:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label131.Caption:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label131.Caption:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label131.Caption:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label131.Caption:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label131.Caption:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label131.Caption:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label131.Caption:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label131.Caption:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label131.Caption:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label131.Caption:='Arsénico / Energía, nervios.';
-if t1=47 then label131.Caption:='Digestión / Problema de absorpción.';
-if t1=48 then label131.Caption:='Sales en tejidos no especificados.';
-if t1=49 then label131.Caption:='Acidos grasos en general.';
-if t1=50 then label131.Caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label131.Caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label131.Caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label131.Caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label131.Caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label131.Caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label131.Caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label131.Caption:='Vitamina E.' ;
-if t1=58 then label131.Caption:='Vitamina E1.'  ;
-if t1=59 then label131.Caption:='Vitamina E2.' ;
-if t1=60 then label131.Caption:='Vitamina E3.'  ;
-if t1=61 then label131.Caption:='Vitamina K1.'  ;
-if t1=62 then label131.Caption:='Vitamina K3.' ;
-if t1=63 then label131.Caption:='Todas las vitaminas K.'  ;
-if t1=64 then label131.Caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label131.Caption:='CoQ6.' ;
-if t1=66 then label131.Caption:='CoQ7.' ;
-if t1=67 then label131.Caption:='CoQ8.' ;
-if t1=68 then label131.Caption:='CoQ9.'  ;
-if t1=69 then label131.Caption:='CoQ10.' ;
-if t1=70 then label131.Caption:='Todos los CoQ.';
-if t1=71 then label131.Caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label131.Caption:='Vitamina C.';
-if t1=73 then label131.Caption:='Bioflavenoides.'  ;
-if t1=74 then label131.Caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label131.Caption:='Acido hespárico.'  ;
-if t1=76 then label131.Caption:='Tirosina.'  ;
-if t1=77 then label131.Caption:='Tirosinasea.' ;
-if t1=78 then label131.Caption:='Vitamina C ase.' ;
-if t1=79 then label131.Caption:='Acido ascórbico.'  ;
-if t1=80 then label131.Caption:='Vitamina D.' ;
-if t1=81 then label131.Caption:='Vitamina D1.'  ;
-if t1=82 then label131.Caption:='Vitamina D2.'  ;
-if t1=83 then label131.Caption:='Vitamina D3.'  ;
-if t1=84 then label131.Caption:='Vitamina D4.'  ;
-if t1=85 then label131.Caption:='Vitamina A.' ;
-if t1=86 then label131.Caption:='Beta carotina.'  ;
-if t1=87 then label131.Caption:='Aceite de pescado.'  ;
-if t1=88 then label131.Caption:='Retinol.'  ;
-if t1=89 then label131.Caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label131.Caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label131.Caption:='Enzimas en general.' ;
-if t1=92 then label131.Caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label131.Caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label131.Caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label131.Caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label131.Caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label131.Caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label131.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label131.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label131.Caption:='Acidos grasos en general.' ;
-if t1=101 then label131.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label131.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label131.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label131.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label131.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label131.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label131.Caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label131.Caption:='Acidos grasos en general.' ;
-if t1=109 then label131.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label131.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label131.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label131.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label131.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label131.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label131.Caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label131.Caption:='Enzimas generales.' ;
-if t1=117 then label131.Caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label131.Caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label131.Caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label131.Caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label131.Caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label131.Caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label131.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label131.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label131.Caption:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label131.Caption:='Estaño / Nervios, músculos.';
-if t1=127 then label131.Caption:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label131.Caption:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label131.Caption:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label131.Caption:='Cobre / Nervios, energía, desintoxicación.';
-  oeg:=random(43);
-if oeg=1 then label97.caption:='| Inflamación.';
-if oeg=2 then label97.caption:='| Cáncer.';
-if oeg=3 then label97.caption:='| Estrés.';
-if oeg=4 then label97.caption:='| Hipoadrenia.';
-if oeg=5 then label97.caption:='| Factores emocionales.';
-if oeg=6 then label97.caption:='| Infección.';
-if oeg=7 then label97.caption:='| Toxicidad.';
-if oeg=8 then label97.caption:='| Trauma/s.';
-if oeg=9 then label97.caption:='| Factores heredados.';
-if oeg=10 then label97.caption:='| Deficiencia o exceso de vitaminas.';
-if oeg=11 then label97.caption:='| Sistema cardiovascular.';
-if oeg=12 then label97.caption:='| Sistema hormonal.';
-if oeg=13 then label97.caption:='| Sistema linfático.';
-if oeg=14 then label97.caption:='| Hígado.';
-if oeg=15 then label97.caption:='| Riñones.';
-if oeg=16 then label97.caption:='| Aparato digestivo.';
-if oeg=17 then label97.caption:='| Tejido conectivo.';
-if oeg=18 then label97.caption:='| Huesos.';
-if oeg=19 then label97.caption:='| Acidez o alcalinidad del agua.';
-if oeg=20 then label97.caption:='| Sangre.';
-if oeg=21 then label97.caption:='| Medio ambiente.';
-if oeg=22 then label97.caption:='| Alergias.';
-if oeg=23 then label97.caption:='| Riesgo emocional.';
-if oeg=24 then label97.caption:='| Sistema circulatorio.';
-if oeg=25 then label97.caption:='| Sistema inmunitario.';
-if oeg=26 then label97.caption:='| Radiación.';
-if oeg=27 then label97.caption:='| Bacteria.';
-if oeg=28 then label97.caption:='| Fungosidades.';
-if oeg=29 then label97.caption:='| Virus.';
-if oeg=30 then label97.caption:='| Parásitos.';
-if oeg=31 then label97.caption:='| Ameba.';
-if oeg=32 then label97.caption:='| Intolerancia alimentaria.';
-if oeg=33 then label97.caption:='| Regulación del azúcar.';
-if oeg=34 then label97.caption:='| Sistema neurológico.';
-if oeg=35 then label97.caption:='| Sistema sensorial.';
-if oeg=36 then label97.caption:='| Colesterol.';
-if oeg=37 then label97.caption:='| Sistema respiratorio.';
-if oeg=38 then label97.caption:='| Oxidación.';
-if oeg=39 then label97.caption:='| Hidratación.';
-if oeg=40 then label97.caption:='| Cognicción.';
-
-oeg:=random(16);
-if oeg=0 then label257.caption:=label257.caption+' | Conexión primaria con procesos enzimáticos.';
-if oeg=1 then label257.caption:=label257.caption+' | Conexión primaria con procesos energéticos.';
-if oeg=2 then label257.caption:=label257.caption+' | Conexión primaria con cerebro.';
-if oeg=3 then label257.caption:=label257.caption+' | Conexión primaria con sistema nervioso.';
-if oeg=4 then label257.caption:=label257.caption+' | Conexión primaria con procesos enzimáticos.';
-if oeg=5 then label257.caption:=label257.caption+' | Conexión primaria con procesos hormonales.';
-if oeg=6 then label257.caption:=label257.caption+' | Conexión primaria con flora intestinal.';
-if oeg=7 then label257.caption:=label257.caption+' | Conexión primaria con sangre.';
-if oeg=8 then label257.caption:=label257.caption+' | Conexión primaria con producción hormonal.';
-if oeg=9 then label257.caption:=label257.caption+' | Conexión primaria con suprarrenales.';
-if oeg=10 then label257.caption:=label257.caption+' | Conexión primaria con pituitaria.';
-if oeg=11 then label257.caption:=label257.caption+' | Conexión primaria con factores emocionales.';
-if oeg=12 then label257.caption:=label257.caption+' | Conexión primaria con sangre.';
-if oeg=13 then label257.caption:=label257.caption+' | Conexión primaria con sistema linfático.';
-if oeg=14 then label257.caption:=label257.caption+' | Conexión primaria con conversión de energía.';
-if oeg=15 then label257.caption:=label257.caption+' | Conexión primaria con desintoxicación.';
-if oeg=16 then label257.caption:=label257.caption+' | Conexión primaria con carga tóxica.';
-  oeg:=random(43);
-if oeg=1 then label257.caption:=label257.caption+' | Inflamación.';
-if oeg=2 then label257.caption:=label257.caption+' | Cáncer.';
-if oeg=3 then label257.caption:=label257.caption+' | Estrés.';
-if oeg=4 then label257.caption:=label257.caption+' | Hipoadrenia.';
-if oeg=5 then label257.caption:=label257.caption+' | Factores emocionales.';
-if oeg=6 then label257.caption:=label257.caption+' | Infección.';
-if oeg=7 then label257.caption:=label257.caption+' | Toxicidad.';
-if oeg=8 then label257.caption:=label257.caption+' | Trauma/s.';
-if oeg=9 then label257.caption:=label257.caption+' | Factores heredados.';
-if oeg=10 then label257.caption:=label257.caption+' | Deficiencia o exceso de vitaminas.';
-if oeg=11 then label257.caption:=label257.caption+' | Sistema cardiovascular.';
-if oeg=12 then label257.caption:=label257.caption+' | Sistema hormonal.';
-if oeg=13 then label257.caption:=label257.caption+' | Sistema linfático.';
-if oeg=14 then label257.caption:=label257.caption+' | Hígado.';
-if oeg=15 then label257.caption:=label257.caption+' | Riñones.';
-if oeg=16 then label257.caption:=label257.caption+' | Aparato digestivo.';
-if oeg=17 then label257.caption:=label257.caption+' | Tejido conectivo.';
-if oeg=18 then label257.caption:=label257.caption+' | Huesos.';
-if oeg=19 then label257.caption:=label257.caption+' | Acidez o alcalinidad del agua.';
-if oeg=20 then label257.caption:=label257.caption+' | Sangre.';
-if oeg=21 then label257.caption:=label257.caption+' | Medio ambiente.';
-if oeg=22 then label257.caption:=label257.caption+' | Alergias.';
-if oeg=23 then label257.caption:=label257.caption+' | Riesgo emocional.';
-if oeg=24 then label257.caption:=label257.caption+' | Sistema circulatorio.';
-if oeg=25 then label257.caption:=label257.caption+' | Sistema inmunitario.';
-if oeg=26 then label257.caption:=label257.caption+' | Radiación.';
-if oeg=27 then label257.caption:=label257.caption+' | Bacteria.';
-if oeg=28 then label257.caption:=label257.caption+' | Fungosidades.';
-if oeg=29 then label257.caption:=label257.caption+' | Virus.';
-if oeg=30 then label257.caption:=label257.caption+' | Parásitos.';
-if oeg=31 then label257.caption:=label257.caption+' | Ameba.';
-if oeg=32 then label257.caption:=label257.caption+' | Intolerancia alimentaria.';
-if oeg=33 then label257.caption:=label257.caption+' | Regulación del azúcar.';
-if oeg=34 then label257.caption:=label257.caption+' | Sistema neurológico.';
-if oeg=35 then label257.caption:=label257.caption+' | Sistema sensorial.';
-if oeg=36 then label257.caption:=label257.caption+' | Colesterol.';
-if oeg=37 then label257.caption:=label257.caption+' | Sistema respiratorio.';
-if oeg=38 then label257.caption:=label257.caption+' | Oxidación.';
-if oeg=39 then label257.caption:=label257.caption+' | Hidratación.';
-if oeg=40 then label257.caption:=label257.caption+' | Cognicción.';
-memo7.visible:=true;
+BENegativas.Click;
+EnlaceLabel226();
+EnlaceLabel99();
+EnlaceLabel100();
+TestForm1.BOrganosGlandulas.Click;
+TestForm1.BProcesos.Click;
+TestForm1.BOrganosGlandulas.Click;
+TestForm1.BAVM.Click;
+TestForm1.BToxinas.Click;
+TestForm1.BCausas.Click;
 Button95.Enabled := True;
 end;
 
@@ -37122,470 +33481,132 @@ end;
 DosisPrescripcion();
 // FIN DE VARIABLES REACTIVAS
 oeg:=random(27);
-if oeg=0 then label292.caption:='Dificultad con la supresión alopática.';
-if oeg=1 then label292.caption:='Reducción de estrés.';
-if oeg=2 then label292.caption:='Aumento de conciencia y/o educación.';
-if oeg=3 then label292.caption:='Factores mentales o imponderables.';
-if oeg=4 then label292.caption:='Homeopatía metabólica o genética.';
-if oeg=5 then label292.caption:='Terapia de alersodes.';
-if oeg=6 then label292.caption:='Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label292.caption:='Nosodes para patógenos.';
-if oeg=19 then label292.caption:='Terapia nutricional.';
-if oeg=8 then label292.caption:='Imponderables para contaminación electromagnética.';
-if oeg=9 then label292.caption:='Fitoterapia.';
-if oeg=10 then label292.caption:='Terapia de sarcodes.';
-if oeg=11 then label292.caption:='Homeopatía combinativa.';
-if oeg=12 then label292.caption:='Terapia vitamínica.';
-if oeg=20 then label292.caption:='Toma de conciencia de sí mismo/a.';
-if oeg=13 then label292.caption:='Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label292.caption:='Terapia oligo mineral.';
-if oeg=15 then label292.caption:='Tratar flora intestinal.';
-if oeg=16 then label292.caption:='Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label292.caption:='Control de dieta.';
-if oeg=22 then label292.caption:='Terapia nutricional.';
-if oeg=18 then label292.caption:='Ejercicio, cardiovascular.';
-if oeg=21 then label292.caption:='Ejercicio, pilates.';
-if oeg=23 then label292.caption:='Desintoxicación de metales pesados.';
-if oeg=24 then label292.caption:='Terapia de ajuste y postura.';
-if oeg=25 then label292.caption:='Terapia de acupuntura.';
-if oeg>25 then label292.caption:='Medicina bio-energética.';
+if oeg=0 then label292.caption:=' Dificultad con la supresión alopática.';
+if oeg=1 then label292.caption:=' Reducción de estrés.';
+if oeg=2 then label292.caption:=' Aumento de conciencia y/o educación.';
+if oeg=3 then label292.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label292.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label292.caption:=' Terapia de alersodes.';
+if oeg=6 then label292.caption:=' Desintoxicación de isodes o xenobióticos.';
+if oeg=7 then label292.caption:=' Nosodes para patógenos.';
+if oeg=19 then label292.caption:=' Terapia nutricional.';
+if oeg=8 then label292.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label292.caption:=' Fitoterapia.';
+if oeg=10 then label292.caption:=' Terapia de sarcodes.';
+if oeg=11 then label292.caption:=' Homeopatía combinativa.';
+if oeg=12 then label292.caption:=' Terapia vitamínica.';
+if oeg=20 then label292.caption:=' Conciencia.';
+if oeg=13 then label292.caption:=' Desarrollo de habilidades mentales curativas.';
+if oeg=14 then label292.caption:=' Terapia oligo mineral.';
+if oeg=15 then label292.caption:=' Flora intestinal.';
+if oeg=16 then label292.caption:=' Desintoxicación de:'+' Flora intestinal'+' +'+' Hígado.';
+if oeg=17 then label292.caption:=' Control de dieta.';
+if oeg=22 then label292.caption:=' Terapia nutricional.';
+if oeg=18 then label292.caption:=' Ejercicio aeróbico, yoga.';
+if oeg=21 then label292.caption:=' Ejercicio aeróbico, pilates.';
+if oeg=23 then label292.caption:=' Desintoxicación de metales pesados.';
+if oeg=24 then label292.caption:=' Quiropraxia.';
+if oeg=25 then label292.caption:=' Terapia de acupuntura.';
+if oeg>25 then label292.caption:=' Medicina bio-energética.';
 // Factores Adicionales
 if testform1.pn3>30 then label292.caption:= label292.caption+ ' | Abandono del tabaquismo.';
 if testform1.pn2>2 then label292.caption:= label292.caption+ ' | Medicaciones alopáticas.';
 if testform1.pn8>10 then label292.caption:= label292.caption+ ' | Terapia de adicciones.';
-if testform1.pn12>10 then label292.caption:= label292.caption+ ' | Toxicidad.';
+if testform1.pn12>10 then label292.caption:= label292.caption+ ' Toxicidad.';
 if testform1.pn7>11 then label292.caption:= label292.caption+ ' | Reducción de estrés.';
 if testform1.pn5>18 then label292.caption:= label292.caption+ ' | Desintoxicación de metales pesados.';
 if testform1.pn4>2 then label292.caption:= label292.caption+ ' | Dificultad con la supresión alopática.';
 // Conexiones
 oeg:=random(49);
-if oeg=0 then Label333.Caption := 'Conectado con pulmones.';
-if oeg=1 then Label333.Caption := 'Conectado con piel.';
-if oeg=2 then Label333.Caption := 'Conectado con cerebro.';
-if oeg=3 then Label333.Caption := 'Conectado con senos nasales.';
-if oeg=4 then Label333.Caption := 'Conectado con estómago.';
-if oeg=5 then Label333.Caption := 'Conectado con ojos.';
-if oeg=6 then Label333.Caption := 'Conectado con flora intestinal.';
-if oeg=7 then Label333.Caption := 'Conectado con pulmones.';
-if oeg=8 then Label333.Caption := 'Conectado con estómago.';
-if oeg=9 then Label333.Caption := 'Conectado con suprarrenales.';
-if oeg=10 then Label333.Caption := 'Conectado con senos nasales.';
-if oeg=11 then Label333.Caption := 'Conectado con emociones.';
-if oeg=12 then Label333.Caption := 'Conectado con sangre.';
-if oeg=13 then Label333.Caption := 'Conectado con sistema linfático.';
-if oeg=14 then Label333.Caption := 'Conectado con dentadura.';
-if oeg=15 then Label333.Caption := 'Conectado con formación reticular.';
-if oeg=16 then Label333.Caption := 'Conectado con médula oblongata.';
-if oeg=17 then Label333.Caption := 'Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then Label333.Caption := 'Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then Label333.Caption := 'Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then Label333.Caption := 'Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then Label333.Caption := 'Conectado con tiroides.';
-if oeg=22 then Label333.Caption := 'Conectado con timo.';
-if oeg=23 then Label333.Caption := 'Conectado con médula espinal.';
-if oeg=24 then Label333.Caption := 'Conectado con sistema límbico.';
-if oeg=25 then Label333.Caption := 'Conectado con circuitos de la memoria.';
-if oeg=26 then Label333.Caption := 'Conectado con hipotálamo.';
-if oeg=27 then Label333.Caption := 'Conectado con pineal.';
-if oeg=28 then Label333.Caption := 'Conectado con pituitaria.';
-if oeg=29 then Label333.Caption := 'Conectado con paratiroides.';
-if oeg=30 then Label333.Caption := 'Conectado con sangre.';
-if oeg=31 then Label333.Caption := 'Conectado con sistema linfático.';
-if oeg=32 then Label333.Caption := 'Conectado con dentadura.';
-if oeg=33 then Label333.Caption :='Conexión con procesos enzimáticos.';
-if oeg=34 then Label333.Caption :='Conexión con conversión de energía.';
-if oeg=35 then Label333.Caption :='Conexión con cerebro.';
-if oeg=36 then Label333.Caption :='Conexión con sistema nervioso.';
-if oeg=37 then Label333.Caption :='Conexión con procesos enzimáticos.';
-if oeg=38 then Label333.Caption :='Conexión con procesos hormonales.';
-if oeg=39 then Label333.Caption :='Conexión con flora intestinal.';
-if oeg=40 then Label333.Caption :='Conexión con sangre.';
-if oeg=41 then Label333.Caption :='Conexión con producción hormonal.';
-if oeg=42 then Label333.Caption :='Conexión con suprarrenales.';
-if oeg=43 then Label333.Caption :='Conexión con pituitaria.';
-if oeg=44 then Label333.Caption :='Conexión con procesos emocionales.';
-if oeg=45 then Label333.Caption :='Conexión con sangre.';
-if oeg=46 then Label333.Caption :='Conexión con sistema linfático.';
-if oeg=47 then Label333.Caption :='Conexión con procesos energéticos.';
-if oeg=48 then Label333.Caption :='Conexión con desintoxicación.';
-if oeg=49 then Label333.Caption :='Conexión con carga tóxica.';
+if oeg=0 then Label333.Caption := ' Conectado con:'+' Pulmones.';
+if oeg=1 then Label333.Caption := ' Conectado con:'+' Piel.';
+if oeg=2 then Label333.Caption := ' Conectado con:'+' Cerebro.';
+if oeg=3 then Label333.Caption := ' Conectado con:'+' Senos nasales.';
+if oeg=4 then Label333.Caption := ' Conectado con:'+' Estómago.';
+if oeg=5 then Label333.Caption := ' Conectado con:'+' Ojos.';
+if oeg=6 then Label333.Caption := ' Conectado con:'+' Flora intestinal.';
+if oeg=7 then Label333.Caption := ' Conectado con:'+' Pulmones.';
+if oeg=8 then Label333.Caption := ' Conectado con:'+' Estómago.';
+if oeg=9 then Label333.Caption := ' Conectado con:'+' Suprarrenales.';
+if oeg=10 then Label333.Caption := ' Conectado con:'+' Senos nasales.';
+if oeg=11 then Label333.Caption := ' Conectado con:'+' Emociones.';
+if oeg=12 then Label333.Caption := ' Conectado con:'+' Sangre.';
+if oeg=13 then Label333.Caption := ' Conectado con:'+' Sistema linfático.';
+if oeg=14 then Label333.Caption := ' Conectado con:'+' Dentadura.';
+if oeg=15 then Label333.Caption := ' Conectado con:'+' Formación reticular.';
+if oeg=16 then Label333.Caption := ' Conectado con:'+' Médula oblongata.';
+if oeg=17 then Label333.Caption := ' Conectado con:'+' Lóbulo frontal del cerebro.';
+if oeg=18 then Label333.Caption := ' Conectado con:'+' Lóbulo parietal del cerebro.';
+if oeg=19 then Label333.Caption := ' Conectado con:'+' Lóbulo occipital del cerebro.';
+if oeg=20 then Label333.Caption := ' Conectado con:'+' Lóbulo temporal del cerebro.';
+if oeg=21 then Label333.Caption := ' Conectado con:'+' Tiroides.';
+if oeg=22 then Label333.Caption := ' Conectado con:'+' Timo.';
+if oeg=23 then Label333.Caption := ' Conectado con:'+' Médula espinal.';
+if oeg=24 then Label333.Caption := ' Conectado con:'+' Sistema límbico.';
+if oeg=25 then Label333.Caption := ' Conectado con:'+' Circuitos de la memoria.';
+if oeg=26 then Label333.Caption := ' Conectado con:'+' Hipotálamo.';
+if oeg=27 then Label333.Caption := ' Conectado con:'+' Pineal.';
+if oeg=28 then Label333.Caption := ' Conectado con:'+' Pituitaria.';
+if oeg=29 then Label333.Caption := ' Conectado con:'+' Paratiroides.';
+if oeg=30 then Label333.Caption := ' Conectado con:'+' Sangre.';
+if oeg=31 then Label333.Caption := ' Conectado con:'+' Sistema linfático.';
+if oeg=32 then Label333.Caption := ' Conectado con:'+' Dentadura.';
+if oeg=33 then Label333.Caption :=' Conectado con:'+' Procesos enzimáticos.';
+if oeg=34 then Label333.Caption :=' Conectado con:'+' Conversión de energía.';
+if oeg=35 then Label333.Caption :=' Conectado con:'+' Cerebro.';
+if oeg=36 then Label333.Caption :=' Conectado con:'+' Sistema nervioso.';
+if oeg=37 then Label333.Caption :=' Conectado con:'+' Enzimas.';
+if oeg=38 then Label333.Caption :=' Conectado con:'+' Procesos hormonales.';
+if oeg=39 then Label333.Caption :=' Conectado con:'+' Flora intestinal.';
+if oeg=40 then Label333.Caption :=' Conectado con:'+' Sangre.';
+if oeg=41 then Label333.Caption :=' Conectado con:'+' Hormonas.';
+if oeg=42 then Label333.Caption :=' Conectado con:'+' Suprarrenales.';
+if oeg=43 then Label333.Caption :=' Conectado con:'+' Pituitaria.';
+if oeg=44 then Label333.Caption :=' Conectado con:'+' Procesos emocionales.';
+if oeg=45 then Label333.Caption :=' Conectado con:'+' Sangre.';
+if oeg=46 then Label333.Caption :=' Conectado con:'+' Sistema linfático.';
+if oeg=47 then Label333.Caption :=' Conectado con:'+' Procesos energéticos.';
+if oeg=48 then Label333.Caption :=' Conectado con:'+' Desintoxicación.';
+if oeg=49 then Label333.Caption :=' Conectado con:'+' Carga tóxica.';
 // Primer Constitucional
 yq:=random(13);
-if yq<2 then label292.caption:=label292.caption+' | Ferrum.';
-if yq=2 then label292.caption:=label292.caption+' | Cuprum.';
-if yq=3 then label292.caption:=label292.caption+' | Merc.';
-if yq=4 then label292.caption:=label292.caption+' | Silver.';
-if yq=5 then label292.caption:=label292.caption+' | Aurum.';
-if yq=6 then label292.caption:=label292.caption+' | Antimony.';
-if yq=7 then label292.caption:=label292.caption+' | Cuprum.';
-if yq=8 then label292.caption:=label292.caption+' | Sulphur.';
-if yq=9 then label292.caption:=label292.caption+' | Stannum.';
-if yq=10 then label292.caption:=label292.caption+' | Zinc.';
-if yq=11 then label292.caption:=label292.caption+' | Plutonium.';
-if yq>11 then label292.caption:=label292.caption+' | Iodium.';
+if yq<2 then label292.caption:=label292.caption+' Ferrum.';
+if yq=2 then label292.caption:=label292.caption+' Cuprum.';
+if yq=3 then label292.caption:=label292.caption+' Merc.';
+if yq=4 then label292.caption:=label292.caption+' Silver.';
+if yq=5 then label292.caption:=label292.caption+' Aurum.';
+if yq=6 then label292.caption:=label292.caption+' Antimony.';
+if yq=7 then label292.caption:=label292.caption+' Cuprum.';
+if yq=8 then label292.caption:=label292.caption+' Sulphur.';
+if yq=9 then label292.caption:=label292.caption+' Stannum.';
+if yq=10 then label292.caption:=label292.caption+' Zinc.';
+if yq=11 then label292.caption:=label292.caption+' Plutonium.';
+if yq>11 then label292.caption:=label292.caption+' Iodium.';
 // Segungo constitucional
 yq:=random(22);
-if yq<2 then label333.caption:=label333.caption+' | Arsenicum.';
-if yq=2 then label333.caption:=label333.caption+' | Opium.';
-if yq=3 then label333.caption:=label333.caption+' | Glonine.';
-if yq=4 then label333.caption:=label333.caption+' | Carbolic Acidum.';
-if yq=5 then label333.caption:=label333.caption+' | Sepia.';
-if yq=6 then label333.caption:=label333.caption+' | Nux Vox.';
-if yq=7 then label333.caption:=label333.caption+' | Sillicum.';
-if yq=8 then label333.caption:=label333.caption+' | Thuja.';
-if yq=9 then label333.caption:=label333.caption+' | Rhus Tox.';
-if yq=10 then label333.caption:=label333.caption+' | ADN homeopático.';
-if yq=11 then  label333.caption:=label333.caption+' | Arsenicum.';
-if yq=12 then  label333.caption:=label333.caption+' | Ipecacuana.';
-if yq=13 then  label333.caption:=label333.caption+' | Bryonia.';
-if yq=14 then  label333.caption:=label333.caption+' | Gelsemium.';
-if yq=15 then  label333.caption:=label333.caption+' | Phosphorus.';
-if yq=16 then  label333.caption:=label333.caption+' | Belladonna.';
-if yq=17 then  label333.caption:=label333.caption+' | Aconite.';
-if yq=18 then  label333.caption:=label333.caption+' | Calcarea.';
-if yq=19 then  label333.caption:=label333.caption+' | Chinona.';
-if yq=20 then  label333.caption:=label333.caption+' | Apis Mel.';
-if yq>20 then  label333.caption:=label333.caption+' | Pulsatilla.';
-// Emociones negativas
-oeg:=random(75);
-if oeg<2    then  label336.caption:='Regresión.';
-if oeg= 2   then  label336.caption:='Agresión.';
-if oeg=3    then  label336.caption:='Ira.';
-if oeg=4    then  label336.caption:='Ansiedad.';
-if oeg=5    then  label336.caption:='Conciencia.';
-if oeg=6    then  label336.caption:='Tristeza.';
-if oeg=7    then  label336.caption:='Culpabilidad.';
-if oeg=8    then  label336.caption:='Autismo.';
-if oeg=9    then  label336.caption:='Negación.';
-if oeg=10    then  label336.caption:='Descuido.';
-if oeg=11    then  label336.caption:='Desilusión.';
-if oeg=12    then  label336.caption:='Depresión.';
-if oeg=13    then  label336.caption:='Poder.';
-if oeg=14    then  label336.caption:='Duda de sí mismo/a.';
-if oeg=15    then  label336.caption:='Temor.';
-if oeg=16    then  label336.caption:='Confusión.';
-if oeg=17    then  label336.caption:='Duda.';
-if oeg=18    then  label336.caption:='Celos.';
-if oeg=19    then  label336.caption:='Alegría.';
-if oeg=20    then  label336.caption:='Lujuria.';
-if oeg=21    then  label336.caption:='Avaricia.';
-if oeg=22    then  label336.caption:='Poderes Extra Sensoriales.';
-if oeg=23    then  label336.caption:='Dolor psíquico.';
-if oeg=24    then  label336.caption:='Pasividad.';
-if oeg=25    then  label336.caption:='Proyección.';
-if oeg=26    then  label336.caption:='Racionalizar.';
-if oeg=27    then  label336.caption:='Imprudencia.';
-if oeg=28    then  label336.caption:='Preocupación.';
-if oeg=29    then  label336.caption:='Abandono.';
-if oeg=30    then  label336.caption:='Vergüenza.';
-if oeg=31    then  label336.caption:='Traición.';
-if oeg=32    then  label336.caption:='Malentendimiento.';
-if oeg=33    then  label336.caption:='Curiosidad.';
-if oeg=34    then  label336.caption:='Sobrecogimiento.';
-if oeg=35    then  label336.caption:='Conflicto religioso.';
-if oeg=36    then  label336.caption:='Conflicto de identidad.';
-if oeg=37    then  label336.caption:='Resistencia al cambio.';
-if oeg=38    then  label336.caption:='Nervios.';
-if oeg=39    then  label336.caption:='Risa.';
-if oeg=40    then  label336.caption:='Entusiasmo.';
-if oeg=41    then  label336.caption:='Vanidad.';
-if oeg=42    then  label336.caption:='Negociación.';
-if oeg=43    then  label336.caption:='Coraje.';
-if oeg=44    then  label336.caption:='Vergüenza.';
-if oeg=45    then  label336.caption:='Monotonía.';
-if oeg=46    then  label336.caption:='Necesidad de cambio.';
-if oeg=47    then  label336.caption:='Observación.';
-if oeg=48    then  label336.caption:='Antagonismo.';
-if oeg=49    then  label336.caption:='Sensualidad.';
-if oeg=50    then  label336.caption:='Espiritualidad.';
-if oeg=51    then  label336.caption:='Sexualidad.';
-if oeg=52    then  label336.caption:='Adictividad.';
-if oeg=53    then  label336.caption:='Enjuiciamiento.';
-if oeg=54    then  label336.caption:='Apatía.';
-if oeg=55    then  label336.caption:='Extasis.';
-if oeg=56    then  label336.caption:='Inepcia.';
-if oeg=57    then  label336.caption:='Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label336.caption:='Perfeccionismo.';
-if oeg=59    then  label336.caption:='Desesperación.';
-if oeg=60    then  label336.caption:='Dominación.';
-if oeg=61    then  label336.caption:='Sumisión.';
-if oeg=62    then  label336.caption:='Orgullo.';
-if oeg=63    then  label336.caption:='Resentimiento.';
-if oeg=64    then  label336.caption:='Choque.';
-if oeg=65    then  label336.caption:='Descuido.';
-if oeg=66    then  label336.caption:='Obsesividad.';
-if oeg=67    then  label336.caption:='Impulsividad.';
-if oeg=68    then  label336.caption:='Manías incontrolables.';
-if oeg=69    then  label336.caption:='Impulsividad.';
-if oeg=70    then  label336.caption:='Lealtad inquebrantable.';
-if oeg=71    then  label336.caption:='Distracción.';
-if oeg=72    then  label336.caption:='Concentración.';
-if oeg=73    then  label336.caption:='Irrealismo.';
-if oeg>73    then  label336.caption:='Frustración.';
-// Items extras
-t1:=random(132);
-if t1=1 then Label337.Caption:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then Label337.Caption:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then Label337.Caption:='Alanina / Riñones, nervios.';
-if t1=4 then Label337.Caption:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then Label337.Caption:='Cisteina / Utilización de los riñones.';
-if t1=6 then Label337.Caption:='Leucina / Control del humor, emociones.';
-if t1=7 then Label337.Caption:='Isoleucina / Control emocional, nervios.';
-if t1=8 then Label337.Caption:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then Label337.Caption:='Tryptophan / Serotonina, relajación.';
-if t1=10 then Label337.Caption:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then Label337.Caption:='Metionina / Hígado, oxigenación.';
-if t1=12 then Label337.Caption:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then Label337.Caption:='Treonina / Producción hormonal, energía.';
-if t1=14 then Label337.Caption:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then Label337.Caption:='Valina / Regulación de las células de la sangre.';
-if t1=16 then Label337.Caption:='Glutamina / Suple energía al cerebro.';
-if t1=17 then Label337.Caption:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then Label337.Caption:='Arginina / Nervios, piel.';
-if t1=19 then Label337.Caption:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then Label337.Caption:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then Label337.Caption:='Adenosina / Circulación, energía.';
-if t1=22 then Label337.Caption:='Uracil / Funciones del ARN.';
-if t1=23 then Label337.Caption:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then Label337.Caption:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then Label337.Caption:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then Label337.Caption:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then Label337.Caption:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then Label337.Caption:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then Label337.Caption:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then Label337.Caption:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then Label337.Caption:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then Label337.Caption:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then Label337.Caption:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then Label337.Caption:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then Label337.Caption:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then Label337.Caption:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then Label337.Caption:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then Label337.Caption:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then Label337.Caption:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then Label337.Caption:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then Label337.Caption:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then Label337.Caption:='Silicona / Huesos, piel, nervios.';
-if t1=43 then Label337.Caption:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then Label337.Caption:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then Label337.Caption:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then Label337.Caption:='Arsénico / Energía, nervios.';
-if t1=47 then Label337.Caption:='Digestión / Problema de absorpción.';
-if t1=48 then Label337.Caption:='Sales en tejidos no especificados.';
-if t1=49 then Label337.Caption:='Acidos grasos en general.';
-if t1=50 then Label337.Caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then Label337.Caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then Label337.Caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then Label337.Caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then Label337.Caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then Label337.Caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then Label337.Caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then Label337.Caption:='Vitamina E.' ;
-if t1=58 then Label337.Caption:='Vitamina E1.'  ;
-if t1=59 then Label337.Caption:='Vitamina E2.' ;
-if t1=60 then Label337.Caption:='Vitamina E3.'  ;
-if t1=61 then Label337.Caption:='Vitamina K1.'  ;
-if t1=62 then Label337.Caption:='Vitamina K3.' ;
-if t1=63 then Label337.Caption:='Todas las vitaminas K.'  ;
-if t1=64 then Label337.Caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then Label337.Caption:='CoQ6.' ;
-if t1=66 then Label337.Caption:='CoQ7.' ;
-if t1=67 then Label337.Caption:='CoQ8.' ;
-if t1=68 then Label337.Caption:='CoQ9.'  ;
-if t1=69 then Label337.Caption:='CoQ10.' ;
-if t1=70 then Label337.Caption:='Todos los CoQ.';
-if t1=71 then Label337.Caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then Label337.Caption:='Vitamina C.';
-if t1=73 then Label337.Caption:='Bioflavenoides.'  ;
-if t1=74 then Label337.Caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then Label337.Caption:='Acido hespárico.'  ;
-if t1=76 then Label337.Caption:='Tirosina.'  ;
-if t1=77 then Label337.Caption:='Tirosinasea.' ;
-if t1=78 then Label337.Caption:='Vitamina C ase.' ;
-if t1=79 then Label337.Caption:='Acido ascórbico.'  ;
-if t1=80 then Label337.Caption:='Vitamina D.' ;
-if t1=81 then Label337.Caption:='Vitamina D1.'  ;
-if t1=82 then Label337.Caption:='Vitamina D2.'  ;
-if t1=83 then Label337.Caption:='Vitamina D3.'  ;
-if t1=84 then Label337.Caption:='Vitamina D4.'  ;
-if t1=85 then Label337.Caption:='Vitamina A.' ;
-if t1=86 then Label337.Caption:='Beta carotina.'  ;
-if t1=87 then Label337.Caption:='Aceite de pescado.'  ;
-if t1=88 then Label337.Caption:='Retinol.'  ;
-if t1=89 then Label337.Caption:='Precursores de la vitamina A.'  ;
-if t1=90 then Label337.Caption:='Vitamina A en cartílagos.' ;
-if t1=91 then Label337.Caption:='Enzimas en general.' ;
-if t1=92 then Label337.Caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then Label337.Caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then Label337.Caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then Label337.Caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then Label337.Caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then Label337.Caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then Label337.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then Label337.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then Label337.Caption:='Acidos grasos en general.' ;
-if t1=101 then Label337.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then Label337.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then Label337.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then Label337.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then Label337.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then Label337.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then Label337.Caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then Label337.Caption:='Acidos grasos en general.' ;
-if t1=109 then Label337.Caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then Label337.Caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then Label337.Caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then Label337.Caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then Label337.Caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then Label337.Caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then Label337.Caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then Label337.Caption:='Enzimas generales.' ;
-if t1=117 then Label337.Caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then Label337.Caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then Label337.Caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then Label337.Caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then Label337.Caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then Label337.Caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then Label337.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then Label337.Caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then Label337.Caption:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then Label337.Caption:='Estaño / Nervios, músculos.';
-if t1=127 then Label337.Caption:='Carbón / Energía, regulación de la vida.';
-if t1=128 then Label337.Caption:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then Label337.Caption:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then Label337.Caption:='Cobre / Nervios, energía, desintoxicación.';
-//
-t1:=random(132);
-if t1=1 then Label337.Caption := Label337.Caption+' | Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then Label337.Caption := Label337.Caption+' | Fenilalanina / Control del dolor, nervios.';
-if t1=3 then Label337.Caption := Label337.Caption+' | Alanina / Riñones, nervios.';
-if t1=4 then Label337.Caption := Label337.Caption+' | Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then Label337.Caption := Label337.Caption+' | Cisteina / Utilización de los riñones.';
-if t1=6 then Label337.Caption := Label337.Caption+' | Leucina / Control del humor, emociones.';
-if t1=7 then Label337.Caption := Label337.Caption+' | Isoleucina / Control emocional, nervios.';
-if t1=8 then Label337.Caption := Label337.Caption+' | Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then Label337.Caption := Label337.Caption+' | Tryptophan / Serotonina, relajación.';
-if t1=10 then Label337.Caption := Label337.Caption+' | Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then Label337.Caption := Label337.Caption+' | Metionina / Hígado, oxigenación.';
-if t1=12 then Label337.Caption := Label337.Caption+' | Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then Label337.Caption := Label337.Caption+' | Treonina / Producción hormonal, energía.';
-if t1=14 then Label337.Caption := Label337.Caption+' | Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then Label337.Caption := Label337.Caption+' | Valina / Regulación de las células de la sangre.';
-if t1=16 then Label337.Caption := Label337.Caption+' | Glutamina / Suple energía al cerebro.';
-if t1=17 then Label337.Caption := Label337.Caption+' | Prolina / Desórdenes del sulfúro.';
-if t1=18 then Label337.Caption := Label337.Caption+' | Arginina / Nervios, piel.';
-if t1=19 then Label337.Caption := Label337.Caption+' | Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then Label337.Caption := Label337.Caption+' | Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then Label337.Caption := Label337.Caption+' | Adenosina / Circulación, energía.';
-if t1=22 then Label337.Caption := Label337.Caption+' | Uracil / Funciones del ARN.';
-if t1=23 then Label337.Caption := Label337.Caption+' | Adenina / Funciones del ADN y ARN.';
-if t1=24 then Label337.Caption := Label337.Caption+' | Guanina / Funciones del ADN y ARN.';
-if t1=25 then Label337.Caption := Label337.Caption+' | Citosina / Funciones del ADN y ARN.';
-if t1=26 then Label337.Caption := Label337.Caption+' | Thymine / Funciones del ADN y ARN.';
-if t1=27 then Label337.Caption := Label337.Caption+' | Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then Label337.Caption := Label337.Caption+' | Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then Label337.Caption := Label337.Caption+' | Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then Label337.Caption := Label337.Caption+' | Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then Label337.Caption := Label337.Caption+' | Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then Label337.Caption := Label337.Caption+' | Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then Label337.Caption := Label337.Caption+' | Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then Label337.Caption := Label337.Caption+' | Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then Label337.Caption := Label337.Caption+' | Cromo / Regulación del azúcar, músculos.';
-if t1=36 then Label337.Caption := Label337.Caption+' | Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then Label337.Caption := Label337.Caption+' | Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then Label337.Caption := Label337.Caption+' | Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then Label337.Caption := Label337.Caption+' | Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then Label337.Caption := Label337.Caption+' | Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then Label337.Caption := Label337.Caption+' | Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then Label337.Caption := Label337.Caption+' | Silicona / Huesos, piel, nervios.';
-if t1=43 then Label337.Caption := Label337.Caption+' | Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then Label337.Caption := Label337.Caption+' | Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then Label337.Caption := Label337.Caption+' | Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then Label337.Caption := Label337.Caption+' | Arsénico / Energía, nervios.';
-if t1=47 then Label337.Caption := Label337.Caption+' | Digestión / Problema de absorpción.';
-if t1=48 then Label337.Caption := Label337.Caption+' | Sales en tejidos no especificados.';
-if t1=49 then Label337.Caption := Label337.Caption+' | Acidos grasos en general.';
-if t1=50 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then Label337.Caption := Label337.Caption+' | Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then Label337.Caption := Label337.Caption+' | Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then Label337.Caption := Label337.Caption+' | Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then Label337.Caption := Label337.Caption+' | Vitamina E.' ;
-if t1=58 then Label337.Caption := Label337.Caption+' | Vitamina E1.'  ;
-if t1=59 then Label337.Caption := Label337.Caption+' | Vitamina E2.' ;
-if t1=60 then Label337.Caption := Label337.Caption+' | Vitamina E3.'  ;
-if t1=61 then Label337.Caption := Label337.Caption+' | Vitamina K1.'  ;
-if t1=62 then Label337.Caption := Label337.Caption+' | Vitamina K3.' ;
-if t1=63 then Label337.Caption := Label337.Caption+' | Todas las vitaminas K.'  ;
-if t1=64 then Label337.Caption := Label337.Caption+' | Vitamina U / Ubiquinona.' ;
-if t1=65 then Label337.Caption := Label337.Caption+' | CoQ6.' ;
-if t1=66 then Label337.Caption := Label337.Caption+' | CoQ7.' ;
-if t1=67 then Label337.Caption := Label337.Caption+' | CoQ8.' ;
-if t1=68 then Label337.Caption := Label337.Caption+' | CoQ9.'  ;
-if t1=69 then Label337.Caption := Label337.Caption+' | CoQ10.' ;
-if t1=70 then Label337.Caption := Label337.Caption+' | Todos los CoQ.';
-if t1=71 then Label337.Caption := Label337.Caption+' | Ciclo de la ubiquinona.'  ;
-if t1=72 then Label337.Caption := Label337.Caption+' | Vitamina C.';
-if t1=73 then Label337.Caption := Label337.Caption+' | Bioflavenoides.'  ;
-if t1=74 then Label337.Caption := Label337.Caption+' | Deficiencia de '+'rutina.'  ;
-if t1=75 then Label337.Caption := Label337.Caption+' | Acido hespárico.'  ;
-if t1=76 then Label337.Caption := Label337.Caption+' | Tirosina.'  ;
-if t1=77 then Label337.Caption := Label337.Caption+' | Tirosinasea.' ;
-if t1=78 then Label337.Caption := Label337.Caption+' | Vitamina C ase.' ;
-if t1=79 then Label337.Caption := Label337.Caption+' | Acido ascórbico.'  ;
-if t1=80 then Label337.Caption := Label337.Caption+' | Vitamina D.' ;
-if t1=81 then Label337.Caption := Label337.Caption+' | Vitamina D1.'  ;
-if t1=82 then Label337.Caption := Label337.Caption+' | Vitamina D2.'  ;
-if t1=83 then Label337.Caption := Label337.Caption+' | Vitamina D3.'  ;
-if t1=84 then Label337.Caption := Label337.Caption+' | Vitamina D4.'  ;
-if t1=85 then Label337.Caption := Label337.Caption+' | Vitamina A.' ;
-if t1=86 then Label337.Caption := Label337.Caption+' | Beta carotina.'  ;
-if t1=87 then Label337.Caption := Label337.Caption+' | Aceite de pescado.'  ;
-if t1=88 then Label337.Caption := Label337.Caption+' | Retinol.'  ;
-if t1=89 then Label337.Caption := Label337.Caption+' | Precursores de la vitamina A.'  ;
-if t1=90 then Label337.Caption := Label337.Caption+' | Vitamina A en cartílagos.' ;
-if t1=91 then Label337.Caption := Label337.Caption+' | Enzimas en general.' ;
-if t1=92 then Label337.Caption := Label337.Caption+' | Enzimas para la reducción de la oxidación.';
-if t1=93 then Label337.Caption := Label337.Caption+' | Enzimas para la hidrolización de la digestión.';
-if t1=94 then Label337.Caption := Label337.Caption+' | Enzimas para la fosforilización del cerebro.';
-if t1=95 then Label337.Caption := Label337.Caption+' | Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then Label337.Caption := Label337.Caption+' | Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then Label337.Caption := Label337.Caption+' | Enzimas para la regulación del ADN.' ;
-if t1=98 then Label337.Caption := Label337.Caption+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then Label337.Caption := Label337.Caption+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then Label337.Caption := Label337.Caption+' | Acidos grasos en general.' ;
-if t1=101 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then Label337.Caption := Label337.Caption+' | Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then Label337.Caption := Label337.Caption+' | Acidos grasos en general.' ;
-if t1=109 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then Label337.Caption := Label337.Caption+' | Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then Label337.Caption := Label337.Caption+' | Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then Label337.Caption := Label337.Caption+' | Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then Label337.Caption := Label337.Caption+' | Enzimas generales.' ;
-if t1=117 then Label337.Caption := Label337.Caption+' | Enzimas en la reducción de la oxidación.';
-if t1=118 then Label337.Caption := Label337.Caption+' | Enzimas digestivas, hidrolización.';
-if t1=119 then Label337.Caption := Label337.Caption+' | Enzimas en el pensamiento, fosforilación.';
-if t1=120 then Label337.Caption := Label337.Caption+' | Enzimas en la respiración decarboxilasa.';
-if t1=121 then Label337.Caption := Label337.Caption+' | Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then Label337.Caption := Label337.Caption+' | Enzimas en la regulación del ADN.' ;
-if t1=123 then Label337.Caption := Label337.Caption+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then Label337.Caption := Label337.Caption+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then Label337.Caption := Label337.Caption+' | Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then Label337.Caption := Label337.Caption+' | Estaño / Nervios, músculos.';
-if t1=127 then Label337.Caption := Label337.Caption+' | Carbón / Energía, regulación de la vida.';
-if t1=128 then Label337.Caption := Label337.Caption+' | Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then Label337.Caption := Label337.Caption+' | Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then Label337.Caption := Label337.Caption+' | Cobre / Nervios, energía, desintoxicación.';
+if yq<2 then label333.caption:=label333.caption+' Arsenicum.';
+if yq=2 then label333.caption:=label333.caption+' Opium.';
+if yq=3 then label333.caption:=label333.caption+' Glonine.';
+if yq=4 then label333.caption:=label333.caption+' Carbolic Acidum.';
+if yq=5 then label333.caption:=label333.caption+' Sepia.';
+if yq=6 then label333.caption:=label333.caption+' Nux Vox.';
+if yq=7 then label333.caption:=label333.caption+' Sillicum.';
+if yq=8 then label333.caption:=label333.caption+' Thuja.';
+if yq=9 then label333.caption:=label333.caption+' Rhus Tox.';
+if yq=10 then label333.caption:=label333.caption+' ADN homeopático.';
+if yq=11 then  label333.caption:=label333.caption+' Arsenicum.';
+if yq=12 then  label333.caption:=label333.caption+' Ipecacuana.';
+if yq=13 then  label333.caption:=label333.caption+' Bryonia.';
+if yq=14 then  label333.caption:=label333.caption+' Gelsemium.';
+if yq=15 then  label333.caption:=label333.caption+' Phosphorus.';
+if yq=16 then  label333.caption:=label333.caption+' Belladonna.';
+if yq=17 then  label333.caption:=label333.caption+' Aconite.';
+if yq=18 then  label333.caption:=label333.caption+' Calcarea.';
+if yq=19 then  label333.caption:=label333.caption+' Chinona.';
+if yq=20 then  label333.caption:=label333.caption+' Apis Mel.';
+if yq>20 then  label333.caption:=label333.caption+' Pulsatilla.';
+BENegativas.Click;
+BAVM.Click;
 her1:=10;
 BRetestarItem.Enabled := True;
 Button61.Enabled := False;
@@ -37621,11 +33642,6 @@ begin
 procedure TtestForm1.QXCIinternetaccess1Click(Sender: TObject);
 begin
  ShellExecute(0, 'open', 'http://www.tecnonatura.co', '','', 1);
-end;
-
-procedure TtestForm1.Memo7DblClick(Sender: TObject);
-begin
-memo7.visible:=false;
 end;
 
 procedure TtestForm1.Button67Click(Sender: TObject);
@@ -37852,39 +33868,39 @@ GProgreso.progress := 100;
     until tr1=hold+1;
      Label286.Caption:=DM.conscida.Fieldbyname('Name').AsString;
      end;
-Hints();
+
 oeg:=random(13);
-     if oeg=0 then label289.caption:='Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label289.caption:='Estrés.';
-if oeg=2 then label289.caption:='Toma de conciencia.';
-if oeg=3 then label289.caption:='Factores mentales.';
-if oeg=4 then label289.caption:='Factores heredados.';
-if oeg=5 then label289.caption:='Alergias.';
-if oeg=6 then label289.caption:='Toxinas.';
-if oeg=7 then label289.caption:='Patógenos.';
-if oeg=8 then label289.caption:='Energía perversa.';
-if oeg=9 then label289.caption:='Trauma o lesión.';
-if oeg=10 then label289.caption:='Deficiencia o exceso nutricional.';
+If oeg=0 then label289.caption:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then label289.caption:=' Estrés.';
+if oeg=2 then label289.caption:=' Toma de conciencia.';
+if oeg=3 then label289.caption:=' Factores mentales.';
+if oeg=4 then label289.caption:=' Factores heredados.';
+if oeg=5 then label289.caption:=' Hiperreactividad.';
+if oeg=6 then label289.caption:=' Toxinas.';
+if oeg=7 then label289.caption:=' Patógenos.';
+if oeg=8 then label289.caption:=' Contaminación electromagnética.';
+if oeg=9 then label289.caption:=' Trauma o lesión.';
+if oeg=10 then label289.caption:=' Nutrientes / Nutrición.';
 oeg:=random(20);
-if oeg=0 then label290.caption:='Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label290.caption:='Estrés.';
-if oeg=2 then label290.caption:='Toma de conciencia.';
-if oeg=3 then label290.caption:='Factores mentales.';
-if oeg=4 then label290.caption:='Factores heredados.';
-if oeg=5 then label290.caption:='Alergias.';
-if oeg=6 then label290.caption:='Toxinas.';
-if oeg=7 then label290.caption:='Patógenos.';
-if oeg=8 then label290.caption:='Energía perversa.';
-if oeg=9 then label290.caption:='Trauma o lesión.';
-if oeg=10 then label290.caption:='Deficiencia o exceso nutricional.';
-if testform1.pn2>2 then label290.caption:='Causal: medicaciones alopáticas.';
-if testform1.pn3>10 then label290.caption:='Causal: tabaquismo.';
-if testform1.pn8>5 then label290.caption:='Causal: uso del azúcar.';
-if testform1.pn12>10 then label290.caption:='Causal: toxicidad.';
-if testform1.pn7>9 then label290.caption:='Causal: estrés.';
-if testform1.pn5>8 then label290.caption:='Causal: metales pesados relacionados con el mercurio.';
-if testform1.pn4>0 then label290.caption:='Causal: supresión alopática.';
-if patform1.dold>22000  then label290.caption:='Causal: supresión de la edad y la fuerza de vida.';
+if oeg=0 then label290.caption:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then label290.caption:=' Estrés.';
+if oeg=2 then label290.caption:=' Toma de conciencia.';
+if oeg=3 then label290.caption:=' Factores mentales.';
+if oeg=4 then label290.caption:=' Factores heredados.';
+if oeg=5 then label290.caption:=' Hiperreactividad.';
+if oeg=6 then label290.caption:=' Toxinas.';
+if oeg=7 then label290.caption:=' Patógenos.';
+if oeg=8 then label290.caption:=' Contaminación ambiental.';
+if oeg=9 then label290.caption:=' Trauma o lesión.';
+if oeg=10 then label290.caption:=' Nutrientes / Nutrición.';
+if testform1.pn2>2 then label290.caption:=' Causal:'+' Medicaciones alopáticas.';
+if testform1.pn3>10 then label290.caption:=' Causal:'+' Tabaquismo.';
+if testform1.pn8>5 then label290.caption:=' Causal:'+' Uso del azúcar.';
+if testform1.pn12>10 then label290.caption:=' Causal:'+' Toxicidad.';
+if testform1.pn7>9 then label290.caption:=' Causal:'+' Estrés.';
+if testform1.pn5>8 then label290.caption:=' Causal:'+' Metales pesados relacionados con el mercurio.';
+if testform1.pn4>0 then label290.caption:=' Causal:'+' Supresión alopática.';
+if patform1.dold>22000  then label290.caption:=' Causal:'+' Supresión de edad y fuerza de vida.';
 panel2.visible:=false;
 MyChrono2.Stop;
 end;
@@ -38190,146 +34206,101 @@ DM.causes.edit;
   DM.causesValue.asinteger:=OI   ;
   DM.causes.post;  { 20   over intellectualization  }
   if patform1.Edit62.Text<>'' then edit4.text:=edit4.text+patform1.Edit62.Text;
-  if riskchart.ims>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema inmunitario.';
-if riskchart.emo>165 then edit4.text:=edit4.text+' | Involucrando '+'factores emocionales.';
-if riskchart.infl>165 then edit4.text:=edit4.text+' | Involucrando '+'inflamación.';
-if riskchart.can>165 then edit4.text:=edit4.text+' | Involucrando '+'cáncer.';
-if riskchart.str>165 then edit4.text:=edit4.text+' | Involucrando '+'estrés.';
-if riskchart.infe>165 then edit4.text:=edit4.text+' | Involucrando '+'infección.';
-if riskchart.tox>165 then edit4.text:=edit4.text+' | Involucrando '+'toxicidad.';
-if riskchart.car>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema cardiovascular.';
-if riskchart.Nut>165 then edit4.text:=edit4.text+' | Involucrando '+'nurientes.';
-if riskchart.hor>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema hormonal.';
-if riskchart.lym>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema linfático.';
-if riskchart.bld>165 then edit4.text:=edit4.text+' | Involucrando '+'sangre.';
-if riskchart.cir>165 then edit4.text:=edit4.text+' | Involucrando '+'circulación.';
-if riskchart.cho>165 then edit4.text:=edit4.text+' | Involucrando '+'colesterol.';
-if riskchart.oxi>165 then edit4.text:=edit4.text+' | Involucrando '+'oxidación.';
-if riskchart.hyd>165 then edit4.text:=edit4.text+' | Involucrando '+'hidratación.';
-if riskchart.hypa>165 then edit4.text:=edit4.text+' | Involucrando '+'hipoadrenia.';
-if riskchart.tra>165 then edit4.text:=edit4.text+' | Involucrando '+'trauma/s.';
-if riskchart.inh>165 then edit4.text:=edit4.text+' | Involucrando '+'factores heredados.';
-if riskchart.liv>165 then edit4.text:=edit4.text+' | Involucrando '+'hígado.';
-if riskchart.kid>165 then edit4.text:=edit4.text+' | Involucrando '+'riñones.';
-if riskchart.dig>165 then edit4.text:=edit4.text+' | Involucrando '+'digestión.';
-if riskchart.cnt>165 then edit4.text:=edit4.text+' | Involucrando '+'tejido conectivo.';
-if riskchart.bon>165 then edit4.text:=edit4.text+' | Involucrando '+'huesos.';
-if riskchart.acid>165 then edit4.text:=edit4.text+' | Involucrando '+'balance del pH.';
-if riskchart.env>165 then edit4.text:=edit4.text+' | Involucrando '+'medio ambiente.';
-if riskchart.aler>165 then edit4.text:=edit4.text+' | Involucrando '+'alergias.';
-if riskchart.rad>165 then edit4.text:=edit4.text+' | Involucrando '+'radiación.';
-if riskchart.bac>165 then edit4.text:=edit4.text+' | Involucrando '+'bacteria.';
-if riskchart.fun>165 then edit4.text:=edit4.text+' | Involucrando '+'fungosidades.';
-if riskchart.vir>165 then edit4.text:=edit4.text+' | Involucrando '+'virus.';
-if riskchart.par>165 then edit4.text:=edit4.text+' | Involucrando '+'parásitos.';
-if riskchart.ameo>165 then edit4.text:=edit4.text+' | Involucrando '+'ameba.';
-if riskchart.fdp>165 then edit4.text:=edit4.text+' | Involucrando '+'Intolerancia alimentaria.';
-if riskchart.sug>165 then edit4.text:=edit4.text+' | Involucrando '+'regulación del azúcar.';
-if riskchart.ner>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema neurológico.';
-if riskchart.sener>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema sensorial.';
-if riskchart.res>165 then edit4.text:=edit4.text+' | Involucrando '+'sistema respiratorio.';
-if riskchart.cog>165 then edit4.text:=edit4.text+' | Involucrando '+'cognicción.';
- if patform1.CheckBox395.checked=true then   edit4.text:=edit4.text+' | Involucrando '+'músculos.';
- if patform1.CheckBox396.checked=true then   edit4.text:=edit4.text+' | Involucrando '+'lesión quiropráctica.';
- if edit4.text='Afección de incumbencia ' then begin
-   if riskchart.ims>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema inmunitario.';
-if riskchart.emo>60 then edit4.text:=edit4.text+' | Involucrando '+'factores emocionales.';
-if riskchart.infl>60 then edit4.text:=edit4.text+' | Involucrando '+'inflamación.';
-if riskchart.can>60 then edit4.text:=edit4.text+' | Involucrando '+'cáncer.';
-if riskchart.str>60 then edit4.text:=edit4.text+' | Involucrando '+'estrés.';
-if riskchart.infe>60 then edit4.text:=edit4.text+' | Involucrando '+'infección.';
-if riskchart.tox>60 then edit4.text:=edit4.text+' | Involucrando '+'toxicidad.';
-if riskchart.car>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema cardiovascular.';
-if riskchart.Nut>60 then edit4.text:=edit4.text+' | Involucrando '+'nutrientes.';
-if riskchart.hor>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema hormonal.';
-if riskchart.lym>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema linfático.';
-if riskchart.bld>60 then edit4.text:=edit4.text+' | Involucrando '+'sangre.';
-if riskchart.cir>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema circulatorio.';
-if riskchart.cho>60 then edit4.text:=edit4.text+' | Involucrando '+'colesterol.';
-if riskchart.oxi>60 then edit4.text:=edit4.text+' | Involucrando '+'oxidación.';
-if riskchart.hyd>60 then edit4.text:=edit4.text+' | Involucrando '+'hidratación.';
-if riskchart.hypa>60 then edit4.text:=edit4.text+' | Involucrando '+'hipoadrenia.';
-if riskchart.tra>60 then edit4.text:=edit4.text+' | Involucrando '+'trauma/s.';
-if riskchart.inh>60 then edit4.text:=edit4.text+' | Involucrando '+'factores heredados.';
-if riskchart.liv>60 then edit4.text:=edit4.text+' | Involucrando '+'hígado.';
-if riskchart.kid>60 then edit4.text:=edit4.text+' | Involucrando '+'riñones';
-if riskchart.dig>60 then edit4.text:=edit4.text+' | Involucrando '+'aparato digestivo.';
-if riskchart.cnt>60 then edit4.text:=edit4.text+' | Involucrando '+'tejido conectivo.';
-if riskchart.bon>60 then edit4.text:=edit4.text+' | Involucrando '+'huesos.';
-if riskchart.acid>60 then edit4.text:=edit4.text+' | Involucrando '+'balance del pH.';
-if riskchart.env>60 then edit4.text:=edit4.text+' | Involucrando '+'medio ambiente.';
-if riskchart.aler>60 then edit4.text:=edit4.text+' | Involucrando '+'alergias.';
-if riskchart.rad>60 then edit4.text:=edit4.text+' | Involucrando '+'radiación.';
-if riskchart.bac>60 then edit4.text:=edit4.text+' | Involucrando '+'bacteria.';
-if riskchart.fun>60 then edit4.text:=edit4.text+' | Involucrando '+'fungosidades.';
-if riskchart.vir>60 then edit4.text:=edit4.text+' | Involucrando '+'virus.';
-if riskchart.par>60 then edit4.text:=edit4.text+' | Involucrando '+'parásitos.';
-if riskchart.ameo>60 then edit4.text:=edit4.text+' | Involucrando '+'ameba.';
-if riskchart.fdp>60 then edit4.text:=edit4.text+' | Involucrando '+'Intolerancia alimentaria.';
-if riskchart.sug>60 then edit4.text:=edit4.text+' | Involucrando '+'regulación del azúcar.';
-if riskchart.ner>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema neurológico.';
-if riskchart.sener>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema sensorial.';
-if riskchart.res>60 then edit4.text:=edit4.text+' | Involucrando '+'sistema respiratorio.';
-if riskchart.cog>60 then edit4.text:=edit4.text+' | Involucrando '+'cognicción.';
-end;
-  if edit4.text='Afección de incumbencia ' then begin
-   oeg:=random(46);
-if oeg=1 then edit4.text:='Disfunción | '+'Inflamación.';
-if oeg=2 then edit4.text:='Disfunción | '+'Cáncer.';
-if oeg=3 then edit4.text:='Disfunción | '+'Estrés.';
-if oeg=4 then edit4.text:='Disfunción | '+'Hipoadrenia.';
-if oeg=5 then edit4.text:='Disfunción | '+'Factores emocionales.';
-if oeg=6 then edit4.text:='Disfunción | '+'Infección.';
-if oeg=7 then edit4.text:='Disfunción | '+'Toxicidad.';
-if oeg=8 then edit4.text:='Disfunción | '+'Trauma.';
-if oeg=9 then edit4.text:='Disfunción | '+'Factores heredados.';
-if oeg=10 then edit4.text:='Disfunción | '+'Deficiencia o exceso de vitaminas.';
-if oeg=11 then edit4.text:='Disfunción | '+'Sistema cardiovascular.';
-if oeg=12 then edit4.text:='Disfunción | '+'Sistema hormonal.';
-if oeg=13 then edit4.text:='Disfunción | '+'Sistema linfático.';
-if oeg=14 then edit4.text:='Disfunción | '+'Hígado.';
-if oeg=15 then edit4.text:='Disfunción | '+'Riñones.';
-if oeg=16 then edit4.text:='Disfunción | '+'Aparato digestivo.';
-if oeg=17 then edit4.text:='Disfunción | '+'Tejido conectivo.';
-if oeg=18 then edit4.text:='Disfunción | '+'Huesos.';
-if oeg=19 then edit4.text:='Disfunción | '+'Acidez o alcalinidad del agua.';
-if oeg=20 then edit4.text:='Disfunción | '+'Sangre.';
-if oeg=21 then edit4.text:='Disfunción | '+'Medio ambiente.';
-if oeg=22 then edit4.text:='Disfunción | '+'Alergia.';
-if oeg=23 then edit4.text:='Disfunción | '+'Riesgo emocional.';
-if oeg=24 then edit4.text:='Disfunción | '+'Sistema circulatorio.';
-if oeg=25 then edit4.text:='Disfunción | '+'Sistema inmunitario.';
-if oeg=26 then edit4.text:='Disfunción | '+'Radiación.';
-if oeg=27 then edit4.text:='Disfunción | '+'Bacteria.';
-if oeg=28 then edit4.text:='Disfunción | '+'Fungosidades.';
-if oeg=29 then edit4.text:='Disfunción | '+'Virus.';
-if oeg=30 then edit4.text:='Disfunción | '+'Parásitos.';
-if oeg=31 then edit4.text:='Disfunción | '+'Ameba.';
-if oeg=32 then edit4.text:='Disfunción | '+'Intolerancia alimentaria.';
-if oeg=33 then edit4.text:='Disfunción | '+'Regulación del azúcar';
-if oeg=34 then edit4.text:='Disfunción | '+'Sistema neurológico.';
-if oeg=35 then edit4.text:='Disfunción | '+'Sistema sensorial.';
-if oeg=36 then edit4.text:='Disfunción | '+'Colesterol.';
-if oeg=37 then edit4.text:='Disfunción | '+'Sistema respiratorio.';
-if oeg=38 then edit4.text:='Disfunción | '+'Oxidación.';
-if oeg=39 then edit4.text:='Disfunción | '+'Hidratación.';
-if oeg=40 then edit4.text:='Disfunción | '+'Cognicción.';
 
-  end;
+oeg:=random(43);
+if oeg<2 then edit4.text:=' Disfunción:'+' Inflamación.';
+if oeg=2 then edit4.text:=' Disfunción:'+' Cáncer.';
+if oeg=3 then edit4.text:=' Disfunción:'+' Estrés.';
+if oeg=4 then edit4.text:=' Disfunción:'+' Hipoadrenia.';
+if oeg=5 then edit4.text:=' Disfunción:'+' Factores emocionales.';
+if oeg=6 then edit4.text:=' Disfunción:'+' Infección.';
+if oeg=7 then edit4.text:=' Disfunción:'+' Toxicidad.';
+if oeg=8 then edit4.text:=' Disfunción:'+' Trauma.';
+if oeg=9 then edit4.text:=' Disfunción:'+' Factores heredados.';
+if oeg=10 then edit4.text:=' Disfunción:'+' Vitaminas.';
+if oeg=11 then edit4.text:=' Disfunción:'+' Sistema cardiovascular.';
+if oeg=12 then edit4.text:=' Disfunción:'+' Sistema hormonal.';
+if oeg=13 then edit4.text:=' Disfunción:'+' Sistema linfático.';
+if oeg=14 then edit4.text:=' Disfunción:'+' Hígado.';
+if oeg=15 then edit4.text:=' Disfunción:'+' Riñones.';
+if oeg=16 then edit4.text:=' Disfunción:'+' Sistema digestivo.';
+if oeg=17 then edit4.text:=' Disfunción:'+' Tejido conectivo.';
+if oeg=18 then edit4.text:=' Disfunción:'+' Huesos.';
+if oeg=19 then edit4.text:=' Disfunción:'+' pH del agua.';
+if oeg=20 then edit4.text:=' Disfunción:'+' Sangre.';
+if oeg=21 then edit4.text:=' Disfunción:'+' Medio ambiente / Entorno.';
+if oeg=22 then edit4.text:=' Disfunción:'+' Hiperreactividad.';
+if oeg=23 then edit4.text:=' Disfunción:'+' Emociones.';
+if oeg=24 then edit4.text:=' Disfunción:'+' Sistema circulatorio.';
+if oeg=25 then edit4.text:=' Disfunción:'+' Sistema inmunitario.';
+if oeg=26 then edit4.text:=' Disfunción:'+' Radiación.';
+if oeg=27 then edit4.text:=' Disfunción:'+' Bacteria.';
+if oeg=28 then edit4.text:=' Disfunción:'+' Fungosidades.';
+if oeg=29 then edit4.text:=' Disfunción:'+' Virus.';
+if oeg=30 then edit4.text:=' Disfunción:'+' Parásitos.';
+if oeg=31 then edit4.text:=' Disfunción:'+' Amíbas.';
+if oeg=32 then edit4.text:=' Disfunción:'+' Intolerancia alimentaria.';
+if oeg=33 then edit4.text:=' Disfunción:'+' Regulación del azúcar.';
+if oeg=34 then edit4.text:=' Disfunción:'+' Sistema neurológico.';
+if oeg=35 then edit4.text:=' Disfunción:'+' Sistema sensorial.';
+if oeg=36 then edit4.text:=' Disfunción:'+' Colesterol.';
+if oeg=37 then edit4.text:=' Disfunción:'+' Sistema respiratorio.';
+if oeg=38 then edit4.text:=' Disfunción:'+' Oxidación.';
+if oeg=39 then edit4.text:=' Disfunción:'+' Hidratación.';
+if oeg>39 then edit4.text:=' Disfunción:'+' Cognicción.';
 
-//showmessage('Por favor pulse ''Ok''para continuar.');
+if riskchart.ims>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema inmunitario.';
+if riskchart.emo>60 then edit4.text:=edit4.text+' Involucrando:'+' Factores emocionales.';
+if riskchart.infl>60 then edit4.text:=edit4.text+' Involucrando:'+' Inflamación.';
+if riskchart.can>60 then edit4.text:=edit4.text+' Involucrando:'+' Cáncer.';
+if riskchart.str>60 then edit4.text:=edit4.text+' Involucrando:'+' Estrés.';
+if riskchart.infe>60 then edit4.text:=edit4.text+' Involucrando:'+' Infección.';
+if riskchart.tox>60 then edit4.text:=edit4.text+' Involucrando:'+' Toxicidad.';
+if riskchart.car>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema cardiovascular.';
+if riskchart.Nut>60 then edit4.text:=edit4.text+' Involucrando:'+' Nutrientes.';
+if riskchart.hor>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema hormonal.';
+if riskchart.lym>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema linfático.';
+if riskchart.bld>60 then edit4.text:=edit4.text+' Involucrando:'+' Sangre.';
+if riskchart.cir>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema circulatorio.';
+if riskchart.cho>60 then edit4.text:=edit4.text+' Involucrando:'+' Colesterol.';
+if riskchart.oxi>60 then edit4.text:=edit4.text+' Involucrando:'+' Oxidación.';
+if riskchart.hyd>60 then edit4.text:=edit4.text+' Involucrando:'+' Hidratación.';
+if riskchart.hypa>60 then edit4.text:=edit4.text+' Involucrando:'+' Hipoadrenia.';
+if riskchart.tra>60 then edit4.text:=edit4.text+' Involucrando:'+' Trauma.';
+if riskchart.inh>60 then edit4.text:=edit4.text+' Involucrando:'+' Factores heredados.';
+if riskchart.liv>60 then edit4.text:=edit4.text+' Involucrando:'+' Hígado.';
+if riskchart.kid>60 then edit4.text:=edit4.text+' Involucrando:'+' Riñones';
+if riskchart.dig>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema digestivo.';
+if riskchart.cnt>60 then edit4.text:=edit4.text+' Involucrando:'+' Tejido conectivo.';
+if riskchart.bon>60 then edit4.text:=edit4.text+' Involucrando:'+' Huesos.';
+if riskchart.acid>60 then edit4.text:=edit4.text+' Involucrando:'+' Balance del pH.';
+if riskchart.env>60 then edit4.text:=edit4.text+' Involucrando:'+' Medio ambiente / Entorno.';
+if riskchart.aler>60 then edit4.text:=edit4.text+' Involucrando:'+' Hiperreactividad.';
+if riskchart.rad>60 then edit4.text:=edit4.text+' Involucrando:'+' Radiación.';
+if riskchart.bac>60 then edit4.text:=edit4.text+' Involucrando:'+' Bacteria.';
+if riskchart.fun>60 then edit4.text:=edit4.text+' Involucrando:'+' Fungosidades.';
+if riskchart.vir>60 then edit4.text:=edit4.text+' Involucrando:'+' Virus.';
+if riskchart.par>60 then edit4.text:=edit4.text+' Involucrando:'+' Parásitos.';
+if riskchart.ameo>60 then edit4.text:=edit4.text+' Involucrando:'+' Amíbas.';
+if riskchart.fdp>60 then edit4.text:=edit4.text+' Involucrando:'+' Intolerancia alimentaria.';
+if riskchart.sug>60 then edit4.text:=edit4.text+' Involucrando:'+' Regulación del azúcar.';
+if riskchart.ner>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema neurológico.';
+if riskchart.sener>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema sensorial.';
+if riskchart.res>60 then edit4.text:=edit4.text+' Involucrando:'+' Sistema respiratorio.';
+if riskchart.cog>60 then edit4.text:=edit4.text+' Involucrando:'+' Cognicción.';
+if patform1.CheckBox395.checked=true then   edit4.text:=edit4.text+' Involucrando:'+' Músculos.';
+if patform1.CheckBox396.checked=true then   edit4.text:=edit4.text+' Involucrando:'+' Lesión quiropráctica.';
+
 Application.CreateForm(Tchartmaker, chartmaker);
 chartmaker.ShowModal;
 chartmaker.Free;
-  SaveBodyVariables;
-    pfiltra_I := 0;
-  Panel36Click(self);
-
+SaveBodyVariables;
+pfiltra_I := 0;
+Panel36Click(self);
 end;
 
 procedure TtestForm1.SarcodeOrganRisk1Click(Sender: TObject);
 begin
-
   Application.CreateForm(Torgans, organs);
   Organs.ShowModal;
   Organs.Free;
@@ -38340,12 +34311,10 @@ end;
 
 procedure TtestForm1.EmotionRiskChart1Click(Sender: TObject);
 begin
-  //showmessage('... Y otra vez.');
   if (sender is TMenuItem) then
         dm.bitacora((sender as TMenuItem).caption);
     if (sender is TButton) then
         dm.bitacora((sender as TButton).caption);
-
   Application.CreateForm(Temotion1, emotion1);
   emotion1.ShowModal;
   emotion1.Free;
@@ -38359,7 +34328,6 @@ begin
   DM.QueryFilter.Active:=False;
   QString:='imponderable';
   FTest_Alterna.pFiltra_Conscida(QString);
-
 end;
 
 procedure TtestForm1.Button71Click(Sender: TObject);
@@ -38478,7 +34446,7 @@ GProgreso.progress :=  100;
     until (tr1=hold+1)or(tr1>hold+1);
     Label287.Caption:=DM.conscida.Fieldbyname('Name').AsString;
     end;
-Hints();
+
 panel2.visible:=false;
 MyChrono2.Stop;
 end;
@@ -38820,9 +34788,9 @@ begin
         label285.Caption:='';
         label286.Caption:='';
         label287.Caption:='';
-        label289.Caption:='|';
-        label290.Caption:='|';
-        label302.Caption:='|';
+        label289.Caption:='';
+        label290.Caption:='';
+        label302.Caption:='';
         if edit34.text='Acoplamiento armónico de ítems: '  then edit34.text:='';
         Edit34.Text:=Edit34.Text+st+' | ';
    end;
@@ -39122,7 +35090,7 @@ GProgreso.progress := 80+Random(20);
       DM.conscida.prior;
     until tr1=hold+1;
     end;
-Hints();
+
 sysreport.nutr14:=label287.hint;
 button75.Enabled:=false;
 button73.Enabled:=false;
@@ -39175,65 +35143,65 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
  GProgreso.progress :=  50;
  panel2.visible:=false;
 oeg:=random(27);
-if oeg=0 then label284.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label284.caption:='| Reducción de estrés.';
-if oeg=2 then label284.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label284.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label284.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label284.caption:='| Terapia de alersodes.';
-if oeg=6 then label284.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label284.caption:='| Nosodes para patógenos.';
-if oeg=19 then label284.caption:='| Terapia nutricional.';
-if oeg=8 then label284.caption:='| Imponderables para contaminación electromagnética.';
- if oeg=9 then label284.caption:='| Fitoterapia.';
- if oeg=10 then label284.caption:='| Terapia de sarcodes.';
- if oeg=11 then label284.caption:='| Homeopatía combinativa.';
- if oeg=12 then label284.caption:='| Terapia vitamínica.';
-if oeg=20 then label284.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label284.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label284.caption:='| Terapia oligo mineral.';
-if oeg=15 then label284.caption:='| Tratar flora intestinal.';
-if oeg=16 then label284.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label284.caption:='| Control de dieta.';
-if oeg=22 then label284.caption:='| Terapia nutricional.';
-if oeg=18 then label284.caption:='| Ejercicio, cardiovascular.';
- if oeg=21 then label284.caption:='| Ejercicio, yoga.';
- if oeg=23 then label284.caption:='| Ejercicio, pilates.';
-  if oeg>23 then label284.caption:='| Medicina bio-energética.';
+if oeg=0 then label284.caption:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then label284.caption:=' Reducción de estrés.';
+if oeg=2 then label284.caption:=' Toma de conciencia y/o educación.';
+if oeg=3 then label284.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label284.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label284.caption:=' Terapia de alersodes.';
+if oeg=6 then label284.caption:=' Desintoxicación de isodes o xenobióticos.';
+if oeg=7 then label284.caption:=' Nosodes para patógenos.';
+if oeg=19 then label284.caption:=' Terapia nutricional.';
+if oeg=8 then label284.caption:=' Imponderables para contaminación electromagnética.';
+ if oeg=9 then label284.caption:=' Fitoterapia.';
+ if oeg=10 then label284.caption:=' Terapia de sarcodes.';
+ if oeg=11 then label284.caption:=' Homeopatía combinativa.';
+ if oeg=12 then label284.caption:=' Terapia vitamínica.';
+if oeg=20 then label284.caption:=' Conciencia.';
+if oeg=13 then label284.caption:=' Desarrollo de habilidades mentales curativas.';
+if oeg=14 then label284.caption:=' Terapia oligo mineral.';
+if oeg=15 then label284.caption:=' Flora intestinal.';
+if oeg=16 then label284.caption:=' Desintoxicación de:'+' Flora intestinal'+' +'+' Hígado.';
+if oeg=17 then label284.caption:=' Control de dieta.';
+if oeg=22 then label284.caption:=' Terapia nutricional.';
+if oeg=18 then label284.caption:=' Ejercicio aeróbico, yoga.';
+ if oeg=21 then label284.caption:=' Ejercicio, yoga.';
+ if oeg=23 then label284.caption:=' Ejercicio aeróbico, pilates.';
+  if oeg>23 then label284.caption:=' Medicina bio-energética.';
     oeg:=random(33);
-       if oeg=1 then label285.caption:='| Ferrum.';
-    if oeg=2 then label285.caption:='| Cuprum.';
-      if oeg=3 then label285.caption:='| Merc.';
-        if oeg=4 then label285.caption:='| Silver.';
-          if oeg=5 then label285.caption:='| Aurum.';
-            if oeg=6 then label285.caption:='| Antimony.';
-              if oeg=7 then label285.caption:='| Cuprum.';
-                if oeg=8 then label285.caption:='| Sulphur.';
-                  if oeg=9 then label285.caption:='| Stannum.';
-                    if oeg=10 then label285.caption:='| Zinc.';
-                      if oeg=11 then label285.caption:='| Plutonium.';
-                        if oeg=12 then label285.caption:='| Iodium.';
-    if oeg=13 then label285.caption:='| Arsenicum.';
-       if oeg=14 then label285.caption:='| Opium.';
-        if oeg=15 then label285.caption:='| Glonine.';
-         if oeg=16 then label285.caption:='| Carbolic Acidum.';
-          if oeg=17 then label285.caption:='| Sepia.';
-           if oeg=18 then label285.caption:='| Nux Vox.';
-            if oeg=19 then label285.caption:='| Sillicum.';
-             if oeg=20 then label285.caption:='| Thuja.';
-              if oeg=21 then label285.caption:='| Rhus Tox.';
-               if oeg=22 then label285.caption:='| ADN homeopático.';
-                if oeg=23 then  label285.caption:='| Arsenicum.';
-    if oeg=24 then  label285.caption:='| Ipecacuana.';
-       if oeg=25 then  label285.caption:='| Bryonia.';
-       if oeg=26 then  label285.caption:='| Gelsemium.';
-       if oeg=27 then  label285.caption:='| Phosphorus.';
-       if oeg=28 then  label285.caption:='| Belladonna.';
-       if oeg=29 then  label285.caption:='| Aconite.';
-       if oeg=30 then  label285.caption:='| Calcarea.';
-       if oeg=31 then  label285.caption:='| Chinona.';
-       if oeg=32 then  label285.caption:='| Apis Mel.';
-       if oeg=33 then  label285.caption:='| Pulsatilla.';
+       if oeg=1 then label285.caption:=' Ferrum.';
+    if oeg=2 then label285.caption:=' Cuprum.';
+      if oeg=3 then label285.caption:=' Merc.';
+        if oeg=4 then label285.caption:=' Silver.';
+          if oeg=5 then label285.caption:=' Aurum.';
+            if oeg=6 then label285.caption:=' Antimony.';
+              if oeg=7 then label285.caption:=' Cuprum.';
+                if oeg=8 then label285.caption:=' Sulphur.';
+                  if oeg=9 then label285.caption:=' Stannum.';
+                    if oeg=10 then label285.caption:=' Zinc.';
+                      if oeg=11 then label285.caption:=' Plutonium.';
+                        if oeg=12 then label285.caption:=' Iodium.';
+    if oeg=13 then label285.caption:=' Arsenicum.';
+       if oeg=14 then label285.caption:=' Opium.';
+        if oeg=15 then label285.caption:=' Glonine.';
+         if oeg=16 then label285.caption:=' Carbolic Acidum.';
+          if oeg=17 then label285.caption:=' Sepia.';
+           if oeg=18 then label285.caption:=' Nux Vox.';
+            if oeg=19 then label285.caption:=' Sillicum.';
+             if oeg=20 then label285.caption:=' Thuja.';
+              if oeg=21 then label285.caption:=' Rhus Tox.';
+               if oeg=22 then label285.caption:=' ADN homeopático.';
+                if oeg=23 then  label285.caption:=' Arsenicum.';
+    if oeg=24 then  label285.caption:=' Ipecacuana.';
+       if oeg=25 then  label285.caption:=' Bryonia.';
+       if oeg=26 then  label285.caption:=' Gelsemium.';
+       if oeg=27 then  label285.caption:=' Phosphorus.';
+       if oeg=28 then  label285.caption:=' Belladonna.';
+       if oeg=29 then  label285.caption:=' Aconite.';
+       if oeg=30 then  label285.caption:=' Calcarea.';
+       if oeg=31 then  label285.caption:=' Chinona.';
+       if oeg=32 then  label285.caption:=' Apis Mel.';
+       if oeg=33 then  label285.caption:=' Pulsatilla.';
         DM.remedy.Open;
         Index:='ByValue2';
    DM.remedy.IndexName := Index;
@@ -39264,39 +35232,39 @@ if oeg=18 then label284.caption:='| Ejercicio, cardiovascular.';
     DM.remedy.Last;
    if Label286.Caption=Label287.Caption then begin
         oeg:=random(32);
-if oeg=0 then label287.caption:='Conectado con pulmones.';
-if oeg=0 then label287.caption:='Conectado con piel.';
-if oeg=0 then label287.caption:='Conectado con cerebro.';
-if oeg=0 then label287.caption:='Conectado con senos nasales.';
-if oeg=0 then label287.caption:='Conectado con estómago.';
-if oeg=0 then label287.caption:='Conectado con ojos.';
-if oeg=0 then label287.caption:='Conectado con flora intestinal.';
-if oeg=0 then label287.caption:='Conectado con pulmones.';
-if oeg=0 then label287.caption:='Conectado con estómago.';
-if oeg=0 then label287.caption:='Conectado con suprarrenales.';
-if oeg=0 then label287.caption:='Conectado con senos nasales.';
-if oeg=0 then label287.caption:='Conectado con emociones.';
-if oeg=0 then label287.caption:='Conectado con sangre.';
-if oeg=0 then label287.caption:='Conectado con sistema linfático.';
-if oeg=0 then label287.caption:='Conectado con dentadura.';
-if oeg=0 then label287.caption:='Conectado con formación reticular.';
-if oeg=0 then label287.caption:='Conectado con médula oblongata.';
-if oeg=0 then label287.caption:='Conectado con lóbulo frontal del cerebro.';
-if oeg=0 then label287.caption:='Conectado con lóbulo parietal del cerebro.';
-if oeg=0 then label287.caption:='Conectado con lóbulo occipital del cerebro.';
-if oeg=0 then label287.caption:='Conectado con lóbulo temporal del cerebro.';
-if oeg=0 then label287.caption:='Conectado con tiroides.';
-if oeg=0 then label287.caption:='Conectado con timo.';
-if oeg=0 then label287.caption:='Conectado con médula espinal.';
-if oeg=0 then label287.caption:='Conectado con sistema límbico.';
-if oeg=0 then label287.caption:='Conectado con circuitos de la memoria.';
-if oeg=0 then label287.caption:='Conectado con hipotálamo.';
-if oeg=0 then label287.caption:='Conectado con pineal.';
-if oeg=0 then label287.caption:='Conectado con pituitaria.';
-if oeg=0 then label287.caption:='Conectado con paratiroides.';
-if oeg=0 then label287.caption:='Conectado con sangre.';
-if oeg=0 then label287.caption:='Conectado con sistema linfático.';
-if oeg=0 then label287.caption:='Conectado con dentadura.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Pulmones.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Piel.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Cerebro.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Senos nasales.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Estómago.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Ojos.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Flora intestinal.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Pulmones.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Estómago.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Suprarrenales.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Senos nasales.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Emociones.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Sangre.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Sistema linfático.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Dentadura.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Formación reticular.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Médula oblongata.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Lóbulo frontal del cerebro.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Lóbulo parietal del cerebro.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Lóbulo occipital del cerebro.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Lóbulo temporal del cerebro.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Tiroides.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Timo.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Médula espinal.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Sistema límbico.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Circuitos de la memoria.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Hipotálamo.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Pineal.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Pituitaria.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Paratiroides.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Sangre.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Sistema linfático.';
+if oeg=0 then label287.caption:=' Conectado con:'+' Dentadura.';
    end;
 GProgreso.progress := 100;
   psych7:=label284.caption;
@@ -39308,7 +35276,8 @@ end;
 
 procedure TtestForm1.Button77Click(Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono2.Start;
+Reaccion_Irregular();
+MyChrono2.Start;
 GProgreso.progress :=  0;
 button78.Enabled:=true;
 Label284.Enabled:=True;
@@ -39326,476 +35295,9 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
  ChangingPulses(55555,5,55,1,1,2,
  '11111111','11111111');
  GProgreso.progress :=  50;
-AfirmacionesPositivas();
-oeg:=random(75);
-if oeg=1    then  label285.caption:=' | Regresión.';
-if oeg= 2   then  label285.caption:=' | Agresión.';
-if oeg=3    then  label285.caption:=' | Ira.';
-if oeg=4    then  label285.caption:=' | Ansiedad.';
-if oeg=5    then  label285.caption:=' | Conciencia.';
-if oeg=6    then  label285.caption:=' | Tristeza.';
-if oeg=7    then  label285.caption:=' | Culpabilidad.';
-if oeg=8    then  label285.caption:=' | Autismo.';
-if oeg=9    then  label285.caption:=' | Negación.';
-if oeg=10    then  label285.caption:=' | Descuido.';
-if oeg=11    then  label285.caption:=' | Desilusión.';
-if oeg=12    then  label285.caption:=' | Depresión.';
-if oeg=13    then  label285.caption:=' | Poder.';
-if oeg=14    then  label285.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label285.caption:=' | Temor.';
-if oeg=16    then  label285.caption:=' | Confusión.';
-if oeg=17    then  label285.caption:=' | Duda.';
-if oeg=18    then  label285.caption:=' | Celos.';
-if oeg=19    then  label285.caption:=' | Alegría.';
-if oeg=20    then  label285.caption:=' | Lujuria.';
-if oeg=21    then  label285.caption:=' | Avaricia.';
-if oeg=22    then  label285.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label285.caption:=' | Dolor psíquico.';
-if oeg=24    then  label285.caption:=' | Pasividad.';
-if oeg=25    then  label285.caption:=' | Proyección.';
-if oeg=26    then  label285.caption:=' | Racionalizar.';
-if oeg=27    then  label285.caption:=' | Imprudencia.';
-if oeg=28    then  label285.caption:=' | Preocupación.';
-if oeg=29    then  label285.caption:=' | Abandono.';
-if oeg=30    then  label285.caption:=' | Vergüenza.';
-if oeg=31    then  label285.caption:=' | Traición.';
-if oeg=32    then  label285.caption:=' | Malentendimiento.';
-if oeg=33    then  label285.caption:=' | Curiosidad.';
-if oeg=34    then  label285.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label285.caption:=' | Conflicto religioso.';
-if oeg=36    then  label285.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label285.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label285.caption:=' | Nervios.';
-if oeg=39    then  label285.caption:=' | Risa.';
-if oeg=40    then  label285.caption:=' | Entusiasmo.';
-if oeg=41    then  label285.caption:=' | Vanidad.';
-if oeg=42    then  label285.caption:=' | Negociación.';
-if oeg=43    then  label285.caption:=' | Coraje.';
-if oeg=44    then  label285.caption:=' | Vergüenza.';
-if oeg=45    then  label285.caption:=' | Monotonía.';
-if oeg=46    then  label285.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label285.caption:=' | Observación.';
-if oeg=48    then  label285.caption:=' | Antagonismo.';
-if oeg=49    then  label285.caption:=' | Sensualidad.';
-if oeg=50    then  label285.caption:=' | Espiritualidad.';
-if oeg=51    then  label285.caption:=' | Sexualidad.';
-if oeg=52    then  label285.caption:=' | Adictividad.';
-if oeg=53    then  label285.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label285.caption:=' | Apatía.';
-if oeg=55    then  label285.caption:=' | Extasis.';
-if oeg=56    then  label285.caption:=' | Inepcia.';
-if oeg=57    then  label285.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label285.caption:=' | Perfeccionismo.';
-if oeg=59    then  label285.caption:=' | Desesperación.';
-if oeg=60    then  label285.caption:=' | Dominación.';
-if oeg=61    then  label285.caption:=' | Sumisión.';
-if oeg=62    then  label285.caption:=' | Orgullo.';
-if oeg=63    then  label285.caption:=' | Resentimiento.';
-if oeg=64    then  label285.caption:=' | Choc.';
-if oeg=65    then  label285.caption:=' | Descuido.';
-if oeg=66    then  label285.caption:=' | Obsesividad.';
-if oeg=67    then  label285.caption:=' | Impulsividad.';
-if oeg=68    then  label285.caption:=' | Manías incontrolables.';
-if oeg=69    then  label285.caption:=' | Impulsividad.';
-if oeg=70    then  label285.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label285.caption:=' | Distracción.';
-if oeg=72    then  label285.caption:=' | Concentración.';
-if oeg=73    then  label285.caption:=' | Irrealismo.';
-if oeg=74    then  label285.caption:=' | Frustración.';
-oeg:=random(75);
-if oeg=1    then  label286.caption:=' | Regresión.';
-if oeg= 2   then  label286.caption:=' | Agresión.';
-if oeg=3    then  label286.caption:=' | Ira.';
-if oeg=4    then  label286.caption:=' | Ansiedad.';
-if oeg=5    then  label286.caption:=' | Conciencia.';
-if oeg=6    then  label286.caption:=' | Tristeza.';
-if oeg=7    then  label286.caption:=' | Culpabilidad.';
-if oeg=8    then  label286.caption:=' | Autismo.';
-if oeg=9    then  label286.caption:=' | Negación.';
-if oeg=10    then  label286.caption:=' | Descuido.';
-if oeg=11    then  label286.caption:=' | Desilusión.';
-if oeg=12    then  label286.caption:=' | Depresión.';
-if oeg=13    then  label286.caption:=' | Poder.';
-if oeg=14    then  label286.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label286.caption:=' | Temor.';
-if oeg=16    then  label286.caption:=' | Confusión.';
-if oeg=17    then  label286.caption:=' | Duda.';
-if oeg=18    then  label286.caption:=' | Celos.';
-if oeg=19    then  label286.caption:=' | Alegría.';
-if oeg=20    then  label286.caption:=' | Lujuria.';
-if oeg=21    then  label286.caption:=' | Avaricia.';
-if oeg=22    then  label286.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label286.caption:=' | Dolor psíquico.';
-if oeg=24    then  label286.caption:=' | Pasividad.';
-if oeg=25    then  label286.caption:=' | Proyección.';
-if oeg=26    then  label286.caption:=' | Racionalizar.';
-if oeg=27    then  label286.caption:=' | Imprudencia.';
-if oeg=28    then  label286.caption:=' | Preocupación.';
-if oeg=29    then  label286.caption:=' | Abandono.';
-if oeg=30    then  label286.caption:=' | Vergüenza.';
-if oeg=31    then  label286.caption:=' | Traición.';
-if oeg=32    then  label286.caption:=' | Malentendimiento.';
-if oeg=33    then  label286.caption:=' | Curiosidad.';
-if oeg=34    then  label286.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label286.caption:=' | Conflicto religioso.';
-if oeg=36    then  label286.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label286.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label286.caption:=' | Nervios.';
-if oeg=39    then  label286.caption:=' | Risa.';
-if oeg=40    then  label286.caption:=' | Entusiasmo.';
-if oeg=41    then  label286.caption:=' | Vanidad.';
-if oeg=42    then  label286.caption:=' | Negociación.';
-if oeg=43    then  label286.caption:=' | Coraje.';
-if oeg=44    then  label286.caption:=' | Vergüenza.';
-if oeg=45    then  label286.caption:=' | Monotonía.';
-if oeg=46    then  label286.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label286.caption:=' | Observación.';
-if oeg=48    then  label286.caption:=' | Antagonismo.';
-if oeg=49    then  label286.caption:=' | Sensualidad.';
-if oeg=50    then  label286.caption:=' | Espiritualidad.';
-if oeg=51    then  label286.caption:=' | Sexualidad.';
-if oeg=52    then  label286.caption:=' | Adictividad.';
-if oeg=53    then  label286.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label286.caption:=' | Apatía.';
-if oeg=55    then  label286.caption:=' | Extasis.';
-if oeg=56    then  label286.caption:=' | Inepcia.';
-if oeg=57    then  label286.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label286.caption:=' | Perfeccionismo.';
-if oeg=59    then  label286.caption:=' | Desesperación.';
-if oeg=60    then  label286.caption:=' | Dominación.';
-if oeg=61    then  label286.caption:=' | Sumisión.';
-if oeg=62    then  label286.caption:=' | Orgullo.';
-if oeg=63    then  label286.caption:=' | Resentimiento.';
-if oeg=64    then  label286.caption:=' | Choc.';
-if oeg=65    then  label286.caption:=' | Descuido.';
-if oeg=66    then  label286.caption:=' | Obsesividad.';
-if oeg=67    then  label286.caption:=' | Impulsividad.';
-if oeg=68    then  label286.caption:=' | Manías incontrolables.';
-if oeg=69    then  label286.caption:=' | Impulsividad.';
-if oeg=70    then  label286.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label286.caption:=' | Distracción.';
-if oeg=72    then  label286.caption:=' | Concentración.';
-if oeg=73    then  label286.caption:=' | Irrealismo.';
-if oeg=74    then  label286.caption:=' | Frustración.';
-
-  oeg:=random(43);
-if oeg=1 then label287.caption:='Inflamación.';
-if oeg=2 then label287.caption:='Cáncer.';
-if oeg=3 then label287.caption:='Estrés.';
-if oeg=4 then label287.caption:='Hipoadrenia.';
-if oeg=5 then label287.caption:='Factores emocionales.';
-if oeg=6 then label287.caption:='Infección.';
-if oeg=7 then label287.caption:='Toxicidad.';
-if oeg=8 then label287.caption:='Trauma.';
-if oeg=9 then label287.caption:='Factores heredados.';
-if oeg=10 then label287.caption:='Deficiencia o exceso de vitaminas.';
-if oeg=11 then label287.caption:='Sistema cardiovascular.';
-if oeg=12 then label287.caption:='Sistema hormonal.';
-if oeg=13 then label287.caption:='Sistema linfático.';
-if oeg=14 then label287.caption:='Hígado.';
-if oeg=15 then label287.caption:='Riñones.';
-if oeg=16 then label287.caption:='Aparato digestivo.';
-if oeg=17 then label287.caption:='Tejido conectivo.';
-if oeg=18 then label287.caption:='Huesos.';
-if oeg=19 then label287.caption:='Alcalinidad o acidez del agua.';
-if oeg=20 then label287.caption:='Sangre.';
-if oeg=21 then label287.caption:='Medio ambiente.';
-if oeg=22 then label287.caption:='Alergias.';
-if oeg=23 then label287.caption:='Riesgos emocionales.';
-if oeg=24 then label287.caption:='Circulación.';
-if oeg=25 then label287.caption:='Sistema inmunitario.';
-if oeg=26 then label287.caption:='Radiación.';
-if oeg=27 then label287.caption:='Bacterias.';
-if oeg=28 then label287.caption:='Fungosidades.';
-if oeg=29 then label287.caption:='Virus.';
-if oeg=30 then label287.caption:='Parásitos.';
-if oeg=31 then label287.caption:='Ameba.';
-if oeg=32 then label287.caption:='Intolerancia alimentaria.';
-if oeg=33 then label287.caption:='Regulación del azúcar.';
-if oeg=34 then label287.caption:='Sistema neurológico.';
-if oeg=35 then label287.caption:='Sistema sensorial.';
-if oeg=36 then label287.caption:='Colesterol.';
-if oeg=37 then label287.caption:='Sistema respiratorio.';
-if oeg=38 then label287.caption:='Oxidación.';
-if oeg=39 then label287.caption:='Hidratación.';
-if oeg=40 then label287.caption:='Cognicción.';
-    oeg:=random(139);
-if oeg=0 then label287.caption:=label287.caption+'Entrelazado con '+'Pulmones.';
-if oeg=1 then label287.caption:=label287.caption+'Entrelazado con '+'Piel.';
-if oeg=2 then label287.caption:=label287.caption+'Entrelazado con '+'Cerebro.';
-if oeg=3 then label287.caption:=label287.caption+'Entrelazado con '+'Senos nasales.';
-if oeg=4 then label287.caption:=label287.caption+'Entrelazado con '+'Estómago.';
-if oeg=5 then label287.caption:=label287.caption+'Entrelazado con '+'Sistema ocular.';
-if oeg=6 then label287.caption:=label287.caption+'Entrelazado con '+'Intestinos.';
-if oeg=7 then label287.caption:=label287.caption+'Entrelazado con '+'Pulmones.';
-if oeg=8 then label287.caption:=label287.caption+'Entrelazado con '+'Estómago.';
-if oeg=9 then label287.caption:=label287.caption+'Entrelazado con '+'Suprarrenales.';
-if oeg=10 then label287.caption:=label287.caption+'Entrelazado con '+'Senos nasales.';
-if oeg=11 then label287.caption:=label287.caption+'Entrelazado con '+'Factores emocionales.';
-if oeg=12 then label287.caption:=label287.caption+'Entrelazado con '+'Sangre.';
-if oeg=13 then label287.caption:=label287.caption+'Entrelazado con '+'Sistema linfático.';
-if oeg=14 then label287.caption:=label287.caption+'Entrelazado con '+'Dentadura.';
-if oeg=15 then label287.caption:=label287.caption+'Entrelazado con '+'Formación reticular.';
-if oeg=16 then label287.caption:=label287.caption+'Entrelazado con '+'Médula oblongata.';
-if oeg=17 then label287.caption:=label287.caption+'Entrelazado con '+'Lóbulo frontal del cerebro.';
-if oeg=18 then label287.caption:=label287.caption+'Entrelazado con '+'Lóbulo parietal del cerebro.';
-if oeg=19 then label287.caption:=label287.caption+'Entrelazado con '+'Lóbulo occipital del cerebro.';
-if oeg=20 then label287.caption:=label287.caption+'Entrelazado con '+'Lóbulo temporal del cerebro.';
-if oeg=21 then label287.caption:=label287.caption+'Entrelazado con '+'Tiroides.';
-if oeg=22 then label287.caption:=label287.caption+'Entrelazado con '+'Timo.';
-if oeg=23 then label287.caption:=label287.caption+'Entrelazado con '+'Médula espinal.';
-if oeg=24 then label287.caption:=label287.caption+'Entrelazado con '+'Sistema límbico.';
-if oeg=25 then label287.caption:=label287.caption+'Entrelazado con '+'Circuitos de la memoria.';
-if oeg=26 then label287.caption:=label287.caption+'Entrelazado con '+'Hipotálamo.';
-if oeg=27 then label287.caption:=label287.caption+'Entrelazado con '+'Pineal.';
-if oeg=28 then label287.caption:=label287.caption+'Entrelazado con '+'Pituitaria.';
-if oeg=29 then label287.caption:=label287.caption+'Entrelazado con '+'Paratiroides.';
-if oeg=30 then label287.caption:=label287.caption+'Entrelazado con '+'Sangre.';
-if oeg=31 then label287.caption:=label287.caption+'Entrelazado con '+'Sistema linfático.';
-if oeg=32 then label287.caption:=label287.caption+'Entrelazado con '+'Dentadura.';
-if oeg=33 then label287.caption:=label287.caption+'Entrelazado con '+'Pulmones.';
-if oeg=34 then label287.caption:=label287.caption+'Entrelazado con '+'Piel.';
-if oeg=35 then label287.caption:=label287.caption+'Entrelazado con '+'Cerebro.';
-if oeg=36 then label287.caption:=label287.caption+'Entrelazado con '+'Karma.';
-if oeg=37 then label287.caption:=label287.caption+'Entrelazado con '+'Estómago.';
-if oeg=38 then label287.caption:=label287.caption+'Entrelazado con '+'Karma.';
-if oeg=39 then label287.caption:=label287.caption+'Entrelazado con '+'Intestinos.';
-if oeg=40 then label287.caption:=label287.caption+'Entrelazado con '+'Formación reticular.';
-if oeg=41 then label287.caption:=label287.caption+'Entrelazado con '+'Estómago.';
-if oeg=42 then label287.caption:=label287.caption+'Entrelazado con '+'Suprarrenales.';
-if oeg=43 then label287.caption:=label287.caption+'Entrelazado con '+'Formación reticular.';
-if oeg=44 then label287.caption:=label287.caption+'Entrelazado con '+'Factores emocionales.';
-if oeg=45 then label287.caption:=label287.caption+'Entrelazado con '+'Sangre.';
-if oeg=46 then label287.caption:=label287.caption+'Entrelazado con '+'Sistema linfático.';
-if oeg=47 then label287.caption:=label287.caption+'Entrelazado con '+'Disturbio en digestión / Absorpción.' ;
-if oeg=48 then label287.caption:=label287.caption+'Deficiencia de '+'sales en tejidos no especificados.';
-if oeg=49 then label287.caption:=label287.caption+'Deficiencia de '+'ácidos grasos en general.';
-if oeg=50 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón bajo.' ;
-if oeg=51 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón mediano.' ;
-if oeg=52 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if oeg=53 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=54 then label287.caption:=label287.caption+'Deficiencia de '+'todos los ácidos grasos.'  ;
-if oeg=55 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón alto.'  ;
-if oeg=56 then label287.caption:=label287.caption+'Deficiencia de '+'ácidos grasos relacionados con las enzimas.'  ;
-if oeg=57 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina E.' ;
-if oeg=58 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina E1.'  ;
-if oeg=59 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina E2.' ;
-if oeg=60 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina E3.'  ;
-if oeg=0  then label287.caption:=label287.caption+'Deficiencia de '+'vitamina K.' ;
-if oeg=61 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina K1.'  ;
-if oeg=62 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina K3.' ;
-if oeg=63 then label287.caption:=label287.caption+'Deficiencia de '+'todas las vitaminas K.'  ;
-if oeg=64 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina U / Ubiquinona.' ;
-if oeg=65 then label287.caption:=label287.caption+'Deficiencia de '+'CoQ6.' ;
-if oeg=66 then label287.caption:=label287.caption+'Deficiencia de '+'CoQ7.' ;
-if oeg=67 then label287.caption:=label287.caption+'Deficiencia de '+'CoQ8.' ;
-if oeg=68 then label287.caption:=label287.caption+'Deficiencia de '+'CoQ9.'  ;
-if oeg=69 then label287.caption:=label287.caption+'Deficiencia de '+'CoQ10.' ;
-if oeg=70 then label287.caption:=label287.caption+'Deficiencia de '+'todos los CoQ.';
-if oeg=71 then label287.caption:=label287.caption+'Deficiencia de '+'ciclo de la ubiquinona.'  ;
-if oeg=72 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina C.';
-if oeg=73 then label287.caption:=label287.caption+'Deficiencia de '+'bioflavenoides.'  ;
-if oeg=74 then label287.caption:=label287.caption+'Deficiencia de '+'rutina.'  ;
-if oeg=75 then label287.caption:=label287.caption+'Deficiencia de '+'acido hespárico.'  ;
-if oeg=76 then label287.caption:=label287.caption+'Deficiencia de '+'tirosina.'  ;
-if oeg=77 then label287.caption:=label287.caption+'Deficiencia de '+'tirosinasea.' ;
-if oeg=78 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina C ase.' ;
-if oeg=79 then label287.caption:=label287.caption+'Deficiencia de '+'ácido ascórbico.'  ;
-if oeg=80 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina D.' ;
-if oeg=81 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina D1.'  ;
-if oeg=82 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina D2.'  ;
-if oeg=83 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina D3.'  ;
-if oeg=84 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina D4.'  ;
-if oeg=85 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina A.' ;
-if oeg=86 then label287.caption:=label287.caption+'Deficiencia de '+'beta carotina.'  ;
-if oeg=87 then label287.caption:=label287.caption+'Deficiencia de '+'aceite de pescado.'  ;
-if oeg=88 then label287.caption:=label287.caption+'Deficiencia de '+'retinol.'  ;
-if oeg=89 then label287.caption:=label287.caption+'Deficiencia de '+'precursores de la vitamina A.'  ;
-if oeg=90 then label287.caption:=label287.caption+'Deficiencia de '+'vitamina A en cartílagos.' ;
-if oeg=91 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en general.' ;
-if oeg=92 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas para la reducción de la oxidación.';
-if oeg=93 then label287.caption:=label287.caption+'Deficiencia de '+ 'enzimas para la hidrolización de la digestión.';
-if oeg=94 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas para la fosforilización del cerebro.';
-if oeg=95 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas para las descarbonización de los pulmónes.';
-if oeg=96 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas para la regularización de la hidrolización del agua.';
-if oeg=97 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas para la regulación del ADN.' ;
-if oeg=98 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=99 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=100 then label287.caption:=label287.caption+'Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=101 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=102 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=103 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=104 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=105 then label287.caption:=label287.caption+'Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=106 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=107 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if oeg=108 then label287.caption:=label287.caption+'Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=109 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=110 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=111 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=112 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=113 then label287.caption:=label287.caption+'Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=114 then label287.caption:=label287.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=115 then label287.caption:=label287.caption+'Deficiencia de '+'ácidos grasos relacionados con procesos enzimáticos.'  ;
-if oeg=116 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas generales.' ;
-if oeg=117 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en la reducción de la oxidación.';
-if oeg=118 then label287.caption:=label287.caption+'Deficiencia de '+ 'enzimas digestivas, hidrolización.';
-if oeg=119 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en el pensamiento, fosforilación.';
-if oeg=120 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en la respiración decarboxilasa.';
-if oeg=121 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en la regulación del agua hidrolasa.';
-if oeg=122 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas en la regulación del ADN.' ;
-if oeg=123 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=124 then label287.caption:=label287.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-oeg:=random(75);
-if oeg=1    then  label290.caption:='Negación '+'de regresión.';
-if oeg= 2   then  label290.caption:='Negación de '+'agresión.';
-if oeg=3    then  label290.caption:='Negación de '+'íra.';
-if oeg=4    then  label290.caption:='Negación de '+'ansiedad.';
-if oeg=5    then  label290.caption:='Negación de '+'toma de conciencia.';
-if oeg=6    then  label290.caption:='Negación de '+'tristeza.';
-if oeg=7    then  label290.caption:='Negación de '+'culpabilidad.';
-if oeg=8    then  label290.caption:='Negación de '+'autismo.';
-if oeg=9    then  label290.caption:='Negación de '+'negación.';
-if oeg=10    then  label290.caption:='Negación de '+'descuido.';
-if oeg=11    then  label290.caption:='Negación de '+'desilusión.';
-if oeg=12    then  label290.caption:='Negación de '+'depresión.';
-if oeg=13    then  label290.caption:='Negación de '+'poder.';
-if oeg=14    then  label290.caption:='Negación de '+'duda de sí mismo/a.';
-if oeg=15    then  label290.caption:='Negación de '+'temor.';
-if oeg=16    then  label290.caption:='Negación de '+'confusión.';
-if oeg=17    then  label290.caption:='Negación de '+'duda.';
-if oeg=18    then  label290.caption:='Negación de '+'celos.';
-if oeg=19    then  label290.caption:='Negación de '+'alegría.';
-if oeg=20    then  label290.caption:='Negación de '+'lujúria.';
-if oeg=21    then  label290.caption:='Negación de '+'avaricia.';
-if oeg=22    then  label290.caption:='Negación de '+'poderese extra sensoriales.';
-if oeg=23    then  label290.caption:='Negación de '+'dolor psíquico.';
-if oeg=24    then  label290.caption:='Negación de '+'pasividad.';
-if oeg=25    then  label290.caption:='Negación de '+'proyección.';
-if oeg=26    then  label290.caption:='Negación de '+'Racionalizar.';
-if oeg=27    then  label290.caption:='Negación de '+'imprudencia.';
-if oeg=28    then  label290.caption:='Negación de '+'preocupación.';
-if oeg=29    then  label290.caption:='Negación de '+'abandono.';
-if oeg=30    then  label290.caption:='Negación de '+'Vergüenza.';
-if oeg=31    then  label290.caption:='Negación de '+'traición.';
-if oeg=32    then  label290.caption:='Negación de '+'malentendimiento.';
-if oeg=33    then  label290.caption:='Negación de '+'curiosidad.';
-if oeg=34    then  label290.caption:='Negación de '+'sobrecogimiento.';
-if oeg=35    then  label290.caption:='Negación de '+'conflicto religioso.';
-if oeg=36    then  label290.caption:='Negación de '+'conflicto de identidad.';
-if oeg=37    then  label290.caption:='Negación de '+'resistencia al cambio.';
-if oeg=38    then  label290.caption:='Negación de '+'nervios.';
-if oeg=39    then  label290.caption:='Negación de '+'risa.';
-if oeg=40    then  label290.caption:='Negación de '+'entusiasmo.';
-if oeg=41    then  label290.caption:='Negación de '+'vanidad.';
-if oeg=42    then  label290.caption:='Negación de '+'negociación.';
-if oeg=43    then  label290.caption:='Negación de '+'coráje.';
-if oeg=44    then  label290.caption:='Negación de '+'vergüenza.';
-if oeg=45    then  label290.caption:='Negación de '+'monotonía.';
-if oeg=46    then  label290.caption:='Negación de '+'necesidad de cambio.';
-if oeg=47    then  label290.caption:='Negación de '+'observación.';
-if oeg=48    then  label290.caption:='Negación de '+'antagonismo.';
-if oeg=49    then  label290.caption:='Negación de '+'sensualidad.';
-if oeg=50    then  label290.caption:='Negación de '+'espiritualidad.';
-if oeg=51    then  label290.caption:='Negación de '+'sexualidad.';
-if oeg=52    then  label290.caption:='Negación de '+'adicción.';
-if oeg=53    then  label290.caption:='Negación de '+'enjuiciamientos.';
-if oeg=54    then  label290.caption:='Negación de '+'apatía.';
-if oeg=55    then  label290.caption:='Negación de '+'extasis.';
-if oeg=56    then  label290.caption:='Negación de '+'inepcia.';
-if oeg=57    then  label290.caption:='Negación de '+'deseo de que las cosas sean diferentes.';
-if oeg=58    then  label290.caption:='Negación de '+'perfeccionismo.';
-if oeg=59    then  label290.caption:='Negación de '+'desesperación.';
-if oeg=60    then  label290.caption:='Negación de '+'dominación.';
-if oeg=61    then  label290.caption:='Negación de '+'Sumisión.';
-if oeg=62    then  label290.caption:='Negación de '+'orgullo.';
-if oeg=63    then  label290.caption:='Negación de '+'resentimiento.';
-if oeg=64    then  label290.caption:='Negación de '+'choque.';
-if oeg=65    then  label290.caption:='Negación de '+'descuido.';
-if oeg=66    then  label290.caption:='Negación de '+'obsesividad.';
-if oeg=67    then  label290.caption:='Negación de '+'Impulsividad.';
-if oeg=68    then  label290.caption:='Negación de '+'manías incontrolables.';
-if oeg=69    then  label290.caption:='Negación de '+'impulsividad.';
-if oeg=70    then  label290.caption:='Negación de '+'lealtad inquebrantable.';
-if oeg=71    then  label290.caption:='Negación de '+'distracción.';
-if oeg=72    then  label290.caption:='Negación de '+'concentración.';
-if oeg=73    then  label290.caption:='Negación de '+'irrealismo.';
-if oeg=74    then  label290.caption:='Negación de '+'frustración.';
-oeg:=random(75);
-if oeg=1    then  label289.caption:='Racionalización de '+'regresión.';
-if oeg= 2   then  label289.caption:='Racionalización de '+'agresión.';
-if oeg=3    then  label289.caption:='Racionalización de '+'íra.';
-if oeg=4    then  label289.caption:='Racionalización de '+'ansiedad.';
-if oeg=5    then  label289.caption:='Racionalización de '+'toma de conciencia.';
-if oeg=6    then  label289.caption:='Racionalización de '+'tristeza.';
-if oeg=7    then  label289.caption:='Racionalización de '+'culpabilidad.';
-if oeg=8    then  label289.caption:='Racionalización de '+'autismo.';
-if oeg=9    then  label289.caption:='Racionalización de '+'negación.';
-if oeg=10    then  label289.caption:='Racionalización de '+'descuido.';
-if oeg=11    then  label289.caption:='Racionalización de '+'desilusión.';
-if oeg=12    then  label289.caption:='Racionalización de '+'depresión.';
-if oeg=13    then  label289.caption:='Racionalización de '+'poder.';
-if oeg=14    then  label289.caption:='Racionalización de '+'duda de sí mismo/a.';
-if oeg=15    then  label289.caption:='Racionalización de '+'temor.';
-if oeg=16    then  label289.caption:='Racionalización de '+'confusión.';
-if oeg=17    then  label289.caption:='Racionalización de '+'duda.';
-if oeg=18    then  label289.caption:='Racionalización de '+'celos.';
-if oeg=19    then  label289.caption:='Racionalización de '+'alegría.';
-if oeg=20    then  label289.caption:='Racionalización de '+'lujúria.';
-if oeg=21    then  label289.caption:='Racionalización de '+'avaricia.';
-if oeg=22    then  label289.caption:='Racionalización de '+'poderes extra sensoriales.';
-if oeg=23    then  label289.caption:='Racionalización de '+'dolor psíquico.';
-if oeg=24    then  label289.caption:='Racionalización de '+'pasividad.';
-if oeg=25    then  label289.caption:='Racionalización de '+'proyección.';
-if oeg=26    then  label289.caption:='Racionalización de '+'Racionalizar.';
-if oeg=27    then  label289.caption:='Racionalización de '+'imprudencia.';
-if oeg=28    then  label289.caption:='Racionalización de '+'preocupación.';
-if oeg=29    then  label289.caption:='Racionalización de '+'abandono.';
-if oeg=30    then  label289.caption:='Racionalización de '+'Vergüenza.';
-if oeg=31    then  label289.caption:='Racionalización de '+'traición.';
-if oeg=32    then  label289.caption:='Racionalización de '+'malentendimiento.';
-if oeg=33    then  label289.caption:='Racionalización de '+'curiosidad.';
-if oeg=34    then  label289.caption:='Racionalización de '+'sobrecogimiento.';
-if oeg=35    then  label289.caption:='Racionalización de '+'conflicto religioso.';
-if oeg=36    then  label289.caption:='Racionalización de '+'conflicto de identidad.';
-if oeg=37    then  label289.caption:='Racionalización de '+'resistencia al cambio.';
-if oeg=38    then  label289.caption:='Racionalización de '+'nervios.';
-if oeg=39    then  label289.caption:='Racionalización de '+'risa.';
-if oeg=40    then  label289.caption:='Racionalización de '+'entusiasmo.';
-if oeg=41    then  label289.caption:='Racionalización de '+'vanidad.';
-if oeg=42    then  label289.caption:='Racionalización de '+'negociación.';
-if oeg=43    then  label289.caption:='Racionalización de '+'coráje.';
-if oeg=44    then  label289.caption:='Racionalización de '+'vergüenza.';
-if oeg=45    then  label289.caption:='Racionalización de '+'monotonía.';
-if oeg=46    then  label289.caption:='Racionalización de '+'necesidad de cambio.';
-if oeg=47    then  label289.caption:='Racionalización de '+'observación.';
-if oeg=48    then  label289.caption:='Racionalización de '+'antagonismo.';
-if oeg=49    then  label289.caption:='Racionalización de '+'sensualidad.';
-if oeg=50    then  label289.caption:='Racionalización de '+'espiritualidad.';
-if oeg=51    then  label289.caption:='Racionalización de '+'sexualidad.';
-if oeg=52    then  label289.caption:='Racionalización de '+'adictividad.';
-if oeg=53    then  label289.caption:='Racionalización de '+'enjuiciamiento.';
-if oeg=54    then  label289.caption:='Racionalización de '+'apatía.';
-if oeg=55    then  label289.caption:='Racionalización de '+'extasis.';
-if oeg=56    then  label289.caption:='Racionalización de '+'inepcia.';
-if oeg=57    then  label289.caption:='Racionalización de '+'deseo de que las cosas sean diferentes.';
-if oeg=58    then  label289.caption:='Racionalización de '+'perfeccionismo.';
-if oeg=59    then  label289.caption:='Racionalización de '+'desesperación.';
-if oeg=60    then  label289.caption:='Racionalización de '+'dominación.';
-if oeg=61    then  label289.caption:='Racionalización de '+'Sumisión.';
-if oeg=62    then  label289.caption:='Racionalización de '+'orgullo.';
-if oeg=63    then  label289.caption:='Racionalización de '+'resentimiento.';
-if oeg=64    then  label289.caption:='Racionalización de '+'choque.';
-if oeg=65    then  label289.caption:='Racionalización de '+'descuido.';
-if oeg=66    then  label289.caption:='Racionalización de '+'obsesividad.';
-if oeg=67    then  label289.caption:='Racionalización de '+'Impulsividad.';
-if oeg=68    then  label289.caption:='Racionalización de '+'manías incontrolables.';
-if oeg=69    then  label289.caption:='Racionalización de '+'impulsividad.';
-if oeg=70    then  label289.caption:='Racionalización de '+'lealtad inquebrantable.';
-if oeg=71    then  label289.caption:='Racionalización de '+'distracción.';
-if oeg=72    then  label289.caption:='Racionalización de '+'concentración.';
-if oeg=73    then  label289.caption:='Racionalización de '+'irrealismo.';
-if oeg=74    then  label289.caption:='Racionalización de '+'frustración.';
+TestForm1.BENegativas.Click;
+TestForm1.BCausas.Click;
+TestForm1.BToxinas.Click;
 GProgreso.progress :=  100;
  psych1:=label284.caption;
  psych2:=label285.caption;
@@ -39804,6 +35306,7 @@ GProgreso.progress :=  100;
  psych5:=label289.caption;
  psych6:=label290.caption;
  Panel2.Visible := False;
+ TestForm1.BAfirmaciones.Click;
 MyChrono2.Stop;
 end;
 
@@ -40143,311 +35646,162 @@ oeg:=random(10);   if oeg=5 then    Label286.Caption:=ment14;
       end;
    if  label285.caption=''  then begin
     oeg:=random(75);
-if oeg=1    then  label285.caption:=' | Regresión.';
-if oeg= 2   then  label285.caption:=' | Agresión.';
-if oeg=3    then  label285.caption:=' | Ira.';
-if oeg=4    then  label285.caption:=' | Ansiedad.';
-if oeg=5    then  label285.caption:=' | Conciencia.';
-if oeg=6    then  label285.caption:=' | Tristeza.';
-if oeg=7    then  label285.caption:=' | Culpabilidad.';
-if oeg=8    then  label285.caption:=' | Autismo.';
-if oeg=9    then  label285.caption:=' | Negación.';
-if oeg=10    then  label285.caption:=' | Descuido.';
-if oeg=11    then  label285.caption:=' | Desilusión.';
-if oeg=12    then  label285.caption:=' | Depresión.';
-if oeg=13    then  label285.caption:=' | Poder.';
-if oeg=14    then  label285.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label285.caption:=' | Temor.';
-if oeg=16    then  label285.caption:=' | Confusión.';
-if oeg=17    then  label285.caption:=' | Duda.';
-if oeg=18    then  label285.caption:=' | Celos.';
-if oeg=19    then  label285.caption:=' | Alegría.';
-if oeg=20    then  label285.caption:=' | Lujuria.';
-if oeg=21    then  label285.caption:=' | Avaricia.';
-if oeg=22    then  label285.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label285.caption:=' | Dolor psíquico.';
-if oeg=24    then  label285.caption:=' | Pasividad.';
-if oeg=25    then  label285.caption:=' | Proyección.';
-if oeg=26    then  label285.caption:=' | Racionalizar.';
-if oeg=27    then  label285.caption:=' | Imprudencia.';
-if oeg=28    then  label285.caption:=' | Preocupación.';
-if oeg=29    then  label285.caption:=' | Abandono.';
-if oeg=30    then  label285.caption:=' | Vergüenza.';
-if oeg=31    then  label285.caption:=' | Traición.';
-if oeg=32    then  label285.caption:=' | Malentendimiento.';
-if oeg=33    then  label285.caption:=' | Curiosidad.';
-if oeg=34    then  label285.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label285.caption:=' | Conflicto religioso.';
-if oeg=36    then  label285.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label285.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label285.caption:=' | Nervios.';
-if oeg=39    then  label285.caption:=' | Risa.';
-if oeg=40    then  label285.caption:=' | Entusiasmo.';
-if oeg=41    then  label285.caption:=' | Vanidad.';
-if oeg=42    then  label285.caption:=' | Negociación.';
-if oeg=43    then  label285.caption:=' | Coraje.';
-if oeg=44    then  label285.caption:=' | Vergüenza.';
-if oeg=45    then  label285.caption:=' | Monotonía.';
-if oeg=46    then  label285.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label285.caption:=' | Observación.';
-if oeg=48    then  label285.caption:=' | Antagonismo.';
-if oeg=49    then  label285.caption:=' | Sensualidad.';
-if oeg=50    then  label285.caption:=' | Espiritualidad.';
-if oeg=51    then  label285.caption:=' | Sexualidad.';
-if oeg=52    then  label285.caption:=' | Adictividad.';
-if oeg=53    then  label285.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label285.caption:=' | Apatía.';
-if oeg=55    then  label285.caption:=' | Extasis.';
-if oeg=56    then  label285.caption:=' | Inepcia.';
-if oeg=57    then  label285.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label285.caption:=' | Perfeccionismo.';
-if oeg=59    then  label285.caption:=' | Desesperación.';
-if oeg=60    then  label285.caption:=' | Dominación.';
-if oeg=61    then  label285.caption:=' | Sumisión.';
-if oeg=62    then  label285.caption:=' | Orgullo.';
-if oeg=63    then  label285.caption:=' | Resentimiento.';
-if oeg=64    then  label285.caption:=' | Choc.';
-if oeg=65    then  label285.caption:=' | Descuido.';
-if oeg=66    then  label285.caption:=' | Obsesividad.';
-if oeg=67    then  label285.caption:=' | Impulsividad.';
-if oeg=68    then  label285.caption:=' | Manías incontrolables.';
-if oeg=69    then  label285.caption:=' | Impulsividad.';
-if oeg=70    then  label285.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label285.caption:=' | Distracción.';
-if oeg=72    then  label285.caption:=' | Concentración.';
-if oeg=73    then  label285.caption:=' | Irrealismo.';
-if oeg=74    then  label285.caption:=' | Frustración.';
+if oeg<2    then  label285.caption:=' Regresión.';
+if oeg= 2   then  label285.caption:=' Agresión.';
+if oeg=3    then  label285.caption:=' Ira.';
+if oeg=4    then  label285.caption:=' Ansiedad.';
+if oeg=5    then  label285.caption:=' Conciencia.';
+if oeg=6    then  label285.caption:=' Tristeza.';
+if oeg=7    then  label285.caption:=' Culpabilidad.';
+if oeg=8    then  label285.caption:=' Autismo.';
+if oeg=9    then  label285.caption:=' Negación.';
+if oeg=10    then  label285.caption:=' Descuido.';
+if oeg=11    then  label285.caption:=' Desilusión.';
+if oeg=12    then  label285.caption:=' Depresión.';
+if oeg=13    then  label285.caption:=' Poder.';
+if oeg=14    then  label285.caption:=' Duda de sí mismo.';
+if oeg=15    then  label285.caption:=' Temor.';
+if oeg=16    then  label285.caption:=' Confusión.';
+if oeg=17    then  label285.caption:=' Duda.';
+if oeg=18    then  label285.caption:=' Celos.';
+if oeg=19    then  label285.caption:=' Alegría.';
+if oeg=20    then  label285.caption:=' Lujuria.';
+if oeg=21    then  label285.caption:=' Avaricia.';
+if oeg=22    then  label285.caption:=' Poderes Extra Sensoriales.';
+if oeg=23    then  label285.caption:=' Dolor psíquico.';
+if oeg=24    then  label285.caption:=' Pasividad.';
+if oeg=25    then  label285.caption:=' Proyección.';
+if oeg=26    then  label285.caption:=' Racionalización.';
+if oeg=27    then  label285.caption:=' Imprudencia.';
+if oeg=28    then  label285.caption:=' Preocupación.';
+if oeg=29    then  label285.caption:=' Abandono.';
+if oeg=30    then  label285.caption:=' Vergüenza.';
+if oeg=31    then  label285.caption:=' Traición.';
+if oeg=32    then  label285.caption:=' Sentimiento de no o mal entrenamiento.';
+if oeg=33    then  label285.caption:=' Curiosidad.';
+if oeg=34    then  label285.caption:=' Sobrecogimiento.';
+if oeg=35    then  label285.caption:=' Conflicto religioso.';
+if oeg=36    then  label285.caption:=' Conflicto de identidad.';
+if oeg=37    then  label285.caption:=' Resistencia al cambio.';
+if oeg=38    then  label285.caption:=' Nervios.';
+if oeg=39    then  label285.caption:=' Risa.';
+if oeg=40    then  label285.caption:=' Entusiasmo.';
+if oeg=41    then  label285.caption:=' Vanidad.';
+if oeg=42    then  label285.caption:=' Negociación.';
+if oeg=43    then  label285.caption:=' Coraje.';
+if oeg=44    then  label285.caption:=' Vergüenza.';
+if oeg=45    then  label285.caption:=' Monotonía.';
+if oeg=46    then  label285.caption:=' Necesidad de cambio.';
+if oeg=47    then  label285.caption:=' Observación.';
+if oeg=48    then  label285.caption:=' Antagonismo.';
+if oeg=49    then  label285.caption:=' Sensualidad.';
+if oeg=50    then  label285.caption:=' Espiritualidad.';
+if oeg=51    then  label285.caption:=' Sexualidad.';
+if oeg=52    then  label285.caption:=' Adicciones.';
+if oeg=53    then  label285.caption:=' Crítica.';
+if oeg=54    then  label285.caption:=' Apatía.';
+if oeg=55    then  label285.caption:=' Extasis.';
+if oeg=56    then  label285.caption:=' Ineptitud.';
+if oeg=57    then  label285.caption:=' Deseo de que las cosas sean diferentes.';
+if oeg=58    then  label285.caption:=' Perfeccionismo.';
+if oeg=59    then  label285.caption:=' Desesperación.';
+if oeg=60    then  label285.caption:=' Dominación.';
+if oeg=61    then  label285.caption:=' Sumisión.';
+if oeg=62    then  label285.caption:=' Orgullo.';
+if oeg=63    then  label285.caption:=' Resentimiento.';
+if oeg=64    then  label285.caption:=' Choque emocional.';
+if oeg=65    then  label285.caption:=' Descuido.';
+if oeg=66    then  label285.caption:=' Obsesividad.';
+if oeg=67    then  label285.caption:=' Impulsividad.';
+if oeg=68    then  label285.caption:=' Manías.';
+if oeg=69    then  label285.caption:=' Impulsividad.';
+if oeg=70    then  label285.caption:=' Lealtad.';
+if oeg=71    then  label285.caption:=' Distracción.';
+if oeg=72    then  label285.caption:=' Concentración.';
+if oeg=73    then  label285.caption:=' Irrealismo.';
+if oeg>73    then  label285.caption:=' Frustración.';
 end;
 
 if  label284.caption=''  then
 begin
     oeg:=random(75);
-if oeg=1    then  label284.caption:=' | Regresión.';
-if oeg= 2   then  label284.caption:=' | Agresión.';
-if oeg=3    then  label284.caption:=' | Ira.';
-if oeg=4    then  label284.caption:=' | Ansiedad.';
-if oeg=5    then  label284.caption:=' | Conciencia.';
-if oeg=6    then  label284.caption:=' | Tristeza.';
-if oeg=7    then  label284.caption:=' | Culpabilidad.';
-if oeg=8    then  label284.caption:=' | Autismo.';
-if oeg=9    then  label284.caption:=' | Negación.';
-if oeg=10    then  label284.caption:=' | Descuido.';
-if oeg=11    then  label284.caption:=' | Desilusión.';
-if oeg=12    then  label284.caption:=' | Depresión.';
-if oeg=13    then  label284.caption:=' | Poder.';
-if oeg=14    then  label284.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label284.caption:=' | Temor.';
-if oeg=16    then  label284.caption:=' | Confusión.';
-if oeg=17    then  label284.caption:=' | Duda.';
-if oeg=18    then  label284.caption:=' | Celos.';
-if oeg=19    then  label284.caption:=' | Alegría.';
-if oeg=20    then  label284.caption:=' | Lujuria.';
-if oeg=21    then  label284.caption:=' | Avaricia.';
-if oeg=22    then  label284.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label284.caption:=' | Dolor psíquico.';
-if oeg=24    then  label284.caption:=' | Pasividad.';
-if oeg=25    then  label284.caption:=' | Proyección.';
-if oeg=26    then  label284.caption:=' | Racionalizar.';
-if oeg=27    then  label284.caption:=' | Imprudencia.';
-if oeg=28    then  label284.caption:=' | Preocupación.';
-if oeg=29    then  label284.caption:=' | Abandono.';
-if oeg=30    then  label284.caption:=' | Vergüenza.';
-if oeg=31    then  label284.caption:=' | Traición.';
-if oeg=32    then  label284.caption:=' | Malentendimiento.';
-if oeg=33    then  label284.caption:=' | Curiosidad.';
-if oeg=34    then  label284.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label284.caption:=' | Conflicto religioso.';
-if oeg=36    then  label284.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label284.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label284.caption:=' | Nervios.';
-if oeg=39    then  label284.caption:=' | Risa.';
-if oeg=40    then  label284.caption:=' | Entusiasmo.';
-if oeg=41    then  label284.caption:=' | Vanidad.';
-if oeg=42    then  label284.caption:=' | Negociación.';
-if oeg=43    then  label284.caption:=' | Coraje.';
-if oeg=44    then  label284.caption:=' | Vergüenza.';
-if oeg=45    then  label284.caption:=' | Monotonía.';
-if oeg=46    then  label284.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label284.caption:=' | Observación.';
-if oeg=48    then  label284.caption:=' | Antagonismo.';
-if oeg=49    then  label284.caption:=' | Sensualidad.';
-if oeg=50    then  label284.caption:=' | Espiritualidad.';
-if oeg=51    then  label284.caption:=' | Sexualidad.';
-if oeg=52    then  label284.caption:=' | Adictividad.';
-if oeg=53    then  label284.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label284.caption:=' | Apatía.';
-if oeg=55    then  label284.caption:=' | Extasis.';
-if oeg=56    then  label284.caption:=' | Inepcia.';
-if oeg=57    then  label284.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label284.caption:=' | Perfeccionismo.';
-if oeg=59    then  label284.caption:=' | Desesperación.';
-if oeg=60    then  label284.caption:=' | Dominación.';
-if oeg=61    then  label284.caption:=' | Sumisión.';
-if oeg=62    then  label284.caption:=' | Orgullo.';
-if oeg=63    then  label284.caption:=' | Resentimiento.';
-if oeg=64    then  label284.caption:=' | Choc.';
-if oeg=65    then  label284.caption:=' | Descuido.';
-if oeg=66    then  label284.caption:=' | Obsesividad.';
-if oeg=67    then  label284.caption:=' | Impulsividad.';
-if oeg=68    then  label284.caption:=' | Manías incontrolables.';
-if oeg=69    then  label284.caption:=' | Impulsividad.';
-if oeg=70    then  label284.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label284.caption:=' | Distracción.';
-if oeg=72    then  label284.caption:=' | Concentración.';
-if oeg=73    then  label284.caption:=' | Irrealismo.';
-if oeg=74    then  label284.caption:=' | Frustración.';
+if oeg<2    then  label284.caption:=' Regresión.';
+if oeg= 2   then  label284.caption:=' Agresión.';
+if oeg=3    then  label284.caption:=' Ira.';
+if oeg=4    then  label284.caption:=' Ansiedad.';
+if oeg=5    then  label284.caption:=' Conciencia.';
+if oeg=6    then  label284.caption:=' Tristeza.';
+if oeg=7    then  label284.caption:=' Culpabilidad.';
+if oeg=8    then  label284.caption:=' Autismo.';
+if oeg=9    then  label284.caption:=' Negación.';
+if oeg=10    then  label284.caption:=' Descuido.';
+if oeg=11    then  label284.caption:=' Desilusión.';
+if oeg=12    then  label284.caption:=' Depresión.';
+if oeg=13    then  label284.caption:=' Poder.';
+if oeg=14    then  label284.caption:=' Duda de sí mismo.';
+if oeg=15    then  label284.caption:=' Temor.';
+if oeg=16    then  label284.caption:=' Confusión.';
+if oeg=17    then  label284.caption:=' Duda.';
+if oeg=18    then  label284.caption:=' Celos.';
+if oeg=19    then  label284.caption:=' Alegría.';
+if oeg=20    then  label284.caption:=' Lujuria.';
+if oeg=21    then  label284.caption:=' Avaricia.';
+if oeg=22    then  label284.caption:=' Poderes Extra Sensoriales.';
+if oeg=23    then  label284.caption:=' Dolor psíquico.';
+if oeg=24    then  label284.caption:=' Pasividad.';
+if oeg=25    then  label284.caption:=' Proyección.';
+if oeg=26    then  label284.caption:=' Racionalización.';
+if oeg=27    then  label284.caption:=' Imprudencia.';
+if oeg=28    then  label284.caption:=' Preocupación.';
+if oeg=29    then  label284.caption:=' Abandono.';
+if oeg=30    then  label284.caption:=' Vergüenza.';
+if oeg=31    then  label284.caption:=' Traición.';
+if oeg=32    then  label284.caption:=' Sentimiento de no o mal entrenamiento.';
+if oeg=33    then  label284.caption:=' Curiosidad.';
+if oeg=34    then  label284.caption:=' Sobrecogimiento.';
+if oeg=35    then  label284.caption:=' Conflicto religioso.';
+if oeg=36    then  label284.caption:=' Conflicto de identidad.';
+if oeg=37    then  label284.caption:=' Resistencia al cambio.';
+if oeg=38    then  label284.caption:=' Nervios.';
+if oeg=39    then  label284.caption:=' Risa.';
+if oeg=40    then  label284.caption:=' Entusiasmo.';
+if oeg=41    then  label284.caption:=' Vanidad.';
+if oeg=42    then  label284.caption:=' Negociación.';
+if oeg=43    then  label284.caption:=' Coraje.';
+if oeg=44    then  label284.caption:=' Vergüenza.';
+if oeg=45    then  label284.caption:=' Monotonía.';
+if oeg=46    then  label284.caption:=' Necesidad de cambio.';
+if oeg=47    then  label284.caption:=' Observación.';
+if oeg=48    then  label284.caption:=' Antagonismo.';
+if oeg=49    then  label284.caption:=' Sensualidad.';
+if oeg=50    then  label284.caption:=' Espiritualidad.';
+if oeg=51    then  label284.caption:=' Sexualidad.';
+if oeg=52    then  label284.caption:=' Adicciones.';
+if oeg=53    then  label284.caption:=' Crítica.';
+if oeg=54    then  label284.caption:=' Apatía.';
+if oeg=55    then  label284.caption:=' Extasis.';
+if oeg=56    then  label284.caption:=' Ineptitud.';
+if oeg=57    then  label284.caption:=' Deseo de que las cosas sean diferentes.';
+if oeg=58    then  label284.caption:=' Perfeccionismo.';
+if oeg=59    then  label284.caption:=' Desesperación.';
+if oeg=60    then  label284.caption:=' Dominación.';
+if oeg=61    then  label284.caption:=' Sumisión.';
+if oeg=62    then  label284.caption:=' Orgullo.';
+if oeg=63    then  label284.caption:=' Resentimiento.';
+if oeg=64    then  label284.caption:=' Choque emocional.';
+if oeg=65    then  label284.caption:=' Descuido.';
+if oeg=66    then  label284.caption:=' Obsesividad.';
+if oeg=67    then  label284.caption:=' Impulsividad.';
+if oeg=68    then  label284.caption:=' Manías.';
+if oeg=69    then  label284.caption:=' Impulsividad.';
+if oeg=70    then  label284.caption:=' Lealtad.';
+if oeg=71    then  label284.caption:=' Distracción.';
+if oeg=72    then  label284.caption:=' Concentración.';
+if oeg=73    then  label284.caption:=' Irrealismo.';
+if oeg>73    then  label284.caption:=' Frustración.';
 end;
- if  label287.caption=''  then begin
-  oeg:=random(139);
-if oeg=0 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=1 then label287.caption:='Entrelazado con '+'Piel.';
-if oeg=2 then label287.caption:='Entrelazado con '+'Cerebro.';
-if oeg=3 then label287.caption:='Entrelazado con '+'Senos nasales.';
-if oeg=4 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=5 then label287.caption:='Entrelazado con '+'Sistema ocular.';
-if oeg=6 then label287.caption:='Entrelazado con '+'Intestinos.';
-if oeg=7 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=8 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=9 then label287.caption:='Entrelazado con '+'Suprarrenales.';
-if oeg=10 then label287.caption:='Entrelazado con '+'Senos nasales.';
-if oeg=11 then label287.caption:='Entrelazado con '+'Factores emocionales.';
-if oeg=12 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=13 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=14 then label287.caption:='Entrelazado con '+'Dentadura.';
-if oeg=15 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=16 then label287.caption:='Entrelazado con '+'Médula oblongata.';
-if oeg=17 then label287.caption:='Entrelazado con '+'Lóbulo frontal del cerebro.';
-if oeg=18 then label287.caption:='Entrelazado con '+'Lóbulo parietal del cerebro.';
-if oeg=19 then label287.caption:='Entrelazado con '+'Lóbulo occipital del cerebro.';
-if oeg=20 then label287.caption:='Entrelazado con '+'Lóbulo temporal del cerebro.';
-if oeg=21 then label287.caption:='Entrelazado con '+'Tiroides.';
-if oeg=22 then label287.caption:='Entrelazado con '+'Timo.';
-if oeg=23 then label287.caption:='Entrelazado con '+'Médula espinal.';
-if oeg=24 then label287.caption:='Entrelazado con '+'Sistema límbico.';
-if oeg=25 then label287.caption:='Entrelazado con '+'Circuitos de la memoria.';
-if oeg=26 then label287.caption:='Entrelazado con '+'Hipotálamo.';
-if oeg=27 then label287.caption:='Entrelazado con '+'Pineal.';
-if oeg=28 then label287.caption:='Entrelazado con '+'Pituitaria.';
-if oeg=29 then label287.caption:='Entrelazado con '+'Paratiroides.';
-if oeg=30 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=31 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=32 then label287.caption:='Entrelazado con '+'Dentadura.';
-if oeg=33 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=34 then label287.caption:='Entrelazado con '+'Piel.';
-if oeg=35 then label287.caption:='Entrelazado con '+'Cerebro.';
-if oeg=36 then label287.caption:='Entrelazado con '+'Karma.';
-if oeg=37 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=38 then label287.caption:='Entrelazado con '+'Karma.';
-if oeg=39 then label287.caption:='Entrelazado con '+'Intestinos.';
-if oeg=40 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=41 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=42 then label287.caption:='Entrelazado con '+'Suprarrenales.';
-if oeg=43 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=44 then label287.caption:='Entrelazado con '+'Factores emocionales.';
-if oeg=45 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=46 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=47  then label287.caption:='Entrelazado con '+'Disturbio en digestión / Absorpción.';
-if oeg=48  then label287.caption:='Deficiencia de '+'sales en tejidos no especificados.';
-if oeg=49  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=50  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón bajo.';
-if oeg=51  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón mediano.';
-if oeg=52  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados con el aracadonico.' ;
-if oeg=53  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=54  then label287.caption:='Deficiencia de '+'todos los ácidos grasos.';
-if oeg=55  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón alto.';
-if oeg=56  then label287.caption:='Deficiencia de '+'ácidos grasos relacionados con las enzimas.';
-if oeg=57  then label287.caption:='Deficiencia de '+'vitamina E.';
-if oeg=58  then label287.caption:='Deficiencia de '+'vitamina E1.';
-if oeg=59  then label287.caption:='Deficiencia de '+'vitamina E2.';
-if oeg=60  then label287.caption:='Deficiencia de '+'vitamina E3.';
-if oeg=61  then label287.caption:='Deficiencia de '+'vitamina K1.';
-if oeg=62  then label287.caption:='Deficiencia de '+'vitamina K3.';
-if oeg=63  then label287.caption:='Deficiencia de '+'todas las vitaminas K.';
-if oeg=64  then label287.caption:='Deficiencia de '+'vitamina U / Ubiquinona.' ;
-if oeg=65  then label287.caption:='Deficiencia de '+'CoQ6.';
-if oeg=66  then label287.caption:='Deficiencia de '+'CoQ7.';
-if oeg=67  then label287.caption:='Deficiencia de '+'CoQ8.';
-if oeg=68  then label287.caption:='Deficiencia de '+'CoQ9.';
-if oeg=69  then label287.caption:='Deficiencia de '+'CoQ10.';
-if oeg=70  then label287.caption:='Deficiencia de '+'todos los CoQ.';
-if oeg=71  then label287.caption:='Deficiencia de '+'ciclo de la ubiquinona.';
-if oeg=72  then label287.caption:='Deficiencia de '+'vitamina C.';
-if oeg=73  then label287.caption:='Deficiencia de '+'bioflavenoides.';
-if oeg=74  then label287.caption:='Deficiencia de '+'rutina.';
-if oeg=75  then label287.caption:='Deficiencia de '+'acido hespárico.';
-if oeg=76  then label287.caption:='Deficiencia de '+'tirosina.';
-if oeg=77  then label287.caption:='Deficiencia de '+'tirosinasea.' ;
-if oeg=78  then label287.caption:='Deficiencia de '+'vitamina C ase.';
-if oeg=79  then label287.caption:='Deficiencia de '+'ácido ascórbico.';
-if oeg=80  then label287.caption:='Deficiencia de '+'vitamina D.';
-if oeg=81  then label287.caption:='Deficiencia de '+'vitamina D1.';
-if oeg=82  then label287.caption:='Deficiencia de '+'vitamina D2.';
-if oeg=83  then label287.caption:='Deficiencia de '+'vitamina D3.';
-if oeg=84  then label287.caption:='Deficiencia de '+'vitamina D4.';
-if oeg=85  then label287.caption:='Deficiencia de '+'vitamina A.';
-if oeg=86  then label287.caption:='Deficiencia de '+'beta carotina.';
-if oeg=87  then label287.caption:='Deficiencia de '+'aceite de pescado.';
-if oeg=88  then label287.caption:='Deficiencia de '+'retinol.';
-if oeg=89  then label287.caption:='Deficiencia de '+'precursores de la vitamina A.';
-if oeg=90  then label287.caption:='Deficiencia de '+'vitamina A en cartílagos.';
-if oeg=91  then label287.caption:='Deficiencia de '+'enzimas en general.';
-if oeg=92  then label287.caption:='Deficiencia de '+'enzimas para la reducción de la oxidación.';
-if oeg=93  then label287.caption:='Deficiencia de '+ 'enzimas para la hidrolización de la digestión.';
-if oeg=94  then label287.caption:='Deficiencia de '+'enzimas para la fosforilización del cerebro.';
-if oeg=95  then label287.caption:='Deficiencia de '+'enzimas para las descarbonización de los pulmónes.';
-if oeg=96  then label287.caption:='Deficiencia de '+'enzimas para la regularización de la hidrolización del agua.';
-if oeg=97  then label287.caption:='Deficiencia de '+'enzimas para la regulación del ADN.' ;
-if oeg=98  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=99  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=100  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=101  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.';
-if oeg=102  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones medios.';
-if oeg=103  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .';
-if oeg=104  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=105  then label287.caption:='Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.';
-if oeg=106  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones altos.';
-if oeg=107  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los procesos enzimáticos .';
-if oeg=108  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=109  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.';
-if oeg=110  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones medios.';
-if oeg=111  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .';
-if oeg=112  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=113  then label287.caption:='Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.';
-if oeg=114  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones altos.';
-if oeg=115  then label287.caption:='Deficiencia de '+'ácidos grasos relacionados con procesos enzimáticos.';
-if oeg=116  then label287.caption:='Deficiencia de '+'enzimas generales.';
-if oeg=117  then label287.caption:='Deficiencia de '+'enzimas en la reducción de la oxidación.';
-if oeg=118  then label287.caption:='Deficiencia de '+ 'enzimas digestivas, hidrolización.';
-if oeg=119  then label287.caption:='Deficiencia de '+'enzimas en el pensamiento, fosforilación.';
-if oeg=120  then label287.caption:='Deficiencia de '+'enzimas en la respiración decarboxilasa.';
-if oeg=121  then label287.caption:='Deficiencia de '+'enzimas en la regulación del agua hidrolasa.';
-if oeg=122  then label287.caption:='Deficiencia de '+'enzimas en la regulación del ADN.';
-if oeg=123  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=124  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-end;
-Hints();
-     if label284.caption=label285.caption then label285.caption:=label284.Hint;
-     if label284.caption=label286.caption then label286.caption:=label284.Hint;
-       if label284.caption=label287.caption then label287.caption:=label284.Hint;
-         if label284.caption=label289.caption then label289.caption:=label284.Hint;
-   if label285.caption=label290.caption then label290.caption:=label285.Hint;
-     if label285.caption=label286.caption then label286.caption:=label285.Hint;
-       if label285.caption=label287.caption then label287.caption:=label285.Hint;
-         if label285.caption=label289.caption then label289.caption:=label285.Hint;
-   if label286.caption=label290.caption then label290.caption:=label286.Hint;
-       if label286.caption=label287.caption then label287.caption:=label286.Hint;
-         if label286.caption=label289.caption then label289.caption:=label286.Hint;
-         MyChrono2.Stop;
-end;
-
-procedure TtestForm1.QXCIcommentsandquestions1Click(Sender: TObject);
-begin
-      ShellExecute(0, 'open', 'mailto:fmscio@yahoo.com', '','', 1);
-end;
-
-procedure TtestForm1.QXCIQuestions1Click(Sender: TObject);
-begin
- ShellExecute(0, 'open', 'mailto:fmscio@yahoo.com', '','', 1);
+EnlaceLabel287();
+MyChrono2.Stop;
 end;
 
 procedure TtestForm1.ChangetheReactionValueofaRemedy1Click(Sender: TObject);
@@ -40465,18 +35819,11 @@ begin
  button54.visible:=false;
 end;
 
-procedure TtestForm1.Info1Click(Sender: TObject);
-begin
-//  If ConscidaGrid.DataSource=DM.DSFilter Then     AutoZapFromFilter5min1.visible:=true;
-end;
-
 procedure TtestForm1.AutoZapFromFilter5min1Click(Sender: TObject);
 begin
  If ConscidaGrid.DataSource=DM.DSFilter Then
  begin
                                                              GProgreso.Progress:=0;
-
-
   DM.QueryFilter.First;
   DM.QueryFilter.Last;
 Label208.caption:='REALIZANDO ZAP DESDE FILTRO...';
@@ -40579,53 +35926,6 @@ begin
         no := DM.Info.FieldbyName('no').asInteger;
         inc(no); DM.Info.Appendrecord([no,nil,' | Item/s cargado/s para buscar su compatibilidad armónica |']);
         inc(no); DM.Info.Appendrecord([no,nil,edit34.text ]);
-end;
-
-procedure TtestForm1.Label257Click(Sender: TObject);
-begin
-if ment31='' then ment31:=label257.caption;
-ment33:=label257.caption;
-oeg:=random(41);
-if oeg=1 then label257.hint:='Conectado con inflamación.';
-if oeg=2 then label257.hint:='Conectado con cáncer.';
-if oeg=3 then label257.hint:='Conectado con estrés.';
-if oeg=4 then label257.hint:='Conectado con hipoadrénia.';
-if oeg=5 then label257.hint:='Conectado con sistema emocional.';
-if oeg=6 then label257.hint:='Conectado con infección.';
-if oeg=7 then label257.hint:='Conectado con toxicidad.';
-if oeg=8 then label257.hint:='Conectado con trauma.';
-if oeg=9 then label257.hint:='Conectado con causas hereditarias.';
-if oeg=10 then label257.hint:='Conectado con exceso o deficiencia de vitaminas.';
-if oeg=11 then label257.hint:='Conectado con sistema cardiovascular.';
-if oeg=12 then label257.hint:='Conectado con sistema hormonal.';
-if oeg=13 then label257.hint:='Conectado con sistema linfático.';
-if oeg=14 then label257.hint:='Conectado con hígado.';
-if oeg=15 then label257.hint:='Conectado con riñones.';
-if oeg=16 then label257.hint:='Conectado con sistema digestivo.';
-if oeg=17 then label257.hint:='Conectado con tejido conectivo.';
-if oeg=18 then label257.hint:='Conectado con huesos.';
-if oeg=19 then label257.hint:='Conectado con agua ácida o alcalina.';
-if oeg=20 then label257.hint:='Conectado con sangre.';
-if oeg=21 then label257.hint:='Conectado con medio ambiente.';
-if oeg=22 then label257.hint:='Conectado con alergias.';
-if oeg=23 then label257.hint:='Conectado con riesgo emocional.';
-if oeg=24 then label257.hint:='Conectado con sistema circulatorio.';
-if oeg=25 then label257.hint:='Conectado con sistema inmunitario.';
-if oeg=26 then label257.hint:='Conectado con radiación.';
-if oeg=27 then label257.hint:='Conectado con bacteria.';
-if oeg=28 then label257.hint:='Conectado con fungosidades.';
-if oeg=29 then label257.hint:='Conectado con virus.';
-if oeg=30 then label257.hint:='Conectado con parásitos.';
-if oeg=31 then label257.hint:='Conectado con amíbas.';
-if oeg=32 then label257.hint:='Conectado con Intolerancia alimentaria.';
-if oeg=33 then label257.hint:='Conectado con regulación del azúcar.';
-if oeg=34 then label257.hint:='Conectado con sistema neurológico.';
-if oeg=35 then label257.hint:='Conectado con sistema sensorial.';
-if oeg=36 then label257.hint:='Conectado con colesterol.';
-if oeg=37 then label257.hint:='Conectado con sistema respiratorio.';
-if oeg=38 then label257.hint:='Conectado con oxidación.';
-if oeg=39 then label257.hint:='Conectado con hidratación.';
-if oeg=40 then label257.hint:='Conectado con cognicción.';
 end;
 
 procedure TtestForm1.Button79Click(Sender: TObject);
@@ -41178,961 +36478,247 @@ oeg:=random(10); if oeg=5 then Label286.Caption:=ment14;
 oeg:=random(10); if oeg=5 then Label286.Caption:=ment15;
 oeg:=random(10); if oeg=5 then Label286.Caption:=ment16;
 oeg:=random(10); if oeg=5 then Label286.Caption:= ment17;
-
-      end;
-
-if  label286.caption=''  then
-begin
-oeg:=random(27);
-if oeg=0 then label286.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label286.caption:='| Reducción de estrés.';
-if oeg=2 then label286.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label286.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label286.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label286.caption:='| Terapia de alersodes.';
-if oeg=6 then label286.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label286.caption:='| Nosodes para patógenos.';
-if oeg=19 then label286.caption:='| Terapia nutricional.';
-if oeg=8 then label286.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label286.caption:='| Fitoterapia.';
-if oeg=10 then label286.caption:='| Terapia de sarcodes.';
-if oeg=11 then label286.caption:='| Homeopatía combinativa.';
-if oeg=12 then label286.caption:='| Terapia vitamínica.';
-if oeg=20 then label286.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label286.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label286.caption:='| Terapia oligo mineral.';
-if oeg=15 then label286.caption:='| Tratar flora intestinal.';
-if oeg=16 then label286.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label286.caption:='| Control de dieta.';
-if oeg=22 then label286.caption:='| Terapia nutricional.';
-if oeg=18 then label286.caption:='| Ejercicio, cardiovascular.';
-if oeg=21 then label286.caption:='| Ejercicio, yoga.';
-if oeg=23 then label286.caption:='| Ejercicio, caminar.';
-if oeg=24 then label286.caption:='| Terapia de ajuste y postura.';
-if oeg=25 then label286.caption:='| Acupuntura.';
-if oeg>25 then label286.caption:='| Medicina bio-energética.';
 end;
-if  label289.caption=''  then
-begin
-oeg:=random(37);
-if oeg=1 then label289.caption:='NV Oriental- AntiHelmintic, parasites';
-if oeg=2 then label289.caption:='NV Oriental-AntiAsthmatic, regulates lungs, chills fever';
-if oeg=3 then label289.caption:='NV Oriental-AntiPhlogistic, excess mucous,wind cold dampness';
-if oeg=4 then label289.caption:='NV Oriental-AntiPyretic for fever, expels toxic heat, wind,chills';
-if oeg=5 then label289.caption:='NV Oriental-AntiRheumatic, rheumatic pain,activates blood flow';
-if oeg=6 then label289.caption:='NV Oriental-Blood, replenishes blood, restores vitality';
-if oeg=7 then label289.caption:='NV Oriental-Carminative, relieves gas and stagnant food';
-if oeg=8 then label289.caption:='NV Oriental-Digestive Stimulator, invigorates stomach, spleen';
-if oeg=9 then label289.caption:='NV Oriental-Expectorant, clears lungs, dispels heat in lungs';
-if (oeg=10)and (patform1.female=10)  then label289.caption:='NV Oriental-Female, regulates menstrual, vitalizes blood';
-if (oeg=10)and (patform1.male=10)  then label289.caption:='NV Oriental-Male, regulates virility, vitalizes blood';
-if oeg=11 then label289.caption:='NV Oriental-Hepatic, removes stagnation of liver + chi';
-if oeg=12 then label289.caption:='NV Oriental-Hypertensive, reduces heat in liver,reduces yang';
-if oeg=13 then label289.caption:='NV Oriental-Laxative, relieves deficiency of spleen fluid';
-if oeg=14 then label289.caption:='NV Oriental-Mental, invigorates Kidney meridian, treats senility';
-if oeg=15 then label289.caption:='NV Oriental-Sedative, nourishes blood in liver,treats fatique';
-if oeg=16 then label289.caption:='NV Oriental-Bone,for degenerative bone conditions';
-if oeg=17 then label289.caption:='NV Oriental-Cold and Flu, stimulates chi and liver';
-if oeg=18 then label289.caption:='NV Oriental-Esophagus, relieves spasms and treats esoph cancer';
-if oeg=19 then label289.caption:='NV Oriental-Kidney, treats kidney deficiency and degeneration';
-if oeg=20 then label289.caption:='NV Oriental-Large Intestine, treats meridian weakness and bowel ';
-if oeg=21 then label289.caption:='NV Oriental-Liver, treats chi and liver weakness';
-if oeg=22 then label289.caption:='NV Oriental-Lung treats lung degeneration adds energy';
-if oeg=23 then label289.caption:='NV Oriental-Lymph, treats degeneration in the Lymphatics';
-if oeg=24 then label289.caption:='NV Oriental-Preventative, use to prevent cancer';
-if oeg=25 then label289.caption:='NV Oriental-Stomach, treats deficiency of stomach energy';
-if (oeg=26)and (patform1.female=10)  then label289.caption:='NV Oriental-Uterine, treats problems of uterine cellular degeneration';
-if (oeg=27)and (patform1.female=10)  then label289.caption:='NV Oriental-Female, regulates menstrual, vitalizes blood';
-if (oeg=28)and (patform1.male=10)  then label289.caption:='NV Oriental-Male, regulates virility, vitalizes blood';
-if (oeg=27)and (patform1.female=10)  then label289.caption:='NV Oriental-Female, regulates menstrual, vitalizes blood';
-if (oeg=28)and (patform1.male=10)  then label289.caption:='NV Oriental-Male, regulates virility, vitalizes blood';
-         end;
-   if  label289.caption=''  then begin
-     oeg:=random(30);
-if oeg=1 then label289.caption:='Bálsamo | Antiséptico y expectorante.';
-if oeg=2 then label289.caption:='Basilio / Albahaca | Digestión, antiespasmódico.';
-if oeg=3 then label289.caption:='Cayeputy | Problemas gastro intestinales, anti microbios pulmonares.';
-if oeg=4 then label289.caption:='Alcaravea | Previene flatulencias después de comer, estimula la digestión.';
-if oeg=5 then label289.caption:='Cedro | Irritaciones de la piel, dermatosis, eczemas, piel reseca.';
-if oeg=6 then label289.caption:='Canela | Antiséptico, desodorante, náuseas, constipaciones.';
-if oeg=7 then label289.caption:='Diente de ajo | Aniséptico, dolores de muelas, indigestión, afrodisiaco.';
-if oeg=8 then label289.caption:='Coriandro / Cilantro | Ayuda a la digestión, previene la fermentación, eruptos, circulación.';
-if oeg=9 then label289.caption:='Ciprés | Astringente, contrae las venas, venas varicosas.';
-if oeg=10 then label289.caption:='Eucalipto | Antiséptico para el tracto respiratorio, antiviral.';
-if oeg=11 then label289.caption:='Geranio | Eczema, acne, heridas, dermatosis, repelente de insectos.';
-if oeg=12 then label289.caption:='Toronja / Pomelo | Tónico para el corazón, piel grasa, limpia el tracto digestivo.';
-if oeg=13 then label289.caption:='Anís verde | Digestivo, hinchazones de estómago, tracto intestinal.';
-if oeg=14 then label289.caption:='Junípero | Dolor reumático, desintoxicante, diurético, estimula los riñones.';
-if oeg=15 then label289.caption:='Lavanda | Calmante, desintoxicante, relajante nervioso y piel.';
-if oeg=16 then label289.caption:='Limón | Estimula el sistema inmunitario, ayuda a la pérdida de peso.';
-if oeg=17 then label289.caption:='Mandarina | Ataques epilépticos, antiespasmódico, palpitaciones, relajante.';
-if oeg=18 then label289.caption:='Naranja | Relajante, sedante para infantes.';
-if oeg=19 then label289.caption:='Oregano | Proteje el sistema inmunitario, sudorífico.';
-if oeg=20 then label289.caption:='Menta | Calma nervios y problemas digestivos (No usar durante la lactancia).';
-if oeg=21 then label289.caption:='Tomillo | Dolores intestinales, pulmonares y musculares.';
-if oeg=22 then label289.caption:='Romero | Tonificante, revitaliza el hígado y la vesícula biliar.';
-if oeg=23 then label289.caption:='Sándalo | Antiséptico urinario, cistitis, afecciones de próstata.';
-if oeg=24 then label289.caption:='Arbol de té | Piel, desintoxicación, infecciones, sinusitis.';
-if oeg=25 then label289.caption:='Vervain | Relajante, antiséptico, disuelve los cálculos renales.';
-if oeg=26 then label289.caption:='Ylang Ylang | Hipertensión, afrodisiaco.';
-   end;
-if  label290.caption=''  then
-begin
+if oeg=0 then label286.caption:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then label286.caption:=' Reducción de estrés.';
+if oeg=2 then label286.caption:=' Toma de conciencia y/o educación.';
+if oeg=3 then label286.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label286.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label286.caption:=' Terapia de alersodes.';
+if oeg=6 then label286.caption:=' Desintoxicación de isodes o xenobióticos.';
+if oeg=7 then label286.caption:=' Nosodes para patógenos.';
+if oeg=19 then label286.caption:=' Terapia nutricional.';
+if oeg=8 then label286.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label286.caption:=' Fitoterapia.';
+if oeg=10 then label286.caption:=' Terapia de sarcodes.';
+if oeg=11 then label286.caption:=' Homeopatía combinativa.';
+if oeg=12 then label286.caption:=' Terapia vitamínica.';
+if oeg=20 then label286.caption:=' Conciencia.';
+if oeg=13 then label286.caption:=' Desarrollo de habilidades mentales curativas.';
+if oeg=14 then label286.caption:=' Terapia oligo mineral.';
+if oeg=15 then label286.caption:=' Flora intestinal.';
+if oeg=16 then label286.caption:=' Desintoxicación de:'+' Flora intestinal'+' +'+' Hígado.';
+if oeg=17 then label286.caption:=' Control de dieta.';
+if oeg=22 then label286.caption:=' Terapia nutricional.';
+if oeg=18 then label286.caption:=' Ejercicio aeróbico, yoga.';
+if oeg=21 then label286.caption:=' Ejercicio, yoga.';
+if oeg=23 then label286.caption:=' Ejercicio aeróbico, natación.';
+if oeg=24 then label286.caption:=' Quiropraxia.';
+if oeg=25 then label286.caption:=' Acupuntura.';
+if oeg>25 then label286.caption:=' Medicina bio-energética.';
+oeg:=random(30);
+if oeg<2 then label289.caption:=' Bálsamo | Antiséptico y expectorante.';
+if oeg=2 then label289.caption:=' Basilio / Albahaca | Digestión, antiespasmódico.';
+if oeg=3 then label289.caption:=' Cayeputy | Problemas gastro intestinales, anti microbios pulmonares.';
+if oeg=4 then label289.caption:=' Alcaravea | Previene flatulencias después de comer, estimula la digestión.';
+if oeg=5 then label289.caption:=' Cedro | Irritaciones de la piel, dermatosis, eczemas, piel reseca.';
+if oeg=6 then label289.caption:=' Canela | Antiséptico, desodorante, náuseas, constipaciones.';
+if oeg=7 then label289.caption:=' Diente de ajo | Aniséptico, dolores de muelas, indigestión, afrodisiaco.';
+if oeg=8 then label289.caption:=' Coriandro / Cilantro | Ayuda a la digestión, previene la fermentación, eruptos, circulación.';
+if oeg=9 then label289.caption:=' Ciprés | Astringente, contrae las venas, venas varicosas.';
+if oeg=10 then label289.caption:=' Eucalipto | Antiséptico para el tracto respiratorio, antiviral.';
+if oeg=11 then label289.caption:=' Geranio | Eczema, acne, heridas, dermatosis, repelente de insectos.';
+if oeg=12 then label289.caption:=' Toronja / Pomelo | Tónico para el corazón, piel grasa, limpia el tracto digestivo.';
+if oeg=13 then label289.caption:=' Anís verde | Digestivo, hinchazones de estómago, tracto intestinal.';
+if oeg=14 then label289.caption:=' Junípero | Dolor reumático, desintoxicante, diurético, estimula los riñones.';
+if oeg=15 then label289.caption:=' Lavanda | Calmante, desintoxicante, relajante nervioso y piel.';
+if oeg=16 then label289.caption:=' Limón | Estimula el sistema inmunitario, ayuda a la pérdida de peso.';
+if oeg=17 then label289.caption:=' Mandarina | Ataques epilépticos, antiespasmódico, palpitaciones, relajante.';
+if oeg=18 then label289.caption:=' Naranja | Relajante, sedante para infantes.';
+if oeg=19 then label289.caption:=' Oregano | Proteje el sistema inmunitario, sudorífico.';
+if oeg=20 then label289.caption:=' Menta | Calma nervios y problemas digestivos (No usar durante la lactancia).';
+if oeg=21 then label289.caption:=' Tomillo | Dolores intestinales, pulmonares y musculares.';
+if oeg=22 then label289.caption:=' Romero | Tonificante, revitaliza el hígado y la vesícula biliar.';
+if oeg=23 then label289.caption:=' Sándalo | Antiséptico urinario, cistitis, afecciones de próstata.';
+if oeg=24 then label289.caption:=' Arbol de té | Piel, desintoxicación, infecciones, sinusitis.';
+if oeg=25 then label289.caption:=' Vervain | Relajante, antiséptico, disuelve los cálculos renales.';
+if oeg>25 then label289.caption:=' Ylang Ylang | Hipertensión, afrodisiaco.';
 oeg:=random(27);
-if oeg=0 then label290.caption:='| Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then label290.caption:='| Reducción de estrés.';
-if oeg=2 then label290.caption:='| Toma de conciencia y/o educación.';
-if oeg=3 then label290.caption:='| Factores mentales o imponderables.';
-if oeg=4 then label290.caption:='| Homeopatía metabólica o genética.';
-if oeg=5 then label290.caption:='| Terapia de alersodes.';
-if oeg=6 then label290.caption:='| Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then label290.caption:='| Nosodes para patógenos.';
-if oeg=19 then label290.caption:='| Terapia nutricional.';
-if oeg=8 then label290.caption:='| Imponderables para contaminación electromagnética.';
-if oeg=9 then label290.caption:='| Fitoterapia.';
-if oeg=10 then label290.caption:='| Terapia de sarcodes.';
-if oeg=11 then label290.caption:='| Homeopatía combinativa.';
-if oeg=12 then label290.caption:='| Terapia vitamínica.';
-if oeg=20 then label290.caption:='| Toma de conciencia de sí mismo/a.';
-if oeg=13 then label290.caption:='| Desarrollo de habilidades mentales curativas.';
-if oeg=14 then label290.caption:='| Terapia oligo mineral.';
-if oeg=15 then label290.caption:='| Tratar flora intestinal.';
-if oeg=16 then label290.caption:='| Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then label290.caption:='| Control de dieta.';
-if oeg=22 then label290.caption:='| Terapia nutricional.';
-if oeg=18 then label290.caption:='| Ejercicio, cardiovascular.';
-if oeg=21 then label290.caption:='| Ejercicio, pilates.';
-if oeg=23 then label290.caption:='| Ejercicio, caminar.';
-if oeg=24 then label290.caption:='| Terapia de ajuste y postura.';
-if oeg=25 then label290.caption:='| Acupuntura.';
-if oeg>25 then label290.caption:='| Medicina bio-energética.';
-end;
-if  label285.caption=''  then
-begin
+if oeg=0 then label290.caption:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then label290.caption:=' Reducción de estrés.';
+if oeg=2 then label290.caption:=' Toma de conciencia y/o educación.';
+if oeg=3 then label290.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label290.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label290.caption:=' Terapia de alersodes.';
+if oeg=6 then label290.caption:=' Desintoxicación de isodes o xenobióticos.';
+if oeg=7 then label290.caption:=' Nosodes para patógenos.';
+if oeg=8 then label290.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label290.caption:=' Fitoterapia.';
+if oeg=10 then label290.caption:=' Terapia de sarcodes.';
+if oeg=11 then label290.caption:=' Homeopatía combinativa.';
+if oeg=12 then label290.caption:=' Terapia vitamínica.';
+if oeg=13 then label290.caption:=' Desarrollo de habilidades mentales curativas.';
+if oeg=14 then label290.caption:=' Terapia oligo mineral.';
+if oeg=15 then label290.caption:=' Flora intestinal.';
+if oeg=16 then label290.caption:=' Desintoxicación de:'+' Flora intestinal'+' +'+' Hígado.';
+if oeg=17 then label290.caption:=' Control de dieta.';
+if oeg=18 then label290.caption:=' Ejercicio aeróbico, yoga.';
+if oeg=20 then label290.caption:=' Conciencia.';
+if oeg=21 then label290.caption:=' Ejercicio aeróbico, pilates.';
+if oeg=22 then label290.caption:=' Terapia nutricional.';
+if oeg=23 then label290.caption:=' Ejercicio aeróbico, natación.';
+if oeg=24 then label290.caption:=' Quiropraxia.';
+if oeg=25 then label290.caption:=' Acupuntura.';
+if oeg>25 then label290.caption:=' Medicina bio-energética.';
 oeg:=random(75);
-if oeg=1    then  label285.caption:=' | Regresión.';
-if oeg= 2   then  label285.caption:=' | Agresión.';
-if oeg=3    then  label285.caption:=' | Ira.';
-if oeg=4    then  label285.caption:=' | Ansiedad.';
-if oeg=5    then  label285.caption:=' | Conciencia.';
-if oeg=6    then  label285.caption:=' | Tristeza.';
-if oeg=7    then  label285.caption:=' | Culpabilidad.';
-if oeg=8    then  label285.caption:=' | Autismo.';
-if oeg=9    then  label285.caption:=' | Negación.';
-if oeg=10    then  label285.caption:=' | Descuido.';
-if oeg=11    then  label285.caption:=' | Desilusión.';
-if oeg=12    then  label285.caption:=' | Depresión.';
-if oeg=13    then  label285.caption:=' | Poder.';
-if oeg=14    then  label285.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label285.caption:=' | Temor.';
-if oeg=16    then  label285.caption:=' | Confusión.';
-if oeg=17    then  label285.caption:=' | Duda.';
-if oeg=18    then  label285.caption:=' | Celos.';
-if oeg=19    then  label285.caption:=' | Alegría.';
-if oeg=20    then  label285.caption:=' | Lujuria.';
-if oeg=21    then  label285.caption:=' | Avaricia.';
-if oeg=22    then  label285.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label285.caption:=' | Dolor psíquico.';
-if oeg=24    then  label285.caption:=' | Pasividad.';
-if oeg=25    then  label285.caption:=' | Proyección.';
-if oeg=26    then  label285.caption:=' | Racionalizar.';
-if oeg=27    then  label285.caption:=' | Imprudencia.';
-if oeg=28    then  label285.caption:=' | Preocupación.';
-if oeg=29    then  label285.caption:=' | Abandono.';
-if oeg=30    then  label285.caption:=' | Vergüenza.';
-if oeg=31    then  label285.caption:=' | Traición.';
-if oeg=32    then  label285.caption:=' | Malentendimiento.';
-if oeg=33    then  label285.caption:=' | Curiosidad.';
-if oeg=34    then  label285.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label285.caption:=' | Conflicto religioso.';
-if oeg=36    then  label285.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label285.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label285.caption:=' | Nervios.';
-if oeg=39    then  label285.caption:=' | Risa.';
-if oeg=40    then  label285.caption:=' | Entusiasmo.';
-if oeg=41    then  label285.caption:=' | Vanidad.';
-if oeg=42    then  label285.caption:=' | Negociación.';
-if oeg=43    then  label285.caption:=' | Coraje.';
-if oeg=44    then  label285.caption:=' | Vergüenza.';
-if oeg=45    then  label285.caption:=' | Monotonía.';
-if oeg=46    then  label285.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label285.caption:=' | Observación.';
-if oeg=48    then  label285.caption:=' | Antagonismo.';
-if oeg=49    then  label285.caption:=' | Sensualidad.';
-if oeg=50    then  label285.caption:=' | Espiritualidad.';
-if oeg=51    then  label285.caption:=' | Sexualidad.';
-if oeg=52    then  label285.caption:=' | Adictividad.';
-if oeg=53    then  label285.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label285.caption:=' | Apatía.';
-if oeg=55    then  label285.caption:=' | Extasis.';
-if oeg=56    then  label285.caption:=' | Inepcia.';
-if oeg=57    then  label285.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label285.caption:=' | Perfeccionismo.';
-if oeg=59    then  label285.caption:=' | Desesperación.';
-if oeg=60    then  label285.caption:=' | Dominación.';
-if oeg=61    then  label285.caption:=' | Sumisión.';
-if oeg=62    then  label285.caption:=' | Orgullo.';
-if oeg=63    then  label285.caption:=' | Resentimiento.';
-if oeg=64    then  label285.caption:=' | Choc.';
-if oeg=65    then  label285.caption:=' | Descuido.';
-if oeg=66    then  label285.caption:=' | Obsesividad.';
-if oeg=67    then  label285.caption:=' | Impulsividad.';
-if oeg=68    then  label285.caption:=' | Manías incontrolables.';
-if oeg=69    then  label285.caption:=' | Impulsividad.';
-if oeg=70    then  label285.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label285.caption:=' | Distracción.';
-if oeg=72    then  label285.caption:=' | Concentración.';
-if oeg=73    then  label285.caption:=' | Irrealismo.';
-if oeg=74    then  label285.caption:=' | Frustración.';
-end;
+if oeg=1    then  label285.caption:=' Regresión.';
+if oeg= 2   then  label285.caption:=' Agresión.';
+if oeg=3    then  label285.caption:=' Ira.';
+if oeg=4    then  label285.caption:=' Ansiedad.';
+if oeg=5    then  label285.caption:=' Conciencia.';
+if oeg=6    then  label285.caption:=' Tristeza.';
+if oeg=7    then  label285.caption:=' Culpabilidad.';
+if oeg=8    then  label285.caption:=' Autismo.';
+if oeg=9    then  label285.caption:=' Negación.';
+if oeg=10    then  label285.caption:=' Descuido.';
+if oeg=11    then  label285.caption:=' Desilusión.';
+if oeg=12    then  label285.caption:=' Depresión.';
+if oeg=13    then  label285.caption:=' Poder.';
+if oeg=14    then  label285.caption:=' Duda de sí mismo.';
+if oeg=15    then  label285.caption:=' Temor.';
+if oeg=16    then  label285.caption:=' Confusión.';
+if oeg=17    then  label285.caption:=' Duda.';
+if oeg=18    then  label285.caption:=' Celos.';
+if oeg=19    then  label285.caption:=' Alegría.';
+if oeg=20    then  label285.caption:=' Lujuria.';
+if oeg=21    then  label285.caption:=' Avaricia.';
+if oeg=22    then  label285.caption:=' Poderes Extra Sensoriales.';
+if oeg=23    then  label285.caption:=' Dolor psíquico.';
+if oeg=24    then  label285.caption:=' Pasividad.';
+if oeg=25    then  label285.caption:=' Proyección.';
+if oeg=26    then  label285.caption:=' Racionalización.';
+if oeg=27    then  label285.caption:=' Imprudencia.';
+if oeg=28    then  label285.caption:=' Preocupación.';
+if oeg=29    then  label285.caption:=' Abandono.';
+if oeg=30    then  label285.caption:=' Vergüenza.';
+if oeg=31    then  label285.caption:=' Traición.';
+if oeg=32    then  label285.caption:=' Sentimiento de no o mal entrenamiento.';
+if oeg=33    then  label285.caption:=' Curiosidad.';
+if oeg=34    then  label285.caption:=' Sobrecogimiento.';
+if oeg=35    then  label285.caption:=' Conflicto religioso.';
+if oeg=36    then  label285.caption:=' Conflicto de identidad.';
+if oeg=37    then  label285.caption:=' Resistencia al cambio.';
+if oeg=38    then  label285.caption:=' Nervios.';
+if oeg=39    then  label285.caption:=' Risa.';
+if oeg=40    then  label285.caption:=' Entusiasmo.';
+if oeg=41    then  label285.caption:=' Vanidad.';
+if oeg=42    then  label285.caption:=' Negociación.';
+if oeg=43    then  label285.caption:=' Coraje.';
+if oeg=44    then  label285.caption:=' Vergüenza.';
+if oeg=45    then  label285.caption:=' Monotonía.';
+if oeg=46    then  label285.caption:=' Necesidad de cambio.';
+if oeg=47    then  label285.caption:=' Observación.';
+if oeg=48    then  label285.caption:=' Antagonismo.';
+if oeg=49    then  label285.caption:=' Sensualidad.';
+if oeg=50    then  label285.caption:=' Espiritualidad.';
+if oeg=51    then  label285.caption:=' Sexualidad.';
+if oeg=52    then  label285.caption:=' Adicciones.';
+if oeg=53    then  label285.caption:=' Crítica.';
+if oeg=54    then  label285.caption:=' Apatía.';
+if oeg=55    then  label285.caption:=' Extasis.';
+if oeg=56    then  label285.caption:=' Ineptitud.';
+if oeg=57    then  label285.caption:=' Deseo de que las cosas sean diferentes.';
+if oeg=58    then  label285.caption:=' Perfeccionismo.';
+if oeg=59    then  label285.caption:=' Desesperación.';
+if oeg=60    then  label285.caption:=' Dominación.';
+if oeg=61    then  label285.caption:=' Sumisión.';
+if oeg=62    then  label285.caption:=' Orgullo.';
+if oeg=63    then  label285.caption:=' Resentimiento.';
+if oeg=64    then  label285.caption:=' Choque emocional.';
+if oeg=65    then  label285.caption:=' Descuido.';
+if oeg=66    then  label285.caption:=' Obsesividad.';
+if oeg=67    then  label285.caption:=' Impulsividad.';
+if oeg=68    then  label285.caption:=' Manías.';
+if oeg=69    then  label285.caption:=' Impulsividad.';
+if oeg=70    then  label285.caption:=' Lealtad.';
+if oeg=71    then  label285.caption:=' Distracción.';
+if oeg=72    then  label285.caption:=' Concentración.';
+if oeg=73    then  label285.caption:=' Irrealismo.';
+if oeg=74    then  label285.caption:=' Frustración.';
+oeg:=random(75);
+if oeg=1    then  label284.caption:=' Regresión.';
+if oeg= 2   then  label284.caption:=' Agresión.';
+if oeg=3    then  label284.caption:=' Ira.';
+if oeg=4    then  label284.caption:=' Ansiedad.';
+if oeg=5    then  label284.caption:=' Conciencia.';
+if oeg=6    then  label284.caption:=' Tristeza.';
+if oeg=7    then  label284.caption:=' Culpabilidad.';
+if oeg=8    then  label284.caption:=' Autismo.';
+if oeg=9    then  label284.caption:=' Negación.';
+if oeg=10    then  label284.caption:=' Descuido.';
+if oeg=11    then  label284.caption:=' Desilusión.';
+if oeg=12    then  label284.caption:=' Depresión.';
+if oeg=13    then  label284.caption:=' Poder.';
+if oeg=14    then  label284.caption:=' Duda de sí mismo.';
+if oeg=15    then  label284.caption:=' Temor.';
+if oeg=16    then  label284.caption:=' Confusión.';
+if oeg=17    then  label284.caption:=' Duda.';
+if oeg=18    then  label284.caption:=' Celos.';
+if oeg=19    then  label284.caption:=' Alegría.';
+if oeg=20    then  label284.caption:=' Lujuria.';
+if oeg=21    then  label284.caption:=' Avaricia.';
+if oeg=22    then  label284.caption:=' Poderes Extra Sensoriales.';
+if oeg=23    then  label284.caption:=' Dolor psíquico.';
+if oeg=24    then  label284.caption:=' Pasividad.';
+if oeg=25    then  label284.caption:=' Proyección.';
+if oeg=26    then  label284.caption:=' Racionalización.';
+if oeg=27    then  label284.caption:=' Imprudencia.';
+if oeg=28    then  label284.caption:=' Preocupación.';
+if oeg=29    then  label284.caption:=' Abandono.';
+if oeg=30    then  label284.caption:=' Vergüenza.';
+if oeg=31    then  label284.caption:=' Traición.';
+if oeg=32    then  label284.caption:=' Sentimiento de no o mal entrenamiento.';
+if oeg=33    then  label284.caption:=' Curiosidad.';
+if oeg=34    then  label284.caption:=' Sobrecogimiento.';
+if oeg=35    then  label284.caption:=' Conflicto religioso.';
+if oeg=36    then  label284.caption:=' Conflicto de identidad.';
+if oeg=37    then  label284.caption:=' Resistencia al cambio.';
+if oeg=38    then  label284.caption:=' Nervios.';
+if oeg=39    then  label284.caption:=' Risa.';
+if oeg=40    then  label284.caption:=' Entusiasmo.';
+if oeg=41    then  label284.caption:=' Vanidad.';
+if oeg=42    then  label284.caption:=' Negociación.';
+if oeg=43    then  label284.caption:=' Coraje.';
+if oeg=44    then  label284.caption:=' Vergüenza.';
+if oeg=45    then  label284.caption:=' Monotonía.';
+if oeg=46    then  label284.caption:=' Necesidad de cambio.';
+if oeg=47    then  label284.caption:=' Observación.';
+if oeg=48    then  label284.caption:=' Antagonismo.';
+if oeg=49    then  label284.caption:=' Sensualidad.';
+if oeg=50    then  label284.caption:=' Espiritualidad.';
+if oeg=51    then  label284.caption:=' Sexualidad.';
+if oeg=52    then  label284.caption:=' Adicciones.';
+if oeg=53    then  label284.caption:=' Crítica.';
+if oeg=54    then  label284.caption:=' Apatía.';
+if oeg=55    then  label284.caption:=' Extasis.';
+if oeg=56    then  label284.caption:=' Ineptitud.';
+if oeg=57    then  label284.caption:=' Deseo de que las cosas sean diferentes.';
+if oeg=58    then  label284.caption:=' Perfeccionismo.';
+if oeg=59    then  label284.caption:=' Desesperación.';
+if oeg=60    then  label284.caption:=' Dominación.';
+if oeg=61    then  label284.caption:=' Sumisión.';
+if oeg=62    then  label284.caption:=' Orgullo.';
+if oeg=63    then  label284.caption:=' Resentimiento.';
+if oeg=64    then  label284.caption:=' Choque emocional.';
+if oeg=65    then  label284.caption:=' Descuido.';
+if oeg=66    then  label284.caption:=' Obsesividad.';
+if oeg=67    then  label284.caption:=' Impulsividad.';
+if oeg=68    then  label284.caption:=' Manías.';
+if oeg=69    then  label284.caption:=' Impulsividad.';
+if oeg=70    then  label284.caption:=' Lealtad.';
+if oeg=71    then  label284.caption:=' Distracción.';
+if oeg=72    then  label284.caption:=' Concentración.';
+if oeg=73    then  label284.caption:=' Irrealismo.';
+if oeg=74    then  label284.caption:=' Frustración.';
 
-if  label284.caption=''  then
-begin
-    oeg:=random(75);
-if oeg=1    then  label284.caption:=' | Regresión.';
-if oeg= 2   then  label284.caption:=' | Agresión.';
-if oeg=3    then  label284.caption:=' | Ira.';
-if oeg=4    then  label284.caption:=' | Ansiedad.';
-if oeg=5    then  label284.caption:=' | Conciencia.';
-if oeg=6    then  label284.caption:=' | Tristeza.';
-if oeg=7    then  label284.caption:=' | Culpabilidad.';
-if oeg=8    then  label284.caption:=' | Autismo.';
-if oeg=9    then  label284.caption:=' | Negación.';
-if oeg=10    then  label284.caption:=' | Descuido.';
-if oeg=11    then  label284.caption:=' | Desilusión.';
-if oeg=12    then  label284.caption:=' | Depresión.';
-if oeg=13    then  label284.caption:=' | Poder.';
-if oeg=14    then  label284.caption:=' | Duda de sí mismo/a.';
-if oeg=15    then  label284.caption:=' | Temor.';
-if oeg=16    then  label284.caption:=' | Confusión.';
-if oeg=17    then  label284.caption:=' | Duda.';
-if oeg=18    then  label284.caption:=' | Celos.';
-if oeg=19    then  label284.caption:=' | Alegría.';
-if oeg=20    then  label284.caption:=' | Lujuria.';
-if oeg=21    then  label284.caption:=' | Avaricia.';
-if oeg=22    then  label284.caption:=' | Poderes Extra Sensoriales.';
-if oeg=23    then  label284.caption:=' | Dolor psíquico.';
-if oeg=24    then  label284.caption:=' | Pasividad.';
-if oeg=25    then  label284.caption:=' | Proyección.';
-if oeg=26    then  label284.caption:=' | Racionalizar.';
-if oeg=27    then  label284.caption:=' | Imprudencia.';
-if oeg=28    then  label284.caption:=' | Preocupación.';
-if oeg=29    then  label284.caption:=' | Abandono.';
-if oeg=30    then  label284.caption:=' | Vergüenza.';
-if oeg=31    then  label284.caption:=' | Traición.';
-if oeg=32    then  label284.caption:=' | Malentendimiento.';
-if oeg=33    then  label284.caption:=' | Curiosidad.';
-if oeg=34    then  label284.caption:=' | Sobrecogimiento.';
-if oeg=35    then  label284.caption:=' | Conflicto religioso.';
-if oeg=36    then  label284.caption:=' | Conflicto de identidad.';
-if oeg=37    then  label284.caption:=' | Resistencia al cambio.';
-if oeg=38    then  label284.caption:=' | Nervios.';
-if oeg=39    then  label284.caption:=' | Risa.';
-if oeg=40    then  label284.caption:=' | Entusiasmo.';
-if oeg=41    then  label284.caption:=' | Vanidad.';
-if oeg=42    then  label284.caption:=' | Negociación.';
-if oeg=43    then  label284.caption:=' | Coraje.';
-if oeg=44    then  label284.caption:=' | Vergüenza.';
-if oeg=45    then  label284.caption:=' | Monotonía.';
-if oeg=46    then  label284.caption:=' | Necesidad de cambio.';
-if oeg=47    then  label284.caption:=' | Observación.';
-if oeg=48    then  label284.caption:=' | Antagonismo.';
-if oeg=49    then  label284.caption:=' | Sensualidad.';
-if oeg=50    then  label284.caption:=' | Espiritualidad.';
-if oeg=51    then  label284.caption:=' | Sexualidad.';
-if oeg=52    then  label284.caption:=' | Adictividad.';
-if oeg=53    then  label284.caption:=' | Enjuiciamiento.';
-if oeg=54    then  label284.caption:=' | Apatía.';
-if oeg=55    then  label284.caption:=' | Extasis.';
-if oeg=56    then  label284.caption:=' | Inepcia.';
-if oeg=57    then  label284.caption:=' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label284.caption:=' | Perfeccionismo.';
-if oeg=59    then  label284.caption:=' | Desesperación.';
-if oeg=60    then  label284.caption:=' | Dominación.';
-if oeg=61    then  label284.caption:=' | Sumisión.';
-if oeg=62    then  label284.caption:=' | Orgullo.';
-if oeg=63    then  label284.caption:=' | Resentimiento.';
-if oeg=64    then  label284.caption:=' | Choc.';
-if oeg=65    then  label284.caption:=' | Descuido.';
-if oeg=66    then  label284.caption:=' | Obsesividad.';
-if oeg=67    then  label284.caption:=' | Impulsividad.';
-if oeg=68    then  label284.caption:=' | Manías incontrolables.';
-if oeg=69    then  label284.caption:=' | Impulsividad.';
-if oeg=70    then  label284.caption:=' | Lealtad inquebrantable.';
-if oeg=71    then  label284.caption:=' | Distracción.';
-if oeg=72    then  label284.caption:=' | Concentración.';
-if oeg=73    then  label284.caption:=' | Irrealismo.';
-if oeg=74    then  label284.caption:=' | Frustración.';
-end;
+EnlaceLabel287();
 
-if  label287.caption=''  then
-begin
-  oeg:=random(139);
-if oeg=0 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=1 then label287.caption:='Entrelazado con '+'Piel.';
-if oeg=2 then label287.caption:='Entrelazado con '+'Cerebro.';
-if oeg=3 then label287.caption:='Entrelazado con '+'Senos nasales.';
-if oeg=4 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=5 then label287.caption:='Entrelazado con '+'Sistema ocular.';
-if oeg=6 then label287.caption:='Entrelazado con '+'Intestinos.';
-if oeg=7 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=8 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=9 then label287.caption:='Entrelazado con '+'Suprarrenales.';
-if oeg=10 then label287.caption:='Entrelazado con '+'Senos nasales.';
-if oeg=11 then label287.caption:='Entrelazado con '+'Factores emocionales.';
-if oeg=12 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=13 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=14 then label287.caption:='Entrelazado con '+'Dentadura.';
-if oeg=15 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=16 then label287.caption:='Entrelazado con '+'Médula oblongata.';
-if oeg=17 then label287.caption:='Entrelazado con '+'Lóbulo frontal del cerebro.';
-if oeg=18 then label287.caption:='Entrelazado con '+'Lóbulo parietal del cerebro.';
-if oeg=19 then label287.caption:='Entrelazado con '+'Lóbulo occipital del cerebro.';
-if oeg=20 then label287.caption:='Entrelazado con '+'Lóbulo temporal del cerebro.';
-if oeg=21 then label287.caption:='Entrelazado con '+'Tiroides.';
-if oeg=22 then label287.caption:='Entrelazado con '+'Timo.';
-if oeg=23 then label287.caption:='Entrelazado con '+'Médula espinal.';
-if oeg=24 then label287.caption:='Entrelazado con '+'Sistema límbico.';
-if oeg=25 then label287.caption:='Entrelazado con '+'Circuitos de la memoria.';
-if oeg=26 then label287.caption:='Entrelazado con '+'Hipotálamo.';
-if oeg=27 then label287.caption:='Entrelazado con '+'Pineal.';
-if oeg=28 then label287.caption:='Entrelazado con '+'Pituitaria.';
-if oeg=29 then label287.caption:='Entrelazado con '+'Paratiroides.';
-if oeg=30 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=31 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=32 then label287.caption:='Entrelazado con '+'Dentadura.';
-if oeg=33 then label287.caption:='Entrelazado con '+'Pulmones.';
-if oeg=34 then label287.caption:='Entrelazado con '+'Piel.';
-if oeg=35 then label287.caption:='Entrelazado con '+'Cerebro.';
-if oeg=36 then label287.caption:='Entrelazado con '+'Karma.';
-if oeg=37 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=38 then label287.caption:='Entrelazado con '+'Karma.';
-if oeg=39 then label287.caption:='Entrelazado con '+'Intestinos.';
-if oeg=40 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=41 then label287.caption:='Entrelazado con '+'Estómago.';
-if oeg=42 then label287.caption:='Entrelazado con '+'Suprarrenales.';
-if oeg=43 then label287.caption:='Entrelazado con '+'Formación reticular.';
-if oeg=44 then label287.caption:='Entrelazado con '+'Factores emocionales.';
-if oeg=45 then label287.caption:='Entrelazado con '+'Sangre.';
-if oeg=46 then label287.caption:='Entrelazado con '+'Sistema linfático.';
-if oeg=47  then label287.caption:='Entrelazado con '+'Disturbio en digestión / Absorpción.';
-if oeg=48  then label287.caption:='Deficiencia de '+'sales en tejidos no especificados.';
-if oeg=49  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=50  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón bajo.';
-if oeg=51  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón mediano.';
-if oeg=52  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados con el aracadonico.' ;
-if oeg=53  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=54  then label287.caption:='Deficiencia de '+'todos los ácidos grasos.';
-if oeg=55  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbón alto.';
-if oeg=56  then label287.caption:='Deficiencia de '+'ácidos grasos relacionados con las enzimas.';
-if oeg=57  then label287.caption:='Deficiencia de '+'vitamina E.';
-if oeg=58  then label287.caption:='Deficiencia de '+'vitamina E1.';
-if oeg=59  then label287.caption:='Deficiencia de '+'vitamina E2.';
-if oeg=60  then label287.caption:='Deficiencia de '+'vitamina E3.';
-if oeg=61  then label287.caption:='Deficiencia de '+'vitamina K1.';
-if oeg=62  then label287.caption:='Deficiencia de '+'vitamina K3.';
-if oeg=63  then label287.caption:='Deficiencia de '+'todas las vitaminas K.';
-if oeg=64  then label287.caption:='Deficiencia de '+'vitamina U / Ubiquinona.' ;
-if oeg=65  then label287.caption:='Deficiencia de '+'CoQ6.';
-if oeg=66  then label287.caption:='Deficiencia de '+'CoQ7.';
-if oeg=67  then label287.caption:='Deficiencia de '+'CoQ8.';
-if oeg=68  then label287.caption:='Deficiencia de '+'CoQ9.';
-if oeg=69  then label287.caption:='Deficiencia de '+'CoQ10.';
-if oeg=70  then label287.caption:='Deficiencia de '+'todos los CoQ.';
-if oeg=71  then label287.caption:='Deficiencia de '+'ciclo de la ubiquinona.';
-if oeg=72  then label287.caption:='Deficiencia de '+'vitamina C.';
-if oeg=73  then label287.caption:='Deficiencia de '+'bioflavenoides.';
-if oeg=74  then label287.caption:='Deficiencia de '+'rutina.';
-if oeg=75  then label287.caption:='Deficiencia de '+'acido hespárico.';
-if oeg=76  then label287.caption:='Deficiencia de '+'tirosina.';
-if oeg=77  then label287.caption:='Deficiencia de '+'tirosinasea.' ;
-if oeg=78  then label287.caption:='Deficiencia de '+'vitamina C ase.';
-if oeg=79  then label287.caption:='Deficiencia de '+'ácido ascórbico.';
-if oeg=80  then label287.caption:='Deficiencia de '+'vitamina D.';
-if oeg=81  then label287.caption:='Deficiencia de '+'vitamina D1.';
-if oeg=82  then label287.caption:='Deficiencia de '+'vitamina D2.';
-if oeg=83  then label287.caption:='Deficiencia de '+'vitamina D3.';
-if oeg=84  then label287.caption:='Deficiencia de '+'vitamina D4.';
-if oeg=85  then label287.caption:='Deficiencia de '+'vitamina A.';
-if oeg=86  then label287.caption:='Deficiencia de '+'beta carotina.';
-if oeg=87  then label287.caption:='Deficiencia de '+'aceite de pescado.';
-if oeg=88  then label287.caption:='Deficiencia de '+'retinol.';
-if oeg=89  then label287.caption:='Deficiencia de '+'precursores de la vitamina A.';
-if oeg=90  then label287.caption:='Deficiencia de '+'vitamina A en cartílagos.';
-if oeg=91  then label287.caption:='Deficiencia de '+'enzimas en general.';
-if oeg=92  then label287.caption:='Deficiencia de '+'enzimas para la reducción de la oxidación.';
-if oeg=93  then label287.caption:='Deficiencia de '+ 'enzimas para la hidrolización de la digestión.';
-if oeg=94  then label287.caption:='Deficiencia de '+'enzimas para la fosforilización del cerebro.';
-if oeg=95  then label287.caption:='Deficiencia de '+'enzimas para las descarbonización de los pulmónes.';
-if oeg=96  then label287.caption:='Deficiencia de '+'enzimas para la regularización de la hidrolización del agua.';
-if oeg=97  then label287.caption:='Deficiencia de '+'enzimas para la regulación del ADN.' ;
-if oeg=98  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=99  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=100  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=101  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.';
-if oeg=102  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones medios.';
-if oeg=103  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .';
-if oeg=104  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=105  then label287.caption:='Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.';
-if oeg=106  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones altos.';
-if oeg=107  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los procesos enzimáticos .';
-if oeg=108  then label287.caption:='Deficiencia de '+'ácidos grasos en general.';
-if oeg=109  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.';
-if oeg=110  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones medios.';
-if oeg=111  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .';
-if oeg=112  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.';
-if oeg=113  then label287.caption:='Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.';
-if oeg=114  then label287.caption:='Deficiencia de '+'cadenas de ácidos grasos de carbones altos.';
-if oeg=115  then label287.caption:='Deficiencia de '+'ácidos grasos relacionados con procesos enzimáticos.';
-if oeg=116  then label287.caption:='Deficiencia de '+'enzimas generales.';
-if oeg=117  then label287.caption:='Deficiencia de '+'enzimas en la reducción de la oxidación.';
-if oeg=118  then label287.caption:='Deficiencia de '+ 'enzimas digestivas, hidrolización.';
-if oeg=119  then label287.caption:='Deficiencia de '+'enzimas en el pensamiento, fosforilación.';
-if oeg=120  then label287.caption:='Deficiencia de '+'enzimas en la respiración decarboxilasa.';
-if oeg=121  then label287.caption:='Deficiencia de '+'enzimas en la regulación del agua hidrolasa.';
-if oeg=122  then label287.caption:='Deficiencia de '+'enzimas en la regulación del ADN.';
-if oeg=123  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=124  then label287.caption:='Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-end;
-                         t1:=random(142);
-if t1=0  then label289.hint:='Vitamina K.' ;
-if t1=1 then label289.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label289.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label289.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label289.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label289.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label289.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label289.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label289.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label289.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label289.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label289.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label289.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label289.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label289.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label289.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label289.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label289.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label289.hint:='Arginina / Nervios, piel.';
-if t1=19 then label289.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label289.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label289.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label289.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label289.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label289.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label289.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label289.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label289.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label289.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label289.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label289.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label289.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label289.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label289.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label289.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label289.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label289.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label289.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label289.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label289.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label289.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label289.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label289.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label289.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label289.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label289.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label289.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label289.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label289.hint:='Sales en tejidos no especificados.';
-if t1=49 then label289.hint:='Acidos grasos en general.';
-if t1=50 then label289.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label289.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label289.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label289.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label289.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label289.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label289.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label289.hint:='Vitamina E.' ;
-if t1=58 then label289.hint:='Vitamina E1.'  ;
-if t1=59 then label289.hint:='Vitamina E2.' ;
-if t1=60 then label289.hint:='Vitamina E3.'  ;
-if t1=61 then label289.hint:='Vitamina K1.'  ;
-if t1=62 then label289.hint:='Vitamina K3.' ;
-if t1=63 then label289.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label289.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label289.hint:='CoQ6.' ;
-if t1=66 then label289.hint:='CoQ7.' ;
-if t1=67 then label289.hint:='CoQ8.' ;
-if t1=68 then label289.hint:='CoQ9.'  ;
-if t1=69 then label289.hint:='CoQ10.' ;
-if t1=70 then label289.hint:='Todos los CoQ.';
-if t1=71 then label289.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label289.hint:='Vitamina C.';
-if t1=73 then label289.hint:='Bioflavenoides.'  ;
-if t1=74 then label289.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label289.hint:='Acido hespárico.'  ;
-if t1=76 then label289.hint:='Tirosina.'  ;
-if t1=77 then label289.hint:='Tirosinasea.' ;
-if t1=78 then label289.hint:='Vitamina C ase.' ;
-if t1=79 then label289.hint:='Acido ascórbico.'  ;
-if t1=80 then label289.hint:='Vitamina D.' ;
-if t1=81 then label289.hint:='Vitamina D1.'  ;
-if t1=82 then label289.hint:='Vitamina D2.'  ;
-if t1=83 then label289.hint:='Vitamina D3.'  ;
-if t1=84 then label289.hint:='Vitamina D4.'  ;
-if t1=85 then label289.hint:='Vitamina A.' ;
-if t1=86 then label289.hint:='Beta carotina.'  ;
-if t1=87 then label289.hint:='Aceite de pescado.'  ;
-if t1=88 then label289.hint:='Retinol.'  ;
-if t1=89 then label289.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label289.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label289.hint:='Enzimas en general.' ;
-if t1=92 then label289.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label289.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label289.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label289.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label289.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label289.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label289.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label289.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label289.hint:='Acidos grasos en general.' ;
-if t1=101 then label289.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label289.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label289.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label289.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label289.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label289.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label289.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label289.hint:='Acidos grasos en general.' ;
-if t1=109 then label289.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label289.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label289.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label289.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label289.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label289.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label289.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label289.hint:='Enzimas generales.' ;
-if t1=117 then label289.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label289.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label289.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label289.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label289.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label289.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label289.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label289.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label289.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label289.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label289.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label289.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label289.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label289.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label289.hint:='Acidos grasos en general.' ;
-                     t1:=random(142);
-if t1=0  then label290.hint:='Vitamina K.' ;
-if t1=1 then label290.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label290.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label290.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label290.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label290.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label290.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label290.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label290.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label290.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label290.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label290.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label290.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label290.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label290.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label290.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label290.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label290.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label290.hint:='Arginina / Nervios, piel.';
-if t1=19 then label290.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label290.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label290.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label290.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label290.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label290.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label290.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label290.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label290.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label290.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label290.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label290.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label290.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label290.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label290.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label290.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label290.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label290.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label290.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label290.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label290.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label290.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label290.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label290.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label290.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label290.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label290.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label290.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label290.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label290.hint:='Sales en tejidos no especificados.';
-if t1=49 then label290.hint:='Acidos grasos en general.';
-if t1=50 then label290.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label290.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label290.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label290.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label290.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label290.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label290.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label290.hint:='Vitamina E.' ;
-if t1=58 then label290.hint:='Vitamina E1.'  ;
-if t1=59 then label290.hint:='Vitamina E2.' ;
-if t1=60 then label290.hint:='Vitamina E3.'  ;
-if t1=61 then label290.hint:='Vitamina K1.'  ;
-if t1=62 then label290.hint:='Vitamina K3.' ;
-if t1=63 then label290.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label290.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label290.hint:='CoQ6.' ;
-if t1=66 then label290.hint:='CoQ7.' ;
-if t1=67 then label290.hint:='CoQ8.' ;
-if t1=68 then label290.hint:='CoQ9.'  ;
-if t1=69 then label290.hint:='CoQ10.' ;
-if t1=70 then label290.hint:='Todos los CoQ.';
-if t1=71 then label290.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label290.hint:='Vitamina C.';
-if t1=73 then label290.hint:='Bioflavenoides.'  ;
-if t1=74 then label290.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label290.hint:='Acido hespárico.'  ;
-if t1=76 then label290.hint:='Tirosina.'  ;
-if t1=77 then label290.hint:='Tirosinasea.' ;
-if t1=78 then label290.hint:='Vitamina C ase.' ;
-if t1=79 then label290.hint:='Acido ascórbico.'  ;
-if t1=80 then label290.hint:='Vitamina D.' ;
-if t1=81 then label290.hint:='Vitamina D1.'  ;
-if t1=82 then label290.hint:='Vitamina D2.'  ;
-if t1=83 then label290.hint:='Vitamina D3.'  ;
-if t1=84 then label290.hint:='Vitamina D4.'  ;
-if t1=85 then label290.hint:='Vitamina A.' ;
-if t1=86 then label290.hint:='Beta carotina.'  ;
-if t1=87 then label290.hint:='Aceite de pescado.'  ;
-if t1=88 then label290.hint:='Retinol.'  ;
-if t1=89 then label290.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label290.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label290.hint:='Enzimas en general.' ;
-if t1=92 then label290.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label290.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label290.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label290.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label290.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label290.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label290.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label290.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label290.hint:='Acidos grasos en general.' ;
-if t1=101 then label290.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label290.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label290.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label290.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label290.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label290.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label290.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label290.hint:='Acidos grasos en general.' ;
-if t1=109 then label290.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label290.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label290.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label290.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label290.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label290.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label290.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label290.hint:='Enzimas generales.' ;
-if t1=117 then label290.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label290.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label290.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label290.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label290.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label290.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label290.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label290.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label290.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label290.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label290.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label290.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label290.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label290.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label290.hint:='Acidos grasos en general.' ;
-                     t1:=random(142);
-if t1=0  then label286.hint:='Vitamina K.' ;
-if t1=1 then label286.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label286.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label286.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label286.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label286.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label286.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label286.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label286.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label286.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label286.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label286.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label286.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label286.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label286.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label286.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label286.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label286.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label286.hint:='Arginina / Nervios, piel.';
-if t1=19 then label286.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label286.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label286.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label286.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label286.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label286.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label286.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label286.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label286.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label286.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label286.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label286.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label286.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label286.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label286.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label286.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label286.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label286.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label286.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label286.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label286.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label286.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label286.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label286.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label286.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label286.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label286.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label286.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label286.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label286.hint:='Sales en tejidos no especificados.';
-if t1=49 then label286.hint:='Acidos grasos en general.';
-if t1=50 then label286.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label286.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label286.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label286.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label286.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label286.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label286.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label286.hint:='Vitamina E.' ;
-if t1=58 then label286.hint:='Vitamina E1.'  ;
-if t1=59 then label286.hint:='Vitamina E2.' ;
-if t1=60 then label286.hint:='Vitamina E3.'  ;
-if t1=61 then label286.hint:='Vitamina K1.'  ;
-if t1=62 then label286.hint:='Vitamina K3.' ;
-if t1=63 then label286.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label286.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label286.hint:='CoQ6.' ;
-if t1=66 then label286.hint:='CoQ7.' ;
-if t1=67 then label286.hint:='CoQ8.' ;
-if t1=68 then label286.hint:='CoQ9.'  ;
-if t1=69 then label286.hint:='CoQ10.' ;
-if t1=70 then label286.hint:='Todos los CoQ.';
-if t1=71 then label286.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label286.hint:='Vitamina C.';
-if t1=73 then label286.hint:='Bioflavenoides.'  ;
-if t1=74 then label286.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label286.hint:='Acido hespárico.'  ;
-if t1=76 then label286.hint:='Tirosina.'  ;
-if t1=77 then label286.hint:='Tirosinasea.' ;
-if t1=78 then label286.hint:='Vitamina C ase.' ;
-if t1=79 then label286.hint:='Acido ascórbico.'  ;
-if t1=80 then label286.hint:='Vitamina D.' ;
-if t1=81 then label286.hint:='Vitamina D1.'  ;
-if t1=82 then label286.hint:='Vitamina D2.'  ;
-if t1=83 then label286.hint:='Vitamina D3.'  ;
-if t1=84 then label286.hint:='Vitamina D4.'  ;
-if t1=85 then label286.hint:='Vitamina A.' ;
-if t1=86 then label286.hint:='Beta carotina.'  ;
-if t1=87 then label286.hint:='Aceite de pescado.'  ;
-if t1=88 then label286.hint:='Retinol.'  ;
-if t1=89 then label286.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label286.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label286.hint:='Enzimas en general.' ;
-if t1=92 then label286.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label286.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label286.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label286.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label286.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label286.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label286.hint:='Acidos grasos en general.' ;
-if t1=101 then label286.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label286.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label286.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label286.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label286.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label286.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label286.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label286.hint:='Acidos grasos en general.' ;
-if t1=109 then label286.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label286.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label286.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label286.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label286.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label286.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label286.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label286.hint:='Enzimas generales.' ;
-if t1=117 then label286.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label286.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label286.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label286.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label286.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label286.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label286.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label286.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label286.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label286.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label286.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label286.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label286.hint:='Acidos grasos en general.' ;
-                     t1:=random(142);
-if t1=0  then label287.hint:='Vitamina K.' ;
-if t1=1 then label287.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label287.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label287.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label287.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label287.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label287.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label287.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label287.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label287.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label287.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label287.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label287.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label287.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label287.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label287.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label287.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label287.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label287.hint:='Arginina / Nervios, piel.';
-if t1=19 then label287.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label287.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label287.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label287.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label287.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label287.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label287.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label287.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label287.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label287.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label287.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label287.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label287.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label287.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label287.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label287.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label287.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label287.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label287.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label287.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label287.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label287.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label287.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label287.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label287.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label287.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label287.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label287.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label287.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label287.hint:='Sales en tejidos no especificados.';
-if t1=49 then label287.hint:='Acidos grasos en general.';
-if t1=50 then label287.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label287.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label287.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label287.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label287.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label287.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label287.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label287.hint:='Vitamina E.' ;
-if t1=58 then label287.hint:='Vitamina E1.'  ;
-if t1=59 then label287.hint:='Vitamina E2.' ;
-if t1=60 then label287.hint:='Vitamina E3.'  ;
-if t1=61 then label287.hint:='Vitamina K1.'  ;
-if t1=62 then label287.hint:='Vitamina K3.' ;
-if t1=63 then label287.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label287.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label287.hint:='CoQ6.' ;
-if t1=66 then label287.hint:='CoQ7.' ;
-if t1=67 then label287.hint:='CoQ8.' ;
-if t1=68 then label287.hint:='CoQ9.'  ;
-if t1=69 then label287.hint:='CoQ10.' ;
-if t1=70 then label287.hint:='Todos los CoQ.';
-if t1=71 then label287.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label287.hint:='Vitamina C.';
-if t1=73 then label287.hint:='Bioflavenoides.'  ;
-if t1=74 then label287.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label287.hint:='Acido hespárico.'  ;
-if t1=76 then label287.hint:='Tirosina.'  ;
-if t1=77 then label287.hint:='Tirosinasea.' ;
-if t1=78 then label287.hint:='Vitamina C ase.' ;
-if t1=79 then label287.hint:='Acido ascórbico.'  ;
-if t1=80 then label287.hint:='Vitamina D.' ;
-if t1=81 then label287.hint:='Vitamina D1.'  ;
-if t1=82 then label287.hint:='Vitamina D2.'  ;
-if t1=83 then label287.hint:='Vitamina D3.'  ;
-if t1=84 then label287.hint:='Vitamina D4.'  ;
-if t1=85 then label287.hint:='Vitamina A.' ;
-if t1=86 then label287.hint:='Beta carotina.'  ;
-if t1=87 then label287.hint:='Aceite de pescado.'  ;
-if t1=88 then label287.hint:='Retinol.'  ;
-if t1=89 then label287.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label287.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label287.hint:='Enzimas en general.' ;
-if t1=92 then label287.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label287.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label287.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label287.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label287.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label287.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label287.hint:='Acidos grasos en general.' ;
-if t1=101 then label287.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label287.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label287.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label287.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label287.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label287.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label287.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label287.hint:='Acidos grasos en general.' ;
-if t1=109 then label287.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label287.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label287.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label287.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label287.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label287.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label287.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label287.hint:='Enzimas generales.' ;
-if t1=117 then label287.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label287.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label287.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label287.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label287.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label287.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label287.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label287.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label287.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label287.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label287.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label287.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label287.hint:='Acidos grasos en general.' ;
-Hints();
- if  label284.caption=''  then  label287.caption:='La persona debe intentar reducir su índice de estrés.'  ;
- if  label285.caption=''  then  label287.caption:='Prescríba ácidos grasos y un programa para la reducción del estrés.'  ;
- if  label286.caption=''  then  label287.caption:='Prescríba ácidos grasos y un programa de ejercicio diario'  ;
- if  label287.caption=''  then  label287.caption:='Prescríba un programa de ejercicio diario.'  ;
- if  label289.caption=''  then  label287.caption:='Prescríba ácidos grasos y amino ácidos.'  ;
- if  label290.caption=''  then  label287.caption:='Prescríba ácidos grasos y minerales.';
+ if  label284.caption=''  then  label287.caption:=' La persona debe intentar reducir su índice de estrés.'  ;
+ if  label285.caption=''  then  label287.caption:=' Prescríba ácidos grasos y un programa para la reducción del estrés.'  ;
+ if  label286.caption=''  then  label287.caption:=' Prescríba ácidos grasos y un programa de ejercicio diario'  ;
+ if  label287.caption=''  then  label287.caption:=' Prescríba un programa de ejercicio diario.'  ;
+ if  label289.caption=''  then  label287.caption:=' Prescríba ácidos grasos y amino ácidos.'  ;
+ if  label290.caption=''  then  label287.caption:=' Prescríba ácidos grasos y minerales.';
 
   ConscidaGrid.dataSource       :=DM.DSFilter;
 
@@ -42553,11 +37139,6 @@ begin
 
 end;
 
-procedure TtestForm1.MaxandMaxineAdvice1Click(Sender: TObject);
-begin
-ShellExecute(0, 'open', 'mailto:c_bioinstrumental@yahoo.com', '','', 1);
-end;
-
 procedure TtestForm1.BZap30SClick(Sender: TObject);
 begin
 Reaccion_Irregular();
@@ -42585,7 +37166,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Button8.caption:='&Equilibrar';
 zap:=1;
 rectif1:= strtoint2(LReactancia.caption)+strtoint2(LReactancia.caption)+ (8*strtoint2(LDiferencia.caption));
@@ -42900,330 +37481,285 @@ GProgreso.Progress := 10;
  GProgreso.Progress := 100;
      Label286.Caption:=DM.conscida.Fieldbyname('Name').AsString;
      end;
-Hints();
-AfirmacionesPositivas();
 
 oeg:=random(80);
-if oeg<2 then label289.caption:='| Regresión.';
-if oeg=2 then label289.caption:='| Agresión.';
-if oeg=3 then label289.caption:='| Ira.';
-if oeg=4 then label289.caption:='| Ansiedad.';
-if oeg=5 then label289.caption:='| Conciencia.';
-if oeg=6 then label289.caption:='| Tristeza.';
-if oeg=7 then label289.caption:='| Culpabilidad.';
-if oeg=8 then label289.caption:='| Autismo.';
-if oeg=9 then label289.caption:='| Negación.';
-if oeg=10 then label289.caption:='| Descuido.';
-if oeg=11 then label289.caption:='| Desilusión.';
-if oeg=12 then label289.caption:='| Depresión.';
-if oeg=13 then label289.caption:='| Poder.';
-if oeg=14 then label289.caption:='| Duda de sí mismo/a.';
-if oeg=15 then label289.caption:='| Temor.';
-if oeg=16 then label289.caption:='| Confusión.';
-if oeg=17 then label289.caption:='| Duda.';
-if oeg=18 then label289.caption:='| Celos.';
-if oeg=19 then label289.caption:='| Alegría.';
-if oeg=20 then label289.caption:='| Lujuria.';
-if oeg=21 then label289.caption:='| Avaricia.';
-if oeg=22 then label289.caption:='| Poderes Extra Sensoriales.';
-if oeg=23 then label289.caption:='| Dolor psíquico.';
-if oeg=24 then label289.caption:='| Pasividad.';
-if oeg=25 then label289.caption:='| Proyección.';
-if oeg=26 then label289.caption:='| Racionalizar.';
-if oeg=27 then label289.caption:='| Imprudencia.';
-if oeg=28 then label289.caption:='| Preocupación.';
-if oeg=29 then label289.caption:='| Abandono.';
-if oeg=30 then label289.caption:='| Vergüenza.';
-if oeg=31 then label289.caption:='| Traición.';
-if oeg=32 then label289.caption:='| Malentendimiento.';
-if oeg=33 then label289.caption:='| Curiosidad.';
-if oeg=34 then label289.caption:='| Sobrecogimiento.';
-if oeg=35 then label289.caption:='| Conflicto religioso.';
-if oeg=36 then label289.caption:='| Conflicto de identidad.';
-if oeg=37 then label289.caption:='| Resistencia al cambio.';
-if oeg=38 then label289.caption:='| Nervios.';
-if oeg=39 then label289.caption:='| Risa.';
-if oeg=40 then label289.caption:='| Entusiasmo.';
-if oeg=41 then label289.caption:='| Vanidad.';
-if oeg=42 then label289.caption:='| Negociación.';
-if oeg=43 then label289.caption:='| Coraje.';
-if oeg=44 then label289.caption:='| Vergüenza.';
-if oeg=45 then label289.caption:='| Monotonía.';
-if oeg=46 then label289.caption:='| Necesidad de cambio.';
-if oeg=47 then label289.caption:='| Observación.';
-if oeg=48 then label289.caption:='| Antagonismo.';
-if oeg=49 then label289.caption:='| Sensualidad.';
-if oeg=50 then label289.caption:='| Espiritualidad.';
-if oeg=51 then label289.caption:='| Sexualidad.';
-if oeg=52 then label289.caption:='| Adictividad.';
-if oeg=53 then label289.caption:='| Enjuiciamiento.';
-if oeg=54 then label289.caption:='| Apatía.';
-if oeg=55 then label289.caption:='| Extasis.';
-if oeg=56 then label289.caption:='| Inepcia.';
-if oeg=57 then label289.caption:='| Deseo de que las cosas sean diferentes.';
-if oeg=58 then label289.caption:='| Perfeccionismo.';
-if oeg=59 then label289.caption:='| Desesperación.';
-if oeg=60 then label289.caption:='| Dominación.';
-if oeg=61 then label289.caption:='| Sumisión.';
-if oeg=62 then label289.caption:='| Orgullo.';
-if oeg=63 then label289.caption:='| Resentimiento.';
-if oeg=64 then label289.caption:='| Choc.';
-if oeg=65 then label289.caption:='| Descuido.';
-if oeg=66 then label289.caption:='| Obsesividad.';
-if oeg=67 then label289.caption:='| Impulsividad.';
-if oeg=68 then label289.caption:='| Manías incontrolables.';
-if oeg=69 then label289.caption:='| Impulsividad.';
-if oeg=70 then label289.caption:='| Lealtad inquebrantable.';
-if oeg=71 then label289.caption:='| Distracción.';
-if oeg=72 then label289.caption:='| Concentración.';
-if oeg=73 then label289.caption:='| Irrealismo.';
-if oeg>73 then label289.caption:='| Frustración.';
+if oeg<2 then label289.caption:=' Regresión.';
+if oeg=2 then label289.caption:=' Agresión.';
+if oeg=3 then label289.caption:=' Ira.';
+if oeg=4 then label289.caption:=' Ansiedad.';
+if oeg=5 then label289.caption:=' Conciencia.';
+if oeg=6 then label289.caption:=' Tristeza.';
+if oeg=7 then label289.caption:=' Culpabilidad.';
+if oeg=8 then label289.caption:=' Autismo.';
+if oeg=9 then label289.caption:=' Negación.';
+if oeg=10 then label289.caption:=' Descuido.';
+if oeg=11 then label289.caption:=' Desilusión.';
+if oeg=12 then label289.caption:=' Depresión.';
+if oeg=13 then label289.caption:=' Poder.';
+if oeg=14 then label289.caption:=' Duda de sí mismo.';
+if oeg=15 then label289.caption:=' Temor.';
+if oeg=16 then label289.caption:=' Confusión.';
+if oeg=17 then label289.caption:=' Duda.';
+if oeg=18 then label289.caption:=' Celos.';
+if oeg=19 then label289.caption:=' Alegría.';
+if oeg=20 then label289.caption:=' Lujuria.';
+if oeg=21 then label289.caption:=' Avaricia.';
+if oeg=22 then label289.caption:=' Poderes Extra Sensoriales.';
+if oeg=23 then label289.caption:=' Dolor psíquico.';
+if oeg=24 then label289.caption:=' Pasividad.';
+if oeg=25 then label289.caption:=' Proyección.';
+if oeg=26 then label289.caption:=' Racionalización.';
+if oeg=27 then label289.caption:=' Imprudencia.';
+if oeg=28 then label289.caption:=' Preocupación.';
+if oeg=29 then label289.caption:=' Abandono.';
+if oeg=30 then label289.caption:=' Vergüenza.';
+if oeg=31 then label289.caption:=' Traición.';
+if oeg=32 then label289.caption:=' Sentimiento de no o mal entrenamiento.';
+if oeg=33 then label289.caption:=' Curiosidad.';
+if oeg=34 then label289.caption:=' Sobrecogimiento.';
+if oeg=35 then label289.caption:=' Conflicto religioso.';
+if oeg=36 then label289.caption:=' Conflicto de identidad.';
+if oeg=37 then label289.caption:=' Resistencia al cambio.';
+if oeg=38 then label289.caption:=' Nervios.';
+if oeg=39 then label289.caption:=' Risa.';
+if oeg=40 then label289.caption:=' Entusiasmo.';
+if oeg=41 then label289.caption:=' Vanidad.';
+if oeg=42 then label289.caption:=' Negociación.';
+if oeg=43 then label289.caption:=' Coraje.';
+if oeg=44 then label289.caption:=' Vergüenza.';
+if oeg=45 then label289.caption:=' Monotonía.';
+if oeg=46 then label289.caption:=' Necesidad de cambio.';
+if oeg=47 then label289.caption:=' Observación.';
+if oeg=48 then label289.caption:=' Antagonismo.';
+if oeg=49 then label289.caption:=' Sensualidad.';
+if oeg=50 then label289.caption:=' Espiritualidad.';
+if oeg=51 then label289.caption:=' Sexualidad.';
+if oeg=52 then label289.caption:=' Adicciones.';
+if oeg=53 then label289.caption:=' Crítica.';
+if oeg=54 then label289.caption:=' Apatía.';
+if oeg=55 then label289.caption:=' Extasis.';
+if oeg=56 then label289.caption:=' Ineptitud.';
+if oeg=57 then label289.caption:=' Deseo de que las cosas sean diferentes.';
+if oeg=58 then label289.caption:=' Perfeccionismo.';
+if oeg=59 then label289.caption:=' Desesperación.';
+if oeg=60 then label289.caption:=' Dominación.';
+if oeg=61 then label289.caption:=' Sumisión.';
+if oeg=62 then label289.caption:=' Orgullo.';
+if oeg=63 then label289.caption:=' Resentimiento.';
+if oeg=64 then label289.caption:=' Choque emocional.';
+if oeg=65 then label289.caption:=' Descuido.';
+if oeg=66 then label289.caption:=' Obsesividad.';
+if oeg=67 then label289.caption:=' Impulsividad.';
+if oeg=68 then label289.caption:=' Manías.';
+if oeg=69 then label289.caption:=' Impulsividad.';
+if oeg=70 then label289.caption:=' Lealtad.';
+if oeg=71 then label289.caption:=' Distracción.';
+if oeg=72 then label289.caption:=' Concentración.';
+if oeg=73 then label289.caption:=' Irrealismo.';
+if oeg>73 then label289.caption:=' Frustración.';
 oeg:=random(80);
-if oeg<2    then  label289.caption:=label289.caption+' | Regresión.';
-if oeg=2   then  label289.caption:=label289.caption+' | Agresión.';
-if oeg=3    then  label289.caption:=label289.caption+' | Ira.';
-if oeg=4    then  label289.caption:=label289.caption+' | Ansiedad.';
-if oeg=5    then  label289.caption:=label289.caption+' | Conciencia.';
-if oeg=6    then  label289.caption:=label289.caption+' | Tristeza.';
-if oeg=7    then  label289.caption:=label289.caption+' | Culpabilidad.';
-if oeg=8    then  label289.caption:=label289.caption+' | Autismo.';
-if oeg=9    then  label289.caption:=label289.caption+' | Negación.';
-if oeg=10    then  label289.caption:=label289.caption+' | Descuido.';
-if oeg=11    then  label289.caption:=label289.caption+' | Desilusión.';
-if oeg=12    then  label289.caption:=label289.caption+' | Depresión.';
-if oeg=13    then  label289.caption:=label289.caption+' | Poder.';
-if oeg=14    then  label289.caption:=label289.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label289.caption:=label289.caption+' | Temor.';
-if oeg=16    then  label289.caption:=label289.caption+' | Confusión.';
-if oeg=17    then  label289.caption:=label289.caption+' | Duda.';
-if oeg=18    then  label289.caption:=label289.caption+' | Celos.';
-if oeg=19    then  label289.caption:=label289.caption+' | Alegría.';
-if oeg=20    then  label289.caption:=label289.caption+' | Lujuria.';
-if oeg=21    then  label289.caption:=label289.caption+' | Avaricia.';
-if oeg=22    then  label289.caption:=label289.caption+' | Poderes Extra Sensoriales.';
-if oeg=23    then  label289.caption:=label289.caption+' | Dolor psíquico.';
-if oeg=24    then  label289.caption:=label289.caption+' | Pasividad.';
-if oeg=25    then  label289.caption:=label289.caption+' | Proyección.';
-if oeg=26    then  label289.caption:=label289.caption+' | Racionalizar.';
-if oeg=27    then  label289.caption:=label289.caption+' | Imprudencia.';
-if oeg=28    then  label289.caption:=label289.caption+' | Preocupación.';
-if oeg=29    then  label289.caption:=label289.caption+' | Abandono.';
-if oeg=30    then  label289.caption:=label289.caption+' | Vergüenza.';
-if oeg=31    then  label289.caption:=label289.caption+' | Traición.';
-if oeg=32    then  label289.caption:=label289.caption+' | Malentendimiento.';
-if oeg=33    then  label289.caption:=label289.caption+' | Curiosidad.';
-if oeg=34    then  label289.caption:=label289.caption+' | Sobrecogimiento.';
-if oeg=35    then  label289.caption:=label289.caption+' | Conflicto religioso.';
-if oeg=36    then  label289.caption:=label289.caption+' | Conflicto de identidad.';
-if oeg=37    then  label289.caption:=label289.caption+' | Resistencia al cambio.';
-if oeg=38    then  label289.caption:=label289.caption+' | Nervios.';
-if oeg=39    then  label289.caption:=label289.caption+' | Risa.';
-if oeg=40    then  label289.caption:=label289.caption+' | Entusiasmo.';
-if oeg=41    then  label289.caption:=label289.caption+' | Vanidad.';
-if oeg=42    then  label289.caption:=label289.caption+' | Negociación.';
-if oeg=43    then  label289.caption:=label289.caption+' | Coraje.';
-if oeg=44    then  label289.caption:=label289.caption+' | Vergüenza.';
-if oeg=45    then  label289.caption:=label289.caption+' | Monotonía.';
-if oeg=46    then  label289.caption:=label289.caption+' | Necesidad de cambio.';
-if oeg=47    then  label289.caption:=label289.caption+' | Observación.';
-if oeg=48    then  label289.caption:=label289.caption+' | Antagonismo.';
-if oeg=49    then  label289.caption:=label289.caption+' | Sensualidad.';
-if oeg=50    then  label289.caption:=label289.caption+' | Espiritualidad.';
-if oeg=51    then  label289.caption:=label289.caption+' | Sexualidad.';
-if oeg=52    then  label289.caption:=label289.caption+' | Adictividad.';
-if oeg=53    then  label289.caption:=label289.caption+' | Enjuiciamiento.';
-if oeg=54    then  label289.caption:=label289.caption+' | Apatía.';
-if oeg=55    then  label289.caption:=label289.caption+' | Extasis.';
-if oeg=56    then  label289.caption:=label289.caption+' | Inepcia.';
-if oeg=57    then  label289.caption:=label289.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label289.caption:=label289.caption+' | Perfeccionismo.';
-if oeg=59    then  label289.caption:=label289.caption+' | Desesperación.';
-if oeg=60    then  label289.caption:=label289.caption+' | Dominación.';
-if oeg=61    then  label289.caption:=label289.caption+' | Sumisión.';
-if oeg=62    then  label289.caption:=label289.caption+' | Orgullo.';
-if oeg=63    then  label289.caption:=label289.caption+' | Resentimiento.';
-if oeg=64    then  label289.caption:=label289.caption+' | Choc.';
-if oeg=65    then  label289.caption:=label289.caption+' | Descuido.';
-if oeg=66    then  label289.caption:=label289.caption+' | Obsesividad.';
-if oeg=67    then  label289.caption:=label289.caption+' | Impulsividad.';
-if oeg=68    then  label289.caption:=label289.caption+' | Manías incontrolables.';
-if oeg=69    then  label289.caption:=label289.caption+' | Impulsividad.';
-if oeg=70    then  label289.caption:=label289.caption+' | Lealtad inquebrantable.';
-if oeg=71    then  label289.caption:=label289.caption+' | Distracción.';
-if oeg=72    then  label289.caption:=label289.caption+' | Concentración.';
-if oeg=73    then  label289.caption:=label289.caption+' | Irrealismo.';
-if oeg=74    then  label289.caption:=label289.caption+' | Frustración.';
-if oeg>74    then  label289.caption:=label289.caption+'Frustration';
+if oeg<2    then  label289.caption:=label289.caption+' Regresión.';
+if oeg=2   then  label289.caption:=label289.caption+' Agresión.';
+if oeg=3    then  label289.caption:=label289.caption+' Ira.';
+if oeg=4    then  label289.caption:=label289.caption+' Ansiedad.';
+if oeg=5    then  label289.caption:=label289.caption+' Conciencia.';
+if oeg=6    then  label289.caption:=label289.caption+' Tristeza.';
+if oeg=7    then  label289.caption:=label289.caption+' Culpabilidad.';
+if oeg=8    then  label289.caption:=label289.caption+' Autismo.';
+if oeg=9    then  label289.caption:=label289.caption+' Negación.';
+if oeg=10    then  label289.caption:=label289.caption+' Descuido.';
+if oeg=11    then  label289.caption:=label289.caption+' Desilusión.';
+if oeg=12    then  label289.caption:=label289.caption+' Depresión.';
+if oeg=13    then  label289.caption:=label289.caption+' Poder.';
+if oeg=14    then  label289.caption:=label289.caption+' Duda de sí mismo/a.';
+if oeg=15    then  label289.caption:=label289.caption+' Temor.';
+if oeg=16    then  label289.caption:=label289.caption+' Confusión.';
+if oeg=17    then  label289.caption:=label289.caption+' Duda.';
+if oeg=18    then  label289.caption:=label289.caption+' Celos.';
+if oeg=19    then  label289.caption:=label289.caption+' Alegría.';
+if oeg=20    then  label289.caption:=label289.caption+' Lujuria.';
+if oeg=21    then  label289.caption:=label289.caption+' Avaricia.';
+if oeg=22    then  label289.caption:=label289.caption+' Poderes Extra Sensoriales.';
+if oeg=23    then  label289.caption:=label289.caption+' Dolor psíquico.';
+if oeg=24    then  label289.caption:=label289.caption+' Pasividad.';
+if oeg=25    then  label289.caption:=label289.caption+' Proyección.';
+if oeg=26    then  label289.caption:=label289.caption+' Racionalizar.';
+if oeg=27    then  label289.caption:=label289.caption+' Imprudencia.';
+if oeg=28    then  label289.caption:=label289.caption+' Preocupación.';
+if oeg=29    then  label289.caption:=label289.caption+' Abandono.';
+if oeg=30    then  label289.caption:=label289.caption+' Vergüenza.';
+if oeg=31    then  label289.caption:=label289.caption+' Traición.';
+if oeg=32    then  label289.caption:=label289.caption+' Malentendimiento.';
+if oeg=33    then  label289.caption:=label289.caption+' Curiosidad.';
+if oeg=34    then  label289.caption:=label289.caption+' Sobrecogimiento.';
+if oeg=35    then  label289.caption:=label289.caption+' Conflicto religioso.';
+if oeg=36    then  label289.caption:=label289.caption+' Conflicto de identidad.';
+if oeg=37    then  label289.caption:=label289.caption+' Resistencia al cambio.';
+if oeg=38    then  label289.caption:=label289.caption+' Nervios.';
+if oeg=39    then  label289.caption:=label289.caption+' Risa.';
+if oeg=40    then  label289.caption:=label289.caption+' Entusiasmo.';
+if oeg=41    then  label289.caption:=label289.caption+' Vanidad.';
+if oeg=42    then  label289.caption:=label289.caption+' Negociación.';
+if oeg=43    then  label289.caption:=label289.caption+' Coraje.';
+if oeg=44    then  label289.caption:=label289.caption+' Vergüenza.';
+if oeg=45    then  label289.caption:=label289.caption+' Monotonía.';
+if oeg=46    then  label289.caption:=label289.caption+' Necesidad de cambio.';
+if oeg=47    then  label289.caption:=label289.caption+' Observación.';
+if oeg=48    then  label289.caption:=label289.caption+' Antagonismo.';
+if oeg=49    then  label289.caption:=label289.caption+' Sensualidad.';
+if oeg=50    then  label289.caption:=label289.caption+' Espiritualidad.';
+if oeg=51    then  label289.caption:=label289.caption+' Sexualidad.';
+if oeg=52    then  label289.caption:=label289.caption+' Adictividad.';
+if oeg=53    then  label289.caption:=label289.caption+' Crítica.';
+if oeg=54    then  label289.caption:=label289.caption+' Apatía.';
+if oeg=55    then  label289.caption:=label289.caption+' Extasis.';
+if oeg=56    then  label289.caption:=label289.caption+' Ineptitud.';
+if oeg=57    then  label289.caption:=label289.caption+' Deseo de que las cosas sean diferentes.';
+if oeg=58    then  label289.caption:=label289.caption+' Perfeccionismo.';
+if oeg=59    then  label289.caption:=label289.caption+' Desesperación.';
+if oeg=60    then  label289.caption:=label289.caption+' Dominación.';
+if oeg=61    then  label289.caption:=label289.caption+' Sumisión.';
+if oeg=62    then  label289.caption:=label289.caption+' Orgullo.';
+if oeg=63    then  label289.caption:=label289.caption+' Resentimiento.';
+if oeg=64    then  label289.caption:=label289.caption+' Choc.';
+if oeg=65    then  label289.caption:=label289.caption+' Descuido.';
+if oeg=66    then  label289.caption:=label289.caption+' Obsesividad.';
+if oeg=67    then  label289.caption:=label289.caption+' Impulsividad.';
+if oeg=68    then  label289.caption:=label289.caption+' Manías.';
+if oeg=69    then  label289.caption:=label289.caption+' Impulsividad.';
+if oeg=70    then  label289.caption:=label289.caption+' Lealtad.';
+if oeg=71    then  label289.caption:=label289.caption+' Distracción.';
+if oeg=72    then  label289.caption:=label289.caption+' Concentración.';
+if oeg=73    then  label289.caption:=label289.caption+' Irrealismo.';
+if oeg>73    then  label289.caption:=label289.caption+' Frustración.';
 oeg:=random(43);
-if oeg<2 then label290.caption:='Inflamación.';
-if oeg=2 then label290.caption:='Cáncer.';
-if oeg=3 then label290.caption:='Estrés.';
-if oeg=4 then label290.caption:='Hipoadrenia.';
-if oeg=5 then label290.caption:='Emociones.';
-if oeg=6 then label290.caption:='Infección.';
-if oeg=7 then label290.caption:='Toxicidad.';
-if oeg=8 then label290.caption:='Trauma.';
-if oeg=9 then label290.caption:='Factores heredados.';
-if oeg=10 then label290.caption:='Deficiencia o exceso de vitaminas.';
-if oeg=11 then label290.caption:='Sistema cardiovascular.';
-if oeg=12 then label290.caption:='Sistema hormonal.';
-if oeg=13 then label290.caption:='Sistema linfático.';
-if oeg=14 then label290.caption:='Hígado.';
-if oeg=15 then label290.caption:='Riñones.';
-if oeg=16 then label290.caption:='Sistema digestivo.';
-if oeg=17 then label290.caption:='Tejido conectivo.';
-if oeg=18 then label290.caption:='Huesos.';
-if oeg=19 then label290.caption:='Agua ácida o alcalina.';
-if oeg=20 then label290.caption:='Sangre.';
-if oeg=21 then label290.caption:='Medio ambiente.';
-if oeg=22 then label290.caption:='Riesgo alérgico.';
-if oeg=23 then label290.caption:='Riesgo emocional.';
-if oeg=24 then label290.caption:='Sistema circulatorio.';
-if oeg=25 then label290.caption:='Sistema inmunitario.';
-if oeg=26 then label290.caption:='Radiación.';
-if oeg=27 then label290.caption:='Bacterias.';
-if oeg=28 then label290.caption:='Fungosidades.';
-if oeg=29 then label290.caption:='Virus.';
-if oeg=30 then label290.caption:='Parásitos.';
-if oeg=31 then label290.caption:='Ameba.';
-if oeg=32 then label290.caption:='Intolerancia alimentaria.';
-if oeg=33 then label290.caption:='Regulación del azúcar.';
-if oeg=34 then label290.caption:='Sistema neurológico.';
-if oeg=35 then label290.caption:='Sistema sensorial.';
-if oeg=36 then label290.caption:='Colesterol.';
-if oeg=37 then label290.caption:='Sistema respiratorio.';
-if oeg=38 then label290.caption:='Oxidación.';
-if oeg=39 then label290.caption:='Hidratación.';
-if oeg>39 then label290.caption:='Cognicción.';
-oeg:=random(139);
-if oeg=0 then label290.caption:=label290.caption+'Entrelazado con:'+' Pulmones.';
-if oeg=1 then label290.caption:=label290.caption+'Entrelazado con:'+' Piel.';
-if oeg=2 then label290.caption:=label290.caption+'Entrelazado con:'+' Cerebro.';
-if oeg=3 then label290.caption:=label290.caption+'Entrelazado con:'+' Sinus.';
-if oeg=4 then label290.caption:=label290.caption+'Entrelazado con:'+' Estómago.';
-if oeg=5 then label290.caption:=label290.caption+'Entrelazado con:'+' Ojos.';
-if oeg=6 then label290.caption:=label290.caption+'Entrelazado con:'+' Flora.';
-if oeg=7 then label290.caption:=label290.caption+'Entrelazado con:'+' Pulmones.';
-if oeg=8 then label290.caption:=label290.caption+'Entrelazado con:'+' Estómago.';
-if oeg=9 then label290.caption:=label290.caption+'Entrelazado con:'+' Suprarrenales.';
-if oeg=10 then label290.caption:=label290.caption+'Entrelazado con:'+' Sinus.';
-if oeg=11 then label290.caption:=label290.caption+'Entrelazado con:'+' Emociones.';
-if oeg=12 then label290.caption:=label290.caption+'Entrelazado con:'+' Sangre.';
-if oeg=13 then label290.caption:=label290.caption+'Entrelazado con:'+' Sistema linfático.';
-if oeg=14 then label290.caption:=label290.caption+'Entrelazado con:'+' Dentadura.';
-if oeg=15 then label290.caption:=label290.caption+'Entrelazado con:'+' Formación reticular.';
-if oeg=16 then label290.caption:=label290.caption+'Entrelazado con:'+' Médula oblongata.';
-if oeg=17 then label290.caption:=label290.caption+'Entrelazado con:'+' Lóbulo frontal del cerebro.';
-if oeg=18 then label290.caption:=label290.caption+'Entrelazado con:'+' Lóbulo parietal del cerebro.';
-if oeg=19 then label290.caption:=label290.caption+'Entrelazado con:'+' Lóbulo occipital del cerebro.';
-if oeg=20 then label290.caption:=label290.caption+'Entrelazado con:'+' Lóbulo temporal del cerebro.';
-if oeg=21 then label290.caption:=label290.caption+'Entrelazado con:'+' Tiroides.';
-if oeg=22 then label290.caption:=label290.caption+'Entrelazado con:'+' Timo.';
-if oeg=23 then label290.caption:=label290.caption+'Entrelazado con:'+' Médula espinal.';
-if oeg=24 then label290.caption:=label290.caption+'Entrelazado con:'+' Sistema límbico.';
-if oeg=25 then label290.caption:=label290.caption+'Entrelazado con:'+' Circuitos de la memoria.';
-if oeg=26 then label290.caption:=label290.caption+'Entrelazado con:'+' Hipotálamo.';
-if oeg=27 then label290.caption:=label290.caption+'Entrelazado con:'+' Glándula pineal.';
-if oeg=28 then label290.caption:=label290.caption+'Entrelazado con:'+' Glándula pituitaria.';
-if oeg=29 then label290.caption:=label290.caption+'Entrelazado con:'+' Glándula paratiroides.';
-if oeg=30 then label290.caption:=label290.caption+'Entrelazado con:'+' Sangre.';
-if oeg=31 then label290.caption:=label290.caption+'Entrelazado con:'+' Sistema linfático.';
-if oeg=32 then label290.caption:=label290.caption+'Entrelazado con:'+' Dentadura.';
-if oeg=33 then label290.caption:=label290.caption+'Entrelazado con:'+' Pulmones.';
-if oeg=34 then label290.caption:=label290.caption+'Entrelazado con:'+' Piel.';
-if oeg=35 then label290.caption:=label290.caption+'Entrelazado con:'+' Cerebro.';
-if oeg=36 then label290.caption:=label290.caption+'Entrelazado con:'+' Karma.';
-if oeg=37 then label290.caption:=label290.caption+'Entrelazado con:'+' Estómago.';
-if oeg=38 then label290.caption:=label290.caption+'Entrelazado con:'+' Karma.';
-if oeg=39 then label290.caption:=label290.caption+'Entrelazado con:'+' Flora.';
-if oeg=40 then label290.caption:=label290.caption+'Entrelazado con:'+' Formación reticular.';
-if oeg=41 then label290.caption:=label290.caption+'Entrelazado con:'+' Estómago.';
-if oeg=42 then label290.caption:=label290.caption+'Entrelazado con:'+' Suprarrenales.';
-if oeg=43 then label290.caption:=label290.caption+'Entrelazado con:'+' Formación reticular.';
-if oeg=44 then label290.caption:=label290.caption+'Entrelazado con:'+' Emociones.';
-if oeg=45 then label290.caption:=label290.caption+'Entrelazado con:'+' Sangre.';
-if oeg=46 then label290.caption:=label290.caption+'Entrelazado con:'+' Sistema linfático.';
-if oeg=47 then label290.caption:=label290.caption+'Entrelazado con:'+' Digestión / Problema de absorpción.';
-if oeg=48 then label290.caption:=label290.caption+'Deficiencia de '+'sales en tejidos no especificados.';
-if oeg=49 then label290.caption:=label290.caption+'Deficiencia de '+'ácidos grasos en general.';
-if oeg=50 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón bajo.' ;
-if oeg=51 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón mediano.' ;
-if oeg=52 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if oeg=53 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=54 then label290.caption:=label290.caption+'Deficiencia de '+'todos los ácidos grasos.'  ;
-if oeg=55 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbón alto.'  ;
-if oeg=56 then label290.caption:=label290.caption+'Deficiencia de '+'ácidos grasos relacionados con las enzimas.'  ;
-if oeg=57 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina E.' ;
-if oeg=58 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina E1.'  ;
-if oeg=59 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina E2.' ;
-if oeg=60 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina E3.'  ;
-if oeg=0  then label290.caption:=label290.caption+'Deficiencia de '+'vitamina K.' ;
-if oeg=61 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina K1.'  ;
-if oeg=62 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina K3.' ;
-if oeg=63 then label290.caption:=label290.caption+'Deficiencia de '+'todas las vitaminas K.'  ;
-if oeg=64 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina U / Ubiquinona.' ;
-if oeg=65 then label290.caption:=label290.caption+'Deficiencia de '+'CoQ6.' ;
-if oeg=66 then label290.caption:=label290.caption+'Deficiencia de '+'CoQ7.' ;
-if oeg=67 then label290.caption:=label290.caption+'Deficiencia de '+'CoQ8.' ;
-if oeg=68 then label290.caption:=label290.caption+'Deficiencia de '+'CoQ9.'  ;
-if oeg=69 then label290.caption:=label290.caption+'Deficiencia de '+'CoQ10.' ;
-if oeg=70 then label290.caption:=label290.caption+'Deficiencia de '+'todos los CoQ.';
-if oeg=71 then label290.caption:=label290.caption+'Deficiencia de '+'ciclo de la ubiquinona.'  ;
-if oeg=72 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina C.';
-if oeg=73 then label290.caption:=label290.caption+'Deficiencia de '+'bioflavenoides.'  ;
-if oeg=74 then label290.caption:=label290.caption+'Deficiencia de '+'rutina.'  ;
-if oeg=75 then label290.caption:=label290.caption+'Deficiencia de '+'acido hespárico.'  ;
-if oeg=76 then label290.caption:=label290.caption+'Deficiencia de '+'tirosina.'  ;
-if oeg=77 then label290.caption:=label290.caption+'Deficiencia de '+'tirosinasea.' ;
-if oeg=78 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina C ase.' ;
-if oeg=79 then label290.caption:=label290.caption+'Deficiencia de '+'ácido ascórbico.'  ;
-if oeg=80 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina D.' ;
-if oeg=81 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina D1.'  ;
-if oeg=82 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina D2.'  ;
-if oeg=83 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina D3.'  ;
-if oeg=84 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina D4.'  ;
-if oeg=85 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina A.' ;
-if oeg=86 then label290.caption:=label290.caption+'Deficiencia de '+'beta carotina.'  ;
-if oeg=87 then label290.caption:=label290.caption+'Deficiencia de '+'aceite de pescado.'  ;
-if oeg=88 then label290.caption:=label290.caption+'Deficiencia de '+'retinol.'  ;
-if oeg=89 then label290.caption:=label290.caption+'Deficiencia de '+'precursores de la vitamina A.'  ;
-if oeg=90 then label290.caption:=label290.caption+'Deficiencia de '+'vitamina A en cartílagos.' ;
-if oeg=91 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en general.' ;
-if oeg=92 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas para la reducción de la oxidación.';
-if oeg=93 then label290.caption:=label290.caption+'Deficiencia de '+ 'enzimas para la hidrolización de la digestión.';
-if oeg=94 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas para la fosforilización del cerebro.';
-if oeg=95 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas para las descarbonización de los pulmónes.';
-if oeg=96 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas para la regularización de la hidrolización del agua.';
-if oeg=97 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas para la regulación del ADN.' ;
-if oeg=98 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=99 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=100 then label290.caption:=label290.caption+'Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=101 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=102 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=103 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=104 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=105 then label290.caption:=label290.caption+'Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=106 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=107 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if oeg=108 then label290.caption:=label290.caption+'Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=109 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=110 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=111 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=112 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=113 then label290.caption:=label290.caption+'Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=114 then label290.caption:=label290.caption+'Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=115 then label290.caption:=label290.caption+'Deficiencia de '+'ácidos grasos relacionados con procesos enzimáticos.'  ;
-if oeg=116 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas generales.' ;
-if oeg=117 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en la reducción de la oxidación.';
-if oeg=118 then label290.caption:=label290.caption+'Deficiencia de '+ 'enzimas digestivas, hidrolización.';
-if oeg=119 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en el pensamiento, fosforilación.';
-if oeg=120 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en la respiración decarboxilasa.';
-if oeg=121 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en la regulación del agua hidrolasa.';
-if oeg=122 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas en la regulación del ADN.' ;
-if oeg=123 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg>123 then label290.caption:=label290.caption+'Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
- panel2.visible:=false;
- MyChrono2.Stop;
+if oeg<2 then label290.caption:=' Inflamación.';
+if oeg=2 then label290.caption:=' Cáncer.';
+if oeg=3 then label290.caption:=' Estrés.';
+if oeg=4 then label290.caption:=' Hipoadrenia.';
+if oeg=5 then label290.caption:=' Emociones.';
+if oeg=6 then label290.caption:=' Infección.';
+if oeg=7 then label290.caption:=' Toxicidad.';
+if oeg=8 then label290.caption:=' Trauma.';
+if oeg=9 then label290.caption:=' Factores heredados.';
+if oeg=10 then label290.caption:=' Vitaminas.';
+if oeg=11 then label290.caption:=' Sistema cardiovascular.';
+if oeg=12 then label290.caption:=' Sistema hormonal.';
+if oeg=13 then label290.caption:=' Sistema linfático.';
+if oeg=14 then label290.caption:=' Hígado.';
+if oeg=15 then label290.caption:=' Riñones.';
+if oeg=16 then label290.caption:=' Sistema digestivo.';
+if oeg=17 then label290.caption:=' Tejido conectivo.';
+if oeg=18 then label290.caption:=' Huesos.';
+if oeg=19 then label290.caption:=' pH del agua.';
+if oeg=20 then label290.caption:=' Sangre.';
+if oeg=21 then label290.caption:=' Medio ambiente / Entorno.';
+if oeg=22 then label290.caption:=' Hiperreactividad.';
+if oeg=23 then label290.caption:=' Emociones.';
+if oeg=24 then label290.caption:=' Sistema circulatorio.';
+if oeg=25 then label290.caption:=' Sistema inmunitario.';
+if oeg=26 then label290.caption:=' Radiación.';
+if oeg=27 then label290.caption:=' Bacterias.';
+if oeg=28 then label290.caption:=' Fungosidades.';
+if oeg=29 then label290.caption:=' Virus.';
+if oeg=30 then label290.caption:=' Parásitos.';
+if oeg=31 then label290.caption:=' Amíbas.';
+if oeg=32 then label290.caption:=' Intolerancia alimentaria.';
+if oeg=33 then label290.caption:=' Regulación del azúcar.';
+if oeg=34 then label290.caption:=' Sistema neurológico.';
+if oeg=35 then label290.caption:=' Sistema sensorial.';
+if oeg=36 then label290.caption:=' Colesterol.';
+if oeg=37 then label290.caption:=' Sistema respiratorio.';
+if oeg=38 then label290.caption:=' Oxidación.';
+if oeg=39 then label290.caption:=' Hidratación.';
+if oeg>39 then label290.caption:=' Cognicción.';
+oeg:=random(85);
+if oeg<2 then label290.caption:=label290.caption+' Entrelazado con:'+' Pulmones.';
+if oeg=2 then label290.caption:=label290.caption+' Entrelazado con:'+' Piel.';
+if oeg=3 then label290.caption:=label290.caption+' Entrelazado con:'+' Cerebro.';
+if oeg=4 then label290.caption:=label290.caption+' Entrelazado con:'+' Senos nasales.';
+if oeg=5 then label290.caption:=label290.caption+' Entrelazado con:'+' Estómago.';
+if oeg=6 then label290.caption:=label290.caption+' Entrelazado con:'+' Ojos.';
+if oeg=7 then label290.caption:=label290.caption+' Entrelazado con:'+' Suprarrenales.';
+if oeg=8 then label290.caption:=label290.caption+' Entrelazado con:'+' Sangre.';
+if oeg=9 then label290.caption:=label290.caption+' Entrelazado con:'+' Dentadura.';
+if oeg=10 then label290.caption:=label290.caption+' Entrelazado con:'+' Formación reticular.';
+if oeg=11 then label290.caption:=label290.caption+' Entrelazado con:'+' Médula oblongata.';
+if oeg=12 then label290.caption:=label290.caption+' Entrelazado con:'+' Lóbulo frontal del cerebro.';
+if oeg=13 then label290.caption:=label290.caption+' Entrelazado con:'+' Lóbulo parietal del cerebro.';
+if oeg=14 then label290.caption:=label290.caption+' Entrelazado con:'+' Lóbulo occipital del cerebro.';
+if oeg=15 then label290.caption:=label290.caption+' Entrelazado con:'+' Lóbulo temporal del cerebro.';
+if oeg=16 then label290.caption:=label290.caption+' Entrelazado con:'+' Tiroides.';
+if oeg=17 then label290.caption:=label290.caption+' Entrelazado con:'+' Timo.';
+if oeg=18 then label290.caption:=label290.caption+' Entrelazado con:'+' Médula espinal.';
+if oeg=19 then label290.caption:=label290.caption+' Entrelazado con:'+' Sistema límbico.';
+if oeg=20 then label290.caption:=label290.caption+' Entrelazado con:'+' Circuitos de la memoria.';
+if oeg=21 then label290.caption:=label290.caption+' Entrelazado con:'+' Hipotálamo.';
+if oeg=22 then label290.caption:=label290.caption+' Entrelazado con:'+' Pineal.';
+if oeg=23 then label290.caption:=label290.caption+' Entrelazado con:'+' Pituitaria.';
+if oeg=24 then label290.caption:=label290.caption+' Entrelazado con:'+' Paratiroides.';
+if oeg=25 then label290.caption:=label290.caption+' Entrelazado con:'+' Sistema linfático.';
+if oeg=26 then label290.caption:=label290.caption+' Entrelazado con:'+' Karma.';
+if oeg=27 then label290.caption:=label290.caption+' Entrelazado con:'+' Flora.';
+if oeg=28 then label290.caption:=label290.caption+' Entrelazado con:'+' Formación reticular.';
+if oeg=29 then label290.caption:=label290.caption+' Entrelazado con:'+' Emociones.';
+if oeg=30 then label290.caption:=label290.caption+' Entrelazado con:'+' Sistema linfático.';
+if oeg=31 then label290.caption:=label290.caption+' Entrelazado con:'+' Digestión / Problema de absorpción.';
+if oeg=32 then label290.caption:=label290.caption+' Deficiencia de:'+' Sales en tejidos no especificados.';
+if oeg=33 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina E.' ;
+if oeg=34 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina E1.'  ;
+if oeg=35 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina E2.' ;
+if oeg=36 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina E3.'  ;
+if oeg=37 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina K1.'  ;
+if oeg=38 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina K3.' ;
+if oeg=39 then label290.caption:=label290.caption+' Deficiencia de:'+' Todas las vitaminas K.'  ;
+if oeg=40 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina U / Ubiquinona.' ;
+if oeg=41 then label290.caption:=label290.caption+' Deficiencia de:'+' CoQ6.' ;
+if oeg=42 then label290.caption:=label290.caption+' Deficiencia de:'+' CoQ7.' ;
+if oeg=43 then label290.caption:=label290.caption+' Deficiencia de:'+' CoQ8.' ;
+if oeg=44 then label290.caption:=label290.caption+' Deficiencia de:'+' CoQ9.'  ;
+if oeg=45 then label290.caption:=label290.caption+' Deficiencia de:'+' CoQ10.' ;
+if oeg=46 then label290.caption:=label290.caption+' Deficiencia de:'+' Todos los CoQ.';
+if oeg=47 then label290.caption:=label290.caption+' Deficiencia de:'+' Ciclo de la ubiquinona.'  ;
+if oeg=48 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina C.';
+if oeg=49 then label290.caption:=label290.caption+' Deficiencia de:'+' Bioflavenoides.'  ;
+if oeg=50 then label290.caption:=label290.caption+' Deficiencia de:'+' Rutina.'  ;
+if oeg=51 then label290.caption:=label290.caption+' Deficiencia de:'+' Acido hespárico.'  ;
+if oeg=52 then label290.caption:=label290.caption+' Deficiencia de:'+' Tirosina.'  ;
+if oeg=53 then label290.caption:=label290.caption+' Deficiencia de:'+' Tirosina.' ;
+if oeg=54 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina C ase.' ;
+if oeg=55 then label290.caption:=label290.caption+' Deficiencia de:'+' Acido ascórbico.'  ;
+if oeg=56 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina D.' ;
+if oeg=57 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina D1.'  ;
+if oeg=58 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina D2.'  ;
+if oeg=59 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina D3.'  ;
+if oeg=60 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina D4.'  ;
+if oeg=61 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina A.' ;
+if oeg=62 then label290.caption:=label290.caption+' Deficiencia de:'+' Betacarotina.'  ;
+if oeg=63 then label290.caption:=label290.caption+' Deficiencia de:'+' Aceite de pescado.'  ;
+if oeg=64 then label290.caption:=label290.caption+' Deficiencia de:'+' Retinol.'  ;
+if oeg=65 then label290.caption:=label290.caption+' Deficiencia de:'+' Precursores de la vitamina A.'  ;
+if oeg=66 then label290.caption:=label290.caption+' Deficiencia de:'+' Vitamina A en cartílagos.' ;
+if oeg=67 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas generales.';
+if oeg=68 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para la reducción de la oxidación.';
+if oeg=69 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para la hidrolización de la digestión.';
+if oeg=70 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para la fosforilización del cerebro.';
+if oeg=71 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para las descarbonización de los pulmónes.';
+if oeg=72 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para la regularización de la hidrolización del agua.';
+if oeg=73 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas para la regulación del ADN.';
+if oeg=74 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas de transmutación en los isómeros de la mutasa.';
+if oeg=75 then label290.caption:=label290.caption+' Deficiencia de:'+' Enzimas de transmutación en los isómeros de la mutasa.';
+if oeg=76 then label290.caption:=label290.caption+' Deficiencia de:'+' Acidos grasos generales.';
+if oeg=77 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos de carbones bajos.';
+if oeg=78 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos de carbones medios.';
+if oeg=79 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos relacionados a los aracadónicos.';
+if oeg=80 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos de la mielina.';
+if oeg=81 then label290.caption:=label290.caption+' Deficiencia de:'+' Todos los ácidos grasos relacionados a la desnutrición.';
+if oeg=82 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos de carbones altos.';
+if oeg>82 then label290.caption:=label290.caption+' Deficiencia de:'+' Cadenas de ácidos grasos relacionados a los procesos enzimáticos.';
+panel2.visible:=false;
+BAfirmaciones.Click;
+MyChrono2.Stop;
 end;
 
 procedure TtestForm1.Label301Click(Sender: TObject);
@@ -43231,11 +37767,6 @@ begin
  DM.QueryFilter.Active:=False;
   QString:='SOLVENT';
   FTest_Alterna.pFiltra_Conscida(QString);
-end;
-
-procedure TtestForm1.PrayerWheel2471Click(Sender: TObject);
-begin
- MyWinexec('write.exe','Breviario.pdf');
 end;
 
 procedure TtestForm1.Label302DblClick(Sender: TObject);
@@ -43322,11 +37853,6 @@ begin
                 ShowMessage('Para cargar otro ítem debe vaciar cualquiera de las dos cajas de edición de ''Reacción individual''.');
 end;
 
-procedure TtestForm1.TroubleShooting1Click(Sender: TObject);
-begin
-ShowMessage('Póngase en contacto con nuestro departamento de soporte técnico a través de c_bioinstrumental@yahoo.com');
-end;
-
 procedure TtestForm1.ShowReferralPanels1Click(Sender: TObject);
 begin
 Panel37.Width := 422;
@@ -43340,12 +37866,9 @@ if (sender is TMenuItem) then
   Panel2.Top:=4;
   Panel2.Height:=669;
   panel2.visible:=true;
-  Panel6.Caption := '';
   Label208.caption:='';
   panel2.Refresh;
   Panel14.visible := true;
-//---------
-Panel6.Caption:='';
 automer:=strtoint2(thera.label88.caption);
 automor:=strtoint2(thera.label89.caption);
 autonlp:=strtoint2(thera.label90.caption);
@@ -43353,7 +37876,7 @@ autoal:=strtoint2(thera.label91.caption);
 nonauto:=strtoint2(thera.label92.caption);
 colo:=strtoint2(thera.label93.caption);
 triv:=strtoint2(thera.label94.caption);
-scal:=strtoint2(thera.label95.caption);
+//scal:=strtoint2(thera.Label174.caption);
 autorif:=strtoint2(thera.label96.caption);
   nal1:= (automer);
    nal2:= (automor);
@@ -43405,7 +37928,8 @@ if soc >200 then geo:= geo-(random(12)+random(9));
      if proton>75 then proton:=70;
      if geo>0 then   proton:=proton+random(10);
      if geo>0 then  electron:=electron+random(10);
-// Mejoras en esta visita
+
+     // Mejoras en esta visita
    label104.caption:= inttostr(Volt);
    label103.caption:= inttostr(amp);
   label102.caption:= inttostr(Resis);
@@ -43420,6 +37944,7 @@ if soc >200 then geo:= geo-(random(12)+random(9));
   VO3  := (oxid);
   vH3  := (hydr);
   vP3 := (proton);
+
 If Volt<50 Then LVoltaje3.Caption := 'Crónico';
 If (Volt>49) and (Volt<81) Then LVoltaje3.Caption := 'Débil';
 If (Volt>80) Then LVoltaje3.Caption := 'Normal';
@@ -43439,7 +37964,6 @@ If (Hydr>80) Then LHidratacion3.Caption := 'Normal';
 If Oxid<50 Then LOxidacion3.Caption := 'Crónico';
 If (Oxid>49) and (Oxid<81) Then LOxidacion3.Caption := 'Débil';
 If (Oxid>80) Then LOxidacion3.Caption := 'Normal';
-
 If Proton<35 Then LpH3.Caption := 'Alcalinidad crónica';
 If (Proton>34) and (Proton<55) Then LpH3.Caption := 'Alcalinidad';
 If (Proton>54) and (Proton<65) Then LpH3.Caption := 'Alcalinidad leve';
@@ -43447,21 +37971,18 @@ If (Proton>64) and (Proton<71) Then LpH3.Caption := 'Normal';
 If (Proton>70) and (Proton<81) Then LpH3.Caption := 'Acidez leve';
 If (Proton>80) and (Proton<91) Then LpH3.Caption := 'Acidez';
 If (Proton>90) Then LpH3.Caption := 'Acidez crónica';
-  SaveBodyVariables;
-  //label108.caption:=inttostr(2*geo);
-  if (volt <> 0) and(volt2 <> 0) then begin
-     imp1:=round((volt-volt2+amp-amp2+resis-resis2+hydr-hydr2+oxid-oxid2)/ 5);
-     if imp1 <= 0 then begin
-        imp1 := 0;
- //       TestVAROHImprovement1Click(self);
-     end;
-  //   Label108.caption:= 'Cambios generales notados desde la última visita | '+ inttostr(imp1 );
-     Label108.caption:=  inttostr(imp1 )+'%';
- end;
+SaveBodyVariables;
+if (volt <> 0) and(volt2 <> 0) then begin
+imp1:=round((volt-volt2+amp-amp2+resis-resis2+hydr-hydr2+oxid-oxid2)/ 5);
+if imp1 <= 0 then begin
+imp1 := 0;
+end;
+Label108.caption:=  inttostr(imp1 );
+end;
 ShowReferralPanels1.Enabled := False;
-  label123.caption:=inttostr(proton2);
-  label124.caption:=inttostr(electron2);
-  SAveBodyVariables;
+label123.caption:=inttostr(proton2);
+label124.caption:=inttostr(electron2);
+SAveBodyVariables;
 end;
 
 procedure TtestForm1.AcupuncturePicturesaccess1Click(Sender: TObject);
@@ -43529,7 +38050,6 @@ begin
       Powersettings1.Enabled := True;
       Lexicon1.Enabled := True;
       SCIO1.Enabled          := True;
-//      Panel4.Enabled       := True;
       Programs1.Enabled      := True;
       Programascomplementarios1.Enabled := True;
       Info1.Enabled          := True;
@@ -43538,7 +38058,6 @@ begin
       OrderofRemedies1.Enabled := True;
       Treatments1.Enabled    := True;
       Ayuda1.Enabled         := True;
-      Informacion1.Enabled   := True;
       Edit35.Enabled         := true;
 end;
 
@@ -44198,7 +38717,7 @@ panel2.refresh;
   panel2.visible := false;
   if dir>3 then  panel2.visible := true;
    DM.Conscida.enablecontrols;
-    FMain.shaping:=random(105); FRecompensa.label79.caption:=inttostr(FMain.shaping);
+    FMain.shaping:=random(105); 
 end;
 
 procedure TtestForm1.ONLINETECHSUPPORT1Click(Sender: TObject);
@@ -44689,7 +39208,7 @@ panel2.refresh;     zap:=8;
    DM.Conscida.enablecontrols;
     oeg:=random(3); if oeg<3 then zap:=1;
     FMain.shaping:=random(105);
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
   GProgreso.Progress:=100;
 MyChrono2.Stop;
 end;
@@ -44794,8 +39313,6 @@ begin
   Panel13.Visible:=true;
   Panel13.BringToFront();
   PayPicture.SendToBack;
-
-
 end;
 
 procedure TtestForm1.Edit32Click(Sender: TObject);
@@ -44834,109 +39351,6 @@ end;
 procedure TtestForm1.Controldeondasdeforma1Click(Sender: TObject);
 begin
 Fwavecontrol.Showmodal;
-end;
-
-procedure TtestForm1.Button92Click(Sender: TObject);
-begin
-button92.enabled:=false;
-  label328.caption:= 'Rectificación activa...';
- label329.caption:= 'Enfocándo terapia de rectificación...';
- label330.caption:= 'Conexión cibernética activa en rectificación...';
-  label328.caption:= 'Rectificación activa...';
- label329.caption:= 'Enfocándo terapia de rectificación...';
- label330.caption:= 'Conexión cibernética activa en rectificación...';
- oeg:=random(6);  if oeg=3 then   label328.caption:= 'La persona se debe relajar.';
-   oeg:=random(6);  if oeg=3 then    label329.caption:= 'Interferencia en terapia de rectificación.';
-   oeg:=random(6);  if oeg=3 then    label330.caption:= 'Se ha detectado exceso de tensión muscular';
-     Panel16.refresh;
-Panel6.Caption := 'Duración aproximada | 01:40 min.';
-spinedit2.value:=50+random(20);
-    Panel2.Top:=400;
-  Panel2.Height:=277;
- panel2.visible:=true;  panel2.refresh;
-  If Freq2.SCIOBOX = true Then
-  Begin
- dir:=500+soc+soc+soc;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-dir:=dir-49;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-dir:=dir-49;
-            label328.caption:= 'Rectificación activa...';
- label329.caption:= 'Enfocándo terapia de rectificación...';
- label330.caption:= 'Conexión cibernética activa en rectificación...';
- oeg:=random(6);  if oeg=3 then   label328.caption:= 'La persona se debe relajar.';
-   oeg:=random(6);  if oeg=3 then    label329.caption:= 'Interferencia en terapia de rectificación.';
-   oeg:=random(6);  if oeg=3 then    label330.caption:= 'Se ha detectado exceso de tensión muscular';
-     Panel16.refresh;
-dir:=dir-49;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-dir:=dir-49;
-  label328.caption:= 'Rectificación activa...';
- label329.caption:= 'Enfocándo terapia de rectificación...';
- label330.caption:= 'Conexión cibernética activa en rectificación...';
- oeg:=random(6);  if oeg=3 then   label328.caption:= 'La persona se debe relajar.';
-   oeg:=random(6);  if oeg=3 then    label329.caption:= 'Interferencia en terapia de rectificación.';
-   oeg:=random(6);  if oeg=3 then    label330.caption:= 'Se ha detectado exceso de tensión muscular';
-     Panel16.refresh;
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-dir:=dir-49;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-dir:=dir-49;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),3+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),3+random(3),
-'11111111','11111111');
-            label328.caption:= 'Rectificación activa...';
- label329.caption:= 'Enfocándo terapia de rectificación...';
- label330.caption:= 'Conexión cibernética activa en rectificación...';
- oeg:=random(6);  if oeg=3 then   label328.caption:= 'La persona se debe relajar.';
-   oeg:=random(6);  if oeg=3 then    label329.caption:= 'Interferencia en terapia de rectificación.';
-   oeg:=random(6);  if oeg=3 then    label330.caption:= 'Se ha detectado exceso de tensión muscular';
-     Panel16.refresh;
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-end;
-
-  label328.caption:= 'Rectificación completada.';
- label329.caption:= 'Terapia de rectificación completada.';
- label330.caption:= 'Rectificado de sistema completado.';
- oeg:=random(9);  if oeg=6 then   label328.caption:='No completado.';
-   oeg:=random(9);  if oeg=6 then    label329.caption:= 'Interferencia en terapia de rectificación.';
-   oeg:=random(9);  if oeg=6 then    label330.caption:= 'Se ha detectado exceso de tensión muscular';
-     Panel16.refresh;
-showmessage('Rectificación maximizada.');
-panel2.visible:=false;
 end;
 
 procedure TtestForm1.Button93Click(Sender: TObject);
@@ -45022,49 +39436,10 @@ Button93.Enabled := False;
   ShowMessage('El informe ha sido cargado.');
 end;
 
-procedure TtestForm1.Memo6DblClick(Sender: TObject);
-begin
-memo6.visible:=false;
-button4.enabled:=true;
-end;
-
-procedure TtestForm1.ActivarSillaXMind1Click(Sender: TObject);
-var
-        s1,InputString:string;
-        i:integer;
-begin
-SetLength(s1,10);
-for i:=0 to length(s1) do
-begin
-    s1[i]:=FormComPort.ee2[i];
-end;
-if sillax then
-begin
-        //The pswd is the  first 10 characters of the serial 2
-        InputString:= InputBox('Password Box', 'Password', '');
-        if InputString<>'' then
-        if UpperCase(InputString)=UpperCase(s1) then
-        begin
-                ShowMessage('Silla X-Mind activada.');
-                ActivarSillaXMind1.Caption:='Desactivar Silla X-Mind';
-                sillax:=false;
-        end
-        else
-                ShowMessage('Wrong Password');
-end
-else
-if not sillax then
-begin
-        ShowMessage('Silla X-Mind desactivada.');
-        ActivarSillaXMind1.Caption:='Activar Silla X-Mind';
-        sillax:=true;
-end;
-end;
-
 procedure TtestForm1.Button95Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label57.Caption := 'Rectificado |';
+Label57.Caption := 'Rectificado | ';
 
 if (label98.Caption<>'|') and (label98.Enabled=True) then
 begin
@@ -45319,7 +39694,7 @@ If (Label98.Enabled = True) or (Label223.Enabled = True) or (Label95.Enabled = T
 (Label256.Enabled = True) or (Label101.Enabled = True)
 Then
 Begin
-Button95.Caption := 'Re-equilibrar restantes';
+Button95.Caption := 'Equilibrar restantes';
 GProgreso.Progress := 100;
 Button95.Enabled := True
 end
@@ -45359,7 +39734,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rectif1:= strtoint2(LReactancia.caption)+strtoint2(LReactancia.caption)+ (8*strtoint2(LDiferencia.caption));
 if rectif1<1 then rectif1:=Random(15);
 rectif:=rectif+random(rectif1);
@@ -45372,7 +39747,7 @@ if dir>3 then button8.enabled:=false;
 if dir>3 then  panel2.visible := true;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 TBuffers.Enabled := False;
 MyChrono2.Stop;
 end;
@@ -46327,7 +40702,7 @@ Label208.Caption := 'Analizando a '+pname;
       label22.caption := inttostr(soc);
       ChangingPulses(5555,555,55555,5,5,1,'11111111','11111111');
       FMain.shaping:=random(105);
-      FRecompensa.label79.caption:=inttostr(FMain.shaping);
+      
      DM.Conscida.Refresh;
      Index:='ByValue';
      DM.Conscida.IndexName := Index;
@@ -46432,7 +40807,7 @@ Label208.Caption := 'Analizando a '+pname;
     cb14:=StrToInt2(patform1.label42.caption);
     ChangingPulses(5555,555,55555,5,5,1,'11111111','11111111');
     FMain.shaping:=random(105);
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
+    
    DM.Conscida.Refresh;
    Index:='ByValue';
    DM.Conscida.First;
@@ -47531,7 +41906,7 @@ begin
 MyChrono2.Start;
 GProgreso.Progress := 0;
 vtiempo := 5+Random(5);
-//LRectificado.Caption := 'Rectificado |';
+//LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
 Repeat
@@ -47873,21 +42248,18 @@ timeSec:=vart3-(timeMin*60);
 vart:=round(vart/2);
 End;
 if timeSec<>0 then begin
-label328.caption:= 'Sistema activo...';
 label329.caption:= 'Terapia de enfoque.';
-label330.caption:= 'Vínculo cibernético activo...';
 label331.caption:= 'Se han activado las terapias elegídas.';
-label323.caption:= '|||';
-label324.caption:= '|||';
-label325.caption:= '|||';
+label323.caption:= '';
+label324.caption:= '';
+label325.caption:= '';
 Panel16.refresh;
 End;
 if (checkbox20.checked=true) and (checkbox20.Enabled=true)then
 begin checkbox20.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox20.Caption+'...';
 Paola(0);
-checkbox20.caption:=checkbox20.caption+' | '+inttostr(client1)+'%';
+checkbox20.caption:=checkbox20.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox20.Enabled:=false;
 Deseo();
 end;
@@ -47896,9 +42268,8 @@ if (checkbox1.checked=true) and (checkbox1.Enabled=true) then
 begin
 checkbox1.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox1.Caption+'...';
 Paola(0);
-checkbox1.caption:=checkbox1.caption+' | '+inttostr(client1)+'%';
+checkbox1.caption:=checkbox1.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox1.Enabled:=false;
 Deseo();
 end;
@@ -47907,9 +42278,8 @@ if (checkbox66.checked=true) and (checkbox66.Enabled=true) then
 begin
 checkbox66.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox66.Caption+'...';
 Paola(0);
-checkbox66.caption:=checkbox66.caption+' | '+inttostr(client1)+'%';
+checkbox66.caption:=checkbox66.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox66.Enabled:=false;
 Deseo();
 end;
@@ -47918,9 +42288,8 @@ if (checkbox58.checked=true) and (checkbox58.Enabled=true) then
 begin
 checkbox58.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox58.Caption+'...';
 Paola(0);
-checkbox58.caption:=checkbox58.caption+' | '+inttostr(client1)+'%';
+checkbox58.caption:=checkbox58.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox58.Enabled:=false;
 Deseo();
 end;
@@ -47929,9 +42298,8 @@ if (checkbox46.checked=true) and (checkbox46.Enabled=true) then
 begin
 checkbox46.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox46.Caption+'...';
 Paola(0);
-checkbox46.caption:=checkbox46.caption+' | '+inttostr(client1)+'%';
+checkbox46.caption:=checkbox46.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox46.Enabled:=false;
 Deseo();
 end;
@@ -47940,9 +42308,8 @@ if (checkbox49.checked=true) and (checkbox49.Enabled=true) then
 begin
 checkbox49.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox49.Caption+'...';
 Paola(0);
-checkbox49.caption:=checkbox49.caption+' | '+inttostr(client1)+'%';
+checkbox49.caption:=checkbox49.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox49.Enabled:=false;
 Deseo();
 end;
@@ -47950,9 +42317,8 @@ end;
 if (checkbox6.checked=true)  and (checkbox6.Enabled=true) then
 begin checkbox6.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox6.Caption+'...';
 Paola(0);
-checkbox6.caption:=checkbox6.caption+' | '+inttostr(client1)+'%';
+checkbox6.caption:=checkbox6.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox6.Enabled:=false;
 deseo();
 end;
@@ -47961,9 +42327,8 @@ if (checkbox26.checked=true) and (checkbox26.Enabled=true) then
 begin
 checkbox26.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox26.Caption+'...';
 Paola(0);
-checkbox26.caption:=checkbox26.caption+' | '+inttostr(client1)+'%';
+checkbox26.caption:=checkbox26.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox26.Enabled:=false;
 Deseo();
 end;
@@ -47972,9 +42337,8 @@ if (checkbox16.checked=true) and (checkbox16.Enabled=true) then
 begin
 checkbox16.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox16.Caption+'...';
 Paola(0);
-checkbox16.caption:=checkbox16.caption+' | '+inttostr(client1)+'%';
+checkbox16.caption:=checkbox16.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox16.Enabled:=false;
 Deseo();
 end;
@@ -47983,9 +42347,8 @@ if (checkbox60.checked=true) and (checkbox60.Enabled=true) then
 begin
 checkbox60.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox60.Caption+'...';
 Paola(0);
-checkbox60.caption:=checkbox60.caption+' | '+inttostr(client1)+'%';
+checkbox60.caption:=checkbox60.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox60.Enabled:=false;
 Deseo();
 end;
@@ -47994,9 +42357,8 @@ if (checkbox37.checked=true) and (checkbox37.Enabled=true) then
 begin
 checkbox37.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox37.Caption+'...';
 Paola(0);
-checkbox37.caption:=checkbox37.caption+' | '+inttostr(client1)+'%';
+checkbox37.caption:=checkbox37.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox37.Enabled:=false;
 Deseo();
 end;
@@ -48005,9 +42367,8 @@ if (checkbox47.checked=true) and (checkbox47.Enabled=true) then
 begin
 checkbox47.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox47.Caption+'...';
 Paola(0);
-checkbox47.caption:=checkbox47.caption+' | '+inttostr(client1)+'%';
+checkbox47.caption:=checkbox47.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox47.Enabled:=false;
 Deseo();
 end;
@@ -48015,9 +42376,8 @@ end;
 if (checkbox19.checked=true) and (checkbox19.Enabled=true) then
 begin  checkbox19.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox19.Caption+'...';
 Paola(0);
-checkbox19.caption:=checkbox19.caption+' | '+inttostr(client1)+'%';
+checkbox19.caption:=checkbox19.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox19.Enabled:=false;
 Deseo();
 end;
@@ -48026,9 +42386,8 @@ if (checkbox56.checked=true) and (checkbox56.Enabled=true) then
 begin
 checkbox56.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox56.Caption+'...';
 Paola(0);
-checkbox56.caption:=checkbox56.caption+' | '+inttostr(client1)+'%';
+checkbox56.caption:=checkbox56.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox56.Enabled:=false;
 Deseo();
 end;
@@ -48037,9 +42396,8 @@ if (checkbox68.checked=true) and (checkbox68.Enabled=true) then
 begin
 checkbox68.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox68.Caption+'...';
 Paola(0);
-checkbox68.caption:=checkbox68.caption+' | '+inttostr(client1)+'%';
+checkbox68.caption:=checkbox68.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox68.Enabled:=false;
 Deseo();
 end;
@@ -48048,9 +42406,8 @@ if (checkbox59.checked=true) and (checkbox59.Enabled=true) then
 begin
 checkbox59.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox59.Caption+'...';
 Paola(0);
-checkbox59.caption:=checkbox59.caption+' | '+inttostr(client1)+'%';
+checkbox59.caption:=checkbox59.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox59.Enabled:=false;
 Deseo();
 end;
@@ -48058,9 +42415,8 @@ end;
 if (checkbox4.checked=true) and (checkbox4.Enabled=true) then
 begin checkbox4.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox4.Caption+'...';
 Paola(0);
-checkbox4.caption:=checkbox4.caption+' | '+inttostr(client1)+'%';
+checkbox4.caption:=checkbox4.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox4.Enabled:=false;
 Deseo();
 end;
@@ -48068,9 +42424,8 @@ end;
 if (checkbox14.checked=true) and (checkbox14.Enabled=true) then
 begin checkbox14.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox14.Caption+'...';
 Paola(0);
-checkbox14.caption:=checkbox14.caption+' | '+inttostr(client1)+'%';
+checkbox14.caption:=checkbox14.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox14.Enabled:=false;
 Deseo();
 end;
@@ -48078,9 +42433,8 @@ end;
 if (checkbox8.checked=true) and (checkbox8.Enabled=true) then
 begin   checkbox8.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox8.Caption+'...';
 Paola(0);
-checkbox8.caption:=checkbox8.caption+' | '+inttostr(client1)+'%';
+checkbox8.caption:=checkbox8.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox8.Enabled:=false;
 Deseo();
 end;
@@ -48088,9 +42442,8 @@ end;
 if (checkbox23.checked=true) and (checkbox23.Enabled=true) then
 begin checkbox23.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox23.Caption+'...';
 Paola(0);
-checkbox23.caption:=checkbox23.caption+' | '+inttostr(client1)+'%';
+checkbox23.caption:=checkbox23.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox23.Enabled:=false;
 Deseo();
 end;
@@ -48099,9 +42452,8 @@ if (checkbox32.checked=true) and (checkbox32.Enabled=true) then
 begin
 checkbox32.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox32.Caption+'...';
 Paola(0);
-checkbox32.caption:=checkbox32.caption+' | '+inttostr(client1)+'%';
+checkbox32.caption:=checkbox32.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox32.Enabled:=false;
 Deseo();
 end;
@@ -48110,9 +42462,8 @@ if (checkbox33.checked=true) and (checkbox33.Enabled=true) then
 begin
 checkbox33.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox33.Caption+'...';
 Paola(0);
-checkbox33.caption:=checkbox33.caption+' | '+inttostr(client1)+'%';
+checkbox33.caption:=checkbox33.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox33.Enabled:=false;
 Deseo();
 end;
@@ -48120,9 +42471,8 @@ end;
 if (checkbox22.checked=true) and (checkbox22.Enabled=true) then
 begin checkbox22.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox22.Caption+'...';
 Paola(0);
-checkbox22.caption:=checkbox22.caption+' | '+inttostr(client1)+'%';
+checkbox22.caption:=checkbox22.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox22.Enabled:=false;
 Deseo();
 end;
@@ -48131,9 +42481,8 @@ if (checkbox40.checked=true) and (checkbox40.Enabled=true) then
 begin
 checkbox40.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox40.Caption+'...';
 Paola(0);
-checkbox40.caption:=checkbox40.caption+' | '+inttostr(client1)+'%';
+checkbox40.caption:=checkbox40.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox40.Enabled:=false;
 Deseo();
 end;
@@ -48142,9 +42491,8 @@ if (checkbox53.checked=true) and (checkbox53.Enabled=true) then
 begin
 checkbox53.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox53.Caption+'...';
 Paola(0);
-checkbox53.caption:=checkbox53.caption+' | '+inttostr(client1)+'%';
+checkbox53.caption:=checkbox53.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox53.Enabled:=false;
 Deseo();
 end;
@@ -48152,9 +42500,8 @@ end;
 if (checkbox13.checked=true) and (checkbox13.Enabled=true) then
 begin checkbox13.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox13.Caption+'...';
 Paola(0);
-checkbox13.caption:=checkbox13.caption+' | '+inttostr(client1)+'%';
+checkbox13.caption:=checkbox13.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox13.Enabled:=false;
 Deseo();
 end;
@@ -48163,9 +42510,8 @@ if (checkbox35.checked=true) and (checkbox35.Enabled=true) then
 begin
 checkbox35.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox35.Caption+'...';
 Paola(0);
-checkbox35.caption:=checkbox35.caption+' | '+inttostr(client1)+'%';
+checkbox35.caption:=checkbox35.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox35.Enabled:=false;
 Deseo();
 end;
@@ -48173,9 +42519,8 @@ end;
 if (checkbox5.checked=true) and (checkbox5.Enabled=true) then
 begin checkbox5.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox5.Caption+'...';
 Paola(0);
-checkbox5.caption:=checkbox5.caption+' | '+inttostr(client1)+'%';
+checkbox5.caption:=checkbox5.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox5.Enabled:=false;
 Deseo();
 end;
@@ -48183,9 +42528,8 @@ end;
 if (checkbox15.checked=true) and (checkbox15.Enabled=true) then
 begin checkbox15.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox15.Caption+'...';
 Paola(0);
-checkbox15.caption:=checkbox15.caption+' | '+inttostr(client1)+'%';
+checkbox15.caption:=checkbox15.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox15.Enabled:=false;
 Deseo();
 end;
@@ -48193,9 +42537,8 @@ end;
 if (checkbox21.checked=true) and (checkbox21.Enabled=true) then
 begin checkbox21.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox21.Caption+'...';
 Paola(0);
-checkbox21.caption:=checkbox21.caption+' | '+inttostr(client1)+'%';
+checkbox21.caption:=checkbox21.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox21.Enabled:=false;
 Deseo();
 end;
@@ -48204,9 +42547,8 @@ if (checkbox41.checked=true) and (checkbox41.Enabled=true) then
 begin
 checkbox41.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox41.Caption+'...';
 Paola(0);
-checkbox41.caption:=checkbox41.caption+' | '+inttostr(client1)+'%';
+checkbox41.caption:=checkbox41.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox41.Enabled:=false;
 Deseo();
 end;
@@ -48215,9 +42557,8 @@ if (checkbox42.checked=true) and (checkbox42.Enabled=true) then
 begin
 checkbox42.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox42.Caption+'...';
 Paola(0);
-checkbox42.caption:=checkbox42.caption+' | '+inttostr(client1)+'%';
+checkbox42.caption:=checkbox42.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox42.Enabled:=false;
 Deseo();
 end;
@@ -48226,9 +42567,8 @@ if (checkbox38.checked=true) and (checkbox38.Enabled=true) then
 begin
 checkbox38.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox38.Caption+'...';
 Paola(0);
-checkbox38.caption:=checkbox38.caption+' | '+inttostr(client1)+'%';
+checkbox38.caption:=checkbox38.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox38.Enabled:=false;
 Deseo();
 end;
@@ -48237,9 +42577,8 @@ if (checkbox30.checked=true) and (checkbox30.Enabled=true) then
 begin
 checkbox30.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox30.Caption+'...';
 Paola(0);
-checkbox30.caption:=checkbox30.caption+' | '+inttostr(client1)+'%';
+checkbox30.caption:=checkbox30.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox30.Enabled:=false;
 Deseo();
 end;
@@ -48247,9 +42586,8 @@ end;
 if (checkbox3.checked=true) and (checkbox3.Enabled=true) then
 begin checkbox3.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox3.Caption+'...';
 Paola(0);
-checkbox3.caption:=checkbox3.caption+' | '+inttostr(client1)+'%';
+checkbox3.caption:=checkbox3.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox3.Enabled:=false;
 Deseo();
 end;
@@ -48258,9 +42596,8 @@ if (checkbox27.checked=true) and (checkbox27.Enabled=true) then
 begin
 checkbox27.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox27.Caption+'...';
 Paola(0);
-checkbox27.caption:=checkbox27.caption+' | '+inttostr(client1)+'%';
+checkbox27.caption:=checkbox27.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox27.Enabled:=false;
 Deseo();
 end;
@@ -48269,9 +42606,8 @@ if (checkbox43.checked=true) and (checkbox43.Enabled=true) then
 begin
 checkbox43.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox43.Caption+'...';
 Paola(0);
-checkbox43.caption:=checkbox43.caption+' | '+inttostr(client1)+'%';
+checkbox43.caption:=checkbox43.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox43.Enabled:=false;
 Deseo();
 end;
@@ -48280,9 +42616,8 @@ if (checkbox31.checked=true) and (checkbox31.Enabled=true) then
 begin
 checkbox31.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox31.Caption+'...';
 Paola(0);
-checkbox31.caption:=checkbox31.caption+' | '+inttostr(client1)+'%';
+checkbox31.caption:=checkbox31.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox1.Enabled:=false;
 Deseo();
 end;
@@ -48291,9 +42626,8 @@ if (checkbox51.checked=true) and (checkbox51.Enabled=true) then
 begin
 checkbox51.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox51.Caption+'...';
 Paola(0);
-checkbox51.caption:=checkbox51.caption+' | '+inttostr(client1)+'%';
+checkbox51.caption:=checkbox51.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox51.Enabled:=false;
 Deseo();
 end;
@@ -48302,9 +42636,8 @@ if (checkbox64.checked=true) and (checkbox64.Enabled=true) then
 begin
 checkbox64.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox64.Caption+'...';
 Paola(0);
-checkbox64.caption:=checkbox64.caption+' | '+inttostr(client1)+'%';
+checkbox64.caption:=checkbox64.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox64.Enabled:=false;
 Deseo();
 end;
@@ -48313,9 +42646,8 @@ if (checkbox48.checked=true) and (checkbox48.Enabled=true) then
 begin
 checkbox48.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox48.Caption+'...';
 Paola(0);
-checkbox48.caption:=checkbox48.caption+' | '+inttostr(client1)+'%';
+checkbox48.caption:=checkbox48.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox48.Enabled:=false;
 Deseo();
 end;
@@ -48324,9 +42656,8 @@ if (checkbox65.checked=true) and (checkbox65.Enabled=true) then
 begin
 checkbox65.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox65.Caption+'...';
 Paola(0);
-checkbox65.caption:=checkbox65.caption+' | '+inttostr(client1)+'%';
+checkbox65.caption:=checkbox65.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox65.Enabled:=false;
 Deseo();
 end;
@@ -48334,9 +42665,8 @@ end;
 if (checkbox9.checked=true) and (checkbox9.Enabled=true) then
 begin checkbox9.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox9.Caption+'...';
 Paola(0);
-checkbox9.caption:=checkbox9.caption+' | '+inttostr(client1)+'%';
+checkbox9.caption:=checkbox9.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox9.Enabled:=false;
 Deseo();
 end;
@@ -48345,9 +42675,8 @@ if (checkbox44.checked=true) and (checkbox44.Enabled=true) then
 begin
 checkbox44.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox44.Caption+'...';
 Paola(0);
-checkbox44.caption:=checkbox44.caption+' | '+inttostr(client1)+'%';
+checkbox44.caption:=checkbox44.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox44.Enabled:=false;
 Deseo();
 end;
@@ -48356,9 +42685,8 @@ if (checkbox39.checked=true) and (checkbox39.Enabled=true) then
 begin
 checkbox39.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox39.Caption+'...';
 Paola(0);
-checkbox39.caption:=checkbox39.caption+' | '+inttostr(client1)+'%';
+checkbox39.caption:=checkbox39.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox1.Enabled:=false;
 Deseo();
 end;
@@ -48367,9 +42695,8 @@ if (checkbox62.checked=true) and (checkbox62.Enabled=true) then
 begin
 checkbox62.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox62.Caption+'...';
 Paola(0);
-checkbox62.caption:=checkbox62.caption+' | '+inttostr(client1)+'%';
+checkbox62.caption:=checkbox62.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox62.Enabled:=false;
 Deseo();
 end;
@@ -48378,9 +42705,8 @@ if (checkbox2.checked=true) and (checkbox2.Enabled=true) then
 begin
 checkbox2.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox2.Caption+'...';
 Paola(0);
-checkbox2.caption:=checkbox2.caption+' | '+inttostr(client1)+'%';
+checkbox2.caption:=checkbox2.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox2.Enabled:=false;
 Deseo();
 end;
@@ -48389,9 +42715,8 @@ if (checkbox25.checked=true) and (checkbox25.Enabled=true) then
 begin
 checkbox25.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox25.Caption+'...';
 Paola(0);
-checkbox25.caption:=checkbox25.caption+' | '+inttostr(client1)+'%';
+checkbox25.caption:=checkbox25.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox25.Enabled:=false;
 Deseo();
 end;
@@ -48400,9 +42725,8 @@ if (checkbox28.checked=true) and (checkbox28.Enabled=true) then
 begin
 checkbox28.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox28.Caption+'...';
 Paola(0);
-checkbox28.caption:=checkbox28.caption+' | '+inttostr(client1)+'%';
+checkbox28.caption:=checkbox28.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox28.Enabled:=false;
 Deseo();
 end;
@@ -48411,9 +42735,8 @@ if (checkbox63.checked=true) and (checkbox63.Enabled=true) then
 begin
 checkbox63.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox63.Caption+'...';
 Paola(0);
-checkbox63.caption:=checkbox63.caption+' | '+inttostr(client1)+'%';
+checkbox63.caption:=checkbox63.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox63.Enabled:=false;
 Deseo();
 end;
@@ -48422,9 +42745,8 @@ if (checkbox52.checked=true) and (checkbox52.Enabled=true) then
 begin
 checkbox52.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox52.Caption+'...';
 Paola(0);
-checkbox52.caption:=checkbox52.caption+' | '+inttostr(client1)+'%';
+checkbox52.caption:=checkbox52.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox52.Enabled:=false;
 Deseo();
 end;
@@ -48433,9 +42755,8 @@ if (checkbox55.checked=true) and (checkbox55.Enabled=true) then
 begin
 checkbox55.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox55.Caption+'...';
 Paola(0);
-checkbox55.caption:=checkbox55.caption+' | '+inttostr(client1)+'%';
+checkbox55.caption:=checkbox55.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox55.Enabled:=false;
 Deseo();
 end;
@@ -48444,9 +42765,8 @@ if (checkbox54.checked=true) and (checkbox54.Enabled=true) then
 begin
 checkbox54.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox54.Caption+'...';
 Paola(0);
-checkbox54.caption:=checkbox54.caption+' | '+inttostr(client1)+'%';
+checkbox54.caption:=checkbox54.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox54.Enabled:=false;
 Deseo();
 end;
@@ -48454,9 +42774,8 @@ end;
 if (checkbox12.checked=true) and (checkbox12.Enabled=true) then
 begin checkbox12.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox12.Caption+'...';
 Paola(0);
-checkbox12.caption:=checkbox12.caption+' | '+inttostr(client1)+'%';
+checkbox12.caption:=checkbox12.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox12.Enabled:=false;
 Deseo();
 end;
@@ -48465,9 +42784,8 @@ if (checkbox50.checked=true) and (checkbox50.Enabled=true) then
 begin
 checkbox50.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox50.Caption+'...';
 Paola(0);
-checkbox50.caption:=checkbox50.caption+' | '+inttostr(client1)+'%';
+checkbox50.caption:=checkbox50.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox50.Enabled:=false;
 Deseo();
 end;
@@ -48476,9 +42794,8 @@ if (checkbox67.checked=true) and (checkbox67.Enabled=true) then
 begin
 checkbox67.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox67.Caption+'...';
 Paola(0);
-checkbox67.caption:=checkbox67.caption+' | '+inttostr(client1)+'%';
+checkbox67.caption:=checkbox67.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox67.Enabled:=false;
 Deseo();
 end;
@@ -48486,9 +42803,8 @@ end;
 if (checkbox10.checked=true) and (checkbox10.Enabled=true) then
 begin checkbox10.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox10.Caption+'...';
 Paola(0);
-checkbox10.caption:=checkbox10.caption+' | '+inttostr(client1)+'%';
+checkbox10.caption:=checkbox10.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox10.Enabled:=false;
 Deseo();
 end;
@@ -48496,9 +42812,8 @@ end;
 if (checkbox17.checked=true) and (checkbox17.Enabled=true) then
 begin  checkbox17.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox17.Caption+'...';
 Paola(0);
-checkbox17.caption:=checkbox17.caption+' | '+inttostr(client1)+'%';
+checkbox17.caption:=checkbox17.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox17.Enabled:=false;
 Deseo();
 end;
@@ -48507,9 +42822,8 @@ if (checkbox34.checked=true) and (checkbox34.Enabled=true) then
 begin
 checkbox34.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox34.Caption+'...';
 Paola(0);
-checkbox34.caption:=checkbox34.caption+' | '+inttostr(client1)+'%';
+checkbox34.caption:=checkbox34.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox34.Enabled:=false;
 Deseo();
 end;
@@ -48518,9 +42832,8 @@ if (checkbox69.checked=true) and (checkbox69.Enabled=true) then
 begin
 checkbox69.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox69.Caption+'...';
 Paola(0);
-checkbox69.caption:=checkbox69.caption+' | '+inttostr(client1)+'%';
+checkbox69.caption:=checkbox69.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox69.Enabled:=false;
 Deseo();
 end;
@@ -48529,9 +42842,8 @@ if (checkbox70.checked=true) and (checkbox70.Enabled=true) then
 begin
 checkbox70.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox70.Caption+'...';
 Paola(0);
-checkbox70.caption:=checkbox70.caption+' | '+inttostr(client1)+'%';
+checkbox70.caption:=checkbox70.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox70.Enabled:=false;
 Deseo();
 end;
@@ -48540,9 +42852,8 @@ if (checkbox45.checked=true) and (checkbox45.Enabled=true) then
 begin
 checkbox45.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox45.Caption+'...';
 Paola(0);
-checkbox45.caption:=checkbox45.caption+' | '+inttostr(client1)+'%';
+checkbox45.caption:=checkbox45.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox45.Enabled:=false;
 Deseo();
 end;
@@ -48551,9 +42862,8 @@ if (checkbox36.checked=true) and (checkbox36.Enabled=true) then
 begin
 checkbox36.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox36.Caption+'...';
 Paola(0);
-checkbox36.caption:=checkbox36.caption+' | '+inttostr(client1)+'%';
+checkbox36.caption:=checkbox36.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox40.Enabled:=false;
 Deseo();
 end;
@@ -48561,9 +42871,8 @@ end;
 if (checkbox7.checked=true) and (checkbox7.Enabled=true) then
 begin checkbox7.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox7.Caption+'...';
 Paola(0);
-checkbox7.caption:=checkbox7.caption+' | '+inttostr(client1)+'%';
+checkbox7.caption:=checkbox7.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox7.Enabled:=false;
 Deseo();
 end;
@@ -48572,9 +42881,8 @@ if (checkbox29.checked=true) and (checkbox29.Enabled=true) then
 begin
 checkbox29.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox29.Caption+'...';
 Paola(0);
-checkbox29.caption:=checkbox29.caption+' | '+inttostr(client1)+'%';
+checkbox29.caption:=checkbox29.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox29.Enabled:=false;
 Deseo();
 end;
@@ -48582,9 +42890,8 @@ end;
 if (checkbox18.checked=true) and (checkbox18.Enabled=true) then
 begin checkbox18.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox18.Caption+'...';
 Paola(0);
-checkbox18.caption:=checkbox18.caption+' | '+inttostr(client1)+'%';
+checkbox18.caption:=checkbox18.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox18.Enabled:=false;
 Deseo();
 end;
@@ -48593,9 +42900,8 @@ if (checkbox57.checked=true) and (checkbox57.Enabled=true) then
 begin
 checkbox57.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox57.Caption+'...';
 Paola(0);
-checkbox57.caption:=checkbox57.caption+' | '+inttostr(client1)+'%';
+checkbox57.caption:=checkbox57.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox57.Enabled:=false;
 Deseo();
 end;
@@ -48603,10 +42909,8 @@ end;
 if (checkbox11.checked=true) and (checkbox11.Enabled=true) then
 begin checkbox11.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-
-label328.caption:= 'Realizando terapia: '+CheckBox11.Caption+'...';
 Paola(0);
-checkbox11.caption:=checkbox11.caption+' | '+inttostr(client1)+'%';
+checkbox11.caption:=checkbox11.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox11.Enabled:=false;
 Deseo();
 end;
@@ -48615,9 +42919,8 @@ if (checkbox61.checked=true) and (checkbox61.Enabled=true) then
 begin
 checkbox61.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox61.Caption+'...';
 Paola(0);
-checkbox61.caption:=checkbox61.caption+' | '+inttostr(client1)+'%';
+checkbox61.caption:=checkbox61.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox61.Enabled:=false;
 Deseo();
 end;
@@ -48626,10 +42929,8 @@ if (checkbox24.checked=true) and (checkbox24.Enabled=true) then
 begin
 checkbox24.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-
-label328.caption:= 'Realizando terapia: '+CheckBox24.Caption+'...';
 Paola(0);
-checkbox24.caption:=checkbox24.caption+' | '+inttostr(client1)+'%';
+checkbox24.caption:=checkbox24.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox24.Enabled:=false;
 Deseo();
 end;
@@ -48638,9 +42939,8 @@ if (checkbox71.checked=true) and (checkbox71.Enabled=true) then
 begin
 checkbox71.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox71.Caption+'...';
 Paola(0);
-checkbox71.caption:=CheckBox71.Caption+' | '+inttostr(client1)+'%';
+checkbox71.caption:=CheckBox71.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox71.Enabled:=false;
 Deseo();
 end;
@@ -48648,17 +42948,14 @@ end;
 begin
 checkbox72.color:=clred;
 client1:=67+random(2*spinedit2.value+randRect);
-label328.caption:= 'Realizando terapia: '+CheckBox72.Caption+'...';
 Paola(0);
-checkbox72.caption:=checkbox72.caption+' | '+inttostr(client1)+'%';
+checkbox72.caption:=checkbox72.caption+' '+inttostr(client1)+'%';
 if client1>84 then checkbox72.Enabled:=false;
 Deseo();
 end;
-
-
- label328.caption:= '|||';
- label329.caption:= '|||';
- label330.caption:= '|||';
+ label328.caption:= '';
+ label329.caption:= '';
+ label330.caption:= '';
  oeg:=random(6);
  if oeg=6 then label328.caption:= 'La terapia no se completó satisfactoriamente, pida a la persona que se relaje.';
  oeg:=random(6);
@@ -48667,895 +42964,12 @@ end;
  if oeg=6 then label330.caption:= 'La tensión muscular / mental ha alterado los resultados. Inténtelo de nuevo con terapias atendidas.';
  Panel16.refresh;
 
- Oeg:=random(75);
-If oeg=1 then label323.caption:='| Intercambio en Corpus Callosum.';
-If oeg=2 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=3 then label323.caption:='| Vitamina C.';
-If oeg=4 then label323.caption:='| Vitamina E.';
-If oeg=5 then label323.caption:='| Vitamina A.';
-If oeg=6 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=7 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=8 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=9 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=10 then label323.caption:='| Anemia.';
-If oeg=11 then label323.caption:='| Alternancia de Corpus Callosum.';
-If oeg=12 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=13 then label323.caption:='| Vitamina C.';
-If oeg=14 then label323.caption:='| Vitamina E.';
-If oeg=15 then label323.caption:='| Vitamina A.';
-If oeg=16 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=17 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=18 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=19 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=20 then label323.caption:='| Anemia.';
-If oeg=21 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=22 then label323.caption:='| Intercambio en Corpus Callosum.';
-If oeg=23 then label323.caption:='| Sobre carga en formación reticular.';
-If oeg=24 then label323.caption:='| Vitamina C.';
-If oeg=25 then label323.caption:='| Vitamina E.';
-If oeg=26 then label323.caption:='| Vitamina A.';
-If oeg=27 then label323.caption:='| Cadena baja de vitaminas B.';
-If oeg=28 then label323.caption:='| Cadena alta de vitaminas B.';
-If oeg=29 then label323.caption:='| Almacen de ácidos grasos.';
-If oeg=30 then label323.caption:='| Almacen de amino ácidos.';
-If oeg=31 then label323.caption:='| Anemia.';
-If oeg=32 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=33 then label323.caption:='| Necesidad de regulación de carbohidratos.';
-If oeg=34 then label323.caption:='| Necesidad de tap en carótida sineal.';
-If oeg=35 then label323.caption:='| Necesidad de ejercitarse.';
-If oeg=36 then label323.caption:='| Necesidad de respiración nostril alterna.';
-If oeg=37 then label323.caption:='| Insuficiencia suprarrenal.';
-If oeg=38 then label323.caption:='| Disrrupción de tiroides.';
-If oeg=39 then label323.caption:='| Disrrupción de cortisona.';
-If oeg=40 then label323.caption:='| Glándula pineal.';
-If oeg=41 then label323.caption:='| Glándula pituitaria.';
-If oeg=42 then label323.caption:='| Hipotálamo.';
-If oeg=43 then label323.caption:='| Huesos.';
-If oeg=44 then label323.caption:='| Sist. digestivo.';
-If oeg=45 then label323.caption:='| Sist. hormonal.';
-If oeg=46 then label323.caption:='| Sist. neurológico.';
-If oeg=47 then label323.caption:='| Dolor.';
-If oeg=48 then label323.caption:='| Temor.';
-If oeg=49 then label323.caption:='| Ansiedad.';
-If oeg=50 then label323.caption:='| Problema no expresado.';
-If oeg=51 then label323.caption:='| Preocupación secreta.';
-If oeg=52 then label323.caption:='| Oxigenación.';
-If oeg=53 then label323.caption:='| Hidratación.';
-If oeg=54 then label323.caption:='| Riñones.';
-If oeg=55 then label323.caption:='| Hígado.';
-If oeg=56 then label323.caption:='| Piel.';
-If oeg=57 then label323.caption:='| Bacteria.';
-If oeg=58 then label323.caption:='| Fungosidades.';
-If oeg=59 then label323.caption:='| Ricketsia.';
-If oeg=60 then label323.caption:='| Lombrices.';
-If oeg=61 then label323.caption:='| Parásitos.';
-If oeg=62 then label323.caption:='| Músculos.';
-If oeg=63 then label323.caption:='| Ligamentos.';
-If oeg=64 then label323.caption:='| Preocupación.';
-If oeg=65 then label323.caption:='| Dinero.';
-If oeg>65 then label323.caption:='| Preocupación oculta.';
-
- oeg:=random(3);
- if  (oeg=3) then
- begin
- oeg:=random(150);
- if oeg<2 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=2 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=3 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=4 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=5 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=6 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=7 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=8 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=9 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=10 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=11 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=12 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=13 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=14 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=15 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=16 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=17 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=18 then label323.caption:=label323.caption+' | Temor a perder el juego.';
- if oeg=19 then label323.caption:=label323.caption+' | Negatividad inconciente.';
-if oeg=20 then label323.caption:=label323.caption+' | Temor a perder.';
-if oeg=21 then label323.caption:=label323.caption+' | Temor a perder el juego.';
-if oeg=22 then label323.caption:=label323.caption+' | Rencor a perder.';
-if oeg=23 then label323.caption:=label323.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label323.caption:=label323.caption+' | Estabilidad mental.';
-if oeg=25 then label323.caption:=label323.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label323.caption:=label323.caption+' | Temor al criticismo.';
-if oeg=27 then label323.caption:=label323.caption+' | Temor conciente al dolor.';
-if oeg=28 then label323.caption:=label323.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label323.caption:=label323.caption+' | Temor de control parental.';
-if oeg=30 then label323.caption:=label323.caption+' | Temor al fracaso.';
-if oeg=31 then label323.caption:=label323.caption+' | Pérdida de identidad.';
-if oeg=32 then label323.caption:=label323.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label323.caption:=label323.caption+' | Pérdida de objetivo.';
-if oeg=34 then label323.caption:=label323.caption+' | Sobre entendimiento.';
-if oeg=35 then label323.caption:=label323.caption+' | Sobre confidencia.';
-if oeg=36 then label323.caption:=label323.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=38 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=39 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=40 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=41 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=42 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=43 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=44 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=45 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=46 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=47 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=48 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=49 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=50 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=51 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=52 then label323.caption:=label323.caption+' | Deseo de ganar.';
-if oeg=53 then label323.caption:=label323.caption+' | Deseo de luchar.';
-if oeg=54 then label323.caption:=label323.caption+' | Disminución de la cognicción.';
-if oeg=55 then label323.caption:=label323.caption+' | Disminución del control emocional.';
-if oeg=56 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=57 then label323.caption:=label323.caption+' | Demasiados condicionantes.';
-if oeg=58 then label323.caption:=label323.caption+' | Demasiada negatividad.';
-if oeg=59 then label323.caption:=label323.caption+' | Control externo.';
-if oeg=60 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=61 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=62 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=63 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=64 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=65 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=66 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=67 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=68 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=69 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=70 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=71 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=72 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=73 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=74 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=75 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=76 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=77 then label323.caption:=label323.caption+' | Lucha.';
-if oeg=78 then label323.caption:=label323.caption+' | Falta de un objetivo.';
-if oeg=79 then label323.caption:=label323.caption+' | Temor monetario.';
-if oeg=80 then label323.caption:=label323.caption+' | Preocupación monetaria.';
-if oeg=81 then label323.caption:=label323.caption+' | Demasiada dispersidad.';
-if oeg=82 then label323.caption:=label323.caption+' | Mal entrenamiento.';
-if oeg=83 then label323.caption:=label323.caption+' | Cambio de estado mental.';
-if oeg=84 then label323.caption:=label323.caption+' | Sobre confidencia.';
-if oeg=85 then label323.caption:=label323.caption+' | Falta de entusiasmo.';
-if oeg=86 then label323.caption:=label323.caption+' | Dolor.';
-if oeg=87 then label323.caption:=label323.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label323.caption:=label323.caption+' | Regreso a la infancia.';
-if oeg=89 then label323.caption:=label323.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label323.caption:=label323.caption+' | Preocupación de terminar.';
-if oeg=91 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=92 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=93 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=94 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=95 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=96 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=97 then label323.caption:=label323.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label323.caption:=label323.caption+' | Preocupación por compañeros.';
-if oeg=99 then label323.caption:=label323.caption+' | Tristeza excesiva.';
-if oeg=100 then label323.caption:=label323.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label323.caption:=label323.caption+' | Manejo de la íra.';
-if oeg=102 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label323.caption:=label323.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=106 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=107 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=108 then label323.caption:=label323.caption+' | Sentimiento de revancha.';
-if oeg=109 then label323.caption:=label323.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label323.caption:=label323.caption+' | Ira hacia los oponenetes.';
-if oeg=111 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=112 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=113 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=114 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=115 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=116 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=117 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=118 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=119 then label323.caption:=label323.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=120 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=121 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=122 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=123 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=124 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=125 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=126 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=127 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=128 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg=129 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-if oeg>129 then label323.caption:=label323.caption+' | Demasiada sensitividad.';
-end;
-
-oeg:=random(3);
-if  (oeg=3) then
-begin
-oeg:=random(105);
-if oeg<2 then label323.caption:=label323.caption+' | Regresión.';
-if oeg=2 then label323.caption:=label323.caption+' | Agresión.';
-if oeg=3 then label323.caption:=label323.caption+' | Ira.';
-if oeg=4 then label323.caption:=label323.caption+' | Ansiedad.';
-if oeg=5 then label323.caption:=label323.caption+' | Conciencia.';
-if oeg=6 then label323.caption:=label323.caption+' | Tristeza.';
-if oeg=7 then label323.caption:=label323.caption+' | Culpabilidad.';
-if oeg=8 then label323.caption:=label323.caption+' | Autismo.';
-if oeg=9 then label323.caption:=label323.caption+' | Negación.';
-if oeg=10 then label323.caption:=label323.caption+' | Descuido.';
-if oeg=11 then label323.caption:=label323.caption+' | Desilusión.';
-if oeg=12 then label323.caption:=label323.caption+' | Depresión.';
-if oeg=13 then label323.caption:=label323.caption+' | Poder.';
-if oeg=14 then label323.caption:=label323.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label323.caption:=label323.caption+' | Temor.';
-if oeg=16 then label323.caption:=label323.caption+' | Confusión.';
-if oeg=17 then label323.caption:=label323.caption+' | Duda.';
-if oeg=18 then label323.caption:=label323.caption+' | Celos.';
-if oeg=19 then label323.caption:=label323.caption+' | Alegría.';
-if oeg=20 then label323.caption:=label323.caption+' | Lujuria.';
-if oeg=21 then label323.caption:=label323.caption+' | Avaricia.';
-if oeg=22 then label323.caption:=label323.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label323.caption:=label323.caption+' | Dolor psíquico.';
-if oeg=24 then label323.caption:=label323.caption+' | Pasividad.';
-if oeg=25 then label323.caption:=label323.caption+' | Proyección.';
-if oeg=26 then label323.caption:=label323.caption+' | Racionalizar.';
-if oeg=27 then label323.caption:=label323.caption+' | Imprudencia.';
-if oeg=28 then label323.caption:=label323.caption+' | Preocupación.';
-if oeg=29 then label323.caption:=label323.caption+' | Abandono.';
-if oeg=30 then label323.caption:=label323.caption+' | Vergüenza.';
-if oeg=31 then label323.caption:=label323.caption+' | Traición.';
-if oeg=32 then label323.caption:=label323.caption+' | Malentendimiento.';
-if oeg=33 then label323.caption:=label323.caption+' | Curiosidad.';
-if oeg=34 then label323.caption:=label323.caption+' | Sobrecogimiento.';
-if oeg=35 then label323.caption:=label323.caption+' | Conflicto religioso.';
-if oeg=36 then label323.caption:=label323.caption+' | Conflicto de identidad.';
-if oeg=37 then label323.caption:=label323.caption+' | Resistencia al cambio.';
-if oeg=38 then label323.caption:=label323.caption+' | Nervios.';
-if oeg=39 then label323.caption:=label323.caption+' | Risa.';
-if oeg=40 then label323.caption:=label323.caption+' | Entusiasmo.';
-if oeg=41 then label323.caption:=label323.caption+' | Vanidad.';
-if oeg=42 then label323.caption:=label323.caption+' | Negociación.';
-if oeg=43 then label323.caption:=label323.caption+' | Coraje.';
-if oeg=44 then label323.caption:=label323.caption+' | Vergüenza.';
-if oeg=45 then label323.caption:=label323.caption+' | Monotonía.';
-if oeg=46 then label323.caption:=label323.caption+' | Necesidad de cambio.';
-if oeg=47 then label323.caption:=label323.caption+' | Observación.';
-if oeg=48 then label323.caption:=label323.caption+' | Antagonismo.';
-if oeg=49 then label323.caption:=label323.caption+' | Sensualidad.';
-if oeg=50 then label323.caption:=label323.caption+' | Espiritualidad.';
-if oeg=51 then label323.caption:=label323.caption+' | Sexualidad.';
-if oeg=52 then label323.caption:=label323.caption+' | Adictividad.';
-if oeg=53 then label323.caption:=label323.caption+' | Enjuiciamiento.';
-if oeg=54 then label323.caption:=label323.caption+' | Apatía.';
-if oeg=55 then label323.caption:=label323.caption+' | Extasis.';
-if oeg=56 then label323.caption:=label323.caption+' | Inepcia.';
-if oeg=57 then label323.caption:=label323.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label323.caption:=label323.caption+' | Perfeccionismo.';
-if oeg=59 then label323.caption:=label323.caption+' | Desesperación.';
-if oeg=60 then label323.caption:=label323.caption+' | Dominación.';
-if oeg=61 then label323.caption:=label323.caption+' | Sumisión.';
-if oeg=62 then label323.caption:=label323.caption+' | Orgullo.';
-if oeg=63 then label323.caption:=label323.caption+' | Resentimiento.';
-if oeg=64 then label323.caption:=label323.caption+' | Choc.';
-if oeg=65 then label323.caption:=label323.caption+' | Descuido.';
-if oeg=66 then label323.caption:=label323.caption+' | Obsesividad.';
-if oeg=67 then label323.caption:=label323.caption+' | Impulsividad.';
-if oeg=68 then label323.caption:=label323.caption+' | Manías incontrolables.';
-if oeg=69 then label323.caption:=label323.caption+' | Impulsividad.';
-if oeg=70 then label323.caption:=label323.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label323.caption:=label323.caption+' | Distracción.';
-if oeg=72 then label323.caption:=label323.caption+' | Concentración.';
-if oeg=73 then label323.caption:=label323.caption+' | Irrealismo.';
-if oeg>73 then label323.caption:=label323.caption+' | Frustración.';
-end;
-
-Oeg:=random(110);
-If oeg<2 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=2 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=3 then label324.caption:='| Vitamina C';
-If oeg=4 then label324.caption:='| Vitamina E';
-If oeg=5 then label324.caption:='| Vitamina A';
-If oeg=6 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=7 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=8 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=9 then label324.caption:='| Almacen de amino ácidos';
-If oeg=10 then label324.caption:='| Anemia';
-If oeg=11 then label324.caption:='| Alternancia de Corpus Callosum';
-If oeg=12 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=13 then label324.caption:='| Vitamina C';
-If oeg=14 then label324.caption:='| Vitamina E';
-If oeg=15 then label324.caption:='| Vitamina A';
-If oeg=16 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=17 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=18 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=19 then label324.caption:='| Almacen de amino ácidos';
-If oeg=20 then label324.caption:='| Anemia';
-If oeg=21 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=22 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=23 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=24 then label324.caption:='| Vitamina C';
-If oeg=25 then label324.caption:='| Vitamina E';
-If oeg=26 then label324.caption:='| Vitamina A';
-If oeg=27 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=28 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=29 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=30 then label324.caption:='| Almacen de amino ácidos';
-If oeg=31 then label324.caption:='| Anemia';
-If oeg=32 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=33 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=34 then label324.caption:='| Necesidad de tap en carótida sineal';
-If oeg=35 then label324.caption:='| Necesidad de ejercitarse';
-If oeg=36 then label324.caption:='| Necesidad de respiración nostril alterna';
-If oeg=37 then label324.caption:='| Insuficiencia suprarrenal';
-If oeg=38 then label324.caption:='| Disrrupción de tiroides';
-If oeg=39 then label324.caption:='| Disrrupción de cortisona';
-If oeg=40 then label324.caption:='| Glándula pineal';
-If oeg=41 then label324.caption:='| Glándula pituitaria';
-If oeg=42 then label324.caption:='| Hipotálamo';
-If oeg=43 then label324.caption:='| Huesos';
-If oeg=44 then label324.caption:='| Sist. digestivo';
-If oeg=45 then label324.caption:='| Sist. hormonal';
-If oeg=46 then label324.caption:='| Sist. neurológico';
-If oeg=47 then label324.caption:='| Dolor';
-If oeg=48 then label324.caption:='| Temor';
-If oeg=49 then label324.caption:='| Ansiedad';
-If oeg=50 then label324.caption:='| Problema no expresado';
-If oeg=51 then label324.caption:='| Preocupación secreta';
-If oeg=52 then label324.caption:='| Oxigenación';
-If oeg=53 then label324.caption:='| Hidratación';
-If oeg=54 then label324.caption:='| Riñones';
-If oeg=55 then label324.caption:='| Hígado';
-If oeg=56 then label324.caption:='| Piel';
-If oeg=57 then label324.caption:='| Bacteria';
-If oeg=58 then label324.caption:='| Fungosidades';
-If oeg=59 then label324.caption:='| Ricketsia';
-If oeg=60 then label324.caption:='| Lombrices';
-If oeg=61 then label324.caption:='| Parásitos';
-If oeg=62 then label324.caption:='| Músculos';
-If oeg=63 then label324.caption:='| Ligamentos';
-If oeg=64 then label324.caption:='| Preocupación';
-If oeg=65 then label324.caption:='| Dinero';
-If oeg=66 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=67 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=68 then label324.caption:='| Vitamina C';
-If oeg=69 then label324.caption:='| Vitamina E';
-If oeg=70 then label324.caption:='| Vitamina A';
-If oeg=71 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=72 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=73 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=74 then label324.caption:='| Almacen de amino ácidos';
-If oeg=75 then label324.caption:='| Anemia';
-If oeg=76 then label324.caption:='| Alternancia de Corpus Callosum';
-If oeg=77 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=78 then label324.caption:='| Vitamina C';
-If oeg=79 then label324.caption:='| Vitamina E';
-If oeg=80 then label324.caption:='| Vitamina A';
-If oeg=81 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=82 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=83 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=84 then label324.caption:='| Almacen de amino ácidos';
-If oeg=85 then label324.caption:='| Anemia';
-If oeg=86 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=87 then label324.caption:='| Intercambio en Corpus Callosum';
-If oeg=88 then label324.caption:='| Sobre carga en formación reticular';
-If oeg=89 then label324.caption:='| Vitamina C';
-If oeg=90 then label324.caption:='| Vitamina E';
-If oeg=91 then label324.caption:='| Vitamina A';
-If oeg=92 then label324.caption:='| Cadena baja de vitaminas B';
-If oeg=93 then label324.caption:='| Cadena alta de vitaminas B';
-If oeg=94 then label324.caption:='| Almacen de ácidos grasos';
-If oeg=95 then label324.caption:='| Almacen de amino ácidos';
-If oeg=96 then label324.caption:='| Anemia';
-If oeg=97 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=98 then label324.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=99 then label324.caption:='| Necesidad de tap en carótida sineal';
-If oeg=100 then label324.caption:='| Necesidad de ejercitarse';
-If oeg>100 then label324.caption:='| Necesidad de respiración nostril alterna';
-
-oeg:=random(5);
- if  (oeg=3) then
- begin
- oeg:=random(131);
- if oeg<2 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=2 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=3 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=4 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=5 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=6 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=7 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=8 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=9 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=10 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=11 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=12 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=13 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=14 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=15 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=16 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=17 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=18 then label324.caption:=label324.caption+' | Temor a perder el juego.';
- if oeg=19 then label324.caption:=label324.caption+' | Negatividad inconciente.';
-if oeg=20 then label324.caption:=label324.caption+' | Temor a perder.';
-if oeg=21 then label324.caption:=label324.caption+' | Temor a perder el juego.';
-if oeg=22 then label324.caption:=label324.caption+' | Rencor a perder.';
-if oeg=23 then label324.caption:=label324.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label324.caption:=label324.caption+' | Estabilidad mental.';
-if oeg=25 then label324.caption:=label324.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label324.caption:=label324.caption+' | Temor al criticismo.';
-if oeg=27 then label324.caption:=label324.caption+' | Temor conciente al dolor.';
-if oeg=28 then label324.caption:=label324.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label324.caption:=label324.caption+' | Temor de control parental.';
-if oeg=30 then label324.caption:=label324.caption+' | Temor al fracaso.';
-if oeg=31 then label324.caption:=label324.caption+' | Pérdida de identidad.';
-if oeg=32 then label324.caption:=label324.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label324.caption:=label324.caption+' | Pérdida de objetivo.';
-if oeg=34 then label324.caption:=label324.caption+' | Sobre entendimiento.';
-if oeg=35 then label324.caption:=label324.caption+' | Sobre confidencia.';
-if oeg=36 then label324.caption:=label324.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=38 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=39 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=40 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=41 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=42 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=43 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=44 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=45 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=46 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=47 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=48 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=49 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=50 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=51 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=52 then label324.caption:=label324.caption+' | Deseo de ganar.';
-if oeg=53 then label324.caption:=label324.caption+' | Deseo de luchar.';
-if oeg=54 then label324.caption:=label324.caption+' | Disminución de la cognicción.';
-if oeg=55 then label324.caption:=label324.caption+' | Disminución del control emocional.';
-if oeg=56 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=57 then label324.caption:=label324.caption+' | Demasiados condicionantes.';
-if oeg=58 then label324.caption:=label324.caption+' | Demasiada negatividad.';
-if oeg=59 then label324.caption:=label324.caption+' | Control externo.';
-if oeg=60 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=61 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=62 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=63 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=64 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=65 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=66 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=67 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=68 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=69 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=70 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=71 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=72 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=73 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=74 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=75 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=76 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=77 then label324.caption:=label324.caption+' | Lucha.';
-if oeg=78 then label324.caption:=label324.caption+' | Falta de un objetivo.';
-if oeg=79 then label324.caption:=label324.caption+' | Temor monetario.';
-if oeg=80 then label324.caption:=label324.caption+' | Preocupación monetaria.';
-if oeg=81 then label324.caption:=label324.caption+' | Demasiada dispersidad.';
-if oeg=82 then label324.caption:=label324.caption+' | Mal entrenamiento.';
-if oeg=83 then label324.caption:=label324.caption+' | Cambio de estado mental.';
-if oeg=84 then label324.caption:=label324.caption+' | Sobre confidencia.';
-if oeg=85 then label324.caption:=label324.caption+' | Falta de entusiasmo.';
-if oeg=86 then label324.caption:=label324.caption+' | Dolor.';
-if oeg=87 then label324.caption:=label324.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label324.caption:=label324.caption+' | Regreso a la infancia.';
-if oeg=89 then label324.caption:=label324.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label324.caption:=label324.caption+' | Preocupación de terminar.';
-if oeg=91 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=92 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=93 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=94 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=95 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=96 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=97 then label324.caption:=label324.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label324.caption:=label324.caption+' | Preocupación por compañeros.';
-if oeg=99 then label324.caption:=label324.caption+' | Tristeza excesiva.';
-if oeg=100 then label324.caption:=label324.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label324.caption:=label324.caption+' | Manejo de la íra.';
-if oeg=102 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label324.caption:=label324.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=106 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=107 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=108 then label324.caption:=label324.caption+' | Sentimiento de revancha.';
-if oeg=109 then label324.caption:=label324.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label324.caption:=label324.caption+' | Ira hacia los oponenetes.';
-if oeg=111 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=112 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=113 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=114 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=115 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=116 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=117 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=118 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=119 then label324.caption:=label324.caption+' | Demasiada inclinación hacia el centro.';
-if oeg=120 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=121 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=122 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=123 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=124 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=125 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=126 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=127 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=128 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg=129 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-if oeg>129 then label324.caption:=label324.caption+' | Demasiada sensitividad.';
-   end;
-
-    oeg:=random(5);
- if  (oeg=3) then
- begin
-oeg:=random(105);
-if oeg<2 then label324.caption:=label324.caption+' | Regresión.';
-if oeg=2 then label324.caption:=label324.caption+' | Agresión.';
-if oeg=3 then label324.caption:=label324.caption+' | Ira.';
-if oeg=4 then label324.caption:=label324.caption+' | Ansiedad.';
-if oeg=5 then label324.caption:=label324.caption+' | Conciencia.';
-if oeg=6 then label324.caption:=label324.caption+' | Tristeza.';
-if oeg=7 then label324.caption:=label324.caption+' | Culpabilidad.';
-if oeg=8 then label324.caption:=label324.caption+' | Autismo.';
-if oeg=9 then label324.caption:=label324.caption+' | Negación.';
-if oeg=10 then label324.caption:=label324.caption+' | Descuido.';
-if oeg=11 then label324.caption:=label324.caption+' | Desilusión.';
-if oeg=12 then label324.caption:=label324.caption+' | Depresión.';
-if oeg=13 then label324.caption:=label324.caption+' | Poder.';
-if oeg=14 then label324.caption:=label324.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label324.caption:=label324.caption+' | Temor.';
-if oeg=16 then label324.caption:=label324.caption+' | Confusión.';
-if oeg=17 then label324.caption:=label324.caption+' | Duda.';
-if oeg=18 then label324.caption:=label324.caption+' | Celos.';
-if oeg=19 then label324.caption:=label324.caption+' | Alegría.';
-if oeg=20 then label324.caption:=label324.caption+' | Lujuria.';
-if oeg=21 then label324.caption:=label324.caption+' | Avaricia.';
-if oeg=22 then label324.caption:=label324.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label324.caption:=label324.caption+' | Dolor psíquico.';
-if oeg=24 then label324.caption:=label324.caption+' | Pasividad.';
-if oeg=25 then label324.caption:=label324.caption+' | Proyección.';
-if oeg=26 then label324.caption:=label324.caption+' | Racionalizar.';
-if oeg=27 then label324.caption:=label324.caption+' | Imprudencia.';
-if oeg=28 then label324.caption:=label324.caption+' | Preocupación.';
-if oeg=29 then label324.caption:=label324.caption+' | Abandono.';
-if oeg=30 then label324.caption:=label324.caption+' | Vergüenza.';
-if oeg=31 then label324.caption:=label324.caption+' | Traición.';
-if oeg=32 then label324.caption:=label324.caption+' | Malentendimiento.';
-if oeg=33 then label324.caption:=label324.caption+' | Curiosidad.';
-if oeg=34 then label324.caption:=label324.caption+' | Sobrecogimiento.';
-if oeg=35 then label324.caption:=label324.caption+' | Conflicto religioso.';
-if oeg=36 then label324.caption:=label324.caption+' | Conflicto de identidad.';
-if oeg=37 then label324.caption:=label324.caption+' | Resistencia al cambio.';
-if oeg=38 then label324.caption:=label324.caption+' | Nervios.';
-if oeg=39 then label324.caption:=label324.caption+' | Risa.';
-if oeg=40 then label324.caption:=label324.caption+' | Entusiasmo.';
-if oeg=41 then label324.caption:=label324.caption+' | Vanidad.';
-if oeg=42 then label324.caption:=label324.caption+' | Negociación.';
-if oeg=43 then label324.caption:=label324.caption+' | Coraje.';
-if oeg=44 then label324.caption:=label324.caption+' | Vergüenza.';
-if oeg=45 then label324.caption:=label324.caption+' | Monotonía.';
-if oeg=46 then label324.caption:=label324.caption+' | Necesidad de cambio.';
-if oeg=47 then label324.caption:=label324.caption+' | Observación.';
-if oeg=48 then label324.caption:=label324.caption+' | Antagonismo.';
-if oeg=49 then label324.caption:=label324.caption+' | Sensualidad.';
-if oeg=50 then label324.caption:=label324.caption+' | Espiritualidad.';
-if oeg=51 then label324.caption:=label324.caption+' | Sexualidad.';
-if oeg=52 then label324.caption:=label324.caption+' | Adictividad.';
-if oeg=53 then label324.caption:=label324.caption+' | Enjuiciamiento.';
-if oeg=54 then label324.caption:=label324.caption+' | Apatía.';
-if oeg=55 then label324.caption:=label324.caption+' | Extasis.';
-if oeg=56 then label324.caption:=label324.caption+' | Inepcia.';
-if oeg=57 then label324.caption:=label324.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label324.caption:=label324.caption+' | Perfeccionismo.';
-if oeg=59 then label324.caption:=label324.caption+' | Desesperación.';
-if oeg=60 then label324.caption:=label324.caption+' | Dominación.';
-if oeg=61 then label324.caption:=label324.caption+' | Sumisión.';
-if oeg=62 then label324.caption:=label324.caption+' | Orgullo.';
-if oeg=63 then label324.caption:=label324.caption+' | Resentimiento.';
-if oeg=64 then label324.caption:=label324.caption+' | Choc.';
-if oeg=65 then label324.caption:=label324.caption+' | Descuido.';
-if oeg=66 then label324.caption:=label324.caption+' | Obsesividad.';
-if oeg=67 then label324.caption:=label324.caption+' | Impulsividad.';
-if oeg=68 then label324.caption:=label324.caption+' | Manías incontrolables.';
-if oeg=69 then label324.caption:=label324.caption+' | Impulsividad.';
-if oeg=70 then label324.caption:=label324.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label324.caption:=label324.caption+' | Distracción.';
-if oeg=72 then label324.caption:=label324.caption+' | Concentración.';
-if oeg=73 then label324.caption:=label324.caption+' | Irrealismo.';
-if oeg>73 then label324.caption:=label324.caption+' | Frustración.';
-end;
-
-Oeg:=random(110);
-If oeg<2 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=2 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=3 then label325.caption:='| Vitamina C';
-If oeg=4 then label325.caption:='| Vitamina E';
-If oeg=5 then label325.caption:='| Vitamina A';
-If oeg=6 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=7 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=8 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=9 then label325.caption:='| Almacen de amino ácidos';
-If oeg=10 then label325.caption:='| Anemia';
-If oeg=11 then label325.caption:='| Alternancia de Corpus Callosum';
-If oeg=12 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=13 then label325.caption:='| Vitamina C';
-If oeg=14 then label325.caption:='| Vitamina E';
-If oeg=15 then label325.caption:='| Vitamina A';
-If oeg=16 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=17 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=18 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=19 then label325.caption:='| Almacen de amino ácidos';
-If oeg=20 then label325.caption:='| Anemia';
-If oeg=21 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=22 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=23 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=24 then label325.caption:='| Vitamina C';
-If oeg=25 then label325.caption:='| Vitamina E';
-If oeg=26 then label325.caption:='| Vitamina A';
-If oeg=27 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=28 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=29 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=30 then label325.caption:='| Almacen de amino ácidos';
-If oeg=31 then label325.caption:='| Anemia';
-If oeg=32 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=33 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=34 then label325.caption:='| Necesidad de tap en carótida sineal';
-If oeg=35 then label325.caption:='| Necesidad de ejercitarse';
-If oeg=36 then label325.caption:='| Necesidad de respiración nostril alterna';
-If oeg=37 then label325.caption:='| Insuficiencia suprarrenal';
-If oeg=38 then label325.caption:='| Disrrupción de tiroides';
-If oeg=39 then label325.caption:='| Disrrupción de cortisona';
-If oeg=40 then label325.caption:='| Glándula pineal';
-If oeg=41 then label325.caption:='| Glándula pituitaria';
-If oeg=42 then label325.caption:='| Hipotálamo';
-If oeg=43 then label325.caption:='| Huesos';
-If oeg=44 then label325.caption:='| Sist. digestivo';
-If oeg=45 then label325.caption:='| Sist. hormonal';
-If oeg=46 then label325.caption:='| Sist. neurológico';
-If oeg=47 then label325.caption:='| Dolor';
-If oeg=48 then label325.caption:='| Temor';
-If oeg=49 then label325.caption:='| Ansiedad';
-If oeg=50 then label325.caption:='| Problema no expresado';
-If oeg=51 then label325.caption:='| Preocupación secreta';
-If oeg=52 then label325.caption:='| Oxigenación';
-If oeg=53 then label325.caption:='| Hidratación';
-If oeg=54 then label325.caption:='| Riñones';
-If oeg=55 then label325.caption:='| Hígado';
-If oeg=56 then label325.caption:='| Piel';
-If oeg=57 then label325.caption:='| Bacteria';
-If oeg=58 then label325.caption:='| Fungosidades';
-If oeg=59 then label325.caption:='| Ricketsia';
-If oeg=60 then label325.caption:='| Lombrices';
-If oeg=61 then label325.caption:='| Parásitos';
-If oeg=62 then label325.caption:='| Músculos';
-If oeg=63 then label325.caption:='| Ligamentos';
-If oeg=64 then label325.caption:='| Preocupación';
-If oeg=65 then label325.caption:='| Dinero';
-If oeg=66 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=67 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=68 then label325.caption:='| Vitamina C';
-If oeg=69 then label325.caption:='| Vitamina E';
-If oeg=70 then label325.caption:='| Vitamina A';
-If oeg=71 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=72 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=73 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=74 then label325.caption:='| Almacen de amino ácidos';
-If oeg=75 then label325.caption:='| Anemia';
-If oeg=76 then label325.caption:='| Alternancia de Corpus Callosum';
-If oeg=77 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=78 then label325.caption:='| Vitamina C';
-If oeg=79 then label325.caption:='| Vitamina E';
-If oeg=80 then label325.caption:='| Vitamina A';
-If oeg=81 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=82 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=83 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=84 then label325.caption:='| Almacen de amino ácidos';
-If oeg=85 then label325.caption:='| Anemia';
-If oeg=86 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=87 then label325.caption:='| Intercambio en Corpus Callosum';
-If oeg=88 then label325.caption:='| Sobre carga en formación reticular';
-If oeg=89 then label325.caption:='| Vitamina C';
-If oeg=90 then label325.caption:='| Vitamina E';
-If oeg=91 then label325.caption:='| Vitamina A';
-If oeg=92 then label325.caption:='| Cadena baja de vitaminas B';
-If oeg=93 then label325.caption:='| Cadena alta de vitaminas B';
-If oeg=94 then label325.caption:='| Almacen de ácidos grasos';
-If oeg=95 then label325.caption:='| Almacen de amino ácidos';
-If oeg=96 then label325.caption:='| Anemia';
-If oeg=97 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=98 then label325.caption:='| Necesidad de regulación de carbohidratos';
-If oeg=99 then label325.caption:='| Necesidad de tap en carótida sineal';
-If oeg=100 then label325.caption:='| Necesidad de ejercitarse';
-If oeg>100 then label325.caption:='| Necesidad de respiración nostril alterna';
-
- oeg:=random(8);
- if  (oeg=3) then
- begin
- oeg:=random(125);
- if oeg<2 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=2 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=3 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=4 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=5 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=6 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=7 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=8 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=9 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=10 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=11 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=12 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=13 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=14 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=15 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=16 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=17 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=18 then label325.caption:=label325.caption+' | Temor a perder el juego.';
- if oeg=19 then label325.caption:=label325.caption+' | Negatividad inconciente.';
-if oeg=20 then label325.caption:=label325.caption+' | Temor a perder.';
-if oeg=21 then label325.caption:=label325.caption+' | Temor a perder el juego.';
-if oeg=22 then label325.caption:=label325.caption+' | Rencor a perder.';
-if oeg=23 then label325.caption:=label325.caption+' | Demasida concentración en sí mismo/a.';
-if oeg=24 then label325.caption:=label325.caption+' | Estabilidad mental.';
-if oeg=25 then label325.caption:=label325.caption+' | Estabilidad de sí mismo/a.';
-if oeg=26 then label325.caption:=label325.caption+' | Temor al criticismo.';
-if oeg=27 then label325.caption:=label325.caption+' | Temor conciente al dolor.';
-if oeg=28 then label325.caption:=label325.caption+' | Temor inconciente al dolor.';
-if oeg=29 then label325.caption:=label325.caption+' | Temor de control parental.';
-if oeg=30 then label325.caption:=label325.caption+' | Temor al fracaso.';
-if oeg=31 then label325.caption:=label325.caption+' | Pérdida de identidad.';
-if oeg=32 then label325.caption:=label325.caption+' | Bloqueo del oxígeno por ansiedad.';
-if oeg=33 then label325.caption:=label325.caption+' | Pérdida de objetivo.';
-if oeg=34 then label325.caption:=label325.caption+' | Sobre entendimiento.';
-if oeg=35 then label325.caption:=label325.caption+' | Sobre confidencia.';
-if oeg=36 then label325.caption:=label325.caption+' | Respuesta negativa del entrenador/a.';
-if oeg=37 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=38 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=39 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=40 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=41 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=42 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=43 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=44 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=45 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=46 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=47 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=48 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=49 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=50 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=51 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=52 then label325.caption:=label325.caption+' | Deseo de ganar.';
-if oeg=53 then label325.caption:=label325.caption+' | Deseo de luchar.';
-if oeg=54 then label325.caption:=label325.caption+' | Disminución de la cognicción.';
-if oeg=55 then label325.caption:=label325.caption+' | Disminución del control emocional.';
-if oeg=56 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=57 then label325.caption:=label325.caption+' | Demasiados condicionantes.';
-if oeg=58 then label325.caption:=label325.caption+' | Demasiada negatividad.';
-if oeg=59 then label325.caption:=label325.caption+' | Control externo.';
-if (oeg>59) or (oeg<78) then label325.caption:=label325.caption+' | Lucha.';
-if oeg=78 then label325.caption:=label325.caption+' | Falta de un objetivo.';
-if oeg=79 then label325.caption:=label325.caption+' | Temor monetario.';
-if oeg=80 then label325.caption:=label325.caption+' | Preocupación monetaria.';
-if oeg=81 then label325.caption:=label325.caption+' | Demasiada dispersidad.';
-if oeg=82 then label325.caption:=label325.caption+' | Mal entrenamiento.';
-if oeg=83 then label325.caption:=label325.caption+' | Cambio de estado mental.';
-if oeg=84 then label325.caption:=label325.caption+' | Sobre confidencia.';
-if oeg=85 then label325.caption:=label325.caption+' | Falta de entusiasmo.';
-if oeg=86 then label325.caption:=label325.caption+' | Dolor.';
-if oeg=87 then label325.caption:=label325.caption+' | Dolor por factores desconocidos.';
-if oeg=88 then label325.caption:=label325.caption+' | Regreso a la infancia.';
-if oeg=89 then label325.caption:=label325.caption+' | Bloqueo con el tiempo.';
-if oeg=90 then label325.caption:=label325.caption+' | Preocupación de terminar.';
-if oeg=91 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=92 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=93 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=94 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=95 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=96 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=97 then label325.caption:=label325.caption+' | Preocupación para consigo mismo/a.';
-if oeg=98 then label325.caption:=label325.caption+' | Preocupación por compañeros.';
-if oeg=99 then label325.caption:=label325.caption+' | Tristeza excesiva.';
-if oeg=100 then label325.caption:=label325.caption+' | Responsabilidad para con la vida.';
-if oeg=101 then label325.caption:=label325.caption+' | Manejo de la íra.';
-if oeg=102 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=103 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=104 then label325.caption:=label325.caption+' | Disgusto hacia sí mismo/a.';
-if oeg=105 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=106 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=107 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=108 then label325.caption:=label325.caption+' | Sentimiento de revancha.';
-if oeg=109 then label325.caption:=label325.caption+' | Ira hacia figuras de autoridad.';
-if oeg=110 then label325.caption:=label325.caption+' | Ira hacia los oponenetes.';
-if (oeg>110) or (oeg<120) then label325.caption:=label325.caption+' | Demasiada inclinación hacia el centro.';
-if oeg>119 then label325.caption:=label325.caption+' | Demasiada sensitividad.';
-end;
-
-oeg:=random(8);
-if  (oeg=3) then
-begin
-oeg:=random(80);
-if oeg<2 then label325.caption:=label325.caption+' | Regresión.';
-if oeg=2 then label325.caption:=label325.caption+' | Agresión.';
-if oeg=3 then label325.caption:=label325.caption+' | Ira.';
-if oeg=4 then label325.caption:=label325.caption+' | Ansiedad.';
-if oeg=5 then label325.caption:=label325.caption+' | Conciencia.';
-if oeg=6 then label325.caption:=label325.caption+' | Tristeza.';
-if oeg=7 then label325.caption:=label325.caption+' | Culpabilidad.';
-if oeg=8 then label325.caption:=label325.caption+' | Autismo.';
-if oeg=9 then label325.caption:=label325.caption+' | Negación.';
-if oeg=10 then label325.caption:=label325.caption+' | Descuido.';
-if oeg=11 then label325.caption:=label325.caption+' | Desilusión.';
-if oeg=12 then label325.caption:=label325.caption+' | Depresión.';
-if oeg=13 then label325.caption:=label325.caption+' | Poder.';
-if oeg=14 then label325.caption:=label325.caption+' | Duda de sí mismo/a.';
-if oeg=15 then label325.caption:=label325.caption+' | Temor.';
-if oeg=16 then label325.caption:=label325.caption+' | Confusión.';
-if oeg=17 then label325.caption:=label325.caption+' | Duda.';
-if oeg=18 then label325.caption:=label325.caption+' | Celos.';
-if oeg=19 then label325.caption:=label325.caption+' | Alegría.';
-if oeg=20 then label325.caption:=label325.caption+' | Lujuria.';
-if oeg=21 then label325.caption:=label325.caption+' | Avaricia.';
-if oeg=22 then label325.caption:=label325.caption+' | Poderes Extra Sensoriales.';
-if oeg=23 then label325.caption:=label325.caption+' | Dolor psíquico.';
-if oeg=24 then label325.caption:=label325.caption+' | Pasividad.';
-if oeg=25 then label325.caption:=label325.caption+' | Proyección.';
-if oeg=26 then label325.caption:=label325.caption+' | Racionalizar.';
-if oeg=27 then label325.caption:=label325.caption+' | Imprudencia.';
-if oeg=28 then label325.caption:=label325.caption+' | Preocupación.';
-if oeg=29 then label325.caption:=label325.caption+' | Abandono.';
-if oeg=30 then label325.caption:=label325.caption+' | Vergüenza.';
-if oeg=31 then label325.caption:=label325.caption+' | Traición.';
-if oeg=32 then label325.caption:=label325.caption+' | Malentendimiento.';
-if oeg=33 then label325.caption:=label325.caption+' | Curiosidad.';
-if oeg=34 then label325.caption:=label325.caption+' | Sobrecogimiento.';
-if oeg=35 then label325.caption:=label325.caption+' | Conflicto religioso.';
-if oeg=36 then label325.caption:=label325.caption+' | Conflicto de identidad.';
-if oeg=37 then label325.caption:=label325.caption+' | Resistencia al cambio.';
-if oeg=38 then label325.caption:=label325.caption+' | Nervios.';
-if oeg=39 then label325.caption:=label325.caption+' | Risa.';
-if oeg=40 then label325.caption:=label325.caption+' | Entusiasmo.';
-if oeg=41 then label325.caption:=label325.caption+' | Vanidad.';
-if oeg=42 then label325.caption:=label325.caption+' | Negociación.';
-if oeg=43 then label325.caption:=label325.caption+' | Coraje.';
-if oeg=44 then label325.caption:=label325.caption+' | Vergüenza.';
-if oeg=45 then label325.caption:=label325.caption+' | Monotonía.';
-if oeg=46 then label325.caption:=label325.caption+' | Necesidad de cambio.';
-if oeg=47 then label325.caption:=label325.caption+' | Observación.';
-if oeg=48 then label325.caption:=label325.caption+' | Antagonismo.';
-if oeg=49 then label325.caption:=label325.caption+' | Sensualidad.';
-if oeg=50 then label325.caption:=label325.caption+' | Espiritualidad.';
-if oeg=51 then label325.caption:=label325.caption+' | Sexualidad.';
-if oeg=52 then label325.caption:=label325.caption+' | Adictividad.';
-if oeg=53 then label325.caption:=label325.caption+' | Enjuiciamiento.';
-if oeg=54 then label325.caption:=label325.caption+' | Apatía.';
-if oeg=55 then label325.caption:=label325.caption+' | Extasis.';
-if oeg=56 then label325.caption:=label325.caption+' | Inepcia.';
-if oeg=57 then label325.caption:=label325.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58 then label325.caption:=label325.caption+' | Perfeccionismo.';
-if oeg=59 then label325.caption:=label325.caption+' | Desesperación.';
-if oeg=60 then label325.caption:=label325.caption+' | Dominación.';
-if oeg=61 then label325.caption:=label325.caption+' | Sumisión.';
-if oeg=62 then label325.caption:=label325.caption+' | Orgullo.';
-if oeg=63 then label325.caption:=label325.caption+' | Resentimiento.';
-if oeg=64 then label325.caption:=label325.caption+' | Choc.';
-if oeg=65 then label325.caption:=label325.caption+' | Descuido.';
-if oeg=66 then label325.caption:=label325.caption+' | Obsesividad.';
-if oeg=67 then label325.caption:=label325.caption+' | Impulsividad.';
-if oeg=68 then label325.caption:=label325.caption+' | Manías incontrolables.';
-if oeg=69 then label325.caption:=label325.caption+' | Impulsividad.';
-if oeg=70 then label325.caption:=label325.caption+' | Lealtad inquebrantable.';
-if oeg=71 then label325.caption:=label325.caption+' | Distracción.';
-if oeg=72 then label325.caption:=label325.caption+' | Concentración.';
-if oeg=73 then label325.caption:=label325.caption+' | Irrealismo.';
-if oeg>73 then label325.caption:=label325.caption+' | Frustración.';
-end;
+Textos323();
+Textos324();
+Textos325();
 
 FMain.shaping:=random(100);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 label328.caption:= '|||';
 label329.caption:= '|||';
 label331.caption:= '|||';
@@ -49587,11 +43001,6 @@ end;
 procedure TtestForm1.Label271DblClick(Sender: TObject);
 begin
 FTest_Alterna.panel68();
-end;
-
-procedure TtestForm1.InformedeErrores1Click(Sender: TObject);
-begin
-   FTest_Alterna.CopiaBitacora();
 end;
 
 procedure TtestForm1.Button89Click(Sender: TObject);
@@ -49717,12 +43126,6 @@ Button138.Enabled := True;
 If Edit30.Text='' Then Button138.Enabled:=False;
 end;
 
-procedure TtestForm1.Acercade1Click(Sender: TObject);
-begin
- Application.CreateForm(TAboutBox, AboutBox);
-    AboutBox.ShowModal;
-end;
-
 procedure TtestForm1.Button100Click(Sender: TObject);
 begin
 
@@ -49780,7 +43183,7 @@ procedure TtestForm1.E_BuscarChange(Sender: TObject);
 var
    i :integer;
 begin
- if  (trim(E_Buscar.text) <> '')  And   (E_Buscar.text <> 'BUSCAR') then begin
+ if  (trim(E_Buscar.text) <> '')  then begin
      for i:= 0 to ListBox2.Items.Count -1 do
      begin
         if pos(trim(UpperCase(E_Buscar.text)),UpperCase(ListBox2.Items[i])) <> 0 then begin
@@ -49804,8 +43207,7 @@ end;
 
 procedure TtestForm1.E_BuscarEnter(Sender: TObject);
 begin
- if  (E_Buscar.text <> '') then
-     (E_Buscar.text :=  '')
+ if  (E_Buscar.text <> '') then (E_Buscar.text :=  '')
 end;
 
 procedure TtestForm1.Label41DblClick(Sender: TObject);
@@ -49819,7 +43221,6 @@ begin
        OrderofRemedies1.enabled            := true;
        Treatments1.enabled                 := true;
        Ayuda1.enabled                      := true;
-       Informacion1.enabled                := true;
        Lexicon1.enabled                    := true;
        Powersettings1.enabled              := true;
        SCIO1.enabled                       := true;
@@ -49848,7 +43249,7 @@ begin
 MyChrono2.Start;
 GProgreso.Progress := 0;
 vtiempo := 5+Random(10);
-//LRectificado.Caption := 'Rectificado |';
+//LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
 Repeat
@@ -50345,7 +43746,6 @@ begin
   lorden.enabled := false;
   lvalor.enabled := true;
   lnombre.enabled := true;
-  
   if ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
     ((conscidagrid.DataSource).dataset as Tquery).active := false;
     ((conscidagrid.DataSource).dataset as Tquery).sql.clear;
@@ -50357,9 +43757,7 @@ begin
      ConscidaGrid.setfocus;
      DM.QFiltroVisita.prior;
      DM.QFiltroVisita.next;
-
   end
-  
   else
    if ConscidaGrid.DataSource = DM.DSFilter then Begin
     ((conscidagrid.DataSource).dataset as Tquery).active := false;
@@ -50372,7 +43770,6 @@ begin
      ConscidaGrid.setfocus;
      DM.QueryFilter.prior;
      DM.QueryFilter.next;
-
   end
   else begin
     Index:='';
@@ -50391,7 +43788,6 @@ begin
   lorden.enabled := true;
   lvalor.enabled := false;
   lnombre.enabled := true;
-
   if ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
     ((conscidagrid.DataSource).dataset as Tquery).active := false;
     ((conscidagrid.DataSource).dataset as Tquery).sql.clear;
@@ -50403,7 +43799,6 @@ begin
      ConscidaGrid.setfocus;
      DM.QFiltroVisita.prior;
      DM.QFiltroVisita.next;
-
   end
   else
    if ConscidaGrid.DataSource = DM.DSFilter then Begin
@@ -50417,7 +43812,6 @@ begin
      ConscidaGrid.setfocus;
      DM.QueryFilter.prior;
      DM.QueryFilter.next;
-
   end
   else begin
     Index:='ByValue';
@@ -50436,7 +43830,6 @@ begin
   lorden.enabled := true;
   lvalor.enabled := true;
   lnombre.enabled := false;
-
   if ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
     ((conscidagrid.DataSource).dataset as Tquery).active := false;
     ((conscidagrid.DataSource).dataset as Tquery).sql.clear;
@@ -50449,7 +43842,6 @@ begin
      DM.QFiltroVisita.prior;
      DM.QFiltroVisita.next;
   end
-  
   else
    if ConscidaGrid.DataSource = DM.DSFilter then Begin
     ((conscidagrid.DataSource).dataset as Tquery).active := false;
@@ -50462,7 +43854,6 @@ begin
      ConscidaGrid.setfocus;
      DM.QueryFilter.prior;
      DM.QueryFilter.next;
-
   end
   else begin
     Index:='';
@@ -50471,7 +43862,6 @@ begin
     DM.Conscida.last;
     CWidth();
   end;
-
 end;
 
 procedure TtestForm1.Edit35Exit(Sender: TObject);
@@ -50488,13 +43878,10 @@ begin
   result :=  (Objeto).caption;
   ss := (Objeto).caption;
   i := pos('|',ss);
- // showmessage(inttostr(i));
- // showmessage(copy(ss,1,i-1));
   if i <> 0 then
      st := copy(ss,1,i-1)
   else
     st := ss;
- // showmessage(st);
   result := st;
 end;
 
@@ -50509,7 +43896,7 @@ begin
  label328.caption:= 'Realizando terapia: '+Objeto.Caption+'...';
  Paola(vtotal);
  if client1 >100 then client1 := 85+Random(15);
- Objeto.caption:=Objeto.caption+' | '+inttostr(client1)+'%';
+ Objeto.caption:=Objeto.caption+' '+inttostr(client1)+'%';
  if client1>84 then
     Objeto.Enabled:=false;
  Deseo();
@@ -50660,7 +44047,7 @@ label260.caption:='--';
  LDiferencia.Caption := '000';
  LResonancia.Caption := '000';
  LReactividadA.Caption := '000';
-Label238.caption:='Rectificado |';
+Label238.caption:='Rectificado | ';
 PcalImprove();
 GProgreso.Progress := 0;
 vtiempo := 5+Random(10);
@@ -50678,48 +44065,7 @@ MyChrono2.TimeElapsed > vtiempo;
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 Buffers();
-oeg:=random(41);
-if oeg<2 then L_Conexion.Caption:=L_Conexion.Caption+'inflamación.';
-if oeg=2 then L_Conexion.Caption:=L_Conexion.Caption+'cáncer.';
-if oeg=3 then L_Conexion.Caption:=L_Conexion.Caption+'estrés.';
-if oeg=4 then L_Conexion.Caption:=L_Conexion.Caption+'hipoadrenia.';
-if oeg=5 then L_Conexion.Caption:=L_Conexion.Caption+'sistema emocional.';
-if oeg=6 then L_Conexion.Caption:=L_Conexion.Caption+'infección.';
-if oeg=7 then L_Conexion.Caption:=L_Conexion.Caption+'toxicidad.';
-if oeg=8 then L_Conexion.Caption:=L_Conexion.Caption+'trauma.';
-if oeg=9 then L_Conexion.Caption:=L_Conexion.Caption+'causas heredadas.';
-if oeg=10 then L_Conexion.Caption:=L_Conexion.Caption+'exceso o deficiencia de vitaminas.';
-if oeg=11 then L_Conexion.Caption:=L_Conexion.Caption+'sistema cardiovascular.';
-if oeg=12 then L_Conexion.Caption:=L_Conexion.Caption+'sistema hormonal.';
-if oeg=13 then L_Conexion.Caption:=L_Conexion.Caption+'sistema linfático.';
-if oeg=14 then L_Conexion.Caption:=L_Conexion.Caption+'hígado.';
-if oeg=15 then L_Conexion.Caption:=L_Conexion.Caption+'riñones.';
-if oeg=16 then L_Conexion.Caption:=L_Conexion.Caption+'sistema digestivo.';
-if oeg=17 then L_Conexion.Caption:=L_Conexion.Caption+'tejido conectivo.';
-if oeg=18 then L_Conexion.Caption:=L_Conexion.Caption+'huesos.';
-if oeg=19 then L_Conexion.Caption:=L_Conexion.Caption+'agua ácida o alcalina.';
-if oeg=20 then L_Conexion.Caption:=L_Conexion.Caption+'sangre.';
-if oeg=21 then L_Conexion.Caption:=L_Conexion.Caption+'medio ambiente.';
-if oeg=22 then L_Conexion.Caption:=L_Conexion.Caption+'alergias.';
-if oeg=23 then L_Conexion.Caption:=L_Conexion.Caption+'riesgo emocional.';
-if oeg=24 then L_Conexion.Caption:=L_Conexion.Caption+'sistema circulatorio.';
-if oeg=25 then L_Conexion.Caption:=L_Conexion.Caption+'sistema inmunitario.';
-if oeg=26 then L_Conexion.Caption:=L_Conexion.Caption+'radiación.';
-if oeg=27 then L_Conexion.Caption:=L_Conexion.Caption+'bacteria.';
-if oeg=28 then L_Conexion.Caption:=L_Conexion.Caption+'fungosidades.';
-if oeg=29 then L_Conexion.Caption:=L_Conexion.Caption+'virus.';
-if oeg=30 then L_Conexion.Caption:=L_Conexion.Caption+'parásitos.';
-if oeg=31 then L_Conexion.Caption:=L_Conexion.Caption+'amíbas.';
-if oeg=32 then L_Conexion.Caption:=L_Conexion.Caption+'Intolerancia alimentaria.';
-if oeg=33 then L_Conexion.Caption:=L_Conexion.Caption+'regulación del azúcar.';
-if oeg=34 then L_Conexion.Caption:=L_Conexion.Caption+'sistema neurológico.';
-if oeg=35 then L_Conexion.Caption:=L_Conexion.Caption+'sistema sensorial.';
-if oeg=36 then L_Conexion.Caption:=L_Conexion.Caption+'colesterol.';
-if oeg=37 then L_Conexion.Caption:=L_Conexion.Caption+'sistema respiratorio.';
-if oeg=38 then L_Conexion.Caption:=L_Conexion.Caption+'oxidación.';
-if oeg=39 then L_Conexion.Caption:=L_Conexion.Caption+'hidratación.';
-if oeg>39 then L_Conexion.Caption:=L_Conexion.Caption+'cognicción.';
-L_Conexion.Refresh;
+BCausas.Click;
 label57.caption:='Rectificado | '+inttostr(rectif);
 MyChrono2.Stop;
 End;
@@ -50796,7 +44142,7 @@ DM.Info.Open;
 DM.Info.First;
 DM.Info.last;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 no := DM.Info.FieldbyName('no').asInteger;
 inc(no); DM.Info.Appendrecord([no,nil,'--- PERFÍL ELÉCTRICO ---' ]);
 inc(no); DM.Info.Appendrecord([no, strtoint2(label104.caption),'Voltaje']);
@@ -50816,9 +44162,6 @@ end;
 
 procedure TtestForm1.RIFEBicom1Click(Sender: TObject);
 begin
-scioworking.button16.caption:='Detener terapia fX no automática';
-scioworking.button15.caption:='Iniciar terapia fX no automática';
-scioworking.button2.caption:='Terapia fX no automática';
 checkbox13.checked:=false;
 CheckBox13.Enabled := False;
 label23.visible:=false;
@@ -50947,7 +44290,7 @@ begin
 PcalImprove();
 MyChrono2.Start;
 DM.Conscida.Disablecontrols;
-Label240.Caption := 'Rectificado |';
+Label240.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 90+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -50976,7 +44319,7 @@ GProgreso.Refresh;
  if traycap>100 then traycap:=85+Random(15);
  if traymag>100 then traymag:=85+Random(15);
  if traycon>100 then traymag:=85+Random(15);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 aver:=round((traycon+traycap+traymag+trayres)/4+Random(50));
 If Aver>100 Then Aver := 85+Random(15);
 label240.caption:='Rectificado | '+inttostr(aver);
@@ -50984,16 +44327,6 @@ DM.Conscida.enablecontrols;
 MyChrono2.Stop;
 If (CBBioAuto.Checked = True) and (Aver<85) Then Correccion();
 End;
-
-procedure TtestForm1.N9Click(Sender: TObject);
-begin
-MInformeVersiones.Visible := True;
-end;
-
-procedure TtestForm1.MInformeVersionesClick(Sender: TObject);
-begin
-MInformeVersiones.Visible := False;
-end;
 
 procedure TtestForm1.Panel14Click(Sender: TObject);
 begin
@@ -51118,11 +44451,8 @@ end;
 
 procedure TtestForm1.Panel72Click(Sender: TObject);
 begin
-panel12.visible:=false;
-end;
-
-procedure TtestForm1.Panel71Click(Sender: TObject);
-begin
+If panel12.visible=True Then panel12.visible:=false
+else
 panel11.visible:=false;
 end;
 
@@ -51132,13 +44462,13 @@ GProgreso.Progress  :=  0;
 button59.Visible:=true;
 button91.Visible:=False;
 Button93.Enabled:=False;
-label323.caption:='|||';
-label324.caption:='|||';
-label325.caption:='|||';
-label328.caption:='|||';
-label329.caption:='|||';
-label330.caption:='|||';
-label331.caption:='|||';
+label323.caption:='';
+label324.caption:='';
+label325.caption:='';
+label328.caption:='';
+label329.caption:='';
+label330.caption:='';
+label331.caption:='';
 Panel16.Refresh;
 Panel16.visible:=false;
 end;
@@ -51236,795 +44566,7 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
       if tb1=2 then r1:=190+random(30);
       tb1:=random(16);
       if tb1=3 then r2:=190+random(30);
-  if riskchart.ims>102 then label246.caption:=label246.caption+' | Sistema inmunitario / Sarcodes';
-if riskchart.emo>102 then label246.caption:=label246.caption+' | Emociones / PNL';
-if riskchart.infl>102 then label246.caption:=label246.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>102 then label246.caption:=label246.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>102 then label246.caption:=label246.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>102 then label246.caption:=label246.caption+' | Infecciones / Zaps';
-if riskchart.tox>102 then label246.caption:=label246.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>102 then label246.caption:=label246.caption+' | Sistema cardiovascular / Biofeedback';
-if riskchart.Nut>102 then label246.caption:=label246.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>102 then label246.caption:=label246.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>102 then label246.caption:=label246.caption+' | Sistema linfático / Zaps';
-if riskchart.bld>102 then label246.caption:=label246.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>102 then label246.caption:=label246.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>102 then label246.caption:=label246.caption+' | Colesterol / Zaps';
-if riskchart.oxi>102 then label246.caption:=label246.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>102 then label246.caption:=label246.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>102 then label246.caption:=label246.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>102 then label246.caption:=label246.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>102 then label246.caption:=label246.caption+' | Factores heredados / ADN';
-if riskchart.liv>102 then label246.caption:=label246.caption+' | Hígado / Sarcodes';
-if riskchart.kid>102 then label246.caption:=label246.caption+' | Riñones / Sarcodes';
-if riskchart.dig>102 then label246.caption:=label246.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>102 then label246.caption:=label246.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>102 then label246.caption:=label246.caption+' | Sistema óseo / Sarcodes';
-if riskchart.acid>102 then label246.caption:=label246.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>102 then label246.caption:=label246.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>102 then label246.caption:=label246.caption+' | Alergias / Matriz principal';
-if riskchart.rad>102 then label246.caption:=label246.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>102 then label246.caption:=label246.caption+' | Bacterias / Zaps';
-if riskchart.fun>102 then label246.caption:=label246.caption+' | Fungosidades / Zaps';
-if riskchart.vir>102 then label246.caption:=label246.caption+' | Virus / Zaps';
-if riskchart.par>102 then label246.caption:=label246.caption+' | Parásitos / Zaps';
-if riskchart.ameo>102 then label246.caption:=label246.caption+' | Amíbas / Zaps';
-if riskchart.fdp>102 then label246.caption:=label246.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>102 then label246.caption:=label246.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>102 then label246.caption:=label246.caption+' | Sistema neurológico / Sarcodes';
-if riskchart.sener>102 then label246.caption:=label246.caption+' | Sistema sensorial / Sarcodes';
-if riskchart.res>102 then label246.caption:=label246.caption+' | Respiración / Sarcodes';
-if riskchart.cog>102 then label246.caption:=label246.caption+' | Cognicción / PNL';
-if riskchart.ims>150 then label246.caption:=label246.caption+' | Sistema inmunitario / Sarcodes';
-if riskchart.emo>150 then label246.caption:=label246.caption+' | Emociones / PNL';
-if riskchart.infl>150 then label246.caption:=label246.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>150 then label246.caption:=label246.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>150 then label246.caption:=label246.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>150 then label246.caption:=label246.caption+' | Infecciones / Zaps';
-if riskchart.tox>150 then label246.caption:=label246.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>150 then label246.caption:=label246.caption+' | Sistema cardiovascular / Biofeedback';
-if riskchart.Nut>150 then label246.caption:=label246.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>150 then label246.caption:=label246.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>150 then label246.caption:=label246.caption+' | Sistema linfático / Zaps';
-if riskchart.bld>150 then label246.caption:=label246.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>150 then label246.caption:=label246.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>150 then label246.caption:=label246.caption+' | Colesterol / Zaps';
-if riskchart.oxi>150 then label246.caption:=label246.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>150 then label246.caption:=label246.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>150 then label246.caption:=label246.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>150 then label246.caption:=label246.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>150 then label246.caption:=label246.caption+' | Factores heredados / ADN';
-if riskchart.liv>150 then label246.caption:=label246.caption+' | Hígado / Sarcodes';
-if riskchart.kid>150 then label246.caption:=label246.caption+' | Riñones / Sarcodes';
-if riskchart.dig>150 then label246.caption:=label246.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>150 then label246.caption:=label246.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>150 then label246.caption:=label246.caption+' | Sistema óseo / Sarcodes';
-if riskchart.acid>150 then label246.caption:=label246.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>150 then label246.caption:=label246.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>150 then label246.caption:=label246.caption+' | Alergias / Matriz principal';
-if riskchart.rad>150 then label246.caption:=label246.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>150 then label246.caption:=label246.caption+' | Bacterias / Zaps';
-if riskchart.fun>150 then label246.caption:=label246.caption+' | Fungosidades / Zaps';
-if riskchart.vir>150 then label246.caption:=label246.caption+' | Virus / Zaps';
-if riskchart.par>150 then label246.caption:=label246.caption+' | Parásitos / Zaps';
-if riskchart.ameo>150 then label246.caption:=label246.caption+' | Amíbas / Zaps';
-if riskchart.fdp>150 then label246.caption:=label246.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>150 then label246.caption:=label246.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>150 then label246.caption:=label246.caption+' | Sistema neurológico / Sarcodes';
-if riskchart.sener>150 then label246.caption:=label246.caption+' | Sistema sensorial / Sarcodes';
-if riskchart.res>150 then label246.caption:=label246.caption+' | Respiración / Sarcodes';
-if riskchart.cog>150 then label246.caption:=label246.caption+' | Cognicción / PNL';
-if riskchart.ims>230 then label245.caption:=label245.caption+' | Sistema inmunitario / Sarcodes';
-if riskchart.emo>230 then label245.caption:=label245.caption+' | Emociones / PNL';
-if riskchart.infl>230 then label245.caption:=label245.caption+' | Inflamación / Terapias cronometradas';
-if riskchart.can>230 then label245.caption:=label245.caption+' | Cáncer / Exploración de cáncer';
-if riskchart.str>230 then label245.caption:=label245.caption+' | Reducción de estrés / Biofeedback';
-if riskchart.infe>230 then label245.caption:=label245.caption+' | Infecciones / Zaps';
-if riskchart.tox>230 then label245.caption:=label245.caption+' | Desintoxicación / Homotoxicología';
-if riskchart.car>230 then label245.caption:=label245.caption+' | Sistema cardiovascular / Biofeedback';
-if riskchart.Nut>230 then label245.caption:=label245.caption+' | Nutrición / Nutrición y homeopatía';
-if riskchart.hor>230 then label245.caption:=label245.caption+' | Estabilización hormonal / Nutrición y homeopatía';
-if riskchart.lym>230 then label245.caption:=label245.caption+' | Sistema linfático / Zaps';
-if riskchart.bld>230 then label245.caption:=label245.caption+' | Rx sanguíneo / Análisis sanguíneo';
-if riskchart.cir>230 then label245.caption:=label245.caption+' | Ciculación / Sarcodes';
-if riskchart.cho>230 then label245.caption:=label245.caption+' | Colesterol / Zaps';
-if riskchart.oxi>230 then label245.caption:=label245.caption+' | Oxidación / Terapias recomendadas';
-if riskchart.hyd>230 then label245.caption:=label245.caption+' | Hidratación / Biofeedback';
-if riskchart.hypa>230 then label245.caption:=label245.caption+' | Rx suprarrenal / Sarcodes';
-if riskchart.tra>230 then label245.caption:=label245.caption+' | Rx para trauma / Biofeedback';
-if riskchart.inh>230 then label245.caption:=label245.caption+' | Factores heredados / ADN';
-if riskchart.liv>230 then label245.caption:=label245.caption+' | Hígado / Sarcodes';
-if riskchart.kid>230 then label245.caption:=label245.caption+' | Riñones / Sarcodes';
-if riskchart.dig>230 then label245.caption:=label245.caption+' | Digestión / Sarcodes';
-if riskchart.cnt>230 then label245.caption:=label245.caption+' | Tejido conectivo / Sarcodes';
-if riskchart.bon>230 then label245.caption:=label245.caption+' | Sistema óseo / Sarcodes';
-if riskchart.acid>230 then label245.caption:=label245.caption+' | Balance del pH / Terapias recomendadas';
-if riskchart.env>230 then label245.caption:=label245.caption+' | Desintoxicación medioambiental / Homotoxicología';
-if riskchart.aler>230 then label245.caption:=label245.caption+' | Alergias / Matriz principal';
-if riskchart.rad>230 then label245.caption:=label245.caption+' | Desintoxicación de radiación / Homotoxicología';
-if riskchart.bac>230 then label245.caption:=label245.caption+' | Bacterias / Zaps';
-if riskchart.fun>230 then label245.caption:=label245.caption+' | Fungosidades / Zaps';
-if riskchart.vir>230 then label245.caption:=label245.caption+' | Virus / Zaps';
-if riskchart.par>230 then label245.caption:=label245.caption+' | Parásitos / Zaps';
-if riskchart.ameo>230 then label245.caption:=label245.caption+' | Amíbas / Zaps';
-if riskchart.fdp>230 then label245.caption:=label245.caption+' | Intolerancia alimentaria / Zaps';
-if riskchart.sug>230 then label245.caption:=label245.caption+' | Regulación del azúcar / Biofeedback';
-if riskchart.ner>230 then label245.caption:=label245.caption+' | Sistema neurológico / Sarcodes';
-if riskchart.sener>230 then label245.caption:=label245.caption+' | Sistema sensorial / Sarcodes';
-if riskchart.res>230 then label245.caption:=label245.caption+' | Respiración / Sarcodes';
-if riskchart.cog>230 then label245.caption:=label245.caption+' | Cognicción / PNL';
-end;
-
-procedure TtestForm1.Hints();
-begin
-t1:=random(142);
-if t1=0  then label284.hint:='Vitamina K.' ;
-if t1=1 then label284.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label284.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label284.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label284.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label284.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label284.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label284.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label284.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label284.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label284.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label284.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label284.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label284.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label284.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label284.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label284.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label284.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label284.hint:='Arginina / Nervios, piel.';
-if t1=19 then label284.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label284.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label284.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label284.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label284.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label284.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label284.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label284.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label284.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label284.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label284.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label284.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label284.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label284.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label284.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label284.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label284.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label284.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label284.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label284.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label284.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label284.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label284.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label284.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label284.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label284.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label284.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label284.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label284.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label284.hint:='Sales en tejidos no especificados.';
-if t1=49 then label284.hint:='Acidos grasos en general.';
-if t1=50 then label284.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label284.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label284.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label284.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label284.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label284.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label284.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label284.hint:='Vitamina E.' ;
-if t1=58 then label284.hint:='Vitamina E1.'  ;
-if t1=59 then label284.hint:='Vitamina E2.' ;
-if t1=60 then label284.hint:='Vitamina E3.'  ;
-if t1=61 then label284.hint:='Vitamina K1.'  ;
-if t1=62 then label284.hint:='Vitamina K3.' ;
-if t1=63 then label284.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label284.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label284.hint:='CoQ6.' ;
-if t1=66 then label284.hint:='CoQ7.' ;
-if t1=67 then label284.hint:='CoQ8.' ;
-if t1=68 then label284.hint:='CoQ9.'  ;
-if t1=69 then label284.hint:='CoQ10.' ;
-if t1=70 then label284.hint:='Todos los CoQ.';
-if t1=71 then label284.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label284.hint:='Vitamina C.';
-if t1=73 then label284.hint:='Bioflavenoides.'  ;
-if t1=74 then label284.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label284.hint:='Acido hespárico.'  ;
-if t1=76 then label284.hint:='Tirosina.'  ;
-if t1=77 then label284.hint:='Tirosinasea.' ;
-if t1=78 then label284.hint:='Vitamina C ase.' ;
-if t1=79 then label284.hint:='Acido ascórbico.'  ;
-if t1=80 then label284.hint:='Vitamina D.' ;
-if t1=81 then label284.hint:='Vitamina D1.'  ;
-if t1=82 then label284.hint:='Vitamina D2.'  ;
-if t1=83 then label284.hint:='Vitamina D3.'  ;
-if t1=84 then label284.hint:='Vitamina D4.'  ;
-if t1=85 then label284.hint:='Vitamina A.' ;
-if t1=86 then label284.hint:='Beta carotina.'  ;
-if t1=87 then label284.hint:='Aceite de pescado.'  ;
-if t1=88 then label284.hint:='Retinol.'  ;
-if t1=89 then label284.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label284.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label284.hint:='Enzimas en general.' ;
-if t1=92 then label284.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label284.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label284.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label284.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label284.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label284.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label284.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label284.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label284.hint:='Acidos grasos en general.' ;
-if t1=101 then label284.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label284.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label284.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label284.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label284.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label284.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label284.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label284.hint:='Acidos grasos en general.' ;
-if t1=109 then label284.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label284.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label284.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label284.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label284.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label284.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label284.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label284.hint:='Enzimas generales.' ;
-if t1=117 then label284.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label284.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label284.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label284.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label284.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label284.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label284.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label284.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label284.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label284.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label284.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label284.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label284.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label284.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label284.hint:='Acidos grasos en general.' ;
-t1:=random(142);
-if t1=0  then label285.hint:='Vitamina K.' ;
-if t1=1 then label285.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label285.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label285.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label285.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label285.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label285.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label285.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label285.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label285.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label285.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label285.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label285.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label285.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label285.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label285.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label285.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label285.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label285.hint:='Arginina / Nervios, piel.';
-if t1=19 then label285.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label285.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label285.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label285.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label285.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label285.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label285.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label285.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label285.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label285.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label285.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label285.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label285.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label285.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label285.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label285.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label285.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label285.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label285.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label285.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label285.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label285.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label285.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label285.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label285.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label285.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label285.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label285.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label285.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label285.hint:='Sales en tejidos no especificados.';
-if t1=49 then label285.hint:='Acidos grasos en general.';
-if t1=50 then label285.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label285.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label285.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label285.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label285.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label285.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label285.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label285.hint:='Vitamina E.' ;
-if t1=58 then label285.hint:='Vitamina E1.'  ;
-if t1=59 then label285.hint:='Vitamina E2.' ;
-if t1=60 then label285.hint:='Vitamina E3.'  ;
-if t1=61 then label285.hint:='Vitamina K1.'  ;
-if t1=62 then label285.hint:='Vitamina K3.' ;
-if t1=63 then label285.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label285.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label285.hint:='CoQ6.' ;
-if t1=66 then label285.hint:='CoQ7.' ;
-if t1=67 then label285.hint:='CoQ8.' ;
-if t1=68 then label285.hint:='CoQ9.'  ;
-if t1=69 then label285.hint:='CoQ10.' ;
-if t1=70 then label285.hint:='Todos los CoQ.';
-if t1=71 then label285.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label285.hint:='Vitamina C.';
-if t1=73 then label285.hint:='Bioflavenoides.'  ;
-if t1=74 then label285.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label285.hint:='Acido hespárico.'  ;
-if t1=76 then label285.hint:='Tirosina.'  ;
-if t1=77 then label285.hint:='Tirosinasea.' ;
-if t1=78 then label285.hint:='Vitamina C ase.' ;
-if t1=79 then label285.hint:='Acido ascórbico.'  ;
-if t1=80 then label285.hint:='Vitamina D.' ;
-if t1=81 then label285.hint:='Vitamina D1.'  ;
-if t1=82 then label285.hint:='Vitamina D2.'  ;
-if t1=83 then label285.hint:='Vitamina D3.'  ;
-if t1=84 then label285.hint:='Vitamina D4.'  ;
-if t1=85 then label285.hint:='Vitamina A.' ;
-if t1=86 then label285.hint:='Beta carotina.'  ;
-if t1=87 then label285.hint:='Aceite de pescado.'  ;
-if t1=88 then label285.hint:='Retinol.'  ;
-if t1=89 then label285.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label285.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label285.hint:='Enzimas en general.' ;
-if t1=92 then label285.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label285.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label285.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label285.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label285.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label285.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label285.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label285.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label285.hint:='Acidos grasos en general.' ;
-if t1=101 then label285.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label285.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label285.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label285.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label285.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label285.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label285.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label285.hint:='Acidos grasos en general.' ;
-if t1=109 then label285.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label285.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label285.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label285.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label285.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label285.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label285.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label285.hint:='Enzimas generales.' ;
-if t1=117 then label285.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label285.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label285.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label285.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label285.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label285.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label285.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label285.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label285.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label285.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label285.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label285.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label285.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label285.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label285.hint:='Acidos grasos en general.' ;
-t1:=random(142);
-if t1=0  then label286.hint:='Vitamina K.' ;
-if t1=1 then label286.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label286.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label286.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label286.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label286.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label286.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label286.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label286.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label286.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label286.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label286.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label286.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label286.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label286.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label286.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label286.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label286.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label286.hint:='Arginina / Nervios, piel.';
-if t1=19 then label286.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label286.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label286.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label286.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label286.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label286.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label286.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label286.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label286.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label286.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label286.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label286.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label286.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label286.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label286.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label286.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label286.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label286.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label286.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label286.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label286.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label286.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label286.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label286.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label286.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label286.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label286.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label286.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label286.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label286.hint:='Sales en tejidos no especificados.';
-if t1=49 then label286.hint:='Acidos grasos en general.';
-if t1=50 then label286.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label286.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label286.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label286.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label286.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label286.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label286.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label286.hint:='Vitamina E.' ;
-if t1=58 then label286.hint:='Vitamina E1.'  ;
-if t1=59 then label286.hint:='Vitamina E2.' ;
-if t1=60 then label286.hint:='Vitamina E3.'  ;
-if t1=61 then label286.hint:='Vitamina K1.'  ;
-if t1=62 then label286.hint:='Vitamina K3.' ;
-if t1=63 then label286.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label286.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label286.hint:='CoQ6.' ;
-if t1=66 then label286.hint:='CoQ7.' ;
-if t1=67 then label286.hint:='CoQ8.' ;
-if t1=68 then label286.hint:='CoQ9.'  ;
-if t1=69 then label286.hint:='CoQ10.' ;
-if t1=70 then label286.hint:='Todos los CoQ.';
-if t1=71 then label286.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label286.hint:='Vitamina C.';
-if t1=73 then label286.hint:='Bioflavenoides.'  ;
-if t1=74 then label286.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label286.hint:='Acido hespárico.'  ;
-if t1=76 then label286.hint:='Tirosina.'  ;
-if t1=77 then label286.hint:='Tirosinasea.' ;
-if t1=78 then label286.hint:='Vitamina C ase.' ;
-if t1=79 then label286.hint:='Acido ascórbico.'  ;
-if t1=80 then label286.hint:='Vitamina D.' ;
-if t1=81 then label286.hint:='Vitamina D1.'  ;
-if t1=82 then label286.hint:='Vitamina D2.'  ;
-if t1=83 then label286.hint:='Vitamina D3.'  ;
-if t1=84 then label286.hint:='Vitamina D4.'  ;
-if t1=85 then label286.hint:='Vitamina A.' ;
-if t1=86 then label286.hint:='Beta carotina.'  ;
-if t1=87 then label286.hint:='Aceite de pescado.'  ;
-if t1=88 then label286.hint:='Retinol.'  ;
-if t1=89 then label286.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label286.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label286.hint:='Enzimas en general.' ;
-if t1=92 then label286.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label286.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label286.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label286.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label286.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label286.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label286.hint:='Acidos grasos en general.' ;
-if t1=101 then label286.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label286.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label286.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label286.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label286.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label286.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label286.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label286.hint:='Acidos grasos en general.' ;
-if t1=109 then label286.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label286.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label286.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label286.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label286.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label286.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label286.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label286.hint:='Enzimas generales.' ;
-if t1=117 then label286.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label286.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label286.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label286.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label286.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label286.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label286.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label286.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label286.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label286.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label286.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label286.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label286.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label286.hint:='Acidos grasos en general.' ;
-                     t1:=random(142);
-if t1=0  then label287.hint:='Vitamina K.' ;
-if t1=1 then label287.hint:='Triptofan / Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label287.hint:='Fenilalanina / Control del dolor, nervios.';
-if t1=3 then label287.hint:='Alanina / Riñones, nervios.';
-if t1=4 then label287.hint:='Asparatina / Destrucción de tejidos nerviosos.';
-if t1=5 then label287.hint:='Cisteina / Utilización de los riñones.';
-if t1=6 then label287.hint:='Leucina / Control del humor, emociones.';
-if t1=7 then label287.hint:='Isoleucina / Control emocional, nervios.';
-if t1=8 then label287.hint:='Serina / Conversión de los carbohidratos en energía.';
-if t1=9 then label287.hint:='Tryptophan / Serotonina, relajación.';
-if t1=10 then label287.hint:='Histidina / Anti inflamatorio, anti alérgico.';
-if t1=11 then label287.hint:='Metionina / Hígado, oxigenación.';
-if t1=12 then label287.hint:='Lisina / Anti herpes, lesiones, nervios.';
-if t1=13 then label287.hint:='Treonina / Producción hormonal, energía.';
-if t1=14 then label287.hint:='Tirosina / Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label287.hint:='Valina / Regulación de las células de la sangre.';
-if t1=16 then label287.hint:='Glutamina / Suple energía al cerebro.';
-if t1=17 then label287.hint:='Prolina / Desórdenes del sulfúro.';
-if t1=18 then label287.hint:='Arginina / Nervios, piel.';
-if t1=19 then label287.hint:='Acido glutamínico / Suple energía al cerebro.';
-if t1=20 then label287.hint:='Acido aspártico / Destrucción de tejidos nerviosos.';
-if t1=21 then label287.hint:='Adenosina / Circulación, energía.';
-if t1=22 then label287.hint:='Uracil / Funciones del ARN.';
-if t1=23 then label287.hint:='Adenina / Funciones del ADN y ARN.';
-if t1=24 then label287.hint:='Guanina / Funciones del ADN y ARN.';
-if t1=25 then label287.hint:='Citosina / Funciones del ADN y ARN.';
-if t1=26 then label287.hint:='Thymine / Funciones del ADN y ARN.';
-if t1=27 then label287.hint:='Calcio / Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label287.hint:='Potasio / Fatiga, nervios, energía, corazón.';
-if t1=29 then label287.hint:='Sodio / Depresión, nervios, fatiga, digestión.';
-if t1=30 then label287.hint:='Cloro / Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then label287.hint:='Magnesio / Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then label287.hint:='Hierro / Anemia, fatiga, oxígeno.';
-if t1=33 then label287.hint:='Sulfúro / Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label287.hint:='Manganeso / Afecciones nerviosas y musculares.';
-if t1=35 then label287.hint:='Cromo / Regulación del azúcar, músculos.';
-if t1=36 then label287.hint:='Zinc / Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then label287.hint:='Selenio / Desintoxicación, nervios, energía, piel.';
-if t1=38 then label287.hint:='Yodo / Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then label287.hint:='Fósforo / Funciones celulares, energía, pensamiento.';
-if t1=40 then label287.hint:='Boron / Regulación nerviosa, demencia, depresión.';
-if t1=41 then label287.hint:='Molidebno / Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then label287.hint:='Silicona / Huesos, piel, nervios.';
-if t1=43 then label287.hint:='Cobalto / Anemia, sistema inmunitario.';
-if t1=44 then label287.hint:='Litio / Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then label287.hint:='Germanio / Nervios, oxigenación, piel, energía.';
-if t1=46 then label287.hint:='Arsénico / Energía, nervios.';
-if t1=47 then label287.hint:='Digestión / Problema de absorpción.';
-if t1=48 then label287.hint:='Sales en tejidos no especificados.';
-if t1=49 then label287.hint:='Acidos grasos en general.';
-if t1=50 then label287.hint:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label287.hint:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label287.hint:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label287.hint:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label287.hint:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label287.hint:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label287.hint:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label287.hint:='Vitamina E.' ;
-if t1=58 then label287.hint:='Vitamina E1.'  ;
-if t1=59 then label287.hint:='Vitamina E2.' ;
-if t1=60 then label287.hint:='Vitamina E3.'  ;
-if t1=61 then label287.hint:='Vitamina K1.'  ;
-if t1=62 then label287.hint:='Vitamina K3.' ;
-if t1=63 then label287.hint:='Todas las vitaminas K.'  ;
-if t1=64 then label287.hint:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label287.hint:='CoQ6.' ;
-if t1=66 then label287.hint:='CoQ7.' ;
-if t1=67 then label287.hint:='CoQ8.' ;
-if t1=68 then label287.hint:='CoQ9.'  ;
-if t1=69 then label287.hint:='CoQ10.' ;
-if t1=70 then label287.hint:='Todos los CoQ.';
-if t1=71 then label287.hint:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label287.hint:='Vitamina C.';
-if t1=73 then label287.hint:='Bioflavenoides.'  ;
-if t1=74 then label287.hint:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label287.hint:='Acido hespárico.'  ;
-if t1=76 then label287.hint:='Tirosina.'  ;
-if t1=77 then label287.hint:='Tirosinasea.' ;
-if t1=78 then label287.hint:='Vitamina C ase.' ;
-if t1=79 then label287.hint:='Acido ascórbico.'  ;
-if t1=80 then label287.hint:='Vitamina D.' ;
-if t1=81 then label287.hint:='Vitamina D1.'  ;
-if t1=82 then label287.hint:='Vitamina D2.'  ;
-if t1=83 then label287.hint:='Vitamina D3.'  ;
-if t1=84 then label287.hint:='Vitamina D4.'  ;
-if t1=85 then label287.hint:='Vitamina A.' ;
-if t1=86 then label287.hint:='Beta carotina.'  ;
-if t1=87 then label287.hint:='Aceite de pescado.'  ;
-if t1=88 then label287.hint:='Retinol.'  ;
-if t1=89 then label287.hint:='Precursores de la vitamina A.'  ;
-if t1=90 then label287.hint:='Vitamina A en cartílagos.' ;
-if t1=91 then label287.hint:='Enzimas en general.' ;
-if t1=92 then label287.hint:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label287.hint:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label287.hint:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label287.hint:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label287.hint:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label287.hint:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label287.hint:='Acidos grasos en general.' ;
-if t1=101 then label287.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label287.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label287.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label287.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label287.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label287.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label287.hint:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label287.hint:='Acidos grasos en general.' ;
-if t1=109 then label287.hint:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label287.hint:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label287.hint:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label287.hint:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label287.hint:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label287.hint:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label287.hint:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label287.hint:='Enzimas generales.' ;
-if t1=117 then label287.hint:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label287.hint:='Enzimas digestivas, hidrolización.';
-if t1=119 then label287.hint:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label287.hint:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label287.hint:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label287.hint:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label287.hint:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then label287.hint:='Antimonio / Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then label287.hint:='Estaño / Nervios, músculos.';
-if t1=127 then label287.hint:='Carbón / Energía, regulación de la vida.';
-if t1=128 then label287.hint:='Vanadio / Funciones del hígado, músculos del corazón.';
-if t1=129 then label287.hint:='Aluminio / Nervios, regulación del pensamiento.';
-if t1=130 then label287.hint:='Cobre / Nervios, energía, desintoxicación.';
-if t1>130 then label287.hint:='Acidos grasos en general.' ;
-    oeg:=random(32);
-if oeg=0 then label284.hint:=label284.hint+' / Conectado con pulmones.';
-if oeg=1 then label284.hint:=label284.hint+' / Conectado con piel.';
-if oeg=2 then label284.hint:=label284.hint+' / Conectado con cerebro.';
-if oeg=3 then label284.hint:=label284.hint+' / Conectado con senos nasales.';
-if oeg=4 then label284.hint:=label284.hint+' / Conectado con estómago.';
-if oeg=5 then label284.hint:=label284.hint+' / Conectado con ojos.';
-if oeg=6 then label284.hint:=label284.hint+' / Conectado con flora intestinal.';
-if oeg=7 then label284.hint:=label284.hint+' / Conectado con pulmones.';
-if oeg=8 then label284.hint:=label284.hint+' / Conectado con estómago.';
-if oeg=9 then label284.hint:=label284.hint+' / Conectado con suprarrenales.';
-if oeg=10 then label284.hint:=label284.hint+' / Conectado con senos nasales.';
-if oeg=11 then label284.hint:=label284.hint+' / Conectado con emociones.';
-if oeg=12 then label284.hint:=label284.hint+' / Conectado con sangre.';
-if oeg=13 then label284.hint:=label284.hint+' / Conectado con sistema linfático.';
-if oeg=14 then label284.hint:=label284.hint+' / Conectado con dentadura.';
-if oeg=15 then label284.hint:=label284.hint+' / Conectado con formación reticular.';
-if oeg=16 then label284.hint:=label284.hint+' / Conectado con médula oblongata.';
-if oeg=17 then label284.hint:=label284.hint+' / Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then label284.hint:=label284.hint+' / Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then label284.hint:=label284.hint+' / Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then label284.hint:=label284.hint+' / Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then label284.hint:=label284.hint+' / Conectado con tiroides.';
-if oeg=22 then label284.hint:=label284.hint+' / Conectado con timo.';
-if oeg=23 then label284.hint:=label284.hint+' / Conectado con médula espinal.';
-if oeg=24 then label284.hint:=label284.hint+' / Conectado con sistema límbico.';
-if oeg=25 then label284.hint:=label284.hint+' / Conectado con circuitos de la memoria.';
-if oeg=26 then label284.hint:=label284.hint+' / Conectado con hipotálamo.';
-if oeg=27 then label284.hint:=label284.hint+' / Conectado con pineal.';
-if oeg=28 then label284.hint:=label284.hint+' / Conectado con pituitaria.';
-if oeg=29 then label284.hint:=label284.hint+' / Conectado con paratiroides.';
-if oeg=30 then label284.hint:=label284.hint+' / Conectado con sangre.';
-if oeg=31 then label284.hint:=label284.hint+' / Conectado con sistema linfático.';
-if oeg=32 then label284.hint:=label284.hint+' / Conectado con dentadura.';
-   oeg:=random(32);
-if oeg=0 then label285.hint:=label285.hint+' / Conectado con pulmones.';
-if oeg=1 then label285.hint:=label285.hint+' / Conectado con piel.';
-if oeg=2 then label285.hint:=label285.hint+' / Conectado con cerebro.';
-if oeg=3 then label285.hint:=label285.hint+' / Conectado con senos nasales.';
-if oeg=4 then label285.hint:=label285.hint+' / Conectado con estómago.';
-if oeg=5 then label285.hint:=label285.hint+' / Conectado con ojos.';
-if oeg=6 then label285.hint:=label285.hint+' / Conectado con flora intestinal.';
-if oeg=7 then label285.hint:=label285.hint+' / Conectado con pulmones.';
-if oeg=8 then label285.hint:=label285.hint+' / Conectado con estómago.';
-if oeg=9 then label285.hint:=label285.hint+' / Conectado con suprarrenales.';
-if oeg=10 then label285.hint:=label285.hint+' / Conectado con senos nasales.';
-if oeg=11 then label285.hint:=label285.hint+' / Conectado con emociones.';
-if oeg=12 then label285.hint:=label285.hint+' / Conectado con sangre.';
-if oeg=13 then label285.hint:=label285.hint+' / Conectado con sistema linfático.';
-if oeg=14 then label285.hint:=label285.hint+' / Conectado con dentadura.';
-if oeg=15 then label285.hint:=label285.hint+' / Conectado con formación reticular.';
-if oeg=16 then label285.hint:=label285.hint+' / Conectado con médula oblongata.';
-if oeg=17 then label285.hint:=label285.hint+' / Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then label285.hint:=label285.hint+' / Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then label285.hint:=label285.hint+' / Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then label285.hint:=label285.hint+' / Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then label285.hint:=label285.hint+' / Conectado con tiroides.';
-if oeg=22 then label285.hint:=label285.hint+' / Conectado con timo.';
-if oeg=23 then label285.hint:=label285.hint+' / Conectado con médula espinal.';
-if oeg=24 then label285.hint:=label285.hint+' / Conectado con sistema límbico.';
-if oeg=25 then label285.hint:=label285.hint+' / Conectado con circuitos de la memoria.';
-if oeg=26 then label285.hint:=label285.hint+' / Conectado con hipotálamo.';
-if oeg=27 then label285.hint:=label285.hint+' / Conectado con pineal.';
-if oeg=28 then label285.hint:=label285.hint+' / Conectado con pituitaria.';
-if oeg=29 then label285.hint:=label285.hint+' / Conectado con paratiroides.';
-if oeg=30 then label285.hint:=label285.hint+' / Conectado con sangre.';
-if oeg=31 then label285.hint:=label285.hint+' / Conectado con sistema linfático.';
-if oeg=32 then label285.hint:=label285.hint+' / Conectado con dentadura.';
-   oeg:=random(32);
-if oeg=0 then label286.hint:=label286.hint+' / Conectado con pulmones.';
-if oeg=1 then label286.hint:=label286.hint+' / Conectado con piel.';
-if oeg=2 then label286.hint:=label286.hint+' / Conectado con cerebro.';
-if oeg=3 then label286.hint:=label286.hint+' / Conectado con senos nasales.';
-if oeg=4 then label286.hint:=label286.hint+' / Conectado con estómago.';
-if oeg=5 then label286.hint:=label286.hint+' / Conectado con ojos.';
-if oeg=6 then label286.hint:=label286.hint+' / Conectado con flora intestinal.';
-if oeg=7 then label286.hint:=label286.hint+' / Conectado con pulmones.';
-if oeg=8 then label286.hint:=label286.hint+' / Conectado con estómago.';
-if oeg=9 then label286.hint:=label286.hint+' / Conectado con suprarrenales.';
-if oeg=10 then label286.hint:=label286.hint+' / Conectado con senos nasales.';
-if oeg=11 then label286.hint:=label286.hint+' / Conectado con emociones.';
-if oeg=12 then label286.hint:=label286.hint+' / Conectado con sangre.';
-if oeg=13 then label286.hint:=label286.hint+' / Conectado con sistema linfático.';
-if oeg=14 then label286.hint:=label286.hint+' / Conectado con dentadura.';
-if oeg=15 then label286.hint:=label286.hint+' / Conectado con formación reticular.';
-if oeg=16 then label286.hint:=label286.hint+' / Conectado con médula oblongata.';
-if oeg=17 then label286.hint:=label286.hint+' / Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then label286.hint:=label286.hint+' / Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then label286.hint:=label286.hint+' / Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then label286.hint:=label286.hint+' / Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then label286.hint:=label286.hint+' / Conectado con tiroides.';
-if oeg=22 then label286.hint:=label286.hint+' / Conectado con timo.';
-if oeg=23 then label286.hint:=label286.hint+' / Conectado con médula espinal.';
-if oeg=24 then label286.hint:=label286.hint+' / Conectado con sistema límbico.';
-if oeg=25 then label286.hint:=label286.hint+' / Conectado con circuitos de la memoria.';
-if oeg=26 then label286.hint:=label286.hint+' / Conectado con hipotálamo.';
-if oeg=27 then label286.hint:=label286.hint+' / Conectado con pineal.';
-if oeg=28 then label286.hint:=label286.hint+' / Conectado con pituitaria.';
-if oeg=29 then label286.hint:=label286.hint+' / Conectado con paratiroides.';
-if oeg=30 then label286.hint:=label286.hint+' / Conectado con sangre.';
-if oeg=31 then label286.hint:=label286.hint+' / Conectado con sistema linfático.';
-if oeg=32 then label286.hint:=label286.hint+' / Conectado con dentadura.';
-   oeg:=random(32);
-if oeg=0 then label287.hint:=label287.hint+' / Conectado con pulmones.';
-if oeg=1 then label287.hint:=label287.hint+' / Conectado con piel.';
-if oeg=2 then label287.hint:=label287.hint+' / Conectado con cerebro.';
-if oeg=3 then label287.hint:=label287.hint+' / Conectado con senos nasales.';
-if oeg=4 then label287.hint:=label287.hint+' / Conectado con estómago.';
-if oeg=5 then label287.hint:=label287.hint+' / Conectado con ojos.';
-if oeg=6 then label287.hint:=label287.hint+' / Conectado con flora intestinal.';
-if oeg=7 then label287.hint:=label287.hint+' / Conectado con pulmones.';
-if oeg=8 then label287.hint:=label287.hint+' / Conectado con estómago.';
-if oeg=9 then label287.hint:=label287.hint+' / Conectado con suprarrenales.';
-if oeg=10 then label287.hint:=label287.hint+' / Conectado con senos nasales.';
-if oeg=11 then label287.hint:=label287.hint+' / Conectado con emociones.';
-if oeg=12 then label287.hint:=label287.hint+' / Conectado con sangre.';
-if oeg=13 then label287.hint:=label287.hint+' / Conectado con sistema linfático.';
-if oeg=14 then label287.hint:=label287.hint+' / Conectado con dentadura.';
-if oeg=15 then label287.hint:=label287.hint+' / Conectado con formación reticular.';
-if oeg=16 then label287.hint:=label287.hint+' / Conectado con médula oblongata.';
-if oeg=17 then label287.hint:=label287.hint+' / Conectado con lóbulo frontal del cerebro.';
-if oeg=18 then label287.hint:=label287.hint+' / Conectado con lóbulo parietal del cerebro.';
-if oeg=19 then label287.hint:=label287.hint+' / Conectado con lóbulo occipital del cerebro.';
-if oeg=20 then label287.hint:=label287.hint+' / Conectado con lóbulo temporal del cerebro.';
-if oeg=21 then label287.hint:=label287.hint+' / Conectado con tiroides.';
-if oeg=22 then label287.hint:=label287.hint+' / Conectado con timo.';
-if oeg=23 then label287.hint:=label287.hint+' / Conectado con médula espinal.';
-if oeg=24 then label287.hint:=label287.hint+' / Conectado con sistema límbico.';
-if oeg=25 then label287.hint:=label287.hint+' / Conectado con circuitos de la memoria.';
-if oeg=26 then label287.hint:=label287.hint+' / Conectado con hipotálamo.';
-if oeg=27 then label287.hint:=label287.hint+' / Conectado con pineal.';
-if oeg=28 then label287.hint:=label287.hint+' / Conectado con pituitaria.';
-if oeg=29 then label287.hint:=label287.hint+' / Conectado con paratiroides.';
-if oeg=30 then label287.hint:=label287.hint+' / Conectado con sangre.';
-if oeg=31 then label287.hint:=label287.hint+' / Conectado con sistema linfático.';
-if oeg=32 then label287.hint:=label287.hint+' / Conectado con dentadura.';
+BCausas.Click;
 end;
 
 procedure TtestForm1.Panel77Click(Sender: TObject);
@@ -52376,7 +44918,7 @@ GProgreso.MaxValue   = contador;
    DBZapsD.Refresh;
   DM.Conscida.enablecontrols;
   FMain.shaping:=random(105);
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
   MyChrono2.Stop;
   ConscidaGrid.enabled := true;
   if ((conscidagrid.DataSource).dataset is Tquery) then
@@ -52472,381 +45014,6 @@ DeActivateQuantumIndeterminancyField1.Enabled:=True;
 label303.caption:=RelajacinyEnerga1.Caption;
 Label303.enabled := true;
 end;
-
-procedure TtestForm1.AfirmacionesPositivas();
-begin
-   gama := Random(110);
-         if gama < 10 then
-         label284.caption :='Mi pareja es una persona maravillosa, cariñosa y espiritual.';
-         if gama = 11 then
-         label284.caption :='Dejo que el amor de mi corazón sane el pasado, y soy libre.';
-         if gama = 12  then
-         label284.caption :='Estoy a salvo en el Universo; la Vida me ama y me apoya.';
-         if gama = 13  then
-         label284.caption :='Soy una persona maravillosa. Elijo amarme y disfrutar conmigo.';
-         if gama = 14  then
-         label284.caption :='Hoy me divierto y comparto mi alegría con otras personas que quieren divertirse.';
-         if gama = 15  then
-         label284.caption :='Juego con mi niño interior y los dos nos lo pasamos divinamente.';;
-         if gama = 16  then
-         label284.caption :='Mi vida esta comenzando y me gusta. Soy una persona nueva en un siglo nuevo.';
-         if gama = 17  then
-         label284.caption :='Me merezco lo mejor, y lo acepto con alegría, placer y gratitud.';
-         if gama = 18  then
-         label284.caption :='Soy una persona independiente y autosuficiente que lleva las riendas de su vida.';
-         if gama = 19  then
-         label284.caption :='Me gusta ser una persona organizada y saber que lo que hago dura.';
-         if gama = 20  then
-         label284.caption :='Creo paz y armonía en mi mente con pensamientos positivos.';
-         if gama = 21  then
-         label284.caption := 'Me siento en paz con mi sexualidad y con la de los demás.';
-         if gama = 22  then
-         label284.caption := 'Mis años de madurez pueden ser los más gratificantes y luminosos de toda mi vida.';
-         if gama = 23  then
-         label284.caption := 'En lugar de envejecer, simplemente continúo creciendo.';
-         if gama = 24  then
-         label284.caption := 'Mis amigos y yo nos apoyamos de un modo positivo.';
-         if gama = 25  then
-         label284.caption := 'Si comienzo a ahorrar, aunque sea muy poco, puedo avanzar hacia la riqueza. ';
-         if gama = 26  then
-         label284.caption := 'Me merezco prosperar. Mis ingresos aumentan constantemente.';
-         if gama = 27  then
-         label284.caption := 'Dejo marchar el pasado y perdono a todo el mundo.';
-         if gama = 28  then
-         label284.caption := 'Acabo con toda critica. Con ella jamás se consigue nada positivo.';
-         if gama = 29  then
-         label284.caption := 'Dios, la Vida y el Universo me aman y me aceptan tal como soy, no me juzgan.';
-         if gama = 30  then
-         label284.caption := 'No me critico. Tampoco critico a los demás.';
-         if gama = 31  then
-         label284.caption := 'Me amo y me apruebo. Me acepto tal como soy.';
-         if gama = 32  then
-         label284.caption := 'Amo, valoro y apoyo a todas las personas de mi vida.';
-         if gama = 33  then
-         label284.caption := 'Amo la naturaleza y estoy en armonía con ella, convierto la tierra en un fértil jardín.';
-         if gama = 34  then
-         label284.caption := 'Procuro que mi relación con la naturaleza sea amorosa y armoniosa.';
-         if gama = 35  then
-         label284.caption := 'La alegría y la felicidad están en el centro de mi mundo.';
-         if gama = 36  then
-         label284.caption := 'Estoy en armonía con la naturaleza. La cuido y la protejo.';
-         if gama = 37  then
-         label284.caption := 'Mi mente esta siempre conectada con la Sabiduría Divina.';
-         if gama = 38  then
-         label284.caption := 'Todos estamos aquí en la tierra para aprender y crecer.';
-         if gama = 39  then
-         label284.caption := 'Soy amable conmigo y con los demás mientras estamos aprendiendo.';
-         if gama = 40  then
-         label284.caption := 'En lugar de juzgar, trato de comprender. ';
-         if gama = 41  then
-         label284.caption := 'Me trato con amabilidad y comprensión, y lo mismo hago con los demás.';
-         if gama = 42  then
-         label284.caption := 'Conecto con ese tesoro que hay dentro de mí y lo utilizo.';
-         if gama = 43  then
-         label284.caption := 'Dejo de juzgarme. Dejo de juzgar a los demás.';
-         if gama = 44  then
-         label284.caption := 'Me aliento a mí mismo y a los demás, y la vida nos alienta de modos muy especiales.';
-         if gama = 45  then
-         label284.caption := 'Hago uso de los maravillosos recursos que hay en mi interior.';
-         if gama = 46  then
-         label284.caption := 'Le digo a mis seres queridos que los amo. ';
-         if gama = 47  then
-         label284.caption := 'Hago un rato de compañía a una persona mayor que vive sola.';
-         if gama = 48  then
-         label284.caption := 'Los actos de bondad me hacen sentir bien.';
-         if gama = 49  then
-         label284.caption := 'Trato a todo el mundo con amabilidad y cariño.';
-         if gama = 50  then
-         label284.caption := 'Pase lo que pase, sé que soy capaz de afrontarlo.';
-         if gama = 51  then
-         label284.caption := 'Hago una lista de afirmaciones que reflejan mi filosofía positiva de la vida.';
-         if gama = 52  then
-         label284.caption := 'Soy un universo seguro. Cambio los pensamientos que no me apoyan ni me nutren.';
-         if gama = 53  then
-         label284.caption := 'Me trato con mucho cariño, con amor y humor. Disfruta de mi vida y la lleno de risas.';
-         if gama = 54  then
-         label284.caption := 'La risa constituye una parte muy importante de la evolución de mi alma.';
-         if gama = 55  then
-         label284.caption := 'Lleno mi mente de pensamientos positivos, creativos y amorosos.';
-         if gama = 56  then
-         label284.caption := 'Hago lo que me gusta y me llegará el dinero. Amo lo que hago y me llega el dinero.';
-         if gama = 57  then
-         label284.caption := 'Tengo derecho a ganarme bien la vida y disfrutar haciéndolo.';
-         if gama = 58  then
-         label284.caption := 'Busco la manera de hacer algo que me gusta.';
-         if gama = 59  then
-         label284.caption := 'La vida me muestra el camino hacia la prosperidad y la abundancia.';
-         if gama = 60  then
-         label284.caption := 'En todo momento recibo la guía divina.';
-         if gama = 61  then
-         label284.caption := 'Contribuyo a sanar la sociedad de un modo creativo y amoroso.';
-         if gama = 62  then
-         label284.caption := 'Sigo con constancia mi camino, único y especial.';
-         if gama = 63  then
-         label284.caption := 'Siento que soy una persona creativa y poderosa. ';
-         if gama = 64  then
-         label284.caption := 'Me respeto a mí mismo y respeto también a los demás.';
-         if gama = 65  then
-         label284.caption := 'Al ordenar mi hogar, ordeno también mi mente.';
-         if gama = 66  then
-         label284.caption := 'Tenga la edad que tenga, hago que el resto de mi vida sea un tiempo maravilloso.';
-         if gama = 67  then
-         label284.caption := 'Voy convirtiendo en realidad todo mi gran potencial.';
-         if gama = 68  then
-         label284.caption := 'Inspiro la plenitud y la riqueza de la vida.';
-         if gama = 69  then
-         label284.caption := 'Conecto con mi sabiduría interna y la sosobra se convierte en paz.';
-         if gama = 70  then
-         label284.caption := 'Siempre estoy a salvo.  Es solo un cambio.';
-         if gama = 71  then
-         label284.caption := 'Cambio todas las reglas y me creo una fantástica vida propia.';
-         if gama = 72  then
-         label284.caption := 'Vivo el amor, la luz y la alegría sin limites.';
-         if gama = 73  then
-         label284.caption := 'Irradio energía sanadora hacia todo el mundo.';
-         if gama = 73  then
-         label284.caption := 'Me abro para experimentar todo lo bueno que me ofrezca la vida.';
-         if gama = 74  then
-         label284.caption := 'Gozo de la vida y aprendo cada día las lecciones que me enseña.';
-         if gama = 75  then
-         label284.caption := 'Vivo intensamente cada uno de los instantes que se me ofrecen.';
-          if gama = 76  then
-         label284.caption := 'Recuerdo que el poder está siempre en el momento presente.';
-          if gama = 77  then
-         label284.caption := 'La vida siempre es buena.  Todo está bien en mi mundo.';
-          if gama = 78  then
-         label284.caption := 'El amor me rodea, ahora y para siempre.';
-          if gama = 79  then
-         label284.caption := 'Disuelvo y dejo marchar los viejos agravios y penas.';
-          if gama = 80  then
-         label284.caption := 'Mi vida es una magnifica aventura.';
-          if gama = 81  then
-         label284.caption := 'Tengo en mi interior una guía y una Sabiduría Divinas. Nunca estoy solo.';
-          if gama = 82  then
-         label284.caption := 'Disfruto de mi yo único y especial.';
-          if gama = 83  then
-         label284.caption := 'La Divinidad siempre está a mi lado, amándome y protegiéndome.';
-          if gama = 84  then
-         label284.caption := 'Cada persona es una joya excepcional, con dotes y capacidades únicas.';
-          if gama = 85  then
-         label284.caption := 'Visualizo un mundo de paz y abundancia.';
-          if gama = 86  then
-         label284.caption := 'Siento la armonía y la unión entre las gentes y contribuyo a lograrlas.';
-          if gama = 87  then
-         label284.caption := 'Hoy siento que algo me lleva hacia mi mayor bien y lo acepto con gratitud.';
-          if gama = 88  then
-         label284.caption := 'Abro mi corazón y dejo fluir libremente el amor y la alegría.';
-          if gama = 89  then
-         label284.caption := 'Soy una persona organizada, eficiente y abierta a las ideas nuevas y creativas.';
-          if gama = 90  then
-         label284.caption := 'Sólo deseo aquello que es para mi mayor bien.';
-          if gama = 91  then
-         label284.caption := 'Renuevo mis pensamientos y mi vida y los lleno de amor y serenidad.';
-          if gama = 92  then
-         label284.caption := 'Sólo puedo recibir aquello para lo cual mi conciencia está receptiva.';
-          if gama = 93  then
-         label284.caption := 'Hoy me lo paso muy bien.';
-          if gama = 94  then
-         label284.caption := 'La mayor razón de sufrimiento es el deseo de que las cosas sean suficientes.';
-          if gama = 95  then
-         label284.caption := 'Qué fabuloso es sentirse bien.';
-          if gama = 96  then
-         label284.caption := 'Me trato como a un ser muy amado.';
-          if gama = 97  then
-         label284.caption := 'Siempre puedo expandir mi conciencia.';
-          if gama = 98  then
-         label284.caption := 'Durante todo el día algo me lleva a tomar las decisiones correctas.';
-          if gama = 99  then
-         label284.caption := 'Me resulta fácil dar amor a los demás.';
-          if gama > 99  then
-         label284.caption := 'Formo una unidad con el Poder y la Sabiduría del universo.';
-
-         if gama < 10 then
-         label289.caption := 'Mi cuerpo, mi mente y mi espíritu están sanos y llenos de una energía ilimitada.';
-         if gama = 11 then
-         label289.caption := 'Los quehaceres domésticos son parte de la vida y los hago con soltura y rapidez.';
-         if gama = 12  then
-         label289.caption := 'Hoy omito alguna de mis rutinas para hacer algo diferente.';
-         if gama = 13  then
-         label289.caption := 'Mientras más cosas agradezco, más tengo para agradecer.';
-         if gama = 14  then
-         label289.caption := 'No se puede amar y odiar al mismo tiempo. Contribuyo a crear un mundo amoroso.';
-         if gama = 15  then
-         label289.caption := 'Ocurra lo que ocurra, sé que puedo manejarlo. Soy una persona muy capaz.';
-         if gama = 16  then
-         label289.caption := 'Disfruto de mi buena salud. Amo mi cuerpo y mi cuerpo me ama.';
-         if gama = 17  then
-         label289.caption := 'Tengo una fuerte conexión espiritual con la vida. El Universo me ama y me respalda.';
-         if gama = 18  then
-         label289.caption := 'Mis padres ya no tienen ningún poder sobre mí. Soy libre de vivir mi vida.';
-         if gama = 19  then
-         label289.caption := 'Me estoy creando un buen futuro económico. Mi dinero aumenta día a día.';
-         if gama = 20  then
-         label289.caption := 'Ofrezco aliento a los demás y los ayudo a ser lo mejor que pueden ser.';
-         if gama = 21  then
-         label289.caption := 'Exploro nuevas profundidades en mi interior y descubro nuevos tesoros.';
-         if gama = 22  then
-         label289.caption := 'Es una experiencia maravillosa vivir en esta época. Me entusiasma estar aquí.';
-         if gama = 23  then
-         label289.caption := 'Agradezco profundamente al Universo que me haya dado esta increíble vida.';
-         if gama = 24  then
-         label289.caption := 'Es un privilegio producir nuevas experiencias sólo con el pensamiento.';
-         if gama = 25  then
-         label289.caption := 'Abrazo la vida y me abrazo a mí con amor y comprensión.';
-         if gama = 26  then
-         label289.caption := 'Cada día elogio a alguien; nunca están de más los elogios.';
-         if gama = 27  then
-         label289.caption := 'Me libero de la necesidad de acusar o culpar, a otros y a mí; culpar es un acto inútil.';
-         if gama = 28  then
-         label289.caption := 'Acepto cada día tal como se presenta y el amor en todo momento.';
-         if gama = 29  then
-         label289.caption := 'Me libero y libero a los demás para hacer un perfecto viaje de aprendizaje.';
-         if gama = 30  then
-         label289.caption := 'Paso de las adicciones y me libero.';
-         if gama = 31  then
-         label289.caption := 'Contribuyo a la armonía que tenemos en el trabajo. Todos nos llevamos muy bien.';
-         if gama = 32  then
-         label289.caption := 'Me encanta despertar por la mañana y saludar al glorioso nuevo día.';
-         if gama = 33  then
-         label289.caption := 'Este año he explorado y expresado mi espectacular yo interior.';
-         if gama = 34  then
-         label289.caption := 'Mi vida rebosa de libertad y tranquilidad.';
-         if gama = 35  then
-         label289.caption := 'Este es un mes fabuloso para hacer ejercicio; mantengo en movimiento mi cuerpo.';
-         if gama = 36  then
-         label289.caption := 'Cada día me siento nacer de nuevo en este sagrado planeta.';
-         if gama = 37  then
-         label289.caption := 'Todos los conflictos se resuelven y todo esta bien en mi vida.';
-         if gama = 38  then
-         label289.caption := 'Todo lo hago lo mejor posible. Cada día me resulta más fácil.';
-         if gama = 39  then
-         label289.caption := 'Confío en mi intuición. Todo esta bien en mi mundo, ahora y siempre.';
-         if gama = 40  then
-         label289.caption := 'Me encanta llegar a casa.  Experiencias placenteras llenan las habitaciones.';
-         if gama = 41  then
-         label289.caption := 'Celebro mi existencia especial aceptándome tal como soy.';
-         if gama = 42  then
-         label289.caption := 'Mis familiares y amigos intercambian conmigo regalos del aprecio y el amor.';
-         if gama = 43  then
-         label289.caption := 'Soy un regalo de amor dejado en mi mundo.';
-         if gama = 44  then
-         label289.caption := 'Recibo bendiciones que superan mis más acariciados sueños.';
-         if gama = 45  then
-         label289.caption := 'Llevo las riendas de mis finanzas, mi salud y mi futuro.';
-         if gama = 46  then
-         label289.caption := 'Todas las respuestas a todas las preguntas de mi vida las tengo en mi interior.';
-         if gama = 47  then
-         label289.caption := 'Ayudo a crear un mundo seguro creando armonía con mis pensamientos.';
-         if gama = 48  then
-         label289.caption := 'Aprendo nuevas formas de vivir y cambio mi vida.';
-         if gama = 49  then
-         label289.caption := 'Mi vida esta llena de amor y respeto.';
-         if gama = 50  then
-         label289.caption := 'Creo paz en mi mente, y mi cuerpo la refleja con una salud perfecta.';
-         if gama = 51  then
-         label289.caption := 'Me creo un conjunto de creencias que me apoyan y me nutren.';
-         if gama = 52  then
-         label289.caption := 'Me nutro con pensamientos positivos, que me llenen de paz y alegría.';
-         if gama = 53  then
-         label289.caption := 'Mantengo ágiles y flexibles mi mente y mi cuerpo hasta el último día de mi vida.';
-         if gama = 54  then
-         label289.caption := 'Mis creencias espirituales me apoyan y me reconfortan.';
-         if gama = 55  then
-         label289.caption := 'Enseño a mis hijos a respetarse a sí mismos y respetar a los demás.';
-         if gama = 56  then
-         label289.caption := 'Siempre encuentro tiempo para expresar mi creatividad.';
-         if gama = 57  then
-         label289.caption := 'Me alimento de un modo sano, y hago ejercicio.';
-         if gama = 58  then
-         label289.caption := 'Amo y respeto mi cuerpo y lo cuido con cariño.';
-         if gama = 59  then
-         label289.caption := 'Soy libre de elegir mi camino espiritual, que puede tener que ver o no con la religión.';
-         if gama = 60  then
-         label289.caption := 'Los momentos de meditación u oración son instantes especiales de mi vida.';
-         if gama = 61  then
-         label289.caption := 'Me amo y disfruto de mi propia compañía.';
-         if gama = 62  then
-         label289.caption := 'Me concentro en las bendiciones que recibo y las agradezco.';
-         if gama = 63  then
-         label289.caption := 'Soy una persona poderosa y digna de respeto.';
-         if gama = 64  then
-         label289.caption := 'Elijo amarme y apreciarme en todo momento.';
-         if gama = 65  then
-         label289.caption := 'Considero un regalo mi tiempo en soledad, en mi propia compañía.';
-         if gama = 66  then
-         label289.caption := 'Bendigo mi trabajo con amor. Me satisface profundamente.';
-         if gama = 67  then
-         label289.caption := 'Es mi vida. La vivo como realmente deseo.';
-         if gama = 68  then
-         label289.caption := 'El universo me proporciona todo lo que deseo y necesito.';
-         if gama = 69  then
-         label289.caption := 'Me construyo un mañana lo más sano, brillante y dichoso que pueda.';
-         if gama = 70  then
-         label289.caption := 'Mi vida y mi corazón rebosan de amor.';
-         if gama = 71  then
-         label289.caption := 'Me siento en silencio y quietud y llevo toda mi atención hacia adentro.';
-         if gama = 72  then
-         label289.caption := 'Me visualizo en el futuro sintiendo todavía más alegría y felicidad.';
-         if gama = 73  then
-         label289.caption := 'Encaro con sentido del humor todas las experiencias de mi vida.';
-         if gama = 73  then
-         label289.caption := 'Veo ante mí un futuro plenamente feliz y dichoso.';
-         if gama = 74  then
-         label289.caption := 'Es esencial para mi bienestar que me ame y me aprecie en todo momento.';
-         if gama = 75  then
-         label289.caption := 'Amar a mi cuerpo es importante en cualquier fase de la vida.';
-          if gama = 76  then
-         label289.caption := 'Aprendo rápido y sin esfuerzo; soy mucho más inteligente de lo que pensaba.';
-          if gama = 77  then
-         label289.caption := 'Estoy a salvo; esto es solo un cambio. El cambio es normal y natural.';
-          if gama = 78  then
-         label289.caption := 'Mi futuro es esplendoroso y nuevo.  Espero con ilusión el mañana.';
-          if gama = 79  then
-         label289.caption := 'Llevo una vida llena de amor, dicha, paz y prosperidad.';
-          if gama = 80  then
-         label289.caption := 'Amándome yo enseño a mis hijos a amarse y respetarse a sí mismos.';
-          if gama = 81  then
-         label289.caption := 'Soy una persona robusta, fuerte y sana, enamorada de la Vida.';
-          if gama = 82  then
-         label289.caption := 'Tengo poder para triunfar.  Confío en mi mismo, confío en mi intuición.';
-          if gama = 83  then
-         label289.caption := 'Estoy dispuesto a tener éxito aunque suponga agradar a mis padres.';
-          if gama = 84  then
-         label289.caption := 'Me quiero en presencia de los demás. ';
-          if gama = 85  then
-         label289.caption := 'Ahora soy la persona que siempre quise ser.';
-          if gama = 86  then
-         label289.caption := 'Mi presencia es naturalmente agradable para mí y para los demás.';
-          if gama = 87  then
-         label289.caption := 'La gente está a salvo en mi presencia y no necesita mi protección.';
-          if gama = 88  then
-         label289.caption := 'Mi placer complace a los demás.';
-          if gama = 89  then
-         label289.caption := 'Mi vitalidad es una fuerza curadora del planeta.';
-          if gama = 90  then
-         label289.caption := 'Soy inocente.  Me perdono a mi mismo por pretender ser culpable.';
-          if gama = 91  then
-         label289.caption := 'Merezco ser feliz.  Yo ahora me acepto tal y como soy.';
-          if gama = 92  then
-         label289.caption := 'Soy una buena persona sienta lo que sienta. ';
-          if gama = 93  then
-         label289.caption := 'Tengo derecho a sentir lo que siento. ';
-          if gama = 94  then
-         label289.caption := 'Tengo todo lo que necesito para conseguir todo lo que quiero.';
-          if gama = 95  then
-         label289.caption := 'Ahora reafirmo todo mi poder personal.';
-          if gama = 96  then
-         label289.caption := 'Soy bastante, tengo bastante, hago bastante.';
-          if gama = 97  then
-         label289.caption := 'Merezco relaciones divertidas, fáciles y que me apoyen.';
-          if gama = 98  then
-         label289.caption := 'Mi cuerpo es un lugar seguro, cómodo y placentero donde estar.';
-          if gama = 99  then
-         label289.caption := 'Es bueno para los demás compartir mis sentimientos.';
-          if gama > 99  then
-         label289.caption := 'Es seguro para mí compartir mis sentimientos.';
-         end;
-
 
 procedure TtestForm1.IContinuarClick(Sender: TObject);
 var
@@ -53019,7 +45186,7 @@ begin
     checkbox70.caption:=fquitaCorrected(checkbox70);
     checkbox71.caption:=fquitaCorrected(checkbox71);
     vsale := false;
-    DM.Bitacora('Carga  Terapias desatendidas');
+    DM.Bitacora('Carga Terapias desatendidas');
     Panel16.visible:=true;
     Pdesatendidas();
 end;
@@ -53058,7 +45225,7 @@ repeat
         l:=0;
            SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 //          ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 7,
-           ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), tiempo,
+           ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 contador := contador + 1;
 GProgreso.Progress:=contador;
@@ -53075,7 +45242,7 @@ GProgreso.MaxValue   = contador;
    DBZapsD.Refresh;
   DM.Conscida.enablecontrols;
   FMain.shaping:=random(105);
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
   MyChrono2.Stop;
   ConscidaGrid.enabled := true;
   if ((conscidagrid.DataSource).dataset is Tquery) then
@@ -53145,7 +45312,7 @@ end;
 procedure TtestForm1.Podologia1Click(Sender: TObject);
 begin
  Application.CreateForm(Tnatdiag1, natdiag1);
- Natdiag1.Caption := '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinámica Cuántica ::: Reflexología Podal :::';
+ Natdiag1.Caption := '::: gENiO® iOS ::: Reflexología Podal :::';
 natdiag1.PPodologia.Visible := True;
  natdiag1.showmodal;
  natdiag1.Free;
@@ -53163,8 +45330,7 @@ MyChrono2.Start;
 Panel2.Top:=28;
 Panel2.Height:=277;
 Panel2.Visible := True;
-Label208.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-//LRectificado.Caption := 'Rectificado |';
+Label208.Caption := 'Corrigiendo reacción irregular de hipoactividad'+'...';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -53179,7 +45345,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Panel2.Visible := False;
 MyChrono2.Stop;
 end ;
@@ -53191,8 +45357,7 @@ Panel2.Height:=277;
 Panel2.Visible := True;
 MyChrono2.Start;
 Panel2.Visible := True;
-Label208.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-//LRectificado.Caption := 'Rectificado |';
+Label208.Caption := 'Corrigiendo reacción irregular de hiperactividad'+'...';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -53207,7 +45372,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Panel2.Visible := False;
 MyChrono2.Stop;
 end;
@@ -53239,7 +45404,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Button8.caption:='&Equilibrar';
 zap:=1;
 rectif1:= strtoint2(LReactancia.caption)+strtoint2(LReactancia.caption)+ (8*strtoint2(LDiferencia.caption));
@@ -53342,8 +45507,8 @@ button54.visible:=true;
 DBMemo_Name.DataSource:=ConscidaGrid.DataSource;
 DBMemo_Name.visible:=true;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 TBuffers.Enabled := False;
 CWidth();
 MyChrono2.Stop;
@@ -53392,61 +45557,360 @@ end;
 procedure TtestForm1.DosisPrescripcion();
 begin
 if reaction3>95 then Begin
-label259.caption:='No es necesario prescribir el ítem.';
-label260.caption:='No es necesario prescribir el ítem.';
+label259.caption:=' No es necesario prescribir el ítem.';
+label260.caption:=' No es necesario prescribir el ítem.';
 end;
 if (reaction3>84) and (reaction3<96) then Begin
-label259.caption:='Prescribir el ítem en dosis muy bajas.';
+label259.caption:=' Prescribir el ítem en dosis muy bajas.';
 oeg := Random(6);
-if oeg<2 then label260.caption:='Prescribir el ítem por un periodo muy corto. (3-7 días).';
-if oeg=2 then label260.caption:='Prescribir el ítem por un periodo corto. (8-15 dias).';
-if oeg=3 then label260.caption:='Prescribir el ítem por un periodo mediano. (2-4 semanas).';
-if oeg=4 then label260.caption:='Prescribir el ítem por un periodo largo. (1-3 meses).';
-if oeg>4 then label260.caption:='Prescribir el ítem por un periodo extendido. (3-6 meses).';
+if oeg<2 then label260.caption:=' Prescribir el ítem por un periodo'+' muy corto. (3-7 días).';
+if oeg=2 then label260.caption:=' Prescribir el ítem por un periodo'+' corto. (8-15 dias).';
+if oeg=3 then label260.caption:=' Prescribir el ítem por un periodo'+' mediano. (2-4 semanas).';
+if oeg=4 then label260.caption:=' Prescribir el ítem por un periodo'+' largo. (1-3 meses).';
+if oeg>4 then label260.caption:=' Prescribir el ítem por un periodo'+' extendido. (3-6 meses).';
 end;
 if (reaction3>69) and (reaction3<85) then Begin
-label259.caption:='Prescribir el ítem en dosis bajas.';
+label259.caption:=' Prescribir el ítem en dosis bajas.';
 oeg := Random(6);
-if oeg<2 then label260.caption:='Prescribir el ítem por un periodo muy corto. (3-7 días).';
-if oeg=2 then label260.caption:='Prescribir el ítem por un periodo corto. (8-15 dias).';
-if oeg=3 then label260.caption:='Prescribir el ítem por un periodo mediano. (2-4 semanas).';
-if oeg=4 then label260.caption:='Prescribir el ítem por un periodo largo. (1-3 meses).';
-if oeg>4 then label260.caption:='Prescribir el ítem por un periodo extendido. (3-6 meses).';
+if oeg<2 then label260.caption:=' Prescribir el ítem por un periodo'+' muy corto. (3-7 días).';
+if oeg=2 then label260.caption:=' Prescribir el ítem por un periodo'+' corto. (8-15 dias).';
+if oeg=3 then label260.caption:=' Prescribir el ítem por un periodo'+' mediano. (2-4 semanas).';
+if oeg=4 then label260.caption:=' Prescribir el ítem por un periodo'+' largo. (1-3 meses).';
+if oeg>4 then label260.caption:=' Prescribir el ítem por un periodo'+' extendido. (3-6 meses).';
 end;
 if (reaction3>49) and (reaction3<70) then Begin
-label259.caption:='Prescribir el ítem en dosis normales.';
+label259.caption:=' Prescribir el ítem en dosis normales.';
 oeg := Random(6);
-if oeg<2 then label260.caption:='Prescribir el ítem por un periodo muy corto. (3-7 días).';
-if oeg=2 then label260.caption:='Prescribir el ítem por un periodo corto. (8-15 dias).';
-if oeg=3 then label260.caption:='Prescribir el ítem por un periodo mediano. (2-4 semanas).';
-if oeg=4 then label260.caption:='Prescribir el ítem por un periodo largo. (1-3 meses).';
-if oeg>4 then label260.caption:='Prescribir el ítem por un periodo extendido. (3-6 meses).';
+if oeg<2 then label260.caption:=' Prescribir el ítem por un periodo'+' muy corto. (3-7 días).';
+if oeg=2 then label260.caption:=' Prescribir el ítem por un periodo'+' corto. (8-15 dias).';
+if oeg=3 then label260.caption:=' Prescribir el ítem por un periodo'+' mediano. (2-4 semanas).';
+if oeg=4 then label260.caption:=' Prescribir el ítem por un periodo'+' largo. (1-3 meses).';
+if oeg>4 then label260.caption:=' Prescribir el ítem por un periodo'+' extendido. (3-6 meses).';
 end;
 if (reaction3>25) and (reaction3<50) then Begin
-label259.caption:='Prescribir el ítem en dosis altas.';
+label259.caption:=' Prescribir el ítem en dosis altas.';
 oeg := Random(6);
-if oeg<2 then label260.caption:='Prescribir el ítem por un periodo muy corto. (3-7 días).';
-if oeg=2 then label260.caption:='Prescribir el ítem por un periodo corto. (8-15 dias).';
-if oeg=3 then label260.caption:='Prescribir el ítem por un periodo mediano. (2-4 semanas).';
-if oeg=4 then label260.caption:='Prescribir el ítem por un periodo largo. (1-3 meses).';
-if oeg>4 then label260.caption:='Prescribir el ítem por un periodo extendido. (3-6 meses).';
+if oeg<2 then label260.caption:=' Prescribir el ítem por un periodo'+' muy corto. (3-7 días).';
+if oeg=2 then label260.caption:=' Prescribir el ítem por un periodo'+' corto. (8-15 dias).';
+if oeg=3 then label260.caption:=' Prescribir el ítem por un periodo'+' mediano. (2-4 semanas).';
+if oeg=4 then label260.caption:=' Prescribir el ítem por un periodo'+' largo. (1-3 meses).';
+if oeg>4 then label260.caption:=' Prescribir el ítem por un periodo'+' extendido. (3-6 meses).';
 end;
 if reaction3<26 then Begin
-label259.caption:='Prescribir el ítem en dosis máximas.';
+label259.caption:=' Prescribir el ítem en dosis máximas.';
 oeg := Random(6);
-if oeg<2 then label260.caption:='Prescribir el ítem por un periodo muy corto. (3-7 días).';
-if oeg=2 then label260.caption:='Prescribir el ítem por un periodo corto. (8-15 dias).';
-if oeg=3 then label260.caption:='Prescribir el ítem por un periodo mediano. (2-4 semanas).';
-if oeg=4 then label260.caption:='Prescribir el ítem por un periodo largo. (1-3 meses).';
-if oeg>4 then label260.caption:='Prescribir el ítem por un periodo extendido. (3-6 meses).';
+if oeg<2 then label260.caption:=' Prescribir el ítem por un periodo'+' muy corto. (3-7 días).';
+if oeg=2 then label260.caption:=' Prescribir el ítem por un periodo'+' corto. (8-15 dias).';
+if oeg=3 then label260.caption:=' Prescribir el ítem por un periodo'+' mediano. (2-4 semanas).';
+if oeg=4 then label260.caption:=' Prescribir el ítem por un periodo'+' largo. (1-3 meses).';
+if oeg>4 then label260.caption:=' Prescribir el ítem por un periodo'+' extendido. (3-6 meses).';
 end;
 // Incidencia - Coherencia
-if reaction>95 then  label261.caption:='Ahora mismo el ítem tiene una incidencia regular sobre la persona.';
-if (reaction>84) and (reaction<96) then  label261.caption:='Ahora mismo el ítem tiene una incidencia muy buena sobre la persona.';
-if (reaction>69) and (reaction<85) then  label261.caption:='Ahora mismo el ítem tiene una incidencia buena sobre la persona.';
-if (reaction>49) and (reaction<70) then  label261.caption:='Ahora mismo el ítem tiene una incidencia normal sobre la persona.';
-if (reaction>25) and (reaction<50) then  label261.caption:='Ahora mismo el ítem tiene una incidencia baja sobre la persona.';
-if reaction<26 then  label261.caption:='Ahora mismo el ítem tiene una incidencia muy baja sobre la persona.';
+if reaction>95 then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' regular sobre la persona.';
+if (reaction>84) and (reaction<96) then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' muy buena sobre la persona.';
+if (reaction>69) and (reaction<85) then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' buena sobre la persona.';
+if (reaction>49) and (reaction<70) then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' normal sobre la persona.';
+if (reaction>25) and (reaction<50) then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' baja sobre la persona.';
+if reaction<26 then  label261.caption:=' Ahora mismo el ítem tiene una incidencia'+' muy baja sobre la persona.';
+end;
+
+procedure TtestForm1.Textos323();
+begin
+FMain.Button42.Click;
+end;
+
+procedure TtestForm1.Textos324();
+begin
+FMain.Button42.Click;
+end;
+
+procedure TtestForm1.Textos325();
+begin
+BAVM.Click;
+end;
+
+procedure TtestForm1.EnlaceEdit23();
+begin
+BTerapias.Click;
+BAVM.Click;
+end;
+
+procedure TtestForm1.EnlaceLabel287();
+begin
+BTerapias.Click;
+end;
+
+procedure TtestForm1.EnlaceLabel226();
+begin
+BTerapias.Click;
+end;
+
+procedure TtestForm1.EnlaceLabel99();
+begin
+Bterapias.Click;
+end;
+
+procedure TtestForm1.EnlaceLabel100();
+begin
+BTerapias.Click;
+end;
+
+procedure TtestForm1.BTerapiasClick(Sender: TObject);
+begin
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+ETerapias.Text := ETerapias.Text+' '+LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+ETerapias.Text := ETerapias.Text+' '+LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+ETerapias.Text := ETerapias.Text+' '+LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label302.Caption := Label302.Caption+' '+LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label99.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label226.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label100.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label287.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Label23.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+end;
+
+procedure TtestForm1.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+ECausas.Text := ECausas.Text+' '+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+EDisfuncionNutritiva.Text := EDisfuncionNutritiva.Text+' '+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+TestForm1.Label95.Caption := ' Organo/Glándula más estresada:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Label175.Caption := ' Organo/Glándula más estresada:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Label174.Caption := ' Organo/Glándula más estresada:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure TtestForm1.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+L_Conexion.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label246.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label286.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label285.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+ECausas.Text := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label238.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label98.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label257.Caption := ' Conexión principal:'+LBCausas.Items[LBCausas.ItemIndex];
+
+end;
+
+procedure TtestForm1.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+EMeridianos.Text := EMeridianos.Text+' '+LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure TtestForm1.BProcesosClick(Sender: TObject);
+begin
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+EProcesos.Text := LBProcesos.Items[LBProcesos.ItemIndex];
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+Label96.Caption := ' Conexión principal:'+LBProcesos.Items[LBProcesos.ItemIndex];
+end;
+
+procedure TtestForm1.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+EEPositivas.Text := EEPositivas.Text+' '+LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure TtestForm1.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Label336.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Label223.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Label289.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Label287.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+EEmocionNegativa.Text := EEmocionNegativa.Text+' '+LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure TtestForm1.BAfirmacionesClick(Sender: TObject);
+begin
+randomize;
+LBAfirmaciones.Itemindex:=Random(LBAfirmaciones.Items.Count);
+EAfirmacion.Text := EAfirmacion.Text+' '+LBAfirmaciones.Items[LBAfirmaciones.ItemIndex];
+end;
+
+procedure TtestForm1.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Label290.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+EToxinas.Text := EToxinas.Text+' '+LBToxinas.Items[LBToxinas.ItemIndex];
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Label97.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure TtestForm1.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Label325.Caption := LBAVM.Items[LBAVM.ItemIndex];
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+EAVM.Text := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure TtestForm1.BSistemasClick(Sender: TObject);
+begin
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+ESistemas.Text := ESistemas.Text+' '+LBSistemas.Items[LBSistemas.ItemIndex];
+end;
+
+procedure TtestForm1.BAgendaClick(Sender: TObject);
+begin
+randomize;
+LBAgendar.Itemindex:=Random(LBAgendar.Items.Count);
+EAgendar.Text := EAgendar.Text+' '+LBAgendar.Items[LBAgendar.ItemIndex];
+end;
+
+procedure TtestForm1.ECausasClick(Sender: TObject);
+begin
+ECausas.Text:= ' ';
+end;
+
+procedure TtestForm1.EPOrganosAfectadosClick(Sender: TObject);
+begin
+EPOrganosAfectados.Text:= ' ';
+end;
+
+procedure TtestForm1.EAVMClick(Sender: TObject);
+begin
+EAVM.Text:= ' ';
+end;
+
+procedure TtestForm1.EMeridianosClick(Sender: TObject);
+begin
+EMeridianos.Text:= ' ';
+end;
+
+procedure TtestForm1.EProcesosClick(Sender: TObject);
+begin
+EProcesos.Text:= ' ';
+end;
+
+procedure TtestForm1.EDisfuncionNutritivaClick(Sender: TObject);
+begin
+EDisfuncionNutritiva.Text:= ' ';
+end;
+
+procedure TtestForm1.EToxinasClick(Sender: TObject);
+begin
+EToxinas.Text:= ' ';
+end;
+
+procedure TtestForm1.ESistemasClick(Sender: TObject);
+begin
+ESistemas.Text:= ' ';
+end;
+
+procedure TtestForm1.ETerapiasClick(Sender: TObject);
+begin
+ETerapias.Text:= ' ';
+end;
+
+procedure TtestForm1.EEPositivasClick(Sender: TObject);
+begin
+EEPositivas.Text:= ' ';
+end;
+
+procedure TtestForm1.EEmocionNegativaClick(Sender: TObject);
+begin
+EEmocionNegativa.Text:= ' ';
+end;
+
+procedure TtestForm1.EAfirmacionClick(Sender: TObject);
+begin
+EAfirmacion.Text:= ' ';
+end;
+
+procedure TtestForm1.EAgendarClick(Sender: TObject);
+begin
+EAgendar.Text:= ' ';
+end;
+
+procedure TtestForm1.Button3Click(Sender: TObject);
+begin
+ECausasClick(Sender);
+EPOrganosAfectadosClick(Sender);
+EAVMClick(Sender);
+EMeridianosClick(Sender);
+EProcesosClick(Sender);
+EDisfuncionNutritivaClick(Sender);
+EToxinasClick(Sender);
+ESistemasClick(Sender);
+ETerapiasClick(Sender);
+EEPositivasClick(Sender);
+EEmocionNegativaClick(Sender);
+EAfirmacionClick(Sender);
+EAgendarClick(Sender);
+end;
+
+procedure TtestForm1.BCNutricionalesClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TtestForm1.BHomeopatiaClick(Sender: TObject);
+begin
+//
 end;
 
 End.

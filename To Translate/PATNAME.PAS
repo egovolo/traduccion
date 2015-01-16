@@ -378,8 +378,6 @@ type
     CheckBox294: TCheckBox;
     CheckBox295: TCheckBox;
     CheckBox296: TCheckBox;
-    Button14: TButton;
-    Button2: TButton;
     CheckBox421: TCheckBox;
     CheckBox422: TCheckBox;
     CheckBox423: TCheckBox;
@@ -413,7 +411,6 @@ type
     CheckBox147: TCheckBox;
     CheckBox148: TCheckBox;
     Edit34: TEdit;
-    Memo2: TMemo;
     CheckBox149: TCheckBox;
     CheckBox150: TCheckBox;
     CheckBox151: TCheckBox;
@@ -422,7 +419,6 @@ type
     CheckBox162: TCheckBox;
     CheckBox163: TCheckBox;
     CheckBox165: TCheckBox;
-    Button71: TButton;
     CheckBox104: TCheckBox;
     CheckBox106: TCheckBox;
     CheckBox108: TCheckBox;
@@ -501,7 +497,6 @@ type
     CheckBox187: TCheckBox;
     CheckBox110: TCheckBox;
     CheckBox107: TCheckBox;
-    Button13: TButton;
     CheckBox241: TCheckBox;
     CheckBox242: TCheckBox;
     CheckBox243: TCheckBox;
@@ -582,7 +577,6 @@ type
     CheckBox164: TCheckBox;
     CheckBox168: TCheckBox;
     CheckBox169: TCheckBox;
-    Button18: TButton;
     CheckBox66: TCheckBox;
     CheckBox67: TCheckBox;
     CheckBox68: TCheckBox;
@@ -631,7 +625,6 @@ type
     CheckBox290: TCheckBox;
     CheckBox297: TCheckBox;
     CheckBox384: TCheckBox;
-    Button8: TButton;
     GBAfecciones: TGroupBox;
     Label241: TLabel;
     CheckBox385: TCheckBox;
@@ -1014,7 +1007,6 @@ type
     Edit202: TEdit;
     Button9: TButton;
     Button10: TButton;
-    Memo3: TMemo;
     Button11: TButton;
     Panel11: TPanel;
     RadioButton1: TRadioButton;
@@ -1070,6 +1062,7 @@ type
     Edit96: TEdit;
     Edit97: TEdit;
     B_Recuperacion: TButton;
+    Panel12: TPanel;
 
     procedure Edit4KeyPress(Sender: TObject; var Key: Char);
     procedure Edit5KeyPress(Sender: TObject; var Key: Char);
@@ -1165,16 +1158,12 @@ type
     procedure CheckBox92Click(Sender: TObject);
     procedure CheckBox93Click(Sender: TObject);
     procedure CheckBox95Click(Sender: TObject);
-    procedure Button12Click(Sender: TObject);
-    procedure Button13Click(Sender: TObject);
-    procedure Button14Click(Sender: TObject);
     procedure Button15Click(Sender: TObject);
     procedure Button18Click(Sender: TObject);
     procedure TabbedNotebook1Exit(Sender: TObject);
     procedure SpinEdit15Change(Sender: TObject);
     procedure SpinEdit16Change(Sender: TObject);
     procedure Button17Click(Sender: TObject);
-    procedure Memo3DblClick(Sender: TObject);
     procedure Image15DblClick(Sender: TObject);
     procedure CheckBox291Click(Sender: TObject);
     procedure CheckBox292Click(Sender: TObject);
@@ -1412,7 +1401,6 @@ procedure CheckBox392Click(Sender: TObject);
     procedure Label161Click(Sender: TObject);
     procedure Label160Click(Sender: TObject);
     procedure Label20Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
     procedure Label169Click(Sender: TObject);
     procedure Label170Click(Sender: TObject);
     procedure Label171Click(Sender: TObject);
@@ -1420,8 +1408,6 @@ procedure CheckBox392Click(Sender: TObject);
     procedure Label235Click(Sender: TObject);
     procedure Label249Click(Sender: TObject);
     procedure Label145Click(Sender: TObject);
-    procedure Button8Click(Sender: TObject);
-    procedure Memo3Click(Sender: TObject);
     procedure Button62Click(Sender: TObject);
     procedure Memo4Click(Sender: TObject);
     procedure Button10Click(Sender: TObject);
@@ -1528,6 +1514,7 @@ procedure CheckBox392Click(Sender: TObject);
     procedure Edit146Enter(Sender: TObject);
     procedure Label12Click(Sender: TObject);
     procedure B_RecuperacionClick(Sender: TObject);
+    procedure Panel12Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -3127,21 +3114,6 @@ begin
 q30:=1;
 end;
 
-procedure TPatForm1.Button12Click(Sender: TObject);
-begin
-tabbedNotebook1.visible:=false;
-end;
-
-procedure TPatForm1.Button13Click(Sender: TObject);
-begin
-tabbedNotebook1.visible:=false;
-end;
-
-procedure TPatForm1.Button14Click(Sender: TObject);
-begin
-tabbedNotebook1.visible:=false;
-end;
-
 procedure TPatForm1.Button15Click(Sender: TObject);
 begin
 edit16.enabled:=true;
@@ -3162,6 +3134,7 @@ end;
 procedure TPatForm1.Button18Click(Sender: TObject);
 begin
 tabbedNotebook1.visible:=false;
+Panel12.visible:=false;
 if checkbox173.checked = true then
       c173:=1;
 if checkbox174.checked = true then
@@ -3859,11 +3832,6 @@ end;
 procedure TPatForm1.Button17Click(Sender: TObject);
 begin
 panel17.visible:=true;
-end;
-
-procedure TPatForm1.Memo3DblClick(Sender: TObject);
-begin
-memo3.visible:=false;
 end;
 
 procedure TPatForm1.Image15DblClick(Sender: TObject);
@@ -6186,6 +6154,7 @@ end;
 procedure TPatForm1.Label163Click(Sender: TObject);
 begin
 tabbedNotebook1.visible:=true;
+Panel12.visible:=true;
 end;
 
 procedure TPatForm1.Label162Click(Sender: TObject);
@@ -6264,11 +6233,6 @@ begin
 GBAfecciones.visible:=true;
 end;
 
-procedure TPatForm1.Button2Click(Sender: TObject);
-begin
-Memo3.Visible := True;
-end;
-
 procedure TPatForm1.Label169Click(Sender: TObject);
 begin
 Pat_form.Bit_Edit.enabled:=false;
@@ -6327,14 +6291,10 @@ GroupBox16.Visible := False;
 GroupBox22.Visible := False;
 end;
 
-procedure TPatForm1.Button8Click(Sender: TObject);
+procedure TPatForm1.Panel12Click(Sender: TObject);
 begin
 TabbedNoteBook1.Visible := False;
-end;
-
-procedure TPatForm1.Memo3Click(Sender: TObject);
-begin
-Memo3.Visible := False;
+Panel12.Visible := False;
 end;
 
 procedure TPatForm1.Button62Click(Sender: TObject);
@@ -7616,6 +7576,7 @@ GroupBox16.visible:=true;
 GroupBox22.visible:=true;
 //pn7 := strtoint(RegresaEntero(edit10.text)) ;
 end;
+
 
 initialization
   pn1:=0 ; pn2:=0; pn3:=0; pn4:=0; pn5:=0; pn6:=0; pn7:=0; pn8:=0; pn9:=0; pn10:=0;

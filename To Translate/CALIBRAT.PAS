@@ -330,7 +330,6 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button12Click(Sender: TObject);
     procedure Button13Click(Sender: TObject);
-    procedure Chart1Click(Sender: TObject);
     procedure Timer3Timer(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -696,27 +695,6 @@ FMain.LAtmico.Caption :=Label81.Caption;
 FMain.LMConcreto.Caption :=Label83.Caption;
 FMain.LDivino.Caption :=Label93.Caption;
 FMain.LFEterico.Caption :=Label94.Caption;
-{If Button5.Enabled = True Then
-  Begin
-              Application.CreateForm(TFmsg, Fmsg);
-            if Fmsg.FMensaje2( '¿Desea corregír las anomalías geopáticas antes de proseguir?','pregunta') ='mrSi'  then
-            begin
-                  Exit;
-           end else begin
-                  Close;
-           end;
-               Fmsg.destroy;
-            end;   }
-{ If Button5.Enabled = True Then
-  Begin
-        If  MessageDLG( 'Se han detectado anomalías geopáticas.'+chr(13)+
-                        '¿Desea corregír las anomalías geopáticas antes de proseguir?',
-              mtInformation, [mbYes, mbNo], 0) = mrYes then Stop;
-  End;
-timer3.enabled:=false;
-math33:=1;
-   amp5:=amp1;
-   Close; }
 end;
 
 procedure TcalibForm1.Button12Click(Sender: TObject);
@@ -728,11 +706,6 @@ procedure TcalibForm1.Button13Click(Sender: TObject);
 begin
  GroupBox3.Visible:=False;
  boxactive:=10;
-end;
-
-procedure TcalibForm1.Chart1Click(Sender: TObject);
-begin
- {Chart1.Visible:=False;}
 end;
 
 procedure TcalibForm1.Timer3Timer(Sender: TObject);
@@ -881,7 +854,6 @@ label48.caption:= patform1.Label21.Caption;  // Indice SOC
   StringGrid1.Cells[1,0]:='MÍNIMO';
   StringGrid1.Cells[2,0]:='MÁXIMO';
   StringGrid1.Cells[3,0]:='PROMEDIO';
-//if (l=1)and (Freq2.SCIOBox=True) then   chart2.enabled:=false;
 If RHDD then
     Begin
       button8.enabled:=true;
@@ -891,7 +863,6 @@ label106.caption:=PasswordDlg.label6.caption;
 calibform1.refresh;
 If Pat_form.PatCode <> 0 then
 Begin
-  { Calibration Graphicon }
   Series2.FillSampleValues(300);
   Series3.FillSampleValues(300);
   Series4.FillSampleValues(300);
@@ -918,9 +889,6 @@ electron:=(patform1.electron) ;
 volt1 := ((patform1.volt)+random(20)-random(20));
 amp1 := ((patform1.amp)+random(20)-random(20));
 res := ((patform1.resis)+random(20)-random(20));
-//  if selye<1 then begin
-//  TSelye.position:=round(soc/5)+random(75);
-//  if  pat_form.label16.caption='50' then trackbar1.position:=trackbar1.position-random(25)+random(5);
   selye:=TSelye.position;
   end;
 
@@ -961,7 +929,6 @@ i := MyFileCreate('clock.d11');
 if (fileExists('clock.d11')) then Gauge_Speed.progress:=900+random(300);
   ChangingPulses(50000,5555,55555,5,1,3,
  '00000000','00000000');
-//label85.caption:='Se han reparado los armónicos.';
 if (fileExists('clock.d11')) then Gauge_Speed.progress:=900+random(300);
 end;
 
@@ -1002,29 +969,6 @@ procedure TcalibForm1.Label46Click(Sender: TObject);
 begin
  SCIOworking.trackbar1.position:=0;
   SCIOworking.ManLedsall:=False;
-  { Turn Off }
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFE;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFD;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFB;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFF7;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFEF;
-//   FormComPort.leds(FormComPort.ledsw);
-//   Sleep(500);
-  { Turn On}
-//   FormComPort.ledsw:=FormComPort.ledsw or $0001;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0002;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0004;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0008;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0010;
-//   FormComPort.leds(FormComPort.ledsw);
-//   Sleep(500);
-   { Turn Off }
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFE;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFD;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFB;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFF7;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFEF;
-//   FormComPort.leds(FormComPort.ledsw);
 l:=0;
 VirtualSwitch:=True;
 AllInterruptsEnabled:=True;
@@ -1040,29 +984,6 @@ procedure TcalibForm1.Label47Click(Sender: TObject);
 begin
  SCIOworking.trackbar1.position:=0;
   SCIOworking.ManLedsall:=True;
-  { Turn Off }
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFE;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFD;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFB;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFF7;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFEF;
-//   FormComPort.leds(FormComPort.ledsw);
-//   Sleep(500);
-  { Turn On}
-//   FormComPort.ledsw:=FormComPort.ledsw or $0001;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0002;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0004;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0008;
-//   FormComPort.ledsw:=FormComPort.ledsw or $0010;
-//   FormComPort.leds(FormComPort.ledsw);
-//   Sleep(500);
-   { Turn Off }
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFE;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFD;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFFB;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFF7;
-//   FormComPort.ledsw:= FormComPort.ledsw and $FFEF;
-//   FormComPort.leds(FormComPort.ledsw);
 l:=1;
 VirtualSwitch:=False;
 Showmessage('El sistema ha pasado a Modo Presencial.');
@@ -1077,30 +998,17 @@ procedure TcalibForm1.LimpiaGeopaticos();
 begin
 bipict1.visible:=true;
 bipict1.refresh;
-if l=0 then ChangingPulses(50000,555,11111,5,1,5,
- '00000000','00000000');
- if l=1 then
 ChangingPulses(50000,5,11111,11,1,5,
  '11111111','11111111');
-if l=0 then ChangingPulses(50000,555,11111,5,1,6,
- '00000000','00000000');
- if l=1 then
-ChangingPulses(5000,5,11111,5,1,6,
+ChangingPulses(5000,5,11111,5,1,5,
  '11111111','11111111');
 bipict1.visible:= false;
 End;
 
 procedure TcalibForm1.Button3Click(Sender: TObject);
 begin
-//bipict1.visible:=true;
-if l=0 then ChangingPulses(50000,555,11111,5,1,6,
- '00000000','00000000');
- if l=1 then
 ChangingPulses(50000,555,11111,5,1,6,
  '11111111','11111111');
-if l=0 then ChangingPulses(50000,555,11111,5,1,6,
- '00000000','00000000');
- if l=1 then
 ChangingPulses(50000,555,11111,5,1,6,
  '11111111','11111111');
 PBCalibracion.Position := PBCalibracion.Position+10+random(10);
@@ -1182,7 +1090,6 @@ Image2.picture.LoadFromFile('fundir.jpg');
 timer2.enabled:=True;
 timer3.enabled:=False;
 calibform1.refresh;
-//FMain.Button3.Enabled := False; //'Recalibrar';
 FMain.Button2.Enabled := True;
 label62.caption:='00'; // Frec. resonante sistema
 label63.caption:='00'; // Frec. resonante persona

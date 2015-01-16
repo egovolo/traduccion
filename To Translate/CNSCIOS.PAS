@@ -6,7 +6,7 @@ uses
   SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,   ShellApi,   FileCtrl,
   Forms, Dialogs, StdCtrls, ExtCtrls, MPlayer, Buttons,Registry,  
   TeeProcs, TeEngine, Chart, Series, Db, Grids, DBGrids, Spin,InstanceHandler, jpeg,
-  RxGIF, AxCtrls, OleCtrls, VIDEOCAPXLib_TLB, Gauges;
+  RxGIF, AxCtrls, OleCtrls, VIDEOCAPXLib_TLB, Gauges, YRChrono;
 
 type
   TFMain = class(TForm)
@@ -24,7 +24,6 @@ type
     Button68: TButton;
     Button69: TButton;
     Button70: TButton;
-    Label85: TLabel;
     Label86: TLabel;
     Button79: TButton;
     Button80: TButton;
@@ -95,7 +94,6 @@ type
     LpH: TLabel;
     Label23: TLabel;
     Panel9: TPanel;
-    Label134: TLabel;
     Label141: TLabel;
     Label146: TLabel;
     Label147: TLabel;
@@ -123,11 +121,83 @@ type
     CB_Vit_RF: TCheckBox;
     Panel4: TPanel;
     Button4: TButton;
+    Button6: TButton;
+    MyChrono: TYRChronometre;
+    Time_Crono: TTimer;
+    Panel59: TPanel;
+    Lcrono: TLabel;
+    LTime: TLabel;
+    GroupBox1: TGroupBox;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox9: TCheckBox;
+    CheckBox10: TCheckBox;
+    CheckBox11: TCheckBox;
+    CheckBox12: TCheckBox;
+    CheckBox13: TCheckBox;
+    CheckBox14: TCheckBox;
+    CheckBox15: TCheckBox;
+    CheckBox16: TCheckBox;
+    CheckBox17: TCheckBox;
+    CheckBox18: TCheckBox;
+    CheckBox19: TCheckBox;
+    CheckBox20: TCheckBox;
+    CheckBox21: TCheckBox;
+    CheckBox22: TCheckBox;
+    CheckBox23: TCheckBox;
+    CheckBox24: TCheckBox;
+    CheckBox25: TCheckBox;
+    CheckBox26: TCheckBox;
+    CheckBox27: TCheckBox;
+    CheckBox28: TCheckBox;
+    CheckBox29: TCheckBox;
+    CheckBox30: TCheckBox;
+    CheckBox31: TCheckBox;
+    CheckBox32: TCheckBox;
+    CheckBox33: TCheckBox;
+    CheckBox34: TCheckBox;
+    CheckBox35: TCheckBox;
+    CheckBox36: TCheckBox;
+    CheckBox37: TCheckBox;
+    CheckBox38: TCheckBox;
+    CheckBox39: TCheckBox;
+    CheckBox40: TCheckBox;
+    CheckBox41: TCheckBox;
+    CheckBox42: TCheckBox;
+    CheckBox43: TCheckBox;
+    CheckBox44: TCheckBox;
+    CheckBox45: TCheckBox;
+    CheckBox46: TCheckBox;
+    CheckBox47: TCheckBox;
+    CheckBox48: TCheckBox;
+    CheckBox49: TCheckBox;
+    CheckBox50: TCheckBox;
+    CheckBox51: TCheckBox;
+    CBAutomatico: TCheckBox;
+    CheckBox53: TCheckBox;
+    CheckBox54: TCheckBox;
+    CheckBox55: TCheckBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    TBiomarcadores: TTimer;
+    LTiempo: TLabel;
+    Label33: TLabel;
     procedure Button5Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure Button10Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button14Click(Sender: TObject);
     procedure Button13Click(Sender: TObject);
@@ -153,13 +223,10 @@ type
     procedure FormShow(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure Label17DblClick(Sender: TObject);
-    procedure Button48Click(Sender: TObject);
     procedure Button49Click(Sender: TObject);
     procedure Button50Click(Sender: TObject);
     procedure SpinEdit1Change(Sender: TObject);
     procedure Button52Click(Sender: TObject);
-    procedure DBGrid1CellClick(Column: TColumn);
-    procedure Button58Click(Sender: TObject);
     procedure Image9Click(Sender: TObject);
     procedure Panel10DblClick(Sender: TObject);
     procedure Button69Click(Sender: TObject);
@@ -178,8 +245,6 @@ type
     procedure Button92Click(Sender: TObject);
     procedure Button94Click(Sender: TObject);
     procedure Button96Click(Sender: TObject);
-    procedure Button100Click(Sender: TObject);
-    procedure Button101Click(Sender: TObject);
     procedure Label7Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
     procedure Button43Click(Sender: TObject);
@@ -202,6 +267,17 @@ type
     procedure CB_Vit_RHClick(Sender: TObject);
     procedure Panel4Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Time_CronoTimer(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+    procedure Edit3Change(Sender: TObject);
+    procedure Edit2Change(Sender: TObject);
+    procedure Edit4Change(Sender: TObject);
+    procedure Edit5Change(Sender: TObject);
+    procedure Edit6Change(Sender: TObject);
+    procedure Edit7Change(Sender: TObject);
+    procedure Edit8Change(Sender: TObject);
+    procedure TBiomarcadoresTimer(Sender: TObject);
 
   private
      vcont_pres:integer;
@@ -232,6 +308,8 @@ type
     procedure  RastreaDir(Dir: string);
     procedure   LimpiaDir(Dir,Dir2: string);
     procedure  Actualiza;
+    procedure Botones();
+    procedure LimpiaBiomarcadores();
  end;
 
 const
@@ -239,7 +317,7 @@ const
 var
   FMain: TFMain;
 
-    initia,raw,turn,cre,clo,l,ran33,recmainper,reccoun,recmain2,recmain3,tim123 :integer;
+    initia,raw,turn,cre,clo,l,ran33,recmainper,reccoun,recmain2,recmain3,tim123,vtiempo,biomarcador :integer;
     ICursor : Integer;
     FormcolorR,FormcolorG,FormcolorB : Byte;
     Panel2R,Panel2G,Panel2B : Byte;
@@ -254,9 +332,9 @@ implementation
 uses
      patname,therapy,freq,repordat,Password, Aboutc, calibrat, testdata,
      risks, activat,searchco,spine,homeo,nut,well, Denta, Age, tools, Unitvol,
-     UVoice,wawp,Freq2, UChart, DataMod, uchart5,biop, CDPlayu,
+     UVoice,wawp,Freq2, UChart, DataMod, uchart5,biop, CDPlayu,NatDiag,
      patform,SpeachUnit,Multil, chartreport, ucomport, uscioworking, CDMain,  Urecompensa,
-  Testdata_Alterna, Rectificacion;
+  Testdata_Alterna, Rectificacion, flash, natdig, video, UCancer_Explorer;
 
 Procedure TFMain.AviPlaying(S : String);
 Begin
@@ -528,13 +606,6 @@ end;}
   button70.enabled:=true;
 end;
 
-procedure TFMain.Button10Click(Sender: TObject);
-begin
-If  MessageDLG( '¿Está seguro/a que desea salir? ',
-              mtInformation, [mbYes, mbNo], 0) = mrYes then
-              close;
-End;
-
 Function DateCheck(Y : Word) : Boolean;
 var
   Present: TDateTime;
@@ -600,7 +671,6 @@ Var S,S2 : String;
     Attr : Integer;
     SRec : TSearchRec;
     ran33  :integer;
-
     Bexiste: Boolean;
      Varchivo :String;
 Begin
@@ -627,15 +697,15 @@ calb33:=0;
   if IsCDRunning = True Then  NoSound:=True else
   NoSound:=False;
   Registry_Create;
-  If RVersion='' Then {Ki kell torolni a nevet es a Serial numbert }
-  Begin
-   ConvertToDEMO;
-  End else
-  Begin
+
+//  If RVersion='' Then {Ki kell torolni a nevet es a Serial numbert }
+//  Begin
+//   ConvertToDEMO;
+//  End else
+//  Begin
     S:=RVersion;
-    If Length(S)<>17 Then
-    ConvertToDEMO;
-  End;
+//    If Length(S)<>17 Then ConvertToDEMO;
+//  End;
   WActDir;
  GetDir(0,s); { 0 = Current drive }
  s:=ExtractFilePath(S);
@@ -692,11 +762,6 @@ Var I1 : Integer;
     ISUm : LongInt;
 begin
 For I1:=0 to 4 do ISum:=ISum+IBuf1[I1]+IBuf2[I1];
-{If fileExists('wba.dll') then  begin
-if ISum = 0 then SpeachForm.SMessageTalk( 'Si los electrodos no están puestos'+chr(13)+
-              'correctamente, el sistema usará el subespacio.'+chr(13)+
-              'Revise los electrodos.');
-                end; }
 Application.CreateForm(TSpinal, Spinal);
  spinal.showmodal;
  spinal.Free;
@@ -785,12 +850,6 @@ end;
    If ICursor=17 Then ICursor:=10 else Inc(ICursor);
    screen.cursor:=ICursor;
  end;
-FRecompensa.label79.refresh;
-
-if  FRecompensa.label79.color=clyellow then   FRecompensa.label79.color:=clred
-else   FRecompensa.label79.color:=clyellow;
-FRecompensa.label79.refresh;
-
 If fileExists('neutral.dll') then
 begin
 time:=0;
@@ -834,10 +893,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>39 then begin
@@ -851,10 +906,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end; }
       timer1.interval:=1+Random(20);
       end;
   if qif>49 then begin
@@ -868,10 +919,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>59 then begin
@@ -885,10 +932,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end; }
       timer1.interval:=1+Random(20);
       end;
   if qif>69 then begin
@@ -902,10 +945,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);  //label57.caption:='NFP-QIF '+inttostr(GetRandomValue); label57.refresh;
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-  {    if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;   }
       timer1.interval:=1+Random(20);
       end;
   if qif>79 then begin
@@ -919,10 +958,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;   }
       timer1.interval:=1+Random(20);
       end;
   if qif>89 then begin
@@ -936,10 +971,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;   }
       timer1.interval:=1+Random(20);
       end;
   if qif>99 then begin
@@ -953,10 +984,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666); //label57.caption:='NFP-QIF '+inttostr(GetRandomValue); label57.refresh;
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
        if qif<10 then   timer1.interval:=100+Random(20);
@@ -995,10 +1022,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;   }
       timer1.interval:=1+Random(20);
       end;
   if qif>129 then begin
@@ -1012,10 +1035,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>149 then begin
@@ -1029,10 +1048,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>159 then begin
@@ -1046,10 +1061,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>169 then begin
@@ -1063,10 +1074,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>179 then begin
@@ -1080,10 +1087,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>189 then begin
@@ -1097,10 +1100,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end; }
       timer1.interval:=1+Random(20);
       end;
   if qif>199 then begin
@@ -1114,10 +1113,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
   if qif>209 then begin
@@ -1131,10 +1126,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
        end;
   if qif>219 then begin
   GetRandomValue := GetRandomValue + 200*(Sqr(Random(23))+ Sqr(Random(23))+Sqr(Random(23))+Sqr(Random(23))+
@@ -1147,10 +1138,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end; }
        end;
    if qif>229 then begin
   GetRandomValue := GetRandomValue + 200*(Sqr(Random(23))+ Sqr(Random(23))+Sqr(Random(23))+Sqr(Random(23))+
@@ -1163,10 +1150,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-    {  if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end; }
        end;
          if qif>239 then begin
   GetRandomValue := GetRandomValue + 200*(Sqr(Random(23))+ Sqr(Random(23))+Sqr(Random(23))+Sqr(Random(23))+
@@ -1179,10 +1162,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-   {   if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
        end;
    if qif>249 then begin
   GetRandomValue := GetRandomValue + 200*(Sqr(Random(23))+ Sqr(Random(23))+Sqr(Random(23))+Sqr(Random(23))+
@@ -1195,10 +1174,6 @@ end;
       GetRandomValue := random(100);
       GetRandomValue := random(6666);
       if GetRandomValue=6666 then GetRandomValue := random(6666);
-  {    if GetRandomValue=666 then begin
-      GetRandomValue := random(6666);
-       if GetRandomValue=666 then showmessage('Fallo en el Campo de Indeterminancia Cuántica. Iniciar reparación.');
-       end;  }
       timer1.interval:=1+Random(20);
       end;
 end;
@@ -1208,13 +1183,13 @@ begin
  FTest_Alterna.Cerrar_Aplicacion('Lexicon');
  FTest_Alterna.Cerrar_Aplicacion('VisorCorporal');
  FTest_Alterna.Cerrar_Aplicacion('Hololinguistica');
-  //Checar Cierre de Clasp32
+  //Checar Cierre del programa
  //guarda los valores de la visita de varhope
  FTest_Alterna.PAsigna_Valores(true);
  //guarda el tiempo de la visita de principio a fin
  //FTest_Alterna.pGuarda_Time_Thera();
  boxoff;
- // deletefile('notes123.txt');
+ Time_Crono.Enabled:=False;
  MyFileCreate('restore.d11');  {Good close from program }
  self.release;
  self.destroying;
@@ -1250,8 +1225,8 @@ procedure TFMain.FormShow(Sender: TObject);
 var
         i:integer;
 begin
-  vcont_pres :=1;
-
+vcont_pres :=1;
+Time_Crono.Enabled:=True;
 Image7.picture.LoadFromFile('blur21.jpg');
 if fileexists('atom.bmp') then Image1.picture.LoadFromFile('atom.bmp');
 image17.picture.loadfromfile('vitruvian.bmp');
@@ -1262,81 +1237,11 @@ If Freq2.SCIOBOX = true Then Begin
   dm.T_INI.FieldByname('Secureruningcount').AsInteger:=1;
   dm.T_INI.Post;
 end;
-{else
-begin
-  dm.T_INI.First;
-  I:=dm.T_INI.FieldByname('Secureruningcount').AsInteger;
-  I:=I+1;
-  if i=25 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 25 veces.  El programa se desactivará dentro de 75 usos más sin la caja de interfaz.');
-  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz del sistema conectada al ordenador.');
-  end;
-  if i=50 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 50 veces.  El programa se desactivará dentro de 50 usos más sin la caja de interfaz.');
-  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz del ''SCIO'' conectada al ordenador.');
-  end;
-  if i=75 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 75 veces.  El programa se desactivará dentro de 25 usos más sin la caja de interfaz.');
-  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz del ''SCIO'' conectada al ordenador.');
-  end;
-    if i=95 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 95 veces.  El programa se desactivará dentro de 5 usos más sin la caja de interfaz.');
-//  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz del ''SCIO'' conectada al ordenador.');
-  end;
-    if i=97 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 97 veces.  El programa se desactivará dentro de 3 usos más sin la caja de interfaz.');
-//  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz del ''SCIO'' conectada al ordenador.');
-  end;
-    if i=98 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 98 veces.  El programa se desactivará dentro de 2 usos más sin la caja de interfaz.');
-//  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz conectada al ordenador.');
-  end;
-    if i=99 then
-  begin
-  ShowMessage('Ud. ha usado el software sin la caja de interfaz 99 veces.  El programa se desactivará después del próximo uso sin la caja de interfaz.');
-//  ShowMessage('Las terapias subespaciales NO son tan efectivas como las terapias con la persona conectada al sistema.');
-//  ShowMessage('Las terapias subespaciales funcionan mejor con la caja de interfaz conectada al ordenador.');
-  end;
-  if i>100 then
-  begin
-        ShowMessage('Ud. ha usado el software 100 veces sin conectar la caja de interfaz.  Para reactivar su programa llame a su distribuidor.');
-        ShowMessage('IMPORTANTE: CUANDO ACTIVE SU PROGRAMA DEBE TENER LA CAJA DE INTERFAZ CONECTADA O DE OTRA MANERA SE DESACTIVARA AUTOMATICAMENTE.');
-        ConvertToDEMO;
-  end;
- dm.T_INI.Edit;
-  dm.T_INI.FieldByname('Secureruningcount').AsInteger:=I;
-  dm.T_INI.Post;
-end;   }
-
  DM.Tneuro.First;
  DM.Tneuro.last;
  shaping2:=75;
  DeleteFile('Speach.txt');
-   SpeachForm.TalkOption:=False;
-{if  (day=7) or (day=15)or (day=26) then
-begin
-hint:='Hora de revisar la calibración del espacio.';
-end; }
-{ If RHDD Then
- begin
- Label72.caption:='Página Web: http://www.tecnonatura.co';
-  end else
-  begin
-              Label72.caption:='Página Web: http://www.tecnonatura.co';
-   end; }
-
+ SpeachForm.TalkOption:=False;
 end;
 
 procedure TFMain.FormHide(Sender: TObject);
@@ -1349,24 +1254,15 @@ begin
 panel3.visible:=true;
 end;
 
-procedure TFMain.Button48Click(Sender: TObject);
-begin
-FRecompensa.Button100.Visible:=True;
-end;
-
 procedure TFMain.Button49Click(Sender: TObject);
 begin
-FRecompensa.label79.visible:=true;
 FRecompensa.button50.Visible:=true;
 FRecompensa.button49.Visible:=false;
-if FRecompensa.edit1.text=''
-then showmessage('La función de recompensa no está activada.');
 end;
 
 procedure TFMain.Button50Click(Sender: TObject);
 begin
 shaping2:=110;
- FRecompensa.label79.visible:=false;
  FRecompensa.button49.Visible:=true;
  FRecompensa.button50.Visible:=false;
 end;
@@ -1380,16 +1276,6 @@ end;
 procedure TFMain.Button52Click(Sender: TObject);
 begin
  ChangingPulses(1000,111,1000,3,1,1,'11111111','11111111');
-end;
-
-procedure TFMain.DBGrid1CellClick(Column: TColumn);
-begin
-FRecompensa.edit1.text:= DM.Tneuro.fieldbyname('neurotransmitter').AsString;
-end;
-
-procedure TFMain.Button58Click(Sender: TObject);
-begin
-FRecompensa.edit1.text:='';
 end;
 
 procedure TFMain.Image9Click(Sender: TObject);
@@ -1445,15 +1331,14 @@ end;
  recmain:=testform1.automer+testform1.autonlp+testform1.colo+testform1.triv+testform1.scal+testform1.autorif+testform1.automor ;
         if recmain<30 then recmain:=30+random(25);
  if (testform1.automer+testform1.autonlp+testform1.colo+testform1.triv+testform1.scal+testform1.autorif+testform1.automor=0)and (riskchart.emo+riskchart.str+riskchart.can+riskchart.infe+riskchart.sug+riskchart.fdp+riskchart.oxi=0) then recmain:=5+random(5);
-     label85.caption:=inttostr(recmain);
 if recmainper<20 then begin
 recmainper:=10+recmain+random(6);
 if soc>250 then recmainper:=recmainper-10-random(10);
  if soc>300 then recmainper:=round(recmain/2);
  end;
-label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmainper);
+label88.caption:='RECTIFICACION fX: '+inttostr(recmainper);
 //if recmainper<85 then showmessage('Rectificación incompleta, use el botón de rectificación.');
-if recmainper>98 then begin
+if recmainper>85 then begin
 showmessage('Rectificación correcta, puede cerrar.');
 recmain2:=recmain+random(20)-random(20); 
 end;
@@ -1461,364 +1346,150 @@ end;
 
 procedure TFMain.Button68Click(Sender: TObject);
 begin
- label85.caption:=inttostr(recmain);
-reccoun:=reccoun+random(2);
-panel10.refresh;
-
- dir:=500;
-  if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
+MyChrono.Start;
+If CBAutomatico.Checked = True Then TBiomarcadores.Enabled := True;
+vtiempo := 60+Random(60);
+LTiempo.Caption := LTiempo.Caption+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5000,10,1000+random(5000),1+random(500),1+random(500),2,
 '11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-recmain:=recmain+25;
-recmainper:=30+recmain+random(recmain);
-if soc>250 then recmainper:=recmainper-random(40);
- if soc>300 then recmainper:=random(95);
- if recmainper>100 then  recmainper:=99+random(4);
-label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmainper);
-if recmainper<85 then showmessage('Rectificaión insuficiente, use el botón de rectificar.');
-if recmainper>90 then begin
-showmessage('El organismo ha sido rectificado energéticamente.');
-panel10.visible:=false;
-if reccoun>12 then begin
-panel10.visible:=false;
-panel10.enabled:=false;
-end;
-end;
+until
+MyChrono.TimeElapsed > vtiempo;
+TBiomarcadores.Enabled := False;
+LimpiaBiomarcadores();
+LTiempo.Caption := 'Tiempo estimado en segs.: ';
+MyChrono.Stop;
+PCerrar1Click(Sender);
 end;
 
 procedure TFMain.Button79Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button79.enabled:=false;
+if recmainper>85 then button79.enabled:=false;
 end;
 
 procedure TFMain.Button80Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button80.enabled:=false;
+if recmainper>85 then button80.enabled:=false;
 end;
 
 procedure TFMain.Button81Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button81.enabled:=false;
+if recmainper>85 then button81.enabled:=false;
 end;
 
 procedure TFMain.Button82Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button82.enabled:=false;
+if recmainper>85 then button82.enabled:=false;
 end;
 
 procedure TFMain.Button83Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button83.enabled:=false;
+if recmainper>85 then button83.enabled:=false;
 end;
 
 procedure TFMain.Button84Click(Sender: TObject);
 begin
 Rectificacion();
-  if recmain3>92 then button84.enabled:=false;
+if recmainper>85 then button84.enabled:=false;
 end;
 
 procedure TFMain.Button85Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button85.enabled:=false;
+if recmainper>85 then button85.enabled:=false;
 end;
 
 procedure TFMain.Button86Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button86.enabled:=false;
+if recmainper>85 then button86.enabled:=false;
 end;
 
 procedure TFMain.Button87Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button87.enabled:=false;
+if recmainper>85 then button87.enabled:=false;
 end;
 
 procedure TFMain.Button88Click(Sender: TObject);
 begin
 Rectificacion();
-if recmain3>92 then button88.enabled:=false;
+if recmainper>85 then button88.enabled:=false;
 end;
 
 procedure TFMain.Button92Click(Sender: TObject);
 begin
-tim123:=4;
-if  button79.visible=true  then  tim123:=tim123+4;
-if  button80.Enabled=true  then  tim123:=tim123+4;
-if  button81.Enabled=true  then  tim123:=tim123+4;
-if  button82.Enabled=true  then  tim123:=tim123+4;
-if  button83.Enabled=true  then  tim123:=tim123+4;
-if  button84.Enabled=true  then  tim123:=tim123+4;
-if  button85.Enabled=true  then  tim123:=tim123+4;
-if  button86.Enabled=true  then  tim123:=tim123+4;
-if  button87.Enabled=true  then  tim123:=tim123+4;
-if  button88.Enabled=true  then  tim123:=tim123+4;
-button92.Enabled:=false;
-button79.Enabled:=false;
-button80.Enabled:=false;
-button81.Enabled:=false;
-button82.Enabled:=false;
-button83.Enabled:=false;
-button84.Enabled:=false;
-button85.Enabled:=false;
-button86.Enabled:=false;
-button87.Enabled:=false;
-button88.Enabled:=false;
- tim123:=round(tim123/10);
- if tim123<1 then tim123:=1;
- panel10.refresh;
-
- dir:=500;
-  if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
+MyChrono.Start;
+If CBAutomatico.Checked = True Then TBiomarcadores.Enabled := True;
+vtiempo := 120+Random(60);
+LTiempo.Caption := LTiempo.Caption+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5000,10,1000+random(5000),1+random(500),1+random(500),2,
 '11111111','11111111');
-dir:=dir-49;
-
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- 
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-panel10.color:=clred; panel10.refresh;
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-
-      recmain2:=recmain2+30;
- recmain3:=70+recmain2+random(recmain2);
-
-if soc>250 then recmainper:=recmain3-random(30);
- if soc>300 then recmainper:=50+random(80);
- if recmain3>100 then  recmain3:=99+random(4);
- label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmain3);
-  if recmain3>92 then button85.enabled:=false;
+until
+MyChrono.TimeElapsed > vtiempo;
+TBiomarcadores.Enabled := False;
+LimpiaBiomarcadores();
+LTiempo.Caption := 'Tiempo estimado en segs.: ';
+MyChrono.Stop;
+PCerrar1Click(Sender);
 end;
 
 procedure TFMain.Button94Click(Sender: TObject);
 begin
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),tim123+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),tim123+random(1),
+MyChrono.Start;
+If CBAutomatico.Checked = True Then TBiomarcadores.Enabled := True;
+vtiempo := 180+Random(60);
+LTiempo.Caption := LTiempo.Caption+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5000,10,1000+random(5000),1+random(500),1+random(500),2,
 '11111111','11111111');
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-tim123:=4;
-if  button79.Enabled=true  then  tim123:=tim123+4;
-if  button80.Enabled=true  then  tim123:=tim123+4;
-if  button81.Enabled=true  then  tim123:=tim123+4;
-if  button82.Enabled=true  then  tim123:=tim123+4;
-if  button83.Enabled=true  then  tim123:=tim123+4;
-if  button84.Enabled=true  then  tim123:=tim123+4;
-if  button85.Enabled=true  then  tim123:=tim123+4;
-if  button86.Enabled=true  then  tim123:=tim123+4;
-if  button87.Enabled=true  then  tim123:=tim123+4;
-if  button88.Enabled=true  then  tim123:=tim123+4;
-button92.Enabled:=false;
-button79.Enabled:=false;
-button80.Enabled:=false;
-button81.Enabled:=false;
-button82.Enabled:=false;
-button83.Enabled:=false;
-button84.Enabled:=false;
-button85.Enabled:=false;
-button86.Enabled:=false;
-button87.Enabled:=false;
-button88.Enabled:=false;
-button68.Enabled:=false;
-button94.Enabled:=false;
- tim123:=round(tim123/10);
- if tim123<1 then tim123:=1;
-
- dir:=500;
-  if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-panel10.color:=clred; panel10.refresh;
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-      recmain2:=recmain2+30;
- recmain3:=70+recmain2+random(recmain2);
-
-if soc>250 then recmainper:=recmain3-random(30);
- if soc>300 then recmainper:=50+random(80);
- if recmain3>100 then  recmain3:=99+random(4);
- label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmain3);
-  if recmain3>92 then button85.enabled:=false;
+until
+MyChrono.TimeElapsed > vtiempo;
+TBiomarcadores.Enabled := False;
+LTiempo.Caption := 'Tiempo estimado en segs.: ';
+LimpiaBiomarcadores();
+MyChrono.Stop;
+PCerrar1Click(Sender);
 end;
 
 procedure TFMain.Button96Click(Sender: TObject);
 begin
- ChangingPulses(1000,111+random(3),10000,1+random(3),1+random(3),1,'11111111','11111111');
-  scioworking.button16.caption:='Detenrr rectificación';
-  scioworking.button15.caption:='Iniciar rectificación';
-  scioworking.button2.caption:='Rectificación final';
-   SCIOworking.RadioGroup2.enabled:=true;
+  SCIOworking.RadioGroup2.enabled:=true;
   SCIOworking.RadioGroup2.ItemIndex:=0;
   SCIOworking.SC_Command:='';
-  SCIOworking.panel1.enabled:=true;
+  SCIOworking.Button2.Caption := Button96.Caption;
   SCIOworking.Panel1.Visible:=True;
+  SCIOWorking.Button2.Caption := Button96.Caption;
   SCIOworking.TrackBar1.Position:=Random(40);
   SCIOworking.ShowModal;
-        recmain2:=recmain2+30;
- recmain3:=70+recmain2+random(recmain2);
-
-if soc>250 then recmainper:=recmain3-random(30);
- if soc>300 then recmainper:=50+random(80);
- if recmain3>100 then  recmain3:=99+random(4);
- label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmain3);
-  if recmain3>92 then button85.enabled:=false;
-end;
-
-procedure TFMain.Button100Click(Sender: TObject);
-begin
-MyWinexec('acrobat.exe','pavlov.pdf');
-end;
-
-procedure TFMain.Button101Click(Sender: TObject);
-begin
-MyWinexec('acrobat.exe','exoneracion_2.pdf');
 end;
 
 procedure TFMain.Rectificacion();
 begin
-panel10.refresh;
-
-dir:=500;
-  if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
+MyChrono.Start;
+Label88.Caption := 'RECTIFICACION fX';
+vtiempo := 15+Random(15);
+LTiempo.Caption := LTiempo.Caption+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5000,10,1000+random(5000),1+random(500),1+random(500),2,
 '11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
- if l=0 then   ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,10,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-if l=0 then   ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,100,1000+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-dir:=dir-49;
-panel10.color:=clred; panel10.refresh;
- if l=0 then   ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111+random(dir),1+random(dir),1+random(dir),2+random(1),
-'11111111','11111111');
-if l=0 then   ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,1000,1111 ,1 ,1 ,2+random(3),
-'11111111','11111111');
-recmain2:=recmain2+5;
-recmain3:=50+recmain2+random(recmain2);
-if soc>250 then recmainper:=recmain3-random(40);
-if soc>300 then recmainper:=30+random(100);
-if recmain3>100 then  recmain3:=99+random(4);
- label88.caption:='RECTIFICACIONES Rx: '+inttostr(recmain3);
+until
+MyChrono.TimeElapsed > vtiempo;
+LTiempo.Caption := 'Tiempo estimado en segs.: ';
+Recmainper := 75+Random(30);
+If recmainper>100 Then recmainper := 85+Random(15);
+label88.caption:='RECTIFICACION fX: '+inttostr(recmainper);
+MyChrono.Stop;
 end;
 
 procedure TFMain.Label7Click(Sender: TObject);
@@ -1830,7 +1501,7 @@ end;
 
 procedure TFMain.Label8Click(Sender: TObject);
 begin
-ShowMessage('A continuación por favor elíja el tipo de caja de interfaz que va a usar.');
+ShowMessage('Por favor elíja el tipo de caja de interfaz que va a usar.');
 winexec('Interfacetype.exe',1);
 FormComPort.SCIOType:=RSCIOType;
 If formcomport.Bekapcsolas Then
@@ -1862,19 +1533,18 @@ end;
 
 procedure TFMain.Button43Click(Sender: TObject);
 begin
-    Application.CreateForm(TAboutBox, AboutBox);
-    AboutBox.ShowModal;
-     AboutBox.Free;
+Application.CreateForm(TAboutBox, AboutBox);
+AboutBox.ShowModal;
+AboutBox.Free;
 end;
 
 procedure TFMain.ConteoDir(Dir: string);
  var
-    FileSearch:  TSearchRec;
+FileSearch:  TSearchRec;
  begin
-    chDir (Dir);
-    FindFirst ('*.*', faDirectory, FileSearch);
-
-    while FindNext(FileSearch)=0 do
+chDir (Dir);
+FindFirst ('*.*', faDirectory, FileSearch);
+while FindNext(FileSearch)=0 do
     begin
       if (FileSearch.Attr = faDirectory) then
       begin
@@ -1894,19 +1564,15 @@ procedure TFMain.RastreaDir(Dir: string);
  begin
     chDir (Dir);
     FindFirst ('*.*', faDirectory, FileSearch);
-
     while FindNext(FileSearch)=0 do
     begin
       if (FileSearch.Attr = faDirectory) then
-
       begin
         if (FileSearch.Name<>'..') then
           //RastreaDir(Dir+FileSearch.Name+'\');
           FileSearch.Name := FileSearch.Name
-
       end else  begin
           Memo1.Lines.Add(Dir+FileSearch.Name);
-
          copyfile(PChar(Dir+'\'+FileSearch.Name),PChar(pdestino+'\'+FileSearch.Name),true);
          Actualiza;
          end;
@@ -1920,7 +1586,6 @@ procedure TFMain.LimpiaDir(Dir,Dir2: string);
     begin
     chDir (Dir);
     FindFirst ('*.*', faDirectory, FileSearch);
-
     while FindNext(FileSearch)=0 do
     begin
       if (FileSearch.Attr = faDirectory) then
@@ -1963,10 +1628,9 @@ begin
             break;
           end;
       n := findnext(Rbusqueda);
-
     end;
     if vpath = ''  then begin
-       showmessage('No se enconto el directorio de AnaiD en c:\genio ios');
+       showmessage('No se encontró el directorio de AnaiD en c:\genio ios');
       Gauge1.Progress := 0;
       Gauge1.refresh;
        exit;
@@ -1985,7 +1649,7 @@ begin
 
     end;
     if vpath0 = ''  then begin
-       showmessage('No se enconto el directorio de Data0 en '+vpath);
+       showmessage('No se encontró el directorio de Data0 en '+vpath);
        Gauge1.Progress := 0;
        Gauge1.refresh;
        exit;
@@ -2172,6 +1836,255 @@ CB_Vit_Head.Checked := False;
 CB_Vit_RH.Checked := False;
 CB_Vit_RF.Checked := False;
 Button4.Visible := False;
+end;
+
+procedure TFMain.Time_CronoTimer(Sender: TObject);
+begin
+        LTime.Caption:=TimeToStr(Time);
+        Lcrono.Caption := MyChrono.Time2Str(MyChrono.TimeElapsed) ;
+        Lcrono.refresh;
+end;
+
+procedure TFMain.Button6Click(Sender: TObject);
+begin
+MyChrono.Start;
+If CBAutomatico.Checked = True Then TBiomarcadores.Enabled := True;
+vtiempo := 45+Random(15);
+LTiempo.Caption := LTiempo.Caption+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5000,10,1000+random(5000),1+random(500),1+random(500),2,
+'11111111','11111111');
+until
+MyChrono.TimeElapsed > vtiempo;
+TBiomarcadores.Enabled := False;
+LimpiaBiomarcadores();
+LTiempo.Caption := 'Tiempo estimado en segs.: ';
+MyChrono.Stop;
+PCerrar1Click(Sender);
+end;
+
+procedure TFMain.Botones();
+begin
+Button6.Enabled := False;
+Button68.Enabled := False;
+Button92.Enabled := False;
+Button94.Enabled := False;
+Button96.Enabled := False;
+button92.Enabled:=false;
+button79.Enabled:=false;
+button80.Enabled:=false;
+button81.Enabled:=false;
+button82.Enabled:=false;
+button83.Enabled:=false;
+button84.Enabled:=false;
+button85.Enabled:=false;
+button86.Enabled:=false;
+button87.Enabled:=false;
+button88.Enabled:=false;
+end;
+procedure TFMain.Edit1Change(Sender: TObject);
+begin
+If Edit1.Text<>'' Then CheckBox45.Checked := True
+Else
+CheckBox45.Checked := False;
+end;
+
+procedure TFMain.Edit3Change(Sender: TObject);
+begin
+If Edit3.Text<>'' Then CheckBox46.Checked := True
+Else
+CheckBox46.Checked := False;
+end;
+
+procedure TFMain.Edit2Change(Sender: TObject);
+begin
+If Edit2.Text<>'' Then CheckBox47.Checked := True
+Else
+CheckBox47.Checked := False;
+end;
+
+procedure TFMain.Edit4Change(Sender: TObject);
+begin
+If Edit4.Text<>'' Then CheckBox48.Checked := True
+Else
+CheckBox48.Checked := False;
+end;
+
+procedure TFMain.Edit5Change(Sender: TObject);
+begin
+If Edit5.Text<>'' Then CheckBox49.Checked := True
+Else
+CheckBox49.Checked := False;
+end;
+
+procedure TFMain.Edit6Change(Sender: TObject);
+begin
+If Edit6.Text<>'' Then CheckBox50.Checked := True
+Else
+CheckBox50.Checked := False;
+end;
+
+procedure TFMain.Edit7Change(Sender: TObject);
+begin
+If Edit7.Text<>'' Then CheckBox51.Checked := True
+Else
+CheckBox51.Checked := False;
+end;
+
+procedure TFMain.Edit8Change(Sender: TObject);
+begin
+If Edit8.Text<>'' Then CheckBox55.Checked := True
+Else
+CheckBox55.Checked := False;
+end;
+
+
+procedure TFMain.TBiomarcadoresTimer(Sender: TObject);
+begin
+LimpiaBiomarcadores();
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox1.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox2.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox3.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox4.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox5.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox6.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox7.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox8.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox9.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox10.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox11.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox12.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox13.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox14.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox15.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox16.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox17.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox18.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox19.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox20.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox21.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox22.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox23.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox24.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox25.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox26.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox27.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox28.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox29.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox30.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox31.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox32.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox33.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox34.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox35.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox36.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox36.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox38.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox39.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox40.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox41.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox42.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox43.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox44.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox53.Checked := True;
+biomarcador := Random(5);
+If Biomarcador = 3 Then CheckBox54.Checked := True;
+end;
+
+procedure TFMain.LimpiaBiomarcadores();
+begin
+CheckBox1.Checked := False;
+CheckBox2.Checked := False;
+CheckBox3.Checked := False;
+CheckBox4.Checked := False;
+CheckBox5.Checked := False;
+CheckBox6.Checked := False;
+CheckBox7.Checked := False;
+CheckBox8.Checked := False;
+CheckBox9.Checked := False;
+CheckBox10.Checked := False;
+CheckBox11.Checked := False;
+CheckBox12.Checked := False;
+CheckBox13.Checked := False;
+CheckBox14.Checked := False;
+CheckBox15.Checked := False;
+CheckBox16.Checked := False;
+CheckBox17.Checked := False;
+CheckBox18.Checked := False;
+CheckBox19.Checked := False;
+CheckBox20.Checked := False;
+CheckBox21.Checked := False;
+CheckBox22.Checked := False;
+CheckBox23.Checked := False;
+CheckBox24.Checked := False;
+CheckBox25.Checked := False;
+CheckBox26.Checked := False;
+CheckBox27.Checked := False;
+CheckBox28.Checked := False;
+CheckBox29.Checked := False;
+CheckBox30.Checked := False;
+CheckBox31.Checked := False;
+CheckBox32.Checked := False;
+CheckBox33.Checked := False;
+CheckBox34.Checked := False;
+CheckBox35.Checked := False;
+CheckBox36.Checked := False;
+CheckBox36.Checked := False;
+CheckBox38.Checked := False;
+CheckBox39.Checked := False;
+CheckBox40.Checked := False;
+CheckBox41.Checked := False;
+CheckBox42.Checked := False;
+CheckBox43.Checked := False;
+CheckBox44.Checked := False;
+CheckBox53.Checked := False;
+CheckBox54.Checked := False;
 end;
 
 end.

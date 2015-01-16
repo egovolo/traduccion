@@ -43,7 +43,6 @@ type
     EditClinicDataOnReportHeading1: TMenuItem;
     Addnotesfiletoreport1: TMenuItem;
     Addnotestoharddrivenotprintfile1: TMenuItem;
-    Memo1: TMemo;
     Wellness1: TMenuItem;
     Biorythms1: TMenuItem;
     Close1: TMenuItem;
@@ -158,7 +157,6 @@ type
     AllergyBill1: TMenuItem;
     BiofeedbachSuperBill1: TMenuItem;
     WomensIssues1: TMenuItem;
-    Label13: TLabel;
     Mercurydetoxremoval1: TMenuItem;
     LeakyGutSyndrome1: TMenuItem;
     LeakyGutSyndrome2: TMenuItem;
@@ -197,7 +195,6 @@ type
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
     Label7: TLabel;
-    BitBtn1: TBitBtn;
     Button_Table: TButton;
     B_reload: TButton;
     Button4: TButton;
@@ -280,7 +277,6 @@ type
     Bit_Cancel: TBitBtn;
     Bit_Save: TBitBtn;
     Image2: TImage;
-    BAyuda: TButton;
     Label1: TLabel;
     Label10: TLabel;
     Image3: TImage;
@@ -289,7 +285,7 @@ type
     Label33: TLabel;
     PdfDoc1: TPdfDoc;
     LL500: TLabel;
-    procedure BAyudaClick(Sender: TObject);
+
     procedure Button7Click(Sender: TObject);
     procedure Bit_SaveClick(Sender: TObject);
     procedure Bit_CancelClick(Sender: TObject);
@@ -331,7 +327,6 @@ type
     procedure Addnotesfiletoreport1Click(Sender: TObject);
     procedure Addnotestoharddrivenotprintfile1Click(Sender: TObject);
     procedure Affirmations1Click(Sender: TObject);
-    procedure Memo1DblClick(Sender: TObject);
     procedure Wellness1Click(Sender: TObject);
     procedure Biorythms1Click(Sender: TObject);
     procedure Close1Click(Sender: TObject);
@@ -369,9 +364,6 @@ type
     procedure WebsiteAccess1Click(Sender: TObject);
     procedure SavetoAccessorExcel1Click(Sender: TObject);
     procedure Edit33Change(Sender: TObject);
-    procedure HelpMemo1Click(Sender: TObject);
-    procedure BitBtn1Click(Sender: TObject);
-    procedure Ayuda1Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Memo3Change(Sender: TObject);
@@ -685,12 +677,6 @@ Begin
   DM.T_Examine.Filtered:=True;
 end;
 
-procedure TSysreport.BAyudaClick(Sender: TObject);
- begin
-Memo1.Visible := True;
-BAyuda.Enabled := False;
- end;
-
 procedure TSysreport.Button7Click(Sender: TObject);
 var x,i,hoja: integer;
  documento,
@@ -826,33 +812,19 @@ begin
 
    If ReportType='Simple' Then
    Begin
-   // Tabsheet1.TabVisible:=True;
-   // Tabsheet2.TabVisible:=False;
-   //    Pagecontrol1.ActivePage:=Sysreport.Tabsheet1;
-
     ReportSave;
-    BitBtn1.Enabled := true;
-    { Automatikusan betoltjuk a riportot ,
-      Auto Load Riport to Simple DBMmemo}
-
      GetDir(0,FileNev); { 0 = Current drive }
      FileNev:=ExtractFilePath(FileNev);
      FileNev:=FileNev+'PROGRAM\';
      FileNev:=Filenev+'Report.txt';
        Reportx.Clear;
        Reportx.selectAll;
-       { First line }
-       {Reportx.Lines.Add('Patient name : '+PatForm1.PName); }
-
        Reportx.Lines.loadfromfile(FileNev);
        Reportx.SelectAll;
    end;
 
    If ReportType='Allergy' Then
    Begin
-    //Tabsheet2.TabVisible:=True;
-    //Tabsheet1.TabVisible:=False;
-   // Pagecontrol1.ActivePage:=Sysreport.Tabsheet2;
     AReportSave;
     { Automatikusan betoltjuk az Allergy riportot ,
       Auto Load Riport to Allergy DBMmemo}
@@ -861,17 +833,8 @@ begin
      FileNev:=ExtractFilePath(FileNev);
      FileNev:=FileNev+'PROGRAM\';
      FileNev:=Filenev+'Report.txt';
-       //ReportAllergy.Clear;
-       //ReportAllergy.selectAll;
-
-       { First line }
-       Reportx.Lines.Add('Nombre de la persona: '+PatForm1.PName); {}
-
-       //ReportAllergy.Lines.loadfromfile(FileNev);
-       //ReportAllergy.SelectAll;
+        Reportx.Lines.Add('Nombre de la persona: '+PatForm1.PName); {}
    end;
-
- // DBEdit1.SetFocus;
 end;
 
 procedure TSysreport.FormShow(Sender: TObject);
@@ -1186,56 +1149,31 @@ begin
   Begin
   If ReportType='Simple' Then
    Begin
-    {Tabsheet1.TabVisible:=True;
-    Tabsheet2.TabVisible:=False;
-    Pagecontrol1.ActivePage:=Sysreport.Tabsheet1;
-     }
     ReportSave;
-    BitBtn1.Enabled := true;
-    { Automatikusan betoltjuk a riportot ,
-      Auto Load Riport to Simple DBMmemo}
-
      GetDir(0,FileNev); { 0 = Current drive }
      FileNev:=ExtractFilePath(FileNev);
      FileNev:=FileNev+'PROGRAM\';
      FileNev:=Filenev+'Report.txt';
        Reportx.Clear;
        Reportx.selectAll;
-       { First line }
-       {Reportx.Lines.Add('Patient name : '+PatForm1.PName); }
-
        Reportx.Lines.loadfromfile(FileNev);
        Reportx.SelectAll;
    end;
 
    If ReportType='Allergy' Then
    Begin
-    {Tabsheet2.TabVisible:=True;
-    Tabsheet1.TabVisible:=False;
-    Pagecontrol1.ActivePage:=Sysreport.Tabsheet2;}
     AReportSave;
-    { Automatikusan betoltjuk az Allergy riportot ,
-      Auto Load Riport to Allergy DBMmemo}
-
      GetDir(0,FileNev); { 0 = Current drive }
      FileNev:=ExtractFilePath(FileNev);
      FileNev:=FileNev+'PROGRAM\';
      FileNev:=Filenev+'Report.txt';
-       {ReportAllergy.Clear;
-       ReportAllergy.selectAll;
-       Reportx.Lines.Add('Nombre: '+PatForm1.PName);
-       ReportAllergy.Lines.loadfromfile(FileNev);
-       ReportAllergy.SelectAll;
-       }
    end;
-
   Reportx.SetFocus;
   end;
 end;
 
 procedure TSysreport.Bit_EditClick(Sender: TObject);
 begin
-   { Be van toltve paciens }
      OpenOldFile1.enabled:=True;
      Button4.enabled:=True;
      Button9.enabled:=True;
@@ -1435,15 +1373,7 @@ begin
 
   DM.T_Examine.FieldByName('Exam_Date').AsString:= ReturnAktualDate;
   DM.T_Examine.FieldByName('NextDate').AsString:= ReturnAktualDate;
-
-{  if MessageDlg('¿Desea cargar la matriz?',
-    mtInformation, [mbYes, mbNo], 0) = mrYes then
-  Begin
-  }
    ReportSave;
-   BitBtn1.Enabled := true;
-  {}
-        { Automatikusan betoltjuk a riportot ,Auto Load Riport to DBMmemo}
         GetDir(0,FileNev); { 0 = Current drive }
         FileNev:=ExtractFilePath(FileNev);
         FileNev:=FileNev+'PROGRAM\';
@@ -1452,7 +1382,6 @@ begin
           Reportx.selectAll;
           Reportx.Lines.loadfromfile(FileNev);
           Reportx.SelectAll;
-//  end;
   Edit1.SetFocus;
 end;
 
@@ -1556,12 +1485,6 @@ end;
 procedure TSysreport.Affirmations1Click(Sender: TObject);
 begin
  MyWinexec('write.exe','afirmaciones.txt');
-end;
-
-procedure TSysreport.Memo1DblClick(Sender: TObject);
-begin
-memo1.visible := false;
-BAyuda.Enabled := True;
 end;
 
 procedure TSysreport.Wellness1Click(Sender: TObject);
@@ -1717,30 +1640,17 @@ Var
     F1,F2 : TextFile;
     Fname : String;
 begin
- { Create a simlpe TEXT report}
-//k  FName:=InputBox('Nombre del archivo a ser creado:', '');
 
   If Copy(FNAme,(Length(FNAme)-3),4)<> Lowercase('.txt') Then
   FName:=FName+'.txt';
 
   ReportSave;
-  BitBtn1.Enabled := true;
   AssignFile(F1,'report.txt');     {Write to report.txt}
  
 
   AssignFile(F2,FName);
   Reset(F1);
   ReWrite(F2);
-  {Writeln(F2,DM.ReportData.FieldByName('Clinic_name').AsString);
-  Writeln(F2,DM.ReportData.FieldByName('Doctor_name').AsString);
-  Writeln(F2,DM.ReportData.FieldByName('Clinic_Address').AsString);
-  Writeln(F2,DM.ReportData.FieldByName('Clinic_Tel').AsString);
-  While not EOF(F1) do
-  Begin
-     Readln(F1,S);
-     Writeln(F2,S);
-  End;}
-
    for i:= 0 to  Reportx.Lines.count -1 do begin
             Writeln(F2,Reportx.Lines[i]);
    end;
@@ -3094,22 +3004,6 @@ end;
 procedure TSysreport.Edit33Change(Sender: TObject);
 begin
 edt1:=edt1+1;
-//kif edt1>6 then combobox2.visible:=true;
-end;
-
-procedure TSysreport.HelpMemo1Click(Sender: TObject);
-begin
-memo1.visible:=true;
-end;
-
-procedure TSysreport.BitBtn1Click(Sender: TObject);
-begin
- close;
-end;
-
-procedure TSysreport.Ayuda1Click(Sender: TObject);
-begin
-Memo1.Visible := True;
 end;
 
 procedure TSysreport.Label8Click(Sender: TObject);

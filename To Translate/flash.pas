@@ -72,12 +72,9 @@ type
     Label96: TLabel;
     Label126: TLabel;
     Label127: TLabel;
-    Label128: TLabel;
     Label129: TLabel;
     Label97: TLabel;
     Label98: TLabel;
-    Label99: TLabel;
-    Edit7: TEdit;
     Button4: TButton;
     Edit8: TEdit;
     Edit9: TEdit;
@@ -87,7 +84,6 @@ type
     Edit17: TEdit;
     Button64: TButton;
     Button5: TButton;
-    PDesarrollo: TPanel;
     Panel5: TPanel;
     Image1: TImage;
     Edit1: TEdit;
@@ -107,8 +103,6 @@ type
     Edit22: TEdit;
     Edit23: TEdit;
     Button43: TButton;
-    Button44: TButton;
-    Memo2: TMemo;
     Button45: TButton;
     Edit24: TEdit;
     Edit25: TEdit;
@@ -145,8 +139,6 @@ type
     Label110: TLabel;
     Edit29: TEdit;
     Button39: TButton;
-    Button40: TButton;
-    Button41: TButton;
     Label111: TLabel;
     Label112: TLabel;
     Label113: TLabel;
@@ -168,7 +160,6 @@ type
     Label190: TLabel;
     Label191: TLabel;
     Label192: TLabel;
-    Button46: TButton;
     Label193: TLabel;
     Label194: TLabel;
     Label195: TLabel;
@@ -295,9 +286,7 @@ type
     Label309: TLabel;
     Edit32: TEdit;
     Button76: TButton;
-    Label310: TLabel;
     Button77: TButton;
-    Memo4: TMemo;
     Button78: TButton;
     Button79: TButton;
     Label314: TLabel;
@@ -345,7 +334,6 @@ type
     Label364: TLabel;
     Label365: TLabel;
     Label366: TLabel;
-    Memo6: TMemo;
     Label367: TLabel;
     Label368: TLabel;
     Label369: TLabel;
@@ -371,7 +359,6 @@ type
     MainMenu1: TMainMenu;
     Programs1: TMenuItem;
     Treatments1: TMenuItem;
-    Information1: TMenuItem;
     RelaxationPulse3sec1: TMenuItem;
     RelaxationPulse3sec2: TMenuItem;
     StimulateCreativity1: TMenuItem;
@@ -380,7 +367,6 @@ type
     NeuoPeptideBalance1: TMenuItem;
     StimulateEmotionalGrowth1: TMenuItem;
     NeuralNetStabilization1: TMenuItem;
-    InfoGeneral1: TMenuItem;
     NeuoPeptideBalance2: TMenuItem;
     NeuroPeptideStimulation1: TMenuItem;
     StimulateInsight1: TMenuItem;
@@ -506,16 +492,9 @@ type
     Edit35: TEdit;
     Button119: TButton;
     ZapForJetLag1: TMenuItem;
-    ds1: TMenuItem;
     Label458: TLabel;
     Label459: TLabel;
     Label460: TLabel;
-    CancerAssignmentText1: TMenuItem;
-    AlcoholismTest1: TMenuItem;
-    StressTest1: TMenuItem;
-    WomensTakeHomeChart1: TMenuItem;
-    Affirmations1: TMenuItem;
-    EmotionTest1: TMenuItem;
     StabilizeThanatos1: TMenuItem;
     StabilizeEros1: TMenuItem;
     LearningDisability1: TMenuItem;
@@ -734,8 +713,6 @@ type
     EstimularcomprensindelAquelAhora1: TMenuItem;
     Estimularinteligenciainnata1: TMenuItem;
     Estimularmemoria1: TMenuItem;
-    Listadodeafirmaciones1: TMenuItem;
-    Label657: TLabel;
     Label241: TLabel;
     Label629: TLabel;
     Label630: TLabel;
@@ -777,8 +754,6 @@ type
     RadioButton18: TRadioButton;
     RadioButton19: TRadioButton;
     RadioButton20: TRadioButton;
-    N6: TMenuItem;
-    Label617: TLabel;
     Time_Crono: TTimer;
     Label627: TLabel;
     Label628: TLabel;
@@ -788,127 +763,6 @@ type
     Button141: TButton;
     Button142: TButton;
     Button143: TButton;
-    CheckBox1: TCheckBox;
-    CheckBox2: TCheckBox;
-    CheckBox3: TCheckBox;
-    CheckBox4: TCheckBox;
-    CheckBox5: TCheckBox;
-    CheckBox6: TCheckBox;
-    CheckBox7: TCheckBox;
-    CheckBox8: TCheckBox;
-    CheckBox9: TCheckBox;
-    CheckBox10: TCheckBox;
-    CheckBox11: TCheckBox;
-    CheckBox12: TCheckBox;
-    CheckBox13: TCheckBox;
-    CheckBox14: TCheckBox;
-    CheckBox16: TCheckBox;
-    CheckBox17: TCheckBox;
-    CheckBox18: TCheckBox;
-    CheckBox19: TCheckBox;
-    CheckBox20: TCheckBox;
-    CheckBox21: TCheckBox;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    Label10: TLabel;
-    Label11: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
-    Label16: TLabel;
-    Label17: TLabel;
-    Label18: TLabel;
-    Label19: TLabel;
-    Label20: TLabel;
-    Label21: TLabel;
-    Label22: TLabel;
-    Label23: TLabel;
-    Label24: TLabel;
-    CheckBox22: TCheckBox;
-    CheckBox23: TCheckBox;
-    CheckBox24: TCheckBox;
-    CheckBox25: TCheckBox;
-    CheckBox26: TCheckBox;
-    CheckBox27: TCheckBox;
-    CheckBox28: TCheckBox;
-    CheckBox29: TCheckBox;
-    Label25: TLabel;
-    Label26: TLabel;
-    Label27: TLabel;
-    Label28: TLabel;
-    Label29: TLabel;
-    Label30: TLabel;
-    Label31: TLabel;
-    Label32: TLabel;
-    CheckBox30: TCheckBox;
-    CheckBox31: TCheckBox;
-    CheckBox32: TCheckBox;
-    CheckBox33: TCheckBox;
-    CheckBox34: TCheckBox;
-    CheckBox35: TCheckBox;
-    CheckBox36: TCheckBox;
-    CheckBox37: TCheckBox;
-    CheckBox38: TCheckBox;
-    CheckBox39: TCheckBox;
-    CheckBox40: TCheckBox;
-    CheckBox41: TCheckBox;
-    CheckBox42: TCheckBox;
-    CheckBox43: TCheckBox;
-    CheckBox44: TCheckBox;
-    CheckBox45: TCheckBox;
-    CheckBox46: TCheckBox;
-    CheckBox47: TCheckBox;
-    CheckBox48: TCheckBox;
-    CheckBox49: TCheckBox;
-    Label33: TLabel;
-    Label34: TLabel;
-    Label35: TLabel;
-    Label36: TLabel;
-    Label37: TLabel;
-    Label38: TLabel;
-    Label39: TLabel;
-    Label40: TLabel;
-    Label41: TLabel;
-    Label42: TLabel;
-    Label43: TLabel;
-    Label44: TLabel;
-    Label45: TLabel;
-    Label46: TLabel;
-    Label47: TLabel;
-    Label48: TLabel;
-    Label49: TLabel;
-    Label50: TLabel;
-    Label51: TLabel;
-    Label52: TLabel;
-    CheckBox50: TCheckBox;
-    CheckBox51: TCheckBox;
-    CheckBox52: TCheckBox;
-    CheckBox53: TCheckBox;
-    Label53: TLabel;
-    Label54: TLabel;
-    Label55: TLabel;
-    Label56: TLabel;
-    Label57: TLabel;
-    CheckBox54: TCheckBox;
-    CheckBox55: TCheckBox;
-    CheckBox56: TCheckBox;
-    CheckBox57: TCheckBox;
-    CheckBox58: TCheckBox;
-    CheckBox59: TCheckBox;
-    CheckBox60: TCheckBox;
-    Label58: TLabel;
-    Label59: TLabel;
-    Label60: TLabel;
-    Label61: TLabel;
-    Label62: TLabel;
-    Label63: TLabel;
-    Label64: TLabel;
-    L_Consejo: TLabel;
     Label65: TLabel;
     PirmidedeMaslow1: TMenuItem;
     PPiramideMaslow: TPanel;
@@ -1039,7 +893,6 @@ type
     Edit42: TEdit;
     Edit43: TEdit;
     Panel18: TPanel;
-    Label119: TLabel;
     Panel23: TPanel;
     Panel24: TPanel;
     Panel25: TPanel;
@@ -1203,6 +1056,167 @@ type
     Edit44: TEdit;
     GoToNo: TButton;
     Label684: TLabel;
+    Label310: TLabel;
+    Label617: TLabel;
+    Label657: TLabel;
+    GroupBox1: TGroupBox;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label23: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Label32: TLabel;
+    Label33: TLabel;
+    Label35: TLabel;
+    Label36: TLabel;
+    Label37: TLabel;
+    Label38: TLabel;
+    Label39: TLabel;
+    Label40: TLabel;
+    Label41: TLabel;
+    Label42: TLabel;
+    Label43: TLabel;
+    Label44: TLabel;
+    Label45: TLabel;
+    Label46: TLabel;
+    Label47: TLabel;
+    Label48: TLabel;
+    Label49: TLabel;
+    Label50: TLabel;
+    Label51: TLabel;
+    Label52: TLabel;
+    Label55: TLabel;
+    Label59: TLabel;
+    Label62: TLabel;
+    Label63: TLabel;
+    Label64: TLabel;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox9: TCheckBox;
+    CheckBox10: TCheckBox;
+    CheckBox11: TCheckBox;
+    CheckBox12: TCheckBox;
+    CheckBox13: TCheckBox;
+    CheckBox14: TCheckBox;
+    CheckBox16: TCheckBox;
+    CheckBox17: TCheckBox;
+    CheckBox18: TCheckBox;
+    CheckBox19: TCheckBox;
+    CheckBox20: TCheckBox;
+    CheckBox21: TCheckBox;
+    CheckBox22: TCheckBox;
+    CheckBox23: TCheckBox;
+    CheckBox24: TCheckBox;
+    CheckBox25: TCheckBox;
+    CheckBox26: TCheckBox;
+    CheckBox27: TCheckBox;
+    CheckBox28: TCheckBox;
+    CheckBox29: TCheckBox;
+    CheckBox30: TCheckBox;
+    CheckBox31: TCheckBox;
+    CheckBox32: TCheckBox;
+    CheckBox33: TCheckBox;
+    CheckBox34: TCheckBox;
+    CheckBox35: TCheckBox;
+    CheckBox36: TCheckBox;
+    CheckBox37: TCheckBox;
+    CheckBox38: TCheckBox;
+    CheckBox39: TCheckBox;
+    CheckBox40: TCheckBox;
+    CheckBox41: TCheckBox;
+    CheckBox42: TCheckBox;
+    CheckBox43: TCheckBox;
+    CheckBox44: TCheckBox;
+    CheckBox45: TCheckBox;
+    CheckBox46: TCheckBox;
+    CheckBox47: TCheckBox;
+    CheckBox48: TCheckBox;
+    CheckBox49: TCheckBox;
+    Label4: TLabel;
+    Label9: TLabel;
+    Label19: TLabel;
+    Label22: TLabel;
+    Label34: TLabel;
+    Label53: TLabel;
+    Label54: TLabel;
+    Label56: TLabel;
+    Label58: TLabel;
+    Label60: TLabel;
+    Label61: TLabel;
+    CheckBox50: TCheckBox;
+    CheckBox51: TCheckBox;
+    CheckBox52: TCheckBox;
+    CheckBox53: TCheckBox;
+    CheckBox54: TCheckBox;
+    CheckBox55: TCheckBox;
+    CheckBox56: TCheckBox;
+    CheckBox57: TCheckBox;
+    CheckBox58: TCheckBox;
+    CheckBox59: TCheckBox;
+    CheckBox60: TCheckBox;
+    CBAutomaticoPN: TCheckBox;
+    Edit7: TEdit;
+    CheckBox62: TCheckBox;
+    CheckBox63: TCheckBox;
+    CheckBox64: TCheckBox;
+    CheckBox65: TCheckBox;
+    CheckBox66: TCheckBox;
+    CheckBox67: TCheckBox;
+    Edit45: TEdit;
+    Edit46: TEdit;
+    Edit60: TEdit;
+    Edit62: TEdit;
+    Edit63: TEdit;
+    TAutomatico: TTimer;
+    Repositorio1: TMenuItem;
+    N2: TMenuItem;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
@@ -1210,7 +1224,6 @@ type
     procedure Button13Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure Button44Click(Sender: TObject);
     procedure Button116Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Button12Click(Sender: TObject);
@@ -1222,7 +1235,6 @@ type
     procedure Button45Click(Sender: TObject);
     procedure Button15Click(Sender: TObject);
     procedure Button22Click(Sender: TObject);
-    procedure PDesarrolloClick(Sender: TObject);
     procedure Panel5Click(Sender: TObject);
     procedure Button27Click(Sender: TObject);
     procedure Button29Click(Sender: TObject);
@@ -1232,10 +1244,7 @@ type
     procedure Button38Click(Sender: TObject);
     procedure Button37Click(Sender: TObject);
     procedure Button39Click(Sender: TObject);
-    procedure Button40Click(Sender: TObject);
-    procedure Button41Click(Sender: TObject);
     procedure Button42Click(Sender: TObject);
-    procedure Button46Click(Sender: TObject);
     procedure Label130Click(Sender: TObject);
     procedure Label200Click(Sender: TObject);
     procedure Label131Click(Sender: TObject);
@@ -1266,7 +1275,6 @@ type
     procedure Label151Click(Sender: TObject);
     procedure Label198Click(Sender: TObject);
     procedure Button54Click(Sender: TObject);
-    procedure Memo2DblClick(Sender: TObject);
     procedure Button56Click(Sender: TObject);
     procedure SpinEdit2Change(Sender: TObject);
     procedure Button57Click(Sender: TObject);
@@ -1340,7 +1348,6 @@ type
     procedure Label361DblClick(Sender: TObject);
     procedure Label365DblClick(Sender: TObject);
     procedure Label366DblClick(Sender: TObject);
-    procedure Memo6DblClick(Sender: TObject);
     procedure Button102Click(Sender: TObject);
     procedure Button103Click(Sender: TObject);
     procedure Button108Click(Sender: TObject);
@@ -1353,8 +1360,6 @@ type
     procedure Edit34Enter(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
     procedure Edit35Change(Sender: TObject);
-    procedure ds1Click(Sender: TObject);
-    procedure Affirmations1Click(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
     procedure CheckBox2Click(Sender: TObject);
     procedure CheckBox3Click(Sender: TObject);
@@ -1506,7 +1511,6 @@ type
     procedure Button23Click(Sender: TObject);
     procedure Listadodeafirmaciones1Click(Sender: TObject);
     procedure Button146Click(Sender: TObject);
-    procedure CheckBox15Click(Sender: TObject);
     procedure Edit47Change(Sender: TObject);
     procedure Edit48Change(Sender: TObject);
     procedure Edit49Change(Sender: TObject);
@@ -1604,7 +1608,6 @@ type
     procedure Edit42Change(Sender: TObject);
     procedure Edit43Change(Sender: TObject);
     procedure Panel18Click(Sender: TObject);
-    procedure Label119Click(Sender: TObject);
     procedure Panel23Click(Sender: TObject);
     procedure Panel24Click(Sender: TObject);
     procedure Panel25Click(Sender: TObject);
@@ -1724,6 +1727,24 @@ type
     procedure Label626Click(Sender: TObject);
     procedure TodosClick(Sender: TObject);
     procedure Label462Click(Sender: TObject);
+    procedure Label310Click(Sender: TObject);
+    procedure Label617Click(Sender: TObject);
+    procedure Label657Click(Sender: TObject);
+    procedure Edit7Change(Sender: TObject);
+    procedure Edit45Change(Sender: TObject);
+    procedure Edit46Change(Sender: TObject);
+    procedure Edit60Change(Sender: TObject);
+    procedure Edit62Change(Sender: TObject);
+    procedure Edit63Change(Sender: TObject);
+    procedure TAutomaticoTimer(Sender: TObject);
+    procedure Repositorio1Click(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -1741,7 +1762,7 @@ type
       Q_Filtro_order,
   Q_Filtro_sql :String;
   Q_Filtro_sql2 :String;
-    procedure Afirmaciones();
+
     procedure Sonia();
     Procedure Variables();
     Procedure PemotionsLoad();
@@ -1750,13 +1771,21 @@ type
     procedure TerapiaExtendida();
     procedure Reaccion_Irregular();
     procedure Items();
-    procedure Conexiones();
     procedure AnchoDB();
-    procedure EAF();
     procedure Rx();
     procedure ActualizaDBGrid3();
     Function StrToInt2(S2 : String) : Integer;
     procedure pFiltra_Conscida(pQString :String);
+    procedure EnlaceLabel359();
+    procedure EnlaceLabel360();
+    procedure EnlaceLabel361();
+    procedure EnlaceLabel362();
+    procedure EnlaceLabel363();
+    procedure EnlaceLabel364();
+    procedure EnlaceLabel365();
+    procedure EnlaceLabel366();
+    procedure ItemsParaConectar();
+    procedure LimpiaCheckBoxes();
   end;
 
 var
@@ -1975,7 +2004,6 @@ end;
 procedure TEmotion.HigherPurposeAlignment1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+HigherPurposeAlignment1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then HigherPurposeAlignment1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then HigherPurposeAlignment1.Click;
@@ -1985,7 +2013,6 @@ end;
 procedure TEmotion.BuildSelfImage1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+BuildSelfImage1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then BuildSelfImage1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then BuildSelfImage1.Click;
@@ -1995,7 +2022,6 @@ end;
 procedure TEmotion.Dispell2ndBrainWave1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Dispell2ndBrainWave1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Dispell2ndBrainWave1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then Dispell2ndBrainWave1.Click;
@@ -2005,7 +2031,6 @@ end;
   procedure TEmotion.StabilizeMood1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StabilizeMood1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StabilizeMood1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StabilizeMood1.Click;
@@ -2015,7 +2040,6 @@ end;
 procedure TEmotion.StabilizeEros1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StabilizeEros1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StabilizeEros1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StabilizeEros1.Click;
@@ -2025,7 +2049,6 @@ end;
   procedure TEmotion.StabilizeThanatos1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StabilizeThanatos1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StabilizeThanatos1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StabilizeThanatos1.Click;
@@ -2035,7 +2058,6 @@ end;
 procedure TEmotion.TreatFearandParanoia1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+TreatFearandParanoia1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then TreatFearandParanoia1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then TreatFearandParanoia1.Click;
@@ -2045,7 +2067,6 @@ end;
 procedure TEmotion.Angerandagressioncontrol21Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Angerandagressioncontrol21.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Angerandagressioncontrol21.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then Angerandagressioncontrol21.Click;
@@ -2055,7 +2076,6 @@ end;
 procedure TEmotion.JoinHekispherestoKnowTrueSelf1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+JoinHekispherestoKnowTrueSelf1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then JoinHekispherestoKnowTrueSelf1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then JoinHekispherestoKnowTrueSelf1.Click;
@@ -2072,9 +2092,6 @@ GProgreso.Progress := 0;
 vtiempo := 60;
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
-PDesarrollo.caption:='Realizando terapia para '+Button1.Caption+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 Repeat
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
@@ -2086,27 +2103,25 @@ Until
    MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
- PDesarrollo.visible:=false;
  if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
    FMain.shaping:=50+random(85);
    if FMain.shaping>100 then
      FMain.shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
+   PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
    LRectificado.Refresh;
    If FMain.shaping>84 Then begin
    Button1.Enabled := False;
 RelaxationPulse3sec2.Enabled := False;
    End;
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
-    MyChrono.Stop;
-    If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then Button1.Click;
-   If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+MyChrono.Stop;
+If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then Button1.Click;
+If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
 procedure TEmotion.Button3Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button3.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button3.Enabled := False;
@@ -2300,7 +2315,7 @@ begin
   DBGrid2.Columns[0].Width := 50;
   DBGrid2.Columns[1].Width := 812;
   DBGrid2.Columns[2].Width := 50;
-  end;
+end;
 
 procedure TEmotion.Label472Click(Sender: TObject);
 begin
@@ -2312,665 +2327,119 @@ procedure TEmotion.Button4Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-L_Consejo.Caption := '|||';
+If CBAutomaticoPN.Checked = True Then TAutomatico.Enabled := True;
 GProgreso.progress:=0;
 LRectificado.caption:='Rectificado | ';
 LRectificado.refresh;
-riskchart.emo:=riskchart.emo+20;
-PDesarrollo.caption:='Realizando terapia de ''PNL''...';
-          PDesarrollo.visible:=true;
-          PDesarrollo.refresh;
-       label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-      panel9.refresh;
-thera.autonlp:=10;
- thera.purt:=70;
-         panel9.visible:=true;
-                      panel9.refresh;
-  tot23:=volt+amp+resis+proton;
-   alg:=random(75);
- label160.caption:=inttostr(total1);
- oeg:=random(15);
-label126.caption:='Estrés emocional';
-if oeg=1 then label126.caption:=' Estrés. ';
-if oeg=2 then label126.caption:=' Falta de atencición. ';
-if oeg=3 then label126.caption:=' Factores mentales. ';
-if oeg=4 then label126.caption:=' Hereditario. ';
-if oeg=5 then label126.caption:=' Alergia. ';
-if oeg=6 then label126.caption:=' Toxinas. ';
-if oeg=7 then label126.caption:=' Patógenos. ';
-if oeg=8 then label126.caption:=' Energía perversa. ';
-if oeg=9 then label126.caption:=' Trauma o lesión. ';
-if oeg=10 then label126.caption:=' Deficiencia nutricional o exceso. ';
-if oeg=11 then label126.caption:=' Ataque psíquico. ';
-if oeg=12 then label126.caption:=' Repercución negativa kármica. ';
-if oeg=13 then label126.caption:=' Opresión espiritual. ';
-  if alg=13 then PDesarrollo.visible:=true;  
-      PDesarrollo.refresh;
- if ed<6 then begin
-  alg:=3+random(10);
-   alg:=random(12)+2;
-   tot23:=volt+amp+resis+proton;
-   end;
-if (proton<69) and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio del pH detectado. Iniciando reparación...';
-  panel15.Refresh;
-   end;
-        label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
- if (volt<65 ) and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio del voltage detectado. Iniciando reparación...';
-  panel15.Refresh;
-   end;
-       label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
- if (amp<65)  and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio del amperaje detectado. Iniciando reparación...';
-  panel15.Refresh;
-   end;
-
- if (resis<65)  and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio de la resistancia detectado. Iniciando reparación...';
-  panel15.Refresh;
-   end;
-     label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
- if (hydr<65 )  and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio de hidratación detectado. Iniciando reparación...';
- panel15.Refresh;
-   end;
-     label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
- if (oxid<65 )  and (tot23<>0) then begin
- panel15.visible:=true;
-  panel15.caption:='Disturbio de oxidación detectado. Iniciando reparación...';
-   panel15.Refresh;
-   end;
-     label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-   panel15.visible:=false;
-   panel9.refresh;
-GProgreso.progress:=0;
-dan:=dan+1;
-if dan >4 then L_Consejo.Caption := 'No efectúe más terapia de esta página una vez se complete esta terapia.';
-L_Consejo.Refresh;
-alg:=random(7);
-L_Consejo.Caption :=  'Pida a la persona relajar la respiración, músculos, reduzca la tensión.';
-L_Consejo.Refresh;
-  label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-   GProgreso.progress:=10;
-L_Consejo.Caption := 'Relaje la respiración, músculos, reduzca la tensión.';
-L_Consejo.Refresh;
-    ena:=random(100)+1;
-    dir:=random(100)+1;
-    rb9 := random (1000)+5000;
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(15+alg),
+vtiempo := 60+Random(120);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ena:=random(100)+1;
+dir:=random(100)+1;
+rb9 := random (8000);
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ChangingPulses(rb9,555,65000,ena,dir,2,
 'llllllll','llllllll');
-oeg:=random(13);
-if oeg=1 then label127.caption:='Reducción del estrés.';
-if oeg=2 then label127.caption:='Toma de conciencia, educación.';
-if oeg=3 then label127.caption:='Factores mentales o imponderables.';
-if oeg=4 then label127.caption:='Homeopatía metabólica o genética.';
-if oeg=5 then label127.caption:='Alersodes.';
-if oeg=6 then label127.caption:='Isodes o xenobióticos.';
-if oeg=7 then label127.caption:='Nosodes para patógenos.';
-if oeg=9 then label127.caption:='Terapia nutricional.';
-if oeg=8 then label127.caption:='Imponderables para energías perversas.';
- if oeg=9 then label127.caption:='Fitoterapia.';
- if oeg=10 then label127.caption:='Terapia de sarcodes.';
- if oeg>10 then label127.caption:='Combinaciones homeopáticas.';
-
- GProgreso.progress:=20;
-L_Consejo.Caption :=  'Pida a la persona disipar los pensamientos negativos.';
-L_Consejo.Refresh;
-   label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-  ena:=random(100)+1;
-    dir:=random(100)+1;
-    rb9 := random (1000)+5555;
-    alg:=1+random(13);
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-
- GProgreso.progress:=30;
-L_Consejo.Caption :=  'Pida a la persona que nuevos pensamientos y comportamientos entren y permanezcan.';
-L_Consejo.Refresh;
-   ena:=random(100)+1;
-    dir:=random(100)+1;
-
-    rb9 := random (1000)+5555;
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-  label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
+label2.caption:=inttostr(random(99999));
+label95.caption:=inttostr (random(99999));
+label96.caption:=inttostr(random(99999));
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 oeg:=random(14);
-label101.caption:='Estrés emocional.';
-if oeg=1 then label101.caption:='Estrés.';
-if oeg=2 then label101.caption:='Toma de conciencia.';
-if oeg=3 then label101.caption:='Factores mentales.';
-if oeg=4 then label101.caption:='Factores heredados.';
-if oeg=5 then label101.caption:='Alergias.';
-if oeg=6 then label101.caption:='Toxinas.';
-if oeg=7 then label101.caption:='Patógenos.';
-if oeg=8 then label101.caption:='Energías perversas.';
-if oeg=9 then label101.caption:='Trauma o lesión.';
-if oeg=10 then label101.caption:='Deficiencia o exceso nutricional.';
-if oeg=11 then label101.caption:='Ataque psíquico.';
-if oeg=12 then label101.caption:='Repercusión kármica.';
-if oeg=13 then label101.caption:='Opresión espiritual.';
-
- GProgreso.progress:=40;
-L_Consejo.Caption :=  'Pida a la persona que deje ir todas las fijaciones y deseos, permítase moderación y flexibilidad.';
-L_Consejo.Refresh;
-          label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-    ena:=random(100)+1;
-    dir:=random(100)+1;
-         DM.Info.Open;
-         DM.Info.first;
-  DM.Info.Last;
-  no := DM.Info.FieldbyName('no').asInteger;
-  inc(no); DM.Info.Appendrecord([no,nil,'']);
-  inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE PNL/BIORRESONANCIA -----' ]);
-          inc(no); DM.Info.Appendrecord([no,nil, edit8.text ]);
-         inc(no); DM.Info.Appendrecord([no,nil, edit9.text]);
-         inc(no); DM.Info.Appendrecord([no,nil,edit10.text]);
-          inc(no); DM.Info.Appendrecord([no,nil, edit17.text ]);
-         inc(no); DM.Info.Appendrecord([no,nil, edit12.text]);
-         inc(no); DM.Info.Appendrecord([no,nil,edit11.text]);
-edit8.text:='¿Qué beneficios le reporta su afección?:';
-edit9.text:='¿A qué personas necesita perdonar?:';
-edit10.text:='¿De qué se siente culpable?:';
-edit11.text:='¿Está siendo totalmente honesto/a consigo mismo/a?:';
-edit12.text:='¿Qué puede cambiar, qué debe aceptar?:';
-edit17.text:='¿Tiene la madurez suficiente para reconocer la diferencia?:';
-
-    rb9 := random (1000)+5555;
-     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(13+alg),
-'llllllll','llllllll');
-  label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-   FMain.shaping:=50+random(85);
-   if FMain.shaping>103 then
-     FMain.shaping:=97+random(9)
-   else
-     FMain.shaping:= FMain.shaping+random(25);
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
-  panel9.refresh;
-   alg:=random(10);
-   if alg >7 then PDesarrollo.visible:=true;   PDesarrollo.refresh;
-    if alg<6 then begin
- end;
-oeg:=random(11);
-label126.caption:='Estrés emocional.';
-if oeg=1 then label126.caption:='Estrés.';
-if oeg=2 then label126.caption:='Toma de conciencia.';
-if oeg=3 then label126.caption:='Factores mentales.';
-if oeg=4 then label126.caption:='Factores heredados.';
-if oeg=5 then label126.caption:='Alergias.';
-if oeg=6 then label126.caption:='Toxinas.';
-if oeg=7 then label126.caption:='Patógenos.';
-if oeg=8 then label126.caption:='Energías perversas.';
-if oeg=9 then label126.caption:='Trauma o lesión.';
-if oeg=10 then label126.caption:='Deficiencia o exceso nutricional.';
-if pn2>2 then label126.caption:='Medicaciones alopáticas.';
-if pn3>10 then label126.caption:='Tabaquismo.';
-if pn8>5 then label126.caption:='Consumisión de azúcar.';
-if pn12>10 then label126.caption:='Toxicidad.';
-if pn7>9 then label126.caption:='Estrés.';
-if pn5>8 then label126.caption:='Metales pesados.';
-if pn4>0 then label126.caption:='Supresión alopática.';
-
-label127.caption:='Homeopatía clásica.';
-oeg:=random(16);
-if oeg=1 then label127.caption:='Reducción del estrés.';
-if oeg=2 then label127.caption:='Toma de conciencia, educación.';
-if oeg=3 then label127.caption:='Factores mentales o imponderables.';
-if oeg=4 then label127.caption:='Homeopatía metabólica o genética.';
-if oeg=5 then label127.caption:='Alersodes.';
-if oeg=6 then label127.caption:='Isodes o xenobióticos.';
-if oeg=7 then label127.caption:='Nosodes para patógenos.';
-if oeg=9 then label127.caption:='Terapia nutricional.';
-if oeg=8 then label127.caption:='Imponderables para energías perversas.';
- if oeg=9 then label127.caption:='Fitoterapia.';
- if oeg=10 then label127.caption:='Terapia de sarcodes.';
- if oeg>10 then label127.caption:='Combinaciones homeopáticas.';
-  if oeg=13 then label127.caption:='Liberar las repercusiones kármicas.';
-if oeg=16 then label127.caption:='Trate un trauma antíguo o lesión.';
-if pn2>2 then label127.caption:='Medicaciones alopáticas.';
-if pn3>30 then label127.caption:='Debe abandonar el tabaquismo.';
-if pn8>10 then label127.caption:='Terapias anti adicciones.';
-if pn12>10 then label127.caption:='Toxicidad.';
-if pn7>11 then label127.caption:='Reducción del estrés.';
-if pn5>18 then label127.caption:='Desintoxicación de metales pesados.';
-if pn4>2 then label127.caption:='Dificultad con la supresión alopática.';
-                       oeg:=random(15);
-           oeg:=2771+(random(22));
-  DM.Conscida.IndexName := '';
-{  DM.Conscida.First;}
-
-oeg1:=(random(3850));
-  oeg2:=(random(3850));
-  oeg3:=(random(3850));
-  DM.Conscida.Open;
-        DM.Conscida.enablecontrols;
-  DM.conscida.FindKey([oeg1]);
-   Label128.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-  DM.conscida.FindKey([oeg]);
-   Label129.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-      label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-
-                       button64.enabled:=true;
-                          if pn20>0 then PDesarrollo.visible:=true;
-                          PDesarrollo.refresh;
-
-   ed:=random(20);
-    ena:=random(100)+1;
-    dir:=random(100)+1;
-
-    rb9 := random (1000)+5555;
-      label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-    SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(13+alg),
-'llllllll','llllllll');
-  label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-// gauge1.progress:=100;
-// panel9.caption:='Hable con la persona sobre los procesos curativos y su desarrollo.';
-   
-    emotion.refresh;
-    ran22:=random(12);
-   alg:=random(10);
-          label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-oeg:=random(15);
-label126.caption:='Estrés emocional.';
-if oeg=1 then label126.caption:='Estrés.';
-if oeg=2 then label126.caption:='Toma de conciencia.';
-if oeg=3 then label126.caption:='Factores mentales.';
-if oeg=4 then label126.caption:='Factores heredados.';
-if oeg=5 then label126.caption:='Alergias.';
-if oeg=6 then label126.caption:='Toxinas.';
-if oeg=7 then label126.caption:='Patógenos.';
-if oeg=8 then label126.caption:='Energías perversas.';
-if oeg=9 then label126.caption:='Trauma o lesión.';
-if oeg=10 then label126.caption:='Deficiencia o exceso nutricional.';
+if oeg<2 then label126.caption:=' Estrés.';
+if oeg=2 then label126.caption:=' Toma de conciencia.';
+if oeg=3 then label126.caption:=' Factores mentales.';
+if oeg=4 then label126.caption:=' Factores heredados.';
+if oeg=5 then label126.caption:=' Alergia/s.';
+if oeg=6 then label126.caption:=' Toxinas.';
+if oeg=7 then label126.caption:=' Patógenos.';
+if oeg=8 then label126.caption:=' Contaminación electromagnética.';
+if oeg=9 then label126.caption:=' Trauma o lesión.';
+if oeg=10 then label126.caption:=' Deficiencia o exceso nutricional.';
 if oeg=11 then label126.caption:='Ataque psíquico.';
-if oeg=12 then label126.caption:='Repercusión kármica.';
-if oeg=13 then label126.caption:='Opresión espiritual.';
-             if pn2>2 then label126.caption:='Medicaciones alopáticas.';
-if pn3>10 then label126.caption:='Tabaquismo.';
-if pn8>5 then label126.caption:='Consumisión de azúcar.';
-if pn12>10 then label126.caption:='Toxicidad.';
-if pn7>9 then label126.caption:='Estrés.';
-if pn5>8 then label126.caption:='Metales pesados.';
+if oeg=12 then label126.caption:=' Repercusiones kármicas.';
+if oeg>12 then label126.caption:=' Opresión espiritual.';
+if pn2>2 then label126.caption:=' Medicaciones alopáticas.';
+if pn3>10 then label126.caption:=' Tabaquismo.';
+if pn8>5 then label126.caption:=' Azúcar.';
+if pn12>10 then label126.caption:=' Toxicidad.';
+if pn7>9 then label126.caption:=' Estrés.';
+if pn5>8 then label126.caption:=' Metales pesados.';
 if pn4>0 then label126.caption:=' Supresión alopática.';
-label127.caption:='Homeopatía clásica';
+oeg:=random(12);
+if oeg=1 then label127.caption:=' Reducción del estrés.';
+if oeg=2 then label127.caption:=' Toma de conciencia.';
+if oeg=3 then label127.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label127.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label127.caption:=' Alersodes.';
+if oeg=6 then label127.caption:=' Isodes o xenobióticos.';
+if oeg=7 then label127.caption:=' Nosodes para patógenos.';
+if oeg=9 then label127.caption:=' Nutrición.';
+if oeg=8 then label127.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label127.caption:=' Fitoterapia.';
+if oeg=10 then label127.caption:=' Sarcodes.';
+if oeg>10 then label127.caption:=' Homeopatía de combinación.';
+if pn2>2 then label127.caption:=' Medicaciones alopáticas.';
+if pn3>30 then label127.caption:=' Tabaquismo.';
+if pn8>10 then label127.caption:=' Adicciones.';
+if pn12>10 then label127.caption:=' Toxicidad.';
+if pn7>11 then label127.caption:=' Estrés.';
+if pn5>18 then label127.caption:=' Metales pesados.';
+if pn4>2 then label127.caption:=' Supresión alopática.';
 oeg:=random(13);
-if oeg=1 then label127.caption:='Reducción del estrés.';
-if oeg=2 then label127.caption:='Toma de conciencia, educación.';
-if oeg=3 then label127.caption:='Factores mentales o imponderables.';
-if oeg=4 then label127.caption:='Homeopatía metabólica o genética.';
-if oeg=5 then label127.caption:='Alersodes.';
-if oeg=6 then label127.caption:='Isodes o xenobióticos.';
-if oeg=7 then label127.caption:='Nosodes para patógenos.';
-if oeg=9 then label127.caption:='Terapia nutricional.';
-if oeg=8 then label127.caption:='Imponderables para energías perversas.';
- if oeg=9 then label127.caption:='Fitoterapia.';
- if oeg=10 then label127.caption:='Terapia de sarcodes.';
- if oeg>10 then label127.caption:='Combinaciones homeopáticas.';
-if pn2>2 then label127.caption:='Medicaciones alopáticas.';
-if pn3>30 then label127.caption:='Debe abandonar el tabaquismo.';
-if pn8>10 then label127.caption:='Terapias anti adicciones.';
-if pn12>10 then label127.caption:='Toxicidad.';
-if pn7>11 then label127.caption:='Reducción del estrés.';
-if pn5>18 then label127.caption:='Desintoxicación de metales pesados.';
-if pn4>2 then label127.caption:='Dificultad con la supresión alopática.';
+if oeg=1 then label129.caption:=' Reducción del estrés.';
+if oeg=2 then label129.caption:=' Toma de conciencia.';
+if oeg=3 then label129.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label129.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label129.caption:=' Alersodes.';
+if oeg=6 then label129.caption:=' Isodes o xenobióticos.';
+if oeg=7 then label129.caption:=' Nosodes para patógenos.';
+if oeg=9 then label129.caption:=' Nutrición.';
+if oeg=8 then label129.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label129.caption:=' Fitoterapia.';
+if oeg=10 then label129.caption:=' Sarcodes.';
+if oeg>10 then label129.caption:=' Homeopatía de combinación.';
+if pn2>2 then label129.caption:=' Medicaciones alopáticas.';
+if pn3>30 then label129.caption:=' Tabaquismo.';
+if pn8>10 then label129.caption:=' Adicciones.';
+if pn12>10 then label129.caption:=' Toxicidad.';
+if pn7>11 then label129.caption:=' Reducción del estrés.';
+if pn5>18 then label129.caption:=' Desintoxicación de metales pesados.';
+if pn4>2 then label129.caption:=' Supresión alopática.';
 oeg:=random(14);
-label101.caption:='Estrés emocional.';
-if oeg=1 then label101.caption:='Estrés.';
-if oeg=2 then label101.caption:='Toma de conciencia.';
-if oeg=3 then label101.caption:='Factores mentales.';
-if oeg=4 then label101.caption:='Factores heredados.';
-if oeg=5 then label101.caption:='Alergias.';
-if oeg=6 then label101.caption:='Toxinas.';
-if oeg=7 then label101.caption:='Patógenos.';
-if oeg=8 then label101.caption:='Energías perversas.';
-if oeg=9 then label101.caption:='Trauma o lesión.';
-if oeg=10 then label101.caption:='Deficiencia o exceso nutricional.';
+if oeg<2 then label101.caption:=' Estrés.';
+if oeg=2 then label101.caption:=' Toma de conciencia.';
+if oeg=3 then label101.caption:=' Factores mentales.';
+if oeg=4 then label101.caption:=' Factores heredados.';
+if oeg=5 then label101.caption:=' Alergia/s.';
+if oeg=6 then label101.caption:=' Toxinas.';
+if oeg=7 then label101.caption:=' Patógenos.';
+if oeg=8 then label101.caption:=' Contaminación electromagnética.';
+if oeg=9 then label101.caption:=' Trauma o lesión.';
+if oeg=10 then label101.caption:=' Deficiencia o exceso nutricional.';
 if oeg=11 then label101.caption:='Ataque psíquico.';
-if oeg=12 then label101.caption:='Repercusión kármica.';
-if oeg=13 then label101.caption:='Opresión espiritual.';
-oeg:=random(15);
- label99.caption:='----';
-if oeg>6 then  begin
-label99.caption:='Onda cerebral múltiple presente.';
-button64.enabled:=true;
-end;
+if oeg=12 then label101.caption:=' Repercusiones kármicas.';
+if oeg>12 then label101.caption:=' Opresión espiritual.';
 
-oeg:=2771+(random(22));
-
-
-
-  DM.Conscida.IndexName := '';
-{  DM.Conscida.First;}
-
-oeg1:=(random(3950));
-  oeg2:=(random(3950));
-  oeg3:=(random(3950));
-  DM.Conscida.Open;
-  DM.Conscida.enablecontrols;
-  DM.conscida.FindKey([oeg1]);
-   Label128.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-  DM.conscida.FindKey([oeg]);
-   Label129.Caption:=DM.conscida.Fieldbyname('Name').AsString;
- L_Consejo.Caption :=  'Hable con la persona sobre los procesos curativos y su desarrollo..';
-L_Consejo.Refresh;
-         label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-      if     (ran22<6) then   Showmessage( 'Si tiene tiempo, vaya al programa de ''EEG''.');
-     PDesarrollo.visible:=true;   PDesarrollo.refresh;
-label2.caption:=inttostr(random(9999));
-  label95.caption:=inttostr (random(9999));
-   label96.caption:=inttostr(random(9999));
-edit8.text:='¿Qué beneficios le reporta su afección?: ';
-edit9.text:='¿A qué personas necesita perdonar?: ';
-edit10.text:='¿De qué se siente culpable?: ';
-edit11.text:='¿Está siendo totalmente honesto/a consigo mismo/a?: ';
-edit12.text:='¿Qué puede cambiar, qué debe aceptar?: ';
-edit17.text:='¿Tiene la madurez suficiente para reconocer la diferencia?: ';
-     oeg:=random(8);
-     if oeg=6 then button120.enabled:=true;
-    panel8.visible:=false;
-   PDesarrollo.visible:=false;
-
-If CheckBox1.Checked = True Then begin
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=44;
-   end;
-If CheckBox2.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=45;
-If CheckBox3.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=46;
-If CheckBox4.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=45;
-If CheckBox5.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=46;
-If CheckBox22.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=47;
-If CheckBox23.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=48;
-If CheckBox30.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=49;
-If CheckBox31.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=50;
-If CheckBox49.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=51;
-If CheckBox48.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=52;
-If CheckBox47.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=53;
-If CheckBox6.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=54;
-If CheckBox7.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=55;
-If CheckBox8.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=56;
-If CheckBox9.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=57;
-If CheckBox10.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=58;
-If CheckBox29.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=59;
-If CheckBox28.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=60;
-If CheckBox1.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=61;
-If CheckBox46.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=62;
-If CheckBox45.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=63;
-If CheckBox44.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=64;
-If CheckBox43.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=65;
-If CheckBox42.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=66;
-If CheckBox11.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=67;
-If CheckBox12.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=68;
-If CheckBox13.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=69;
-If CheckBox14.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=70;
-If CheckBox16.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=71;
-If CheckBox27.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=72;
-If CheckBox26.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=73;
-If CheckBox41.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=74;
-If CheckBox40.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=75;
-If CheckBox39.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=74;
-If CheckBox38.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=75;
-If CheckBox37.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=76;
-If CheckBox17.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=77;
-If CheckBox18.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=78;
-If CheckBox19.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=79;
-If CheckBox20.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=80;
-If CheckBox21.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=81;
-If CheckBox25.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=82;
-If CheckBox24.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=83;
-If CheckBox36.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=84;
-If CheckBox35.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=85;
-If CheckBox34.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=86;
-If CheckBox33.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=87;
-If CheckBox32.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=88;
-If CheckBox53.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=89;
-If CheckBox52.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=90;
-If CheckBox51.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=91;
-If CheckBox50.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=92;
-If CheckBox54.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=93;
-If CheckBox55.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=94;
-If CheckBox56.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=95;
-If CheckBox57.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=96;
-If CheckBox58.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=97;
-If CheckBox59.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=98;
-If CheckBox60.Checked = True Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=99;
-If Edit7.Text<>'' Then
-        ChangingPulses(rb9,555,65000,ena,dir,(12+alg),
-'llllllll','llllllll');
-   GProgreso.progress:=100;
-
-  FMain.shaping:= FMain.shaping+random(35);
-   If (FMain.shaping)>100 Then FMain.Shaping:=85+Random(15);
-      LRectificado.Caption := 'Rectificado | '+InttoStr(FMain.Shaping);
-       LRectificado.Refresh;
-   If (FMain.shaping) >84 Then
-      Button4.Enabled:=False;
-L_Consejo.Caption := '|||';
-    panel8.visible:=false;
-        PDesarrollo.visible:=false;
-    If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button4.Click;
-   MyChrono.Stop;
-   If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+FMain.shaping:= FMain.shaping+random(35);
+If (FMain.shaping)>100 Then FMain.Shaping:=85+Random(15);
+LRectificado.Caption := 'Rectificado | '+InttoStr(FMain.Shaping);
+LRectificado.Refresh;
+If (FMain.shaping) >84 Then Button4.Enabled:=False;
+TAutomatico.Enabled := False;
+MyChrono.Stop;
+If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button4.Click;
+If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+TestForm1.BAfirmaciones.Click;
 end;
 
 procedure TEmotion.Button13Click(Sender: TObject);
@@ -2979,11 +2448,7 @@ Reaccion_Irregular();
 MyChrono.Start;
 LRectificado.Caption:='Rectificado | ';
 GProgreso.progress:=0;
-PDesarrollo.Caption:='Testando y equilibrando emociones con estabilización de fase...';
-   PDesarrollo.refresh;
-PDesarrollo.visible:=true;
 emo:=emo+1;
-PDesarrollo.refresh;
 GProgreso.Progress := 0;
 vtiempo := 30+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -3000,7 +2465,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
      Label330.Caption:=IntToStr(strtoint(label330.caption)+random(30)-random(25));
  Label331.Caption:=IntToStr(strtoint(label331.caption)+random(50)-random(40));
@@ -3279,7 +2744,6 @@ DM.Conscida.FindKey([2771]);
       DM.Conscida.IndexName:=index;
       DM.Conscida.First;
         DM.Conscida.last;
-   PDesarrollo.visible:=false;
    if  FMain.shaping>85
    then Fmain.recmain:=Fmain.recmain+1;
 
@@ -3291,7 +2755,7 @@ DM.Conscida.FindKey([2771]);
          If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 If FMain.shaping>84 Then Button4.Enabled:=False;
     If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button4.Click;
    MyChrono.Stop;
@@ -3309,16 +2773,9 @@ begin
 panel13.visible:=true;
 end;
 
-procedure TEmotion.Button44Click(Sender: TObject);
-begin
-memo2.visible:=true;
-end;
-
 procedure TEmotion.Button116Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='''Zapping'' neurotransmisor/es...';
-PDesarrollo.refresh;
 Sonia();
 If FMain.Shaping>84 Then Button116.Enabled:=False;
 end;
@@ -3628,14 +3085,14 @@ begin
         label243.caption:='ACCIONAR';
         label490.Caption:='METABOLIZACION ';
         label491.Caption:='TIROIDES';
-        label492.Caption:=' Ansiedad.';
+        label492.caption:='ANSIEDAD';
         label493.Caption:='CRIMINALIDAD ';
         label494.Caption:='JUSTICIA';
 end;
 
 if oeg=11 then
 begin
-        label243.caption:='MOVERSE';
+        label243.caption:='MOVIMIENTO';
         label490.Caption:='CIRCULACION ';
         label491.Caption:='VENAS / ARTERIAS';
         label492.Caption:='RESENTIMIENTO';
@@ -3860,14 +3317,14 @@ begin
  label266.caption:='ACCIONAR';
  label607.caption:='METABOLIZACION';
  label608.caption:='TIROIDES';
- label609.caption:=' Ansiedad.';
+ label609.caption:='ANSIEDAD';
  label610.caption:='CRIMINALIDAD';
  label611.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label266.caption:='MOVERSE';
+ label266.caption:='MOVIMIENTO';
  label607.caption:='CIRCULACION';
  label608.caption:='VENAS / ARTERIAS';
  label609.caption:='RESENTIMIENTO';
@@ -4092,14 +3549,14 @@ begin
  label253.caption:='ACCIONAR';
  label542.caption:='METABOLIZACION';
  label543.caption:='TIROIDES';
- label544.caption:=' Ansiedad.';
+ label544.caption:='ANSIEDAD';
  label545.caption:='CRIMINALIDAD';
  label546.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label253.caption:='MOVERSE';
+ label253.caption:='MOVIMIENTO';
  label542.caption:='CIRCULACION';
  label543.caption:='VENAS / ARTERIAS';
  label544.caption:='RESENTIMIENTO';
@@ -4323,14 +3780,14 @@ begin
  label254.caption:='ACCIONAR';
  label547.caption:='METABOLIZACION';
  label548.caption:='TIROIDES';
- label549.caption:=' Ansiedad.';
+ label549.caption:='ANSIEDAD';
  label550.caption:='CRIMINALIDAD';
  label551.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label254.caption:='MOVERSE';
+ label254.caption:='MOVIMIENTO';
  label547.caption:='CIRCULACION';
  label548.caption:='VENAS / ARTERIAS';
  label549.caption:='RESENTIMIENTO';
@@ -4553,14 +4010,14 @@ begin
         label244.caption:='ACCIONAR';
         label495.Caption:='METABOLIZACION ';
         label496.Caption:='TIROIDES';
-        label497.Caption:=' Ansiedad.';
+        label497.caption:='ANSIEDAD';
         label498.Caption:='CRIMINALIDAD ';
         label499.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 ) and (soc>90) then
 begin
-        label244.caption:='MOVERSE';
+        label244.caption:='MOVIMIENTO';
         label495.Caption:='CIRCULACION ';
         label496.Caption:='VENAS / ARTERIAS';
         label497.Caption:='RESENTIMIENTO';
@@ -4784,14 +4241,14 @@ begin
         label245.caption:='ACCIONAR';
         label500.Caption:='METABOLIZACION ';
         label501.Caption:='TIROIDES';
-        label502.Caption:=' Ansiedad.';
+        label502.caption:='ANSIEDAD';
         label503.Caption:='CRIMINALIDAD ';
         label504.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 ) and (soc>90) then
 begin
-        label245.caption:='MOVERSE';
+        label245.caption:='MOVIMIENTO';
         label500.Caption:='CIRCULACION ';
         label501.Caption:='VENAS / ARTERIAS';
         label502.Caption:='RESENTIMIENTO';
@@ -5015,14 +4472,14 @@ begin
  label251.caption:='ACCIONAR';
  label530.caption:='METABOLIZACION';
  label531.caption:='TIROIDES';
- label532.caption:=' Ansiedad.';
+ label532.caption:='ANSIEDAD';
  label533.caption:='CRIMINALIDAD';
  label534.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label251.caption:='MOVERSE';
+ label251.caption:='MOVIMIENTO';
  label530.caption:='CIRCULACION';
  label531.caption:='VENAS / ARTERIAS';
  label532.caption:='RESENTIMIENTO';
@@ -5246,14 +4703,14 @@ begin
  label252.caption:='ACCIONAR';
  label535.caption:='METABOLIZACION';
  label536.caption:='TIROIDES';
- label537.caption:=' Ansiedad.';
+ label537.caption:='ANSIEDAD';
  label538.caption:='CRIMINALIDAD';
  label541.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label252.caption:='MOVERSE';
+ label252.caption:='MOVIMIENTO';
  label535.caption:='CIRCULACION';
  label536.caption:='VENAS / ARTERIAS';
  label537.caption:='RESENTIMIENTO';
@@ -5477,14 +4934,14 @@ begin
  label256.caption:='ACCIONAR';
  label557.caption:='METABOLIZACION';
  label558.caption:='TIROIDES';
- label559.caption:=' Ansiedad.';
+ label559.caption:='ANSIEDAD';
  label560.caption:='CRIMINALIDAD';
  label561.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label256.caption:='MOVERSE';
+ label256.caption:='MOVIMIENTO';
  label557.caption:='CIRCULACION';
  label558.caption:='VENAS / ARTERIAS';
  label559.caption:='RESENTIMIENTO';
@@ -5708,14 +5165,14 @@ begin
  label255.caption:='ACCIONAR';
  label552.caption:='METABOLIZACION';
  label553.caption:='TIROIDES';
- label554.caption:=' Ansiedad.';
+ label554.caption:='ANSIEDAD';
  label555.caption:='CRIMINALIDAD';
  label556.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label255.caption:='MOVERSE';
+ label255.caption:='MOVIMIENTO';
  label552.caption:='CIRCULACION';
  label553.caption:='VENAS / ARTERIAS';
  label554.caption:='RESENTIMIENTO';
@@ -5939,14 +5396,14 @@ begin
  label264.caption:='ACCIONAR';
  label597.caption:='METABOLIZACION';
  label598.caption:='TIROIDES';
- label599.caption:=' Ansiedad.';
+ label599.caption:='ANSIEDAD';
  label600.caption:='CRIMINALIDAD';
  label601.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label264.caption:='MOVERSE';
+ label264.caption:='MOVIMIENTO';
  label597.caption:='CIRCULACION';
  label598.caption:='VENAS / ARTERIAS';
  label599.caption:='RESENTIMIENTO';
@@ -6170,14 +5627,14 @@ begin
  label265.caption:='ACCIONAR';
  label602.caption:='METABOLIZACION';
  label603.caption:='TIROIDES';
- label604.caption:=' Ansiedad.';
+ label604.caption:='ANSIEDAD';
  label605.caption:='CRIMINALIDAD';
  label606.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>90) then
 begin
- label265.caption:='MOVERSE';
+ label265.caption:='MOVIMIENTO';
  label602.caption:='CIRCULACION';
  label603.caption:='VENAS / ARTERIAS';
  label604.caption:='RESENTIMIENTO';
@@ -6400,14 +5857,14 @@ begin
         label246.caption:='ACCIONAR';
         label505.Caption:='METABOLIZACION ';
         label506.Caption:='TIROIDES';
-        label507.Caption:=' Ansiedad.';
+        label507.caption:='ANSIEDAD';
         label508.Caption:='CRIMINALIDAD ';
         label509.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 ) and (soc>144) then
 begin
-        label246.caption:='MOVERSE';
+        label246.caption:='MOVIMIENTO';
         label505.Caption:='CIRCULACION ';
         label506.Caption:='VENAS / ARTERIAS';
         label507.Caption:='RESENTIMIENTO';
@@ -6631,14 +6088,14 @@ begin
  label247.caption:='ACCIONAR';
  label510.caption:='METABOLIZACION';
  label511.caption:='TIROIDES';
- label512.caption:=' Ansiedad.';
+ label512.caption:='ANSIEDAD';
  label513.caption:='CRIMINALIDAD';
  label514.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label247.caption:='MOVERSE';
+ label247.caption:='MOVIMIENTO';
  label510.caption:='CIRCULACION';
  label511.caption:='VENAS / ARTERIAS';
  label512.caption:='RESENTIMIENTO';
@@ -6862,14 +6319,14 @@ begin
  label248.caption:='ACCIONAR';
  label515.caption:='METABOLIZACION';
  label516.caption:='TIROIDES';
- label517.caption:=' Ansiedad.';
+ label517.caption:='ANSIEDAD';
  label518.caption:='CRIMINALIDAD';
  label519.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label248.caption:='MOVERSE';
+ label248.caption:='MOVIMIENTO';
  label515.caption:='CIRCULACION';
  label516.caption:='VENAS / ARTERIAS';
  label517.caption:='RESENTIMIENTO';
@@ -7093,14 +6550,14 @@ begin
  label249.caption:='ACCIONAR';
  label520.caption:='METABOLIZACION';
  label521.caption:='TIROIDES';
- label522.caption:=' Ansiedad.';
+ label522.caption:='ANSIEDAD';
  label523.caption:='CRIMINALIDAD';
  label524.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label249.caption:='MOVERSE';
+ label249.caption:='MOVIMIENTO';
  label520.caption:='CIRCULACION';
  label521.caption:='VENAS / ARTERIAS';
  label522.caption:='RESENTIMIENTO';
@@ -7324,14 +6781,14 @@ begin
  label250.caption:='ACCIONAR';
  label525.caption:='METABOLIZACION';
  label526.caption:='TIROIDES';
- label527.caption:=' Ansiedad.';
+ label527.caption:='ANSIEDAD';
  label528.caption:='CRIMINALIDAD';
  label529.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label250.caption:='MOVERSE';
+ label250.caption:='MOVIMIENTO';
  label525.caption:='CIRCULACION';
  label526.caption:='VENAS / ARTERIAS';
  label527.caption:='RESENTIMIENTO';
@@ -7555,14 +7012,14 @@ begin
  label257.caption:='ACCIONAR';
  label562.caption:='METABOLIZACION';
  label563.caption:='TIROIDES';
- label564.caption:=' Ansiedad.';
+ label564.caption:='ANSIEDAD';
  label565.caption:='CRIMINALIDAD';
  label566.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label257.caption:='MOVERSE';
+ label257.caption:='MOVIMIENTO';
  label562.caption:='CIRCULACION';
  label563.caption:='VENAS / ARTERIAS';
  label564.caption:='RESENTIMIENTO';
@@ -7786,14 +7243,14 @@ begin
  label258.caption:='ACCIONAR';
  label567.caption:='METABOLIZACION';
  label568.caption:='TIROIDES';
- label569.caption:=' Ansiedad.';
+ label569.caption:='ANSIEDAD';
  label570.caption:='CRIMINALIDAD';
  label571.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label258.caption:='MOVERSE';
+ label258.caption:='MOVIMIENTO';
  label567.caption:='CIRCULACION';
  label568.caption:='VENAS / ARTERIAS';
  label569.caption:='RESENTIMIENTO';
@@ -8017,14 +7474,14 @@ begin
  label259.caption:='ACCIONAR';
  label572.caption:='METABOLIZACION';
  label573.caption:='TIROIDES';
- label574.caption:=' Ansiedad.';
+ label574.caption:='ANSIEDAD';
  label575.caption:='CRIMINALIDAD';
  label576.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label259.caption:='MOVERSE';
+ label259.caption:='MOVIMIENTO';
  label572.caption:='CIRCULACION';
  label573.caption:='VENAS / ARTERIAS';
  label574.caption:='RESENTIMIENTO';
@@ -8247,14 +7704,14 @@ begin
  label260.caption:='ACCIONAR';
  label577.caption:='METABOLIZACION';
  label578.caption:='TIROIDES';
- label579.caption:=' Ansiedad.';
+ label579.caption:='ANSIEDAD';
  label580.caption:='CRIMINALIDAD';
  label581.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label260.caption:='MOVERSE';
+ label260.caption:='MOVIMIENTO';
  label577.caption:='CIRCULACION';
  label578.caption:='VENAS / ARTERIAS';
  label579.caption:='RESENTIMIENTO';
@@ -8478,14 +7935,14 @@ begin
  label261.caption:='ACCIONAR';
  label582.caption:='METABOLIZACION';
  label583.caption:='TIROIDES';
- label584.caption:=' Ansiedad.';
+ label584.caption:='ANSIEDAD';
  label585.caption:='CRIMINALIDAD';
  label586.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label261.caption:='MOVERSE';
+ label261.caption:='MOVIMIENTO';
  label582.caption:='CIRCULACION';
  label583.caption:='VENAS / ARTERIAS';
  label584.caption:='RESENTIMIENTO';
@@ -8709,14 +8166,14 @@ begin
  label262.caption:='ACCIONAR';
  label587.caption:='METABOLIZACION';
  label588.caption:='TIROIDES';
- label589.caption:=' Ansiedad.';
+ label589.caption:='ANSIEDAD';
  label590.caption:='CRIMINALIDAD';
  label591.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label262.caption:='MOVERSE';
+ label262.caption:='MOVIMIENTO';
  label587.caption:='CIRCULACION';
  label588.caption:='VENAS / ARTERIAS';
  label589.caption:='RESENTIMIENTO';
@@ -8940,14 +8397,14 @@ begin
  label263.caption:='ACCIONAR';
  label592.caption:='METABOLIZACION';
  label593.caption:='TIROIDES';
- label594.caption:=' Ansiedad.';
+ label594.caption:='ANSIEDAD';
  label595.caption:='CRIMINALIDAD';
  label596.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>144) then
 begin
- label263.caption:='MOVERSE';
+ label263.caption:='MOVIMIENTO';
  label592.caption:='CIRCULACION';
  label593.caption:='VENAS / ARTERIAS';
  label594.caption:='RESENTIMIENTO';
@@ -9173,14 +8630,14 @@ begin
         label243.caption:='ACCIONAR';
         label490.Caption:='METABOLIZACION ';
         label491.Caption:='TIROIDES';
-        label492.Caption:=' Ansiedad.';
+        label492.caption:='ANSIEDAD';
         label493.Caption:='CRIMINALIDAD ';
         label494.Caption:='JUSTICIA';
 end;
 
 if oeg=11 then
 begin
-        label243.caption:='MOVERSE';
+        label243.caption:='MOVIMIENTO';
         label490.Caption:='CIRCULACION ';
         label491.Caption:='VENAS / ARTERIAS';
         label492.Caption:='RESENTIMIENTO';
@@ -9409,14 +8866,14 @@ begin
  label253.caption:='ACCIONAR';
  label542.caption:='METABOLIZACION';
  label543.caption:='TIROIDES';
- label544.caption:=' Ansiedad.';
+ label544.caption:='ANSIEDAD';
  label545.caption:='CRIMINALIDAD';
  label546.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label253.caption:='MOVERSE';
+ label253.caption:='MOVIMIENTO';
  label542.caption:='CIRCULACION';
  label543.caption:='VENAS / ARTERIAS';
  label544.caption:='RESENTIMIENTO';
@@ -9645,14 +9102,14 @@ begin
  label254.caption:='ACCIONAR';
  label547.caption:='METABOLIZACION';
  label548.caption:='TIROIDES';
- label549.caption:=' Ansiedad.';
+ label549.caption:='ANSIEDAD';
  label550.caption:='CRIMINALIDAD';
  label551.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label254.caption:='MOVERSE';
+ label254.caption:='MOVIMIENTO';
  label547.caption:='CIRCULACION';
  label548.caption:='VENAS / ARTERIAS';
  label549.caption:='RESENTIMIENTO';
@@ -9880,14 +9337,14 @@ begin
  label253.caption:='ACCIONAR';
  label542.caption:='METABOLIZACION';
  label543.caption:='TIROIDES';
- label544.caption:=' Ansiedad.';
+ label544.caption:='ANSIEDAD';
  label545.caption:='CRIMINALIDAD';
  label546.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label253.caption:='MOVERSE';
+ label253.caption:='MOVIMIENTO';
  label542.caption:='CIRCULACION';
  label543.caption:='VENAS / ARTERIAS';
  label544.caption:='RESENTIMIENTO';
@@ -10115,14 +9572,14 @@ begin
  label254.caption:='ACCIONAR';
  label547.caption:='METABOLIZACION';
  label548.caption:='TIROIDES';
- label549.caption:=' Ansiedad.';
+ label549.caption:='ANSIEDAD';
  label550.caption:='CRIMINALIDAD';
  label551.caption:='JUSTICIA';
  end;
 
 if oeg=11 then
 begin
- label254.caption:='MOVERSE';
+ label254.caption:='MOVIMIENTO';
  label547.caption:='CIRCULACION';
  label548.caption:='VENAS / ARTERIAS';
  label549.caption:='RESENTIMIENTO';
@@ -10954,7 +10411,7 @@ begin
         label243.caption:='ACCIONAR';
         label490.Caption:='METABOLIZACION';
         label491.Caption:='TIROIDES';
-        label492.Caption:=' Ansiedad.';
+        label492.caption:='ANSIEDAD';
         label493.Caption:='CRIMINALIDAD';
         label494.Caption:='JUSTICIA';
 end;
@@ -10964,7 +10421,7 @@ begin
   label253.caption:='ACCIONAR';
  label542.caption:='METABOLIZACION';
  label543.caption:='TIROIDES';
- label544.caption:=' Ansiedad.';
+ label544.caption:='ANSIEDAD';
  label545.caption:='CRIMINALIDAD';
  label546.caption:='JUSTICIA';
  end;
@@ -10974,7 +10431,7 @@ begin
   label266.caption:='ACCIONAR';
  label607.caption:='METABOLIZACION';
  label608.caption:='TIROIDES';
- label609.caption:=' Ansiedad.';
+ label609.caption:='ANSIEDAD';
  label610.caption:='CRIMINALIDAD';
  label611.caption:='JUSTICIA';
  end;
@@ -11782,7 +11239,6 @@ end;
 procedure TEmotion.Button15Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button15.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button15.Enabled := False;
@@ -11833,16 +11289,18 @@ panel5.visible:=false;
   Dm.Info.FlushBuffers;
 end;
 
+procedure TEmotion.TerapiaExtendida();
+begin
+ Application.CreateForm(Tondas_frm, ondas_frm);
+ ondas_frm.CheckBox1.Checked := True;
+  ondas.ondas_frm.showmodal;
+  ondas.ondas_frm.Free;
+ end;
+
 procedure TEmotion.Button22Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button22.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button22.Enabled := False;
-end;
-
-procedure TEmotion.PDesarrolloClick(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
 end;
 
 procedure TEmotion.Panel5Click(Sender: TObject);
@@ -11858,7 +11316,6 @@ end;
 procedure TEmotion.Button29Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button29.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button29.Enabled := False;
@@ -11869,7 +11326,6 @@ end;
 procedure TEmotion.Button30Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button30.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button30.Enabled := False;
@@ -11880,7 +11336,6 @@ end;
 procedure TEmotion.Button28Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button28.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button28.Enabled := False;
@@ -11909,9 +11364,6 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 LRectificado.caption:='Rectificado | ';
-   PDesarrollo.caption:='Buscando respuesta a pregunta...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 button38.enabled:=false;
 LRectificado.Caption := 'Rectificado |';
 GProgreso.Progress := 0;
@@ -11930,9 +11382,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-
- PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 yes:=random(13);
 if yes<6 then label110.caption:='Si.';
@@ -11950,139 +11400,29 @@ Reaccion_Irregular();
 MyChrono.Start;
 LRectificado.caption:='Rectificado | ';
 button58.Enabled:=True;
-if edit30.text<>'' then label104.caption:='Testando conflicto relacionado a la/s emociones en bandeja de testado...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
+if edit30.text<>'' then label104.caption:='Testando conflicto relacionado a la/s emociones en bandeja de testado'+'...';
 panel7.Height:=465;
 panel7.refresh;
-PDesarrollo.caption:='Testando inconciente...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-button40.enabled:=true;
-button41.enabled:=true;
 button55.enabled:=true;
 spinedit2.enabled:=true;
+GProgreso.Progress := 0;
+vtiempo := 20+Random(10);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
- GProgreso.progress:=5;
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-  PDesarrollo.caption:='Testando traumas de nacimiento...';
-  PDesarrollo.refresh;
-  GProgreso.progress:=10;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','11111111');
-  PDesarrollo.caption:='Testando reacciones familiares...';
-  PDesarrollo.refresh;
-  GProgreso.progress:=15;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-     PDesarrollo.caption:='Testando reacciones psíquicas...';
-     PDesarrollo.refresh;
-  GProgreso.progress:=20;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','11111111');
-PDesarrollo.caption:='Testando conflictos psíquicos...';
-PDesarrollo.refresh;
-  GProgreso.progress:=25;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones emocionales...';
-PDesarrollo.refresh;
- GProgreso.progress:=30;
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','11111111');
-PDesarrollo.caption:='Testando conflictos emocionales...';
- PDesarrollo.refresh;
-  GProgreso.progress:=35;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando traumas en general...';
-PDesarrollo.refresh;
-  GProgreso.progress:=40;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando conflictos religiosos...'; PDesarrollo.refresh;
-  GProgreso.progress:=45;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','11111111');
-PDesarrollo.caption:='Testando conflictos emocionales...';
-PDesarrollo.refresh;
-  GProgreso.progress:=50;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones físicas...';
-PDesarrollo.refresh;
-  GProgreso.progress:=55;
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando conflictos físicos...';
-PDesarrollo.refresh;
-            GProgreso.progress:=60;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando traumas familiares...';
-PDesarrollo.refresh;
-  GProgreso.progress:=65;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones para consigo mismo...';
-PDesarrollo.refresh;
-  GProgreso.progress:=70;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones con otros...';
-PDesarrollo.refresh;
-  GProgreso.progress:=75;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando conflictos con otros...';
-PDesarrollo.refresh;
-  GProgreso.progress:=80;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando conflictos con Dios...';
-PDesarrollo.refresh;
-  GProgreso.progress:=85;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones con familia...';
-PDesarrollo.refresh;
-  GProgreso.progress:=90;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando conflictos con familia...';
-PDesarrollo.refresh;
-  GProgreso.progress:=95;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','01111111');
-PDesarrollo.caption:='Testando traumas, conflictos y reacciones en general...';
-PDesarrollo.refresh;
-  GProgreso.progress:=100;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,5 ,9111,1,1,1,
- '11111111','11111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+
    FMain.shaping:=50+random(85);
    if FMain.shaping>103 then
      FMain.shaping:=97+random(9)
@@ -12091,54 +11431,53 @@ PDesarrollo.refresh;
    If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
       LRectificado.caption:='Rectificado | '+InttoStr(FMain.Shaping);
      LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
 
   yes:=random(10);
   if yes>6 then yes:=random(110);
-  if yes>50 then label105.caption:= label105.caption+' | Semana de gestación: '+inttostr(1+random(40));
+  if yes>50 then label105.caption:= label105.caption+' Semana de gestación: '+inttostr(1+random(40));
        yes:=random(10);
        if yes>6 then yes:=random(100);
-       if (yes>50)and (spinedit8.value>7) then label105.caption:= label105.caption+' | Edad en la infancia: '+inttostr(random(7));
+       if (yes>50)and (spinedit8.value>7) then label105.caption:= label105.caption+' Edad en la infancia: '+inttostr(random(7));
       yes:=random(10);
       if yes>6 then yes:=random(100);
-      if (yes>50)and (spinedit8.value>13) then label105.caption:= label105.caption+' | Edad en la infancia: '+inttostr(1+random(12));
+      if (yes>50)and (spinedit8.value>13) then label105.caption:= label105.caption+' Edad en la infancia: '+inttostr(1+random(12));
        yes:=random(10);
        if yes>6 then yes:=random(100);
-       if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' | Edad: '+inttostr(30+random(1+spinedit8.value-30));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' | Edad: '+inttostr(30+random(1+spinedit8.value-30));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>40) then label105.caption:= label105.caption+' | Edad: '+inttostr(40+random(1+spinedit8.value-40));
-        yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>50) then label105.caption:= label105.caption+' | Edad: '+inttostr(50+random(1+spinedit8.value-50));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>60) then label105.caption:= label105.caption+' | Edad: '+inttostr(60+random(1+spinedit8.value-60));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>70) then label105.caption:= label105.caption+' | Edad: '+inttostr(70+random(1+spinedit8.value-70));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>80) then label105.caption:= label105.caption+' | Edad: '+inttostr(80+random(1+spinedit8.value-80));
+       if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' Edad: '+inttostr(30+random(1+spinedit8.value-30));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' Edad: '+inttostr(30+random(1+spinedit8.value-30));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>40) then label105.caption:= label105.caption+' Edad: '+inttostr(40+random(1+spinedit8.value-40));
+        yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>50) then label105.caption:= label105.caption+' Edad: '+inttostr(50+random(1+spinedit8.value-50));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>60) then label105.caption:= label105.caption+' Edad: '+inttostr(60+random(1+spinedit8.value-60));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>70) then label105.caption:= label105.caption+' Edad: '+inttostr(70+random(1+spinedit8.value-70));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>80) then label105.caption:= label105.caption+' Edad: '+inttostr(80+random(1+spinedit8.value-80));
 
-        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' | Madre' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Padre' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Sí mismo/a' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Amigos' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Dios' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Lo interior en sí mismo/a' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Espíritu interior' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Perdonar' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Atención' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Karma' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Desconsideración' ;
-        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' | Memoria celular' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de la circulación' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria de la piel' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria mental' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de los sentimientos' ;
-Afirmaciones();
- PDesarrollo.visible:=false;
+        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' Madre.' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Padre.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Sí mismo.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Amigos.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Dios.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Lo interior en sí mismo.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Espíritu interior.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Perdonar.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Atención.' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Karma.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Desconsideración.' ;
+        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' Memoria celular.' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria muscular.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de la circulación.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria hormonal.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria de la piel.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria mental.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria muscular.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso.' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria hormonal.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de los sentimientos.' ;
+TestForm1.BAfirmaciones.Click;
   MyChrono.Stop;
 end;
 
@@ -12151,7 +11490,7 @@ label106.caption:='Conflicto emocional con: ';
 label107.caption:='Trauma físico: ';
 end;
 
-procedure TEmotion.Button40Click(Sender: TObject);
+procedure TEmotion.Label310Click(Sender: TObject);
 begin
 LRectificado.caption:='Rectificado | ';
 Application.CreateForm(Thomeopa, homeopa);
@@ -12160,7 +11499,7 @@ Application.CreateForm(Thomeopa, homeopa);
  homeopa.Free;
 end;
 
-procedure TEmotion.Button41Click(Sender: TObject);
+procedure TEmotion.Label617Click(Sender: TObject);
 begin
 LRectificado.caption:='Rectificado | ';
 Application.CreateForm(TSpinal, Spinal);
@@ -12175,16 +11514,14 @@ SpinEdit7.Value:=1;
 panel19.visible:=true;
 end;
 
-procedure TEmotion.Button46Click(Sender: TObject);
+procedure TEmotion.Label657Click(Sender: TObject);
 begin
-
 LRectificado.caption:='Rectificado | ';
-button46.enabled:=true;
  DM.Info.Open;
       DM.Info.Last;
       no := DM.Info.FieldbyName('no').asInteger;
       inc(no); DM.Info.Appendrecord([no,nil,'']);
-      inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE PROGRAMACION NEURO LINGUISTICA ----- | ']);
+      inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE PROGRAMACION NEURO LINGUISTICA ----- ']);
       inc(no); DM.Info.Appendrecord([no,nil,' '+ label105.caption ]);
        inc(no); DM.Info.Appendrecord([no,nil,' | ' + label107.caption]);
         inc(no); DM.Info.Appendrecord([no,nil,' | '+ label106.caption]);
@@ -12402,11 +11739,6 @@ begin
       FCancer_Explorer.Showmodal;
 end;
 
-procedure TEmotion.Memo2DblClick(Sender: TObject);
-begin
-memo2.visible:=false;
-end;
-
 procedure TEmotion.Button56Click(Sender: TObject);
 begin
 Reaccion_Irregular();
@@ -12415,9 +11747,6 @@ LRectificado.caption:='Rectificado | ';
 vart:=(spinedit2.value*5)+random(2);
 panel7.Height:=465;
 panel7.refresh;
-PDesarrollo.caption:='Equilibrando perfíl...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 GProgreso.Progress := 0;
 vtiempo := 60+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -12434,8 +11763,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-  PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
     FMain.shaping:=50+random(85);
     if FMain.shaping>103 then
@@ -12445,7 +11773,7 @@ PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
    If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-      FRecompensa.label79.caption:=inttostr(FMain.shaping);
+      
       MyChrono.Stop;
       If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button56.Click;
       If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -12460,7 +11788,6 @@ end;
 procedure TEmotion.Button57Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button57.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button57.Enabled := False;
@@ -12533,78 +11860,55 @@ Label237.Caption := '';
 LRectificado.caption:='Rectificado | ';
 button58.enabled:=false;
 panel7.height:= 637;
-  label104.caption:='Testando camino biológico de la condición...';
+  label104.caption:='Testando camino biológico de la condición'+'...';
   label104.Refresh;
-PDesarrollo.caption:='Preparando test de Reactividad Electro Fisiológico de camino biológico...';
-PDesarrollo.refresh;
 panel7.refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-button40.enabled:=true;
-button41.enabled:=true;
+
 button55.enabled:=true;
 button56.enabled:=true;
 spinedit2.visible:=true;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,2,
  '11111111','01111111');
-   PDesarrollo.caption:='Testando gestación...';
-   PDesarrollo.refresh;
  GProgreso.progress:=10;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando trauma de nacimiento...';
-PDesarrollo.refresh;
   GProgreso.progress:=20;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones genéticas...';
-PDesarrollo.refresh;
   GProgreso.progress:=30;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando reacciones psíquicas...';
-PDesarrollo.refresh;
   GProgreso.progress:=40;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando infancia...';
-PDesarrollo.refresh;
   GProgreso.progress:=50;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando trauma...';
-PDesarrollo.refresh;
  GProgreso.progress:=60;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando trauma tóxico...';
-PDesarrollo.refresh;
 GProgreso.progress:=70;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando trauma por contaminación electromagnética...';
-PDesarrollo.refresh;
   GProgreso.progress:=80;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando trauma nutricional...';
-PDesarrollo.refresh;
   GProgreso.progress:=90;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando reacciones psicológicas...';
-PDesarrollo.refresh;
   GProgreso.progress:=100;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(5555,5 ,9111,1,1,1,
@@ -12719,42 +12023,39 @@ if RadioButton20.checked=true then  label240.caption:=label240.caption+' '+Label
 
 if edit31.text<>'' then   label240.caption:=label240.caption+' '+edit31.text;
 
-        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' | Madre' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Padre' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Sí mismo/a' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Amigos' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Dios' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Lo interior en sí mismo/a' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Espíritu interior' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Perdonar' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Atención' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Karma' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Desconsideración' ;
+        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' Madre' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Padre' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Sí mismo/a' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Amigos' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Dios' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Lo interior en sí mismo/a' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Espíritu interior' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Perdonar' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Atención' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Karma' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Desconsideración' ;
 
 
-        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' | Memoria celular' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de la circulación' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria de la piel' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria mental' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de los sentimientos' ;
+        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' Memoria celular' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria muscular' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de la circulación' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria hormonal' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria de la piel' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria mental' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria muscular' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria hormonal' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de los sentimientos' ;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
      ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-Afirmaciones();
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-Afirmaciones();
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.visible:=false;
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 label104.Visible:=false;
 FMain.shaping:=50+random(85);
@@ -12765,14 +12066,13 @@ FMain.shaping := FMain.shaping +random(25);
 If FMain.Shaping>100 Then FMain.Shaping:=100;
 LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
 LRectificado.Refresh;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 end;
 
 procedure TEmotion.Button59Click(Sender: TObject);
 begin
 Panel21.visible:=false;
-Label657.Visible:=False;
 end;
 
 procedure TEmotion.Button60Click(Sender: TObject);
@@ -12789,64 +12089,45 @@ end;
 
 procedure TEmotion.Label237Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label238Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label239Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label240Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label105Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label106Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label107Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Button62Click(Sender: TObject);
 begin
-If RadioButton3.Checked=True Then Label657.Caption:=Label657.Caption+Label630.Caption;
-If RadioButton4.Checked=True Then Label657.Caption:=Label657.Caption+Label645.Caption;
-If RadioButton5.Checked=True Then Label657.Caption:=Label657.Caption+Label629.Caption;
-If RadioButton6.Checked=True Then Label657.Caption:=Label657.Caption+Label632.Caption;
-If RadioButton7.Checked=True Then Label657.Caption:=Label657.Caption+Label642.Caption;
-If RadioButton8.Checked=True Then Label657.Caption:=Label657.Caption+Label644.Caption;
-If RadioButton9.Checked=True Then Label657.Caption:=Label657.Caption+Label637.Caption;
-If RadioButton10.Checked=True Then Label657.Caption:=Label657.Caption+Label641.Caption;
-If RadioButton11.Checked=True Then Label657.Caption:=Label657.Caption+Label633.Caption;
-If RadioButton12.Checked=True Then Label657.Caption:=Label657.Caption+Label658.Caption;
-If RadioButton13.Checked=True Then Label657.Caption:=Label657.Caption+Label638.Caption;
-If RadioButton14.Checked=True Then Label657.Caption:=Label657.Caption+Label634.Caption;
-If RadioButton15.Checked=True Then Label657.Caption:=Label657.Caption+Label635.Caption;
-If RadioButton16.Checked=True Then Label657.Caption:=Label657.Caption+Label640.Caption;
-If RadioButton17.Checked=True Then Label657.Caption:=Label657.Caption+Label643.Caption;
-If RadioButton18.Checked=True Then Label657.Caption:=Label657.Caption+Label636.Caption;
-If RadioButton19.Checked=True Then Label657.Caption:=Label657.Caption+Label631.Caption;
-If RadioButton20.Checked=True Then Label657.Caption:=Label657.Caption+Label639.Caption;
-Label657.Visible:=True;
-label237.caption:='|';
-label238.caption:='|';
-label239.caption:='|';
-label240.caption:='|';
+label237.caption:='';
+label238.caption:='';
+label239.caption:='';
+label240.caption:='';
 edit31.text:='';
 edit30.text:='';
 label105.caption:='Traumas detectados:';
@@ -12857,23 +12138,22 @@ end;
 
 procedure TEmotion.Label108Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Label109Click(Sender: TObject);
 begin
-Conexiones();
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Button63Click(Sender: TObject);
 begin
 LRectificado.caption:='Rectificado | ';
-Afirmaciones();
+TestForm1.BAfirmaciones.Click;
 end;
 
 procedure TEmotion.Button65Click(Sender: TObject);
 Begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button65.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button65.Enabled := False;
 end;
@@ -12980,13 +12260,13 @@ begin
       label252.caption:='ACCIONAR';
       label535.caption:='METABOLIZACION';
       label536.caption:='TIROIDES';
-      label537.caption:=' Ansiedad.';
+      label537.caption:='ANSIEDAD';
       label538.caption:='CRIMINALIDAD';
       label541.caption:='JUSTICIA';
   end;
   if (oeg=11 )  then
 begin
-      label252.caption:='MOVERSE';
+      label252.caption:='MOVIMIENTO';
       label535.caption:='CIRCULACION';
       label536.caption:='VENAS / ARTERIAS';
       label537.caption:='RESENTIMIENTO';
@@ -13202,14 +12482,14 @@ begin
         label244.caption:='ACCIONAR';
         label495.Caption:='METABOLIZACION ';
         label496.Caption:='TIROIDES';
-        label497.Caption:=' Ansiedad.';
+        label497.caption:='ANSIEDAD';
         label498.Caption:='CRIMINALIDAD ';
         label499.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 )  then
 begin
-        label244.caption:='MOVERSE';
+        label244.caption:='MOVIMIENTO';
         label495.Caption:='CIRCULACION ';
         label496.Caption:='VENAS / ARTERIAS';
         label497.Caption:='RESENTIMIENTO';
@@ -13434,14 +12714,14 @@ begin
         label245.caption:='ACCIONAR';
         label500.Caption:='METABOLIZACION ';
         label501.Caption:='TIROIDES';
-        label502.Caption:=' Ansiedad.';
+        label502.caption:='ANSIEDAD';
         label503.Caption:='CRIMINALIDAD ';
         label504.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 ) then
 begin
-        label245.caption:='MOVERSE';
+        label245.caption:='MOVIMIENTO';
         label500.Caption:='CIRCULACION ';
         label501.Caption:='VENAS / ARTERIAS';
         label502.Caption:='RESENTIMIENTO';
@@ -13667,14 +12947,14 @@ begin
  label251.caption:='ACCIONAR';
  label530.caption:='METABOLIZACION';
  label531.caption:='TIROIDES';
- label532.caption:=' Ansiedad.';
+ label532.caption:='ANSIEDAD';
  label533.caption:='CRIMINALIDAD';
  label534.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label251.caption:='MOVERSE';
+ label251.caption:='MOVIMIENTO';
  label530.caption:='CIRCULACION';
  label531.caption:='VENAS / ARTERIAS';
  label532.caption:='RESENTIMIENTO';
@@ -13901,14 +13181,14 @@ begin
  label252.caption:='ACCIONAR';
  label535.caption:='METABOLIZACION';
  label536.caption:='TIROIDES';
- label537.caption:=' Ansiedad.';
+ label537.caption:='ANSIEDAD';
  label538.caption:='CRIMINALIDAD';
  label541.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label252.caption:='MOVERSE';
+ label252.caption:='MOVIMIENTO';
  label535.caption:='CIRCULACION';
  label536.caption:='VENAS / ARTERIAS';
  label537.caption:='RESENTIMIENTO';
@@ -14134,14 +13414,14 @@ begin
  label256.caption:='ACCIONAR';
  label557.caption:='METABOLIZACION';
  label558.caption:='TIROIDES';
- label559.caption:=' Ansiedad.';
+ label559.caption:='ANSIEDAD';
  label560.caption:='CRIMINALIDAD';
  label561.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label256.caption:='MOVERSE';
+ label256.caption:='MOVIMIENTO';
  label557.caption:='CIRCULACION';
  label558.caption:='VENAS / ARTERIAS';
  label559.caption:='RESENTIMIENTO';
@@ -14367,14 +13647,14 @@ begin
  label255.caption:='ACCIONAR';
  label552.caption:='METABOLIZACION';
  label553.caption:='TIROIDES';
- label554.caption:=' Ansiedad.';
+ label554.caption:='ANSIEDAD';
  label555.caption:='CRIMINALIDAD';
  label556.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label255.caption:='MOVERSE';
+ label255.caption:='MOVIMIENTO';
  label552.caption:='CIRCULACION';
  label553.caption:='VENAS / ARTERIAS';
  label554.caption:='RESENTIMIENTO';
@@ -14600,14 +13880,14 @@ begin
  label264.caption:='ACCIONAR';
  label597.caption:='METABOLIZACION';
  label598.caption:='TIROIDES';
- label599.caption:=' Ansiedad.';
+ label599.caption:='ANSIEDAD';
  label600.caption:='CRIMINALIDAD';
  label601.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label264.caption:='MOVERSE';
+ label264.caption:='MOVIMIENTO';
  label597.caption:='CIRCULACION';
  label598.caption:='VENAS / ARTERIAS';
  label599.caption:='RESENTIMIENTO';
@@ -14833,14 +14113,14 @@ begin
  label265.caption:='ACCIONAR';
  label602.caption:='METABOLIZACION';
  label603.caption:='TIROIDES';
- label604.caption:=' Ansiedad.';
+ label604.caption:='ANSIEDAD';
  label605.caption:='CRIMINALIDAD';
  label606.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) then
 begin
- label265.caption:='MOVERSE';
+ label265.caption:='MOVIMIENTO';
  label602.caption:='CIRCULACION';
  label603.caption:='VENAS / ARTERIAS';
  label604.caption:='RESENTIMIENTO';
@@ -15064,14 +14344,14 @@ begin
         label246.caption:='ACCIONAR';
         label505.Caption:='METABOLIZACION ';
         label506.Caption:='TIROIDES';
-        label507.Caption:=' Ansiedad.';
+        label507.caption:='ANSIEDAD';
         label508.Caption:='CRIMINALIDAD ';
         label509.Caption:='JUSTICIA';
 end;
 
 if (oeg=11 ) and (soc>75) then
 begin
-        label246.caption:='MOVERSE';
+        label246.caption:='MOVIMIENTO';
         label505.Caption:='CIRCULACION ';
         label506.Caption:='VENAS / ARTERIAS';
         label507.Caption:='RESENTIMIENTO';
@@ -15297,14 +14577,14 @@ begin
  label247.caption:='ACCIONAR';
  label510.caption:='METABOLIZACION';
  label511.caption:='TIROIDES';
- label512.caption:=' Ansiedad.';
+ label512.caption:='ANSIEDAD';
  label513.caption:='CRIMINALIDAD';
  label514.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label247.caption:='MOVERSE';
+ label247.caption:='MOVIMIENTO';
  label510.caption:='CIRCULACION';
  label511.caption:='VENAS / ARTERIAS';
  label512.caption:='RESENTIMIENTO';
@@ -15530,14 +14810,14 @@ begin
  label248.caption:='ACCIONAR';
  label515.caption:='METABOLIZACION';
  label516.caption:='TIROIDES';
- label517.caption:=' Ansiedad.';
+ label517.caption:='ANSIEDAD';
  label518.caption:='CRIMINALIDAD';
  label519.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label248.caption:='MOVERSE';
+ label248.caption:='MOVIMIENTO';
  label515.caption:='CIRCULACION';
  label516.caption:='VENAS / ARTERIAS';
  label517.caption:='RESENTIMIENTO';
@@ -15763,14 +15043,14 @@ begin
  label249.caption:='ACCIONAR';
  label520.caption:='METABOLIZACION';
  label521.caption:='TIROIDES';
- label522.caption:=' Ansiedad.';
+ label522.caption:='ANSIEDAD';
  label523.caption:='CRIMINALIDAD';
  label524.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label249.caption:='MOVERSE';
+ label249.caption:='MOVIMIENTO';
  label520.caption:='CIRCULACION';
  label521.caption:='VENAS / ARTERIAS';
  label522.caption:='RESENTIMIENTO';
@@ -15996,14 +15276,14 @@ begin
  label250.caption:='ACCIONAR';
  label525.caption:='METABOLIZACION';
  label526.caption:='TIROIDES';
- label527.caption:=' Ansiedad.';
+ label527.caption:='ANSIEDAD';
  label528.caption:='CRIMINALIDAD';
  label529.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label250.caption:='MOVERSE';
+ label250.caption:='MOVIMIENTO';
  label525.caption:='CIRCULACION';
  label526.caption:='VENAS / ARTERIAS';
  label527.caption:='RESENTIMIENTO';
@@ -16228,14 +15508,14 @@ begin
  label257.caption:='ACCIONAR';
  label562.caption:='METABOLIZACION';
  label563.caption:='TIROIDES';
- label564.caption:=' Ansiedad.';
+ label564.caption:='ANSIEDAD';
  label565.caption:='CRIMINALIDAD';
  label566.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label257.caption:='MOVERSE';
+ label257.caption:='MOVIMIENTO';
  label562.caption:='CIRCULACION';
  label563.caption:='VENAS / ARTERIAS';
  label564.caption:='RESENTIMIENTO';
@@ -16461,14 +15741,14 @@ begin
  label258.caption:='ACCIONAR';
  label567.caption:='METABOLIZACION';
  label568.caption:='TIROIDES';
- label569.caption:=' Ansiedad.';
+ label569.caption:='ANSIEDAD';
  label570.caption:='CRIMINALIDAD';
  label571.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label258.caption:='MOVERSE';
+ label258.caption:='MOVIMIENTO';
  label567.caption:='CIRCULACION';
  label568.caption:='VENAS / ARTERIAS';
  label569.caption:='RESENTIMIENTO';
@@ -16694,14 +15974,14 @@ begin
  label259.caption:='ACCIONAR';
  label572.caption:='METABOLIZACION';
  label573.caption:='TIROIDES';
- label574.caption:=' Ansiedad.';
+ label574.caption:='ANSIEDAD';
  label575.caption:='CRIMINALIDAD';
  label576.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label259.caption:='MOVERSE';
+ label259.caption:='MOVIMIENTO';
  label572.caption:='CIRCULACION';
  label573.caption:='VENAS / ARTERIAS';
  label574.caption:='RESENTIMIENTO';
@@ -16926,14 +16206,14 @@ begin
  label260.caption:='ACCIONAR';
  label577.caption:='METABOLIZACION';
  label578.caption:='TIROIDES';
- label579.caption:=' Ansiedad.';
+ label579.caption:='ANSIEDAD';
  label580.caption:='CRIMINALIDAD';
  label581.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label260.caption:='MOVERSE';
+ label260.caption:='MOVIMIENTO';
  label577.caption:='CIRCULACION';
  label578.caption:='VENAS / ARTERIAS';
  label579.caption:='RESENTIMIENTO';
@@ -17159,14 +16439,14 @@ begin
  label261.caption:='ACCIONAR';
  label582.caption:='METABOLIZACION';
  label583.caption:='TIROIDES';
- label584.caption:=' Ansiedad.';
+ label584.caption:='ANSIEDAD';
  label585.caption:='CRIMINALIDAD';
  label586.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label261.caption:='MOVERSE';
+ label261.caption:='MOVIMIENTO';
  label582.caption:='CIRCULACION';
  label583.caption:='VENAS / ARTERIAS';
  label584.caption:='RESENTIMIENTO';
@@ -17392,14 +16672,14 @@ begin
  label262.caption:='ACCIONAR';
  label587.caption:='METABOLIZACION';
  label588.caption:='TIROIDES';
- label589.caption:=' Ansiedad.';
+ label589.caption:='ANSIEDAD';
  label590.caption:='CRIMINALIDAD';
  label591.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label262.caption:='MOVERSE';
+ label262.caption:='MOVIMIENTO';
  label587.caption:='CIRCULACION';
  label588.caption:='VENAS / ARTERIAS';
  label589.caption:='RESENTIMIENTO';
@@ -17625,14 +16905,14 @@ begin
  label263.caption:='ACCIONAR';
  label592.caption:='METABOLIZACION';
  label593.caption:='TIROIDES';
- label594.caption:=' Ansiedad.';
+ label594.caption:='ANSIEDAD';
  label595.caption:='CRIMINALIDAD';
  label596.caption:='JUSTICIA';
  end;
 
 if (oeg=11 ) and (soc>75) then
 begin
- label263.caption:='MOVERSE';
+ label263.caption:='MOVIMIENTO';
  label592.caption:='CIRCULACION';
  label593.caption:='VENAS / ARTERIAS';
  label594.caption:='RESENTIMIENTO';
@@ -17834,12 +17114,8 @@ end;
 
 procedure TEmotion.Button73Click(Sender: TObject);
 begin
-PDesarrollo.visible:=true; PDesarrollo.refresh;
-PDesarrollo.caption:='Retestando...';
-PDesarrollo.refresh;
  ChangingPulses(5555,5+random(200),1111,5+Random(6),10,1+Random(2),
  '11100000','01100111');
- PDesarrollo.visible:=false;
  if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 label271.caption:=inttostr(strtoint(label271.caption)+random(20)-random(20));
 label278.caption:=inttostr(strtoint(label278.caption)+random(20)-random(20));
@@ -17862,67 +17138,11 @@ end;
 
 procedure TEmotion.Button76Click(Sender: TObject);
 begin
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-PDesarrollo.Caption:='Buscando afirmación súperconciente...';
-PDesarrollo.Refresh;
- ChangingPulses(5555,5+random(200),1111,5+Random(6),10,1+Random(1),
- '11100000','01100111');
- PDesarrollo.visible:=false;
- if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
-oeg:=1+random(44+ran88);
-if oeg=1   then     label310.caption:='| Me amo y me apruebo, con los ojos del amor me veo a mí y veo todo lo que hago, estoy a salvo. |';
-if oeg=2   then     label310.caption:='| Cada día avanzo con júbilo, soy un ser equilibrado, tenaz y libre. |';
-if oeg=3   then     label310.caption:='| Estoy en perfecto equilibrio, a toda edad avanzo por la vida con alegría y soltura. |';
-if oeg=4   then     label310.caption:='| Me relajo y aquieto mi mente. Acepto con naturalidad los cambios de mi vida. |';
-if oeg=5   then     label310.caption:='| Estoy rebosante de alegría, la alegría emana de mi con cada latido de mi corazón. |';
-if oeg=6   then     label310.caption:='| Cambio con facilidad y tranquilidad, avanzo siempre en la mejor dirección. |';
-if oeg=7   then     label310.caption:='| Soy amor, ahora elijo, amarme y aprobarme, contemplo a los demás con amor. |';
-if oeg=8   then     label310.caption:='| Yo soy mi propia autoridad, me amo y apruebo, la vida es estupenda. |';
-if oeg=9   then     label310.caption:='| El mundo es seguro confío en la vida estoy a salvo creciendo. |';
-if oeg=10  then     label310.caption:='| Con confianza puedo responsabilizarme de mi propia vida, escojo ser libre. |';
-if oeg=11   then     label310.caption:='| Soy recibido con amor, y alegría, me encuentro seguro y a salvo, estoy rodeado de Amor. |';
-if oeg=12   then     label310.caption:='| Confiadamente puedo experimentar alegría en todos los ámbitos de mi vida, amo la vida. |';
-if oeg=13   then     label310.caption:='| Este niño, vive respira el jubilo de vivir, se nutre de amor, Dios hace milagros todos los días. |';
-if oeg=14   then     label310.caption:='| Es mi derecho satisfacer mis necesidades, con facilidad y amor pido lo que necesito. |';
-if oeg=15   then     label310.caption:='| Me amo y me apruebo, confío en el proceso de la vida, estoy a salvo. |';
-if oeg=16   then     label310.caption:='| Con facilidad me libero de todo lo que ya no necesito en la vida. |';
-if oeg=17   then     label310.caption:='| Libero todo lo que no sea amor, hay tiempo y espacio para todo lo que deseo hacer. |';
-if oeg=18   then     label310.caption:='| Puedo desprenderme con confianza, de mi cuerpo solo sale lo que ya no necesito. |';
-if oeg=19   then     label310.caption:='| Acepto mi responsabilidad por cualquier afección que padezca. Cambio mis comportamientos. |';
-if oeg=20   then     label310.caption:='| El pasado ya ha pasado, elijo amarme y aprobarme en el presente. |';
-if oeg=21   then     label310.caption:='| Con amor me libero totalmente del pasado, soy libre, soy Amor. |';
-if oeg=22   then     label310.caption:='| Confío en el proceso de la vida, en mi vida solo tiene lugar la buena y recta acción. |';
-if oeg=23   then     label310.caption:='| Tengo la certeza de que el universo se esta haciendo cargo de llevarlo todo a cabo. |';
-if oeg=24   then     label310.caption:='| Amar a mi cuerpo es importante en cualquier fase de la vida. |';
-if oeg=25   then     label310.caption:='| Me hago cargo de todas mis necesidades nutricionales físicas, mentales y emocionales. |';
-if oeg=26   then     label310.caption:='| Hago todo lo que dije que haría por mi bienestar mental. |';
-if oeg=27   then     label310.caption:='| Me quiero a mí mismo, porque soy un ser excepcional e irrepetible. |';
-if oeg=28   then     label310.caption:='| Yo creo mi propia realidad. Yo creo una vida de felicidad y alegría. |';
-if oeg=29   then     label310.caption:='| Yo soy sano, feliz, sabio y libre. La vida es bella|';
-if oeg=30   then     label310.caption:='| Soy paciente conmigo mismo/a y con todos a mi alrededor. |';
-if oeg=31   then     label310.caption:='| Sé que soy un ser maravilloso porque soy único e irrepetible. |';
-if oeg=32   then     label310.caption:='| Mi vida presente y futura comienza hoy. La vida merece la pena ser vivida integra.';
-if oeg=33   then     label310.caption:='| Acepto los cambios en mi vida y ensancho mis límites. |';
-if oeg=34   then     label310.caption:='| Disfruto de mi buena salud. Amo mi cuerpo y mi cuerpo me ama. |';
-if oeg=35   then     label310.caption:='| Ofrezco aliento a los demás no tan afortunados como yo y los ayudo a ser lo mejor que pueden ser. |';
-if oeg=36   then     label310.caption:='| Antes de pretender ayudar a otros, primero me ayudo a mí mismo/a.';
-if oeg=37   then     label310.caption:='| Mi peso es el perfecto para mí. Me quiero, y por lo tanto me protejo con amor. |';
-if oeg=38   then     label310.caption:='| Me encanta despertar por la mañana y saludar al glorioso nuevo día. |';
-if oeg=39   then     label310.caption:='| Mi vida es una taza rebosante de salud, libertad y tranquilidad. |';
-if oeg=40   then     label310.caption:='| Soy un regalo único de amor que habita en este mundo. |';
-if oeg=41   then     label310.caption:='| Mi cuerpo es una maravillosa pieza de ingeniería donde que es un placer habitar. |';
-if oeg=42   then     label310.caption:='| Mis pensamientos positivos fortalecen y estimulan mi sistema inmunitario. |';
-if oeg=43   then     label310.caption:='| Creo paz en mi mente, y mi cuerpo la refleja con una salud perfecta. |';
-if oeg=44   then     label310.caption:='| Me alimento de un modo sano, bebo mucha agua natural y hago ejercicio. |';
-if oeg=45   then     label310.caption:='| Amo y respeto mi cuerpo y lo cuido con cariño. |';
-
+TestForm1.BAfirmaciones.Click;
 end;
 
 procedure TEmotion.Button77Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Testando y equilibrando cuadros de flujo...';
-PDesarrollo.refresh;
 if oeg5=10 then begin
   oeg:=random(13);
   if oeg=1 then label283.color:=clred;
@@ -17950,26 +17170,6 @@ Sonia();
 
   trackbar7.position:=trackbar7.position-random(10)+random(25);
   trackbar1.position:=trackbar1.position-random(10)+random(25);
-{
-  oeg:=random(25);
-  if oeg=5  then begin        SpeachForm.SMessageTalk('El miedo es una emoción positiva en moderación.'+chr(13)+
-                                                      'Este le ayuda a protegerse.  Es una herramienta no un maestro.'+chr(13)+
-                                                      'Si el miedo se apropia de Ud., escúche, agradezca y reemplázelo con amor.');
-                end;
-
-  if oeg=15  then begin      SpeachForm.SMessageTalk('Todo camino tiene alegrías y tristeza.'+chr(13)+
-                                                     'Ningún camino es perfecto, la perfección existe porque existe la imperfección.'+chr(13)+
-                                                     'Ud. debe elegír sabiamente, con intuición, sin miedo y con claridad.');
-             end;
-  if (oeg=25)or(oeg=21)  then begin    SpeachForm.SMessageTalk('No existe ni bueno ni malo, pero el pensamiento lo convierte en uno u otro.'+chr(13)+
-                                                               'El mundo solo puede ser visto a través de su propia percepción,'+chr(13)+
-                                                               'y así como juzgue, será juzgado.');
-            end;
-  if (oeg=9)or(oeg=19)  then begin     SpeachForm.SMessageTalk( 'Toda percepción, creencia o culpabilidad'+chr(13)+
-                                                                'puede solo ser creada desde su apreciación del entorno, otros,'+chr(13)+
-                                                                'y lo que Ud. ve en sí mismo/a.');
-  end;
-}
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 end;
 
@@ -18316,11 +17516,7 @@ button80.Visible:=False;
  DM.emotion1.Open;
  DM.emotion1.IndexName:='';
  DM.emotion1.First;
-{    DM.emotion1.Open;
-    DM.emotion1.IndexName:='';
-    DM.emotion1.First;  }
   DM.emotion1.Refresh;
-//  DM.emotion1.Active:=False;
   DM.emotion1.Active:=True;
   AnchoDB();
    TestForm1.SaveEmotionVariables;
@@ -18362,8 +17558,6 @@ vtiempo, vcuanto : integer;
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption := 'Realizando terapia simple para la reducción de estrés...';
-PDesarrollo.Visible := True;
 LRectificado.caption:='Rectificado | ';
 riskchart.str:=riskchart.str+20;
 timer1.enabled:=true;
@@ -18383,7 +17577,6 @@ Until
    MyChrono.TimeElapsed > vtiempo;
    GProgreso.Progress :=   round(MyChrono.pTEcoule);
 Button110.Click;
-PDesarrollo.Visible := True;
    Rec := 80+Random(40);
    If rec>100 Then rec:=85+Random(15);
  LRectificado.caption:='Rectificado | '+inttostr(Rec);
@@ -18391,7 +17584,7 @@ PDesarrollo.Visible := True;
    Button8.Click;
    Fmain.recmain:=Fmain.recmain+5;
 LRectificado.Refresh;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
@@ -18399,7 +17592,7 @@ end;
 procedure TEmotion.Button88Click(Sender: TObject);
 begin
 Freq2.TestAmp:=1;
-showmessage('ATENCIÓN: Solo use este ajuste en casos de extrema necesidad. La alarma será desconectada.');
+showmessage('ATENCIÓN: Solo use este ajuste en casos de extrema necesidad.');
 Button146.Enabled := True;
 Button88.Enabled := False;
 Button89.Enabled := True;
@@ -18511,228 +17704,8 @@ procedure TEmotion.Button98Click(Sender: TObject);
 begin
 button98.visible:=false;
 button111.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';;
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';;
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label360.caption:=label360.caption+' | Regresión.';
-if oeg= 2   then  label360.caption:=label360.caption+' | Agresividad.';
-if oeg=3    then  label360.caption:=label360.caption+' | Ira.';
-if oeg=4    then  label360.caption:=label360.caption+' | Ansiedad.';
-if oeg=5    then  label360.caption:=label360.caption+' | Conciencia.';
-if oeg=6    then  label360.caption:=label360.caption+' | Tristeza.';
-if oeg=7    then  label360.caption:=label360.caption+' | Culpabilidad.';
-if oeg=8    then  label360.caption:=label360.caption+' | Autismo.';
-if oeg=9    then  label360.caption:=label360.caption+' | Negación.';
-if oeg=10    then  label360.caption:=label360.caption+' | Descuido.';
-if oeg=11    then  label360.caption:=label360.caption+' | Desilusión.';
-if oeg=12    then  label360.caption:=label360.caption+' | Depresión.';
-if oeg=13    then  label360.caption:=label360.caption+' | Poder.';
-if oeg=14    then  label360.caption:=label360.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label360.caption:=label360.caption+' | Temor.';
-if oeg=16    then  label360.caption:=label360.caption+' | Confusión.';
-if oeg=17    then  label360.caption:=label360.caption+' | Duda.';
-if oeg=18    then  label360.caption:=label360.caption+' | Celos.';
-if oeg=19    then  label360.caption:=label360.caption+' | Alegría.';
-if oeg=20    then  label360.caption:=label360.caption+' | Lujuria.';
-if oeg=21    then  label360.caption:=label360.caption+' | Avaricia.';
-if oeg=22    then  label360.caption:=label360.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label360.caption:=label360.caption+' | Dolor psíquico.';
-if oeg=24    then  label360.caption:=label360.caption+' | Pasividad.';
-if oeg=25    then  label360.caption:=label360.caption+' | Proyección.';
-if oeg=26    then  label360.caption:=label360.caption+' | Racionalización.';
-if oeg=27    then  label360.caption:=label360.caption+' | Imprudencia.';
-if oeg=28    then  label360.caption:=label360.caption+' | Preocupación.';
-if oeg=29    then  label360.caption:=label360.caption+' | Abandono.';
-if oeg=30    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=31    then  label360.caption:=label360.caption+' | Traición.';
-if oeg=32    then  label360.caption:=label360.caption+' | Mal entendimiento.';
-if oeg=33    then  label360.caption:=label360.caption+' | Curiosidad.';
-if oeg=34    then  label360.caption:=label360.caption+' | Sorpresa.';
-if oeg=35    then  label360.caption:=label360.caption+' | Conflicto religioso.';
-if oeg=36    then  label360.caption:=label360.caption+' | Conflicto de identidad.';
-if oeg=37    then  label360.caption:=label360.caption+' | Resistencia al cambio.';
-if oeg=38    then  label360.caption:=label360.caption+' | Nerviosismo.';
-if oeg=39    then  label360.caption:=label360.caption+' | Risa.';
-if oeg=40    then  label360.caption:=label360.caption+' | Entusiasmo.';
-if oeg=41    then  label360.caption:=label360.caption+' | Vanidad.';
-if oeg=42    then  label360.caption:=label360.caption+' | Negociación.';
-if oeg=43    then  label360.caption:=label360.caption+' | Coraje.';
-if oeg=44    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=45    then  label360.caption:=label360.caption+' | Monotonía.';
-if oeg=46    then  label360.caption:=label360.caption+' | Necesidad de cambio.';
-if oeg=47    then  label360.caption:=label360.caption+' | Observación.';
-if oeg=48    then  label360.caption:=label360.caption+' | Antagonismo.';
-if oeg=49    then  label360.caption:=label360.caption+' | Sensualidad.';
-if oeg=50    then  label360.caption:=label360.caption+' | Espiritualidad.';
-if oeg=51    then  label360.caption:=label360.caption+' | Sexualidad.';
-if oeg=52    then  label360.caption:=label360.caption+' | Adicción.';
-if oeg=53     then  label360.caption:=label360.caption+' | Enjuiciamientos.';
-if oeg=54    then  label360.caption:=label360.caption+' | Apatía.';
-if oeg=55    then  label360.caption:=label360.caption+' | Extasis.';
-if oeg=56    then  label360.caption:=label360.caption+' | Inadecuadidad.';
-if oeg=57    then  label360.caption:=label360.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label360.caption:=label360.caption+' | Perfeccionismo.';
-if oeg=59    then  label360.caption:=label360.caption+' | Desesperanza.';
-if oeg=60    then  label360.caption:=label360.caption+' | Dominación.';
-if oeg=61    then  label360.caption:=label360.caption+' | Sumisidad.';
-if oeg=62    then  label360.caption:=label360.caption+' | Orgullo.';
-if oeg=63    then  label360.caption:=label360.caption+' | Resentimiento.';
-if oeg=64    then  label360.caption:=label360.caption+' | Shock.';
-if oeg=65    then  label360.caption:=label360.caption+' | Inconciencia.';
-if oeg=66    then  label360.caption:=label360.caption+' | Obsesividad.';
-if oeg=67    then  label360.caption:=label360.caption+' | Compulsividad.';
-if oeg=68    then  label360.caption:=label360.caption+' | Maniático incontrolable.';
-if oeg=69    then  label360.caption:=label360.caption+' | Impulsividad.';
-if oeg=70    then  label360.caption:=label360.caption+' | Lealtad inalterable.';
-if oeg=71    then  label360.caption:=label360.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label360.caption:=label360.caption+' | Mente enfocada.';
-if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
+BENegativas.Click;
+BCausas.Click;
 FMain.shaping:=50+random(85);
 if FMain.shaping>103 then FMain.shaping:=97+random(9)
 else
@@ -18741,7 +17714,7 @@ If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
 LRectificado.Refresh;
 If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button98.Click;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
@@ -18749,228 +17722,8 @@ procedure TEmotion.Button99Click(Sender: TObject);
 begin
 button99.visible:=false;
 button123.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label363.caption:=label363.caption+' | Regresión.';
-if oeg= 2   then  label363.caption:=label363.caption+' | Agresividad.';
-if oeg=3    then  label363.caption:=label363.caption+' | Ira.';
-if oeg=4    then  label363.caption:=label363.caption+' | Ansiedad.';
-if oeg=5    then  label363.caption:=label363.caption+' | Conciencia.';
-if oeg=6    then  label363.caption:=label363.caption+' | Tristeza.';
-if oeg=7    then  label363.caption:=label363.caption+' | Culpabilidad.';
-if oeg=8    then  label363.caption:=label363.caption+' | Autismo.';
-if oeg=9    then  label363.caption:=label363.caption+' | Negación.';
-if oeg=10    then  label363.caption:=label363.caption+' | Descuido.';
-if oeg=11    then  label363.caption:=label363.caption+' | Desilusión.';
-if oeg=12    then  label363.caption:=label363.caption+' | Depresión.';
-if oeg=13    then  label363.caption:=label363.caption+' | Poder.';
-if oeg=14    then  label363.caption:=label363.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label363.caption:=label363.caption+' | Temor.';
-if oeg=16    then  label363.caption:=label363.caption+' | Confusión.';
-if oeg=17    then  label363.caption:=label363.caption+' | Duda.';
-if oeg=18    then  label363.caption:=label363.caption+' | Celos.';
-if oeg=19    then  label363.caption:=label363.caption+' | Alegría.';
-if oeg=20    then  label363.caption:=label363.caption+' | Lujuria.';
-if oeg=21    then  label363.caption:=label363.caption+' | Avaricia.';
-if oeg=22    then  label363.caption:=label363.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label363.caption:=label363.caption+' | Dolor psíquico.';
-if oeg=24    then  label363.caption:=label363.caption+' | Pasividad.';
-if oeg=25    then  label363.caption:=label363.caption+' | Proyección.';
-if oeg=26    then  label363.caption:=label363.caption+' | Racionalización.';
-if oeg=27    then  label363.caption:=label363.caption+' | Imprudencia.';
-if oeg=28    then  label363.caption:=label363.caption+' | Preocupación.';
-if oeg=29    then  label363.caption:=label363.caption+' | Abandono.';
-if oeg=30    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=31    then  label363.caption:=label363.caption+' | Traición.';
-if oeg=32    then  label363.caption:=label363.caption+' | Mal entendimiento.';
-if oeg=33    then  label363.caption:=label363.caption+' | Curiosidad.';
-if oeg=34    then  label363.caption:=label363.caption+' | Sorpresa.';
-if oeg=35    then  label363.caption:=label363.caption+' | Conflicto religioso.';
-if oeg=36    then  label363.caption:=label363.caption+' | Conflicto de identidad.';
-if oeg=37    then  label363.caption:=label363.caption+' | Resistencia al cambio.';
-if oeg=38    then  label363.caption:=label363.caption+' | Nerviosismo.';
-if oeg=39    then  label363.caption:=label363.caption+' | Risa.';
-if oeg=40    then  label363.caption:=label363.caption+' | Entusiasmo.';
-if oeg=41    then  label363.caption:=label363.caption+' | Vanidad.';
-if oeg=42    then  label363.caption:=label363.caption+' | Negociación.';
-if oeg=43    then  label363.caption:=label363.caption+' | Coraje.';
-if oeg=44    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=45    then  label363.caption:=label363.caption+' | Monotonía.';
-if oeg=46    then  label363.caption:=label363.caption+' | Necesidad de cambio.';
-if oeg=47    then  label363.caption:=label363.caption+' | Observación.';
-if oeg=48    then  label363.caption:=label363.caption+' | Antagonismo.';
-if oeg=49    then  label363.caption:=label363.caption+' | Sensualidad.';
-if oeg=50    then  label363.caption:=label363.caption+' | Espiritualidad.';
-if oeg=51    then  label363.caption:=label363.caption+' | Sexualidad.';
-if oeg=52    then  label363.caption:=label363.caption+' | Adicción.';
-if oeg=53     then  label363.caption:=label363.caption+' | Enjuiciamientos.';
-if oeg=54    then  label363.caption:=label363.caption+' | Apatía.';
-if oeg=55    then  label363.caption:=label363.caption+' | Extasis.';
-if oeg=56    then  label363.caption:=label363.caption+' | Inadecuadidad.';
-if oeg=57    then  label363.caption:=label363.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label363.caption:=label363.caption+' | Perfeccionismo.';
-if oeg=59    then  label363.caption:=label363.caption+' | Desesperanza.';
-if oeg=60    then  label363.caption:=label363.caption+' | Dominación.';
-if oeg=61    then  label363.caption:=label363.caption+' | Sumisidad.';
-if oeg=62    then  label363.caption:=label363.caption+' | Orgullo.';
-if oeg=63    then  label363.caption:=label363.caption+' | Resentimiento.';
-if oeg=64    then  label363.caption:=label363.caption+' | Shock.';
-if oeg=65    then  label363.caption:=label363.caption+' | Inconciencia.';
-if oeg=66    then  label363.caption:=label363.caption+' | Obsesividad.';
-if oeg=67    then  label363.caption:=label363.caption+' | Compulsividad.';
-if oeg=68    then  label363.caption:=label363.caption+' | Maniático incontrolable.';
-if oeg=69    then  label363.caption:=label363.caption+' | Impulsividad.';
-if oeg=70    then  label363.caption:=label363.caption+' | Lealtad inalterable.';
-if oeg=71    then  label363.caption:=label363.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label363.caption:=label363.caption+' | Mente enfocada.';
-if oeg=73    then  label363.caption:=label363.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label363.caption:=label363.caption+' | Regresión.';
-if oeg= 2   then  label363.caption:=label363.caption+' | Agresividad.';
-if oeg=3    then  label363.caption:=label363.caption+' | Ira.';
-if oeg=4    then  label363.caption:=label363.caption+' | Ansiedad.';
-if oeg=5    then  label363.caption:=label363.caption+' | Conciencia.';
-if oeg=6    then  label363.caption:=label363.caption+' | Tristeza.';
-if oeg=7    then  label363.caption:=label363.caption+' | Culpabilidad.';
-if oeg=8    then  label363.caption:=label363.caption+' | Autismo.';
-if oeg=9    then  label363.caption:=label363.caption+' | Negación.';
-if oeg=10    then  label363.caption:=label363.caption+' | Descuido.';
-if oeg=11    then  label363.caption:=label363.caption+' | Desilusión.';
-if oeg=12    then  label363.caption:=label363.caption+' | Depresión.';
-if oeg=13    then  label363.caption:=label363.caption+' | Poder.';
-if oeg=14    then  label363.caption:=label363.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label363.caption:=label363.caption+' | Temor.';
-if oeg=16    then  label363.caption:=label363.caption+' | Confusión.';
-if oeg=17    then  label363.caption:=label363.caption+' | Duda.';
-if oeg=18    then  label363.caption:=label363.caption+' | Celos.';
-if oeg=19    then  label363.caption:=label363.caption+' | Alegría.';
-if oeg=20    then  label363.caption:=label363.caption+' | Lujuria.';
-if oeg=21    then  label363.caption:=label363.caption+' | Avaricia.';
-if oeg=22    then  label363.caption:=label363.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label363.caption:=label363.caption+' | Dolor psíquico.';
-if oeg=24    then  label363.caption:=label363.caption+' | Pasividad.';
-if oeg=25    then  label363.caption:=label363.caption+' | Proyección.';
-if oeg=26    then  label363.caption:=label363.caption+' | Racionalización.';
-if oeg=27    then  label363.caption:=label363.caption+' | Imprudencia.';
-if oeg=28    then  label363.caption:=label363.caption+' | Preocupación.';
-if oeg=29    then  label363.caption:=label363.caption+' | Abandono.';
-if oeg=30    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=31    then  label363.caption:=label363.caption+' | Traición.';
-if oeg=32    then  label363.caption:=label363.caption+' | Mal entendimiento.';
-if oeg=33    then  label363.caption:=label363.caption+' | Curiosidad.';
-if oeg=34    then  label363.caption:=label363.caption+' | Sorpresa.';
-if oeg=35    then  label363.caption:=label363.caption+' | Conflicto religioso.';
-if oeg=36    then  label363.caption:=label363.caption+' | Conflicto de identidad.';
-if oeg=37    then  label363.caption:=label363.caption+' | Resistencia al cambio.';
-if oeg=38    then  label363.caption:=label363.caption+' | Nerviosismo.';
-if oeg=39    then  label363.caption:=label363.caption+' | Risa.';
-if oeg=40    then  label363.caption:=label363.caption+' | Entusiasmo.';
-if oeg=41    then  label363.caption:=label363.caption+' | Vanidad.';
-if oeg=42    then  label363.caption:=label363.caption+' | Negociación.';
-if oeg=43    then  label363.caption:=label363.caption+' | Coraje.';
-if oeg=44    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=45    then  label363.caption:=label363.caption+' | Monotonía.';
-if oeg=46    then  label363.caption:=label363.caption+' | Necesidad de cambio.';
-if oeg=47    then  label363.caption:=label363.caption+' | Observación.';
-if oeg=48    then  label363.caption:=label363.caption+' | Antagonismo.';
-if oeg=49    then  label363.caption:=label363.caption+' | Sensualidad.';
-if oeg=50    then  label363.caption:=label363.caption+' | Espiritualidad.';
-if oeg=51    then  label363.caption:=label363.caption+' | Sexualidad.';
-if oeg=52    then  label363.caption:=label363.caption+' | Adicción.';
-if oeg=53     then  label363.caption:=label363.caption+' | Enjuiciamientos.';
-if oeg=54    then  label363.caption:=label363.caption+' | Apatía.';
-if oeg=55    then  label363.caption:=label363.caption+' | Extasis.';
-if oeg=56    then  label363.caption:=label363.caption+' | Inadecuadidad.';
-if oeg=57    then  label363.caption:=label363.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label363.caption:=label363.caption+' | Perfeccionismo.';
-if oeg=59    then  label363.caption:=label363.caption+' | Desesperanza.';
-if oeg=60    then  label363.caption:=label363.caption+' | Dominación.';
-if oeg=61    then  label363.caption:=label363.caption+' | Sumisidad.';
-if oeg=62    then  label363.caption:=label363.caption+' | Orgullo.';
-if oeg=63    then  label363.caption:=label363.caption+' | Resentimiento.';
-if oeg=64    then  label363.caption:=label363.caption+' | Shock.';
-if oeg=65    then  label363.caption:=label363.caption+' | Inconciencia.';
-if oeg=66    then  label363.caption:=label363.caption+' | Obsesividad.';
-if oeg=67    then  label363.caption:=label363.caption+' | Compulsividad.';
-if oeg=68    then  label363.caption:=label363.caption+' | Maniático incontrolable.';
-if oeg=69    then  label363.caption:=label363.caption+' | Impulsividad.';
-if oeg=70    then  label363.caption:=label363.caption+' | Lealtad inalterable.';
-if oeg=71    then  label363.caption:=label363.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label363.caption:=label363.caption+' | Mente enfocada.';
-if oeg=73    then  label363.caption:=label363.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label364.caption:=label364.caption+' | Regresión.';
-if oeg=2   then  label364.caption:=label364.caption+' | Agresividad.';
-if oeg=3    then  label364.caption:=label364.caption+' | Ira.';
-if oeg=4    then  label364.caption:=label364.caption+' | Ansiedad.';
-if oeg=5    then  label364.caption:=label364.caption+' | Conciencia.';
-if oeg=6    then  label364.caption:=label364.caption+' | Tristeza.';
-if oeg=7    then  label364.caption:=label364.caption+' | Culpabilidad.';
-if oeg=8    then  label364.caption:=label364.caption+' | Autismo.';
-if oeg=9    then  label364.caption:=label364.caption+' | Negación.';
-if oeg=10    then  label364.caption:=label364.caption+' | Descuido.';
-if oeg=11    then  label364.caption:=label364.caption+' | Desilusión.';
-if oeg=12    then  label364.caption:=label364.caption+' | Depresión.';
-if oeg=13    then  label364.caption:=label364.caption+' | Poder.';
-if oeg=14    then  label364.caption:=label364.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label364.caption:=label364.caption+' | Temor.';
-if oeg=16    then  label364.caption:=label364.caption+' | Confusión.';
-if oeg=17    then  label364.caption:=label364.caption+' | Duda.';
-if oeg=18    then  label364.caption:=label364.caption+' | Celos.';
-if oeg=19    then  label364.caption:=label364.caption+' | Alegría.';
-if oeg=20    then  label364.caption:=label364.caption+' | Lujuria.';
-if oeg=21    then  label364.caption:=label364.caption+' | Avaricia.';
-if oeg=22    then  label364.caption:=label364.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label364.caption:=label364.caption+' | Dolor psíquico.';
-if oeg=24    then  label364.caption:=label364.caption+' | Pasividad.';
-if oeg=25    then  label364.caption:=label364.caption+' | Proyección.';
-if oeg=26    then  label364.caption:=label364.caption+' | Racionalización.';
-if oeg=27    then  label364.caption:=label364.caption+' | Imprudencia.';
-if oeg=28    then  label364.caption:=label364.caption+' | Preocupación.';
-if oeg=29    then  label364.caption:=label364.caption+' | Abandono.';
-if oeg=30    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=31    then  label364.caption:=label364.caption+' | Traición.';
-if oeg=32    then  label364.caption:=label364.caption+' | Mal entendimiento.';
-if oeg=33    then  label364.caption:=label364.caption+' | Curiosidad.';
-if oeg=34    then  label364.caption:=label364.caption+' | Sorpresa.';
-if oeg=35    then  label364.caption:=label364.caption+' | Conflicto religioso.';
-if oeg=36    then  label364.caption:=label364.caption+' | Conflicto de identidad.';
-if oeg=37    then  label364.caption:=label364.caption+' | Resistencia al cambio.';
-if oeg=38    then  label364.caption:=label364.caption+' | Nerviosismo.';
-if oeg=39    then  label364.caption:=label364.caption+' | Risa.';
-if oeg=40    then  label364.caption:=label364.caption+' | Entusiasmo.';
-if oeg=41    then  label364.caption:=label364.caption+' | Vanidad.';
-if oeg=42    then  label364.caption:=label364.caption+' | Negociación.';
-if oeg=43    then  label364.caption:=label364.caption+' | Coraje.';
-if oeg=44    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=45    then  label364.caption:=label364.caption+' | Monotonía.';
-if oeg=46    then  label364.caption:=label364.caption+' | Necesidad de cambio.';
-if oeg=47    then  label364.caption:=label364.caption+' | Observación.';
-if oeg=48    then  label364.caption:=label364.caption+' | Antagonismo.';
-if oeg=49    then  label364.caption:=label364.caption+' | Sensualidad.';
-if oeg=50    then  label364.caption:=label364.caption+' | Espiritualidad.';
-if oeg=51    then  label364.caption:=label364.caption+' | Sexualidad.';
-if oeg=52    then  label364.caption:=label364.caption+' | Adicción.';
-if oeg=53     then  label364.caption:=label364.caption+' | Enjuiciamientos.';
-if oeg=54    then  label364.caption:=label364.caption+' | Apatía.';
-if oeg=55    then  label364.caption:=label364.caption+' | Extasis.';
-if oeg=56    then  label364.caption:=label364.caption+' | Inadecuadidad.';
-if oeg=57    then  label364.caption:=label364.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label364.caption:=label364.caption+' | Perfeccionismo.';
-if oeg=59    then  label364.caption:=label364.caption+' | Desesperanza.';
-if oeg=60    then  label364.caption:=label364.caption+' | Dominación.';
-if oeg=61    then  label364.caption:=label364.caption+' | Sumisidad.';
-if oeg=62    then  label364.caption:=label364.caption+' | Orgullo.';
-if oeg=63    then  label364.caption:=label364.caption+' | Resentimiento.';
-if oeg=64    then  label364.caption:=label364.caption+' | Shock.';
-if oeg=65    then  label364.caption:=label364.caption+' | Inconciencia.';
-if oeg=66    then  label364.caption:=label364.caption+' | Obsesividad.';
-if oeg=67    then  label364.caption:=label364.caption+' | Compulsividad.';
-if oeg=68    then  label364.caption:=label364.caption+' | Maniático incontrolable.';
-if oeg=69    then  label364.caption:=label364.caption+' | Impulsividad.';
-if oeg=70    then  label364.caption:=label364.caption+' | Lealtad inalterable.';
-if oeg=71    then  label364.caption:=label364.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label364.caption:=label364.caption+' | Mente enfocada.';
-if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
+BToxinas.Click;
+BHomeopatia.Click;
 FMain.shaping:=50+random(85);
 if FMain.shaping>103 then FMain.shaping:=97+random(9)
 else
@@ -18979,237 +17732,17 @@ If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
 LRectificado.Refresh;
 If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button99.Click;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 end;
 
 procedure TEmotion.Button100Click(Sender: TObject);
 begin
 button100.visible:=false;
 button126.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label362.caption:=label362.caption+' | Regresión.';
-if oeg= 2   then  label362.caption:=label362.caption+' | Agresividad.';
-if oeg=3    then  label362.caption:=label362.caption+' | Ira.';
-if oeg=4    then  label362.caption:=label362.caption+' | Ansiedad.';
-if oeg=5    then  label362.caption:=label362.caption+' | Conciencia.';
-if oeg=6    then  label362.caption:=label362.caption+' | Tristeza.';
-if oeg=7    then  label362.caption:=label362.caption+' | Culpabilidad.';
-if oeg=8    then  label362.caption:=label362.caption+' | Autismo.';
-if oeg=9    then  label362.caption:=label362.caption+' | Negación.';
-if oeg=10    then  label362.caption:=label362.caption+' | Descuido.';
-if oeg=11    then  label362.caption:=label362.caption+' | Desilusión.';
-if oeg=12    then  label362.caption:=label362.caption+' | Depresión.';
-if oeg=13    then  label362.caption:=label362.caption+' | Poder.';
-if oeg=14    then  label362.caption:=label362.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label362.caption:=label362.caption+' | Temor.';
-if oeg=16    then  label362.caption:=label362.caption+' | Confusión.';
-if oeg=17    then  label362.caption:=label362.caption+' | Duda.';
-if oeg=18    then  label362.caption:=label362.caption+' | Celos.';
-if oeg=19    then  label362.caption:=label362.caption+' | Alegría.';
-if oeg=20    then  label362.caption:=label362.caption+' | Lujuria.';
-if oeg=21    then  label362.caption:=label362.caption+' | Avaricia.';
-if oeg=22    then  label362.caption:=label362.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label362.caption:=label362.caption+' | Dolor psíquico.';
-if oeg=24    then  label362.caption:=label362.caption+' | Pasividad.';
-if oeg=25    then  label362.caption:=label362.caption+' | Proyección.';
-if oeg=26    then  label362.caption:=label362.caption+' | Racionalización.';
-if oeg=27    then  label362.caption:=label362.caption+' | Imprudencia.';
-if oeg=28    then  label362.caption:=label362.caption+' | Preocupación.';
-if oeg=29    then  label362.caption:=label362.caption+' | Abandono.';
-if oeg=30    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=31    then  label362.caption:=label362.caption+' | Traición.';
-if oeg=32    then  label362.caption:=label362.caption+' | Mal entendimiento.';
-if oeg=33    then  label362.caption:=label362.caption+' | Curiosidad.';
-if oeg=34    then  label362.caption:=label362.caption+' | Sorpresa.';
-if oeg=35    then  label362.caption:=label362.caption+' | Conflicto religioso.';
-if oeg=36    then  label362.caption:=label362.caption+' | Conflicto de identidad.';
-if oeg=37    then  label362.caption:=label362.caption+' | Resistencia al cambio.';
-if oeg=38    then  label362.caption:=label362.caption+' | Nerviosismo.';
-if oeg=39    then  label362.caption:=label362.caption+' | Risa.';
-if oeg=40    then  label362.caption:=label362.caption+' | Entusiasmo.';
-if oeg=41    then  label362.caption:=label362.caption+' | Vanidad.';
-if oeg=42    then  label362.caption:=label362.caption+' | Negociación.';
-if oeg=43    then  label362.caption:=label362.caption+' | Coraje.';
-if oeg=44    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=45    then  label362.caption:=label362.caption+' | Monotonía.';
-if oeg=46    then  label362.caption:=label362.caption+' | Necesidad de cambio.';
-if oeg=47    then  label362.caption:=label362.caption+' | Observación.';
-if oeg=48    then  label362.caption:=label362.caption+' | Antagonismo.';
-if oeg=49    then  label362.caption:=label362.caption+' | Sensualidad.';
-if oeg=50    then  label362.caption:=label362.caption+' | Espiritualidad.';
-if oeg=51    then  label362.caption:=label362.caption+' | Sexualidad.';
-if oeg=52    then  label362.caption:=label362.caption+' | Adicción.';
-if oeg=53     then  label362.caption:=label362.caption+' | Enjuiciamientos.';
-if oeg=54    then  label362.caption:=label362.caption+' | Apatía.';
-if oeg=55    then  label362.caption:=label362.caption+' | Extasis.';
-if oeg=56    then  label362.caption:=label362.caption+' | Inadecuadidad.';
-if oeg=57    then  label362.caption:=label362.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label362.caption:=label362.caption+' | Perfeccionismo.';
-if oeg=59    then  label362.caption:=label362.caption+' | Desesperanza.';
-if oeg=60    then  label362.caption:=label362.caption+' | Dominación.';
-if oeg=61    then  label362.caption:=label362.caption+' | Sumisidad.';
-if oeg=62    then  label362.caption:=label362.caption+' | Orgullo.';
-if oeg=63    then  label362.caption:=label362.caption+' | Resentimiento.';
-if oeg=64    then  label362.caption:=label362.caption+' | Shock.';
-if oeg=65    then  label362.caption:=label362.caption+' | Inconciencia.';
-if oeg=66    then  label362.caption:=label362.caption+' | Obsesividad.';
-if oeg=67    then  label362.caption:=label362.caption+' | Compulsividad.';
-if oeg=68    then  label362.caption:=label362.caption+' | Maniático incontrolable.';
-if oeg=69    then  label362.caption:=label362.caption+' | Impulsividad.';
-if oeg=70    then  label362.caption:=label362.caption+' | Lealtad inalterable.';
-if oeg=71    then  label362.caption:=label362.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label362.caption:=label362.caption+' | Mente enfocada.';
-if oeg=73    then  label362.caption:=label362.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label362.caption:=label362.caption+' | Regresión.';
-if oeg= 2   then  label362.caption:=label362.caption+' | Agresividad.';
-if oeg=3    then  label362.caption:=label362.caption+' | Ira.';
-if oeg=4    then  label362.caption:=label362.caption+' | Ansiedad.';
-if oeg=5    then  label362.caption:=label362.caption+' | Conciencia.';
-if oeg=6    then  label362.caption:=label362.caption+' | Tristeza.';
-if oeg=7    then  label362.caption:=label362.caption+' | Culpabilidad.';
-if oeg=8    then  label362.caption:=label362.caption+' | Autismo.';
-if oeg=9    then  label362.caption:=label362.caption+' | Negación.';
-if oeg=10    then  label362.caption:=label362.caption+' | Descuido.';
-if oeg=11    then  label362.caption:=label362.caption+' | Desilusión.';
-if oeg=12    then  label362.caption:=label362.caption+' | Depresión.';
-if oeg=13    then  label362.caption:=label362.caption+' | Poder.';
-if oeg=14    then  label362.caption:=label362.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label362.caption:=label362.caption+' | Temor.';
-if oeg=16    then  label362.caption:=label362.caption+' | Confusión.';
-if oeg=17    then  label362.caption:=label362.caption+' | Duda.';
-if oeg=18    then  label362.caption:=label362.caption+' | Celos.';
-if oeg=19    then  label362.caption:=label362.caption+' | Alegría.';
-if oeg=20    then  label362.caption:=label362.caption+' | Lujuria.';
-if oeg=21    then  label362.caption:=label362.caption+' | Avaricia.';
-if oeg=22    then  label362.caption:=label362.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label362.caption:=label362.caption+' | Dolor psíquico.';
-if oeg=24    then  label362.caption:=label362.caption+' | Pasividad.';
-if oeg=25    then  label362.caption:=label362.caption+' | Proyección.';
-if oeg=26    then  label362.caption:=label362.caption+' | Racionalización.';
-if oeg=27    then  label362.caption:=label362.caption+' | Imprudencia.';
-if oeg=28    then  label362.caption:=label362.caption+' | Preocupación.';
-if oeg=29    then  label362.caption:=label362.caption+' | Abandono.';
-if oeg=30    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=31    then  label362.caption:=label362.caption+' | Traición.';
-if oeg=32    then  label362.caption:=label362.caption+' | Mal entendimiento.';
-if oeg=33    then  label362.caption:=label362.caption+' | Curiosidad.';
-if oeg=34    then  label362.caption:=label362.caption+' | Sorpresa.';
-if oeg=35    then  label362.caption:=label362.caption+' | Conflicto religioso.';
-if oeg=36    then  label362.caption:=label362.caption+' | Conflicto de identidad.';
-if oeg=37    then  label362.caption:=label362.caption+' | Resistencia al cambio.';
-if oeg=38    then  label362.caption:=label362.caption+' | Nerviosismo.';
-if oeg=39    then  label362.caption:=label362.caption+' | Risa.';
-if oeg=40    then  label362.caption:=label362.caption+' | Entusiasmo.';
-if oeg=41    then  label362.caption:=label362.caption+' | Vanidad.';
-if oeg=42    then  label362.caption:=label362.caption+' | Negociación.';
-if oeg=43    then  label362.caption:=label362.caption+' | Coraje.';
-if oeg=44    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=45    then  label362.caption:=label362.caption+' | Monotonía.';
-if oeg=46    then  label362.caption:=label362.caption+' | Necesidad de cambio.';
-if oeg=47    then  label362.caption:=label362.caption+' | Observación.';
-if oeg=48    then  label362.caption:=label362.caption+' | Antagonismo.';
-if oeg=49    then  label362.caption:=label362.caption+' | Sensualidad.';
-if oeg=50    then  label362.caption:=label362.caption+' | Espiritualidad.';
-if oeg=51    then  label362.caption:=label362.caption+' | Sexualidad.';
-if oeg=52    then  label362.caption:=label362.caption+' | Adicción.';
-if oeg=53     then  label362.caption:=label362.caption+' | Enjuiciamientos.';
-if oeg=54    then  label362.caption:=label362.caption+' | Apatía.';
-if oeg=55    then  label362.caption:=label362.caption+' | Extasis.';
-if oeg=56    then  label362.caption:=label362.caption+' | Inadecuadidad.';
-if oeg=57    then  label362.caption:=label362.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label362.caption:=label362.caption+' | Perfeccionismo.';
-if oeg=59    then  label362.caption:=label362.caption+' | Desesperanza.';
-if oeg=60    then  label362.caption:=label362.caption+' | Dominación.';
-if oeg=61    then  label362.caption:=label362.caption+' | Sumisidad.';
-if oeg=62    then  label362.caption:=label362.caption+' | Orgullo.';
-if oeg=63    then  label362.caption:=label362.caption+' | Resentimiento.';
-if oeg=64    then  label362.caption:=label362.caption+' | Shock.';
-if oeg=65    then  label362.caption:=label362.caption+' | Inconciencia.';
-if oeg=66    then  label362.caption:=label362.caption+' | Obsesividad.';
-if oeg=67    then  label362.caption:=label362.caption+' | Compulsividad.';
-if oeg=68    then  label362.caption:=label362.caption+' | Maniático incontrolable.';
-if oeg=69    then  label362.caption:=label362.caption+' | Impulsividad.';
-if oeg=70    then  label362.caption:=label362.caption+' | Lealtad inalterable.';
-if oeg=71    then  label362.caption:=label362.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label362.caption:=label362.caption+' | Mente enfocada.';
-if oeg=73    then  label362.caption:=label362.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label361.caption:=label361.caption+' | Regresión.';
-if oeg= 2   then  label361.caption:=label361.caption+' | Agresividad.';
-if oeg=3    then  label361.caption:=label361.caption+' | Ira.';
-if oeg=4    then  label361.caption:=label361.caption+' | Ansiedad.';
-if oeg=5    then  label361.caption:=label361.caption+' | Conciencia.';
-if oeg=6    then  label361.caption:=label361.caption+' | Tristeza.';
-if oeg=7    then  label361.caption:=label361.caption+' | Culpabilidad.';
-if oeg=8    then  label361.caption:=label361.caption+' | Autismo.';
-if oeg=9    then  label361.caption:=label361.caption+' | Negación.';
-if oeg=10    then  label361.caption:=label361.caption+' | Descuido.';
-if oeg=11    then  label361.caption:=label361.caption+' | Desilusión.';
-if oeg=12    then  label361.caption:=label361.caption+' | Depresión.';
-if oeg=13    then  label361.caption:=label361.caption+' | Poder.';
-if oeg=14    then  label361.caption:=label361.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label361.caption:=label361.caption+' | Temor.';
-if oeg=16    then  label361.caption:=label361.caption+' | Confusión.';
-if oeg=17    then  label361.caption:=label361.caption+' | Duda.';
-if oeg=18    then  label361.caption:=label361.caption+' | Celos.';
-if oeg=19    then  label361.caption:=label361.caption+' | Alegría.';
-if oeg=20    then  label361.caption:=label361.caption+' | Lujuria.';
-if oeg=21    then  label361.caption:=label361.caption+' | Avaricia.';
-if oeg=22    then  label361.caption:=label361.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label361.caption:=label361.caption+' | Dolor psíquico.';
-if oeg=24    then  label361.caption:=label361.caption+' | Pasividad.';
-if oeg=25    then  label361.caption:=label361.caption+' | Proyección.';
-if oeg=26    then  label361.caption:=label361.caption+' | Racionalización.';
-if oeg=27    then  label361.caption:=label361.caption+' | Imprudencia.';
-if oeg=28    then  label361.caption:=label361.caption+' | Preocupación.';
-if oeg=29    then  label361.caption:=label361.caption+' | Abandono.';
-if oeg=30    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=31    then  label361.caption:=label361.caption+' | Traición.';
-if oeg=32    then  label361.caption:=label361.caption+' | Mal entendimiento.';
-if oeg=33    then  label361.caption:=label361.caption+' | Curiosidad.';
-if oeg=34    then  label361.caption:=label361.caption+' | Sorpresa.';
-if oeg=35    then  label361.caption:=label361.caption+' | Conflicto religioso.';
-if oeg=36    then  label361.caption:=label361.caption+' | Conflicto de identidad.';
-if oeg=37    then  label361.caption:=label361.caption+' | Resistencia al cambio.';
-if oeg=38    then  label361.caption:=label361.caption+' | Nerviosismo.';
-if oeg=39    then  label361.caption:=label361.caption+' | Risa.';
-if oeg=40    then  label361.caption:=label361.caption+' | Entusiasmo.';
-if oeg=41    then  label361.caption:=label361.caption+' | Vanidad.';
-if oeg=42    then  label361.caption:=label361.caption+' | Negociación.';
-if oeg=43    then  label361.caption:=label361.caption+' | Coraje.';
-if oeg=44    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=45    then  label361.caption:=label361.caption+' | Monotonía.';
-if oeg=46    then  label361.caption:=label361.caption+' | Necesidad de cambio.';
-if oeg=47    then  label361.caption:=label361.caption+' | Observación.';
-if oeg=48    then  label361.caption:=label361.caption+' | Antagonismo.';
-if oeg=49    then  label361.caption:=label361.caption+' | Sensualidad.';
-if oeg=50    then  label361.caption:=label361.caption+' | Espiritualidad.';
-if oeg=51    then  label361.caption:=label361.caption+' | Sexualidad.';
-if oeg=52    then  label361.caption:=label361.caption+' | Adicción.';
-if oeg=53     then  label361.caption:=label361.caption+' | Enjuiciamientos.';
-if oeg=54    then  label361.caption:=label361.caption+' | Apatía.';
-if oeg=55    then  label361.caption:=label361.caption+' | Extasis.';
-if oeg=56    then  label361.caption:=label361.caption+' | Inadecuadidad.';
-if oeg=57    then  label361.caption:=label361.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label361.caption:=label361.caption+' | Perfeccionismo.';
-if oeg=59    then  label361.caption:=label361.caption+' | Desesperanza.';
-if oeg=60    then  label361.caption:=label361.caption+' | Dominación.';
-if oeg=61    then  label361.caption:=label361.caption+' | Sumisidad.';
-if oeg=62    then  label361.caption:=label361.caption+' | Orgullo.';
-if oeg=63    then  label361.caption:=label361.caption+' | Resentimiento.';
-if oeg=64    then  label361.caption:=label361.caption+' | Shock.';
-if oeg=65    then  label361.caption:=label361.caption+' | Inconciencia.';
-if oeg=66    then  label361.caption:=label361.caption+' | Obsesividad.';
-if oeg=67    then  label361.caption:=label361.caption+' | Compulsividad.';
-if oeg=68    then  label361.caption:=label361.caption+' | Maniático incontrolable.';
-if oeg=69    then  label361.caption:=label361.caption+' | Impulsividad.';
-if oeg=70    then  label361.caption:=label361.caption+' | Lealtad inalterable.';
-if oeg=71    then  label361.caption:=label361.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label361.caption:=label361.caption+' | Mente enfocada.';
-if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
+BToxinas.Click;
+BENegativas.Click;
 FMain.shaping:=50+random(85);
 if FMain.shaping>103 then FMain.shaping:=97+random(9)
 else
@@ -19218,238 +17751,18 @@ If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
 LRectificado.Refresh;
 If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button100.Click;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 end;
 
 procedure TEmotion.Button101Click(Sender: TObject);
 begin
 button101.visible:=false;
 button129.visible:=true;
+BCausas.Click;
+BAVM.Click;
 oeg:=random(85);
-if oeg=1    then  label365.caption:=label365.caption+' | Regresión.';
-if oeg= 2   then  label365.caption:=label365.caption+' | Agresividad.';
-if oeg=3    then  label365.caption:=label365.caption+' | Ira.';
-if oeg=4    then  label365.caption:=label365.caption+' | Ansiedad.';
-if oeg=5    then  label365.caption:=label365.caption+' | Conciencia.';
-if oeg=6    then  label365.caption:=label365.caption+' | Tristeza.';
-if oeg=7    then  label365.caption:=label365.caption+' | Culpabilidad.';
-if oeg=8    then  label365.caption:=label365.caption+' | Autismo.';
-if oeg=9    then  label365.caption:=label365.caption+' | Negación.';
-if oeg=10    then  label365.caption:=label365.caption+' | Descuido.';
-if oeg=11    then  label365.caption:=label365.caption+' | Desilusión.';
-if oeg=12    then  label365.caption:=label365.caption+' | Depresión.';
-if oeg=13    then  label365.caption:=label365.caption+' | Poder.';
-if oeg=14    then  label365.caption:=label365.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label365.caption:=label365.caption+' | Temor.';
-if oeg=16    then  label365.caption:=label365.caption+' | Confusión.';
-if oeg=17    then  label365.caption:=label365.caption+' | Duda.';
-if oeg=18    then  label365.caption:=label365.caption+' | Celos.';
-if oeg=19    then  label365.caption:=label365.caption+' | Alegría.';
-if oeg=20    then  label365.caption:=label365.caption+' | Lujuria.';
-if oeg=21    then  label365.caption:=label365.caption+' | Avaricia.';
-if oeg=22    then  label365.caption:=label365.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label365.caption:=label365.caption+' | Dolor psíquico.';
-if oeg=24    then  label365.caption:=label365.caption+' | Pasividad.';
-if oeg=25    then  label365.caption:=label365.caption+' | Proyección.';
-if oeg=26    then  label365.caption:=label365.caption+' | Racionalización.';
-if oeg=27    then  label365.caption:=label365.caption+' | Imprudencia.';
-if oeg=28    then  label365.caption:=label365.caption+' | Preocupación.';
-if oeg=29    then  label365.caption:=label365.caption+' | Abandono.';
-if oeg=30    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=31    then  label365.caption:=label365.caption+' | Traición.';
-if oeg=32    then  label365.caption:=label365.caption+' | Mal entendimiento.';
-if oeg=33    then  label365.caption:=label365.caption+' | Curiosidad.';
-if oeg=34    then  label365.caption:=label365.caption+' | Sorpresa.';
-if oeg=35    then  label365.caption:=label365.caption+' | Conflicto religioso.';
-if oeg=36    then  label365.caption:=label365.caption+' | Conflicto de identidad.';
-if oeg=37    then  label365.caption:=label365.caption+' | Resistencia al cambio.';
-if oeg=38    then  label365.caption:=label365.caption+' | Nerviosismo.';
-if oeg=39    then  label365.caption:=label365.caption+' | Risa.';
-if oeg=40    then  label365.caption:=label365.caption+' | Entusiasmo.';
-if oeg=41    then  label365.caption:=label365.caption+' | Vanidad.';
-if oeg=42    then  label365.caption:=label365.caption+' | Negociación.';
-if oeg=43    then  label365.caption:=label365.caption+' | Coraje.';
-if oeg=44    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=45    then  label365.caption:=label365.caption+' | Monotonía.';
-if oeg=46    then  label365.caption:=label365.caption+' | Necesidad de cambio.';
-if oeg=47    then  label365.caption:=label365.caption+' | Observación.';
-if oeg=48    then  label365.caption:=label365.caption+' | Antagonismo.';
-if oeg=49    then  label365.caption:=label365.caption+' | Sensualidad.';
-if oeg=50    then  label365.caption:=label365.caption+' | Espiritualidad.';
-if oeg=51    then  label365.caption:=label365.caption+' | Sexualidad.';
-if oeg=52    then  label365.caption:=label365.caption+' | Adicción.';
-if oeg=53     then  label365.caption:=label365.caption+' | Enjuiciamientos.';
-if oeg=54    then  label365.caption:=label365.caption+' | Apatía.';
-if oeg=55    then  label365.caption:=label365.caption+' | Extasis.';
-if oeg=56    then  label365.caption:=label365.caption+' | Inadecuadidad.';
-if oeg=57    then  label365.caption:=label365.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label365.caption:=label365.caption+' | Perfeccionismo.';
-if oeg=59    then  label365.caption:=label365.caption+' | Desesperanza.';
-if oeg=60    then  label365.caption:=label365.caption+' | Dominación.';
-if oeg=61    then  label365.caption:=label365.caption+' | Sumisidad.';
-if oeg=62    then  label365.caption:=label365.caption+' | Orgullo.';
-if oeg=63    then  label365.caption:=label365.caption+' | Resentimiento.';
-if oeg=64    then  label365.caption:=label365.caption+' | Shock.';
-if oeg=65    then  label365.caption:=label365.caption+' | Inconciencia.';
-if oeg=66    then  label365.caption:=label365.caption+' | Obsesividad.';
-if oeg=67    then  label365.caption:=label365.caption+' | Compulsividad.';
-if oeg=68    then  label365.caption:=label365.caption+' | Maniático incontrolable.';
-if oeg=69    then  label365.caption:=label365.caption+' | Impulsividad.';
-if oeg=70    then  label365.caption:=label365.caption+' | Lealtad inalterable.';
-if oeg=71    then  label365.caption:=label365.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label365.caption:=label365.caption+' | Mente enfocada.';
-if oeg=73    then  label365.caption:=label365.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label365.caption:=label365.caption+' | Regresión.';
-if oeg= 2   then  label365.caption:=label365.caption+' | Agresividad.';
-if oeg=3    then  label365.caption:=label365.caption+' | Ira.';
-if oeg=4    then  label365.caption:=label365.caption+' | Ansiedad.';
-if oeg=5    then  label365.caption:=label365.caption+' | Conciencia.';
-if oeg=6    then  label365.caption:=label365.caption+' | Tristeza.';
-if oeg=7    then  label365.caption:=label365.caption+' | Culpabilidad.';
-if oeg=8    then  label365.caption:=label365.caption+' | Autismo.';
-if oeg=9    then  label365.caption:=label365.caption+' | Negación.';
-if oeg=10    then  label365.caption:=label365.caption+' | Descuido.';
-if oeg=11    then  label365.caption:=label365.caption+' | Desilusión.';
-if oeg=12    then  label365.caption:=label365.caption+' | Depresión.';
-if oeg=13    then  label365.caption:=label365.caption+' | Poder.';
-if oeg=14    then  label365.caption:=label365.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label365.caption:=label365.caption+' | Temor.';
-if oeg=16    then  label365.caption:=label365.caption+' | Confusión.';
-if oeg=17    then  label365.caption:=label365.caption+' | Duda.';
-if oeg=18    then  label365.caption:=label365.caption+' | Celos.';
-if oeg=19    then  label365.caption:=label365.caption+' | Alegría.';
-if oeg=20    then  label365.caption:=label365.caption+' | Lujuria.';
-if oeg=21    then  label365.caption:=label365.caption+' | Avaricia.';
-if oeg=22    then  label365.caption:=label365.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label365.caption:=label365.caption+' | Dolor psíquico.';
-if oeg=24    then  label365.caption:=label365.caption+' | Pasividad.';
-if oeg=25    then  label365.caption:=label365.caption+' | Proyección.';
-if oeg=26    then  label365.caption:=label365.caption+' | Racionalización.';
-if oeg=27    then  label365.caption:=label365.caption+' | Imprudencia.';
-if oeg=28    then  label365.caption:=label365.caption+' | Preocupación.';
-if oeg=29    then  label365.caption:=label365.caption+' | Abandono.';
-if oeg=30    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=31    then  label365.caption:=label365.caption+' | Traición.';
-if oeg=32    then  label365.caption:=label365.caption+' | Mal entendimiento.';
-if oeg=33    then  label365.caption:=label365.caption+' | Curiosidad.';
-if oeg=34    then  label365.caption:=label365.caption+' | Sorpresa.';
-if oeg=35    then  label365.caption:=label365.caption+' | Conflicto religioso.';
-if oeg=36    then  label365.caption:=label365.caption+' | Conflicto de identidad.';
-if oeg=37    then  label365.caption:=label365.caption+' | Resistencia al cambio.';
-if oeg=38    then  label365.caption:=label365.caption+' | Nerviosismo.';
-if oeg=39    then  label365.caption:=label365.caption+' | Risa.';
-if oeg=40    then  label365.caption:=label365.caption+' | Entusiasmo.';
-if oeg=41    then  label365.caption:=label365.caption+' | Vanidad.';
-if oeg=42    then  label365.caption:=label365.caption+' | Negociación.';
-if oeg=43    then  label365.caption:=label365.caption+' | Coraje.';
-if oeg=44    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=45    then  label365.caption:=label365.caption+' | Monotonía.';
-if oeg=46    then  label365.caption:=label365.caption+' | Necesidad de cambio.';
-if oeg=47    then  label365.caption:=label365.caption+' | Observación.';
-if oeg=48    then  label365.caption:=label365.caption+' | Antagonismo.';
-if oeg=49    then  label365.caption:=label365.caption+' | Sensualidad.';
-if oeg=50    then  label365.caption:=label365.caption+' | Espiritualidad.';
-if oeg=51    then  label365.caption:=label365.caption+' | Sexualidad.';
-if oeg=52    then  label365.caption:=label365.caption+' | Adicción.';
-
-if oeg=53     then  label365.caption:=label365.caption+' | Enjuiciamientos.';
-if oeg=54    then  label365.caption:=label365.caption+' | Apatía.';
-if oeg=55    then  label365.caption:=label365.caption+' | Extasis.';
-if oeg=56    then  label365.caption:=label365.caption+' | Inadecuadidad.';
-if oeg=57    then  label365.caption:=label365.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label365.caption:=label365.caption+' | Perfeccionismo.';
-if oeg=59    then  label365.caption:=label365.caption+' | Desesperanza.';
-if oeg=60    then  label365.caption:=label365.caption+' | Dominación.';
-if oeg=61    then  label365.caption:=label365.caption+' | Sumisidad.';
-if oeg=62    then  label365.caption:=label365.caption+' | Orgullo.';
-if oeg=63    then  label365.caption:=label365.caption+' | Resentimiento.';
-if oeg=64    then  label365.caption:=label365.caption+' | Shock.';
-if oeg=65    then  label365.caption:=label365.caption+' | Inconciencia.';
-if oeg=66    then  label365.caption:=label365.caption+' | Obsesividad.';
-if oeg=67    then  label365.caption:=label365.caption+' | Compulsividad.';
-if oeg=68    then  label365.caption:=label365.caption+' | Maniático incontrolable.';
-if oeg=69    then  label365.caption:=label365.caption+' | Impulsividad.';
-if oeg=70    then  label365.caption:=label365.caption+' | Lealtad inalterable.';
-if oeg=71    then  label365.caption:=label365.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label365.caption:=label365.caption+' | Mente enfocada.';
-if oeg=73    then  label365.caption:=label365.caption+' | Irrealista.';
-oeg:=random(85);
-if oeg=1    then  label366.caption:=label366.caption+' | Regresión.';
-if oeg= 2   then  label366.caption:=label366.caption+' | Agresividad.';
-if oeg=3    then  label366.caption:=label366.caption+' | Ira.';
-if oeg=4    then  label366.caption:=label366.caption+' | Ansiedad.';
-if oeg=5    then  label366.caption:=label366.caption+' | Conciencia.';
-if oeg=6    then  label366.caption:=label366.caption+' | Tristeza.';
-if oeg=7    then  label366.caption:=label366.caption+' | Culpabilidad.';
-if oeg=8    then  label366.caption:=label366.caption+' | Autismo.';
-if oeg=9    then  label366.caption:=label366.caption+' | Negación.';
-if oeg=10    then  label366.caption:=label366.caption+' | Descuido.';
-if oeg=11    then  label366.caption:=label366.caption+' | Desilusión.';
-if oeg=12    then  label366.caption:=label366.caption+' | Depresión.';
-if oeg=13    then  label366.caption:=label366.caption+' | Poder.';
-if oeg=14    then  label366.caption:=label366.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label366.caption:=label366.caption+' | Temor.';
-if oeg=16    then  label366.caption:=label366.caption+' | Confusión.';
-if oeg=17    then  label366.caption:=label366.caption+' | Duda.';
-if oeg=18    then  label366.caption:=label366.caption+' | Celos.';
-if oeg=19    then  label366.caption:=label366.caption+' | Alegría.';
-if oeg=20    then  label366.caption:=label366.caption+' | Lujuria.';
-if oeg=21    then  label366.caption:=label366.caption+' | Avaricia.';
-if oeg=22    then  label366.caption:=label366.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label366.caption:=label366.caption+' | Dolor psíquico.';
-if oeg=24    then  label366.caption:=label366.caption+' | Pasividad.';
-if oeg=25    then  label366.caption:=label366.caption+' | Proyección.';
-if oeg=26    then  label366.caption:=label366.caption+' | Racionalización.';
-if oeg=27    then  label366.caption:=label366.caption+' | Imprudencia.';
-if oeg=28    then  label366.caption:=label366.caption+' | Preocupación.';
-if oeg=29    then  label366.caption:=label366.caption+' | Abandono.';
-if oeg=30    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=31    then  label366.caption:=label366.caption+' | Traición.';
-if oeg=32    then  label366.caption:=label366.caption+' | Mal entendimiento.';
-if oeg=33    then  label366.caption:=label366.caption+' | Curiosidad.';
-if oeg=34    then  label366.caption:=label366.caption+' | Sorpresa.';
-if oeg=35    then  label366.caption:=label366.caption+' | Conflicto religioso.';
-if oeg=36    then  label366.caption:=label366.caption+' | Conflicto de identidad.';
-if oeg=37    then  label366.caption:=label366.caption+' | Resistencia al cambio.';
-if oeg=38    then  label366.caption:=label366.caption+' | Nerviosismo.';
-if oeg=39    then  label366.caption:=label366.caption+' | Risa.';
-if oeg=40    then  label366.caption:=label366.caption+' | Entusiasmo.';
-if oeg=41    then  label366.caption:=label366.caption+' | Vanidad.';
-if oeg=42    then  label366.caption:=label366.caption+' | Negociación.';
-if oeg=43    then  label366.caption:=label366.caption+' | Coraje.';
-if oeg=44    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=45    then  label366.caption:=label366.caption+' | Monotonía.';
-if oeg=46    then  label366.caption:=label366.caption+' | Necesidad de cambio.';
-if oeg=47    then  label366.caption:=label366.caption+' | Observación.';
-if oeg=48    then  label366.caption:=label366.caption+' | Antagonismo.';
-if oeg=49    then  label366.caption:=label366.caption+' | Sensualidad.';
-if oeg=50    then  label366.caption:=label366.caption+' | Espiritualidad.';
-if oeg=51    then  label366.caption:=label366.caption+' | Sexualidad.';
-if oeg=52    then  label366.caption:=label366.caption+' | Adicción.';
-if oeg=53     then  label366.caption:=label366.caption+' | Enjuiciamientos.';
-if oeg=54    then  label366.caption:=label366.caption+' | Apatía.';
-if oeg=55    then  label366.caption:=label366.caption+' | Extasis.';
-if oeg=56    then  label366.caption:=label366.caption+' | Inadecuadidad.';
-if oeg=57    then  label366.caption:=label366.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label366.caption:=label366.caption+' | Perfeccionismo.';
-if oeg=59    then  label366.caption:=label366.caption+' | Desesperanza.';
-if oeg=60    then  label366.caption:=label366.caption+' | Dominación.';
-if oeg=61    then  label366.caption:=label366.caption+' | Sumisidad.';
-if oeg=62    then  label366.caption:=label366.caption+' | Orgullo.';
-if oeg=63    then  label366.caption:=label366.caption+' | Resentimiento.';
-if oeg=64    then  label366.caption:=label366.caption+' | Shock.';
-if oeg=65    then  label366.caption:=label366.caption+' | Inconciencia.';
-if oeg=66    then  label366.caption:=label366.caption+' | Obsesividad.';
-if oeg=67    then  label366.caption:=label366.caption+' | Compulsividad.';
-if oeg=68    then  label366.caption:=label366.caption+' | Maniático incontrolable.';
-if oeg=69    then  label366.caption:=label366.caption+' | Impulsividad.';
-if oeg=70    then  label366.caption:=label366.caption+' | Lealtad inalterable.';
-if oeg=71    then  label366.caption:=label366.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label366.caption:=label366.caption+' | Mente enfocada.';
-if oeg=73    then  label366.caption:=label366.caption+' | Irrealista.';
 FMain.shaping:=50+random(85);
 if FMain.shaping>103 then FMain.shaping:=97+random(9)
 else
@@ -19458,9 +17771,9 @@ If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
 LRectificado.Refresh;
 If (FMain.Shaping<85) and (CBAutomatico.Checked=True) Then Button101.Click;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 If (FMain.Shaping>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 end;
 
 procedure TEmotion.Label359DblClick(Sender: TObject);
@@ -19503,12 +17816,6 @@ begin
 edit33.text:=edit33.text+' | '+label366.caption;
 end;
 
-procedure TEmotion.Memo6DblClick(Sender: TObject);
-begin
-memo6.visible:=false;
- label374.visible:=true;
-end;
-
 procedure TEmotion.Button102Click(Sender: TObject);
 begin
 LRectificado.Caption:='Rectificado | ';
@@ -19533,396 +17840,102 @@ end;
 procedure TEmotion.Button108Click(Sender: TObject);
 begin
 panel17.visible:=true;
-label380.caption:=' Fusión, imprisionamiento. ';
-label381.caption:=' Temor, insatisfacción. ';
-label382.caption:=' Desamparo, ira. ';
-label383.caption:=' Tristeza, separación. ';
-label384.caption:=' Intra-uterino. ';
-label385.caption:=' Contracciones de la vida. ';
-label386.caption:=' Decendencia. ';
-label387.caption:=' Expulsión. ';
-label388.caption:=' Universo amniótico (S. Grof). ';
-label389.caption:=' Fusión cósmica sin interferencias. ';
-label390.caption:=' Conflico muerte/renacimiento. ';
-label391.caption:=' Experiencia muerte/re-nacimiento. ';
-label392.caption:=' Omnipotencia, dependencia. ';
-label393.caption:=' Deseo, Falta de. ';
-label394.caption:=' Dominador, dominado. ';
-label395.caption:=' No amado, no atractivo. ';
-label396.caption:=' Adaptación, desadaptación. ';
-label397.caption:=' Arrepentimiento de miedo pasado o futuro. ';
-label398.caption:=' Dolor, culpabilidad. ';
-label399.caption:=' Soledad, aislamiento. ';
-label400.caption:=' Pasividad, dependencia, búsqueda de fusión. ';
-label401.caption:=' Válvula oral, búsqueda del placer. ';
-label402.caption:=' Válvula anal, búsqueda del placer. ';
-label403.caption:=' Válvula genital, búsqueda del placer. ';
-label404.caption:=' Fusión. ';
-label405.caption:=' Madre. ';
-label406.caption:=' Padre. ';
-label407.caption:=' Ego ideal. ';
-label408.caption:=' Comienzo de la vida. ';
-label409.caption:=' Infancia. ';
-label410.caption:=' Niñez. ';
-label411.caption:=' Adolecencia. ';
-label412.caption:=' Autismo, regresión, manía. ';
-label413.caption:=' Angustia, fóbia, anorexia, bulimia. ';
-label414.caption:=' Paranoia, obsesión, neurosis. ';
-label415.caption:=' Histeria, depresión, esquizofrenia. ';
-label416.caption:=' Buena salud. ';
-label417.caption:=' Adaptación. ';
-label418.caption:=' Cansancio, funcionalidad. ';
-label419.caption:=' Cansansio, orgánico. ';
-label420.caption:=' Fusión, comunión. ';
-label421.caption:=' Fé, confianza, realización. ';
-label422.caption:=' Poder, paz, serenidad. ';
-label423.caption:=' Alegría y felicidad, a ser conectadas. ';
-label424.caption:=' Fusión, comunión. ';
-label425.caption:=' Confianza, fé, realización. ';
-label426.caption:=' Poder, paz, serenidad. ';
-label427.caption:=' Alegría y felicidad, a ser conectadas. ';
-label428.caption:=' Ombligo.';
-label429.caption:=' Cabeza. ';
-label430.caption:=' Corazón. ';
-label431.caption:=' Curación física. ';
-label432.caption:=' Curación mental. ';
-label433.caption:=' Sanación espiritual. ';
-label434.caption:=' CUERPO | Alimentación, nutrición, hidratación, actividad física, descanso, sueño, respiración. ';
-label435.caption:=' MENTE | Meditación, relajación, escritura, escucha, música, cámbio de ambiente. ';
-label436.caption:=' ESPÍRITU | Creación, responsabilidad para consigo mismo/a, relaciones, acción, oraciones, amor. ';
-label437.caption:=' Buena madre. ';
-label438.caption:=' Buen padre. ';
-label439.caption:=' Ser uno/a mismo/a. ';
-label440.caption:=' Necesidad de estimarse a sí mismo/a. ';
-label441.caption:=' Necesidad de auto-realización. ';
-label442.caption:=' Necesidad de trascendencia. ';
-label443.caption:=' Necesidad psicológica. ';
-label444.caption:=' Necesidad de seguridad. ';
-label445.caption:=' Necesidad de integración. ';
-label446.caption:=' El respetarse a sí mismo/a. ';
-label447.caption:=' El hacerse respetar. ';
-label448.caption:=' Respeto por los demás. ';
-label449.caption:=' El aquí y el ahora. ';
-label450.caption:=' Libertad y responsabilidad. ';
-label451.caption:=' Aceptación de quien se és. ';
-label452.caption:=' Fusión, imprisionamiento. ';
-label453.caption:=' Miedo, insatisfacción. ';
-label454.caption:=' Desamparo, íra. ';
-label455.caption:=' Tristeza, separación. ';
+ItemsParaConectar();
 end;
 
 procedure TEmotion.Button110Click(Sender: TObject);
 begin
 timer1.enabled:=false;
 button110.visible:=false;
-label380.caption:=' Fusión, imprisionamiento. ';
-label381.caption:=' Temor, insatisfacción. ';
-label382.caption:=' Desamparo, ira. ';
-label383.caption:=' Tristeza, separación. ';
-label384.caption:=' Intra-uterino. ';
-label385.caption:=' Contracciones de la vida. ';
-label386.caption:=' Decendencia. ';
-label387.caption:=' Expulsión. ';
-label388.caption:=' Universo amniótico (S. Grof). ';
-label389.caption:=' Fusión cósmica sin interferencias. ';
-label390.caption:=' Conflico muerte/re-nacimiento. ';
-label391.caption:=' Experiencia muerte/re-nacimiento. ';
-label392.caption:=' Omnipotencia, dependencia. ';
-label393.caption:=' Deseo, Falta de. ';
-label394.caption:=' Dominador, dominado. ';
-label395.caption:=' No amado, no atractivo. ';
-label396.caption:=' Adaptación, desadaptación. ';
-label397.caption:=' Arrepentimiento de miedo pasado o futuro. ';
-label398.caption:=' Dolor, culpabilidad. ';
-label399.caption:=' Soledad, aislamiento. ';
-label400.caption:=' Pasividad, dependencia, búsqueda de fusión. ';
-label401.caption:=' Válvula oral, búsqueda del placer. ';
-label402.caption:=' Válvula anal, búsqueda del placer. ';
-label403.caption:=' Válvula genital, búsqueda del placer. ';
-label404.caption:=' Fusión. ';
-label405.caption:=' Madre. ';
-label406.caption:=' Padre. ';
-label407.caption:=' Ego ideal. ';
-label408.caption:=' Comienzo de la vida. ';
-label409.caption:=' Infancia. ';
-label410.caption:=' Niñez. ';
-label411.caption:=' Adolecencia. ';
-label412.caption:=' Autismo, regresión, manía. ';
-label413.caption:=' Angustia, fóbia, anorexia, bulimia. ';
-label414.caption:=' Paranoia, obsesión, neurosis. ';
-label415.caption:=' Histeria, depresión, esquizofrenia. ';
-label416.caption:=' Buena salud. ';
-label417.caption:=' Adaptación. ';
-label418.caption:=' Cansancio, funcionalidad. ';
-label419.caption:=' Cansansio, orgánico. ';
-label420.caption:=' Fusión, comunión. ';
-label421.caption:=' Fé, confianza, realización. ';
-label422.caption:=' Poder, paz, serenidad. ';
-label423.caption:=' Alegría y felicidad, a ser conectadas. ';
-label424.caption:=' Fusión, comunión. ';
-label425.caption:=' Confianza, fé, realización. ';
-label426.caption:=' Poder, paz, serenidad. ';
-label427.caption:=' Alegría y felicidad, a ser conectadas. ';
+ItemsParaConectar();
+end;
+
+procedure TEmotion.ItemsParaConectar();
+begin
+label380.caption:=' Fusión, imprisionamiento.';
+label381.caption:=' Temor, insatisfacción.';
+label382.caption:=' Desamparo, ira.';
+label383.caption:=' Tristeza, separación.';
+label384.caption:=' Intra-uterino.';
+label385.caption:=' Contracciones de la vida.';
+label386.caption:=' Decendencia.';
+label387.caption:=' Expulsión.';
+label388.caption:=' Universo amniótico (S. Grof).';
+label389.caption:=' Fusión cósmica sin interferencias.';
+label390.caption:=' Conflico muerte/renacimiento.';
+label391.caption:=' Experiencia muerte/renacimiento.';
+label392.caption:=' Omnipotencia, dependencia.';
+label393.caption:=' Deseo, Falta de.';
+label394.caption:=' Dominador, dominado.';
+label395.caption:=' No amado, no atractivo.';
+label396.caption:=' Adaptación, desadaptación.';
+label397.caption:=' Arrepentimiento de miedo pasado o futuro.';
+label398.caption:=' Dolor, culpabilidad.';
+label399.caption:=' Soledad, aislamiento.';
+label400.caption:=' Pasividad, dependencia, búsqueda de fusión.';
+label401.caption:=' Válvula oral, búsqueda del placer.';
+label402.caption:=' Válvula anal, búsqueda del placer.';
+label403.caption:=' Válvula genital, búsqueda del placer.';
+label404.caption:=' Fusión.';
+label405.caption:=' Madre.';
+label406.caption:=' Padre.';
+label407.caption:=' Ego ideal.';
+label408.caption:=' Comienzo de la vida.';
+label409.caption:=' Infancia.';
+label410.caption:=' Niñez.';
+label411.caption:=' Adolecencia.';
+label412.caption:=' Autismo, regresión, manía.';
+label413.caption:=' Angustia, fóbia, anorexia, bulimia.';
+label414.caption:=' Paranoia, obsesión, neurosis.';
+label415.caption:=' Histeria, depresión, esquizofrenia.';
+label416.caption:=' Buena salud.';
+label417.caption:=' Adaptación.';
+label418.caption:=' Cansancio, funcionalidad.';
+label419.caption:=' Cansansio, orgánico.';
+label420.caption:=' Fusión, comunión.';
+label421.caption:=' Fé, confianza, realización.';
+label422.caption:=' Poder, paz, serenidad.';
+label423.caption:=' Alegría y felicidad, a ser conectadas.';
+label424.caption:=' Fusión, comunión.';
+label425.caption:=' Confianza, fé, realización.';
+label426.caption:=' Poder, paz, serenidad.';
+label427.caption:=' Alegría y felicidad, a ser conectadas.';
 label428.caption:=' Ombligo.';
 label429.caption:=' Cabeza. ';
 label430.caption:=' Corazón. ';
 label431.caption:=' Curación física. ';
 label432.caption:=' Curación mental. ';
 label433.caption:=' Sanación espiritual. ';
-label434.caption:=' CUERPO | Alimentación, nutrición, hidratación, actividad física, descanso, sueño, respiración. ';
-label435.caption:=' MENTE | Meditación, relajación, escritura, escucha, música, cámbio de ambiente. ';
-label436.caption:=' ESPÍRITU | Creación, responsabilidad para consigo mismo/a, relaciones, acción, oraciones, amor. ';
-label437.caption:=' Buena madre. ';
-label438.caption:=' Buen padre. ';
-label439.caption:=' Ser uno/a mismo/a. ';
-label440.caption:=' Necesidad de estimarse a sí mismo/a. ';
-label441.caption:=' Necesidad de auto-realización. ';
-label442.caption:=' Necesidad de trascendencia. ';
-label443.caption:=' Necesidad psicológica. ';
-label444.caption:=' Necesidad de seguridad. ';
-label445.caption:=' Necesidad de integración. ';
-label446.caption:=' El respetarse a sí mismo/a. ';
-label447.caption:=' El hacerse respetar. ';
-label448.caption:=' Respeto por los demás. ';
-label449.caption:=' El aquí y el ahora. ';
-label450.caption:=' Libertad y responsabilidad. ';
-label451.caption:=' Aceptación de quien se és. ';
-label452.caption:=' Fusión, imprisionamiento. ';
-label453.caption:=' Miedo, insatisfacción. ';
-label454.caption:=' Desamparo, íra. ';
-label455.caption:=' Tristeza, separación. ';
+label434.caption:=' CUERPO | Alimentación, nutrición, hidratación, actividad física, descanso, sueño, respiración.';
+label435.caption:=' MENTE | Meditación, relajación, escritura, escucha, música, cámbio de ambiente.';
+label436.caption:=' ESPÍRITU | Creación, responsabilidad para consigo mismo/a, relaciones, acción, oraciones, amor.';
+label437.caption:=' Buena madre.';
+label438.caption:=' Buen padre.';
+label439.caption:=' Ser uno mismo.';
+label440.caption:=' Necesidad de estimarse a sí mismo.';
+label441.caption:=' Necesidad de auto-realización.';
+label442.caption:=' Necesidad de trascendencia.';
+label443.caption:=' Necesidad psicológica.';
+label444.caption:=' Necesidad de seguridad.';
+label445.caption:=' Necesidad de integración.';
+label446.caption:=' El respetarse a sí mismo.';
+label447.caption:=' El hacerse respetar.';
+label448.caption:=' Respeto por los demás.';
+label449.caption:=' El aquí y el ahora.';
+label450.caption:=' Libertad y responsabilidad.';
+label451.caption:=' Aceptación de quien se és.';
+label452.caption:=' Fusión, imprisionamiento.';
+label453.caption:=' Miedo, insatisfacción.';
+label454.caption:=' Desamparo, íra.';
+label455.caption:=' Tristeza, separación.';
 end;
 
 procedure TEmotion.Button111Click(Sender: TObject);
 begin
 button111.visible:=false;
 button121.visible:=true;
-{oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.'; }
-oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';;
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.';
-
-    if label359.caption=': '  then label359.caption:='Sin conexión, persona difícil.';
-
-oeg:=random(85);
-if oeg=1    then  label360.caption:=label360.caption+' | Regresión.';
-if oeg= 2   then  label360.caption:=label360.caption+' | Agresividad.';
-if oeg=3    then  label360.caption:=label360.caption+' | Ira.';
-if oeg=4    then  label360.caption:=label360.caption+' | Ansiedad.';
-if oeg=5    then  label360.caption:=label360.caption+' | Conciencia.';
-if oeg=6    then  label360.caption:=label360.caption+' | Tristeza.';
-if oeg=7    then  label360.caption:=label360.caption+' | Culpabilidad.';
-if oeg=8    then  label360.caption:=label360.caption+' | Autismo.';
-if oeg=9    then  label360.caption:=label360.caption+' | Negación.';
-if oeg=10    then  label360.caption:=label360.caption+' | Descuido.';
-if oeg=11    then  label360.caption:=label360.caption+' | Desilusión.';
-if oeg=12    then  label360.caption:=label360.caption+' | Depresión.';
-if oeg=13    then  label360.caption:=label360.caption+' | Poder.';
-if oeg=14    then  label360.caption:=label360.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label360.caption:=label360.caption+' | Temor.';
-if oeg=16    then  label360.caption:=label360.caption+' | Confusión.';
-if oeg=17    then  label360.caption:=label360.caption+' | Duda.';
-if oeg=18    then  label360.caption:=label360.caption+' | Celos.';
-if oeg=19    then  label360.caption:=label360.caption+' | Alegría.';
-if oeg=20    then  label360.caption:=label360.caption+' | Lujuria.';
-if oeg=21    then  label360.caption:=label360.caption+' | Avaricia.';
-if oeg=22    then  label360.caption:=label360.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label360.caption:=label360.caption+' | Dolor psíquico.';
-if oeg=24    then  label360.caption:=label360.caption+' | Pasividad.';
-if oeg=25    then  label360.caption:=label360.caption+' | Proyección.';
-if oeg=26    then  label360.caption:=label360.caption+' | Racionalización.';
-if oeg=27    then  label360.caption:=label360.caption+' | Imprudencia.';
-if oeg=28    then  label360.caption:=label360.caption+' | Preocupación.';
-if oeg=29    then  label360.caption:=label360.caption+' | Abandono.';
-if oeg=30    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=31    then  label360.caption:=label360.caption+' | Traición.';
-if oeg=32    then  label360.caption:=label360.caption+' | Mal entendimiento.';
-if oeg=33    then  label360.caption:=label360.caption+' | Curiosidad.';
-if oeg=34    then  label360.caption:=label360.caption+' | Sorpresa.';
-if oeg=35    then  label360.caption:=label360.caption+' | Conflicto religioso.';
-if oeg=36    then  label360.caption:=label360.caption+' | Conflicto de identidad.';
-if oeg=37    then  label360.caption:=label360.caption+' | Resistencia al cambio.';
-if oeg=38    then  label360.caption:=label360.caption+' | Nerviosismo.';
-if oeg=39    then  label360.caption:=label360.caption+' | Risa.';
-if oeg=40    then  label360.caption:=label360.caption+' | Entusiasmo.';
-if oeg=41    then  label360.caption:=label360.caption+' | Vanidad.';
-if oeg=42    then  label360.caption:=label360.caption+' | Negociación.';
-if oeg=43    then  label360.caption:=label360.caption+' | Coraje.';
-if oeg=44    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=45    then  label360.caption:=label360.caption+' | Monotonía.';
-if oeg=46    then  label360.caption:=label360.caption+' | Necesidad de cambio.';
-if oeg=47    then  label360.caption:=label360.caption+' | Observación.';
-if oeg=48    then  label360.caption:=label360.caption+' | Antagonismo.';
-if oeg=49    then  label360.caption:=label360.caption+' | Sensualidad.';
-if oeg=50    then  label360.caption:=label360.caption+' | Espiritualidad.';
-if oeg=51    then  label360.caption:=label360.caption+' | Sexualidad.';
-if oeg=52    then  label360.caption:=label360.caption+' | Adicción.';
-if oeg=53     then  label360.caption:=label360.caption+' | Enjuiciamientos.';
-if oeg=54    then  label360.caption:=label360.caption+' | Apatía.';
-if oeg=55    then  label360.caption:=label360.caption+' | Extasis.';
-if oeg=56    then  label360.caption:=label360.caption+' | Inadecuadidad.';
-if oeg=57    then  label360.caption:=label360.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label360.caption:=label360.caption+' | Perfeccionismo.';
-if oeg=59    then  label360.caption:=label360.caption+' | Desesperanza.';
-if oeg=60    then  label360.caption:=label360.caption+' | Dominación.';
-if oeg=61    then  label360.caption:=label360.caption+' | Sumisidad.';
-if oeg=62    then  label360.caption:=label360.caption+' | Orgullo.';
-if oeg=63    then  label360.caption:=label360.caption+' | Resentimiento.';
-if oeg=64    then  label360.caption:=label360.caption+' | Shock.';
-if oeg=65    then  label360.caption:=label360.caption+' | Inconciencia.';
-if oeg=66    then  label360.caption:=label360.caption+' | Obsesividad.';
-if oeg=67    then  label360.caption:=label360.caption+' | Compulsividad.';
-if oeg=68    then  label360.caption:=label360.caption+' | Maniático incontrolable.';
-if oeg=69    then  label360.caption:=label360.caption+' | Impulsividad.';
-if oeg=70    then  label360.caption:=label360.caption+' | Lealtad inalterable.';
-if oeg=71    then  label360.caption:=label360.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label360.caption:=label360.caption+' | Mente enfocada.';
-if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
-  if label360.caption=': '  then label360.caption:='No hay conexión, persona difícil.';
+BENegativas.Click;
+BCausas.Click;
      FMain.shaping:=50+random(85);
      if FMain.shaping>103 then
         FMain.shaping:=97+random(9)
@@ -19931,7 +17944,7 @@ if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
        If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
      LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-      FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 end;
 
 procedure TEmotion.Button113Click(Sender: TObject);
@@ -20053,17 +18066,6 @@ begin
 If Edit35.Text<>'' Then button119.enabled:=true
 else
 Button119.Enabled := False;
-end;
-
-procedure TEmotion.ds1Click(Sender: TObject);
-begin
-
- MyWinexec('write.exe','DSM-IV.pdf');
-end;
-
-procedure TEmotion.Affirmations1Click(Sender: TObject);
-begin
-MyWinexec('write.exe','como_redactar_afirmaciones.doc');
 end;
 
 procedure TEmotion.CheckBox1Click(Sender: TObject);
@@ -20393,48 +18395,29 @@ end;
 
 procedure TEmotion.EnterRealmofChackra1Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Induciendo mente a adentrarse en el mundo de los chakras...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-PDesarrollo.visible:=true;   PDesarrollo.refresh;
 ChangingPulses(1000,1,7,1,1,88+random(6),
  '11111111','01111111');
-PDesarrollo.visible:=false;
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 end;
 
 procedure TEmotion.Timetraveltopastfor90sec1Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Viajando al pasado durante 90 seg....';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 ChangingPulses(1000,21,27,1,1,88+random(7),
  '11111111','01111111');
- PDesarrollo.visible:=false;
  if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 end;
 
 procedure TEmotion.Experienceothermentalorethericrelamsfor90sec1Click(
   Sender: TObject);
 begin
-PDesarrollo.Caption:='...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 ChangingPulses(1000,20,27,1,1,88+random(7),
  '11111111','01111111');
- PDesarrollo.visible:=false;
  if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 end;
 
 procedure TEmotion.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 calibform1.change:=calibform1.change+5;
- if label237.caption<>'|' then testform1.label319.caption:= label237.caption;
- if label238.caption<>'|' then  testform1.label320.caption:= label238.caption;
- if label239.caption<>'|' then testform1.label321.caption:= label239.caption;
  testform1.psych12:=label237.caption;
  testform1.psych13:=label238.caption;
  testform1.psych14:=label239.caption;
@@ -20453,324 +18436,24 @@ procedure TEmotion.Button121Click(Sender: TObject);
 begin
 button121.visible:=false;
 button122.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';;
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.';
-
-    if label359.caption=' ···· '  then label359.caption:='Sin conexión, persona difícil.';
-
-oeg:=random(85);
-if oeg=1    then  label360.caption:=label360.caption+' | Regresión.';
-if oeg= 2   then  label360.caption:=label360.caption+' | Agresividad.';
-if oeg=3    then  label360.caption:=label360.caption+' | Ira.';
-if oeg=4    then  label360.caption:=label360.caption+' | Ansiedad.';
-if oeg=5    then  label360.caption:=label360.caption+' | Conciencia.';
-if oeg=6    then  label360.caption:=label360.caption+' | Tristeza.';
-if oeg=7    then  label360.caption:=label360.caption+' | Culpabilidad.';
-if oeg=8    then  label360.caption:=label360.caption+' | Autismo.';
-if oeg=9    then  label360.caption:=label360.caption+' | Negación.';
-if oeg=10    then  label360.caption:=label360.caption+' | Descuido.';
-if oeg=11    then  label360.caption:=label360.caption+' | Desilusión.';
-if oeg=12    then  label360.caption:=label360.caption+' | Depresión.';
-if oeg=13    then  label360.caption:=label360.caption+' | Poder.';
-if oeg=14    then  label360.caption:=label360.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label360.caption:=label360.caption+' | Temor.';
-if oeg=16    then  label360.caption:=label360.caption+' | Confusión.';
-if oeg=17    then  label360.caption:=label360.caption+' | Duda.';
-if oeg=18    then  label360.caption:=label360.caption+' | Celos.';
-if oeg=19    then  label360.caption:=label360.caption+' | Alegría.';
-if oeg=20    then  label360.caption:=label360.caption+' | Lujuria.';
-if oeg=21    then  label360.caption:=label360.caption+' | Avaricia.';
-if oeg=22    then  label360.caption:=label360.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label360.caption:=label360.caption+' | Dolor psíquico.';
-if oeg=24    then  label360.caption:=label360.caption+' | Pasividad.';
-if oeg=25    then  label360.caption:=label360.caption+' | Proyección.';
-if oeg=26    then  label360.caption:=label360.caption+' | Racionalización.';
-if oeg=27    then  label360.caption:=label360.caption+' | Imprudencia.';
-if oeg=28    then  label360.caption:=label360.caption+' | Preocupación.';
-if oeg=29    then  label360.caption:=label360.caption+' | Abandono.';
-if oeg=30    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=31    then  label360.caption:=label360.caption+' | Traición.';
-if oeg=32    then  label360.caption:=label360.caption+' | Mal entendimiento.';
-if oeg=33    then  label360.caption:=label360.caption+' | Curiosidad.';
-if oeg=34    then  label360.caption:=label360.caption+' | Sorpresa.';
-if oeg=35    then  label360.caption:=label360.caption+' | Conflicto religioso.';
-if oeg=36    then  label360.caption:=label360.caption+' | Conflicto de identidad.';
-if oeg=37    then  label360.caption:=label360.caption+' | Resistencia al cambio.';
-if oeg=38    then  label360.caption:=label360.caption+' | Nerviosismo.';
-if oeg=39    then  label360.caption:=label360.caption+' | Risa.';
-if oeg=40    then  label360.caption:=label360.caption+' | Entusiasmo.';
-if oeg=41    then  label360.caption:=label360.caption+' | Vanidad.';
-if oeg=42    then  label360.caption:=label360.caption+' | Negociación.';
-if oeg=43    then  label360.caption:=label360.caption+' | Coraje.';
-if oeg=44    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=45    then  label360.caption:=label360.caption+' | Monotonía.';
-if oeg=46    then  label360.caption:=label360.caption+' | Necesidad de cambio.';
-if oeg=47    then  label360.caption:=label360.caption+' | Observación.';
-if oeg=48    then  label360.caption:=label360.caption+' | Antagonismo.';
-if oeg=49    then  label360.caption:=label360.caption+' | Sensualidad.';
-if oeg=50    then  label360.caption:=label360.caption+' | Espiritualidad.';
-if oeg=51    then  label360.caption:=label360.caption+' | Sexualidad.';
-if oeg=52    then  label360.caption:=label360.caption+' | Adicción.'; 
-if oeg=53     then  label360.caption:=label360.caption+' | Enjuiciamientos.';
-if oeg=54    then  label360.caption:=label360.caption+' | Apatía.';
-if oeg=55    then  label360.caption:=label360.caption+' | Extasis.';
-if oeg=56    then  label360.caption:=label360.caption+' | Inadecuadidad.';
-if oeg=57    then  label360.caption:=label360.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label360.caption:=label360.caption+' | Perfeccionismo.';
-if oeg=59    then  label360.caption:=label360.caption+' | Desesperanza.';
-if oeg=60    then  label360.caption:=label360.caption+' | Dominación.';
-if oeg=61    then  label360.caption:=label360.caption+' | Sumisidad.';
-if oeg=62    then  label360.caption:=label360.caption+' | Orgullo.';
-if oeg=63    then  label360.caption:=label360.caption+' | Resentimiento.';
-if oeg=64    then  label360.caption:=label360.caption+' | Shock.';
-if oeg=65    then  label360.caption:=label360.caption+' | Inconciencia.';
-if oeg=66    then  label360.caption:=label360.caption+' | Obsesividad.';
-if oeg=67    then  label360.caption:=label360.caption+' | Compulsividad.';
-if oeg=68    then  label360.caption:=label360.caption+' | Maniático incontrolable.';
-if oeg=69    then  label360.caption:=label360.caption+' | Impulsividad.';
-if oeg=70    then  label360.caption:=label360.caption+' | Lealtad inalterable.';
-if oeg=71    then  label360.caption:=label360.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label360.caption:=label360.caption+' | Mente enfocada.';
-if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
-  if label360.caption=': '  then label360.caption:='No hay conexión, persona difícil.';
-     FMain.shaping:=50+random(85);
-     if FMain.shaping>103 then
-        FMain.shaping:=97+random(9)
-     else
-        FMain.shaping := FMain.shaping +random(25);
-        If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
-     LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
-   LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+EnlaceLabel359();
+EnlaceLabel360();
+FMain.shaping:=50+random(85);
+if FMain.shaping>103 then
+FMain.shaping:=97+random(9)
+else
+FMain.shaping := FMain.shaping +random(25);
+If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
+LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
+LRectificado.Refresh;
 end;
 
 procedure TEmotion.Button122Click(Sender: TObject);
 begin
 button122.enabled:=false;
 oeg:=random(85);
-if oeg=1    then  label359.caption:=label359.caption+' | Regresión.';
-if oeg= 2   then  label359.caption:=label359.caption+' | Agresividad.';
-if oeg=3    then  label359.caption:=label359.caption+' | Ira.';
-if oeg=4    then  label359.caption:=label359.caption+' | Ansiedad.';
-if oeg=5    then  label359.caption:=label359.caption+' | Conciencia.';
-if oeg=6    then  label359.caption:=label359.caption+' | Tristeza.';
-if oeg=7    then  label359.caption:=label359.caption+' | Culpabilidad.';
-if oeg=8    then  label359.caption:=label359.caption+' | Autismo.';
-if oeg=9    then  label359.caption:=label359.caption+' | Negación.';
-if oeg=10    then  label359.caption:=label359.caption+' | Descuido.';
-if oeg=11    then  label359.caption:=label359.caption+' | Desilusión.';
-if oeg=12    then  label359.caption:=label359.caption+' | Depresión.';
-if oeg=13    then  label359.caption:=label359.caption+' | Poder.';
-if oeg=14    then  label359.caption:=label359.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label359.caption:=label359.caption+' | Temor.';
-if oeg=16    then  label359.caption:=label359.caption+' | Confusión.';
-if oeg=17    then  label359.caption:=label359.caption+' | Duda.';
-if oeg=18    then  label359.caption:=label359.caption+' | Celos.';
-if oeg=19    then  label359.caption:=label359.caption+' | Alegría.';
-if oeg=20    then  label359.caption:=label359.caption+' | Lujuria.';
-if oeg=21    then  label359.caption:=label359.caption+' | Avaricia.';
-if oeg=22    then  label359.caption:=label359.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label359.caption:=label359.caption+' | Dolor psíquico.';;
-if oeg=24    then  label359.caption:=label359.caption+' | Pasividad.';
-if oeg=25    then  label359.caption:=label359.caption+' | Proyección.';
-if oeg=26    then  label359.caption:=label359.caption+' | Racionalización.';
-if oeg=27    then  label359.caption:=label359.caption+' | Imprudencia.';
-if oeg=28    then  label359.caption:=label359.caption+' | Preocupación.';
-if oeg=29    then  label359.caption:=label359.caption+' | Abandono.';
-if oeg=30    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=31    then  label359.caption:=label359.caption+' | Traición.';
-if oeg=32    then  label359.caption:=label359.caption+' | Mal entendimiento.';
-if oeg=33    then  label359.caption:=label359.caption+' | Curiosidad.';
-if oeg=34    then  label359.caption:=label359.caption+' | Sorpresa.';
-if oeg=35    then  label359.caption:=label359.caption+' | Conflicto religioso.';
-if oeg=36    then  label359.caption:=label359.caption+' | Conflicto de identidad.';
-if oeg=37    then  label359.caption:=label359.caption+' | Resistencia al cambio.';
-if oeg=38    then  label359.caption:=label359.caption+' | Nerviosismo.';
-if oeg=39    then  label359.caption:=label359.caption+' | Risa.';
-if oeg=40    then  label359.caption:=label359.caption+' | Entusiasmo.';
-if oeg=41    then  label359.caption:=label359.caption+' | Vanidad.';
-if oeg=42    then  label359.caption:=label359.caption+' | Negociación.';
-if oeg=43    then  label359.caption:=label359.caption+' | Coraje.';
-if oeg=44    then  label359.caption:=label359.caption+' | Vergüenza.';
-if oeg=45    then  label359.caption:=label359.caption+' | Monotonía.';
-if oeg=46    then  label359.caption:=label359.caption+' | Necesidad de cambio.';
-if oeg=47    then  label359.caption:=label359.caption+' | Observación.';
-if oeg=48    then  label359.caption:=label359.caption+' | Antagonismo.';
-if oeg=49    then  label359.caption:=label359.caption+' | Sensualidad.';
-if oeg=50    then  label359.caption:=label359.caption+' | Espiritualidad.';
-if oeg=51    then  label359.caption:=label359.caption+' | Sexualidad.';
-if oeg=52    then  label359.caption:=label359.caption+' | Adicción.';
-if oeg=53     then  label359.caption:=label359.caption+' | Enjuiciamientos.';
-if oeg=54    then  label359.caption:=label359.caption+' | Apatía.';
-if oeg=55    then  label359.caption:=label359.caption+' | Extasis.';
-if oeg=56    then  label359.caption:=label359.caption+' | Inadecuadidad.';
-if oeg=57    then  label359.caption:=label359.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label359.caption:=label359.caption+' | Perfeccionismo.';
-if oeg=59    then  label359.caption:=label359.caption+' | Desesperanza.';
-if oeg=60    then  label359.caption:=label359.caption+' | Dominación.';
-if oeg=61    then  label359.caption:=label359.caption+' | Sumisidad.';
-if oeg=62    then  label359.caption:=label359.caption+' | Orgullo.';
-if oeg=63    then  label359.caption:=label359.caption+' | Resentimiento.';
-if oeg=64    then  label359.caption:=label359.caption+' | Shock.';
-if oeg=65    then  label359.caption:=label359.caption+' | Inconciencia.';
-if oeg=66    then  label359.caption:=label359.caption+' | Obsesividad.';
-if oeg=67    then  label359.caption:=label359.caption+' | Compulsividad.';
-if oeg=68    then  label359.caption:=label359.caption+' | Maniático incontrolable.';
-if oeg=69    then  label359.caption:=label359.caption+' | Impulsividad.';
-if oeg=70    then  label359.caption:=label359.caption+' | Lealtad inalterable.';
-if oeg=71    then  label359.caption:=label359.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label359.caption:=label359.caption+' | Mente enfocada.';
-if oeg=73    then  label359.caption:=label359.caption+' | Irrealista.';
-
-    if label359.caption=': '  then label359.caption:='Sin conexión, persona difícil.';
-
-oeg:=random(85);
-if oeg=1    then  label360.caption:=label360.caption+' | Regresión.';
-if oeg= 2   then  label360.caption:=label360.caption+' | Agresividad.';
-if oeg=3    then  label360.caption:=label360.caption+' | Ira.';
-if oeg=4    then  label360.caption:=label360.caption+' | Ansiedad.';
-if oeg=5    then  label360.caption:=label360.caption+' | Conciencia.';
-if oeg=6    then  label360.caption:=label360.caption+' | Tristeza.';
-if oeg=7    then  label360.caption:=label360.caption+' | Culpabilidad.';
-if oeg=8    then  label360.caption:=label360.caption+' | Autismo.';
-if oeg=9    then  label360.caption:=label360.caption+' | Negación.';
-if oeg=10    then  label360.caption:=label360.caption+' | Descuido.';
-if oeg=11    then  label360.caption:=label360.caption+' | Desilusión.';
-if oeg=12    then  label360.caption:=label360.caption+' | Depresión.';
-if oeg=13    then  label360.caption:=label360.caption+' | Poder.';
-if oeg=14    then  label360.caption:=label360.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label360.caption:=label360.caption+' | Temor.';
-if oeg=16    then  label360.caption:=label360.caption+' | Confusión.';
-if oeg=17    then  label360.caption:=label360.caption+' | Duda.';
-if oeg=18    then  label360.caption:=label360.caption+' | Celos.';
-if oeg=19    then  label360.caption:=label360.caption+' | Alegría.';
-if oeg=20    then  label360.caption:=label360.caption+' | Lujuria.';
-if oeg=21    then  label360.caption:=label360.caption+' | Avaricia.';
-if oeg=22    then  label360.caption:=label360.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label360.caption:=label360.caption+' | Dolor psíquico.';
-if oeg=24    then  label360.caption:=label360.caption+' | Pasividad.';
-if oeg=25    then  label360.caption:=label360.caption+' | Proyección.';
-if oeg=26    then  label360.caption:=label360.caption+' | Racionalización.';
-if oeg=27    then  label360.caption:=label360.caption+' | Imprudencia.';
-if oeg=28    then  label360.caption:=label360.caption+' | Preocupación.';
-if oeg=29    then  label360.caption:=label360.caption+' | Abandono.';
-if oeg=30    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=31    then  label360.caption:=label360.caption+' | Traición.';
-if oeg=32    then  label360.caption:=label360.caption+' | Mal entendimiento.';
-if oeg=33    then  label360.caption:=label360.caption+' | Curiosidad.';
-if oeg=34    then  label360.caption:=label360.caption+' | Sorpresa.';
-if oeg=35    then  label360.caption:=label360.caption+' | Conflicto religioso.';
-if oeg=36    then  label360.caption:=label360.caption+' | Conflicto de identidad.';
-if oeg=37    then  label360.caption:=label360.caption+' | Resistencia al cambio.';
-if oeg=38    then  label360.caption:=label360.caption+' | Nerviosismo.';
-if oeg=39    then  label360.caption:=label360.caption+' | Risa.';
-if oeg=40    then  label360.caption:=label360.caption+' | Entusiasmo.';
-if oeg=41    then  label360.caption:=label360.caption+' | Vanidad.';
-if oeg=42    then  label360.caption:=label360.caption+' | Negociación.';
-if oeg=43    then  label360.caption:=label360.caption+' | Coraje.';
-if oeg=44    then  label360.caption:=label360.caption+' | Vergüenza.';
-if oeg=45    then  label360.caption:=label360.caption+' | Monotonía.';
-if oeg=46    then  label360.caption:=label360.caption+' | Necesidad de cambio.';
-if oeg=47    then  label360.caption:=label360.caption+' | Observación.';
-if oeg=48    then  label360.caption:=label360.caption+' | Antagonismo.';
-if oeg=49    then  label360.caption:=label360.caption+' | Sensualidad.';
-if oeg=50    then  label360.caption:=label360.caption+' | Espiritualidad.';
-if oeg=51    then  label360.caption:=label360.caption+' | Sexualidad.';
-if oeg=52    then  label360.caption:=label360.caption+' | Adicción.';
-if oeg=53     then  label360.caption:=label360.caption+' | Enjuiciamientos.';
-if oeg=54    then  label360.caption:=label360.caption+' | Apatía.';
-if oeg=55    then  label360.caption:=label360.caption+' | Extasis.';
-if oeg=56    then  label360.caption:=label360.caption+' | Inadecuadidad.';
-if oeg=57    then  label360.caption:=label360.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label360.caption:=label360.caption+' | Perfeccionismo.';
-if oeg=59    then  label360.caption:=label360.caption+' | Desesperanza.';
-if oeg=60    then  label360.caption:=label360.caption+' | Dominación.';
-if oeg=61    then  label360.caption:=label360.caption+' | Sumisidad.';
-if oeg=62    then  label360.caption:=label360.caption+' | Orgullo.';
-if oeg=63    then  label360.caption:=label360.caption+' | Resentimiento.';
-if oeg=64    then  label360.caption:=label360.caption+' | Shock.';
-if oeg=65    then  label360.caption:=label360.caption+' | Inconciencia.';
-if oeg=66    then  label360.caption:=label360.caption+' | Obsesividad.';
-if oeg=67    then  label360.caption:=label360.caption+' | Compulsividad.';
-if oeg=68    then  label360.caption:=label360.caption+' | Maniático incontrolable.';
-if oeg=69    then  label360.caption:=label360.caption+' | Impulsividad.';
-if oeg=70    then  label360.caption:=label360.caption+' | Lealtad inalterable.';
-if oeg=71    then  label360.caption:=label360.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label360.caption:=label360.caption+' | Mente enfocada.';
-if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
-  if label360.caption=': '  then label360.caption:='No hay conexión, persona difícil.';
+EnlaceLabel359();
+EnlaceLabel360();
      FMain.shaping:=50+random(85);
      if FMain.shaping>103 then
          FMain.shaping:=97+random(9)
@@ -20779,167 +18462,15 @@ if oeg=73    then  label360.caption:=label360.caption+' | Irrealista.';
         If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
      LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
 end;
 
 procedure TEmotion.Button123Click(Sender: TObject);
 begin
 button123.visible:=false;
 button124.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label363.caption:=label363.caption+' | Regresión.';
-if oeg= 2   then  label363.caption:=label363.caption+' | Agresividad.';
-if oeg=3    then  label363.caption:=label363.caption+' | Ira.';
-if oeg=4    then  label363.caption:=label363.caption+' | Ansiedad.';
-if oeg=5    then  label363.caption:=label363.caption+' | Conciencia.';
-if oeg=6    then  label363.caption:=label363.caption+' | Tristeza.';
-if oeg=7    then  label363.caption:=label363.caption+' | Culpabilidad.';
-if oeg=8    then  label363.caption:=label363.caption+' | Autismo.';
-if oeg=9    then  label363.caption:=label363.caption+' | Negación.';
-if oeg=10    then  label363.caption:=label363.caption+' | Descuido.';
-if oeg=11    then  label363.caption:=label363.caption+' | Desilusión.';
-if oeg=12    then  label363.caption:=label363.caption+' | Depresión.';
-if oeg=13    then  label363.caption:=label363.caption+' | Poder.';
-if oeg=14    then  label363.caption:=label363.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label363.caption:=label363.caption+' | Temor.';
-if oeg=16    then  label363.caption:=label363.caption+' | Confusión.';
-if oeg=17    then  label363.caption:=label363.caption+' | Duda.';
-if oeg=18    then  label363.caption:=label363.caption+' | Celos.';
-if oeg=19    then  label363.caption:=label363.caption+' | Alegría.';
-if oeg=20    then  label363.caption:=label363.caption+' | Lujuria.';
-if oeg=21    then  label363.caption:=label363.caption+' | Avaricia.';
-if oeg=22    then  label363.caption:=label363.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label363.caption:=label363.caption+' | Dolor psíquico.';
-if oeg=24    then  label363.caption:=label363.caption+' | Pasividad.';
-if oeg=25    then  label363.caption:=label363.caption+' | Proyección.';
-if oeg=26    then  label363.caption:=label363.caption+' | Racionalización.';
-if oeg=27    then  label363.caption:=label363.caption+' | Imprudencia.';
-if oeg=28    then  label363.caption:=label363.caption+' | Preocupación.';
-if oeg=29    then  label363.caption:=label363.caption+' | Abandono.';
-if oeg=30    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=31    then  label363.caption:=label363.caption+' | Traición.';
-if oeg=32    then  label363.caption:=label363.caption+' | Mal entendimiento.';
-if oeg=33    then  label363.caption:=label363.caption+' | Curiosidad.';
-if oeg=34    then  label363.caption:=label363.caption+' | Sorpresa.';
-if oeg=35    then  label363.caption:=label363.caption+' | Conflicto religioso.';
-if oeg=36    then  label363.caption:=label363.caption+' | Conflicto de identidad.';
-if oeg=37    then  label363.caption:=label363.caption+' | Resistencia al cambio.';
-if oeg=38    then  label363.caption:=label363.caption+' | Nerviosismo.';
-if oeg=39    then  label363.caption:=label363.caption+' | Risa.';
-if oeg=40    then  label363.caption:=label363.caption+' | Entusiasmo.';
-if oeg=41    then  label363.caption:=label363.caption+' | Vanidad.';
-if oeg=42    then  label363.caption:=label363.caption+' | Negociación.';
-if oeg=43    then  label363.caption:=label363.caption+' | Coraje.';
-if oeg=44    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=45    then  label363.caption:=label363.caption+' | Monotonía.';
-if oeg=46    then  label363.caption:=label363.caption+' | Necesidad de cambio.';
-if oeg=47    then  label363.caption:=label363.caption+' | Observación.';
-if oeg=48    then  label363.caption:=label363.caption+' | Antagonismo.';
-if oeg=49    then  label363.caption:=label363.caption+' | Sensualidad.';
-if oeg=50    then  label363.caption:=label363.caption+' | Espiritualidad.';
-if oeg=51    then  label363.caption:=label363.caption+' | Sexualidad.';
-if oeg=52    then  label363.caption:=label363.caption+' | Adicción.';
-if oeg=53     then  label363.caption:=label363.caption+' | Enjuiciamientos.';
-if oeg=54    then  label363.caption:=label363.caption+' | Apatía.';
-if oeg=55    then  label363.caption:=label363.caption+' | Extasis.';
-if oeg=56    then  label363.caption:=label363.caption+' | Inadecuadidad.';
-if oeg=57    then  label363.caption:=label363.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label363.caption:=label363.caption+' | Perfeccionismo.';
-if oeg=59    then  label363.caption:=label363.caption+' | Desesperanza.';
-if oeg=60    then  label363.caption:=label363.caption+' | Dominación.';
-if oeg=61    then  label363.caption:=label363.caption+' | Sumisidad.';
-if oeg=62    then  label363.caption:=label363.caption+' | Orgullo.';
-if oeg=63    then  label363.caption:=label363.caption+' | Resentimiento.';
-if oeg=64    then  label363.caption:=label363.caption+' | Shock.';
-if oeg=65    then  label363.caption:=label363.caption+' | Inconciencia.';
-if oeg=66    then  label363.caption:=label363.caption+' | Obsesividad.';
-if oeg=67    then  label363.caption:=label363.caption+' | Compulsividad.';
-if oeg=68    then  label363.caption:=label363.caption+' | Maniático incontrolable.';
-if oeg=69    then  label363.caption:=label363.caption+' | Impulsividad.';
-if oeg=70    then  label363.caption:=label363.caption+' | Lealtad inalterable.';
-if oeg=71    then  label363.caption:=label363.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label363.caption:=label363.caption+' | Mente enfocada.';
-if oeg=73    then  label363.caption:=label363.caption+' | Irrealista.';
-
-        if label363.caption=': '  then label363.caption:='No hay conexión, persona difícil.';
-
-
-oeg:=random(85);
-if oeg=1    then  label364.caption:=label364.caption+' | Regresión.';
-if oeg= 2   then  label364.caption:=label364.caption+' | Agresividad.';
-if oeg=3    then  label364.caption:=label364.caption+' | Ira.';
-if oeg=4    then  label364.caption:=label364.caption+' | Ansiedad.';
-if oeg=5    then  label364.caption:=label364.caption+' | Conciencia.';
-if oeg=6    then  label364.caption:=label364.caption+' | Tristeza.';
-if oeg=7    then  label364.caption:=label364.caption+' | Culpabilidad.';
-if oeg=8    then  label364.caption:=label364.caption+' | Autismo.';
-if oeg=9    then  label364.caption:=label364.caption+' | Negación.';
-if oeg=10    then  label364.caption:=label364.caption+' | Descuido.';
-if oeg=11    then  label364.caption:=label364.caption+' | Desilusión.';
-if oeg=12    then  label364.caption:=label364.caption+' | Depresión.';
-if oeg=13    then  label364.caption:=label364.caption+' | Poder.';
-if oeg=14    then  label364.caption:=label364.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label364.caption:=label364.caption+' | Temor.';
-if oeg=16    then  label364.caption:=label364.caption+' | Confusión.';
-if oeg=17    then  label364.caption:=label364.caption+' | Duda.';
-if oeg=18    then  label364.caption:=label364.caption+' | Celos.';
-if oeg=19    then  label364.caption:=label364.caption+' | Alegría.';
-if oeg=20    then  label364.caption:=label364.caption+' | Lujuria.';
-if oeg=21    then  label364.caption:=label364.caption+' | Avaricia.';
-if oeg=22    then  label364.caption:=label364.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label364.caption:=label364.caption+' | Dolor psíquico.';
-if oeg=24    then  label364.caption:=label364.caption+' | Pasividad.';
-if oeg=25    then  label364.caption:=label364.caption+' | Proyección.';
-if oeg=26    then  label364.caption:=label364.caption+' | Racionalización.';
-if oeg=27    then  label364.caption:=label364.caption+' | Imprudencia.';
-if oeg=28    then  label364.caption:=label364.caption+' | Preocupación.';
-if oeg=29    then  label364.caption:=label364.caption+' | Abandono.';
-if oeg=30    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=31    then  label364.caption:=label364.caption+' | Traición.';
-if oeg=32    then  label364.caption:=label364.caption+' | Mal entendimiento.';
-if oeg=33    then  label364.caption:=label364.caption+' | Curiosidad.';
-if oeg=34    then  label364.caption:=label364.caption+' | Sorpresa.';
-if oeg=35    then  label364.caption:=label364.caption+' | Conflicto religioso.';
-if oeg=36    then  label364.caption:=label364.caption+' | Conflicto de identidad.';
-if oeg=37    then  label364.caption:=label364.caption+' | Resistencia al cambio.';
-if oeg=38    then  label364.caption:=label364.caption+' | Nerviosismo.';
-if oeg=39    then  label364.caption:=label364.caption+' | Risa.';
-if oeg=40    then  label364.caption:=label364.caption+' | Entusiasmo.';
-if oeg=41    then  label364.caption:=label364.caption+' | Vanidad.';
-if oeg=42    then  label364.caption:=label364.caption+' | Negociación.';
-if oeg=43    then  label364.caption:=label364.caption+' | Coraje.';
-if oeg=44    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=45    then  label364.caption:=label364.caption+' | Monotonía.';
-if oeg=46    then  label364.caption:=label364.caption+' | Necesidad de cambio.';
-if oeg=47    then  label364.caption:=label364.caption+' | Observación.';
-if oeg=48    then  label364.caption:=label364.caption+' | Antagonismo.';
-if oeg=49    then  label364.caption:=label364.caption+' | Sensualidad.';
-if oeg=50    then  label364.caption:=label364.caption+' | Espiritualidad.';
-if oeg=51    then  label364.caption:=label364.caption+' | Sexualidad.';
-if oeg=52    then  label364.caption:=label364.caption+' | Adicción.';
-
-if oeg=53     then  label364.caption:=label364.caption+' | Enjuiciamientos.';
-if oeg=54    then  label364.caption:=label364.caption+' | Apatía.';
-if oeg=55    then  label364.caption:=label364.caption+' | Extasis.';
-if oeg=56    then  label364.caption:=label364.caption+' | Inadecuadidad.';
-if oeg=57    then  label364.caption:=label364.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label364.caption:=label364.caption+' | Perfeccionismo.';
-if oeg=59    then  label364.caption:=label364.caption+' | Desesperanza.';
-if oeg=60    then  label364.caption:=label364.caption+' | Dominación.';
-if oeg=61    then  label364.caption:=label364.caption+' | Sumisidad.';
-if oeg=62    then  label364.caption:=label364.caption+' | Orgullo.';
-if oeg=63    then  label364.caption:=label364.caption+' | Resentimiento.';
-if oeg=64    then  label364.caption:=label364.caption+' | Shock.';
-if oeg=65    then  label364.caption:=label364.caption+' | Inconciencia.';
-if oeg=66    then  label364.caption:=label364.caption+' | Obsesividad.';
-if oeg=67    then  label364.caption:=label364.caption+' | Compulsividad.';
-if oeg=68    then  label364.caption:=label364.caption+' | Maniático incontrolable.';
-if oeg=69    then  label364.caption:=label364.caption+' | Impulsividad.';
-if oeg=70    then  label364.caption:=label364.caption+' | Lealtad inalterable.';
-if oeg=71    then  label364.caption:=label364.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label364.caption:=label364.caption+' | Mente enfocada.';
-if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
-        if label364.caption=': '  then label364.caption:='No hay conexión, persona difícil.';
+EnlaceLabel363();
+EnlaceLabel364();
    FMain.shaping:=50+random(85);
    if FMain.shaping>103 then
       FMain.shaping:=97+random(9)
@@ -20948,164 +18479,15 @@ if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
       If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
+    
 end;
 
 procedure TEmotion.Button124Click(Sender: TObject);
 begin
 button124.visible:=false;
 button125.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label363.caption:=label363.caption+' | Regresión.';
-if oeg= 2   then  label363.caption:=label363.caption+' | Agresividad.';
-if oeg=3    then  label363.caption:=label363.caption+' | Ira.';
-if oeg=4    then  label363.caption:=label363.caption+' | Ansiedad.';
-if oeg=5    then  label363.caption:=label363.caption+' | Conciencia.';
-if oeg=6    then  label363.caption:=label363.caption+' | Tristeza.';
-if oeg=7    then  label363.caption:=label363.caption+' | Culpabilidad.';
-if oeg=8    then  label363.caption:=label363.caption+' | Autismo.';
-if oeg=9    then  label363.caption:=label363.caption+' | Negación.';
-if oeg=10    then  label363.caption:=label363.caption+' | Descuido.';
-if oeg=11    then  label363.caption:=label363.caption+' | Desilusión.';
-if oeg=12    then  label363.caption:=label363.caption+' | Depresión.';
-if oeg=13    then  label363.caption:=label363.caption+' | Poder.';
-if oeg=14    then  label363.caption:=label363.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label363.caption:=label363.caption+' | Temor.';
-if oeg=16    then  label363.caption:=label363.caption+' | Confusión.';
-if oeg=17    then  label363.caption:=label363.caption+' | Duda.';
-if oeg=18    then  label363.caption:=label363.caption+' | Celos.';
-if oeg=19    then  label363.caption:=label363.caption+' | Alegría.';
-if oeg=20    then  label363.caption:=label363.caption+' | Lujuria.';
-if oeg=21    then  label363.caption:=label363.caption+' | Avaricia.';
-if oeg=22    then  label363.caption:=label363.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label363.caption:=label363.caption+' | Dolor psíquico.';
-if oeg=24    then  label363.caption:=label363.caption+' | Pasividad.';
-if oeg=25    then  label363.caption:=label363.caption+' | Proyección.';
-if oeg=26    then  label363.caption:=label363.caption+' | Racionalización.';
-if oeg=27    then  label363.caption:=label363.caption+' | Imprudencia.';
-if oeg=28    then  label363.caption:=label363.caption+' | Preocupación.';
-if oeg=29    then  label363.caption:=label363.caption+' | Abandono.';
-if oeg=30    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=31    then  label363.caption:=label363.caption+' | Traición.';
-if oeg=32    then  label363.caption:=label363.caption+' | Mal entendimiento.';
-if oeg=33    then  label363.caption:=label363.caption+' | Curiosidad.';
-if oeg=34    then  label363.caption:=label363.caption+' | Sorpresa.';
-if oeg=35    then  label363.caption:=label363.caption+' | Conflicto religioso.';
-if oeg=36    then  label363.caption:=label363.caption+' | Conflicto de identidad.';
-if oeg=37    then  label363.caption:=label363.caption+' | Resistencia al cambio.';
-if oeg=38    then  label363.caption:=label363.caption+' | Nerviosismo.';
-if oeg=39    then  label363.caption:=label363.caption+' | Risa.';
-if oeg=40    then  label363.caption:=label363.caption+' | Entusiasmo.';
-if oeg=41    then  label363.caption:=label363.caption+' | Vanidad.';
-if oeg=42    then  label363.caption:=label363.caption+' | Negociación.';
-if oeg=43    then  label363.caption:=label363.caption+' | Coraje.';
-if oeg=44    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=45    then  label363.caption:=label363.caption+' | Monotonía.';
-if oeg=46    then  label363.caption:=label363.caption+' | Necesidad de cambio.';
-if oeg=47    then  label363.caption:=label363.caption+' | Observación.';
-if oeg=48    then  label363.caption:=label363.caption+' | Antagonismo.';
-if oeg=49    then  label363.caption:=label363.caption+' | Sensualidad.';
-if oeg=50    then  label363.caption:=label363.caption+' | Espiritualidad.';
-if oeg=51    then  label363.caption:=label363.caption+' | Sexualidad.';
-if oeg=52    then  label363.caption:=label363.caption+' | Adicción.';
-if oeg=53     then  label363.caption:=label363.caption+' | Enjuiciamientos.';
-if oeg=54    then  label363.caption:=label363.caption+' | Apatía.';
-if oeg=55    then  label363.caption:=label363.caption+' | Extasis.';
-if oeg=56    then  label363.caption:=label363.caption+' | Inadecuadidad.';
-if oeg=57    then  label363.caption:=label363.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label363.caption:=label363.caption+' | Perfeccionismo.';
-if oeg=59    then  label363.caption:=label363.caption+' | Desesperanza.';
-if oeg=60    then  label363.caption:=label363.caption+' | Dominación.';
-if oeg=61    then  label363.caption:=label363.caption+' | Sumisidad.';
-if oeg=62    then  label363.caption:=label363.caption+' | Orgullo.';
-if oeg=63    then  label363.caption:=label363.caption+' | Resentimiento.';
-if oeg=64    then  label363.caption:=label363.caption+' | Shock.';
-if oeg=65    then  label363.caption:=label363.caption+' | Inconciencia.';
-if oeg=66    then  label363.caption:=label363.caption+' | Obsesividad.';
-if oeg=67    then  label363.caption:=label363.caption+' | Compulsividad.';
-if oeg=68    then  label363.caption:=label363.caption+' | Maniático incontrolable.';
-if oeg=69    then  label363.caption:=label363.caption+' | Impulsividad.';
-if oeg=70    then  label363.caption:=label363.caption+' | Lealtad inalterable.';
-if oeg=71    then  label363.caption:=label363.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label363.caption:=label363.caption+' | Mente enfocada.';
-if oeg=73    then  label363.caption:=label363.caption+' | Irrealista.';
-if label363.caption=': '  then label363.caption:='No hay conexión, persona difícil.';
-oeg:=random(85);
-if oeg=1    then  label364.caption:=label364.caption+' | Regresión.';
-if oeg= 2   then  label364.caption:=label364.caption+' | Agresividad.';
-if oeg=3    then  label364.caption:=label364.caption+' | Ira.';
-if oeg=4    then  label364.caption:=label364.caption+' | Ansiedad.';
-if oeg=5    then  label364.caption:=label364.caption+' | Conciencia.';
-if oeg=6    then  label364.caption:=label364.caption+' | Tristeza.';
-if oeg=7    then  label364.caption:=label364.caption+' | Culpabilidad.';
-if oeg=8    then  label364.caption:=label364.caption+' | Autismo.';
-if oeg=9    then  label364.caption:=label364.caption+' | Negación.';
-if oeg=10    then  label364.caption:=label364.caption+' | Descuido.';
-if oeg=11    then  label364.caption:=label364.caption+' | Desilusión.';
-if oeg=12    then  label364.caption:=label364.caption+' | Depresión.';
-if oeg=13    then  label364.caption:=label364.caption+' | Poder.';
-if oeg=14    then  label364.caption:=label364.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label364.caption:=label364.caption+' | Temor.';
-if oeg=16    then  label364.caption:=label364.caption+' | Confusión.';
-if oeg=17    then  label364.caption:=label364.caption+' | Duda.';
-if oeg=18    then  label364.caption:=label364.caption+' | Celos.';
-if oeg=19    then  label364.caption:=label364.caption+' | Alegría.';
-if oeg=20    then  label364.caption:=label364.caption+' | Lujuria.';
-if oeg=21    then  label364.caption:=label364.caption+' | Avaricia.';
-if oeg=22    then  label364.caption:=label364.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label364.caption:=label364.caption+' | Dolor psíquico.';
-if oeg=24    then  label364.caption:=label364.caption+' | Pasividad.';
-if oeg=25    then  label364.caption:=label364.caption+' | Proyección.';
-if oeg=26    then  label364.caption:=label364.caption+' | Racionalización.';
-if oeg=27    then  label364.caption:=label364.caption+' | Imprudencia.';
-if oeg=28    then  label364.caption:=label364.caption+' | Preocupación.';
-if oeg=29    then  label364.caption:=label364.caption+' | Abandono.';
-if oeg=30    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=31    then  label364.caption:=label364.caption+' | Traición.';
-if oeg=32    then  label364.caption:=label364.caption+' | Mal entendimiento.';
-if oeg=33    then  label364.caption:=label364.caption+' | Curiosidad.';
-if oeg=34    then  label364.caption:=label364.caption+' | Sorpresa.';
-if oeg=35    then  label364.caption:=label364.caption+' | Conflicto religioso.';
-if oeg=36    then  label364.caption:=label364.caption+' | Conflicto de identidad.';
-if oeg=37    then  label364.caption:=label364.caption+' | Resistencia al cambio.';
-if oeg=38    then  label364.caption:=label364.caption+' | Nerviosismo.';
-if oeg=39    then  label364.caption:=label364.caption+' | Risa.';
-if oeg=40    then  label364.caption:=label364.caption+' | Entusiasmo.';
-if oeg=41    then  label364.caption:=label364.caption+' | Vanidad.';
-if oeg=42    then  label364.caption:=label364.caption+' | Negociación.';
-if oeg=43    then  label364.caption:=label364.caption+' | Coraje.';
-if oeg=44    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=45    then  label364.caption:=label364.caption+' | Monotonía.';
-if oeg=46    then  label364.caption:=label364.caption+' | Necesidad de cambio.';
-if oeg=47    then  label364.caption:=label364.caption+' | Observación.';
-if oeg=48    then  label364.caption:=label364.caption+' | Antagonismo.';
-if oeg=49    then  label364.caption:=label364.caption+' | Sensualidad.';
-if oeg=50    then  label364.caption:=label364.caption+' | Espiritualidad.';
-if oeg=51    then  label364.caption:=label364.caption+' | Sexualidad.';
-if oeg=52    then  label364.caption:=label364.caption+' | Adicción.';
-
-if oeg=53     then  label364.caption:=label364.caption+' | Enjuiciamientos.';
-if oeg=54    then  label364.caption:=label364.caption+' | Apatía.';
-if oeg=55    then  label364.caption:=label364.caption+' | Extasis.';
-if oeg=56    then  label364.caption:=label364.caption+' | Inadecuadidad.';
-if oeg=57    then  label364.caption:=label364.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label364.caption:=label364.caption+' | Perfeccionismo.';
-if oeg=59    then  label364.caption:=label364.caption+' | Desesperanza.';
-if oeg=60    then  label364.caption:=label364.caption+' | Dominación.';
-if oeg=61    then  label364.caption:=label364.caption+' | Sumisidad.';
-if oeg=62    then  label364.caption:=label364.caption+' | Orgullo.';
-if oeg=63    then  label364.caption:=label364.caption+' | Resentimiento.';
-if oeg=64    then  label364.caption:=label364.caption+' | Shock.';
-if oeg=65    then  label364.caption:=label364.caption+' | Inconciencia.';
-if oeg=66    then  label364.caption:=label364.caption+' | Obsesividad.';
-if oeg=67    then  label364.caption:=label364.caption+' | Compulsividad.';
-if oeg=68    then  label364.caption:=label364.caption+' | Maniático incontrolable.';
-if oeg=69    then  label364.caption:=label364.caption+' | Impulsividad.';
-if oeg=70    then  label364.caption:=label364.caption+' | Lealtad inalterable.';
-if oeg=71    then  label364.caption:=label364.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label364.caption:=label364.caption+' | Mente enfocada.';
-if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
-        if label364.caption=': '  then label364.caption:='No hay conexión, persona difícil.';
+EnlaceLabel363();
+EnlaceLabel364();
    FMain.shaping:=50+random(85);
    if FMain.shaping>103 then
        FMain.shaping:=97+random(9)
@@ -21114,163 +18496,14 @@ if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
      If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
+    
 end;
 
 procedure TEmotion.Button125Click(Sender: TObject);
 begin
 button125.enabled:=false;
-oeg:=random(85);
-if oeg=1    then  label363.caption:=label363.caption+' | Regresión.';
-if oeg= 2   then  label363.caption:=label363.caption+' | Agresividad.';
-if oeg=3    then  label363.caption:=label363.caption+' | Ira.';
-if oeg=4    then  label363.caption:=label363.caption+' | Ansiedad.';
-if oeg=5    then  label363.caption:=label363.caption+' | Conciencia.';
-if oeg=6    then  label363.caption:=label363.caption+' | Tristeza.';
-if oeg=7    then  label363.caption:=label363.caption+' | Culpabilidad.';
-if oeg=8    then  label363.caption:=label363.caption+' | Autismo.';
-if oeg=9    then  label363.caption:=label363.caption+' | Negación.';
-if oeg=10    then  label363.caption:=label363.caption+' | Descuido.';
-if oeg=11    then  label363.caption:=label363.caption+' | Desilusión.';
-if oeg=12    then  label363.caption:=label363.caption+' | Depresión.';
-if oeg=13    then  label363.caption:=label363.caption+' | Poder.';
-if oeg=14    then  label363.caption:=label363.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label363.caption:=label363.caption+' | Temor.';
-if oeg=16    then  label363.caption:=label363.caption+' | Confusión.';
-if oeg=17    then  label363.caption:=label363.caption+' | Duda.';
-if oeg=18    then  label363.caption:=label363.caption+' | Celos.';
-if oeg=19    then  label363.caption:=label363.caption+' | Alegría.';
-if oeg=20    then  label363.caption:=label363.caption+' | Lujuria.';
-if oeg=21    then  label363.caption:=label363.caption+' | Avaricia.';
-if oeg=22    then  label363.caption:=label363.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label363.caption:=label363.caption+' | Dolor psíquico.';
-if oeg=24    then  label363.caption:=label363.caption+' | Pasividad.';
-if oeg=25    then  label363.caption:=label363.caption+' | Proyección.';
-if oeg=26    then  label363.caption:=label363.caption+' | Racionalización.';
-if oeg=27    then  label363.caption:=label363.caption+' | Imprudencia.';
-if oeg=28    then  label363.caption:=label363.caption+' | Preocupación.';
-if oeg=29    then  label363.caption:=label363.caption+' | Abandono.';
-if oeg=30    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=31    then  label363.caption:=label363.caption+' | Traición.';
-if oeg=32    then  label363.caption:=label363.caption+' | Mal entendimiento.';
-if oeg=33    then  label363.caption:=label363.caption+' | Curiosidad.';
-if oeg=34    then  label363.caption:=label363.caption+' | Sorpresa.';
-if oeg=35    then  label363.caption:=label363.caption+' | Conflicto religioso.';
-if oeg=36    then  label363.caption:=label363.caption+' | Conflicto de identidad.';
-if oeg=37    then  label363.caption:=label363.caption+' | Resistencia al cambio.';
-if oeg=38    then  label363.caption:=label363.caption+' | Nerviosismo.';
-if oeg=39    then  label363.caption:=label363.caption+' | Risa.';
-if oeg=40    then  label363.caption:=label363.caption+' | Entusiasmo.';
-if oeg=41    then  label363.caption:=label363.caption+' | Vanidad.';
-if oeg=42    then  label363.caption:=label363.caption+' | Negociación.';
-if oeg=43    then  label363.caption:=label363.caption+' | Coraje.';
-if oeg=44    then  label363.caption:=label363.caption+' | Vergüenza.';
-if oeg=45    then  label363.caption:=label363.caption+' | Monotonía.';
-if oeg=46    then  label363.caption:=label363.caption+' | Necesidad de cambio.';
-if oeg=47    then  label363.caption:=label363.caption+' | Observación.';
-if oeg=48    then  label363.caption:=label363.caption+' | Antagonismo.';
-if oeg=49    then  label363.caption:=label363.caption+' | Sensualidad.';
-if oeg=50    then  label363.caption:=label363.caption+' | Espiritualidad.';
-if oeg=51    then  label363.caption:=label363.caption+' | Sexualidad.';
-if oeg=52    then  label363.caption:=label363.caption+' | Adicción.';
-if oeg=53     then  label363.caption:=label363.caption+' | Enjuiciamientos.';
-if oeg=54    then  label363.caption:=label363.caption+' | Apatía.';
-if oeg=55    then  label363.caption:=label363.caption+' | Extasis.';
-if oeg=56    then  label363.caption:=label363.caption+' | Inadecuadidad.';
-if oeg=57    then  label363.caption:=label363.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label363.caption:=label363.caption+' | Perfeccionismo.';
-if oeg=59    then  label363.caption:=label363.caption+' | Desesperanza.';
-if oeg=60    then  label363.caption:=label363.caption+' | Dominación.';
-if oeg=61    then  label363.caption:=label363.caption+' | Sumisidad.';
-if oeg=62    then  label363.caption:=label363.caption+' | Orgullo.';
-if oeg=63    then  label363.caption:=label363.caption+' | Resentimiento.';
-if oeg=64    then  label363.caption:=label363.caption+' | Shock.';
-if oeg=65    then  label363.caption:=label363.caption+' | Inconciencia.';
-if oeg=66    then  label363.caption:=label363.caption+' | Obsesividad.';
-if oeg=67    then  label363.caption:=label363.caption+' | Compulsividad.';
-if oeg=68    then  label363.caption:=label363.caption+' | Maniático incontrolable.';
-if oeg=69    then  label363.caption:=label363.caption+' | Impulsividad.';
-if oeg=70    then  label363.caption:=label363.caption+' | Lealtad inalterable.';
-if oeg=71    then  label363.caption:=label363.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label363.caption:=label363.caption+' | Mente enfocada.';
-if oeg=73    then  label363.caption:=label363.caption+' | Irrealista.';
-if label363.caption=': '  then label363.caption:='No hay conexión, persona difícil.';
-oeg:=random(85);
-if oeg=1    then  label364.caption:=label364.caption+' | Regresión.';
-if oeg= 2   then  label364.caption:=label364.caption+' | Agresividad.';
-if oeg=3    then  label364.caption:=label364.caption+' | Ira.';
-if oeg=4    then  label364.caption:=label364.caption+' | Ansiedad.';
-if oeg=5    then  label364.caption:=label364.caption+' | Conciencia.';
-if oeg=6    then  label364.caption:=label364.caption+' | Tristeza.';
-if oeg=7    then  label364.caption:=label364.caption+' | Culpabilidad.';
-if oeg=8    then  label364.caption:=label364.caption+' | Autismo.';
-if oeg=9    then  label364.caption:=label364.caption+' | Negación.';
-if oeg=10    then  label364.caption:=label364.caption+' | Descuido.';
-if oeg=11    then  label364.caption:=label364.caption+' | Desilusión.';
-if oeg=12    then  label364.caption:=label364.caption+' | Depresión.';
-if oeg=13    then  label364.caption:=label364.caption+' | Poder.';
-if oeg=14    then  label364.caption:=label364.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label364.caption:=label364.caption+' | Temor.';
-if oeg=16    then  label364.caption:=label364.caption+' | Confusión.';
-if oeg=17    then  label364.caption:=label364.caption+' | Duda.';
-if oeg=18    then  label364.caption:=label364.caption+' | Celos.';
-if oeg=19    then  label364.caption:=label364.caption+' | Alegría.';
-if oeg=20    then  label364.caption:=label364.caption+' | Lujuria.';
-if oeg=21    then  label364.caption:=label364.caption+' | Avaricia.';
-if oeg=22    then  label364.caption:=label364.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label364.caption:=label364.caption+' | Dolor psíquico.';
-if oeg=24    then  label364.caption:=label364.caption+' | Pasividad.';
-if oeg=25    then  label364.caption:=label364.caption+' | Proyección.';
-if oeg=26    then  label364.caption:=label364.caption+' | Racionalización.';
-if oeg=27    then  label364.caption:=label364.caption+' | Imprudencia.';
-if oeg=28    then  label364.caption:=label364.caption+' | Preocupación.';
-if oeg=29    then  label364.caption:=label364.caption+' | Abandono.';
-if oeg=30    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=31    then  label364.caption:=label364.caption+' | Traición.';
-if oeg=32    then  label364.caption:=label364.caption+' | Mal entendimiento.';
-if oeg=33    then  label364.caption:=label364.caption+' | Curiosidad.';
-if oeg=34    then  label364.caption:=label364.caption+' | Sorpresa.';
-if oeg=35    then  label364.caption:=label364.caption+' | Conflicto religioso.';
-if oeg=36    then  label364.caption:=label364.caption+' | Conflicto de identidad.';
-if oeg=37    then  label364.caption:=label364.caption+' | Resistencia al cambio.';
-if oeg=38    then  label364.caption:=label364.caption+' | Nerviosismo.';
-if oeg=39    then  label364.caption:=label364.caption+' | Risa.';
-if oeg=40    then  label364.caption:=label364.caption+' | Entusiasmo.';
-if oeg=41    then  label364.caption:=label364.caption+' | Vanidad.';
-if oeg=42    then  label364.caption:=label364.caption+' | Negociación.';
-if oeg=43    then  label364.caption:=label364.caption+' | Coraje.';
-if oeg=44    then  label364.caption:=label364.caption+' | Vergüenza.';
-if oeg=45    then  label364.caption:=label364.caption+' | Monotonía.';
-if oeg=46    then  label364.caption:=label364.caption+' | Necesidad de cambio.';
-if oeg=47    then  label364.caption:=label364.caption+' | Observación.';
-if oeg=48    then  label364.caption:=label364.caption+' | Antagonismo.';
-if oeg=49    then  label364.caption:=label364.caption+' | Sensualidad.';
-if oeg=50    then  label364.caption:=label364.caption+' | Espiritualidad.';
-if oeg=51    then  label364.caption:=label364.caption+' | Sexualidad.';
-if oeg=52    then  label364.caption:=label364.caption+' | Adicción.';
-
-if oeg=53     then  label364.caption:=label364.caption+' | Enjuiciamientos.';
-if oeg=54    then  label364.caption:=label364.caption+' | Apatía.';
-if oeg=55    then  label364.caption:=label364.caption+' | Extasis.';
-if oeg=56    then  label364.caption:=label364.caption+' | Inadecuadidad.';
-if oeg=57    then  label364.caption:=label364.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label364.caption:=label364.caption+' | Perfeccionismo.';
-if oeg=59    then  label364.caption:=label364.caption+' | Desesperanza.';
-if oeg=60    then  label364.caption:=label364.caption+' | Dominación.';
-if oeg=61    then  label364.caption:=label364.caption+' | Sumisidad.';
-if oeg=62    then  label364.caption:=label364.caption+' | Orgullo.';
-if oeg=63    then  label364.caption:=label364.caption+' | Resentimiento.';
-if oeg=64    then  label364.caption:=label364.caption+' | Shock.';
-if oeg=65    then  label364.caption:=label364.caption+' | Inconciencia.';
-if oeg=66    then  label364.caption:=label364.caption+' | Obsesividad.';
-if oeg=67    then  label364.caption:=label364.caption+' | Compulsividad.';
-if oeg=68    then  label364.caption:=label364.caption+' | Maniático incontrolable.';
-if oeg=69    then  label364.caption:=label364.caption+' | Impulsividad.';
-if oeg=70    then  label364.caption:=label364.caption+' | Lealtad inalterable.';
-if oeg=71    then  label364.caption:=label364.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label364.caption:=label364.caption+' | Mente enfocada.';
-if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
-        if label364.caption=': '  then label364.caption:='No hay conexión, persona difícil.';
+EnlaceLabel363();
+EnlaceLabel364();
    FMain.shaping:=50+random(85);
    if FMain.shaping>103 then
       FMain.shaping:=97+random(9)
@@ -21279,166 +18512,15 @@ if oeg=73    then  label364.caption:=label364.caption+' | Irrealista.';
       If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-    FRecompensa.label79.caption:=inttostr(FMain.shaping);
+    
 end;
 
 procedure TEmotion.Button126Click(Sender: TObject);
 begin
 button126.visible:=false;
 button127.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label362.caption:=label362.caption+' | Regresión.';
-if oeg= 2   then  label362.caption:=label362.caption+' | Agresividad.';
-if oeg=3    then  label362.caption:=label362.caption+' | Ira.';
-if oeg=4    then  label362.caption:=label362.caption+' | Ansiedad.';
-if oeg=5    then  label362.caption:=label362.caption+' | Conciencia.';
-if oeg=6    then  label362.caption:=label362.caption+' | Tristeza.';
-if oeg=7    then  label362.caption:=label362.caption+' | Culpabilidad.';
-if oeg=8    then  label362.caption:=label362.caption+' | Autismo.';
-if oeg=9    then  label362.caption:=label362.caption+' | Negación.';
-if oeg=10    then  label362.caption:=label362.caption+' | Descuido.';
-if oeg=11    then  label362.caption:=label362.caption+' | Desilusión.';
-if oeg=12    then  label362.caption:=label362.caption+' | Depresión.';
-if oeg=13    then  label362.caption:=label362.caption+' | Poder.';
-if oeg=14    then  label362.caption:=label362.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label362.caption:=label362.caption+' | Temor.';
-if oeg=16    then  label362.caption:=label362.caption+' | Confusión.';
-if oeg=17    then  label362.caption:=label362.caption+' | Duda.';
-if oeg=18    then  label362.caption:=label362.caption+' | Celos.';
-if oeg=19    then  label362.caption:=label362.caption+' | Alegría.';
-if oeg=20    then  label362.caption:=label362.caption+' | Lujuria.';
-if oeg=21    then  label362.caption:=label362.caption+' | Avaricia.';
-if oeg=22    then  label362.caption:=label362.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label362.caption:=label362.caption+' | Dolor psíquico.';
-if oeg=24    then  label362.caption:=label362.caption+' | Pasividad.';
-if oeg=25    then  label362.caption:=label362.caption+' | Proyección.';
-if oeg=26    then  label362.caption:=label362.caption+' | Racionalización.';
-if oeg=27    then  label362.caption:=label362.caption+' | Imprudencia.';
-if oeg=28    then  label362.caption:=label362.caption+' | Preocupación.';
-if oeg=29    then  label362.caption:=label362.caption+' | Abandono.';
-if oeg=30    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=31    then  label362.caption:=label362.caption+' | Traición.';
-if oeg=32    then  label362.caption:=label362.caption+' | Mal entendimiento.';
-if oeg=33    then  label362.caption:=label362.caption+' | Curiosidad.';
-if oeg=34    then  label362.caption:=label362.caption+' | Sorpresa.';
-if oeg=35    then  label362.caption:=label362.caption+' | Conflicto religioso.';
-if oeg=36    then  label362.caption:=label362.caption+' | Conflicto de identidad.';
-if oeg=37    then  label362.caption:=label362.caption+' | Resistencia al cambio.';
-if oeg=38    then  label362.caption:=label362.caption+' | Nerviosismo.';
-if oeg=39    then  label362.caption:=label362.caption+' | Risa.';
-if oeg=40    then  label362.caption:=label362.caption+' | Entusiasmo.';
-if oeg=41    then  label362.caption:=label362.caption+' | Vanidad.';
-if oeg=42    then  label362.caption:=label362.caption+' | Negociación.';
-if oeg=43    then  label362.caption:=label362.caption+' | Coraje.';
-if oeg=44    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=45    then  label362.caption:=label362.caption+' | Monotonía.';
-if oeg=46    then  label362.caption:=label362.caption+' | Necesidad de cambio.';
-if oeg=47    then  label362.caption:=label362.caption+' | Observación.';
-if oeg=48    then  label362.caption:=label362.caption+' | Antagonismo.';
-if oeg=49    then  label362.caption:=label362.caption+' | Sensualidad.';
-if oeg=50    then  label362.caption:=label362.caption+' | Espiritualidad.';
-if oeg=51    then  label362.caption:=label362.caption+' | Sexualidad.';
-if oeg=52    then  label362.caption:=label362.caption+' | Adicción.';
-if oeg=53     then  label362.caption:=label362.caption+' | Enjuiciamientos.';
-if oeg=54    then  label362.caption:=label362.caption+' | Apatía.';
-if oeg=55    then  label362.caption:=label362.caption+' | Extasis.';
-if oeg=56    then  label362.caption:=label362.caption+' | Inadecuadidad.';
-if oeg=57    then  label362.caption:=label362.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label362.caption:=label362.caption+' | Perfeccionismo.';
-if oeg=59    then  label362.caption:=label362.caption+' | Desesperanza.';
-if oeg=60    then  label362.caption:=label362.caption+' | Dominación.';
-if oeg=61    then  label362.caption:=label362.caption+' | Sumisidad.';
-if oeg=62    then  label362.caption:=label362.caption+' | Orgullo.';
-if oeg=63    then  label362.caption:=label362.caption+' | Resentimiento.';
-if oeg=64    then  label362.caption:=label362.caption+' | Shock.';
-if oeg=65    then  label362.caption:=label362.caption+' | Inconciencia.';
-if oeg=66    then  label362.caption:=label362.caption+' | Obsesividad.';
-if oeg=67    then  label362.caption:=label362.caption+' | Compulsividad.';
-if oeg=68    then  label362.caption:=label362.caption+' | Maniático incontrolable.';
-if oeg=69    then  label362.caption:=label362.caption+' | Impulsividad.';
-if oeg=70    then  label362.caption:=label362.caption+' | Lealtad inalterable.';
-if oeg=71    then  label362.caption:=label362.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label362.caption:=label362.caption+' | Mente enfocada.';
-if oeg=73    then  label362.caption:=label362.caption+' | Irrealista.';
-
-        if label362.caption=': '  then label362.caption:='No hay conexión, persona difícil.';
-
-
-oeg:=random(85);
-if oeg=1    then  label361.caption:=label361.caption+' | Regresión.';
-if oeg= 2   then  label361.caption:=label361.caption+' | Agresividad.';
-if oeg=3    then  label361.caption:=label361.caption+' | Ira.';
-if oeg=4    then  label361.caption:=label361.caption+' | Ansiedad.';
-if oeg=5    then  label361.caption:=label361.caption+' | Conciencia.';
-if oeg=6    then  label361.caption:=label361.caption+' | Tristeza.';
-if oeg=7    then  label361.caption:=label361.caption+' | Culpabilidad.';
-if oeg=8    then  label361.caption:=label361.caption+' | Autismo.';
-if oeg=9    then  label361.caption:=label361.caption+' | Negación.';
-if oeg=10    then  label361.caption:=label361.caption+' | Descuido.';
-if oeg=11    then  label361.caption:=label361.caption+' | Desilusión.';
-if oeg=12    then  label361.caption:=label361.caption+' | Depresión.';
-if oeg=13    then  label361.caption:=label361.caption+' | Poder.';
-if oeg=14    then  label361.caption:=label361.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label361.caption:=label361.caption+' | Temor.';
-if oeg=16    then  label361.caption:=label361.caption+' | Confusión.';
-if oeg=17    then  label361.caption:=label361.caption+' | Duda.';
-if oeg=18    then  label361.caption:=label361.caption+' | Celos.';
-if oeg=19    then  label361.caption:=label361.caption+' | Alegría.';
-if oeg=20    then  label361.caption:=label361.caption+' | Lujuria.';
-if oeg=21    then  label361.caption:=label361.caption+' | Avaricia.';
-if oeg=22    then  label361.caption:=label361.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label361.caption:=label361.caption+' | Dolor psíquico.';
-if oeg=24    then  label361.caption:=label361.caption+' | Pasividad.';
-if oeg=25    then  label361.caption:=label361.caption+' | Proyección.';
-if oeg=26    then  label361.caption:=label361.caption+' | Racionalización.';
-if oeg=27    then  label361.caption:=label361.caption+' | Imprudencia.';
-if oeg=28    then  label361.caption:=label361.caption+' | Preocupación.';
-if oeg=29    then  label361.caption:=label361.caption+' | Abandono.';
-if oeg=30    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=31    then  label361.caption:=label361.caption+' | Traición.';
-if oeg=32    then  label361.caption:=label361.caption+' | Mal entendimiento.';
-if oeg=33    then  label361.caption:=label361.caption+' | Curiosidad.';
-if oeg=34    then  label361.caption:=label361.caption+' | Sorpresa.';
-if oeg=35    then  label361.caption:=label361.caption+' | Conflicto religioso.';
-if oeg=36    then  label361.caption:=label361.caption+' | Conflicto de identidad.';
-if oeg=37    then  label361.caption:=label361.caption+' | Resistencia al cambio.';
-if oeg=38    then  label361.caption:=label361.caption+' | Nerviosismo.';
-if oeg=39    then  label361.caption:=label361.caption+' | Risa.';
-if oeg=40    then  label361.caption:=label361.caption+' | Entusiasmo.';
-if oeg=41    then  label361.caption:=label361.caption+' | Vanidad.';
-if oeg=42    then  label361.caption:=label361.caption+' | Negociación.';
-if oeg=43    then  label361.caption:=label361.caption+' | Coraje.';
-if oeg=44    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=45    then  label361.caption:=label361.caption+' | Monotonía.';
-if oeg=46    then  label361.caption:=label361.caption+' | Necesidad de cambio.';
-if oeg=47    then  label361.caption:=label361.caption+' | Observación.';
-if oeg=48    then  label361.caption:=label361.caption+' | Antagonismo.';
-if oeg=49    then  label361.caption:=label361.caption+' | Sensualidad.';
-if oeg=50    then  label361.caption:=label361.caption+' | Espiritualidad.';
-if oeg=51    then  label361.caption:=label361.caption+' | Sexualidad.';
-if oeg=52    then  label361.caption:=label361.caption+' | Adicción.';
-if oeg=53     then  label361.caption:=label361.caption+' | Enjuiciamientos.';
-if oeg=54    then  label361.caption:=label361.caption+' | Apatía.';
-if oeg=55    then  label361.caption:=label361.caption+' | Extasis.';
-if oeg=56    then  label361.caption:=label361.caption+' | Inadecuadidad.';
-if oeg=57    then  label361.caption:=label361.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label361.caption:=label361.caption+' | Perfeccionismo.';
-if oeg=59    then  label361.caption:=label361.caption+' | Desesperanza.';
-if oeg=60    then  label361.caption:=label361.caption+' | Dominación.';
-if oeg=61    then  label361.caption:=label361.caption+' | Sumisidad.';
-if oeg=62    then  label361.caption:=label361.caption+' | Orgullo.';
-if oeg=63    then  label361.caption:=label361.caption+' | Resentimiento.';
-if oeg=64    then  label361.caption:=label361.caption+' | Shock.';
-if oeg=65    then  label361.caption:=label361.caption+' | Inconciencia.';
-if oeg=66    then  label361.caption:=label361.caption+' | Obsesividad.';
-if oeg=67    then  label361.caption:=label361.caption+' | Compulsividad.';
-if oeg=68    then  label361.caption:=label361.caption+' | Maniático incontrolable.';
-if oeg=69    then  label361.caption:=label361.caption+' | Impulsividad.';
-if oeg=70    then  label361.caption:=label361.caption+' | Lealtad inalterable.';
-if oeg=71    then  label361.caption:=label361.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label361.caption:=label361.caption+' | Mente enfocada.';
-if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
-       if label361.caption=': '  then label361.caption:='No hay conexión, persona difícil.';
+EnlaceLabel361();
+EnlaceLabel362();
     FMain.shaping:=50+random(85);
     if FMain.shaping>103 then
       FMain.shaping:=97+random(9)
@@ -21447,163 +18529,15 @@ if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
        If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
 end;
 
 procedure TEmotion.Button127Click(Sender: TObject);
 begin
 button127.visible:=false;
 button128.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label362.caption:=label362.caption+' | Regresión.';
-if oeg= 2   then  label362.caption:=label362.caption+' | Agresividad.';
-if oeg=3    then  label362.caption:=label362.caption+' | Ira.';
-if oeg=4    then  label362.caption:=label362.caption+' | Ansiedad.';
-if oeg=5    then  label362.caption:=label362.caption+' | Conciencia.';
-if oeg=6    then  label362.caption:=label362.caption+' | Tristeza.';
-if oeg=7    then  label362.caption:=label362.caption+' | Culpabilidad.';
-if oeg=8    then  label362.caption:=label362.caption+' | Autismo.';
-if oeg=9    then  label362.caption:=label362.caption+' | Negación.';
-if oeg=10    then  label362.caption:=label362.caption+' | Descuido.';
-if oeg=11    then  label362.caption:=label362.caption+' | Desilusión.';
-if oeg=12    then  label362.caption:=label362.caption+' | Depresión.';
-if oeg=13    then  label362.caption:=label362.caption+' | Poder.';
-if oeg=14    then  label362.caption:=label362.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label362.caption:=label362.caption+' | Temor.';
-if oeg=16    then  label362.caption:=label362.caption+' | Confusión.';
-if oeg=17    then  label362.caption:=label362.caption+' | Duda.';
-if oeg=18    then  label362.caption:=label362.caption+' | Celos.';
-if oeg=19    then  label362.caption:=label362.caption+' | Alegría.';
-if oeg=20    then  label362.caption:=label362.caption+' | Lujuria.';
-if oeg=21    then  label362.caption:=label362.caption+' | Avaricia.';
-if oeg=22    then  label362.caption:=label362.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label362.caption:=label362.caption+' | Dolor psíquico.';
-if oeg=24    then  label362.caption:=label362.caption+' | Pasividad.';
-if oeg=25    then  label362.caption:=label362.caption+' | Proyección.';
-if oeg=26    then  label362.caption:=label362.caption+' | Racionalización.';
-if oeg=27    then  label362.caption:=label362.caption+' | Imprudencia.';
-if oeg=28    then  label362.caption:=label362.caption+' | Preocupación.';
-if oeg=29    then  label362.caption:=label362.caption+' | Abandono.';
-if oeg=30    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=31    then  label362.caption:=label362.caption+' | Traición.';
-if oeg=32    then  label362.caption:=label362.caption+' | Mal entendimiento.';
-if oeg=33    then  label362.caption:=label362.caption+' | Curiosidad.';
-if oeg=34    then  label362.caption:=label362.caption+' | Sorpresa.';
-if oeg=35    then  label362.caption:=label362.caption+' | Conflicto religioso.';
-if oeg=36    then  label362.caption:=label362.caption+' | Conflicto de identidad.';
-if oeg=37    then  label362.caption:=label362.caption+' | Resistencia al cambio.';
-if oeg=38    then  label362.caption:=label362.caption+' | Nerviosismo.';
-if oeg=39    then  label362.caption:=label362.caption+' | Risa.';
-if oeg=40    then  label362.caption:=label362.caption+' | Entusiasmo.';
-if oeg=41    then  label362.caption:=label362.caption+' | Vanidad.';
-if oeg=42    then  label362.caption:=label362.caption+' | Negociación.';
-if oeg=43    then  label362.caption:=label362.caption+' | Coraje.';
-if oeg=44    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=45    then  label362.caption:=label362.caption+' | Monotonía.';
-if oeg=46    then  label362.caption:=label362.caption+' | Necesidad de cambio.';
-if oeg=47    then  label362.caption:=label362.caption+' | Observación.';
-if oeg=48    then  label362.caption:=label362.caption+' | Antagonismo.';
-if oeg=49    then  label362.caption:=label362.caption+' | Sensualidad.';
-if oeg=50    then  label362.caption:=label362.caption+' | Espiritualidad.';
-if oeg=51    then  label362.caption:=label362.caption+' | Sexualidad.';
-if oeg=52    then  label362.caption:=label362.caption+' | Adicción.';
-if oeg=53     then  label362.caption:=label362.caption+' | Enjuiciamientos.';
-if oeg=54    then  label362.caption:=label362.caption+' | Apatía.';
-if oeg=55    then  label362.caption:=label362.caption+' | Extasis.';
-if oeg=56    then  label362.caption:=label362.caption+' | Inadecuadidad.';
-if oeg=57    then  label362.caption:=label362.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label362.caption:=label362.caption+' | Perfeccionismo.';
-if oeg=59    then  label362.caption:=label362.caption+' | Desesperanza.';
-if oeg=60    then  label362.caption:=label362.caption+' | Dominación.';
-if oeg=61    then  label362.caption:=label362.caption+' | Sumisidad.';
-if oeg=62    then  label362.caption:=label362.caption+' | Orgullo.';
-if oeg=63    then  label362.caption:=label362.caption+' | Resentimiento.';
-if oeg=64    then  label362.caption:=label362.caption+' | Shock.';
-if oeg=65    then  label362.caption:=label362.caption+' | Inconciencia.';
-if oeg=66    then  label362.caption:=label362.caption+' | Obsesividad.';
-if oeg=67    then  label362.caption:=label362.caption+' | Compulsividad.';
-if oeg=68    then  label362.caption:=label362.caption+' | Maniático incontrolable.';
-if oeg=69    then  label362.caption:=label362.caption+' | Impulsividad.';
-if oeg=70    then  label362.caption:=label362.caption+' | Lealtad inalterable.';
-if oeg=71    then  label362.caption:=label362.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label362.caption:=label362.caption+' | Mente enfocada.';
-if oeg=73    then  label362.caption:=label362.caption+' | Irrealista.';
-if label362.caption=': '  then label362.caption:='No hay conexión, persona difícil.';
-oeg:=random(85);
-if oeg=1    then  label361.caption:=label361.caption+' | Regresión.';
-if oeg= 2   then  label361.caption:=label361.caption+' | Agresividad.';
-if oeg=3    then  label361.caption:=label361.caption+' | Ira.';
-if oeg=4    then  label361.caption:=label361.caption+' | Ansiedad.';
-if oeg=5    then  label361.caption:=label361.caption+' | Conciencia.';
-if oeg=6    then  label361.caption:=label361.caption+' | Tristeza.';
-if oeg=7    then  label361.caption:=label361.caption+' | Culpabilidad.';
-if oeg=8    then  label361.caption:=label361.caption+' | Autismo.';
-if oeg=9    then  label361.caption:=label361.caption+' | Negación.';
-if oeg=10    then  label361.caption:=label361.caption+' | Descuido.';
-if oeg=11    then  label361.caption:=label361.caption+' | Desilusión.';
-if oeg=12    then  label361.caption:=label361.caption+' | Depresión.';
-if oeg=13    then  label361.caption:=label361.caption+' | Poder.';
-if oeg=14    then  label361.caption:=label361.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label361.caption:=label361.caption+' | Temor.';
-if oeg=16    then  label361.caption:=label361.caption+' | Confusión.';
-if oeg=17    then  label361.caption:=label361.caption+' | Duda.';
-if oeg=18    then  label361.caption:=label361.caption+' | Celos.';
-if oeg=19    then  label361.caption:=label361.caption+' | Alegría.';
-if oeg=20    then  label361.caption:=label361.caption+' | Lujuria.';
-if oeg=21    then  label361.caption:=label361.caption+' | Avaricia.';
-if oeg=22    then  label361.caption:=label361.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label361.caption:=label361.caption+' | Dolor psíquico.';
-if oeg=24    then  label361.caption:=label361.caption+' | Pasividad.';
-if oeg=25    then  label361.caption:=label361.caption+' | Proyección.';
-if oeg=26    then  label361.caption:=label361.caption+' | Racionalización.';
-if oeg=27    then  label361.caption:=label361.caption+' | Imprudencia.';
-if oeg=28    then  label361.caption:=label361.caption+' | Preocupación.';
-if oeg=29    then  label361.caption:=label361.caption+' | Abandono.';
-if oeg=30    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=31    then  label361.caption:=label361.caption+' | Traición.';
-if oeg=32    then  label361.caption:=label361.caption+' | Mal entendimiento.';
-if oeg=33    then  label361.caption:=label361.caption+' | Curiosidad.';
-if oeg=34    then  label361.caption:=label361.caption+' | Sorpresa.';
-if oeg=35    then  label361.caption:=label361.caption+' | Conflicto religioso.';
-if oeg=36    then  label361.caption:=label361.caption+' | Conflicto de identidad.';
-if oeg=37    then  label361.caption:=label361.caption+' | Resistencia al cambio.';
-if oeg=38    then  label361.caption:=label361.caption+' | Nerviosismo.';
-if oeg=39    then  label361.caption:=label361.caption+' | Risa.';
-if oeg=40    then  label361.caption:=label361.caption+' | Entusiasmo.';
-if oeg=41    then  label361.caption:=label361.caption+' | Vanidad.';
-if oeg=42    then  label361.caption:=label361.caption+' | Negociación.';
-if oeg=43    then  label361.caption:=label361.caption+' | Coraje.';
-if oeg=44    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=45    then  label361.caption:=label361.caption+' | Monotonía.';
-if oeg=46    then  label361.caption:=label361.caption+' | Necesidad de cambio.';
-if oeg=47    then  label361.caption:=label361.caption+' | Observación.';
-if oeg=48    then  label361.caption:=label361.caption+' | Antagonismo.';
-if oeg=49    then  label361.caption:=label361.caption+' | Sensualidad.';
-if oeg=50    then  label361.caption:=label361.caption+' | Espiritualidad.';
-if oeg=51    then  label361.caption:=label361.caption+' | Sexualidad.';
-if oeg=52    then  label361.caption:=label361.caption+' | Adicción.';
-if oeg=53    then  label361.caption:=label361.caption+' | Enjuiciamientos.';
-if oeg=54    then  label361.caption:=label361.caption+' | Apatía.';
-if oeg=55    then  label361.caption:=label361.caption+' | Extasis.';
-if oeg=56    then  label361.caption:=label361.caption+' | Inadecuadidad.';
-if oeg=57    then  label361.caption:=label361.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label361.caption:=label361.caption+' | Perfeccionismo.';
-if oeg=59    then  label361.caption:=label361.caption+' | Desesperanza.';
-if oeg=60    then  label361.caption:=label361.caption+' | Dominación.';
-if oeg=61    then  label361.caption:=label361.caption+' | Sumisidad.';
-if oeg=62    then  label361.caption:=label361.caption+' | Orgullo.';
-if oeg=63    then  label361.caption:=label361.caption+' | Resentimiento.';
-if oeg=64    then  label361.caption:=label361.caption+' | Shock.';
-if oeg=65    then  label361.caption:=label361.caption+' | Inconciencia.';
-if oeg=66    then  label361.caption:=label361.caption+' | Obsesividad.';
-if oeg=67    then  label361.caption:=label361.caption+' | Compulsividad.';
-if oeg=68    then  label361.caption:=label361.caption+' | Maniático incontrolable.';
-if oeg=69    then  label361.caption:=label361.caption+' | Impulsividad.';
-if oeg=70    then  label361.caption:=label361.caption+' | Lealtad inalterable.';
-if oeg=71    then  label361.caption:=label361.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label361.caption:=label361.caption+' | Mente enfocada.';
-if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
-       if label361.caption=': '  then label361.caption:='No hay conexión, persona difícil.';
+EnlaceLabel361();
+EnlaceLabel362();
     FMain.shaping:=50+random(85);
     if FMain.shaping>103 then
        FMain.shaping:=97+random(9)
@@ -21612,165 +18546,13 @@ if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
     If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
 end;
 
 procedure TEmotion.Button128Click(Sender: TObject);
 begin
 button128.enabled:=false;
-oeg:=random(85);
-if oeg=1    then  label362.caption:=label362.caption+' | Regresión.';
-if oeg= 2   then  label362.caption:=label362.caption+' | Agresividad.';
-if oeg=3    then  label362.caption:=label362.caption+' | Ira.';
-if oeg=4    then  label362.caption:=label362.caption+' | Ansiedad.';
-if oeg=5    then  label362.caption:=label362.caption+' | Conciencia.';
-if oeg=6    then  label362.caption:=label362.caption+' | Tristeza.';
-if oeg=7    then  label362.caption:=label362.caption+' | Culpabilidad.';
-if oeg=8    then  label362.caption:=label362.caption+' | Autismo.';
-if oeg=9    then  label362.caption:=label362.caption+' | Negación.';
-if oeg=10    then  label362.caption:=label362.caption+' | Descuido.';
-if oeg=11    then  label362.caption:=label362.caption+' | Desilusión.';
-if oeg=12    then  label362.caption:=label362.caption+' | Depresión.';
-if oeg=13    then  label362.caption:=label362.caption+' | Poder.';
-if oeg=14    then  label362.caption:=label362.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label362.caption:=label362.caption+' | Temor.';
-if oeg=16    then  label362.caption:=label362.caption+' | Confusión.';
-if oeg=17    then  label362.caption:=label362.caption+' | Duda.';
-if oeg=18    then  label362.caption:=label362.caption+' | Celos.';
-if oeg=19    then  label362.caption:=label362.caption+' | Alegría.';
-if oeg=20    then  label362.caption:=label362.caption+' | Lujuria.';
-if oeg=21    then  label362.caption:=label362.caption+' | Avaricia.';
-if oeg=22    then  label362.caption:=label362.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label362.caption:=label362.caption+' | Dolor psíquico.';
-if oeg=24    then  label362.caption:=label362.caption+' | Pasividad.';
-if oeg=25    then  label362.caption:=label362.caption+' | Proyección.';
-if oeg=26    then  label362.caption:=label362.caption+' | Racionalización.';
-if oeg=27    then  label362.caption:=label362.caption+' | Imprudencia.';
-if oeg=28    then  label362.caption:=label362.caption+' | Preocupación.';
-if oeg=29    then  label362.caption:=label362.caption+' | Abandono.';
-if oeg=30    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=31    then  label362.caption:=label362.caption+' | Traición.';
-if oeg=32    then  label362.caption:=label362.caption+' | Mal entendimiento.';
-if oeg=33    then  label362.caption:=label362.caption+' | Curiosidad.';
-if oeg=34    then  label362.caption:=label362.caption+' | Sorpresa.';
-if oeg=35    then  label362.caption:=label362.caption+' | Conflicto religioso.';
-if oeg=36    then  label362.caption:=label362.caption+' | Conflicto de identidad.';
-if oeg=37    then  label362.caption:=label362.caption+' | Resistencia al cambio.';
-if oeg=38    then  label362.caption:=label362.caption+' | Nerviosismo.';
-if oeg=39    then  label362.caption:=label362.caption+' | Risa.';
-if oeg=40    then  label362.caption:=label362.caption+' | Entusiasmo.';
-if oeg=41    then  label362.caption:=label362.caption+' | Vanidad.';
-if oeg=42    then  label362.caption:=label362.caption+' | Negociación.';
-if oeg=43    then  label362.caption:=label362.caption+' | Coraje.';
-if oeg=44    then  label362.caption:=label362.caption+' | Vergüenza.';
-if oeg=45    then  label362.caption:=label362.caption+' | Monotonía.';
-if oeg=46    then  label362.caption:=label362.caption+' | Necesidad de cambio.';
-if oeg=47    then  label362.caption:=label362.caption+' | Observación.';
-if oeg=48    then  label362.caption:=label362.caption+' | Antagonismo.';
-if oeg=49    then  label362.caption:=label362.caption+' | Sensualidad.';
-if oeg=50    then  label362.caption:=label362.caption+' | Espiritualidad.';
-if oeg=51    then  label362.caption:=label362.caption+' | Sexualidad.';
-if oeg=52    then  label362.caption:=label362.caption+' | Adicción.';
-if oeg=53     then  label362.caption:=label362.caption+' | Enjuiciamientos.';
-if oeg=54    then  label362.caption:=label362.caption+' | Apatía.';
-if oeg=55    then  label362.caption:=label362.caption+' | Extasis.';
-if oeg=56    then  label362.caption:=label362.caption+' | Inadecuadidad.';
-if oeg=57    then  label362.caption:=label362.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label362.caption:=label362.caption+' | Perfeccionismo.';
-if oeg=59    then  label362.caption:=label362.caption+' | Desesperanza.';
-if oeg=60    then  label362.caption:=label362.caption+' | Dominación.';
-if oeg=61    then  label362.caption:=label362.caption+' | Sumisidad.';
-if oeg=62    then  label362.caption:=label362.caption+' | Orgullo.';
-if oeg=63    then  label362.caption:=label362.caption+' | Resentimiento.';
-if oeg=64    then  label362.caption:=label362.caption+' | Shock.';
-if oeg=65    then  label362.caption:=label362.caption+' | Inconciencia.';
-if oeg=66    then  label362.caption:=label362.caption+' | Obsesividad.';
-if oeg=67    then  label362.caption:=label362.caption+' | Compulsividad.';
-if oeg=68    then  label362.caption:=label362.caption+' | Maniático incontrolable.';
-if oeg=69    then  label362.caption:=label362.caption+' | Impulsividad.';
-if oeg=70    then  label362.caption:=label362.caption+' | Lealtad inalterable.';
-if oeg=71    then  label362.caption:=label362.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label362.caption:=label362.caption+' | Mente enfocada.';
-if oeg=73    then  label362.caption:=label362.caption+' | Irrealista.';
-
-        if label362.caption=': '  then label362.caption:='No hay conexión, persona difícil.';
-
-
-oeg:=random(85);
-if oeg=1    then  label361.caption:=label361.caption+' | Regresión.';
-if oeg= 2   then  label361.caption:=label361.caption+' | Agresividad.';
-if oeg=3    then  label361.caption:=label361.caption+' | Ira.';
-if oeg=4    then  label361.caption:=label361.caption+' | Ansiedad.';
-if oeg=5    then  label361.caption:=label361.caption+' | Conciencia.';
-if oeg=6    then  label361.caption:=label361.caption+' | Tristeza.';
-if oeg=7    then  label361.caption:=label361.caption+' | Culpabilidad.';
-if oeg=8    then  label361.caption:=label361.caption+' | Autismo.';
-if oeg=9    then  label361.caption:=label361.caption+' | Negación.';
-if oeg=10    then  label361.caption:=label361.caption+' | Descuido.';
-if oeg=11    then  label361.caption:=label361.caption+' | Desilusión.';
-if oeg=12    then  label361.caption:=label361.caption+' | Depresión.';
-if oeg=13    then  label361.caption:=label361.caption+' | Poder.';
-if oeg=14    then  label361.caption:=label361.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label361.caption:=label361.caption+' | Temor.';
-if oeg=16    then  label361.caption:=label361.caption+' | Confusión.';
-if oeg=17    then  label361.caption:=label361.caption+' | Duda.';
-if oeg=18    then  label361.caption:=label361.caption+' | Celos.';
-if oeg=19    then  label361.caption:=label361.caption+' | Alegría.';
-if oeg=20    then  label361.caption:=label361.caption+' | Lujuria.';
-if oeg=21    then  label361.caption:=label361.caption+' | Avaricia.';
-if oeg=22    then  label361.caption:=label361.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label361.caption:=label361.caption+' | Dolor psíquico.';
-if oeg=24    then  label361.caption:=label361.caption+' | Pasividad.';
-if oeg=25    then  label361.caption:=label361.caption+' | Proyección.';
-if oeg=26    then  label361.caption:=label361.caption+' | Racionalización.';
-if oeg=27    then  label361.caption:=label361.caption+' | Imprudencia.';
-if oeg=28    then  label361.caption:=label361.caption+' | Preocupación.';
-if oeg=29    then  label361.caption:=label361.caption+' | Abandono.';
-if oeg=30    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=31    then  label361.caption:=label361.caption+' | Traición.';
-if oeg=32    then  label361.caption:=label361.caption+' | Mal entendimiento.';
-if oeg=33    then  label361.caption:=label361.caption+' | Curiosidad.';
-if oeg=34    then  label361.caption:=label361.caption+' | Sorpresa.';
-if oeg=35    then  label361.caption:=label361.caption+' | Conflicto religioso.';
-if oeg=36    then  label361.caption:=label361.caption+' | Conflicto de identidad.';
-if oeg=37    then  label361.caption:=label361.caption+' | Resistencia al cambio.';
-if oeg=38    then  label361.caption:=label361.caption+' | Nerviosismo.';
-if oeg=39    then  label361.caption:=label361.caption+' | Risa.';
-if oeg=40    then  label361.caption:=label361.caption+' | Entusiasmo.';
-if oeg=41    then  label361.caption:=label361.caption+' | Vanidad.';
-if oeg=42    then  label361.caption:=label361.caption+' | Negociación.';
-if oeg=43    then  label361.caption:=label361.caption+' | Coraje.';
-if oeg=44    then  label361.caption:=label361.caption+' | Vergüenza.';
-if oeg=45    then  label361.caption:=label361.caption+' | Monotonía.';
-if oeg=46    then  label361.caption:=label361.caption+' | Necesidad de cambio.';
-if oeg=47    then  label361.caption:=label361.caption+' | Observación.';
-if oeg=48    then  label361.caption:=label361.caption+' | Antagonismo.';
-if oeg=49    then  label361.caption:=label361.caption+' | Sensualidad.';
-if oeg=50    then  label361.caption:=label361.caption+' | Espiritualidad.';
-if oeg=51    then  label361.caption:=label361.caption+' | Sexualidad.';
-if oeg=52    then  label361.caption:=label361.caption+' | Adicción.';
-if oeg=53     then  label361.caption:=label361.caption+' | Enjuiciamientos.';
-if oeg=54    then  label361.caption:=label361.caption+' | Apatía.';
-if oeg=55    then  label361.caption:=label361.caption+' | Extasis.';
-if oeg=56    then  label361.caption:=label361.caption+' | Inadecuadidad.';
-if oeg=57    then  label361.caption:=label361.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label361.caption:=label361.caption+' | Perfeccionismo.';
-if oeg=59    then  label361.caption:=label361.caption+' | Desesperanza.';
-if oeg=60    then  label361.caption:=label361.caption+' | Dominación.';
-if oeg=61    then  label361.caption:=label361.caption+' | Sumisidad.';
-if oeg=62    then  label361.caption:=label361.caption+' | Orgullo.';
-if oeg=63    then  label361.caption:=label361.caption+' | Resentimiento.';
-if oeg=64    then  label361.caption:=label361.caption+' | Shock.';
-if oeg=65    then  label361.caption:=label361.caption+' | Inconciencia.';
-if oeg=66    then  label361.caption:=label361.caption+' | Obsesividad.';
-if oeg=67    then  label361.caption:=label361.caption+' | Compulsividad.';
-if oeg=68    then  label361.caption:=label361.caption+' | Maniático incontrolable.';
-if oeg=69    then  label361.caption:=label361.caption+' | Impulsividad.';
-if oeg=70    then  label361.caption:=label361.caption+' | Lealtad inalterable.';
-if oeg=71    then  label361.caption:=label361.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label361.caption:=label361.caption+' | Mente enfocada.';
-if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
-       if label361.caption=': '  then label361.caption:='No hay conexión, persona difícil.';
+EnlaceLabel361();
     FMain.shaping:=50+random(85);
     if FMain.shaping>103 then
        FMain.shaping:=97+random(9)
@@ -21779,497 +18561,86 @@ if oeg=73    then  label361.caption:=label361.caption+' | Irrealista.';
        If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-     FRecompensa.label79.caption:=inttostr(FMain.shaping);
+     
+end;
+
+procedure TEmotion.EnlaceLabel359();
+begin
+BENegativas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel360();
+begin
+BCausas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel361();
+begin
+BOrganosGlandulas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel362();
+begin
+BEPositivas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel363();
+begin
+BToxinas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel364();
+begin
+BHomeopatia.Click;
+end;
+
+procedure TEmotion.EnlaceLabel365();
+begin
+BCausas.Click;
+end;
+
+procedure TEmotion.EnlaceLabel366();
+begin
+BAVM.Click;
 end;
 
 procedure TEmotion.Button129Click(Sender: TObject);
 begin
 button129.visible:=false;
 button130.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label365.caption:=label365.caption+' | Regresión.';
-if oeg= 2   then  label365.caption:=label365.caption+' | Agresividad.';
-if oeg=3    then  label365.caption:=label365.caption+' | Ira.';
-if oeg=4    then  label365.caption:=label365.caption+' | Ansiedad.';
-if oeg=5    then  label365.caption:=label365.caption+' | Conciencia.';
-if oeg=6    then  label365.caption:=label365.caption+' | Tristeza.';
-if oeg=7    then  label365.caption:=label365.caption+' | Culpabilidad.';
-if oeg=8    then  label365.caption:=label365.caption+' | Autismo.';
-if oeg=9    then  label365.caption:=label365.caption+' | Negación.';
-if oeg=10    then  label365.caption:=label365.caption+' | Descuido.';
-if oeg=11    then  label365.caption:=label365.caption+' | Desilusión.';
-if oeg=12    then  label365.caption:=label365.caption+' | Depresión.';
-if oeg=13    then  label365.caption:=label365.caption+' | Poder.';
-if oeg=14    then  label365.caption:=label365.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label365.caption:=label365.caption+' | Temor.';
-if oeg=16    then  label365.caption:=label365.caption+' | Confusión.';
-if oeg=17    then  label365.caption:=label365.caption+' | Duda.';
-if oeg=18    then  label365.caption:=label365.caption+' | Celos.';
-if oeg=19    then  label365.caption:=label365.caption+' | Alegría.';
-if oeg=20    then  label365.caption:=label365.caption+' | Lujuria.';
-if oeg=21    then  label365.caption:=label365.caption+' | Avaricia.';
-if oeg=22    then  label365.caption:=label365.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label365.caption:=label365.caption+' | Dolor psíquico.';
-if oeg=24    then  label365.caption:=label365.caption+' | Pasividad.';
-if oeg=25    then  label365.caption:=label365.caption+' | Proyección.';
-if oeg=26    then  label365.caption:=label365.caption+' | Racionalización.';
-if oeg=27    then  label365.caption:=label365.caption+' | Imprudencia.';
-if oeg=28    then  label365.caption:=label365.caption+' | Preocupación.';
-if oeg=29    then  label365.caption:=label365.caption+' | Abandono.';
-if oeg=30    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=31    then  label365.caption:=label365.caption+' | Traición.';
-if oeg=32    then  label365.caption:=label365.caption+' | Mal entendimiento.';
-if oeg=33    then  label365.caption:=label365.caption+' | Curiosidad.';
-if oeg=34    then  label365.caption:=label365.caption+' | Sorpresa.';
-if oeg=35    then  label365.caption:=label365.caption+' | Conflicto religioso.';
-if oeg=36    then  label365.caption:=label365.caption+' | Conflicto de identidad.';
-if oeg=37    then  label365.caption:=label365.caption+' | Resistencia al cambio.';
-if oeg=38    then  label365.caption:=label365.caption+' | Nerviosismo.';
-if oeg=39    then  label365.caption:=label365.caption+' | Risa.';
-if oeg=40    then  label365.caption:=label365.caption+' | Entusiasmo.';
-if oeg=41    then  label365.caption:=label365.caption+' | Vanidad.';
-if oeg=42    then  label365.caption:=label365.caption+' | Negociación.';
-if oeg=43    then  label365.caption:=label365.caption+' | Coraje.';
-if oeg=44    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=45    then  label365.caption:=label365.caption+' | Monotonía.';
-if oeg=46    then  label365.caption:=label365.caption+' | Necesidad de cambio.';
-if oeg=47    then  label365.caption:=label365.caption+' | Observación.';
-if oeg=48    then  label365.caption:=label365.caption+' | Antagonismo.';
-if oeg=49    then  label365.caption:=label365.caption+' | Sensualidad.';
-if oeg=50    then  label365.caption:=label365.caption+' | Espiritualidad.';
-if oeg=51    then  label365.caption:=label365.caption+' | Sexualidad.';
-if oeg=52    then  label365.caption:=label365.caption+' | Adicción.';
-
-if oeg=53     then  label365.caption:=label365.caption+' | Enjuiciamientos.';
-if oeg=54    then  label365.caption:=label365.caption+' | Apatía.';
-if oeg=55    then  label365.caption:=label365.caption+' | Extasis.';
-if oeg=56    then  label365.caption:=label365.caption+' | Inadecuadidad.';
-if oeg=57    then  label365.caption:=label365.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label365.caption:=label365.caption+' | Perfeccionismo.';
-if oeg=59    then  label365.caption:=label365.caption+' | Desesperanza.';
-if oeg=60    then  label365.caption:=label365.caption+' | Dominación.';
-if oeg=61    then  label365.caption:=label365.caption+' | Sumisidad.';
-if oeg=62    then  label365.caption:=label365.caption+' | Orgullo.';
-if oeg=63    then  label365.caption:=label365.caption+' | Resentimiento.';
-if oeg=64    then  label365.caption:=label365.caption+' | Shock.';
-if oeg=65    then  label365.caption:=label365.caption+' | Inconciencia.';
-if oeg=66    then  label365.caption:=label365.caption+' | Obsesividad.';
-if oeg=67    then  label365.caption:=label365.caption+' | Compulsividad.';
-if oeg=68    then  label365.caption:=label365.caption+' | Maniático incontrolable.';
-if oeg=69    then  label365.caption:=label365.caption+' | Impulsividad.';
-if oeg=70    then  label365.caption:=label365.caption+' | Lealtad inalterable.';
-if oeg=71    then  label365.caption:=label365.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label365.caption:=label365.caption+' | Mente enfocada.';
-if oeg=73    then  label365.caption:=label365.caption+' | Irrealista.';
-if label365.caption=': '  then label365.caption:='No hay conexión, persona difícil.';
-oeg:=random(85);
-if oeg=1    then  label366.caption:=label366.caption+' | Regresión.';
-if oeg= 2   then  label366.caption:=label366.caption+' | Agresividad.';
-if oeg=3    then  label366.caption:=label366.caption+' | Ira.';
-if oeg=4    then  label366.caption:=label366.caption+' | Ansiedad.';
-if oeg=5    then  label366.caption:=label366.caption+' | Conciencia.';
-if oeg=6    then  label366.caption:=label366.caption+' | Tristeza.';
-if oeg=7    then  label366.caption:=label366.caption+' | Culpabilidad.';
-if oeg=8    then  label366.caption:=label366.caption+' | Autismo.';
-if oeg=9    then  label366.caption:=label366.caption+' | Negación.';
-if oeg=10    then  label366.caption:=label366.caption+' | Descuido.';
-if oeg=11    then  label366.caption:=label366.caption+' | Desilusión.';
-if oeg=12    then  label366.caption:=label366.caption+' | Depresión.';
-if oeg=13    then  label366.caption:=label366.caption+' | Poder.';
-if oeg=14    then  label366.caption:=label366.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label366.caption:=label366.caption+' | Temor.';
-if oeg=16    then  label366.caption:=label366.caption+' | Confusión.';
-if oeg=17    then  label366.caption:=label366.caption+' | Duda.';
-if oeg=18    then  label366.caption:=label366.caption+' | Celos.';
-if oeg=19    then  label366.caption:=label366.caption+' | Alegría.';
-if oeg=20    then  label366.caption:=label366.caption+' | Lujuria.';
-if oeg=21    then  label366.caption:=label366.caption+' | Avaricia.';
-if oeg=22    then  label366.caption:=label366.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label366.caption:=label366.caption+' | Dolor psíquico.';
-if oeg=24    then  label366.caption:=label366.caption+' | Pasividad.';
-if oeg=25    then  label366.caption:=label366.caption+' | Proyección.';
-if oeg=26    then  label366.caption:=label366.caption+' | Racionalización.';
-if oeg=27    then  label366.caption:=label366.caption+' | Imprudencia.';
-if oeg=28    then  label366.caption:=label366.caption+' | Preocupación.';
-if oeg=29    then  label366.caption:=label366.caption+' | Abandono.';
-if oeg=30    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=31    then  label366.caption:=label366.caption+' | Traición.';
-if oeg=32    then  label366.caption:=label366.caption+' | Mal entendimiento.';
-if oeg=33    then  label366.caption:=label366.caption+' | Curiosidad.';
-if oeg=34    then  label366.caption:=label366.caption+' | Sorpresa.';
-if oeg=35    then  label366.caption:=label366.caption+' | Conflicto religioso.';
-if oeg=36    then  label366.caption:=label366.caption+' | Conflicto de identidad.';
-if oeg=37    then  label366.caption:=label366.caption+' | Resistencia al cambio.';
-if oeg=38    then  label366.caption:=label366.caption+' | Nerviosismo.';
-if oeg=39    then  label366.caption:=label366.caption+' | Risa.';
-if oeg=40    then  label366.caption:=label366.caption+' | Entusiasmo.';
-if oeg=41    then  label366.caption:=label366.caption+' | Vanidad.';
-if oeg=42    then  label366.caption:=label366.caption+' | Negociación.';
-if oeg=43    then  label366.caption:=label366.caption+' | Coraje.';
-if oeg=44    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=45    then  label366.caption:=label366.caption+' | Monotonía.';
-if oeg=46    then  label366.caption:=label366.caption+' | Necesidad de cambio.';
-if oeg=47    then  label366.caption:=label366.caption+' | Observación.';
-if oeg=48    then  label366.caption:=label366.caption+' | Antagonismo.';
-if oeg=49    then  label366.caption:=label366.caption+' | Sensualidad.';
-if oeg=50    then  label366.caption:=label366.caption+' | Espiritualidad.';
-if oeg=51    then  label366.caption:=label366.caption+' | Sexualidad.';
-if oeg=52    then  label366.caption:=label366.caption+' | Adicción.';
-if oeg=53     then  label366.caption:=label366.caption+' | Enjuiciamientos.';
-if oeg=54    then  label366.caption:=label366.caption+' | Apatía.';
-if oeg=55    then  label366.caption:=label366.caption+' | Extasis.';
-if oeg=56    then  label366.caption:=label366.caption+' | Inadecuadidad.';
-if oeg=57    then  label366.caption:=label366.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label366.caption:=label366.caption+' | Perfeccionismo.';
-if oeg=59    then  label366.caption:=label366.caption+' | Desesperanza.';
-if oeg=60    then  label366.caption:=label366.caption+' | Dominación.';
-if oeg=61    then  label366.caption:=label366.caption+' | Sumisidad.';
-if oeg=62    then  label366.caption:=label366.caption+' | Orgullo.';
-if oeg=63    then  label366.caption:=label366.caption+' | Resentimiento.';
-if oeg=64    then  label366.caption:=label366.caption+' | Shock.';
-if oeg=65    then  label366.caption:=label366.caption+' | Inconciencia.';
-if oeg=66    then  label366.caption:=label366.caption+' | Obsesividad.';
-if oeg=67    then  label366.caption:=label366.caption+' | Compulsividad.';
-if oeg=68    then  label366.caption:=label366.caption+' | Maniático incontrolable.';
-if oeg=69    then  label366.caption:=label366.caption+' | Impulsividad.';
-if oeg=70    then  label366.caption:=label366.caption+' | Lealtad inalterable.';
-if oeg=71    then  label366.caption:=label366.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label366.caption:=label366.caption+' | Mente enfocada.';
-if oeg=73    then  label366.caption:=label366.caption+' | Irrealista.';
-             if label366.caption=': '  then label366.caption:='No hay conexión, persona difícil.';
+EnlaceLabel366();
+EnlaceLabel366();
    FMain.shaping:=random(115);
    FMain.shaping := FMain.shaping +random(25);
    If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
    LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 end;
 
 procedure TEmotion.Button130Click(Sender: TObject);
 begin
 button130.visible:=false;
 button131.visible:=true;
-oeg:=random(85);
-if oeg=1    then  label365.caption:=label365.caption+' | Regresión.';
-if oeg= 2   then  label365.caption:=label365.caption+' | Agresividad.';
-if oeg=3    then  label365.caption:=label365.caption+' | Ira.';
-if oeg=4    then  label365.caption:=label365.caption+' | Ansiedad.';
-if oeg=5    then  label365.caption:=label365.caption+' | Conciencia.';
-if oeg=6    then  label365.caption:=label365.caption+' | Tristeza.';
-if oeg=7    then  label365.caption:=label365.caption+' | Culpabilidad.';
-if oeg=8    then  label365.caption:=label365.caption+' | Autismo.';
-if oeg=9    then  label365.caption:=label365.caption+' | Negación.';
-if oeg=10    then  label365.caption:=label365.caption+' | Descuido.';
-if oeg=11    then  label365.caption:=label365.caption+' | Desilusión.';
-if oeg=12    then  label365.caption:=label365.caption+' | Depresión.';
-if oeg=13    then  label365.caption:=label365.caption+' | Poder.';
-if oeg=14    then  label365.caption:=label365.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label365.caption:=label365.caption+' | Temor.';
-if oeg=16    then  label365.caption:=label365.caption+' | Confusión.';
-if oeg=17    then  label365.caption:=label365.caption+' | Duda.';
-if oeg=18    then  label365.caption:=label365.caption+' | Celos.';
-if oeg=19    then  label365.caption:=label365.caption+' | Alegría.';
-if oeg=20    then  label365.caption:=label365.caption+' | Lujuria.';
-if oeg=21    then  label365.caption:=label365.caption+' | Avaricia.';
-if oeg=22    then  label365.caption:=label365.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label365.caption:=label365.caption+' | Dolor psíquico.';
-if oeg=24    then  label365.caption:=label365.caption+' | Pasividad.';
-if oeg=25    then  label365.caption:=label365.caption+' | Proyección.';
-if oeg=26    then  label365.caption:=label365.caption+' | Racionalización.';
-if oeg=27    then  label365.caption:=label365.caption+' | Imprudencia.';
-if oeg=28    then  label365.caption:=label365.caption+' | Preocupación.';
-if oeg=29    then  label365.caption:=label365.caption+' | Abandono.';
-if oeg=30    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=31    then  label365.caption:=label365.caption+' | Traición.';
-if oeg=32    then  label365.caption:=label365.caption+' | Mal entendimiento.';
-if oeg=33    then  label365.caption:=label365.caption+' | Curiosidad.';
-if oeg=34    then  label365.caption:=label365.caption+' | Sorpresa.';
-if oeg=35    then  label365.caption:=label365.caption+' | Conflicto religioso.';
-if oeg=36    then  label365.caption:=label365.caption+' | Conflicto de identidad.';
-if oeg=37    then  label365.caption:=label365.caption+' | Resistencia al cambio.';
-if oeg=38    then  label365.caption:=label365.caption+' | Nerviosismo.';
-if oeg=39    then  label365.caption:=label365.caption+' | Risa.';
-if oeg=40    then  label365.caption:=label365.caption+' | Entusiasmo.';
-if oeg=41    then  label365.caption:=label365.caption+' | Vanidad.';
-if oeg=42    then  label365.caption:=label365.caption+' | Negociación.';
-if oeg=43    then  label365.caption:=label365.caption+' | Coraje.';
-if oeg=44    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=45    then  label365.caption:=label365.caption+' | Monotonía.';
-if oeg=46    then  label365.caption:=label365.caption+' | Necesidad de cambio.';
-if oeg=47    then  label365.caption:=label365.caption+' | Observación.';
-if oeg=48    then  label365.caption:=label365.caption+' | Antagonismo.';
-if oeg=49    then  label365.caption:=label365.caption+' | Sensualidad.';
-if oeg=50    then  label365.caption:=label365.caption+' | Espiritualidad.';
-if oeg=51    then  label365.caption:=label365.caption+' | Sexualidad.';
-if oeg=52    then  label365.caption:=label365.caption+' | Adicción.';
-
-if oeg=53     then  label365.caption:=label365.caption+' | Enjuiciamientos.';
-if oeg=54    then  label365.caption:=label365.caption+' | Apatía.';
-if oeg=55    then  label365.caption:=label365.caption+' | Extasis.';
-if oeg=56    then  label365.caption:=label365.caption+' | Inadecuadidad.';
-if oeg=57    then  label365.caption:=label365.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label365.caption:=label365.caption+' | Perfeccionismo.';
-if oeg=59    then  label365.caption:=label365.caption+' | Desesperanza.';
-if oeg=60    then  label365.caption:=label365.caption+' | Dominación.';
-if oeg=61    then  label365.caption:=label365.caption+' | Sumisidad.';
-if oeg=62    then  label365.caption:=label365.caption+' | Orgullo.';
-if oeg=63    then  label365.caption:=label365.caption+' | Resentimiento.';
-if oeg=64    then  label365.caption:=label365.caption+' | Shock.';
-if oeg=65    then  label365.caption:=label365.caption+' | Inconciencia.';
-if oeg=66    then  label365.caption:=label365.caption+' | Obsesividad.';
-if oeg=67    then  label365.caption:=label365.caption+' | Compulsividad.';
-if oeg=68    then  label365.caption:=label365.caption+' | Maniático incontrolable.';
-if oeg=69    then  label365.caption:=label365.caption+' | Impulsividad.';
-if oeg=70    then  label365.caption:=label365.caption+' | Lealtad inalterable.';
-if oeg=71    then  label365.caption:=label365.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label365.caption:=label365.caption+' | Mente enfocada.';
-if oeg=73    then  label365.caption:=label365.caption+' | Irrealista.';
-       if label365.caption=': '  then label365.caption:='No hay conexión, persona difícil.';
-
-
-oeg:=random(85);
-if oeg=1    then  label366.caption:=label366.caption+' | Regresión.';
-if oeg= 2   then  label366.caption:=label366.caption+' | Agresividad.';
-if oeg=3    then  label366.caption:=label366.caption+' | Ira.';
-if oeg=4    then  label366.caption:=label366.caption+' | Ansiedad.';
-if oeg=5    then  label366.caption:=label366.caption+' | Conciencia.';
-if oeg=6    then  label366.caption:=label366.caption+' | Tristeza.';
-if oeg=7    then  label366.caption:=label366.caption+' | Culpabilidad.';
-if oeg=8    then  label366.caption:=label366.caption+' | Autismo.';
-if oeg=9    then  label366.caption:=label366.caption+' | Negación.';
-if oeg=10    then  label366.caption:=label366.caption+' | Descuido.';
-if oeg=11    then  label366.caption:=label366.caption+' | Desilusión.';
-if oeg=12    then  label366.caption:=label366.caption+' | Depresión.';
-if oeg=13    then  label366.caption:=label366.caption+' | Poder.';
-if oeg=14    then  label366.caption:=label366.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label366.caption:=label366.caption+' | Temor.';
-if oeg=16    then  label366.caption:=label366.caption+' | Confusión.';
-if oeg=17    then  label366.caption:=label366.caption+' | Duda.';
-if oeg=18    then  label366.caption:=label366.caption+' | Celos.';
-if oeg=19    then  label366.caption:=label366.caption+' | Alegría.';
-if oeg=20    then  label366.caption:=label366.caption+' | Lujuria.';
-if oeg=21    then  label366.caption:=label366.caption+' | Avaricia.';
-if oeg=22    then  label366.caption:=label366.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label366.caption:=label366.caption+' | Dolor psíquico.';
-if oeg=24    then  label366.caption:=label366.caption+' | Pasividad.';
-if oeg=25    then  label366.caption:=label366.caption+' | Proyección.';
-if oeg=26    then  label366.caption:=label366.caption+' | Racionalización.';
-if oeg=27    then  label366.caption:=label366.caption+' | Imprudencia.';
-if oeg=28    then  label366.caption:=label366.caption+' | Preocupación.';
-if oeg=29    then  label366.caption:=label366.caption+' | Abandono.';
-if oeg=30    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=31    then  label366.caption:=label366.caption+' | Traición.';
-if oeg=32    then  label366.caption:=label366.caption+' | Mal entendimiento.';
-if oeg=33    then  label366.caption:=label366.caption+' | Curiosidad.';
-if oeg=34    then  label366.caption:=label366.caption+' | Sorpresa.';
-if oeg=35    then  label366.caption:=label366.caption+' | Conflicto religioso.';
-if oeg=36    then  label366.caption:=label366.caption+' | Conflicto de identidad.';
-if oeg=37    then  label366.caption:=label366.caption+' | Resistencia al cambio.';
-if oeg=38    then  label366.caption:=label366.caption+' | Nerviosismo.';
-if oeg=39    then  label366.caption:=label366.caption+' | Risa.';
-if oeg=40    then  label366.caption:=label366.caption+' | Entusiasmo.';
-if oeg=41    then  label366.caption:=label366.caption+' | Vanidad.';
-if oeg=42    then  label366.caption:=label366.caption+' | Negociación.';
-if oeg=43    then  label366.caption:=label366.caption+' | Coraje.';
-if oeg=44    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=45    then  label366.caption:=label366.caption+' | Monotonía.';
-if oeg=46    then  label366.caption:=label366.caption+' | Necesidad de cambio.';
-if oeg=47    then  label366.caption:=label366.caption+' | Observación.';
-if oeg=48    then  label366.caption:=label366.caption+' | Antagonismo.';
-if oeg=49    then  label366.caption:=label366.caption+' | Sensualidad.';
-if oeg=50    then  label366.caption:=label366.caption+' | Espiritualidad.';
-if oeg=51    then  label366.caption:=label366.caption+' | Sexualidad.';
-if oeg=52    then  label366.caption:=label366.caption+' | Adicción.';
-
-if oeg=53     then  label366.caption:=label366.caption+' | Enjuiciamientos.';
-if oeg=54    then  label366.caption:=label366.caption+' | Apatía.';
-if oeg=55    then  label366.caption:=label366.caption+' | Extasis.';
-if oeg=56    then  label366.caption:=label366.caption+' | Inadecuadidad.';
-if oeg=57    then  label366.caption:=label366.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label366.caption:=label366.caption+' | Perfeccionismo.';
-if oeg=59    then  label366.caption:=label366.caption+' | Desesperanza.';
-if oeg=60    then  label366.caption:=label366.caption+' | Dominación.';
-if oeg=61    then  label366.caption:=label366.caption+' | Sumisidad.';
-if oeg=62    then  label366.caption:=label366.caption+' | Orgullo.';
-if oeg=63    then  label366.caption:=label366.caption+' | Resentimiento.';
-if oeg=64    then  label366.caption:=label366.caption+' | Shock.';
-if oeg=65    then  label366.caption:=label366.caption+' | Inconciencia.';
-if oeg=66    then  label366.caption:=label366.caption+' | Obsesividad.';
-if oeg=67    then  label366.caption:=label366.caption+' | Compulsividad.';
-if oeg=68    then  label366.caption:=label366.caption+' | Maniático incontrolable.';
-if oeg=69    then  label366.caption:=label366.caption+' | Impulsividad.';
-if oeg=70    then  label366.caption:=label366.caption+' | Lealtad inalterable.';
-if oeg=71    then  label366.caption:=label366.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label366.caption:=label366.caption+' | Mente enfocada.';
-if oeg=73    then  label366.caption:=label366.caption+' | Irrealista.';
-             if label366.caption=': '  then label366.caption:='No hay conexión, persona difícil.';
+EnlaceLabel365();
+EnlaceLabel365();
   FMain.shaping:=random(115);
   FMain.shaping := FMain.shaping +random(25);
   If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
   LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
 end;
 
 procedure TEmotion.Button131Click(Sender: TObject);
 begin
 button131.enabled:=false;
-oeg:=random(85);
-if oeg=1    then  label365.caption:=label365.caption+' | Regresión.';
-if oeg= 2   then  label365.caption:=label365.caption+' | Agresividad.';
-if oeg=3    then  label365.caption:=label365.caption+' | Ira.';
-if oeg=4    then  label365.caption:=label365.caption+' | Ansiedad.';
-if oeg=5    then  label365.caption:=label365.caption+' | Conciencia.';
-if oeg=6    then  label365.caption:=label365.caption+' | Tristeza.';
-if oeg=7    then  label365.caption:=label365.caption+' | Culpabilidad.';
-if oeg=8    then  label365.caption:=label365.caption+' | Autismo.';
-if oeg=9    then  label365.caption:=label365.caption+' | Negación.';
-if oeg=10    then  label365.caption:=label365.caption+' | Descuido.';
-if oeg=11    then  label365.caption:=label365.caption+' | Desilusión.';
-if oeg=12    then  label365.caption:=label365.caption+' | Depresión.';
-if oeg=13    then  label365.caption:=label365.caption+' | Poder.';
-if oeg=14    then  label365.caption:=label365.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label365.caption:=label365.caption+' | Temor.';
-if oeg=16    then  label365.caption:=label365.caption+' | Confusión.';
-if oeg=17    then  label365.caption:=label365.caption+' | Duda.';
-if oeg=18    then  label365.caption:=label365.caption+' | Celos.';
-if oeg=19    then  label365.caption:=label365.caption+' | Alegría.';
-if oeg=20    then  label365.caption:=label365.caption+' | Lujuria.';
-if oeg=21    then  label365.caption:=label365.caption+' | Avaricia.';
-if oeg=22    then  label365.caption:=label365.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label365.caption:=label365.caption+' | Dolor psíquico.';
-if oeg=24    then  label365.caption:=label365.caption+' | Pasividad.';
-if oeg=25    then  label365.caption:=label365.caption+' | Proyección.';
-if oeg=26    then  label365.caption:=label365.caption+' | Racionalización.';
-if oeg=27    then  label365.caption:=label365.caption+' | Imprudencia.';
-if oeg=28    then  label365.caption:=label365.caption+' | Preocupación.';
-if oeg=29    then  label365.caption:=label365.caption+' | Abandono.';
-if oeg=30    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=31    then  label365.caption:=label365.caption+' | Traición.';
-if oeg=32    then  label365.caption:=label365.caption+' | Mal entendimiento.';
-if oeg=33    then  label365.caption:=label365.caption+' | Curiosidad.';
-if oeg=34    then  label365.caption:=label365.caption+' | Sorpresa.';
-if oeg=35    then  label365.caption:=label365.caption+' | Conflicto religioso.';
-if oeg=36    then  label365.caption:=label365.caption+' | Conflicto de identidad.';
-if oeg=37    then  label365.caption:=label365.caption+' | Resistencia al cambio.';
-if oeg=38    then  label365.caption:=label365.caption+' | Nerviosismo.';
-if oeg=39    then  label365.caption:=label365.caption+' | Risa.';
-if oeg=40    then  label365.caption:=label365.caption+' | Entusiasmo.';
-if oeg=41    then  label365.caption:=label365.caption+' | Vanidad.';
-if oeg=42    then  label365.caption:=label365.caption+' | Negociación.';
-if oeg=43    then  label365.caption:=label365.caption+' | Coraje.';
-if oeg=44    then  label365.caption:=label365.caption+' | Vergüenza.';
-if oeg=45    then  label365.caption:=label365.caption+' | Monotonía.';
-if oeg=46    then  label365.caption:=label365.caption+' | Necesidad de cambio.';
-if oeg=47    then  label365.caption:=label365.caption+' | Observación.';
-if oeg=48    then  label365.caption:=label365.caption+' | Antagonismo.';
-if oeg=49    then  label365.caption:=label365.caption+' | Sensualidad.';
-if oeg=50    then  label365.caption:=label365.caption+' | Espiritualidad.';
-if oeg=51    then  label365.caption:=label365.caption+' | Sexualidad.';
-if oeg=52    then  label365.caption:=label365.caption+' | Adicción.';
-if oeg=53     then  label365.caption:=label365.caption+' | Enjuiciamientos.';
-if oeg=54    then  label365.caption:=label365.caption+' | Apatía.';
-if oeg=55    then  label365.caption:=label365.caption+' | Extasis.';
-if oeg=56    then  label365.caption:=label365.caption+' | Inadecuadidad.';
-if oeg=57    then  label365.caption:=label365.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label365.caption:=label365.caption+' | Perfeccionismo.';
-if oeg=59    then  label365.caption:=label365.caption+' | Desesperanza.';
-if oeg=60    then  label365.caption:=label365.caption+' | Dominación.';
-if oeg=61    then  label365.caption:=label365.caption+' | Sumisidad.';
-if oeg=62    then  label365.caption:=label365.caption+' | Orgullo.';
-if oeg=63    then  label365.caption:=label365.caption+' | Resentimiento.';
-if oeg=64    then  label365.caption:=label365.caption+' | Shock.';
-if oeg=65    then  label365.caption:=label365.caption+' | Inconciencia.';
-if oeg=66    then  label365.caption:=label365.caption+' | Obsesividad.';
-if oeg=67    then  label365.caption:=label365.caption+' | Compulsividad.';
-if oeg=68    then  label365.caption:=label365.caption+' | Maniático incontrolable.';
-if oeg=69    then  label365.caption:=label365.caption+' | Impulsividad.';
-if oeg=70    then  label365.caption:=label365.caption+' | Lealtad inalterable.';
-if oeg=71    then  label365.caption:=label365.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label365.caption:=label365.caption+' | Mente enfocada.';
-if oeg=73    then  label365.caption:=label365.caption+' | Irrealista.';
-       if label365.caption=': '  then label365.caption:='No hay conexión, persona difícil.';
-oeg:=random(85);
-if oeg=1    then  label366.caption:=label366.caption+' | Regresión.';
-if oeg= 2   then  label366.caption:=label366.caption+' | Agresividad.';
-if oeg=3    then  label366.caption:=label366.caption+' | Ira.';
-if oeg=4    then  label366.caption:=label366.caption+' | Ansiedad.';
-if oeg=5    then  label366.caption:=label366.caption+' | Conciencia.';
-if oeg=6    then  label366.caption:=label366.caption+' | Tristeza.';
-if oeg=7    then  label366.caption:=label366.caption+' | Culpabilidad.';
-if oeg=8    then  label366.caption:=label366.caption+' | Autismo.';
-if oeg=9    then  label366.caption:=label366.caption+' | Negación.';
-if oeg=10    then  label366.caption:=label366.caption+' | Descuido.';
-if oeg=11    then  label366.caption:=label366.caption+' | Desilusión.';
-if oeg=12    then  label366.caption:=label366.caption+' | Depresión.';
-if oeg=13    then  label366.caption:=label366.caption+' | Poder.';
-if oeg=14    then  label366.caption:=label366.caption+' | Duda de sí mismo/a.';
-if oeg=15    then  label366.caption:=label366.caption+' | Temor.';
-if oeg=16    then  label366.caption:=label366.caption+' | Confusión.';
-if oeg=17    then  label366.caption:=label366.caption+' | Duda.';
-if oeg=18    then  label366.caption:=label366.caption+' | Celos.';
-if oeg=19    then  label366.caption:=label366.caption+' | Alegría.';
-if oeg=20    then  label366.caption:=label366.caption+' | Lujuria.';
-if oeg=21    then  label366.caption:=label366.caption+' | Avaricia.';
-if oeg=22    then  label366.caption:=label366.caption+' | Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label366.caption:=label366.caption+' | Dolor psíquico.';
-if oeg=24    then  label366.caption:=label366.caption+' | Pasividad.';
-if oeg=25    then  label366.caption:=label366.caption+' | Proyección.';
-if oeg=26    then  label366.caption:=label366.caption+' | Racionalización.';
-if oeg=27    then  label366.caption:=label366.caption+' | Imprudencia.';
-if oeg=28    then  label366.caption:=label366.caption+' | Preocupación.';
-if oeg=29    then  label366.caption:=label366.caption+' | Abandono.';
-if oeg=30    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=31    then  label366.caption:=label366.caption+' | Traición.';
-if oeg=32    then  label366.caption:=label366.caption+' | Mal entendimiento.';
-if oeg=33    then  label366.caption:=label366.caption+' | Curiosidad.';
-if oeg=34    then  label366.caption:=label366.caption+' | Sorpresa.';
-if oeg=35    then  label366.caption:=label366.caption+' | Conflicto religioso.';
-if oeg=36    then  label366.caption:=label366.caption+' | Conflicto de identidad.';
-if oeg=37    then  label366.caption:=label366.caption+' | Resistencia al cambio.';
-if oeg=38    then  label366.caption:=label366.caption+' | Nerviosismo.';
-if oeg=39    then  label366.caption:=label366.caption+' | Risa.';
-if oeg=40    then  label366.caption:=label366.caption+' | Entusiasmo.';
-if oeg=41    then  label366.caption:=label366.caption+' | Vanidad.';
-if oeg=42    then  label366.caption:=label366.caption+' | Negociación.';
-if oeg=43    then  label366.caption:=label366.caption+' | Coraje.';
-if oeg=44    then  label366.caption:=label366.caption+' | Vergüenza.';
-if oeg=45    then  label366.caption:=label366.caption+' | Monotonía.';
-if oeg=46    then  label366.caption:=label366.caption+' | Necesidad de cambio.';
-if oeg=47    then  label366.caption:=label366.caption+' | Observación.';
-if oeg=48    then  label366.caption:=label366.caption+' | Antagonismo.';
-if oeg=49    then  label366.caption:=label366.caption+' | Sensualidad.';
-if oeg=50    then  label366.caption:=label366.caption+' | Espiritualidad.';
-if oeg=51    then  label366.caption:=label366.caption+' | Sexualidad.';
-if oeg=52    then  label366.caption:=label366.caption+' | Adicción.';
-if oeg=53     then  label366.caption:=label366.caption+' | Enjuiciamientos.';
-if oeg=54    then  label366.caption:=label366.caption+' | Apatía.';
-if oeg=55    then  label366.caption:=label366.caption+' | Extasis.';
-if oeg=56    then  label366.caption:=label366.caption+' | Inadecuadidad.';
-if oeg=57    then  label366.caption:=label366.caption+' | Deseo de que las cosas sean diferentes.';
-if oeg=58    then  label366.caption:=label366.caption+' | Perfeccionismo.';
-if oeg=59    then  label366.caption:=label366.caption+' | Desesperanza.';
-if oeg=60    then  label366.caption:=label366.caption+' | Dominación.';
-if oeg=61    then  label366.caption:=label366.caption+' | Sumisidad.';
-if oeg=62    then  label366.caption:=label366.caption+' | Orgullo.';
-if oeg=63    then  label366.caption:=label366.caption+' | Resentimiento.';
-if oeg=64    then  label366.caption:=label366.caption+' | Shock.';
-if oeg=65    then  label366.caption:=label366.caption+' | Inconciencia.';
-if oeg=66    then  label366.caption:=label366.caption+' | Obsesividad.';
-if oeg=67    then  label366.caption:=label366.caption+' | Compulsividad.';
-if oeg=68    then  label366.caption:=label366.caption+' | Maniático incontrolable.';
-if oeg=69    then  label366.caption:=label366.caption+' | Impulsividad.';
-if oeg=70    then  label366.caption:=label366.caption+' | Lealtad inalterable.';
-if oeg=71    then  label366.caption:=label366.caption+' | Se distrae con facilidad.';
-if oeg=72    then  label366.caption:=label366.caption+' | Mente enfocada.';
-if oeg=73    then  label366.caption:=label366.caption+' | Irrealista.';
-             if label366.caption=': '  then label366.caption:='No hay conexión, persona difícil.';
+EnlaceLabel366();
+EnlaceLabel366();
   FMain.shaping:=random(115);
   FMain.shaping := FMain.shaping +random(25);
   If FMain.Shaping>100 Then FMain.Shaping:=85+Random(15);
   LRectificado.caption:='Rectificado | '+inttostr(FMain.shaping);
    LRectificado.Refresh;
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
 end;
 
 procedure TEmotion.Edit29Enter(Sender: TObject);
@@ -22288,10 +18659,8 @@ var
         i:integer;
 begin
 Reaccion_Irregular();
-If RadioButton2.Checked=True Then PDesarrollo.Caption:='Realizando terapia de ''Jet Lag'', desplazamiento de '+Label647.Caption+'...';
-If RadioButton1.Checked=True Then PDesarrollo.Caption:='Realizando terapia de ''Jet Lag'', desplazamiento de '+Label648.Caption+'...';
 Sonia();
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
    if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 SpinEdit7.Value:=1;
 Panel19.Visible:=false;
@@ -22300,7 +18669,6 @@ end;
 procedure TEmotion.Button20Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button20.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button20.Enabled := False;
@@ -22316,7 +18684,6 @@ end;
 procedure TEmotion.Button78Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button78.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button78.Enabled := False;
@@ -22327,7 +18694,6 @@ end;
 procedure TEmotion.Button34Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button34.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button34.Enabled := False;
@@ -22340,7 +18706,6 @@ end;
 procedure TEmotion.Button32Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button32.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Estimularmemoria1.Enabled := False;
@@ -22351,7 +18716,6 @@ end;
 procedure TEmotion.Button19Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button19.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button19.Enabled := False;
@@ -22362,7 +18726,6 @@ end;
 procedure TEmotion.Button18Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button18.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button18.Enabled := False;
@@ -22373,7 +18736,6 @@ end;
 procedure TEmotion.Button25Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button25.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Button25.Enabled := False;
 If FMain.shaping>84 Then EstimularcomprensindelAquelAhora1.Enabled := False;
@@ -22382,7 +18744,6 @@ end;
 procedure TEmotion.Button120Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Disipando segunda onda cerebral...';
 riskchart.emo:=riskchart.emo+20;
 Sonia();
 If FMain.Shaping>84 then Button120.Enabled := False;
@@ -22391,9 +18752,8 @@ end;
 procedure TEmotion.Label248Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Rectificando cuadro emocional...';
 Sonia();
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 SpinEdit7.Value:=1;
    Panel19.Visible:=false;
@@ -22404,7 +18764,6 @@ var
 correccion : Integer;
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Rectificando ítems resaltados...';
 Sonia();
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 SpinEdit7.Value:=1;
@@ -22415,7 +18774,6 @@ end;
 procedure TEmotion.Label271Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Fusión''...';
 Sonia();
 If FMain.Shaping>84 Then Label271.Enabled:=False;
 end;
@@ -22423,7 +18781,6 @@ end;
 procedure TEmotion.Label278Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Confinamiento''...';
 Sonia();
 If FMain.Shaping>84 Then Label278.Enabled:=False;
 end;
@@ -22440,7 +18797,6 @@ end;
 procedure TEmotion.Label279Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Insatisfacción''...';
 Sonia();
 If FMain.Shaping>84 Then Label279.Enabled:=False;
 end;
@@ -22457,7 +18813,6 @@ end;
 procedure TEmotion.Label280Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Desamparo''...';
 Sonia();
 If FMain.Shaping>84 Then Label280.Enabled:=False;
 end;
@@ -22465,7 +18820,6 @@ end;
 procedure TEmotion.Label274Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Tristeza''...';
 Sonia();
 If FMain.Shaping>84 Then Label274.Enabled:=False;
 end;
@@ -22473,7 +18827,6 @@ end;
 procedure TEmotion.Label281Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Separación''...';
 Sonia();
 If FMain.Shaping>84 Then Label281.Enabled:=False;
 end;
@@ -22481,7 +18834,6 @@ end;
 procedure TEmotion.Label275Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Oral''...';
 Sonia();
 If FMain.Shaping>84 Then Label275.Enabled:=False;
 end;
@@ -22489,7 +18841,6 @@ end;
 procedure TEmotion.Label276Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Anal''...';
 Sonia();
 If FMain.Shaping>84 Then Label276.Enabled:=False;
 end;
@@ -22497,7 +18848,6 @@ end;
 procedure TEmotion.Label277Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a ''Genital''...';
 Sonia();
 If FMain.Shaping>84 Then Label277.Enabled:=False;
 end;
@@ -22514,10 +18864,6 @@ begin
     s2[i]:=s1[i];
 end;
 Reaccion_Irregular();
-if button135.Enabled then
-        PDesarrollo.caption:='Equilibrando neuropeptido de '+s2+'...'
-else
-        PDesarrollo.caption:='Equilibrando neuropeptido de todas las emociones...';
 Sonia();
 If FMain.Shaping>84 Then Button10.Enabled:=False;
    if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
@@ -22540,12 +18886,8 @@ begin
  st[i]:=sss[i];
 end;
 Reaccion_Irregular();
-if button134.Enabled then
-        PDesarrollo.caption:='Estabilizando red neurológica de '+st+'...'
-else
-        PDesarrollo.caption:='Estabilizando red neurológica de Todos los neurotransmisores...';
         Sonia();
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
+  
    if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 If FMain.Shaping>84 Then Button16.Enabled := False;
  end;
@@ -22562,13 +18904,8 @@ for i:=0 to length(s1)-2 do
 begin
     s2[i]:=s1[i];
 end;
-if button135.Enabled then
-        PDesarrollo.caption:='Equilibrando neuropeptido de '+s2+'...'
-else
-PDesarrollo.caption:='Equilibrando neuropeptido de Todas las emociones...';
 Sonia();
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
-   PDesarrollo.visible:=false;
+  
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 If FMain.Shaping>84 Then Button21.Enabled:=False;
  end;
@@ -22576,7 +18913,6 @@ If FMain.Shaping>84 Then Button21.Enabled:=False;
 procedure TEmotion.Button104Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='''Zapping'' emoción/es...';
 Sonia();
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 If FMain.Shaping>84 Then Button104.Enabled:=False;
@@ -22585,7 +18921,6 @@ If FMain.Shaping>84 Then Button104.Enabled:=False;
 procedure TEmotion.Button55Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Equilibrando perfíl emocional...';
 Sonia();
 If FMain.Shaping>84 Then Button55.Enabled:=False;
  end;
@@ -22593,7 +18928,6 @@ If FMain.Shaping>84 Then Button55.Enabled:=False;
 procedure TEmotion.Grief1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Grief1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Grief1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then Grief1.Click;
@@ -22603,7 +18937,6 @@ end;
 procedure TEmotion.AngerControl11Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+AngerControl11.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then AngerControl11.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then AngerControl11.Click;
@@ -22613,7 +18946,6 @@ end;
 procedure TEmotion.BipolarDepression1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+BipolarDepression1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then BipolarDepression1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then BipolarDepression1.Click;
@@ -22623,7 +18955,6 @@ end;
 procedure TEmotion.DepressionRx1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+DepressionRx1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then DepressionRx1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then DepressionRx1.Click;
@@ -22633,7 +18964,6 @@ end;
 procedure TEmotion.DelusionofSelfRx1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+DelusionofSelfRx1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then DelusionofSelfRx1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then DelusionofSelfRx1.Click;
@@ -22643,7 +18973,6 @@ end;
 procedure TEmotion.NeuoPeptideBalance1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+NeuoPeptideBalance1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then NeuoPeptideBalance1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then NeuoPeptideBalance1.Click;
@@ -22653,7 +18982,6 @@ end;
 procedure TEmotion.StimIntellgence1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StimIntellgence1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StimIntellgence1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StimIntellgence1.Click;
@@ -22663,7 +18991,6 @@ end;
 procedure TEmotion.StimMemory1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StimMemory1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StimMemory1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StimMemory1.Click;
@@ -22673,7 +19000,6 @@ end;
 procedure TEmotion.NeuroPeptideStimulation1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+NeuroPeptideStimulation1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then NeuroPeptideStimulation1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then NeuroPeptideStimulation1.Click;
@@ -22683,7 +19009,6 @@ end;
 procedure TEmotion.SchizophrenicRxReuniontoSelf1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+SchizophrenicRxReuniontoSelf1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then SchizophrenicRxReuniontoSelf1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then SchizophrenicRxReuniontoSelf1.Click;
@@ -22693,7 +19018,6 @@ end;
 procedure TEmotion.AddictionRelease1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+AddictionRelease1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then AddictionRelease1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then AddictionRelease1.Click;
@@ -22703,7 +19027,6 @@ end;
 procedure TEmotion.ObsessionRelease1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+ObsessionRelease1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then ObsessionRelease1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then ObsessionRelease1.Click;
@@ -22713,7 +19036,6 @@ end;
 procedure TEmotion.OpenMindTherapy1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+OpenMindTherapy1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then OpenMindTherapy1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then OpenMindTherapy1.Click;
@@ -22723,7 +19045,6 @@ end;
 procedure TEmotion.EmotionalAllergyRelease1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+EmotionalAllergyRelease1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then EmotionalAllergyRelease1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then EmotionalAllergyRelease1.Click;
@@ -22733,7 +19054,6 @@ end;
 procedure TEmotion.StimulateInsight1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+StimulateInsight1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then StimulateInsight1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then StimulateInsight1.Click;
@@ -22744,7 +19064,6 @@ procedure TEmotion.Label462Click(Sender: TObject);
 begin
 If Label462.Caption='|||' Then Exit;
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia a: '+label462.caption+'...';
 Sonia();
 If FMain.shaping>84 Then Label462.Enabled := False;
 end;
@@ -22827,91 +19146,46 @@ end;
 
 procedure TEmotion.DNACorrection1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar corrección del ADN';
-scioworking.button16.caption:='Detener corrección del ADN';
-scioworking.button2.caption:='Corrección del ADN';
 Rx();
 end;
 
 procedure TEmotion.ImmunoNeuro1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar estimulación del sistema inmune-neurológico';
-scioworking.button16.caption:='Detener estimulación del sistema inmune-neurológico';
-scioworking.button2.caption:='Estimulación del sistema inmune-neurológico';
 Rx();
 end;
 
 procedure TEmotion.BuildEnlightenment1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button16.caption:='Detener estimulación de poderes mentales';
-scioworking.button15.caption:='Iniciar estimulación de poderes mentales';
-scioworking.button2.caption:='Estimulación de poderes mentales';
 Rx();
 end;
 
 procedure TEmotion.Degeneration1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar terapia anti-degeneración';
-scioworking.button16.caption:='Detener terapia anti-degeneración';
-scioworking.button2.caption:='Terapia anti-degeneración';
 Rx();
 end;
 
 procedure TEmotion.Energy1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar aumento de psico-energía';
-scioworking.button16.caption:='Detener aumento de psico-energía';
-scioworking.button2.caption:='Aumento de psico-energía';
 Rx();
 end;
 
 procedure TEmotion.GeneralHealth1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar fomento de salud general';
-scioworking.button16.caption:='Detener fomento de salud general';
-scioworking.button2.caption:='Fomento de salud general';
 Rx();
 end;
 
 procedure TEmotion.Inflamation1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar terapia anti-inflamación';
-scioworking.button16.caption:='Detener terapia anti-inflamación';
-scioworking.button2.caption:='Terapia anti-inflamación';
 Rx();
 end;
 
 procedure TEmotion.Infection1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar terapia anti-infección';
-scioworking.button16.caption:='Detener terapia anti-infección';
-scioworking.button2.caption:='Terapia anti-infección';
 Rx();
 end;
 
 procedure TEmotion.Injury1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar reparación de lesiones y traumas';
-scioworking.button16.caption:='Detener reparación de lesiones y traumas';
-scioworking.button2.caption:='Reparación de lesiones y traumas';
 Rx();
 end;
 
@@ -22936,31 +19210,16 @@ end;
 
 procedure TEmotion.AddictionRelease2Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar liberación de adicciones';
-scioworking.button16.caption:='Detener liberación de adicciones';
-scioworking.button2.caption:='Liberación de adicciones';
 Rx();
 end;
 
 procedure TEmotion.SpiritualConnection1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar mejora de conexión espiritual';
-scioworking.button16.caption:='Detener mejora de conexión espiritual';
-scioworking.button2.caption:='Mejorar conexión espiritual';
 Rx();
 end;
 
 procedure TEmotion.AllergyTreatment1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar reducción de alergias';
-scioworking.button16.caption:='Detener reducción de alergias';
-scioworking.button2.caption:='Reducción de alergias';
 Rx();
 end;
 
@@ -22972,117 +19231,84 @@ LRectificado.caption:='Rectificado | ';
 GProgreso.progress:=0;
 if (ComboBox1.text='') and (spinedit1.value=0) then button136.Enabled:=False;
 if (ComboBox1.text='Otra emoción') and (Edit37.Text='') then button136.Enabled:=False;
-If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
 button58.Enabled:=True;
 panel7.Height:=465;
 panel7.refresh;
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
  GProgreso.progress:=5+Random(10);
-PDesarrollo.caption:='Testando inconciente en referencia a '+ComboBox1.Text+'...';
-If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-button40.enabled:=true;
-button41.enabled:=true;
+
 button55.enabled:=true;
 spinedit2.enabled:=true;
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-
-PDesarrollo.caption:='Testando gestación en referencia a '+ComboBox1.Text+'...'; PDesarrollo.refresh;
-   If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
  GProgreso.progress:=15+Random(15);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando trauma de nacimiento en referencia a '+ComboBox1.Text+'...';
-If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-PDesarrollo.refresh;
   GProgreso.progress:=25+Random(10);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando reacción familiar en referencia a '+ComboBox1.Text+'...';
-           If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-           PDesarrollo.refresh;
   GProgreso.progress:=35+Random(15);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando reacciones psíquicas en referencia a '+ComboBox1.Text+'...';
-         If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-           PDesarrollo.refresh;
   GProgreso.progress:=55+Random(15);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando infancia en referencia a '+ComboBox1.Text+'...';
-       If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-    PDesarrollo.refresh;
   GProgreso.progress:=75+Random(7);
 
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando adolescencia en referencia a '+ComboBox1.Text+'...';
-       If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
- PDesarrollo.refresh;
  GProgreso.progress:=85+Random(7);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','11111111');
-PDesarrollo.caption:='Testando edad adulta en referencia a '+ComboBox1.Text+'...';
-             If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-           PDesarrollo.refresh;
   GProgreso.progress:=95+Random(3);
  ChangingPulses(5555,5 ,9111,1,1,1,
  '11111111','01111111');
-PDesarrollo.caption:='Testando traumas en referencia a '+ComboBox1.Text+'...';
-          If ComboBox1.Text='Otra emoción' Then PDesarrollo.Caption:='Testando inconciente en referencia a '+Edit37.Text+'...';
-          PDesarrollo.refresh;
-
-
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 yes:=random(10); if yes>6 then yes:=random(110);
-if yes>50 then label105.caption:= label105.caption+' | Semana de gestación: '+inttostr(1+random(40));
+if yes>50 then label105.caption:= label105.caption+' Semana de gestación: '+inttostr(1+random(40));
 yes:=random(10); if yes>6 then yes:=random(110);
-if yes>50 then label105.caption:= label105.caption+' | Semana de gestación: '+inttostr(1+random(40));
+if yes>50 then label105.caption:= label105.caption+' Semana de gestación: '+inttostr(1+random(40));
 yes:=random(10); if yes>6 then yes:=random(100);
-if (yes>50)and (spinedit1.value>7) then label105.caption:= label105.caption+' | Edad en la infancia: '+inttostr(random(7));
+if (yes>50)and (spinedit1.value>7) then label105.caption:= label105.caption+' Edad en la infancia: '+inttostr(random(7));
 yes:=random(10);
 if yes>6 then yes:=random(100);
-if (yes>50)and (spinedit1.value>13) then label105.caption:= label105.caption+' | Edad en la infancia: '+inttostr(1+random(12));
-yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' | Edad adolescente: '+inttostr(11+random(8));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' | Edad: '+inttostr(30+random(1+spinedit8.value-30));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' | Edad: '+inttostr(30+random(1+spinedit8.value-30));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>40) then label105.caption:= label105.caption+' | Edad: '+inttostr(40+random(1+spinedit8.value-40));
-        yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>50) then label105.caption:= label105.caption+' | Edad: '+inttostr(50+random(1+spinedit8.value-50));
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>60) then label105.caption:= label105.caption+' | Edad: '+inttostr(60+random(1+spinedit8.value-60));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>70) then label105.caption:= label105.caption+' | Edad: '+inttostr(70+random(1+spinedit8.value-70));
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>80) then label105.caption:= label105.caption+' | Edad: '+inttostr(80+random(1+spinedit8.value-80));
-yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' | Madre' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Padre' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Sí mismo/a' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Amigos' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Dios' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Lo interior en sí mismo/a' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Espíritu interior' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Perdonar' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Atención' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' | Karma' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' | Desconsideración' ;
-        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' | Memoria celular' ;
-    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de la circulación' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria de la piel' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria mental' ;
-       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria muscular' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria del sistema nervioso' ;
-             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' | Memoria hormonal' ;
-      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' | Memoria de los sentimientos' ;
-Afirmaciones();
+if (yes>50)and (spinedit1.value>13) then label105.caption:= label105.caption+' Edad en la infancia: '+inttostr(1+random(12));
+yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>18) then label105.caption:= label105.caption+' Edad adolescente: '+inttostr(11+random(8));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' Edad: '+inttostr(30+random(1+spinedit8.value-30));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>30) then label105.caption:= label105.caption+' Edad: '+inttostr(30+random(1+spinedit8.value-30));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>40) then label105.caption:= label105.caption+' Edad: '+inttostr(40+random(1+spinedit8.value-40));
+        yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>50) then label105.caption:= label105.caption+' Edad: '+inttostr(50+random(1+spinedit8.value-50));
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>60) then label105.caption:= label105.caption+' Edad: '+inttostr(60+random(1+spinedit8.value-60));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>70) then label105.caption:= label105.caption+' Edad: '+inttostr(70+random(1+spinedit8.value-70));
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)and (spinedit8.value>80) then label105.caption:= label105.caption+' Edad: '+inttostr(80+random(1+spinedit8.value-80));
+yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label106.caption:= label106.caption+' Madre.' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Padre.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Sí mismo.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Amigos.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Dios.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Lo interior en sí mismo.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Espíritu interior.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Perdón.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Atención.' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label106.caption:= label106.caption+' Karma.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label106.caption:= label106.caption+' Desconsideración.' ;
+        yes:=random(10); if yes>6 then yes:=random(100);  if yes>50 then label107.caption:= label107.caption+' Memoria celular.' ;
+    yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria muscular.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de la circulación.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria hormonal.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria de la piel.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria mental.' ;
+       yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria muscular.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria del sistema nervioso.' ;
+             yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50) then label107.caption:= label107.caption+' Memoria hormonal.' ;
+      yes:=random(10); if yes>6 then yes:=random(100);  if (yes>50)  then label107.caption:= label107.caption+' Memoria de los sentimientos.' ;
    LRectificado.caption:='Rectificado | ';
      GProgreso.progress:=100;
-PDesarrollo.visible:=false;
+TestForm1.BAfirmaciones.Click();
 MyChrono.Stop;
 end;
 
@@ -23380,7 +19606,6 @@ end;
 procedure TEmotion.Button144Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button29.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button144.Enabled := False;
@@ -23406,7 +19631,6 @@ procedure TEmotion.BloodPressureStabilizationviaEmotions1Click(
   Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+BloodPressureStabilizationviaEmotions1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then BloodPressureStabilizationviaEmotions1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then BloodPressureStabilizationviaEmotions1.Click;
@@ -23472,8 +19696,6 @@ MyChrono.Start;
 LRectificado.caption:='Rectificado | ';
 GProgreso.progress:=0;
 LRectificado.refresh;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 if spinedit7.value>1 Then vtiempo := 60*spinedit7.value
 else
 vtiempo := 90+Random(90);
@@ -23495,169 +19717,168 @@ GProgreso.Refresh;
   LRectificado.caption:='Rectificado | '+inttostr(Rectificado);
    LRectificado.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.visible:=false;
 if Rectificado>85 then Fmain.recmain:=Fmain.recmain+1;
 oeg:=random(27);
-if oeg=0 then label456.caption:='Resistencia inconciente al cambio.';
-if oeg=1 then label456.caption:='Reducción del estrés.';
-if oeg=2 then label456.caption:='Aumento de educación y concientización.';
-if oeg=3 then label456.caption:='Equilibramiento de factores mentales o imponderables.';
-if oeg=4 then label456.caption:='Homeopatía metabólica o genética.';
-if oeg=5 then label456.caption:='Terapias alergénicas.';
-if oeg=6 then label456.caption:='Desintoxicación con isodes o xenobióticos.';
-if oeg=7 then label456.caption:='Nosodes para patógenos.';
-if oeg=19 then label456.caption:='Terapia nutricional.';
-if oeg=8 then label456.caption:='Imponderables para contaminación electromagnéticas.';
-if oeg=9 then label456.caption:='Fitoterapia.';
-if oeg=10 then label456.caption:='Terapia de sarcodes.';
-if oeg=11 then label456.caption:='Combinaciones homeopáticas.';
-if oeg=12 then label456.caption:='Terapia vitamínica.';
-if oeg=20 then label456.caption:='Conciencia de sí mismo/a.';
-if oeg=13 then label456.caption:='Desarrollo de habilidades curativas mentales.';
-if oeg=14 then label456.caption:='Terapia oligo mineral.';
-if oeg=15 then label456.caption:='Terapia de flora intestinal.';
-if oeg=16 then label456.caption:='Desintoxicación de hígado y flora intestinal.';
-if oeg=17 then label456.caption:='Control de dieta.';
-if oeg=22 then label456.caption:='Terapia nutricional.';
-if oeg=18 then label456.caption:='Ejercicio cardiovascular.';
-if oeg=21 then label456.caption:='Practique yoga.';
-if oeg=23 then label456.caption:='Practique pilates.';
-if oeg=24 then label456.caption:='Terapias de ajuste y postura.';
-if oeg=25 then label456.caption:='Terapias de acupuntura.';
-if oeg>25 then label456.caption:='Terapias energéticas con el sistema.';
-if riskchart.ims>165 then label456.caption:=label456.caption+' | Sistema inmunitario.';
-if riskchart.emo>165 then label456.caption:=label456.caption+' | Emociones.';
-if riskchart.infl>165 then label456.caption:=label456.caption+' | Inflamación.';
-if riskchart.can>165 then label456.caption:=label456.caption+' | Cáncer.';
-if riskchart.str>165 then label456.caption:=label456.caption+' | Estrés.';
-if riskchart.infe>165 then label456.caption:=label456.caption+' | Infección.';
-if riskchart.tox>165 then label456.caption:=label456.caption+' | Toxicidad.';
-if riskchart.car>165 then label456.caption:=label456.caption+' | Sistema cardiovascular.';
-if riskchart.Nut>165 then label456.caption:=label456.caption+' | Absorción de nutrientes.';
-if riskchart.hor>165 then label456.caption:=label456.caption+' | Sistema hormonal.';
-if riskchart.lym>165 then label456.caption:=label456.caption+' | Sistema linfático.';
-if riskchart.bld>165 then label456.caption:=label456.caption+' | Sangre.';
-if riskchart.cir>165 then label456.caption:=label456.caption+' | Sistema circulatorio.';
-if riskchart.cho>165 then label456.caption:=label456.caption+' | Colesterol.';
-if riskchart.oxi>165 then label456.caption:=label456.caption+' | Oxidación.';
-if riskchart.hyd>165 then label456.caption:=label456.caption+' | Hidratación.';
-if riskchart.hypa>165 then label456.caption:=label456.caption+' | Hipoadrenia.';
-if riskchart.tra>165 then label456.caption:=label456.caption+' | Trauma.';
-if riskchart.inh>165 then label456.caption:=label456.caption+' | Factores hereditarios.';
-if riskchart.liv>165 then label456.caption:=label456.caption+' | Hígado.';
-if riskchart.kid>165 then label456.caption:=label456.caption+' | Riñones.';
-if riskchart.dig>165 then label456.caption:=label456.caption+' | Sistema digestivo.';
-if riskchart.cnt>165 then label456.caption:=label456.caption+' | Tejido conectivo.';
-if riskchart.bon>165 then label456.caption:=label456.caption+' | Sistema óseo.';
-if riskchart.acid>165 then label456.caption:=label456.caption+' | Balance del pH.';
-if riskchart.env>165 then label456.caption:=label456.caption+' | Entorno.';
-if riskchart.aler>165 then label456.caption:=label456.caption+' | Alergias.';
-if riskchart.rad>165 then label456.caption:=label456.caption+' | Radiación.';
-if riskchart.bac>165 then label456.caption:=label456.caption+' | Bacterias.';
-if riskchart.fun>165 then label456.caption:=label456.caption+' | Fungosidades.';
-if riskchart.vir>165 then label456.caption:=label456.caption+' | Virus.';
-if riskchart.par>165 then label456.caption:=label456.caption+' | Parásitos.';
-if riskchart.ameo>165 then label456.caption:=label456.caption+' | Amebas.';
-if riskchart.fdp>165 then label456.caption:=label456.caption+' | Envenenamiento alimentario.';
-if riskchart.sug>165 then label456.caption:=label456.caption+' | Regulación del azúcar.';
-if riskchart.ner>165 then label456.caption:=label456.caption+' | Sistema neurológico.';
-if riskchart.sener>165 then label456.caption:=label456.caption+' | Sistema sensorial.';
-if riskchart.res>165 then label456.caption:=label456.caption+' | Sistema respiratorio.';
-if riskchart.cog>165 then label456.caption:=label456.caption+' | Cognicción.';
+if oeg=0 then label456.caption:=' Resistencia inconciente al cambio.';
+if oeg=1 then label456.caption:=' Reducción del estrés.';
+if oeg=2 then label456.caption:=' Conciencia.';
+if oeg=3 then label456.caption:=' Factores mentales o imponderables.';
+if oeg=4 then label456.caption:=' Homeopatía metabólica o genética.';
+if oeg=5 then label456.caption:=' Alergia/s.';
+if oeg=6 then label456.caption:=' Desintoxicación con isodes o xenobióticos.';
+if oeg=7 then label456.caption:=' Nosodes.';
+if oeg=19 then label456.caption:=' Terapia nutricional.';
+if oeg=8 then label456.caption:=' Imponderables para contaminación electromagnética.';
+if oeg=9 then label456.caption:=' Fitoterapia.';
+if oeg=10 then label456.caption:=' Sarcodes.';
+if oeg=11 then label456.caption:=' Homeopatía de combinación.';
+if oeg=12 then label456.caption:=' Terapia vitamínica.';
+if oeg=20 then label456.caption:=' Conciencia de sí mismo.';
+if oeg=13 then label456.caption:=' Desarrollo de habilidades curativas mentales.';
+if oeg=14 then label456.caption:=' Terapia oligo mineral.';
+if oeg=15 then label456.caption:=' Terapia de flora intestinal.';
+if oeg=16 then label456.caption:=' Desintoxicación de hígado y flora intestinal.';
+if oeg=17 then label456.caption:=' Control de dieta.';
+if oeg=22 then label456.caption:=' Nutrición.';
+if oeg=18 then label456.caption:=' Ejercicio cardiovascular.';
+if oeg=21 then label456.caption:=' Yoga.';
+if oeg=23 then label456.caption:=' Pilates.';
+if oeg=24 then label456.caption:=' Quiropráxia.';
+if oeg=25 then label456.caption:=' Acupuntura.';
+if oeg>25 then label456.caption:=' Biorresonancia.';
+if riskchart.ims>165 then label456.caption:=label456.caption+' Sistema inmunitario.';
+if riskchart.emo>165 then label456.caption:=label456.caption+' Emociones.';
+if riskchart.infl>165 then label456.caption:=label456.caption+' Inflamación.';
+if riskchart.can>165 then label456.caption:=label456.caption+' Cáncer.';
+if riskchart.str>165 then label456.caption:=label456.caption+' Estrés.';
+if riskchart.infe>165 then label456.caption:=label456.caption+' Infección.';
+if riskchart.tox>165 then label456.caption:=label456.caption+' Toxicidad.';
+if riskchart.car>165 then label456.caption:=label456.caption+' Sistema cardiovascular.';
+if riskchart.Nut>165 then label456.caption:=label456.caption+' Absorción de nutrientes.';
+if riskchart.hor>165 then label456.caption:=label456.caption+' Sistema hormonal.';
+if riskchart.lym>165 then label456.caption:=label456.caption+' Sistema linfático.';
+if riskchart.bld>165 then label456.caption:=label456.caption+' Sangre.';
+if riskchart.cir>165 then label456.caption:=label456.caption+' Sistema circulatorio.';
+if riskchart.cho>165 then label456.caption:=label456.caption+' Colesterol.';
+if riskchart.oxi>165 then label456.caption:=label456.caption+' Oxidación.';
+if riskchart.hyd>165 then label456.caption:=label456.caption+' Hidratación.';
+if riskchart.hypa>165 then label456.caption:=label456.caption+' Hipoadrenia.';
+if riskchart.tra>165 then label456.caption:=label456.caption+' Trauma.';
+if riskchart.inh>165 then label456.caption:=label456.caption+' Factores heredados.';
+if riskchart.liv>165 then label456.caption:=label456.caption+' Hígado.';
+if riskchart.kid>165 then label456.caption:=label456.caption+' Riñones.';
+if riskchart.dig>165 then label456.caption:=label456.caption+' Sistema digestivo.';
+if riskchart.cnt>165 then label456.caption:=label456.caption+' Tejido conectivo.';
+if riskchart.bon>165 then label456.caption:=label456.caption+' Sistema óseo.';
+if riskchart.acid>165 then label456.caption:=label456.caption+' Balance del pH.';
+if riskchart.env>165 then label456.caption:=label456.caption+' Entorno.';
+if riskchart.aler>165 then label456.caption:=label456.caption+' Alergia/s.';
+if riskchart.rad>165 then label456.caption:=label456.caption+' Radiación.';
+if riskchart.bac>165 then label456.caption:=label456.caption+' Bacterias.';
+if riskchart.fun>165 then label456.caption:=label456.caption+' Fungosidades.';
+if riskchart.vir>165 then label456.caption:=label456.caption+' Virus.';
+if riskchart.par>165 then label456.caption:=label456.caption+' Parásitos.';
+if riskchart.ameo>165 then label456.caption:=label456.caption+' Amíbas.';
+if riskchart.fdp>165 then label456.caption:=label456.caption+' Intolerancia alimentaria.';
+if riskchart.sug>165 then label456.caption:=label456.caption+' Regulación del azúcar.';
+if riskchart.ner>165 then label456.caption:=label456.caption+' Sistema neurológico.';
+if riskchart.sener>165 then label456.caption:=label456.caption+' Sistema sensorial.';
+if riskchart.res>165 then label456.caption:=label456.caption+' Sistema respiratorio.';
+if riskchart.cog>165 then label456.caption:=label456.caption+' Cognicción.';
   oeg:=random(55);
-if oeg=1    then  label456.caption:=label456.caption+' | Equilibrar:'+' Regresión.';
-if oeg= 2   then  label456.caption:=label456.caption+' | Equilibrar:'+' Agresividad.';
-if oeg=3    then  label456.caption:=label456.caption+' | Equilibrar:'+' Ira.';
-if oeg=4    then  label456.caption:=label456.caption+' | Equilibrar:'+' Ansiedad.';
-if oeg=5    then  label456.caption:=label456.caption+' | Equilibrar:'+' Conciencia.';
-if oeg=6    then  label456.caption:=label456.caption+' | Equilibrar:'+' Tristeza.';
-if oeg=7    then  label456.caption:=label456.caption+' | Equilibrar:'+' Culpabilidad.';
-if oeg=8    then  label456.caption:=label456.caption+' | Equilibrar:'+' Autismo.';
-if oeg=9    then  label456.caption:=label456.caption+' | Equilibrar:'+' Negación.';
-if oeg=10    then  label456.caption:=label456.caption+' | Equilibrar:'+' Descuido.';
-if oeg=11    then  label456.caption:=label456.caption+' | Equilibrar:'+' Desilusión.';
-if oeg=12    then  label456.caption:=label456.caption+' | Equilibrar:'+' Depresión.';
-if oeg=13    then  label456.caption:=label456.caption+' | Equilibrar:'+' Poder.';
-if oeg=14    then  label456.caption:=label456.caption+' | Equilibrar:'+' Duda de sí mismo/a.';
-if oeg=15    then  label456.caption:=label456.caption+' | Equilibrar:'+' Temor.';
-if oeg=16    then  label456.caption:=label456.caption+' | Equilibrar:'+' Confusión.';
-if oeg=17    then  label456.caption:=label456.caption+' | Equilibrar:'+' Duda.';
-if oeg=18    then  label456.caption:=label456.caption+' | Equilibrar:'+' Celos.';
-if oeg=19    then  label456.caption:=label456.caption+' | Equilibrar:'+' Alegría.';
-if oeg=20    then  label456.caption:=label456.caption+' | Equilibrar:'+' Lujuria.';
-if oeg=21    then  label456.caption:=label456.caption+' | Equilibrar:'+' Avaricia.';
-if oeg=22    then  label456.caption:=label456.caption+' | Equilibrar:'+' Poderes Extra Sensoriales - ESP.';
-if oeg=23    then  label456.caption:=label456.caption+' | Equilibrar:'+' Dolor psíquico.';
-if oeg=24    then  label456.caption:=label456.caption+' | Equilibrar:'+' Pasividad.';
-if oeg=25    then  label456.caption:=label456.caption+' | Equilibrar:'+' Proyección.';
-if oeg=26    then  label456.caption:=label456.caption+' | Equilibrar:'+' Racionalización.';
-if oeg=27    then  label456.caption:=label456.caption+' | Equilibrar:'+' Imprudencia.';
-if oeg=28    then  label456.caption:=label456.caption+' | Equilibrar:'+' Preocupación.';
-if oeg=29    then  label456.caption:=label456.caption+' | Equilibrar:'+' Abandono.';
-if oeg=30    then  label456.caption:=label456.caption+' | Equilibrar:'+' Vergüenza.';
-if oeg=31    then  label456.caption:=label456.caption+' | Equilibrar:'+' Traición.';
-if oeg=32    then  label456.caption:=label456.caption+' | Equilibrar:'+' Mal entendimiento.';
-if oeg=33    then  label456.caption:=label456.caption+' | Equilibrar:'+' Curiosidad.';
-if oeg=34    then  label456.caption:=label456.caption+' | Equilibrar:'+' Sorpresa.';
-if oeg=35    then  label456.caption:=label456.caption+' | Equilibrar:'+' Conflicto religioso.';
-if oeg=36    then  label456.caption:=label456.caption+' | Equilibrar:'+' Conflicto de identidad.';
-if oeg=37    then  label456.caption:=label456.caption+' | Equilibrar:'+' Resistencia al cambio.';
-if oeg=38    then  label456.caption:=label456.caption+' | Equilibrar:'+' Nerviosismo.';
-if oeg=39    then  label456.caption:=label456.caption+' | Equilibrar:'+' Risa.';
-if oeg=40    then  label456.caption:=label456.caption+' | Equilibrar:'+' Entusiasmo.';
-if oeg=41    then  label456.caption:=label456.caption+' | Equilibrar:'+' Vanidad.';
-if oeg=42    then  label456.caption:=label456.caption+' | Equilibrar:'+' Negociación.';
-if oeg=43    then  label456.caption:=label456.caption+' | Equilibrar:'+' Coraje.';
-if oeg=44    then  label456.caption:=label456.caption+' | Equilibrar:'+' Vergüenza.';
-if oeg=45    then  label456.caption:=label456.caption+' | Equilibrar:'+' Monotonía.';
-if oeg=46    then  label456.caption:=label456.caption+' | Equilibrar:'+' Necesidad de cambio.';
-if oeg=47    then  label456.caption:=label456.caption+' | Equilibrar:'+' Observación.';
-if oeg=48    then  label456.caption:=label456.caption+' | Equilibrar:'+' Antagonismo.';
-if oeg=49    then  label456.caption:=label456.caption+' | Equilibrar:'+' Sensualidad.';
-if oeg=50    then  label456.caption:=label456.caption+' | Equilibrar:'+' Espiritualidad.';
-if oeg=51    then  label456.caption:=label456.caption+' | Equilibrar:'+' Sexualidad.';
-if oeg=52    then  label456.caption:=label456.caption+' | Equilibrar:'+' Adicción.';
+if oeg=1    then  label456.caption:=label456.caption+' Equilibrar:'+' Regresión.';
+if oeg= 2   then  label456.caption:=label456.caption+' Equilibrar:'+' Agresividad.';
+if oeg=3    then  label456.caption:=label456.caption+' Equilibrar:'+' Ira.';
+if oeg=4    then  label456.caption:=label456.caption+' Equilibrar:'+' Ansiedad.';
+if oeg=5    then  label456.caption:=label456.caption+' Equilibrar:'+' Conciencia.';
+if oeg=6    then  label456.caption:=label456.caption+' Equilibrar:'+' Tristeza.';
+if oeg=7    then  label456.caption:=label456.caption+' Equilibrar:'+' Culpabilidad.';
+if oeg=8    then  label456.caption:=label456.caption+' Equilibrar:'+' Autismo.';
+if oeg=9    then  label456.caption:=label456.caption+' Equilibrar:'+' Negación.';
+if oeg=10    then  label456.caption:=label456.caption+' Equilibrar:'+' Descuido.';
+if oeg=11    then  label456.caption:=label456.caption+' Equilibrar:'+' Desilusión.';
+if oeg=12    then  label456.caption:=label456.caption+' Equilibrar:'+' Depresión.';
+if oeg=13    then  label456.caption:=label456.caption+' Equilibrar:'+' Poder.';
+if oeg=14    then  label456.caption:=label456.caption+' Equilibrar:'+' Duda de sí mismo.';
+if oeg=15    then  label456.caption:=label456.caption+' Equilibrar:'+' Temor.';
+if oeg=16    then  label456.caption:=label456.caption+' Equilibrar:'+' Confusión.';
+if oeg=17    then  label456.caption:=label456.caption+' Equilibrar:'+' Duda.';
+if oeg=18    then  label456.caption:=label456.caption+' Equilibrar:'+' Celos.';
+if oeg=19    then  label456.caption:=label456.caption+' Equilibrar:'+' Alegría.';
+if oeg=20    then  label456.caption:=label456.caption+' Equilibrar:'+' Lujuria.';
+if oeg=21    then  label456.caption:=label456.caption+' Equilibrar:'+' Avaricia.';
+if oeg=22    then  label456.caption:=label456.caption+' Equilibrar:'+' Poderes Extra Sensoriales - ESP.';
+if oeg=23    then  label456.caption:=label456.caption+' Equilibrar:'+' Dolor psíquico.';
+if oeg=24    then  label456.caption:=label456.caption+' Equilibrar:'+' Pasividad.';
+if oeg=25    then  label456.caption:=label456.caption+' Equilibrar:'+' Proyección.';
+if oeg=26    then  label456.caption:=label456.caption+' Equilibrar:'+' Racionalización.';
+if oeg=27    then  label456.caption:=label456.caption+' Equilibrar:'+' Imprudencia.';
+if oeg=28    then  label456.caption:=label456.caption+' Equilibrar:'+' Preocupación.';
+if oeg=29    then  label456.caption:=label456.caption+' Equilibrar:'+' Abandono.';
+if oeg=30    then  label456.caption:=label456.caption+' Equilibrar:'+' Vergüenza.';
+if oeg=31    then  label456.caption:=label456.caption+' Equilibrar:'+' Traición.';
+if oeg=32    then  label456.caption:=label456.caption+' Equilibrar:'+' Mal entendimiento.';
+if oeg=33    then  label456.caption:=label456.caption+' Equilibrar:'+' Curiosidad.';
+if oeg=34    then  label456.caption:=label456.caption+' Equilibrar:'+' Sorpresa.';
+if oeg=35    then  label456.caption:=label456.caption+' Equilibrar:'+' Conflicto religioso.';
+if oeg=36    then  label456.caption:=label456.caption+' Equilibrar:'+' Conflicto de identidad.';
+if oeg=37    then  label456.caption:=label456.caption+' Equilibrar:'+' Resistencia al cambio.';
+if oeg=38    then  label456.caption:=label456.caption+' Equilibrar:'+' Nerviosismo.';
+if oeg=39    then  label456.caption:=label456.caption+' Equilibrar:'+' Risa.';
+if oeg=40    then  label456.caption:=label456.caption+' Equilibrar:'+' Entusiasmo.';
+if oeg=41    then  label456.caption:=label456.caption+' Equilibrar:'+' Vanidad.';
+if oeg=42    then  label456.caption:=label456.caption+' Equilibrar:'+' Negociación.';
+if oeg=43    then  label456.caption:=label456.caption+' Equilibrar:'+' Coraje.';
+if oeg=44    then  label456.caption:=label456.caption+' Equilibrar:'+' Vergüenza.';
+if oeg=45    then  label456.caption:=label456.caption+' Equilibrar:'+' Monotonía.';
+if oeg=46    then  label456.caption:=label456.caption+' Equilibrar:'+' Necesidad de cambio.';
+if oeg=47    then  label456.caption:=label456.caption+' Equilibrar:'+' Observación.';
+if oeg=48    then  label456.caption:=label456.caption+' Equilibrar:'+' Antagonismo.';
+if oeg=49    then  label456.caption:=label456.caption+' Equilibrar:'+' Sensualidad.';
+if oeg=50    then  label456.caption:=label456.caption+' Equilibrar:'+' Espiritualidad.';
+if oeg=51    then  label456.caption:=label456.caption+' Equilibrar:'+' Sexualidad.';
+if oeg=52    then  label456.caption:=label456.caption+' Equilibrar:'+' Adicción.';
   oeg:=random(41);
-if oeg=1 then label461.hint:='Conectado a: Inflamación.';
-if oeg=2 then label461.hint:='Conectado a: Cáncer.';
-if oeg=3 then label461.hint:='Conectado a: Estrés.';
-if oeg=4 then label461.hint:='Conectado a: Hipoadrenia.';
-if oeg=5 then label461.hint:='Conectado a: Emociones.';
-if oeg=6 then label461.hint:='Conectado a: Infección.';
-if oeg=7 then label461.hint:='Conectado a: Toxicidad.';
-if oeg=8 then label461.hint:='Conectado a: Trauma.';
-if oeg=9 then label461.hint:='Conectado a: Condición hereditaria.';
-if oeg=10 then label461.hint:='Conectado a: Exceso o deficiencia de vitaminas.';
-if oeg=11 then label461.hint:='Conectado a: Sistema cardiovascular.';
-if oeg=12 then label461.hint:='Conectado a: Sistema hormonal.';
-if oeg=13 then label461.hint:='Conectado a: Sistema linfático.';
-if oeg=14 then label461.hint:='Conectado a: Hígado.';
-if oeg=15 then label461.hint:='Conectado a: Riñones.';
-if oeg=16 then label461.hint:='Conectado a: Sistema digestivo.';
-if oeg=17 then label461.hint:='Conectado a: Tejido conectivo.';
-if oeg=18 then label461.hint:='Conectado a: Huesos.';
-if oeg=19 then label461.hint:='Conectado a: Acidez o alcalinidad del agua.';
-if oeg=20 then label461.hint:='Conectado a: Sangre.';
-if oeg=21 then label461.hint:='Conectado a: Entorno.';
-if oeg=22 then label461.hint:='Conectado a: Alergias.';
-if oeg=23 then label461.hint:='Conectado a: Riesgo emocional.';
-if oeg=24 then label461.hint:='Conectado a: Sistema circulatorio.';
-if oeg=25 then label461.hint:='Conectado a: Sistema inmunitario.';
-if oeg=26 then label461.hint:='Conectado a: Radiación.';
-if oeg=27 then label461.hint:='Conectado a: Bacterias.';
-if oeg=28 then label461.hint:='Conectado a: Fungosidades.';
-if oeg=29 then label461.hint:='Conectado a: Virus.';
-if oeg=30 then label461.hint:='Conectado a: Parásitos.';
-if oeg=31 then label461.hint:='Conectado a: Amíbas.';
-if oeg=32 then label461.hint:='Conectado a: Envenenamiento alimentario.';
-if oeg=33 then label461.hint:='Conectado a: Regulación del azúcar.';
-if oeg=34 then label461.hint:='Conectado a: Sistema neurológicol.';
-if oeg=35 then label461.hint:='Conectado a: Sistema sensorial.';
-if oeg=36 then label461.hint:='Conectado a: Colesterol.';
-if oeg=37 then label461.hint:='Conectado a: Respiración.';
-if oeg=38 then label461.hint:='Conectado a: Oxidación';
-if oeg=39 then label461.hint:='Conectado a: Hidratación.';
-if oeg=40 then label461.hint:='Conectado a: Cognicción.';
+if oeg=1 then label461.hint:='Conectado a:'+' Inflamación.';
+if oeg=2 then label461.hint:='Conectado a:'+' Cáncer.';
+if oeg=3 then label461.hint:='Conectado a:'+' Estrés.';
+if oeg=4 then label461.hint:='Conectado a:'+' Hipoadrenia.';
+if oeg=5 then label461.hint:='Conectado a:'+' Emociones.';
+if oeg=6 then label461.hint:='Conectado a:'+' Infección.';
+if oeg=7 then label461.hint:='Conectado a:'+' Toxicidad.';
+if oeg=8 then label461.hint:='Conectado a:'+' Trauma.';
+if oeg=9 then label461.hint:='Conectado a:'+' Condición heredada.';
+if oeg=10 then label461.hint:='Conectado a:'+' Exceso o deficiencia de vitaminas.';
+if oeg=11 then label461.hint:='Conectado a:'+' Sistema cardiovascular.';
+if oeg=12 then label461.hint:='Conectado a:'+' Sistema hormonal.';
+if oeg=13 then label461.hint:='Conectado a:'+' Sistema linfático.';
+if oeg=14 then label461.hint:='Conectado a:'+' Hígado.';
+if oeg=15 then label461.hint:='Conectado a:'+' Riñones.';
+if oeg=16 then label461.hint:='Conectado a:'+' Sistema digestivo.';
+if oeg=17 then label461.hint:='Conectado a:'+' Tejido conectivo.';
+if oeg=18 then label461.hint:='Conectado a:'+' Huesos.';
+if oeg=19 then label461.hint:='Conectado a:'+' pH del agua.';
+if oeg=20 then label461.hint:='Conectado a:'+' Sangre.';
+if oeg=21 then label461.hint:='Conectado a:'+' Entorno.';
+if oeg=22 then label461.hint:='Conectado a:'+' Alergias.';
+if oeg=23 then label461.hint:='Conectado a:'+' Riesgo emocional.';
+if oeg=24 then label461.hint:='Conectado a:'+' Sistema circulatorio.';
+if oeg=25 then label461.hint:='Conectado a:'+' Sistema inmunitario.';
+if oeg=26 then label461.hint:='Conectado a:'+' Radiación.';
+if oeg=27 then label461.hint:='Conectado a:'+' Bacterias.';
+if oeg=28 then label461.hint:='Conectado a:'+' Fungosidades.';
+if oeg=29 then label461.hint:='Conectado a:'+' Virus.';
+if oeg=30 then label461.hint:='Conectado a:'+' Parásitos.';
+if oeg=31 then label461.hint:='Conectado a:'+' Amíbas.';
+if oeg=32 then label461.hint:='Conectado a:'+' Intolerancia alimentaria.';
+if oeg=33 then label461.hint:='Conectado a:'+' Regulación del azúcar.';
+if oeg=34 then label461.hint:='Conectado a:'+' Sistema neurológico.';
+if oeg=35 then label461.hint:='Conectado a:'+' Sistema sensorial.';
+if oeg=36 then label461.hint:='Conectado a:'+' Colesterol.';
+if oeg=37 then label461.hint:='Conectado a:'+' Respiración.';
+if oeg=38 then label461.hint:='Conectado a:'+' Oxidación';
+if oeg=39 then label461.hint:='Conectado a:'+' Hidratación.';
+if oeg=40 then label461.hint:='Conectado a:'+' Cognicción.';
 label461.visible:=true;
 if cut=(random(20)) then label461.caption:='Se han recibido señales irregulares, se ha activado rectificación de fase y amplitud.';
 label461.caption:='';
@@ -23674,7 +19895,7 @@ if cut1 =11 then label461.caption:='Entre más se acerca a sus objetivos, más cue
 if cut1 =12 then label461.caption:='Se ha detectado racionalización.';
 if cut1 =6 then label461.caption:='Se ha detectado exceso de estrés muscular, por favor reláje a la persona.';
 if cut1 =13 then label461.caption:='Se ha detectado inflamación e infección.';
-if cut1 =15 then label461.caption:='Se ha detectado inflamación.  Use la función de ''Rx para inflamación''.';
+if cut1 =15 then label461.caption:='Se ha detectado inflamación.  Use la función de ''fX para inflamación''.';
 if cut1 =14 then label461.caption:='Se ha detectado infección.  Use la función de ''Zap'' en la pantalla de test.';
 if cut1 =17 then label461.caption:='Se ha detectado desorden de negatividad.';
 if cut1 =18 then label461.caption:='Se ha detectado negación y negociación.';
@@ -23690,7 +19911,6 @@ end;
 procedure TEmotion.Button23Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+Button23.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then Begin
 Button23.Enabled := False;
@@ -23710,13 +19930,6 @@ Button146.Enabled := False;
 Button88.Enabled := True;
 Button89.Enabled := True;
 memo5.visible:=false;
-end;
-
-procedure TEmotion.CheckBox15Click(Sender: TObject);
-begin
-If CheckBox15.Checked=True Then Label617.Visible:=True
-else
-Label617.Visible:=False;
 end;
 
 Procedure TEmotion.Variables();
@@ -23957,9 +20170,6 @@ testform1.edit34.text:=edit34.text+' | ';
 testform1.edit32.Refresh;
 testform1.edit34.Refresh;
 calibform1.change:=calibform1.change+5;
- if label237.caption<>'|' then testform1.label319.caption:= label237.caption;
- if label238.caption<>'|' then  testform1.label320.caption:= label238.caption;
-  if label239.caption<>'|' then testform1.label321.caption:= label239.caption;
 close;
 end;
 
@@ -23973,7 +20183,6 @@ end;
 procedure TEmotion.Button105Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Liberando adicción...';
 Sonia();
 If FMain.shaping>84 Then Button105.Enabled := False;
 If FMain.shaping>84 Then AddictionRelease1.Enabled := False;
@@ -23982,7 +20191,6 @@ end;
 procedure TEmotion.Button106Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Relajando músculos profundamente...';
 Sonia();
 If FMain.shaping>84 Then Button106.Enabled := False;
 end;
@@ -23993,23 +20201,18 @@ Randomize;
 oeg := random(10);
 If (oeg = 0) or (oeg = 1) Then begin
 TBMaslow.Position := 1;
-PDesarrollo.Caption := 'Estimulando conciencia a Actualización de sí mismo / Optimización y Economía...';
 end;
 If (oeg = 2) or (oeg = 3) Then begin
 TBMaslow.Position := 3;
-PDesarrollo.Caption := 'Estimulando conciencia a Estima / Sello personal...';
 end;
 If (oeg = 4) or (oeg = 5) Then begin
 TBMaslow.Position := 5;
-PDesarrollo.Caption := 'Estimulando conciencia a Amor y Pertenencia / Convivencia...';
 end;
 If (oeg = 6) or (oeg = 7) Then begin
 TBMaslow.Position := 7;
-PDesarrollo.Caption := 'Estimulando conciencia a Seguridad y Comodidad / Estructura...';
 end;
 If (oeg = 8) or (oeg = 9) or (oeg = 10) Then begin
 TBMaslow.Position := 9;
-PDesarrollo.Caption := 'Estimulando conciencia a Estima / Sello personal...';
 end;
 PPiramideMaslow.Visible := True;
 end;
@@ -24035,8 +20238,8 @@ var
 Sender : TObject;
 begin
 if strtoint(RegresaEntero((sender as Tedit).text))>10 then begin
-           (sender as Tedit).text := '10';
-           showmessage('El valor para esta campo debe ser menor o igual a 10');
+(sender as Tedit).text := '10';
+showmessage('El valor para esta campo debe ser menor o igual a 10');
 end;
 end;
 procedure TEmotion.Edit47Click(Sender: TObject);
@@ -24482,8 +20685,6 @@ procedure TEmotion.Button9Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption := 'Realizando terapia completa para la reducción de estrés...';
-PDesarrollo.Visible := True;
 LRectificado.caption:='Rectificado | ';
 riskchart.str:=riskchart.str+20;
 timer1.enabled:=true;
@@ -24510,7 +20711,6 @@ Until
    GProgreso.Progress :=   round(MyChrono.pTEcoule);
    TRelajacion.Enabled := False;
 Timer1.Enabled := False;
-PDesarrollo.Visible := False;
 FMain.Shaping := 85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(FMain.Shaping);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
@@ -24519,64 +20719,7 @@ Button87.Enabled := False;
 Button8.Enabled := True;
 Fmain.recmain:=Fmain.recmain+5;
 LRectificado.Refresh;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
-{Edit47.Text := '0';
-Edit48.Text := Inttostr((e48)-1);
-Edit49.Text := Inttostr((e49)-1);
-Edit50.Text := Inttostr((e50)-1);
-Edit51.Text := Inttostr((e51)-1);
-Edit52.Text := Inttostr((e52)-1);
-Edit53.Text := Inttostr((e53)-1);
-Edit129.Text := Inttostr((e129)-1);
-Edit130.Text := Inttostr((e130)-1);
-Edit131.Text := Inttostr((e131)-1);
-Edit132.Text := Inttostr((e132)-1);
-Edit133.Text := Inttostr((e133)-1);
-Edit134.Text := Inttostr((e134)-1);
-Edit54.Text := Inttostr((e54)-1);
-Edit55.Text := Inttostr((e55)-1);
-Edit56.Text := Inttostr((e56)-1);
-Edit57.Text := Inttostr((e57)-1);
-Edit58.Text := Inttostr((e58)-1);
-Edit59.Text := Inttostr((e59)-1);
-Edit61.Text := Inttostr((e61)-1);
-Edit191.Text := Inttostr((e191)-1);
-Edit192.Text := Inttostr((e192)-1);
-Edit193.Text := Inttostr((e193)-1);
-Edit194.Text := Inttostr((e194)-1);
-Edit195.Text := Inttostr((e195)-1);
-Edit196.Text := Inttostr((e196)-1);
-Edit197.Text := Inttostr((e197)-1);
-Edit198.Text := Inttostr((e198)-1);
-Edit199.Text := Inttostr((e199)-1);
-Edit200.Text := Inttostr((e200)-1);
-Edit201.Text := Inttostr((e201)-1);
-Edit202.Text := Inttostr((e202)-1);
-Edit147.Text := Inttostr((e147)-1);
-Edit148.Text := Inttostr((e148)-1);
-Edit149.Text := Inttostr((e149)-1);
-Edit150.Text := Inttostr((e150)-1);
-Edit151.Text := Inttostr((e151)-1);
-Edit152.Text := Inttostr((e152)-1);
-Edit153.Text := Inttostr((e153)-1);
-Edit154.Text := Inttostr((e154)-1);
-Edit167.Text := Inttostr((e167)-1);
-Edit168.Text := Inttostr((e168)-1);
-Edit169.Text := Inttostr((e169)-1);
-Edit170.Text := Inttostr((e170)-1);
-Edit171.Text := Inttostr((e171)-1);
-Edit172.Text := Inttostr((e172)-1);
-Edit173.Text := Inttostr((e173)-1);
-Edit174.Text := Inttostr((e174)-1);
-Edit175.Text := Inttostr((e175)-1);
-Edit176.Text := Inttostr((e176)-1);
-Edit177.Text := Inttostr((e177)-1);
-Edit178.Text := Inttostr((e178)-1);
-Edit2.Text := Inttostr ((SE3)-1);
-Edit40.Text := Inttostr ((SE4)-1);
-Edit41.Text := Inttostr ((SE5)-1);
-Edit42.Text := Inttostr ((SE10)-1);
-Edit43.Text := Inttostr ((SE11)-1);  }
+
 MyChrono.Stop;
 If CBTerapiaExtendida.Checked=True Then TerapiaExtendida();
 end;
@@ -24610,11 +20753,6 @@ procedure TEmotion.Panel18Click(Sender: TObject);
 begin
 SpinEdit7.Value:=1;
  Panel19.Visible:=false;
-end;
-
-procedure TEmotion.Label119Click(Sender: TObject);
-begin
-MyWinexec('Winword.exe','consejos_viaje.doc');
 end;
 
 procedure TEmotion.Panel23Click(Sender: TObject);
@@ -24747,25 +20885,12 @@ begin
 PIHolistica.Visible := False;
 end;
 
-procedure TEmotion.TerapiaExtendida();
-begin
-CBTerapiaExtendida.checked:=false;
- Application.CreateForm(Tondas_frm, ondas_frm);
- ondas_frm.CheckBox1.Checked := True;
-  ondas.ondas_frm.showmodal;
-  ondas.ondas_frm.Free;
-end;
-
 procedure TEmotion.Reaccion_Irregular();
 begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
 LRectificado.Caption := 'Rectificado |';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
@@ -24781,20 +20906,13 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
 LRectificado.Caption := 'Rectificado |';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
@@ -24810,148 +20928,25 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
 
 procedure TEmotion.Items();
 begin
-if (pn2>2 )and (yes>7) then label239.caption:=label239.caption+' Fármacos alopáticos.';
+if (pn2>2 )and (yes>7) then label239.caption:=label239.caption+' Medicaciones alopáticas.';
 if (pn3>10 )and (yes>7) then label239.caption:=label239.caption+' Tabaquismo.';
-if (pn8>5 )and (yes>7) then label239.caption:=label239.caption+' Uso del azúcar.';
+if (pn8>5 )and (yes>7) then label239.caption:=label239.caption+' Azúcar.';
 if (pn12>10 )and (yes>7) then label239.caption:=label239.caption+' Toxicidad.';
 if (pn7>9 )and (yes>7) then label239.caption:=label239.caption+' Estrés.';
 if (pn4>0 )and (yes>7) then label239.caption:=label239.caption+' Supresión alopática.';
-oeg:=random(44);
-if oeg=1 then label238.caption:=label238.caption+' Estrés.';
-if oeg=2 then label238.caption:=label238.caption+' Falta de toma de conciencia.';
-if oeg=3 then label238.caption:=label238.caption+' Factores mentales.';
-if oeg=4 then label238.caption:=label238.caption+' Factores hereditarios.';
-if oeg=5 then label238.caption:=label238.caption+' Alergia/s.';
-if oeg=6 then label238.caption:=label238.caption+' Toxinas.';
-if oeg=7 then label238.caption:=label238.caption+' Patógenos.';
-if oeg=8 then label238.caption:=label238.caption+' Energía perversa, exceso de calor.';
-if oeg=9 then label238.caption:=label238.caption+' Trauma o lesión.';
-if oeg=10 then label238.caption:=label238.caption+'Deficiencia o exceso nutricional.';
-if oeg=11 then label238.caption:=label238.caption+' Ataque psíquico.';
-if oeg=12 then label238.caption:=label238.caption+' Repercusión kármica.';
-if oeg=13 then label238.caption:=label238.caption+' Opresión espiritual.';
-if oeg=14 then label238.caption:=label238.caption+' Inhabilidad de cambiar o explorarse a sí mismo/a.';
-if oeg=15 then label238.caption:=label238.caption+' Estrés físico.';
-if oeg=16 then label238.caption:=label238.caption+' Falta de atención a las estaciones del año.';
-if oeg=15 then label238.caption:=label238.caption+' Ira.';
-if oeg=16 then label238.caption:=label238.caption+' Condición hereditaria.';
-if oeg=17 then label238.caption:=label238.caption+' Alergia/s.';
-if oeg=18 then label238.caption:=label238.caption+' Toxinas.';
-if oeg=19 then label238.caption:=label238.caption+' Patógenos.';
-if oeg=20 then label238.caption:=label238.caption+' Energía perversa, exceso de frío.';
-if oeg=21 then label238.caption:=label238.caption+' Energía perversa, exceso de frío.';
-if oeg=22 then label238.caption:=label238.caption+' Energía perversa, exceso de frío.';
-if oeg=23 then label238.caption:=label238.caption+' Energía perversa, exceso de humedad.';
-if oeg=24 then label238.caption:=label238.caption+' Energía perversa, exceso de viento.';
-if oeg=25 then label238.caption:=label238.caption+' Trauma o lesión.';
-if oeg=26 then label238.caption:=label238.caption+' Exceso de azúcar.';
-if oeg=27 then label238.caption:=label238.caption+' Toxinas.';
-if oeg=28 then label238.caption:=label238.caption+' Toxinas.';
-if oeg=29 then label238.caption:=label238.caption+' Toxinas.';
-if oeg=31 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=32 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=33 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=34 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=35 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=36 then label238.caption:=label238.caption+' Fármacos prescritos.';
-if oeg=37 then label238.caption:=label238.caption+' Fármacos prescritos.';
-    oeg:=random(32);
-if oeg=0 then label240.caption:=label240.caption+' Conexión a: Pulmones';
-if oeg=1 then label240.caption:=label240.caption+' Conexión a: Piel.';
-if oeg=2 then label240.caption:=label240.caption+' Conexión a: Cerebro.';
-if oeg=3 then label240.caption:=label240.caption+' Conexión a: Senos nasales.';
-if oeg=4 then label240.caption:=label240.caption+' Conexión a: Estómago.';
-if oeg=5 then label240.caption:=label240.caption+' Conexión a: Ojos.';
-if oeg=6 then label240.caption:=label240.caption+' Conexión a: Intestinos.';
-if oeg=7 then label240.caption:=label240.caption+' Conexión a: Pulmones.';
-if oeg=8 then label240.caption:=label240.caption+' Conexión a: Estómago.';
-if oeg=9 then label240.caption:=label240.caption+' Conexión a: Suprarrenales.';
-if oeg=10 then label240.caption:=label240.caption+' Conexión a: Senos nasales.';
-if oeg=11 then label240.caption:=label240.caption+' Conexión a: Emociones.';
-if oeg=12 then label240.caption:=label240.caption+' Conexión a: Sangre.';
-if oeg=13 then label240.caption:=label240.caption+' Conexión a: Sistema linfático.';
-if oeg=14 then label240.caption:=label240.caption+' Conexión a: Dientes.';
-if oeg=15 then label240.caption:=label240.caption+' Conexión a: Formación reticular.';
-if oeg=16 then label240.caption:=label240.caption+' Conexión a: Médula oblongata.';
-if oeg=17 then label240.caption:=label240.caption+' Conexión a: Lóbulo frontal del cerebro.';
-if oeg=18 then label240.caption:=label240.caption+' Conexión a: Lóbulo parietal del cerebro.';
-if oeg=19 then label240.caption:=label240.caption+' Conexión a: Lóbulo occipital del cerebro.';
-if oeg=20 then label240.caption:=label240.caption+' Conexión a: Lóbulo temporal del cerebro.';
-if oeg=21 then label240.caption:=label240.caption+' Conexión a: Tiroides.';
-if oeg=22 then label240.caption:=label240.caption+' Conexión a: Timo.';
-if oeg=23 then label240.caption:=label240.caption+' Conexión a: Médula espinal.';
-if oeg=24 then label240.caption:=label240.caption+' Conexión a: Sistema límbico.';
-if oeg=25 then label240.caption:=label240.caption+' Conexión a: Circuitos de la memoria.';
-if oeg=26 then label240.caption:=label240.caption+' Conexión a: Hipotálamo.';
-if oeg=27 then label240.caption:=label240.caption+' Conexión a: Pineal.';
-if oeg=28 then label240.caption:=label240.caption+' Conexión a: Pituitaria.';
-if oeg=29 then label240.caption:=label240.caption+' Conexión a: Paratiroides.';
-if oeg=30 then label240.caption:=label240.caption+' Conexión a: Sangre.';
-if oeg=31 then label240.caption:=label240.caption+' Conexión a: Sistema linfático.';
-if oeg=32 then label240.caption:=label240.caption+' Conexión a: Dientes.';
-end;
-
-procedure TEmotion.Conexiones();
-begin
-oeg:=random(41);
-if oeg=1 then label238.hint:='Conectado a: Inflamación.';
-if oeg=2 then label238.hint:='Conectado a: Cáncer.';
-if oeg=3 then label238.hint:='Conectado a: Estrés.';
-if oeg=4 then label238.hint:='Conectado a: Hipoadrenia.';
-if oeg=5 then label238.hint:='Conectado a: Emociones.';
-if oeg=6 then label238.hint:='Conectado a: Infección.';
-if oeg=7 then label238.hint:='Conectado a: Toxicidad.';
-if oeg=8 then label238.hint:='Conectado a: Trauma.';
-if oeg=9 then label238.hint:='Conectado a: Condición hereditaria.';
-if oeg=10 then label238.hint:='Conectado a: Exceso o deficiencia de vitaminas.';
-if oeg=11 then label238.hint:='Conectado a: Sistema cardiovascular.';
-if oeg=12 then label238.hint:='Conectado a: Sistema hormonal.';
-if oeg=13 then label238.hint:='Conectado a: Sistema linfático.';
-if oeg=14 then label238.hint:='Conectado a: Hígado.';
-if oeg=15 then label238.hint:='Conectado a: Riñones.';
-if oeg=16 then label238.hint:='Conectado a: Sistema digestivo.';
-if oeg=17 then label238.hint:='Conectado a: Tejido conectivo.';
-if oeg=18 then label238.hint:='Conectado a: Huesos.';
-if oeg=19 then label238.hint:='Conectado a: Acidez o alcalinidad del agua.';
-if oeg=20 then label238.hint:='Conectado a: Sangre.';
-if oeg=21 then label238.hint:='Conectado a: Entorno.';
-if oeg=22 then label238.hint:='Conectado a: Alergias.';
-if oeg=23 then label238.hint:='Conectado a: Riesgo emocional.';
-if oeg=24 then label238.hint:='Conectado a: Sistema circulatorio.';
-if oeg=25 then label238.hint:='Conectado a: Sistema inmunitario.';
-if oeg=26 then label238.hint:='Conectado a: Radiación.';
-if oeg=27 then label238.hint:='Conectado a: Bacterias.';
-if oeg=28 then label238.hint:='Conectado a: Fungosidades.';
-if oeg=29 then label238.hint:='Conectado a: Virus.';
-if oeg=30 then label238.hint:='Conectado a: Parásitos.';
-if oeg=31 then label238.hint:='Conectado a: Amíbas.';
-if oeg=32 then label238.hint:='Conectado a: Envenenamiento alimentario.';
-if oeg=33 then label238.hint:='Conectado a: Regulación del azúcar.';
-if oeg=34 then label238.hint:='Conectado a: Sistema neurológicol.';
-if oeg=35 then label238.hint:='Conectado a: Sistema sensorial.';
-if oeg=36 then label238.hint:='Conectado a: Colesterol.';
-if oeg=37 then label238.hint:='Conectado a: Respiración.';
-if oeg=38 then label238.hint:='Conectado a: Oxidación';
-if oeg=39 then label238.hint:='Conectado a: Hidratación.';
-if oeg=40 then label238.hint:='Conectado a: Cognicción.';
+TestForm1.BCausas.Click;
+TestForm1.BOrganosGlandulas.Click;
 end;
 
 procedure TEmotion.Button17Click(Sender: TObject);
 begin
-If TBMaslow.Position = 1 Then PDesarrollo.Caption := 'Efectuando terapia para Actualización de sí mismo / Optimización + Economía...';
-If TBMaslow.Position = 3 Then PDesarrollo.Caption := 'Efectuando terapia para Estima / Sello personal...';
-If TBMaslow.Position = 5 Then PDesarrollo.Caption := 'Efectuando terapia para Amor + Pertenencia / Convivencia...';
-If TBMaslow.Position = 7 Then PDesarrollo.Caption := 'Efectuando terapia para Seguridad + Comodidad / Estructura...';
-If TBMaslow.Position = 9 Then PDesarrollo.Caption := 'Efectuando terapia para Psicología / Existencia (Presencia)...';
 Sonia();
 If FMain.Shaping>84 Then Button17.Enabled:=False;
 end;
@@ -24965,7 +20960,6 @@ end;
 procedure TEmotion.LearningDisability1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+LearningDisability1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then LearningDisability1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then LearningDisability1.Click;
@@ -24975,7 +20969,6 @@ end;
 procedure TEmotion.AntiAging1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.caption:='Realizando terapia para '+AntiAging1.Caption+'...';
 Sonia();
 If FMain.shaping>84 Then AntiAging1.Enabled := False;
 If (CBAutomatico.Checked=True) and (FMain.Shaping<85) Then AntiAging1.Click;
@@ -24984,196 +20977,168 @@ end;
 
 procedure TEmotion.Button48Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button48.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button48.Enabled := False;
 end;
 
 procedure TEmotion.Button26Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button26.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button26.Enabled := False;
 end;
 
 procedure TEmotion.Button52Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button52.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button52.Enabled := False;
 end;
 
 procedure TEmotion.Button118Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button18.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button18.Enabled := False;
 end;
 
 procedure TEmotion.Button115Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button115.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button115.Enabled := False;
 end;
 
 procedure TEmotion.Button11Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button11.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button11.Enabled := False;
 end;
 
 procedure TEmotion.Button67Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button67.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button67.Enabled := False;
 end;
 
 procedure TEmotion.Button90Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button90.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button90.Enabled := False;
 end;
 
 procedure TEmotion.Button31Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button31.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button31.Enabled := False;
 end;
 
 procedure TEmotion.Button51Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button51.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button51.Enabled := False;
 end;
 
 procedure TEmotion.Button24Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button24.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button24.Enabled := False;
 end;
 
 procedure TEmotion.Button36Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button36.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button36.Enabled := False;
 end;
 
 procedure TEmotion.Button72Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button72.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button72.Enabled := False;
 end;
 
 procedure TEmotion.Button109Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button109.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button109.Enabled := False;
 end;
 
 procedure TEmotion.Button84Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button84.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button84.Enabled := False;
 end;
 
 procedure TEmotion.Button132Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+EIHolistica.Text+'...';
 Sonia();
 If Rectificado>84 Then Button132.Enabled := False;
 end;
 
 procedure TEmotion.Button49Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button49.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button49.Enabled := False;
 end;
 
 procedure TEmotion.Button85Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button85.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button85.Enabled := False;
 end;
 
 procedure TEmotion.Button117Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button117.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button117.Enabled := False;
 end;
 
 procedure TEmotion.Button86Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button86.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button86.Enabled := False;
 end;
 
 procedure TEmotion.Button94Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button94.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button94.Enabled := False;
 end;
 
 procedure TEmotion.Button47Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button47.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button47.Enabled := False;
 end;
 
 procedure TEmotion.Button92Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button92.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button92.Enabled := False;
 end;
 
 procedure TEmotion.Button6Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button61.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button61.Enabled := False;
 end;
 
 procedure TEmotion.Button82Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button82.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button82.Enabled := False;
 end;
 
 procedure TEmotion.Button14Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button14.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button14.Enabled := False;
 end;
 
 procedure TEmotion.Button75Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button75.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button75.Enabled := False;
 end;
 
 procedure TEmotion.Button107Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button107.Caption+'...';
 Sonia();
 If Rectificado>84 Then Button107.Enabled := False;
 end;
@@ -25367,647 +21332,9 @@ Edit42.Text := Inttostr ((SE10)-1);
 Edit43.Text := Inttostr ((SE11)-1);
 end;
 
-procedure TEmotion.EAF();
-begin
-Randomize;
-oeg := random(72);
-If oeg <2 Then Showmessage('Tú eres el resultado de ti mismo no culpes nunca a nadie, nunca te quejes de nada, porque fundamentalmente tú has hecho lo que quieres de tu vida.');
-If oeg =2 Then Showmessage('Acepta la responsabilidad de edificarte a ti mismo y el valor de acusarte a ti del fracaso.');
-If oeg =3 Then Showmessage('Para volver a empezar corrígete, el triunfo del verdadero ser humano surge de las cenizas del error.');
-If oeg =4 Then Showmessage('Nunca te quejes de tu pobreza, tu soledad o tu suerte, enfréntate con valor y acepta que de una u otra manera son el resultado de tus actos y las pruebas que has de ganar.');
-If oeg =5 Then Showmessage('No olvides que la causa de tu presente, es tu pasado como la causa de tu futuro es tu presente.');
-If oeg =6 Then Showmessage('Aprende de los fuertes, de los audaces, imita a los valientes, a los energéticos, a los vencedores, a quienes no aceptan situaciones, a quienes vencieron a pesar de todo.');
-If oeg =7 Then Showmessage('No es el deseo de ganar el que hace a los triunfadores sino su deseo de prepararse tanto física como mentalmente.');
-If oeg =8 Then Showmessage('Piensa menos en tus problemas y más en tu trabajo.  Los problemas sin alimentarlos morirán.');
-If oeg =9 Then Showmessage('Aprende a nacer desde el dolor y a ser más grande que el más grande de los obstáculos.');
-If oeg =10 Then Showmessage('Tú eres parte de la fuerza de tu vida ahora, despierta, lucha, camina, decídete y triunfarás en la vida.');
-If oeg =11 Then Showmessage('Nunca pienses en al suerte porque la suerte es el pretexto de los fracasados.');
-If oeg =12 Then Showmessage('Nadie nos dijo que fuéramos, nadie nos dijo que lo intentaramos, nadie nos dijo que sería fácil.');
-If oeg =13 Then Showmessage('Alguien nos dijo que somos nuestros sueños, que si no soñamos estamos muertos.');
-If oeg =14 Then Showmessage('No mires el obstáculo que has superado, sino aquellos que vas a superar.');
-If oeg =15 Then Showmessage('No se trata de los más rápidos, ni los más fuertes o los más grandes, se trata de ser nosotros mismos.');
-If oeg =16 Then Showmessage('Tu Trabajo, Tu Familia, Tu Salud, Tus amistades y Tu Vida Espiritual, son cinco pelotas que debes mantener todas en el aire.');
-If oeg =17 Then Showmessage('Antes de hablar, escucha. Antes de escribir, piensa. Antes de criticar, examínate. Antes de herir, siente. Antes de orar, perdona. Antes de gastar, gana. Antes de rendirte, intenta.  Antes de MORIR, VIVE.');
-If oeg =18 Then Showmessage('Ten en cuenta que el gran amor y los grandes logros requieren grandes riesgos.');
-If oeg =19 Then Showmessage('Cuando pierdas, no pierdas la lección.');
-If oeg =20 Then Showmessage('Sigue las 3 R: Respeto a ti mismo, Respeto para los otros y Responsabilidad sobre todas tus acciones.');
-If oeg =21 Then Showmessage('El que abras los brazos a los cambios o a otras culturas no significa que te tengas que olvidar de tus valores.');
-If oeg =22 Then Showmessage('Se puede aceptar un fallo, cualquiera puede fallar, pero no se puede aceptar el no intentarlo.');
-If oeg =23 Then Showmessage('El talento gana juegos, pero el trabajo en equipo y la inteligencia ganan campeonatos.');
-If oeg =24 Then Showmessage('Paso a paso.  No se puede coincibir otra manera de lograr las cosas.');
-If oeg =25 Then Showmessage('Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana.');
-If oeg =26 Then Showmessage('El talento depende de la inspiración, pero el esfuerzo depende de cada uno.');
-If oeg =27 Then Showmessage('Si emociona pensarlo, imagínate hacerlo.');
-If oeg =28 Then Showmessage('Invariablemente en cada dificultad se esconde una oportunidad.');
-If oeg =29 Then Showmessage('El peligro es real, el miedo es una opción.');
-If oeg =30 Then Showmessage('Si el miedo al fracaso te impide intentarlo, ya habrás fracasado.');
-If oeg =31 Then Showmessage('No confundas el tener menos con el ser menos, el tener más con ser más, tampoco confundas lo que posees con quien eres.');
-If oeg =32 Then Showmessage('Yo me merezco todo lo bueno, no algo, un poquito, sino todo lo bueno.');
-If oeg =33 Then Showmessage('Ahora disuelvo cualquier pensamiento negativo o restrictivo. Me libero y disuelvo todas las limitaciones del pasado. No me ata ningún miedo ni limitación de la sociedad en la que vivo. Ya no me identifico con ningún tipo de limitación.');
-If oeg =34 Then Showmessage('En mi mente tengo libertad absoluta.');
-If oeg =35 Then Showmessage('Ahora entro a un nuevo espacio en la conciencia, en donde me veo de forma diferente. Estoy creando nuevos pensamientos acerca de mi ser y de mi vida. Mi nueva forma de pensar se convierte en nuevas experiencias.');
-If oeg =36 Then Showmessage('Ahora sé y afirmo que formo una unidad con el Próspero Poder del Universo. Y por lo tanto recibo multitud de bienes. La totalidad de las posibilidades está ante mí.');
-If oeg =37 Then Showmessage('Merezco la vida, una vida buena.');
-If oeg =38 Then Showmessage('Merezco el amor, abundante amor.');
-If oeg =39 Then Showmessage('Merezco la salud.');
-If oeg =40 Then Showmessage('Merezco vivir cómodamente y prosperar.');
-If oeg =41 Then Showmessage('Merezco la alegría y la felicidad.');
-If oeg =42 Then Showmessage('Merezco la libertad, la libertad de ser todo lo que puedo ser.');
-If oeg =43 Then Showmessage('Merezco muchas cosas más que todo eso: merezco todo lo bueno.');
-If oeg =44 Then Showmessage('El Universo está más que dispuesto a manifestar mis nuevas creencias y yo acepto la abundancia de esta vida con alegría, placer y gratitud. Porque me lo merezco, lo acepto y sé que es verdad.');
-If oeg =45 Then Showmessage('Así Es. Gracias Amado Universo.');
-If oeg =46 Then Showmessage('Permito que la prosperidad entre en mi vida en un nivel en el cual nunca entró. Merezco lo mejor y estoy dispuesta a aceptarlo.');
-If oeg =47 Then Showmessage('Mis ingresos aumentan constantemente.');
-If oeg =48 Then Showmessage('Dejo la pobreza de pensamientos para entrar en la prosperidad de pensamientos.');
-If oeg =49 Then Showmessage('Me amo a mi mismo, y me regocijo en quien soy, porque sé que la vida está aquí para mí y me proporciona todo lo que necesito.');
-If oeg =50 Then Showmessage('Me muevo de éxito en éxito, de alegría en alegría y de abundancia en abundancia.');
-If oeg =51 Then Showmessage('Tengo el poder de quien me creó, y expreso para mi mismo la grandeza que soy. Soy una expresión de la vida, divina y magnifica y estoy abierto y receptivo a todo lo bueno.');
-If oeg =52 Then Showmessage('Hoy es otro precioso día sobre la Tierra y vamos a vivirlo con alegría.');
-If oeg =53 Then Showmessage('Nadie puede arrebatarme jamás aquello que es mío por derecho propio.');
-If oeg =54 Then Showmessage('Aunque es posible que no sepa cómo perdonar, me dispongo a comenzar el proceso, sabiendo que encontraré ayuda en todos los aspectos de mi vida.');
-If oeg =55 Then Showmessage('Elijo perdonar a todo aquel que alguna vez haya hecho algo negativo. Éste es mi día del perdón. Me perdono por todo el daño que hice en el pasado, a mí y a los demás.');
-If oeg =56 Then Showmessage('Ellos son libres y yo soy libre. Somos uno con el poder que nos ha creado estamos seguros y a salvo.');
-If oeg =57 Then Showmessage('No importa lo que haya pensado de mí en el pasado. Hoy es un nuevo día.  En este nuevo momento, comienzo a verme de forma más compasiva.');
-If oeg =58 Then Showmessage('Las críticas y los juicios se desvanecen, y a medida que desaparecen me hago más libre para apreciar todo lo que soy.');
-If oeg =59 Then Showmessage('Pienso como si mi vida dependiera de ello,  porque sé que es así.');
-If oeg =60 Then Showmessage('La puerta se abre al amor, al amor por mí.');
-If oeg =61 Then Showmessage('Ésta es la senda de la curación. Vivo este día de tal modo que desee Recordarlo mañana.');
-If oeg =62 Then Showmessage('Hoy comienzo mi viaje de sanación.');
-If oeg =63 Then Showmessage('Somos uno con el Poder que nos ha creado.');
-If oeg =64 Then Showmessage('Estamos seguros y a salvo, y todo está bien en nuestro mundo.');
-If oeg =65 Then Showmessage('Sé que el amor es el estimulante del sistema inmunitario más poderoso que se conoce. Por lo tanto hago todo lo que puedo para aumentar el amor que siento por mí y por los demás.');
-If oeg =66 Then Showmessage('Con gusto disuelvo todas las pautas de pensamiento negativo que niegan o suprimen este caudal de amor.');
-If oeg =67 Then Showmessage('Soy completamente inmune  a todas las ideas y experiencias negativas que hubiera a mi alrededor.');
-If oeg =68 Then Showmessage('No tengo tiempo para perder en rencores y resentimientos.');
-If oeg =69 Then Showmessage('Ahora afirmo que cada célula de mi cuerpo está reaccionando a una nueva fuerza.');
-If oeg =70 Then Showmessage('Me estoy renovando en cada momento de este día.');
-If oeg >70 Then Showmessage('Me libero de la carga de la culpa y la vergüenza. Me alejo del pasado  y vivo en este momento con alegría y aceptación.');
-End;
-
-procedure TEmotion.Afirmaciones();
-begin
-gama := Random(100);
-         if gama < 10 then
-         label108.caption := 'Me perdono por mis viejas creencias limitadoras. Ahora tengo pensamientos nuevos y me creo una vida nueva. ';
-         if gama = 11 then
-         label108.caption := 'Confío en mí y en mi intuición. Siento mi poder. Abandono mis viejas creencias y la Vida me apoya en cada paso del camino. ';
-         if gama = 12  then
-         label108.caption := 'Tengo casa, alimento y ropa y recibo amor de formas muy gratificantes. ';
-         if gama = 13  then
-         label108.caption := 'Mientras reconozco mi valía innata, mi vida se expande y prospera de muchas y deliciosas maneras. ';
-         if gama = 14  then
-         label108.caption := 'Este es uno de los mejores meses de mi vida. Me abro para recibir todo lo bueno que me ofrece la Vida. ';
-         if gama = 15  then
-         label108.Caption := 'Soy una luz en el mundo; de algún modo, al estar aquí ayudo a otra persona a respirar mejor. ';
-         if gama = 16  then
-         label108.Caption := 'Cambio algo en la casa, en mi estilo de vida o en el trabajo, y eso nos beneficia a todos. Acepto el cambio y ensancho mis límites. ';
-         if gama = 17  then
-         label108.Caption := 'Cada día aprendo algo más sobre las leyes de la Vida y sobre "cómo" pensar para tener una vida sana, dichosa, amorosa y abundante. ';
-         if gama = 18  then
-         label108.Caption := 'Cuando todos y cada uno aprendamos a vivir con un amor incondicional, se acabarán las guerras para siempre, y ese será el mejor regalo para la humanidad. ';
-         if gama = 19  then
-         label108.Caption := 'Estoy aprendiendo a hacer afirmaciones positivas. Elijo pensamientos que me alienten y me hagan sentir bien. ';
-         if gama = 20  then
-         label108.Caption := 'Tengo muchísimas oportunidades para realizarme plenamente. Mi mundo esta abierto y receptivo. ';
-         if gama = 21  then
-         label108.Caption := 'Agradezco todas las personas, lugares, cosas y experiencias que llenan mi mundo. La vida es hermosa para todos, y yo contribuyo a ello. ';
-         if gama = 22  then
-         label108.Caption := 'Fluyo con el perfecto despliegue de mi vida. Feliz y expectante recibo y agradezco las nuevas experiencias. ';
-         if gama = 23  then
-         label108.Caption := 'Me acuerdo de decirles a las personas de mi entorno lo mucho que los quiero y lo maravillosos que son. ';
-         if gama = 24  then
-         label108.Caption := 'Ejercito mis músculos mentales. Me lo paso muy bien usando mi mente. Soy una persona muy creativa. ';
-         if gama = 25  then
-         label108.Caption := 'Estoy en conexión con la Totalidad del Universo, y la Divinidad me guía y me protege. ';
-         if gama = 26  then
-         label108.Caption := 'Los regalos de la vida son la paz, el amor y la alegría. Los acepto con gratitud y los comparto con los demás. ';
-         if gama = 27  then
-         label108.Caption := 'Hoy nace un día glorioso en mi conciencia. Disfruto de este nuevo día y de todo lo que ofrece. ';
-         if gama = 28  then
-         label108.Caption := 'Me doy todo el tiempo que necesito para hacer mis compras. Siempre compro dentro de mi presupuesto. ';
-         if gama = 29  then
-         label108.Caption := 'Las fiestas son divertidas y sanas. Las celebro con amigos y compañeros de trabajo de modos que me hacen sentir bien. ';
-         if gama = 30  then
-         label108.Caption := 'A todos les gustan mis regalos. Compro con facilidad a precios que me puedo permitir. ';
-         if gama = 31  then
-         label108.Caption := 'Me doy el tiempo que necesito para trabajar en la aflicción o el duelo. La muerte es una parte natural de la vida. ';
-         if gama = 32  then
-         label108.Caption := 'Soy libre para experimentar todo lo bueno que ofrece el Universo. ¡Lo acepto, lo acepto, lo acepto! ';
-         if gama = 33  then
-         label108.Caption := 'Cuido amorosamente el jardín de mi mente. Arranco las hierbas negativas y dejo espacio para que crezcan afirmaciones positivas. ';
-         if gama = 34  then
-         label108.Caption := 'Soy amable y trato con consideración a los demás compradores. Dejo espacio en la calle y en los mostradores. Este es un tiempo de paz. ';
-         if gama = 35  then
-         label108.Caption := 'Mi actual trabajo es el canal temporal por donde me llega el bien desde el Manantial Infinito. No corro ningún riesgo si cambio de canal. ';
-         if gama = 36  then
-         label108.Caption := 'Cuando una puerta se cierra, otra se abre. Siempre tengo acceso al Manantial Infinito de la Sabiduría. Estoy a salvo. ';
-         if gama = 37  then
-         label108.Caption := 'Mi casa es un lugar feliz para vivir. Bendigo a todos los que entran en ella, también a mí. ';
-         if gama = 38  then
-         label108.Caption := 'Mis hermanas y hermanos tienen un gran corazón. Somos tolerantes y compasivos y nos queremos. Abro mi corazón a mi familia. ';
-         if gama = 39  then
-         label108.Caption := 'Me siento absolutamente en paz. Abro mi corazón y de él emana el regalo del amor para todos. ';
-         if gama = 40  then
-         label108.Caption := 'Me doy todo el tiempo necesario para encontrar paz en mi interior; sé que así llegaré a desarrollar todo mi potencial. ';
-         if gama = 41  then
-         label108.Caption := 'Disfruto siendo un miembro de mi comunidad. Mi autoestima aumenta sin cesar y me permite hacer algo valioso en bien de todos. ';
-         if gama = 42  then
-         label108.Caption := 'Me hago cargo de mis pensamientos y comienzo a crear el mundo de igualdad que deseo. ';
-         if gama = 43  then
-         label108.Caption := 'Creo un mundo seguro donde reina el amor y donde todos podemos ser felices y estar sanos y completos. ';
-         if gama = 44  then
-         label108.Caption := 'Las creencias que tengo, las cosas que pienso y las palabras que digo son muy poderosas; dan forma a mis experiencias y a mi vida. ';
-         if gama = 45  then
-         label108.Caption := 'Sea cual sea mi pasado, sea cual sea el ambiente del que procedo, empiezo a hacer cambios en este preciso momento. ';
-         if gama = 46  then
-         label108.Caption := 'Mis ideas son muy poderosas y liberadoras, y cuando creo en ellas, se convierten en realidad. ';
-         if gama = 47  then
-         label108.Caption := 'Mi cuerpo es un templo precioso. Si quiero tener una vida larga y satisfactoria, es necesario que lo cuide. ';
-         if gama = 48  then
-         label108.Caption := 'Confío en el proceso de la vida, que me apoya y me guía siempre que le permita hacerlo. ';
-         if gama = 49  then
-         label108.Caption := 'Si me relajo y realmente creo que la vida me cuida y que estoy a salvo, comienzo a fluir con ella. ';
-         if gama = 50  then
-         label108.Caption := 'Me creo un universo seguro, rebosante de amor y prosperidad, y así cuido con afecto de mi corazón y de mi alma. ';
-         if gama = 51  then
-         label108.Caption := 'Mi relación con Dios, la Inteligencia Universal, el Poder Superior o como quiera llamarle, es muy importante. ';
-         if gama = 52  then
-         label108.Caption := 'Me procuro momentos de silencio y quietud para conectar y comunicarme con la Sabiduría Divina. ';
-         if gama = 53  then
-         label108.Caption := 'Me trato con amor y ternura, como desearía que me tratara una persona muy querida. ';
-         if gama = 54  then
-         label108.Caption := 'Mi tiempo a solas es tan satisfactorio como el que paso con otras personas, porque hago de mis pensamientos mis mejores amigos. ';
-         if gama = 55  then
-         label108.Caption := 'Fortalezco mi autoestima y mi carácter para ser capaz de negarme a hacer lo que no quiero hacer y evitar que se me manipule. ';
-         if gama = 56  then
-         label108.Caption := 'Comienzo a detener cualquier comportamiento abusivo desde el principio, aunque parezca algo sin importancia. ';
-         if gama = 57  then
-         label108.Caption := 'Analizo los aspectos de mi vida en los que no me respeto ni me valoro, y hago afirmaciones de poder. ';
-         if gama = 58  then
-         label108.Caption := 'Desarrollo mi sentido del humor. La risa es una forma maravillosa de adquirir una perspectiva diferente, y es un gran tónico para el corazón. ';
-         if gama = 59  then
-         label108.Caption := 'Siempre recuerdo reírme de un modo sano con los demás, en lugar de reírme de un modo insano de ellos. ';
-         if gama = 60  then
-         label108.Caption := 'Si hay alguna parte de mi cuerpo con la que no me siento a gusto, dedico cada día un rato a enviarle amor. ';
-         if gama = 61  then
-         label108.Caption := 'Le digo a mi cuerpo que lo quiero. Incluso le pido perdón por haberlo odiado en el pasado. ';
-         if gama = 62  then
-         label108.Caption := 'Si tengo cosas en casa que ya no me sirven, las tiro o regalo a quien realmente las necesite. ';
-         if gama = 63  then
-         label108.Caption := 'Limpio mi vida de los recuerdos del pasado y hago el maravilloso presente de un nuevo principio, centrando mi conciencia en la abundancia. ';
-         if gama = 64  then
-         label108.Caption := 'Pienso en todas las veces que me he sentido alegre y feliz, y me permito sentir de nuevo esa dicha. ';
-         if gama = 65  then
-         label108.Caption := 'Lo que doy, lo recibo de vuelta. Contribuyo a crear los acontecimientos que tienen lugar en mi vida, y soy responsable de ellos. ';
-         if gama = 66  then
-         label108.Caption := 'Puedo atraer magnificas experiencias y personas maravillosas, si me creo paz y armonía en mi mente mediante pensamientos positivos. ';
-         if gama = 67  then
-         label108.Caption := 'Es agradable ver como van creciendo mis ahorros. Luego puedo invertir y hacer que el dinero trabaje para mí en lugar de trabajar por él. ';
-         if gama = 68  then
-         label108.Caption := 'Hay una gran abundancia en el universo y está disponible para todos aquellos que ampliamos nuestra conciencia. ';
-         if gama = 69  then
-         label108.Caption := 'Todos los acontecimientos que tienen lugar en mi vida y todas las personas con las que me relaciono me enseñan valiosas lecciones. ';
-         if gama = 70  then
-         label108.Caption := 'Mi vida viene en oleadas, con experiencias de aprendizaje y periodos de evolución y renovación. ';
-         if gama = 71  then
-         label108.Caption := 'Parto del espacio de amor de mi corazón y considero a cada persona en este planeta alguien que necesita ser amado y valorado. ';
-         if gama = 72  then
-         label108.Caption := 'Contribuyo a crear un planeta sano donde todos prosperamos y vivimos dichosos y tranquilos. ';
-         if gama = 73  then
-         label108.Caption := 'La tierra es verdaderamente nuestra madre, y la necesitamos para sobrevivir. Si no la cuidamos nosotros, ¿quien lo hará? ¿Dónde viviremos? ';
-         if gama = 73  then
-         label108.Caption := 'Dios, el Poder Universal ama a todas sus creaciones, y por ello me ha dado el libre albedrío, para que tome mis propias decisiones con toda libertad. ';
-         if gama = 74  then
-         label108.Caption := 'Dios es un poder benévolo y amoroso, que lo dirige todo hacia el bien en nuestra vida cuando se lo permitimos. ';
-         if gama = 75  then
-         label108.Caption := 'Dios es el puro amor incondicional, comprensivo y compasivo, y espera con paciencia a que aprendamos a comunicarnos con él. ';
-          if gama = 76  then
-         label108.Caption := 'Todos hacemos lo mejor que podemos hacer con los conocimientos, el entendimiento y el nivel de conciencia que tenemos en cada momento. ';
-          if gama = 77  then
-         label108.Caption := 'Me trato con amabilidad y comprensión, y lo mismo hago con los demás. Encuentro mis recursos interiores. ';
-          if gama = 78  then
-         label108.Caption := 'Dispongo de magnificas oportunidades para realizarme, muchas más de las que nunca antes habían estado a mi alcance. ';
-          if gama = 79  then
-         label108.Caption := 'Es necesario que busque y encuentre mis recursos interiores y mi conexión con la Sabiduría Divina. ';
-          if gama = 80  then
-         label108.Caption := 'Hago actos de amabilidad al azar: recojo lo que los demás hayan tirado al suelo en el campo o en la playa. ';
-          if gama = 81  then
-         label108.Caption := 'Hablo con una persona sin hogar. Hago una meditación sanadora por un delincuente. ';
-          if gama = 82  then
-         label108.Caption := 'Me alegro y gozo de la buena relación que tengo conmigo. Hago que sea la mejor y más amorosa que pueda tener. ';
-          if gama = 83  then
-         label108.Caption := 'Transformo mi trabajo en diversión, me resulta no solo agradable y gratificante, sino también muy provechoso en el aspecto material. ';
-          if gama = 84  then
-         label108.Caption := 'Permanezco en contacto con mi Sabiduría Interior, y tengo una vida maravillosa: sana, gratificante, creativa, dichosa y llena de amor. ';
-          if gama = 85  then
-         label108.Caption := 'Formo una unidad con todo lo que existe, y a la vez soy ser independiente, persona que tiene su propio camino que recorrer, único y especial. ';
-          if gama = 86  then
-         label108.Caption := 'Respeto las ideas y la senda de cada una de las personas que forman parte de mi vida. Comprendo que no tienen porque ser como las mías. ';
-          if gama = 87  then
-         label108.Caption := 'En lugar de tratar de convencer, trato de comprender, y sigo con constancia mi propio camino, sin dejarme influir por el ejemplo negativo de otros. ';
-          if gama = 88  then
-         label108.Caption := 'Tengo el poder de cambiar mi vida de tal manera que llegue un momento en que ni siquiera reconozca a mi antiguo yo. ';
-          if gama = 89  then
-         label108.Caption := 'Paso de la enfermedad a la salud, de la soledad al amor, de la pobreza a la abundancia y la plenitud. ';
-          if gama = 90  then
-         label108.Caption := 'Cuando siento inquietud, aflicción y congoja, me tomo el tiempo necesario para entrar en mi interior y conectar con mi Sabiduría Interna. ';
-          if gama = 91  then
-         label108.Caption := 'Avanzo hacia el futuro conociendo y utilizando los tesoros que tengo dentro, solo lo bueno me aguarda. ';
-          if gama = 92  then
-         label108.Caption := 'Cuando llegue la hora de mi partida de este mundo, será otra maravillosa experiencia, apacible y serena. ';
-          if gama = 93  then
-         label108.Caption := 'Vivir es una magnifica aventura: la disfruto, la aprovecho, le saco todo el partido que puedo. ';
-          if gama = 94  then
-         label108.Caption := 'Cierro la puerta de las viejas heridas y perdono a todo el mundo; me perdono también a mí. ';
-          if gama = 95  then
-         label108.Caption := 'Le doy a la vida y a mis seres queridos lo mejor de mí, porque lo que doy vuelve a mí multiplicado. La mejor manera de recibir amor es darlo. ';
-          if gama = 96  then
-         label108.Caption := 'Mi familia se enorgullece de mí. De buena gana acepto sus elogios y me esfuerzo por demostrarles mi gratitud y mi reconocimiento. ';
-          if gama = 97  then
-         label108.Caption := 'Dondequiera que vaya, con quienquiera que me encuentre, siempre está el amor esperándome. ';
-          if gama = 98  then
-         label108.Caption := 'Cuando estoy de vacaciones dejo atrás todas mis preocupaciones y sencillamente disfruto del momento presente. ';
-          if gama = 99  then
-         label108.Caption := 'Todo se resuelve para mi mayor bien. De esta situación sólo puede resultar algo bueno. Estoy a salvo. ';
-          if gama = 100  then
-         label108.Caption := 'Los profesionales de la salud que me atienden respetan mis decisiones respecto a las terapias. ';
-gama := Random(100);
-         if gama < 10 then
-         label109.caption := 'Estoy seguro y a salvo cuando expreso mis sentimientos.';
-         if gama = 11 then
-         label109.caption := 'Me encanta ser quien soy y hago valer mi poder con prudencia.';
-         if gama = 12  then
-         label109.caption := 'Ahora me permito Ser Feliz.';
-         if gama = 13  then
-         label109.caption := 'Me permito el tiempo y el espacio para estar en Paz conmigo mismo/a.';
-         if gama = 14  then
-         label109.caption := 'Ahora trasciendo mis viejos miedos y limitaciones.';
-         if gama = 15  then
-         label109.caption := 'Estoy dispuesto a fluír con la vida.';
-         if gama = 16  then
-         label109.caption := 'Estoy lleno de energía y entusiasmo.';
-         if gama = 17  then
-         label109.caption := 'Mi hogar es el Universo.';
-         if gama = 18  then
-         label109.caption := 'Estoy siempre a salvo y protegido.';
-         if gama = 19  then
-         label109.caption := 'Está bien expresar todas mis emociones.';
-         if gama = 20  then
-         label109.caption := 'Me acepto y me apruebo tal cual soy.';
-         if gama = 21  then
-         label109.caption := 'Me libero de la necesidad de criticar a los demás.';
-         if gama = 22  then
-         label109.caption := 'Estoy abierto a mi sabiduría interior.';
-         if gama = 23  then
-         label109.caption := 'Acepto que la Naturaleza es sabia.';
-         if gama = 24  then
-         label109.caption := 'Me doy permiso para cambiar.';
-         if gama = 25  then
-         label109.caption := 'Nadie tiene razón ni se equivoca. Todo es relativo.';
-         if gama = 26  then
-         label109.caption := 'Asumo la responsabilidad de mi propia vida. Soy Libre.';
-         if gama = 27  then
-         label109.caption := 'Ahora todo lo que necesito viene a mí.';
-         if gama = 28  then
-         label109.caption := 'Mis ingresos aumentan constantemente.';
-         if gama = 29  then
-         label109.caption := 'Me doy permiso para ser próspero y feliz.';
-         if gama = 30  then
-         label109.caption := 'Estoy abierto y receptivo a todos los puntos de vista.';
-         if gama = 31  then
-         label109.caption := 'Todo está bien en mi mundo.';
-         if gama = 32  then
-         label109.caption := 'Siento que soy una persona creativa y poderosa.';
-         if gama = 33  then
-         label109.caption := 'Tenga la edad que tenga, hago que mi vida sea un tiempo maravilloso.';
-         if gama = 34  then
-         label109.caption := 'Inspiro la plenitud y la riqueza de la vida.';
-         if gama = 35  then
-         label109.caption := 'Convierto en realidad todo mi gran potencial.';
-         if gama = 36  then
-         label109.caption := 'Conecto con mi sabiduría interna y la zozobra se convierte en paz.';
-         if gama = 37  then
-         label109.caption := 'Cambio todas mis reglas anticuadas y me creo una fantástica vida propia.';
-         if gama = 38  then
-         label109.caption := 'Vivo el amor, la luz y la alegría sin limites.';
-         if gama = 39  then
-         label109.caption := 'Irradio energía sanadora hacia todo el mundo.';
-         if gama = 40  then
-         label109.caption := 'Me abro para experimentar todo lo bueno que me ofrezca la vida.';
-         if gama = 41  then
-         label109.caption := 'Gozo de la vida y aprendo cada día las lecciones que me enseña.';
-         if gama = 42  then
-         label109.caption := 'Recuerdo que el poder está siempre en el momento presente.';
-         if gama = 43  then
-         label109.caption := 'Mi vida es una magnifica aventura.';
-         if gama = 44  then
-         label109.caption := 'La vida siempre es buena. Todo está bien en mi mundo.';
-         if gama = 45  then
-         label109.caption := 'El amor me rodea, ahora y para siempre.';
-         if gama = 46  then
-         label109.caption := 'Disuelvo y dejo marchar los viejos agravios y penas.';
-         if gama = 47  then
-         label109.caption := 'Tengo en mi interior una guía y una Sabiduría Divinas. Nunca estoy solo.';
-         if gama = 48  then
-         label109.caption := 'La Divinidad siempre está a mi lado, amándome y protegiéndome.';
-         if gama = 49  then
-         label109.caption := 'Cada persona es una joya excepcional, con dotes y capacidades únicas.';
-         if gama = 50  then
-         label109.caption := 'Disfruto de mi yo único y especial.';
-         if gama = 51  then
-         label109.caption := 'Abro mi corazón y dejo fluir libremente el amor y la alegría.';
-         if gama = 52  then
-         label109.caption := 'Me resulta fácil dar amor a los demás.';
-         if gama = 53  then
-         label109.caption := 'Durante todo el día algo me lleva a tomar las decisiones correctas.';
-         if gama = 54  then
-         label109.caption := 'Sólo deseo aquello que es para mi mayor bien.';
-         if gama = 55  then
-         label109.caption := 'Me trato como a un ser muy amado.';
-         if gama = 56  then
-         label109.caption := 'Sólo puedo recibir aquello para lo cual mi conciencia está receptiva.';
-         if gama = 57  then
-         label109.caption := 'Siempre puedo expandir mi conciencia.';
-         if gama = 58  then
-         label109.caption := 'Hoy me lo paso muy bien.';
-         if gama = 59  then
-         label109.caption := 'Qué fabuloso es sentirse bien.';
-         if gama = 60  then
-         label109.caption := 'Soy el resultado de lo que pienso y siento.';
-         if gama = 61  then
-         label109.caption := 'Visualizo un mundo de paz y abundancia.';
-         if gama = 62  then
-         label109.caption := 'Siento la armonía y la unión entre la gente y contribuyo a lograrlas.';
-         if gama = 63  then
-         label109.caption := 'Soy una persona organizada, eficiente y abierta a las ideas nuevas y creativas.';
-         if gama = 64  then
-         label109.caption := 'Hoy siento que algo me lleva hacia mi mayor bien y lo acepto con gratitud.';
-         if gama = 65  then
-         label109.caption := 'Tiendo la mano a la gente necesitada.';
-         if gama = 66  then
-         label109.caption := 'Consuelo a un niño que está triste.';
-         if gama = 67  then
-         label109.caption := 'Actúo del modo más apropiado en todo momento.';
-         if gama = 68  then
-         label109.caption := 'Ayudo siempre que puedo.';
-         if gama = 69  then
-         label109.caption := 'Siempre sé hacia dónde voy y cómo llegar.';
-         if gama = 70  then
-         label109.caption := 'Mis procesos corporales son normales y naturales.';
-         if gama = 71  then
-         label109.caption := 'Acepto mi cuerpo; sé que es hermoso, magnífico y maravilloso.';
-         if gama = 72  then
-         label109.caption := 'Mis cosas siempre se solucionan de la mejor manera.';
-         if gama = 73  then
-         label109.caption := 'Con Amor cuido mi cuerpo, mi mente y mis emociones.';;
-         if gama = 73  then
-         label109.caption := 'Todas mis células reaccionan de forma positiva a mis imágenes mentales positivas.';
-         if gama = 74  then
-         label109.caption := 'Genero fuerza e inmunidad ante las situaciones negativas.';
-         if gama = 75  then
-         label109.caption := 'Me resulta fácil aceptar la salud perfecta.';
-          if gama = 76  then
-         label109.caption := 'Combino las afirmaciones positivas con un programa de ejercicios que me va bien.';
-          if gama = 77  then
-         label109.caption := 'Mi cuerpo responde con rapidez a todas las situaciones.';
-          if gama = 78  then
-         label109.caption := 'Me encanta comer buenos alimentos y dormir bien por la noche.';
-          if gama = 79  then
-         label109.caption := 'Quiero a mis amigos y encuentro tiempo para estar con ellos siempre que puedo.';
-          if gama = 80  then
-         label109.caption := 'Inundo de amor mi casa, que es un verdadero cielo en la Tierra.';
-          if gama = 81  then
-         label109.caption := 'Siempre veo la bondad de la vida.';
-          if gama = 82  then
-         label109.caption := 'Acepto a los demás tal como son y sin pretender cambiarlos a mi gusto.';
-          if gama = 83  then
-         label109.caption := 'Me desprendo jubilosamente del pasado, estoy en Paz.';
-          if gama = 84  then
-         label109.caption := 'Soy fuerte, tengo amor. Hago de mi vida una experiencia bella y digna de ser vivida.';
-          if gama = 85  then
-         label109.caption := 'Elijo vivir, en el dichoso momento Presente, mi vida es toda alegría.';
-          if gama = 86  then
-         label109.caption := 'Confió amorosamente en las personas que me aman.';
-          if gama = 87  then
-         label109.caption := 'El Supremo guía todas mis acciones. El universo me ofrece todo aquello que necesito.';
-          if gama = 88  then
-         label109.caption := 'Dios me ama. Yo me amo y perdono. Puedo dar y recibir amor sin límites.';
-          if gama = 89  then
-         label109.caption := 'Puedo pedir todo lo que necesito, con amor y ternura.';
-          if gama = 90  then
-         label109.caption := 'Me abro a la vida y estoy dispuesto a Experimentarla, a sentir con toda confianza.';
-          if gama = 91  then
-         label109.caption := 'Estoy a salvo, mis sentimientos son normales y Aceptables, puedo sentir sin temor.';
-          if gama = 92  then
-         label109.caption := 'Agradezco la generosidad de la vida conmigo, soy Bienaventurado.';
-          if gama = 93  then
-         label109.caption := 'Con Amor cuido mi cuerpo, mi mente y mis emociones.';
-          if gama = 94  then
-         label109.caption := 'Sé lo maravilloso/a que soy, decido Amarme y disfrutar de mí mismo/a.';
-          if gama = 95  then
-         label109.caption := 'Avanzo libre del pasado, estoy a salvo, soy libre.';
-          if gama = 96  then
-         label109.caption := 'La vida me ama, me nutre y me apoya, estoy a salvo viviendo.';
-          if gama = 97  then
-         label109.caption := 'Declaro la paz, y la armonía en mi interior y en mi entorno, todo esta bien.';
-          if gama = 98  then
-         label109.caption := 'El amor relaja y deja marchar, todo lo bueno se le parece.';
-          if gama = 99  then
-         label109.caption := 'Libero el pasado y dejo que el tiempo cure todos los aspectos de mi vida.';
-          if gama = 100  then
-         label109.caption := 'Me estimula la vida, estoy lleno de energía y entusiasmo.';
-         GProgreso.progress :=0;
-gama := Random(100);
-         if gama < 10 then
-         label242.caption :='Hago todo lo que puedo en toda circunstancia. Apruebo mis decisiones, porque estoy buscando lo mejor para mí mismo.';
-         if gama = 11 then
-         label242.caption :='Confío en mí y en mi intuición. Siento mi poder. Abandono mis viejas creencias y la Vida me apoya en cada paso del camino.';
-         if gama = 12  then
-         label242.caption :='Perdono a todas las personas y me perdono a mí mismo. Me libero del pasado; soy libre para un futuro luminoso.';
-         if gama = 13  then
-         label242.caption :='Mientras reconozco mi valía innata, mi vida se expande y prospera de muchas y deliciosas maneras.';
-         if gama = 14  then
-         label242.caption :='Aclaro mis pensamientos y actúo de acuerdo a ellos. El Supremo me muestra siempre el mejor camino para mí.';
-         if gama = 15  then
-         label242.caption :='Soy una luz en el mundo; de algún modo, al estar aquí ayudo a otra persona a respirar mejor.';
-         if gama = 16  then
-         label242.caption := 'Estoy a salvo siendo yo, soy una persona maravillosa tal como soy, elijo vivir, opto por la alegría, me acepto.';
-         if gama = 17  then
-         label242.caption := 'Cada día aprendo algo más sobre las leyes de la Vida y sobre "cómo" pensar para tener una vida sana, dichosa, amorosa y abundante.';
-         if gama = 18  then
-         label242.caption := 'Soy una expresión Divina, de la vida, me amo y me Acepto tal como soy ahora.';
-         if gama = 19  then
-         label242.caption := 'Estoy aprendiendo a hacer afirmaciones positivas. Elijo pensamientos que me alienten y me hagan sentir bien.';
-         if gama = 20  then
-         label242.caption := 'Expreso la alegría de vivir y disfruto Plenamente de cada momento del día, rejuvenezco.';
-         if gama = 21  then
-         label242.caption := 'Agradezco todas las personas, lugares, cosas y experiencias que llenan mi mundo. La vida es hermosa para todos, y yo contribuyo a ello.';
-         if gama = 22  then
-         label242.caption := 'Con Amor acepto mis decisiones, sabiendo que soy Libre para cambiarlas, estoy a salvo.';
-         if gama = 23  then
-         label242.caption := 'Me acuerdo de decirles a las personas de mi entorno lo mucho que los quiero y lo maravillosos que son.';
-         if gama = 24  then
-         label242.caption := 'Con confianza acojo y experimento nuevas ideas actitudes, Me abro para recibir todo lo bueno.';
-         if gama = 25  then
-         label242.caption := 'Estoy en conexión con la Totalidad del Universo, y la Divinidad me guía y me protege.';
-         if gama = 26  then
-         label242.caption :='|Estoy en paz y me siento cómodo en todos los aspectos de mi vida, soy fuerte y capaz.';
-         if gama = 27  then
-         label242.caption := 'Hoy nace un día glorioso en mi conciencia. Disfruto de este nuevo día y de todo lo que ofrece.';
-         if gama = 28  then
-         label242.caption := 'Con Amor perdono y libero todo el pasado, elijo llenar mi mundo de alegría, me amo y me apruebo.';
-         if gama = 29  then
-         label242.caption := 'Las fiestas son divertidas y sanas. Las celebro con amigos y compañeros de trabajo de modos que me hacen sentir bien.';
-         if gama = 30  then
-         label242.caption := 'Me doy permiso para ser todo lo que puedo ser, merezco lo mejor de la vida. Me amo, amo y aprecio a los demás.';
-         if gama = 31  then
-         label242.caption := 'Me doy el tiempo que necesito para trabajar en la aflicción o el duelo. La muerte es una parte natural de la vida.';
-         if gama = 32  then
-         label242.caption :='|Todos necesitamos sanar primero nuestro espíritu para curar nuestro cuerpo y mantenerlo sano. ¡El amor y el perdón nos sanan a todos!';
-         if gama = 33  then
-         label242.caption := 'Cuido amorosamente el jardín de mi mente. Arranco las hierbas negativas y dejo espacio para que crezcan afirmaciones positivas.';
-         if gama = 34  then
-         label242.caption :='Recuerdo que al Universo le gustan las personas agradecidas. Y recuerdo también que aquello en lo que centro la atención crece y aumenta.';
-         if gama = 35  then
-         label242.caption := 'Mi actual trabajo es el canal temporal por donde me llega el bien desde el Manantial Infinito. No corro ningún riesgo si cambio de canal.';
-         if gama = 36  then
-         label242.caption :='Desarrollo mi propia filosofía de vida y mis propias leyes: afirmaciones según las cuales puedo vivir con plenitud, creencias que me apoyan y me nutren.';
-         if gama = 37  then
-         label242.caption := 'Mi casa es un lugar feliz para vivir. Bendigo a todos los que entran en ella, también a mí.';
-         if gama = 38  then
-         label242.caption :='Hay una gran abundancia en el Universo y está disponible para todos aquellos que ampliamos nuestra conciencia.';
-         if gama = 39  then
-         label242.caption := 'Me siento absolutamente en paz. Abro mi corazón y de él emana el regalo del amor para todos.';
-         if gama = 40  then
-         label242.caption :='Todos los acontecimientos que tienen lugar en mi vida y todas las personas con las que me relaciono me enseñan valiosas lecciones.';
-         if gama = 41  then
-         label242.caption := 'Disfruto siendo un miembro de mi comunidad. Mi autoestima aumenta sin cesar y me permite hacer algo valioso en bien de todos.';
-         if gama = 42  then
-         label242.caption :='Mi vida viene en oleadas, con experiencias de aprendizaje y periodos de evolución y renovación.';
-         if gama = 43  then
-         label242.caption := 'Creo un mundo seguro donde reina el amor y donde todos podemos ser felices y estar sanos y completos.';
-         if gama = 44  then
-         label242.caption :='Dios es un poder benévolo y amoroso, que lo dirige todo hacia el bien en nuestra vida cuando se lo permitimos.';
-         if gama = 45  then
-         label242.caption := 'Sea cual sea mi pasado, sea cual sea el ambiente del que procedo, empiezo a hacer cambios en este preciso momento.';
-         if gama = 46  then
-         label242.caption :='Conecto con mi yo interior que es superior, es mi guía, siento su amor y le permito crecer y expandirse.';
-         if gama = 47  then
-         label242.caption := 'Mi cuerpo es un templo precioso. Si quiero tener una vida larga y satisfactoria, es necesario que lo cuide.';
-         if gama = 48  then
-         label242.caption :='El Universo gusta de gestos simbólicos. Ordeno mi hogar y lo mantengo ordenado, esto me aclara las ideas y veo mejor lo que quiero hacer y cómo realizarlo.';
-         if gama = 49  then
-         label242.caption := 'Si me relajo y realmente creo que la vida me cuida y que estoy a salvo, comienzo a fluir con ella.';
-         if gama = 50  then
-         label242.caption :='Renuevo mis pensamientos. Hago que sean mis mejores amigos y configuren mi mundo de manera positiva.';
-         if gama = 51  then
-         label242.caption := 'Mi relación con Dios, la Inteligencia Universal, el Poder Superior o como quiera llamarle, es muy importante.';
-         if gama = 52  then
-         label242.caption :='Mis pensamientos son sabios e inspirados, y me ayudan a viajar por la vida con armonía, dicha y paz.';
-         if gama = 53  then
-         label242.caption := 'Me trato con amor y ternura, como desearía que me tratara una persona muy querida.';
-         if gama = 54  then
-         label242.caption :='Mis pensamientos me consuelen y me reconforten. Son pensamientos agradables, amistosos, risueños y llenos de amor.';
-         if gama = 55  then
-         label242.caption := 'Fortalezco mi autoestima y mi carácter para ser capaz de negarme a hacer lo que no quiero hacer y evitar que se me manipule.';
-         if gama = 56  then
-         label242.caption :='Tengo el derecho de expresarme de formas creativas que me satisfagan profundamente.';
-         if gama = 57  then
-         label242.caption := 'Analizo los aspectos de mi vida en los que no me respeto ni me valoro, y hago afirmaciones de poder.';
-         if gama = 58  then
-         label242.caption :='Formo un equipo sanador con mi terapeuta; me relajo y confío plenamente en que estoy en buenas manos.';
-         if gama = 59  then
-         label242.caption :='Sigo a mi Estrella Interior y brillo a mi manera única y discreta. Amo la vida.';
-         if gama = 60  then
-         label242.caption :='Con mis pensamientos y palabras hago sitio en mi cuerpo, mi mente y mi espíritu para que el amor y la alegría fluyan abierta y libremente.';
-         if gama = 61  then
-         label242.caption := 'Le digo a mi cuerpo que lo quiero. Incluso le pido perdón por haberlo odiado en el pasado.';
-         if gama = 62  then
-         label242.caption :='Sé que está bien decir no cuando no me apetece o no me viene bien salir, prestar algo, hablar por teléfono o hacer cualquier otra cosa.';
-         if gama = 63  then
-         label242.caption := 'Limpio mi vida de los recuerdos del pasado y hago el maravilloso presente de un nuevo principio, centrando mi conciencia en la abundancia.';
-         if gama = 64  then
-         label242.caption :='Floto en el océano de la vida, y mis pensamientos están anclados en la Verdad y el Amor.';
-         if gama = 65  then
-         label242.caption := 'Lo que doy, lo recibo de vuelta. Contribuyo a crear los acontecimientos que tienen lugar en mi vida, y soy responsable de ellos.';
-         if gama = 66  then
-         label242.caption :='Si no tengo tiempo para ver a mis amigos los les envío una tarjeta, les llamo por teléfono o les bendigo mentalmente.';
-         if gama = 67  then
-         label242.caption := 'Es agradable ver como van creciendo mis ahorros. Luego puedo invertir y hacer que el dinero trabaje para mí en lugar de trabajar por él.';
-         if gama = 68  then
-         label242.caption :='Vivir en el momento presente me permite entrar con alegría y seguridad en todas las nuevas experiencias que voy encontrando en mi camino.';
-         if gama = 69  then
-         label242.caption := 'Todos los acontecimientos que tienen lugar en mi vida y todas las personas con las que me relaciono me enseñan valiosas lecciones.';
-         if gama = 70  then
-         label242.caption :='Me acepto amorosamente. Defiendo lo que siento y lo que pienso, y quienes me aman me aceptan tal cual soy.';
-         if gama = 71  then
-         label242.caption := 'Parto del espacio de amor de mi corazón y considero a cada persona en este planeta alguien que necesita ser amado y valorado.';
-         if gama = 72  then
-         label242.caption :='Con alegría, recibo el regalo maravilloso del Hoy. Estoy en paz y armonía conmigo y con los demás.';
-         if gama = 73  then
-         label242.caption := 'La tierra es verdaderamente nuestra madre, y la necesitamos para sobrevivir. Si no la cuidamos nosotros, ¿quien lo hará? ¿Dónde viviremos?';
-         if gama = 73  then
-         label242.caption :='Siento el amor de Dios, que se manifiesta en el cariño que me brindan mis seres queridos. Recibo y doy amor.';
-         if gama = 74  then
-         label242.caption := 'Dios es un poder benévolo y amoroso, que lo dirige todo hacia el bien en nuestra vida cuando se lo permitimos.';
-         if gama = 75  then
-         label242.caption := 'Dios es el puro amor incondicional, comprensivo y compasivo, y espera con paciencia a que aprendamos a comunicarnos con él.';
-          if gama = 76  then
-         label242.caption :='Me encanta hacer los regalos que hago porque son expresiones que nacen desde el fondo de mi corazón.';
-          if gama = 77  then
-         label242.caption := 'Me trato con amabilidad y comprensión, y lo mismo hago con los demás. Encuentro mis recursos interiores.';
-          if gama = 78  then
-         label242.caption :='Doy de mí y de lo que soy lo mejor siempre, porque sé que todos somos uno en espíritu.';
-          if gama = 79  then
-         label242.caption := 'Es necesario que busque y encuentre mis recursos interiores y mi conexión con la Sabiduría Divina.';
-          if gama = 80  then
-         label242.caption := 'Hago actos de amabilidad al azar: recojo lo que los demás hayan tirado al suelo en el campo o en la playa.';
-          if gama = 81  then
-         label242.caption :='Inicio cada día con gratitud, y por la noche duermo con mis ángeles. Sé que están siempre conmigo y que puedo acudir a ellos en cualquier momento.';
-          if gama = 82  then
-         label242.caption := 'Me alegro y gozo de la buena relación que tengo conmigo. Hago que sea la mejor y más amorosa que pueda tener.';
-          if gama = 83  then
-         label242.caption :='Medito sobre mis temores y visualizo dejándolos caer uno a uno en un riachuelo para que se disuelvan y desaparezcan arrastrados por la corriente.';
-          if gama = 84  then
-         label242.caption := 'Permanezco en contacto con mi Sabiduría Interior, y tengo una vida maravillosa: sana, gratificante, creativa, dichosa y llena de amor.';
-          if gama = 85  then
-         label242.caption := 'Formo una unidad con todo lo que existe, y a la vez soy ser independiente, persona que tiene su propio camino que recorrer, único y especial.';
-          if gama = 86  then
-         label242.caption := 'Respeto las ideas y la senda de cada una de las personas que forman parte de mi vida. Comprendo que no tienen porque ser como las mías.';
-          if gama = 87  then
-         label242.caption := 'En lugar de tratar de convencer, trato de comprender, y sigo con constancia mi propio camino, sin dejarme influir por el ejemplo negativo de otros.';
-          if gama = 88  then
-         label242.caption := 'Tengo el poder de cambiar mi vida de tal manera que llegue un momento en que ni siquiera reconozca a mi antiguo yo.';
-          if gama = 89  then
-         label242.caption :='Hago de mis afirmaciones positivas un hábito diario. Elijo pensamientos que me alienten y me hagan sentir bien.';
-          if gama = 90  then
-         label242.caption := 'Cuando siento inquietud, aflicción y congoja, me tomo el tiempo necesario para entrar en mi interior y conectar con mi Sabiduría Interna.';
-          if gama = 91  then
-         label242.caption :='Lo mejor que puedo hacer por los niños que me rodean es aprender a amarme a mí mismo/a, porque los niños aprenden con el ejemplo.';
-          if gama = 92  then
-         label242.caption := 'Cuando llegue la hora de mi partida de este mundo, será otra maravillosa experiencia, apacible y serena.';
-          if gama = 93  then
-         label242.caption := 'Vivir es una magnifica aventura: la disfruto, la aprovecho, le saco todo el partido que puedo.';
-          if gama = 94  then
-         label242.caption :='Toda situación difícil que se me presenta es una experiencia de aprendizaje; sumerjo cada situación en el profundo pozo del amor.';
-          if gama = 95  then
-         label242.caption := 'Le doy a la vida y a mis seres queridos lo mejor de mí, porque lo que doy vuelve a mí multiplicado. La mejor manera de recibir amor es darlo.';
-          if gama = 96  then
-         label242.caption :='Ejercito mis músculos mentales. Me lo paso muy bien usando mi mente. Soy una persona muy creativa.';
-          if gama = 97  then
-         label242.caption := 'Dondequiera que vaya, con quien quiera que me encuentre, siempre está el amor esperándome.';
-          if gama = 98  then
-         label242.caption :='Cierro los ojos un momento y conecto con esa parte de mí que sabe lo que necesito.';
-          if gama = 99  then
-         label242.caption :='Este ejército de diapasones de "buenas vibraciones" está ahora mismo haciendo resonar la atmósfera del planeta con una melodía de esperanza.';
-          if gama = 100  then
-         label242.caption := 'Los profesionales de la salud que me atienden respetan mis decisiones respecto a mis terapias.';
-         End;
-
-
-
 procedure TEmotion.Rx();
 Begin
+TestForm1.BAfirmaciones.Click;
 SCIOworking.Radiobutton12.checked:=true;
 SCIOworking.RadioGroup2.enabled:=true;
 randomize;
@@ -26025,97 +21352,51 @@ SCIOworking.SC_Command:='';
 SCIOworking.panel1.enabled:=true;
 SCIOworking.Panel1.Visible:=True;
 scioworking.label27.caption:='000';
-scioworking.label26.caption:=label365.caption+' | '+label366.caption;
 SCIOworking.ShowModal;
 end;
 
 procedure TEmotion.Hipocondria1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Hipocondria';
 Rx();
 end;
 
 procedure TEmotion.Conversin1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de conversión';
 Rx();
 end;
 
 procedure TEmotion.Dismrficocorporal1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno dismórfico corporal';
 Rx();
 end;
 
 procedure TEmotion.Dolor1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de dolor';
 Rx();
 end;
 
 procedure TEmotion.Falsoembarazo1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de falso embarazo';
 Rx();
 end;
 
 procedure TEmotion.Incontinenciaurinariapsicgena1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de incontinencia urinaria psicógena';
 Rx();
 end;
 
 procedure TEmotion.Psicogeniamasiva1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de psicogeni masiva (histeria colectiva)';
 Rx();
 end;
 
 procedure TEmotion.Somatizacin1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo de somatización';
 Rx();
 end;
 
 procedure TEmotion.Somatomorfoindiferenciado1Click(Sender: TObject);
 begin
-Afirmaciones();
-EAF();
-scioworking.button15.caption:='Iniciar';
-scioworking.button16.caption:='Detener';
-scioworking.button2.caption:='Trastorno somatomorfo indiferenciado';
 Rx();
 end;
 
@@ -26840,6 +22121,294 @@ begin
   pFiltra_Conscida(QString);
     PFiltros.Visible := False;
 ActualizaDBGrid3();
+end;
+
+procedure TEmotion.Edit7Change(Sender: TObject);
+begin
+If Edit7.Text<>'' Then CheckBox62.Checked := True
+Else
+CheckBox62.Checked := False;
+end;
+
+procedure TEmotion.Edit45Change(Sender: TObject);
+begin
+If Edit45.Text<>'' Then CheckBox63.Checked := True
+Else
+CheckBox63.Checked := False;
+end;
+
+procedure TEmotion.Edit46Change(Sender: TObject);
+begin
+If Edit46.Text<>'' Then CheckBox64.Checked := True
+Else
+CheckBox64.Checked := False;
+end;
+
+procedure TEmotion.Edit60Change(Sender: TObject);
+begin
+If Edit60.Text<>'' Then CheckBox65.Checked := True
+Else
+CheckBox65.Checked := False;
+end;
+
+procedure TEmotion.Edit62Change(Sender: TObject);
+begin
+If Edit62.Text<>'' Then CheckBox66.Checked := True
+Else
+CheckBox66.Checked := False;
+end;
+
+procedure TEmotion.Edit63Change(Sender: TObject);
+begin
+If Edit63.Text<>'' Then CheckBox67.Checked := True
+Else
+CheckBox67.Checked := False;
+end;
+
+procedure TEmotion.LimpiaCheckBoxes();
+begin
+CheckBox1.Checked := False;
+CheckBox2.Checked := False;
+CheckBox3.Checked := False;
+CheckBox4.Checked := False;
+CheckBox5.Checked := False;
+CheckBox22.Checked := False;
+CheckBox23.Checked := False;
+CheckBox30.Checked := False;
+CheckBox31.Checked := False;
+CheckBox49.Checked := False;
+CheckBox48.Checked := False;
+CheckBox47.Checked := False;
+CheckBox6.Checked := False;
+CheckBox7.Checked := False;
+CheckBox8.Checked := False;
+CheckBox9.Checked := False;
+CheckBox10.Checked := False;
+CheckBox29.Checked := False;
+CheckBox28.Checked := False;
+CheckBox46.Checked := False;
+CheckBox45.Checked := False;
+CheckBox44.Checked := False;
+CheckBox43.Checked := False;
+CheckBox42.Checked := False;
+CheckBox11.Checked := False;
+CheckBox12.Checked := False;
+CheckBox13.Checked := False;
+CheckBox14.Checked := False;
+CheckBox16.Checked := False;
+CheckBox27.Checked := False;
+CheckBox26.Checked := False;
+CheckBox41.Checked := False;
+CheckBox40.Checked := False;
+CheckBox39.Checked := False;
+CheckBox38.Checked := False;
+CheckBox37.Checked := False;
+CheckBox17.Checked := False;
+CheckBox18.Checked := False;
+CheckBox19.Checked := False;
+CheckBox20.Checked := False;
+CheckBox21.Checked := False;
+CheckBox25.Checked := False;
+CheckBox24.Checked := False;
+CheckBox36.Checked := False;
+CheckBox35.Checked := False;
+CheckBox34.Checked := False;
+CheckBox33.Checked := False;
+CheckBox32.Checked := False;
+CheckBox53.Checked := False;
+CheckBox52.Checked := False;
+CheckBox51.Checked := False;
+CheckBox50.Checked := False;
+CheckBox54.Checked := False;
+CheckBox55.Checked := False;
+CheckBox56.Checked := False;
+CheckBox57.Checked := False;
+CheckBox58.Checked := False;
+CheckBox59.Checked := False;
+CheckBox60.Checked := False;
+end;
+
+procedure TEmotion.TAutomaticoTimer(Sender: TObject);
+begin
+LimpiaCheckBoxes();
+oeg := Random(5);
+If oeg = 3 Then CheckBox1.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox2.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox3.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox4.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox5.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox22.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox23.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox30.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox31.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox49.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox48.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox47.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox6.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox7.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox8.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox9.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox10.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox29.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox28.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox46.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox45.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox44.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox43.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox42.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox11.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox12.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox13.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox14.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox16.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox27.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox26.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox41.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox40.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox39.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox38.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox37.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox17.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox18.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox19.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox20.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox21.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox25.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox24.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox36.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox35.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox34.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox33.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox32.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox53.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox52.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox51.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox50.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox54.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox55.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox56.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox57.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox58.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox59.Checked := True;
+oeg := Random(5);
+If oeg = 3 Then CheckBox60.Checked := True;
+end;
+
+procedure TEmotion.Repositorio1Click(Sender: TObject);
+begin
+FRecompensa.ShowModal;
+end;
+
+procedure TEmotion.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label360.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Label365.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure TEmotion.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Label366.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure TEmotion.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Label359.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure TEmotion.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Label363.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure TEmotion.BHomeopatiaClick(Sender: TObject);
+begin
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label364.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+end;
+
+procedure TEmotion.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+Label362.Caption := LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure TEmotion.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Emotion.Label240.Caption := ' Conectado a:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Label361.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
 end;
 
 end.

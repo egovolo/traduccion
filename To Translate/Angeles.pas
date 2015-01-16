@@ -18,26 +18,19 @@ type
     DBText1: TDBText;
     DBText2: TDBText;
     DBText3: TDBText;
-    Edit1: TEdit;
     Button4: TButton;
     Button5: TButton;
     Image1: TImage;
     Label1: TLabel;
-    Memo1: TMemo;
-    Panel1: TPanel;
-    Button8: TButton;
-    MediaPlayer1: TMediaPlayer;
     Label2: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure Edit1Change(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure Edit1Enter(Sender: TObject);
-    procedure Memo1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+
   private
     { Private declarations }
   public
@@ -103,33 +96,18 @@ begin
         button3.Enabled:=false;
 end;
 
-procedure TAngelesForm.Edit1Change(Sender: TObject);
-begin
-        if (edit1.Text<>'') then
-                button4.Enabled:=true
-        else
-                button4.Enabled:=false;
-end;
-
 procedure TAngelesForm.Button4Click(Sender: TObject);
 begin
-        Panel1.Caption:='Realizando interfaz con los Arcángeles y con los Angeles...';
-        Panel1.Visible:=True;
-        Panel1.Refresh;
         ChangingPulses(5000,5555,5,555,2,2,'11111111','11111111');
         ChangingPulses(5000,5555,5,555,2,2,'11111111','11111111');
         DBText1.Enabled:=true;
         DBMemo1.Enabled:=true;
         Button1.Enabled:=true;
         button4.Enabled:=false;
-        Panel1.Visible:=False;
 end;
 
 procedure TAngelesForm.Button5Click(Sender: TObject);
 begin
-        Panel1.Caption:='Estimulando conciencia a mensajes...';
-        Panel1.Visible:=True;
-        Panel1.Refresh;
         Button1.Enabled:=false;
         Button2.Enabled:=false;
         Button3.Enabled:=false;
@@ -144,7 +122,6 @@ begin
         ChangingPulses(50000,555,5555,5,5,1,'00000000','00000000');
         ChangingPulses(50000,555,5555,5,5,1,'00000000','00000000');
         ChangingPulses(50000,555,5555,5,5,1,'00000000','00000000');
-        Panel1.Visible:=False;
 end;
 
 procedure TAngelesForm.FormShow(Sender: TObject);
@@ -159,31 +136,12 @@ begin
         image1.picture.loadfromfile('blur10.jpg');
 end;
 
-procedure TAngelesForm.Edit1Enter(Sender: TObject);
-begin
-        edit1.Text:='';
-        DM.ArcangelTable.Active:=false;
-        dm.AngelTable.Active:=false;
-        dm.MensajeTable.Active:=false;
-        button1.Enabled:=false;
-        button2.Enabled:=false;
-        button3.Enabled:=false;
-        button4.Enabled:=false;
-        button5.Enabled:=false;
-end;
-
-procedure TAngelesForm.Memo1DblClick(Sender: TObject);
-begin
-        Memo1.Visible:=false;
-end;
-
 procedure TAngelesForm.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
         DM.ArcangelTable.Active:=false;
         dm.AngelTable.Active:=false;
         dm.MensajeTable.Active:=false;
-        edit1.Text:='';
 end;
 
 end.

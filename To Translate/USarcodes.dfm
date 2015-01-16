@@ -3,9 +3,7 @@ object FSarcodes: TFSarcodes
   Top = 238
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Sarcodes ::: '
+  Caption = '::: gENiO® iOS ::: Sarcodes ::: '
   ClientHeight = 525
   ClientWidth = 1054
   Color = clBtnFace

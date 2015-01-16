@@ -24,7 +24,6 @@ type
     calcarray: array[0..50] of TcalcStrucr;
     Procedure TestFill0;
 
-    Procedure CopiaBitacora();
     procedure PAsigna_Valores(pguarda:Boolean);
     procedure PAsigna_Valores_Act();
     procedure  PGuarda_Consida();
@@ -157,31 +156,7 @@ begin
 end;
 
 procedure TFTest_Alterna.PGuarda_Visita(pdate : String);
-
 begin
- { DM.VisitasDateQuery.Active:=False;
-  DM.VisitasDateQuery.SQL.Clear;
-  DM.VisitasDateQuery.SQL.Add(' SELECT MAX(ID) AS MAXI from VISITASDATE ');
-  DM.VisitasDateQuery.SQL.Add(' WHERE id_P = '+Inttostr(Pat_form.PatCode));
-  DM.VisitasDateQuery.Active:=True;
-  testForm1.vultimo :=  DM.VisitasDateQuery.Fieldbyname('MAXI').asinteger+1;
-  }
-
-
- { DM.VisitasDateQuery.Active:=False;
-  DM.VisitasDateQuery.SQL.Clear;
-  DM.VisitasDateQuery.SQL.Add('INSERT INTO  VISITASDATE ');
-  DM.VisitasDateQuery.SQL.Add(' values( '+
-                               Inttostr(Pat_form.PatCode)+','''+
-                               Patform1.pname            +''','''+
-                               pdate +''')'
-
-
-                              );
-
-
-   DM.VisitasDateQuery.Active:=true;
-   DM.VisitasDateQuery.Active:=False;}
    DM.qfiltrovisita.active := false;
    if trim(DM.QFiltroVisita.databasename)='' then
     DM.QFiltroVisita.databasename := dM.conscida.databasename;
@@ -374,17 +349,6 @@ begin
   BatchMove1.source      := dm.VisitasDateQuery;
   BatchMove1.Destination := dm.Conscida_hist;
   BatchMove1.Execute;
-
-
-   {dm.VisitasDateQuery.sql.text :=//' select  distinct * from visitasdate a , conscida b '+
-                                   'INSERT INTO CONSCIDA_HIST select a."id", a."name", a."fecha",b."no", b."value",b."name"'+
-                 		  ',b."oldvalue" ,'+ inttostr(testForm1.cutof) +  ','
-                                  +inttostr(testForm1.cutofInv)+
-                               '    from  conscida b,visitasdate a ,'+
-			      '  where a.id='+ Inttostr(Pat_form.PatCode) +
-                               ' and a.fecha ='''+ pdate +''' ';
-  dm.VisitasDateQuery.ExecSQL;
-           }
    testForm1.vbusqueda := true;;
    testForm1.vtestando  := false;
 end;
@@ -2501,27 +2465,6 @@ begin
   end;
 end;
 
-Procedure  TFTest_Alterna.CopiaBitacora();
-var
-CurrentPath,
- SDir :String;
-begin
- SDir := GetDeskTopPath;
- showmessage('Esta acción copiará el archivo ''bitacora.bd'' en el escritorio de su ordenador.  '+
-             'Por favor envíe ese archivo a Francisco Martínez al correo c_bioinstrumental@yahoo.com  '+
-             'Atención: No se copiará ninguna información confidencial.');
-
-  GetDir(0,CurrentPath); { 0 = Current drive }
-      If CurrentPath[Length(CurrentPath)]<>'\' Then CurrentPath:=CurrentPath+'\';
-      If FileExists(CurrentPath+'..\data\bitacora.db') then
-
-   if directoryexists(SDir) then
-       copyfile(pchar(CurrentPath+'..\data\bitacora.db'),pchar(SDir+'\bitacora.db'),true)
-
-
-end;
-
-
 procedure TFTest_Alterna.pConscidaGridDblClick();
 var
    no: integer;
@@ -3048,11 +2991,7 @@ Begin
      DM.ConscidaValue.AsInteger:=Value;   FTest_Alterna.ActualizaVacios();
      DM.Conscida.Edit;FTest_Alterna.ActualizaVacios();DM.Conscida.Post;
    end;
-      
-
-
- 
-      astr:=PatForm1.astr;
+     astr:=PatForm1.astr;
      numer:=PatForm1.numer;
        old:=PatForm1.old;
      testForm1.birthday:=PatForm1.birthday ;

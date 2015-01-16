@@ -11,7 +11,6 @@ type
   TFReflexologia = class(TForm)
     Panel1: TPanel;
     Image1: TImage;
-    PDesarrollo: TPanel;
     Label10: TLabel;
     Panel4: TPanel;
     Button9: TButton;
@@ -95,7 +94,6 @@ type
     rd26: TRadioButton;
     rd27: TRadioButton;
     rd28: TRadioButton;
-    Memo1: TMemo;
     Image2: TImage;
     Label1: TLabel;
     Label25: TLabel;
@@ -201,7 +199,6 @@ type
     procedure FormShow(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
-    procedure Button11Click(Sender: TObject);
     procedure Edit2Enter(Sender: TObject);
     procedure Edit3Enter(Sender: TObject);
     procedure Edit4Enter(Sender: TObject);
@@ -336,7 +333,6 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure TChronoTimer(Sender: TObject);
     procedure Label7Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Shape74MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
@@ -488,7 +484,6 @@ Button5.Enabled := True;
       Image1.Picture.LoadFromFile(pathh+'\Afecciones\'+PicName)
    else  begin
       Image1.Picture.LoadFromFile(pathh+'\Afecciones M\Testigo M.jpg');
-            //  showmessage(pathh+'\Afecciones\'+PicName);
     end;
  query1.close;
  query1.databasename := dm.Conscida.DatabaseName;
@@ -570,10 +565,6 @@ LReaccion.caption:='000';
 LCoherencia.caption:='000';
 Reaccion_Irregular();
                             {2}
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit2.text);
-PDesarrollo.visible:=true;
-PDesarrollo.BringToFront();
-PDesarrollo.refresh;
   if edit2.text<>'' then  begin
   edit2.color:=clLime;
 
@@ -592,7 +583,6 @@ if x>84 then edit2.Text := '';
                        {3}
 
   if edit3.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit3.text);
   edit3.color:=clLime;
 
     for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -609,7 +599,6 @@ if x>84 then edit3.Text := '';
                      {4}
 
   if edit4.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit4.text);
   edit4.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit4.text then begin
@@ -625,7 +614,6 @@ if x>84 then edit4.Text := '';
                        {5}
 
   if edit5.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit5.text);
   edit5.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit5.text then begin
@@ -642,7 +630,6 @@ if x>84 then edit5.Text := '';
                          {6}
 
   if edit6.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit6.text);
   edit6.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit6.text then begin
@@ -659,7 +646,6 @@ if x>84 then edit6.Text := '';
                        {7}
 
   if edit7.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit7.text);
   edit7.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit7.text then begin
@@ -675,7 +661,6 @@ if x>84 then edit7.Text := '';
                        {8}
 
   if edit8.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit8.text);
   edit8.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit8.text then begin
@@ -691,7 +676,6 @@ if x>84 then edit8.Text := '';
                        {9}
 
   if edit9.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit9.text);
   edit9.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit9.text then begin
@@ -707,7 +691,6 @@ if x>84 then edit9.Text := '';
                    {10}
 
   if edit10.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit10.text);
   edit10.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit10.text then begin
@@ -724,7 +707,6 @@ if x>84 then edit10.Text := '';
                        {11}
 
   if edit11.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit11.text);
   edit11.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit11.text then begin
@@ -741,7 +723,6 @@ if x>84 then edit11.Text := '';
                        {14}
 
   if edit14.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit14.text);
   edit14.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit14.text then begin
@@ -757,7 +738,6 @@ end;
                         {15}
 
   if edit15.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit15.text);
   edit15.color:=clLime;
   for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit15.text then begin
@@ -775,7 +755,6 @@ if x>84 then edit15.Text := '';
 
 
   if edit16.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit16.text);
   edit16.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit16.text then begin
@@ -791,7 +770,6 @@ if x>84 then edit16.Text := '';
                    {17}
 
   if edit17.text<>''then  begin
-   PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit17.text);
   edit17.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit17.text then begin
@@ -807,7 +785,6 @@ end;
                        {18}
 
   if edit18.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit18.text);
   edit18.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit18.text then begin
@@ -824,7 +801,6 @@ end;
                   {19}
 
   if edit19.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit19.text);
   edit19.color:=clLime;
        for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit19.text then begin
@@ -841,7 +817,6 @@ if x>84 then edit19.Text := '';
                   {20}
 
   if edit20.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit20.text);
   edit20.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit20.text then begin
@@ -858,7 +833,6 @@ if x>84 then edit20.Text := '';
                    {22}
 
   if edit22.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit22.text);
   edit22.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit22.text then begin
@@ -874,7 +848,6 @@ if x>84 then edit22.Text := '';
                          {26}
 
   if edit26.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit26.text);
   edit26.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit26.text then begin
@@ -891,7 +864,6 @@ if x>84 then edit26.Text := '';
                          {27}
 
   if edit27.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit27.text);
   edit27.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit27.text then begin
@@ -908,7 +880,6 @@ if x>84 then edit27.Text := '';
                          {28}
 
  if edit28.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit28.text);
   edit28.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit28.text then begin
@@ -924,7 +895,6 @@ if x>84 then edit28.Text := '';
                          {29}
 
   if edit29.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit29.text);
   edit29.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit29.text then begin
@@ -940,7 +910,6 @@ if x>84 then edit29.Text := '';
                          {30}
 
   if edit30.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit30.text);
   edit30.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit30.text then begin
@@ -956,7 +925,6 @@ if x>84 then edit30.Text := '';
                          {31}
 
   if edit31.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit31.text);
   edit31.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit31.text then begin
@@ -972,7 +940,6 @@ if x>84 then edit31.Text := '';
                          {32}
 
   if edit32.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit32.text);
   edit32.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit32.text then begin
@@ -988,7 +955,6 @@ if x>84 then edit32.Text := '';
                          {33}
 
   if edit33.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit33.text);
   edit33.color:=clLime;
     for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit33.text then begin
@@ -1004,7 +970,6 @@ if x>84 then edit33.Text := '';
                          {34}
 
  if edit34.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit34.text);
   edit34.color:=clLime;
         for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit34.text then begin
@@ -1020,7 +985,6 @@ if x>84 then edit34.Text := '';
                          {35}
 
  if edit35.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit35.text);
   edit35.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit35.text then begin
@@ -1036,7 +1000,6 @@ if x>84 then edit35.Text := '';
                          {36}
 
  if edit36.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit36.text);
   edit36.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit36.text then begin
@@ -1052,7 +1015,6 @@ if x>84 then edit36.Text := '';
                          {37}
 
 if edit37.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit37.text);
   edit37.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit37.text then begin
@@ -1069,7 +1031,6 @@ Terapia();
                          {38}
 
   if edit38.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit38.text);
   edit38.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit38.text then begin
@@ -1085,7 +1046,6 @@ if x>84 then edit38.Text := '';
                          {39}
 
  if edit39.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit39.text);
   edit39.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit39.text then begin
@@ -1101,7 +1061,6 @@ if x>84 then edit39.Text := '';
                          {40}
 
   if edit40.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit40.text);
   edit40.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit40.text then begin
@@ -1117,7 +1076,6 @@ if x>84 then edit40.Text := '';
                          {41}
 
  if edit41.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit41.text);
   edit41.color:=clLime;
     for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit41.text then begin
@@ -1133,7 +1091,6 @@ if x>84 then edit41.Text := '';
                          {42}
 
   if edit42.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit42.text);
   edit42.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit42.text then begin
@@ -1150,7 +1107,6 @@ Terapia();
                          {43}
 
   if edit43.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit43.text);
   edit43.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit43.text then begin
@@ -1167,7 +1123,6 @@ if x>84 then edit43.Text := '';
                          {21}
 
   if edit21.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit21.text);
   edit21.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit21.text then begin
@@ -1183,7 +1138,6 @@ if x>84 then edit21.Text := '';
                          {44}
 
  if edit44.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit44.text);
   edit44.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit44.text then begin
@@ -1199,7 +1153,6 @@ if x>84 then edit44.Text := '';
                          {45}
 
  if edit45.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit45.text);
   edit45.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit45.text then begin
@@ -1215,7 +1168,6 @@ if x>84 then edit45.Text := '';
                          {46}
 
   if edit46.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit46.text);
   edit46.color:=clLime;
     for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit46.text then begin
@@ -1231,7 +1183,6 @@ if x>84 then edit46.Text := '';
                          {47}
 
 if edit47.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit47.text);
   edit47.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit47.text then begin
@@ -1247,7 +1198,6 @@ if x>84 then edit47.Text := '';
                          {48}
 
 if edit48.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit48.text);
   edit48.color:=clLime;
     for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit48.text then begin
@@ -1264,7 +1214,6 @@ if x>84 then edit48.Text := '';
                          {49}
 
 if edit49.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit49.text);
   edit49.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit49.text then begin
@@ -1280,7 +1229,6 @@ if x>84 then edit49.Text := '';
                          {50}
 
 if edit50.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit50.text);
   edit50.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit50.text then begin
@@ -1297,7 +1245,6 @@ if x>84 then edit50.Text := '';
                          {51}
 
 if edit51.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit51.text);
   edit51.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit51.text then begin
@@ -1314,7 +1261,6 @@ if x>84 then edit51.Text := '';
                          {52}
 
  if edit52.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit52.text);
   edit52.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit52.text then begin
@@ -1331,7 +1277,6 @@ if x>84 then edit52.Text := '';
                          {53}
 
   if edit53.text<>'' then  begin
-  PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit53.text);
   edit53.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit53.text then begin
@@ -1348,7 +1293,6 @@ if x>84 then edit53.Text := '';
                          {54}
 
  if edit54.text<>'' then  begin
- PDesarrollo.caption:='Realizando terapia de reflexología a punto | '+(edit54.text);
   edit54.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
        if  LBMeridianos.Items[yx]= edit54.text then begin
@@ -1362,7 +1306,6 @@ Terapia();
 if x>84 then edit54.Text := '';
  end;
                        {12}
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(edit12.text);
   if (edit12.text<>'Conflicto psíquico: ') and (edit12.text<>'') then  begin
   edit12.color:=clLime;
   for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -1378,7 +1321,6 @@ if x>84 then edit12.Text := '';
  end;
 
                      {13}
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(edit13.text);
   if (edit13.text<>'Conflicto físico: ') and (edit13.text<>'') then  begin
   edit13.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -1395,7 +1337,6 @@ if x>84 then edit13.Text := '';
 
 
                      {23}
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(edit23.text);
   if (edit23.text<>'Conflicto religioso: ') and (edit23.text<>'') then  begin
   edit23.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -1411,7 +1352,6 @@ if x>84 then edit23.Text := '';
  end;
 
                       {24}
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(edit24.text);
   if (edit24.text<>'Conflicto mental: ') and (edit24.text<>'') then  begin
   edit24.color:=clLime;
      for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -1426,7 +1366,6 @@ Terapia();
 if x>84 then edit24.Text := '';
  end;
                       {25}
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(edit25.text);
   if (edit25.text<>'Conflicto etérico: ') and (edit25.text<>'') then  begin
   edit25.color:=clLime;
       for yx := 0 to LBMeridianos.items.count -1 do begin
@@ -1440,7 +1379,6 @@ PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido de: '+(e
 Terapia();
 if x>84 then edit25.Text := '';
 end;
-PDesarrollo.visible:=false;
 end;
 
 function TFReflexologia.fcontinua : boolean;
@@ -1687,11 +1625,6 @@ LReaccion.caption:='000';
  if R1 = 0 then R1:=1;
  LBMeridianos.Itemindex:=R1;
  LBMeridianosClick(Sender);
-end;
-
-procedure TFReflexologia.Button11Click(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
 end;
 
 procedure TFReflexologia.Edit2Enter(Sender: TObject);
@@ -2341,11 +2274,7 @@ begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
 LCoherencia.Caption := '000';
 LReaccion.Caption := '000';
 vtiempo := 5;
@@ -2363,19 +2292,12 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
 LCoherencia.Caption := '000';
 LReaccion.Caption := '000';
 vtiempo := 5;
@@ -2393,8 +2315,6 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
 MyChrono.Stop;
 end;
 end;
@@ -2471,8 +2391,7 @@ end;
 
 procedure TFReflexologia.Label5Click(Sender: TObject);
 begin
-memo1.visible:=true;
-Memo1.BringToFront;
+FRecompensa.ShowModal;
 end;
 
 procedure TFReflexologia.LBCondicionesClick(Sender: TObject);
@@ -2948,11 +2867,6 @@ begin
  Inicia_Cajetines(Sender);
 end;
 
-procedure TFReflexologia.Memo1Click(Sender: TObject);
-begin
-Memo1.Visible := False;
-end;
-
 procedure TFReflexologia.Terapia();
 begin
 Frecuencias();
@@ -3251,8 +3165,6 @@ end;
 procedure TFReflexologia.BReflexologiaClick(Sender: TObject);
 begin
 MyChrono.Start;
-PDesarrollo.caption:='Realizando terapia personalizada de reflexología facial...';
-PDesarrollo.Visible := True;
 LCoherencia.Caption := '000';
 LReaccion.Caption := '000';
 GProgreso.Progress := 0;
@@ -3288,7 +3200,6 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 if (CBTerapiaExtendida.Checked = True) 
  then begin
@@ -3309,13 +3220,11 @@ end;
 
 procedure TFReflexologia.Label9Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Limpiando Transportador...';
 LimpiarEnergizar();
 end;
 
 procedure TFReflexologia.Label8Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Energizando Transportador...';
 LimpiarEnergizar();
 end;
 

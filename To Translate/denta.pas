@@ -49,7 +49,6 @@ type
     Button6: TButton;
     Button7: TButton;
     print: TButton;
-    Panel3: TPanel;
     MainMenu1: TMainMenu;
     Information1: TMenuItem;
     Information2: TMenuItem;
@@ -145,22 +144,13 @@ type
     LoadallNosodes1: TMenuItem;
     LoadallIsodes1: TMenuItem;
     LoadDentalSarcodes1: TMenuItem;
-    GroupBox2: TGroupBox;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
-    Button51: TButton;
     BodyandFaceScan1: TMenuItem;
-    Edit11: TEdit;
-    Edit12: TEdit;
     e_buscar: TEdit;
     Button53: TButton;
     RemovingAmalgams1: TMenuItem;
     TestClifordReport1: TMenuItem;
     CurentClifordResults1: TMenuItem;
     SearchField1: TMenuItem;
-    Memo4: TMemo;
     HelpMemo1: TMenuItem;
     EraseReport1: TMenuItem;
     Label219: TLabel;
@@ -177,7 +167,6 @@ type
     Label230: TLabel;
     SearchforFoci1: TMenuItem;
     PiggyBackTherapies1: TMenuItem;
-    Button54: TButton;
     Label12: TLabel;
     Label15: TLabel;
     Label231: TLabel;
@@ -631,26 +620,16 @@ type
     Label188: TLabel;
     Label189: TLabel;
     Label190: TLabel;
-    Label191: TLabel;
-    Label192: TLabel;
-    Label193: TLabel;
-    Label194: TLabel;
-    Label195: TLabel;
-    Label196: TLabel;
-    Label197: TLabel;
-    Label198: TLabel;
     Button39: TButton;
     Button41: TButton;
     Button42: TButton;
     Button43: TButton;
     SpinEdit1: TSpinEdit;
-    Memo3: TMemo;
     Time_Crono: TTimer;
     Shape44: TShape;
     Label619: TLabel;
     Shape45: TShape;
     Label620: TLabel;
-    Ayuda1: TMenuItem;
     N2: TMenuItem;
     MyChrono: TYRChronometre;
     N5: TMenuItem;
@@ -764,7 +743,6 @@ type
     Virusbucales1: TMenuItem;
     Nosodesdentales1: TMenuItem;
     DBMemo_Name: TDBMemo;
-    Memo1: TMemo;
     Infecciosas1: TMenuItem;
     Malformaciones1: TMenuItem;
     Adquiridas1: TMenuItem;
@@ -832,17 +810,10 @@ type
     Parsitosbucales1: TMenuItem;
     Image1: TImage;
     Image3: TImage;
-    Label639: TLabel;
-    Label640: TLabel;
-    Label641: TLabel;
-    Label642: TLabel;
-    Label643: TLabel;
-    Label644: TLabel;
     Shape46: TShape;
     Panel10: TPanel;
     Panel12: TPanel;
     Panel13: TPanel;
-    Panel14: TPanel;
     Panel15: TPanel;
     Panel17: TPanel;
     Panel18: TPanel;
@@ -883,12 +854,10 @@ type
     Label210: TLabel;
     Label209: TLabel;
     Label211: TLabel;
-    Label164: TLabel;
     Panel34: TPanel;
     GProgreso: TGauge;
     PTiempoEstimado: TPanel;
     Bevel1: TBevel;
-    Label173: TLabel;
     Panel16: TPanel;
     Button12: TButton;
     LRectificado: TLabel;
@@ -1065,6 +1034,33 @@ type
     Image29: TImage;
     Image26: TImage;
     Image18: TImage;
+    PBasesDeDatos: TPanel;
+    LBTerapias: TListBox;
+    BTerapias: TButton;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAfirmaciones: TListBox;
+    BAfirmaciones: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
 
     procedure Button2Click(Sender: TObject);
     procedure conscidagridDrawDataCell(Sender: TObject; const Rect: TRect;
@@ -1120,7 +1116,6 @@ type
     procedure Button16Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Notes1Click(Sender: TObject);
     procedure CranialSacralandotherInfo1Click(Sender: TObject);
     procedure IridologyReflexologyetc1Click(Sender: TObject);
     procedure AcupointTestandTreat1Click(Sender: TObject);
@@ -1152,9 +1147,6 @@ type
     procedure Button41Click(Sender: TObject);
     procedure Button42Click(Sender: TObject);
     procedure Button43Click(Sender: TObject);
-    procedure SpinEdit1Change(Sender: TObject);
-    procedure SpinEdit2Change(Sender: TObject);
-    procedure helpClick(Sender: TObject);
     procedure Therapies1Click(Sender: TObject);
     procedure Button44Click(Sender: TObject);
     procedure Close2Click(Sender: TObject);
@@ -1189,12 +1181,7 @@ type
     procedure CurentClifordResults1Click(Sender: TObject);
     procedure SearchField1Click(Sender: TObject);
     procedure e_buscarEnter(Sender: TObject);
-    procedure ReportMemo1Click(Sender: TObject);
-    procedure Memo4DblClick(Sender: TObject);
     procedure TreatAlarmresponse1Click(Sender: TObject);
-    procedure EraseReport1Click(Sender: TObject);
-    procedure PiggyBackTherapies1Click(Sender: TObject);
-    procedure Button54Click(Sender: TObject);
     procedure Edit6Enter(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
     procedure Label15DblClick(Sender: TObject);
@@ -1342,7 +1329,6 @@ type
     procedure Label367DblClick(Sender: TObject);
     procedure Shape1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
-    procedure Button51Click(Sender: TObject);
     procedure Label52Click(Sender: TObject);
     procedure Label51Click(Sender: TObject);
     procedure Label50Click(Sender: TObject);
@@ -1429,7 +1415,6 @@ type
     procedure LimeMin(ac1,ac2,ac3,ac4,ac5:integer);
     procedure Image21DblClick(Sender: TObject);
     procedure Time_CronoTimer(Sender: TObject);
-    procedure Ayuda1Click(Sender: TObject);
     procedure SavetoReport1Click(Sender: TObject);
     procedure LordenClick(Sender: TObject);
     procedure LvalorClick(Sender: TObject);
@@ -1557,12 +1542,6 @@ type
     procedure Fungosidadesbucales1Click(Sender: TObject);
     procedure Parsitosbucales1Click(Sender: TObject);
     procedure Labioleporino1Click(Sender: TObject);
-    procedure Edit7Click(Sender: TObject);
-    procedure Edit8Click(Sender: TObject);
-    procedure Edit9Click(Sender: TObject);
-    procedure Edit10Click(Sender: TObject);
-    procedure Edit12Click(Sender: TObject);
-    procedure Edit11Click(Sender: TObject);
     procedure Panel10Click(Sender: TObject);
     procedure Panel12Click(Sender: TObject);
     procedure Panel13Click(Sender: TObject);
@@ -1571,7 +1550,6 @@ type
     procedure Panel16Click(Sender: TObject);
     procedure Panel17Click(Sender: TObject);
     procedure Panel18Click(Sender: TObject);
-    procedure Memo3Change(Sender: TObject);
     procedure Panel9Click(Sender: TObject);
     procedure Label141Click(Sender: TObject);
     procedure Label150Click(Sender: TObject);
@@ -1580,8 +1558,6 @@ type
     procedure Label148Click(Sender: TObject);
     procedure Label149Click(Sender: TObject);
     procedure Label162Click(Sender: TObject);
-    procedure Label164Click(Sender: TObject);
-    procedure Label173Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
     procedure Label93Click(Sender: TObject);
     procedure Label94Click(Sender: TObject);
@@ -1605,8 +1581,6 @@ type
     procedure Label92Click(Sender: TObject);
     procedure Label84Click(Sender: TObject);
     procedure Label85Click(Sender: TObject);
-    procedure Memo3Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
     procedure Label207Click(Sender: TObject);
     procedure Label654Click(Sender: TObject);
     procedure Label218Click(Sender: TObject);
@@ -1792,6 +1766,7 @@ type
     procedure Image23Click(Sender: TObject);
     procedure Image22Click(Sender: TObject);
     procedure Image21Click(Sender: TObject);
+    procedure PiggyBackTherapies1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -1826,11 +1801,11 @@ type
      procedure PiezaDental();
      procedure Lengua();
      procedure CincoElementos();
-     procedure tension();
      procedure samantha();
      procedure ItemsAnadidos();
      procedure IContinuar();
      procedure ShapesReset();
+     procedure FrecuenciasAnadidas();
   end;
 
 var
@@ -1844,22 +1819,17 @@ var
    tooth,tooth1,tooth2,tre,value,ren,zap,alg :longint;
      sh1,sh2,sh3,sh4,sh5,sh6,sh7,sh8,sh9,sh10,sh11,sh12,sh13,sh14,sh15,sh16,sh17,
   sh18,sh19,sh20,sh21,sh22,sh23,sh24,sh25,sh26,sh27,sh28,sh29,sh30,sh31,sh32,sh33,sh34,sh35,sh36,sh37,sh38,sh39,sh40:integer;
-
    numer,astr,wid1,hei1,wei2,hei2,fred,volt,amp,amp2,rep1,resis,resis2,i,soc,old,maxa,maxa1,cut1,ascfreq,res,rea,rec,muscle1,muscle2,muscle3 :integer;
    muscl1,muscl2,muscl3,muscl4,muscl5,muscl6,muscl7,muscl8,muscl9,muscl10,muscl11,muscl12,muscl13,muscl14,hydr,hydr2,oxid,oxid2,
    muscl15,muscl16,muscl17,muscl18,muscl19,muscl20,muscl21,muscl22,muscl23,muscl24,muscl25,muscl26,muscl27,muscl28,muscl29,muscl30,muscl31,muscl32,muscl33,muscl34,muscl35 :integer;
-
   mus1,mus2,mus3,mus4,mus5,mus6,mus7,mus8,mus9,mus10,mus11,mus12,mus13,mus14,mus15,mus16,mus17,mus18,mus19,
   mus20,mus21,mus22,mus23,mus24,mus25,mus26,mus27,mus28,mus29,mus30,mus31,mus32,mus33,mus34,mus35:integer;
     musf1,musf2,musf3,musf4,musf5,musf6,musf7,musf8,musf9,musf10,musf11,musf12,musf13,musf14,musf15,musf16,musf17,musf18,musf19,
   musf20,musf21,musf22,musf23,musf24,musf25,musf26,musf27,musf28,musf29,musf30,musf31,musf32,musf33,musf34,musf35:integer;
  muss1,muss2,muss3,muss4,muss5,muss6,muss7,muss8,muss9,muss10,muss11,muss12,muss13,muss14,muss15,muss16,muss17,muss18,muss19,
   muss20,muss21,muss22,muss23,muss24,muss25,muss26,muss27,muss28,muss29,muss30,muss31,muss32,muss33,muss34,muss35:integer;
-
-
    musc1,musc2,musc3,musc4,musc5,musc6,musc7,musc8,musc9,musc10,musc11,musc12,musc13,musc14,musc15,musc16,
    musc17,musc18,musc19,musc20,musc21,musc22,musc23,musc24,musc25,musc26,musc27,musc28,musc29,musc30,musc31,musc32,musc33,musc34,musc35:integer;
-
    musa1,musa2,musa3,musa4,musa5,musa6,musa7,musa8,musa9,musa10,musa11,musa12,musa13,musa14,musa15,musa16,musa17,musa18,musa19,
    musa20,musa21,musa22,musa23,musa24,musa25,musa26,musa27,musa28,musa29,musa30,musa31,musa32,musa33,musa34,musa35:integer;
   musb1,musb2,musb3,musb4,musb5,musb6,musb7,musb8,musb9,musb10,musb11,musb12,musb13,musb14,musb15,musb16,musb17,
@@ -2076,11 +2046,8 @@ Begin
            (sender as TDBgrid).canvas.brush.color := clfuchsia
         else
            (sender as TDBgrid).canvas.brush.color := claqua;
-
         if field.asfloat >testForm1.cutof+9 then
               (sender as TDBgrid).canvas.brush.color := clred;
-
-
         if (field.asfloat <testForm1.cutof+1)and (field.asfloat>testForm1.cutof-6) then
               (sender as TDBgrid).canvas.brush.color := clyellow;
          if field.asfloat =0 then
@@ -2095,9 +2062,7 @@ Begin
       end
       else (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
              end;
-
      end;
-
 end;
 
 procedure TDental.FormCreate(Sender: TObject);
@@ -2149,10 +2114,7 @@ begin
      vQuery := nil;
      vQuery.free;
      inc(no);MaintInfo(no,'');
-     //DM.Info.Appendrecord([no,nil,'']);
      inc(no);MaintInfo(no,'----- INFORME DENTAL -----');
-     //DM.Info.Appendrecord([no,nil,'----- INFORME DENTAL -----']);
-
      DM.Conscida.FindKey([n1]); ac1:=ac1+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n2]); ac1:=ac1+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n3]); ac1:=ac1+DM.ConscidaValue.AsInteger +15;
@@ -2180,8 +2142,6 @@ begin
      DM.Conscida.FindKey([n9]); ac3:=ac3+DM.ConscidaValue.AsInteger +15;
      ac3:=Round(ac3 div 7);
      Inc(no);
-
-
      DM.Conscida.FindKey([n38]);ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n26]); ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n21]);ac4:=ac4+DM.ConscidaValue.AsInteger +15;
@@ -2191,8 +2151,6 @@ begin
      DM.Conscida.FindKey([n28]); ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      ac4:=Round(ac4 div 7);
      Inc(no);
-
-
      DM.Conscida.FindKey([n5]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n7]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n8]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
@@ -2202,11 +2160,11 @@ begin
      DM.Conscida.FindKey([n27]);ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      ac5:=Round(ac5 div 7);
      Inc(no);
-     label17.caption:='VALOR REACTIVO | '+inttostr(ac1);
-     label18.caption:='VALOR REACTIVO | '+inttostr(ac2);
-     label19.caption:='VALOR REACTIVO | '+inttostr(ac3);
-     label20.caption:='VALOR REACTIVO | '+inttostr(ac4);
-     label21.caption:='VALOR REACTIVO | '+inttostr(ac5);
+     label17.caption:='Valor reactivo | '+inttostr(ac1);
+     label18.caption:='Valor reactivo | '+inttostr(ac2);
+     label19.caption:='Valor reactivo | '+inttostr(ac3);
+     label20.caption:='Valor reactivo | '+inttostr(ac4);
+     label21.caption:='Valor reactivo | '+inttostr(ac5);
 
     inc(no);
     MaintInfo(no,label17.caption);
@@ -2218,14 +2176,6 @@ begin
     MaintInfo(no,label20.caption);
     inc(no);
     MaintInfo(no,label21.caption);
-    {inc(no); DM.Info.Appendrecord([no,nil,label18.caption]);
-    inc(no); DM.Info.Appendrecord([no,nil,label19.caption]);
-    inc(no); DM.Info.Appendrecord([no,nil,label20.caption]);
-    inc(no); DM.Info.Appendrecord([no,nil,label21.caption]);
-    }
-
-
-
      LimeMax(ac1,ac2,ac3,ac4,ac5);
      LimeMin(ac1,ac2,ac3,ac4,ac5);
 end;
@@ -2249,11 +2199,11 @@ end;
 procedure TDental.Button5Click(Sender: TObject);
 begin
 panel1.visible:=true;
-     label17.caption:='VALOR REACTIVO | '+inttostr(ac1);
-     label18.caption:='VALOR REACTIVO | '+inttostr(ac2);
-     label19.caption:='VALOR REACTIVO | '+inttostr(ac3);
-     label20.caption:='VALOR REACTIVO | '+inttostr(ac4);
-     label21.caption:='VALOR REACTIVO | '+inttostr(ac5);
+     label17.caption:='Valor reactivo | '+inttostr(ac1);
+     label18.caption:='Valor reactivo | '+inttostr(ac2);
+     label19.caption:='Valor reactivo | '+inttostr(ac3);
+     label20.caption:='Valor reactivo | '+inttostr(ac4);
+     label21.caption:='Valor reactivo | '+inttostr(ac5);
      LimeMax(ac1,ac2,ac3,ac4,ac5);
      LimeMin(ac1,ac2,ac3,ac4,ac5);
 end;
@@ -2304,15 +2254,12 @@ end;
 
 procedure TDental.Label17DblClick(Sender: TObject);
 begin
-panel3.caption:='Equilibrando conexiones al elemento AGUA...  Por favor espere.';
 CincoElementos();
 If rec>84 Then Label17.Enabled := False;
 end;
 
 procedure TDental.CincoElementos();
 begin
-panel3.visible:=true;
-panel3.refresh;
 MyChrono.Start;
 label481.caption:='Rectificado | ';
 label481.refresh;
@@ -2336,45 +2283,40 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  res:=60+random(45)+cut;
 rea:= 45+random(65)-cut;
 rec:=50+random(55)+cut;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 if rec>84 then label17.Enabled:=false;
-label481.caption:='Rectificado: '+ FloatToStr(rec);
-panel3.visible:=false;
+label481.caption:='Rectificado | '+ FloatToStr(rec);
 MyChrono.Stop;
 End;
 
 procedure TDental.Label18DblClick(Sender: TObject);
 begin
-panel3.caption:='Equilibrando conexiones al elemento MADERA...  Por favor espere.';
 CincoElementos();
 If rec>84 Then Label18.Enabled := False;
 end;
 
 procedure TDental.Label19DblClick(Sender: TObject);
 begin
-panel3.caption:='Equilibrando conexiones al elemento TIERRA...  Por favor espere.';
 CincoElementos();
 If rec>84 Then Label19.Enabled := False;
 end;
 
 procedure TDental.Label20DblClick(Sender: TObject);
 begin
-panel3.caption:='Equilibrando conexiones al elemento METAL...  Por favor espere.';
 CincoElementos();
 If rec>84 Then Label20.Enabled := False;
 end;
 
 procedure TDental.Label21DblClick(Sender: TObject);
 begin
-panel3.caption:='Equilibrando conexiones al elemento FUEGO...  Por favor espere.';
 CincoElementos();
 If rec>84 Then Label21.Enabled := False;
 end;
@@ -2619,7 +2561,6 @@ begin
                 item.eur.Transparent:=false;
                 item.eur.Color:=clAqua;
         end;
-
 end;
 
 procedure TDental.DeactivatePaintLabel(item:TDentColorShape);
@@ -2648,9 +2589,7 @@ Panel9.Visible := False;
 label212.Caption:='000';
 label129.Caption:='000';
 label213.Caption:='000';
-If button8.caption='Retestar' then panel3.caption:='Retestando dentadura...';
-Panel3.Visible := True;
-button8.caption:='Retestar';
+button8.caption:='Analizar';
 button11.enabled:=true;
 button10.enabled:=true;
 button9.enabled:=true;
@@ -2774,7 +2713,6 @@ t25:=ac1+random(20);
 label68.caption:=inttostr(t25);
 t26:=ac1+random(20);
 label69.caption:=inttostr(t26);
-panel3.visible:=false;
         FillPaintLabel;
         OrderPaintLabel;
         for ii:=1 to 32 do
@@ -2825,253 +2763,6 @@ begin
         ActivatePaintLabel(paintlabel[31],true);
         ActivatePaintLabel(paintlabel[30],true);
         paintLabelNumber:=3;
-end;
-
-procedure TDental.Label29DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo central | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, terreno urogenital, riñón derecho, recto | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 11 / USA 8 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo central | Cuadrante derecho | Arcada superior...';
-Fionula();
-if rec>84 then label29.Enabled:=false;
-end;
-
-procedure TDental.Label32DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo central | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital, riñón izquierdo | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: oído |';
-label265.caption:='| Pieza: EUR 21 / USA 9 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo central | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label32.Enabled:=false;
-end;
-
-procedure TDental.Label28DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo lateral | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, terreno urogenital, riñón derecho | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 12 / USA 7 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo lateral | Cuadrante derecho | Arcada superior...';
-Fionula();
-if rec>84 then label28.Enabled:=false;
-end;
-
-procedure TDental.Label33DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 1er premolar | Cuadrante izquierdoo | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidad: etmoidales |';
-label202.caption:='| Organos: intestino grueso derecho, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: naríz |';
-label265.caption:='| Pieza: EUR 24 / USA 12 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: seco | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 1er premolar | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label33.Enabled:=false;
-end;
-
-procedure TDental.Label27DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Canino | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Organos: vesícula, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 12 / USA 6 | Dermatomas: T8, T9; T10 | Articulaciones: pie, cadera, rodilla posterior | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
-panel3.caption:='Realizando terapia al: Canino | Cuadrante derecho | Arcada superior...';
-Fionula();
-if rec>84 then label27.Enabled:=false;
-end;
-
-procedure TDental.Label34DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Canino | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: fertilidad, líbido | Glándulas / sist. tisular: gónadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Organos: vías biliares izquierdas, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 33 / USA 22 | Dermatomas: T8, T9, T10 | Articulaciones: rodilla posterior, cadera | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
-panel3.caption:='Realizando terapia al: Canino | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label34.Enabled:=false;
-end;
-
-procedure TDental.Label26DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 1er premolar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria izquierda | Glándulas / sist. tisular: mamaria, gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidad: senos maxilares | Organos: estómago izquierdo, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 34 / USA 21 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 1er premolar | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label26.Enabled:=false;
-end;
-
-procedure TDental.Label25DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 2do premolar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidad: etmoidal |';
-label202.caption:='| Organos: intestino grueso derecho, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 25 / USA 13 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: seco | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 2do premolar | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label25.Enabled:=false;
-end;
-
-procedure TDental.Label24DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 1er molar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: pituitaria, pineal, arterias, venas | Cavidades: seno maxilar |';
-label202.caption:='| Organos: intestino grueso izquierdo, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: boca, nariz |';
-label265.caption:='| Pieza: EUR 36 / USA 19 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 1er molar | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label24.Enabled:=false;
-end;
-
-procedure TDental.Label23DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 2do molar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: arterias, venas | Cavidades:  seno maxilar |';
-label202.caption:='| Organos: intestino grueso izquierdo, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: boca, naríz |';
-label265.caption:='| Pieza: EUR 37 / USA 18 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 2do molar | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label23.Enabled:=false;
-end;
-
-procedure TDental.Label22DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo lateral | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 32 / USA 23 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo lateral | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label22.Enabled:=false;
-end;
-
-procedure TDental.Label35DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Cordal | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: presupuesto energético, frío en el cuerpo | Glándulas / sist. tisular: sistema nervioso periférico |';
-label202.caption:='| Cavidades: oído interno | Organos: corazón izquierdo, yeyuno ileón izquierdo, intestino grueso izquierdo | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: ojo, oído |';
-label265.caption:='| Pieza: EUR 38 / USA 17 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
-panel3.caption:='Realizando terapia al: Cordal | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label35.Enabled:=false;
-end;
-
-procedure TDental.Label36DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 2do premolar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria izquierda | Glándulas / sist. tisular: gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidades: maxilares | Organos: estómago izquierdo, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 35 / USA 20 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 2do premolar | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label36.Enabled:=false;
-end;
-
-procedure TDental.Label37DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 1er molar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides |';
-label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca, tacto |';
-label265.caption:='| Pieza: EUR 26 / USA 14 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 1er molar | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label37.Enabled:=false;
-end;
-
-procedure TDental.Label38DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Cordal | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal, adenoides | Otros: sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis |';
-label202.caption:='| Cavidades: senos petrósos | Organos: corazón izquierdo, yeyuno ileón izquierdo | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: lengua, oído interno |';
-label265.caption:='| Pieza: EUR 28 / USA 16 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
-panel3.caption:='Realizando terapia al: Cordal | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label38.Enabled:=false;
-end;
-
-procedure TDental.Label39DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: 2do molar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides |';
-label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, vejíga | Vertebras: D11, D12, L1 | Organo de los sentidos: boca, tacto |';
-label265.caption:='| Pieza: EUR 27 / USA 15 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 2do molar | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label39.Enabled:=false;
-end;
-
-procedure TDental.Label75DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Canino | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidades: senos esfenoideos |';
-label202.caption:='| Organos: vesícula, hígado izquierdo | Vertebras: D8, D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 23 / USA 11 | Dermatomas: T8, T9; T10 | Articulaciones: pie, cadera, rodilla posterior | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
-panel3.caption:='Realizando terapia al: Canino | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label75.Enabled:=false;
-end;
-
-procedure TDental.Label40DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo lateral | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital, riñón izquierdo | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: ojos |';
-label265.caption:='| Pieza: EUR 22 / USA 10 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: acumulación | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo lateral | Cuadrante izquierdo | Arcada superior...';
-Fionula();
-if rec>84 then label40.Enabled:=false;
-end;
-
-procedure TDental.Label41DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Incisivo central | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 31 / USA 24 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo central | Cuadrante izquierdo | Arcada inferior...';
-Fionula();
-if rec>84 then label41.Enabled:=false;
 end;
 
 procedure TDental.conscidagridDblClick(Sender: TObject);
@@ -3203,14 +2894,12 @@ End;
 procedure TDental.Button1Click(Sender: TObject);
 begin
 MyChrono.start;
-//LRectificado.Caption := 'Rectificado |';
 GProgreso.Progress := 0;
 vtiempo := 15+Random(10);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
 gauge2.progress:=0;
-Panel3.Visible := True;
 DM.Conscida.Disablecontrols;
 alg:=2+random(75);
 repeat
@@ -3232,10 +2921,9 @@ GProgreso.Refresh;
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 gauge2.progress:=random(120);
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
-panel3.visible:=false;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+random(15);
 DM.Conscida.enablecontrols;
 GProgreso.progress:=100;
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
@@ -3318,13 +3006,7 @@ button15.visible:=true;
      DM.Conscida.FindKey([n31]); ac3:=ac3+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n9]); ac3:=ac3+DM.ConscidaValue.AsInteger +15;
      ac3:=Round(ac3 div 7);
-
-     {ShowMessage(IntToStr(Value));}
-     {text:=DM.InfoName.AsString;}
-     {if init=2 then DM.Info.Appendrecord([no,Value,'Spleen-Panc-Stomach']); }
      Inc(no);
-
-
      DM.Conscida.FindKey([n38]);ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n26]); ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n21]);ac4:=ac4+DM.ConscidaValue.AsInteger +15;
@@ -3333,13 +3015,7 @@ button15.visible:=true;
      DM.Conscida.FindKey([n24]); ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n28]); ac4:=ac4+DM.ConscidaValue.AsInteger +15;
      ac4:=Round(ac4 div 7);
-
-     {ShowMessage(IntToStr(Value));}
-      {text:=DM.InfoName.AsString;}
-    {if init=2 then  DM.Info.Appendrecord([no,Value,'Lung-Large Int']);}
      Inc(no);
-
-
      DM.Conscida.FindKey([n5]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n7]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n8]); ac5:=ac5+DM.ConscidaValue.AsInteger +15;
@@ -3349,11 +3025,11 @@ button15.visible:=true;
      DM.Conscida.FindKey([n27]);ac5:=ac5+DM.ConscidaValue.AsInteger +15;
      ac5:=Round(ac5 div 7);
 
-     label17.caption:='VALOR REACTIVO | '+inttostr(ac1);
-     label18.caption:='VALOR REACTIVO | '+inttostr(ac2);
-     label19.caption:='VALOR REACTIVO | '+inttostr(ac3);
-     label20.caption:='VALOR REACTIVO | '+inttostr(ac4);
-     label21.caption:='VALOR REACTIVO | '+inttostr(ac5);
+     label17.caption:='Valor reactivo | '+inttostr(ac1);
+     label18.caption:='Valor reactivo | '+inttostr(ac2);
+     label19.caption:='Valor reactivo | '+inttostr(ac3);
+     label20.caption:='Valor reactivo | '+inttostr(ac4);
+     label21.caption:='Valor reactivo | '+inttostr(ac5);
 
      LimeMax(ac1,ac2,ac3,ac4,ac5);
      LimeMin(ac1,ac2,ac3,ac4,ac5);
@@ -3411,19 +3087,12 @@ if ac4>ac5 then maxa:=4;
      if ac5>ac3 then maxa:=5;
 if ac5>ac4 then maxa:=5;
 if ac5>ac1 then maxa:=5;
-     if maxa=1 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano de pulmón | ';
-      if maxa=2 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del hígado | ';
-       if maxa=3 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del bazo | ';
-        if maxa=4 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del riñón | ';
-         if maxa=5 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del corazón | ';
-
       DM.Conscida.EnableControls;
        DM.Conscida.Open;
       Index:='ByValue';
       DM.Conscida.IndexName:=index;
        DM.Conscida.First;
         DM.Conscida.last;
-       panel3.visible:=false;    
        numer:=patform1.numer;
  astr:=patform1.astr;
  old:=patform1.old;
@@ -3602,8 +3271,6 @@ begin
 MyChrono.Start;
 TreatAlarmresponse1Click(Sender);
    alg:=2+random(75);
-Panel3.Caption:='Realizando análisis de reacción individual...';
-panel3.refresh;
 GProgreso.Progress := 0;
 vtiempo := 60+Random(60);
 GProgreso.MaxValue := vtiempo;
@@ -3628,8 +3295,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- panel3.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   DM.Conscida.enablecontrols;
   MyChrono.Stop;
 end;
@@ -3639,8 +3305,6 @@ begin
 MyChrono.Start;
 TreatAlarmresponse1Click(Sender);
    alg:=2+random(75);
-Panel3.Caption:='Realizando zap...';
-panel3.refresh;
 GProgreso.Progress := 0;
 vtiempo := 60+Random(60);
 GProgreso.MaxValue := vtiempo;
@@ -3665,8 +3329,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- panel3.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   DM.Conscida.enablecontrols;
   MyChrono.Stop;
 end;
@@ -3702,7 +3365,6 @@ panel1.visible:=false;
 button11.enabled:=false;
 button10.enabled:=false;
 button9.enabled:=false;
-button8.Caption:='Testar y equilibrar';
 label53.Caption:='000';
 label54.Caption:='000';
 label55.Caption:='000';
@@ -3844,11 +3506,6 @@ begin
 timer1.enabled:=false;   
 end;
 
-procedure TDental.Notes1Click(Sender: TObject);
-begin
-MyWinexec('notepad.exe','anotaciones.txt');
-end;
-
 procedure TDental.CranialSacralandotherInfo1Click(Sender: TObject);
 begin
 Application.CreateForm(Tnatdiag1, natdiag1);
@@ -3881,11 +3538,7 @@ var
    date,text:string;
    value,no:integer;
 begin
-
-//ActualizaDBGrid1();
-
 cutof   := testForm1.cutof;
-      DM.Bitacora('Carga Odontología neurofocal');
       Time_Crono.enabled := true;
       cut:=0;
       SearchforFoci1.enabled:=true;
@@ -3899,12 +3552,9 @@ cutof   := testForm1.cutof;
       UnZap1.Enabled:=true;
       SearchField1.Enabled:=true;
       alg:=2+random(75);
-//      RecalibracionDental();
       button15.visible:=true;
       print.enabled:=true;
       button5.enabled:=true;
-//      InfoGrid.Visible:=True;
-//      ConscidaGrid.Visible:=True;
       Index:=''; DM.Conscida.IndexName:=Index;
       no:=1;
       date:=DateTimeToStr(Now);
@@ -3953,11 +3603,11 @@ cutof   := testForm1.cutof;
       DM.Conscida.FindKey([n27]);ac5:=ac5+DM.ConscidaValue.AsInteger +15;
       ac5:=Round(ac5 div 7);
 
-      label17.caption:='VALOR REACTIVO | '+inttostr(ac1);
-      label18.caption:='VALOR REACTIVO | '+inttostr(ac2);
-      label19.caption:='VALOR REACTIVO | '+inttostr(ac3);
-      label20.caption:='VALOR REACTIVO | '+inttostr(ac4);
-      label21.caption:='VALOR REACTIVO | '+inttostr(ac5);
+      label17.caption:='Valor reactivo | '+inttostr(ac1);
+      label18.caption:='Valor reactivo | '+inttostr(ac2);
+      label19.caption:='Valor reactivo | '+inttostr(ac3);
+      label20.caption:='Valor reactivo | '+inttostr(ac4);
+      label21.caption:='Valor reactivo | '+inttostr(ac5);
 
       LimeMax(ac1,ac2,ac3,ac4,ac5);
       LimeMin(ac1,ac2,ac3,ac4,ac5);
@@ -4009,11 +3659,6 @@ cutof   := testForm1.cutof;
       if ac5>ac3 then maxa:=5;
       if ac5>ac4 then maxa:=5;
       if ac5>ac1 then maxa:=5;
-      if maxa=1 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano de pulmón | ';
-      if maxa=2 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del hígado | ';
-      if maxa=3 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del bazo | ';
-      if maxa=4 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del riñón | ';
-      if maxa=5 then testform1.Edit7.text:= testform1.Edit7.text+' bloqueo en el meridiano del corazón | ';
 
       DM.Conscida.EnableControls;
       DM.Conscida.Open;
@@ -4254,7 +3899,7 @@ procedure TDental.Panel16Click(Sender: TObject);
 begin
 panel5.visible:=false;
 panel1.visible:=false;
-panel8.Caption:='Rectificado |';
+panel8.Caption:='Rectificado | ';
 panel8.Refresh;
 GProgreso.Progress:=0;
 end;
@@ -4284,7 +3929,7 @@ procedure TDental.Button19Click(Sender: TObject);
 begin
 MyChrono.Start;
 GProgreso.Progress:=0;
-panel8.caption:='Rectificado |';
+panel8.caption:='Rectificado | ';
 Panel8.refresh;
 testform1.tmj:=10;
 shape1.shape:=stRoundRect;
@@ -4607,7 +4252,6 @@ end;
 
 procedure TDental.ShowTMJMuscleSarcodepanel1Click(Sender: TObject);
 begin
-//panel5.visible:=true;
 cut:=0;
 panel6.visible:=true;
 Button22.Enabled := True;
@@ -4616,9 +4260,7 @@ end;
 procedure TDental.CloseTMJMuscleSarcodepanel1Click(Sender: TObject);
 begin
 panel6.visible:=false;
-panel3.caption:='Programa activo...  Por favor espere.';
 Panel9.Visible := False;
-panel3.refresh;
 end;
 
 procedure TDental.Panel17Click(Sender: TObject);
@@ -4630,7 +4272,6 @@ end;
 procedure TDental.Label141Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a St-8 (Touwei)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4639,7 +4280,6 @@ end;
 procedure TDental.Label150Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a SJ-23 (Sizhukong)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4648,7 +4288,6 @@ end;
 procedure TDental.Label146Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a ExHN-5 (Taiyang)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4657,7 +4296,6 @@ end;
 procedure TDental.Label175Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a GB-1 (Tongziliao)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4666,7 +4304,6 @@ end;
 procedure TDental.Label148Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a St-7 (xiaguan)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4675,7 +4312,6 @@ end;
 procedure TDental.Label149Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a ExHN-17 (qianzheng)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4684,7 +4320,6 @@ end;
 procedure TDental.Label162Click(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Efectuando terapia a St-6 (Jiache)...';
 Alcira();
 Clara();
 MyChrono.Stop;
@@ -4692,13 +4327,11 @@ end;
 
 procedure TDental.Button22Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
 procedure TDental.Button23Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
@@ -4747,19 +4380,16 @@ end;
 
 procedure TDental.Button28Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
 procedure TDental.Button29Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
 procedure TDental.Button30Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
@@ -4780,13 +4410,11 @@ end;
 
 procedure TDental.Button34Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
 procedure TDental.Button35Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 end;
 
@@ -4811,7 +4439,7 @@ if maxa1=1 then label189.caption:='ATM desplazada por exceso de ansiedad.';
  if maxa=2 then label189.caption:='ATM desplazada por exceso de íra.';
   if maxa=3 then label189.caption:='ATM desplazada por exceso de preocupación.';
    if maxa=4 then label189.caption:='ATM desplazada por exceso de melancolía.';
-    if maxa=5 then label189.caption:='ATM desplazada por exceso de tristeza';
+    if maxa=5 then label189.caption:='ATM desplazada por exceso de tristeza.';
  label184.caption:='Se consiguió equilibrar la tensión muscular energética.';
  label185.caption:='Se consiguió equilibrar la tensión muscular energética.';
   label186.caption:='Se consiguió equilibrar la tensión muscular energética.';
@@ -4884,11 +4512,11 @@ end;
 
 procedure TDental.DentalFociCauseProbability1Click(Sender: TObject);
 begin
-     label17.caption:='VALOR REACTIVO | '+inttostr(ac1);
-     label18.caption:='VALOR REACTIVO | '+inttostr(ac2);
-     label19.caption:='VALOR REACTIVO | '+inttostr(ac3);
-     label20.caption:='VALOR REACTIVO | '+inttostr(ac4);
-     label21.caption:='VALOR REACTIVO | '+inttostr(ac5);
+     label17.caption:='Valor reactivo | '+inttostr(ac1);
+     label18.caption:='Valor reactivo | '+inttostr(ac2);
+     label19.caption:='Valor reactivo | '+inttostr(ac3);
+     label20.caption:='Valor reactivo | '+inttostr(ac4);
+     label21.caption:='Valor reactivo | '+inttostr(ac5);
      LimeMax(ac1,ac2,ac3,ac4,ac5);
      LimeMin(ac1,ac2,ac3,ac4,ac5);
 panel5.visible:=false;
@@ -4900,114 +4528,22 @@ end;
 
 procedure TDental.Button39Click(Sender: TObject);
 begin
-MyChrono.start;
-tension();
-Fmain.recmain:=Fmain.recmain+1;
-panel3.caption:='Enviando Rx para terapia muscular...';
 Belen();
-MyChrono.stop;
-end;
-
-procedure TDental.Label164Click(Sender: TObject);
-begin
-memo1.visible:=true;
 end;
 
 procedure TDental.Button41Click(Sender: TObject);
 begin
-MyChrono.start;
-tension();
-Fmain.recmain:=Fmain.recmain+1;
-panel3.caption:='Enviando Rx para reparación traumática...';
 Belen();
-MyChrono.stop;
 end;
 
 procedure TDental.Button42Click(Sender: TObject);
 begin
-MyChrono.start;
-tension();
-Fmain.recmain:=Fmain.recmain+1;
-panel3.caption:='Enviando Rx para reducción del dolor...';
 Belen();
-MyChrono.stop;
 end;
 
 procedure TDental.Button43Click(Sender: TObject);
 begin
-MyChrono.start;
-tension();
-Fmain.recmain:=Fmain.recmain+1;
-panel3.caption:='Enviando Rx para reparación nerviosa...';
 Belen();
-MyChrono.stop;
-end;
-
-procedure TDental.SpinEdit1Change(Sender: TObject);
-begin
-spinedit2.value:=spinedit1.value;
-vart:=(spinedit1.value)*7;
-if vart=0 then begin
- button39.enabled:=false;
-  button41.enabled:=false;
-   button42.enabled:=false;
-    button43.enabled:=false;
-end;
-
-if vart>0 then begin
- button39.enabled:=true;
-  button41.enabled:=true;
-   button42.enabled:=true;
-    button43.enabled:=true;
-end;
-    if vart>0 then begin
- balancemusclerx1.enabled:=true;
- traumarepairrx1.enabled:=true;
-  nervalrepairrx1.enabled:=true;
-    painreductionrx1.enabled:=true;
-    end;
-    if vart=0 then begin
- balancemusclerx1.enabled:=false;
- traumarepairrx1.enabled:=false;
-  nervalrepairrx1.enabled:=false;
-    painreductionrx1.enabled:=false;
-end;
-end;
-
-procedure TDental.SpinEdit2Change(Sender: TObject);
-begin
-
-spinedit1.value:=spinedit2.value;
-vart:=(spinedit2.value)*7;
-if vart=0 then begin
- button39.enabled:=false;
-  button41.enabled:=false;
-   button42.enabled:=false;
-    button43.enabled:=false;
-end;
-if vart>0 then begin
- balancemusclerx1.enabled:=true;
- traumarepairrx1.enabled:=true;
-  nervalrepairrx1.enabled:=true;
-    painreductionrx1.enabled:=true;
-    end;
-    if vart=0 then begin
- balancemusclerx1.enabled:=false;
- traumarepairrx1.enabled:=false;
-  nervalrepairrx1.enabled:=false;
-    painreductionrx1.enabled:=false;
-end;
-if vart>0 then begin
- button39.enabled:=true;
-  button41.enabled:=true;
-   button42.enabled:=true;
-    button43.enabled:=true;
-    end;
-end;
-
-procedure TDental.helpClick(Sender: TObject);
-begin
-memo4.visible:=true;
 end;
 
 procedure TDental.Therapies1Click(Sender: TObject);
@@ -5017,7 +4553,6 @@ end;
 
 procedure TDental.Button44Click(Sender: TObject);
 begin
-Panel3.Caption := 'Revisando piezas...';
 Samantha();
 Button45.enabled:=true;
 end;
@@ -5025,7 +4560,6 @@ end;
 procedure TDental.Samantha();
 begin
 MyChrono.Start;
-panel3.visible:=true;
 GProgreso.Progress := 0;
 vtiempo := 15+Random(15);
 GProgreso.MaxValue := vtiempo;
@@ -5052,21 +4586,21 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 res:=60+random(45) ;
 rea:= 45+random(65) ;
 rec:=20+random(85) ;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 button16.visible:=true;
  muscle1:=60+random(105);
  muscle2:=37+random(75);
  muscle3:= round((muscle1+muscle2)/2);
- if muscle1>100 then muscle1:=100;
- if muscle2>100 then muscle2:=100;
- if muscle3>100 then muscle3:=100;
+ if muscle1>100 then muscle1:=85+Random(15);
+ if muscle2>100 then muscle2:=85+Random(15);
+ if muscle3>100 then muscle3:=85+Random(15);
 Panel9.caption:='| Tensión muscular: '+ FloatToStr(muscle1)+' | Resonancia de sarcode: '+ FloatToStr(muscle2)+' | Afección muscular: '+ FloatToStr(muscle3);
 Panel9.Visible := True;
 act2:=0;
@@ -5217,7 +4751,6 @@ act2:=0;
 if t=35 then act2:=50;
 musf35:=act5+random(100)+act2+18;
 label183.caption:=inttostr(musf35);
-Panel3.Visible := False;
 MyChrono.Stop;
 pReactivos_mus();
 End;
@@ -5238,32 +4771,6 @@ end;
 procedure TDental.Panel14Click(Sender: TObject);
 begin
 panel2.visible:=false;
-end;
-
-procedure TDental.Label203DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Cordal | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: presupuesto energético, frío en el cuerpo | Glándulas / sist. tisular: sistema nervioso, periférico |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, corazón derecho, pulmón derecho | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: oído, ojo |';
-label265.caption:='| Pieza: EUR 48 / USA 32 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
-panel3.caption:='Realizando terapia al: Cordal | Cuadrante derecho | Arcada inferior...';
-Fionula();
-if rec>84 then label203.Enabled:=false;
-end;
-
-procedure TDental.Label204DblClick(Sender: TObject);
-begin
-Alcira();
-label200.caption:='Pieza testada: Cordal | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis |';
-label202.caption:='| Cavidad: seno maxilar | Organos: corazón derecho, intestino delgado, duodeno | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: oído interno |';
-label265.caption:='| Pieza: EUR 18 / USA 1 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
-panel3.caption:='Realizando terapia al: Cordal | Cuadrante derecho | Arcada superior...';
-Fionula();
-if rec>84 then label204.Enabled:=false;
 end;
 
 procedure TDental.MainMenu1Change(Sender: TObject; Source: TMenuItem;
@@ -5288,9 +4795,6 @@ end;
 procedure TDental.Image15DblClick(Sender: TObject);
 begin
 MyChrono.Start;
-panel3.caption:='Realizando estabilización de Articulación Temporo Mandibular...';
-panel3.visible:=true;
- panel3.refresh;
 GProgreso.Progress := 0;
 vtiempo := 45+Random(30);
 GProgreso.MaxValue := vtiempo;
@@ -5307,33 +4811,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- panel3.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  MyChrono.Stop;
 end;
 
 procedure TDental.Panel18Click(Sender: TObject);
 begin
 panel7.visible:=false;
-panel3.Visible:=false;
 GProgreso.Progress:=0;
-spinedit1.value:=1;
-label191.caption:='--';
-label192.caption:='--';
-label193.caption:='--';
-label194.caption:='--';
-label195.caption:='--';
-label196.caption:='--';
-label197.caption:='--';
-label198.caption:='--';
-label191.refresh;
-label192.refresh;
-label193.refresh;
-label194.refresh;
-label195.refresh;
-label196.refresh;
-label197.refresh;
-label198.refresh;
 end;
 
 procedure TDental.conscidagridEndDrag(Sender, Target: TObject; X,
@@ -5381,11 +4866,7 @@ procedure TDental.PointProbetreatmentofiteminMainMatrix1Click(
   Sender: TObject);
 begin
 Fmain.recmain:=Fmain.recmain+1;
-testform1.Label293.visible:=true;
-Panel3.Caption := 'Amplificación de sonda de punto activa durante: '+inttostr(spinedit2.value)+' minutos.';
-panel3.visible:=true;
 MyChrono.Start;
- panel3.refresh;
  tim22:=1;
  repeat
  tim22:=tim22+1;
@@ -5406,7 +4887,6 @@ MyChrono.Start;
  ChangingPulses(5555,(555+random(10)),55555,1+random(10),1,15,
  '11111111','11111111');
  until   tim22=spinedit2.value+1;
- panel3.visible:=false;
  MyChrono.Stop;
 end;
 
@@ -5419,9 +4899,6 @@ Label214.caption:='-';
 Label215.caption:='-';
 Label216.caption:='-';
 Label217.caption:='-';
-Panel3.Caption:='Testando orden de extracción de piezas...';
-panel3.visible:=true;
-panel3.refresh;
 ISUm:=0;
 ChangingPulses(5555,50*ren,51*ren,2,1,2,
  '11111111','11111111');
@@ -5482,7 +4959,6 @@ numer:=patform1.numer;
   Label216.caption:='1 | Inferior derecho';
      Label217.caption:='2 | Inferior izquierdo';
     end;
- panel3.visible:=false;
  MyChrono.Stop;
 end;
 
@@ -5529,12 +5005,6 @@ begin
   DM.QueryFilter.Last;
   ConscidaGrid.dataSource:=DM.DSFilter;
   ConscidaNavigator.dataSource:=DM.DSFilter;
-  edit8.text:=edit8.text+DM.QueryFilter.name;
-end;
-
-procedure TDental.Memo3Change(Sender: TObject);
-begin
-memo3.visible:=false;
 end;
 
 procedure TDental.Edit1DragDrop(Sender, Source: TObject; X, Y: Integer);
@@ -5574,38 +5044,34 @@ tabbednotebook1.visible:=true;
 Panel16.visible:=true;
 panel6.visible:=true;
 tabbednotebook1.refresh;
-groupbox2.visible:=false;
-memo3.visible:=true;
 end;
 
 procedure TDental.TestClifordReport1Click(Sender: TObject);
 begin
 MyChrono.Start;
-L_Reactividad.Caption := 'Reactividad |';
+L_Reactividad.Caption := 'Reactividad | ';
 Label636.Visible := True;
 Label623.Visible := True;
 GProgreso.Progress:=0;
 Gauge2.Progress:=0;
 CurentClifordResults1.enabled:=true;
-panel3.caption:='Realizando informe ''Clifford''...';
-panel3.visible:=true;
-vtiempo := 15+Random(30);
+vtiempo := 15+Random(5);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+5);
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5000,555,559,1,1,8+(random(2)),
+ ChangingPulses(5000,555,559,1,1,1,
  '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5000,1+random(20),5000+random(2000),1+random(12),5+random(10),8+random(3),
+ ChangingPulses(5000,1+random(20),5000+random(2000),1+random(12),5+random(10),1,
 '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5000,5,65000,5,1,7+(random(8)),
+ ChangingPulses(5000,5,65000,5,1,1,
  '11111111','01111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -5613,7 +5079,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   { Fillin g the new Dental isode table }
   DM.T_Dental.First;
   While DM.T_Dental.Eof do
@@ -5829,11 +5295,12 @@ DM.QueryFilter.Active:=True;
 DM.QueryFilter.First;
 DM.QueryFilter.Last;
 conscidagrid.dataSource:=DM.DSFilter;
-panel3.visible:=false;
 GProgreso.Progress:=100;
 //ActualizaDBGrid1();
 VerFalso();
 Button20.Enabled := False;
+  L_Filtro.Caption := 'Análisis ''Clifford''';
+     L_Filtro.Refresh;
 MyChrono.Stop;
 end;
 
@@ -5871,845 +5338,13 @@ begin
  //ActualizaDBGrid1();
 end;
 
-procedure TDental.ReportMemo1Click(Sender: TObject);
-begin
-memo4.visible:=true;
-
-if rep12<10 then begin
-  memo4.lines.add('Reporte para: '+testform1.label23.caption);
-//    memo4.lines.add('Realizado por: '+PasswordDlg.Panel4.caption);
-    memo4.lines.add(DateToStr(Date));
-OEG:=random(35);
-
-if oeg=1  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal, CENTRAL INCISOR ');
-if oeg=2  then memo4.lines.add('Tonsils, Urinary bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Coxix,  CENTRAL INCISOR ');
-if oeg=3  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,  LATERAL INCISOR ');
-if oeg=4  then memo4.lines.add('Tonsils, Urinary bladder vertrabrae C1,C2, L2, L3 S3, S4,S5 Coxix,   LATERAL INCISOR');
-if oeg=5  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE');
-if oeg=6  then memo4.lines.add('Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,   CANINE');
- if oeg=7  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE ');
-if oeg=8  then memo4.lines.add('Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,   CANINE');
-if oeg=9  then memo4.lines.add('Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,  1ST BICUSPID ');
-if oeg=10  then memo4.lines.add('Lung oxygen transfer, nose, Pituitary lobe Post, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5,   1ST BICUSPID  ');
-if oeg=11  then memo4.lines.add('Thymus, Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,    2ND BICUSPID  ');
-if oeg=12  then memo4.lines.add('Lung oxygen transfer, nose, Thymosin production, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5     2ND BICUSPID ');
-if oeg=13  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,, 1ST MOLAR  ');
-if oeg=14  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=15  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,    2ND MOLAR ');
-if oeg=16  then memo4.lines.add('Stomach acid production, Throat, Parathyroid, Tongue, Vertrabrae,  , C1,C2,T11,T12,L1, Pancreas Enzyme metabolism, 2ND MOLAR ');
-if oeg=17  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,  3RD MOLAR  ');
-if oeg=18  then memo4.lines.add('Stomach mucous production, Throat, ParaThyroid, Tongue, Vertrabrae, C1,C2,T11,T12,L1 , Pancreas Sugar metabolism,  3RD MOLAR');
-if oeg=19  then memo4.lines.add('Arteries, Broncial Tubes, Shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal ,  3RD MOLAR ');
-if oeg=20  then memo4.lines.add('Lung oxygen absorption, nose, Ph of blood, ileocecal, shoulder flexibility,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,  3RD MOLAR ');
-if oeg=21  then memo4.lines.add('Veins, Broncial Tubes, Elbow to shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal,  2ND MOLAR  ');
-if oeg=22  then memo4.lines.add('Lung CO2 detox, nose, Blood Ph, shoulder,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,   2ND MOLAR ');
-if oeg=23  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,   1ST MOLAR ');
-if oeg=24  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=25  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach, Mastoid ,  2ND BISCUSPID ');
-if oeg=26  then memo4.lines.add('Stomach pylorus closure, Throat,Lymph vessels,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism ,  2ND  BISCUSPID');
-if oeg=27  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Adrenals, Sinus Maxilary, Stomach ,  1ST BISCUSPID ');
-if oeg=28  then memo4.lines.add('Stomach pylorus control, Throat,Adrenal Activation,Tongue,Vertrabrae, C1,C2,T11,T12,L1, 1ST BISCUSPID');
-if oeg=29  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE ');
-if oeg=30  then memo4.lines.add('Gonads, Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,S1,  CANINE');
-if oeg=31  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,   LATERAL INCISOR');
-if oeg=32  then memo4.lines.add('Adrenals, Tonsils, Urinary bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Cox, Energy Regulation,,  LATERAL INCISOR');
-if oeg=33  then memo4.lines.add('Ankle Jt posterior, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,   CENTRAL INCISOR');
-if oeg=34  then memo4.lines.add('Adrenals, Tonsils, Urinary Bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Cox, Lymph drainage,   CENTRAL INCISOR ');
-
- 
-OEG:=random(55);
-
-if oeg=1  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal, CENTRAL INCISOR ');
-if oeg=2  then memo4.lines.add('Tonsils, Urinary bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Coxix,  CENTRAL INCISOR ');
-if oeg=3  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,  LATERAL INCISOR ');
-if oeg=4  then memo4.lines.add('Tonsils, Urinary bladder vertrabrae C1,C2, L2, L3 S3, S4,S5 Coxix,   LATERAL INCISOR');
-if oeg=5  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE');
-if oeg=6  then memo4.lines.add('Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,   CANINE');
- if oeg=7  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE ');
-if oeg=8  then memo4.lines.add('Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,   CANINE');
-if oeg=9  then memo4.lines.add('Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,  1ST BICUSPID ');
-if oeg=10  then memo4.lines.add('Lung oxygen transfer, nose, Pituitary lobe Post, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5,   1ST BICUSPID  ');
-if oeg=11  then memo4.lines.add('Thymus, Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,    2ND BICUSPID  ');
-if oeg=12  then memo4.lines.add('Lung oxygen transfer, nose, Thymosin production, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5     2ND BICUSPID ');
-if oeg=13  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,, 1ST MOLAR  ');
-if oeg=14  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=15  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,    2ND MOLAR ');
-if oeg=16  then memo4.lines.add('Stomach acid production, Throat, Parathyroid, Tongue, Vertrabrae,  , C1,C2,T11,T12,L1, Pancreas Enzyme metabolism, 2ND MOLAR ');
-if oeg=17  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,  3RD MOLAR  ');
-if oeg=18  then memo4.lines.add('Stomach mucous production, Throat, ParaThyroid, Tongue, Vertrabrae, C1,C2,T11,T12,L1 , Pancreas Sugar metabolism,  3RD MOLAR');
-if oeg=19  then memo4.lines.add('Arteries, Broncial Tubes, Shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal ,  3RD MOLAR ');
-if oeg=20  then memo4.lines.add('Lung oxygen absorption, nose, Ph of blood, ileocecal, shoulder flexibility,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,  3RD MOLAR ');
-if oeg=21  then memo4.lines.add('Veins, Broncial Tubes, Elbow to shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal,  2ND MOLAR  ');
-if oeg=22  then memo4.lines.add('Lung CO2 detox, nose, Blood Ph, shoulder,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,   2ND MOLAR ');
-if oeg=23  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,   1ST MOLAR ');
-if oeg=24  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=25  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach, Mastoid ,  2ND BISCUSPID ');
-if oeg=26  then memo4.lines.add('Stomach pylorus closure, Throat,Lymph vessels,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism ,  2ND  BISCUSPID');
-if oeg=27  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Adrenals, Sinus Maxilary, Stomach ,  1ST BISCUSPID ');
-if oeg=28  then memo4.lines.add('Stomach pylorus control, Throat,Adrenal Activation,Tongue,Vertrabrae, C1,C2,T11,T12,L1, 1ST BISCUSPID');
-if oeg=29  then memo4.lines.add('Ankle Jt lateral, Eyes, Gall Bladder, Hip, Knee posterior, Liver, Rectum anal canal,Pituitary posterior, sinus sphenoidal,   CANINE ');
-if oeg=30  then memo4.lines.add('Gonads, Tonsils, Gall bladder drainage, Biliary Duct, vertrabrae C1,C2,T8,T9,T10,S1,  CANINE');
-if oeg=31  then memo4.lines.add('Ankle Jt post, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,   LATERAL INCISOR');
-if oeg=32  then memo4.lines.add('Adrenals, Tonsils, Urinary bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Cox, Energy Regulation,,  LATERAL INCISOR');
-if oeg=33  then memo4.lines.add('Ankle Jt posterior, Ephysis, Genito Urinary, Kidney, Knee post, Nose, Rectum anal canal, Sacro genital, Sacrum, sinus frontal, sinus sphenoidal,   CENTRAL INCISOR');
-if oeg=34  then memo4.lines.add('Adrenals, Tonsils, Urinary Bladder, Vertrabrae C1,C2, L2, L3 S3, S4,S5 Cox, Lymph drainage,   CENTRAL INCISOR ');
-
-
-OEG:=random(25)+5;
-
-if oeg=9  then memo4.lines.add('Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,  1ST BICUSPID ');
-if oeg=10  then memo4.lines.add('Lung oxygen transfer, nose, Pituitary lobe Post, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5,   1ST BICUSPID  ');
-if oeg=11  then memo4.lines.add('Thymus, Broncial Tubes, Elbow radial side, Big toe on foot, hand radial side, Large intestine, Lung, sinus ethmoidal,    2ND BICUSPID  ');
-if oeg=12  then memo4.lines.add('Lung oxygen transfer, nose, Thymosin production, shoulder radial side,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5     2ND BICUSPID ');
-if oeg=13  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,, 1ST MOLAR  ');
-if oeg=14  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=15  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,    2ND MOLAR ');
-if oeg=16  then memo4.lines.add('Stomach acid production, Throat, Parathyroid, Tongue, Vertrabrae,  , C1,C2,T11,T12,L1, Pancreas Enzyme metabolism, 2ND MOLAR ');
-if oeg=17  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach,  3RD MOLAR  ');
-if oeg=18  then memo4.lines.add('Stomach mucous production, Throat, ParaThyroid, Tongue, Vertrabrae, C1,C2,T11,T12,L1 , Pancreas Sugar metabolism,  3RD MOLAR');
-if oeg=19  then memo4.lines.add('Arteries, Broncial Tubes, Shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal ,  3RD MOLAR ');
-if oeg=20  then memo4.lines.add('Lung oxygen absorption, nose, Ph of blood, ileocecal, shoulder flexibility,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,  3RD MOLAR ');
-if oeg=21  then memo4.lines.add('Veins, Broncial Tubes, Elbow to shoulder, Big toe on foot, hand, Large intestine, Lung, sinus ethmoidal,  2ND MOLAR  ');
-if oeg=22  then memo4.lines.add('Lung CO2 detox, nose, Blood Ph, shoulder,wrist, Vertrabrae C1,C2,C5,C6,C7,T2,T3,T4,L4,L5 ,   2ND MOLAR ');
-if oeg=23  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach ,   1ST MOLAR ');
-if oeg=24  then memo4.lines.add('Stomach acid production, Throat,Thyroid,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism,   1ST MOLAR ');
-if oeg=25  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Pancreas, Sinus Maxilary, Stomach, Mastoid ,  2ND BISCUSPID ');
-if oeg=26  then memo4.lines.add('Stomach pylorus closure, Throat,Lymph vessels,Tongue,Vertrabrae, C1,C2,T11,T12,L1, Pancreas Enzyme metabolism ,  2ND  BISCUSPID');
-if oeg=27  then memo4.lines.add('Ankle joint medial, Breast, Hip anterior, Knee anterior, Jaw, Adrenals, Sinus Maxilary, Stomach ,  1ST BISCUSPID ');
-if oeg=28  then memo4.lines.add('Stomach pylorus control, Throat,Adrenal Activation,Tongue,Vertrabrae, C1,C2,T11,T12,L1, 1ST BISCUSPID');
-
- if  soc<75 then begin
-
-   if  strtointdef(label105.caption,0)>100 then memo4.lines.add('Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>100 then memo4.lines.add('Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>100 then memo4.lines.add('Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>100 then memo4.lines.add('Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>100 then memo4.lines.add('Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>100 then memo4.lines.add('Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>100 then memo4.lines.add('Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>100 then memo4.lines.add('Foci in - Venous');
-   if  strtointdef(label113.caption,0)>100 then memo4.lines.add('Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>100 then memo4.lines.add('Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>100 then memo4.lines.add('Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>100 then memo4.lines.add('Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>100 then memo4.lines.add('Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>100 then memo4.lines.add('Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>100 then memo4.lines.add('Foci in - Gums');
-   if  strtointdef(label119.caption,0)>100 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>100 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>100 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>100 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>100 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>100 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>100 then memo4.lines.add('Caused by - Stress');
-
-   if  strtointdef(label105.caption,0)>155 then memo4.lines.add('More severe Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>155 then memo4.lines.add('More severe Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>155 then memo4.lines.add('More severe Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>155 then memo4.lines.add('More severe Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>155 then memo4.lines.add('More severe Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>155 then memo4.lines.add('More severe Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>155 then memo4.lines.add('More severe Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>155 then memo4.lines.add('More severe Foci in - Venous');
-   if  strtointdef(label113.caption,0)>155 then memo4.lines.add('More severe Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>155 then memo4.lines.add('More severe Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>155 then memo4.lines.add('More severe Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>155 then memo4.lines.add('More severe Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>155 then memo4.lines.add('More severe Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>155 then memo4.lines.add('More severe Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>155 then memo4.lines.add('More severe Foci in - Gums');
-   if  strtointdef(label119.caption,0)>155 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>155 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>155 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>155 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>155 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>155 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>155 then memo4.lines.add('Caused by - Stress');
-   end;
-
-    if  (soc>74) and(soc<200) then begin
-
-   if  strtointdef(label105.caption,0)>120 then memo4.lines.add('Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>120 then memo4.lines.add('Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>120 then memo4.lines.add('Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>120 then memo4.lines.add('Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>120 then memo4.lines.add('Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>120 then memo4.lines.add('Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>120 then memo4.lines.add('Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>120 then memo4.lines.add('Foci in - Venous');
-   if  strtointdef(label113.caption,0)>120 then memo4.lines.add('Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>120 then memo4.lines.add('Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>120 then memo4.lines.add('Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>120 then memo4.lines.add('Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>120 then memo4.lines.add('Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>120 then memo4.lines.add('Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>120 then memo4.lines.add('Foci in - Gums');
-   if  strtointdef(label119.caption,0)>120 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>120 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>120 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>120 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>120 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>120 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>120 then memo4.lines.add('Caused by - Stress');
-
-   if  strtointdef(label105.caption,0)>155 then memo4.lines.add('More severe Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>155 then memo4.lines.add('More severe Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>155 then memo4.lines.add('More severe Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>155 then memo4.lines.add('More severe Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>155 then memo4.lines.add('More severe Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>155 then memo4.lines.add('More severe Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>155 then memo4.lines.add('More severe Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>155 then memo4.lines.add('More severe Foci in - Venous');
-   if  strtointdef(label113.caption,0)>155 then memo4.lines.add('More severe Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>155 then memo4.lines.add('More severe Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>155 then memo4.lines.add('More severe Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>155 then memo4.lines.add('More severe Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>155 then memo4.lines.add('More severe Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>155 then memo4.lines.add('More severe Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>155 then memo4.lines.add('More severe Foci in - Gums');
-   if  strtointdef(label119.caption,0)>155 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>155 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>155 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>155 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>155 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>155 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>155 then memo4.lines.add('Caused by - Stress');
-   end;
-
-    if  soc>199 then begin
-
-   if  strtointdef(label105.caption,0)>140 then memo4.lines.add('Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>140 then memo4.lines.add('Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>140 then memo4.lines.add('Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>140 then memo4.lines.add('Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>140 then memo4.lines.add('Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>140 then memo4.lines.add('Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>140 then memo4.lines.add('Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>140 then memo4.lines.add('Foci in - Venous');
-   if  strtointdef(label113.caption,0)>140 then memo4.lines.add('Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>140 then memo4.lines.add('Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>140 then memo4.lines.add('Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>140 then memo4.lines.add('Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>140 then memo4.lines.add('Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>140 then memo4.lines.add('Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>140 then memo4.lines.add('Foci in - Gums');
-   if  strtointdef(label119.caption,0)>140 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>140 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>140 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>140 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>140 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>140 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>140 then memo4.lines.add('Caused by - Stress');
-
-   if  strtointdef(label105.caption,0)>175 then memo4.lines.add('More severe Foci in - Tonsils');
-   if  strtointdef(label106.caption,0)>175 then memo4.lines.add('More severe Foci in - Sinus');
-   if  strtointdef(label107.caption,0)>175 then memo4.lines.add('More severe Foci in - Lymph');
-   if  strtointdef(label108.caption,0)>175 then memo4.lines.add('More severe Foci in - Jaw');
-   if  strtointdef(label109.caption,0)>175 then memo4.lines.add('More severe Foci in - TMJ');
-   if  strtointdef(label110.caption,0)>175 then memo4.lines.add('More severe Foci in - Cranium');
-   if  strtointdef(label111.caption,0)>175 then memo4.lines.add('More severe Foci in - Arterial');
-   if  strtointdef(label112.caption,0)>175 then memo4.lines.add('More severe Foci in - Venous');
-   if  strtointdef(label113.caption,0)>175 then memo4.lines.add('More severe Foci in - Muscles');
-   if  strtointdef(label114.caption,0)>175 then memo4.lines.add('More severe Foci in - Hormones');
-   if  strtointdef(label115.caption,0)>175 then memo4.lines.add('More severe Foci in - Motor Nerves');
-   if  strtointdef(label116.caption,0)>175 then memo4.lines.add('More severe Foci in - Sensory Nerves');
-   if  strtointdef(label117.caption,0)>175 then memo4.lines.add('More severe Foci in - Sympathetic Nerves');
-   if  strtointdef(label118.caption,0)>175 then memo4.lines.add('More severe Foci in - Para Sympathetic Nerves');
-    if  strtointdef(label127.caption,0)>175 then memo4.lines.add('More severe Foci in - Gums');
-   if  strtointdef(label119.caption,0)>158 then memo4.lines.add('Caused by - Infection');
-   if  strtointdef(label120.caption,0)>158 then memo4.lines.add('Caused by - Toxicity');
-   if  strtointdef(label121.caption,0)>158 then memo4.lines.add('Caused by - Trauma');
-   if  strtointdef(label122.caption,0)>158 then memo4.lines.add('Caused by - Radiation or Perverse Energy');
-   if  strtointdef(label123.caption,0)>158 then memo4.lines.add('Caused by - Alergy');
-   if  strtointdef(label124.caption,0)>158 then memo4.lines.add('Caused by - Deficiency or Excess of Nutrition');
-   if  strtointdef(label125.caption,0)>158 then memo4.lines.add('Caused by - Stress');
-   end;
-   memo4.lines.add(' ');
-
-if  (riskchart.ims>199)or(patform1.cb2=1)or(patform1.pn8>5)  then memo4.lines.add(' Immunity Dysfunction');
-if  (riskchart.emo>199)or(patform1.cb9=1)  then memo4.lines.add(' Emotional Stress and imbalance');
-if  (riskchart.infl>199)or(patform1.cb2=1)  then memo4.lines.add(' Inflamation generalized');
-if  (riskchart.can>199)or(patform1.cb3=1)  then memo4.lines.add(' Cancer or Neoplastic possibility');
-if  (riskchart.str>199)or(patform1.cb10=1)or(patform1.pn7>7)  then memo4.lines.add(' Stress');
-if  (riskchart.infe>199)or(patform1.cb2=1)  then memo4.lines.add(' Infectious Disorder');
-if  (riskchart.tox>199)or(patform1.cb5=1)  then memo4.lines.add(' Generalized Toxicity');
-if  (riskchart.car>199)  then memo4.lines.add(' Cardiovascular Disorder');
-if  (riskchart.Nut>199)or(patform1.cb4=1)  then memo4.lines.add(' Mal Absorption of Nutrients');
-if  (riskchart.hor>199)or(patform1.cb8=1)  then memo4.lines.add(' Hormonal Imbalance');
-if  (riskchart.lym>199)or(patform1.pn9<1)  then memo4.lines.add(' Lymphatic Congestion');
-if  (riskchart.bld>199)or(patform1.pn4>2)  then memo4.lines.add(' Blood Disease Unspecified');
-if  (riskchart.cir>199)or(patform1.cb1=1)  then memo4.lines.add(' Circulation Weakness or Ischemia');
-if  (riskchart.cho>199)  then memo4.lines.add(' Cholesterol and Lipo-Protein Disease ');
-if  (riskchart.oxi>199)or(patform1.pn3>25)  then memo4.lines.add(' Oxygen Transfer Disease');
-if  (riskchart.hyd>199)or((patform1.pn23<4)and(patform1.soc>20))  then memo4.lines.add(' Water Management Disease, Dehydration or Edema');
-if  (riskchart.hypa>199)or(patform1.pn7>9)  then memo4.lines.add(' Hypoadrenia');
-if  (riskchart.tra>199)or(patform1.cb7=1)  then memo4.lines.add(' Trauma and Injured Tissue requiers Rehabilitation');
-if  (riskchart.inh>199)  then memo4.lines.add(' Congenital Disease');
-if  (riskchart.liv>199)or(patform1.pn10>4)  then memo4.lines.add(' Liver Disease ');
-if  (riskchart.kid>199)or((patform1.pn23<4)and(patform1.soc>20))  then memo4.lines.add(' Kidney Disease ');
-if  (riskchart.dig>199)or(patform1.cb4=1)  then memo4.lines.add(' Digestion Disease ');
-if  (riskchart.cnt>199)  then memo4.lines.add(' Connective Tissue Disease ');
-if  (riskchart.bon>199)  then memo4.lines.add(' Bone Disease ');
-if  (riskchart.acid>199)  then memo4.lines.add(' Ph Balance Disease ');
-if  (riskchart.env>199)or(patform1.pn12>40)  then memo4.lines.add(' Environmental Disease ');
-if  (riskchart.aler>199)or(patform1.cb6=1)or(patform1.pn18>2)  then memo4.lines.add(' Allergy Disease ');
-if  (riskchart.rad>199)  then memo4.lines.add(' Radiation Disease ');
-if  (riskchart.bac>199)  then memo4.lines.add(' Bacteria ');
-if  (riskchart.fun>199)  then memo4.lines.add(' Fungus');
-if  (riskchart.vir>199)  then memo4.lines.add(' Virus');
-if  (riskchart.par>199)  then memo4.lines.add(' Parasites');
-if  (riskchart.ameo>199)  then memo4.lines.add(' Ameoba');
-if  (riskchart.fdp>199)  then memo4.lines.add(' Food Poisening');
-if  (riskchart.sug>199)  then memo4.lines.add(' Sugar Regulation Disease ');
-if  (riskchart.ner>199)  then memo4.lines.add(' Neurologial Disease ');
-if  (riskchart.sener>199)or(patform1.cb11=1)  then memo4.lines.add(' Sensory Disease ');
-if  (riskchart.res>199)or(patform1.pn3>30)  then memo4.lines.add(' Respiratory Disease ');
-if  (riskchart.cog>199)or(patform1.cb9=1)  then memo4.lines.add(' Cognition Disease or excess worry or emotional stress');
-
-if  (riskchart.ims>299)  then memo4.lines.add('More Severe foci related to  Immunity Dysfunction');
-if  (riskchart.emo>299)  then memo4.lines.add('More Severe foci related to  Emotional Stress and imbalance');
-if  (riskchart.infl>299)   then memo4.lines.add('More Severe foci related to  Inflamation generalized');
-if  (riskchart.can>299)   then memo4.lines.add('More Severe foci related to  Cancer or Neoplastic possibility');
-if  (riskchart.str>299)  then memo4.lines.add('More Severe foci related to  Stress');
-if  (riskchart.infe>299)    then memo4.lines.add('More Severe foci related to  Infectious Disorder');
-if  (riskchart.tox>299)   then memo4.lines.add('More Severe foci related to  Generalized Toxicity');
-if  (riskchart.car>299)  then memo4.lines.add('More Severe foci related to  Cardiovascular Disorder');
-if  (riskchart.Nut>299)   then memo4.lines.add('More Severe foci related to  Mal Absorption of Nutrients');
-if  (riskchart.hor>299)   then memo4.lines.add('More Severe foci related to  Hormonal Imbalance');
-if  (riskchart.lym>299)   then memo4.lines.add('More Severe foci related to  Lymphatic Congestion');
-if  (riskchart.bld>299)   then memo4.lines.add('More Severe foci related to  Blood Disease Unspecified');
-if  (riskchart.cir>299)   then memo4.lines.add('More Severe foci related to  Circulation Weakness or Ischemia');
-if  (riskchart.cho>299)  then memo4.lines.add('More Severe foci related to  Cholesterol and Lipo-Protein Disease ');
-if  (riskchart.oxi>299)   then memo4.lines.add('More Severe foci related to  Oxygen Transfer Disease');
-if  (riskchart.hyd>299)   then memo4.lines.add('More Severe foci related to  Water Management Disease, Dehydration or Edema');
-if  (riskchart.hypa>299)   then memo4.lines.add('More Severe foci related to  Hypoadrenia');
-if  (riskchart.tra>299)   then memo4.lines.add('More Severe foci related to  Trauma and Injured Tissue requiers Rehabilitation');
-if  (riskchart.inh>299)  then memo4.lines.add('More Severe foci related to  Congenital Disease');
-if  (riskchart.liv>299)   then memo4.lines.add('More Severe foci related to  Liver Disease ');
-if  (riskchart.kid>299) then memo4.lines.add('More Severe foci related to  Kidney Disease ');
-if  (riskchart.dig>299)   then memo4.lines.add('More Severe foci related to  Digestion Disease ');
-if  (riskchart.cnt>299)  then memo4.lines.add('More Severe foci related to  Connective Tissue Disease ');
-if  (riskchart.bon>299)  then memo4.lines.add('More Severe foci related to  Bone Disease ');
-if  (riskchart.acid>299)  then memo4.lines.add('More Severe foci related to  Ph Balance Disease ');
-if  (riskchart.env>299)   then memo4.lines.add('More Severe foci related to  Environmental Disease ');
-if  (riskchart.aler>299)  then memo4.lines.add('More Severe foci related to  Allergy Disease ');
-if  (riskchart.rad>299)  then memo4.lines.add('More Severe foci related to  Radiation Disease ');
-if  (riskchart.bac>299)  then memo4.lines.add('More Severe foci related to  Bacteria ');
-if  (riskchart.fun>299)  then memo4.lines.add('More Severe foci related to  Fungus');
-if  (riskchart.vir>299)  then memo4.lines.add('More Severe foci related to  Virus');
-if  (riskchart.par>299)  then memo4.lines.add('More Severe foci related to  Parasites');
-if  (riskchart.ameo>299)  then memo4.lines.add('More Severe foci related to  Ameoba');
-if  (riskchart.fdp>299)  then memo4.lines.add('More Severe foci related to  Food Poisening');
-if  (riskchart.sug>299)  then memo4.lines.add('More Severe foci related to  Sugar Regulation Disease ');
-if  (riskchart.ner>299)  then memo4.lines.add('More Severe foci related to  Neurologial Disease ');
-if  (riskchart.sener>299)   then memo4.lines.add('More Severe foci related to  Sensory Disease ');
-if  (riskchart.res>299)  then memo4.lines.add('More Severe foci related to  Respiratory Disease ');
-if  (riskchart.cog>299)   then memo4.lines.add('More Severe foci related to  Cognition Disease or excess worry or emotional stress');
-        memo4.lines.add(' ');
-
-oeg:=random(14);
-if oeg>3 then memo4.lines.add('involved with -  Emotional Stress');
-if oeg=1 then memo4.lines.add('involved with -  Stress');
-if oeg=2 then memo4.lines.add('involved with -  Lack of Awareness');
-if oeg=3 then memo4.lines.add('involved with -  Mental Factors');
-if oeg=4 then memo4.lines.add('involved with -  Heredity');
-if oeg=5 then memo4.lines.add('involved with -  Allergy');
-if oeg=6 then memo4.lines.add('involved with -  Toxins');
-if oeg=7 then memo4.lines.add('involved with -  Pathogens');
-if oeg=8 then memo4.lines.add('involved with -  Perverse Energy');
-if oeg=9 then memo4.lines.add('involved with -  Trauma or Injury');
-if oeg=10 then memo4.lines.add('involved with -  Nutritional deficiency or excess');
-if oeg=11 then memo4.lines.add('involved with -  Psychic attack');
-if oeg=12 then memo4.lines.add('involved with -  Karmic Backlash');
-if oeg=13 then memo4.lines.add('involved with -  Spiritual Oppression');
-
-oeg:=random(10);
-if oeg=0 then memo4.lines.add('involved with -  Unconscious resistance to change,resistant to explore self');
-if oeg=1 then memo4.lines.add('involved with -  Stress');
-if oeg=2 then memo4.lines.add('involved with -  Lack of Awareness,+Health Education');
-if oeg=3 then memo4.lines.add('involved with -  Mental Factors');
-if oeg=4 then memo4.lines.add('involved with -  Heredity');
-if oeg=5 then memo4.lines.add('involved with -  Allergy');
-if oeg=6 then memo4.lines.add('involved with -  Toxins');
-if oeg=7 then memo4.lines.add('involved with -  Pathogens');
-if oeg=8 then memo4.lines.add('involved with -  Perverse Energy');
-if oeg=9 then memo4.lines.add('involved with -  Trauma or Injury');
-if oeg=10 then memo4.lines.add('involved with -  Nutritional deficiency or excess');
-
-             if pn2>2 then memo4.lines.add('involved with - allopathic drugs');
-if pn3>10 then memo4.lines.add('involved with - smoking');
-if pn8>5 then memo4.lines.add('involved with - sugar use');
-if pn12>10 then memo4.lines.add('involved with - toxicity');
-if pn7>9 then memo4.lines.add('involved with - Stress');
-if pn5>8 then memo4.lines.add('involved with - Heavy Metals (Mercury related)');
-if pn4>0 then memo4.lines.add('involved with - allopathic supression');
-
-
-  memo4.lines.add(' ');
-
-oeg:=random(19);
-if oeg=0 then memo4.lines.add(' Treat with -  Unconscious resistance to change and unconscious resistance to explore self');
-
-if oeg=1 then memo4.lines.add(' Treat with -  Stress Reduction');
-if oeg=2 then memo4.lines.add(' Treat with -  Increase Awareness and or Education');
-if oeg=3 then memo4.lines.add(' Treat with -  Deal with Mental Factors or Imponderables');
-if oeg=4 then memo4.lines.add(' Treat with -  Metabolic or Genetic Homeopathy');
-if oeg=5 then memo4.lines.add(' Treat with -  Allersode treatment');
-if oeg=6 then memo4.lines.add(' Treat with -  Isode or Xenobiotic Detoxification');
-if oeg=7 then memo4.lines.add(' Treat with -  Nosode for Pathogen');
-if oeg=9 then memo4.lines.add(' Treat with -  Nutritional therapy');
-if oeg=8 then memo4.lines.add(' Treat with -  Imponderable for Perverse Energy');
- if oeg=9 then memo4.lines.add(' Treat with -  Herbal Therapy');
- if oeg=10 then memo4.lines.add(' Treat with -  Sarcodal Therapy');
- if oeg=11 then memo4.lines.add(' Treat with -  Combination Homeopathy');
-  if oeg>11 then memo4.lines.add(' Treat with - Course of Autofocusing Energetic Medicine');
-oeg:=random(47);
-if oeg=0 then memo4.lines.add(' Treat with -  Unconscious resistance to change and unconscious resistance to explore self');
-
-if oeg=1 then memo4.lines.add(' Treat with -  Stress Reduction');
-if oeg=2 then memo4.lines.add(' Treat with -  Increase Awareness and or Education');
-if oeg=3 then memo4.lines.add(' Treat with -  Deal with Mental Factors or Imponderables');
-if oeg=4 then memo4.lines.add(' Treat with -  Metabolic or Genetic Homeopathy');
-if oeg=5 then memo4.lines.add(' Treat with -  Allersode treatment');
-if oeg=6 then memo4.lines.add(' Treat with -  Isode or Xenobiotic Detoxification');
-if oeg=7 then memo4.lines.add(' Treat with -  Nosode for Pathogen');
-if oeg=19 then memo4.lines.add(' Treat with -  Nutritional therapy');
-if oeg=8 then memo4.lines.add(' Treat with -  Imponderable for Perverse Energy');
- if oeg=9 then memo4.lines.add(' Treat with -  Herbal Therapy');
- if oeg=10 then memo4.lines.add(' Treat with -  Sarcodal Therapy');
- if oeg=11 then memo4.lines.add(' Treat with -  Combination Homeopathy');
-
- if oeg=12 then memo4.lines.add(' Treat with -  Vitamin Therapy');
-if oeg=20 then memo4.lines.add(' Treat with -  Self Awareness');
-if oeg=13 then memo4.lines.add(' Treat with -  Develop Mental Healing Skills');
-if oeg=14 then memo4.lines.add(' Treat with -  Mineral oligo Therapy');
-if oeg=15 then memo4.lines.add(' Treat with -  Treat Bowel Flora');
-if oeg=16 then memo4.lines.add(' Treat with -  Detoxification of bowel and liver');
-if oeg=17 then memo4.lines.add(' Treat with -  Control Diet');
-if oeg=22 then memo4.lines.add(' Treat with -  Nutritional therapy');
-if oeg=18 then memo4.lines.add(' Treat with -  Exercise, Cardiovascular');
- if oeg=21 then memo4.lines.add(' Treat with -  Exercise, Yoga');
- if oeg=23 then memo4.lines.add(' Treat with -  Exercise, Yoga');
- if oeg=24 then memo4.lines.add(' Treat with -  Posture and Adjustment Therapy');
-  if oeg=25 then memo4.lines.add(' Treat with -  Acupunture therapy');
-
-  if oeg>25 then memo4.lines.add('Treat with -Course of Autofocusing Energetic Medicine');
-            memo4.lines.add('');
-             if pn2>2 then memo4.lines.add('involved with - allopathic drugs');
-if pn3>30 then memo4.lines.add('involved with -  Must stop smoking');
-if pn8>10 then memo4.lines.add('involved with - Addiction Therapy');
-if pn12>10 then memo4.lines.add('involved with - toxicity');
-if pn7>11 then memo4.lines.add('involved with - Stress Reduction');
-if pn5>18 then memo4.lines.add('involved with - Heavy Metals Detox');
-if pn4>2 then memo4.lines.add('involved with - Difficulty with Allopathic Supression');
-  memo4.lines.add('   ');
-                       oeg:=random(19);
-if oeg=0 then memo4.lines.add(' Treat with -  Unconscious resistance to change and unconscious resistance to explore self, Promte Awareness');
-
-if oeg=1 then memo4.lines.add(' Treat with -  Stress Reduction');
-if oeg=2 then memo4.lines.add(' Treat with -  Increase Awareness, Education');
-if oeg=3 then memo4.lines.add(' Treat with -  Mental Factors or Imponderables');
-if oeg=4 then memo4.lines.add(' Treat with -  Metabolic or Genetic Homeopathy');
-if oeg=5 then memo4.lines.add(' Treat with -  Allersode');
-if oeg=6 then memo4.lines.add(' Treat with -  Isode or Xenobiotic Detoxification');
-if oeg=7 then memo4.lines.add(' Treat with -  Nosode for Pathogen');
-if oeg=9 then memo4.lines.add(' Treat with -  Nutritional therapy');
-if oeg=8 then memo4.lines.add(' Treat with -  Imponderable for Perverse Energy');
- if oeg=9 then memo4.lines.add(' Treat with -  Herbal Therapy');
- if oeg=10 then memo4.lines.add(' Treat with -  Sarcodal Therapy');
- if oeg=11 then memo4.lines.add(' Treat with -  Combination Homeopathy');
- if oeg>11 then memo4.lines.add(' Treat with - Course of Autofocusing Energetic Therapy');
-           oeg:=2771+(random(22));
-
-               memo4.lines.add(' ');
-                oeg:=random(32);
-if oeg=0 then memo4.lines.add('Possible Most stressed Organ: Lung');
-if oeg=1 then memo4.lines.add('Possible Most stressed Organ: Skin');
-if oeg=2 then memo4.lines.add('Possible Most stressed Organ: Brain');
-if oeg=3 then memo4.lines.add('Possible Most stressed Organ: Sinus');
-if oeg=4 then memo4.lines.add('Possible Most stressed Organ: Stomach');
-if oeg=5 then memo4.lines.add('Possible Most stressed Organ: Eyes');
-if oeg=6 then memo4.lines.add('Possible Most stressed Organ: Bowel');
-if oeg=7 then memo4.lines.add('Possible Most stressed Organ: Lungs');
-if oeg=8 then memo4.lines.add('Possible Most stressed Organ: Stomach');
-if oeg=9 then memo4.lines.add('Possible Most stressed Organ: Adrenals');
-if oeg=10 then memo4.lines.add('Possible Most stressed Organ: Sinus');
-if oeg=11 then memo4.lines.add('Possible Most stressed Organ: Emotions');
-if oeg=12 then memo4.lines.add('Possible Most stressed Organ: Blood');
-if oeg=13 then memo4.lines.add('Possible Most stressed Organ: Lymphatics');
-if oeg=14 then memo4.lines.add('Possible Most stressed Organ: Dental');
-if oeg=15 then memo4.lines.add('Possible Most stressed Organ: Reticular Formation');
-if oeg=16 then memo4.lines.add('Possible Most stressed Organ: Medula Oblongata');
-if oeg=17 then memo4.lines.add('Possible Most stressed Organ: Frontal Lobe Brain');
-if oeg=18 then memo4.lines.add('Possible Most stressed Organ: Parietal Lobe Brain');
-if oeg=19 then memo4.lines.add('Possible Most stressed Organ: Occipital Lobe Brain');
-if oeg=20 then memo4.lines.add('Possible Most stressed Organ: Temporal Lobe Brain');
-if oeg=21 then memo4.lines.add('Possible Most stressed Organ: Thyroid');
-if oeg=22 then memo4.lines.add('Possible Most stressed Organ: Thymus');
-if oeg=23 then memo4.lines.add('Possible Most stressed Organ: Bone Marrow');
-if oeg=24 then memo4.lines.add('Possible Most stressed Organ: Limbic System');
-if oeg=25 then memo4.lines.add('Possible Most stressed Organ: Memory Circuits');
-if oeg=26 then memo4.lines.add('Possible Most stressed Organ: Hypothalamus');
-if oeg=27 then memo4.lines.add('Possible Most stressed Organ: Pineal');
-if oeg=28 then memo4.lines.add('Possible Most stressed Organ: Pituitary');
-if oeg=29 then memo4.lines.add('Possible Most stressed Organ: Parathyroid');
-if oeg=30 then memo4.lines.add('Possible Most stressed Organ: Blood');
-if oeg=31 then memo4.lines.add('Possible Most stressed Organ: Lymphatics');
-if oeg=32 then memo4.lines.add('Possible Most stressed Organ: Dental');
-
-    DM.QueryFilter.Active:=False;
-  QString:='D Nosode';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 '); { Value }
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  ConscidaGrid.dataSource:=DM.DSFilter;
-//  ConscidaNavigator.dataSource:=DM.DSFilter;
- memo4.lines.add(DM.QueryFilterName.Value);
- DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.Active:=False;
-  QString:='dental isode';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 '); { Value }
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  ConscidaGrid.dataSource:=DM.DSFilter;
-//  ConscidaNavigator.dataSource:=DM.DSFilter;
-
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-
-   DM.QueryFilter.Active:=False;
-  QString:='TOOTH';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 '); { Value }
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  ConscidaGrid.dataSource:=DM.DSFilter;
-//  ConscidaNavigator.dataSource:=DM.DSFilter;
-
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-  DM.QueryFilter.prior;
- memo4.lines.add(DM.QueryFilterName.Value);
-
-    memo4.lines.add(' Please deal with -  ');
-             if testform1.pn2>2 then memo4.lines.add(' Please deal with - Patient problem with allopathic drugs');
-if testform1.pn3>30 then memo4.lines.add(' Please deal with -  Must stop smoking');
-if testform1.pn8>10 then memo4.lines.add(' Please deal with - add(iction Therapy');
-if testform1.pn12>10 then memo4.lines.add(' Please deal with - toxicity');
-if testform1.pn7>11 then memo4.lines.add(' Please deal with - Stress Reduction');
-if testform1.pn5>18 then memo4.lines.add(' Please deal with - Heavy Metals Detox');
-if testform1.pn4>2 then memo4.lines.add(' Please deal with - Difficulty with Allopathic Supression');
-
-  rep12:=10;
- end;
-end;
-
-procedure TDental.Memo4DblClick(Sender: TObject);
-begin
-MEMO4.VISIBLE:=FALSE;
-end;
-
 procedure TDental.TreatAlarmresponse1Click(Sender: TObject);
 var dir1:integer;
 begin
 dir1:=random(50)+1;
-panel3.caption:='Revisando reacción irregular...';
-panel3.visible:=true; panel3.refresh;
    SCIOworking.RadioButton4.checked:=True;
   ChangingPulses(5000,(100+dir1),1112,dir1,1,7+random(5),
  '11100111','11111000');
-panel3.visible:=false;
-end;
-
-procedure TDental.EraseReport1Click(Sender: TObject);
-begin
-memo4.lines.clear;
-memo4.lines.add('Pulse 2 veces sobre este panel para ocultarlo.');
-memo4.lines.add('');
-memo4.lines.add('INFORME DENTAL');
-end;
-
-procedure TDental.PiggyBackTherapies1Click(Sender: TObject);
-var
-  ventero: integer;
-begin
-ventero := 0;
-groupbox2.visible:=true;
-
-edit11.text:=edit11.text+' '+testform1.ment1+' '+testform1.ment2+' '+testform1.ment3+' '+testform1.ment4;
-
-   if  strtointdef(label105.caption,0)>100  then edit7.text:=edit7.text+(' | Focos en amígdalas.');
-   if  strtointdef(label106.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en senos nasale.');
-   if  strtointdef(label107.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en sistema linfático.');
-   if  strtointdef(label108.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en mandíbula.');
-   if  strtointdef(label109.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en ATM.');
-   if  strtointdef(label110.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en cráneo');
-   if  strtointdef(label111.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en arterias.');
-   if  strtointdef(label112.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en venas.');
-   if  strtointdef(label113.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en músculos.');
-   if  strtointdef(label114.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en hormonas.');
-   if  strtointdef(label115.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en Motor nervios.');
-   if  strtointdef(label116.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en nervios sensoriales.');
-   if  strtointdef(label117.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en nervios simpáticos.');
-   if  strtointdef(label118.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en nervios parasimpáticos.');
-    if  strtointdef(label127.caption,0)>100 then edit7.text:=edit7.text+(' | Focos en encías.');
-   if  strtointdef(label119.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por infección.');
-   if  strtointdef(label120.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por toxicidad.');
-   if  strtointdef(label121.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por trauma.');
-   if  strtointdef(label122.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por radiación o energías perversas.');
-   if  strtointdef(label123.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por alergia.');
-   if  strtointdef(label124.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por deficiencia o exceso de nutrición.');
-   if  strtointdef(label125.caption,0)>100 then edit7.text:=edit7.text+(' | Causado por estrés.');
-
-
-  QString:='D Nosode';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  edit7.text:=edit7.text+' '+DM.QueryFilterName.Value;
- alr11:= DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-if alr11<>DM.QueryFilterName.Value then edit7.text:=edit7.text+','+DM.QueryFilterName.Value;
-if alr11=DM.QueryFilterName.Value then begin
- oeg:=random(6);
-if oeg<3 then edit7.text:=edit7.text+' | Gingivitis.';
-if oeg=3 then edit7.text:=edit7.text+' | Impactos en sistema neurológico.';
-if oeg=4 then edit7.text:=edit7.text+' | ATM.';
-if oeg>3 then edit7.text:=edit7.text+' | Caries.';
-end;
-if testform1.pn3>10 then edit7.text:=edit7.text+' | Tabaquismo.';
- DM.QueryFilter.Active:=False;
-
-   QString:='dental isode';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  edit8.text:=edit8.text+','+DM.QueryFilterName.Value;
- alr11:= DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-if alr11<>DM.QueryFilterName.Value then edit8.text:=edit8.text+','+DM.QueryFilterName.Value;
-if alr11=DM.QueryFilterName.Value then begin
- oeg:=random(6);
-if oeg<3 then edit8.text:=edit8.text+' | Mercurio.';
-if oeg=3 then edit8.text:=edit8.text+' | Antibióticos.';
-if oeg=4 then edit8.text:=edit8.text+' | ATM.';
-if oeg>3 then edit8.text:=edit8.text+' | Amalgamas.';
-end;
-if testform1.pn3>10 then edit8.text:=edit8.text+' | Tabaquismo';
- DM.QueryFilter.Active:=False;
-
-     if  strtointdef(label105.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en amígdalas.');
-   if  strtointdef(label106.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en senos nasale.');
-   if  strtointdef(label107.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en sistema linfático.');
-   if  strtointdef(label108.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en mandíbula.');
-   if  strtointdef(label109.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en ATM.');
-   if  strtointdef(label110.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en cráneo');
-   if  strtointdef(label111.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en arterias.');
-   if  strtointdef(label112.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en venas.');
-   if  strtointdef(label113.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en músculos.');
-   if  strtointdef(label114.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en hormonas.');
-   if  strtointdef(label115.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en Motor nervios.');
-   if  strtointdef(label116.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en nervios sensoriales.');
-   if  strtointdef(label117.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en nervios simpáticos.');
-   if  strtointdef(label118.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en nervios parasimpáticos.');
-    if  strtointdef(label127.caption,0)>100 then edit10.text:=edit10.text+(' | Síntomas en encías.');
-   if  strtointdef(label119.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por infección.');
-   if  strtointdef(label120.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por toxicidad.');
-   if  strtointdef(label121.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por trauma.');
-   if  strtointdef(label122.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por radiación o energías perversas.');
-   if  strtointdef(label123.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por alergia.');
-   if  strtointdef(label124.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por deficiencia o exceso de nutrición.');
-   if  strtointdef(label125.caption,0)>100 then edit10.text:=edit10.text+(' | Causado por estrés.');
-
- t1:=random(132);
-if t1<2 then edit12.text:=edit12.text+' | Triptofan | Regulación del humor, energía, sanación, sueño.';
-if t1=2 then edit12.text:=edit12.text+' | Fenilalanina | Control del dolor, nervios.';
-if t1=3 then edit12.text:=edit12.text+' | Alanina | Riñones, nervios.';
-if t1=4 then edit12.text:=edit12.text+' | Asparatina | Destrucción de tejidos nerviosos.';
-if t1=5 then edit12.text:=edit12.text+' | Cisteina | Utilización de los riñones.';
-if t1=6 then edit12.text:=edit12.text+' | Leucina | Control del humor, emociones.';
-if t1=7 then edit12.text:=edit12.text+' | Isoleucina | Control emocional, nervios.';
-if t1=8 then edit12.text:=edit12.text+' | Serina | Conversión de los carbohidratos en energía.';
-if t1=9 then edit12.text:=edit12.text+' | Tryptophan | Serotonina, relajación.';
-if t1=10 then edit12.text:=edit12.text+' | Histidina | Anti inflamatorio, anti alérgico.';
-if t1=11 then edit12.text:=edit12.text+' | Metionina | Hígado, oxigenación.';
-if t1=12 then edit12.text:=edit12.text+' | Lisina | Anti herpes, lesiones, nervios.';
-if t1=13 then edit12.text:=edit12.text+' | Treonina | Producción hormonal, energía.';
-if t1=14 then edit12.text:=edit12.text+' | Tirosina | Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then edit12.text:=edit12.text+' | Valina | Regulación de las células de la sangre.';
-if t1=16 then edit12.text:=edit12.text+' | Glutamina | Suple energía al cerebro.';
-if t1=17 then edit12.text:=edit12.text+' | Prolina | Desórdenes del sulfúro.';
-if t1=18 then edit12.text:=edit12.text+' | Arginina | Nervios, piel.';
-if t1=19 then edit12.text:=edit12.text+' | Acido glutamínico | Suple energía al cerebro.';
-if t1=20 then edit12.text:=edit12.text+' | Acido aspártico | Destrucción de tejidos nerviosos.';
-if t1=21 then edit12.text:=edit12.text+' | Adenosina | Circulación, energía.';
-if t1=22 then edit12.text:=edit12.text+' | Uracil | Funciones del ARN.';
-if t1=23 then edit12.text:=edit12.text+' | Adenina | Funciones del ADN y ARN.';
-if t1=24 then edit12.text:=edit12.text+' | Guanina | Funciones del ADN y ARN.';
-if t1=25 then edit12.text:=edit12.text+' | Citosina | Funciones del ADN y ARN.';
-if t1=26 then edit12.text:=edit12.text+' | Tiamina | Funciones del ADN y ARN.';
-if t1=27 then edit12.text:=edit12.text+' | Calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=28 then edit12.text:=edit12.text+' | Potasio | Fatiga, nervios, energía, corazón.';
-if t1=29 then edit12.text:=edit12.text+' | Sodio | Depresión, nervios, fatiga, digestión.';
-if t1=30 then edit12.text:=edit12.text+' | Cloro | Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=31 then edit12.text:=edit12.text+' | Magnesio | Regulación suprarrenal, oxígeno, energía.';
-if t1=32 then edit12.text:=edit12.text+' | Hierro | Anemia, fatiga, oxígeno.';
-if t1=33 then edit12.text:=edit12.text+' | Sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then edit12.text:=edit12.text+' | Manganeso | Afecciones nerviosas y musculares.';
-if t1=35 then edit12.text:=edit12.text+' | Cromo | Regulación del azúcar, músculos.';
-if t1=36 then edit12.text:=edit12.text+' | Zinc | Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=37 then edit12.text:=edit12.text+' | Selenio | Desintoxicación, nervios, energía, piel.';
-if t1=38 then edit12.text:=edit12.text+' | Yodo | Funciones de la tiroides, energía, metabolismo.';
-if t1=39 then edit12.text:=edit12.text+' | Fósforo | Funciones celulares, energía, pensamiento.';
-if t1=40 then edit12.text:=edit12.text+' | Boron | Regulación nerviosa, demencia, depresión.';
-if t1=41 then edit12.text:=edit12.text+' | Molidebno | Funciones de la tiroides, lactación, fatiga.';
-if t1=42 then edit12.text:=edit12.text+' | Silicona | Huesos, piel, nervios.';
-if t1=43 then edit12.text:=edit12.text+' | Cobalto | Anemia, sistema inmunitario.';
-if t1=44 then edit12.text:=edit12.text+' | Litio | Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=45 then edit12.text:=edit12.text+' | Germanio | Nervios, oxigenación, piel, energía.';
-if t1=46 then edit12.text:=edit12.text+' | Arsénico | Energía, nervios.';
-if t1=47 then edit12.text:=edit12.text+' | Digestión | Problema de absorpción.';
-if t1=48 then edit12.text:=edit12.text+' | Sales en tejidos no especificados.';
-if t1=49 then edit12.text:=edit12.text+' | Acidos grasos en general.';
-if t1=50 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then edit12.text:=edit12.text+' | Deficiencia de '' | cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then edit12.text:=edit12.text+' | Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then edit12.text:=edit12.text+' | Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then edit12.text:=edit12.text+' | Vitamina E.' ;
-if t1=58 then edit12.text:=edit12.text+' | Vitamina E1.'  ;
-if t1=59 then edit12.text:=edit12.text+' | Vitamina E2.' ;
-if t1=60 then edit12.text:=edit12.text+' | Vitamina E3.'  ;
-if t1=61 then edit12.text:=edit12.text+' | Vitamina K1.'  ;
-if t1=62 then edit12.text:=edit12.text+' | Vitamina K3.' ;
-if t1=63 then edit12.text:=edit12.text+' | Todas las vitaminas K.'  ;
-if t1=64 then edit12.text:=edit12.text+' | Vitamina U | Ubiquinona.' ;
-if t1=65 then edit12.text:=edit12.text+' | CoQ6.' ;
-if t1=66 then edit12.text:=edit12.text+' | CoQ7.' ;
-if t1=67 then edit12.text:=edit12.text+' | CoQ8.' ;
-if t1=68 then edit12.text:=edit12.text+' | CoQ9.'  ;
-if t1=69 then edit12.text:=edit12.text+' | CoQ10.' ;
-if t1=70 then edit12.text:=edit12.text+' | Todos los CoQ.';
-if t1=71 then edit12.text:=edit12.text+' | Ciclo de la ubiquinona.'  ;
-if t1=72 then edit12.text:=edit12.text+' | Vitamina C.';
-if t1=73 then edit12.text:=edit12.text+' | Bioflavenoides.'  ;
-if t1=74 then edit12.text:=edit12.text+' | Deficiencia de '' | rutina.'  ;
-if t1=75 then edit12.text:=edit12.text+' | Acido hespárico.'  ;
-if t1=76 then edit12.text:=edit12.text+' | Tirosina.'  ;
-if t1=77 then edit12.text:=edit12.text+' | Tirosinasea.' ;
-if t1=78 then edit12.text:=edit12.text+' | Vitamina C ase.' ;
-if t1=79 then edit12.text:=edit12.text+' | Acido ascórbico.'  ;
-if t1=80 then edit12.text:=edit12.text+' | Vitamina D.' ;
-if t1=81 then edit12.text:=edit12.text+' | Vitamina D1.'  ;
-if t1=82 then edit12.text:=edit12.text+' | Vitamina D2.'  ;
-if t1=83 then edit12.text:=edit12.text+' | Vitamina D3.'  ;
-if t1=84 then edit12.text:=edit12.text+' | Vitamina D4.'  ;
-if t1=85 then edit12.text:=edit12.text+' | Vitamina A.' ;
-if t1=86 then edit12.text:=edit12.text+' | Beta carotina.'  ;
-if t1=87 then edit12.text:=edit12.text+' | Aceite de pescado.'  ;
-if t1=88 then edit12.text:=edit12.text+' | Retinol.'  ;
-if t1=89 then edit12.text:=edit12.text+' | Precursores de la vitamina A.'  ;
-if t1=90 then edit12.text:=edit12.text+' | Vitamina A en cartílagos.' ;
-if t1=91 then edit12.text:=edit12.text+' | Enzimas en general.' ;
-if t1=92 then edit12.text:=edit12.text+' | Enzimas para la reducción de la oxidación.';
-if t1=93 then edit12.text:=edit12.text+' | Enzimas para la hidrolización de la digestión.';
-if t1=94 then edit12.text:=edit12.text+' | Enzimas para la fosforilización del cerebro.';
-if t1=95 then edit12.text:=edit12.text+' | Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then edit12.text:=edit12.text+' | Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then edit12.text:=edit12.text+' | Enzimas para la regulación del ADN.' ;
-if t1=98 then edit12.text:=edit12.text+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then edit12.text:=edit12.text+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then edit12.text:=edit12.text+' | Acidos grasos en general.' ;
-if t1=101 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then edit12.text:=edit12.text+' | Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then edit12.text:=edit12.text+' | Acidos grasos en general.' ;
-if t1=109 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then edit12.text:=edit12.text+' | Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then edit12.text:=edit12.text+' | Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then edit12.text:=edit12.text+' | Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then edit12.text:=edit12.text+' | Enzimas generales.' ;
-if t1=117 then edit12.text:=edit12.text+' | Enzimas en la reducción de la oxidación.';
-if t1=118 then edit12.text:=edit12.text+' | Enzimas digestivas, hidrolización.';
-if t1=119 then edit12.text:=edit12.text+' | Enzimas en el pensamiento, fosforilación.';
-if t1=120 then edit12.text:=edit12.text+' | Enzimas en la respiración decarboxilasa.';
-if t1=121 then edit12.text:=edit12.text+' | Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then edit12.text:=edit12.text+' | Enzimas en la regulación del ADN.' ;
-if t1=123 then edit12.text:=edit12.text+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then edit12.text:=edit12.text+' | Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=125 then edit12.text:=edit12.text+' | Antimonio | Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=126 then edit12.text:=edit12.text+' | Estaño | Nervios, músculos.';
-if t1=127 then edit12.text:=edit12.text+' | Carbón | Energía, regulación de la vida.';
-if t1=128 then edit12.text:=edit12.text+' | Vanadio | Funciones del hígado, músculos del corazón.';
-if t1=129 then edit12.text:=edit12.text+' | Aluminio | Nervios, regulación del pensamiento.';
-if t1>129 then edit12.text:=edit12.text+' | Cobre | Nervios, energía, desintoxicación.';
-
-  QString:='ALR';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  edit9.text:=edit9.text+' '+DM.QueryFilterName.Value;
- alr11:= DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-if alr11<>DM.QueryFilterName.Value then edit9.text:=edit9.text+','+DM.QueryFilterName.Value;
-if alr11=DM.QueryFilterName.Value then begin
- oeg:=random(6);
-if oeg<3 then edit9.text:=edit9.text+' | Azúcar refinada.';
-if oeg=3 then edit9.text:=edit9.text+' | Grano no específico.';
-if oeg=4 then edit9.text:=edit9.text+' | Toxinas propias, pulgas.';
-if oeg>3 then edit9.text:=edit9.text+' | Polen no específico.';
-end;
-if testform1.pn3>10 then edit9.text:=edit9.text+' Tabaquismo';
- DM.QueryFilter.Active:=False;
-end;
-
-procedure TDental.Button54Click(Sender: TObject);
-begin
-edit7.text:='Nosodes: ';
-edit8.text:='Isodes: ';
-edit9.text:='Alersodes: ';
-edit10.text:='Síntomas: ';
-edit12.text:='Nutrición: ';
-edit11.text:='Misceláneos: ';
 end;
 
 procedure TDental.Edit6Enter(Sender: TObject);
@@ -6724,152 +5359,152 @@ end;
 
 procedure TDental.Label15DblClick(Sender: TObject);
 begin
-edit1.text:='Arcada dental superior';
+edit1.text:=Label15.Caption;
 end;
 
 procedure TDental.Label12DblClick(Sender: TObject);
 begin
-edit1.text:='Velo palatino';
+edit1.text:=Label12.Caption;
 end;
 
 procedure TDental.Label231DblClick(Sender: TObject);
 begin
-edit1.text:='Arco palatofaríngeo';
+edit1.text:=Label231.Caption;
 end;
 
 procedure TDental.Label232DblClick(Sender: TObject);
 begin
-edit1.text:='Amígdala palatina';
+edit1.text:=Label232.Caption;
 end;
 
 procedure TDental.Label233DblClick(Sender: TObject);
 begin
-edit1.text:='Arco palatogloso';
+edit1.text:=Label233.Caption;
 end;
 
 procedure TDental.Label234DblClick(Sender: TObject);
 begin
-edit1.text:='Dorso de la lengua';
+edit1.text:=Label234.Caption;
 end;
 
 procedure TDental.Label235DblClick(Sender: TObject);
 begin
-edit1.text:='Arcada dental inferior';
+edit1.text:=Label235.Caption;
 end;
 
 procedure TDental.Label236DblClick(Sender: TObject);
 begin
-edit1.text:='Labio inferior';
+edit1.text:=Label236.Caption;
 end;
 
 procedure TDental.Label238DblClick(Sender: TObject);
 begin
-edit1.text:='Istmo de las fauces';
+edit1.text:=Label238.Caption;
 end;
 
 procedure TDental.Label239DblClick(Sender: TObject);
 begin
-edit1.text:='Comisura de los labios';
+edit1.text:=Label239.Caption;
 end;
 
 procedure TDental.Label240DblClick(Sender: TObject);
 begin
-edit1.text:='Uvula (Campanilla)';
+edit1.text:=Label240.Caption;
 end;
 
 procedure TDental.Label241DblClick(Sender: TObject);
 begin
-edit1.text:='Paladar blando';
+edit1.text:=Label241.Caption;
 end;
 
 procedure TDental.Label242DblClick(Sender: TObject);
 begin
-edit1.text:='Paladar duro';
+edit1.text:=Label242.Caption;
 end;
 
 procedure TDental.Label243DblClick(Sender: TObject);
 begin
-edit1.text:='Labio superior';
+edit1.text:=Label243.Caption;
 end;
 
 procedure TDental.Label244DblClick(Sender: TObject);
 begin
-edit1.text:='Tubérculo del labio superior';
+edit1.text:=Label244.Caption;
 end;
 
 procedure TDental.Label15Click(Sender: TObject);
 begin
-edit6.text:='Arcada dental superior';
+edit6.text:=Label15.Caption;
 end;
 
 procedure TDental.Label12Click(Sender: TObject);
 begin
-edit6.text:='Velo palatino';
+edit6.text:=Label12.Caption;
 end;
 
 procedure TDental.Label231Click(Sender: TObject);
 begin
-edit6.text:='Arco palatofaríngeo';
+edit6.text:=Label231.Caption;
 end;
 
 procedure TDental.Label232Click(Sender: TObject);
 begin
-edit6.text:='Amígdala palatina';
+edit6.text:=Label232.Caption;
 end;
 
 procedure TDental.Label233Click(Sender: TObject);
 begin
-edit6.text:='Arco palatogloso';
+edit6.text:=Label233.Caption;
 end;
 
 procedure TDental.Label234Click(Sender: TObject);
 begin
-edit6.text:='Dorso de la lengua';
+edit6.text:=Label234.Caption;
 end;
 
 procedure TDental.Label235Click(Sender: TObject);
 begin
-edit6.text:='Arcada dental inferior';
+edit6.text:=Label235.Caption;
 end;
 
 procedure TDental.Label236Click(Sender: TObject);
 begin
-edit6.text:='Labio inferior';
+edit6.text:=Label236.Caption;
 end;
 
 procedure TDental.Label238Click(Sender: TObject);
 begin
-edit6.text:='Itsmo de las fauces';
+edit6.text:=Label238.Caption;
 end;
 
 procedure TDental.Label239Click(Sender: TObject);
 begin
-edit6.text:='Comisura de los labios';
+edit6.text:=Label239.Caption;
 end;
 
 procedure TDental.Label240Click(Sender: TObject);
 begin
-edit6.text:='Uvula (Campanilla)';
+edit6.text:=Label240.Caption;
 end;
 
 procedure TDental.Label241Click(Sender: TObject);
 begin
-edit6.text:='Paladar blando';
+edit6.text:=Label241.Caption;
 end;
 
 procedure TDental.Label242Click(Sender: TObject);
 begin
-edit6.text:='Paladar duro';
+edit6.text:=Label242.Caption;
 end;
 
 procedure TDental.Label243Click(Sender: TObject);
 begin
-edit6.text:='Labio superior';
+edit6.text:=Label243.Caption;
 end;
 
 procedure TDental.Label244Click(Sender: TObject);
 begin
-edit6.text:='Tubérculo del labio superior';
+edit6.text:=Label244.Caption;
 end;
 
 procedure TDental.Button56Click(Sender: TObject);
@@ -6880,12 +5515,11 @@ end;
 procedure TDental.Label252DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 1er premolar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Cavidad: etmoidales | Organos: intestino grueso derecho, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz, ojo |';
-label265.caption:='| Pieza: EUR 14 / USA 5 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 1er premolar | Cuadrante derecho | Arcada superior...';
+label200.caption:='Pieza testada: '+'1er premolar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Cavidades: '+'etmoidales '+'| Organos: '+'intestino grueso derecho, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz, ojo';
+label265.caption:='| Pieza: '+'EUR 14 / USA 5 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 Fionula();
 if rec>84 then label252.Enabled:=false;
 end;
@@ -6893,12 +5527,11 @@ end;
 procedure TDental.Label253DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 2do premolar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Cavidad: etmoidales | Organos: intestino grueso derecho, pulmón derecho, hígado | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 15 / USA 4 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 1er premolar | Cuadrante derecho | Arcada superior...';
+label200.caption:='Pieza testada: '+'2do premolar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Cavidades: '+'etmoidales '+'| Organos: intestino grueso derecho, pulmón derecho, hígado '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 15 / USA 4 '+'| Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 Fionula();
 if rec>84 then label253.Enabled:=false;
 end;
@@ -6908,12 +5541,11 @@ end;
 procedure TDental.Label254DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 1er molar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria dcha., sistema límbico, hipotálamo, cuerdas vocales |';
-label202.caption:='| Glándulas: pituitaria | Cavidad: seno maxilar | Organos: estómago derecho, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: lengua |';
-label265.caption:='| Pieza: EUR 16 / USA 3 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 1er molar | Cuadrante derecho | Arcada superior...';
+label200.caption:='Pieza testada: '+'1er molar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria dcha., sistema límbico, hipotálamo, cuerdas vocales';
+label202.caption:='| Glándulas: '+'pituitaria '+'| Cavidad: seno maxilar '+'| Organos: '+'estómago derecho, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'lengua';
+label265.caption:='| Pieza: '+'EUR 16 / USA 3 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 Fionula();
 if rec>84 then label254.Enabled:=false;
 end;
@@ -6921,12 +5553,11 @@ end;
 procedure TDental.Label245DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 2do molar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: arterias, venas | Cavidad: etmoidales |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 47 / USA 31 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 2do molar | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'2do molar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'arterias, venas '+'| Cavidades: '+'etmoidales';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 47 / USA 31 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 Fionula();
 if rec>84 then label245.Enabled:=false;
 end;
@@ -6934,12 +5565,11 @@ end;
 procedure TDental.Label246DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 1er molar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: pituitaria, arterias, venas | Cavidad: etmoidales |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 46 / USA 30 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
-panel3.caption:='Realizando terapia al: 1er molar | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'1er molar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'pituitaria, arterias, venas | Cavidad: etmoidales';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 46 / USA 30 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 Fionula();
 if rec>84 then label246.Enabled:=false;
 end;
@@ -6947,12 +5577,11 @@ end;
 procedure TDental.Label247DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 2do premolar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria derecha | Glándulas / sist. tisular: tiroides, timo, gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho pilóro, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 45 / USA 29 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula, tobillo medio | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 2do premolar | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'2do premolar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria derecha '+'| Glándulas / sist. tisular: '+'tiroides, timo, gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho pilóro, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 45 / USA 29 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula, tobillo medio '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 Fionula();
 if rec>84 then label247.Enabled:=false;
 end;
@@ -6960,12 +5589,11 @@ end;
 procedure TDental.Label249DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 1er premolar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria derecha | Glándulas / sist. tisular: gonadas (testículos, ovarios) |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho pilório, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 44 / USA 28 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 1er premolar | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'1er premolar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria derecha '+'| Glándulas / sist. tisular: '+'gonadas (testículos, ovarios)';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho pilório, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 44 / USA 28 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 Fionula();
 if rec>84 then label249.Enabled:=false;
 end;
@@ -6973,12 +5601,11 @@ end;
 procedure TDental.Label250DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: Canino | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: fertilidad, líbido | Glándulas / sist. tisular: gónadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Organos: vías biliares izquierdas, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 43 / USA 27 | Dermatomas: T8, T9, T10 | Articulaciones: rodilla posterior, cadera | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
-panel3.caption:='Realizando terapia al: Canino | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'Canino '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'fertilidad, líbido '+'| Glándulas / sist. tisular: '+'gónadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Organos: '+'vías biliares izquierdas, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo';
+label265.caption:='| Pieza: '+'EUR 43 / USA 27 '+'| Dermatomas: '+'T8, T9, T10 '+'| Articulaciones: '+'rodilla posterior, cadera '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
 Fionula();
 if rec>84 then label250.Enabled:=false;
 end;
@@ -6986,12 +5613,11 @@ end;
 procedure TDental.Label251DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: Incisivo lateral | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, región urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 42 / USA 26 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo lateral | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'Incisivo lateral '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, región urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 42 / USA 26 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 Fionula();
 if rec>84 then label251.Enabled:=false;
 end;
@@ -6999,12 +5625,11 @@ end;
 procedure TDental.Label248DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: Incisivo central | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, región urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 41 / USA 25 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo, pánico';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
-panel3.caption:='Realizando terapia al: Incisivo central | Cuadrante derecho | Arcada inferior...';
+label200.caption:='Pieza testada: '+'Incisivo central '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, región urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 41 / USA 25 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo, pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 Fionula();
 if rec>84 then label248.Enabled:=false;
 end;
@@ -7012,19 +5637,17 @@ end;
 procedure TDental.Label255DblClick(Sender: TObject);
 begin
 Alcira();
-label200.caption:='Pieza testada: 2do molar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides, pineal, suprarrenales |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 17 / USA 2 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
-panel3.caption:='Realizando terapia al: 2do molar | Cuadrante derecho | Arcada superior...';
+label200.caption:='Pieza testada: '+'2do molar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda '+'| Glándulas: '+'tiroides, paratiroides, pineal, suprarrenales';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 17 / USA 2 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 Fionula();
 if rec>84 then label255.Enabled:=false;
 end;
 
 procedure TDental.Label267DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea temporal-superior...';
 ATM();
 if GProgreso.Progress>84 then
 begin
@@ -7037,13 +5660,12 @@ procedure TDental.TabbedNotebook1Change(Sender: TObject; NewTab: Integer;
   var AllowChange: Boolean);
 begin
 GProgreso.Progress:=0;
-Panel8.Caption:='Rectificado |';
+Panel8.Caption:='Rectificado | ';
 Panel8.refresh;
 end;
 
 procedure TDental.Label268DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
 if GProgreso.Progress>84 then
   begin
@@ -7055,7 +5677,6 @@ end;
 
 procedure TDental.Label269DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura coronaria...';
 ATM();
 if GProgreso.Progress>84 then
   begin
@@ -7067,7 +5688,6 @@ end;
 
 procedure TDental.Label270DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
 if GProgreso.Progress>84 then
 label270.Enabled:=false;
@@ -7075,7 +5695,6 @@ end;
 
 procedure TDental.Label271DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a borde supraorbitario...';
 ATM();
 if GProgreso.Progress>84 then
 label271.Enabled:=false;
@@ -7083,7 +5702,6 @@ end;
 
 procedure TDental.Label272DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura internasal...';
 ATM();
 if GProgreso.Progress>84 then
 begin
@@ -7095,7 +5713,6 @@ end;
 
 procedure TDental.Label273DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso nasal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7107,7 +5724,6 @@ end;
 
 procedure TDental.Label274DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7118,7 +5734,6 @@ end;
 
 procedure TDental.Label275DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis ascendente del maxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label275.Enabled:=false;
@@ -7126,7 +5741,6 @@ end;
 
 procedure TDental.Label276DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso malar...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -7137,7 +5751,6 @@ end;
 
 procedure TDental.Label277DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -7148,7 +5761,6 @@ end;
 
 procedure TDental.Label278DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio mandibular...';
 ATM();
   if GProgreso.Progress>84 then
         label278.Enabled:=false;
@@ -7156,7 +5768,6 @@ end;
 
 procedure TDental.Label279DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea oblícua interna...';
 ATM();
   if GProgreso.Progress>84 then
         label279.Enabled:=false;
@@ -7164,7 +5775,6 @@ end;
 
 procedure TDental.Label280DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a mandíbula...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7176,7 +5786,6 @@ end;
 
 procedure TDental.Label281DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis coronoides...';
 ATM();
   if GProgreso.Progress>84 then
         label281.Enabled:=false;
@@ -7184,7 +5793,6 @@ end;
 
 procedure TDental.Label282DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a escotadura sigmoidea mandibular...';
 ATM();
   if GProgreso.Progress>84 then
         label282.Enabled:=false;
@@ -7192,7 +5800,6 @@ end;
 
 procedure TDental.Label283DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a ángulo de la mandíbula...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -7203,7 +5810,6 @@ end;
 
 procedure TDental.Label284DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cóndilo de la mandíbula...';
 ATM();
   if GProgreso.Progress>84 then
         label284.Enabled:=false;
@@ -7211,7 +5817,6 @@ end;
 
 procedure TDental.Label285DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis estiloides...';
 ATM();
   if GProgreso.Progress>84 then
         label285.Enabled:=false;
@@ -7219,7 +5824,6 @@ end;
 
 procedure TDental.Label286DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a poro acústico externo...';
 ATM();
   if GProgreso.Progress>84 then
         label286.Enabled:=false;
@@ -7227,7 +5831,6 @@ end;
 
 procedure TDental.Label287DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis mastoides...';
 ATM();
   if GProgreso.Progress>84 then
         label287.Enabled:=false;
@@ -7235,7 +5838,6 @@ end;
 
 procedure TDental.Label288DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso occipital...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -7246,7 +5848,6 @@ end;
 
 procedure TDental.Label289DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura escamosa...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -7257,7 +5858,6 @@ end;
 
 procedure TDental.Label290DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso temporal...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -7269,7 +5869,6 @@ end;
 
 procedure TDental.Label292DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio supraorbitario...';
 ATM();
   if GProgreso.Progress>84 then
         label292.Enabled:=false;
@@ -7277,7 +5876,6 @@ end;
 
 procedure TDental.Label293DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a fisura orbitaria superior...';
 ATM();
   if GProgreso.Progress>84 then
         label293.Enabled:=false;
@@ -7286,7 +5884,6 @@ end;
 
 procedure TDental.Label294DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a ala mayor del hueso esfenoides...';
 ATM();
   if GProgreso.Progress>84 then
         label294.Enabled:=false;
@@ -7294,7 +5891,6 @@ end;
 
 procedure TDental.Label295DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso temporal...';
 ATM();
     if GProgreso.Progress>84 then
   begin
@@ -7306,7 +5902,6 @@ end;
 
 procedure TDental.Label296DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cisura orbitaria inferior...';
 ATM();
   if GProgreso.Progress>84 then
         label296.Enabled:=false;
@@ -7314,7 +5909,6 @@ end;
 
 procedure TDental.Label298DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cornete nasal medio...';
 ATM();
   if GProgreso.Progress>84 then
         label298.Enabled:=false;
@@ -7322,7 +5916,6 @@ end;
 
 procedure TDental.Label297DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cornete nasal inferior...';
 ATM();
   if GProgreso.Progress>84 then
         label297.Enabled:=false;
@@ -7330,7 +5923,6 @@ end;
 
 procedure TDental.Label299DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a vomer...';
 ATM();
   if GProgreso.Progress>84 then
         label299.Enabled:=false;
@@ -7338,7 +5930,6 @@ end;
 
 procedure TDental.Label300DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a espina nasal anterior...';
 ATM();
   if GProgreso.Progress>84 then
         label300.Enabled:=false;
@@ -7346,7 +5937,6 @@ end;
 
 procedure TDental.Label301DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura intermaxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label301.Enabled:=false;
@@ -7354,7 +5944,6 @@ end;
 
 procedure TDental.Label302DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a mandíbula...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7366,7 +5955,6 @@ end;
 
 procedure TDental.Label303DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio mentoniano...';
 ATM();
     if GProgreso.Progress>84 then
   begin
@@ -7377,7 +5965,6 @@ end;
 
 procedure TDental.Label304DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a eminencia mentoniana...';
 ATM();
   if GProgreso.Progress>84 then
         label304.Enabled:=false;
@@ -7385,7 +5972,6 @@ end;
 
 procedure TDental.Label305DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis mastoides...';
 ATM();
   if GProgreso.Progress>84 then
         label305.Enabled:=false;
@@ -7393,7 +5979,6 @@ end;
 
 procedure TDental.Label306DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7404,7 +5989,6 @@ end;
 
 procedure TDental.Label307DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso malar...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -7415,7 +5999,6 @@ end;
 
 procedure TDental.Label308DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio suborbitorio...';
 ATM();
   if GProgreso.Progress>84 then
         label308.Enabled:=false;
@@ -7423,7 +6006,6 @@ end;
 
 procedure TDental.Label309DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso etmoides...';
 ATM();
   if GProgreso.Progress>84 then
         label309.Enabled:=false;
@@ -7431,7 +6013,6 @@ end;
 
 procedure TDental.Label310DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis ascendente del maxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label310.Enabled:=false;
@@ -7439,7 +6020,6 @@ end;
 
 procedure TDental.Label311DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7450,7 +6030,6 @@ end;
 
 procedure TDental.Label312DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso nasal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -7462,7 +6041,6 @@ end;
 
 procedure TDental.Label313DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura internasal...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -7474,7 +6052,6 @@ end;
 
 procedure TDental.Label314DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a borde supraorbitario...';
 ATM();
   if GProgreso.Progress>84 then
         label314.Enabled:=false;
@@ -7483,7 +6060,6 @@ end;
 
 procedure TDental.Label316DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura coronal...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -7495,7 +6071,6 @@ end;
 
 procedure TDental.Label317DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -7507,7 +6082,6 @@ end;
 
 procedure TDental.Label350DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a agujero incisivo...';
 ATM();
   if GProgreso.Progress>84 then
         label350.Enabled:=false;
@@ -7516,7 +6090,6 @@ end;
 
 procedure TDental.Label318DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso palatino...';
 ATM();
    if GProgreso.Progress>84 then
         label318.Enabled:=false;
@@ -7524,7 +6097,6 @@ end;
 
 procedure TDental.Label319DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
   if GProgreso.Progress>84 then
         label319.Enabled:=false;
@@ -7532,7 +6104,6 @@ end;
 
 procedure TDental.Label320DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label320.Enabled:=false;
@@ -7540,7 +6111,6 @@ end;
 
 procedure TDental.Label321DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a gancho pterigoideo...';
 ATM();
   if GProgreso.Progress>84 then
         label321.Enabled:=false;
@@ -7548,7 +6118,6 @@ end;
 
 procedure TDental.Label322DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apofisis pterigoide lámina lateral...';
 ATM();
   if GProgreso.Progress>84 then
         label322.Enabled:=false;
@@ -7556,7 +6125,6 @@ end;
 
 procedure TDental.Label323DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a tubérculo faríngeo...';
 ATM();
   if GProgreso.Progress>84 then
         label323.Enabled:=false;
@@ -7564,7 +6132,6 @@ end;
 
 procedure TDental.Label324DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio oval...';
 ATM();
   if GProgreso.Progress>84 then
         label324.Enabled:=false;
@@ -7572,7 +6139,6 @@ end;
 
 procedure TDental.Label325DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cóndilo del occipital...';
 ATM();
   if GProgreso.Progress>84 then
         label325.Enabled:=false;
@@ -7580,7 +6146,6 @@ end;
 
 procedure TDental.Label326DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a fosa glenoidea...';
 ATM();
   if GProgreso.Progress>84 then
         label326.Enabled:=false;
@@ -7588,7 +6153,6 @@ end;
 
 procedure TDental.Label327DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio condíleo anterior...';
 ATM();
   if GProgreso.Progress>84 then
         label327.Enabled:=false;
@@ -7596,7 +6160,6 @@ end;
 
 procedure TDental.Label328DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio estilomastoideo...';
 ATM();
   if GProgreso.Progress>84 then
         label328.Enabled:=false;
@@ -7604,7 +6167,6 @@ end;
 
 procedure TDental.Label329DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis mastoides...';
 ATM();
   if GProgreso.Progress>84 then
         label329.Enabled:=false;
@@ -7612,7 +6174,6 @@ end;
 
 procedure TDental.Label330DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso temporal...';
 ATM();
   if GProgreso.Progress>84 then
         label330.Enabled:=false;
@@ -7620,7 +6181,6 @@ end;
 
 procedure TDental.Label331DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a conducto condíleo...';
 ATM();
   if GProgreso.Progress>84 then
         label331.Enabled:=false;
@@ -7628,7 +6188,6 @@ end;
 
 procedure TDental.Label332DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
   if GProgreso.Progress>84 then
         label332.Enabled:=false;
@@ -7636,7 +6195,6 @@ end;
 
 procedure TDental.Label333DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio magno...';
 ATM();
   if GProgreso.Progress>84 then
         label333.Enabled:=false;
@@ -7644,7 +6202,6 @@ end;
 
 procedure TDental.Label334DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a protuberancia occipital externa...';
 ATM();
   if GProgreso.Progress>84 then
         label334.Enabled:=false;
@@ -7652,7 +6209,6 @@ end;
 
 procedure TDental.Label335DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso occipital...';
 ATM();
   if GProgreso.Progress>84 then
         label335.Enabled:=false;
@@ -7660,7 +6216,6 @@ end;
 
 procedure TDental.Label336DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea curva occipital superior...';
 ATM();
   if GProgreso.Progress>84 then
         label336.Enabled:=false;
@@ -7668,7 +6223,6 @@ end;
 
 procedure TDental.Label337DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea curva occipital inferior...';
 ATM();
   if GProgreso.Progress>84 then
         label337.Enabled:=false;
@@ -7676,7 +6230,6 @@ end;
 
 procedure TDental.Label338DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio mastoideo...';
 ATM();
   if GProgreso.Progress>84 then
         label338.Enabled:=false;
@@ -7684,7 +6237,6 @@ end;
 
 procedure TDental.Label339DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a fosa yugular...';
 ATM();
   if GProgreso.Progress>84 then
         label339.Enabled:=false;
@@ -7692,7 +6244,6 @@ end;
 
 procedure TDental.Label340DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a canal carotídeo...';
 ATM();
   if GProgreso.Progress>84 then
         label340.Enabled:=false;
@@ -7700,7 +6251,6 @@ end;
 
 procedure TDental.Label341DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis estiloides...';
 ATM();
   if GProgreso.Progress>84 then
         label341.Enabled:=false;
@@ -7708,7 +6258,6 @@ end;
 
 procedure TDental.Label342DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a agujero redondo menor...';
 ATM();
   if GProgreso.Progress>84 then
         label342.Enabled:=false;
@@ -7716,7 +6265,6 @@ end;
 
 procedure TDental.Label343DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a agujero rasgado medio...';
 ATM();
    if GProgreso.Progress>84 then
         label343.Enabled:=false;
@@ -7724,7 +6272,6 @@ end;
 
 procedure TDental.Label344DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a vomer...';
 ATM();
   if GProgreso.Progress>84 then
         label344.Enabled:=false;
@@ -7732,7 +6279,6 @@ end;
 
 procedure TDental.Label345DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificios de los conductos palatinos...';
 ATM();
   if GProgreso.Progress>84 then
         label345.Enabled:=false;
@@ -7740,7 +6286,6 @@ end;
 
 procedure TDental.Label346DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio inferior del conducto pterigopalatino...';
 ATM();
   if GProgreso.Progress>84 then
         label346.Enabled:=false;
@@ -7748,7 +6293,6 @@ end;
 
 procedure TDental.Label347DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a espina nasal posterior...';
 ATM();
   if GProgreso.Progress>84 then
         label347.Enabled:=false;
@@ -7756,7 +6300,6 @@ end;
 
 procedure TDental.Label348DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura palatina transversa...';
 ATM();
   if GProgreso.Progress>84 then
         label348.Enabled:=false;
@@ -7764,7 +6307,6 @@ end;
 
 procedure TDental.Label349DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura palatina mediana...';
 ATM();
   if GProgreso.Progress>84 then
         label349.Enabled:=false;
@@ -7772,7 +6314,6 @@ end;
 
 procedure TDental.Label351DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
   if GProgreso.Progress>84 then
         label351.Enabled:=false;
@@ -7780,7 +6321,6 @@ end;
 
 procedure TDental.Label352DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a seno frontal...';
 ATM();
   if GProgreso.Progress>84 then
         label352.Enabled:=false;
@@ -7788,7 +6328,6 @@ end;
 
 procedure TDental.Label353DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso lacrimal...';
 ATM();
    if GProgreso.Progress>84 then
         label353.Enabled:=false;
@@ -7796,7 +6335,6 @@ end;
 
 procedure TDental.Label354DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso nasal...';
 ATM();
   if GProgreso.Progress>84 then
         label354.Enabled:=false;
@@ -7804,7 +6342,6 @@ end;
 
 procedure TDental.Label355DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis ascendente del máxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label355.Enabled:=false;
@@ -7812,7 +6349,6 @@ end;
 
 procedure TDental.Label356DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a fosa del saco lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
         label356.Enabled:=false;
@@ -7820,7 +6356,6 @@ end;
 
 procedure TDental.Label357DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a canal infraorbitario...';
 ATM();
   if GProgreso.Progress>84 then
         label357.Enabled:=false;
@@ -7828,7 +6363,6 @@ end;
 
 procedure TDental.Label358DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a espina nasal anterior...';
 ATM();
   if GProgreso.Progress>84 then
         label358.Enabled:=false;
@@ -7836,7 +6370,6 @@ end;
 
 procedure TDental.Label359DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label359.Enabled:=false;
@@ -7844,7 +6377,6 @@ end;
 
 procedure TDental.Label360DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a seno maxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label360.Enabled:=false;
@@ -7852,7 +6384,6 @@ end;
 
 procedure TDental.Label361DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis unciforme...';
 ATM();
  if GProgreso.Progress>84 then
         label361.Enabled:=false;
@@ -7860,7 +6391,6 @@ end;
 
 procedure TDental.Label362DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio esfenopalatino...';
 ATM();
   if GProgreso.Progress>84 then
         label362.Enabled:=false;
@@ -7868,7 +6398,6 @@ end;
 
 procedure TDental.Label363DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio redondo mayor...';
 ATM();
    if GProgreso.Progress>84 then
         label363.Enabled:=false;
@@ -7876,7 +6405,6 @@ end;
 
 procedure TDental.Label364DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cisura esfenoidal...';
 ATM();
   if GProgreso.Progress>84 then
         label364.Enabled:=false;
@@ -7884,7 +6412,6 @@ end;
 
 procedure TDental.Label365DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a canal óptico...';
 ATM();
   if GProgreso.Progress>84 then
         label365.Enabled:=false;
@@ -7892,7 +6419,6 @@ end;
 
 procedure TDental.Label366DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio etmoidal posterior...';
 ATM();
   if GProgreso.Progress>84 then
         label366.Enabled:=false;
@@ -7900,7 +6426,6 @@ end;
 
 procedure TDental.Label367DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio etmoidal anterior...';
 ATM();
    if GProgreso.Progress>84 then
         label367.Enabled:=false;
@@ -7909,374 +6434,364 @@ end;
 procedure TDental.Shape1MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape1.Pen.Color := clSilver;
 Shape1.Brush.Color := clSilver;
 end;
 
-procedure TDental.Button51Click(Sender: TObject);
-begin
-showmessage('Patrones adicionales cargados.');
-groupbox2.visible:=false;
-end;
-
-
 procedure TDental.Label52Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo central | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, terreno urogenital, riñón derecho, recto | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 11 / USA 8 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo central '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis '+'| Glándulas: '+'pineal, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, terreno urogenital, riñón derecho, recto '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 11 / USA 8 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo, pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label51Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo lateral | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, terreno urogenital, riñón derecho | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 12 / USA 7 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo lateral '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis '+'| Glándulas: '+'pineal '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, terreno urogenital, riñón derecho '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 12 / USA 7 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo, pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label50Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Canino | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Organos: vesícula, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 12 / USA 6 | Dermatomas: T8, T9; T10 | Articulaciones: pie, cadera, rodilla posterior | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
+label200.caption:='Conexiones correspondientes a: '+'Canino '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'tendones, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Organos: '+'vesícula, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo';
+label265.caption:='| Pieza: '+'EUR 12 / USA 6 '+'| Dermatomas: '+'T8, T9; T10 '+'| Articulaciones: '+'pie, cadera, rodilla posterior '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
 
 end;
 
 procedure TDental.Label49Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er premolar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Cavidad: etmoidales | Organos: intestino grueso derecho, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz, ojo |';
-label265.caption:='| Pieza: EUR 14 / USA 5 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'1er premolar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Cavidades: '+'etmoidales '+'| Organos: '+'intestino grueso derecho, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz, ojo';
+label265.caption:='| Pieza: '+'EUR 14 / USA 5 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label48Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do premolar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo |';
-label202.caption:='| Cavidad: etmoidales | Organos: intestino grueso derecho, pulmón derecho, hígado | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 15 / USA 4 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'2do premolar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Cavidades: '+'etmoidales '+'| Organos: '+'intestino grueso derecho, pulmón derecho, hígado '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 15 / USA 4 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label47Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er molar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria dcha., sistema límbico, hipotálamo, cuerdas vocales |';
-label202.caption:='| Glándulas: pituitaria | Cavidad: seno maxilar | Organos: estómago derecho, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: lengua |';
-label265.caption:='| Pieza: EUR 16 / USA 3 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'1er molar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria dcha., sistema límbico, hipotálamo, cuerdas vocales';
+label202.caption:='| Glándulas: '+'pituitaria '+'| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'lengua';
+label265.caption:='| Pieza: '+'EUR 16 / USA 3 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label46Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do molar | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides, pineal, suprarrenales |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 17 / USA 2 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'2do molar '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda '+'| Glándulas: '+'tiroides, paratiroides, pineal, suprarrenales';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: estómago derecho, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 17 / USA 2 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación | '+'Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label45Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Cordal | Cuadrante derecho | Arcada superior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis |';
-label202.caption:='| Cavidad: seno maxilar | Organos: corazón derecho, intestino delgado, duodeno | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: oído interno |';
-label265.caption:='| Pieza: EUR 18 / USA 1 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
+label200.caption:='Conexiones correspondientes a: '+'Cordal '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'sistema nervioso central, psicopatías, epilepsia '+'| Glándulas: '+'lóbulo anterior de la hipófisis';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'corazón derecho, intestino delgado, duodeno '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2, ilíacas, hombro, codo, mano, cubital '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
 
 end;
 
 procedure TDental.Label74Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Cordal | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: presupuesto energético, frío en el cuerpo | Glándulas / sist. tisular: sistema nervioso, periférico |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, corazón derecho, pulmón derecho | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: oído, ojo |';
-label265.caption:='| Pieza: EUR 48 / USA 32 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
+label200.caption:='Conexiones correspondientes a: '+'Cordal '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'presupuesto energético, frío en el cuerpo '+'| Glándulas / sist. tisular: '+'sistema nervioso, periférico';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, corazón derecho, pulmón derecho '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+'oído, ojo';
+label265.caption:='| Pieza: '+'EUR 48 / USA 32 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
 
 end;
 
 procedure TDental.Label73Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do molar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: arterias, venas | Cavidad: etmoidales |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 47 / USA 31 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'2do molar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'arterias, venas '+'| Cavidades: '+'etmoidales';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 47 / USA 31 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label72Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er molar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: pituitaria, arterias, venas | Cavidad: etmoidales |';
-label202.caption:='| Organos: ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 46 / USA 30 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'1er molar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'pituitaria, arterias, venas '+'| Cavidades: '+'etmoidales';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, pulmón derecho '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 46 / USA 30 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label71Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do premolar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria derecha | Glándulas / sist. tisular: tiroides, timo, gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho pilóro, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 45 / USA 29 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula, tobillo medio | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'2do premolar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria derecha '+'| Glándulas / sist. tisular: '+'tiroides, timo, gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho pilóro, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 45 / USA 29 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula, tobillo medio '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label70Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er premolar | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria derecha | Glándulas / sist. tisular: gonadas (testículos, ovarios) |';
-label202.caption:='| Cavidad: seno maxilar | Organos: estómago derecho pilório, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 44 / USA 28 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'1er premolar '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria derecha '+'| Glándulas / sist. tisular: '+'gonadas (testículos, ovarios)';
+label202.caption:='| Cavidades: '+'seno maxilar '+'| Organos: '+'estómago derecho pilório, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 44 / USA 28 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label76Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Canino | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: fertilidad, líbido | Glándulas / sist. tisular: gónadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Organos: vías biliares izquierdas, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 43 / USA 27 | Dermatomas: T8, T9, T10 | Articulaciones: rodilla posterior, cadera | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
+label200.caption:='Conexiones correspondientes a: '+'Canino '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'fertilidad, líbido '+'| Glándulas / sist. tisular: '+'gónadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Organos: '+'vías biliares izquierdas, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo';
+label265.caption:='| Pieza: '+'EUR 43 / USA 27 '+'| Dermatomas: '+'T8, T9, T10 '+'| Articulaciones: '+'rodilla posterior, cadera '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
 
 end;
 
 procedure TDental.Label69Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo lateral | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, región urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 42 / USA 26 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo lateral '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, región urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 42 / USA 26 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label68Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo central | Cuadrante derecho | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga derecha, región urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 41 / USA 25 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo, pánico';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo central '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, región urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 41 / USA 25 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label53Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo central | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital, riñón izquierdo | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: oído |';
-label265.caption:='| Pieza: EUR 21 / USA 9 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo, pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo central '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital, riñón izquierdo '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'oído';
+label265.caption:='| Pieza: '+'EUR 21 / USA 9 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label54Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo lateral | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital, riñón izquierdo | Vertebras: L2, L3, S3, S4, S5, C1, C2 | Organo de los sentidos: ojos |';
-label265.caption:='| Pieza: EUR 22 / USA 10 | Dermatomas: L2, L3, S3, S4, S5, C1, C2 | Articulaciones: pie, sacrocoxis, rodilla posterior | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: acumulación | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo lateral '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis '+'| Glándulas: '+'pineal '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital, riñón izquierdo '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'ojos';
+label265.caption:='| Pieza: '+'EUR 22 / USA 10 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'acumulación '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label55Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Canino | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidades: senos esfenoideos |';
-label202.caption:='| Organos: vesícula, hígado izquierdo | Vertebras: D8, D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 23 / USA 11 | Dermatomas: T8, T9; T10 | Articulaciones: pie, cadera, rodilla posterior | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
+label200.caption:='Conexiones correspondientes a: '+'Canino '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'tendones, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo '+'| Cavidades: '+'senos esfenoideos';
+label202.caption:='| Organos: '+'vesícula, hígado izquierdo '+'| Vertebras: '+'D8, D9, D10 '+'| Organo de los sentidos: '+' ojo';
+label265.caption:='| Pieza: '+'EUR 23 / USA 11 '+'| Dermatomas: '+'T8, T9; T10 '+'| Articulaciones: '+'pie, cadera, rodilla posterior '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
 
 end;
 
 procedure TDental.Label56Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er premolar | Cuadrante izquierdoo | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidad: etmoidales |';
-label202.caption:='| Organos: intestino grueso derecho, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: naríz |';
-label265.caption:='| Pieza: EUR 24 / USA 12 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: seco | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'1er premolar '+'| Cuadrante izquierdoo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo '+'| Cavidades: '+'etmoidales';
+label202.caption:='| Organos: '+'intestino grueso derecho, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+' naríz';
+label265.caption:='| Pieza: '+'EUR 24 / USA 12 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'seco '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label57Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do premolar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidad: etmoidal |';
-label202.caption:='| Organos: intestino grueso derecho, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 25 / USA 13 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: mano, radial pie, dedo gordo del pie, hombro, codo | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: seco | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'2do premolar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento '+'| Glándulas: '+'lóbulo posterior de la hipófisis, timo '+'| Cavidades: '+'etmoidal';
+label202.caption:='| Organos: '+'intestino grueso derecho, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+' nariz';
+label265.caption:='| Pieza: '+'EUR 25 / USA 13 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'seco '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label58Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er molar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides |';
-label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, páncreas | Vertebras: D11, D12, L1 | Organo de los sentidos: boca, tacto |';
-label265.caption:='| Pieza: EUR 26 / USA 14 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'1er molar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda '+'| Glándulas: '+'tiroides, paratiroides';
+label202.caption:=''+'| Cavidades: '+'senos maxilares '+'| Organos: '+'estómago izquierdo, bazo, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+' boca, tacto';
+label265.caption:='| Pieza: '+'EUR 26 / USA 14 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label59Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do molar | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides |';
-label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, vejíga | Vertebras: D11, D12, L1 | Organo de los sentidos: boca, tacto |';
-label265.caption:='| Pieza: EUR 27 / USA 15 | Dermatomas: T11, T12, L1 | Articulaciones: maxilar (mandíbula), rodilla anterior | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'2do molar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda '+'| Glándulas: '+'tiroides, paratiroides';
+label202.caption:=''+'| Cavidades: '+'senos maxilares | Organos: estómago izquierdo, bazo, vejíga '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+' boca, tacto';
+label265.caption:='| Pieza: '+'EUR 27 / USA 15 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label60Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Cordal | Cuadrante izquierdo | Arcada superior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal, adenoides | Otros: sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis |';
-label202.caption:='| Cavidades: senos petrósos | Organos: corazón izquierdo, yeyuno ileón izquierdo | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: lengua, oído interno |';
-label265.caption:='| Pieza: EUR 28 / USA 16 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
+label200.caption:='Conexiones correspondientes a: '+'Cordal '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal, adenoides '+'| Otros: '+'sistema nervioso central, psicopatías, epilepsia '+'| Glándulas: '+'lóbulo anterior de la hipófisis';
+label202.caption:=''+'| Cavidades: '+'senos petrósos '+'| Organos: '+'corazón izquierdo, yeyuno ileón izquierdo '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+' lengua, oído interno';
+label265.caption:='| Pieza: '+'EUR 28 / USA 16 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
 
 end;
 
 procedure TDental.Label61Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Cordal | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: fuego | Amígdalas: lingüal | Otros: presupuesto energético, frío en el cuerpo | Glándulas / sist. tisular: sistema nervioso periférico |';
-label202.caption:='| Cavidades: oído interno | Organos: corazón izquierdo, yeyuno ileón izquierdo, intestino grueso izquierdo | Vertebras: C7, D1, D5, D6, D7, S1, S2 | Organo de los sentidos: ojo, oído |';
-label265.caption:='| Pieza: EUR 38 / USA 17 | Dermatomas: T1, T5, T6, T7, S1, S2, S3 | Articulaciones: hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas | Emoción: alegría |';
-label384.Caption:='| Estación: verano | Ambiente: calor | Desarrollo: crecimiento | Color: rojo | Sabor: amargo | Orientación: sur |';
+label200.caption:='Conexiones correspondientes a: '+'Cordal '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'presupuesto energético, frío en el cuerpo '+'| Glándulas / sist. tisular: '+'sistema nervioso periférico';
+label202.caption:=''+'| Cavidades: '+'oído interno '+'| Organos: '+'corazón izquierdo, yeyuno ileón izquierdo, intestino grueso izquierdo '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+' ojo, oído';
+label265.caption:='| Pieza: '+'EUR 38 / USA 17 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
 
 end;
 
 procedure TDental.Label62Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do molar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: arterias, venas | Cavidades:  seno maxilar |';
-label202.caption:='| Organos: intestino grueso izquierdo, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: boca, naríz |';
-label265.caption:='| Pieza: EUR 37 / USA 18 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'2do molar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'arterias, venas '+'| Cavidades: '+' seno maxilar';
+label202.caption:='| Organos: '+'intestino grueso izquierdo, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+' boca, naríz';
+label265.caption:='| Pieza: '+'EUR 37 / USA 18 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label63Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er molar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: metal | Amígdalas: tubaria | Otros: piel | Glándulas / sist. tisular: pituitaria, pineal, arterias, venas | Cavidades: seno maxilar |';
-label202.caption:='| Organos: intestino grueso izquierdo, pulmón izquierdo | Vertebras: C5, C6, C7, D3, D4, L4, L5 | Organo de los sentidos: boca, nariz |';
-label265.caption:='| Pieza: EUR 36 / USA 19 | Dermatomas: C5, C6, C7, T2, T3, T4, L4, L5 | Articulaciones: codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie | Emoción: melancolía |';
-label384.Caption:='| Estación: otoño | Ambiente: sequedad | Desarrollo: cosecha | Color: blanco | Sabor: picante | Orientación: oeste |';
+label200.caption:='Conexiones correspondientes a: '+'1er molar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'pituitaria, pineal, arterias, venas '+'| Cavidades: '+'seno maxilar';
+label202.caption:='| Organos: '+'intestino grueso izquierdo, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'boca, nariz';
+label265.caption:='| Pieza: '+'EUR 36 / USA 19 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
 
 end;
 
 procedure TDental.Label64Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 2do premolar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria izquierda | Glándulas / sist. tisular: gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidades: maxilares | Organos: estómago izquierdo, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 35 / USA 20 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'2do premolar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria izquierda '+'| Glándulas / sist. tisular: '+'gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: '+'maxilares '+'| Organos: '+'estómago izquierdo, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 35 / USA 20 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label65Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: 1er premolar | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: tierra | Amígdalas: laringea | Otros: glándula mamaria izquierda | Glándulas / sist. tisular: mamaria, gonadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Cavidad: senos maxilares | Organos: estómago izquierdo, bazo | Vertebras: D11, D12, L1 | Organo de los sentidos: boca |';
-label265.caption:='| Pieza: EUR 34 / USA 21 | Dermatomas: T11, T12, L1 | Articulaciones: rodilla anterior, mandíbula | Emoción: ansiedad |';
-label384.Caption:='| Estación: verano tardío | Ambiente: humedad | Desarrollo: transformación | Color: amarillo | Sabor: dulce | Orientación: centro |';
+label200.caption:='Conexiones correspondientes a: '+'1er premolar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria izquierda '+'| Glándulas / sist. tisular: '+'mamaria, gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: '+'senos maxilares '+'| Organos: '+'estómago izquierdo, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: EUR 34 / USA 21 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
 
 end;
 
 procedure TDental.Label77Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Canino | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: madera | Amígdalas: palatina | Otros: fertilidad, líbido | Glándulas / sist. tisular: gónadas (testículos, ovarios), vasos linfáticos |';
-label202.caption:='| Organos: vías biliares izquierdas, hígado derecho | Vertebras: D9, D10 | Organo de los sentidos: ojo |';
-label265.caption:='| Pieza: EUR 33 / USA 22 | Dermatomas: T8, T9, T10 | Articulaciones: rodilla posterior, cadera | Emoción: íra |';
-label384.Caption:='| Estación: primavera | Ambiente: viento | Desarrollo: germinación | Color: verde | Sabor: agrio | Orientación: este/oriente |';
+label200.caption:='Conexiones correspondientes a: '+'Canino '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'fertilidad, líbido '+'| Glándulas / sist. tisular: '+'gónadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Organos: '+'vías biliares izquierdas, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo';
+label265.caption:='| Pieza: '+'EUR 33 / USA 22 '+'| Dermatomas: '+'T8, T9, T10 '+'| Articulaciones: '+'rodilla posterior, cadera '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
 
 end;
 
 procedure TDental.Label66Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo lateral | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 32 / USA 23 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo lateral '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 32 / USA 23 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label67Click(Sender: TObject);
 begin
 Evita();
-label200.caption:='Conexiones correspondientes a: Incisivo central | Cuadrante izquierdo | Arcada inferior.';
-label201.caption:='| Elemento: agua | Amígdalas: faringea | Otros: huesos | Glándulas / sist. tisular: suprarrenales, epididimo | Cavidad: seno frontal |';
-label202.caption:='| Organos: vejiga izquierda, terreno urogenital | Vertebras: L2, L3, S3, S4, S5, Coxis | Organo de los sentidos: nariz |';
-label265.caption:='| Pieza: EUR 31 / USA 24 | Dermatomas: L2, L3, S4, S5, Coxis | Articulaciones: rodilla anterior, sacrocoxis, pie | Emoción: miedo/pánico |';
-label384.Caption:='| Estación: invierno | Ambiente: frío | Desarrollo: almacenamiento | Color: negro | Sabor: salado | Orientación: norte |';
+label200.caption:='Conexiones correspondientes a: '+'Incisivo central '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 31 / USA 24 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
 
 end;
 
 procedure TDental.Label291DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8288,7 +6803,6 @@ end;
 
 procedure TDental.Label315DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -8300,7 +6814,6 @@ end;
 
 procedure TDental.Label395DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
   if GProgreso.Progress>84 then
         label395.Enabled:=false;
@@ -8308,7 +6821,6 @@ end;
 
 procedure TDental.Label396DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a seno frontal...';
 ATM();
   if GProgreso.Progress>84 then
         label396.Enabled:=false;
@@ -8316,7 +6828,6 @@ end;
 
 procedure TDental.Label397DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
         label397.Enabled:=false;
@@ -8324,7 +6835,6 @@ end;
 
 procedure TDental.Label398DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso nasal...';
 ATM();
   if GProgreso.Progress>84 then
         label398.Enabled:=false;
@@ -8332,7 +6842,6 @@ end;
 
 procedure TDental.Label399DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis ascendente del máxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label399.Enabled:=false;
@@ -8340,7 +6849,6 @@ end;
 
 procedure TDental.Label400DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a fosa del saco lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
         label400.Enabled:=false;
@@ -8348,7 +6856,6 @@ end;
 
 procedure TDental.Label401DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a canal infraorbitario...';
 ATM();
   if GProgreso.Progress>84 then
         label401.Enabled:=false;
@@ -8356,7 +6863,6 @@ end;
 
 procedure TDental.Label402DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a espina nasal anterior...';
 ATM();
   if GProgreso.Progress>84 then
         label402.Enabled:=false;
@@ -8364,7 +6870,6 @@ end;
 
 procedure TDental.Label403DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label403.Enabled:=false;
@@ -8372,7 +6877,6 @@ end;
 
 procedure TDental.Label404DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a seno maxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label404.Enabled:=false;
@@ -8380,7 +6884,6 @@ end;
 
 procedure TDental.Label405DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis unciforme...';
 ATM();
   if GProgreso.Progress>84 then
         label405.Enabled:=false;
@@ -8388,7 +6891,6 @@ end;
 
 procedure TDental.Label406DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio esfenopalatino...';
 ATM();
   if GProgreso.Progress>84 then
         label406.Enabled:=false;
@@ -8396,7 +6898,6 @@ end;
 
 procedure TDental.Label407DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio redondo mayor...';
 ATM();
   if GProgreso.Progress>84 then
         label407.Enabled:=false;
@@ -8404,7 +6905,6 @@ end;
 
 procedure TDental.Label408DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cisura esfenoidal...';
 ATM();
   if GProgreso.Progress>84 then
         label408.Enabled:=false;
@@ -8412,7 +6912,6 @@ end;
 
 procedure TDental.Label409DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a canal óptico...';
 ATM();
   if GProgreso.Progress>84 then
         label409.Enabled:=false;
@@ -8420,7 +6919,6 @@ end;
 
 procedure TDental.Label410DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio etmoidal posterior...';
 ATM();
   if GProgreso.Progress>84 then
         label410.Enabled:=false;
@@ -8428,7 +6926,6 @@ end;
 
 procedure TDental.Label411DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio etmoidal anterior...';
 ATM();
   if GProgreso.Progress>84 then
         label411.Enabled:=false;
@@ -8436,7 +6933,6 @@ end;
 
 procedure TDental.Label394DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8448,7 +6944,6 @@ end;
 
 procedure TDental.Label393DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso temporal...';
 ATM();
      if GProgreso.Progress>84 then
   begin
@@ -8460,7 +6955,6 @@ end;
 
 procedure TDental.Label392DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura escamosa...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8471,7 +6965,6 @@ end;
 
 procedure TDental.Label391DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso occipital...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8482,7 +6975,6 @@ end;
 
 procedure TDental.Label390DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis mastoides...';
 ATM();
   if GProgreso.Progress>84 then
         label390.Enabled:=false;
@@ -8490,7 +6982,6 @@ end;
 
 procedure TDental.Label389DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a poro acústico externo...';
 ATM();
   if GProgreso.Progress>84 then
         label389.Enabled:=false;
@@ -8498,7 +6989,6 @@ end;
 
 procedure TDental.Label388DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis estiloides...';
 ATM();
   if GProgreso.Progress>84 then
         label388.Enabled:=false;
@@ -8506,7 +6996,6 @@ end;
 
 procedure TDental.Label387DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a cóndilo de la mandíbula...';
 ATM();
   if GProgreso.Progress>84 then
         label387.Enabled:=false;
@@ -8514,7 +7003,6 @@ end;
 
 procedure TDental.Label386DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a ángulo de la mandíbula...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -8525,7 +7013,6 @@ end;
 
 procedure TDental.Label385DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a escotadura sigmoidea mandibular...';
 ATM();
   if GProgreso.Progress>84 then
         label385.Enabled:=false;
@@ -8533,7 +7020,6 @@ end;
 
 procedure TDental.Label384DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a ...';
 ATM();
   if GProgreso.Progress>84 then
         label384.Enabled:=false;
@@ -8541,7 +7027,6 @@ end;
 
 procedure TDental.Label383DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis coronoides...';
 ATM();
   if GProgreso.Progress>84 then
         label383.Enabled:=false;
@@ -8549,7 +7034,6 @@ end;
 
 procedure TDental.Label382DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a mandíbula...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8561,7 +7045,6 @@ end;
 
 procedure TDental.Label381DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea oblícua interna...';
 ATM();
   if GProgreso.Progress>84 then
         label381.Enabled:=false;
@@ -8569,7 +7052,6 @@ end;
 
 procedure TDental.Label380DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a orificio mentoniano...';
 ATM();
    if GProgreso.Progress>84 then
   begin
@@ -8580,7 +7062,6 @@ end;
 
 procedure TDental.Label379DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a maxilar superior...';
 ATM();
   if GProgreso.Progress>84 then
         label379.Enabled:=false;
@@ -8588,7 +7069,6 @@ end;
 
 procedure TDental.Label378DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso malar...';
 ATM();
   if GProgreso.Progress>84 then
         label378.Enabled:=false;
@@ -8596,7 +7076,6 @@ end;
 
 procedure TDental.Label377DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a apófisis ascendente del maxilar...';
 ATM();
   if GProgreso.Progress>84 then
         label377.Enabled:=false;
@@ -8604,7 +7083,6 @@ end;
 
 procedure TDental.Label376DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso lacrimal...';
 ATM();
   if GProgreso.Progress>84 then
         label376.Enabled:=false;
@@ -8612,7 +7090,6 @@ end;
 
 procedure TDental.Label375DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso nasal...';
 ATM();
   if GProgreso.Progress>84 then
         label375.Enabled:=false;
@@ -8620,7 +7097,6 @@ end;
 
 procedure TDental.Label373DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a borde supraorbitario...';
 ATM();
   if GProgreso.Progress>84 then
         label373.Enabled:=false;
@@ -8628,7 +7104,6 @@ end;
 
 procedure TDental.Label372DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso parietal...';
 ATM();
   if GProgreso.Progress>84 then
         label372.Enabled:=false;
@@ -8636,7 +7111,6 @@ end;
 
 procedure TDental.Label371DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a sutura coronaria...';
 ATM();
  if GProgreso.Progress>84 then
   begin
@@ -8648,7 +7122,6 @@ end;
 
 procedure TDental.Label370DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a hueso frontal...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8660,7 +7133,6 @@ end;
 
 procedure TDental.Label369DblClick(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a línea temporal-superior...';
 ATM();
   if GProgreso.Progress>84 then
   begin
@@ -8836,9 +7308,8 @@ procedure TDental.ATM();
 begin
 MyChrono.Start;
 GProgreso.Progress:=0;
-panel8.Caption:='Rectificado |';
+panel8.Caption:='Rectificado | ';
 panel8.Refresh;
-Panel3.Visible := True;
 DM.Conscida.Disablecontrols;
 alg:=2+random(75);
 l:=1;
@@ -8869,9 +7340,8 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Panel8.Caption := Inttostr(Random(50)+50);
-panel3.visible:=false;
 DM.Conscida.enablecontrols;
 rectificado := 50+Random(70);
 If rectificado>100 Then Rectificado := 85+Random(15);
@@ -8883,9 +7353,8 @@ procedure TDental.ATM2();
 begin
 MyChrono.Start;
 GProgreso.Progress:=0;
-panel8.Caption:='Rectificado |';
+panel8.Caption:='Rectificado | ';
 panel8.Refresh;
-Panel3.Visible := True;
 DM.Conscida.Disablecontrols;
 alg:=2+random(75);
 l:=1;
@@ -8916,87 +7385,35 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Panel8.Caption := Inttostr(Random(50)+50);
-panel3.visible:=false;
 DM.Conscida.enablecontrols;
 rectificado := 85+Random(15);
 panel8.caption:='Rectificado | '+inttostr(rectificado);
 MyChrono.Stop;
 end;
-
-procedure TDental.Tension();
-begin
-cut:=cut+1;
-cut1:=random(24);
-if cut1 >22 then panel3.caption:='Se han recibido señales impropias, por favor reláje a la persona.  Corrigiendo...';
-if cut1 <2 then panel3.caption:='Interferencias metálicas han alterado las lecturas.  Corrigiendo...';
-if cut1 =19 then panel3.caption:='Se ha detectado exceso de estrés inflamatiorio residual.  Corrigiendo...';
-if cut1 =9 then panel3.caption:='Se ha detectado exceso de estrés tóxico residual.  Corrigiendo...';
-if cut1 =6 then panel3.caption:='Se ha detectado exceso de estrés degenerativo residual.  Corrigiendo...';
-if cut1 =7 then panel3.caption:='Se ha detectado exceso de estrés muscular residual.  Corrigiendo...';
-if cut1 =14 then panel3.caption:='Se ha detectado inflamación y/o infección residual/es.  Corrigiendo...';
-if cut1 =13 then panel3.caption:='Se ha detectado inflamación y/o infección residual/es.  Corrigiendo...';
-AscFreq:=0;
-S:=label188.caption;
-For i:=1 to Length(S) do AscFreq:=AscFreq+Ord(S[i]);
-ChangingPulses(5000,555,559,1,1,8+(random(2)),
- '11111111','11111111');
-ChangingPulses(5000,ascfreq+random(20),ascfreq+500,1+random(12),5+random(10),2+random(3),
-'11111111','11111111');
- ChangingPulses(5000,5,65000,5,1,2+(random(4)),
- '11111111','01111111');
-end;
           
 procedure TDental.Belen();
 begin
-panel3.visible:=true;
-panel3.refresh;
+MyChrono.Start;
 Panel9.Visible := False;
 GProgreso.Progress := 0;
 vtiempo := 60+Random(60);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
-
-label191.caption:='Para mejores resultados reduzca el estrés.';
-label192.caption:='Concéntrese en su tensión muscular.';
-label193.caption:='Sienta la naturaleza de las tensión.';
-label194.caption:='¿Qué beneficio le aporta??';
-label195.caption:='Hágase uno con la tensión.';
-label196.caption:='Libere la tensión.';
-label197.caption:='Aumente las respiraciones, respire dentro de la tensión.';
-label198.caption:='Reemplaze la tensión por una tranquila relajación.';
-label191.refresh;
-label192.refresh;
-label193.refresh;
-label194.refresh;
-label195.refresh;
-label196.refresh;
-label197.refresh;
-label198.refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
 begin1:=3+random(3);
 end1:=11+random(3);
-repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(50000,begin1,end1,int1,int2,vart,
+ChangingPulses(50000,begin1,end1,int1,int2,1,
  '11111111','01111111');
  GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(50000,begin1,end1,int1,int2,vart,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- begin1:=33+random(3);
+begin1:=33+random(3);
 end1:=51+random(3);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(50000,begin1,end1,int1,int2,vart,
- '11111111','01111111');
- GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(50000,begin1,end1,int1,int2,vart,
+ChangingPulses(50000,begin1,end1,int1,int2,1,
  '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -9004,20 +7421,19 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
 res:=60+random(45)+cut;
 rea:= 45+random(65)-cut;
 rec:=50+random(55)+cut;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>84 then Fmain.recmain:=Fmain.recmain+1;
 button16.visible:=true;
 Panel9.caption:='| Resonancia: '+ FloatToStr(res)+' | Reactividad: '+ FloatToStr(rea)+' | Rectificado: '+ FloatToStr(rec);
 Panel9.Visible := True;
-Panel3.Visible := False;
+MyChrono.Stop;
 End;
 
 procedure TDental.Clara();
@@ -9027,25 +7443,23 @@ GProgreso.Progress := 0;
 vtiempo := 30+Random(30);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+5);
-panel3.visible:=true;
-panel3.refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
 AscFreq:=0;
 S:=label130.caption;
 For i:=1 to Length(S) do AscFreq:=AscFreq+Ord(S[i]);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5000,555,559,1,1,2,
+ ChangingPulses(5000,555,559,1,1,1,
  '11111111','01111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5000,ascfreq+random(20),ascfreq+500,1+random(12),1+random(10),2,
+ ChangingPulses(5000,ascfreq+random(20),ascfreq+500,1+random(12),1+random(10),1,
 '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(5000,5,65000,5,1,2,
+ChangingPulses(5000,5,65000,5,1,1,
  '11111111','01111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -9053,18 +7467,17 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 res:=60+random(45)+cut;
 rea:= 45+random(65)-cut;
 rec:=50+random(55)+cut;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 button16.visible:=true;
 Panel9.caption:='| Resonancia: '+ FloatToStr(res)+ ' | Reactividad: '+ FloatToStr(rea)+ ' | Rectificado: '+ FloatToStr(rec);
 Panel9.visible := True;
-Panel3.Visible := False;
 MyChrono.Stop;
 end;
 
@@ -9127,35 +7540,43 @@ Procedure TDental.Fionula();
 Begin
 MyChrono.Start;
 GProgreso.Progress := 0;
-vtiempo := 30+Random(60);
+vtiempo := 60+Random(30);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+5);
-panel3.visible:=true;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 Panel9.Visible := False;
-panel3.refresh;
 Repeat
 tooth:=random(1000)+1000;
 tooth1:=random(100)+10;
 tooth2:=tooth2+1;
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(22222,5555,55555,1,1,1,
  '11111111','01111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(22222,5555,88888,1,1,1,
  '11111111','11111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(22222,tooth,88888,1,1,1,
  '11111111','01111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(33333,tooth,88888,tooth1,1,1,
  '11111111','11111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(44444,tooth,88888,1,2,1,
  '11111111','01111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(55555,tooth,88888,tooth1,2,1,
  '11111111','11111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(77777,tooth,88888,1,3+Random(4),1,
  '11111111','11111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(88888,tooth,88888,1,3+Random(4),1,
  '11111111','01111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(99999,tooth,88888,tooth1,4,1,
  '11111111','11111111');
+ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(55555,tooth1,88888,1,5,1,
  '11111111','01111111');
  GProgreso.progress :=  round(MyChrono.pTEcoule);
@@ -9164,31 +7585,29 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 label128.visible:=true;
 label129.visible:=true;
-if tooth1>100 then tooth1:=100;
+if tooth1>100 then tooth1:=85+Random(15);
 label129.caption:=inttostr(tooth1);
 label213.caption:=inttostr(40+random(tooth1));
 label212.caption:=inttostr(40+random(tooth1));
 label128.visible:=true;
 label129.visible:=true;
-if tooth1>100 then tooth1:=100;
+if tooth1>100 then tooth1:=85+Random(15);
 label129.caption:=inttostr(tooth1);
 label213.caption:=inttostr(40+random(tooth1));
 label212.caption:=inttostr(40+random(tooth1));
-panel3.refresh;
 res:=60+random(45)+cut;
 rea:= 45+random(65)-cut;
 rec:=50+random(55)+cut;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 Panel9.caption:='| Resonancia: '+ FloatToStr(tooth1)+' | Reactividad: '+ FloatToStr(rea)+' | Rectificado: '+ FloatToStr(rec);
 Panel9.Visible := True;
-Panel3.Visible := False;
 MyChrono.Stop;
 End;
 
@@ -9336,11 +7755,6 @@ begin
            if paintlabel2[i].szam = paintlabel3[6].szam then
                   paintlabel2[i].lab.Color:=clAqua;
 end;
-end;
-
-procedure TDental.Ayuda1Click(Sender: TObject);
-begin
-memo1.visible:=true;
 end;
 
 procedure TDental.SavetoReport1Click(Sender: TObject);
@@ -9724,9 +8138,9 @@ end;
 procedure TDental.Label621Click(Sender: TObject);
 begin
 testform1.vtransferencia := true;
-testform1.edit32.text:=edit6.text+' | ';
+testform1.edit32.text:=edit6.text;
 testform1.vtransferencia := true;
-testform1.edit34.text:=edit6.text+' | ';
+testform1.edit34.text:=edit6.text;
 testform1.edit32.Refresh;
 testform1.edit34.Refresh;
 close;
@@ -9768,7 +8182,6 @@ procedure TDental.LTestClick(Sender: TObject);
 begin
 GProgreso.progress:=0;
 zap:=2;
-Panel3.Caption := 'Realizando test...';
 Button1.Click;
 end;
 
@@ -9776,7 +8189,6 @@ procedure TDental.LZapClick(Sender: TObject);
 begin
 GProgreso.progress:=0;
 zap:=50+random(10);
-Panel3.Caption := 'Realizando zap...';
 Button1.Click;
 end;
 
@@ -9791,7 +8203,7 @@ begin
   DM.QueryFilter.Last;
   ConscidaGrid.dataSource:=DM.DSFilter;
   ConscidaNavigator.dataSource:=DM.DSFilter;
-  L_Filtro.Caption := 'Test ''Clifford''';
+  L_Filtro.Caption := 'Análisis ''Clifford''';
      L_Filtro.Refresh;
   PFiltros.Visible := False;
   VerFalso();
@@ -9825,9 +8237,6 @@ zap :=  45+random(30);
 DBMemo_Name.DataSource := ConscidaGrid.DataSource ;
 L_Filtro.Caption := 'Alersodes';
 L_Filtro.Refresh;
-Panel3.caption:='Realizando zap a '+Zapdecavidad1.Caption+'...';
-PANEL3.visible :=true;
-panel3.refresh;
 PcalImprove();
 Zap1:=Zap1+30;
 if zap1>55 then zap1:=90;
@@ -9889,10 +8298,8 @@ ChangingPulses(55555,50*ren,51*ren,200,zap,5+Random(4),
 GProgreso.progress:=100;
 GProgreso.Refresh;
 zap:=1;
-panel3.visible := false;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
 MyChrono.Stop;
 ItemsAnadidos();
 end;
@@ -9905,132 +8312,29 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 Ren:= value*20;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a cavidad bucal | Arcada dental superior...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-
-Panel3.caption:='Realizando zap a cavidad bucal | Velo palatino...';
-GProgreso.progress:=6;
+vtiempo := 30+Random(30);
+GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
-Ren:= value*20;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
                       'llllllll','llllllll');
-
-Panel3.caption:='Realizando zap a cavidad bucal | Arco palatofaríngeo...';
-GProgreso.progress:=12;
+GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Amígdala palatina...';
-GProgreso.progress:=18;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Arco palatogloso...';
-GProgreso.progress:=24;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Dorso de la lengua...';
-GProgreso.progress:=30;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Arcada dental inferior...';
-GProgreso.progress:=36;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Labio inferior...';
-GProgreso.progress:=42;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Istmo de las fauces...';
-GProgreso.progress:=48;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Comisura de los labios...';
-GProgreso.progress:=54;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Uvula (campanilla)...';
-GProgreso.progress:=60;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Paladar blando...';
-GProgreso.progress:=66;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Paladar duro...';
-GProgreso.progress:=72;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Labio superior...';
-GProgreso.progress:=78;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-                      
-Panel3.caption:='Realizando zap a cavidad bucal | Tubérculo del labio superior...';
-GProgreso.progress:=84;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-
-Panel3.caption:='Realizando zap a cavidad bucal | Toda...';
-GProgreso.progress:=90;
-GProgreso.Refresh;
-Ren:= value*20;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=95;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5), 3+Random(4),
-                      'llllllll','llllllll');
-
-panel3.visible := false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -10040,7 +8344,6 @@ end;
 procedure TDental.Cavidades1Click(Sender: TObject);
 begin
 MyChrono.Start;
-//ActualizaDBGrid1();
 Index:='';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
@@ -10048,13 +8351,10 @@ DM.Conscida.Last;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a cavidades...';
 PcalImprove();
-PANEL3.visible :=true;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([8521]);
@@ -10141,14 +8441,13 @@ ChangingPulses(5555,50* ren,51* ren,2,zap,2+Random(4),
  'llllllll','llllllll');
 GProgreso.progress:=100;
 GProgreso.Refresh;
-Panel3.Visible:=False;
 DM.Conscida.enablecontrols;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 end;
 
@@ -10165,15 +8464,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a '+Huesoscraneales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1020]);
@@ -10183,7 +8479,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=2;
@@ -10195,7 +8491,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=4;
@@ -10208,7 +8504,7 @@ Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 zap :=  45+random(30);
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=6;
@@ -10220,7 +8516,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=8;
@@ -10232,7 +8528,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=10;
@@ -10244,7 +8540,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.Progress:=12;
@@ -10256,7 +8552,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=14;
@@ -10268,7 +8564,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=16;
@@ -10280,7 +8576,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=18;
@@ -10292,7 +8588,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=20;
@@ -10304,7 +8600,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=22;
@@ -10316,7 +8612,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=24;
@@ -10328,7 +8624,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=26;
@@ -10340,7 +8636,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=28;
@@ -10352,7 +8648,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=30;
@@ -10364,7 +8660,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=32;
@@ -10376,7 +8672,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=34;
@@ -10388,7 +8684,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=36;
@@ -10400,7 +8696,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=38;
@@ -10412,7 +8708,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=40;
@@ -10424,7 +8720,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=42;
@@ -10436,7 +8732,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=44;
@@ -10448,7 +8744,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=46;
@@ -10460,7 +8756,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=48;
@@ -10472,7 +8768,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=50;
@@ -10485,7 +8781,7 @@ Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 zap :=  45+random(30);
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=52;
@@ -10497,7 +8793,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=54;
@@ -10509,7 +8805,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=56;
@@ -10521,7 +8817,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.Progress:=58;
@@ -10533,7 +8829,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=60;
@@ -10545,7 +8841,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=62;
@@ -10557,7 +8853,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=64;
@@ -10569,7 +8865,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=66;
@@ -10581,7 +8877,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=68;
@@ -10593,7 +8889,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=70;
@@ -10605,7 +8901,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=72;
@@ -10617,7 +8913,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=74;
@@ -10629,7 +8925,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=76;
@@ -10641,7 +8937,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=78;
@@ -10653,7 +8949,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=80;
@@ -10665,7 +8961,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=82;
@@ -10677,7 +8973,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=84;
@@ -10689,7 +8985,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=85;
@@ -10701,7 +8997,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=86;
@@ -10713,7 +9009,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=87;
@@ -10725,7 +9021,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=88;
@@ -10737,7 +9033,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=89;
@@ -10749,7 +9045,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=90;
@@ -10761,7 +9057,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=91;
@@ -10773,7 +9069,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=92;
@@ -10785,7 +9081,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=93;
@@ -10797,7 +9093,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=94;
@@ -10809,7 +9105,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=95;
@@ -10821,7 +9117,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=96;
@@ -10833,7 +9129,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=97;
@@ -10845,7 +9141,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=98;
@@ -10857,7 +9153,7 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
 
 GProgreso.progress:=99;
@@ -10869,16 +9165,15 @@ if DM.ConscidaOldValue.AsInteger=0 then l:=0;
 Conscidagrid.refresh;
 DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
+ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),1,
                       'llllllll','llllllll');
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -10898,15 +9193,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a '+Sarcodesdentales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([750]);
@@ -11678,14 +9970,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -11768,15 +10059,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+ATM1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([755]);
@@ -12078,14 +10366,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -12105,15 +10392,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a '+Isodesdentales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([6639]);
@@ -12788,15 +11072,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -12830,9 +11112,6 @@ zap :=  45+random(30);
 DBMemo_Name.DataSource := ConscidaGrid.DataSource ;
 L_Filtro.Caption := 'Bacterias';
 L_Filtro.Refresh;
-Panel3.caption:='Realizando zap a '+Bacteriasbucales1.Caption+'...';
-PANEL3.visible :=true;
-panel3.refresh;
 PcalImprove();
 Zap1:=Zap1+30;
 if zap1>55 then zap1:=90;
@@ -12894,10 +11173,9 @@ ChangingPulses(55555,50*ren,51*ren,200,zap,5+Random(4),
 GProgreso.progress:=100;
 GProgreso.Refresh;
 zap:=1;
-panel3.visible := false;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 ItemsAnadidos();
 end;
@@ -12928,9 +11206,6 @@ zap :=  45+random(30);
 DBMemo_Name.DataSource := ConscidaGrid.DataSource ;
 L_Filtro.Caption := 'Virus';
 L_Filtro.Refresh;
-Panel3.caption:='Realizando zap a '+Virusbucales1.Caption+'...';
-PANEL3.visible :=true;
-panel3.refresh;
 PcalImprove();
 Zap1:=Zap1+30;
 if zap1>55 then zap1:=90;
@@ -12992,10 +11267,9 @@ ChangingPulses(55555,50*ren,51*ren,200,zap,2+Random(4),
 GProgreso.progress:=100;
 GProgreso.Refresh;
 zap:=1;
-panel3.visible := false;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 ItemsAnadidos();
 end;
@@ -13013,15 +11287,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a '+Nosodesdentales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1009]);
@@ -14254,15 +12525,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -14282,15 +12551,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Gingivitis2.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1778]);
@@ -14471,15 +12737,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -14499,15 +12763,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+CndidaAlbicans1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1840]);
@@ -14868,15 +13129,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -14896,15 +13155,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Periodontitis1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1778]);
@@ -15133,15 +13389,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -15161,15 +13415,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Caries1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([58]);
@@ -15494,15 +13745,13 @@ DBMemo_Name.Text  :=ConscidaGrid.Columns[2].Field.AsString;
 DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
-
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -15522,15 +13771,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Alveolisdental1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([642]);
@@ -16362,14 +14608,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -16389,15 +14634,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Abscesosbucales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([1468]);
@@ -16519,14 +14761,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -16546,15 +14787,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Estomatitis1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([158]);
@@ -17229,14 +15467,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -17251,13 +15488,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Macroglosia1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -17312,13 +15546,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -17333,13 +15566,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Micrognacia1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -17394,13 +15624,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -17420,15 +15649,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Frenillocorto1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([255]);
@@ -17646,14 +15872,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -17668,13 +15893,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Bruxismo1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -17729,13 +15951,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -17750,13 +15971,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Fluorosisdental1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -17811,13 +16029,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -17837,15 +16054,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Halitosis1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([4]);
@@ -18195,14 +16409,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -18217,13 +16430,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Anquilosis1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -18278,13 +16488,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -18304,15 +16513,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Bocaseca1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([21]);
@@ -18758,14 +16964,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -18785,15 +16990,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Cnceroral1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([75]);
@@ -19396,14 +17598,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -19423,15 +17624,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Traumatismo1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([11]);
@@ -20082,14 +18280,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -20104,13 +18301,10 @@ DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 GProgreso.progress:=0;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a aftas...';
 PcalImprove();
-PANEL3.visible :=true;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([2068]);
@@ -20196,7 +18390,6 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,50* ren,51* ren,2,1,zap-10,
  'llllllll','llllllll');
 GProgreso.progress:=100; GProgreso.Refresh;
-panel3.visible := false;
 if dir>3 then  panel2.visible := true;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
@@ -20205,7 +18398,7 @@ DM.Conscida.last;
 DM.Conscida.enablecontrols;  oeg:=random(3);
 if oeg<3 then zap:=1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 end;
 
@@ -20222,15 +18415,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Gingivitisulcerosaagudanecrosante1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([75]);
@@ -21014,14 +19204,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -21041,15 +19230,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Ulcerasorales1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([110]);
@@ -21339,14 +19525,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -21366,15 +19551,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Ulceraslabialesofebriles1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([3]);
@@ -22700,14 +20882,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -22727,15 +20908,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap a cáncer de lengua...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([75]);
@@ -23338,14 +21516,13 @@ DBMemo_Name.refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -23360,9 +21537,8 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
-Panel3.caption:='Realizando zap a '+Ageusia1.Caption+'...';
 Lengua();
 end;
 
@@ -23374,9 +21550,8 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
-Panel3.caption:='Realizando zap a '+Digeusia1.Caption+'...';
 Lengua();
 end;
 
@@ -23388,17 +21563,14 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
-Panel3.caption:='Realizando zap a '+Hipogeusia1.Caption+'...';
 Lengua();
 end;
 
 procedure TDental.Lengua();
 begin
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 l:=1;
 DM.Conscida.FindKey([2111]);
 Value:=DM.ConscidaOldValue.AsInteger +15;
@@ -23451,13 +21623,12 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
@@ -23467,224 +21638,192 @@ end;
 procedure TDental.CordalCuadrantederechoArcadasuperiorUSA1EUR181Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CordalCuadrantederechoArcadasuperiorUSA1EUR181.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2domolarCuadrantederechoArcadasuperiorUSA2EUR171Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2domolarCuadrantederechoArcadasuperiorUSA2EUR171.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1ermolarCuadrantederechoArcadasuperiorUSA3EUR161Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1ermolarCuadrantederechoArcadasuperiorUSA3EUR161.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2dopremolarCuadrantederechoArcadasuperiorUSA4EUR151Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2dopremolarCuadrantederechoArcadasuperiorUSA4EUR151.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1erpremolarCuadrantederechoArcadasuperiorUSA5EUR141Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1erpremolarCuadrantederechoArcadasuperiorUSA5EUR141.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CaninoCuadrantederechoArcadasuperiorUSA6EUR131Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CaninoCuadrantederechoArcadasuperiorUSA6EUR131.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivolateralCuadrantederechoArcadasuperiorUSA7EUR121Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivolateralCuadrantederechoArcadasuperiorUSA7EUR121.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivocentralCuadrantederechoArcadasuperiorUSA8EUR111Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivocentralCuadrantederechoArcadasuperiorUSA8EUR111.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivocentralCuadranteizquierdoArcadasuperiorUSA9EUR211Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivocentralCuadranteizquierdoArcadasuperiorUSA9EUR211.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivolateralCuadranteizquierdoArcadasuperiorUSA10EUR221Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivolateralCuadranteizquierdoArcadasuperiorUSA10EUR221.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CaninoCuadranteizquierdoArcadasuperiorUSA11EUR231Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CaninoCuadranteizquierdoArcadasuperiorUSA11EUR231.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1erpremolarCuadranteizquierdoArcadasuperiorUSA12EUR241Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1erpremolarCuadranteizquierdoArcadasuperiorUSA12EUR241.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2dopremolarCuadranteizquierdoArcadasuperiorUSA13EUR251Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2dopremolarCuadranteizquierdoArcadasuperiorUSA13EUR251.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1ermolarCuadranteizquierdoArcadasuperiorUSA14EUR261Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1ermolarCuadranteizquierdoArcadasuperiorUSA14EUR261.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2domolarCuadranteizquierdoArcadasuperiorUSA15EUR271Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2domolarCuadranteizquierdoArcadasuperiorUSA15EUR271.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CordalCuadranteizquierdoArcadasuperiorUSA16EUR281Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CordalCuadranteizquierdoArcadasuperiorUSA16EUR281.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CordalCuadranteizquierdoArcadainferiorUSA17EUR381Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CordalCuadranteizquierdoArcadainferiorUSA17EUR381.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2domolarCuadranteizquierdoArcadainferiorUSA18EUR371Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2domolarCuadranteizquierdoArcadainferiorUSA18EUR371.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1ermolarCuadranteizquierdoArcadainferiorUSA19EUR361Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1ermolarCuadranteizquierdoArcadainferiorUSA19EUR361.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2dopremolarCuadranteizquierdoArcadainferiorUSA20EUR351Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2dopremolarCuadranteizquierdoArcadainferiorUSA20EUR351.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1erpremolarCuadranteizquierdoArcadainferiorUSA21EUR341Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1erpremolarCuadranteizquierdoArcadainferiorUSA21EUR341.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CaninoCuadranteizquierdoArcadainferiorUSA22EUR331Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CaninoCuadranteizquierdoArcadainferiorUSA22EUR331.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivolateralCuadranteizquierdoArcadainferiorUSA23EUR321Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivolateralCuadranteizquierdoArcadainferiorUSA23EUR321.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivocentralCuadranteizquierdoArcadainferiorUSA24EUR311Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivocentralCuadranteizquierdoArcadainferiorUSA24EUR311.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivocentralCuadrantederechoArcadainferiorUSA25EUR411Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivocentralCuadrantederechoArcadainferiorUSA25EUR411.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.IncisivolateralCuadrantederechoArcadainferiorUSA26EUR421Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+IncisivolateralCuadrantederechoArcadainferiorUSA26EUR421.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CaninoCuadrantederechoArcadainferiorUSA27EUR431Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CaninoCuadrantederechoArcadainferiorUSA27EUR431.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1erpremolarCuadrantederechoArcadainferiorUSA28EUR441Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1erpremolarCuadrantederechoArcadainferiorUSA28EUR441.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2dopremolarCuadrantederechoArcadainferiorUSA29EUR451Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2dopremolarCuadrantederechoArcadainferiorUSA29EUR451.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N1ermolarCuadrantederechoArcadainferiorUSA30EUR461Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N1ermolarCuadrantederechoArcadainferiorUSA30EUR461.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.N2domolarCuadrantederechoArcadainferiorUSA31EUR471Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+N2domolarCuadrantederechoArcadainferiorUSA31EUR471.Caption+' ...';
 PiezaDental();
 end;
 
 procedure TDental.CordalCuadrantederechoArcadainferiorUSA32EUR481Click(
   Sender: TObject);
 begin
-Panel3.Caption := 'Realizando zap a '+CordalCuadrantederechoArcadainferiorUSA32EUR481.Caption+' ...';
 PiezaDental();
 end;
 
@@ -23696,12 +21835,10 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
 PcalImprove();
-PANEL3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
@@ -23763,13 +21900,12 @@ Ren:= value*20;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(5),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 gauge2.progress:=random(100)+30;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.stop;
@@ -23789,15 +21925,12 @@ DM.Conscida.First;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Paladarhendido1.Caption+'...';
 PcalImprove();
-PANEL3.visible :=true;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
-panel3.refresh;
 DM.Conscida.Disablecontrols;
 l:=1;
 DM.Conscida.FindKey([2111]);
@@ -23869,14 +22002,13 @@ GProgreso.Refresh;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
 
-panel3.visible := false;
 Index:='ByValue';
 DM.Conscida.IndexName := Index;
 DM.Conscida.First;
 DM.Conscida.last;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GProgreso.progress:=100;
 GProgreso.Refresh;
 MyChrono.Stop;
@@ -23909,9 +22041,6 @@ zap :=  45+random(30);
 DBMemo_Name.DataSource := ConscidaGrid.DataSource ;
 L_Filtro.Caption := 'Fungosidades';
 L_Filtro.Refresh;
-Panel3.caption:='Realizando zap a '+Fungosidadesbucales1.Caption+'...';
-PANEL3.visible :=true;
-panel3.refresh;
 PcalImprove();
 Zap1:=Zap1+30;
 if zap1>55 then zap1:=90;
@@ -23973,10 +22102,9 @@ ChangingPulses(55555,50*ren,51*ren,200,zap,2+Random(4),
 GProgreso.progress:=100;
 GProgreso.Refresh;
 zap:=1;
-panel3.visible := false;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 ItemsAnadidos();
 end;
@@ -24009,9 +22137,6 @@ zap :=  45+random(30);
 DBMemo_Name.DataSource := ConscidaGrid.DataSource ;
 L_Filtro.Caption := 'Parásitos';
 L_Filtro.Refresh;
-Panel3.caption:='Realizando zap a '+Parsitosbucales1.Caption+'...';
-PANEL3.visible :=true;
-panel3.refresh;
 PcalImprove();
 Zap1:=Zap1+30;
 if zap1>55 then zap1:=90;
@@ -24073,10 +22198,9 @@ ChangingPulses(55555,50*ren,51*ren,200,zap,2+Random(4),
 GProgreso.progress:=100;
 GProgreso.Refresh;
 zap:=1;
-panel3.visible := false;
 DM.Conscida.enablecontrols;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
 ItemsAnadidos();
 end;
@@ -24089,108 +22213,40 @@ MyChrono.Start;
 GProgreso.progress:=0;
 GProgreso.Refresh;
 gauge2.Progress:=0;
-L_Reactividad.Caption :='Reactividad |';
+L_Reactividad.Caption :='Reactividad | ';
 L_Reactividad.Refresh;
 zap :=  33+random(13);
-Panel3.caption:='Realizando zap para '+Labioleporino1.Caption+'...';
 PcalImprove();
-Panel3.visible :=true;
-panel3.refresh;
 Zap1:=Zap1+30;
 if zap1>75 then zap1:=90;
 l:=1;
 DM.Conscida.FindKey([2111]);
 Value:=DM.ConscidaOldValue.AsInteger +15;
+vtiempo := 30+Random(30);
+//If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 Ren:= value*20;
 ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
                       'llllllll','llllllll');
-
-GProgreso.progress:=10;
+GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=20;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=30;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=40;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=50;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.Progress:=60;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=70;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=80;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-GProgreso.progress:=90;
-GProgreso.Refresh;
-ChangingPulses(5555,20* ren,21* ren,3+random(6),4+random(10),3+Random(4),
-                      'llllllll','llllllll');
-
-panel3.visible := false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
-GProgreso.progress:=100;
-GProgreso.Refresh;
-gauge2.progress:=random(100)+20;
-If Gauge2.Progress>100 Then Gauge2.Progress := 100;
+
+gauge2.progress:=random(120);
+If Gauge2.Progress>100 Then Gauge2.Progress := 85+Random(15);
 L_Reactividad.Caption := L_Reactividad.Caption+inttostr(Gauge2.Progress);
 L_Reactividad.Refresh;
 MyChrono.Stop;
 ItemsAnadidos();
-end;
-
-procedure TDental.Edit7Click(Sender: TObject);
-begin
-Edit7.Text := '';
-end;
-
-procedure TDental.Edit8Click(Sender: TObject);
-begin
-Edit8.Text := '';
-end;
-
-procedure TDental.Edit9Click(Sender: TObject);
-begin
-Edit9.Text := '';
-end;
-
-procedure TDental.Edit10Click(Sender: TObject);
-begin
-Edit10.Text := '';
-end;
-
-procedure TDental.Edit12Click(Sender: TObject);
-begin
-Edit12.Text := '';
-end;
-
-procedure TDental.Edit11Click(Sender: TObject);
-begin
-Edit11.Text := '';
 end;
 
 procedure TDental.Panel10Click(Sender: TObject);
@@ -24210,151 +22266,126 @@ end;
 
 procedure TDental.Label218Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label218.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label648Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label648.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label649Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label649.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label652Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label652.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label659Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label659.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label645Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label645.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label135Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label135.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label646Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label646.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label133Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label133.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label134Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label134.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label660Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label660.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label656Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label656.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label655Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label655.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label653Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label653.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label647Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label647.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label658Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label658.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label165Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label165.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label266Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label266.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label132Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label132.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label657Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label657.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label650Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label650.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label130Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label130.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label651Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label651.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label131Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label131.Caption+'...';
 Clara();
 end;
 
 procedure TDental.Label654Click(Sender: TObject);
 begin
-panel3.caption:='Efectuando terapia a '+Label654.Caption+'...';
 Clara();
 end;
 
@@ -24363,23 +22394,14 @@ begin
 Panel9.Visible := False;
 end;
 
-procedure TDental.Label173Click(Sender: TObject);
-begin
-memo3.visible:=true;
-end;
-
 procedure TDental.Button12Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia general a todos los focos dentales...';
-Panel3.Visible := True;
 MyChrono.Start;
 GProgreso.Progress := 0;
 vtiempo := 60+Random(120);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+5);
-panel3.visible:=true;
-panel3.refresh;
 repeat
 AscFreq:=0;
 S:=label130.caption;
@@ -24403,344 +22425,248 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 res:=60+random(45)+cut;
 rea:= 45+random(65)-cut;
 rec:=50+random(55)+cut;
-if res>100 then res:=100;
-if rea>100 then rea:=100;
-if rec>100 then rec:=100;
+if res>100 then res:=85+Random(15);
+if rea>100 then rea:=85+Random(15);
+if rec>100 then rec:=85+Random(15);
 if rec>86 then Fmain.recmain:=Fmain.recmain+1;
 button16.visible:=true;
 Panel9.caption:='| Resonancia: '+ FloatToStr(res)+ ' | Reactividad: '+ FloatToStr(rea)+ ' | Rectificado: '+ FloatToStr(rec);
 Panel9.visible := True;
-Panel3.Visible := False;
 MyChrono.Stop;
 end;
 
 procedure TDental.Label93Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label93.Caption+'...';
 Clara();
 If Rectificado>94 then Label93.Enabled := False;
 end;
 
 procedure TDental.Label94Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label94.Caption+'...';
 Clara();
 If Rectificado>94 then Label94.Enabled := False;
 end;
 
 procedure TDental.Label95Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label95.Caption+'...';
 Clara();
 If Rectificado>94 then Label95.Enabled := False;
 end;
 
 procedure TDental.Label96Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label96.Caption+'...';
 Clara();
 If Rectificado>94 then Label96.Enabled := False;
 end;
 
 procedure TDental.Label97Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label97.Caption+'...';
 Clara();
 If Rectificado>94 then Label97.Enabled := False;
 end;
 
 procedure TDental.Label98Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label98.Caption+'...';
 Clara();
 If Rectificado>94 then Label98.Enabled := False;
 end;
 
 procedure TDental.Label99Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label99.Caption+'...';
 Clara();
 If Rectificado>94 then Label99.Enabled := False;
 end;
 
 procedure TDental.Label100Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label100.Caption+'...';
 Clara();
 If Rectificado>94 then Label100.Enabled := False;
 end;
 
 procedure TDental.Label101Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label101.Caption+'...';
 Clara();
 If Rectificado>94 then Label101.Enabled := False;
 end;
 
 procedure TDental.Label102Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label102.Caption+'...';
 Clara();
 If Rectificado>94 then Label102.Enabled := False;
 end;
 
 procedure TDental.Label103Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label103.Caption+'...';
 Clara();
 If Rectificado>94 then Label103.Enabled := False;
 end;
 
 procedure TDental.Label104Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label101.Caption+'...';
 Clara();
 If Rectificado>94 then Label101.Enabled := False;
 end;
 
 procedure TDental.Label126Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label126.Caption+'...';
 Clara();
 If Rectificado>94 then Label126.Enabled := False;
 end;
 
 procedure TDental.Label86Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label86.Caption+'...';
 Clara();
 If Rectificado>94 then Label86.Enabled := False;
 end;
 
 procedure TDental.Label87Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label87.Caption+'...';
 Clara();
 If Rectificado>94 then Label87.Enabled := False;
 end;
 
 procedure TDental.Label88Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label88.Caption+'...';
 Clara();
 If Rectificado>94 then Label88.Enabled := False;
 end;
 
 procedure TDental.Label89Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label89.Caption+'...';
 Clara();
 If Rectificado>94 then Label89.Enabled := False;
 end;
 
 procedure TDental.Label90Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label90.Caption+'...';
 Clara();
 If Rectificado>94 then Label90.Enabled := False;
 end;
 
 procedure TDental.Label91Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label91.Caption+'...';
 Clara();
 If Rectificado>94 then Label91.Enabled := False;
 end;
 
 procedure TDental.Label92Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label92.Caption+'...';
 Clara();
 If Rectificado>94 then Label92.Enabled := False;
 end;
 
 procedure TDental.Label84Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label84.Caption+'...';
 Clara();
 If Rectificado>94 then Label84.Enabled := False;
 end;
 
 procedure TDental.Label85Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Label85.Caption+'...';
 Clara();
 If Rectificado>94 then Label85.Enabled := False;
 end;
 
+procedure TDental.FrecuenciasAnadidas();
+begin
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
+ '11111111','11111111');
+ end;
+
 procedure TDental.ItemsAnadidos();
 begin
 MyChrono.Start;
-Panel3.Visible := True;
 If Edit1.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+Edit1.Text+'...';
-Panel3.Refresh;
 Edit1.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 Edit1.Color := clWhite;
 End;
 If EdConsida1.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida1.Text+'...';
-Panel3.Refresh;
 EdConsida1.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida1.Color := clWhite;
 End;
 If EdConsida2.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida2.Text+'...';
-Panel3.Refresh;
 EdConsida2.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida2.Color := clWhite;
 End;
 If EdConsida3.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida3.Text+'...';
-Panel3.Refresh;
 EdConsida3.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida3.Color := clWhite;
 End;
 If EdConsida4.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida4.Text+'...';
-Panel3.Refresh;
 EdConsida4.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida4.Color := clWhite;
 End;
 If EdConsida5.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida5.Text+'...';
-Panel3.Refresh;
 EdConsida5.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida5.Color := clWhite;
 End;
 If EdConsida6.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida6.Text+'...';
-Panel3.Refresh;
 EdConsida6.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida6.Color := clWhite;
 End;
 If EdConsida7.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida7.Text+'...';
-Panel3.Refresh;
 EdConsida7.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida7.Color := clWhite;
 End;
 If EdConsida8.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida8.Text+'...';
-Panel3.Refresh;
 EdConsida8.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida8.Color := clWhite;
 End;
 If EdConsida9.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida9.Text+'...';
-Panel3.Refresh;
 EdConsida9.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida9.Color := clWhite;
 End;
 If EdConsida10.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida10.Text+'...';
-Panel3.Refresh;
 EdConsida10.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida10.Color := clWhite;
 End;
 If EdConsida11.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida11.Text+'...';
-Panel3.Refresh;
 EdConsida11.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida11.Color := clWhite;
 End;
 If EdConsida12.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida12.Text+'...';
-Panel3.Refresh;
 EdConsida12.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida12.Color := clWhite;
 End;
 If EdConsida13.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida13.Text+'...';
-Panel3.Refresh;
 EdConsida13.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida13.Color := clWhite;
 End;
 If EdConsida14.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida14.Text+'...';
-Panel3.Refresh;
 EdConsida14.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida14.Color := clWhite;
 End;
 If EdConsida15.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida15.Text+'...';
-Panel3.Refresh;
 EdConsida15.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida15.Color := clWhite;
 End;
 If EdConsida16.Text<>'' Then Begin
-Panel3.Caption := 'Realizando zap extra con '+EdConsida16.Text+'...';
-Panel3.Refresh;
 EdConsida16.Color := clLime;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555+random(50),55555,random(50),5,5+Random(5),
- '11111111','11111111');
+FrecuenciasAnadidas();
 EdConsida16.Color := clWhite;
 End;
-Panel3.Visible := False;
 MyChrono.Stop;
-end;
-
-procedure TDental.Memo3Click(Sender: TObject);
-begin
-Memo3.Visible := False;
-end;
-
-procedure TDental.Memo1Click(Sender: TObject);
-begin
-Memo1.Visible := False;
 end;
 
 procedure TDental.Label207Click(Sender: TObject);
@@ -24752,357 +22678,306 @@ end;
 
 procedure TDental.Label267Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label267.Caption+'...';
 ATM();
 If rectificado>84 Then Label267.Enabled := False;
 end;
 
 procedure TDental.Label291Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label291.Caption+'...';
 ATM();
 If rectificado>84 Then Label291.Enabled := False;
 end;
 
 procedure TDental.Label290Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label290.Caption+'...';
 ATM();
 If rectificado>84 Then Label290.Enabled := False;
 end;
 
 procedure TDental.Label289Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label289.Caption+'...';
 ATM();
 If rectificado>84 Then Label289.Enabled := False;
 end;
 
 procedure TDental.Label288Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label288.Caption+'...';
 ATM();
 If rectificado>84 Then Label288.Enabled := False;
 end;
 
 procedure TDental.Label287Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label287.Caption+'...';
 ATM();
 If rectificado>84 Then Label287.Enabled := False;
 end;
 
 procedure TDental.Label286Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label286.Caption+'...';
 ATM();
 If rectificado>84 Then Label286.Enabled := False;
 end;
 
 procedure TDental.Label285Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label285.Caption+'...';
 ATM();
 If rectificado>84 Then Label285.Enabled := False;
 end;
 
 procedure TDental.Label284Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label284.Caption+'...';
 ATM();
 If rectificado>84 Then Label284.Enabled := False;
 end;
 
 procedure TDental.Label283Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label283.Caption+'...';
 ATM();
 If rectificado>84 Then Label283.Enabled := False;
 end;
 
 procedure TDental.Label282Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label282.Caption+'...';
 ATM();
 If rectificado>84 Then Label282.Enabled := False;
 end;
 
 procedure TDental.Label281Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label281.Caption+'...';
 ATM();
 If rectificado>84 Then Label281.Enabled := False;
 end;
 
 procedure TDental.Label280Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label280.Caption+'...';
 ATM();
 If rectificado>84 Then Label280.Enabled := False;
 end;
 
 procedure TDental.Label279Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label279.Caption+'...';
 ATM();
 If rectificado>84 Then Label279.Enabled := False;
 end;
 
 procedure TDental.Label278Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label278.Caption+'...';
 ATM();
 If rectificado>84 Then Label278.Enabled := False;
 end;
 
 procedure TDental.Label277Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label277.Caption+'...';
 ATM();
 If rectificado>84 Then Label277.Enabled := False;
 end;
 
 procedure TDental.Label276Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label276.Caption+'...';
 ATM();
 If rectificado>84 Then Label276.Enabled := False;
 end;
 
 procedure TDental.Label275Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label275.Caption+'...';
 ATM();
 If rectificado>84 Then Label275.Enabled := False;
 end;
 
 procedure TDental.Label274Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label274.Caption+'...';
 ATM();
 If rectificado>84 Then Label274.Enabled := False;
 end;
 
 procedure TDental.Label273Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label273.Caption+'...';
 ATM();
 If rectificado>84 Then Label273.Enabled := False;
 end;
 
 procedure TDental.Label272Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label272.Caption+'...';
 ATM();
 If rectificado>84 Then Label272.Enabled := False;
 end;
 
 procedure TDental.Label271Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label271.Caption+'...';
 ATM();
 If rectificado>84 Then Label271.Enabled := False;
 end;
 
 procedure TDental.Label270Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label270.Caption+'...';
 ATM();
 If rectificado>84 Then Label270.Enabled := False;
 end;
 
 procedure TDental.Label269Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label269.Caption+'...';
 ATM();
 If rectificado>84 Then Label269.Enabled := False;
 end;
 
 procedure TDental.Label268Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label268.Caption+'...';
 ATM();
 If rectificado>84 Then Label268.Enabled := False;
 end;
 
 procedure TDental.Label292Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label292.Caption+'...';
 ATM();
 If rectificado>84 Then Label292.Enabled := False;
 end;
 
 procedure TDental.Label293Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label293.Caption+'...';
 ATM();
 If rectificado>84 Then Label293.Enabled := False;
 end;
 
 procedure TDental.Label294Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label294.Caption+'...';
 ATM();
 If rectificado>84 Then Label294.Enabled := False;
 end;
 
 procedure TDental.Label295Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label295.Caption+'...';
 ATM();
 If rectificado>84 Then Label295.Enabled := False;
 end;
 
 procedure TDental.Label296Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label296.Caption+'...';
 ATM();
 If rectificado>84 Then Label296.Enabled := False;
 end;
 
 procedure TDental.Label298Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label298.Caption+'...';
 ATM();
 If rectificado>84 Then Label298.Enabled := False;
 end;
 
 procedure TDental.Label297Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label297.Caption+'...';
 ATM();
 If rectificado>84 Then Label297.Enabled := False;
 end;
 
 procedure TDental.Label299Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label299.Caption+'...';
 ATM();
 If rectificado>84 Then Label299.Enabled := False;
 end;
 
 procedure TDental.Label300Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label300.Caption+'...';
 ATM();
 If rectificado>84 Then Label300.Enabled := False;
 end;
 
 procedure TDental.Label301Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label301.Caption+'...';
 ATM();
 If rectificado>84 Then Label301.Enabled := False;
 end;
 
 procedure TDental.Label302Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label302.Caption+'...';
 ATM();
 If rectificado>84 Then Label302.Enabled := False;
 end;
 
 procedure TDental.Label303Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label303.Caption+'...';
 ATM();
 If rectificado>84 Then Label303.Enabled := False;
 end;
 
 procedure TDental.Label304Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label304.Caption+'...';
 ATM();
 If rectificado>84 Then Label304.Enabled := False;
 end;
 
 procedure TDental.Label305Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label305.Caption+'...';
 ATM();
 If rectificado>84 Then Label305.Enabled := False;
 end;
 
 procedure TDental.Label306Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label306.Caption+'...';
 ATM();
 If rectificado>84 Then Label306.Enabled := False;
 end;
 
 procedure TDental.Label307Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label307.Caption+'...';
 ATM();
 If rectificado>84 Then Label307.Enabled := False;
 end;
 
 procedure TDental.Label308Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label308.Caption+'...';
 ATM();
 If rectificado>84 Then Label308.Enabled := False;
 end;
 
 procedure TDental.Label309Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label309.Caption+'...';
 ATM();
 If rectificado>84 Then Label309.Enabled := False;
 end;
 
 procedure TDental.Label310Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label310.Caption+'...';
 ATM();
 If rectificado>84 Then Label310.Enabled := False;
 end;
 
 procedure TDental.Label311Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label311.Caption+'...';
 ATM();
 If rectificado>84 Then Label311.Enabled := False;
 end;
 
 procedure TDental.Label312Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label312.Caption+'...';
 ATM();
 If rectificado>84 Then Label312.Enabled := False;
 end;
 
 procedure TDental.Label313Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label313.Caption+'...';
 ATM();
 If rectificado>84 Then Label313.Enabled := False;
 end;
 
 procedure TDental.Label314Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label314.Caption+'...';
 ATM();
 If rectificado>84 Then Label314.Enabled := False;
 end;
 
 procedure TDental.Label315Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label315.Caption+'...';
 ATM();
 If rectificado>84 Then Label315.Enabled := False;
 end;
 
 procedure TDental.Label316Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label316.Caption+'...';
 ATM();
 If rectificado>84 Then Label316.Enabled := False;
 end;
 
 procedure TDental.Label317Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label317.Caption+'...';
 ATM();
 If rectificado>84 Then Label317.Enabled := False;
 end;
@@ -25110,7 +22985,6 @@ end;
 procedure TDental.Shape2MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape2.Pen.Color := clSilver;
 Shape2.Brush.Color := clSilver;
@@ -25119,7 +22993,6 @@ end;
 procedure TDental.Shape3MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape3.Pen.Color := clSilver;
 Shape3.Brush.Color := clSilver;
@@ -25127,231 +23000,198 @@ end;
 
 procedure TDental.Label350Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label350.Caption+'...';
 ATM();
 If rectificado>84 Then Label350.Enabled := False;
 end;
 
 procedure TDental.Label318Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label318.Caption+'...';
 ATM();
 If rectificado>84 Then Label318.Enabled := False;
 end;
 
 procedure TDental.Label319Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label319.Caption+'...';
 ATM();
 If rectificado>84 Then Label319.Enabled := False;
 end;
 
 procedure TDental.Label320Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label320.Caption+'...';
 ATM();
 If rectificado>84 Then Label320.Enabled := False;
 end;
 
 procedure TDental.Label321Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label321.Caption+'...';
 ATM();
 If rectificado>84 Then Label321.Enabled := False;
 end;
 
 procedure TDental.Label322Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label322.Caption+'...';
 ATM();
 If rectificado>84 Then Label322.Enabled := False;
 end;
 
 procedure TDental.Label323Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label323.Caption+'...';
 ATM();
 If rectificado>84 Then Label323.Enabled := False;
 end;
 
 procedure TDental.Label324Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label324.Caption+'...';
 ATM();
 If rectificado>84 Then Label324.Enabled := False;
 end;
 
 procedure TDental.Label325Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label325.Caption+'...';
 ATM();
 If rectificado>84 Then Label325.Enabled := False;
 end;
 
 procedure TDental.Label326Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label326.Caption+'...';
 ATM();
 If rectificado>84 Then Label326.Enabled := False;
 end;
 
 procedure TDental.Label327Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label327.Caption+'...';
 ATM();
 If rectificado>84 Then Label327.Enabled := False;
 end;
 
 procedure TDental.Label328Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label328.Caption+'...';
 ATM();
 If rectificado>84 Then Label328.Enabled := False;
 end;
 
 procedure TDental.Label329Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label329.Caption+'...';
 ATM();
 If rectificado>84 Then Label329.Enabled := False;
 end;
 
 procedure TDental.Label330Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label330.Caption+'...';
 ATM();
 If rectificado>84 Then Label330.Enabled := False;
 end;
 
 procedure TDental.Label331Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label331.Caption+'...';
 ATM();
 If rectificado>84 Then Label331.Enabled := False;
 end;
 
 procedure TDental.Label332Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label332.Caption+'...';
 ATM();
 If rectificado>84 Then Label332.Enabled := False;
 end;
 
 procedure TDental.Label333Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label333.Caption+'...';
 ATM();
 If rectificado>84 Then Label333.Enabled := False;
 end;
 
 procedure TDental.Label334Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label334.Caption+'...';
 ATM();
 If rectificado>84 Then Label334.Enabled := False;
 end;
 
 procedure TDental.Label335Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label335.Caption+'...';
 ATM();
 If rectificado>84 Then Label335.Enabled := False;
 end;
 
 procedure TDental.Label336Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label336.Caption+'...';
 ATM();
 If rectificado>84 Then Label336.Enabled := False;
 end;
 
 procedure TDental.Label337Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label337.Caption+'...';
 ATM();
 If rectificado>84 Then Label337.Enabled := False;
 end;
 
 procedure TDental.Label338Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label338.Caption+'...';
 ATM();
 If rectificado>84 Then Label338.Enabled := False;
 end;
 
 procedure TDental.Label339Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label339.Caption+'...';
 ATM();
 If rectificado>84 Then Label339.Enabled := False;
 end;
 
 procedure TDental.Label340Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label340.Caption+'...';
 ATM();
 If rectificado>84 Then Label340.Enabled := False;
 end;
 
 procedure TDental.Label341Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label341.Caption+'...';
 ATM();
 If rectificado>84 Then Label341.Enabled := False;
 end;
 
 procedure TDental.Label342Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label342.Caption+'...';
 ATM();
 If rectificado>84 Then Label342.Enabled := False;
 end;
 
 procedure TDental.Label343Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label343.Caption+'...';
 ATM();
 If rectificado>84 Then Label343.Enabled := False;
 end;
 
 procedure TDental.Label344Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label344.Caption+'...';
 ATM();
 If rectificado>84 Then Label344.Enabled := False;
 end;
 
 procedure TDental.Label345Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label345.Caption+'...';
 ATM();
 If rectificado>84 Then Label345.Enabled := False;
 end;
 
 procedure TDental.Label346Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label346.Caption+'...';
 ATM();
 If rectificado>84 Then Label346.Enabled := False;
 end;
 
 procedure TDental.Label347Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label347.Caption+'...';
 ATM();
 If rectificado>84 Then Label347.Enabled := False;
 end;
 
 procedure TDental.Label348Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label348.Caption+'...';
 ATM();
 If rectificado>84 Then Label348.Enabled := False;
 end;
 
 procedure TDental.Label349Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label349.Caption+'...';
 ATM();
 If rectificado>84 Then Label349.Enabled := False;
 end;
@@ -25359,7 +23199,6 @@ end;
 procedure TDental.Shape4MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape4.Pen.Color := clSilver;
 Shape4.Brush.Color := clSilver;
@@ -25367,119 +23206,102 @@ end;
 
 procedure TDental.Label351Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label351.Caption+'...';
 ATM();
 If rectificado>84 Then Label351.Enabled := False;
 end;
 
 procedure TDental.Label352Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label352.Caption+'...';
 ATM();
 If rectificado>84 Then Label352.Enabled := False;
 end;
 
 procedure TDental.Label353Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label353.Caption+'...';
 ATM();
 If rectificado>84 Then Label353.Enabled := False;
 end;
 
 procedure TDental.Label354Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label354.Caption+'...';
 ATM();
 If rectificado>84 Then Label354.Enabled := False;
 end;
 
 procedure TDental.Label355Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label355.Caption+'...';
 ATM();
 If rectificado>84 Then Label355.Enabled := False;
 end;
 
 procedure TDental.Label356Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label356.Caption+'...';
 ATM();
 If rectificado>84 Then Label356.Enabled := False;
 end;
 
 procedure TDental.Label357Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label357.Caption+'...';
 ATM();
 If rectificado>84 Then Label357.Enabled := False;
 end;
 
 procedure TDental.Label358Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label358.Caption+'...';
 ATM();
 If rectificado>84 Then Label358.Enabled := False;
 end;
 
 procedure TDental.Label359Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label359.Caption+'...';
 ATM();
 If rectificado>84 Then Label359.Enabled := False;
 end;
 
 procedure TDental.Label360Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label360.Caption+'...';
 ATM();
 If rectificado>84 Then Label360.Enabled := False;
 end;
 
 procedure TDental.Label361Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label361.Caption+'...';
 ATM();
 If rectificado>84 Then Label361.Enabled := False;
 end;
 
 procedure TDental.Label362Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label362.Caption+'...';
 ATM();
 If rectificado>84 Then Label362.Enabled := False;
 end;
 
 procedure TDental.Label363Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label363.Caption+'...';
 ATM();
 If rectificado>84 Then Label363.Enabled := False;
 end;
 
 procedure TDental.Label364Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label364.Caption+'...';
 ATM();
 If rectificado>84 Then Label364.Enabled := False;
 end;
 
 procedure TDental.Label365Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label365.Caption+'...';
 ATM();
 If rectificado>84 Then Label365.Enabled := False;
 end;
 
 procedure TDental.Label366Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label366.Caption+'...';
 ATM();
 If rectificado>84 Then Label366.Enabled := False;
 end;
 
 procedure TDental.Label367Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label367.Caption+'...';
 ATM();
 If rectificado>84 Then Label367.Enabled := False;
 end;
@@ -25487,7 +23309,6 @@ end;
 procedure TDental.Shape5MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape5.Pen.Color := clSilver;
 Shape5.Brush.Color := clSilver;
@@ -25495,119 +23316,102 @@ end;
 
 procedure TDental.Label411Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label411.Caption+'...';
 ATM();
 If rectificado>84 Then Label411.Enabled := False;
 end;
 
 procedure TDental.Label410Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label410.Caption+'...';
 ATM();
 If rectificado>84 Then Label410.Enabled := False;
 end;
 
 procedure TDental.Label409Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label409.Caption+'...';
 ATM();
 If rectificado>84 Then Label409.Enabled := False;
 end;
 
 procedure TDental.Label408Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label408.Caption+'...';
 ATM();
 If rectificado>84 Then Label408.Enabled := False;
 end;
 
 procedure TDental.Label407Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label407.Caption+'...';
 ATM();
 If rectificado>84 Then Label407.Enabled := False;
 end;
 
 procedure TDental.Label406Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label406.Caption+'...';
 ATM();
 If rectificado>84 Then Label406.Enabled := False;
 end;
 
 procedure TDental.Label405Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label405.Caption+'...';
 ATM();
 If rectificado>84 Then Label405.Enabled := False;
 end;
 
 procedure TDental.Label404Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label404.Caption+'...';
 ATM();
 If rectificado>84 Then Label404.Enabled := False;
 end;
 
 procedure TDental.Label403Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label403.Caption+'...';
 ATM();
 If rectificado>84 Then Label403.Enabled := False;
 end;
 
 procedure TDental.Label402Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label402.Caption+'...';
 ATM();
 If rectificado>84 Then Label402.Enabled := False;
 end;
 
 procedure TDental.Label401Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label401.Caption+'...';
 ATM();
 If rectificado>84 Then Label401.Enabled := False;
 end;
 
 procedure TDental.Label400Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label400.Caption+'...';
 ATM();
 If rectificado>84 Then Label400.Enabled := False;
 end;
 
 procedure TDental.Label399Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label399.Caption+'...';
 ATM();
 If rectificado>84 Then Label399.Enabled := False;
 end;
 
 procedure TDental.Label398Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label398.Caption+'...';
 ATM();
 If rectificado>84 Then Label398.Enabled := False;
 end;
 
 procedure TDental.Label397Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label397.Caption+'...';
 ATM();
 If rectificado>84 Then Label397.Enabled := False;
 end;
 
 procedure TDental.Label396Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label396.Caption+'...';
 ATM();
 If rectificado>84 Then Label396.Enabled := False;
 end;
 
 procedure TDental.Label395Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label395.Caption+'...';
 ATM();
 If rectificado>84 Then Label395.Enabled := False;
 end;
@@ -25615,7 +23419,6 @@ end;
 procedure TDental.Shape6MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-panel3.caption:='Realizando terapia a foco energético bloqueado...';
 ATM2();
 Shape6.Pen.Color := clSilver;
 Shape6.Brush.Color := clSilver;
@@ -25640,175 +23443,150 @@ end;
 
 procedure TDental.Label394Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label394.Caption+'...';
 ATM();
 If rectificado>84 Then Label394.Enabled := False;
 end;
 
 procedure TDental.Label393Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label393.Caption+'...';
 ATM();
 If rectificado>84 Then Label393.Enabled := False;
 end;
 
 procedure TDental.Label392Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label392.Caption+'...';
 ATM();
 If rectificado>84 Then Label392.Enabled := False;
 end;
 
 procedure TDental.Label391Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label391.Caption+'...';
 ATM();
 If rectificado>84 Then Label391.Enabled := False;
 end;
 
 procedure TDental.Label390Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label390.Caption+'...';
 ATM();
 If rectificado>84 Then Label390.Enabled := False;
 end;
 
 procedure TDental.Label389Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label389.Caption+'...';
 ATM();
 If rectificado>84 Then Label389.Enabled := False;
 end;
 
 procedure TDental.Label388Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label388.Caption+'...';
 ATM();
 If rectificado>84 Then Label388.Enabled := False;
 end;
 
 procedure TDental.Label387Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label387.Caption+'...';
 ATM();
 If rectificado>84 Then Label387.Enabled := False;
 end;
 
 procedure TDental.Label386Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label386.Caption+'...';
 ATM();
 If rectificado>84 Then Label386.Enabled := False;
 end;
 
 procedure TDental.Label385Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label385.Caption+'...';
 ATM();
 If rectificado>84 Then Label385.Enabled := False;
 end;
 
 procedure TDental.Label383Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label383.Caption+'...';
 ATM();
 If rectificado>84 Then Label383.Enabled := False;
 end;
 
 procedure TDental.Label382Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label382.Caption+'...';
 ATM();
 If rectificado>84 Then Label382.Enabled := False;
 end;
 
 procedure TDental.Label381Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label381.Caption+'...';
 ATM();
 If rectificado>84 Then Label381.Enabled := False;
 end;
 
 procedure TDental.Label380Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label380.Caption+'...';
 ATM();
 If rectificado>84 Then Label380.Enabled := False;
 end;
 
 procedure TDental.Label379Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label379.Caption+'...';
 ATM();
 If rectificado>84 Then Label379.Enabled := False;
 end;
 
 procedure TDental.Label378Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label378.Caption+'...';
 ATM();
 If rectificado>84 Then Label378.Enabled := False;
 end;
 
 procedure TDental.Label377Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label377.Caption+'...';
 ATM();
 If rectificado>84 Then Label377.Enabled := False;
 end;
 
 procedure TDental.Label376Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label376.Caption+'...';
 ATM();
 If rectificado>84 Then Label376.Enabled := False;
 end;
 
 procedure TDental.Label375Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label375.Caption+'...';
 ATM();
 If rectificado>84 Then Label375.Enabled := False;
 end;
 
 procedure TDental.Label374Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label374.Caption+'...';
 ATM();
 If rectificado>84 Then Label374.Enabled := False;
 end;
 
 procedure TDental.Label373Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label373.Caption+'...';
 ATM();
 If rectificado>84 Then Label373.Enabled := False;
 end;
 
 procedure TDental.Label372Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label372.Caption+'...';
 ATM();
 If rectificado>84 Then Label372.Enabled := False;
 end;
 
 procedure TDental.Label371Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label371.Caption+'...';
 ATM();
 If rectificado>84 Then Label371.Enabled := False;
 end;
 
 procedure TDental.Label370Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label370.Caption+'...';
 ATM();
 If rectificado>84 Then Label370.Enabled := False;
 end;
 
 procedure TDental.Label369Click(Sender: TObject);
 begin
-panel3.caption:='Realizando terapia a '+Label369.Caption+'...';
 ATM();
 If rectificado>84 Then Label369.Enabled := False;
 end;
@@ -25848,5 +23626,269 @@ begin
 IContinuar();
 ShapesReset();
 end;
+
+procedure TDental.Label203DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Cordal '+'| Cuadrante derecho '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'presupuesto energético, frío en el cuerpo '+'| Glándulas / sist. tisular: '+'sistema nervioso, periférico';
+label202.caption:='| Organos: '+'ileón derecho, intestino grueso derecho, área ileo-cecal, corazón derecho, pulmón derecho '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+'oído, ojo';
+label265.caption:='| Pieza: '+'EUR 48 / USA 32 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
+Fionula();
+if rec>84 then label203.Enabled:=false;
+end;
+
+procedure TDental.Label204DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Cordal '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis';
+label202.caption:='| Cavidades: '+' seno maxilar | Organos: corazón derecho, intestino delgado, duodeno '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+'oído interno';
+label265.caption:='| Pieza: '+'EUR 18 / USA 1 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
+Fionula();
+if rec>84 then label204.Enabled:=false;
+end;
+
+procedure TDental.Label29DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo central '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis | Glándulas: pineal, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, terreno urogenital, riñón derecho, recto '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 11 / USA 8 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte |';
+Fionula();
+if rec>84 then label29.Enabled:=false;
+end;
+
+procedure TDental.Label32DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo central '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital, riñón izquierdo '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'oído';
+label265.caption:='| Pieza: '+'EUR 21 / USA 9 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte |';
+Fionula();
+if rec>84 then label32.Enabled:=false;
+end;
+
+procedure TDental.Label28DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo lateral '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis | Glándulas: pineal '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga derecha, terreno urogenital, riñón derecho '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 12 / USA 7 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
+Fionula();
+if rec>84 then label28.Enabled:=false;
+end;
+
+procedure TDental.Label33DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'1er premolar '+'| Cuadrante izquierdoo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo '+'| Cavidades: '+'etmoidales';
+label202.caption:='| Organos: '+'intestino grueso derecho, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'naríz';
+label265.caption:='| Pieza: '+'EUR 24 / USA 12 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'seco '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste |';
+Fionula();
+if rec>84 then label33.Enabled:=false;
+end;
+
+procedure TDental.Label27DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Canino '+'| Cuadrante derecho '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo';
+label202.caption:='| Organos: '+'vesícula, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo |';
+label265.caption:='| Pieza: '+'EUR 12 / USA 6 '+'| Dermatomas: '+'T8, T9; T10 '+'| Articulaciones: '+'pie, cadera, rodilla posterior '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
+Fionula();
+if rec>84 then label27.Enabled:=false;
+end;
+
+procedure TDental.Label34DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Canino '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'fertilidad, líbido '+'| Glándulas / sist. tisular: '+'gónadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Organos: '+'vías biliares izquierdas, hígado derecho '+'| Vertebras: '+'D9, D10 '+'| Organo de los sentidos: '+'ojo |';
+label265.caption:='| Pieza: '+'EUR 33 / USA 22 '+'| Dermatomas: '+'T8, T9, T10 '+'| Articulaciones: '+'rodilla posterior, cadera '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
+Fionula();
+if rec>84 then label34.Enabled:=false;
+end;
+
+procedure TDental.Label26DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'1er premolar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria izquierda '+'| Glándulas / sist. tisular: '+'mamaria, gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: '+' senos maxilares | Organos: estómago izquierdo, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 34 / USA 21 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
+Fionula();
+if rec>84 then label26.Enabled:=false;
+end;
+
+procedure TDental.Label25DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'2do premolar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'bello corporal, piel, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo '+'| Cavidades: '+'etmoidal';
+label202.caption:='| Organos: '+'intestino grueso derecho, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 25 / USA 13 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'mano, radial pie, dedo gordo del pie, hombro, codo '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'seco '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
+Fionula();
+if rec>84 then label25.Enabled:=false;
+end;
+
+procedure TDental.Label24DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'1er molar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'pituitaria, pineal, arterias, venas | Cavidades: seno maxilar';
+label202.caption:='| Organos: '+'intestino grueso izquierdo, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'boca, nariz';
+label265.caption:='| Pieza: '+'EUR 36 / USA 19 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
+Fionula();
+if rec>84 then label24.Enabled:=false;
+end;
+
+procedure TDental.Label23DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'2do molar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'metal '+'| Amígdalas: '+'tubaria '+'| Otros: '+'piel '+'| Glándulas / sist. tisular: '+'arterias, venas | Cavidades:  seno maxilar';
+label202.caption:='| Organos: '+'intestino grueso izquierdo, pulmón izquierdo '+'| Vertebras: '+'C5, C6, C7, D3, D4, L4, L5 '+'| Organo de los sentidos: '+'boca, naríz';
+label265.caption:='| Pieza: '+'EUR 37 / USA 18 '+'| Dermatomas: '+'C5, C6, C7, T2, T3, T4, L4, L5 '+'| Articulaciones: '+'codo, hombro, mano cubital, mano radial, pie, dedo gordo del pie '+'| Emoción: '+'melancolía';
+label384.Caption:='| Estación: '+'otoño '+'| Ambiente: '+'sequedad '+'| Desarrollo: '+'cosecha '+'| Color: '+'blanco '+'| Sabor: '+'picante '+'| Orientación: '+'oeste';
+Fionula();
+if rec>84 then label23.Enabled:=false;
+end;
+
+procedure TDental.Label22DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo lateral '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz';
+label265.caption:='| Pieza: '+'EUR 32 / USA 23 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
+Fionula();
+if rec>84 then label22.Enabled:=false;
+end;
+
+procedure TDental.Label35DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Cordal '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal '+'| Otros: '+'presupuesto energético, frío en el cuerpo '+'| Glándulas / sist. tisular: '+'sistema nervioso periférico';
+label202.caption:='| Cavidades: oído interno | Organos: corazón izquierdo, yeyuno ileón izquierdo, intestino grueso izquierdo '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+'ojo, oído';
+label265.caption:='| Pieza: '+'EUR 38 / USA 17 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'hombro, mano, cubital, codo, pie, dedos de los pies, sacro-ilíacas '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
+Fionula();
+if rec>84 then label35.Enabled:=false;
+end;
+
+procedure TDental.Label36DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'2do premolar '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'glándula mamaria izquierda '+'| Glándulas / sist. tisular: '+'gonadas (testículos, ovarios), vasos linfáticos';
+label202.caption:='| Cavidades: maxilares | Organos: estómago izquierdo, bazo '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca';
+label265.caption:='| Pieza: '+'EUR 35 / USA 20 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'rodilla anterior, mandíbula '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
+Fionula();
+if rec>84 then label36.Enabled:=false;
+end;
+
+procedure TDental.Label37DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'1er molar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides';
+label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, páncreas '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca, tacto';
+label265.caption:='| Pieza: '+'EUR 26 / USA 14 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
+Fionula();
+if rec>84 then label37.Enabled:=false;
+end;
+
+procedure TDental.Label38DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Cordal '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'fuego '+'| Amígdalas: '+'lingüal, adenoides '+'| Otros: '+'sistema nervioso central, psicopatías, epilepsia | Glándulas: lóbulo anterior de la hipófisis';
+label202.caption:='| Cavidades: senos petrósos | Organos: corazón izquierdo, yeyuno ileón izquierdo '+'| Vertebras: '+'C7, D1, D5, D6, D7, S1, S2 '+'| Organo de los sentidos: '+'lengua, oído interno';
+label265.caption:='| Pieza: '+'EUR 28 / USA 16 '+'| Dermatomas: '+'T1, T5, T6, T7, S1, S2, S3 '+'| Articulaciones: '+'pie, plantar, dedos del pie, sacro ilíacas, hombro, codo, mano, cubital '+'| Emoción: '+'alegría';
+label384.Caption:='| Estación: '+'verano '+'| Ambiente: '+'calor '+'| Desarrollo: '+'crecimiento '+'| Color: '+'rojo '+'| Sabor: '+'amargo '+'| Orientación: '+'sur';
+Fionula();
+if rec>84 then label38.Enabled:=false;
+end;
+
+procedure TDental.Label39DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'2do molar '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'tierra '+'| Amígdalas: '+'laringea '+'| Otros: '+'calcio, tetania, calambres, parestesias, alergias, glándula mamaria izquierda | Glándulas: tiroides, paratiroides';
+label202.caption:='| Cavidades: senos maxilares | Organos: estómago izquierdo, bazo, vejíga '+'| Vertebras: '+'D11, D12, L1 '+'| Organo de los sentidos: '+'boca, tacto';
+label265.caption:='| Pieza: '+'EUR 27 / USA 15 '+'| Dermatomas: '+'T11, T12, L1 '+'| Articulaciones: '+'maxilar (mandíbula), rodilla anterior '+'| Emoción: '+'ansiedad';
+label384.Caption:='| Estación: '+'verano tardío '+'| Ambiente: '+'humedad '+'| Desarrollo: '+'transformación '+'| Color: '+'amarillo '+'| Sabor: '+'dulce '+'| Orientación: '+'centro';
+Fionula();
+if rec>84 then label39.Enabled:=false;
+end;
+
+procedure TDental.Label75DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Canino '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'madera '+'| Amígdalas: '+'palatina '+'| Otros: '+'tendones, metrorragias, estreñimiento | Glándulas: lóbulo posterior de la hipófisis, timo | Cavidades: senos esfenoideos';
+label202.caption:='| Organos: '+'vesícula, hígado izquierdo '+'| Vertebras: '+'D8, D9, D10 '+'| Organo de los sentidos: '+'ojo |';
+label265.caption:='| Pieza: '+'EUR 23 / USA 11 '+'| Dermatomas: '+'T8, T9; T10 '+'| Articulaciones: '+'pie, cadera, rodilla posterior '+'| Emoción: '+'íra';
+label384.Caption:='| Estación: '+'primavera '+'| Ambiente: '+'viento '+'| Desarrollo: '+'germinación '+'| Color: '+'verde '+'| Sabor: '+'agrio '+'| Orientación: '+'este/oriente';
+Fionula();
+if rec>84 then label75.Enabled:=false;
+end;
+
+procedure TDental.Label40DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo lateral '+'| Cuadrante izquierdo '+'| Arcada superior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'cabello, huesos de la cabeza, epífisis | Glándulas: pineal | Cavidades: seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital, riñón izquierdo '+'| Vertebras: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Organo de los sentidos: '+'ojos';
+label265.caption:='| Pieza: '+'EUR 22 / USA 10 '+'| Dermatomas: '+'L2, L3, S3, S4, S5, C1, C2 '+'| Articulaciones: '+'pie, sacrocoxis, rodilla posterior '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'acumulación '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
+Fionula();
+if rec>84 then label40.Enabled:=false;
+end;
+
+procedure TDental.Label41DblClick(Sender: TObject);
+begin
+Alcira();
+label200.caption:='Pieza testada: '+'Incisivo central '+'| Cuadrante izquierdo '+'| Arcada inferior.';
+label201.caption:='| Elemento: '+'agua '+'| Amígdalas: '+'faringea '+'| Otros: '+'huesos '+'| Glándulas / sist. tisular: '+'suprarrenales, epididimo '+'| Cavidades: '+'seno frontal';
+label202.caption:='| Organos: '+'vejiga izquierda, terreno urogenital '+'| Vertebras: '+'L2, L3, S3, S4, S5, Coxis '+'| Organo de los sentidos: '+'nariz |';
+label265.caption:='| Pieza: '+'EUR 31 / USA 24 '+'| Dermatomas: '+'L2, L3, S4, S5, Coxis '+'| Articulaciones: '+'rodilla anterior, sacrocoxis, pie '+'| Emoción: '+'miedo/pánico';
+label384.Caption:='| Estación: '+'invierno '+'| Ambiente: '+'frío '+'| Desarrollo: '+'almacenamiento '+'| Color: '+'negro '+'| Sabor: '+'salado '+'| Orientación: '+'norte';
+Fionula();
+if rec>84 then label41.Enabled:=false;
+end;
+
+procedure TDental.PiggyBackTherapies1Click(Sender: TObject);
+begin
+FRecompensa.ShowModal;
+end;
+
+{procedure TDental.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Dental.memo4.lines.add(' Posible órgano más estresado:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex]);
+end;  }
 
 End.

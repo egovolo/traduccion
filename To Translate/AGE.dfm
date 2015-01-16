@@ -1,15 +1,13 @@
 object Aging: TAging
-  Left = 7
-  Top = 116
+  Left = 107
+  Top = 226
   HorzScrollBar.Visible = False
   VertScrollBar.Style = ssFlat
   VertScrollBar.Visible = False
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Rejuvenecimiento & '#39'Vidas pasadas'#39' :::'
-  ClientHeight = 671
+  Caption = '::: gENiO® iOS ::: Rejuvenecimiento & '#39'Vidas pasadas'#39' :::'
+  ClientHeight = 648
   ClientWidth = 975
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -25,24 +23,31 @@ object Aging: TAging
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 16
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 975
+    Height = 636
+    Align = alClient
+  end
   object Image3: TImage
     Left = 0
     Top = 0
     Width = 975
-    Height = 658
+    Height = 636
     Align = alClient
   end
   object Shape1: TShape
-    Left = 333
-    Top = 36
+    Left = 329
+    Top = 16
     Width = 380
     Height = 352
     Shape = stCircle
     Visible = False
   end
   object Label71: TLabel
-    Left = 418
-    Top = 222
+    Left = 414
+    Top = 202
     Width = 219
     Height = 15
     Caption = 'la acción de los factores termodinámicos'
@@ -56,8 +61,8 @@ object Aging: TAging
     Visible = False
   end
   object Label14: TLabel
-    Left = 398
-    Top = 240
+    Left = 394
+    Top = 220
     Width = 262
     Height = 15
     Caption = 'Deje la vida fluir independientemente del tiempo.'
@@ -73,8 +78,8 @@ object Aging: TAging
     Visible = False
   end
   object Label13: TLabel
-    Left = 415
-    Top = 204
+    Left = 411
+    Top = 184
     Width = 225
     Height = 15
     Caption = 'restaurando el orden celular y deteniendo'
@@ -90,8 +95,8 @@ object Aging: TAging
     Visible = False
   end
   object Label11: TLabel
-    Left = 413
-    Top = 168
+    Left = 409
+    Top = 148
     Width = 229
     Height = 15
     Caption = 'Sienta la energía del tiempo retrocediendo'
@@ -107,8 +112,8 @@ object Aging: TAging
     Visible = False
   end
   object Gauge2: TGauge
-    Left = 408
-    Top = 456
+    Left = 404
+    Top = 436
     Width = 313
     Height = 13
     BackColor = clYellow
@@ -117,31 +122,14 @@ object Aging: TAging
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
+    Font.Name = 'Tahoma'
+    Font.Style = []
     ParentFont = False
     Progress = 0
   end
-  object Label25: TLabel
-    Left = 32
-    Top = 448
-    Width = 108
-    Height = 19
-    Caption = 'CAMPO NULO'
-    Color = clFuchsia
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clLime
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
   object Label26: TLabel
-    Left = 408
-    Top = 436
+    Left = 404
+    Top = 416
     Width = 9
     Height = 14
     Alignment = taCenter
@@ -156,21 +144,9 @@ object Aging: TAging
     ParentFont = False
     Transparent = True
   end
-  object Image1: TImage
-    Left = 128
-    Top = 284
-    Width = 100
-    Height = 100
-    AutoSize = True
-    Constraints.MaxHeight = 150
-    Constraints.MaxWidth = 150
-    Stretch = True
-    Transparent = True
-    Visible = False
-  end
   object Label12: TLabel
-    Left = 386
-    Top = 186
+    Left = 382
+    Top = 166
     Width = 282
     Height = 15
     Caption = 'Vuelva atrás en el tiempo rejuveneciendo las células'
@@ -186,8 +162,8 @@ object Aging: TAging
     Visible = False
   end
   object Gauge1: TGauge
-    Left = 333
-    Top = 28
+    Left = 329
+    Top = 8
     Width = 380
     Height = 380
     BackColor = clYellow
@@ -199,34 +175,33 @@ object Aging: TAging
     Progress = 0
     ShowText = False
   end
-  object Label91: TLabel
-    Left = 409
-    Top = 599
-    Width = 155
-    Height = 14
+  object Label189: TLabel
+    Left = 324
+    Top = 610
+    Width = 47
+    Height = 13
     Cursor = crHandPoint
     Alignment = taRightJustify
-    Caption = 'Transferir ítem a pantalla de test'
+    Caption = 'Transferír'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clBlack
     Font.Height = -11
-    Font.Name = 'Arial'
+    Font.Name = 'Tahoma'
     Font.Style = [fsUnderline]
     ParentFont = False
     Transparent = True
-    OnClick = Label91Click
+    OnClick = Label189Click
   end
-  object Label67: TLabel
-    Left = 840
-    Top = 622
-    Width = 77
+  object LRectificado: TLabel
+    Left = 667
+    Top = 608
+    Width = 83
     Height = 16
-    Alignment = taCenter
-    Caption = 'Rectificado:'
-    Color = clMaroon
+    Caption = 'Rectificado |'
+    Color = clMenu
     Font.Charset = ANSI_CHARSET
-    Font.Color = clNavy
+    Font.Color = clMaroon
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
@@ -234,27 +209,64 @@ object Aging: TAging
     ParentFont = False
     Transparent = True
   end
-  object GProgreso: TGauge
-    Left = 0
-    Top = 658
-    Width = 975
+  object Label787: TLabel
+    Left = 552
+    Top = 610
+    Width = 87
     Height = 13
-    Align = alBottom
-    BorderStyle = bsNone
-    Color = clSilver
-    ForeColor = clBlue
+    Alignment = taRightJustify
+    Caption = 'Terapia extendida'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object IContinuar: TImage
+    Left = 776
+    Top = 605
+    Width = 22
+    Height = 22
+    Cursor = crHandPoint
+    Stretch = True
+    Transparent = True
+    OnClick = IContinuarClick
+  end
+  object Label942: TLabel
+    Left = 473
+    Top = 610
+    Width = 54
+    Height = 13
+    Alignment = taRightJustify
+    Caption = 'Automático'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label349: TLabel
+    Left = 388
+    Top = 610
+    Width = 38
+    Height = 13
+    Alignment = taRightJustify
+    Caption = 'Tiempo:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
-    ParentColor = False
     ParentFont = False
-    Progress = 0
+    Transparent = True
   end
   object Button23: TButton
-    Left = 28
-    Top = 572
+    Left = 24
+    Top = 552
     Width = 377
     Height = 22
     Cursor = crHandPoint
@@ -266,12 +278,12 @@ object Aging: TAging
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 14
     OnClick = Button23Click
   end
   object Calendar1: TCalendar
-    Left = 48
-    Top = 40
+    Left = 44
+    Top = 20
     Width = 257
     Height = 117
     Font.Charset = DEFAULT_CHARSET
@@ -284,12 +296,12 @@ object Aging: TAging
     TabOrder = 0
   end
   object Button16: TButton
-    Left = 408
-    Top = 548
+    Left = 404
+    Top = 528
     Width = 313
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Rx | Rejuvenecimiento'
+    Caption = 'Rejuvenecimiento'
     DragCursor = crHandPoint
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -301,12 +313,12 @@ object Aging: TAging
     OnClick = Button16Click
   end
   object Button11: TButton
-    Left = 28
-    Top = 500
+    Left = 24
+    Top = 480
     Width = 377
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Comunicación subespacial'
+    Caption = 'Comunicación subespacial >'
     DragCursor = crHandPoint
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -318,8 +330,8 @@ object Aging: TAging
     OnClick = Button11Click
   end
   object MediaPlayer1: TMediaPlayer
-    Left = 696
-    Top = 84
+    Left = 692
+    Top = 64
     Width = 253
     Height = 25
     Visible = False
@@ -327,8 +339,8 @@ object Aging: TAging
     OnNotify = MediaPlayer1Notify
   end
   object Button2: TButton
-    Left = 408
-    Top = 476
+    Left = 404
+    Top = 456
     Width = 313
     Height = 22
     Cursor = crHandPoint
@@ -344,12 +356,12 @@ object Aging: TAging
     OnClick = Button2Click
   end
   object Button4: TButton
-    Left = 28
-    Top = 476
+    Left = 24
+    Top = 456
     Width = 377
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Vidas pasadas'
+    Caption = 'Vidas pasadas >'
     DragCursor = crHandPoint
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -361,8 +373,8 @@ object Aging: TAging
     OnClick = Button4Click
   end
   object Button13: TButton
-    Left = 28
-    Top = 524
+    Left = 24
+    Top = 504
     Width = 377
     Height = 22
     Cursor = crHandPoint
@@ -378,35 +390,16 @@ object Aging: TAging
     OnClick = Button13Click
   end
   object MediaPlayer2: TMediaPlayer
-    Left = 696
-    Top = 52
+    Left = 692
+    Top = 32
     Width = 253
     Height = 25
     Visible = False
     TabOrder = 9
   end
-  object Edit6: TEdit
-    Left = 28
-    Top = 597
-    Width = 373
-    Height = 20
-    Cursor = crIBeam
-    BorderStyle = bsNone
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 10
-    Text = 'Introducir ítem:'
-    OnChange = Edit6Change
-    OnEnter = Edit6Enter
-  end
   object Button21: TButton
-    Left = 28
-    Top = 548
+    Left = 24
+    Top = 528
     Width = 377
     Height = 22
     Cursor = crHandPoint
@@ -418,12 +411,12 @@ object Aging: TAging
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 10
     OnClick = Button21Click
   end
   object Button25: TButton
-    Left = 408
-    Top = 500
+    Left = 404
+    Top = 480
     Width = 313
     Height = 22
     Cursor = crHandPoint
@@ -434,16 +427,16 @@ object Aging: TAging
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 12
+    TabOrder = 11
     OnClick = Button25Click
   end
   object Button26: TButton
-    Left = 408
-    Top = 524
+    Left = 404
+    Top = 504
     Width = 313
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Pulso | Rejuvenicimiento'
+    Caption = 'Pulso | Rejuvenicimiento >'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -451,17 +444,17 @@ object Aging: TAging
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 12
     OnClick = Button26Click
   end
   object Panel1: TPanel
-    Left = 28
-    Top = 28
+    Left = 24
+    Top = 8
     Width = 685
     Height = 381
     BevelOuter = bvNone
     BevelWidth = 2
-    TabOrder = 15
+    TabOrder = 13
     Visible = False
     object Label2: TLabel
       Left = 16
@@ -670,8 +663,8 @@ object Aging: TAging
     end
   end
   object Panel3: TPanel
-    Left = 28
-    Top = 28
+    Left = 24
+    Top = 8
     Width = 921
     Height = 589
     BevelOuter = bvNone
@@ -694,6 +687,7 @@ object Aging: TAging
       Shape = bsFrame
     end
     object Label46: TLabel
+      Tag = 8
       Left = 48
       Top = 64
       Width = 35
@@ -716,6 +710,7 @@ object Aging: TAging
       OnDblClick = Label46DblClick
     end
     object Label47: TLabel
+      Tag = 8
       Left = 48
       Top = 84
       Width = 35
@@ -733,6 +728,7 @@ object Aging: TAging
       OnDblClick = Label47DblClick
     end
     object Label48: TLabel
+      Tag = 8
       Left = 48
       Top = 284
       Width = 35
@@ -750,6 +746,7 @@ object Aging: TAging
       OnDblClick = Label48DblClick
     end
     object Label49: TLabel
+      Tag = 8
       Left = 48
       Top = 124
       Width = 35
@@ -767,6 +764,7 @@ object Aging: TAging
       OnDblClick = Label49DblClick
     end
     object Label50: TLabel
+      Tag = 8
       Left = 48
       Top = 144
       Width = 35
@@ -784,6 +782,7 @@ object Aging: TAging
       OnDblClick = Label50DblClick
     end
     object Label51: TLabel
+      Tag = 8
       Left = 48
       Top = 164
       Width = 35
@@ -801,6 +800,7 @@ object Aging: TAging
       OnDblClick = Label51DblClick
     end
     object Label52: TLabel
+      Tag = 8
       Left = 48
       Top = 204
       Width = 35
@@ -818,6 +818,7 @@ object Aging: TAging
       OnDblClick = Label52DblClick
     end
     object Label53: TLabel
+      Tag = 8
       Left = 48
       Top = 224
       Width = 35
@@ -835,6 +836,7 @@ object Aging: TAging
       OnDblClick = Label53DblClick
     end
     object Label54: TLabel
+      Tag = 8
       Left = 48
       Top = 264
       Width = 35
@@ -852,6 +854,7 @@ object Aging: TAging
       OnDblClick = Label54DblClick
     end
     object Label55: TLabel
+      Tag = 8
       Left = 48
       Top = 104
       Width = 35
@@ -869,6 +872,7 @@ object Aging: TAging
       OnDblClick = Label55DblClick
     end
     object Label56: TLabel
+      Tag = 8
       Left = 48
       Top = 484
       Width = 35
@@ -886,6 +890,7 @@ object Aging: TAging
       OnDblClick = Label56DblClick
     end
     object Label57: TLabel
+      Tag = 8
       Left = 48
       Top = 324
       Width = 35
@@ -903,6 +908,7 @@ object Aging: TAging
       OnDblClick = Label57DblClick
     end
     object Label58: TLabel
+      Tag = 8
       Left = 48
       Top = 344
       Width = 35
@@ -920,6 +926,7 @@ object Aging: TAging
       OnDblClick = Label58DblClick
     end
     object Label59: TLabel
+      Tag = 8
       Left = 48
       Top = 364
       Width = 35
@@ -937,6 +944,7 @@ object Aging: TAging
       OnDblClick = Label59DblClick
     end
     object Label60: TLabel
+      Tag = 8
       Left = 48
       Top = 384
       Width = 35
@@ -954,6 +962,7 @@ object Aging: TAging
       OnDblClick = Label60DblClick
     end
     object Label61: TLabel
+      Tag = 8
       Left = 48
       Top = 44
       Width = 35
@@ -971,6 +980,7 @@ object Aging: TAging
       OnDblClick = Label61DblClick
     end
     object Label62: TLabel
+      Tag = 8
       Left = 48
       Top = 424
       Width = 35
@@ -988,6 +998,7 @@ object Aging: TAging
       OnDblClick = Label62DblClick
     end
     object Label63: TLabel
+      Tag = 8
       Left = 48
       Top = 444
       Width = 35
@@ -1005,6 +1016,7 @@ object Aging: TAging
       OnDblClick = Label63DblClick
     end
     object Label64: TLabel
+      Tag = 8
       Left = 48
       Top = 504
       Width = 35
@@ -1022,6 +1034,7 @@ object Aging: TAging
       OnDblClick = Label64DblClick
     end
     object Label65: TLabel
+      Tag = 8
       Left = 48
       Top = 524
       Width = 35
@@ -1039,6 +1052,7 @@ object Aging: TAging
       OnDblClick = Label65DblClick
     end
     object Label68: TLabel
+      Tag = 8
       Left = 48
       Top = 304
       Width = 35
@@ -1140,6 +1154,7 @@ object Aging: TAging
       Transparent = True
     end
     object Label66: TLabel
+      Tag = 8
       Left = 48
       Top = 544
       Width = 35
@@ -1171,17 +1186,8 @@ object Aging: TAging
       ParentFont = False
       Transparent = True
     end
-    object Image2: TImage
-      Left = 812
-      Top = 20
-      Width = 80
-      Height = 80
-      Cursor = crHandPoint
-      Stretch = True
-      Transparent = True
-      OnDblClick = Image2DblClick
-    end
     object Label93: TLabel
+      Tag = 8
       Left = 48
       Top = 464
       Width = 35
@@ -1204,6 +1210,7 @@ object Aging: TAging
       OnDblClick = Label93DblClick
     end
     object Label94: TLabel
+      Tag = 8
       Left = 48
       Top = 404
       Width = 35
@@ -1221,6 +1228,7 @@ object Aging: TAging
       OnDblClick = Label94DblClick
     end
     object Label95: TLabel
+      Tag = 8
       Left = 48
       Top = 184
       Width = 35
@@ -1238,6 +1246,7 @@ object Aging: TAging
       OnDblClick = Label95DblClick
     end
     object Label97: TLabel
+      Tag = 8
       Left = 48
       Top = 244
       Width = 35
@@ -1255,6 +1264,7 @@ object Aging: TAging
       OnDblClick = Label97DblClick
     end
     object Label98: TLabel
+      Tag = 8
       Left = 48
       Top = 564
       Width = 35
@@ -1277,7 +1287,7 @@ object Aging: TAging
       Width = 249
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Pulso | Rejuvenecimiento'
+      Caption = 'Rejuvenecimiento fX >'
       Enabled = False
       Font.Charset = ANSI_CHARSET
       Font.Color = clYellow
@@ -1309,10 +1319,10 @@ object Aging: TAging
     end
   end
   object Panel2: TPanel
-    Left = 28
-    Top = 24
+    Left = 24
+    Top = 8
     Width = 921
-    Height = 597
+    Height = 589
     BevelOuter = bvNone
     BevelWidth = 4
     Caption = ' '
@@ -2069,35 +2079,162 @@ object Aging: TAging
       OnClick = Panel6Click
     end
   end
-  object Panel4: TPanel
+  object Panel34: TPanel
     Left = 0
-    Top = 0
+    Top = 636
     Width = 975
-    Height = 14
+    Height = 12
+    Align = alBottom
     BevelOuter = bvNone
-    BevelWidth = 3
-    Color = clLime
-    Font.Charset = ANSI_CHARSET
+    TabOrder = 15
+    object GProgreso: TGauge
+      Left = 150
+      Top = 0
+      Width = 825
+      Height = 12
+      Align = alClient
+      BorderStyle = bsNone
+      Color = clWhite
+      ForeColor = clBlue
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Progress = 0
+    end
+    object PTiempoEstimado: TPanel
+      Left = 0
+      Top = 0
+      Width = 150
+      Height = 12
+      Align = alLeft
+      BevelOuter = bvNone
+      Caption = 'Tiempo estimado en segs. | '
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Panel4: TPanel
+    Left = 802
+    Top = 605
+    Width = 157
+    Height = 22
+    BevelOuter = bvNone
+    Color = clBlack
+    TabOrder = 16
+    object LCrono3: TLabel
+      Left = 84
+      Top = 4
+      Width = 29
+      Height = 13
+      Alignment = taCenter
+      Caption = 'Crono'
+      Color = clBlack
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clAqua
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Layout = tlCenter
+    end
+    object Label148: TLabel
+      Left = 10
+      Top = 4
+      Width = 22
+      Height = 13
+      Caption = 'Time'
+      Color = clBlack
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clSilver
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object ETransferencia: TEdit
+    Left = 16
+    Top = 609
+    Width = 301
+    Height = 14
+    Cursor = crIBeam
+    BorderStyle = bsNone
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 13
-    Visible = False
+    TabOrder = 17
+    Text = ' '
+  end
+  object CBTerapiaExtendida: TCheckBox
+    Left = 644
+    Top = 609
+    Width = 14
+    Height = 14
+    Cursor = crHandPoint
+    TabOrder = 18
+  end
+  object CBAutomatico: TCheckBox
+    Left = 532
+    Top = 609
+    Width = 14
+    Height = 14
+    Cursor = crHandPoint
+    TabOrder = 19
+  end
+  object SETiempo: TSpinEdit
+    Left = 428
+    Top = 607
+    Width = 37
+    Height = 19
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    MaxValue = 20
+    MinValue = 2
+    ParentFont = False
+    TabOrder = 20
+    Value = 2
   end
   object Timer1: TTimer
     Enabled = False
     Interval = 1
     OnTimer = Timer1Timer
-    Left = 916
-    Top = 80
+    Left = 912
+    Top = 60
   end
   object Timer2: TTimer
     Enabled = False
     Interval = 1
     OnTimer = Timer2Timer
-    Left = 916
-    Top = 112
+    Left = 912
+    Top = 92
+  end
+  object MyChrono: TYRChronometre
+    Left = 912
+    Top = 157
+  end
+  object Time_Crono: TTimer
+    Enabled = False
+    OnTimer = Time_CronoTimer
+    Left = 912
+    Top = 126
   end
 end

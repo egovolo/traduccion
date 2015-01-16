@@ -3,9 +3,7 @@ object psych: Tpsych
   Top = 128
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Exámenes Psicológicos ::: '
+  Caption = '::: gENiO® iOS ::: Exámenes Psicológicos ::: '
   ClientHeight = 579
   ClientWidth = 786
   Color = clBtnFace

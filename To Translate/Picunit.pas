@@ -12,7 +12,6 @@ type
     LBAcupuntura: TListBox;
     Panel1: TPanel;
     Image1: TImage;
-    PDesarrollo: TPanel;
     Label10: TLabel;
     Panel4: TPanel;
     Button9: TButton;
@@ -34,12 +33,6 @@ type
     Image10: TImage;
     Panel5: TPanel;
     Image11: TImage;
-    DBMemo1: TDBMemo;
-    Label28: TLabel;
-    Label29: TLabel;
-    Label30: TLabel;
-    Label31: TLabel;
-    Label32: TLabel;
     Label4: TLabel;
     Panel6: TPanel;
     Image14: TImage;
@@ -122,39 +115,28 @@ type
     rd26: TRadioButton;
     rd27: TRadioButton;
     rd28: TRadioButton;
-    Memo1: TMemo;
     Image2: TImage;
     Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label16: TLabel;
-    Label27: TLabel;
-    Label33: TLabel;
-    Label34: TLabel;
-    Label35: TLabel;
     CB_Automatic: TCheckBox;
     Label37: TLabel;
     Label38: TLabel;
     Label39: TLabel;
     Label40: TLabel;
     Label41: TLabel;
-    Panel3: TPanel;
-    GProgreso: TGauge;
     Panel14: TPanel;
     LCrono: TLabel;
     Label332: TLabel;
     MyChrono: TYRChronometre;
     Time_Crono: TTimer;
     Timer1: TTimer;
-    Label11: TLabel;
     Label167: TLabel;
     CBTerapiaExtendida: TCheckBox;
+    Panel60: TPanel;
+    GProgreso: TGauge;
+    PTiempoEstimado: TPanel;
+    Label11: TLabel;
+    Q_Filtro: TQuery;
+    DataSource1: TDataSource;
     procedure FormCreate(Sender: TObject);
     procedure LBAcupunturaClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -171,7 +153,6 @@ type
     procedure FormShow(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
-    procedure Button11Click(Sender: TObject);
     procedure Edit2Enter(Sender: TObject);
     procedure Edit3Enter(Sender: TObject);
     procedure Edit4Enter(Sender: TObject);
@@ -274,7 +255,6 @@ type
     procedure Edit17Enter(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure Label11Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -404,7 +384,6 @@ end;
 
 procedure TForm_accu.Button4Click(Sender: TObject);
 begin
-DBMemo1.visible:=true;
 LCoherencia.caption:='000';
 LReaccion.caption:='000';
  GProgreso.Progress :=0;
@@ -445,8 +424,8 @@ MyChrono.Start;
      //  vcontinua := fcontinua;
        PEquilibrar();
     end;
-MyChrono.Stop;
     end;
+    MyChrono.Stop;
  if (CBTerapiaExtendida.Checked = True) and (Button5.Enabled = False)
  then begin
  CBTerapiaExtendida.checked:=false;
@@ -480,9 +459,6 @@ LReaccion.caption:='000';
 LCoherencia.caption:='000';
 Reaccion_Irregular();
                             {2}
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit2.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 if edit2.text<>'' then  begin
 edit2.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
@@ -500,9 +476,6 @@ If x >84 Then Edit2.Text := '';
 end;
 
                        {3}
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit3.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 if edit3.text<>'' then  begin
 edit3.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
@@ -521,9 +494,6 @@ end;
                      {4}
 
 if edit4.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit4.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit4.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit4.text then begin
@@ -542,9 +512,6 @@ end;
                      {5}
 
 if edit5.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit5.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit5.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit5.text then begin
@@ -563,9 +530,6 @@ end;
                       {6}
 
 if edit6.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit6.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit6.color:=clLime;
  for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit6.text then begin
@@ -583,9 +547,6 @@ If x >84 Then Edit6.Text := '';
 end;                       {7}
 
 if edit7.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit7.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit7.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit7.text then begin
@@ -604,9 +565,6 @@ end;
                      {8}
 
 if edit8.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit8.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit8.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit8.text then begin
@@ -625,9 +583,6 @@ end;
                   {9}
 
 if edit9.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit9.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit9.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit9.text then begin
@@ -646,9 +601,6 @@ end;
                   {10}
 
 if edit10.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit10.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit10.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit10.text then begin
@@ -666,9 +618,6 @@ If x >84 Then Edit10.Text := '';
 end;                     {11}
 
 if edit11.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit11.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit11.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit11.text then begin
@@ -686,9 +635,6 @@ If x >84 Then Edit11.Text := '';
 end;                      {14}
 
 if edit14.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit14.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit14.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit14.text then begin
@@ -706,9 +652,6 @@ If x >84 Then Edit14.Text := '';
 end;                     {15}
 
 if edit15.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit15.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit15.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit15.text then begin
@@ -726,9 +669,6 @@ If x >84 Then Edit15.Text := '';
 end;                      {16}
 
 if edit16.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit16.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit16.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit16.text then begin
@@ -746,9 +686,6 @@ If x >84 Then Edit16.Text := '';
 end;                  {17}
 
 if edit17.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit17.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit17.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit17.text then begin
@@ -766,9 +703,6 @@ If x >84 Then Edit17.Text := '';
 end;                       {18}
 
 if edit18.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit18.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit18.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit18.text then begin
@@ -786,9 +720,6 @@ If x >84 Then Edit18.Text := '';
 end;                 {19}
 
 if edit19.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit19.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit19.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit19.text then begin
@@ -806,9 +737,6 @@ If x >84 Then Edit19.Text := '';
 end;                {20}
 
 if edit20.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit20.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit20.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit20.text then begin
@@ -826,9 +754,6 @@ If x >84 Then Edit20.Text := '';
 end;                  {22}
 
 if edit22.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit22.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit22.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit22.text then begin
@@ -846,9 +771,6 @@ If x >84 Then Edit22.Text := '';
 end;                       {26}
 
 if edit26.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit26.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit26.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit26.text then begin
@@ -866,9 +788,6 @@ If x >84 Then Edit26.Text := '';
 end;                      {27}
 
 if edit27.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit27.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit27.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit27.text then begin
@@ -886,9 +805,6 @@ If x >84 Then Edit27.Text := '';
 end;                        {28}
 
 if edit28.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit28.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit28.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit28.text then begin
@@ -906,9 +822,6 @@ If x >84 Then Edit28.Text := '';
 end;                       {29}
 
 if edit29.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit29.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit29.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit29.text then begin
@@ -926,9 +839,6 @@ If x >84 Then Edit29.Text := '';
 end;                         {30}
 
 if edit30.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit30.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit30.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit30.text then begin
@@ -946,9 +856,6 @@ If x >84 Then Edit30.Text := '';
 end;                        {31}
 
 if edit31.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit31.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit31.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit31.text then begin
@@ -966,9 +873,6 @@ If x >84 Then Edit31.Text := '';
 end;                        {32}
 
 if edit32.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit32.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit32.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit32.text then begin
@@ -986,9 +890,6 @@ If x >84 Then Edit32.Text := '';
 end;                        {33}
 
 if edit33.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit33.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit33.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit33.text then begin
@@ -1006,9 +907,6 @@ If x >84 Then Edit33.Text := '';
 end;                        {34}
 
 if edit34.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit34.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit34.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit34.text then begin
@@ -1026,9 +924,6 @@ If x >84 Then Edit34.Text := '';
 end;                        {35}
 
 if edit35.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit35.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit35.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit35.text then begin
@@ -1046,9 +941,6 @@ If x >84 Then Edit35.Text := '';
 end;                        {36}
 
 if edit36.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit36.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit36.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit36.text then begin
@@ -1066,9 +958,6 @@ If x >84 Then Edit36.Text := '';
 end;                        {37}
 
 if edit37.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit37.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit37.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit37.text then begin
@@ -1086,9 +975,6 @@ If x >84 Then Edit37.Text := '';
 end;                        {38}
 
 if edit38.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit38.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit38.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit38.text then begin
@@ -1106,9 +992,6 @@ If x >84 Then Edit38.Text := '';
 end;                        {39}
 
 if edit39.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit39.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit39.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit39.text then begin
@@ -1125,9 +1008,6 @@ If x >84 Then Edit39.Text := '';
 
 end;                        {40}
 if edit40.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit40.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit40.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit40.text then begin
@@ -1144,9 +1024,6 @@ If x >84 Then Edit40.Text := '';
 
 end;                        {41}
 if edit41.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit41.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit41.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit41.text then begin
@@ -1163,9 +1040,6 @@ If x >84 Then Edit41.Text := '';
 
 end;                         {42}
 if edit42.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit42.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit42.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit42.text then begin
@@ -1183,9 +1057,6 @@ If x >84 Then Edit42.Text := '';
 end;
                      {43}
 if edit43.text<>'' then  begin
-PDesarrollo.caption:='Realizando terapia de electro-acupuntura a punto | '+(edit43.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit43.color:=clLime;
   for yx := 0 to LBAcupuntura.items.count -1 do begin
       if  LBAcupuntura.Items[yx]= edit43.text then begin
@@ -1202,9 +1073,6 @@ If x >84 Then Edit43.Text := '';
 
 end;                      {12}
 if edit12.text<>'' then  begin
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido a: '+(edit12.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit12.color:=clLime;
 image1.picture.loadfromfile('aura_scan.jpg');
 image11.picture.loadfromfile('aura_scan.jpg');
@@ -1215,9 +1083,6 @@ If x >84 Then Edit12.Text := '';
 
 end;                     {13}
 if edit13.text<>'' then  begin
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido a: '+(edit23.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit13.color:=clLime;
 image1.picture.loadfromfile('aura_scan.jpg');
 image11.picture.loadfromfile('aura_scan.jpg');
@@ -1229,9 +1094,6 @@ If x >84 Then Edit13.Text := '';
 End;
                          {23}
 if edit23.text<>'' then  begin
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido a: '+(edit23.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit23.color:=clLime;
 image1.picture.loadfromfile('aura_scan.jpg');
 image11.picture.loadfromfile('aura_scan.jpg');
@@ -1244,9 +1106,6 @@ end;
                       {24}
 
 if edit24.text<>'' then  begin
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido a: '+(edit24.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit24.color:=clLime;
 image1.picture.loadfromfile('aura_scan.jpg');
 image11.picture.loadfromfile('aura_scan.jpg');
@@ -1257,9 +1116,6 @@ If x >84 Then Edit24.Text := '';
 
 end;                  {25}
 if edit25.text<>'' then  begin
-PDesarrollo.caption:='Súper-imponiendo patrón hololingüístico invertido a: '+(edit25.text);
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 edit25.color:=clLime;
 image1.picture.loadfromfile('aura_scan.jpg');
 image11.picture.loadfromfile('aura_scan.jpg');
@@ -1268,17 +1124,6 @@ Image11.Refresh;
 Terapia();
 If x >84 Then Edit25.Text := '';
 end;
-PDesarrollo.visible:=false;
-end;
-
-procedure TForm_accu.Memo1Click(Sender: TObject);
-begin
-memo1.visible:=false;
-end;
-
-procedure TForm_accu.Label11Click(Sender: TObject);
-begin
-memo1.visible:=true;
 end;
 
 procedure TForm_accu.Edit5Change(Sender: TObject);
@@ -1371,11 +1216,6 @@ randomize;
  if R1 = 0 then R1:=1;
  LBAcupuntura.Itemindex:=R1;
  LBAcupunturaClick(Sender);
-end;
-
-procedure TForm_accu.Button11Click(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
 end;
 
 procedure TForm_accu.Edit2Enter(Sender: TObject);
@@ -1962,11 +1802,7 @@ begin
 reaccion := Random(100);
 if reaccion < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
 LReaccion.Caption := '000';
 LCoherencia.Caption := '000';
 vtiempo := 5;
@@ -1983,20 +1819,12 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-//PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
 MyChrono.Stop;
 end ;
 
 if reaccion > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
 LReaccion.Caption := '000';
 LCoherencia.Caption := '000';
 vtiempo := 5;
@@ -2013,9 +1841,6 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-//PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
 MyChrono.Stop;
 end;
 end;
@@ -2126,33 +1951,42 @@ if LBCondiciones.ItemIndex >= 0 then begin
          (self.Components[x] as Tedit).color:=clSilver;
        end;
  end;
- try
+{ try
    vQueryAB.close;
-   vQueryAB.sql.text := ' select * from acupunture '+
-                    ' where NOMBRE = '+(LBCondiciones.Items[LBCondiciones.ItemIndex]);
-     vQueryAB.open;
-     if  not vQueryAB.IsEmpty then begin
-         Edit2.text := vQueryAB.fieldbyname('A1').asstring;
-         Edit3.text := vQueryAB.fieldbyname('A2').asstring;
-         Edit4.text := vQueryAB.fieldbyname('A3').asstring;
-         Edit5.text := vQueryAB.fieldbyname('A4').asstring;
-         Edit6.text := vQueryAB.fieldbyname('A5').asstring;
-         Edit7.text := vQueryAB.fieldbyname('A6').asstring;
-         Edit8.text := vQueryAB.fieldbyname('A7').asstring;
-         Edit9.text := vQueryAB.fieldbyname('A8').asstring;
-         Edit10.text := vQueryAB.fieldbyname('A9').asstring;
-         Edit11.text := vQueryAB.fieldbyname('A10').asstring;
-         Edit14.text := vQueryAB.fieldbyname('A11').asstring;
-         Edit15.text := vQueryAB.fieldbyname('A12').asstring;
-         Edit14.text := vQueryAB.fieldbyname('A13').asstring;
-         Edit16.text := vQueryAB.fieldbyname('A14').asstring;
-         Edit17.text := vQueryAB.fieldbyname('A15').asstring;
-         Edit18.text := vQueryAB.fieldbyname('A16').asstring;
-         Edit19.text := vQueryAB.fieldbyname('A17').asstring;
+   vQueryAB.sql.text := ' select * from acupunture.DB '+
+                    ' where NOMBRE = '+(LBCondiciones.Items[LBCondiciones.ItemIndex]);  }
+
+Q_Filtro.Close;
+        Q_Filtro.SQL.Clear;
+        Q_Filtro.SQL.Add('SELECT NOMBRE ');
+        Q_Filtro.SQL.Add('FROM ACUPUNTURE.DB ');
+        Q_Filtro.SQL.Add(' WHERE NOMBRE = '+(LBCondiciones.Items[LBCondiciones.ItemIndex]));
+        Q_Filtro.RequestLive := true;
+Q_Filtro.Open;
+
+//    vQueryAB.open;
+     if  not Q_Filtro.IsEmpty then begin
+         Edit2.text := Q_Filtro.fieldbyname('A1').asstring;
+         Edit3.text := Q_Filtro.fieldbyname('A2').asstring;
+         Edit4.text := Q_Filtro.fieldbyname('A3').asstring;
+         Edit5.text := Q_Filtro.fieldbyname('A4').asstring;
+         Edit6.text := Q_Filtro.fieldbyname('A5').asstring;
+         Edit7.text := Q_Filtro.fieldbyname('A6').asstring;
+         Edit8.text := Q_Filtro.fieldbyname('A7').asstring;
+         Edit9.text := Q_Filtro.fieldbyname('A8').asstring;
+         Edit10.text := Q_Filtro.fieldbyname('A9').asstring;
+         Edit11.text := Q_Filtro.fieldbyname('A10').asstring;
+         Edit14.text := Q_Filtro.fieldbyname('A11').asstring;
+         Edit15.text := Q_Filtro.fieldbyname('A12').asstring;
+         Edit14.text := Q_Filtro.fieldbyname('A13').asstring;
+         Edit16.text := Q_Filtro.fieldbyname('A14').asstring;
+         Edit17.text := Q_Filtro.fieldbyname('A15').asstring;
+         Edit18.text := Q_Filtro.fieldbyname('A16').asstring;
+         Edit19.text := Q_Filtro.fieldbyname('A17').asstring;
     end;
-  finally
-     vQueryAB.close;
-  end;
+//  finally
+//     vQueryAB.close;
+//  end;
 end;
 end;
 
@@ -2461,5 +2295,16 @@ Edit25.Color:=clWhite;
 
 end;
 
+
+procedure TForm_accu.Label11Click(Sender: TObject);
+var
+  i :integer;
+begin
+for i:=0 to self.ComponentCount-1 do
+ if (self.Components[i] is TEdit) then
+  if (self.Components[i] as TEdit).tag = 100 then begin
+   (self.Components[i] as TEdit).text := '';
+end;
+end;
 
 end.

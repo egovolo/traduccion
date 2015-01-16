@@ -5,8 +5,8 @@ object Emotion1: TEmotion1
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Diagrama de emociones y neurotransmisores ::: '
+    '::: gENiO® iOS ::: Diagrama de emociones y neurotransmisores :::' +
+    ' '
   ClientHeight = 657
   ClientWidth = 910
   Color = clBtnFace

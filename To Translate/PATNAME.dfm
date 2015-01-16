@@ -1,11 +1,9 @@
 object PatForm1: TPatForm1
-  Left = 44
-  Top = 217
+  Left = 159
+  Top = 269
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Repertorización I :::'
+  Caption = '::: gENiO® iOS ::: Repertorización I :::'
   ClientHeight = 531
   ClientWidth = 887
   Color = clInactiveCaption
@@ -11542,7 +11540,7 @@ object PatForm1: TPatForm1
     OnExit = TabbedNotebook1Exit
     object TTabPage
       Left = 4
-      Top = 24
+      Top = 25
       Caption = 'Pulsología China'
       object Label118: TLabel
         Left = 56
@@ -12232,7 +12230,6 @@ object PatForm1: TPatForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 11
-        OnClick = Button8Click
       end
       object Button10: TButton
         Left = 528
@@ -12254,7 +12251,7 @@ object PatForm1: TPatForm1
         Left = 0
         Top = 0
         Width = 850
-        Height = 386
+        Height = 385
         Align = alClient
         Caption = ' '
         Color = clWhite
@@ -12263,7 +12260,7 @@ object PatForm1: TPatForm1
           Left = 1
           Top = 1
           Width = 848
-          Height = 384
+          Height = 383
           Align = alClient
           AutoSize = True
           Center = True
@@ -12324,7 +12321,7 @@ object PatForm1: TPatForm1
           Shape = stCircle
         end
         object Label68: TLabel
-          Left = 656
+          Left = 628
           Top = 8
           Width = 191
           Height = 12
@@ -12454,38 +12451,6 @@ object PatForm1: TPatForm1
           ParentFont = False
           TabOrder = 5
         end
-        object Button14: TButton
-          Left = 684
-          Top = 356
-          Width = 158
-          Height = 21
-          Cursor = crHandPoint
-          Caption = 'Cerrar'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 6
-          OnClick = Button8Click
-        end
-        object Button2: TButton
-          Left = 524
-          Top = 356
-          Width = 158
-          Height = 21
-          Cursor = crHandPoint
-          Caption = 'Ayuda'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 7
-          OnClick = Button2Click
-        end
         object CheckBox421: TCheckBox
           Left = 256
           Top = 20
@@ -12501,7 +12466,7 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 8
+          TabOrder = 6
         end
         object CheckBox422: TCheckBox
           Left = 340
@@ -12518,7 +12483,7 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 9
+          TabOrder = 7
         end
         object CheckBox423: TCheckBox
           Left = 412
@@ -12535,7 +12500,7 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 10
+          TabOrder = 8
         end
         object CheckBox424: TCheckBox
           Left = 233
@@ -12552,7 +12517,7 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 11
+          TabOrder = 9
         end
         object CheckBox425: TCheckBox
           Left = 313
@@ -12569,7 +12534,7 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 12
+          TabOrder = 10
         end
         object CheckBox426: TCheckBox
           Left = 405
@@ -12586,11 +12551,11 @@ object PatForm1: TPatForm1
           Font.Style = []
           ParentColor = False
           ParentFont = False
-          TabOrder = 13
+          TabOrder = 11
         end
         object Button11: TButton
           Left = 684
-          Top = 332
+          Top = 356
           Width = 158
           Height = 21
           Cursor = crHandPoint
@@ -12601,337 +12566,14 @@ object PatForm1: TPatForm1
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          TabOrder = 15
+          TabOrder = 12
           OnClick = Button11Click
-        end
-        object Memo3: TMemo
-          Left = 1
-          Top = 1
-          Width = 848
-          Height = 384
-          Align = alClient
-          BorderStyle = bsNone
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          Lines.Strings = (
-            'Pulse una vez sobre este panel para ocultarlo'
-            ''
-            
-              '"El Gran terapeuta saca la enfermedad antes de que esta aparezca' +
-              '. El mediocre trata los síntomas de lo que no ha sabido prever."' +
-              ' '
-            ''
-            
-              'A estas alturas se ha escrito bastante sobre lo que es la medici' +
-              'na tradicional china (MTCH). La acupuntura, masaje chino (Tuei N' +
-              'a), hierbas, moxas, ejercicios '
-            
-              'respiratorios (chi kung) y Tai Chi Chuan, son algunos de tantos ' +
-              'nombres que se pueden ver en las revistas de actualidad. En esta' +
-              ' nota, trataré, de profundizar un poco '
-            
-              'más en uno de los complejos y apasionantes aspectos de esta mile' +
-              'naria medicina, la pulsología china. (la interpretación del puls' +
-              'o).'
-            ''
-            'TOMAR EL PULSO - CHIE MAI'
-            ''
-            
-              'En la antigua China no existían radiografías, análisis de sangre' +
-              ', resonancias magnéticas, ni electrocardiogramas y el médico deb' +
-              'ía arreglárselas sin ellos para saber '
-            
-              'lo que le estaba ocurriendo a la persona. Dicen que la falta de ' +
-              'recursos "agudiza" la inteligencia y los sentidos. Y así fue com' +
-              'o durante unos pocos milenios se valieron '
-            
-              'tan solo de la sensibilidad humana para poder diagnosticar. Esta' +
-              ' sensibilidad fue cultivada en la mente, en el olfato, en los oj' +
-              'os, oídos y en el tacto.'
-            ''
-            
-              'Fue entonces como nacieron el diagnóstico por interrogación, el ' +
-              'diagnóstico por palpación, por auscultación y por la capacidad d' +
-              'e observación Estos sistemas no '
-            
-              'son exclusivos de la medicina china, pero en ella han sido desar' +
-              'rollados hasta alcanzar límites increíbles.  En el interrogatori' +
-              'o, la agudeza del mismo permite alcanzar un '
-            
-              'diagnóstico energético muy claro. Por su minuciosidad se asemeja' +
-              ' al de la homeopatía, fijándose en detalles en los que otros no ' +
-              'encontrarían ninguna utilidad. Esta '
-            
-              'agudeza también fue llevada al tacto, donde las manos "perciben ' +
-              'o encuentran" lo que la mente no puede entender. No solo en la p' +
-              'alpación y percusión abdominal o '
-            
-              'dorsal, común a muchas medicinas, sino también la palpación de l' +
-              'os puntos dorsales, ventrales (IU-MO) y demás puntos de " alarma' +
-              ' " en diferentes partes del '
-            'organismo.'
-            ''
-            
-              'A través de la observación se puede ver lo que la persona a vece' +
-              's ni sospecha ser. Como habla, como se mueve, como se para y se ' +
-              'sienta; sus gestos; el color de '
-            'la cara; contextura física, su actitud ante la vida, etc.'
-            ''
-            
-              'Pero tal vez uno de los aspectos más "secretos" del diagnóstico ' +
-              'chino, sea la toma del pulso, que es una forma de palpación. A t' +
-              'ravés de este método el terapeuta '
-            
-              'puede saber, sin que la persona lo mencione, en que estado esta ' +
-              'la energía de cada uno de sus órganos. En el pulso radial (exist' +
-              'en otras 2 regiones), se manifiesta '
-            
-              'la energía de los 6 órganos yin : pulmón, bazo, riñón, corazón, ' +
-              'pericardio e hígado; y la de las 6 vísceras: intestino grueso, e' +
-              'stómago, vejiga, intestino delgado san '
-            'jiao (triple calentador) y vesícula biliar.'
-            ''
-            
-              'En China, hubo una época en la cual los tabúes morales intentaro' +
-              'n frenar el avance del conocimiento médico. En esa época no se l' +
-              'e estaba permitido al médico, '
-            
-              'desvestir a las personas ni palparlas. En especial a las mujeres' +
-              ' de la nobleza. Esta costumbre puritana permitía que las mujeres' +
-              ' descubriesen únicamente sus '
-            
-              'antebrazos (y muchas veces a través de una cortina). Es decir, e' +
-              'l terapeuta podía tocar solo hasta sus codos. Esto a veces llega' +
-              'ba al extremo que como no estaba '
-            
-              'bien visto que un hombre palpara a una mujer, esta, señalaba en ' +
-              'una estatuilla de cerámica o madera, los puntos donde sentía dol' +
-              'or.'
-            ''
-            
-              'Semejantes costumbres, retrasaron el desarrollo de muchas técnic' +
-              'as, pero forzaron el ingenio y la agudeza de la mente china. Fue' +
-              ' precisamente en esta época, que '
-            
-              'la pulsología china llegó a desarrollarse hasta límites insospec' +
-              'hados.'
-            ''
-            
-              'Empezó a relacionarse cada una de las variaciones del pulso, con' +
-              ' cada una de las diferentes afecciones energéticas de los órgano' +
-              's. Es más, muchas '
-            
-              'enfermedades se manifiestan antes en el pulso que en síntomas y ' +
-              'signos. Por eso los pulsólogos parecían "adivinos", ellos podían' +
-              ' ver lo que aún no se había '
-            
-              'manifestado. Tomando el pulso se puede saber la gravedad de una ' +
-              'enfermedad ; si es por exceso o deficiencia de energía; cual es ' +
-              'el órgano más afectado, si su '
-            
-              'comienzo se debió o no a algún factor climático, si falta sangre' +
-              ', si hay fiebre, etc. El médico chino puede estar 10 minutos (o ' +
-              'más) palpando el pulso en cada brazo. '
-            
-              '(algo poco común en la medicina actual). Estas técnicas son cono' +
-              'cidas hoy en día y se pueden aprender en cualquier buen curso de' +
-              ' MTCH. Por supuesto que '
-            'requiere un tiempo considerable de práctica, y mucha paciencia.'
-            ''
-            
-              'Un pulso profundo nos dice que hay poca energía, si además es de' +
-              'lgado (fino) sabemos que hay una deficiencia de sangre. El pulso' +
-              ' rápido indica "calor interno", es '
-            
-              'decir fiebre , nerviosismo, o una infección. Un pulso lento nos ' +
-              '" habla de frío interno " , es decir falta de energía.(a menos q' +
-              'ue se trate de un gran atleta). Existe una '
-            
-              'gran variedad de pulsos, 19 pulsos básicos hasta alrededor de 28' +
-              ' tipos de pulsos llamados "Clásicos".'
-            ''
-            
-              'Otro de los grandes beneficios que puede dar la pulsología, entr' +
-              'e otros, es en la prognósis ( pronóstico de la evolución de la e' +
-              'nfermedad ).'
-            ''
-            
-              'Hay mucho que aprender aún de estas técnicas, y más que nunca la' +
-              ' mejor manera será a través de la práctica.De los nuevos terapéu' +
-              'tas depende. Haremos la '
-            
-              'misma medicina que ahora está tan cuestionada? O la nueva medici' +
-              'na integrará la sensibilidad como una herramienta fundamental en' +
-              ' el diagnóstico y tratamiento, tan '
-            
-              'importante como la anatomía o fisiología? De nuestra capacitació' +
-              'n depende.'
-            ''
-            'PULSOLOGIA CHINA '
-            ''
-            
-              'Los pulsos chinos, corresponden a los 12 meridianos de la Gran C' +
-              'irculación de la Energía. Su estudio se realiza sobre la arteria' +
-              ' radial, desde la base del pulgar hasta '
-            
-              'un través de dedo por encima de la apófisis estiloide, y corresp' +
-              'onde a los puntos 9, 8, 7 de pulmón.'
-            
-              'Los ideogramas chinos indican a través de su nombre su ubicación' +
-              ': CUN "Pulgar" donde se ubica el punto 9 P.'
-            ''
-            
-              'GUAN "Barrera", indica el límite de separación. Se encuentra en ' +
-              'el 8 P.'
-            ''
-            
-              'CHI "Pie ",señala la distancia de un pie hasta el pliegue de fle' +
-              'xión del codo,y se encuentra en el punto 7 P.'
-            
-              'Estando el paciente frente al médico, tendrá este su mano izquie' +
-              'rda con la derecha del paciente y viceversa. Cada segmento de la' +
-              ' arteria radial esta dividido en tres '
-            'partes:'
-            
-              '·'#9'Pulso inferior: por debajo de la apófisis estiloides del radio' +
-              ', entre ella y el pliegue de la muñeca. '
-            
-              '·'#9'Pulso central: al nivel de la parte más saliente de la apófisi' +
-              's estiloides radial. '
-            
-              '·'#9'Pulso superior: Por encima de la apófisis estiloides, del lado' +
-              ' del codo.'
-            
-              'En cada uno de estos emplazamientos ( superior, central e inferi' +
-              'or ) el dedo que palpa debe aprender a buscar:'
-            '§'#9'Un pulso superficial. '
-            '§'#9'Un pulso profundo.'
-            
-              'Tenemos así los doce pulsos cuya correspondencia es la siguiente' +
-              ':'
-            ''
-            
-              'En la superficie están Intestino Grueso, Estómago y Triple Recal' +
-              'entador.'
-            'En profundidad Pulmón, Bazo y Pericardio.'
-            
-              'Aquí están Intestino Delgado, Vesícula Biliar y Vejiga en superf' +
-              'icie.'
-            'Y Corazón, Hígado y Riñón en profundidad.'
-            ''
-            'COMO TOMAR LOS PULSOS EN LA PRACTICA'
-            ''
-            
-              'La manera de tomar los pulsos tiene una gran importancia, siempr' +
-              'e hay que hacerlo de la misma manera. El paciente debe estar en ' +
-              'reposo desde media hora antes. '
-            
-              'La mano del terapeuta debe tener una temperatura normal, ni cali' +
-              'ente ni fría. Se aconseja tomar los pulsos de la mano izquierda ' +
-              'del enfermo con la mano derecha, y '
-            
-              'viceversa. A veces se utiliza solamente la mano derecha por inte' +
-              'rmedio del índice, apoyando únicamente el pulpejo de los dedos. ' +
-              'En primer término palpar con las dos '
-            
-              'manos a la vez los pulsos de las dos muñecas, "tecleando" sobre ' +
-              'cada uno, lo que da una impresión de conjunto. Enseguida se toma' +
-              ' el pulso de cada muñeca '
-            
-              'separadamente insistiendo sobre los pulsos que en el primer exam' +
-              'en parecían anormales.'
-            ''
-            
-              'Comparar los pulsos izquierdos con los derechos, los superficial' +
-              'es con los profundos y los superiores con los inferiores. Si tod' +
-              'os no tienen el mismo tenor, se debe '
-            'notar aquellos que están en exceso y los que están en déficit.'
-            ''
-            
-              'Los pulsos derechos duros significan un exceso de Inn, si son ap' +
-              'enas perceptibles, es la fatiga extrema, la deficiencia de Yin. ' +
-              'Los pulsos derechos deben ser '
-            
-              'interpretados en función de los izquierdos. Si son más fuertes q' +
-              'ue los izquierdos el chi domina, si son más débiles, exceso de y' +
-              'ang.'
-            ''
-            
-              'Las nociones Occidentales y Orientales aparentemente contrapuest' +
-              'as son complementarias. Enseguida se debe ensayar de interpretar' +
-              ' el pulso de cada órgano '
-            'separadamente.'
-            ''
-            
-              '1.'#9'Para cada órgano un pulso PEQUEÑO Y DELGADO significa que el ' +
-              'órgano corresponde a dicho pulso es insuficiente. '
-            
-              '2.'#9'Un pulso AMPLIO Y TENSO expresa que el órgano está en sobreac' +
-              'tividad funcional o congestionado. '
-            
-              '3.'#9'Un pulso BLANDO Y ANCHO significa que el órgano está hinchado' +
-              ', y no funciona. '
-            
-              '4.'#9'Un pulso pequeño TENSO Y DURO expresa que el órgano está espa' +
-              'smódico, contraído doloroso. '
-            '5.'#9'Un pulso FINO O DELGADO significa deficiencia de xue o yin. '
-            '6.'#9'Un pulso DEBIL indica vacío de energía.'
-            ''
-            'CUANDO EXAMINAR EL PULSO '
-            ''
-            
-              'Es a la mañana, con el sujeto en ayunas, cuando es preferible ex' +
-              'aminar el pulso, dado que la energía inn ( que está en su máximo' +
-              ' a medianoche ) está calma y la '
-            
-              'energía yang ( que está en su máximo al mediodía ) no está todav' +
-              'ía turbulenta. Cualquier trastorno ligero de estas dos energías ' +
-              'se percibirá fácilmente.'
-            ''
-            'VARIACIONES DEL PULSO SEGÚN LAS ESTACIONES'
-            ''
-            
-              'Los caracteres del pulso varían con las estaciones dado que la e' +
-              'nergía en el organismo sufre cambios en cada estación. La energí' +
-              'a Yang comienza a mostrarse en '
-            
-              'Primavera, llega a su máximo a fin de verano, luego decrece mien' +
-              'tras que la energía inn comienza a mostrarse en otoño, para tene' +
-              'r su máximo de intensidad en '
-            
-              'invierno y decrecer hacia la primavera. En cada estación se pued' +
-              'e ver una mayor actividad de un órgano determinado, que se refle' +
-              'ja en el pulso. Así en la primavera '
-            
-              'corresponde el máximo de actividad al hígado, en el verano al co' +
-              'razón, en la canícula al bazo, en el otoño al pulmón y en el inv' +
-              'ierno al riñón.'
-            
-              'En la primavera todos los pulsos son tensos como una cuerda de v' +
-              'iolín o de un bambú que vibra.'
-            'En verano todos los pulsos son amplios como un río que desborda.'
-            
-              'En la canícula todos los pulsos son suaves, equilibrados, son li' +
-              'geros como las plumas.'
-            
-              'En invierno todos los pulsos son profundos como una piedra en el' +
-              ' fondo del agua.'
-            '')
-          ParentFont = False
-          ScrollBars = ssVertical
-          TabOrder = 14
-          Visible = False
-          OnClick = Memo3Click
         end
       end
     end
     object TTabPage
       Left = 4
-      Top = 24
+      Top = 25
       Caption = 'Dolor'
       object Angina: TGroupBox
         Left = 580
@@ -12947,7 +12589,7 @@ object PatForm1: TPatForm1
         Font.Style = []
         ParentColor = False
         ParentFont = False
-        TabOrder = 20
+        TabOrder = 19
         object CheckBox154: TCheckBox
           Left = 12
           Top = 16
@@ -13260,7 +12902,7 @@ object PatForm1: TPatForm1
         Left = 236
         Top = 220
         Width = 577
-        Height = 22
+        Height = 16
         Cursor = crIBeam
         BorderStyle = bsNone
         Color = clBtnFace
@@ -13272,30 +12914,6 @@ object PatForm1: TPatForm1
         ParentFont = False
         TabOrder = 13
         Text = 'Localizaciones del dolor: '
-      end
-      object Memo2: TMemo
-        Left = 236
-        Top = 256
-        Width = 333
-        Height = 109
-        Alignment = taCenter
-        BorderStyle = bsNone
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        Lines.Strings = (
-          ''
-          'El dolor es un regalo de Dios ya que representa la señal '
-          'de una profunda afección. El dolor es el mensajero de lo'
-          'que está mal en nuestro cuerpo, mente y espíritu.'
-          ''
-          'Disparar al mensajero no es  saludable. Debemos '
-          'escucharlo, hablarle y tratarlo con naturalidad.')
-        ParentFont = False
-        TabOrder = 14
       end
       object CheckBox149: TCheckBox
         Left = 572
@@ -13310,7 +12928,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 15
+        TabOrder = 14
       end
       object CheckBox150: TCheckBox
         Left = 572
@@ -13325,7 +12943,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 16
+        TabOrder = 15
       end
       object CheckBox151: TCheckBox
         Left = 572
@@ -13340,7 +12958,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 17
+        TabOrder = 16
       end
       object CheckBox152: TCheckBox
         Left = 572
@@ -13355,7 +12973,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 18
+        TabOrder = 17
       end
       object CheckBox153: TCheckBox
         Left = 572
@@ -13370,7 +12988,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 19
+        TabOrder = 18
       end
       object CheckBox162: TCheckBox
         Left = 572
@@ -13385,7 +13003,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 21
+        TabOrder = 20
       end
       object CheckBox163: TCheckBox
         Left = 572
@@ -13400,7 +13018,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 22
+        TabOrder = 21
       end
       object CheckBox165: TCheckBox
         Left = 304
@@ -13415,28 +13033,12 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 23
-      end
-      object Button71: TButton
-        Left = 688
-        Top = 360
-        Width = 158
-        Height = 21
-        Cursor = crHandPoint
-        Caption = 'Cerrar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 24
-        OnClick = Button8Click
+        TabOrder = 22
       end
     end
     object TTabPage
       Left = 4
-      Top = 24
+      Top = 25
       Caption = 'Lengua, uñas y cara'
       object CheckBox104: TCheckBox
         Left = 16
@@ -13451,7 +13053,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 1
+        TabOrder = 0
       end
       object CheckBox106: TCheckBox
         Left = 268
@@ -13466,7 +13068,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 3
+        TabOrder = 2
       end
       object CheckBox108: TCheckBox
         Left = 16
@@ -13481,7 +13083,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 5
+        TabOrder = 4
       end
       object CheckBox109: TCheckBox
         Left = 552
@@ -13496,7 +13098,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 6
+        TabOrder = 5
       end
       object CheckBox112: TCheckBox
         Left = 16
@@ -13511,7 +13113,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 9
+        TabOrder = 8
       end
       object CheckBox173: TCheckBox
         Left = 16
@@ -13526,7 +13128,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 10
+        TabOrder = 9
       end
       object CheckBox174: TCheckBox
         Left = 16
@@ -13541,7 +13143,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 11
+        TabOrder = 10
       end
       object CheckBox175: TCheckBox
         Left = 16
@@ -13556,7 +13158,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 12
+        TabOrder = 11
       end
       object CheckBox176: TCheckBox
         Left = 16
@@ -13571,7 +13173,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 13
+        TabOrder = 12
       end
       object CheckBox177: TCheckBox
         Left = 16
@@ -13586,7 +13188,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 14
+        TabOrder = 13
       end
       object CheckBox178: TCheckBox
         Left = 16
@@ -13601,7 +13203,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 15
+        TabOrder = 14
       end
       object CheckBox179: TCheckBox
         Left = 16
@@ -13616,7 +13218,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 16
+        TabOrder = 15
       end
       object CheckBox180: TCheckBox
         Left = 16
@@ -13631,7 +13233,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 17
+        TabOrder = 16
       end
       object CheckBox181: TCheckBox
         Left = 16
@@ -13646,7 +13248,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 18
+        TabOrder = 17
       end
       object CheckBox182: TCheckBox
         Left = 16
@@ -13661,7 +13263,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 19
+        TabOrder = 18
       end
       object CheckBox183: TCheckBox
         Left = 16
@@ -13676,7 +13278,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 20
+        TabOrder = 19
       end
       object CheckBox184: TCheckBox
         Left = 16
@@ -13691,7 +13293,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 21
+        TabOrder = 20
       end
       object CheckBox185: TCheckBox
         Left = 16
@@ -13706,7 +13308,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 22
+        TabOrder = 21
       end
       object CheckBox186: TCheckBox
         Left = 16
@@ -13721,7 +13323,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 23
+        TabOrder = 22
       end
       object CheckBox188: TCheckBox
         Left = 16
@@ -13736,7 +13338,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 25
+        TabOrder = 24
       end
       object CheckBox189: TCheckBox
         Left = 16
@@ -13751,7 +13353,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 26
+        TabOrder = 25
       end
       object CheckBox190: TCheckBox
         Left = 16
@@ -13766,7 +13368,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 27
+        TabOrder = 26
       end
       object CheckBox191: TCheckBox
         Left = 16
@@ -13781,7 +13383,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 28
+        TabOrder = 27
       end
       object CheckBox192: TCheckBox
         Left = 16
@@ -13796,7 +13398,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 29
+        TabOrder = 28
       end
       object CheckBox193: TCheckBox
         Left = 16
@@ -13811,7 +13413,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 30
+        TabOrder = 29
       end
       object CheckBox194: TCheckBox
         Left = 16
@@ -13826,7 +13428,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 31
+        TabOrder = 30
       end
       object CheckBox195: TCheckBox
         Left = 16
@@ -13841,7 +13443,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 32
+        TabOrder = 31
       end
       object CheckBox196: TCheckBox
         Left = 268
@@ -13856,7 +13458,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 33
+        TabOrder = 32
       end
       object CheckBox197: TCheckBox
         Left = 268
@@ -13871,7 +13473,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 34
+        TabOrder = 33
       end
       object CheckBox198: TCheckBox
         Left = 268
@@ -13886,7 +13488,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 35
+        TabOrder = 34
       end
       object CheckBox199: TCheckBox
         Left = 268
@@ -13901,7 +13503,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 36
+        TabOrder = 35
       end
       object CheckBox200: TCheckBox
         Left = 268
@@ -13916,7 +13518,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 37
+        TabOrder = 36
       end
       object CheckBox201: TCheckBox
         Left = 268
@@ -13931,7 +13533,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 38
+        TabOrder = 37
       end
       object CheckBox202: TCheckBox
         Left = 268
@@ -13946,7 +13548,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 39
+        TabOrder = 38
       end
       object CheckBox203: TCheckBox
         Left = 268
@@ -13961,7 +13563,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 40
+        TabOrder = 39
       end
       object CheckBox204: TCheckBox
         Left = 268
@@ -13976,7 +13578,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 41
+        TabOrder = 40
       end
       object CheckBox205: TCheckBox
         Left = 268
@@ -13991,7 +13593,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 42
+        TabOrder = 41
       end
       object CheckBox206: TCheckBox
         Left = 268
@@ -14006,7 +13608,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 43
+        TabOrder = 42
       end
       object CheckBox207: TCheckBox
         Left = 268
@@ -14021,7 +13623,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 44
+        TabOrder = 43
       end
       object CheckBox208: TCheckBox
         Left = 268
@@ -14036,7 +13638,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 45
+        TabOrder = 44
       end
       object CheckBox209: TCheckBox
         Left = 268
@@ -14051,7 +13653,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 46
+        TabOrder = 45
       end
       object CheckBox211: TCheckBox
         Left = 268
@@ -14066,7 +13668,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 48
+        TabOrder = 47
       end
       object CheckBox212: TCheckBox
         Left = 268
@@ -14081,7 +13683,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 49
+        TabOrder = 48
       end
       object CheckBox213: TCheckBox
         Left = 268
@@ -14096,7 +13698,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 50
+        TabOrder = 49
       end
       object CheckBox214: TCheckBox
         Left = 268
@@ -14111,7 +13713,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 51
+        TabOrder = 50
       end
       object CheckBox215: TCheckBox
         Left = 268
@@ -14126,7 +13728,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 52
+        TabOrder = 51
       end
       object CheckBox216: TCheckBox
         Left = 268
@@ -14141,7 +13743,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 53
+        TabOrder = 52
       end
       object CheckBox217: TCheckBox
         Left = 268
@@ -14156,7 +13758,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 54
+        TabOrder = 53
       end
       object CheckBox218: TCheckBox
         Left = 268
@@ -14171,7 +13773,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 55
+        TabOrder = 54
       end
       object CheckBox219: TCheckBox
         Left = 552
@@ -14186,7 +13788,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 56
+        TabOrder = 55
       end
       object CheckBox220: TCheckBox
         Left = 552
@@ -14201,7 +13803,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 57
+        TabOrder = 56
       end
       object CheckBox221: TCheckBox
         Left = 552
@@ -14216,7 +13818,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 58
+        TabOrder = 57
       end
       object CheckBox222: TCheckBox
         Left = 552
@@ -14231,7 +13833,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 59
+        TabOrder = 58
       end
       object CheckBox223: TCheckBox
         Left = 552
@@ -14246,7 +13848,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 60
+        TabOrder = 59
       end
       object CheckBox224: TCheckBox
         Left = 552
@@ -14261,7 +13863,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 61
+        TabOrder = 60
       end
       object CheckBox225: TCheckBox
         Left = 552
@@ -14276,7 +13878,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 62
+        TabOrder = 61
       end
       object CheckBox226: TCheckBox
         Left = 552
@@ -14291,7 +13893,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 63
+        TabOrder = 62
       end
       object CheckBox227: TCheckBox
         Left = 552
@@ -14306,7 +13908,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 64
+        TabOrder = 63
       end
       object CheckBox228: TCheckBox
         Left = 552
@@ -14321,7 +13923,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 65
+        TabOrder = 64
       end
       object CheckBox229: TCheckBox
         Left = 552
@@ -14336,7 +13938,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 66
+        TabOrder = 65
       end
       object CheckBox230: TCheckBox
         Left = 552
@@ -14351,7 +13953,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 67
+        TabOrder = 66
       end
       object CheckBox231: TCheckBox
         Left = 552
@@ -14366,7 +13968,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 68
+        TabOrder = 67
       end
       object CheckBox232: TCheckBox
         Left = 552
@@ -14381,7 +13983,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 69
+        TabOrder = 68
       end
       object CheckBox234: TCheckBox
         Left = 552
@@ -14396,7 +13998,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 71
+        TabOrder = 70
       end
       object CheckBox235: TCheckBox
         Left = 552
@@ -14411,7 +14013,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 72
+        TabOrder = 71
       end
       object CheckBox236: TCheckBox
         Left = 552
@@ -14426,7 +14028,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 73
+        TabOrder = 72
       end
       object CheckBox237: TCheckBox
         Left = 552
@@ -14441,7 +14043,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 74
+        TabOrder = 73
       end
       object CheckBox238: TCheckBox
         Left = 552
@@ -14456,7 +14058,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 75
+        TabOrder = 74
       end
       object CheckBox239: TCheckBox
         Left = 552
@@ -14471,7 +14073,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 76
+        TabOrder = 75
       end
       object CheckBox240: TCheckBox
         Left = 552
@@ -14486,7 +14088,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 77
+        TabOrder = 76
       end
       object CheckBox115: TCheckBox
         Left = 16
@@ -14501,7 +14103,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 78
+        TabOrder = 77
       end
       object CheckBox111: TCheckBox
         Left = 268
@@ -14516,7 +14118,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 8
+        TabOrder = 7
       end
       object CheckBox105: TCheckBox
         Left = 268
@@ -14531,7 +14133,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 2
+        TabOrder = 1
       end
       object CheckBox210: TCheckBox
         Left = 268
@@ -14546,7 +14148,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 47
+        TabOrder = 46
       end
       object CheckBox233: TCheckBox
         Left = 552
@@ -14561,7 +14163,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 70
+        TabOrder = 69
       end
       object CheckBox187: TCheckBox
         Left = 552
@@ -14576,7 +14178,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 24
+        TabOrder = 23
       end
       object CheckBox110: TCheckBox
         Left = 552
@@ -14591,7 +14193,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 7
+        TabOrder = 6
       end
       object CheckBox107: TCheckBox
         Left = 552
@@ -14606,28 +14208,12 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 4
-      end
-      object Button13: TButton
-        Left = 688
-        Top = 360
-        Width = 158
-        Height = 21
-        Cursor = crHandPoint
-        Caption = 'Cerrar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button8Click
+        TabOrder = 3
       end
     end
     object TTabPage
       Left = 4
-      Top = 24
+      Top = 25
       Caption = 'Otros síntomas'
       object CheckBox241: TCheckBox
         Left = 12
@@ -15362,7 +14948,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 49
+        TabOrder = 48
       end
       object CheckBox114: TCheckBox
         Left = 608
@@ -15377,7 +14963,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 50
+        TabOrder = 49
       end
       object CheckBox116: TCheckBox
         Left = 608
@@ -15392,7 +14978,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 51
+        TabOrder = 50
       end
       object CheckBox117: TCheckBox
         Left = 620
@@ -15407,7 +14993,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 52
+        TabOrder = 51
       end
       object CheckBox118: TCheckBox
         Left = 620
@@ -15422,7 +15008,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 53
+        TabOrder = 52
       end
       object CheckBox119: TCheckBox
         Left = 620
@@ -15437,7 +15023,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 54
+        TabOrder = 53
       end
       object CheckBox120: TCheckBox
         Left = 620
@@ -15452,7 +15038,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 55
+        TabOrder = 54
       end
       object CheckBox121: TCheckBox
         Left = 620
@@ -15467,7 +15053,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 56
+        TabOrder = 55
       end
       object CheckBox122: TCheckBox
         Left = 620
@@ -15482,7 +15068,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 57
+        TabOrder = 56
       end
       object CheckBox123: TCheckBox
         Left = 316
@@ -15497,7 +15083,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 58
+        TabOrder = 57
       end
       object CheckBox124: TCheckBox
         Left = 316
@@ -15512,7 +15098,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 59
+        TabOrder = 58
       end
       object CheckBox125: TCheckBox
         Left = 316
@@ -15527,7 +15113,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 60
+        TabOrder = 59
       end
       object CheckBox126: TCheckBox
         Left = 608
@@ -15542,7 +15128,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 61
+        TabOrder = 60
       end
       object CheckBox127: TCheckBox
         Left = 316
@@ -15557,7 +15143,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 62
+        TabOrder = 61
       end
       object CheckBox128: TCheckBox
         Left = 316
@@ -15572,7 +15158,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 63
+        TabOrder = 62
       end
       object CheckBox129: TCheckBox
         Left = 608
@@ -15587,7 +15173,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 64
+        TabOrder = 63
       end
       object CheckBox130: TCheckBox
         Left = 608
@@ -15602,7 +15188,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 65
+        TabOrder = 64
       end
       object CheckBox131: TCheckBox
         Left = 608
@@ -15617,7 +15203,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 66
+        TabOrder = 65
       end
       object CheckBox132: TCheckBox
         Left = 608
@@ -15632,7 +15218,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 67
+        TabOrder = 66
       end
       object CheckBox133: TCheckBox
         Left = 608
@@ -15647,7 +15233,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 68
+        TabOrder = 67
       end
       object CheckBox134: TCheckBox
         Left = 608
@@ -15662,7 +15248,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 69
+        TabOrder = 68
       end
       object CheckBox135: TCheckBox
         Left = 608
@@ -15677,7 +15263,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 70
+        TabOrder = 69
       end
       object CheckBox136: TCheckBox
         Left = 608
@@ -15692,7 +15278,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 71
+        TabOrder = 70
       end
       object CheckBox137: TCheckBox
         Left = 608
@@ -15707,7 +15293,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 72
+        TabOrder = 71
       end
       object CheckBox138: TCheckBox
         Left = 608
@@ -15722,7 +15308,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 73
+        TabOrder = 72
       end
       object CheckBox139: TCheckBox
         Left = 608
@@ -15737,7 +15323,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 74
+        TabOrder = 73
       end
       object CheckBox159: TCheckBox
         Left = 316
@@ -15752,7 +15338,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 75
+        TabOrder = 74
       end
       object CheckBox160: TCheckBox
         Left = 316
@@ -15767,7 +15353,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 76
+        TabOrder = 75
       end
       object CheckBox161: TCheckBox
         Left = 608
@@ -15782,7 +15368,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 77
+        TabOrder = 76
       end
       object CheckBox164: TCheckBox
         Left = 608
@@ -15797,7 +15383,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 78
+        TabOrder = 77
       end
       object CheckBox168: TCheckBox
         Left = 608
@@ -15812,7 +15398,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 79
+        TabOrder = 78
       end
       object CheckBox169: TCheckBox
         Left = 608
@@ -15827,28 +15413,12 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 80
-      end
-      object Button18: TButton
-        Left = 688
-        Top = 360
-        Width = 158
-        Height = 21
-        Cursor = crHandPoint
-        Caption = 'Cerrar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 48
-        OnClick = Button8Click
+        TabOrder = 79
       end
     end
     object TTabPage
       Left = 4
-      Top = 24
+      Top = 25
       Caption = 'Digestión'
       object CheckBox66: TCheckBox
         Left = 12
@@ -15955,7 +15525,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 7
+        TabOrder = 6
       end
       object CheckBox73: TCheckBox
         Left = 12
@@ -15972,7 +15542,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 8
+        TabOrder = 7
       end
       object CheckBox74: TCheckBox
         Left = 12
@@ -15987,7 +15557,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 9
+        TabOrder = 8
       end
       object CheckBox75: TCheckBox
         Left = 12
@@ -16002,7 +15572,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 10
+        TabOrder = 9
       end
       object CheckBox76: TCheckBox
         Left = 12
@@ -16017,7 +15587,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 11
+        TabOrder = 10
       end
       object CheckBox77: TCheckBox
         Left = 12
@@ -16032,7 +15602,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 12
+        TabOrder = 11
       end
       object CheckBox78: TCheckBox
         Left = 12
@@ -16047,7 +15617,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 13
+        TabOrder = 12
       end
       object CheckBox79: TCheckBox
         Left = 12
@@ -16062,7 +15632,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 14
+        TabOrder = 13
       end
       object CheckBox80: TCheckBox
         Left = 12
@@ -16077,7 +15647,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 15
+        TabOrder = 14
       end
       object CheckBox81: TCheckBox
         Left = 12
@@ -16092,7 +15662,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 16
+        TabOrder = 15
       end
       object CheckBox82: TCheckBox
         Left = 12
@@ -16107,7 +15677,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 17
+        TabOrder = 16
       end
       object CheckBox83: TCheckBox
         Left = 12
@@ -16122,7 +15692,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 18
+        TabOrder = 17
       end
       object CheckBox84: TCheckBox
         Left = 12
@@ -16137,7 +15707,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 19
+        TabOrder = 18
       end
       object CheckBox85: TCheckBox
         Left = 12
@@ -16152,7 +15722,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 20
+        TabOrder = 19
       end
       object CheckBox86: TCheckBox
         Left = 12
@@ -16167,7 +15737,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 21
+        TabOrder = 20
       end
       object CheckBox87: TCheckBox
         Left = 12
@@ -16182,7 +15752,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 22
+        TabOrder = 21
       end
       object CheckBox88: TCheckBox
         Left = 12
@@ -16197,7 +15767,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 23
+        TabOrder = 22
       end
       object CheckBox89: TCheckBox
         Left = 12
@@ -16214,7 +15784,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 24
+        TabOrder = 23
       end
       object CheckBox90: TCheckBox
         Left = 12
@@ -16229,7 +15799,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 25
+        TabOrder = 24
       end
       object CheckBox91: TCheckBox
         Left = 492
@@ -16244,7 +15814,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 26
+        TabOrder = 25
       end
       object CheckBox92: TCheckBox
         Left = 492
@@ -16259,7 +15829,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 27
+        TabOrder = 26
       end
       object CheckBox93: TCheckBox
         Left = 492
@@ -16274,7 +15844,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 28
+        TabOrder = 27
       end
       object CheckBox94: TCheckBox
         Left = 492
@@ -16289,7 +15859,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 29
+        TabOrder = 28
       end
       object CheckBox95: TCheckBox
         Left = 492
@@ -16304,7 +15874,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 30
+        TabOrder = 29
       end
       object CheckBox96: TCheckBox
         Left = 492
@@ -16319,7 +15889,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 31
+        TabOrder = 30
       end
       object CheckBox97: TCheckBox
         Left = 492
@@ -16334,7 +15904,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 32
+        TabOrder = 31
       end
       object CheckBox98: TCheckBox
         Left = 492
@@ -16349,7 +15919,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 33
+        TabOrder = 32
       end
       object CheckBox99: TCheckBox
         Left = 492
@@ -16364,7 +15934,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 34
+        TabOrder = 33
       end
       object CheckBox100: TCheckBox
         Left = 492
@@ -16379,7 +15949,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 35
+        TabOrder = 34
       end
       object CheckBox101: TCheckBox
         Left = 492
@@ -16394,7 +15964,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 36
+        TabOrder = 35
       end
       object CheckBox102: TCheckBox
         Left = 492
@@ -16409,7 +15979,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 37
+        TabOrder = 36
       end
       object CheckBox103: TCheckBox
         Left = 492
@@ -16424,7 +15994,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 38
+        TabOrder = 37
       end
       object CheckBox158: TCheckBox
         Left = 12
@@ -16439,7 +16009,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 39
+        TabOrder = 38
       end
       object CheckBox166: TCheckBox
         Left = 492
@@ -16454,7 +16024,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 40
+        TabOrder = 39
       end
       object CheckBox167: TCheckBox
         Left = 492
@@ -16469,7 +16039,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 41
+        TabOrder = 40
       end
       object CheckBox170: TCheckBox
         Left = 492
@@ -16484,7 +16054,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 42
+        TabOrder = 41
       end
       object CheckBox171: TCheckBox
         Left = 492
@@ -16499,7 +16069,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 43
+        TabOrder = 42
       end
       object CheckBox172: TCheckBox
         Left = 492
@@ -16514,7 +16084,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 44
+        TabOrder = 43
       end
       object CheckBox289: TCheckBox
         Left = 492
@@ -16529,7 +16099,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 45
+        TabOrder = 44
       end
       object CheckBox290: TCheckBox
         Left = 492
@@ -16544,7 +16114,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 46
+        TabOrder = 45
       end
       object CheckBox297: TCheckBox
         Left = 492
@@ -16559,7 +16129,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 47
+        TabOrder = 46
       end
       object CheckBox384: TCheckBox
         Left = 12
@@ -16576,23 +16146,7 @@ object PatForm1: TPatForm1
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 48
-      end
-      object Button8: TButton
-        Left = 688
-        Top = 360
-        Width = 158
-        Height = 21
-        Cursor = crHandPoint
-        Caption = 'Cerrar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-        OnClick = Button8Click
+        TabOrder = 47
       end
     end
   end
@@ -16611,6 +16165,26 @@ object PatForm1: TPatForm1
     ParentFont = False
     TabOrder = 37
     OnClick = B_RecuperacionClick
+  end
+  object Panel12: TPanel
+    Left = 844
+    Top = 100
+    Width = 22
+    Height = 22
+    Cursor = crHandPoint
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Caption = '>'
+    Color = clLime
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 38
+    Visible = False
+    OnClick = Panel12Click
   end
   object Timer1: TTimer
     Enabled = False

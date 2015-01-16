@@ -3,9 +3,7 @@ object FQuery: TFQuery
   Top = 198
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Impresor de ítems :::'
+  Caption = '::: gENiO® iOS ::: Impresor de ítems :::'
   ClientHeight = 430
   ClientWidth = 738
   Color = clWhite

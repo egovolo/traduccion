@@ -354,16 +354,10 @@ type
     Edit25: TEdit;
     Panel13: TPanel;
     Image27: TImage;
-    Label188: TLabel;
     ListBox2: TListBox;
-    RadioButton33: TRadioButton;
-    Button49: TButton;
-    loadPic: TButton;
     Button94: TButton;
     Buttonborrar: TButton;
-    Button56: TButton;
-    BtnCaptura: TButton;
-    BitBtnCerrarWebCam: TBitBtn;
+    EBuscar: TEdit;
   private
     { Private declarations }
   public

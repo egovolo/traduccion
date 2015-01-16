@@ -3,9 +3,7 @@ object FTests_traumas: TFTests_traumas
   Top = 115
   BorderIcons = [biSystemMenu]
   BorderStyle = bsNone
-  Caption = 
-    '::: gENIO® ::: Comunicación Bio-Instrumental | Electro Dinámica ' +
-    'Cuántica ::: Exámenes psicológicos ::: '
+  Caption = '::: gENIO® ::: Exámenes psicológicos ::: '
   ClientHeight = 748
   ClientWidth = 1035
   Color = clSilver

@@ -1,11 +1,9 @@
 object nutr: Tnutr
-  Left = 17
-  Top = 144
+  Left = 117
+  Top = 136
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Nutrición, Homeopatía & Fertilidad ::: '
+  Caption = '::: gENiO® iOS ::: Nutrición, Homeopatía + Fertilidad ::: '
   ClientHeight = 736
   ClientWidth = 1029
   Color = clWhite
@@ -37,25 +35,25 @@ object nutr: Tnutr
     Stretch = True
   end
   object Bevel2: TBevel
-    Left = 304
-    Top = 184
-    Width = 269
+    Left = 312
+    Top = 188
+    Width = 233
     Height = 117
     Shape = bsFrame
     Style = bsRaised
   end
   object Image2: TImage
     Left = 628
-    Top = 16
+    Top = 20
     Width = 341
     Height = 237
     Stretch = True
     Transparent = True
   end
   object Label1: TLabel
-    Left = 44
-    Top = 36
-    Width = 131
+    Left = 52
+    Top = 40
+    Width = 107
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina A'
@@ -63,16 +61,16 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label1Click
   end
   object Label2: TLabel
     Tag = 8
-    Left = 44
-    Top = 64
-    Width = 194
+    Left = 52
+    Top = 68
+    Width = 158
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de complejo vitaminico B'
@@ -80,16 +78,16 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label2Click
   end
   object Label3: TLabel
     Tag = 8
-    Left = 44
-    Top = 288
-    Width = 195
+    Left = 52
+    Top = 292
+    Width = 159
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de complejo vitaminico G'
@@ -97,7 +95,7 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     Visible = False
@@ -105,9 +103,9 @@ object nutr: Tnutr
   end
   object Label4: TLabel
     Tag = 8
-    Left = 44
-    Top = 92
-    Width = 130
+    Left = 52
+    Top = 96
+    Width = 107
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina C'
@@ -115,16 +113,16 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label4Click
   end
   object Label5: TLabel
     Tag = 8
-    Left = 44
-    Top = 120
-    Width = 131
+    Left = 52
+    Top = 124
+    Width = 107
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina D'
@@ -132,16 +130,16 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label5Click
   end
   object Label6: TLabel
     Tag = 8
-    Left = 44
-    Top = 148
-    Width = 129
+    Left = 52
+    Top = 152
+    Width = 106
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina E'
@@ -149,16 +147,16 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label6Click
   end
   object Label7: TLabel
     Tag = 8
-    Left = 44
-    Top = 176
-    Width = 160
+    Left = 52
+    Top = 180
+    Width = 133
     Height = 13
     Cursor = crHandPoint
     Caption = '| Vitamina F (Acidos grasos)'
@@ -166,15 +164,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label7Click
   end
   object Label8: TLabel
-    Left = 44
-    Top = 204
-    Width = 130
+    Left = 52
+    Top = 208
+    Width = 106
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina K'
@@ -182,15 +180,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label8Click
   end
   object Label9: TLabel
-    Left = 44
-    Top = 232
-    Width = 165
+    Left = 52
+    Top = 236
+    Width = 137
     Height = 13
     Cursor = crHandPoint
     Caption = '| Familia de vitamina U (coQ)'
@@ -198,15 +196,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label9Click
   end
   object Label10: TLabel
-    Left = 356
-    Top = 36
-    Width = 137
+    Left = 364
+    Top = 40
+    Width = 114
     Height = 13
     Cursor = crHandPoint
     Caption = '| Digestión de proteínas'
@@ -214,15 +212,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label10Click
   end
   object Label11: TLabel
-    Left = 356
-    Top = 64
-    Width = 162
+    Left = 364
+    Top = 68
+    Width = 135
     Height = 13
     Cursor = crHandPoint
     Caption = '| Digestión de carbohidratos'
@@ -230,15 +228,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label11Click
   end
   object Label12: TLabel
-    Left = 356
-    Top = 93
-    Width = 119
+    Left = 364
+    Top = 96
+    Width = 98
     Height = 13
     Cursor = crHandPoint
     Caption = '| Digestión de lípidos'
@@ -246,15 +244,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label12Click
   end
   object Label13: TLabel
-    Left = 356
-    Top = 120
-    Width = 109
+    Left = 364
+    Top = 124
+    Width = 90
     Height = 13
     Cursor = crHandPoint
     Caption = '| Digestión general'
@@ -262,15 +260,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label13Click
   end
   object Label14: TLabel
-    Left = 360
-    Top = 248
-    Width = 85
+    Left = 368
+    Top = 252
+    Width = 69
     Height = 13
     Cursor = crHandPoint
     Caption = '| Amino ácidos'
@@ -278,15 +276,15 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label14Click
   end
   object Label15: TLabel
-    Left = 360
-    Top = 275
-    Width = 183
+    Left = 368
+    Top = 279
+    Width = 154
     Height = 13
     Cursor = crHandPoint
     Caption = '| Conjunto de hierbas orientales'
@@ -294,15 +292,15 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label15Click
   end
   object Label16: TLabel
-    Left = 356
-    Top = 148
-    Width = 106
+    Left = 364
+    Top = 152
+    Width = 87
     Height = 13
     Cursor = crHandPoint
     Caption = '| Enzimas internas'
@@ -310,15 +308,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label16Click
   end
   object Label17: TLabel
-    Left = 20
-    Top = 36
-    Width = 21
+    Left = 31
+    Top = 40
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -326,14 +324,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label18: TLabel
-    Left = 20
-    Top = 64
-    Width = 21
+    Left = 31
+    Top = 68
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -341,14 +339,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label19: TLabel
-    Left = 20
-    Top = 288
-    Width = 21
+    Left = 31
+    Top = 292
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -356,15 +354,15 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     Visible = False
   end
   object Label20: TLabel
-    Left = 20
-    Top = 92
-    Width = 21
+    Left = 31
+    Top = 96
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -372,14 +370,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label21: TLabel
-    Left = 20
-    Top = 120
-    Width = 21
+    Left = 31
+    Top = 124
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -387,14 +385,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label22: TLabel
-    Left = 20
-    Top = 148
-    Width = 21
+    Left = 31
+    Top = 152
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -402,14 +400,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label23: TLabel
-    Left = 20
-    Top = 176
-    Width = 21
+    Left = 31
+    Top = 180
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -417,14 +415,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label24: TLabel
-    Left = 20
-    Top = 204
-    Width = 21
+    Left = 31
+    Top = 208
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -432,14 +430,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label25: TLabel
-    Left = 20
-    Top = 232
-    Width = 21
+    Left = 31
+    Top = 236
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -447,14 +445,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label26: TLabel
-    Left = 332
-    Top = 36
-    Width = 21
+    Left = 343
+    Top = 40
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -462,14 +460,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label27: TLabel
-    Left = 332
-    Top = 64
-    Width = 21
+    Left = 343
+    Top = 68
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -477,14 +475,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label28: TLabel
-    Left = 332
-    Top = 93
-    Width = 21
+    Left = 343
+    Top = 96
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -492,14 +490,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label29: TLabel
-    Left = 332
-    Top = 120
-    Width = 21
+    Left = 343
+    Top = 124
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -507,14 +505,14 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label30: TLabel
-    Left = 336
-    Top = 221
-    Width = 21
+    Left = 347
+    Top = 225
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -522,14 +520,14 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label31: TLabel
-    Left = 336
-    Top = 248
-    Width = 21
+    Left = 347
+    Top = 252
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -537,14 +535,14 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label32: TLabel
-    Left = 336
-    Top = 275
-    Width = 21
+    Left = 347
+    Top = 279
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -552,13 +550,13 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label97: TLabel
-    Left = 22
-    Top = 16
+    Left = 30
+    Top = 20
     Width = 271
     Height = 11
     Alignment = taRightJustify
@@ -574,9 +572,9 @@ object nutr: Tnutr
     Transparent = True
   end
   object Label455: TLabel
-    Left = 360
-    Top = 221
-    Width = 65
+    Left = 368
+    Top = 225
+    Width = 52
     Height = 13
     Cursor = crHandPoint
     Caption = '| Minerales'
@@ -584,15 +582,15 @@ object nutr: Tnutr
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label455Click
   end
   object Label456: TLabel
-    Left = 332
-    Top = 148
-    Width = 21
+    Left = 343
+    Top = 152
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -600,46 +598,46 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label458: TLabel
-    Left = 316
-    Top = 195
-    Width = 246
+    Left = 324
+    Top = 199
+    Width = 209
     Height = 13
-    Caption = 'Datos a partir de '#39'Perfíl psico-neuro-celular'#39
+    Caption = 'Datos a partir de '#39'Perfíl Psico-Neuro-Celular'#39
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentColor = False
     ParentFont = False
     Transparent = True
   end
   object Label460: TLabel
-    Left = 44
-    Top = 260
-    Width = 184
+    Left = 52
+    Top = 264
+    Width = 95
     Height = 13
     Cursor = crHandPoint
-    Caption = '| Sales bioquímicas de Schüssler'
+    Caption = '| Sales de Schüssler'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
     OnClick = Label460Click
   end
   object Label485: TLabel
-    Left = 20
-    Top = 260
-    Width = 21
+    Left = 31
+    Top = 264
+    Width = 18
     Height = 13
     Alignment = taRightJustify
     Caption = '000'
@@ -647,17 +645,17 @@ object nutr: Tnutr
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label534: TLabel
-    Left = 20
-    Top = 316
-    Width = 726
-    Height = 14
+    Tag = 8
+    Left = 380
+    Top = 492
+    Width = 20
+    Height = 13
     Cursor = crHandPoint
-    AutoSize = False
     Caption = '----'
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
@@ -669,16 +667,15 @@ object nutr: Tnutr
     ParentFont = False
     Transparent = True
     Visible = False
-    OnDblClick = Label534DblClick
+    OnClick = Label534Click
   end
   object Label535: TLabel
     Tag = 8
-    Left = 102
-    Top = 388
-    Width = 643
-    Height = 14
+    Left = 380
+    Top = 564
+    Width = 20
+    Height = 13
     Cursor = crHandPoint
-    AutoSize = False
     Caption = '----'
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
@@ -690,16 +687,15 @@ object nutr: Tnutr
     ParentFont = False
     Transparent = True
     Visible = False
-    OnDblClick = Label535DblClick
+    OnClick = Label535Click
   end
   object Label536: TLabel
     Tag = 8
-    Left = 20
-    Top = 334
-    Width = 726
-    Height = 14
+    Left = 380
+    Top = 510
+    Width = 20
+    Height = 13
     Cursor = crHandPoint
-    AutoSize = False
     Caption = '----'
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
@@ -711,33 +707,15 @@ object nutr: Tnutr
     ParentFont = False
     Transparent = True
     Visible = False
-    OnDblClick = Label536DblClick
-  end
-  object Label538: TLabel
-    Left = 20
-    Top = 388
-    Width = 78
-    Height = 13
-    Caption = 'Conexión con:'
-    Color = clYellow
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clPurple
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
+    OnClick = Label536Click
   end
   object Label539: TLabel
     Tag = 8
-    Left = 20
-    Top = 352
-    Width = 726
-    Height = 14
+    Left = 380
+    Top = 528
+    Width = 20
+    Height = 13
     Cursor = crHandPoint
-    AutoSize = False
     Caption = '----'
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
@@ -749,16 +727,15 @@ object nutr: Tnutr
     ParentFont = False
     Transparent = True
     Visible = False
-    OnDblClick = Label539DblClick
+    OnClick = Label539Click
   end
   object Label540: TLabel
     Tag = 8
-    Left = 20
-    Top = 370
-    Width = 726
-    Height = 14
+    Left = 380
+    Top = 546
+    Width = 20
+    Height = 13
     Cursor = crHandPoint
-    AutoSize = False
     Caption = '----'
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
@@ -770,14 +747,14 @@ object nutr: Tnutr
     ParentFont = False
     Transparent = True
     Visible = False
-    OnDblClick = Label540DblClick
+    OnClick = Label540Click
   end
   object Label537: TLabel
-    Left = 616
+    Left = 612
     Top = 703
-    Width = 75
+    Width = 78
     Height = 13
-    Caption = 'Resonancia |'
+    Caption = 'Resonancia | '
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
     Font.Height = -11
@@ -787,11 +764,11 @@ object nutr: Tnutr
     Transparent = True
   end
   object Label796: TLabel
-    Left = 427
+    Left = 507
     Top = 703
-    Width = 160
+    Width = 74
     Height = 13
-    Caption = 'Probabilidad de deficiencia |'
+    Caption = 'Deficiencia | '
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
     Font.Height = -11
@@ -803,9 +780,9 @@ object nutr: Tnutr
   object LRectificado: TLabel
     Left = 723
     Top = 703
-    Width = 73
+    Width = 76
     Height = 13
-    Caption = 'Rectificado |'
+    Caption = 'Rectificado | '
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
     Font.Height = -11
@@ -833,7 +810,7 @@ object nutr: Tnutr
   end
   object Image20: TImage
     Left = 774
-    Top = 258
+    Top = 262
     Width = 193
     Height = 133
     Stretch = True
@@ -849,8 +826,8 @@ object nutr: Tnutr
     OnClick = Image25Click
   end
   object Label457: TLabel
-    Left = 640
-    Top = 480
+    Left = 636
+    Top = 472
     Width = 79
     Height = 13
     Cursor = crHandPoint
@@ -866,25 +843,8 @@ object nutr: Tnutr
     Transparent = True
     OnClick = Label457Click
   end
-  object Label533: TLabel
-    Left = 621
-    Top = 464
-    Width = 98
-    Height = 13
-    Cursor = crHandPoint
-    Alignment = taRightJustify
-    Caption = 'Biblioteca Nutricional'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsUnderline]
-    ParentFont = False
-    Transparent = True
-    OnClick = Label533Click
-  end
   object Label601: TLabel
-    Left = 233
+    Left = 305
     Top = 703
     Width = 54
     Height = 13
@@ -893,7 +853,7 @@ object nutr: Tnutr
     Transparent = True
   end
   object Label622: TLabel
-    Left = 312
+    Left = 384
     Top = 703
     Width = 87
     Height = 13
@@ -902,7 +862,7 @@ object nutr: Tnutr
     Transparent = True
   end
   object Label499: TLabel
-    Left = 148
+    Left = 220
     Top = 703
     Width = 38
     Height = 13
@@ -917,26 +877,26 @@ object nutr: Tnutr
     Transparent = True
   end
   object CBTerapiaExtendida: TCheckBox
-    Left = 404
+    Left = 476
     Top = 702
     Width = 14
     Height = 14
     Cursor = crHandPoint
-    TabOrder = 30
+    TabOrder = 26
     OnClick = CBTerapiaExtendidaClick
   end
   object CBAutomatico: TCheckBox
-    Left = 292
+    Left = 364
     Top = 702
     Width = 14
     Height = 14
     Cursor = crHandPoint
-    TabOrder = 29
+    TabOrder = 25
   end
   object Edit8: TEdit
-    Left = 380
-    Top = 442
-    Width = 337
+    Left = 384
+    Top = 422
+    Width = 333
     Height = 14
     Cursor = crIBeam
     BorderStyle = bsNone
@@ -947,13 +907,13 @@ object nutr: Tnutr
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 28
+    TabOrder = 24
     OnChange = Edit8Change
     OnClick = Edit8Click
   end
   object Button75: TButton
     Left = 28
-    Top = 560
+    Top = 588
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -964,16 +924,16 @@ object nutr: Tnutr
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 22
+    TabOrder = 21
     OnClick = Button75Click
   end
   object Button3: TButton
     Left = 28
-    Top = 416
+    Top = 420
     Width = 345
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Homeopatía básica'
+    Caption = 'Homeopatía básica >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -985,7 +945,7 @@ object nutr: Tnutr
   end
   object Button33: TButton
     Left = 28
-    Top = 440
+    Top = 444
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1001,11 +961,11 @@ object nutr: Tnutr
   end
   object Button14: TButton
     Left = 28
-    Top = 488
-    Width = 171
+    Top = 492
+    Width = 345
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Buenos alimentos | Alergias >'
+    Caption = 'Hiperreactividad / Alimentos Sanos >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -1016,9 +976,9 @@ object nutr: Tnutr
     OnClick = Button14Click
   end
   object Button35: TButton
-    Left = 202
-    Top = 488
-    Width = 171
+    Left = 28
+    Top = 516
+    Width = 345
     Height = 22
     Cursor = crHandPoint
     Caption = 'Estrés y Cortisol >'
@@ -1032,8 +992,9 @@ object nutr: Tnutr
     OnClick = Button35Click
   end
   object Button28: TButton
-    Left = 376
-    Top = 416
+    Tag = 8
+    Left = 380
+    Top = 444
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1051,7 +1012,7 @@ object nutr: Tnutr
   object Edit1: TEdit
     Left = 16
     Top = 706
-    Width = 124
+    Width = 193
     Height = 12
     Cursor = crIBeam
     BorderStyle = bsNone
@@ -1068,7 +1029,7 @@ object nutr: Tnutr
   end
   object Button26: TButton
     Left = 28
-    Top = 536
+    Top = 564
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1085,7 +1046,7 @@ object nutr: Tnutr
   end
   object Button25: TButton
     Left = 28
-    Top = 512
+    Top = 540
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1102,7 +1063,7 @@ object nutr: Tnutr
   end
   object Button65: TButton
     Left = 28
-    Top = 584
+    Top = 612
     Width = 171
     Height = 22
     Cursor = crHandPoint
@@ -1118,7 +1079,7 @@ object nutr: Tnutr
   end
   object Button67: TButton
     Left = 28
-    Top = 608
+    Top = 636
     Width = 171
     Height = 22
     Cursor = crHandPoint
@@ -1134,7 +1095,7 @@ object nutr: Tnutr
   end
   object Button70: TButton
     Left = 202
-    Top = 584
+    Top = 612
     Width = 171
     Height = 22
     Cursor = crHandPoint
@@ -1150,7 +1111,7 @@ object nutr: Tnutr
   end
   object Button71: TButton
     Left = 202
-    Top = 608
+    Top = 636
     Width = 171
     Height = 22
     Cursor = crHandPoint
@@ -1166,7 +1127,7 @@ object nutr: Tnutr
   end
   object Button45: TButton
     Left = 28
-    Top = 632
+    Top = 660
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1176,6 +1137,7 @@ object nutr: Tnutr
     Caption = 
       'Calcular con ítem retenido en bandeja de '#39'Perfil psico-neuro-cel' +
       'ular'#39
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -1187,7 +1149,7 @@ object nutr: Tnutr
   end
   object Button69: TButton
     Left = 28
-    Top = 464
+    Top = 468
     Width = 345
     Height = 22
     Cursor = crHandPoint
@@ -1204,7 +1166,7 @@ object nutr: Tnutr
   end
   object Panel8: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 996
     Height = 677
     BevelOuter = bvNone
@@ -1294,9 +1256,9 @@ object nutr: Tnutr
     object Label789: TLabel
       Left = 24
       Top = 12
-      Width = 428
+      Width = 401
       Height = 29
-      Caption = 'Lista progresiva de homeopáticos >'
+      Caption = 'Lista progresiva de homeopáticos'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -24
@@ -1432,7 +1394,7 @@ object nutr: Tnutr
   end
   object Panel2: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 996
     Height = 677
     BevelOuter = bvNone
@@ -1443,11 +1405,11 @@ object nutr: Tnutr
     object Label83: TLabel
       Tag = 8
       Left = 40
-      Top = 28
-      Width = 6
+      Top = 36
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1456,16 +1418,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label83Click
-      OnDblClick = Label83DblClick
     end
     object Label84: TLabel
       Tag = 8
       Left = 40
-      Top = 55
-      Width = 6
+      Top = 63
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1474,16 +1435,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label84Click
-      OnDblClick = Label84DblClick
     end
     object Label85: TLabel
       Tag = 8
       Left = 40
-      Top = 81
-      Width = 6
+      Top = 89
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1492,16 +1452,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label85Click
-      OnDblClick = Label85DblClick
     end
     object Label86: TLabel
       Tag = 8
       Left = 40
-      Top = 108
-      Width = 6
+      Top = 116
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1510,16 +1469,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label86Click
-      OnDblClick = Label86DblClick
     end
     object Label87: TLabel
       Tag = 8
       Left = 40
-      Top = 134
-      Width = 6
+      Top = 142
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1528,16 +1486,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label87Click
-      OnDblClick = Label87DblClick
     end
     object Label88: TLabel
       Tag = 8
       Left = 40
-      Top = 161
-      Width = 6
+      Top = 169
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1546,16 +1503,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label88Click
-      OnDblClick = Label88DblClick
     end
     object Label89: TLabel
       Tag = 8
       Left = 40
-      Top = 187
-      Width = 6
+      Top = 195
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1564,11 +1520,10 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label89Click
-      OnDblClick = Label89DblClick
     end
     object Label90: TLabel
-      Left = 12
-      Top = 27
+      Left = 16
+      Top = 36
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1582,8 +1537,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label91: TLabel
-      Left = 12
-      Top = 54
+      Left = 16
+      Top = 63
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1597,8 +1552,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label92: TLabel
-      Left = 12
-      Top = 80
+      Left = 16
+      Top = 89
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1612,8 +1567,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label93: TLabel
-      Left = 12
-      Top = 107
+      Left = 16
+      Top = 116
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1627,8 +1582,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label94: TLabel
-      Left = 12
-      Top = 133
+      Left = 16
+      Top = 142
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1642,8 +1597,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label95: TLabel
-      Left = 12
-      Top = 160
+      Left = 16
+      Top = 169
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1657,8 +1612,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label96: TLabel
-      Left = 12
-      Top = 186
+      Left = 16
+      Top = 195
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1671,68 +1626,65 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
     end
-    object Label520: TLabel
-      Tag = 8
-      Left = 12
-      Top = 444
-      Width = 970
-      Height = 14
+    object LProcesos: TLabel
+      Tag = 7
+      Left = 16
+      Top = 452
+      Width = 12
+      Height = 13
       Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
-      OnDblClick = Label520DblClick
+      OnClick = LProcesosClick
     end
-    object Label521: TLabel
-      Tag = 8
-      Left = 12
-      Top = 463
-      Width = 970
-      Height = 14
+    object LTerapias: TLabel
+      Tag = 7
+      Left = 16
+      Top = 472
+      Width = 12
+      Height = 13
       Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
-      OnDblClick = Label521DblClick
+      OnClick = LTerapiasClick
     end
-    object Label522: TLabel
-      Tag = 8
-      Left = 12
-      Top = 481
-      Width = 970
-      Height = 14
+    object LEPositivas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 492
+      Width = 12
+      Height = 13
       Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
-      OnDblClick = Label522DblClick
+      OnClick = LEPositivasClick
     end
     object Label523: TLabel
       Tag = 8
       Left = 40
-      Top = 214
-      Width = 6
+      Top = 222
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1741,16 +1693,15 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label523Click
-      OnDblClick = Label523DblClick
     end
     object Label524: TLabel
       Tag = 8
       Left = 40
-      Top = 240
-      Width = 6
+      Top = 248
+      Width = 12
       Height = 13
       Cursor = crHandPoint
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -1759,11 +1710,10 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label524Click
-      OnDblClick = Label524DblClick
     end
     object Label525: TLabel
-      Left = 12
-      Top = 213
+      Left = 16
+      Top = 222
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1777,8 +1727,8 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label526: TLabel
-      Left = 12
-      Top = 239
+      Left = 16
+      Top = 248
       Width = 18
       Height = 13
       Alignment = taRightJustify
@@ -1791,96 +1741,97 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
     end
-    object Label527: TLabel
-      Tag = 8
-      Left = 12
-      Top = 348
-      Width = 970
-      Height = 14
-      Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      OnDblClick = Label527DblClick
-    end
-    object Label528: TLabel
-      Tag = 8
-      Left = 12
-      Top = 370
-      Width = 970
-      Height = 14
-      Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      OnDblClick = Label528DblClick
-    end
-    object Label529: TLabel
-      Tag = 8
-      Left = 12
-      Top = 392
-      Width = 970
-      Height = 14
-      Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      OnDblClick = Label529DblClick
-    end
-    object Label530: TLabel
-      Left = 12
-      Top = 420
-      Width = 81
+    object LCausas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 372
+      Width = 12
       Height = 13
-      Caption = 'Entrelazado con:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label531: TLabel
-      Left = 12
-      Top = 500
-      Width = 970
-      Height = 14
       Cursor = crHandPoint
-      AutoSize = False
-      Caption = '0'
+      Caption = '---'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
+      OnClick = LCausasClick
+    end
+    object LOrganosGlandulas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 392
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LOrganosGlandulasClick
+    end
+    object LAVM: TLabel
+      Tag = 7
+      Left = 16
+      Top = 412
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LAVMClick
+    end
+    object LMeridianos: TLabel
+      Tag = 7
+      Left = 16
+      Top = 432
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LMeridianosClick
+    end
+    object LENegativas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 512
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LENegativasClick
     end
     object Label550: TLabel
-      Left = 284
-      Top = 10
-      Width = 72
+      Left = 280
+      Top = 14
+      Width = 98
       Height = 13
-      Caption = 'Items alérgicos'
+      Caption = 'Items hiperreactivos'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -11
@@ -1891,10 +1842,10 @@ object nutr: Tnutr
     end
     object Label553: TLabel
       Left = 12
-      Top = 4
-      Width = 184
+      Top = 8
+      Width = 236
       Height = 11
-      Caption = 'Pulse 2 veces sobre el ítem para equilibrarlo.'
+      Caption = 'Pulse una vez sobre la etiqueta del ítem para equilibrarlo.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -9
@@ -1904,10 +1855,11 @@ object nutr: Tnutr
       Transparent = True
     end
     object Label849: TLabel
-      Left = 286
-      Top = 330
+      Left = 546
+      Top = 334
       Width = 444
       Height = 11
+      Alignment = taRightJustify
       Caption = 
         'Pulse 2 veces sobre un ítem de la matriz para llevarlo a la band' +
         'eja de testado de suplementos nutricionales.'
@@ -1965,15 +1917,96 @@ object nutr: Tnutr
       ParentFont = False
       OnClick = LNombre2Click
     end
+    object LToxinas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 532
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LToxinasClick
+    end
+    object LSistemas: TLabel
+      Tag = 7
+      Left = 16
+      Top = 552
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LSistemasClick
+    end
+    object LAfirmaciones: TLabel
+      Tag = 7
+      Left = 18
+      Top = 572
+      Width = 12
+      Height = 13
+      Cursor = crHandPoint
+      Caption = '---'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      OnClick = LAfirmacionesClick
+    end
+    object Label520: TLabel
+      Left = 460
+      Top = 596
+      Width = 79
+      Height = 13
+      Cursor = crHandPoint
+      Alignment = taRightJustify
+      Caption = 'Realizar Informe'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label520Click
+    end
+    object Label501: TLabel
+      Left = 16
+      Top = 352
+      Width = 274
+      Height = 11
+      Caption = 
+        'Pulse una vez sobre la etiqueta del ítem para realizar un corto ' +
+        'zap.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
     object Button44: TButton
       Tag = 8
       Left = 12
-      Top = 618
+      Top = 642
       Width = 261
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Terapias específicas'
-      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -1984,9 +2017,9 @@ object nutr: Tnutr
       OnClick = Button44Click
     end
     object DBGrid2: TDBGrid
-      Left = 286
+      Left = 280
       Top = 32
-      Width = 703
+      Width = 709
       Height = 297
       Cursor = crHandPoint
       Hint = 
@@ -2007,14 +2040,14 @@ object nutr: Tnutr
       TitleFont.Color = clBlack
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
-      TitleFont.Style = [fsBold]
+      TitleFont.Style = []
       OnDrawDataCell = DBGrid2DrawDataCell
       OnDblClick = DBGrid2DblClick
     end
     object Button27: TButton
       Tag = 8
       Left = 12
-      Top = 594
+      Top = 618
       Width = 261
       Height = 22
       Cursor = crHandPoint
@@ -2026,24 +2059,7 @@ object nutr: Tnutr
       Font.Style = []
       ParentFont = False
       TabOrder = 1
-      Visible = False
       OnClick = Button27Click
-    end
-    object Button72: TButton
-      Left = 12
-      Top = 642
-      Width = 261
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Realizar informe'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
-      OnClick = Button72Click
     end
     object Button76: TButton
       Left = 780
@@ -2058,7 +2074,7 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 3
       OnClick = Button76Click
     end
     object Button77: TButton
@@ -2074,7 +2090,7 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 4
       Visible = False
       OnClick = Button77Click
     end
@@ -2091,7 +2107,7 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
       OnClick = Button1Click
     end
     object Button110: TButton
@@ -2107,11 +2123,11 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
       OnClick = Button110Click
     end
     object Panel15: TPanel
-      Left = 972
+      Left = 968
       Top = 4
       Width = 22
       Height = 22
@@ -2126,396 +2142,396 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = Panel15Click
     end
     object GBBFertilidad: TGroupBox
-      Left = 284
+      Left = 280
       Top = 32
-      Width = 705
-      Height = 309
+      Width = 709
+      Height = 313
       Caption = ' Biomarcadores '
-      TabOrder = 9
+      TabOrder = 8
       Visible = False
       object CheckBox1: TCheckBox
-        Left = 20
-        Top = 28
+        Left = 24
+        Top = 32
         Width = 224
         Height = 17
         Caption = 'Acido cafeico'
         TabOrder = 0
       end
       object CheckBox2: TCheckBox
-        Left = 20
-        Top = 44
+        Left = 24
+        Top = 48
         Width = 224
         Height = 17
         Caption = 'Acido linoléico'
         TabOrder = 1
       end
       object CheckBox3: TCheckBox
-        Left = 20
-        Top = 60
+        Left = 24
+        Top = 64
         Width = 224
         Height = 17
         Caption = 'Acido oléico'
         TabOrder = 2
       end
       object CheckBox4: TCheckBox
-        Left = 20
-        Top = 76
+        Left = 24
+        Top = 80
         Width = 224
         Height = 17
         Caption = 'Afrodiisiacos'
         TabOrder = 3
       end
       object CheckBox5: TCheckBox
-        Left = 20
-        Top = 92
+        Left = 24
+        Top = 96
         Width = 224
         Height = 17
         Caption = 'Ajustes a ciclos lunares'
         TabOrder = 4
       end
       object CheckBox6: TCheckBox
-        Left = 20
-        Top = 108
+        Left = 24
+        Top = 112
         Width = 224
         Height = 17
         Caption = 'Alcaloides'
         TabOrder = 5
       end
       object CheckBox7: TCheckBox
-        Left = 20
-        Top = 124
+        Left = 24
+        Top = 128
         Width = 224
         Height = 17
         Caption = 'Alteraciones del ritmo cardíaco'
         TabOrder = 6
       end
       object CheckBox8: TCheckBox
-        Left = 20
-        Top = 140
+        Left = 24
+        Top = 144
         Width = 224
         Height = 17
         Caption = 'Balance de centros energéticos'
         TabOrder = 7
       end
       object CheckBox9: TCheckBox
-        Left = 20
-        Top = 188
+        Left = 24
+        Top = 192
         Width = 224
         Height = 17
         Caption = 'Claridad mental + espiritual'
         TabOrder = 8
       end
       object CheckBox10: TCheckBox
-        Left = 20
-        Top = 204
+        Left = 24
+        Top = 208
         Width = 224
         Height = 17
         Caption = 'Clorosis (tipo de anemia)'
         TabOrder = 9
       end
       object CheckBox11: TCheckBox
-        Left = 20
-        Top = 220
+        Left = 24
+        Top = 224
         Width = 224
         Height = 17
         Caption = 'Colon irritable'
         TabOrder = 10
       end
       object CheckBox12: TCheckBox
-        Left = 20
-        Top = 236
+        Left = 24
+        Top = 240
         Width = 224
         Height = 17
         Caption = 'Complejos personales'
         TabOrder = 11
       end
       object CheckBox13: TCheckBox
-        Left = 20
-        Top = 252
+        Left = 24
+        Top = 256
         Width = 224
         Height = 17
         Caption = 'Crecimiento folicular'
         TabOrder = 12
       end
       object CheckBox14: TCheckBox
-        Left = 20
-        Top = 268
+        Left = 24
+        Top = 272
         Width = 224
         Height = 17
         Caption = 'Cuerpo lúteo'
         TabOrder = 13
       end
       object CheckBox15: TCheckBox
-        Left = 244
-        Top = 28
+        Left = 248
+        Top = 32
         Width = 224
         Height = 17
         Caption = 'Estrogenos'
         TabOrder = 14
       end
       object CheckBox16: TCheckBox
-        Left = 244
-        Top = 44
+        Left = 248
+        Top = 48
         Width = 224
         Height = 17
         Caption = 'Fitogestageos'
         TabOrder = 15
       end
       object CheckBox17: TCheckBox
-        Left = 244
-        Top = 60
+        Left = 248
+        Top = 64
         Width = 224
         Height = 17
         Caption = 'Fitohormonas'
         TabOrder = 16
       end
       object CheckBox18: TCheckBox
-        Left = 244
-        Top = 76
+        Left = 248
+        Top = 80
         Width = 224
         Height = 17
         Caption = 'Flavonoides'
         TabOrder = 17
       end
       object CheckBox19: TCheckBox
-        Left = 244
-        Top = 92
+        Left = 248
+        Top = 96
         Width = 224
         Height = 17
         Caption = 'Flores De Lamium'
         TabOrder = 18
       end
       object CheckBox20: TCheckBox
-        Left = 244
-        Top = 108
+        Left = 248
+        Top = 112
         Width = 224
         Height = 17
         Caption = 'Flores De Milenrama'
         TabOrder = 19
       end
       object CheckBox21: TCheckBox
-        Left = 244
-        Top = 124
+        Left = 248
+        Top = 128
         Width = 224
         Height = 17
         Caption = 'Geranio'
         TabOrder = 20
       end
       object CheckBox22: TCheckBox
-        Left = 244
-        Top = 140
+        Left = 248
+        Top = 144
         Width = 224
         Height = 17
         Caption = 'Hiedra Terrestre'
         TabOrder = 21
       end
       object CheckBox23: TCheckBox
-        Left = 244
-        Top = 156
+        Left = 248
+        Top = 160
         Width = 224
         Height = 17
         Caption = 'Hormona Luteizante (LH)'
         TabOrder = 22
       end
       object CheckBox24: TCheckBox
-        Left = 244
-        Top = 172
+        Left = 248
+        Top = 176
         Width = 224
         Height = 17
         Caption = 'Infecciones urinarias'
         TabOrder = 23
       end
       object CheckBox25: TCheckBox
-        Left = 244
-        Top = 188
+        Left = 248
+        Top = 192
         Width = 224
         Height = 17
         Caption = 'Inhibición'
         TabOrder = 24
       end
       object CheckBox26: TCheckBox
-        Left = 244
-        Top = 204
+        Left = 248
+        Top = 208
         Width = 224
         Height = 17
         Caption = 'Insomnio'
         TabOrder = 25
       end
       object CheckBox27: TCheckBox
-        Left = 244
-        Top = 220
+        Left = 248
+        Top = 224
         Width = 224
         Height = 17
         Caption = 'Iridoides'
         TabOrder = 26
       end
       object CheckBox28: TCheckBox
-        Left = 20
-        Top = 156
+        Left = 24
+        Top = 160
         Width = 224
         Height = 17
         Caption = 'Candida'
         TabOrder = 27
       end
       object CheckBox29: TCheckBox
-        Left = 244
-        Top = 236
+        Left = 248
+        Top = 240
         Width = 224
         Height = 17
         Caption = 'Limpieza intestinal'
         TabOrder = 28
       end
       object CheckBox30: TCheckBox
-        Left = 244
-        Top = 252
+        Left = 248
+        Top = 256
         Width = 224
         Height = 17
         Caption = 'Limpieza mental'
         TabOrder = 29
       end
       object CheckBox31: TCheckBox
-        Left = 244
-        Top = 268
+        Left = 248
+        Top = 272
         Width = 224
         Height = 17
         Caption = 'Manto De Nuestra Señora'
         TabOrder = 30
       end
       object CheckBox32: TCheckBox
-        Left = 468
-        Top = 28
+        Left = 472
+        Top = 32
         Width = 224
         Height = 17
         Caption = 'Nido Sano'
         TabOrder = 31
       end
       object CheckBox33: TCheckBox
-        Left = 468
-        Top = 44
+        Left = 472
+        Top = 48
         Width = 224
         Height = 17
         Caption = 'Ñame Salvaje (Wild Yam)'
         TabOrder = 32
       end
       object CheckBox34: TCheckBox
-        Left = 468
-        Top = 60
+        Left = 472
+        Top = 64
         Width = 224
         Height = 17
         Caption = 'Ortiga (Hojas)'
         TabOrder = 33
       end
       object CheckBox35: TCheckBox
-        Left = 468
-        Top = 76
+        Left = 472
+        Top = 80
         Width = 224
         Height = 17
         Caption = 'Pensamiento Silvestre'
         TabOrder = 34
       end
       object CheckBox36: TCheckBox
-        Left = 468
-        Top = 92
+        Left = 472
+        Top = 96
         Width = 224
         Height = 17
         Caption = 'Pituitaria'
         TabOrder = 35
       end
       object CheckBox37: TCheckBox
-        Left = 468
-        Top = 108
+        Left = 472
+        Top = 112
         Width = 224
         Height = 17
         Caption = 'Progesterona / Testosterona'
         TabOrder = 36
       end
       object CheckBox38: TCheckBox
-        Left = 468
-        Top = 124
+        Left = 472
+        Top = 128
         Width = 224
         Height = 17
         Caption = 'Prolactina'
         TabOrder = 37
       end
       object CheckBox39: TCheckBox
-        Left = 468
-        Top = 140
+        Left = 472
+        Top = 144
         Width = 224
         Height = 17
         Caption = 'Regeneración celular'
         TabOrder = 38
       end
       object CheckBox40: TCheckBox
-        Left = 468
-        Top = 156
+        Left = 472
+        Top = 160
         Width = 224
         Height = 17
         Caption = 'Secreción de hormonas sexuales'
         TabOrder = 39
       end
       object CheckBox41: TCheckBox
-        Left = 468
-        Top = 172
+        Left = 472
+        Top = 176
         Width = 224
         Height = 17
         Caption = 'Secreciones mucosas / Agentes lubricantes'
         TabOrder = 40
       end
       object CheckBox42: TCheckBox
-        Left = 468
-        Top = 188
+        Left = 472
+        Top = 192
         Width = 224
         Height = 17
         Caption = 'Sincronización con ciclos naturales'
         TabOrder = 41
       end
       object CheckBox43: TCheckBox
-        Left = 468
-        Top = 204
+        Left = 472
+        Top = 208
         Width = 224
         Height = 17
         Caption = 'Sistema circulatorio (vasoconstricción)'
         TabOrder = 42
       end
       object CheckBox44: TCheckBox
-        Left = 468
-        Top = 220
+        Left = 472
+        Top = 224
         Width = 224
         Height = 17
         Caption = 'Turnera Difusa (Damiana)'
         TabOrder = 43
       end
       object CheckBox45: TCheckBox
-        Left = 468
-        Top = 236
+        Left = 472
+        Top = 240
         Width = 224
         Height = 17
         Caption = 'Vara De Oro'
         TabOrder = 44
       end
       object CheckBox46: TCheckBox
-        Left = 468
-        Top = 252
+        Left = 472
+        Top = 256
         Width = 224
         Height = 17
         Caption = 'Vasos pelvianos'
         TabOrder = 45
       end
       object CheckBox47: TCheckBox
-        Left = 468
-        Top = 268
+        Left = 472
+        Top = 272
         Width = 224
         Height = 17
         Caption = 'Vitex Agnus Castus (Sauzgatillo)'
         TabOrder = 46
       end
       object CheckBox48: TCheckBox
-        Left = 20
-        Top = 172
+        Left = 24
+        Top = 176
         Width = 224
         Height = 17
         Caption = 'Células epiteliales'
@@ -2523,8 +2539,8 @@ object nutr: Tnutr
       end
     end
     object Button10: TButton
-      Left = 548
-      Top = 644
+      Left = 864
+      Top = 652
       Width = 125
       Height = 18
       Cursor = crHandPoint
@@ -2535,7 +2551,7 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
       Visible = False
       OnClick = Button10Click
     end
@@ -2547,7 +2563,7 @@ object nutr: Tnutr
     Height = 22
     BevelOuter = bvNone
     Color = clBlack
-    TabOrder = 26
+    TabOrder = 22
     object LCrono2: TLabel
       Left = 84
       Top = 4
@@ -2582,10 +2598,10 @@ object nutr: Tnutr
     end
   end
   object Panel7: TPanel
-    Left = 20
-    Top = 364
-    Width = 988
-    Height = 325
+    Left = 16
+    Top = 360
+    Width = 996
+    Height = 329
     BevelOuter = bvNone
     BevelWidth = 3
     Color = clLime
@@ -2595,7 +2611,7 @@ object nutr: Tnutr
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 27
+    TabOrder = 23
     Visible = False
     OnClick = Panel7Click
     object Label502: TLabel
@@ -2818,7 +2834,7 @@ object nutr: Tnutr
       Width = 220
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Items alérgicos'
+      Caption = 'Items hiperreactivos'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -2862,7 +2878,7 @@ object nutr: Tnutr
       OnClick = Button16Click
     end
     object Panel3: TPanel
-      Left = 960
+      Left = 968
       Top = 4
       Width = 22
       Height = 22
@@ -2886,7 +2902,7 @@ object nutr: Tnutr
       Width = 220
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Mejora de la fertilidad fX >'
+      Caption = 'Estimular fertilidad fX >'
       TabOrder = 5
       OnClick = Button7Click
     end
@@ -2927,19 +2943,19 @@ object nutr: Tnutr
     object PInfertilidad: TPanel
       Left = 0
       Top = 0
-      Width = 988
-      Height = 325
-      Align = alClient
+      Width = 996
+      Height = 329
       BevelOuter = bvNone
       Color = clLime
       TabOrder = 6
       Visible = False
       object LGeneroMasculino: TLabel
-        Left = 12
-        Top = 12
+        Left = 156
+        Top = 24
         Width = 200
         Height = 13
         Cursor = crHandPoint
+        Alignment = taRightJustify
         Caption = 'Ver Condiciones Atenuantes Masculinas >'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -2951,11 +2967,12 @@ object nutr: Tnutr
         OnClick = LGeneroMasculinoClick
       end
       object LGeneroFemenino: TLabel
-        Left = 12
-        Top = 12
+        Left = 156
+        Top = 24
         Width = 200
         Height = 13
         Cursor = crHandPoint
+        Alignment = taRightJustify
         Caption = 'Ver Condiciones Atenuantes Femeninas >'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -2974,7 +2991,7 @@ object nutr: Tnutr
         Caption = '|||'
       end
       object Panel26: TPanel
-        Left = 960
+        Left = 968
         Top = 4
         Width = 22
         Height = 22
@@ -3234,7 +3251,7 @@ object nutr: Tnutr
   end
   object Panel1: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 997
     Height = 505
     BevelOuter = bvNone
@@ -3267,7 +3284,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label33Click
-      OnDblClick = Label33DblClick
     end
     object Label34: TLabel
       Tag = 8
@@ -3290,7 +3306,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label34Click
-      OnDblClick = Label34DblClick
     end
     object Label35: TLabel
       Tag = 8
@@ -3311,7 +3326,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label35Click
-      OnDblClick = Label35DblClick
     end
     object Label36: TLabel
       Tag = 8
@@ -3333,7 +3347,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label36Click
-      OnDblClick = Label36DblClick
     end
     object Label37: TLabel
       Tag = 8
@@ -3354,7 +3367,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label37Click
-      OnDblClick = Label37DblClick
     end
     object Label38: TLabel
       Tag = 8
@@ -3376,7 +3388,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label38Click
-      OnDblClick = Label38DblClick
     end
     object Label39: TLabel
       Tag = 8
@@ -3398,7 +3409,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label39Click
-      OnDblClick = Label39DblClick
     end
     object Label40: TLabel
       Tag = 8
@@ -3418,7 +3428,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label40Click
-      OnDblClick = Label40DblClick
     end
     object Label41: TLabel
       Tag = 8
@@ -3441,7 +3450,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label41Click
-      OnDblClick = Label41DblClick
     end
     object Label42: TLabel
       Tag = 8
@@ -3463,7 +3471,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label42Click
-      OnDblClick = Label42DblClick
     end
     object Label43: TLabel
       Tag = 8
@@ -3485,7 +3492,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label43Click
-      OnDblClick = Label43DblClick
     end
     object Label44: TLabel
       Tag = 8
@@ -3506,7 +3512,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label44Click
-      OnDblClick = Label44DblClick
     end
     object Label45: TLabel
       Tag = 8
@@ -3528,7 +3533,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label45Click
-      OnDblClick = Label45DblClick
     end
     object Label46: TLabel
       Tag = 8
@@ -3548,7 +3552,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label46Click
-      OnDblClick = Label46DblClick
     end
     object Label47: TLabel
       Tag = 8
@@ -3570,7 +3573,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label47Click
-      OnDblClick = Label47DblClick
     end
     object Label48: TLabel
       Tag = 8
@@ -3588,7 +3590,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label48Click
-      OnDblClick = Label48DblClick
     end
     object Label49: TLabel
       Tag = 8
@@ -3606,7 +3607,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label49Click
-      OnDblClick = Label49DblClick
     end
     object Label50: TLabel
       Tag = 8
@@ -3624,7 +3624,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label50Click
-      OnDblClick = Label50DblClick
     end
     object Label51: TLabel
       Tag = 8
@@ -3646,7 +3645,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label51Click
-      OnDblClick = Label51DblClick
     end
     object Label52: TLabel
       Tag = 8
@@ -3666,7 +3664,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label52Click
-      OnDblClick = Label52DblClick
     end
     object Label53: TLabel
       Tag = 8
@@ -3688,7 +3685,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label53Click
-      OnDblClick = Label53DblClick
     end
     object Label54: TLabel
       Tag = 8
@@ -3707,7 +3703,6 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
       OnClick = Label54Click
-      OnDblClick = Label54DblClick
     end
     object Label55: TLabel
       Left = 40
@@ -4377,26 +4372,9 @@ object nutr: Tnutr
       Font.Style = []
       ParentFont = False
     end
-    object Label501: TLabel
-      Left = 16
-      Top = 480
-      Width = 546
-      Height = 11
-      Alignment = taRightJustify
-      Caption = 
-        'Las vitaminas B son hidrosolubles, no son almacenadas en el cuer' +
-        'po.  Deben ser reemplazadas diariamente y el exceso es eliminado' +
-        '.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-    end
     object Label57: TLabel
       Left = 904
-      Top = 472
+      Top = 476
       Width = 77
       Height = 13
       Cursor = crHandPoint
@@ -4411,7 +4389,7 @@ object nutr: Tnutr
       OnClick = Label57Click
     end
     object Panel19: TPanel
-      Left = 972
+      Left = 968
       Top = 4
       Width = 22
       Height = 22
@@ -4432,7 +4410,7 @@ object nutr: Tnutr
   end
   object Panel9: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 703
     Height = 289
     BevelOuter = bvNone
@@ -4514,7 +4492,7 @@ object nutr: Tnutr
       Width = 337
       Height = 22
       Cursor = crHandPoint
-      Caption = #39'Aumentar producción de bicarbonato'
+      Caption = 'Aumentar producción de bicarbonato'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -4738,5602 +4716,9 @@ object nutr: Tnutr
       OnClick = Panel14Click
     end
   end
-  object Panel6: TPanel
-    Left = 16
-    Top = 16
-    Width = 997
-    Height = 677
-    BevelOuter = bvNone
-    BevelWidth = 2
-    BorderWidth = 2
-    Color = clYellow
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 5
-    Visible = False
-    object Label532: TLabel
-      Left = 40
-      Top = 604
-      Width = 895
-      Height = 26
-      Caption = 
-        '                                                                ' +
-        '                                           Procesos supurativos.' +
-        '  La supuración de la piel y membranas mucosas, trastornos de cr' +
-        'ecimiento, problemas reumáticos'#13#10'crónicos.  Alteraciones en el f' +
-        'uncionamiento hepático, inflamación de los nódulos linfáticos po' +
-        'r hinchazón (acudir al médico), dolor, enrojecimiento y bronquit' +
-        'is.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label518: TLabel
-      Left = 40
-      Top = 550
-      Width = 936
-      Height = 52
-      Caption = 
-        '                                                                ' +
-        '                    Ayuda a mantener la elasticidad y la resiste' +
-        'ncia del cabello y las uñas.  La supuración de la piel, furúncul' +
-        'os, fístulas, enfermedades reumáticas '#13#10'de las articulaciones, a' +
-        'rtritis, trastornos de los discos vertebrales, osteoporosis, pro' +
-        'blemas de crecimiento, tendinitis, endurecimiento de las arteria' +
-        's.  También para sudor excesivo, síntomas de '#13#10'envejecimiento pr' +
-        'ematuro (arrugas faciales), quemaduras, cabello y uñas frágiles,' +
-        ' alopecia, crecimiento irregular de las uñas y acné.  Su uso con' +
-        'tinuado puede provocar sequedad en las '#13#10'mucosas.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label549: TLabel
-      Left = 40
-      Top = 509
-      Width = 935
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                                           Procesos de desintoxi' +
-        'cación y eliminación de fluidos.  Estreñimiento, diarrea, dificu' +
-        'ltad para digerir grasas, heces de color claro, '#13#10'flatulencias, ' +
-        'cólicos, edema, erupciones en la piel con ampollas, acné.  Tambi' +
-        'én para enuresis nocturna, inflamaciones debidas a un resfriado ' +
-        'caracterizadas por mucosidades amarillas '#13#10'verdosas, dolores reu' +
-        'máticos que empeoran con frío y humedad, tendencia a la melancol' +
-        'ía y depresión.  Ayuda también a reforzar el tratamiento clínico' +
-        ' de la diabetes.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label777: TLabel
-      Left = 40
-      Top = 467
-      Width = 938
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                                           Metabolismo y exceso ' +
-        'de acidez.  Los dolores digestivos en niños pequeños (cólicos, f' +
-        'latulencias) y adultos, después de comidas '#13#10'copiosas, trastorno' +
-        's de digestión cuando se consumen alimentos grasos, vómitos con ' +
-        'sabor ácido, reflujo ácido, ardor estomacal y acidez, diarrea ma' +
-        'loliente.  También para problemas '#13#10'respiratorios causados por a' +
-        'sma, síntomas de gota en las articulaciones de las extremidades ' +
-        '(dedos del pie) y acné facial debido al metabolismo.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label778: TLabel
-      Left = 40
-      Top = 410
-      Width = 899
-      Height = 52
-      Caption = 
-        '                                                                ' +
-        '                                                              La' +
-        ' sequedad de la piel y membranas mucosas, diarrea acuosa, estreñ' +
-        'imiento, gastritis con vómitos acuosos, '#13#10'secreción nasal abunda' +
-        'nte, lagrimeo imprevisto de los ojos (con viento), edemas (hinch' +
-        'azón) provocada por causas diversas como picaduras de insectos, ' +
-        'dolor de muelas con producción '#13#10'de saliva, erupciones con ampol' +
-        'litas acuosas, depresión con llantos, debilitación general, perd' +
-        'ida de fuerza y dolores reumáticos.  Ayuda también en el tratami' +
-        'ento clínico de la diarrea o '#13#10'vómitos frecuentes.  Es útil tamb' +
-        'ién para la eyaculación precoz o tardía, caída del vello genital' +
-        ', impotencia y problemas de erección.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label519: TLabel
-      Left = 40
-      Top = 340
-      Width = 926
-      Height = 65
-      Caption = 
-        '                                                                ' +
-        '                                                      Calambres ' +
-        'y espasmos musculares: menstruales, tensiones habituales de la z' +
-        'ona cervical o de los hombros o espasmos '#13#10'dolorosos en el tract' +
-        'o gastrointestinal.  Se la considera la aspirina homeopática, ya' +
-        ' que se suele utilizar para dolores de cabeza y musculares.  Ata' +
-        'ques de tos, calambres en las piernas, '#13#10'estómago, los vasos san' +
-        'guíneos (como la migraña), la menstruación dolorosa, los dolores' +
-        ' de dientes y de estómago de los niños, asma, espasmos musculare' +
-        's, cólicos, insomnio, '#13#10'sobre excitación, agitación, pánico escé' +
-        'nico, ansiedad derivada de los exámenes y agitación nerviosa.  A' +
-        'demás reduce los dolores reumáticos.  Ayuda también al tratamien' +
-        'to clínico de '#13#10'dolores graves, calambres, dolor de riñón y vesí' +
-        'cula biliar.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label551: TLabel
-      Left = 40
-      Top = 284
-      Width = 936
-      Height = 52
-      Caption = 
-        '                                                                ' +
-        '                                  Inflamaciones crónicas y trast' +
-        'ornos dermatológicos crónicos.  Todo tipo de alteraciones en la ' +
-        'piel (crecimiento irregular de las uñas de '#13#10'los pies y manos, h' +
-        'eridas de lenta curación, erupciones con pus y escamas que supur' +
-        'an en la piel).  Desequilibrios del hígado, para la saturación d' +
-        'e toxinas en el hígado y para todo tipo de '#13#10'inflamaciones de la' +
-        ' membrana mucosa, para la rinitis crónica, y el dolor reumático ' +
-        'no localizado.  Ayuda también al tratamiento clínico de las form' +
-        'as graves de las enfermedades mencionadas, '#13#10'además de la psoria' +
-        'sis, depresión y ansiedad.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label782: TLabel
-      Left = 40
-      Top = 240
-      Width = 938
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                                                           Mente' +
-        ' y sistema nervioso.  Para tratar la dermatitis del pañal, el ag' +
-        'otamiento mental, emocional y físico, los grados de '#13#10'debilidad ' +
-        '(después de situaciones de estrés), insomnio causado por nervios' +
-        ', falta de energía, desánimo, calambres, alopecia localizada e h' +
-        'iperactividad en niños.  Ayuda también al tratamiento '#13#10'contra l' +
-        'a depresión, debilitación de los músculos y del corazón y la par' +
-        'álisis.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label780: TLabel
-      Left = 40
-      Top = 196
-      Width = 948
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                                         Inflamación de las memb' +
-        'ranas mucosas: rinitis, bronquitis, gastritis, colitis y cistiti' +
-        's. Inflamación de la mucosa estomacal e intestinal, '#13#10'conjuntivi' +
-        'tis, bursitis, artritis y todas las inflamaciones que son provoc' +
-        'adas por la fiebre.  Ayuda al tratamiento médico de quemaduras d' +
-        'e primer y segundo grado, inflamación de la vaina '#13#10'del tendón y' +
-        ' herpes zóster.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label783: TLabel
-      Left = 40
-      Top = 140
-      Width = 925
-      Height = 52
-      Caption = 
-        '                                                                ' +
-        '                                         Infecciones en su fase ' +
-        'inicial.  Se usa para cualquier fiebre y se le considera el segu' +
-        'ndo Aconitum, por su capacidad para bajar '#13#10'la temperatura.  Se ' +
-        'suele dar cuando la persona, además, presenta debilidad por la f' +
-        'iebre.  Alteraciones en el metabolismo del hierro, sistema inmun' +
-        'ológico débil, pequeñas lesiones (externas e '#13#10'internas), quemad' +
-        'uras de primer grado, problemas de memoria y concentración, mala' +
-        ' circulación (pies y manos frías).  También para dolores muscula' +
-        'res, alteraciones en el crecimiento de la '#13#10'piel, cabello y uñas' +
-        ', inflamación nasal, tos, amigdalitis (también con fiebre).  Ayu' +
-        'da al tratamiento contra la diarrea y la gastritis.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label784: TLabel
-      Left = 40
-      Top = 96
-      Width = 906
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                                               Ayuda a la recupe' +
-        'ración después de fracturas óseas, eliminar el dolor del crecimi' +
-        'ento, la producción lenta e insuficiente '#13#10'de los huesos en niño' +
-        's y adolescentes, debilitación del organismo, crecimiento altera' +
-        'do de los dientes, dolor de muelas.  También para espasmos en lo' +
-        's bebés, espasmos musculares, '#13#10'hormigueo y rigidez de brazos y ' +
-        'piernas, nerviosismo, propensión a hemorragias nasales y picores' +
-        ' de la piel en la vejez.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label82: TLabel
-      Left = 40
-      Top = 52
-      Width = 859
-      Height = 39
-      Caption = 
-        '                                                                ' +
-        '                    Tejido conectivo, ligamentos y tendones, ven' +
-        'as y músculos.  Arrugas, estrías, hemorroides, varices, esmalte ' +
-        'dental débil, '#13#10'crecimiento irregular de las uñas, hongos en uña' +
-        's, formación excesiva de callos, psoriasis, pústulas de acné end' +
-        'urecidas, verrugas duras, cicatrices desfiguradas, piel agrietad' +
-        'a, '#13#10'rasguños, hendiduras en la boca, dedos de los pies en forma' +
-        ' de martillo, espolones óseos.  Ayuda al tratamiento contra el r' +
-        'aquitismo y disminución de la masa ósea (osteoporosis).'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label461: TLabel
-      Left = 14
-      Top = 52
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label462: TLabel
-      Left = 14
-      Top = 96
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label463: TLabel
-      Left = 14
-      Top = 140
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label464: TLabel
-      Left = 14
-      Top = 196
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label465: TLabel
-      Left = 14
-      Top = 240
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label466: TLabel
-      Left = 14
-      Top = 284
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label467: TLabel
-      Left = 14
-      Top = 340
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label468: TLabel
-      Left = 14
-      Top = 410
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label469: TLabel
-      Left = 14
-      Top = 467
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label470: TLabel
-      Left = 14
-      Top = 509
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label471: TLabel
-      Left = 14
-      Top = 550
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label472: TLabel
-      Left = 14
-      Top = 604
-      Width = 18
-      Height = 14
-      Alignment = taRightJustify
-      Caption = '000'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label473: TLabel
-      Tag = 8
-      Left = 40
-      Top = 52
-      Width = 245
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Calcium fluoratum | La sal de la elasticidad.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label473Click
-    end
-    object Label474: TLabel
-      Tag = 8
-      Left = 40
-      Top = 96
-      Width = 328
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Calcium phosphoricum | La sal de los huesos y los dientes.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label474Click
-    end
-    object Label475: TLabel
-      Tag = 8
-      Left = 40
-      Top = 140
-      Width = 308
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Ferrum phosphoricum | La sal de los primeros auxilios.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label475Click
-    end
-    object Label476: TLabel
-      Tag = 8
-      Left = 40
-      Top = 196
-      Width = 307
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Kalium chloratum | La sal de las membranas mucosas.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label476Click
-    end
-    object Label477: TLabel
-      Tag = 8
-      Left = 40
-      Top = 240
-      Width = 362
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Kalium phosphoricum | La sal de la mente y el sistema nervioso.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label477Click
-    end
-    object Label478: TLabel
-      Tag = 8
-      Left = 40
-      Top = 284
-      Width = 290
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Kalium sulfuricum | La sal de la inflamación crónica.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label478Click
-    end
-    object Label479: TLabel
-      Tag = 8
-      Left = 40
-      Top = 340
-      Width = 349
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Magnesium phosphoricum | La sal de los calambres y dolores.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label479Click
-    end
-    object Label480: TLabel
-      Tag = 8
-      Left = 40
-      Top = 410
-      Width = 368
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 
-        'Natrium chloratum | La sal del equilibrio de los fluidos corpora' +
-        'les.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label480Click
-    end
-    object Label481: TLabel
-      Tag = 8
-      Left = 40
-      Top = 467
-      Width = 313
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Natrium phosphoricum | La sal del equilibro ácido-base.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label481Click
-    end
-    object Label482: TLabel
-      Tag = 8
-      Left = 40
-      Top = 509
-      Width = 314
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Natrium sulfuricum | La sal de la eliminación de toxinas.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label482Click
-    end
-    object Label483: TLabel
-      Tag = 8
-      Left = 40
-      Top = 550
-      Width = 245
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Silicea | La sal del cabello, las uñas y la piel.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label483Click
-    end
-    object Label484: TLabel
-      Tag = 8
-      Left = 40
-      Top = 604
-      Width = 315
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Calcium sulfuricum | La sal de los procesos depurativos.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold, fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label484Click
-    end
-    object Label800: TLabel
-      Left = 13
-      Top = 16
-      Width = 265
-      Height = 29
-      Caption = 'SALES DE SCHÜSSLER'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -24
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label81: TLabel
-      Left = 900
-      Top = 652
-      Width = 77
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Realizar informe'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label81Click
-    end
-    object Label785: TLabel
-      Left = 16
-      Top = 652
-      Width = 488
-      Height = 13
-      Caption = 
-        'Pulse sobre el nombre de la etiqueta de la sal que desea equilib' +
-        'rar hasta que la etiqueta se desactive.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Panel20: TPanel
-      Left = 972
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 0
-      OnClick = Panel20Click
-    end
-  end
-  object Panel11: TPanel
-    Left = 16
-    Top = 16
-    Width = 997
-    Height = 677
-    BevelOuter = bvNone
-    BevelWidth = 3
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 23
-    Visible = False
-    object Label554: TLabel
-      Left = 364
-      Top = 272
-      Width = 279
-      Height = 29
-      Caption = 'Biblioteca nutricional I '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -24
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Button78: TButton
-      Left = 808
-      Top = 20
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 2'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-      OnClick = Button78Click
-    end
-    object Button84: TButton
-      Left = 808
-      Top = 44
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 3'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = Button84Click
-    end
-    object GroupBox4: TGroupBox
-      Left = 380
-      Top = 12
-      Width = 389
-      Height = 237
-      Caption = ' ALIMENTACION - ELEMENTOS NUTRITIVOS '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 2
-      object Label631: TLabel
-        Left = 32
-        Top = 27
-        Width = 211
-        Height = 13
-        Caption = '| Valor biológico y complementación proteica'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label636: TLabel
-        Left = 32
-        Top = 123
-        Width = 132
-        Height = 13
-        Caption = '| Las fibras en los alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label637: TLabel
-        Left = 32
-        Top = 107
-        Width = 200
-        Height = 13
-        Caption = '| Efectos del consumo excesivo de azúcar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label638: TLabel
-        Left = 32
-        Top = 91
-        Width = 159
-        Height = 13
-        Caption = '| Ventajas del consumo de avena'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label639: TLabel
-        Left = 32
-        Top = 59
-        Width = 73
-        Height = 13
-        Caption = '| Antioxidantes'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label640: TLabel
-        Left = 32
-        Top = 75
-        Width = 181
-        Height = 13
-        Caption = '| Vitaminas y antioxidantes esenciales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label641: TLabel
-        Left = 32
-        Top = 171
-        Width = 247
-        Height = 13
-        Caption = '| Los aceites naturales y los ácidos grasos Omega 6'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label642: TLabel
-        Left = 32
-        Top = 155
-        Width = 216
-        Height = 13
-        Caption = '| Los ácidos grasos Omega 3 en los pescados'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label643: TLabel
-        Left = 32
-        Top = 139
-        Width = 265
-        Height = 13
-        Caption = '| Descripición general de los ácidos grasos Omega 3 y 6'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label644: TLabel
-        Left = 32
-        Top = 43
-        Width = 42
-        Height = 13
-        Caption = '| Aceites'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label647: TLabel
-        Left = 32
-        Top = 203
-        Width = 240
-        Height = 13
-        Caption = '| Los minerales y su importancia en la alimentación'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label650: TLabel
-        Left = 32
-        Top = 187
-        Width = 217
-        Height = 13
-        Caption = '| Algo más sobre vitaminas y otros nutrientes'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton94: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton94Click
-      end
-      object RadioButton95: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton95Click
-      end
-      object RadioButton96: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton96Click
-      end
-      object RadioButton97: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton97Click
-      end
-      object RadioButton98: TRadioButton
-        Left = 16
-        Top = 92
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton98Click
-      end
-      object RadioButton99: TRadioButton
-        Left = 16
-        Top = 108
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton99Click
-      end
-      object RadioButton100: TRadioButton
-        Left = 16
-        Top = 124
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton100Click
-      end
-      object RadioButton101: TRadioButton
-        Left = 16
-        Top = 140
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton101Click
-      end
-      object RadioButton102: TRadioButton
-        Left = 16
-        Top = 156
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton102Click
-      end
-      object RadioButton103: TRadioButton
-        Left = 16
-        Top = 172
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton103Click
-      end
-      object RadioButton104: TRadioButton
-        Left = 16
-        Top = 188
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton104Click
-      end
-      object RadioButton105: TRadioButton
-        Left = 16
-        Top = 204
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton105Click
-      end
-    end
-    object GroupBox5: TGroupBox
-      Left = 608
-      Top = 316
-      Width = 369
-      Height = 353
-      Caption = ' NUTRICION COMPLETA Y ADECUADA '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 3
-      object Label603: TLabel
-        Left = 32
-        Top = 43
-        Width = 123
-        Height = 13
-        Caption = '| Función de los alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label604: TLabel
-        Left = 32
-        Top = 27
-        Width = 141
-        Height = 13
-        Caption = '| Objetivos de la alimentación'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label605: TLabel
-        Left = 32
-        Top = 91
-        Width = 88
-        Height = 13
-        Caption = '| Grupos en riesgo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label606: TLabel
-        Left = 32
-        Top = 75
-        Width = 232
-        Height = 13
-        Caption = '| La física y la energía en la alimetación cotidiana'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label607: TLabel
-        Left = 32
-        Top = 59
-        Width = 256
-        Height = 13
-        Caption = '| Necesidades diarias del organismo a nivel nutricional'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label608: TLabel
-        Left = 44
-        Top = 107
-        Width = 205
-        Height = 13
-        Caption = '| Consejos para una alimentación completa'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label609: TLabel
-        Left = 44
-        Top = 123
-        Width = 99
-        Height = 13
-        Caption = '| Pirámide nutricional'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label610: TLabel
-        Left = 44
-        Top = 139
-        Width = 184
-        Height = 13
-        Caption = '| Distribución adecuada de las comidas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label611: TLabel
-        Left = 32
-        Top = 171
-        Width = 235
-        Height = 13
-        Caption = '| Requerimientos diarios de vitaminas y minerales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label612: TLabel
-        Left = 32
-        Top = 187
-        Width = 164
-        Height = 13
-        Caption = '| Peso ideal en hombres y mujeres'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label613: TLabel
-        Left = 44
-        Top = 155
-        Width = 91
-        Height = 13
-        Caption = '| La actividad física'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label614: TLabel
-        Left = 32
-        Top = 271
-        Width = 105
-        Height = 13
-        Caption = '| El agua como bebida'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label615: TLabel
-        Left = 32
-        Top = 219
-        Width = 159
-        Height = 13
-        Caption = '| Cálculo del índice de contextura'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label616: TLabel
-        Left = 32
-        Top = 203
-        Width = 173
-        Height = 13
-        Caption = '| Cálculo del índice de masa corporal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label617: TLabel
-        Left = 24
-        Top = 240
-        Width = 213
-        Height = 26
-        Caption = 
-          '| Productos de consumo habitual que inciden'#13#10'sobre la energía co' +
-          'nsumida y las dietas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label618: TLabel
-        Left = 32
-        Top = 287
-        Width = 159
-        Height = 13
-        Caption = '| Características del agua mineral'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label619: TLabel
-        Left = 32
-        Top = 319
-        Width = 56
-        Height = 13
-        Caption = '| La cafeína'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label620: TLabel
-        Left = 32
-        Top = 303
-        Width = 117
-        Height = 13
-        Caption = '| Las bebidas alcohólicas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton54: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton54Click
-      end
-      object RadioButton55: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton55Click
-      end
-      object RadioButton56: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton56Click
-      end
-      object RadioButton57: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton57Click
-      end
-      object RadioButton58: TRadioButton
-        Left = 16
-        Top = 92
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton58Click
-      end
-      object RadioButton59: TRadioButton
-        Left = 28
-        Top = 108
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton59Click
-      end
-      object RadioButton60: TRadioButton
-        Left = 28
-        Top = 124
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton60Click
-      end
-      object RadioButton61: TRadioButton
-        Left = 28
-        Top = 140
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton61Click
-      end
-      object RadioButton62: TRadioButton
-        Left = 28
-        Top = 156
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton62Click
-      end
-      object RadioButton63: TRadioButton
-        Left = 16
-        Top = 172
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton63Click
-      end
-      object RadioButton64: TRadioButton
-        Left = 16
-        Top = 188
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton64Click
-      end
-      object RadioButton65: TRadioButton
-        Left = 16
-        Top = 204
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton65Click
-      end
-      object RadioButton77: TRadioButton
-        Left = 16
-        Top = 220
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton77Click
-      end
-      object RadioButton78: TRadioButton
-        Left = 16
-        Top = 272
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton78Click
-      end
-      object RadioButton79: TRadioButton
-        Left = 16
-        Top = 288
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton79Click
-      end
-      object RadioButton80: TRadioButton
-        Left = 16
-        Top = 304
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton80Click
-      end
-      object RadioButton81: TRadioButton
-        Left = 16
-        Top = 320
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 16
-        OnClick = RadioButton81Click
-      end
-    end
-    object GroupBox7: TGroupBox
-      Left = 8
-      Top = 12
-      Width = 333
-      Height = 629
-      Caption = ' NUTRICION - TEMAS GENERALES '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 5
-      object Bevel5: TBevel
-        Left = 92
-        Top = 188
-        Width = 173
-        Height = 46
-        Shape = bsLeftLine
-        Style = bsRaised
-      end
-      object Bevel6: TBevel
-        Left = 92
-        Top = 240
-        Width = 173
-        Height = 62
-        Shape = bsLeftLine
-        Style = bsRaised
-      end
-      object Label556: TLabel
-        Left = 44
-        Top = 75
-        Width = 52
-        Height = 13
-        Caption = '| Proteínas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label557: TLabel
-        Left = 44
-        Top = 59
-        Width = 205
-        Height = 13
-        Caption = '| Bioquímica elemental de los carbohidratos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label558: TLabel
-        Left = 44
-        Top = 107
-        Width = 83
-        Height = 13
-        Caption = '| Lípidos o grasas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label559: TLabel
-        Left = 44
-        Top = 91
-        Width = 66
-        Height = 13
-        Caption = '| Aminoácidos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label560: TLabel
-        Left = 44
-        Top = 139
-        Width = 137
-        Height = 13
-        Caption = '| Acidos grasos Omega 3 y 6'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label561: TLabel
-        Left = 44
-        Top = 123
-        Width = 73
-        Height = 13
-        Caption = '| Acidos grasos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label562: TLabel
-        Left = 55
-        Top = 264
-        Width = 29
-        Height = 13
-        Alignment = taRightJustify
-        Caption = 'Micro:'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label563: TLabel
-        Left = 52
-        Top = 204
-        Width = 33
-        Height = 13
-        Alignment = taRightJustify
-        Caption = 'Macro:'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label564: TLabel
-        Left = 116
-        Top = 203
-        Width = 35
-        Height = 13
-        Caption = '| Calcio'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label565: TLabel
-        Left = 116
-        Top = 239
-        Width = 36
-        Height = 13
-        Caption = '| Cobre'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label566: TLabel
-        Left = 212
-        Top = 219
-        Width = 39
-        Height = 13
-        Caption = '| Azufre'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label567: TLabel
-        Left = 116
-        Top = 219
-        Width = 52
-        Height = 13
-        Caption = '| Magnésio'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label568: TLabel
-        Left = 116
-        Top = 287
-        Width = 62
-        Height = 13
-        Caption = '| Manganeso'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label569: TLabel
-        Left = 116
-        Top = 271
-        Width = 36
-        Height = 13
-        Caption = '| Hierro'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label570: TLabel
-        Left = 212
-        Top = 239
-        Width = 38
-        Height = 13
-        Caption = '| Cromo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label571: TLabel
-        Left = 116
-        Top = 255
-        Width = 31
-        Height = 13
-        Caption = '| Yodo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label572: TLabel
-        Left = 212
-        Top = 255
-        Width = 44
-        Height = 13
-        Caption = '| Cobalto'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label573: TLabel
-        Left = 212
-        Top = 203
-        Width = 44
-        Height = 13
-        Caption = '| Fósforo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label574: TLabel
-        Left = 212
-        Top = 287
-        Width = 26
-        Height = 13
-        Caption = '| Zinc'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label575: TLabel
-        Left = 212
-        Top = 271
-        Width = 41
-        Height = 13
-        Caption = '| Selenio'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label576: TLabel
-        Left = 32
-        Top = 323
-        Width = 106
-        Height = 13
-        Caption = '| Vitaminas en general'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label577: TLabel
-        Left = 20
-        Top = 308
-        Width = 94
-        Height = 13
-        Caption = '| Vitaminas y ácidos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label578: TLabel
-        Left = 44
-        Top = 355
-        Width = 57
-        Height = 13
-        Caption = '| Vitamina A'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label579: TLabel
-        Left = 32
-        Top = 339
-        Width = 109
-        Height = 13
-        Caption = '| Vitaminas liposolubles'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label580: TLabel
-        Left = 44
-        Top = 387
-        Width = 56
-        Height = 13
-        Caption = '| Vitamina E'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label581: TLabel
-        Left = 44
-        Top = 371
-        Width = 57
-        Height = 13
-        Caption = '| Vitamina D'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label582: TLabel
-        Left = 32
-        Top = 419
-        Width = 117
-        Height = 13
-        Caption = '| Vitaminas hidrosolubles'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label583: TLabel
-        Left = 44
-        Top = 403
-        Width = 56
-        Height = 13
-        Caption = '| Vitamina K'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label584: TLabel
-        Left = 44
-        Top = 451
-        Width = 109
-        Height = 13
-        Caption = '| Vitamina B1 (Tiamina)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label585: TLabel
-        Left = 44
-        Top = 435
-        Width = 142
-        Height = 13
-        Caption = '| Vitamina C (Acido ascórbico)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label586: TLabel
-        Left = 44
-        Top = 483
-        Width = 107
-        Height = 13
-        Caption = '| Vitamina B3 (Niacina)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label587: TLabel
-        Left = 44
-        Top = 467
-        Width = 126
-        Height = 13
-        Caption = '| Vitamina B2 (Riboflavina)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label588: TLabel
-        Left = 44
-        Top = 515
-        Width = 127
-        Height = 13
-        Caption = 'Vitamina B12 (Cobalamina)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label589: TLabel
-        Left = 44
-        Top = 499
-        Width = 119
-        Height = 13
-        Caption = '| Vitamina B6 (Piridoxina)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label590: TLabel
-        Left = 44
-        Top = 547
-        Width = 61
-        Height = 13
-        Caption = '| Acido fólico'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label591: TLabel
-        Left = 32
-        Top = 531
-        Width = 152
-        Height = 13
-        Caption = '| Acidos considerados vitaminas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label592: TLabel
-        Left = 44
-        Top = 579
-        Width = 79
-        Height = 13
-        Caption = '| Carnitina (B20)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label593: TLabel
-        Left = 44
-        Top = 563
-        Width = 39
-        Height = 13
-        Caption = '| Biotina'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label594: TLabel
-        Left = 156
-        Top = 579
-        Width = 55
-        Height = 13
-        Caption = '| Funciones'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label595: TLabel
-        Left = 116
-        Top = 187
-        Width = 33
-        Height = 13
-        Caption = '| Sodio'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label596: TLabel
-        Left = 44
-        Top = 171
-        Width = 118
-        Height = 13
-        Caption = '| Macro y microminerales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label597: TLabel
-        Left = 32
-        Top = 155
-        Width = 113
-        Height = 13
-        Caption = '| Elementos inorgánicos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label598: TLabel
-        Left = 212
-        Top = 187
-        Width = 42
-        Height = 13
-        Caption = '| Potasio'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label599: TLabel
-        Left = 36
-        Top = 27
-        Width = 105
-        Height = 13
-        Caption = '| Elementos orgánicos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label600: TLabel
-        Left = 44
-        Top = 43
-        Width = 182
-        Height = 13
-        Caption = '| Hidratos de carbono o carbohidratos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label602: TLabel
-        Left = 44
-        Top = 595
-        Width = 116
-        Height = 13
-        Caption = '| Acido pantotenico (B5)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton11: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton11Click
-      end
-      object RadioButton12: TRadioButton
-        Left = 28
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton12Click
-      end
-      object RadioButton13: TRadioButton
-        Left = 28
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton13Click
-      end
-      object RadioButton14: TRadioButton
-        Left = 28
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton14Click
-      end
-      object RadioButton15: TRadioButton
-        Left = 28
-        Top = 92
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton15Click
-      end
-      object RadioButton16: TRadioButton
-        Left = 28
-        Top = 108
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton16Click
-      end
-      object RadioButton17: TRadioButton
-        Left = 28
-        Top = 124
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton17Click
-      end
-      object RadioButton18: TRadioButton
-        Left = 28
-        Top = 140
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton18Click
-      end
-      object RadioButton19: TRadioButton
-        Left = 16
-        Top = 156
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton19Click
-      end
-      object RadioButton20: TRadioButton
-        Left = 28
-        Top = 172
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton20Click
-      end
-      object RadioButton21: TRadioButton
-        Left = 100
-        Top = 188
-        Width = 14
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton21Click
-      end
-      object RadioButton22: TRadioButton
-        Left = 196
-        Top = 188
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton22Click
-      end
-      object RadioButton23: TRadioButton
-        Left = 100
-        Top = 204
-        Width = 14
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton23Click
-      end
-      object RadioButton24: TRadioButton
-        Left = 196
-        Top = 204
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton24Click
-      end
-      object RadioButton25: TRadioButton
-        Left = 100
-        Top = 220
-        Width = 14
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton25Click
-      end
-      object RadioButton26: TRadioButton
-        Left = 196
-        Top = 220
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton26Click
-      end
-      object RadioButton27: TRadioButton
-        Left = 100
-        Top = 240
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 16
-        OnClick = RadioButton27Click
-      end
-      object RadioButton28: TRadioButton
-        Left = 100
-        Top = 256
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 17
-        OnClick = RadioButton28Click
-      end
-      object RadioButton29: TRadioButton
-        Left = 100
-        Top = 272
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 18
-        OnClick = RadioButton29Click
-      end
-      object RadioButton30: TRadioButton
-        Left = 100
-        Top = 288
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 19
-        OnClick = RadioButton30Click
-      end
-      object RadioButton31: TRadioButton
-        Left = 196
-        Top = 240
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 20
-        OnClick = RadioButton31Click
-      end
-      object RadioButton32: TRadioButton
-        Left = 196
-        Top = 256
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 21
-        OnClick = RadioButton32Click
-      end
-      object RadioButton33: TRadioButton
-        Left = 196
-        Top = 272
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 22
-        OnClick = RadioButton33Click
-      end
-      object RadioButton34: TRadioButton
-        Left = 196
-        Top = 288
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 23
-        OnClick = RadioButton34Click
-      end
-      object RadioButton35: TRadioButton
-        Left = 16
-        Top = 324
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 24
-        OnClick = RadioButton35Click
-      end
-      object RadioButton36: TRadioButton
-        Left = 16
-        Top = 340
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 25
-        OnClick = RadioButton36Click
-      end
-      object RadioButton37: TRadioButton
-        Left = 28
-        Top = 356
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 26
-        OnClick = RadioButton37Click
-      end
-      object RadioButton38: TRadioButton
-        Left = 28
-        Top = 372
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 27
-        OnClick = RadioButton38Click
-      end
-      object RadioButton39: TRadioButton
-        Left = 28
-        Top = 388
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 28
-        OnClick = RadioButton39Click
-      end
-      object RadioButton40: TRadioButton
-        Left = 28
-        Top = 404
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 29
-        OnClick = RadioButton40Click
-      end
-      object RadioButton41: TRadioButton
-        Left = 16
-        Top = 420
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 30
-        OnClick = RadioButton41Click
-      end
-      object RadioButton42: TRadioButton
-        Left = 28
-        Top = 436
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 31
-        OnClick = RadioButton42Click
-      end
-      object RadioButton43: TRadioButton
-        Left = 28
-        Top = 452
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 32
-        OnClick = RadioButton43Click
-      end
-      object RadioButton44: TRadioButton
-        Left = 28
-        Top = 468
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 33
-        OnClick = RadioButton44Click
-      end
-      object RadioButton45: TRadioButton
-        Left = 28
-        Top = 484
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 34
-        OnClick = RadioButton45Click
-      end
-      object RadioButton46: TRadioButton
-        Left = 28
-        Top = 500
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 35
-        OnClick = RadioButton46Click
-      end
-      object RadioButton47: TRadioButton
-        Left = 28
-        Top = 516
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 36
-        OnClick = RadioButton47Click
-      end
-      object RadioButton48: TRadioButton
-        Left = 16
-        Top = 532
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 37
-        OnClick = RadioButton48Click
-      end
-      object RadioButton49: TRadioButton
-        Left = 28
-        Top = 548
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 38
-        OnClick = RadioButton49Click
-      end
-      object RadioButton50: TRadioButton
-        Left = 28
-        Top = 564
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 39
-        OnClick = RadioButton50Click
-      end
-      object RadioButton51: TRadioButton
-        Left = 28
-        Top = 580
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 40
-        OnClick = RadioButton51Click
-      end
-      object RadioButton52: TRadioButton
-        Left = 136
-        Top = 580
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 41
-        OnClick = RadioButton52Click
-      end
-      object RadioButton53: TRadioButton
-        Left = 28
-        Top = 596
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 42
-        OnClick = RadioButton53Click
-      end
-    end
-    object GroupBox6: TGroupBox
-      Left = 248
-      Top = 348
-      Width = 369
-      Height = 241
-      Caption = ' ALIMENTACION - TEMAS GENERALES '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 4
-      object Label623: TLabel
-        Left = 32
-        Top = 75
-        Width = 120
-        Height = 13
-        Caption = '| Alimentación y nutrición'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label624: TLabel
-        Left = 32
-        Top = 27
-        Width = 89
-        Height = 13
-        Caption = '| Que es una dieta'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label625: TLabel
-        Left = 32
-        Top = 43
-        Width = 102
-        Height = 13
-        Caption = '| Que son las calorías'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label626: TLabel
-        Left = 32
-        Top = 171
-        Width = 186
-        Height = 13
-        Caption = '| Alimentos geneticamente modificados'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label627: TLabel
-        Left = 32
-        Top = 155
-        Width = 117
-        Height = 13
-        Caption = '| Alimentos transgénicos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label628: TLabel
-        Left = 32
-        Top = 123
-        Width = 245
-        Height = 13
-        Caption = '| El aumento de peso después de una dieta exitosa'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label629: TLabel
-        Left = 32
-        Top = 91
-        Width = 143
-        Height = 13
-        Caption = '| La importancia del desayuno'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label630: TLabel
-        Left = 32
-        Top = 59
-        Width = 238
-        Height = 13
-        Caption = '| La física y la energía en la alimentación cotidiana'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label632: TLabel
-        Left = 32
-        Top = 187
-        Width = 193
-        Height = 13
-        Caption = '| Causas y consecuencias del sobrepeso'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label633: TLabel
-        Left = 32
-        Top = 139
-        Width = 81
-        Height = 13
-        Caption = '| Los lactobacilos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label634: TLabel
-        Left = 32
-        Top = 203
-        Width = 231
-        Height = 13
-        Caption = '| Los efectos y resultados de las dietas mágicas '
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label635: TLabel
-        Left = 32
-        Top = 107
-        Width = 75
-        Height = 13
-        Caption = '| Las colaciones'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton82: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton82Click
-      end
-      object RadioButton83: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton83Click
-      end
-      object RadioButton84: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton84Click
-      end
-      object RadioButton85: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton85Click
-      end
-      object RadioButton86: TRadioButton
-        Left = 16
-        Top = 92
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton86Click
-      end
-      object RadioButton87: TRadioButton
-        Left = 16
-        Top = 108
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton87Click
-      end
-      object RadioButton88: TRadioButton
-        Left = 16
-        Top = 124
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton88Click
-      end
-      object RadioButton89: TRadioButton
-        Left = 16
-        Top = 140
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton89Click
-      end
-      object RadioButton90: TRadioButton
-        Left = 16
-        Top = 156
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton90Click
-      end
-      object RadioButton91: TRadioButton
-        Left = 16
-        Top = 172
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton91Click
-      end
-      object RadioButton92: TRadioButton
-        Left = 16
-        Top = 188
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton92Click
-      end
-      object RadioButton93: TRadioButton
-        Left = 16
-        Top = 204
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton93Click
-      end
-    end
-    object Panel21: TPanel
-      Left = 972
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 6
-      OnClick = Panel21Click
-    end
-  end
-  object Panel12: TPanel
-    Left = 16
-    Top = 16
-    Width = 997
-    Height = 677
-    BevelOuter = bvNone
-    BevelWidth = 3
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 24
-    Visible = False
-    object Label663: TLabel
-      Left = 624
-      Top = 468
-      Width = 291
-      Height = 29
-      Caption = 'Biblioteca nutricional II '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -24
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Button81: TButton
-      Left = 804
-      Top = 588
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 1'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-      OnClick = Button81Click
-    end
-    object Button85: TButton
-      Left = 804
-      Top = 612
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 3'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = Button85Click
-    end
-    object GroupBox10: TGroupBox
-      Left = 12
-      Top = 12
-      Width = 365
-      Height = 453
-      Caption = ' ALIMENTACION '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 4
-      object Label661: TLabel
-        Left = 32
-        Top = 303
-        Width = 110
-        Height = 13
-        Caption = '| Diferencia alimentaria'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label664: TLabel
-        Left = 20
-        Top = 287
-        Width = 70
-        Height = 13
-        Caption = '| Vegetarianos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label665: TLabel
-        Left = 32
-        Top = 319
-        Width = 159
-        Height = 13
-        Caption = '| Veganos o vegetarianos totales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label666: TLabel
-        Left = 32
-        Top = 351
-        Width = 136
-        Height = 13
-        Caption = '| Etapas de especial cuidado'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label667: TLabel
-        Left = 32
-        Top = 335
-        Width = 124
-        Height = 13
-        Caption = '| Ovo-Lacto-Vegetarianos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label668: TLabel
-        Left = 32
-        Top = 367
-        Width = 122
-        Height = 13
-        Caption = '| Sugerencias alimenticias'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label669: TLabel
-        Left = 32
-        Top = 403
-        Width = 112
-        Height = 13
-        Caption = '| La dieta Mediterranea'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label670: TLabel
-        Left = 20
-        Top = 387
-        Width = 37
-        Height = 13
-        Caption = '| Dietas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label672: TLabel
-        Left = 32
-        Top = 419
-        Width = 94
-        Height = 13
-        Caption = '| La dieta Longevus'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label645: TLabel
-        Left = 32
-        Top = 68
-        Width = 271
-        Height = 13
-        Caption = '| Dietética para la correcta alimentación y la buena salud'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label646: TLabel
-        Left = 20
-        Top = 20
-        Width = 205
-        Height = 13
-        Caption = '| Elementos nutritivos vinculados a la salud'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label648: TLabel
-        Left = 32
-        Top = 36
-        Width = 161
-        Height = 13
-        Caption = '| Ventajas del consumo de yogurt'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label649: TLabel
-        Left = 32
-        Top = 52
-        Width = 150
-        Height = 13
-        Caption = '| Prevención de la osteoporosis'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label651: TLabel
-        Left = 32
-        Top = 100
-        Width = 90
-        Height = 13
-        Caption = '| Estrés y nutrición'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label652: TLabel
-        Left = 32
-        Top = 84
-        Width = 115
-        Height = 13
-        Caption = '| Artrosis y alimentación'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label653: TLabel
-        Left = 32
-        Top = 212
-        Width = 164
-        Height = 13
-        Caption = '| Antioxidantes Vs. radicales libres'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label654: TLabel
-        Left = 32
-        Top = 196
-        Width = 241
-        Height = 13
-        Caption = '| Los beneficios del movimiento y la actividad física'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label655: TLabel
-        Left = 32
-        Top = 180
-        Width = 258
-        Height = 13
-        Caption = '| Nutrientes intervinientes en las funciones cerebrales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label656: TLabel
-        Left = 32
-        Top = 164
-        Width = 125
-        Height = 13
-        Caption = '| Alimentación y colesterol'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label657: TLabel
-        Left = 36
-        Top = 248
-        Width = 97
-        Height = 13
-        Caption = '| Sustitutos de la sal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label658: TLabel
-        Left = 32
-        Top = 148
-        Width = 55
-        Height = 13
-        Caption = '| Colesterol'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label659: TLabel
-        Left = 32
-        Top = 116
-        Width = 95
-        Height = 13
-        Caption = '| Estrés y colesterol'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label660: TLabel
-        Left = 36
-        Top = 264
-        Width = 121
-        Height = 13
-        Caption = '| Sustitutos de las grasas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label662: TLabel
-        Left = 20
-        Top = 232
-        Width = 242
-        Height = 13
-        Caption = '| Alimentos alternativos para diferentes patologías'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label772: TLabel
-        Left = 32
-        Top = 132
-        Width = 108
-        Height = 13
-        Caption = '| Estrés y alimentación'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton119: TRadioButton
-        Left = 16
-        Top = 304
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton119Click
-      end
-      object RadioButton120: TRadioButton
-        Left = 16
-        Top = 320
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton120Click
-      end
-      object RadioButton121: TRadioButton
-        Left = 16
-        Top = 336
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton121Click
-      end
-      object RadioButton122: TRadioButton
-        Left = 16
-        Top = 352
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton122Click
-      end
-      object RadioButton123: TRadioButton
-        Left = 16
-        Top = 368
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton123Click
-      end
-      object RadioButton124: TRadioButton
-        Left = 16
-        Top = 404
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton124Click
-      end
-      object RadioButton125: TRadioButton
-        Left = 16
-        Top = 420
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton125Click
-      end
-      object RadioButton106: TRadioButton
-        Left = 16
-        Top = 36
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton106Click
-      end
-      object RadioButton107: TRadioButton
-        Left = 16
-        Top = 52
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton107Click
-      end
-      object RadioButton108: TRadioButton
-        Left = 16
-        Top = 68
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton108Click
-      end
-      object RadioButton109: TRadioButton
-        Left = 16
-        Top = 84
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton109Click
-      end
-      object RadioButton110: TRadioButton
-        Left = 16
-        Top = 100
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton110Click
-      end
-      object RadioButton111: TRadioButton
-        Left = 16
-        Top = 116
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton111Click
-      end
-      object RadioButton112: TRadioButton
-        Left = 16
-        Top = 148
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton112Click
-      end
-      object RadioButton113: TRadioButton
-        Left = 16
-        Top = 164
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton113Click
-      end
-      object RadioButton114: TRadioButton
-        Left = 16
-        Top = 180
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton114Click
-      end
-      object RadioButton115: TRadioButton
-        Left = 16
-        Top = 196
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 16
-        OnClick = RadioButton115Click
-      end
-      object RadioButton116: TRadioButton
-        Left = 16
-        Top = 212
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 17
-        OnClick = RadioButton116Click
-      end
-      object RadioButton117: TRadioButton
-        Left = 20
-        Top = 248
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 18
-        OnClick = RadioButton117Click
-      end
-      object RadioButton118: TRadioButton
-        Left = 20
-        Top = 264
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 19
-        OnClick = RadioButton118Click
-      end
-      object RadioButton187: TRadioButton
-        Left = 16
-        Top = 132
-        Width = 13
-        Height = 13
-        TabOrder = 20
-        OnClick = RadioButton187Click
-      end
-    end
-    object GroupBox8: TGroupBox
-      Left = 604
-      Top = 16
-      Width = 345
-      Height = 409
-      Caption = ' PATOLOGIAS DEL SISTEMA DIGESTIVO '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 2
-      object Label697: TLabel
-        Left = 32
-        Top = 71
-        Width = 112
-        Height = 13
-        Caption = '| Diverticulosis sin dolor'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label698: TLabel
-        Left = 44
-        Top = 55
-        Width = 89
-        Height = 13
-        Caption = '| Regimen gástrico'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label699: TLabel
-        Left = 32
-        Top = 39
-        Width = 46
-        Height = 13
-        Caption = '| Gastritis'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label701: TLabel
-        Left = 32
-        Top = 23
-        Width = 42
-        Height = 13
-        Caption = '| Ulceras'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label702: TLabel
-        Left = 44
-        Top = 87
-        Width = 152
-        Height = 13
-        Caption = '| Regimen estimulante intestinal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label703: TLabel
-        Left = 44
-        Top = 119
-        Width = 210
-        Height = 13
-        Caption = '| Regimen estimulante intestinal moderado I'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label704: TLabel
-        Left = 32
-        Top = 103
-        Width = 116
-        Height = 13
-        Caption = '| Diverticulosis con dolor'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label705: TLabel
-        Left = 44
-        Top = 215
-        Width = 214
-        Height = 13
-        Caption = '| Regimen estimulante intestinal moderado II'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label707: TLabel
-        Left = 32
-        Top = 151
-        Width = 73
-        Height = 13
-        Caption = '| Colon irritable'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label708: TLabel
-        Left = 32
-        Top = 167
-        Width = 112
-        Height = 13
-        Caption = '| Enfermedad de Crohn'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label709: TLabel
-        Left = 32
-        Top = 251
-        Width = 94
-        Height = 13
-        Caption = '| Anorexia y Bulimia'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label710: TLabel
-        Left = 32
-        Top = 135
-        Width = 78
-        Height = 13
-        Caption = '| Colitis ulcerosa'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label711: TLabel
-        Left = 32
-        Top = 199
-        Width = 89
-        Height = 13
-        Caption = '| Diarreas crónicas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label712: TLabel
-        Left = 32
-        Top = 183
-        Width = 108
-        Height = 13
-        Caption = '| Inflamación intestinal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label713: TLabel
-        Left = 20
-        Top = 235
-        Width = 125
-        Height = 13
-        Caption = '| Transtornos alimentarios'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label715: TLabel
-        Left = 32
-        Top = 319
-        Width = 155
-        Height = 13
-        Caption = '| Descanso durante el embarazo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label716: TLabel
-        Left = 32
-        Top = 351
-        Width = 198
-        Height = 13
-        Caption = '| Recuperación en los partos con cesarea'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label717: TLabel
-        Left = 32
-        Top = 303
-        Width = 169
-        Height = 13
-        Caption = '| Alimentación durante el embarazo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label718: TLabel
-        Left = 20
-        Top = 271
-        Width = 167
-        Height = 13
-        Caption = '| Periodos de embarazo y lactancia'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label720: TLabel
-        Left = 32
-        Top = 367
-        Width = 168
-        Height = 13
-        Caption = '| La vitamina D durante la lactancia'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label721: TLabel
-        Left = 32
-        Top = 335
-        Width = 247
-        Height = 13
-        Caption = '| 5 frases que una futura madre no desea escuchar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label725: TLabel
-        Left = 32
-        Top = 287
-        Width = 143
-        Height = 13
-        Caption = '| El peso durante el embarazo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton148: TRadioButton
-        Left = 16
-        Top = 24
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton148Click
-      end
-      object RadioButton149: TRadioButton
-        Left = 16
-        Top = 40
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton149Click
-      end
-      object RadioButton151: TRadioButton
-        Left = 28
-        Top = 56
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton151Click
-      end
-      object RadioButton152: TRadioButton
-        Left = 16
-        Top = 72
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton152Click
-      end
-      object RadioButton153: TRadioButton
-        Left = 28
-        Top = 88
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton153Click
-      end
-      object RadioButton154: TRadioButton
-        Left = 16
-        Top = 104
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton154Click
-      end
-      object RadioButton155: TRadioButton
-        Left = 28
-        Top = 120
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton155Click
-      end
-      object RadioButton156: TRadioButton
-        Left = 16
-        Top = 136
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton156Click
-      end
-      object RadioButton157: TRadioButton
-        Left = 16
-        Top = 152
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton157Click
-      end
-      object RadioButton158: TRadioButton
-        Left = 16
-        Top = 168
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton158Click
-      end
-      object RadioButton159: TRadioButton
-        Left = 16
-        Top = 184
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton159Click
-      end
-      object RadioButton160: TRadioButton
-        Left = 16
-        Top = 200
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton160Click
-      end
-      object RadioButton162: TRadioButton
-        Left = 28
-        Top = 216
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton162Click
-      end
-      object RadioButton164: TRadioButton
-        Left = 16
-        Top = 252
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton164Click
-      end
-      object RadioButton165: TRadioButton
-        Left = 16
-        Top = 288
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton165Click
-      end
-      object RadioButton166: TRadioButton
-        Left = 16
-        Top = 304
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton166Click
-      end
-      object RadioButton167: TRadioButton
-        Left = 16
-        Top = 320
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 16
-        OnClick = RadioButton167Click
-      end
-      object RadioButton168: TRadioButton
-        Left = 16
-        Top = 336
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 17
-        OnClick = RadioButton168Click
-      end
-      object RadioButton169: TRadioButton
-        Left = 16
-        Top = 352
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 18
-        OnClick = RadioButton169Click
-      end
-      object RadioButton170: TRadioButton
-        Left = 16
-        Top = 368
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 19
-        OnClick = RadioButton170Click
-      end
-    end
-    object GroupBox9: TGroupBox
-      Left = 264
-      Top = 292
-      Width = 349
-      Height = 377
-      Caption = ' SALUD '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 3
-      object Label673: TLabel
-        Left = 32
-        Top = 23
-        Width = 96
-        Height = 13
-        Caption = '| La afección celiaca'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label675: TLabel
-        Left = 44
-        Top = 55
-        Width = 114
-        Height = 13
-        Caption = '| Selección de alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label676: TLabel
-        Left = 32
-        Top = 39
-        Width = 49
-        Height = 13
-        Caption = '| Diabetes'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label677: TLabel
-        Left = 44
-        Top = 87
-        Width = 98
-        Height = 13
-        Caption = '| Regimen hipograso'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label678: TLabel
-        Left = 32
-        Top = 71
-        Width = 100
-        Height = 13
-        Caption = '| Hipercolesterolemia'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label679: TLabel
-        Left = 44
-        Top = 103
-        Width = 121
-        Height = 13
-        Caption = '| Sustitutos de las grasas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label680: TLabel
-        Left = 44
-        Top = 183
-        Width = 165
-        Height = 13
-        Caption = '| Dietas hipograsas e hipocalóricas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label681: TLabel
-        Left = 32
-        Top = 167
-        Width = 66
-        Height = 13
-        Caption = '| Dislipidemias'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label682: TLabel
-        Left = 44
-        Top = 199
-        Width = 121
-        Height = 13
-        Caption = '| Sustitutos de las grasas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label683: TLabel
-        Left = 44
-        Top = 135
-        Width = 172
-        Height = 13
-        Caption = '| Selección de alimentos hiposódicos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label684: TLabel
-        Left = 32
-        Top = 279
-        Width = 93
-        Height = 13
-        Caption = '| Insuficiencia renal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label685: TLabel
-        Left = 44
-        Top = 263
-        Width = 185
-        Height = 13
-        Caption = '| Tabla comparativa de virus hepáticos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label686: TLabel
-        Left = 32
-        Top = 119
-        Width = 248
-        Height = 13
-        Caption = '| Hipertensión arterial y problemas cardiovasculares'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label687: TLabel
-        Left = 44
-        Top = 247
-        Width = 114
-        Height = 13
-        Caption = '| Selección de alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label688: TLabel
-        Left = 32
-        Top = 311
-        Width = 120
-        Height = 13
-        Caption = '| Patologías del páncreas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label689: TLabel
-        Left = 32
-        Top = 215
-        Width = 186
-        Height = 13
-        Caption = '| Insuficiencia hepática, hepatitis A y B'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label690: TLabel
-        Left = 44
-        Top = 295
-        Width = 114
-        Height = 13
-        Caption = '| Selección de alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label691: TLabel
-        Left = 44
-        Top = 151
-        Width = 97
-        Height = 13
-        Caption = '| Sustitutos de la sal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label692: TLabel
-        Left = 32
-        Top = 327
-        Width = 145
-        Height = 13
-        Caption = '| Patologias de las vías biliares'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label693: TLabel
-        Left = 44
-        Top = 343
-        Width = 114
-        Height = 13
-        Caption = '| Selección de alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label694: TLabel
-        Left = 44
-        Top = 231
-        Width = 95
-        Height = 13
-        Caption = '| No A, no B y Delta'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton126: TRadioButton
-        Left = 16
-        Top = 24
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton126Click
-      end
-      object RadioButton127: TRadioButton
-        Left = 16
-        Top = 40
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton127Click
-      end
-      object RadioButton128: TRadioButton
-        Left = 28
-        Top = 56
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton128Click
-      end
-      object RadioButton129: TRadioButton
-        Left = 28
-        Top = 88
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton129Click
-      end
-      object RadioButton130: TRadioButton
-        Left = 16
-        Top = 72
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton130Click
-      end
-      object RadioButton131: TRadioButton
-        Left = 28
-        Top = 104
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton131Click
-      end
-      object RadioButton132: TRadioButton
-        Left = 16
-        Top = 120
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton132Click
-      end
-      object RadioButton133: TRadioButton
-        Left = 28
-        Top = 136
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton133Click
-      end
-      object RadioButton134: TRadioButton
-        Left = 28
-        Top = 152
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton134Click
-      end
-      object RadioButton135: TRadioButton
-        Left = 16
-        Top = 168
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton135Click
-      end
-      object RadioButton136: TRadioButton
-        Left = 28
-        Top = 184
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton136Click
-      end
-      object RadioButton137: TRadioButton
-        Left = 28
-        Top = 200
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton137Click
-      end
-      object RadioButton138: TRadioButton
-        Left = 16
-        Top = 216
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton138Click
-      end
-      object RadioButton139: TRadioButton
-        Left = 28
-        Top = 232
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton139Click
-      end
-      object RadioButton140: TRadioButton
-        Left = 28
-        Top = 248
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton140Click
-      end
-      object RadioButton141: TRadioButton
-        Left = 28
-        Top = 264
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton141Click
-      end
-      object RadioButton142: TRadioButton
-        Left = 16
-        Top = 280
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 16
-        OnClick = RadioButton142Click
-      end
-      object RadioButton143: TRadioButton
-        Left = 28
-        Top = 296
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 17
-        OnClick = RadioButton143Click
-      end
-      object RadioButton144: TRadioButton
-        Left = 16
-        Top = 312
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 18
-        OnClick = RadioButton144Click
-      end
-      object RadioButton145: TRadioButton
-        Left = 28
-        Top = 344
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 19
-        OnClick = RadioButton145Click
-      end
-      object RadioButton146: TRadioButton
-        Left = 16
-        Top = 328
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 20
-        OnClick = RadioButton146Click
-      end
-    end
-    object Panel22: TPanel
-      Left = 972
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 5
-      OnClick = Panel22Click
-    end
-  end
-  object Panel13: TPanel
-    Left = 16
-    Top = 16
-    Width = 997
-    Height = 677
-    BevelOuter = bvNone
-    BevelWidth = 3
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 25
-    Visible = False
-    object Label734: TLabel
-      Left = 620
-      Top = 288
-      Width = 303
-      Height = 29
-      Caption = 'Biblioteca nutricional III '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -24
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label743: TLabel
-      Left = 276
-      Top = 359
-      Width = 42
-      Height = 14
-      Caption = '| Tablas'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clAqua
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Button83: TButton
-      Left = 804
-      Top = 588
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 1'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-      OnClick = Button83Click
-    end
-    object Button86: TButton
-      Left = 804
-      Top = 612
-      Width = 153
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Biblioteca nutricional 2'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = Button86Click
-    end
-    object GroupBox1: TGroupBox
-      Left = 516
-      Top = 56
-      Width = 385
-      Height = 217
-      Caption = ' DEPORTES '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 2
-      object Label735: TLabel
-        Left = 32
-        Top = 27
-        Width = 222
-        Height = 13
-        Caption = '| Beneficios de la actividad deportiva periódica'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label738: TLabel
-        Left = 32
-        Top = 75
-        Width = 279
-        Height = 13
-        Caption = '| Actividades recomendadas para quienes van a gimnasios'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label739: TLabel
-        Left = 32
-        Top = 59
-        Width = 150
-        Height = 13
-        Caption = '| Utilidad de la entrada en calor'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label740: TLabel
-        Left = 32
-        Top = 107
-        Width = 271
-        Height = 13
-        Caption = '| La flexibilidad en la entrada en calor y vuelta a la calma'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label741: TLabel
-        Left = 32
-        Top = 91
-        Width = 277
-        Height = 13
-        Caption = '| Métodos para controlar y mejorar la resistencia aeróbica'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label744: TLabel
-        Left = 32
-        Top = 123
-        Width = 137
-        Height = 13
-        Caption = '| El entrenamiento de fuerza'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label747: TLabel
-        Left = 32
-        Top = 171
-        Width = 116
-        Height = 13
-        Caption = '| Las dietas con pastillas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label748: TLabel
-        Left = 32
-        Top = 139
-        Width = 183
-        Height = 13
-        Caption = '| La transpiración y la pérdida de peso'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label750: TLabel
-        Left = 32
-        Top = 155
-        Width = 173
-        Height = 13
-        Caption = '| Efectos de anabólicos y esteroides'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label813: TLabel
-        Left = 32
-        Top = 43
-        Width = 156
-        Height = 13
-        Caption = '| Beneficios y momentos óptimos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton233: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton233Click
-      end
-      object RadioButton234: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton234Click
-      end
-      object RadioButton235: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton235Click
-      end
-      object RadioButton236: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton236Click
-      end
-      object RadioButton237: TRadioButton
-        Left = 16
-        Top = 92
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton237Click
-      end
-      object RadioButton238: TRadioButton
-        Left = 16
-        Top = 108
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton238Click
-      end
-      object RadioButton239: TRadioButton
-        Left = 16
-        Top = 124
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton239Click
-      end
-      object RadioButton241: TRadioButton
-        Left = 16
-        Top = 140
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton241Click
-      end
-      object RadioButton242: TRadioButton
-        Left = 16
-        Top = 156
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton242Click
-      end
-      object RadioButton244: TRadioButton
-        Left = 16
-        Top = 172
-        Width = 14
-        Height = 15
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton244Click
-      end
-    end
-    object GroupBox2: TGroupBox
-      Left = 24
-      Top = 24
-      Width = 389
-      Height = 305
-      Caption = ' OTROS TEMAS '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 3
-      object Label722: TLabel
-        Left = 32
-        Top = 59
-        Width = 185
-        Height = 13
-        Caption = '| Cuidados del cuerpo previo al verano'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label723: TLabel
-        Left = 32
-        Top = 27
-        Width = 274
-        Height = 13
-        Caption = '| El cáncer de mama e incidencia de vitaminas y minerales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label724: TLabel
-        Left = 32
-        Top = 75
-        Width = 171
-        Height = 13
-        Caption = '| Detección de falencias alimenticias'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label726: TLabel
-        Left = 32
-        Top = 43
-        Width = 259
-        Height = 13
-        Caption = '| Diferencia y ventajas de los parches anticonceptivos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label728: TLabel
-        Left = 32
-        Top = 91
-        Width = 213
-        Height = 13
-        Caption = '| El consumo del tabaco y sus consecuencias'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label731: TLabel
-        Left = 32
-        Top = 107
-        Width = 155
-        Height = 13
-        Caption = '| Tabaquismo y su efecto nocivo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label727: TLabel
-        Left = 32
-        Top = 123
-        Width = 131
-        Height = 13
-        Caption = '| Tabaquismo y periodoncia'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label729: TLabel
-        Left = 32
-        Top = 171
-        Width = 190
-        Height = 13
-        Caption = '| Efecto del tabaco sobre no fumadores'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label730: TLabel
-        Left = 32
-        Top = 155
-        Width = 184
-        Height = 13
-        Caption = '| Tabaquismo y odontología - Gingivitis'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label732: TLabel
-        Left = 32
-        Top = 139
-        Width = 211
-        Height = 13
-        Caption = '| Tabaquismo y odontología - Placa y cálculo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label805: TLabel
-        Left = 32
-        Top = 187
-        Width = 147
-        Height = 13
-        Caption = '| Exposición prenatal al tabaco'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label807: TLabel
-        Left = 32
-        Top = 219
-        Width = 175
-        Height = 13
-        Caption = '| El tabaquismo durante el embarazo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label808: TLabel
-        Left = 32
-        Top = 267
-        Width = 256
-        Height = 13
-        Caption = '| Evolución del organismo al abandonar el tabaquismo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label810: TLabel
-        Left = 32
-        Top = 251
-        Width = 183
-        Height = 13
-        Caption = '| El tabaquismo y la conducta en niños'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label811: TLabel
-        Left = 32
-        Top = 235
-        Width = 202
-        Height = 13
-        Caption = '| Patología pediatrica y tabaquismo pasivo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label812: TLabel
-        Left = 32
-        Top = 203
-        Width = 98
-        Height = 13
-        Caption = '| Muerte súbita fetal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton171: TRadioButton
-        Left = 16
-        Top = 28
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton171Click
-      end
-      object RadioButton172: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton172Click
-      end
-      object RadioButton173: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton173Click
-      end
-      object RadioButton174: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton174Click
-      end
-      object RadioButton175: TRadioButton
-        Left = 16
-        Top = 92
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton175Click
-      end
-      object RadioButton176: TRadioButton
-        Left = 16
-        Top = 108
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton176Click
-      end
-      object RadioButton177: TRadioButton
-        Left = 16
-        Top = 124
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton177Click
-      end
-      object RadioButton178: TRadioButton
-        Left = 16
-        Top = 140
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton178Click
-      end
-      object RadioButton179: TRadioButton
-        Left = 16
-        Top = 156
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton179Click
-      end
-      object RadioButton180: TRadioButton
-        Left = 16
-        Top = 172
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton180Click
-      end
-      object RadioButton181: TRadioButton
-        Left = 16
-        Top = 188
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton181Click
-      end
-      object RadioButton182: TRadioButton
-        Left = 16
-        Top = 204
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton182Click
-      end
-      object RadioButton183: TRadioButton
-        Left = 16
-        Top = 220
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 12
-        OnClick = RadioButton183Click
-      end
-      object RadioButton184: TRadioButton
-        Left = 16
-        Top = 236
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 13
-        OnClick = RadioButton184Click
-      end
-      object RadioButton185: TRadioButton
-        Left = 16
-        Top = 252
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 14
-        OnClick = RadioButton185Click
-      end
-      object RadioButton186: TRadioButton
-        Left = 16
-        Top = 268
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 15
-        OnClick = RadioButton186Click
-      end
-    end
-    object GroupBox3: TGroupBox
-      Left = 12
-      Top = 352
-      Width = 413
-      Height = 277
-      Caption = ' TABLAS '
-      Color = clBtnFace
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 4
-      object Label742: TLabel
-        Left = 20
-        Top = 95
-        Width = 149
-        Height = 13
-        Caption = '| Cálculos referidos a alimentos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label749: TLabel
-        Left = 32
-        Top = 43
-        Width = 71
-        Height = 13
-        Caption = '| Pesos ideales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label751: TLabel
-        Left = 32
-        Top = 59
-        Width = 121
-        Height = 13
-        Caption = '| Indice de masa corporal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label752: TLabel
-        Left = 32
-        Top = 159
-        Width = 241
-        Height = 13
-        Caption = '| Calorías, minerales y características de las frutas'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label753: TLabel
-        Left = 32
-        Top = 143
-        Width = 253
-        Height = 13
-        Caption = '| Calorías, minerales y características de los fiambres'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label754: TLabel
-        Left = 32
-        Top = 175
-        Width = 284
-        Height = 13
-        Caption = '| Clases, tipos y características de las hortalizas y verduras'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label755: TLabel
-        Left = 32
-        Top = 111
-        Width = 244
-        Height = 13
-        Caption = '| Calorías, minerales y características de las carnes'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label757: TLabel
-        Left = 32
-        Top = 191
-        Width = 206
-        Height = 13
-        Caption = '| Aporte nutricional de las comidas '#39'rápidas'#39
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label758: TLabel
-        Left = 32
-        Top = 75
-        Width = 151
-        Height = 13
-        Caption = '| Indice de contextura personal'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label759: TLabel
-        Left = 32
-        Top = 207
-        Width = 292
-        Height = 13
-        Caption = '| Calendario estacional de disponibilidad de frutas y verduras'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label761: TLabel
-        Left = 32
-        Top = 223
-        Width = 273
-        Height = 13
-        Caption = '| Calorías, minerales y vitaminas de los productos lácteos'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label763: TLabel
-        Left = 32
-        Top = 127
-        Width = 283
-        Height = 13
-        Caption = '| Calorías, minerales y características de huevos y cereales'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label766: TLabel
-        Left = 32
-        Top = 239
-        Width = 257
-        Height = 13
-        Caption = '| Calorías, minerales y características de los pescados'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object Label621: TLabel
-        Left = 20
-        Top = 28
-        Width = 91
-        Height = 13
-        Caption = '| Cálculo de índices'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-      end
-      object RadioButton243: TRadioButton
-        Left = 16
-        Top = 44
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 0
-        OnClick = RadioButton243Click
-      end
-      object RadioButton245: TRadioButton
-        Left = 16
-        Top = 60
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 1
-        OnClick = RadioButton245Click
-      end
-      object RadioButton246: TRadioButton
-        Left = 16
-        Top = 76
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 2
-        OnClick = RadioButton246Click
-      end
-      object RadioButton247: TRadioButton
-        Left = 16
-        Top = 112
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 3
-        OnClick = RadioButton247Click
-      end
-      object RadioButton248: TRadioButton
-        Left = 16
-        Top = 128
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 4
-        OnClick = RadioButton248Click
-      end
-      object RadioButton249: TRadioButton
-        Left = 16
-        Top = 144
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 5
-        OnClick = RadioButton249Click
-      end
-      object RadioButton250: TRadioButton
-        Left = 16
-        Top = 160
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 6
-        OnClick = RadioButton250Click
-      end
-      object RadioButton251: TRadioButton
-        Left = 16
-        Top = 176
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 7
-        OnClick = RadioButton251Click
-      end
-      object RadioButton252: TRadioButton
-        Left = 16
-        Top = 192
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 8
-        OnClick = RadioButton252Click
-      end
-      object RadioButton253: TRadioButton
-        Left = 16
-        Top = 208
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 9
-        OnClick = RadioButton253Click
-      end
-      object RadioButton254: TRadioButton
-        Left = 16
-        Top = 224
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 10
-        OnClick = RadioButton254Click
-      end
-      object RadioButton255: TRadioButton
-        Left = 16
-        Top = 240
-        Width = 13
-        Height = 13
-        Cursor = crHandPoint
-        TabOrder = 11
-        OnClick = RadioButton255Click
-      end
-    end
-    object Panel23: TPanel
-      Left = 972
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 5
-      OnClick = Panel23Click
-    end
-  end
   object Panel4: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 997
     Height = 677
     BevelOuter = bvNone
@@ -21318,7 +15703,7 @@ object nutr: Tnutr
       Height = 22
       Cursor = crHandPoint
       Hint = 'Revela elecciones homeopáticas constitucionales.'
-      Caption = 'Constitucionales básicos'
+      Caption = 'Constitucionales básicos >'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -21361,7 +15746,7 @@ object nutr: Tnutr
       OnClick = Button32Click
     end
     object Panel24: TPanel
-      Left = 972
+      Left = 968
       Top = 4
       Width = 22
       Height = 22
@@ -21382,7 +15767,7 @@ object nutr: Tnutr
   end
   object Panel5: TPanel
     Left = 16
-    Top = 16
+    Top = 12
     Width = 997
     Height = 433
     BevelOuter = bvNone
@@ -21573,12 +15958,12 @@ object nutr: Tnutr
     object Label498: TLabel
       Left = 20
       Top = 52
-      Width = 658
+      Width = 651
       Height = 13
       Caption = 
-        '| Pulse 2 veces sobre la etiqueta del ítem para equilibrarlo ind' +
-        'ividualmente o pulse el botón '#39'Rectificar todo'#39' para una rectifi' +
-        'cación general.'
+        'Pulse 2 veces sobre la etiqueta del ítem para equilibrarlo indiv' +
+        'idualmente o pulse el botón '#39'Rectificar todo'#39' para una rectifica' +
+        'ción general.'
       Font.Charset = ANSI_CHARSET
       Font.Color = clBlack
       Font.Height = -11
@@ -21821,6 +16206,23 @@ object nutr: Tnutr
       ParentFont = False
       Transparent = True
     end
+    object Label533: TLabel
+      Left = 904
+      Top = 404
+      Width = 77
+      Height = 13
+      Cursor = crHandPoint
+      Alignment = taRightJustify
+      Caption = 'Realizar informe'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label533Click
+    end
     object TrackBar1: TTrackBar
       Left = 14
       Top = 244
@@ -21924,23 +16326,6 @@ object nutr: Tnutr
       TickMarks = tmBoth
       TickStyle = tsAuto
     end
-    object Button11: TButton
-      Tag = 8
-      Left = 762
-      Top = 400
-      Width = 220
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Realizar informe'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-      OnClick = Button11Click
-    end
     object Button2: TButton
       Tag = 8
       Left = 762
@@ -21955,11 +16340,11 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = Button2Click
     end
     object Panel25: TPanel
-      Left = 972
+      Left = 968
       Top = 4
       Width = 22
       Height = 22
@@ -21974,26 +16359,9 @@ object nutr: Tnutr
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
       OnClick = Panel25Click
     end
-  end
-  object PDesarrollo: TPanel
-    Left = 0
-    Top = 0
-    Width = 1029
-    Height = 14
-    BevelOuter = bvNone
-    BevelWidth = 4
-    Color = clLime
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 21
-    Visible = False
   end
   object Panel16: TPanel
     Left = 0
@@ -22002,7 +16370,7 @@ object nutr: Tnutr
     Height = 12
     Align = alBottom
     BevelOuter = bvNone
-    TabOrder = 31
+    TabOrder = 27
     object GProgreso: TGauge
       Left = 150
       Top = 0
@@ -22040,7 +16408,7 @@ object nutr: Tnutr
     end
   end
   object SETiempo: TSpinEdit
-    Left = 192
+    Left = 264
     Top = 700
     Width = 37
     Height = 19
@@ -22052,34 +16420,3976 @@ object nutr: Tnutr
     MaxValue = 20
     MinValue = 3
     ParentFont = False
-    TabOrder = 33
+    TabOrder = 29
     Value = 3
   end
   object BNutricion: TButton
     Left = 920
-    Top = 24
+    Top = 28
     Width = 63
     Height = 17
     Caption = 'BNutricion'
-    TabOrder = 32
+    TabOrder = 28
     Visible = False
     OnClick = BNutricionClick
+  end
+  object Panel6: TPanel
+    Left = 16
+    Top = 12
+    Width = 997
+    Height = 677
+    BevelOuter = bvNone
+    BevelWidth = 2
+    BorderWidth = 2
+    Color = clYellow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    Visible = False
+    object Label532: TLabel
+      Left = 40
+      Top = 604
+      Width = 898
+      Height = 26
+      Caption = 
+        '                                                                ' +
+        '                                            Procesos supurativos' +
+        '.  La supuración de la piel y membranas mucosas, trastornos de c' +
+        'recimiento, problemas reumáticos'#13#10'crónicos.  Alteraciones en el ' +
+        'funcionamiento hepático, inflamación de los nódulos linfáticos p' +
+        'or hinchazón (acudir al médico), dolor, enrojecimiento y bronqui' +
+        'tis.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label518: TLabel
+      Left = 40
+      Top = 550
+      Width = 939
+      Height = 52
+      Caption = 
+        '                                                                ' +
+        '                     Ayuda a mantener la elasticidad y la resist' +
+        'encia del cabello y las uñas.  La supuración de la piel, furúncu' +
+        'los, fístulas, enfermedades reumáticas '#13#10'de las articulaciones, ' +
+        'artritis, trastornos de los discos vertebrales, osteoporosis, pr' +
+        'oblemas de crecimiento, tendinitis, endurecimiento de las arteri' +
+        'as.  También para sudor excesivo, síntomas de '#13#10'envejecimiento p' +
+        'rematuro (arrugas faciales), quemaduras, cabello y uñas frágiles' +
+        ', alopecia, crecimiento irregular de las uñas y acné.  Su uso co' +
+        'ntinuado puede provocar sequedad en las '#13#10'mucosas.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label549: TLabel
+      Left = 40
+      Top = 509
+      Width = 938
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                                            Procesos de desintox' +
+        'icación y eliminación de fluidos.  Estreñimiento, diarrea, dific' +
+        'ultad para digerir grasas, heces de color claro, '#13#10'flatulencias,' +
+        ' cólicos, edema, erupciones en la piel con ampollas, acné.  Tamb' +
+        'ién para enuresis nocturna, inflamaciones debidas a un resfriado' +
+        ' caracterizadas por mucosidades amarillas '#13#10'verdosas, dolores re' +
+        'umáticos que empeoran con frío y humedad, tendencia a la melanco' +
+        'lía y depresión.  Ayuda también a reforzar el tratamiento clínic' +
+        'o de la diabetes.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label777: TLabel
+      Left = 40
+      Top = 467
+      Width = 941
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                                            Metabolismo y exceso' +
+        ' de acidez.  Los dolores digestivos en niños pequeños (cólicos, ' +
+        'flatulencias) y adultos, después de comidas '#13#10'copiosas, trastorn' +
+        'os de digestión cuando se consumen alimentos grasos, vómitos con' +
+        ' sabor ácido, reflujo ácido, ardor estomacal y acidez, diarrea m' +
+        'aloliente.  También para problemas '#13#10'respiratorios causados por ' +
+        'asma, síntomas de gota en las articulaciones de las extremidades' +
+        ' (dedos del pie) y acné facial debido al metabolismo.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label778: TLabel
+      Left = 40
+      Top = 410
+      Width = 902
+      Height = 52
+      Caption = 
+        '                                                                ' +
+        '                                                               L' +
+        'a sequedad de la piel y membranas mucosas, diarrea acuosa, estre' +
+        'ñimiento, gastritis con vómitos acuosos, '#13#10'secreción nasal abund' +
+        'ante, lagrimeo imprevisto de los ojos (con viento), edemas (hinc' +
+        'hazón) provocada por causas diversas como picaduras de insectos,' +
+        ' dolor de muelas con producción '#13#10'de saliva, erupciones con ampo' +
+        'llitas acuosas, depresión con llantos, debilitación general, per' +
+        'dida de fuerza y dolores reumáticos.  Ayuda también en el tratam' +
+        'iento clínico de la diarrea o '#13#10'vómitos frecuentes.  Es útil tam' +
+        'bién para la eyaculación precoz o tardía, caída del vello genita' +
+        'l, impotencia y problemas de erección.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label519: TLabel
+      Left = 40
+      Top = 340
+      Width = 929
+      Height = 65
+      Caption = 
+        '                                                                ' +
+        '                                                       Calambres' +
+        ' y espasmos musculares: menstruales, tensiones habituales de la ' +
+        'zona cervical o de los hombros o espasmos '#13#10'dolorosos en el trac' +
+        'to gastrointestinal.  Se la considera la aspirina homeopática, y' +
+        'a que se suele utilizar para dolores de cabeza y musculares.  At' +
+        'aques de tos, calambres en las piernas, '#13#10'estómago, los vasos sa' +
+        'nguíneos (como la migraña), la menstruación dolorosa, los dolore' +
+        's de dientes y de estómago de los niños, asma, espasmos muscular' +
+        'es, cólicos, insomnio, '#13#10'sobre excitación, agitación, pánico esc' +
+        'énico, ansiedad derivada de los exámenes y agitación nerviosa.  ' +
+        'Además reduce los dolores reumáticos.  Ayuda también al tratamie' +
+        'nto clínico de '#13#10'dolores graves, calambres, dolor de riñón y ves' +
+        'ícula biliar.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label551: TLabel
+      Left = 40
+      Top = 284
+      Width = 939
+      Height = 52
+      Caption = 
+        '                                                                ' +
+        '                                   Inflamaciones crónicas y tras' +
+        'tornos dermatológicos crónicos.  Todo tipo de alteraciones en la' +
+        ' piel (crecimiento irregular de las uñas de '#13#10'los pies y manos, ' +
+        'heridas de lenta curación, erupciones con pus y escamas que supu' +
+        'ran en la piel).  Desequilibrios del hígado, para la saturación ' +
+        'de toxinas en el hígado y para todo tipo de '#13#10'inflamaciones de l' +
+        'a membrana mucosa, para la rinitis crónica, y el dolor reumático' +
+        ' no localizado.  Ayuda también al tratamiento clínico de las for' +
+        'mas graves de las enfermedades mencionadas, '#13#10'además de la psori' +
+        'asis, depresión y ansiedad.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label782: TLabel
+      Left = 40
+      Top = 240
+      Width = 941
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                                                            Ment' +
+        'e y sistema nervioso.  Para tratar la dermatitis del pañal, el a' +
+        'gotamiento mental, emocional y físico, los grados de '#13#10'debilidad' +
+        ' (después de situaciones de estrés), insomnio causado por nervio' +
+        's, falta de energía, desánimo, calambres, alopecia localizada e ' +
+        'hiperactividad en niños.  Ayuda también al tratamiento '#13#10'contra ' +
+        'la depresión, debilitación de los músculos y del corazón y la pa' +
+        'rálisis.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label780: TLabel
+      Left = 40
+      Top = 196
+      Width = 951
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                                          Inflamación de las mem' +
+        'branas mucosas: rinitis, bronquitis, gastritis, colitis y cistit' +
+        'is. Inflamación de la mucosa estomacal e intestinal, '#13#10'conjuntiv' +
+        'itis, bursitis, artritis y todas las inflamaciones que son provo' +
+        'cadas por la fiebre.  Ayuda al tratamiento médico de quemaduras ' +
+        'de primer y segundo grado, inflamación de la vaina '#13#10'del tendón ' +
+        'y herpes zóster.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label783: TLabel
+      Left = 40
+      Top = 140
+      Width = 927
+      Height = 52
+      Caption = 
+        '                                                                ' +
+        '                                          Infecciones en su fase' +
+        ' inicial.  Se usa para cualquier fiebre y se le considera el seg' +
+        'undo Aconitum, por su capacidad para bajar '#13#10'la temperatura.  Se' +
+        ' suele dar cuando la persona, además, presenta debilidad por la ' +
+        'fiebre.  Alteraciones en el metabolismo del hierro, sistema inmu' +
+        'nológico débil, pequeñas lesiones (externas e '#13#10'internas), quema' +
+        'duras de primer grado, problemas de memoria y concentración, mal' +
+        'a circulación (pies y manos frías).  También para dolores muscul' +
+        'ares, alteraciones en el crecimiento de la '#13#10'piel, cabello y uña' +
+        's, inflamación nasal, tos, amigdalitis (también con fiebre).  Ay' +
+        'uda al tratamiento contra la diarrea y la gastritis.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label784: TLabel
+      Left = 40
+      Top = 96
+      Width = 909
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                                                Ayuda a la recup' +
+        'eración después de fracturas óseas, eliminar el dolor del crecim' +
+        'iento, la producción lenta e insuficiente '#13#10'de los huesos en niñ' +
+        'os y adolescentes, debilitación del organismo, crecimiento alter' +
+        'ado de los dientes, dolor de muelas.  También para espasmos en l' +
+        'os bebés, espasmos musculares, '#13#10'hormigueo y rigidez de brazos y' +
+        ' piernas, nerviosismo, propensión a hemorragias nasales y picore' +
+        's de la piel en la vejez.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label82: TLabel
+      Left = 40
+      Top = 52
+      Width = 859
+      Height = 39
+      Caption = 
+        '                                                                ' +
+        '                     Tejido conectivo, ligamentos y tendones, ve' +
+        'nas y músculos.  Arrugas, estrías, hemorroides, varices, esmalte' +
+        ' dental débil, '#13#10'crecimiento irregular de las uñas, hongos en uñ' +
+        'as, formación excesiva de callos, psoriasis, pústulas de acné en' +
+        'durecidas, verrugas duras, cicatrices desfiguradas, piel agrieta' +
+        'da, '#13#10'rasguños, hendiduras en la boca, dedos de los pies en form' +
+        'a de martillo, espolones óseos.  Ayuda al tratamiento contra el ' +
+        'raquitismo y disminución de la masa ósea (osteoporosis).'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label461: TLabel
+      Left = 14
+      Top = 52
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label462: TLabel
+      Left = 14
+      Top = 96
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label463: TLabel
+      Left = 14
+      Top = 140
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label464: TLabel
+      Left = 14
+      Top = 196
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label465: TLabel
+      Left = 14
+      Top = 240
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label466: TLabel
+      Left = 14
+      Top = 284
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label467: TLabel
+      Left = 14
+      Top = 340
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label468: TLabel
+      Left = 14
+      Top = 410
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label469: TLabel
+      Left = 14
+      Top = 467
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label470: TLabel
+      Left = 14
+      Top = 509
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label471: TLabel
+      Left = 14
+      Top = 550
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label472: TLabel
+      Left = 14
+      Top = 604
+      Width = 18
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label473: TLabel
+      Tag = 8
+      Left = 40
+      Top = 52
+      Width = 248
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Calcium fluoratum | La sal de la elasticidad.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label473Click
+    end
+    object Label474: TLabel
+      Tag = 8
+      Left = 40
+      Top = 96
+      Width = 331
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Calcium phosphoricum | La sal de los huesos y los dientes.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label474Click
+    end
+    object Label475: TLabel
+      Tag = 8
+      Left = 40
+      Top = 140
+      Width = 311
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Ferrum phosphoricum | La sal de los primeros auxilios.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label475Click
+    end
+    object Label476: TLabel
+      Tag = 8
+      Left = 40
+      Top = 196
+      Width = 310
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Kalium chloratum | La sal de las membranas mucosas.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label476Click
+    end
+    object Label477: TLabel
+      Tag = 8
+      Left = 40
+      Top = 240
+      Width = 365
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Kalium phosphoricum | La sal de la mente y el sistema nervioso.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label477Click
+    end
+    object Label478: TLabel
+      Tag = 8
+      Left = 40
+      Top = 284
+      Width = 293
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Kalium sulfuricum | La sal de la inflamación crónica.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label478Click
+    end
+    object Label479: TLabel
+      Tag = 8
+      Left = 40
+      Top = 340
+      Width = 352
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Magnesium phosphoricum | La sal de los calambres y dolores.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label479Click
+    end
+    object Label480: TLabel
+      Tag = 8
+      Left = 40
+      Top = 410
+      Width = 371
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 
+        ' Natrium chloratum | La sal del equilibrio de los fluidos corpor' +
+        'ales.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label480Click
+    end
+    object Label481: TLabel
+      Tag = 8
+      Left = 40
+      Top = 467
+      Width = 316
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Natrium phosphoricum | La sal del equilibro ácido-base.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label481Click
+    end
+    object Label482: TLabel
+      Tag = 8
+      Left = 40
+      Top = 509
+      Width = 317
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Natrium sulfuricum | La sal de la eliminación de toxinas.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label482Click
+    end
+    object Label483: TLabel
+      Tag = 8
+      Left = 40
+      Top = 550
+      Width = 248
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Silicea | La sal del cabello, las uñas y la piel.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label483Click
+    end
+    object Label484: TLabel
+      Tag = 8
+      Left = 40
+      Top = 604
+      Width = 318
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' Calcium sulfuricum | La sal de los procesos depurativos.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label484Click
+    end
+    object Label800: TLabel
+      Left = 13
+      Top = 16
+      Width = 265
+      Height = 29
+      Caption = 'SALES DE SCHÜSSLER'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -24
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label81: TLabel
+      Left = 900
+      Top = 652
+      Width = 77
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Realizar informe'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label81Click
+    end
+    object Label785: TLabel
+      Left = 16
+      Top = 652
+      Width = 488
+      Height = 13
+      Caption = 
+        'Pulse sobre el nombre de la etiqueta de la sal que desea equilib' +
+        'rar hasta que la etiqueta se desactive.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Panel20: TPanel
+      Left = 968
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      OnClick = Panel20Click
+    end
+  end
+  object PBasesDeDatos: TPanel
+    Left = 16
+    Top = 12
+    Width = 409
+    Height = 489
+    TabOrder = 30
+    Visible = False
+    object LBOrganosGlandulas: TListBox
+      Left = 16
+      Top = 48
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Bazo.'
+        ' Cerebro.'
+        ' Circuitos de la memoria.'
+        ' Corazón.'
+        ' Dentadura.'
+        ' Estómago.'
+        ' Gónadas.'
+        ' Hígado.'
+        ' Hipotálamo.'
+        ' Intestino delgado.'
+        ' Intestino grueso.'
+        ' Lengua.'
+        ' Lóbulo frontal del cerebro.'
+        ' Lóbulo occipital del cerebro.'
+        ' Lóbulo parietal del cerebro.'
+        ' Lóbulo temporal del cerebro.'
+        ' Médula espinal.'
+        ' Médula oblongata.'
+        ' Oído.'
+        ' Ojos.'
+        ' Páncreas.'
+        ' Paratiroides.'
+        ' Piel.'
+        ' Pineal.'
+        ' Pituitaria.'
+        ' Pulmones.'
+        ' Riñón.'
+        ' Sangre.'
+        ' Senos nasales.'
+        ' Sistema límbico.'
+        ' Sistema linfático.'
+        ' Suprarrenales.'
+        ' Timo.'
+        ' Tiroides.'
+        ' Vejiga.')
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+    end
+    object BOrganosGlandulas: TButton
+      Left = 216
+      Top = 48
+      Width = 180
+      Height = 26
+      Caption = 'BOrganosGlandulas'
+      TabOrder = 1
+      OnClick = BOrganosGlandulasClick
+    end
+    object LBCausas: TListBox
+      Left = 16
+      Top = 12
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acciones de voluntad opuestas.'
+        ' Acciones disonantes.'
+        ' Acumulación de energía superflua.'
+        ' Agentes químicos.'
+        ' Ahogo de sentimientos.'
+        ' Alimentación incorrecta.'
+        ' Alteración cromosómica cualitativa.'
+        ' Alteración cromosómica cuantitativa.'
+        ' Alteración estructural de algún órgano.'
+        ' Alteración funcional de algún órgano.'
+        ' Alteración genética.'
+        ' Amebas.'
+        ' Bacteria.'
+        ' Balance del pH.'
+        ' Condiciones hereditarias.'
+        ' Contaminación electromagnética.'
+        ' Contaminación medio ambiental.'
+        ' Deficiencia en dieta.'
+        ' Deficiencia o exceso nutricional.'
+        ' Deseo excesivo.'
+        ' Desquilibrio en el pH.'
+        ' Elementos nutritivos (exceso o deficiencia).'
+        ' Estrés físico.'
+        ' Estrés mental.'
+        ' Exceso de azúcar.'
+        ' Exceso de energía.'
+        ' Factores hereditarios.'
+        ' Factores mecánicos traumáticos.'
+        ' Factores mentales.'
+        ' Factores psicológicos.'
+        ' Fases lunares.'
+        ' Hemorragia.'
+        ' Hidratación.'
+        ' Hiperreactividad.'
+        ' Hipertensión.'
+        ' Hipertermia general.'
+        ' Hipertermia local.'
+        ' Hipotensión.'
+        ' Hipotermia general.'
+        ' Hipotermia local.'
+        ' Impureza en sangre.'
+        ' Incredulidad.'
+        ' Infección.'
+        ' Inquietudes excesivas.'
+        ' Interacciones medio ambiantes.'
+        ' Interacciones sociales.'
+        ' Irritación, cólera, enfado.'
+        ' Medicaciones alopáticas.'
+        ' Metales pesados.'
+        ' Miasma / Predisposición.'
+        ' Opresión espiritual.'
+        ' Parásitos.'
+        ' Patógenos.'
+        ' Pensamientos discordantes.'
+        ' Pensamientos negativos.'
+        ' Postura incorrecta al caminar.'
+        ' Postura incorrecta al dormir.'
+        ' Postura incorrecta al sentarse.'
+        ' Priones.'
+        ' Procesos biológicos.'
+        ' Producción hormonal.'
+        ' Propósitos negativos.'
+        ' Protozoos.'
+        ' Radiaciones ionizantes.'
+        ' Repercusión kármica.'
+        ' Resistencia inconciente a cambiar o explorarse a sí mismo.'
+        ' Respiración incorrecta.'
+        ' Sentimientos disonantes.'
+        ' Shock.'
+        ' Supresión alopática.'
+        ' Tensión muscular.'
+        ' Toma de conciencia.'
+        ' Toxinas medioambientales.'
+        ' Toxinas propias.'
+        ' Transferencia de oxígeno.'
+        ' Trauma no sanado.'
+        ' Trauma o lesión.'
+        ' Virus.')
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object BCausas: TButton
+      Left = 216
+      Top = 12
+      Width = 180
+      Height = 26
+      Caption = 'BCausas'
+      TabOrder = 3
+      Visible = False
+      OnClick = BCausasClick
+    end
+    object LBMeridianos: TListBox
+      Left = 16
+      Top = 120
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Merdiano del Vaso Gobernador.'
+        ' Meridiano Circulación + Sexualidad.'
+        ' Meridiano de la Vejiga.'
+        ' Meridiano de la Vesícula Biliar.'
+        ' Meridiano del Bazo-Páncreas.'
+        ' Meridiano del Corazón.'
+        ' Meridiano del Estómago.'
+        ' Meridiano del Hígado.'
+        ' Meridiano del Intestino Delgado.'
+        ' Meridiano del Intestino Grueso.'
+        ' Meridiano del Maestro del Corazón o Pericardio.'
+        ' Meridiano del Pulmón.'
+        ' Meridiano del Riñón.'
+        ' Meridiano del Triple Calefactor.'
+        ' Meridiano del Vaso Concepción.')
+      ParentFont = False
+      TabOrder = 4
+    end
+    object BMeridianos: TButton
+      Left = 216
+      Top = 120
+      Width = 180
+      Height = 26
+      Caption = 'BMeridianos'
+      TabOrder = 5
+      OnClick = BMeridianosClick
+    end
+    object LBENegativas: TListBox
+      Left = 16
+      Top = 228
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Aburrimiento.'
+        ' Adicción.'
+        ' Agresión.'
+        ' Alteración.'
+        ' Ansiedad.'
+        ' Antagonismo.'
+        ' Apatía.'
+        ' Apego.'
+        ' Arrogancia.'
+        ' Asco.'
+        ' Autismo.'
+        ' Avaricia.'
+        ' Aversión.'
+        ' Catastrofismo.'
+        ' Celos.'
+        ' Codicia.'
+        ' Cólera.'
+        ' Conciencia.'
+        ' Concientización.'
+        ' Conflicto de identidad.'
+        ' Conflicto religioso.'
+        ' Confusión.'
+        ' Congoja.'
+        ' Conmoción.'
+        ' Coráje.'
+        ' Crítica.'
+        ' Culpa.'
+        ' Curiosidad.'
+        ' Decepción.'
+        ' Depresión.'
+        ' Desamor.'
+        ' Desamparo.'
+        ' Desánimo.'
+        ' Desasosiego.'
+        ' Desconcierto.'
+        ' Desconfianza.'
+        ' Desconsuelo.'
+        ' Descuido.'
+        ' Deseo (agudo).'
+        ' Deseo de que las cosas sean diferentes.'
+        ' Desesperación.'
+        ' Desgano.'
+        ' Desidia.'
+        ' Desilusión.'
+        ' Desolación.'
+        ' Desprecio.'
+        ' Dolor.'
+        ' Dominación.'
+        ' Duda de sí mismo.'
+        ' Duda.'
+        ' Duelo.'
+        ' Enfado.'
+        ' Enfoque mental.'
+        ' Enojo.'
+        ' Entusiasmo.'
+        ' Envidia.'
+        ' Espanto.'
+        ' Espiritualidad.'
+        ' Estupor (agudo).'
+        ' Extasis.'
+        ' Falta de concentración.'
+        ' Fastidio.'
+        ' Fobia.'
+        ' Frustración.'
+        ' Hostilidad.'
+        ' Hostilidad encubierta.'
+        ' Impaciencia.'
+        ' Impulsividad.'
+        ' Inadaptabilidad.'
+        ' Indiferencia.'
+        ' Indignación.'
+        ' Inquietud.'
+        ' Inseguridad.'
+        ' Intriga.'
+        ' Ira.'
+        ' Irrealismo.'
+        ' Irritación.'
+        ' Lealtad.'
+        ' Lujuria.'
+        ' Manías.'
+        ' Melancolía.'
+        ' Mezquindad.'
+        ' Miedo.'
+        ' Monotonía.'
+        ' Necesidad de cambio.'
+        ' Negación.'
+        ' Negociación.'
+        ' Nerviosismo.'
+        ' Nostalgia.'
+        ' Obnubilación.'
+        ' Observación.'
+        ' Obsesividad.'
+        ' Obstinación.'
+        ' Odio.'
+        ' Omnipotencia.'
+        ' Orgullo.'
+        ' Pánico.'
+        ' Pasividad.'
+        ' Pena.'
+        ' Pereza.'
+        ' Perfeccionismo.'
+        ' Pesimismo.'
+        ' Poder.'
+        ' Preocupación.'
+        ' Prepotencia.'
+        ' Proyección.'
+        ' Rabia.'
+        ' Racionalización.'
+        ' Rebeldía.'
+        ' Recelo.'
+        ' Rechazo.'
+        ' Regresión.'
+        ' Rencor.'
+        ' Repudio.'
+        ' Resentimiento.'
+        ' Resignación.'
+        ' Resistencia al cambio.'
+        ' Resquemor.'
+        ' Risa nerviosa.'
+        ' Sensualidad.'
+        ' Sentimiento de abandono.'
+        ' Sentimiento de incompresión.'
+        ' Sexualidad.'
+        ' Sobrecogimiento.'
+        ' Sumisión.'
+        ' Temerosidad.'
+        ' Temor.'
+        ' Terror.'
+        ' Timidez.'
+        ' Traición.'
+        ' Tristeza.'
+        ' Vacío existencial.'
+        ' Vanidad.'
+        ' Venganza.'
+        ' Vergüenza.')
+      ParentFont = False
+      TabOrder = 6
+    end
+    object BENegativas: TButton
+      Left = 216
+      Top = 228
+      Width = 180
+      Height = 26
+      Caption = 'BENegativas'
+      TabOrder = 7
+      OnClick = BENegativasClick
+    end
+    object LBEPositivas: TListBox
+      Left = 16
+      Top = 192
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Admiración.'
+        ' Afecto.'
+        ' Alegría.'
+        ' Alivio.'
+        ' Amor.'
+        ' Ampliación.'
+        ' Añoranza.'
+        ' Armonía.'
+        ' Arrojo.'
+        ' Asombro.'
+        ' Autoelogio.'
+        ' Buen humor.'
+        ' Calma.'
+        ' Cambio.'
+        ' Cariño.'
+        ' Compartir.'
+        ' Compasión.'
+        ' Conciliación.'
+        ' Confianza.'
+        ' Construcción.'
+        ' Creatividad.'
+        ' Curiosidad.'
+        ' Deseo.'
+        ' Diversión.'
+        ' Ecuanimidad.'
+        ' Empatía.'
+        ' Ensimismamiento.'
+        ' Entusiasmo.'
+        ' Esperanza.'
+        ' Euforia.'
+        ' Excitación.'
+        ' Extasis.'
+        ' Felicidad.'
+        ' Fortaleza.'
+        ' Generosidad.'
+        ' Gratitud.'
+        ' Humildad.'
+        ' Inspiración.'
+        ' Interés por la vida.'
+        ' Optimismo.'
+        ' Orgullo.'
+        ' Paciencia.'
+        ' Pasión.'
+        ' Percepción.'
+        ' Perdón.'
+        ' Placer.'
+        ' Plenitud.'
+        ' Regocijo.'
+        ' Saboreo.'
+        ' Sanidad.'
+        ' Satisfacción.'
+        ' Seguridad.'
+        ' Serenidad.'
+        ' Sociego.'
+        ' Solidaridad.'
+        ' Sorpresa.'
+        ' Templanza.'
+        ' Ternura.'
+        ' Tranquilidad.'
+        ' Valentía.')
+      ParentFont = False
+      TabOrder = 8
+    end
+    object BEPositivas: TButton
+      Left = 216
+      Top = 192
+      Width = 180
+      Height = 26
+      Caption = 'BEPositivas'
+      TabOrder = 9
+      OnClick = BEPositivasClick
+    end
+    object LBProcesos: TListBox
+      Left = 16
+      Top = 156
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Adherencia celular.'
+        ' Alfa oxidación.'
+        ' Beta oxidación'
+        ' Circulación.'
+        ' Comunicación celular.'
+        ' Crecimiento celular.'
+        ' Diferenciación celular.'
+        ' Digestión.'
+        ' Enlaces moleculares.'
+        ' Estructura molecular.'
+        ' Expresión genética.'
+        ' Factores energéticos.'
+        ' Fermentación.'
+        ' Hidroxilación.'
+        ' Metabolismo: anabolismo.'
+        ' Metabolismo: catabolismo.'
+        ' Morfogénesis.'
+        ' Omega oxidación.'
+        ' Oxidación de ácidos grasos.'
+        ' Pigmentación.'
+        ' Proceso fisiológico celular.'
+        ' Procesos fisiológicos.'
+        ' Procesos químicos inducidos.'
+        ' Procesos termodinámicos.'
+        ' Producción de enzimas.'
+        ' Reconocimiento celular.'
+        ' Replicación del ADN.'
+        ' Reproducción.'
+        ' Respiración.'
+        ' Respuesta a estímulos.'
+        ' Salivación.'
+        ' Secreción.'
+        ' Síntesis de glúcidos.'
+        ' Síntesis de lípidos.'
+        ' Síntesis de proteínas.'
+        ' Síntesis del ARN.'
+        ' Transpiración.')
+      ParentFont = False
+      TabOrder = 10
+      Visible = False
+    end
+    object BProcesos: TButton
+      Left = 216
+      Top = 156
+      Width = 180
+      Height = 26
+      Caption = 'BProcesos'
+      TabOrder = 11
+      OnClick = BProcesosClick
+    end
+    object LBAVM: TListBox
+      Left = 16
+      Top = 84
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acetogeninas annonáceas.'
+        ' Acido lipoico.'
+        ' Acido lisofosratídico.'
+        ' Acidos (alquifuranil)acilcarboxilicos (urofánicos).'
+        ' Acidos (alquifuranil)acilcarboxilicos (wyerona).'
+        ' Acidos grasos acetilénicos (ácido taririco).'
+        ' Acidos grasos cis.'
+        ' Acidos grasos de cadena impar (C13-C33).'
+        ' Acidos grasos endocíclicos (ácido endiándrico).'
+        ' Acidos grasos endocíclicos (ácido malválico).'
+        ' Acidos grasos endocíclicos prostanoides (eclonialactonas).'
+        ' Acidos grasos endocíclicos prostanoides (jasmonoides).'
+        ' Acidos grasos endocíclicos prostanoides (prostaglandinas).'
+        ' Acidos grasos endocíclicos prostanoides (tromboxanos).'
+        ' Acidos grasos insaturados.'
+        ' Acidos grasos monoinsaturados (ácido oleico).'
+        ' Acidos grasos poliinsaturados (ácido araquidónico).'
+        ' Acidos grasos poliinsaturados (ácido linoleico).'
+        ' Acidos grasos poliinsaturados (ácido linolénico).'
+        ' Acidos grasos ramificados (ácidos isoalquil).'
+        ' Acidos grasos ramificados (ácidos polimetilados).'
+        ' Acidos grasos ramificados (anteisoalquilcarboxílicos).'
+        ' Acidos grasos ramificados (metilcarboxílicos).'
+        ' Acidos grasos saturados cadena corta (ácido butírico).'
+        ' Acidos grasos saturados cadena corta (ácido isobutírico).'
+        ' Acidos grasos saturados cadena corta (ácido isovalérico).'
+        ' Acidos grasos saturados cadena corta (ácido nonanoico).'
+        ' Acidos grasos saturados cadena corta (ácido pirúvico).'
+        ' Acidos grasos saturados cadena corta (ácido valérico).'
+        ' Acidos grasos saturados cadena larga (ácido esteárico).'
+        ' Acidos grasos saturados cadena larga (ácido mirístico).'
+        ' Acidos grasos saturados cadena larga (ácido palmítico).'
+        ' Acidos grasos saturados de cadena media (C12-C14).'
+        ' Acidos grasos trans.'
+        ' Acidos grasos w-cíclicos arilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloclohexilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloheptilalquilcarboxílicos.'
+        
+          ' Acidos grasos w-cíclicos ciclopentenialquilcarboxílicos (ácido ' +
+          'hidnocárpico).'
+        ' Acidos grasos w-cíclicos hachijodinas.'
+        ' Acilhomoserinlactonas.'
+        ' ADN ligasa.'
+        ' Albúmina sérica.'
+        ' Alcoholes + Aldehídos grasos.'
+        ' Amidas grasas.'
+        ' Amilasa.'
+        ' Amiloglucosidasas.'
+        ' Aniones Cl-.'
+        ' Aniones CO3/2-.'
+        ' Aniones HCO3-.'
+        ' Aniones PO4/3-.'
+        ' Antocianinas.'
+        ' Auronas.'
+        ' Biocitina.'
+        ' Boro.'
+        ' Calcio.'
+        ' Carbonato cálcico.'
+        ' Cardiolipina.'
+        ' Catalasas.'
+        ' Cationes Ca2+.'
+        ' Cationes K+.'
+        ' Cationes Mg2+.'
+        ' Cationes Na+.'
+        ' Cationes NH4+.'
+        ' Celulasas.'
+        ' Chalconas'
+        ' Cianolípidos.'
+        ' Cobre.'
+        ' Coenzima A.'
+        ' Coenzima B12.'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        
+          ' Condensación de ácidos grasos (ácidos alquitricarboxílicos - ác' +
+          'ido agárico).'
+        ' Condensación de ácidos grasos (acilonas).'
+        ' Condensación de ácidos grasos (alquiltetronatos).'
+        
+          ' Condensación de ácidos grasos (anhídridos alquilsuccínicos - ca' +
+          'nadensólido).'
+        ' Condensación de ácidos grasos (esfingoides - esfingosa).'
+        ' Condensación de ácidos grasos (lipstanina).'
+        ' Condensación de ácidos grasos (macrocetonas - civetona).'
+        ' Condensación de ácidos grasos (nonádridos - rubratoxina).'
+        ' Cromo.'
+        ' Cuerpos cetónicos.'
+        ' Depósitos de triglicéridos.'
+        ' Diacilglicerol.'
+        ' Diacilglicerol-acil-transferasa (DGAT).'
+        ' Dihidroflavonoles.'
+        ' EC1 Oxidorreductasas.'
+        ' EC2 Transferasas.'
+        ' EC3Hidrolasas.'
+        ' EC4 Liasas.'
+        ' EC5 Isomerasas.'
+        ' EC6 Ligasas.'
+        ' Enzimas producidas por bacterias.'
+        ' Epoxidación (ácido vernólico).'
+        ' Escisión oxidativa (ácido traumático).'
+        ' Esfingolípidos.'
+        ' Espirocetales (chalcogranas).'
+        ' Esteres de ácidos grasos hidroxilados.'
+        ' Esteres de glicerol.'
+        ' Esteres simples.'
+        ' FAD (flavín-adenín dinucleótido).'
+        ' FH4 (ácido tetrafólico).'
+        ' Flavandioles.'
+        ' Flavanonas.'
+        ' Flavonas.'
+        ' Flavonoides.'
+        ' Flavonoles.'
+        ' Flúor.'
+        ' FMN (flavín mononucleótido).'
+        ' Fosfatdilinositol.'
+        ' Fosfatidilcolina.'
+        ' Fosfatidiletanolamina.'
+        ' Fosfatidilglicerol.'
+        ' Fosfatidilserina.'
+        ' Fosfato de calcio.'
+        ' Fósforo.'
+        ' Glicerina.'
+        ' Glucanasa.'
+        ' Glucosa isomerasa.'
+        ' Hepatocitos.'
+        ' Hidroxilasas (alcoholes acetilénicos).'
+        ' Hidroxilasas (hepoxilinas).'
+        ' Hidroxilasas (leucotrienos).'
+        ' Hidroxilasas (neuroprotectinas).'
+        ' Hidroxilasas (resolvinas).'
+        ' Hierro.'
+        ' Inhibición enzimática irreversible.'
+        ' Inhibición enzimática reversible acompetitivas.'
+        ' Inhibición enzimática reversible competitivas.'
+        ' Inhibición enzimática reversible mixtas.'
+        ' Isoflavonoides.'
+        ' Lactasas.'
+        ' Lactonas cucujólidos.'
+        ' Lactonas volátiles.'
+        ' Ligninasas.'
+        ' Lipasas.'
+        ' Lipoproteínas de muy baja densidad (VLDL).'
+        ' Lipoproteínas.'
+        ' Magnesio.'
+        ' Manganeso.'
+        ' Molibdeno.'
+        ' NAD+ (nicotín-adenín dinucleótido)'
+        ' NADP+ (nicotín-adenín dinucleótido fosfato).'
+        ' Neoflavonoides.'
+        ' Papaina.'
+        ' Pectinasas.'
+        ' PLP (fosfato de piridoxal).'
+        ' PMP (fosfato de piridoxamina).'
+        ' Polimerasas.'
+        ' Proteasas.'
+        ' Pululanasas.'
+        ' Renina.'
+        ' Retículo endoplásmico.'
+        ' Selenio.'
+        ' Silicatos.'
+        ' Sodio + Potasio.'
+        ' Sulfuro.'
+        ' Taninos condensados.'
+        ' Tejido adiposo (adipositos).'
+        ' TPP (pirofosfato de tiamina).'
+        ' Trigliceridos.'
+        ' Tripsina.'
+        ' Vitamina A (retinolflalina).'
+        ' Vitamina B1 (tiamina).'
+        ' Vitamina B12.'
+        ' Vitamina B2 (riboflavina).'
+        ' Vitamina B3 (niacina o ácidonicotínico).'
+        ' Vitamina B5 (ácido pantoténico).'
+        ' Vitamina B6 (piridoxina).'
+        ' Vitamina B7 (Biotina).'
+        ' Vitamina B9 (ácido fólico).'
+        ' Vitamina C (ácido ascórbico).'
+        ' Vitamina D (calciferol).'
+        ' Vitamina E (tocoferol).'
+        ' Vitamina K (antihemorrágica).'
+        ' Vitamina K1 (filoquinona).'
+        ' Xilanasas.'
+        ' Yodo.'
+        ' Zinc.')
+      ParentFont = False
+      TabOrder = 12
+    end
+    object BAVM: TButton
+      Left = 216
+      Top = 84
+      Width = 180
+      Height = 26
+      Caption = 'BAVM'
+      TabOrder = 13
+      OnClick = BAVMClick
+    end
+    object LBSistemas: TListBox
+      Left = 16
+      Top = 300
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Sistema cardiovascular.'
+        ' Sistema circulatorio.'
+        ' Sistema digestivo.'
+        ' Sistema endocrino.'
+        ' Sistema esquelético.'
+        ' Sistema hormonal.'
+        ' Sistema inmunitario.'
+        ' Sistema linfático.'
+        ' Sistema muscular.'
+        ' Sistema nervioso.'
+        ' Sistema neurológico.'
+        ' Sistema óseo.'
+        ' Sistema reproductivo.'
+        ' Sistema respiratorio.'
+        ' Sistema sensorial.'
+        ' Sistema urinario.'
+        ' Tejido conectivo.')
+      ParentFont = False
+      TabOrder = 14
+    end
+    object BSistemas: TButton
+      Left = 216
+      Top = 300
+      Width = 180
+      Height = 26
+      Caption = 'BSistemas'
+      TabOrder = 15
+      OnClick = BSistemasClick
+    end
+    object LBToxinas: TListBox
+      Left = 16
+      Top = 264
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Toxinas de medicaciones alopáticas.'
+        ' Contaminación medio ambiental.'
+        ' Toxicidad alcaloide o por cafeína.'
+        ' Toxicidad por radiación.'
+        ' Toxinas causadas por estrés.'
+        ' Mercurio y metales pesados.'
+        ' Toxinas esteroides.'
+        ' Toxinas biológicas.'
+        ' Toxinas físicas (carbón, asbestos, otros).'
+        ' Toxinas no identificadas.'
+        ' Toxinas propias.'
+        ' Pigmentaciones en piel.')
+      ParentFont = False
+      TabOrder = 16
+    end
+    object BToxinas: TButton
+      Left = 216
+      Top = 264
+      Width = 180
+      Height = 26
+      Caption = 'BToxinas'
+      TabOrder = 17
+      OnClick = BToxinasClick
+    end
+    object LBCNutricionales: TListBox
+      Left = 16
+      Top = 336
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          ' Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas' +
+          ' de patata en la frente.'
+        
+          ' Cuando tengas dolor de estómago, toma tus alimentos desaliñados' +
+          ', sin lácteos ni azúcares.'
+        
+          ' Para desintoxicar el hígado toma una limonada en ayunas endulza' +
+          'da con miel de abejas.'
+        
+          ' Para el dolor de garganta exprime un limón en agua caliente con' +
+          ' miel de abeja y bébelo.'
+        
+          ' La aplicación de compresas de leche en las rodillas reduce su i' +
+          'nflamación.'
+        
+          ' Uno o dos plátanos comidos al día son un buen remedio para la c' +
+          'olitis ulcerosa.'
+        
+          ' En caso de molestias estomacales, el yogurt es más fácil de dig' +
+          'erir que la leche.'
+        
+          ' Para normalizar los niveles de azúcar toma una vez a la semana ' +
+          'una mandarina licuada con cascara en un vaso de agua.'
+        
+          ' Si estas nervioso/a, no comas, espera a sentirte y estar relaja' +
+          'do/a.'
+        
+          ' Los pies son estructuras complejas. No uses los mismos zapatos ' +
+          'todos los días.'
+        
+          ' Escoge zapatos hechos de fibras o materiales naturales para per' +
+          'mitir a tus pies respirar.'
+        
+          ' La cafeína es una droga que se encuentra naturalmente en 60 dif' +
+          'erentes tipos de plantas.'
+        
+          ' El café no hace que una persona ebria se ponga sobria, solo hac' +
+          'e que se despierte.'
+        
+          ' 2 latas de bebidas gaseosas al día pueden causar ansiedad y red' +
+          'ucen la capacidad para dormir.'
+        
+          ' El café no filtrado puede elevar los niveles de colesterol en l' +
+          'a sangre.'
+        
+          ' Usa zapatos con suficiente espacio para los dedos, de manera qu' +
+          'e puedas moverlos dentro.'
+        
+          ' El exceso de cafeína puede aumentar el riesgo de osteoporosis y' +
+          ' fracturas.'
+        
+          ' La fibra es buena para la constipación porque ayuda a evacuar l' +
+          'os intestinos.'
+        
+          ' Cuando te recuperes de una afección larga, el caminar será tu m' +
+          'ejor ejercicio para recuperar fuerzas.'
+        
+          ' Camina con la cabeza en alto, el cuerpo recto y respira semi pr' +
+          'ofundamente para evitar el mareo.'
+        
+          ' Las fuentes más comunes de cafeína son el café, el té, las bebi' +
+          'das gaseosas y las bebidas energéticas.'
+        
+          ' El caminar es un excelente ejercicio que ayuda siempre a recupe' +
+          'rar el ritmo de la vida después de un padecimiento.'
+        
+          ' La sopa de pollo con muchos vegetales, cebolla y ajo, es un ali' +
+          'mento esencial durante un resfrío o gripe.'
+        
+          ' Para un alivio inmediato durante la picazón de las mordeduras d' +
+          'e mosquitos aplica jabón en el área.'
+        
+          ' Bebe un par de vasos de agua antes de ejercitarte para evitar e' +
+          'l deshidratarse demasiado rápido.'
+        
+          ' Si tus codos están oscuros y resecos, mezcla glicerina con zumo' +
+          ' de limón y masajéala en el área.'
+        
+          ' El exceso de cafeína produce ansiedad, depresión, inquietud, pa' +
+          'lpitaciones, dolor de estómago y dolor de cabeza.'
+        
+          ' El aceite de oliva virgen es además de un alimento, útil para l' +
+          'a piel porque tiene propiedades rejuvenecedoras.'
+        
+          ' Los masajes funcionan a nivel físico y a nivel mental porque la' +
+          ' mente responde al toque humano.'
+        
+          ' Aprende a controlar tus emociones ante las dificultades, o esta' +
+          'rás condenado a ser esclavo de las circunstancias.'
+        
+          ' Una dieta sana debe proporcionar niveles óptimos de nutrientes ' +
+          'para el mantenimiento y regeneración del organismo.'
+        
+          ' Ingiere alimentos en pequeñas cantidades y de forma frecuente d' +
+          'urante el día.'
+        
+          ' Condimenta tus alimentos con zumo de limón o de naranja, o espe' +
+          'cias no picantes para mejorar su sabor.'
+        ' Lávate los dientes y la boca después de cada comida.'
+        ' No te acuestes inmediatamente después de haber comido.'
+        
+          ' Procura que tu dieta sea variada y rica en calorías. Añade a tu' +
+          's alimentos: aceite virgen de oliva, miel, mermelada.'
+        ' Lava muy bien las frutas y verduras que vayas a consumir.'
+        
+          ' La pérdida de peso ha de ser lenta pero progresiva.  No convien' +
+          'e que sea rápida.'
+        ' La obesidad aumenta la mortalidad y la movilidad.'
+        
+          ' Descongela los alimentos en el refrigerador. No pongas juntos a' +
+          'limentos crudos con cocidos.'
+        ' Siempre lávate las manos antes de comer. Bendice tus alimentos.'
+        
+          ' Todos los aceites no engordan lo mismo. Evita reutilizar los ac' +
+          'eites.'
+        
+          ' Si tienes sobre peso estas en riesgo de sufrir diabetes, hipert' +
+          'ensión y afecciones cardiovasculares.'
+        
+          ' La cocción al vapor conserva las vitaminas y minerales de los a' +
+          'limentos; además su aroma, sabor, color y textura.'
+        
+          ' La '#39#39'Moderación'#39#39' y NO la '#39#39'Privación'#39#39' te conducirán a una mej' +
+          'or calidad de vida.'
+        ' Mantén control de tu peso y de tu presión arterial.'
+        
+          ' Perder peso es una cosa, mantenerlo después de tanto esfuerzo e' +
+          's otra.'
+        
+          ' El agua no aporta energía pero es un factor indispensable dentr' +
+          'o de una dieta balanceada.'
+        
+          ' Todas las vitaminas son indispensables y deben obtenerse de los' +
+          ' alimentos.'
+        
+          ' Ni las vitaminas ni los minerales poseen calorías, por lo tanto' +
+          ' no engordan.'
+        
+          ' Nuestro organismo necesita cada día ácidos grasos esenciales. T' +
+          'odos los aceites vegetales los contienen.'
+        
+          ' Los carbohidratos de absorción rápida están en la fruta, zumos,' +
+          ' leche y derivados.'
+        
+          ' El aceite virgen de oliva es recomendado por su riqueza en ácid' +
+          'o oleico.'
+        
+          ' La dieta mediterránea es rica en grasas insaturadas procedentes' +
+          ' de pescados azules, aceite de oliva y frutos secos.'
+        
+          ' Los alimentos ricos en carbohidratos complejos deben ser los má' +
+          's abundantes: cereales y derivados, legumbres y arroz.'
+        
+          ' Los alimentos de una dieta deben ser variados, evitando la mono' +
+          'tonía y la exclusión.'
+        
+          ' Algunas hortalizas como la patata y los boniatos son ricos en h' +
+          'idratos de carbono.'
+        
+          ' Para mantener un peso óptimo, el contenido energético de la ali' +
+          'mentación debe ser proporcional al gasto energético diario.'
+        
+          ' La alimentación debe ser variada, suficiente en energía y sin e' +
+          'xcesos, para evitar obesidad o afecciones carenciales.'
+        
+          ' Existe una estrecha relación entre una dieta adecuada y balance' +
+          'ada, y un excelente estado de salud.'
+        
+          ' Los hábitos dietéticos sanos influyen de forma importante en nu' +
+          'estra salud.'
+        
+          ' La cantidad de energía en la alimentación depende de la edad, s' +
+          'exo, altura, actividad física y estado fisiológico.'
+        
+          ' Los 3 nutrientes principales de una dieta sana son: hidratos de' +
+          ' carbono, lípidos o grasas y proteínas.'
+        
+          ' El ácido oleico es un ácido graso mono insaturado que contribuy' +
+          'e al equilibrio del aporte diario de grasas.'
+        
+          ' La fibra dietética es un compuesto de los alimentos que no pued' +
+          'e ser digerido por las enzimas del tubo digestivo.'
+        
+          ' Los alimentos vegetales contienen 2 tipos de fibra, insoluble y' +
+          ' soluble, con efectos biológicos diferentes.'
+        
+          ' Los resultados de la composición corporal son una consecuencia ' +
+          'directa de lo que comes y bebes.'
+        
+          ' Los zumos naturales son una buena fuente de carbohidratos duran' +
+          'te las comidas.'
+        
+          ' Comer sanamente significa proporcionar al organismo lo que nece' +
+          'sita en la cantidad y proporción adecuadas.'
+        
+          ' La dieta mediterránea se correlaciona con una menor incidencia ' +
+          'de ciertos tipos de cáncer y afecciones cardiovasculares.'
+        
+          ' Los carbohidratos complejos (de absorción lenta) y simples (de ' +
+          'absorción rápida), aportan energía al organismo.'
+        
+          ' La dieta mediterránea se caracteriza por un consumo moderado de' +
+          ' carnes y grasas de origen animal.'
+        
+          ' El aceite virgen de oliva es eficaz en la prevención de afeccio' +
+          'nes como la arterosclerosis coronaria.'
+        
+          ' El valor nutritivo del pescado azul es semejante al de la carne' +
+          ' pero las proteínas se asimilan más fácil.'
+        
+          ' La ingesta de ajo, cebolla, tomate y frutos secos, aportan anti' +
+          'oxidantes y nutrientes protectores.'
+        
+          ' El consumo de pescado azul y aceite de oliva son beneficiosos p' +
+          'or la calidad y proporción de los lípidos que aportan.'
+        
+          ' Las necesidades hídricas son de 3 litros por día: 50% contenida' +
+          ' en los alimentos y 50% consumida en forma de bebida.'
+        
+          ' Acude a un especialista que te confeccione una dieta adecuada a' +
+          ' tus aspectos únicos e individuales.'
+        
+          ' Cuando necesites aumentar tu ingesta de carbohidratos, consider' +
+          'a el tomar fruta fresca después de una comida.'
+        
+          ' La fibra favorece la evacuación intestinal, la sensación de sac' +
+          'iedad y el crecimiento y reproducción de bacterias intestinales ' +
+          'protectoras.'
+        
+          ' Para evitar los calambres en las piernas es recomendable comer ' +
+          'un plátano diario.'
+        ' Toma frijoles y lentejas por lo menos dos veces a la semana.'
+        
+          ' Si te resfrías, bebe muchos líquidos como agua o zumos naturale' +
+          's.'
+        
+          ' En pequeñas inflamaciones de la piel aplique rodajas de patata ' +
+          'cruda. También mejora la cicatrización.'
+        
+          ' Conviértelo en un pasatiempo el encontrar maneras de mover tu c' +
+          'uerpo y ejercitarte tanto como puedas.'
+        
+          ' Busca algo que te inspire, eleva tu nivel de conciencia, motíva' +
+          'te y satisface tu alma.'
+        ' Ejercita tu cerebro. Lee, estudia, resuelve problemas. '
+        
+          ' El cerebro es un órgano que también se atrofia por falta de uso' +
+          '.'
+        
+          ' La fibra dietética en personas diabéticas disminuye los niveles' +
+          ' de glucosa en la sangre.'
+        
+          ' Sustituye total o parcialmente las harinas o panes molidos refi' +
+          'nados por sus presentaciones integrales.'
+        
+          ' Está comprobado científicamente que reírse incrementa la vida. ' +
+          'A reírse, vivir más alegra a cualquiera.'
+        
+          ' Para maximizar los beneficios de la fibra bebe mucha agua para ' +
+          'mejorar los movimientos intestinales.'
+        
+          ' La fibra dietética ayuda a disminuir el colesterol y previene e' +
+          'l cáncer de colon.')
+      ParentFont = False
+      TabOrder = 18
+    end
+    object BCNutricionales: TButton
+      Left = 216
+      Top = 336
+      Width = 180
+      Height = 26
+      Caption = 'BCNutricionales'
+      TabOrder = 19
+      OnClick = BCNutricionalesClick
+    end
+    object LBHomeopatia: TListBox
+      Left = 16
+      Top = 372
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acanthosis Venom'
+        ' Aconite'
+        ' Antimony'
+        ' Apis Mel'
+        ' Arsenicum'
+        ' Aurum'
+        ' Belladonna'
+        ' Bothrops Venom'
+        ' Bryonia'
+        ' Buthus Venom'
+        ' Calcarea'
+        ' Carbolic Acidum'
+        ' Chinona'
+        ' Crotalis Venom'
+        ' Cuprum'
+        ' Ferrum'
+        ' Gelsemium'
+        ' Glonine'
+        ' Iodium'
+        ' Ipecacuanha'
+        ' Lachesis Venom'
+        ' Lactrodectus Venom'
+        ' Merc'
+        ' Mercury'
+        ' Naja Venom'
+        ' Notechis Venom'
+        ' Nux Vox'
+        ' Ophiophagus Venom'
+        ' Opium'
+        ' Passiflora'
+        ' Phosphorus'
+        ' Plutonium'
+        ' Pulsatilla'
+        ' Rhus Tox'
+        ' Sepia'
+        ' Sepia'
+        ' Silica'
+        ' Silver'
+        ' Stannum'
+        ' Sulphur'
+        ' Thuja'
+        ' Vespa Venom'
+        ' Zinc')
+      TabOrder = 20
+    end
+    object BHomeopatia: TButton
+      Left = 216
+      Top = 372
+      Width = 180
+      Height = 26
+      Caption = 'BHomeopatia'
+      TabOrder = 21
+      OnClick = BHomeopatiaClick
+    end
+    object LBTerapias: TListBox
+      Left = 16
+      Top = 404
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acupuntura.'
+        ' Alineamiento cuántico.'
+        ' Aromaterapia.'
+        ' Arte terapia.'
+        ' Artes marciales.'
+        ' Aura soma.'
+        ' Ayurveda.'
+        ' Caminata.'
+        ' Canto curativo.'
+        ' Chi Kung - Qi Gong.'
+        ' Circulo de cristales.'
+        ' Coaching.'
+        ' Colon terapia.'
+        ' Conexión Cuerpo-Mente.'
+        ' Constelaciones familiares.'
+        ' Cristaloterapia.'
+        ' Cromaterapia.'
+        ' Curación espiritual.'
+        ' Danza del vientre.'
+        ' Danzaterapia.'
+        
+          ' Desensibilización + Reprocesamiento por Movimientos Oculares - ' +
+          'EMDR.'
+        ' Dietética + Nutrición.'
+        ' Diksha.'
+        ' Drenaje linfático.'
+        ' EFT - Tapping.'
+        ' EMF Balancing Technique.'
+        ' Eneagrama.'
+        ' Energía taquionica.'
+        ' Eutonía.'
+        ' Facioterapia - Dien Chan.'
+        ' Feng Shui.'
+        ' Fitoterapia.'
+        ' Flores de Bach.'
+        ' Geo Qi.'
+        ' Geoterapia.'
+        ' Gestión del estrés.'
+        ' Hidroterapia.'
+        ' Hipnosis + Dehipnosis.'
+        ' Homeopatía.'
+        ' Homotoxicología.'
+        ' Inteligencia emocional.'
+        ' Iridología.'
+        ' Kinesiología.'
+        ' Kirlian.'
+        ' Kundalini Yoga.'
+        ' Linfoterapia.'
+        ' Litoterapia.'
+        ' Louise L. Hay System.'
+        ' Masaje tantra.'
+        ' Masajes.'
+        ' Medicina psicosomática.'
+        ' Medicina Tradicional China - MTC.'
+        ' Meditación.'
+        ' Meditaciones activas.'
+        ' Método cuerpo espejo.'
+        ' Método de cadenas musculares y articulaciones - GDS.'
+        ' Método Feldenkrais.'
+        ' Método Tomatis.'
+        ' Método Wilfart de respiración y voz.'
+        ' Micoterapia.'
+        ' Movimientos de Gurdjieff.'
+        ' Moxibustión.'
+        ' Musicoterapia.'
+        ' Natación.'
+        ' Naturopatía.'
+        ' Nuevos paradigmas.'
+        ' Oligoterapia.'
+        ' Osteopatía.'
+        ' Oxigenación hiperbárica.'
+        ' Oxitermia.'
+        ' Pares biomagnéticos.'
+        ' Pilates.'
+        ' Programación Neuro Lingüística - PNL.'
+        ' Proyecciología / Viaja Astral.'
+        ' Psicología transpersonal.'
+        ' Psicología.'
+        ' Psicoterapia.'
+        ' Quiromasaje.'
+        ' Rebirthing / Renacimiento.'
+        ' Reconexión o Sanación reconectiva.'
+        ' Reflexología facial.'
+        ' Reflexología podal.'
+        ' Registros Akáshicos.'
+        ' Reiki.'
+        ' Relajación.'
+        ' Resistencia al cambio.'
+        ' Risoterapia.'
+        ' Sanación Pránica.'
+        ' Sanergía.'
+        ' Shamballa.'
+        ' Shiatsu.'
+        ' Sofrología.'
+        ' Tai Chi Chuan / Taiji Quan.'
+        ' Tantra Yoga.'
+        ' Técnica Alexander.'
+        ' Técnica Nadeau.'
+        ' Terapia Breve Estratégica.'
+        ' Terapia con Geometría Sagrada.'
+        ' Terapia Craneosacral.'
+        ' Terapia de habitat.'
+        ' Terapia de polaridad.'
+        ' Terapia del sonido.'
+        ' Terapia Esenia.'
+        ' Terapia filosófica.'
+        ' Terapia geotermal.'
+        ' Terapia Gestalt.'
+        ' Terapia ortomolecular.'
+        ' Terapia piramidal.'
+        ' Terapia regresiva.'
+        ' Terapias con células madre.'
+        ' Terapias con plasma.'
+        ' Terapias vibracionales.'
+        ' Tian Gong.'
+        ' TRCD.'
+        ' Yoga reconectivo.'
+        ' Yoga.')
+      ParentFont = False
+      TabOrder = 22
+    end
+    object BTerapias: TButton
+      Left = 216
+      Top = 404
+      Width = 180
+      Height = 26
+      Caption = 'BTerapias'
+      TabOrder = 23
+      OnClick = BTerapiasClick
+    end
+    object BAfirmaciones: TButton
+      Left = 216
+      Top = 436
+      Width = 180
+      Height = 26
+      Caption = 'BAfirmaciones'
+      TabOrder = 24
+      OnClick = BAfirmacionesClick
+    end
+    object LBAfirmaciones: TListBox
+      Left = 16
+      Top = 436
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          'A todos les gustan mis regalos. Compro con facilidad a precios q' +
+          'ue me puedo permitir.'
+        
+          'Abandono todos mis conflictos internos a fin de que venga a mí l' +
+          'a paz mental.'
+        'Abandono todos mis juicios y mi tendencia a hacer comparaciones.'
+        'Abrazo la vida y me abrazo a mí con amor y comprensión.'
+        'Abre tu corazón y deja ir toda resistencia al cambio.'
+        
+          'Abre tu corazón y libera toda resistencia.  Te sentirás mucho me' +
+          'jor.'
+        'Abre tu corazón y mente a inventar nuevas soluciones.'
+        'Abre tus sentidos.  Aprende.'
+        'Abriré mi corazón y me perdonaré.'
+        'Abro mi corazón y acepto a los demás como son.'
+        'Abro mi corazón y dejo fluir libremente el amor y la alegría.'
+        'Abro mi corazón y me regocijo en lo que soy.'
+        
+          'Abro mi imaginación para crear el mejor de los mundos para mi mi' +
+          'smo.'
+        
+          'Acabo con toda crítica. Con ella jamás se consigue nada positivo' +
+          '.'
+        
+          'Acepta la responsabilidad de edificarte a ti mismo y el valor de' +
+          ' acusarte a ti del fracaso.'
+        'Acepta los comentarios buenos con humildad.'
+        'Acepta los comentarios negativos con gracia.'
+        'Acepta los cumplidos como un regalo de prosperidad.'
+        'Acepta toda responsabilidad por todos los aspectos de tu vida.'
+        
+          'Acepto a los demás tal como son y sin pretender cambiarlos a mi ' +
+          'gusto.'
+        'Acepto cada día tal como se presenta y el amor en todo momento.'
+        'Acepto el amor de todos los que lo ofrecen.'
+        
+          'Acepto el milagro de la curación y permito ser totalmente curado' +
+          '.'
+        'Acepto el placer como parte de mi ser.'
+        'Acepto las opiniones o criterios dispares de los míos.'
+        'Acepto los cambios en mi vida y ensancho mis límites.'
+        'Acepto mi cuerpo; sé que es hermoso, magnífico y maravilloso.'
+        
+          'Acepto mi responsabilidad por cualquier afección que padezca. Ca' +
+          'mbio mis comportamientos.'
+        'Acepto mis imperfecciones y las supero cada día.'
+        'Acepto que la Naturaleza es sabia.'
+        
+          'Aclaro mis pensamientos y actúo de acuerdo a ellos. El Supremo m' +
+          'e muestra siempre el mejor camino para mí.'
+        'Actúo del modo más apropiado en todo momento.'
+        'Agradezco la generosidad de la vida conmigo, soy Bienaventurado.'
+        
+          'Agradezco profundamente al Universo que me haya dado esta increí' +
+          'ble vida.'
+        
+          'Agradezco todas las personas, lugares, cosas y experiencias que ' +
+          'llenan mi mundo. La vida es hermosa para todos, y yo contribuyo ' +
+          'a ello.'
+        'Agudiza tu creatividad y triunfarás.'
+        
+          'Ahora afirmo que cada célula de mi cuerpo está reaccionando a un' +
+          'a nueva fuerza.'
+        
+          'Ahora disuelvo cualquier pensamiento negativo o restrictivo. Me ' +
+          'libero y disuelvo todas las limitaciones del pasado. No me ata n' +
+          'ingún miedo ni limitación de la sociedad en la que vivo. Ya no m' +
+          'e identifico con ningún tipo de limitación.'
+        
+          'Ahora entro a un nuevo espacio en la conciencia, en donde me veo' +
+          ' de forma diferente. Estoy creando nuevos pensamientos acerca de' +
+          ' mi ser y de mi vida. Mi nueva forma de pensar se convierte en n' +
+          'uevas experiencias.'
+        'Ahora me permito Ser Feliz.'
+        'Ahora que has comenzado, termina.'
+        'Ahora reafirmo todo mi poder personal.'
+        
+          'Ahora sé y afirmo que formo una unidad con el Próspero Poder del' +
+          ' Universo. Y por lo tanto recibo multitud de bienes. La totalida' +
+          'd de las posibilidades está ante mí.'
+        
+          'Ahora solo veo y acepto lo bueno y lo bueno que hay en mí y en t' +
+          'odas las personas y situaciones en mi vida.'
+        'Ahora soy la persona que siempre quise ser.'
+        'Ahora todo lo que necesito viene a mí.'
+        'Ahora trasciendo mis viejos miedos y limitaciones.'
+        
+          'Al dormirte da las gracias por el día que has vivido.  Al desper' +
+          'tarte da las gracias por el día que vivirás.'
+        'Al ordenar mi hogar, ordeno también mi mente.'
+        
+          'Alégrate con los éxitos de los demás, sabiendo que hay mucho par' +
+          'a todos.'
+        
+          'Alguien nos dijo que somos nuestros sueños, que si no soñamos es' +
+          'tamos muertos.'
+        
+          'Ama y respeta todo lo que haces.  Las ganancias no serán tan sol' +
+          'o en forma monetaria.'
+        
+          'Amándome yo enseño a mis hijos a amarse y respetarse a sí mismos' +
+          '.'
+        'Amar a mi cuerpo es importante en cualquier fase de la vida.'
+        
+          'Amate tal cual eres y prémiate con pensamientos de halago hacia ' +
+          'tí mismo.'
+        
+          'Amo la naturaleza y estoy en armonía con ella, convierto la tier' +
+          'ra en un fértil jardín.'
+        'Amo sin esperar nada a cambio.'
+        
+          'Amo y respeto a mis congéneres y a todas las criaturas de Dios p' +
+          'orque son un regalo maravilloso.'
+        
+          'Amo y respeto a todas las fuerzas de la naturaleza y el Universo' +
+          '.'
+        'Amo y respeto mi cuerpo y lo cuido con cariño.'
+        
+          'Amo y respeto mi planeta y mi entorno.  Sembraré amor y respeto ' +
+          'todos los días.'
+        'Amo, respeto y honro a todas mis necesidades nutricionales.'
+        'Amo, valoro y apoyo a todas las personas de mi vida.'
+        
+          'Analizo los aspectos de mi vida en los que no me respeto ni me v' +
+          'aloro, y hago afirmaciones de poder.'
+        
+          'Antes de hablar, escucha. Antes de escribir, piensa. Antes de cr' +
+          'iticar, examínate. Antes de herir, siente. Antes de orar, perdon' +
+          'a. Antes de gastar, gana. Antes de rendirte, intenta.  Antes de ' +
+          'MORIR, VIVE.'
+        'Antes de pretender ayudar a otros, primero me ayudo a mí mismo.'
+        
+          'Aprende a nacer desde el dolor y a ser más grande que el más gra' +
+          'nde de los obstáculos.'
+        'Aprende de la persona que tienes delante de tí.'
+        
+          'Aprende de los fuertes, de los audaces, imita a los valientes, a' +
+          ' los energéticos, a los vencedores, a quienes no aceptan situaci' +
+          'ones, a quienes vencieron a pesar de todo.'
+        'Aprendo algo nuevo con cada experiencia.'
+        'Aprendo nuevas formas de vivir y cambio mi vida.'
+        
+          'Aprendo rápido y sin esfuerzo; soy mucho más inteligente de lo q' +
+          'ue pensaba.'
+        
+          'Asegúrate de darle las gracias a la persona delante tí cuando te' +
+          'rmine la sesión.'
+        'Así Es. Gracias Amado Universo.'
+        'Asumo el cuidado y responsabilidad de mi cuerpo todo el tiempo.'
+        'Asumo la responsabilidad de mi propia vida. Soy Libre.'
+        'Atiende a mis mensajes con diligencia.'
+        
+          'Atiende con amor a los mensajes de tu cuerpo.  Tu cuerpo debe si' +
+          'empre ser una imagen de salud total.'
+        'Atraigo gente con moral muy alta.'
+        
+          'Aunque es posible que no sepa cómo perdonar, me dispongo a comen' +
+          'zar el proceso, sabiendo que encontraré ayuda en todos los aspec' +
+          'tos de mi vida.'
+        
+          'Avanzo hacia el futuro conociendo y utilizando los tesoros que t' +
+          'engo dentro, solo lo bueno me aguarda.'
+        'Avanzo libre del pasado, estoy a salvo, soy libre.'
+        'Ayuda por amor, no por dinero o recompensa.'
+        
+          'Ayudo a crear un mundo seguro creando armonía con mis pensamient' +
+          'os.'
+        'Ayudo siempre que puedo.'
+        'Bendice a la persona que tienes delante de tí.'
+        'Bendigo mi trabajo con amor. Me satisface profundamente.'
+        'Bendigo y agradezco a Dios por todo el bien que me ha dado.'
+        'Busco el amor y lo encuentro en todas partes.'
+        'Busco la manera de hacer algo que me gusta.'
+        
+          'Cada día aprendo algo más sobre las leyes de la Vida y sobre "có' +
+          'mo" pensar para tener una vida sana, dichosa, amorosa y abundant' +
+          'e.'
+        
+          'Cada día avanzo con júbilo, soy un ser equilibrado, tenaz y libr' +
+          'e.'
+        
+          'Cada día dedico unos minutos a darle gracias a Dios por todo lo ' +
+          'que soy.'
+        'Cada día elogio a alguien; nunca están de más los elogios.'
+        'Cada día me siento nacer de nuevo en este sagrado planeta.'
+        
+          'Cada persona es una joya excepcional, con dotes y capacidades ún' +
+          'icas.'
+        
+          'Cambio algo en la casa, en mi estilo de vida o en el trabajo, y ' +
+          'eso nos beneficia a todos. Acepto el cambio y ensancho mis límit' +
+          'es.'
+        
+          'Cambio con facilidad y tranquilidad, avanzo siempre en la mejor ' +
+          'dirección.'
+        'Cambio todas las reglas y me creo una fantástica vida propia.'
+        
+          'Cambio todas mis reglas anticuadas y me creo una fantástica vida' +
+          ' propia.'
+        'Celebro mi existencia especial aceptándome tal como soy.'
+        
+          'Cierro la puerta de las viejas heridas y perdono a todo el mundo' +
+          '; me perdono también a mí.'
+        
+          'Cierro los ojos un momento y conecto con esa parte de mí que sab' +
+          'e lo que necesito.'
+        
+          'Combino las afirmaciones positivas con un programa de ejercicios' +
+          ' que me va bien.'
+        'Comienza y termina tu sesión de trabajo con gratitud.'
+        
+          'Comienzo a detener cualquier comportamiento abusivo desde el pri' +
+          'ncipio, aunque parezca algo sin importancia.'
+        
+          'Como criatura del Universo te mereces que todos tus sueños se co' +
+          'nviertan en realidad.'
+        'Como hijo del Universo que soy, sólo veo la perfección en todo.'
+        'Comprendo todo aquello que debo saber y comprender.'
+        
+          'Con alegría, recibo el regalo maravilloso del Hoy. Estoy en paz ' +
+          'y armonía conmigo y con los demás.'
+        
+          'Con Amor acepto mis decisiones, sabiendo que soy Libre para camb' +
+          'iarlas, estoy a salvo.'
+        'Con Amor cuido mi cuerpo, mi mente y mis emociones.'
+        'Con amor me libero totalmente del pasado, soy libre, soy Amor.'
+        
+          'Con Amor perdono y libero todo el pasado, elijo llenar mi mundo ' +
+          'de alegría, me amo y me apruebo.'
+        
+          'Con confianza acojo y experimento nuevas ideas actitudes, Me abr' +
+          'o para recibir todo lo bueno.'
+        
+          'Con confianza puedo responsabilizarme de mi propia vida, escojo ' +
+          'ser libre.'
+        
+          'Con facilidad me libero de todo lo que ya no necesito en la vida' +
+          '.'
+        
+          'Con gusto disuelvo todas las pautas de pensamiento negativo que ' +
+          'niegan o suprimen este caudal de amor.'
+        
+          'Con la organización, la constancia y la disciplina la vida es si' +
+          'mple y fácil.'
+        
+          'Con mis pensamientos y palabras hago sitio en mi cuerpo, mi ment' +
+          'e y mi espíritu para que el amor y la alegría fluyan abierta y l' +
+          'ibremente.'
+        'Conecto con ese tesoro que hay dentro de mí y lo utilizo.'
+        
+          'Conecto con mi sabiduría interna y la zozobra se convierte en pa' +
+          'z.'
+        
+          'Conecto con mi yo interior que es superior, es mi guía, siento s' +
+          'u amor y le permito crecer y expandirse.'
+        'Confía en tus conocimientos, tu formación y tu intuición.'
+        
+          'Confiadamente puedo experimentar alegría en todos los ámbitos de' +
+          ' mi vida, amo la vida.'
+        'Confió amorosamente en las personas que me aman.'
+        'Confío en Dios, mi creador y por eso actúo con fe y convicción.'
+        'Confió en el éxito final.'
+        
+          'Confío en el proceso de la vida, en mi vida solo tiene lugar la ' +
+          'buena y recta acción.'
+        
+          'Confío en el proceso de la vida, que me apoya y me guía siempre ' +
+          'que le permita hacerlo.'
+        'Confío en el proceso de la vida.'
+        'Confío en mi guía interior.'
+        
+          'Confío en mi intuición. Todo está bien en mi mundo, ahora y siem' +
+          'pre.'
+        'Confío en mi mismo, confío en mi intuición.'
+        
+          'Confío en mí y en mi intuición. Siento mi poder. Abandono mis vi' +
+          'ejas creencias y la Vida me apoya en cada paso del camino.'
+        
+          'Conserva tus pensamientos centrados en lo que deseas experimenta' +
+          'r.'
+        'Conserva tus pensamientos centrados en lo que deseas obtener.'
+        'Conservo mis pensamientos claros y tranquilos en los grupos.'
+        'Considero un regalo mi tiempo en soledad, en mi propia compañía.'
+        'Consigo que nadie enturbie mi mirada.'
+        'Consuelo a un niño que está triste.'
+        
+          'Contribuyo a crear un planeta sano donde todos prosperamos y viv' +
+          'imos dichosos y tranquilos.'
+        
+          'Contribuyo a la armonía que tenemos en el trabajo. Todos nos lle' +
+          'vamos muy bien.'
+        'Contribuyo a sanar la sociedad de un modo creativo y amoroso.'
+        'Controlo mis emociones positivamente.'
+        'Convéncete de que SI es posible.'
+        'Convierto en realidad todo mi gran potencial.'
+        
+          'Cosechas lo que siembras.  Estás aquí para sembrar amor y compas' +
+          'ión.'
+        'Cosechas lo que siembras.  Siembra amor y compasión.'
+        'Crea paz en tu mente y podrás ayudar a la persona delante de tí.'
+        'Creo la paz en mi mente, mi cuerpo y mi mundo.'
+        
+          'Creo paz en mi mente, y mi cuerpo la refleja con una salud perfe' +
+          'cta.'
+        'Creo paz y armonía en mi mente con pensamientos positivos.'
+        
+          'Creo un mundo seguro donde reina el amor y donde todos podemos s' +
+          'er felices y estar sanos y completos.'
+        
+          'Cuando encuentras la armonía y equilibrio en tu mente, lo encuen' +
+          'tras en tu vida.'
+        
+          'Cuando estoy de vacaciones dejo atrás todas mis preocupaciones y' +
+          ' sencillamente disfruto del momento presente.'
+        
+          'Cuando llegue la hora de mi partida de este mundo, será otra mar' +
+          'avillosa experiencia, apacible y serena.'
+        'Cuando pierdas, no pierdas la lección.'
+        
+          'Cuando siento inquietud, aflicción y congoja, me tomo el tiempo ' +
+          'necesario para entrar en mi interior y conectar con mi Sabiduría' +
+          ' Interna.'
+        
+          'Cuando todos y cada uno aprendamos a vivir con un amor incondici' +
+          'onal, se acabarán las guerras para siempre, y ese será el mejor ' +
+          'regalo para la humanidad.'
+        
+          'Cuando una puerta se cierra, otra se abre. Siempre tengo acceso ' +
+          'al Manantial Infinito de la Sabiduría. Estoy a salvo.'
+        
+          'Cuido amorosamente el jardín de mi mente. Arranco las hierbas ne' +
+          'gativas y dejo espacio para que crezcan afirmaciones positivas.'
+        'Cuido mi cuerpo siendo conciente de los cambios de estación.'
+        
+          'Cumple tus citas y llega a la hora.  Así demuestras tu respeto y' +
+          ' consideración por los demás.'
+        
+          'Da gracias a la persona delante de tí por permitirte el gran hon' +
+          'or de ayudarla.'
+        
+          'De hoy en adelante, sólo el bien sale de mí y sólo el bien regre' +
+          'sa a mí.'
+        
+          'Debes estar dispuesto a crecer y ocuparte de mis sentimientos.  ' +
+          'Exprésate como mejor lo desees.'
+        'Decido ver las cosas de manera diferente.'
+        'Decido vivir en el presente siempre jubiloso.'
+        'Declaro la paz y la armonía en mi interior y a mi alrededor.'
+        
+          'Declaro la paz, y la armonía en mi interior y en mi entorno, tod' +
+          'o esta bien.'
+        'Dejo de juzgarme. Dejo de juzgar a los demás.'
+        'Dejo el pasado y avanzo hacia lo nuevo.'
+        
+          'Dejo la pobreza de pensamientos para entrar en la prosperidad de' +
+          ' pensamientos.'
+        'Dejo marchar el pasado y perdono a todo el mundo.'
+        'Dejo que el amor de mi corazón sane el pasado, y soy libre.'
+        
+          'Dejo que el amor llegue a mi vida y me llene de felicidad y aleg' +
+          'ría.'
+        
+          'Desarrollo mi propia filosofía de vida y mis propias leyes: afir' +
+          'maciones según las cuales puedo vivir con plenitud, creencias qu' +
+          'e me apoyan y me nutren.'
+        
+          'Desarrollo mi sentido del humor. La risa es una forma maravillos' +
+          'a de adquirir una perspectiva diferente, y es un gran tónico par' +
+          'a el corazón.'
+        'Descubro lo maravilloso que soy.'
+        'Descubro mi propio don y lo realizo.'
+        'Desea que tu vida sea buena y alegre, y así será.'
+        'Deshago todos mis pensamientos erróneos y negativos.'
+        'Despierto mis poderes internos de curación.'
+        'Destina cada acto tuyo a ser un éxito rotundo.'
+        
+          'Dialoga con la persona y encuentra las deficiencias dietéticas o' +
+          'cultas.'
+        'Dialoga con la persona y encuentra las emociones ocultas.'
+        'Dialoga con la persona y encuentra las percepciones ocultas.'
+        
+          'Dios es el puro amor incondicional, comprensivo y compasivo, y e' +
+          'spera con paciencia a que aprendamos a comunicarnos con él.'
+        
+          'Dios es mi consejero y guía. Su sabiduría me guía y conduce a el' +
+          'egir siempre la mejor opción.'
+        
+          'Dios es un poder benévolo y amoroso, que lo dirige todo hacia el' +
+          ' bien en nuestra vida cuando se lo permitimos.'
+        
+          'Dios me ama. Yo me amo y perdono. Puedo dar y recibir amor sin l' +
+          'ímites.'
+        
+          'Dios y el Universo me proveen de todas las ideas necesarias para' +
+          ' tener el éxito que deseo.'
+        
+          'Dios, el Poder Universal ama a todas sus creaciones, y por ello ' +
+          'me ha dado el libre albedrío, para que tome mis propias decision' +
+          'es con toda libertad.'
+        
+          'Dios, la Vida y el Universo me aman y me aceptan tal como soy, n' +
+          'o me juzgan.'
+        
+          'Dios, permíteme que tu Paz siempre príncipe en mí.  Tu Paz, es a' +
+          'hora mi Paz.'
+        'Disfruta, ahora.'
+        'Disfruto compartiendo con otros lo mejor de mi.'
+        'Disfruto con mi sexualidad.'
+        'Disfruto de mi buena salud. Amo mi cuerpo y mi cuerpo me ama.'
+        'Disfruto de mi yo único y especial.'
+        'Disfruto de ser libre y abierto a la bondad que me rodea.'
+        
+          'Disfruto siendo un miembro de mi comunidad. Mi autoestima aument' +
+          'a sin cesar y me permite hacer algo valioso en bien de todos.'
+        'Disfruto totalmente de todo lo que hago.'
+        
+          'Dispongo de magnificas oportunidades para realizarme, muchas más' +
+          ' de las que nunca antes habían estado a mi alcance.'
+        
+          'Disponte para crecer y cambiar.  Cada momento te presenta una nu' +
+          'eva fabulosa oportunidad de ser más de quien eres.'
+        'Disuelvo y dejo marchar los viejos agravios y penas.'
+        
+          'Dondequiera que vaya, con quienquiera que me encuentre, siempre ' +
+          'está el amor esperándome.'
+        
+          'Doy de mí y de lo que soy lo mejor siempre, porque sé que todos ' +
+          'somos uno en espíritu.'
+        'Doy mi vida a una finalidad y un destino.'
+        'Doy todo el corazón y agradezco el privilegio de poder hacerlo.'
+        
+          'Durante todo el día algo me lleva a tomar las decisiones correct' +
+          'as.'
+        
+          'Ejercito mis músculos mentales. Me lo paso muy bien usando mi me' +
+          'nte. Soy una persona muy creativa.'
+        
+          'El Amor Divino cura mi vida de todo sentimiento que fuera contra' +
+          'rio a mi bien.'
+        
+          'El amor divino me rodea y libera de toda tensión o preocupación ' +
+          'y estoy en completo balance y equilibrio.'
+        'El amor es una medicina maravillosa.'
+        
+          'El amor es una medicina maravillosa.  El amarte a tí mismo hará ' +
+          'maravillas en tu vida.'
+        'El amor me rodea, ahora y para siempre.'
+        'El amor relaja y deja marchar, todo lo bueno se le parece.'
+        
+          'El bien fluye en tu vida a través de canales esperados e inesper' +
+          'ados.'
+        'El bien que yo le deseo a otros, es el bien que me desea a mí.'
+        'El dolor es un amigo que nos guía.  Escúchalo.'
+        'El espíritu de la verdad llega a mí y la verdad me hará libre.'
+        
+          'El éxito está asegurado en mi vida y mi mente está en completa p' +
+          'az.'
+        
+          'El hoy es el resultado de tu ayer, el mañana será el resultado d' +
+          'e tu hoy.  ¿Qué deseas para mañana?'
+        'El mundo es seguro confío en la vida estoy a salvo creciendo.'
+        
+          'El Océano de la vida derrocha abundancia, las oportunidades de o' +
+          'ro están en todo sitio.'
+        'El pasado ya ha pasado, elijo amarme y aprobarme en el presente.'
+        
+          'El pasado ya pasó y no puede ser cambiado.  Lo único que tienes ' +
+          'es el ahora, aprovéchalo.'
+        'El peligro es real, el miedo es una opción.'
+        
+          'El perdón es el primer paso hacia el camino del bienestar verdad' +
+          'ero.'
+        
+          'El perdón es el primer paso para ayudar a la persona delante de ' +
+          'tí.'
+        
+          'El que abras los brazos a los cambios o a otras culturas no sign' +
+          'ifica que te tengas que olvidar de tus valores.'
+        'El que mucho abarca poco aprieta.'
+        
+          'El Supremo guía todas mis acciones. El universo me ofrece todo a' +
+          'quello que necesito.'
+        
+          'El talento depende de la inspiración, pero el esfuerzo depende d' +
+          'e cada uno.'
+        
+          'El talento gana juegos, pero el trabajo en equipo y la inteligen' +
+          'cia ganan campeonatos.'
+        'El temor es el peor enemigo del bienestar.  Ríe, vive la vida.'
+        
+          'El Universo está más que dispuesto a manifestar mis nuevas creen' +
+          'cias y yo acepto la abundancia de esta vida con alegría, placer ' +
+          'y gratitud. Porque me lo merezco, lo acepto y sé que es verdad.'
+        
+          'El Universo gusta de gestos simbólicos. Ordeno mi hogar y lo man' +
+          'tengo ordenado, esto me aclara las ideas y veo mejor lo que quie' +
+          'ro hacer y cómo realizarlo.'
+        'El universo me proporciona todo lo que deseo y necesito.'
+        'Elevo mi energía sexual.'
+        'Elígete a tí mismo.'
+        'Elijo amarme y apreciarme en todo momento.'
+        'Elijo el amor como meta de felicidad.'
+        'Elijo hacer de mi vida algo sencillo, fácil y gozoso.'
+        'Elijo llenar mi mundo de alegría.'
+        
+          'Elijo perdonar a todo aquel que alguna vez haya hecho algo negat' +
+          'ivo. Éste es mi día del perdón. Me perdono por todo el daño que ' +
+          'hice en el pasado, a mí y a los demás.'
+        'Elijo vivir en el espacio abierto de mi corazón.'
+        
+          'Elijo vivir, en el dichoso momento Presente, mi vida es toda ale' +
+          'gría.'
+        
+          'Ellos son libres y yo soy libre. Somos uno con el poder que nos ' +
+          'ha creado estamos seguros y a salvo.'
+        'En cada momento soy libre para decidir.'
+        'En lugar de envejecer, simplemente continúo creciendo.'
+        'En lugar de juzgar, trato de comprender.'
+        
+          'En lugar de tratar de convencer, trato de comprender, y sigo con' +
+          ' constancia mi propio camino, sin dejarme influir por el ejemplo' +
+          ' negativo de otros.'
+        
+          'En mi alma solo hay belleza, paz y armonía, y todo eso se reflej' +
+          'a en mi buen semblante, manteniéndome joven y saludable.'
+        'En mi mente tengo libertad absoluta.'
+        'En todo momento recibo la guía divina.'
+        'Encaro con sentido del humor todas las experiencias de mi vida.'
+        'Encuentro dentro de mí lo que busco.'
+        'Encuentro mi propio ritmo.'
+        'Encuentro mi verdadera identidad.'
+        'Encuentro seguridad en mi interior.'
+        
+          'Enseña a respirar a la persona, ya que es a través de la respira' +
+          'ción como interactúa con el Universo.'
+        
+          'Enseño a mis hijos a respetarse a sí mismos y respetar a los dem' +
+          'ás.'
+        
+          'Entiendo que el camino que recorro es el camino que yo he elegid' +
+          'o.'
+        
+          'Eres ilimitado en tu manera de re-inventar tu vida todos los día' +
+          's.'
+        'Eres inteligente: naciste para servir a la humanidad.'
+        'Eres totalmente adecuado para esta situación.'
+        
+          'Eres totalmente libre de elegir pensamientos de alegría.  Es tu ' +
+          'derecho Divino el hacerlo.'
+        
+          'Eres un '#39#39'Doctor'#39#39' verdadero, usa todo tu conocimiento en pro de' +
+          ' la humanidad.'
+        'Eres un ejemplo a seguir: Sonríe.'
+        'Eres un ser dotado, inteligente y compasivo.  Demuéstralo.'
+        
+          'Eres un ser ilimitado en tu habilidad para decidir crear tu prop' +
+          'ia vida.'
+        
+          'Eres un ser único e irrepetible.  Posees dones, talentos y habil' +
+          'idades.  Explótalos.'
+        
+          'Es agradable ver como van creciendo mis ahorros. Luego puedo inv' +
+          'ertir y hacer que el dinero trabaje para mí en lugar de trabajar' +
+          ' por él.'
+        'Es bueno para los demás compartir mis sentimientos.'
+        
+          'Es esencial para mi bienestar que me ame y me aprecie en todo mo' +
+          'mento.'
+        
+          'Es mi derecho satisfacer mis necesidades, con facilidad y amor p' +
+          'ido lo que necesito.'
+        'Es mi vida. La vivo como realmente deseo.'
+        
+          'Es necesario que busque y encuentre mis recursos interiores y mi' +
+          ' conexión con la Sabiduría Divina.'
+        'Es seguro para mí compartir mis sentimientos.'
+        
+          'Es tu derecho de nacimiento el vivir libre y plenamente.  Disfru' +
+          'ta cada segundo de tu vida.'
+        
+          'Es un privilegio producir nuevas experiencias sólo con el pensam' +
+          'iento.'
+        
+          'Es una experiencia maravillosa vivir en esta época. Me entusiasm' +
+          'a estar aquí.'
+        
+          'Escucha atentamente a la persona delante de tí.  Puede ser la me' +
+          'jor medicina para ella.'
+        'Escucho las comunicaciones de la naturaleza.'
+        'Escucho mis sentimientos y los expreso en forma apropiada.'
+        'Está bien expresar todas mis emociones.'
+        
+          'Ésta es la senda de la curación. Vivo este día de tal modo que d' +
+          'esee Recordarlo mañana.'
+        
+          'Esta terapia será tan exitosa como tú decidas en tu mente y cora' +
+          'zón que sea.  Ten fe y positivismo.'
+        'Estamos seguros y a salvo, y todo está bien en nuestro mundo.'
+        
+          'Estás equipado mental y emocionalmente para disfrutar de una vid' +
+          'a próspera.  Siente totalmente realizado con lo que hagas.'
+        
+          'Estas tratando con un ser maravilloso.  Aprovecha esta oportunid' +
+          'ad.'
+        'Este año he explorado y expresado mi espectacular yo interior.'
+        
+          'Este ejército de diapasones de '#39#39'buenas vibraciones'#39#39' está ahora' +
+          ' mismo haciendo resonar la atmósfera del planeta con una melodía' +
+          ' de esperanza.'
+        
+          'Este es un día feliz, este es un día de salud y abundancia para ' +
+          'mí, mi familia y mis amigos.'
+        
+          'Este es un mes fabuloso para hacer ejercicio; mantengo en movimi' +
+          'ento mi cuerpo.'
+        
+          'Este es uno de los mejores meses de mi vida. Me abro para recibi' +
+          'r todo lo bueno que me ofrece la Vida.'
+        
+          'Este niño, vive respira el jubilo de vivir, se nutre de amor, Di' +
+          'os hace milagros todos los días.'
+        'Estoy a salvo en el Universo; la Vida me ama y me apoya.'
+        
+          'Estoy a salvo siendo yo, soy una persona maravillosa tal como so' +
+          'y, elijo vivir, opto por la alegría, me acepto.'
+        'Estoy a salvo, me relajo y dejo que la vida fluya jubilosamente.'
+        
+          'Estoy a salvo, mis sentimientos son normales y Aceptables, puedo' +
+          ' sentir sin temor.'
+        'Estoy a salvo.'
+        
+          'Estoy a salvo; esto es solo un cambio. El cambio es normal y nat' +
+          'ural.'
+        'Estoy abierto a mi sabiduría interior.'
+        'Estoy abierto nuevas experiencias de aprendizaje.'
+        'Estoy abierto y receptivo a todos los puntos de vista.'
+        
+          'Estoy aprendiendo a hacer afirmaciones positivas. Elijo pensamie' +
+          'ntos que me alienten y me hagan sentir bien.'
+        'Estoy conciente de cada instante de mi vida.'
+        'Estoy convencido que mi curación será efectiva.'
+        'Estoy dispuesto a curarme.'
+        'Estoy dispuesto a fluir con la vida.'
+        
+          'Estoy dispuesto a tener éxito aunque suponga agradar a mis padre' +
+          's.'
+        'Estoy en armonía con la naturaleza. La cuido y la protejo.'
+        
+          'Estoy en conexión con la Totalidad del Universo, y la Divinidad ' +
+          'me guía y me protege.'
+        'Estoy en manos de Dios.'
+        'Estoy en paz con todas mis emociones, me amo y me apruebo.'
+        'Estoy en paz con todos los aspectos de mi vida.'
+        
+          'Estoy en paz y me siento cómodo en todos los aspectos de mi vida' +
+          ', soy fuerte y capaz.'
+        'Estoy en paz.'
+        
+          'Estoy en perfecto equilibrio, a toda edad avanzo por la vida con' +
+          ' alegría y soltura.'
+        'Estoy libre de adicciones, antojos y sustancias nocivas.'
+        'Estoy libre de exceso de alergias.'
+        'Estoy libre de exceso de ansiedad.'
+        'Estoy libre de exceso de avaricia.'
+        'Estoy libre de exceso de ira.'
+        'Estoy libre de exceso de lujuria.'
+        'Estoy libre de exceso de preocupaciones.'
+        'Estoy libre de exceso de temor.'
+        'Estoy libre de exceso de tristeza.'
+        
+          'Estoy lleno de alegría, no sufro ninguna angustia mental porque ' +
+          'soy Uno con el Universo.'
+        'Estoy lleno de energía y entusiasmo.'
+        'Estoy lleno de entusiasmo por la vida.'
+        
+          'Estoy rebosante de alegría, la alegría emana de mi con cada lati' +
+          'do de mi corazón.'
+        'Estoy seguro al ser yo.'
+        'Estoy seguro de mi capacidad de expresión.'
+        'Estoy seguro y a salvo cuando expreso mis sentimientos.'
+        'Estoy siempre a salvo y protegido.'
+        
+          'Estoy totalmente abierto a un nuevo camino. No tengo nada que pe' +
+          'rder.'
+        'Evita sobre racionalizar, por lo general la respuesta es obvia.'
+        
+          'Exploro nuevas profundidades en mi interior y descubro nuevos te' +
+          'soros.'
+        'Expreso confianza en lo que digo y hago.'
+        
+          'Expreso la alegría de vivir y disfruto Plenamente de cada moment' +
+          'o del día, rejuvenezco.'
+        
+          'Fácil y sencillamente deja ir lo que ya no necesites.  Haz espac' +
+          'io en tu corazón para nuevas experiencias.'
+        
+          'Floto en el océano de la vida, y mis pensamientos están anclados' +
+          ' en la Verdad y el Amor.'
+        
+          'Fluyo con el perfecto despliegue de mi vida. Feliz y expectante ' +
+          'recibo y agradezco las nuevas experiencias.'
+        'Fluyo fácilmente con el cambio.'
+        'Fluyo suavemente con la vida y en cada experiencia.'
+        
+          'Formo un equipo sanador con mi terapeuta; me relajo y confío ple' +
+          'namente en que estoy en buenas manos.'
+        
+          'Formo una unidad con todo lo que existe, y a la vez soy ser inde' +
+          'pendiente, persona que tiene su propio camino que recorrer, únic' +
+          'o y especial.'
+        
+          'Fortalezco mi autoestima y mi carácter para ser capaz de negarme' +
+          ' a hacer lo que no quiero hacer y evitar que se me manipule.'
+        'Genero fuerza e inmunidad ante las situaciones negativas.'
+        'Gozo de la vida y aprendo cada día las lecciones que me enseña.'
+        
+          'Gracias Dios Mío por haberme dado el Don del perdón para con otr' +
+          'os y para conmigo mismo.'
+        
+          'Gracias Dios, por ser la fuente infinita de todo mi bien. Lo cre' +
+          'o y lo acepto con gratitud.'
+        'Gracias por ser quien eres y por estar aquí.'
+        
+          'Gracias, Dios, porque en mi hogar sólo hay orden y progreso para' +
+          ' mí y toda mi familia.'
+        'Hablo asertivamente y con fluidez porque hablo la verdad.'
+        
+          'Hablo con una persona sin hogar. Hago una meditación sanadora po' +
+          'r un delincuente.'
+        
+          'Hago actos de amabilidad al azar: recojo lo que los demás hayan ' +
+          'tirado al suelo en el campo o en la playa.'
+        
+          'Hago de mis afirmaciones positivas un hábito diario. Elijo pensa' +
+          'mientos que me alienten y me hagan sentir bien.'
+        
+          'Hago lo que me gusta y me llegará el dinero. Amo lo que hago y m' +
+          'e llega el dinero.'
+        'Hago todo lo que dije que haría por mi bienestar mental.'
+        
+          'Hago todo lo que puedo en toda circunstancia. Apruebo mis decisi' +
+          'ones, porque estoy buscando lo mejor para mí mismo.'
+        'Hago un rato de compañía a una persona mayor que vive sola.'
+        
+          'Hago una lista de afirmaciones que reflejan mi filosofía positiv' +
+          'a de la vida.'
+        'Hago uso de los maravillosos recursos que hay en mi interior.'
+        'Hay aquellos que son tan pobres que solo tienen dinero.'
+        'Hay tiempo para todo, AHORA es tiempo de aprender.'
+        
+          'Hay una gran abundancia en el Universo y está disponible para to' +
+          'dos aquellos que ampliamos nuestra conciencia.'
+        'Haz de esta consulta una celebración.'
+        'Haz de la compasión tu tarjeta de visita.'
+        'Haz de la pasión el motor de tu vida.'
+        'Haz del amarte a tí mismo un ejercicio diario.'
+        'Haz del perdón un ejercicio diario.  Perdónate a tí y a otros.'
+        
+          'Haz el espacio perfecto para vivir y trabajar y luego llénalos d' +
+          'e amor.'
+        'He sido creado perfecto y seguiré así.'
+        
+          'Hoy acepto la felicidad de mi mente, y ésta se refleja en mi vid' +
+          'a, mundo y cuerpo.'
+        'Hoy capto la maravilla y gloria de la vida con nuevos ojos.'
+        'Hoy comienzo mi viaje de sanación.'
+        'Hoy comienzo una nueva vida.'
+        'Hoy es el día que comienzo a hacer todas las cosas que deseé.'
+        
+          'Hoy es otro precioso día sobre la Tierra y vamos a vivirlo con a' +
+          'legría.'
+        'Hoy es un día fabuloso porque así lo has decidido.'
+        'Hoy estoy sano.'
+        
+          'Hoy me divierto y comparto mi alegría con otras personas que qui' +
+          'eren divertirse.'
+        'Hoy me lo paso muy bien.'
+        
+          'Hoy me regocijo, y le doy Gracias a Dios por brindarme este bien' +
+          '.'
+        
+          'Hoy nace un día glorioso en mi conciencia. Disfruto de este nuev' +
+          'o día y de todo lo que ofrece.'
+        'Hoy omito alguna de mis rutinas para hacer algo diferente.'
+        
+          'Hoy quiero trabajar la amabilidad, la bondad y la condescendenci' +
+          'a.'
+        
+          'Hoy siento que algo me lleva hacia mi mayor bien y lo acepto con' +
+          ' gratitud.'
+        'Hoy sigo la voluntad de Dios todo poderoso.'
+        'Hoy sigo mi propio criterio, sin desperdiciar el ajeno.'
+        'Hoy te desafío a que seas TU, sin trampa ni cartón.'
+        'Imagínate lo inimaginable.'
+        'Impulso mi vida con la energía que genero en el presente.'
+        
+          'Inicio cada día con gratitud, y por la noche duermo con mis ánge' +
+          'les. Sé que están siempre conmigo y que puedo acudir a ellos en ' +
+          'cualquier momento.'
+        'Inspiro la plenitud y la riqueza de la vida.'
+        'Inundo de amor mi casa, que es un verdadero cielo en la Tierra.'
+        'Invariablemente en cada dificultad se esconde una oportunidad.'
+        'Irradio energía sanadora hacia todo el mundo.'
+        'Irradio paz, calma y optimismo.'
+        'Jamás fracasaré porque estoy determinado a triunfar.'
+        'Juego con mi niño interior y los dos nos lo pasamos divinamente.'
+        'La alegría y la felicidad están en el centro de mi mundo.'
+        
+          'La Ciencia Médica no puede eliminar los efectos de mi condición ' +
+          'si esta es de origen mental.'
+        'La confianza en ti mismo debe ser tu slogan personal.'
+        'La Divinidad siempre está a mi lado, amándome y protegiéndome.'
+        
+          'La empatía con la persona delante de tí es el primer paso para a' +
+          'yudarla.'
+        
+          'La gente está a salvo en mi presencia y no necesita mi protecció' +
+          'n.'
+        
+          'La impaciencia es una emoción negativa no propia de un ser tan i' +
+          'nteligente como tú.'
+        
+          'La inteligencia Divina te dará todas las herramientas que necesi' +
+          'tas.  Solo debes canalizarla.'
+        'La luz al final del túnel está dentro de tí.'
+        'La naturaleza es sabia si dejamos de interferir.'
+        'La palabra '#39#39'Imposible'#39#39' no existe en mi vocabulario.'
+        'La paz debe ser tu objetivo primario.'
+        'La perseverancia es propia de aquellos que tienen fe.'
+        'La persona delante de tí es tu jefe.'
+        
+          'La persona delante de ti es un ser humano como tú.  Trátala con ' +
+          'el máximo respeto.'
+        'La persona delante de tí no es un '#39#39'protocolo'#39#39'.'
+        
+          'La persona delante de tí, te está presentando con una maravillos' +
+          'a oportunidad de expresar tu creatividad.'
+        'La puerta se abre al amor, al amor por mí.'
+        
+          'La risa constituye una parte muy importante de la evolución de m' +
+          'i alma.'
+        
+          'La tierra es verdaderamente nuestra madre, y la necesitamos para' +
+          ' sobrevivir. Si no la cuidamos nosotros, ¿quién lo hará? ¿Dónde ' +
+          'viviremos?'
+        'La tolerancia es una cualidad propia de las personas exitosas.'
+        'La vida me ama, me nutre y me apoya, estoy a salvo viviendo.'
+        
+          'La vida me muestra el camino hacia la prosperidad y la abundanci' +
+          'a.'
+        'La vida siempre es buena.  Todo está bien en mi mundo.'
+        'La vida siempre es buena. Todo está bien en mi mundo.'
+        
+          'Las creencias que tengo, las cosas que pienso y las palabras que' +
+          ' digo son muy poderosas; dan forma a mis experiencias y a mi vid' +
+          'a.'
+        
+          'Las críticas y los juicios se desvanecen, y a medida que desapar' +
+          'ecen me hago más libre para apreciar todo lo que soy.'
+        
+          'Las fiestas son divertidas y sanas. Las celebro con amigos y com' +
+          'pañeros de trabajo de modos que me hacen sentir bien.'
+        'Las personas incurables aún no han nacido.'
+        
+          'Le digo a mi cuerpo que lo quiero. Incluso le pido perdón por ha' +
+          'berlo odiado en el pasado.'
+        'Le digo a mis seres queridos que los amo.'
+        
+          'Le doy a la vida y a mis seres queridos lo mejor de mí, porque l' +
+          'o que doy vuelve a mí multiplicado. La mejor manera de recibir a' +
+          'mor es darlo.'
+        
+          'Libera la necesidad de por instinto culpar a otros por tus error' +
+          'es.'
+        'Libera toda creencia que no se ajuste a tu realidad.'
+        'Libera tu ira de maneras positivas.'
+        'Libera tu lucha interna, simplemente fluye y deja fluir.'
+        'Libero cualquier mala tendencia o comportamiento heredado.'
+        
+          'Libero el pasado y dejo que el tiempo cure todos los aspectos de' +
+          ' mi vida.'
+        
+          'Libero todo lo que no sea amor, hay tiempo y espacio para todo l' +
+          'o que deseo hacer.'
+        'Limpio mi cuerpo y mi ser continuamente.'
+        
+          'Limpio mi vida de los recuerdos del pasado y hago el maravilloso' +
+          ' presente de un nuevo principio, centrando mi conciencia en la a' +
+          'bundancia.'
+        'Lleno mi mente de pensamientos positivos, creativos y amorosos.'
+        'Llevo las riendas de mis finanzas, mi salud y mi futuro.'
+        'Llevo una vida llena de amor, dicha, paz y prosperidad.'
+        'Lo más peligroso que tiene la vida es vivirla.'
+        
+          'Lo mejor que puedo hacer por los niños que me rodean es aprender' +
+          ' a amarme a mí mismo, porque los niños aprenden con el ejemplo.'
+        
+          'Lo que das, recibes.  Da solo bondad y caridad y en turno, solo ' +
+          'bondad y caridad recibirás.'
+        
+          'Lo que doy, lo recibo de vuelta. Contribuyo a crear los aconteci' +
+          'mientos que tienen lugar en mi vida, y soy responsable de ellos.'
+        'Los actos de bondad me hacen sentir bien.'
+        
+          'Los momentos de meditación u oración son instantes especiales de' +
+          ' mi vida.'
+        
+          'Los pensamientos limpios y puros que son de Dios, fluyen a travé' +
+          's de mi mente.'
+        
+          'Los profesionales de la salud que me atienden respetan mis decis' +
+          'iones respecto a mis terapias.'
+        
+          'Los quehaceres domésticos son parte de la vida y los hago con so' +
+          'ltura y rapidez.'
+        
+          'Los regalos de la vida son la paz, el amor y la alegría. Los ace' +
+          'pto con gratitud y los comparto con los demás.'
+        'Maneja todas tus experiencias con sabiduría, amor y honestidad.'
+        
+          'Mantengo ágiles y flexibles mi mente y mi cuerpo hasta el último' +
+          ' día de mi vida.'
+        
+          'Me abro a la vida y estoy dispuesto a Experimentarla, a sentir c' +
+          'on toda confianza.'
+        'Me abro para experimentar todo lo bueno que me ofrezca la vida.'
+        
+          'Me acepto amorosamente. Defiendo lo que siento y lo que pienso, ' +
+          'y quienes me aman me aceptan tal cual soy.'
+        'Me acepto tal como soy.'
+        'Me acepto y me apruebo tal cual soy.'
+        'Me acepto y me apruebo.'
+        
+          'Me acuerdo de decirles a las personas de mi entorno lo mucho que' +
+          ' los quiero y lo maravillosos que son.'
+        
+          'Me alegro y gozo de la buena relación que tengo conmigo. Hago qu' +
+          'e sea la mejor y más amorosa que pueda tener.'
+        
+          'Me aliento a mí mismo y a los demás, y la vida nos alienta de mo' +
+          'dos muy especiales.'
+        
+          'Me alimento de un modo sano, bebo mucha agua natural y hago ejer' +
+          'cicio.'
+        'Me alimento de un modo sano, y hago ejercicio.'
+        'Me amo a mi mismo pase lo que pase.'
+        
+          'Me amo a mi mismo, y me regocijo en quien soy, porque sé que la ' +
+          'vida está aquí para mí y me proporciona todo lo que necesito.'
+        'Me amo tal como soy.'
+        'Me amo y disfruto de mi propia compañía.'
+        
+          'Me amo y me apruebo, con los ojos del amor me veo a mí y veo tod' +
+          'o lo que hago, estoy a salvo.'
+        
+          'Me amo y me apruebo, confío en el proceso de la vida, estoy a sa' +
+          'lvo.'
+        'Me amo y me apruebo.'
+        'Me amo y me apruebo. Me acepto tal como soy.'
+        'Me amo y me apruebo. Soy perfecto. Estoy en paz.'
+        
+          'Me armonizo ahora y bendigo a todas las personas, cosas y situac' +
+          'iones en mi vida.'
+        'Me atrevo a ver mi propio valor.'
+        'Me concentro en las bendiciones que recibo y las agradezco.'
+        
+          'Me construyo un mañana lo más sano, brillante y dichoso que pued' +
+          'a.'
+        'Me creo un conjunto de creencias que me apoyan y me nutren.'
+        
+          'Me creo un universo seguro, rebosante de amor y prosperidad, y a' +
+          'sí cuido con afecto de mi corazón y de mi alma.'
+        'Me desprendo jubilosamente del pasado, estoy en Paz.'
+        
+          'Me doy a la vida y a mis seres queridos lo mejor de mí, porque l' +
+          'o que doy vuelve a mí multiplicado. La mejor manera de recibir a' +
+          'mor es darlo.'
+        
+          'Me doy el tiempo que necesito para trabajar en la aflicción o el' +
+          ' duelo. La muerte es una parte natural de la vida.'
+        'Me doy permiso para cambiar.'
+        'Me doy permiso para disfrutar de mi cuerpo.'
+        'Me doy permiso para disfrutar totalmente de todo lo que hago.'
+        'Me doy permiso para realizarme.'
+        'Me doy permiso para ser próspero y feliz.'
+        
+          'Me doy permiso para ser todo lo que puedo ser, merezco lo mejor ' +
+          'de la vida. Me amo, amo y aprecio a los demás.'
+        
+          'Me doy todo el tiempo necesario para encontrar paz en mi interio' +
+          'r; sé que así llegaré a desarrollar todo mi potencial.'
+        
+          'Me doy todo el tiempo que necesito para hacer mis compras. Siemp' +
+          're compro dentro de mi presupuesto.'
+        'Me encanta comer buenos alimentos y dormir bien por la noche.'
+        
+          'Me encanta despertar por la mañana y saludar al glorioso nuevo d' +
+          'ía.'
+        
+          'Me encanta hacer los regalos que hago porque son expresiones que' +
+          ' nacen desde el fondo de mi corazón.'
+        
+          'Me encanta llegar a casa.  Experiencias placenteras llenan las h' +
+          'abitaciones.'
+        'Me encanta ser quien soy y hago valer mi poder con prudencia.'
+        'Me estimula la vida, estoy lleno de energía y entusiasmo.'
+        
+          'Me estoy creando un buen futuro económico. Mi dinero aumenta día' +
+          ' a día.'
+        'Me estoy limpiando todos los residuos negativos.'
+        'Me estoy renovando en cada momento de este día.'
+        'Me expreso como soy cuando estoy relajado.'
+        
+          'Me gusta ser una persona organizada y saber que lo que hago dura' +
+          '.'
+        
+          'Me hago cargo de mis pensamientos y comienzo a crear el mundo de' +
+          ' igualdad que deseo.'
+        
+          'Me hago cargo de todas mis necesidades nutricionales físicas, me' +
+          'ntales y emocionales.'
+        
+          'Me hallo en paz sabiendo que estoy protegido y guiado en todo mo' +
+          'mento.'
+        
+          'Me liberaré de mis dudas recordando que hay una razón para todo ' +
+          'lo que sucede.'
+        
+          'Me libero de la carga de la culpa y la vergüenza. Me alejo del p' +
+          'asado  y vivo en este momento con alegría y aceptación.'
+        
+          'Me libero de la necesidad de acusar o culpar, a otros y a mí; cu' +
+          'lpar es un acto inútil.'
+        'Me libero de la necesidad de criticar a los demás.'
+        'Me libero de mis adicciones.'
+        'Me libero de mis programas pasados.'
+        'Me libero de todo lo que me hace daño.'
+        'Me libero del dolor y del sufrimiento.'
+        
+          'Me libero y libero a los demás para hacer un perfecto viaje de a' +
+          'prendizaje.'
+        'Me lleno de saber para poder ayudar sabiamente.'
+        'Me merezco lo mejor, y lo acepto con alegría, placer y gratitud.'
+        'Me merezco prosperar. Mis ingresos aumentan constantemente.'
+        
+          'Me muevo de éxito en éxito, de alegría en alegría y de abundanci' +
+          'a en abundancia.'
+        
+          'Me nutro con pensamientos positivos, que me llenen de paz y aleg' +
+          'ría.'
+        'Me perdono a mi mismo y decido por la felicidad.'
+        'Me perdono completamente.'
+        'Me perdono por mis limitaciones.'
+        
+          'Me perdono por mis viejas creencias limitadoras. Ahora tengo pen' +
+          'samientos nuevos y me creo una vida nueva.'
+        'Me perdono por todos mis errores y rectifico.'
+        
+          'Me permito el tiempo y el espacio para estar en Paz conmigo mism' +
+          'o.'
+        'Me permito estar conmigo mismo.'
+        
+          'Me procuro momentos de silencio y quietud para conectar y comuni' +
+          'carme con la Sabiduría Divina.'
+        
+          'Me quiero a mí mismo, porque soy un ser excepcional e irrepetibl' +
+          'e.'
+        'Me quiero en presencia de los demás.'
+        'Me realizo creativamente todos los días de mi vida.'
+        
+          'Me recupero de mis lesiones y mi cuerpo se restaura a un equilib' +
+          'rio perfecto.'
+        'Me relajo después de comer.'
+        
+          'Me relajo y aquieto mi mente. Acepto con naturalidad los cambios' +
+          ' de mi vida.'
+        'Me relajo y libero mis tensiones a diario.'
+        'Me respeto a mi mismo todo el tiempo.'
+        'Me respeto a mí mismo y respeto también a los demás.'
+        'Me resulta fácil aceptar la salud perfecta.'
+        'Me resulta fácil dar amor a los demás.'
+        
+          'Me siento absolutamente en paz. Abro mi corazón y de él emana el' +
+          ' regalo del amor para todos.'
+        'Me siento amado y protegido.'
+        'Me siento despierto y fresco.'
+        'Me siento en paz con mi sexualidad y con la de los demás.'
+        
+          'Me siento en silencio y quietud y llevo toda mi atención hacia a' +
+          'dentro.'
+        'Me siento muy bien y sonrío.'
+        'Me siento seguro compartiendo mis sentimientos.'
+        'Me siento seguro tanto dando como recibiendo.'
+        'Me trato como a un ser muy amado.'
+        
+          'Me trato con amabilidad y comprensión, y lo mismo hago con los d' +
+          'emás.'
+        
+          'Me trato con amabilidad y comprensión, y lo mismo hago con los d' +
+          'emás. Encuentro mis recursos interiores.'
+        
+          'Me trato con amor y ternura, como desearía que me tratara una pe' +
+          'rsona muy querida.'
+        
+          'Me trato con mucho cariño, con amor y humor. Disfruta de mi vida' +
+          ' y la lleno de risas.'
+        'Me uno cada vez y cada día más a Dios.'
+        
+          'Me visualizo en el futuro sintiendo todavía más alegría y felici' +
+          'dad.'
+        
+          'Medito sobre mis temores y visualizo dejándolos caer uno a uno e' +
+          'n un riachuelo para que se disuelvan y desaparezcan arrastrados ' +
+          'por la corriente.'
+        'Merezco el amor, abundante amor.'
+        'Merezco la alegría y la felicidad.'
+        'Merezco la libertad, la libertad de ser todo lo que puedo ser.'
+        'Merezco la salud.'
+        'Merezco la vida, una vida buena.'
+        'Merezco muchas cosas más que todo eso: merezco todo lo bueno.'
+        'Merezco relaciones divertidas, fáciles y que me apoyen.'
+        'Merezco ser feliz.'
+        'Merezco ser feliz.  Yo ahora me acepto tal y como soy.'
+        'Merezco solo lo mejor para mi vida.'
+        'Merezco tenerlo todo.'
+        'Merezco vivir cómodamente y prosperar.'
+        
+          'Mi actual trabajo es el canal temporal por donde me llega el bie' +
+          'n desde el Manantial Infinito. No corro ningún riesgo si cambio ' +
+          'de canal.'
+        
+          'Mi casa es un lugar feliz para vivir. Bendigo a todos los que en' +
+          'tran en ella, también a mí.'
+        'Mi cerebro y sistema nervioso funciona perfectamente.'
+        
+          'Mi conciente y subconciente se unen y trabajan de común acuerdo ' +
+          'para mi bien.'
+        'Mi corazón está repleto de fuerza y confianza.'
+        'Mi corazón funciona perfectamente.'
+        'Mi cuerpo es un lugar seguro, cómodo y placentero donde estar.'
+        
+          'Mi cuerpo es un templo precioso. Si quiero tener una vida larga ' +
+          'y satisfactoria, es necesario que lo cuide.'
+        
+          'Mi cuerpo es un templo que siempre amaré y respetaré porque vivo' +
+          ' en él.'
+        
+          'Mi cuerpo es una maravillosa pieza de ingeniería donde que es un' +
+          ' placer habitar.'
+        'Mi cuerpo responde con rapidez a todas las situaciones.'
+        
+          'Mi cuerpo, mi mente y mi espíritu están sanos y llenos de una en' +
+          'ergía ilimitada.'
+        
+          'Mi familia se enorgullece de mí. De buena gana acepto sus elogio' +
+          's y me esfuerzo por demostrarles mi gratitud y mi reconocimiento' +
+          '.'
+        
+          'Mi futuro es esplendoroso y nuevo.  Espero con ilusión el mañana' +
+          '.'
+        'Mi hígado funciona perfectamente.'
+        'Mi hogar es el Universo.'
+        'Mi mente está siempre conectada con la Sabiduría Divina.'
+        
+          'Mi modo de pensar es en grande y por lo tanto haré grandes cosas' +
+          ' para el beneficio de la humanidad.'
+        'Mi pareja es una persona maravillosa, cariñosa y espiritual.'
+        
+          'Mi peso es el perfecto para mí. Me quiero, y por lo tanto me pro' +
+          'tejo con amor.'
+        'Mi piel funciona perfectamente.'
+        'Mi placer complace a los demás.'
+        'Mi presencia es naturalmente agradable para mí y para los demás.'
+        
+          'Mi relación con Dios, la Inteligencia Universal, el Poder Superi' +
+          'or o como quiera llamarle, es muy importante.'
+        'Mi sistema digestivo funciona perfectamente.'
+        'Mi sistema hormonal funciona perfectamente.'
+        'Mi sistema inmunitario funciona perfectamente.'
+        
+          'Mi tiempo a solas es tan satisfactorio como el que paso con otra' +
+          's personas, porque hago de mis pensamientos mis mejores amigos.'
+        
+          'Mi verdadera naturaleza es espiritual, mi espíritu no envejece. ' +
+          'Por lo tanto soy joven, sano y fuerte.'
+        'Mi vida es una magnifica aventura.'
+        'Mi vida es una taza rebosante de salud, libertad y tranquilidad.'
+        
+          'Mi vida está comenzando y me gusta. Soy una persona nueva en un ' +
+          'siglo nuevo.'
+        'Mi vida está llena de amor y respeto.'
+        
+          'Mi vida presente y futura comienza hoy. La vida merece la pena s' +
+          'er vivida integra.'
+        'Mi vida rebosa de libertad y tranquilidad.'
+        
+          'Mi vida viene en oleadas, con experiencias de aprendizaje y peri' +
+          'odos de evolución y renovación.'
+        'Mi vida y mi corazón rebosan de amor.'
+        'Mi vitalidad es una fuerza curadora del planeta.'
+        'Mientras más cosas agradezco, más tengo para agradecer.'
+        
+          'Mientras reconozco mi valía innata, mi vida se expande y prosper' +
+          'a de muchas y deliciosas maneras.'
+        'Miro tranquilo hacia lo profundo de mi ser.'
+        'Mis amigos y yo nos apoyamos de un modo positivo.'
+        
+          'Mis años de madurez pueden ser los más gratificantes y luminosos' +
+          ' de toda mi vida.'
+        'Mis cosas siempre se solucionan de la mejor manera.'
+        'Mis creencias espirituales me apoyan y me reconfortan.'
+        
+          'Mis familiares y amigos intercambian conmigo regalos del aprecio' +
+          ' y el amor.'
+        
+          'Mis hermanas y hermanos tienen un gran corazón. Somos tolerantes' +
+          ' y compasivos y nos queremos. Abro mi corazón a mi familia.'
+        
+          'Mis ideas son muy poderosas y liberadoras, y cuando creo en ella' +
+          's, se convierten en realidad.'
+        'Mis ingresos aumentan constantemente.'
+        'Mis mecanismos de desintoxicación funcionan perfectamente.'
+        
+          'Mis padres ya no tienen ningún poder sobre mí. Soy libre de vivi' +
+          'r mi vida.'
+        
+          'Mis pensamientos me consuelen y me reconforten. Son pensamientos' +
+          ' agradables, amistosos, risueños y llenos de amor.'
+        
+          'Mis pensamientos positivos fortalecen y estimulan mi sistema inm' +
+          'unitario.'
+        
+          'Mis pensamientos puros y libres me mantienen joven, fuerte y sal' +
+          'udable.'
+        
+          'Mis pensamientos son sabios e inspirados, y me ayudan a viajar p' +
+          'or la vida con armonía, dicha y paz.'
+        
+          'Mis pensamientos son sanos.  Controlo mis pensamientos con amor ' +
+          'y respeto.'
+        'Mis procesos corporales son normales y naturales.'
+        'Mis pulmones funcionan perfectamente.'
+        'Mis riñones funcionan perfectamente.'
+        'Mis sentidos funcionan perfectamente.'
+        
+          'Nadie nos dijo que fuéramos, nadie nos dijo que lo intentaramos,' +
+          ' nadie nos dijo que sería fácil.'
+        
+          'Nadie nos dijo que fuéramos, nadie nos dijo que lo intentáramos,' +
+          ' nadie nos dijo que sería fácil.'
+        
+          'Nadie puede arrebatarme jamás aquello que es mío por derecho pro' +
+          'pio.'
+        'Nadie tiene razón ni se equivoca. Todo es relativo.'
+        
+          'Ninguno tenemos la vida comprada.  Vive cada día como si fuera e' +
+          'l último y agradécelo.'
+        
+          'No confundas el tener menos con el ser menos, el tener más con s' +
+          'er más, tampoco confundas lo que posees con quien eres.'
+        'No digas nada que no creas.'
+        
+          'No es bella la vida es bella cuando hacemos las cosas con compas' +
+          'ión?'
+        
+          'No es el deseo de ganar el que hace a los triunfadores sino su d' +
+          'eseo de prepararse tanto física como mentalmente.'
+        'No es lo que dices sino como lo dices.'
+        
+          'No es lo que entra en tu boca lo que ofende sino lo que sale de ' +
+          'ella.'
+        
+          'No existe un camino único a donde quieres llegar.  Atiende a tod' +
+          'as las ideas de tu corazón.'
+        'No hay ni blanco ni negro, solo matices de gris.'
+        'No hay ni '#39#39'bueno'#39#39' ni '#39#39'malo'#39#39', solo diferente.'
+        
+          'No importa lo que haya pensado de mí en el pasado. Hoy es un nue' +
+          'vo día.  En este nuevo momento, comienzo a verme de forma más co' +
+          'mpasiva.'
+        'No intentes nada, simplemente hazlo.'
+        
+          'No le temo a las enfermedades, Dios siempre está a cargo de mi s' +
+          'alud y la de toda mi familia y amigos.'
+        'No me critico. Tampoco critico a los demás.'
+        
+          'No me preocupo más por el pasado, solo vivo en el eterno '#39#39'Ahora' +
+          #39#39'.'
+        
+          'No mires el obstáculo que has superado, sino aquellos que vas a ' +
+          'superar.'
+        'No necesito perseguir nada con el fin de estar completo.'
+        'No necesito sufrir para conseguir la felicidad.'
+        
+          'No olvides que la causa de tu presente, es tu pasado como la cau' +
+          'sa de tu futuro es tu presente.'
+        'No prometas nada que no puedas cumplir.'
+        
+          'No se puede amar y odiar al mismo tiempo. Contribuyo a crear un ' +
+          'mundo amoroso.'
+        
+          'No se trata de los más rápidos, ni los más fuertes o los más gra' +
+          'ndes, se trata de ser nosotros mismos.'
+        'No simplemente entiendas, comprende.'
+        'No te conformes, ni te limites.'
+        'No tengo deudas emocionales.'
+        'No tengo tiempo para perder en rencores y resentimientos.'
+        
+          'Nunca pienses en al suerte porque la suerte es el pretexto de lo' +
+          's fracasados.'
+        
+          'Nunca pienses en la suerte porque la suerte es el pretexto de lo' +
+          's fracasados.'
+        
+          'Nunca te quejes de tu pobreza, tu soledad o tu suerte, enfréntat' +
+          'e con valor y acepta que de una u otra manera son el resultado d' +
+          'e tus actos y las pruebas que has de ganar.'
+        
+          'Ocurra lo que ocurra, sé que puedo manejarlo. Soy una persona mu' +
+          'y capaz.'
+        'Ofrezco a los demás todo lo bueno que he recibido.'
+        
+          'Ofrezco aliento a los demás no tan afortunados como yo y los ayu' +
+          'do a ser lo mejor que pueden ser.'
+        
+          'Ofrezco aliento a los demás y los ayudo a ser lo mejor que puede' +
+          'n ser.'
+        'Otros te respetarán porque tú los respetas.'
+        'Otros te respetarán porque tú te respetas a tí mismo.'
+        
+          'Para cualquier circunstancia en tu vida, siempre, con actitud po' +
+          'sitiva.'
+        
+          'Para cumplir tus objetivos debes equiparte de mucha fuerza de vo' +
+          'luntad y tenacidad.'
+        
+          'Para volver a empezar corrígete, el triunfo del verdadero ser hu' +
+          'mano surge de las cenizas del error.'
+        
+          'Parto del espacio de amor de mi corazón y considero a cada perso' +
+          'na en este planeta alguien que necesita ser amado y valorado.'
+        'Pase lo que pase, sé que soy capaz de afrontarlo.'
+        
+          'Paso a paso.  No se puede concebir otra manera de lograr las cos' +
+          'as.'
+        
+          'Paso de la enfermedad a la salud, de la soledad al amor, de la p' +
+          'obreza a la abundancia y la plenitud.'
+        'Paso de las adicciones y me libero.'
+        
+          'Perdono a todas las personas y me perdono a mí mismo. Me libero ' +
+          'del pasado; soy libre para un futuro luminoso.'
+        'Perdono a todos aquellos que me han hecho daño.'
+        'Perdono con facilidad.'
+        
+          'Permanezco en contacto con mi Sabiduría Interior, y tengo una vi' +
+          'da maravillosa: sana, gratificante, creativa, dichosa y llena de' +
+          ' amor.'
+        
+          'Permita que la creatividad Divina le ilumine.  Descubrirá nuevos' +
+          ' e impensables horizontes.'
+        
+          'Permite a tu amor fluir libremente porque tu suministro de amor ' +
+          'es infinito.'
+        
+          'Permite que la inspiración Divina entre en tí y superarás cualqu' +
+          'ier limitación.'
+        
+          'Permito que la prosperidad entre en mi vida en un nivel en el cu' +
+          'al nunca entró. Merezco lo mejor y estoy dispuesta a aceptarlo.'
+        'Permito que mis pensamientos sean libres.'
+        
+          'Pide más entendimiento para así con más conocimiento y amor dar ' +
+          'forma a tu mundo y experiencias.'
+        'Pídele a la conciencia Divina que te ayude a conocerte mejor.'
+        'Pídele a la conciencia Divina que te ayude.'
+        'Piensa bien antes de responderle a la persona delante de tí.'
+        'Piensa calmada, pacífica y centradamente.'
+        
+          'Piensa menos en tus problemas y más en tu trabajo.  Los problema' +
+          's sin alimentarlos morirán.'
+        'Piensa, cree, actúa.'
+        
+          'Pienso como si mi vida dependiera de ello,  porque sé que es así' +
+          '.'
+        
+          'Pienso en todas las veces que me he sentido alegre y feliz, y me' +
+          ' permito sentir de nuevo esa dicha.'
+        'Pongo mis talentos al servicio de un todo mayor.'
+        'Pongo todo mi ser en cada acto de la vida.'
+        'Porque quiero, Puedo.'
+        
+          'Poseo vitalidad y energía para desarrollar las tareas de mi vida' +
+          '.'
+        'Practico la moderación en pensamiento y acción.'
+        
+          'Pregúntate si lo que estás haciendo hoy te acerca al lugar en el' +
+          ' que quieres estar mañana.'
+        
+          'Procura que para tí sea siempre fácil adaptarse y cambiar.  Eres' +
+          ' un ser flexible y que fluye con la vida.'
+        
+          'Procuro que mi relación con la naturaleza sea amorosa y armonios' +
+          'a.'
+        
+          'Puedo atraer magnificas experiencias y personas maravillosas, si' +
+          ' me creo paz y armonía en mi mente mediante pensamientos positiv' +
+          'os.'
+        
+          'Puedo desprenderme con confianza, de mi cuerpo solo sale lo que ' +
+          'ya no necesito.'
+        'Puedo hacerlo, lo haré y lo hago.'
+        'Puedo pedir todo lo que necesito, con amor y ternura.'
+        'Puedo sentir como la vida es más y más intensa y hermosa.'
+        'Qué fabuloso es sentirse bien.'
+        
+          'Quiero a mis amigos y encuentro tiempo para estar con ellos siem' +
+          'pre que puedo.'
+        'Reafirmo todo mi poder personal.'
+        'Recibo bendiciones que superan mis más acariciados sueños.'
+        
+          'Reconoce la magnificencia de tu ser y las habilidades únicas que' +
+          ' posees.'
+        
+          'Reconoce tus habilidades intuitivas.  Estas te ayudarán a conseg' +
+          'uir tu objetivo.'
+        'Reconozco las necesidades de mi cuerpo.'
+        
+          'Reconozco y acepto el Reino de Dios que mora en el centro de mi ' +
+          'ser. Paz, amor, salud y todo lo bueno.'
+        'Recuerda la ley biológica que dice: '#39#39'Úsalo o piérdelo'#39#39'.'
+        'Recuerda que ante todo, tú eres una persona.'
+        'Recuerda que antes de nutrir debes limpiar.'
+        'Recuerda que estas tratando con una criatura de Dios.'
+        
+          'Recuerdo que al Universo le gustan las personas agradecidas. Y r' +
+          'ecuerdo también que aquello en lo que centro la atención crece y' +
+          ' aumenta.'
+        'Recuerdo que el poder está siempre en el momento presente.'
+        
+          'Recuerdo que no es lo que como lo que me hace mal sino lo que me' +
+          ' estoy comiendo por dentro.'
+        
+          'Recuerdo siempre que el propósito de mi relación es compartir la' +
+          ' luz y dar felicidad.'
+        'Reduzco mi estrés viviendo de una manera armoniosa.'
+        
+          'Re-evalúa tus necesidades reales.  Estás aquí porque necesitas a' +
+          'yuda, aprovecha esta oportunidad.'
+        
+          'Renuevo mis pensamientos y mi vida y los lleno de amor y serenid' +
+          'ad.'
+        
+          'Renuevo mis pensamientos. Hago que sean mis mejores amigos y con' +
+          'figuren mi mundo de manera positiva.'
+        'Respeta a otros por ser diferentes, todos somos uno.'
+        
+          'Respeto a los demás porque Dios les dio Libre Albedrío para deci' +
+          'dir con sabiduría lo mejor.'
+        'Respeto el territorio de cada uno.'
+        'Respeto la libertad y necesidades de los que amo.'
+        'Respeto las creencias de los demás.'
+        
+          'Respeto las ideas y la senda de cada una de las personas que for' +
+          'man parte de mi vida. Comprendo que no tienen porque ser como la' +
+          's mías.'
+        
+          'Respira rítmica y plenamente ya que es a través de la respiració' +
+          'n como te conectas con el resto del Universo.'
+        'Respondo a las necesidades de otros sin alterar mi ser interior.'
+        'resta atención a lo que estás haciendo y hoy, evolucionarás.'
+        'Restituyo mi energía bloqueada.'
+        'Revitalizo mi cuerpo, mi espíritu y mi mente.'
+        
+          'Rompe tus esquemas repetitivos e inicia nuevas y creativas maner' +
+          'as de hacer las cosas.'
+        'Satisfago plenamente todas mis necesidades.'
+        'Se leal a tí mismo.  No hay lugar para la mediocridad.'
+        
+          'Sé lo maravilloso que soy, decido Amarme y disfrutar de mí mismo' +
+          '.'
+        
+          'Se puede aceptar un fallo, cualquiera puede fallar, pero no se p' +
+          'uede aceptar el no intentarlo.'
+        
+          'Sé que el amor es el estimulante del sistema inmunitario más pod' +
+          'eroso que se conoce. Por lo tanto hago todo lo que puedo para au' +
+          'mentar el amor que siento por mí y por los demás.'
+        
+          'Sé que está bien decir no cuando no me apetece o no me viene bie' +
+          'n salir, prestar algo, hablar por teléfono o hacer cualquier otr' +
+          'a cosa.'
+        'Sé que soy un ser maravilloso porque soy único e irrepetible.'
+        
+          'Se tolerante, compasivo y cariñoso con toda la gente, incluyéndo' +
+          'te a tí mismo.'
+        'Se uno con el poder y la fuerza que te crearon.'
+        
+          'Sea cual sea mi pasado, sea cual sea el ambiente del que procedo' +
+          ', empiezo a hacer cambios en este preciso momento.'
+        'Sea uno con el poder del Universo y tendrá todo lo que necesita.'
+        
+          'Si comienzo a ahorrar, aunque sea muy poco, puedo avanzar hacia ' +
+          'la riqueza.'
+        
+          'Si el amor y la compasión son tu guía, entonces esta consulta es' +
+          ' todo un éxito.'
+        
+          'Si el amor y la compasión son tu guía, entonces tienes un futuro' +
+          ' brillante.'
+        
+          'Si el miedo al fracaso te impide intentarlo, ya habrás fracasado' +
+          '.'
+        'Si emociona pensarlo, imagínate hacerlo.'
+        
+          'Si hay alguna parte de mi cuerpo con la que no me siento a gusto' +
+          ', dedico cada día un rato a enviarle amor.'
+        
+          'Si las semillas de mi pensamiento son buenas y positivas, la cos' +
+          'echa será excelente y abundante.'
+        
+          'Si me relajo y realmente creo que la vida me cuida y que estoy a' +
+          ' salvo, comienzo a fluir con ella.'
+        
+          'Si no sabes, admítelo, pero comprométete a buscar una respuesta.' +
+          '  La humanidad te lo agradecerá.'
+        
+          'Si no tengo tiempo para ver a mis amigos los les envío una tarje' +
+          'ta, les llamo por teléfono o les bendigo mentalmente.'
+        'Si te caes diez veces debes levantarte once veces.'
+        
+          'Si tengo cosas en casa que ya no me sirven, las tiro o regalo a ' +
+          'quien realmente las necesite.'
+        'Si tienes prisa, ve despacio.'
+        'Siempre encuentro tiempo para expresar mi creatividad.'
+        'Siempre estoy a salvo.  Es solo un cambio.'
+        
+          'Siempre estoy seguro y a salvo completamente en mi cuerpo físico' +
+          '.'
+        'Siempre me siento feliz conmigo mismo.'
+        'Siempre puedo expandir mi conciencia.'
+        
+          'Siempre recuerdo reírme de un modo sano con los demás, en lugar ' +
+          'de reírme de un modo insano de ellos.'
+        'Siempre sé hacia dónde voy y cómo llegar.'
+        
+          'Siempre tomo el camino correcto aunque a veces parezca que me eq' +
+          'uivoco.'
+        'Siempre veo la bondad de la vida.'
+        'Siéntete orgulloso de poder ayudar a la persona delante de tí.'
+        
+          'Siento el amor de Dios, que se manifiesta en el cariño que me br' +
+          'indan mis seres queridos. Recibo y doy amor.'
+        
+          'Siento el espectro de todas mis emociones sin quedar atrapado en' +
+          ' una de ellas.'
+        'Siento fortaleza y coraje interno.'
+        
+          'Siento la armonía y la unión entre la gente y contribuyo a logra' +
+          'rlas.'
+        
+          'Siento la armonía y la unión entre las gentes y contribuyo a log' +
+          'rarlas.'
+        'Siento mi armonía interna.'
+        'Siento mi fortaleza interna.'
+        'Siento que soy una persona creativa y poderosa.'
+        'Siento tolerancia, compasión y amor por todos, también por mi.'
+        
+          'Sigo a mi Estrella Interior y brillo a mi manera única y discret' +
+          'a. Amo la vida.'
+        'Sigo con constancia mi camino, único y especial.'
+        
+          'Sigo las R: Respeto a ti mismo, Respeto para los otros y Respons' +
+          'abilidad sobre todas mis acciones.'
+        
+          'Sigue las R: Respeto a ti mismo, Respeto para los otros y Respon' +
+          'sabilidad sobre todas tus acciones.'
+        'Solo a través de la humildad hallarás el camino verdadero.'
+        'Sólo deseo aquello que es para mi mayor bien.'
+        'Solo dí palabras amables, cariñosas, positivas y constructivas.'
+        'Solo los organismos saludables y simbióticos comparten mi vida.'
+        
+          'Sólo puedo recibir aquello para lo cual mi conciencia está recep' +
+          'tiva.'
+        
+          'Solo reconozco las virtudes y cualidades que existen dentro de m' +
+          'í y en cada uno de mis semejantes.'
+        
+          'Solo veo y reconozco a Dios dentro de mí y cada uno de mis semej' +
+          'antes.'
+        'Somos el resultado de lo que pensamos y de lo que sentimos.'
+        'Somos uno con el Poder que nos ha creado.'
+        'Soy alegre por naturaleza y la felicidad es mi estado natural.'
+        'Soy amable conmigo y con los demás mientras estamos aprendiendo.'
+        
+          'Soy amable y trato con consideración a los demás compradores. De' +
+          'jo espacio en la calle y en los mostradores. Este es un tiempo d' +
+          'e paz.'
+        
+          'Soy amor, ahora elijo, amarme y aprobarme, contemplo a los demás' +
+          ' con amor.'
+        'Soy bastante, tengo bastante, hago bastante.'
+        'Soy capaz de pedir lo que quiero fácilmente y con amor.'
+        'Soy capaz de sentir y eso me gusta.'
+        'Soy compasivo ante las debilidades de los seres que me rodean.'
+        
+          'Soy completamente inmune  a todas las ideas y experiencias negat' +
+          'ivas que hubiera a mi alrededor.'
+        'Soy conciente de mi cuerpo y de mi entorno.'
+        
+          'Soy conciente de que la vida tiene bueno y malo, feliz y triste.' +
+          '  Amo y respeto todo lo que la vida me presenta.'
+        'Soy decidido en mente y actitud.'
+        'Soy digno y valioso.'
+        'Soy el centro de mis propias fuerzas de curación.'
+        
+          'Soy el resultado de lo que pienso y de lo que siento. Por tanto,' +
+          ' pienso limpio y siento solo amor.'
+        'Soy el resultado de lo que pienso y siento.'
+        'Soy eternamente joven de espíritu.'
+        'Soy feliz en la intimidad.'
+        'Soy fuerte y capaz de manejar cualquier situación.'
+        'Soy fuerte y capaz.'
+        
+          'Soy fuerte, tengo amor. Hago de mi vida una experiencia bella y ' +
+          'digna de ser vivida.'
+        'Soy guiado y protegido, tanto en vigilia como en sueños.'
+        'Soy honesto conmigo mismo.'
+        'Soy inmensamente valioso.'
+        'Soy inocente.  Me perdono a mi mismo por pretender ser culpable.'
+        'Soy la alegría de vivir que se expresa y recibe.'
+        'Soy la persona que siempre quise ser.'
+        
+          'Soy libre de elegir mi camino espiritual, que puede tener que ve' +
+          'r o no con la religión.'
+        'Soy libre de ser yo mismo.'
+        
+          'Soy libre para experimentar todo lo bueno que ofrece el Universo' +
+          '. ¡Lo acepto, lo acepto, lo acepto!'
+        'Soy libre.'
+        'Soy merecedor de las cosas que se me dan cuando las necesito.'
+        'Soy mi propio jefe.'
+        
+          'Soy paciente ante las acciones negativas de otros a mi alrededor' +
+          '.'
+        'Soy paciente conmigo mismo y con todos a mi alrededor.'
+        'Soy poderoso e influyente en mi mundo.'
+        'Soy quien maneja mis emociones.'
+        
+          'Soy recibido con amor, y alegría, me encuentro seguro y a salvo,' +
+          ' estoy rodeado de Amor.'
+        'Soy resistente a la Contaminación electromagnética.'
+        
+          'Soy resistente a la toxicidad, mi cuerpo se desintoxica a diario' +
+          '.'
+        
+          'Soy resistente a todos los micro-organismos patógenos y a los pa' +
+          'rásitos.'
+        'Soy tolerante con la imperfección.'
+        'Soy un regalo de amor dejado en mi mundo.'
+        'Soy un regalo único de amor que habita en este mundo.'
+        'Soy un ser dotado de pureza.'
+        
+          'Soy un universo seguro. Cambio los pensamientos que no me apoyan' +
+          ' ni me nutren.'
+        'Soy una buena persona sienta lo que sienta.'
+        'Soy una buena persona, merezco una buena vida.'
+        'Soy una criatura amada del universo.'
+        
+          'Soy una expresión Divina, de la vida, me amo y me Acepto tal com' +
+          'o soy ahora.'
+        
+          'Soy una luz en el mundo; de algún modo, al estar aquí ayudo a ot' +
+          'ra persona a respirar mejor.'
+        
+          'Soy una persona independiente y autosuficiente que lleva las rie' +
+          'ndas de su vida.'
+        'Soy una persona maravillosa. Elijo amarme y disfrutar conmigo.'
+        
+          'Soy una persona organizada, eficiente y abierta a las ideas nuev' +
+          'as y creativas.'
+        'Soy una persona poderosa y digna de respeto.'
+        'Soy una persona robusta, fuerte y sana, enamorada de la Vida.'
+        'Soy uno con la fortaleza universal que hay dentro de mi.'
+        'Te tengo una noticia: recién acabas de empezar.'
+        
+          'Ten en cuenta que el gran amor y los grandes logros requieren gr' +
+          'andes riesgos.'
+        
+          'Tenga la edad que tenga, hago que el resto de mi vida sea un tie' +
+          'mpo maravilloso.'
+        
+          'Tenga la edad que tenga, hago que mi vida sea un tiempo maravill' +
+          'oso.'
+        'Tengo absoluta confianza en mí mismo.'
+        'Tengo absoluta confianza en mis juicios.'
+        'Tengo buen natural.'
+        'Tengo calma interior.'
+        
+          'Tengo casa, alimento y ropa y recibo amor de formas muy gratific' +
+          'antes.'
+        
+          'Tengo claro el sentido de mi vida y la dirección del futuro que ' +
+          'sigue.'
+        'Tengo derecho a ganarme bien la vida y disfrutar haciéndolo.'
+        'Tengo derecho a que mis necesidades sean satisfechas.'
+        'Tengo derecho a sentir lo que siento.'
+        
+          'Tengo el derecho de expresarme de formas creativas que me satisf' +
+          'agan profundamente.'
+        
+          'Tengo el poder de cambiar mi vida de tal manera que llegue un mo' +
+          'mento en que ni siquiera reconozca a mi antiguo yo.'
+        
+          'Tengo el poder de quien me creó, y expreso para mi mismo la gran' +
+          'deza que soy. Soy una expresión de la vida, divina y magnifica y' +
+          ' estoy abierto y receptivo a todo lo bueno.'
+        
+          'Tengo en mi interior una guía y una Sabiduría Divinas. Nunca est' +
+          'oy solo.'
+        'Tengo fe en el correcto desarrollo de mi destino.'
+        
+          'Tengo la certeza de que el universo se esta haciendo cargo de ll' +
+          'evarlo todo a cabo.'
+        
+          'Tengo muchísimas oportunidades para realizarme plenamente. Mi mu' +
+          'ndo esta abierto y receptivo.'
+        'Tengo paz interior y me abro a escuchar a otros.'
+        'Tengo pensamientos claros.'
+        'Tengo poder para triunfar.'
+        
+          'Tengo poder para triunfar.  Confío en mi mismo, confío en mi int' +
+          'uición.'
+        
+          'Tengo tiempo para todo. Ahora mismo es tiempo de relajarme y per' +
+          'mitir a la sanación fluir a través de mí.'
+        'Tengo todo lo que necesito para conseguir todo lo que quiero.'
+        'Tengo una actitud atenta en la ayuda.'
+        'Tengo una actitud dulce en la expresión.'
+        'Tengo una actitud tolerante en mis relaciones.'
+        
+          'Tengo una fuerte conexión espiritual con la vida. El Universo me' +
+          ' ama y me respalda.'
+        'Tengo una motivación: ¡Vivir feliz!.'
+        'Tengo una saludable actitud ante los problemas de otros.'
+        'Termina todo lo que comiences.'
+        'Tiendo la mano a la gente necesitada.'
+        
+          'Toda experiencia tiene beneficios para tí si aprendes a escuchar' +
+          ', ver y sentir.'
+        
+          'Toda situación difícil que se me presenta es una experiencia de ' +
+          'aprendizaje; sumerjo cada situación en el profundo pozo del amor' +
+          '.'
+        'Todas las personas bebemos menos agua de la que deberíamos.'
+        'Todas las personas siempre tenemos un grado de envenenamiento.'
+        
+          'Todas las personas tenemos necesidades nutricionales específicas' +
+          '.  Dialoga con un especialista.'
+        
+          'Todas las respuestas a todas las preguntas de mi vida las tengo ' +
+          'en mi interior.'
+        
+          'Todas mis células reaccionan de forma positiva a mis imágenes me' +
+          'ntales positivas.'
+        
+          'Todo cambio en tu vida te llevará a un nuevo nivel de entendimie' +
+          'nto.'
+        'Todo está bien en mi mundo.'
+        'Todo lo hago lo mejor posible. Cada día me resulta más fácil.'
+        'Todo propósito en la vida se consigue con la tenacidad.'
+        
+          'Todo se resuelve para mi mayor bien. De esta situación sólo pued' +
+          'e resultar algo bueno. Estoy a salvo.'
+        'Todos estamos aquí en la tierra para aprender y crecer.'
+        
+          'Todos hacemos lo mejor que podemos hacer con los conocimientos, ' +
+          'el entendimiento y el nivel de conciencia que tenemos en cada mo' +
+          'mento.'
+        
+          'Todos los acontecimientos que tienen lugar en mi vida y todas la' +
+          's personas con las que me relaciono me enseñan valiosas leccione' +
+          's.'
+        'Todos los conflictos se resuelven y todo está bien en mi vida.'
+        'Todos los días, en todas formas, estoy mejor y mejor.'
+        
+          'Todos mis bloqueos mentales son transmutados para que fluya haci' +
+          'a mí la salud, la abundancia y la felicidad.'
+        
+          'Todos necesitamos sanar primero nuestro espíritu para curar nues' +
+          'tro cuerpo y mantenerlo sano. ¡El amor y el perdón nos sanan a t' +
+          'odos!'
+        'Tomo alimentos frescos y naturales todos los días.'
+        'Trabaja con humildad y serás recompensado.'
+        
+          'Transformo mi trabajo en diversión, me resulta no solo agradable' +
+          ' y gratificante, sino también muy provechoso en el aspecto mater' +
+          'ial.'
+        'Transmito amor a todo mi cuerpo, mis células y todo el universo.'
+        'Trato a todo el mundo con amabilidad y cariño.'
+        
+          'Tu cuerpo es una máquina maravillosa y debes sentirte orgulloso ' +
+          'de habitar en ella.'
+        
+          'Tú eres el resultado de ti mismo no culpes nunca a nadie, nunca ' +
+          'te quejes de nada, porque fundamentalmente tú has hecho lo que q' +
+          'uieres de tu vida.'
+        
+          'Tú eres parte de la fuerza de tu vida ahora, despierta, lucha, c' +
+          'amina, decídete y triunfarás en la vida.'
+        'Tu fortaleza espiritual es la luz que te guía.'
+        'Tu oficio se resume en una palabra: SERVIR.'
+        'Tu paciencia es una virtud que los demás apreciamos en tí.'
+        'Tu sonrisa es tu carta de presentación.'
+        
+          'Tu súperconciente no se comunica con palabras.  Atiende a las ne' +
+          'cesidades de tu cuerpo.'
+        'Tu tenacidad es lo que convertirá tus sueños en realidad.'
+        
+          'Tu Trabajo, Tu Familia, Tu Salud, Tus amistades y Tu Vida Espiri' +
+          'tual, son cinco pelotas que debes mantener todas en el aire.'
+        'Tus pensamientos alegres crearán tu mundo alegre.'
+        'Un triunfador como tú nunca abandona.'
+        'Usa tu creatividad y convierte lo '#39#39'erróneo'#39#39' en algo positivo.'
+        'Usa tu sabiduría interior para regir el curso de esta consulta.'
+        'Veo ante mí un futuro plenamente feliz y dichoso.'
+        'Veo la armonía del universo en cada ser.'
+        'Visualizo un mundo de paz y abundancia.'
+        
+          'Vivir en el momento presente me permite entrar con alegría y seg' +
+          'uridad en todas las nuevas experiencias que voy encontrando en m' +
+          'i camino.'
+        
+          'Vivir es una magnifica aventura: la disfruto, la aprovecho, le s' +
+          'aco todo el partido que puedo.'
+        
+          'Vivir es una magnífica aventura: la disfruto, la aprovecho, le s' +
+          'aco todo el partido que puedo.'
+        'Vivo armónicamente conmigo y con mi entorno.'
+        'Vivo con facilidad y alegría.'
+        'Vivo el amor, la luz y la alegría sin límites.'
+        'Vivo el presente.'
+        'Vivo en armonía con todo el planeta.'
+        'Vivo este día como si fuera el último de mi existencia.'
+        'Vivo feliz cada instante de mi vida.'
+        'Vivo intensamente cada uno de los instantes que se me ofrecen.'
+        'Vivo mi sexualidad plenamente y de modo inocente.'
+        'Vivo una relación maravillosa con todos a mi alrededor.'
+        'Voy convirtiendo en realidad todo mi gran potencial.'
+        
+          'Yo ahora dejo ir todos mis problemas y doy gracias a la Sabidurí' +
+          'a Infinita por darme la guía correcta.'
+        
+          'Yo ahora dejo que la Sabiduría Divina se haga cargo de mi cuerpo' +
+          ', tengo una salud perfecta y permanente.')
+      ParentFont = False
+      TabOrder = 25
+    end
   end
   object Timer1: TTimer
     Enabled = False
     Interval = 1
     OnTimer = Timer1Timer
-    Left = 983
-    Top = 216
+    Left = 1015
+    Top = 204
   end
   object MyChrono: TYRChronometre
-    Left = 972
-    Top = 152
+    Left = 1016
+    Top = 172
   end
   object TBFertilidad: TTimer
     Enabled = False
     OnTimer = TBFertilidadTimer
-    Left = 979
-    Top = 184
+    Left = 1015
+    Top = 232
   end
 end

@@ -248,6 +248,7 @@ type
     Edit1: TEdit;
     CheckBox15: TCheckBox;
     CBAmplitud: TCheckBox;
+    Label1: TLabel;
     procedure Timer1Timer(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -270,6 +271,7 @@ type
     procedure Edit1Change(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure CBAmplitudClick(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -300,7 +302,7 @@ var
 implementation
 
 uses Freq2,speachunit, Patname, Calibrat, ucomport, Testdata, uscioworking,
-  Risks, DataMod;
+  Risks, DataMod, Urecompensa;
 
 {$R *.DFM}
 
@@ -1347,6 +1349,11 @@ begin
 If CBAmplitud.Checked = True Then TSensibilidad.Enabled := True
 Else
 TSensibilidad.Enabled := False;
+end;
+
+procedure TFChart.Label1Click(Sender: TObject);
+begin
+ Frecompensa.Showmodal;
 end;
 
 end.

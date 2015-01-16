@@ -1,11 +1,9 @@
 object Spinal: TSpinal
-  Left = 99
-  Top = 211
+  Left = 18
+  Top = 125
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Neuro Anatomía :::'
+  Caption = '::: gENiO® iOS ::: Neuro Anatomía :::'
   ClientHeight = 719
   ClientWidth = 1021
   Color = clInactiveCaption
@@ -824,7 +822,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 31
+    TabOrder = 30
     OnClick = Button2Click
   end
   object Button7: TButton
@@ -841,7 +839,7 @@ object Spinal: TSpinal
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    TabOrder = 30
+    TabOrder = 29
     OnClick = Button7Click
   end
   object Panel30: TPanel
@@ -850,7 +848,7 @@ object Spinal: TSpinal
     Width = 345
     Height = 673
     BevelOuter = bvNone
-    TabOrder = 26
+    TabOrder = 25
     object IVertebras: TImage
       Left = 0
       Top = 0
@@ -1470,7 +1468,7 @@ object Spinal: TSpinal
     Height = 444
     BevelOuter = bvNone
     Color = clLime
-    TabOrder = 29
+    TabOrder = 28
     Visible = False
     object Panel11: TPanel
       Left = 318
@@ -2210,7 +2208,7 @@ object Spinal: TSpinal
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    TabOrder = 28
+    TabOrder = 27
     Visible = False
     OnClick = Button71Click
   end
@@ -2221,7 +2219,7 @@ object Spinal: TSpinal
     Height = 229
     BevelOuter = bvNone
     Color = clWhite
-    TabOrder = 27
+    TabOrder = 26
     object IAreasNerviosasCerebrales: TImage
       Left = 12
       Top = 0
@@ -2489,16 +2487,16 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 25
+    TabOrder = 24
     object RadioButton29: TRadioButton
       Left = 7
       Top = 12
       Width = 70
       Height = 14
       Cursor = crHandPoint
-      Caption = '| Normal'
+      Caption = 'Normal'
       Checked = True
-      Color = clBtnFace
+      Color = clInactiveCaption
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -9
@@ -2516,8 +2514,8 @@ object Spinal: TSpinal
       Width = 58
       Height = 14
       Cursor = crHandPoint
-      Caption = '| Mínima'
-      Color = clBtnFace
+      Caption = 'Mínima'
+      Color = clInactiveCaption
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -9
@@ -2534,8 +2532,8 @@ object Spinal: TSpinal
       Width = 62
       Height = 14
       Cursor = crHandPoint
-      Caption = '| Máxima'
-      Color = clBtnFace
+      Caption = 'Máxima'
+      Color = clInactiveCaption
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -9
@@ -2555,7 +2553,7 @@ object Spinal: TSpinal
     BevelOuter = bvNone
     BevelWidth = 2
     Color = clWhite
-    TabOrder = 13
+    TabOrder = 12
     object IColumnaVertebral: TImage
       Left = 0
       Top = 0
@@ -2992,7 +2990,7 @@ object Spinal: TSpinal
     Height = 433
     BevelOuter = bvNone
     Color = clWhite
-    TabOrder = 24
+    TabOrder = 23
     object LC1: TLabel
       Tag = 2
       Left = 4
@@ -3527,7 +3525,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 19
     OnClick = Button3Click
   end
   object Button6: TButton
@@ -3543,7 +3541,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 23
+    TabOrder = 22
     OnClick = Button6Click
   end
   object Panel4: TPanel
@@ -3553,7 +3551,7 @@ object Spinal: TSpinal
     Height = 22
     BevelOuter = bvNone
     Color = clBlack
-    TabOrder = 14
+    TabOrder = 13
     object LCrono3: TLabel
       Left = 84
       Top = 4
@@ -3600,7 +3598,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 14
   end
   object MediaPlayer1: TMediaPlayer
     Left = 760
@@ -3608,7 +3606,7 @@ object Spinal: TSpinal
     Width = 253
     Height = 22
     Visible = False
-    TabOrder = 9
+    TabOrder = 8
   end
   object Button87: TButton
     Left = 464
@@ -3624,7 +3622,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 10
     OnClick = Button87Click
   end
   object Button39: TButton
@@ -3640,7 +3638,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
     OnClick = Button127Click
   end
   object Button4: TButton
@@ -3650,14 +3648,14 @@ object Spinal: TSpinal
     Height = 22
     Cursor = crHandPoint
     Hint = 'Lleva a los resultados de alergias.'
-    Caption = 'Hipersensibilidad >'
+    Caption = 'Hiperreactividad >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     OnClick = Button4Click
   end
   object Button43: TButton
@@ -3673,7 +3671,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
     OnClick = Button43Click
   end
   object ETransferencia: TEdit
@@ -3690,7 +3688,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 9
     Text = ' '
     OnChange = ETransferenciaChange
     OnDblClick = ETransferenciaDblClick
@@ -3710,7 +3708,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
     Visible = False
     OnDblClick = Panel9DblClick
     object Gauge1: TGauge
@@ -4723,7 +4721,6 @@ object Spinal: TSpinal
       Text = 'Recuerde una emoción negativa: '
       OnChange = Edit3Change
       OnClick = Edit3Click
-      OnExit = Edit3Exit
     end
     object Edit4: TEdit
       Left = 36
@@ -4904,7 +4901,7 @@ object Spinal: TSpinal
     Width = 14
     Height = 14
     Cursor = crHandPoint
-    TabOrder = 17
+    TabOrder = 16
     OnClick = CBTerapiaExtendidaClick
   end
   object Panel10: TPanel
@@ -4921,7 +4918,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
     Visible = False
     object Image7: TImage
       Left = 4
@@ -5348,7 +5345,7 @@ object Spinal: TSpinal
       Height = 18
       Cursor = crHandPoint
       Caption = 'Afecciones raras >'
-      TabOrder = 67
+      TabOrder = 66
       OnClick = Button17Click
     end
     object Button396: TButton
@@ -5398,7 +5395,7 @@ object Spinal: TSpinal
       Height = 18
       Cursor = crHandPoint
       Caption = 'Psíquis >'
-      TabOrder = 65
+      TabOrder = 64
       OnClick = Button35Click
     end
     object Button401: TButton
@@ -5443,7 +5440,7 @@ object Spinal: TSpinal
       BevelInner = bvLowered
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 66
+      TabOrder = 65
       object Label908: TLabel
         Left = 8
         Top = 4
@@ -6121,7 +6118,7 @@ object Spinal: TSpinal
       Width = 957
       Height = 301
       BevelOuter = bvNone
-      Color = clInactiveCaption
+      Color = clYellow
       TabOrder = 7
       Visible = False
       object Label38: TLabel
@@ -7487,232 +7484,6 @@ object Spinal: TSpinal
       TabOrder = 57
       OnClick = Button188Click
     end
-    object Memo1: TMemo
-      Left = 580
-      Top = 24
-      Width = 405
-      Height = 641
-      BorderStyle = bsNone
-      Lines.Strings = (
-        'Pulse una vez sobre este memo para ocultarlo.'
-        ''
-        
-          'Desde un punto de vista psicológico, cualquier experto diagnosti' +
-          'caría esta '
-        
-          'situación como “depresión”. Pero desde un punto de vista más all' +
-          'á, la persona '
-        
-          'podría estar siendo víctima de ataques psíquicos. Sí, alguien o ' +
-          '“algo” puede '
-        
-          'estar manipulando las energías y las fuerzas sobrenaturales con ' +
-          'la simple '
-        
-          'intención de hacer daño, que en algunos casos son irreparables p' +
-          'ara el propio '
-        'ser. ¿Eres tú una víctima de ataques psíquicos?'
-        ''
-        
-          'Los ataques psíquicos se definen como la manipulación de las ene' +
-          'rgías y '
-        
-          'fuerzas sobrenaturales. Estos ataques psíquicos ocurren cuando c' +
-          'iertas '
-        
-          'vibraciones energéticas oscuras y negativas son enviadas por un ' +
-          'individuo o '
-        
-          '“ser dimensional” a su víctima, para crear disturbios en su cuer' +
-          'po energético y '
-        
-          'físico. Esta energía negativa puede ser enviada por un espíritu,' +
-          ' una entidad, '
-        'una forma de pensamiento o energía negativa oscura.'
-        ''
-        
-          'En principio, el ataque psíquico es enviado con la intención con' +
-          'sciente para '
-        
-          'infligir daño a propia víctima o a su familia. Estas energías ne' +
-          'gativas se pueden '
-        
-          'proyectar en forma de pensamiento, basada principalmente en los ' +
-          'celos hacia '
-        
-          'la persona por alguien conocido, como amigos o familiares, aunqu' +
-          'e en algunos '
-        
-          'casos puede ser una persona que la víctima no conoce. El ataque ' +
-          'psíquico es '
-        
-          'una de las manipulaciones energéticas mas peligrosas, en compara' +
-          'ción con el '
-        #39'Mal de Ojo'#39', que sus efectos son muchos más débiles.'
-        ''
-        
-          'La persona que envía los pensamientos está motivada por los celo' +
-          's, la envidia o '
-        
-          'la ira. El ataque consciente es cuando alguien desea hacer delib' +
-          'eradamente un '
-        
-          'daño a su víctima sin necesidad de magia negra, brujería y hechi' +
-          'zos, aunque si '
-        
-          'se complementa con algún tipo de ritual el ataque psíquico podrí' +
-          'a a llegar a ser '
-        'destructivo e irreparable.'
-        ''
-        
-          'A parte de un ataque psíquico por parte de una persona, hay espí' +
-          'ritus oscuros '
-        
-          'y entidades que tienen la capacidad de moverse por los cuerpos f' +
-          'ísicos y auras '
-        
-          'afectando así a lo que la gente piensa, habla, hace, desea, o si' +
-          'ente. El ser '
-        
-          'humano que esté invadido por estos espíritus o entidades pueden ' +
-          'perder el '
-        
-          'control de ellos mismos, ya que estas “entidades” asumirán todos' +
-          ' los atributos '
-        
-          'físicos, enfermedades y el comportamiento de la persona en tal g' +
-          'rado que '
-        'parecerá haber cambiado por completo de personalidad.'
-        ''
-        
-          'Sin duda, nosotros podemos sucumbir a las energías oscuras. Esta' +
-          'dos '
-        
-          'prolongados de ira, rabia, resentimiento, amargura, venganza, y ' +
-          'otros tipos de '
-        
-          'miedos, atraen estas energías negativas. Es normal que una perso' +
-          'na se '
-        
-          'enfade o “pierda los papeles” en algún momento de sus vidas, ya ' +
-          'que estos '
-        
-          'hechos no atraen el lado oscuro. Es a largo plazo y en estados p' +
-          'rolongados '
-        
-          'que configuran la atracción energética. Incluso, las emociones n' +
-          'egativas '
-        
-          'reprimidas eventualmente pueden llegar a convertirse en un tipo ' +
-          'de entidad.'
-        ''
-        
-          'La violencia física, emocional y mental es un poderoso atractivo' +
-          ' para todo tipo '
-        
-          'de energías oscuras y negativas. El uso regular de las drogas y ' +
-          'el alcohol '
-        
-          'también son unos poderosos imanes para este tipo de energías. Ah' +
-          'ora bien, '
-        
-          'tomar una copa de vino es un hábito social y no afecta a nuestro' +
-          's campos de '
-        
-          'energía. Sin embargo, cuando llegamos a depender del alcohol o d' +
-          'e las drogas, '
-        
-          'nuestras auras se debilitan considerablemente y los invasores ne' +
-          'gativos son '
-        'atraídos por la energía creada por este estado.'
-        ''
-        'Síntomas de un ataque psíquico'
-        ''
-        '- Pesadillas aterradoras y experimentadas como muy reales.'
-        
-          '- Ver a su atacante de una manera diabólica, ya sea en sus sueño' +
-          's, o en '
-        'pensamientos.'
-        
-          '- Sentirse cansado y agotado constantemente y sin razón aparente' +
-          '.'
-        
-          '- Dolores constantes en el mismo lugar y al mismo tiempo de form' +
-          'a regular.'
-        
-          '- Experimentar enfermedades o dolores en ciertas partes del cuer' +
-          'po físico '
-        '(puntos débiles) que el atacante conoce.'
-        
-          '- Falta de concentración y sentimientos de pereza a la hora de r' +
-          'ealizar tareas '
-        'cotidianas.'
-        '- Fuertes dolores de cabeza acompañados de vómitos o mareos.'
-        '- Cuestionarte constantemente tu objetivo en la vida.'
-        '- Depresión.'
-        '- Constantes pensamientos e imágenes del atacante en tu mente.'
-        
-          '- Sensación de que te están mirando, aun teniendo la certeza de ' +
-          'que estás '
-        'solo/a.'
-        '- Ver y percibir sombras extrañas.'
-        
-          '- En los perores casos, el ataque psíquico puede causar sentimie' +
-          'ntos de tener '
-        'ataques al corazón y de suicidio.'
-        
-          '- De cualquier manera, antes de pensar que se está siendo víctim' +
-          'a de un '
-        
-          'ataque psíquico hay que descartar la posibilidad de algún tipo d' +
-          'e enfermedad '
-        'diagnosticada por los médicos.'
-        ''
-        'Cómo protegerse de los ataques psíquicos'
-        ''
-        
-          'Lo principal, es tomar conciencia del ataque psíquico a través d' +
-          'e la '
-        
-          'identificación de los eventos inusuales que tienen lugar en tu v' +
-          'ida que ayudará '
-        'a disminuir el efecto del ataque en un 75%.'
-        ''
-        
-          'Solicitar ayuda a los guías espirituales y ángeles de protección' +
-          ' para detener el '
-        'ataque.'
-        ''
-        
-          'Sobre todo, NO ENVIAR energía o pensamientos similares al atacan' +
-          'te.'
-        ''
-        
-          'Las personas que logran '#39'ver'#39' a su atacante mentalmente, deben i' +
-          'maginar que '
-        
-          'se encuentran en la ducha y que una luz blanca o dorada, descien' +
-          'de del '
-        'universo iluminando todo su ser.'
-        ''
-        
-          'Los expertos recomiendan que la manera más importante de protege' +
-          'rse de los '
-        
-          'efectos de un ataque psíquico, es siendo emocionalmente fuerte y' +
-          ' estable, y '
-        
-          'no permitiendo que otras personas identifiquen tus miedos, porqu' +
-          'e esto revela '
-        
-          'debilidad. Recordamos, que en los peores casos se debe solicitar' +
-          ' ayuda de un '
-        'experto de confianza.')
-      ScrollBars = ssVertical
-      TabOrder = 59
-      Visible = False
-      OnClick = Memo1Click
-    end
     object BCerrarAreas: TPanel
       Left = 552
       Top = 340
@@ -7743,13 +7514,13 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 69
+      TabOrder = 68
       OnClick = CerrarPDoloresFantasmaClick
     end
     object GBAGenerales: TGroupBox
       Left = 12
       Top = 8
-      Width = 957
+      Width = 953
       Height = 301
       Caption = ' Biomarcadores '
       Color = clYellow
@@ -7757,7 +7528,7 @@ object Spinal: TSpinal
       TabOrder = 56
       Visible = False
       object Label20: TLabel
-        Left = 912
+        Left = 908
         Top = 278
         Width = 35
         Height = 13
@@ -7860,7 +7631,7 @@ object Spinal: TSpinal
         TabOrder = 10
       end
       object CBAGenerales: TCheckBox
-        Left = 886
+        Left = 882
         Top = 8
         Width = 65
         Height = 17
@@ -8349,7 +8120,7 @@ object Spinal: TSpinal
       Height = 18
       Cursor = crHandPoint
       Caption = 'Piel >'
-      TabOrder = 71
+      TabOrder = 70
       OnClick = Button68Click
     end
     object PEInferiores: TPanel
@@ -8753,7 +8524,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 60
+      TabOrder = 59
       Visible = False
       object Button377: TButton
         Tag = 8
@@ -9091,7 +8862,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 63
+      TabOrder = 62
       Visible = False
       object Button598: TButton
         Tag = 8
@@ -9260,7 +9031,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
-        OnClick = Label26Click
+        Visible = False
       end
       object Button190: TButton
         Tag = 8
@@ -13726,7 +13497,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 61
+      TabOrder = 60
       Visible = False
       object Button568: TButton
         Tag = 8
@@ -13903,7 +13674,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 64
+      TabOrder = 63
       Visible = False
       object Button625: TButton
         Tag = 8
@@ -14035,7 +13806,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 62
+      TabOrder = 61
       Visible = False
       object Button594: TButton
         Tag = 8
@@ -14341,7 +14112,7 @@ object Spinal: TSpinal
       Height = 333
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 72
+      TabOrder = 71
       Visible = False
       object Button168: TButton
         Tag = 8
@@ -14779,7 +14550,7 @@ object Spinal: TSpinal
       Height = 344
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 70
+      TabOrder = 69
       Visible = False
       object Bevel25: TBevel
         Left = 800
@@ -16461,7 +16232,7 @@ object Spinal: TSpinal
       Height = 363
       BevelOuter = bvNone
       Color = clYellow
-      TabOrder = 68
+      TabOrder = 67
       Visible = False
       object Button34: TButton
         Left = 327
@@ -19843,7 +19614,7 @@ object Spinal: TSpinal
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     Visible = False
     object Label96: TLabel
       Left = 36
@@ -20878,7 +20649,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
     Visible = False
     object Label35: TLabel
       Left = 580
@@ -20900,7 +20671,7 @@ object Spinal: TSpinal
       Tag = 8
       Left = 12
       Top = 30
-      Width = 352
+      Width = 273
       Height = 22
       Cursor = crHandPoint
       Hint = 'Equilibra sarcode total aproximado.'
@@ -20911,32 +20682,33 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 0
       OnClick = BRestaurarSaludGralClick
     end
     object CBSistemas: TCheckBox
-      Left = 292
+      Left = 216
       Top = 34
-      Width = 69
+      Width = 65
       Height = 13
       Cursor = crHandPoint
+      Alignment = taLeftJustify
       Caption = 'Automático'
       Checked = True
       Color = clBtnFace
       Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+      Font.Color = clMaroon
       Font.Height = -9
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentColor = False
       ParentFont = False
       State = cbChecked
-      TabOrder = 10
+      TabOrder = 7
     end
     object BMRendimiento: TButton
       Left = 12
       Top = 6
-      Width = 175
+      Width = 273
       Height = 22
       Cursor = crHandPoint
       Hint = 'Equilibra sarcode total aproximado.'
@@ -20947,7 +20719,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 5
       OnClick = BMRendimientoClick
     end
     object BMaestroSistemas: TButton
@@ -20964,26 +20736,9 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 6
       Visible = False
       OnClick = BMaestroSistemasClick
-    end
-    object Button84: TButton
-      Left = 189
-      Top = 6
-      Width = 175
-      Height = 22
-      Cursor = crHandPoint
-      Hint = 'Equilibra sarcode total aproximado.'
-      Caption = 'Areas de enfoque'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 9
-      OnClick = Button84Click
     end
     object GroupBox34: TGroupBox
       Left = 8
@@ -20996,7 +20751,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 3
       object Bevel22: TBevel
         Left = 152
         Top = 6
@@ -22639,112 +22394,6 @@ object Spinal: TSpinal
         TabOrder = 133
       end
     end
-    object GroupBox2: TGroupBox
-      Left = 6
-      Top = 572
-      Width = 995
-      Height = 97
-      Caption = ' Información adicional para la terapia '
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 0
-      object Edit11: TEdit
-        Left = 6
-        Top = 14
-        Width = 980
-        Height = 14
-        Cursor = crIBeam
-        BorderStyle = bsNone
-        Color = clSilver
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -9
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        Text = ' Nosode: '
-        OnDblClick = Edit11DblClick
-      end
-      object Edit12: TEdit
-        Left = 6
-        Top = 30
-        Width = 980
-        Height = 14
-        Cursor = crIBeam
-        BorderStyle = bsNone
-        Color = clSilver
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -9
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        Text = ' Isode: '
-        OnDblClick = Edit12DblClick
-      end
-      object Edit13: TEdit
-        Left = 6
-        Top = 46
-        Width = 980
-        Height = 14
-        Cursor = crIBeam
-        BorderStyle = bsNone
-        Color = clSilver
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -9
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        Text = ' Alersode: '
-        OnDblClick = Edit13DblClick
-      end
-      object Edit14: TEdit
-        Left = 6
-        Top = 78
-        Width = 980
-        Height = 14
-        Cursor = crIBeam
-        BorderStyle = bsNone
-        Color = clSilver
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -9
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        Text = ' Síntomas: '
-        OnDblClick = Edit14DblClick
-      end
-      object Edit15: TEdit
-        Left = 6
-        Top = 62
-        Width = 980
-        Height = 14
-        Cursor = crIBeam
-        BorderStyle = bsNone
-        Color = clSilver
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -9
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-        Text = ' Sarcode: '
-        OnDblClick = Edit15DblClick
-      end
-    end
     object Button137: TButton
       Left = 620
       Top = 10
@@ -22758,7 +22407,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
       Visible = False
     end
     object Panel25: TPanel
@@ -22777,7 +22426,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 4
       OnClick = Panel25Click
     end
     object PMejoraRendimiento: TPanel
@@ -22794,11 +22443,11 @@ object Spinal: TSpinal
       Font.Name = 'Arial'
       Font.Style = []
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
       Visible = False
       object Label232: TLabel
-        Left = 10
-        Top = 4
+        Left = 14
+        Top = 12
         Width = 265
         Height = 22
         Caption = 'MEJORA DEL RENDIMIENTO'
@@ -22812,7 +22461,7 @@ object Spinal: TSpinal
       end
       object GroupBox1: TGroupBox
         Left = 6
-        Top = 446
+        Top = 458
         Width = 963
         Height = 93
         Caption = ' Conflictos emocionales a reducir para con '
@@ -23190,7 +22839,6 @@ object Spinal: TSpinal
           Top = 20
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23202,7 +22850,6 @@ object Spinal: TSpinal
           Top = 36
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23214,7 +22861,6 @@ object Spinal: TSpinal
           Top = 52
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23226,7 +22872,6 @@ object Spinal: TSpinal
           Top = 68
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23298,7 +22943,6 @@ object Spinal: TSpinal
           Top = 20
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23310,7 +22954,6 @@ object Spinal: TSpinal
           Top = 36
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23322,7 +22965,6 @@ object Spinal: TSpinal
           Top = 52
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23334,7 +22976,6 @@ object Spinal: TSpinal
           Top = 68
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23474,7 +23115,6 @@ object Spinal: TSpinal
           Top = 20
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23486,7 +23126,6 @@ object Spinal: TSpinal
           Top = 36
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23498,7 +23137,6 @@ object Spinal: TSpinal
           Top = 52
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23510,7 +23148,6 @@ object Spinal: TSpinal
           Top = 68
           Width = 100
           Height = 13
-          BorderWidth = 2
           Min = 0
           Max = 100
           Smooth = True
@@ -23726,7 +23363,7 @@ object Spinal: TSpinal
       end
       object Button97: TButton
         Left = 698
-        Top = 132
+        Top = 144
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -23742,7 +23379,7 @@ object Spinal: TSpinal
       end
       object Button127: TButton
         Left = 698
-        Top = 156
+        Top = 168
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -23758,7 +23395,7 @@ object Spinal: TSpinal
       end
       object Button116: TButton
         Left = 698
-        Top = 60
+        Top = 72
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -23774,7 +23411,7 @@ object Spinal: TSpinal
       end
       object Button44: TButton
         Left = 698
-        Top = 108
+        Top = 120
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -23791,7 +23428,7 @@ object Spinal: TSpinal
       end
       object GroupBox5: TGroupBox
         Left = 6
-        Top = 120
+        Top = 132
         Width = 667
         Height = 105
         Cursor = crHandPoint
@@ -23806,7 +23443,7 @@ object Spinal: TSpinal
         ParentFont = False
         TabOrder = 5
         object CBAreas: TCheckBox
-          Left = 596
+          Left = 594
           Top = 0
           Width = 65
           Height = 17
@@ -23814,7 +23451,7 @@ object Spinal: TSpinal
           Caption = 'Automático'
           Checked = True
           Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
+          Font.Color = clMaroon
           Font.Height = -9
           Font.Name = 'Tahoma'
           Font.Style = []
@@ -23985,7 +23622,7 @@ object Spinal: TSpinal
       end
       object Button27: TButton
         Left = 698
-        Top = 84
+        Top = 96
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -24001,7 +23638,7 @@ object Spinal: TSpinal
       end
       object GroupBox6: TGroupBox
         Left = 6
-        Top = 26
+        Top = 38
         Width = 667
         Height = 89
         Caption = ' Estimular '
@@ -24321,12 +23958,11 @@ object Spinal: TSpinal
           Font.Style = []
           ParentFont = False
           TabOrder = 16
-          Text = 'Introducir otro'
           OnChange = Edit32Change
           OnClick = Edit32Click
         end
         object CBEstimular: TCheckBox
-          Left = 596
+          Left = 594
           Top = 0
           Width = 65
           Height = 17
@@ -24334,7 +23970,7 @@ object Spinal: TSpinal
           Caption = 'Automático'
           Checked = True
           Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
+          Font.Color = clMaroon
           Font.Height = -9
           Font.Name = 'Tahoma'
           Font.Style = []
@@ -24465,7 +24101,7 @@ object Spinal: TSpinal
       end
       object Button24: TButton
         Left = 698
-        Top = 36
+        Top = 48
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -24481,7 +24117,7 @@ object Spinal: TSpinal
       end
       object Button78: TButton
         Left = 698
-        Top = 180
+        Top = 192
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -24497,7 +24133,7 @@ object Spinal: TSpinal
       end
       object GroupBox7: TGroupBox
         Left = 564
-        Top = 232
+        Top = 244
         Width = 405
         Height = 204
         Caption = ' Misceláneos a equilibrar '
@@ -24696,7 +24332,7 @@ object Spinal: TSpinal
           TabOrder = 31
         end
         object CBMiscelaneos: TCheckBox
-          Left = 320
+          Left = 332
           Top = 0
           Width = 65
           Height = 17
@@ -24704,7 +24340,7 @@ object Spinal: TSpinal
           Caption = 'Automático'
           Checked = True
           Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
+          Font.Color = clMaroon
           Font.Height = -9
           Font.Name = 'Tahoma'
           Font.Style = []
@@ -25087,31 +24723,34 @@ object Spinal: TSpinal
           TabOrder = 32
         end
         object Edit31: TEdit
-          Left = 280
-          Top = 148
-          Width = 120
-          Height = 17
+          Left = 284
+          Top = 150
+          Width = 114
+          Height = 12
           BorderStyle = bsNone
+          Color = clSilver
           TabOrder = 34
           OnChange = Edit31Change
           OnClick = Edit31Click
         end
         object Edit34: TEdit
-          Left = 280
-          Top = 164
-          Width = 120
-          Height = 17
+          Left = 284
+          Top = 166
+          Width = 114
+          Height = 12
           BorderStyle = bsNone
+          Color = clSilver
           TabOrder = 35
           OnChange = Edit34Change
           OnClick = Edit34Click
         end
         object Edit41: TEdit
-          Left = 280
-          Top = 180
-          Width = 120
-          Height = 17
+          Left = 284
+          Top = 182
+          Width = 114
+          Height = 12
           BorderStyle = bsNone
+          Color = clSilver
           TabOrder = 36
           OnChange = Edit41Change
           OnClick = Edit41Click
@@ -25119,7 +24758,7 @@ object Spinal: TSpinal
       end
       object Button81: TButton
         Left = 698
-        Top = 204
+        Top = 216
         Width = 240
         Height = 22
         Cursor = crHandPoint
@@ -25135,7 +24774,7 @@ object Spinal: TSpinal
       end
       object SpinEdit2: TSpinEdit
         Left = 704
-        Top = 13
+        Top = 17
         Width = 33
         Height = 19
         Font.Charset = ANSI_CHARSET
@@ -25152,7 +24791,7 @@ object Spinal: TSpinal
       end
       object GroupBox28: TGroupBox
         Left = 6
-        Top = 232
+        Top = 244
         Width = 553
         Height = 204
         Caption = ' Psicología positiva '
@@ -25613,7 +25252,7 @@ object Spinal: TSpinal
           Caption = 'Automático'
           Checked = True
           Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
+          Font.Color = clMaroon
           Font.Height = -9
           Font.Name = 'Tahoma'
           Font.Style = []
@@ -25643,2265 +25282,13 @@ object Spinal: TSpinal
         OnClick = BCerrarSClick
       end
     end
-    object Panel16: TPanel
-      Left = 0
-      Top = 0
-      Width = 1005
-      Height = 673
-      BevelOuter = bvNone
-      Color = clLime
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Arial'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 4
-      Visible = False
-      object Label36: TLabel
-        Left = 26
-        Top = 12
-        Width = 116
-        Height = 23
-        Hint = 
-          'El término hormona fué acuñado en 1905, a partir del término gri' +
-          'ego que significa '#39'poner en movimiento'#39', aunque ya antes se habí' +
-          'an descubierto dos funciones hormonales.  La primera hormona des' +
-          'cubierta fué la adrenalina en 1901 y las segunda la tiroxina en ' +
-          '1914.'
-        Caption = 'HORMONAS'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -19
-        Font.Name = 'Tahoma'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Transparent = True
-      end
-      object Button79: TButton
-        Left = 792
-        Top = 628
-        Width = 177
-        Height = 22
-        Cursor = crHandPoint
-        Caption = 'Estimular ítems elegídos'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clYellow
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button79Click
-      end
-      object Button14: TButton
-        Left = 792
-        Top = 604
-        Width = 177
-        Height = 22
-        Cursor = crHandPoint
-        Caption = 'Equilibrar ítems elegídos'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clYellow
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button14Click
-      end
-      object GroupBox36: TGroupBox
-        Left = 28
-        Top = 532
-        Width = 141
-        Height = 121
-        Caption = ' Clasificaciones químicas '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        object CheckBox107: TCheckBox
-          Left = 13
-          Top = 16
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Aminas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox347: TCheckBox
-          Left = 13
-          Top = 80
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Péptidos'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox358: TCheckBox
-          Left = 13
-          Top = 48
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Glucoproteínas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox359: TCheckBox
-          Left = 13
-          Top = 64
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'No esteroides'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox360: TCheckBox
-          Left = 13
-          Top = 32
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Esteroides'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox361: TCheckBox
-          Left = 13
-          Top = 96
-          Width = 100
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Protéicas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-      end
-      object GroupBox38: TGroupBox
-        Left = 28
-        Top = 212
-        Width = 921
-        Height = 317
-        Caption = ' Homonas peptídicas y derivadas de aminoácidos '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-        object CheckBox26: TCheckBox
-          Left = 24
-          Top = 292
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, AMPc, corteza adrenal, estimula la producció' +
-            'n de corticoesteroides (glucocorticoides y andrógenos).'
-          Caption = 'Hormona adrenocorticotrópica o ACTH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox29: TCheckBox
-          Left = 24
-          Top = 68
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Tiroides, AMPc, intestino, riñón, construcción de huesos, reducc' +
-            'ión del nivel de calcio sanguíneo, incrementa el almacenamiento ' +
-            'de calcio en los huesos y su reabsorpción en el riñón.'
-          Caption = 'Calcitonina o CT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox30: TCheckBox
-          Left = 24
-          Top = 260
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Placenta (células del sincitiotrofoblasto), AMPc, mantenimiento ' +
-            'del cuerpo lúteo en el comienzo del embarazo, inhibe la respuest' +
-            'a inmunitaria contra el embrión.'
-          Caption = 'Gonadotropina coriónica humana o hCG'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox31: TCheckBox
-          Left = 24
-          Top = 100
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Duodeno, páncreas, vesícula biliar, producción de enzimas digest' +
-            'ivas (páncreas) y de bilis (vesícula biliar), supresión del apet' +
-            'ito.'
-          Caption = 'Colecistoquinina o CCK'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox32: TCheckBox
-          Left = 24
-          Top = 52
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hígado, IP3, vasos sanguíneos, corteza adrenal, vasoconstricción' +
-            ', liberación de aldosterona.'
-          Caption = 'Angiotensinógeno y Angiotensina o AGT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox33: TCheckBox
-          Left = 24
-          Top = 244
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Páncreas (células alfa), AMPc, hígado, glucogenólisis y gluconeo' +
-            'génesis, lo que incrementa el nivel de glucosa en la sangre.'
-          Caption = 'Glucagón o GCG'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-        object CheckBox36: TCheckBox
-          Left = 316
-          Top = 20
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo (se acumula en la hipófisis posterior para su posteri' +
-            'or liberación), riñón, vasos sanguíneos, hipófisis anterior, ret' +
-            'ención de agua en riñón, vasoconstricción moderada, liberación d' +
-            'e hormona adrenocorticotrópica de la hipófisis anterior.'
-          Caption = 'Hormona antidiurética o vasopresina o ADH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 6
-        end
-        object CheckBox37: TCheckBox
-          Left = 24
-          Top = 212
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Estómago (células parietales), duodeno, secreción del ácido gást' +
-            'rico.'
-          Caption = 'Gastrina o GRP'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 7
-        end
-        object CheckBox139: TCheckBox
-          Left = 24
-          Top = 228
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Estómago, hipófisis anterior, estimula el apetito y la secreción' +
-            ' de la hormona del crecimiento.'#13#10'Una de las 3 hormonas del '#39'hamb' +
-            're'#39'.'
-          Caption = 'Ghrelina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 8
-        end
-        object CheckBox145: TCheckBox
-          Left = 24
-          Top = 164
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Riñón, células madre de la médula ósea, estimula la producción d' +
-            'e eritrocitos.'
-          Caption = 'Eritropoyetina o EPO'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 9
-        end
-        object CheckBox149: TCheckBox
-          Left = 24
-          Top = 196
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo, hipófisis anterior, estimula la liberación de prolac' +
-            'tina.'
-          Caption = 'Factor liberador de prolactina o PRF'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 10
-        end
-        object CheckBox157: TCheckBox
-          Left = 24
-          Top = 276
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Estómago (células ECL), estimula la secreción de ácidos gástrico' +
-            's.'
-          Caption = 'Histamina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 11
-        end
-        object CheckBox158: TCheckBox
-          Left = 24
-          Top = 148
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Estómago (células X), músculo liso del estómago, contracción del' +
-            ' músculo liso del estómago.'
-          Caption = 'Endotelina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 12
-        end
-        object CheckBox99: TCheckBox
-          Left = 24
-          Top = 180
-          Width = 282
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Proteínas con una alta similitud de secuencia con la insulina, h' +
-            'ígado, tirosina kinasa, efectos análogos a la insulina, regula e' +
-            'l crecimiento celular y el desarrollo.'
-          Caption = 'Fact. de crecimiento insulínico o somatomedina o IGF-1'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 13
-        end
-        object CheckBox161: TCheckBox
-          Left = 24
-          Top = 132
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Riñón (células cromafines), regula el dolor.'
-          Caption = 'Encefalina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 14
-        end
-        object CheckBox24: TCheckBox
-          Left = 24
-          Top = 20
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Tejido adiposo, hígado, músculo esquelético.  Aumenta la sensibi' +
-            'lidad a la insulina por lo que regula el metabolismo de la gluco' +
-            'sa y los ácidos grasos.'
-          Caption = 'Adiponectina o Acrp30'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 15
-        end
-        object CheckBox93: TCheckBox
-          Left = 24
-          Top = 36
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Médula adrenal, corazón, vasos sanguíneos, hígado, tejido adipos' +
-            'o, ojo, aparato digestivo.  Respuesta de lucha o huída: aumento ' +
-            'del ritmo cardíaco y del volumen sistólico, vasodilatación, aume' +
-            'nto del catabolismo del glucógeno en el hígado, de la lipólisis ' +
-            'en los adipocitos; todo ello incrementa el suministro de oxígeno' +
-            ' y glucosa al cerebro y músculo; dilatación de las pupilas; supr' +
-            'esión de procesos no vitales (como la digestión y del sistema in' +
-            'munitario).'
-          Caption = 'Adrenalina o epinefrina o EPI'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 16
-        end
-        object CheckBox86: TCheckBox
-          Left = 24
-          Top = 116
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Riñón, hipotálamo (neuronas del núcleo infundibular.  Aumento de' +
-            'l rítmo cardíaco y de la presión arterial, inhibe la liberación ' +
-            'de prolactina y hormona liberadora de tirotropina.'
-          Caption = 'Dopamina o DPM, PIH o DA'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 17
-        end
-        object CheckBox237: TCheckBox
-          Left = 24
-          Top = 84
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (cuerpo lúteo), glándulas adrenales, placenta (durante el' +
-            ' embarazo).  Mantiene el embarazo: convierte el endometrio en ór' +
-            'gano secretor, hace al moco cervical permeable al esperma, inhib' +
-            'e la respuesta inmunitaria contra el embrión, disminuye la coagu' +
-            'lación sanguínea: incrementa la formación y la agregación plaque' +
-            'tarias, vasoconstricción, broncoconstricción.'
-          Caption = 'Catecolaminas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 18
-        end
-        object CheckBox25: TCheckBox
-          Left = 316
-          Top = 292
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo, aumenta el gasto de energía y el apetito.'#13#10'Una de la' +
-            's 3 hormonas del '#39'hambre'#39'.'
-          Caption = 'Orexina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 19
-        end
-        object CheckBox27: TCheckBox
-          Left = 316
-          Top = 100
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo, AMPc, hipófisis anterior, estimula la secreción de l' +
-            'a hormona adrenocorticotrópica.'
-          Caption = 'H. liberadora de corticotropina o CRH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 20
-        end
-        object CheckBox28: TCheckBox
-          Left = 608
-          Top = 52
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Corazón (células musculares de la aurícula derecha), GMPc, riñón' +
-            ', regula el balance de agua y electrolitos, reduce la presión sa' +
-            'nguínea.'
-          Caption = 'Péptido natridiurético auricular o atriopeptina o ANP'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 21
-        end
-        object CheckBox34: TCheckBox
-          Left = 316
-          Top = 196
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Placenta, estimula la producción de insulina y  la IGF-1, aument' +
-            'a la resistencia a la insulina y la intolerancia a los carbohidr' +
-            'atos.'
-          Caption = 'Lactógeno placentario humano o HPL'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 22
-        end
-        object CheckBox35: TCheckBox
-          Left = 316
-          Top = 116
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo, IP3, hipófisis anterior, estimula la liberación de l' +
-            'a hormona estimuladora del folículo y de la hormona luteinizante' +
-            '.'
-          Caption = 'H. liberadora de gonadotropina o GnRH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 23
-        end
-        object CheckBox38: TCheckBox
-          Left = 316
-          Top = 164
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Testículo (células de Sértoli), ovario (células granulosas), fet' +
-            'o (trofoblasto), hipófisis anterior, inhibe la producción de la ' +
-            'hormona del folículo.'
-          Caption = 'Inhibina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 24
-        end
-        object CheckBox140: TCheckBox
-          Left = 316
-          Top = 84
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior / pars intermedia, AMPc, melanocitos, melanog' +
-            'énesis (oscurecimiento de la piel).'
-          Caption = 'H. estimuladora de los melanocitos o MSH o a-MSH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 25
-        end
-        object CheckBox141: TCheckBox
-          Left = 608
-          Top = 36
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Paratiroides, AMPc, aumenta el calcio sanguíneo e, indirectament' +
-            'e, estimula los osteoclastos, estimula la reabsorpción del calci' +
-            'o en el riñón, activa la vitamina D.'
-          Caption = 'Parathormona o PTH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 26
-        end
-        object CheckBox142: TCheckBox
-          Left = 608
-          Top = 20
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis posterior, IP3, mama, útero, vagina, estimula la secre' +
-            'ción de leche, contracción del cérvix, involucrada en el orgasmo' +
-            ' y en la confianza entre la gente; y los ritmos circadianos (tem' +
-            'peratura corporal, nivel de actividad, vigilia).'
-          Caption = 'Oxitocina o OXT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 27
-        end
-        object CheckBox147: TCheckBox
-          Left = 316
-          Top = 180
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Páncreas (células beta), tirosina kinasa, tejidos, estimula la e' +
-            'ntrada de glucosa desde la sangre a las células, la glucogenogén' +
-            'esis y la glucólisis en hígado y músculo, estimula la entrada de' +
-            ' lípidos y la síntesis de triglicéridos en los adipocitos y otro' +
-            's efectos anabólicos.'
-          Caption = 'Insulina o INS'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 28
-        end
-        object CheckBox148: TCheckBox
-          Left = 316
-          Top = 212
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Tejido adiposo, disminución del apetito y aumento del metabolism' +
-            'o.'
-          Caption = 'Leptina o LEP'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 29
-        end
-        object CheckBox151: TCheckBox
-          Left = 316
-          Top = 228
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, tejido adiposo, melanocitos, estimula la lip' +
-            'ólisis y la síntesis de esteroides, estimula la producción de me' +
-            'lanina.'
-          Caption = 'Lipotropina or PRH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 30
-        end
-        object CheckBox152: TCheckBox
-          Left = 316
-          Top = 132
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo (neuronas neurosecretoras del núcleo paraventricular)' +
-            ', IP3, hipófisis anterior, estimula la liberación de tirotropina' +
-            ' y de prolactina.'
-          Caption = 'H. liberadora de tirotropina o TRH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 31
-        end
-        object CheckBox153: TCheckBox
-          Left = 316
-          Top = 68
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, AMPc, ovario, testículo. '#13#10'Mujer: estimula l' +
-            'a maduración del folículo de Graaf del ovario.'#13#10'Hombre: estimula' +
-            ' la espermatogénesis y la producción de proteínas del semen por ' +
-            'las células de Sértolis de los testículos.'
-          Caption = 'H. estimuladora del folículo o FSH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 32
-        end
-        object CheckBox156: TCheckBox
-          Left = 316
-          Top = 260
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Estómago (células X), músculo liso en estómago, contracción del ' +
-            'músculo liso del estómago.'
-          Caption = 'Neuropéptido Y o NPY'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 33
-        end
-        object CheckBox13: TCheckBox
-          Left = 316
-          Top = 148
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, AMPc, ovario, testículo, estimula la ovulaci' +
-            'ón, estimula la producción de testosterona por las células de Le' +
-            'ydig.'
-          Caption = 'Hormona luteinizante o LH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 34
-        end
-        object CheckBox9: TCheckBox
-          Left = 316
-          Top = 244
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Melatonina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 35
-        end
-        object CheckBox17: TCheckBox
-          Left = 316
-          Top = 36
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Testículos (tubos de Müller), inhibe el desarrollo de los tubos ' +
-            'de Müller en el embrión masculino.'
-          Caption = 'Hormona antimulleriana o AMH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 36
-        end
-        object CheckBox12: TCheckBox
-          Left = 316
-          Top = 276
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Médula adrenal.  No es una hormona, se considera sólo como neuro' +
-            'transmisor (respuesta de lucha o huída, como la adrenalina).'
-          Caption = 'Noradrenalina o norepinefrina o NRE'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 37
-        end
-        object CheckBox14: TCheckBox
-          Left = 316
-          Top = 52
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, hueso, músculo, hígado, estimula el crecimie' +
-            'nto y la mitosis celular, y la liberación del factor de crecimie' +
-            'nto de tipo insulina tipo I.'
-          Caption = 'H. del crecimiento o somatropina o GH o hGH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 38
-        end
-        object CheckBox143: TCheckBox
-          Left = 608
-          Top = 116
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Utero, función poco clara en humanos.'
-          Caption = 'Relaxina o RLN'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 39
-        end
-        object CheckBox144: TCheckBox
-          Left = 608
-          Top = 100
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipófisis anterior, útero, mama, sistema nervioso central, produ' +
-            'cción de leche, placer tras la relación sexual.'
-          Caption = 'Prolactina o PRL'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 40
-        end
-        object CheckBox150: TCheckBox
-          Left = 608
-          Top = 292
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hígado, riñón, músculo estriado, megacariocitos, producción de p' +
-            'laquetas.'
-          Caption = 'Trombopoyetina o T.P.O.'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 41
-        end
-        object CheckBox154: TCheckBox
-          Left = 608
-          Top = 68
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Corazón (células del miocardio), reducción de la presión sanguín' +
-            'ea por reducción de la resistencia vascular de la circulación si' +
-            'stémica, del la cantidad de agua, sodio y grasas en la sangre.'#13#10 +
-            'Una de las 3 hormonas del '#39'hambre'#39'.'
-          Caption = 'Péptido natriurético cerebral o BNP'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 42
-        end
-        object CheckBox155: TCheckBox
-          Left = 608
-          Top = 164
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo (células neuroendocrinas del núcleo periventricular),' +
-            ' islotes de Langerhans (células delta), aparato gastrointestinal' +
-            ', hipófisis anterior, músculo liso, páncreas, numerosos efectos:' +
-            ' inhibe la liberación de la hormona del crecimiento y la hormona' +
-            ' liberadora de tirotropina, suprime la liberación de gastrina, c' +
-            'olecistoquinina, secretina y otras muchas hormonas gastrointesti' +
-            'nales, reduce las contracciones del músculo liso intestinal, inh' +
-            'ibe la liberación de insulina y glucagón, suprime la secreción e' +
-            'xocrina del páncreas.'
-          Caption = 'Somatostina o SRIF'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 43
-        end
-        object CheckBox159: TCheckBox
-          Left = 608
-          Top = 84
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Páncreas (células PP).'
-          Caption = 'Polipéptido pancreático'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 44
-        end
-        object CheckBox160: TCheckBox
-          Left = 608
-          Top = 132
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Riñón (células juxtaglomenrulares), activa el sistema renina-ang' +
-            'iotensina por la producción de la angiotensina I del angiotensin' +
-            'ógeno.'
-          Caption = 'Renina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 45
-        end
-        object CheckBox91: TCheckBox
-          Left = 608
-          Top = 196
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Es un tipo de hormona tiroidea, es la principal hormona secretad' +
-            'a por las células foliculares de la glándula tiroidea.  La menos' +
-            ' activa de las hormonas tiroideas, aumento del metabolismo basal' +
-            ' y de la sensibilidad a las catecolaminas, afecta la síntesis de' +
-            ' proteínas.'
-          Caption = 'Tetrayodotironina o tiroxina o T4'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 46
-        end
-        object CheckBox92: TCheckBox
-          Left = 608
-          Top = 260
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Es una hormona tiroidea.  Afecta a casi todos los procesos fisio' +
-            'lógicos en el cuerpo, incluyendo crecimiento y desarrollo, metab' +
-            'olismo, temperatura corporal y ritmo cardíaco.  Su función es es' +
-            'timular el metabolismo de los hidratos de carbono y grasas, acti' +
-            'vando el consumo de oxígeno, así como la degradación de proteína' +
-            's dentro de las células.'
-          Caption = 'Triyodotironina o T3'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 47
-        end
-        object CheckBox4: TCheckBox
-          Left = 608
-          Top = 228
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Se denomina también la hormona estimulante de la tiroides u horm' +
-            'ona tirotrópica.  Esta es producida por la hipófisis que regula ' +
-            'la producción de la hormonas tiroideas.  AMPc.'
-          Caption = 'Tirotropina o TSH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 48
-        end
-        object CheckBox23: TCheckBox
-          Left = 608
-          Top = 148
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Duodenon (células S), hígado, páncreas, duodeno (células de Brun' +
-            'ner), estimula la secreción de bicarbonato, realza los efectos d' +
-            'e la colecistoquinina, detiene la producción de jugos gástricos.'
-          Caption = 'Secretina o SCT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 49
-        end
-        object CheckBox11: TCheckBox
-          Left = 608
-          Top = 180
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Serotonina o 5-HT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 50
-        end
-        object CheckBox220: TCheckBox
-          Left = 608
-          Top = 212
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (cuerpo lúteo), glándulas adrenales, placenta (durante el' +
-            ' embarazo).  Mantiene el embarazo: convierte el endometrio en ór' +
-            'gano secretor, hace al moco cervical permeable al esperma, inhib' +
-            'e la respuesta inmunitaria contra el embrión, disminuye la coagu' +
-            'lación sanguínea: incrementa la formación y la agregación plaque' +
-            'tarias, vasoconstricción, broncoconstricción.'
-          Caption = 'Tirosina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 51
-        end
-        object CheckBox236: TCheckBox
-          Left = 608
-          Top = 276
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (cuerpo lúteo), glándulas adrenales, placenta (durante el' +
-            ' embarazo).  Mantiene el embarazo: convierte el endometrio en ór' +
-            'gano secretor, hace al moco cervical permeable al esperma, inhib' +
-            'e la respuesta inmunitaria contra el embrión, disminuye la coagu' +
-            'lación sanguínea: incrementa la formación y la agregación plaque' +
-            'tarias, vasoconstricción, broncoconstricción.'
-          Caption = 'Triptófano'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 52
-        end
-        object CheckBox245: TCheckBox
-          Left = 608
-          Top = 244
-          Width = 280
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (cuerpo lúteo), glándulas adrenales, placenta (durante el' +
-            ' embarazo).  Mantiene el embarazo: convierte el endometrio en ór' +
-            'gano secretor, hace al moco cervical permeable al esperma, inhib' +
-            'e la respuesta inmunitaria contra el embrión, disminuye la coagu' +
-            'lación sanguínea: incrementa la formación y la agregación plaque' +
-            'tarias, vasoconstricción, broncoconstricción.'
-          Caption = 'Tiroxina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 53
-        end
-      end
-      object GroupBox40: TGroupBox
-        Left = 28
-        Top = 40
-        Width = 693
-        Height = 169
-        Caption = ' Areas hormonales intrísecas '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-        object CheckBox90: TCheckBox
-          Left = 8
-          Top = 80
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Una glándula que regula a otra glándula que regula una tercera g' +
-            'lándula que regula a la primer glándula, por lo que en el eje es' +
-            'tán involucradas tres glándulas.'
-          Caption = 'Circuitos largos'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox96: TCheckBox
-          Left = 232
-          Top = 96
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Actúan estimulando la producción de nuevas hormonas por parte de' +
-            ' las glándulas endocrinas.'
-          Caption = 'Hormonas tróficas o trópicas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox5: TCheckBox
-          Left = 8
-          Top = 96
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Una glándula que se regula a sí misma.'
-          Caption = 'Circuitos ultra cortos'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox6: TCheckBox
-          Left = 8
-          Top = 64
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Una glándula que regula a otra glándula que regula a la primera ' +
-            'glándula, por lo que en el eje están invololucradas solo dos glá' +
-            'ndulas.'
-          Caption = 'Circuitos cortos'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox7: TCheckBox
-          Left = 232
-          Top = 16
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Cuando una glándula segrega una hormona que estimula a otra glán' +
-            'dula para que segregue una hormona que inhibe a la primera glánd' +
-            'ula.'#13#10'Ej.: La ACTH segregada por la hipófisis estimula la secrec' +
-            'ión de glucocorticoides adrenales que inhiben la secreción de AC' +
-            'TH por la hipófisis.'
-          Caption = 'Feed-Back negativo'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox8: TCheckBox
-          Left = 460
-          Top = 64
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Los usan las hormonas peptídicas.  Las hormonas peptídicas (1er ' +
-            'mensajero) se fijan a un receptor protéico que hay en la membran' +
-            'a de la célula, y estimulan la actividad de otra proteína (unida' +
-            'd catalítica), que hace pasar el ATP (intracelular) a AMP (2do m' +
-            'ensajero), que junto con el calcio intracelular, activa la enzim' +
-            'a proteína quinasa (responsable de producir la fosforilación de ' +
-            'las proteínas de la célula, que produce una acción biológica det' +
-            'erminada).  Esta es la teoría o hipótesis de 2do mensajero o de ' +
-            'Sutherland.'
-          Caption = 'Receptores de membrana'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-        object CheckBox22: TCheckBox
-          Left = 460
-          Top = 80
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Los usan las hormonas esteroides.  La hormona atraviesa la membr' +
-            'ana de la célula diana por difusión.  Una vez dentro del citopla' +
-            'sma se asocia con su receptor intracelular, con el cual viaja al' +
-            ' núcleo atravesando juntos la membrana celular.  En el núcleo se' +
-            ' fija al DNA y hace que se sintetice ARNm, que induce a la sínte' +
-            'sis de nuevas proteínas, que se traducirán en una respuesta fisi' +
-            'ológica.  O bien, puede ubicarse en el lugar de la maquinaria bi' +
-            'osintética de una determinada proteína para evitar su síntesis.'
-          Caption = 'Receptores intracelulares'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 6
-        end
-        object CheckBox163: TCheckBox
-          Left = 232
-          Top = 32
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Cuando una glándula segrega una hormona que estimula a otra glán' +
-            'dula para que segregue otra hormona que estimule la primera glán' +
-            'dula.  '#13#10'Ej.: la FSH segregada por la hipófisis estimula el desa' +
-            'rrollo de folículos ováricos que segrega estrógenos que estimula' +
-            'n una mayor secreción de FSH por la hipófisis.'
-          Caption = 'Feed-Back positivo'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 7
-        end
-        object CheckBox262: TCheckBox
-          Left = 8
-          Top = 48
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Bicapa lipídica'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 8
-        end
-        object CheckBox266: TCheckBox
-          Left = 232
-          Top = 128
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Sustancias secretadas por células especializadas, localizadas en' +
-            ' las glándulas de secreción interna o glándulas endocrinas (care' +
-            'ntes de conductos), o también por células epiteliales e intersti' +
-            'ciales cuyo fin es la de afectar la función de otras células.  T' +
-            'ambién hay hormonas que actúan sobre la misma célula que sinteti' +
-            'za (autocrinas).'
-          Caption = 'Membranas celulares y receptores'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 9
-        end
-        object CheckBox285: TCheckBox
-          Left = 232
-          Top = 144
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Sustancias secretadas por células especializadas, localizadas en' +
-            ' las glándulas de secreción interna o glándulas endocrinas (care' +
-            'ntes de conductos), o también por células epiteliales e intersti' +
-            'ciales cuyo fin es la de afectar la función de otras células.  T' +
-            'ambién hay hormonas que actúan sobre la misma célula que sinteti' +
-            'za (autocrinas).'
-          Caption = 'Membrana plasmática de la célula diana'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 10
-        end
-        object CheckBox302: TCheckBox
-          Left = 460
-          Top = 128
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Medio de transporte hormonal.'
-          Caption = 'Vía sanguínea'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 11
-        end
-        object CheckBox314: TCheckBox
-          Left = 8
-          Top = 144
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Medio de transporte hormonal.'
-          Caption = 'Espacio intersticial'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 12
-        end
-        object CheckBox316: TCheckBox
-          Left = 460
-          Top = 48
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Extienden la vida media de una hormona protegiendola de degradac' +
-            'ión.'
-          Caption = 'Proteínas asociadas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 13
-        end
-        object CheckBox322: TCheckBox
-          Left = 8
-          Top = 16
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Acción autócrina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 14
-        end
-        object CheckBox330: TCheckBox
-          Left = 8
-          Top = 32
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Acción parácrina'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 15
-        end
-        object CheckBox339: TCheckBox
-          Left = 8
-          Top = 112
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Comunicación celular'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 16
-        end
-        object CheckBox340: TCheckBox
-          Left = 460
-          Top = 32
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Sobre los cuales actúan las hormonas.'
-          Caption = 'Organos asociados'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 17
-        end
-        object CheckBox350: TCheckBox
-          Left = 460
-          Top = 112
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Tejidos diana o blancos'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 18
-        end
-        object CheckBox351: TCheckBox
-          Left = 460
-          Top = 96
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Génesis hormonal.'
-          Caption = 'Sintetización hormonal'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 19
-        end
-        object CheckBox352: TCheckBox
-          Left = 232
-          Top = 64
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = '...  A proteínas.'
-          Caption = 'Hormonas asociadas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 20
-        end
-        object CheckBox353: TCheckBox
-          Left = 232
-          Top = 48
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Hormonas solas o biodisponibles'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 21
-        end
-        object CheckBox354: TCheckBox
-          Left = 232
-          Top = 112
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Influencia la estimulación o inhibición de las hormonas.  Por ej' +
-            'emplo: luz, temperatura, presión atmosférica, etc.'
-          Caption = 'Medioambiente'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 22
-        end
-        object CheckBox355: TCheckBox
-          Left = 232
-          Top = 80
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Estimulan o inhiben a otras hormonas.'
-          Caption = 'Hormonas estimuladoras o inhibidoras'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 23
-        end
-        object CheckBox356: TCheckBox
-          Left = 8
-          Top = 128
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'O nutrientes que estimulan o inhiben a ciertas hormonas.'
-          Caption = 'Concentración plasmática de iones'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 24
-        end
-        object CheckBox357: TCheckBox
-          Left = 460
-          Top = 16
-          Width = 220
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Que estimula o inhibe a ciertas hormonas.'
-          Caption = 'Neuronas y actividad mental'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 25
-        end
-      end
-      object GroupBox41: TGroupBox
-        Left = 176
-        Top = 532
-        Width = 429
-        Height = 121
-        Caption = ' Items misceláneos '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-        object CheckBox87: TCheckBox
-          Left = 13
-          Top = 28
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Neurotransmisor.'
-          Caption = 'Acetilcolina o ACh o ACo'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox88: TCheckBox
-          Left = 13
-          Top = 60
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Péptidos opioides endógenos que funcionan como neurotransmisores' +
-            '.  Son producidas por la glándula pituitaria y el hipotálamo en ' +
-            'vertebrados durante el ejercicio, la excitación, el dolor, el co' +
-            'nsumo de alimentos picantes o el consumo de chocolate.  Causan s' +
-            'ensación analgésica y de bienestar.'
-          Caption = 'Endorfinas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox10: TCheckBox
-          Left = 13
-          Top = 76
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Sustancias químicas secretadas por los seres vivos con el fin de' +
-            ' provocar comportamientos específicos en otros individuos, con f' +
-            'recuencia de la misma especie, pero también pueden emplearse con' +
-            'tra otras especies: algunos árboles atraen pájaros con sus ferom' +
-            'onas para defenderse del ataque de insectos.  Las feromonas se c' +
-            'omportan como un medio de transmisión de señales cuyas principal' +
-            'es ventajas son el alcance a distancia y el poder de sortear obs' +
-            'táculos, puesto que son arrastradas por las corrientes de aire.'
-          Caption = 'Feromonas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox111: TCheckBox
-          Left = 13
-          Top = 44
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Es una sustancia proteica sintetizada por células de la próstata' +
-            ' y su función es la disolución del coágulo seminal.  Reforzar co' +
-            'n terapia a próstata en el panel de nutrición / problemas máscul' +
-            'inos.'
-          Caption = 'Antígeno prostático específico o PSA'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox20: TCheckBox
-          Left = 225
-          Top = 92
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hipotálamo, IP3, hipófisis anterior, estimula la liberación de l' +
-            'a hormona del crecimiento.'
-          Caption = 'Somatocrinina o GHRH'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox98: TCheckBox
-          Left = 13
-          Top = 92
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Presente en grandes concentraciones en las membranas mucosas, pa' +
-            'rticularmente en las paredes internas de las vías respiratorias ' +
-            'y el tracto gastrointestinal, como también en la saliva y las lá' +
-            'grimas.'
-          Caption = 'Inmunoglobulina A o IgA'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-        object CheckBox97: TCheckBox
-          Left = 225
-          Top = 60
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'El tipo de anticuerpo más abundante en los líquidos corporales. ' +
-            ' Brinda protección contra las bacterias y las infecciones virale' +
-            's.'
-          Caption = 'Inmunoglobulina G o IgG'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 6
-        end
-        object CheckBox1: TCheckBox
-          Left = 225
-          Top = 76
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Se encuentra principalmente en la sangre y en el líquido linfáti' +
-            'co.  Es el primer anticuerpo que el cuerpo genera para combatir ' +
-            'una infección.'
-          Caption = 'Inmunoglobulina M o IgM'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 7
-        end
-        object CheckBox2: TCheckBox
-          Left = 225
-          Top = 44
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Se la asocia principalmente con las reacciones alérgicas (lo que' +
-            ' ocurre cuando el sistema inmunológico reacciona de manera exage' +
-            'rada a los antígenos del medio ambiente, como el polen o el polv' +
-            'illo de los animales).  Se encuentra en los pulmones, la piel y ' +
-            'las membranas mucosas.'
-          Caption = 'Inmunoglobulina E o IgE'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 8
-        end
-        object CheckBox3: TCheckBox
-          Left = 225
-          Top = 28
-          Width = 200
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Existe en pequeñas cantidades en la sangre y es el anticuerpo de' +
-            'l que menos conocimiento se tiene.'
-          Caption = 'Inmunoglobulina D o IgD'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 9
-        end
-      end
-      object GroupBox39: TGroupBox
-        Left = 728
-        Top = 20
-        Width = 221
-        Height = 189
-        Caption = ' Hormonas lipídicas '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-        object CheckBox21: TCheckBox
-          Left = 12
-          Top = 84
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Controla el incremento del pelo en el cuerpo y la cara, influye ' +
-            'sobre la secreción de las glándulas sebáceas (causa acné), produ' +
-            'ce pérdida de cabello, HPB y cáncer de la próstata.'
-          Caption = 'Dihidrotestosterona o DHT'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox173: TCheckBox
-          Left = 12
-          Top = 100
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (folículo de Graaf, cuerpo lúteo), testículo (células de ' +
-            'Sértoli).  Crecimiento, crecimiento de vello púbico y axilar en ' +
-            'la mujer principalmente, promueve la diferenciación de los carác' +
-            'teres sexuales secundarios femeninos, estimula diversos factores' +
-            ' de coagulación, incrementa la retención de agua y sodio.  Refue' +
-            'rza los cánceres de mama sensibles a hormonas (la supresión de l' +
-            'a producción de estrógenos en un tratamiento para dichos cáncere' +
-            's).  En los hombres, previene la apoptosis de las células germin' +
-            'ales, retroinhibidor negativo de la síntesis de testosterona en ' +
-            'las células de Leydig.'
-          Caption = 'Estradiol (17B-estradio) o E2'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox174: TCheckBox
-          Left = 12
-          Top = 116
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (células granulosas, adipocitos).  Actúa en el desarrollo' +
-            ' de los caracteres sexuales y órganos reproductores femeninos, r' +
-            'ealiza el mantenimiento del control electrolítico y aumenta el a' +
-            'nabolismo de proteínas.'
-          Caption = 'Estrona'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox89: TCheckBox
-          Left = 12
-          Top = 52
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Glándulas suprarrenales (células fasciculadas y reticulares), es' +
-            'timula la glucogénesis, inhibe la captación de glucosa en el mús' +
-            'culo y en el tejido adiposo, moviliza los aminoácidos de los tej' +
-            'idos extrahepáticos, estimula la lipólisis en el el tejido adipo' +
-            'so, efectos antiinflamatorios e inmunodepresivos.'
-          Caption = 'Cortisol'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox100: TCheckBox
-          Left = 12
-          Top = 132
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Testículo (células de Leydig).  La testosterona es producida pri' +
-            'ncipalmente en los testículos de los machos y en los ovarios de ' +
-            'las hembras, aunque pequeñas cantidades son secretadas por las g' +
-            'lándulas suprarrenales.  Es la hormona principal masculina y est' +
-            'eroide anabólico.  Crecimiento, aumento de la masa muscular y de' +
-            ' la densidad ósea, maduración de los testículos, formación del e' +
-            'scroto, crecimiento de vello púbico y axilar, modificación del a' +
-            'parato vocal (la voz se hace más grave).'
-          Caption = 'Testosterona '
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox94: TCheckBox
-          Left = 12
-          Top = 36
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 'Glándulas adrenales, gónadas, substrato para los estrógenos.'
-          Caption = 'Androstenediona'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-        object CheckBox108: TCheckBox
-          Left = 12
-          Top = 20
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Corteza adrenal (células glomerulares), estimula la reabsorción ' +
-            'de sodio y la secreción de potasio e iones hidrógeno en el riñón' +
-            ', lo que hace aumentar el volumen sanguíneo.'
-          Caption = 'Aldosterona'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 6
-        end
-        object CheckBox15: TCheckBox
-          Left = 12
-          Top = 68
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Sustancia que pertenece a al grupo de las prohormonas, sustancia' +
-            's naturales secretadas por glándulas humanas las cuales preceden' +
-            ' a la acción de una potente hormona.  Se le ha dado en llamarla ' +
-            'la hormona de la juventud debido a que se ha descubierto una cor' +
-            'relación entre el envejecimiento y los niveles de esta sustancia' +
-            '.'
-          Caption = 'Dehidroepiandrosterona o DHEA'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 7
-        end
-        object CheckBox18: TCheckBox
-          Left = 12
-          Top = 148
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Hormona esteroide C-21 involucrada en el ciclo menstrual femenin' +
-            'o, embarazo (promueve la gestación) y embriogénesis de los human' +
-            'os y otras especies.  Pertenece a una clase de hormonas llamadas' +
-            ' progestágenos, y es el principal progestágeno humano de origen ' +
-            'natural.  Su fuente prinicipal es el ovario (cuerpo lúteo) y la ' +
-            'placenta, la progesterona también puede sintetizarse en las glán' +
-            'dulas adrenales y en el hígado.'#13#10#13#10'Ovario (cuerpo lúteo), glándu' +
-            'las adrenales, placenta (durante el embarazo).  Mantiene el emba' +
-            'razo: convierte el endometrio en órgano secretor, hace al moco c' +
-            'ervical permeable al esperma, inhibe la respuesta inmunitaria co' +
-            'ntra el embrión, disminuye la coagulación sanguínea: incrementa ' +
-            'la formación y la agregación plaquetarias, vasoconstricción, bro' +
-            'ncoconstricción.'
-          Caption = 'Progesterona o P4'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 8
-          OnClick = CheckBox18Click
-        end
-        object CheckBox259: TCheckBox
-          Left = 12
-          Top = 164
-          Width = 180
-          Height = 17
-          Cursor = crHandPoint
-          Hint = 
-            'Ovario (cuerpo lúteo), glándulas adrenales, placenta (durante el' +
-            ' embarazo).  Mantiene el embarazo: convierte el endometrio en ór' +
-            'gano secretor, hace al moco cervical permeable al esperma, inhib' +
-            'e la respuesta inmunitaria contra el embrión, disminuye la coagu' +
-            'lación sanguínea: incrementa la formación y la agregación plaque' +
-            'tarias, vasoconstricción, broncoconstricción.'
-          Caption = 'Prostaglandinas'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 9
-        end
-      end
-      object GroupBox37: TGroupBox
-        Left = 612
-        Top = 532
-        Width = 169
-        Height = 121
-        Caption = ' Efectos '
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        object CheckBox16: TCheckBox
-          Left = 12
-          Top = 48
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Estimulante'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-        end
-        object CheckBox19: TCheckBox
-          Left = 12
-          Top = 64
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Inhitorio'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckBox95: TCheckBox
-          Left = 12
-          Top = 96
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Trópico'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 2
-        end
-        object CheckBox101: TCheckBox
-          Left = 12
-          Top = 32
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Balance cuantittativo'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 3
-        end
-        object CheckBox103: TCheckBox
-          Left = 12
-          Top = 16
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Antagonista'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 4
-        end
-        object CheckBox104: TCheckBox
-          Left = 12
-          Top = 80
-          Width = 130
-          Height = 17
-          Cursor = crHandPoint
-          Caption = 'Sinergista'
-          Font.Charset = ANSI_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 5
-        end
-      end
-      object Panel23: TPanel
-        Left = 979
-        Top = 4
-        Width = 22
-        Height = 22
-        Cursor = crHandPoint
-        BevelOuter = bvNone
-        BorderStyle = bsSingle
-        Caption = '>'
-        Color = clLime
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 8
-        OnClick = Panel23Click
-      end
-    end
     object GBAEnfoque: TGroupBox
       Left = 0
       Top = 572
       Width = 1005
       Height = 101
       Cursor = crHandPoint
+      Align = alBottom
       Caption = ' Biomarcadores '
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -27911,7 +25298,7 @@ object Spinal: TSpinal
       Font.Style = []
       ParentColor = False
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 8
       Visible = False
       object CheckBox52: TCheckBox
         Left = 12
@@ -28846,7 +26233,7 @@ object Spinal: TSpinal
       object CheckBox136: TCheckBox
         Left = 672
         Top = 81
-        Width = 146
+        Width = 57
         Height = 17
         Cursor = crHandPoint
         Caption = 'Viento'
@@ -28859,16 +26246,6 @@ object Spinal: TSpinal
         ParentColor = False
         ParentFont = False
         TabOrder = 27
-      end
-      object Button1060: TButton
-        Left = 920
-        Top = 76
-        Width = 77
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Cerrar'
-        TabOrder = 56
-        OnClick = Button1060Click
       end
       object CheckBox183: TCheckBox
         Left = 864
@@ -28887,6 +26264,52 @@ object Spinal: TSpinal
         ParentFont = False
         TabOrder = 48
       end
+      object CheckBox126: TCheckBox
+        Left = 728
+        Top = 80
+        Width = 17
+        Height = 17
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -9
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 56
+      end
+      object Edit12: TEdit
+        Left = 744
+        Top = 82
+        Width = 100
+        Height = 14
+        BorderStyle = bsNone
+        Color = clSilver
+        TabOrder = 57
+        OnChange = Edit12Change
+      end
+      object CheckBox127: TCheckBox
+        Left = 852
+        Top = 80
+        Width = 17
+        Height = 17
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -9
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 58
+      end
+      object Edit13: TEdit
+        Left = 868
+        Top = 82
+        Width = 100
+        Height = 14
+        BorderStyle = bsNone
+        Color = clSilver
+        TabOrder = 59
+        OnChange = Edit13Change
+      end
     end
   end
   object PGeneralSistemas: TPanel
@@ -28897,7 +26320,7 @@ object Spinal: TSpinal
     BevelOuter = bvNone
     BevelWidth = 6
     Color = clWhite
-    TabOrder = 18
+    TabOrder = 17
     Visible = False
     object GBSSensorial: TGroupBox
       Left = 0
@@ -36481,22 +33904,6125 @@ object Spinal: TSpinal
       TabOrder = 1
       OnClick = PCerrarGeneralClick
     end
-    object BAreasEnfoque2: TButton
-      Left = 892
-      Top = 548
-      Width = 104
-      Height = 16
+  end
+  object CBAutomatico: TCheckBox
+    Left = 548
+    Top = 688
+    Width = 14
+    Height = 14
+    Cursor = crHandPoint
+    TabOrder = 31
+  end
+  object BVertebras: TButton
+    Left = 744
+    Top = 688
+    Width = 75
+    Height = 13
+    Caption = 'BVertebras'
+    TabOrder = 32
+    Visible = False
+    OnClick = BVertebrasClick
+  end
+  object Panel34: TPanel
+    Left = 0
+    Top = 707
+    Width = 1021
+    Height = 12
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 33
+    object GProgreso: TGauge
+      Left = 150
+      Top = 0
+      Width = 871
+      Height = 12
+      Align = alClient
+      BorderStyle = bsNone
+      Color = clWhite
+      ForeColor = clBlue
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Progress = 0
+    end
+    object PTiempoEstimado: TPanel
+      Left = 0
+      Top = 0
+      Width = 150
+      Height = 12
+      Align = alLeft
+      BevelOuter = bvNone
+      Caption = 'Tiempo estimado en segs. | '
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object SETiempo: TSpinEdit
+    Left = 444
+    Top = 684
+    Width = 37
+    Height = 19
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    MaxValue = 20
+    MinValue = 3
+    ParentFont = False
+    TabOrder = 34
+    Value = 3
+  end
+  object Edit26: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 36
+    Text = 'Edit26'
+    Visible = False
+  end
+  object Edit27: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 37
+    Text = 'Edit27'
+    Visible = False
+  end
+  object Edit28: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 38
+    Text = 'Edit28'
+    Visible = False
+  end
+  object Edit29: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 39
+    Text = 'Edit29'
+    Visible = False
+  end
+  object Edit54: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 40
+    Text = '54'
+    Visible = False
+  end
+  object Edit55: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 41
+    Text = '55'
+    Visible = False
+  end
+  object Edit58: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 42
+    Text = '58'
+    Visible = False
+  end
+  object Edit59: TEdit
+    Left = 1036
+    Top = 196
+    Width = 20
+    Height = 14
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 43
+    Text = '59'
+    Visible = False
+  end
+  object PDermatomasCraneales: TPanel
+    Left = 420
+    Top = 4
+    Width = 593
+    Height = 505
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 21
+    Visible = False
+    object IDermatomasCraneales: TImage
+      Left = 36
+      Top = 12
+      Width = 474
+      Height = 309
+      Stretch = True
+    end
+    object IDermatomasFaciales: TImage
+      Left = 424
+      Top = 256
+      Width = 137
+      Height = 229
+      Stretch = True
+    end
+    object Label266: TLabel
+      Tag = 8
+      Left = 12
+      Top = 88
+      Width = 125
+      Height = 26
       Cursor = crHandPoint
-      Hint = 'Equilibra sarcode total aproximado.'
-      Caption = 'Biomarcadores'
+      Caption = 'Nervio oftalmológico (V1),'#13#10'rama del nervio trigémino.'
+      Transparent = True
+      OnClick = Label266Click
+    end
+    object Label307: TLabel
+      Tag = 8
+      Left = 12
+      Top = 164
+      Width = 127
+      Height = 26
+      Cursor = crHandPoint
+      Caption = 'Nervio maxilar (V2),'#13#10'rama del nervio trigeminal.'
+      Transparent = True
+      OnClick = Label307Click
+    end
+    object Label310: TLabel
+      Tag = 8
+      Left = 12
+      Top = 240
+      Width = 127
+      Height = 26
+      Cursor = crHandPoint
+      Caption = 'Nervio mandibular (V3),'#13#10'rama del nervio trigeminal.'
+      Transparent = True
+      OnClick = Label310Click
+    end
+    object Label311: TLabel
+      Tag = 8
+      Left = 420
+      Top = 232
+      Width = 121
+      Height = 13
+      Cursor = crHandPoint
+      Caption = 'Ramas del plexo cervical.'
+      Transparent = True
+      OnClick = Label311Click
+    end
+    object Label312: TLabel
+      Tag = 8
+      Left = 424
+      Top = 126
+      Width = 157
+      Height = 52
+      Cursor = crHandPoint
+      Caption = 
+        'Nota: rama auricular del nervio '#13#10'vago hasta el meatus externo '#13 +
+        #10'acústico y el área menor en la '#13#10'parte posteromedial del aurícu' +
+        'lo.'
+      Transparent = True
+      OnClick = Label312Click
+    end
+    object Label313: TLabel
+      Tag = 8
+      Left = 416
+      Top = 72
+      Width = 120
+      Height = 26
+      Cursor = crHandPoint
+      Caption = 'Ramas dorsales de los'#13#10'nervios de las cervicales.'
+      Transparent = True
+      OnClick = Label313Click
+    end
+    object Panel14: TPanel
+      Left = 567
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      TabOrder = 0
+      OnClick = Panel14Click
+    end
+  end
+  object PDermatomasCorporales: TPanel
+    Left = 399
+    Top = 4
+    Width = 614
+    Height = 673
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 20
+    Visible = False
+    object IDermatomas: TImage
+      Left = 0
+      Top = 0
+      Width = 614
+      Height = 637
+      Align = alTop
+      Stretch = True
+    end
+    object Label350: TLabel
+      Tag = 8
+      Left = 280
+      Top = 28
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C2 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label350Click
+    end
+    object Label351: TLabel
+      Tag = 8
+      Left = 280
+      Top = 44
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C3 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label351Click
+    end
+    object Label352: TLabel
+      Tag = 8
+      Left = 280
+      Top = 60
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C4 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label352Click
+    end
+    object Label353: TLabel
+      Tag = 8
+      Left = 280
+      Top = 76
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C5 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label353Click
+    end
+    object Label354: TLabel
+      Tag = 8
+      Left = 280
+      Top = 92
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C6 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label354Click
+    end
+    object Label355: TLabel
+      Tag = 8
+      Left = 280
+      Top = 108
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C7 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label355Click
+    end
+    object Label356: TLabel
+      Tag = 8
+      Left = 280
+      Top = 124
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C8 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label356Click
+    end
+    object Label379: TLabel
+      Tag = 8
+      Left = 304
+      Top = 28
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T2 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label379Click
+    end
+    object Label380: TLabel
+      Tag = 8
+      Left = 304
+      Top = 44
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T3 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label380Click
+    end
+    object Label381: TLabel
+      Tag = 8
+      Left = 304
+      Top = 60
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T4 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label381Click
+    end
+    object Label382: TLabel
+      Tag = 8
+      Left = 304
+      Top = 76
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T5 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label382Click
+    end
+    object Label383: TLabel
+      Tag = 8
+      Left = 304
+      Top = 92
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T6 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label383Click
+    end
+    object Label384: TLabel
+      Tag = 8
+      Left = 304
+      Top = 108
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T7 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label384Click
+    end
+    object Label385: TLabel
+      Tag = 8
+      Left = 304
+      Top = 124
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T8 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label385Click
+    end
+    object Label386: TLabel
+      Tag = 8
+      Left = 304
+      Top = 140
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T9 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label386Click
+    end
+    object Label387: TLabel
+      Tag = 8
+      Left = 301
+      Top = 156
+      Width = 24
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T10 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label387Click
+    end
+    object Label388: TLabel
+      Tag = 8
+      Left = 301
+      Top = 172
+      Width = 24
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T11 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label388Click
+    end
+    object Label389: TLabel
+      Tag = 8
+      Left = 301
+      Top = 188
+      Width = 24
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T12 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label389Click
+    end
+    object Label390: TLabel
+      Tag = 8
+      Left = 328
+      Top = 12
+      Width = 17
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' L1 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label390Click
+    end
+    object Label391: TLabel
+      Tag = 8
+      Left = 328
+      Top = 28
+      Width = 17
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' L2 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label391Click
+    end
+    object Label392: TLabel
+      Tag = 8
+      Left = 328
+      Top = 44
+      Width = 17
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' L3 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label392Click
+    end
+    object Label393: TLabel
+      Tag = 8
+      Left = 328
+      Top = 60
+      Width = 17
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' L4 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label393Click
+    end
+    object Label394: TLabel
+      Tag = 8
+      Left = 328
+      Top = 76
+      Width = 17
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' L5 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label394Click
+    end
+    object Label395: TLabel
+      Tag = 8
+      Left = 352
+      Top = 12
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' S1 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label395Click
+    end
+    object Label396: TLabel
+      Tag = 8
+      Left = 352
+      Top = 28
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' S2 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label396Click
+    end
+    object Label397: TLabel
+      Tag = 8
+      Left = 352
+      Top = 44
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' S3 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label397Click
+    end
+    object Label398: TLabel
+      Tag = 8
+      Left = 352
+      Top = 60
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' S4 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label398Click
+    end
+    object Label357: TLabel
+      Tag = 8
+      Left = 352
+      Top = 76
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' S5 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label357Click
+    end
+    object Label366: TLabel
+      Tag = 8
+      Left = 304
+      Top = 12
+      Width = 18
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' T1 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label366Click
+    end
+    object Label375: TLabel
+      Tag = 8
+      Left = 280
+      Top = 12
+      Width = 19
+      Height = 13
+      Cursor = crHandPoint
+      Caption = ' C1 '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = Label375Click
+    end
+    object L_Nuevo_Patron_Pensamiento: TLabel
+      Left = 4
+      Top = 656
+      Width = 626
+      Height = 13
+      AutoSize = False
+      Caption = '|||'
+      Color = clWhite
+      ParentColor = False
+      Visible = False
+    end
+    object L_Conexion_Emocional: TLabel
+      Left = 4
+      Top = 640
+      Width = 626
+      Height = 13
+      AutoSize = False
+      Caption = '|||'
+      Color = clWhite
+      ParentColor = False
+      Visible = False
+    end
+    object LMaestra: TLabel
+      Left = 48
+      Top = 596
+      Width = 44
+      Height = 13
+      Caption = 'LMaestra'
+      Transparent = True
+      Visible = False
+    end
+    object Image4: TImage
+      Left = 6
+      Top = 600
+      Width = 30
+      Height = 30
+      Cursor = crHandPoint
+      Stretch = True
+      Transparent = True
+      OnClick = Image4Click
+    end
+    object Panel18: TPanel
+      Left = 616
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      TabOrder = 0
+      OnClick = Panel18Click
+    end
+    object BMaestroDermatomas: TButton
+      Left = 48
+      Top = 612
+      Width = 154
+      Height = 17
+      Cursor = crHandPoint
+      Caption = 'Botón Maestro Dermatomas'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 21
-      OnClick = Button84Click
+      TabOrder = 1
+      Visible = False
+      OnClick = BMaestroDermatomasClick
+    end
+    object Panel13: TPanel
+      Left = 588
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Panel13Click
+    end
+  end
+  object PTerapiaVertebra: TPanel
+    Left = 8
+    Top = 448
+    Width = 1005
+    Height = 229
+    BevelOuter = bvNone
+    BevelWidth = 3
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+    Visible = False
+    object Label439: TLabel
+      Left = 12
+      Top = 36
+      Width = 30
+      Height = 13
+      Caption = 'AREA'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label440: TLabel
+      Left = 12
+      Top = 68
+      Width = 47
+      Height = 13
+      Caption = 'EFECTOS'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label441: TLabel
+      Left = 12
+      Top = 100
+      Width = 193
+      Height = 13
+      Caption = 'CAUSAS EMOCIONALES PROBABLES'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label442: TLabel
+      Left = 12
+      Top = 132
+      Width = 182
+      Height = 13
+      Caption = 'NUEVO PATRON DE PENSAMIENTO'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label443: TLabel
+      Left = 12
+      Top = 52
+      Width = 18
+      Height = 13
+      Caption = 'XXX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label444: TLabel
+      Left = 12
+      Top = 84
+      Width = 18
+      Height = 13
+      Caption = 'XXX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label445: TLabel
+      Left = 12
+      Top = 116
+      Width = 18
+      Height = 13
+      Caption = 'XXX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label446: TLabel
+      Left = 12
+      Top = 148
+      Width = 18
+      Height = 13
+      Caption = 'XXX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label447: TLabel
+      Left = 12
+      Top = 192
+      Width = 610
+      Height = 26
+      Caption = 
+        'Los desalineamientos de las vértebras espinales y discos pueden ' +
+        'causar irritación al sistema nervioso y afectar las estructuras,' +
+        ' '#13#10'órganos y funciones que pueden resultar en las condiciones qu' +
+        'e mencionan arriba.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label448: TLabel
+      Left = 12
+      Top = 8
+      Width = 104
+      Height = 19
+      Caption = 'VERTEBRA |'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Button134: TButton
+      Left = 864
+      Top = 680
+      Width = 99
+      Height = 25
+      Caption = 'Cerrar'
+      TabOrder = 0
+      OnClick = Button134Click
+    end
+    object Button135: TButton
+      Tag = 8
+      Left = 784
+      Top = 196
+      Width = 213
+      Height = 25
+      Cursor = crHandPoint
+      Caption = 'Realizar terapia específica'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button135Click
+    end
+    object Panel26: TPanel
+      Left = 979
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Panel26Click
+    end
+  end
+  object Panel15: TPanel
+    Left = 8
+    Top = 4
+    Width = 1005
+    Height = 673
+    Hint = 'Reparar la lesión hasta corregirla o repetir 5 veces máximo.'
+    BevelOuter = bvNone
+    BevelWidth = 4
+    Caption = ' '
+    Color = clYellow
+    Ctl3D = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 7
+    Visible = False
+    OnDblClick = Panel15DblClick
+    object Label219: TLabel
+      Left = 739
+      Top = 4
+      Width = 207
+      Height = 25
+      Alignment = taRightJustify
+      Caption = 'Lesiones deportivas'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Button56: TButton
+      Left = 12
+      Top = 644
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Extender duración de terapia'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+      OnClick = Button56Click
+    end
+    object Button57: TButton
+      Left = 346
+      Top = 399
+      Width = 148
+      Height = 18
+      Cursor = crHandPoint
+      Caption = 'Potencia doble'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 1
+      OnClick = Button57Click
+    end
+    object Button65: TButton
+      Left = 12
+      Top = 644
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Realizar terapia a través de sonda de punto'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+      OnClick = Button65Click
+    end
+    object Button16: TButton
+      Left = 12
+      Top = 644
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Reducir tiempo de terapia'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      Visible = False
+      OnClick = Button16Click
+    end
+    object Button23: TButton
+      Left = 346
+      Top = 380
+      Width = 148
+      Height = 18
+      Cursor = crHandPoint
+      Caption = 'Potencia normal'
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 4
+      OnClick = Button23Click
+    end
+    object Panel2: TPanel
+      Left = 979
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      OnClick = Panel2Click
+    end
+    object GroupBox8: TGroupBox
+      Left = 504
+      Top = 352
+      Width = 213
+      Height = 249
+      Caption = ' Músculos '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 6
+      object Button903: TButton
+        Left = 7
+        Top = 43
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Patología traumática-inflamatoria más frecuente en las actividad' +
+          'es deportivas.  Las consecuencias de la contusión dependerán del' +
+          ' sitio donde se recibió y la intensidad del traumatismo.  Su man' +
+          'ifestación es a través de dolor, rubor, calor y/o tumor, todos e' +
+          'stos datos del proceso inflamatorio.'
+        Caption = 'Contusión'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button903Click
+      end
+      object Button73: TButton
+        Left = 7
+        Top = 123
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Heridas provocadas por objetos que presentan punta, como: clavos' +
+          ', varillas, implementos deportivos, etc.'
+        Caption = 'Heridas punzantes'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button73Click
+      end
+      object Button82: TButton
+        Left = 7
+        Top = 103
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Provocadas por objetos romos en traumatismo directo; se pueden p' +
+          'rovocar por piedras, postes, gradas y las diversas áreas anatómi' +
+          'cas de contacto permitidas en deportes de combate.'
+        Caption = 'Heridas contusas o contundentes'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Button82Click
+      end
+      object Button92: TButton
+        Left = 7
+        Top = 163
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Es la lesión microscópica del músculo, que se produce al sobrepa' +
+          'sar los límites normales de la elasticidad, produciéndose un est' +
+          'iramiento de las fibras sin que exista un daño anatómico ni rupt' +
+          'ura de las mismas, por examen clínico no es demostrable una solu' +
+          'ción de continuidad del músculo.  Su manifestación clínica se ca' +
+          'racteriza por dolor intenso y súbito, el sujeto es capaz de tole' +
+          'rar la molestia y puede continuar su actividad. La evolución de ' +
+          'este tipo de lesión es rápida y favorable a la mejoría en pocos ' +
+          'días.  El tratamiento es a través del método HICER.'
+        Caption = 'Distensión'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Button92Click
+      end
+      object Button88: TButton
+        Left = 7
+        Top = 223
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Tirón'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Button88Click
+      end
+      object Button90: TButton
+        Left = 7
+        Top = 143
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Ruptura macroscópica y parcial de un músculo, en el cual si se m' +
+          'uestra solución de continuidad, se considera como lesión grave, ' +
+          'ya que puede haber ruptura extensa de fibras musculares.  Su man' +
+          'ifestación clínica es dolor intenso y la incapacidad funcional, ' +
+          'se presenta frecuentemente un hematoma postraumático cuya magnit' +
+          'ud puede palparse como un abultamiento.'
+        Caption = 'Desgarro'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+        OnClick = Button90Click
+      end
+      object Button89: TButton
+        Left = 7
+        Top = 183
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Rotura total'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+        OnClick = Button89Click
+      end
+      object Button152: TButton
+        Left = 7
+        Top = 203
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Rotura parcial'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+        OnClick = Button152Click
+      end
+      object Button170: TButton
+        Left = 7
+        Top = 63
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Heridas causadas por fricción o frotamiento con una superficie á' +
+          'spera, también llamadas excoriaciones o raspones.  Por lo genera' +
+          'l solo dañan el tejido cutáneo y subcutáneo, se producen en terr' +
+          'enos irregulares o de superficies duras o ásperas.'
+        Caption = 'Heridas abrasivas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+        OnClick = Button170Click
+      end
+      object Button171: TButton
+        Left = 7
+        Top = 23
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Son contracciones musculares dolorosas, de corta duración e invo' +
+          'luntarias, causadas por isquemia (irrigación insuficiente del mú' +
+          'sculo), contusión, desequilibrio hidro-electrolítico, sobrecarga' +
+          ' de trabajo muscular, uso de accesorios elásticos o utilización ' +
+          'de vendajes muy ajustados.  Sus manifestaciones clínicas son: do' +
+          'lor intenso y contracción del músculo afectado. El tratamiento c' +
+          'onsiste en estirar el músculo y al controlar la contracción dar ' +
+          'un ligero masaje para controlar el dolor e incrementar el flujo ' +
+          'sanguíneo.'
+        Caption = 'Contractura'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+        OnClick = Button171Click
+      end
+      object Button11: TButton
+        Left = 7
+        Top = 83
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Se caracterizan por presentar bordes regulares y afrontan perfec' +
+          'tamente; se pueden producir por implementos deportivos, vidrios,' +
+          ' láminas, etc.'
+        Caption = 'Heridas contusas o contundentes'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+        OnClick = Button11Click
+      end
+    end
+    object GroupBox9: TGroupBox
+      Left = 344
+      Top = 524
+      Width = 153
+      Height = 145
+      Caption = ' Huesos '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 7
+      object Button102: TButton
+        Left = 7
+        Top = 20
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Periostitis'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button102Click
+      end
+      object Button25: TButton
+        Left = 7
+        Top = 40
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Fracturas completas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button25Click
+      end
+      object Button128: TButton
+        Left = 7
+        Top = 60
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Fracturas incompletas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Button128Click
+      end
+      object Button172: TButton
+        Left = 7
+        Top = 80
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'La piel pone en comunicación el foco de la fractura con el exter' +
+          'ior.  Este tipo de fractura es grave por el riesgo de infección,' +
+          ' exigiendo cuidados especiales.'
+        Caption = 'Fractura abierta'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Button172Click
+      end
+      object Button173: TButton
+        Left = 7
+        Top = 100
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'La piel permanece intacta, si este tipo de fractura se maneja de' +
+          ' forma inadecuada puede agravarse peligrosamente transformándose' +
+          ' en abierta o complicada.'
+        Caption = 'Fractura cerrada'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Button173Click
+      end
+      object Button174: TButton
+        Left = 7
+        Top = 120
+        Width = 140
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Los fragmentos cortantes del hueso roto han dañado algún órgano ' +
+          '(vasos sanguíneos, nervios, pulmones, médula espinal). Esta clas' +
+          'e de fractura puede darse tanto en uno como en cualquiera de los' +
+          ' casos citados anteriores.'
+        Caption = 'Fractura complicada'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+        OnClick = Button174Click
+      end
+    end
+    object GroupBox10: TGroupBox
+      Left = 504
+      Top = 604
+      Width = 213
+      Height = 65
+      Caption = ' Tendones '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 8
+      object Button112: TButton
+        Left = 5
+        Top = 20
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Tendinitis'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button112Click
+      end
+      object Button100: TButton
+        Left = 5
+        Top = 39
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Tendosinovitis'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button100Click
+      end
+    end
+    object GroupBox11: TGroupBox
+      Left = 504
+      Top = 176
+      Width = 213
+      Height = 85
+      Caption = ' Ligamentos '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 9
+      object Button29: TButton
+        Left = 5
+        Top = 19
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Esguince mínimo o leve sin rotura ligamentosa.'
+        Caption = 'Esquince grado 1'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button29Click
+      end
+      object Button114: TButton
+        Left = 5
+        Top = 39
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Esguince moderado con rotura parcial o incompleta.'
+        Caption = 'Esquince grado 2'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button114Click
+      end
+      object Button126: TButton
+        Left = 5
+        Top = 59
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Rotura ligamentosa completa.'
+        Caption = 'Esquince grado 3'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Button126Click
+      end
+    end
+    object GroupBox12: TGroupBox
+      Left = 504
+      Top = 264
+      Width = 213
+      Height = 85
+      Caption = ' Articulaciones '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 10
+      object Button129: TButton
+        Left = 5
+        Top = 59
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Meniscos de la rodilla'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button129Click
+      end
+      object Button139: TButton
+        Left = 5
+        Top = 19
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Artritis traumática'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button139Click
+      end
+      object Button115: TButton
+        Left = 5
+        Top = 39
+        Width = 200
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Una articulación está luxada cuando existe la pérdida de la rela' +
+          'ción normal de las caras articulares, es decir, existe desplazam' +
+          'iento de los huesos fuera de la articulación.  Las dislocaciones' +
+          ' generalmente son causadas por un impacto súbito a la articulaci' +
+          'ón y con frecuencia se presentan después de un golpe, una caída ' +
+          'u otro trauma.'
+        Caption = 'Luxación'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Button115Click
+      end
+    end
+    object GroupBox13: TGroupBox
+      Left = 344
+      Top = 176
+      Width = 153
+      Height = 193
+      Caption = ' Sistemas orgánicos '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 11
+      object CheckBox76: TCheckBox
+        Left = 24
+        Top = 24
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Circulatorio'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox60: TCheckBox
+        Left = 24
+        Top = 168
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Urinario'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox75: TCheckBox
+        Left = 24
+        Top = 152
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Reproductivo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox61: TCheckBox
+        Left = 24
+        Top = 136
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Respiratorio'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox67: TCheckBox
+        Left = 24
+        Top = 120
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Nervioso'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox66: TCheckBox
+        Left = 24
+        Top = 104
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Muscular'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox65: TCheckBox
+        Left = 24
+        Top = 88
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Linfático'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox64: TCheckBox
+        Left = 24
+        Top = 72
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Esquelético'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox63: TCheckBox
+        Left = 24
+        Top = 56
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Endocrino'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox62: TCheckBox
+        Left = 24
+        Top = 40
+        Width = 90
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Digestivo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+    end
+    object GroupBox14: TGroupBox
+      Left = 12
+      Top = 4
+      Width = 325
+      Height = 665
+      Caption = ' Síntomas y Signos '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 12
+      object CheckBox68: TCheckBox
+        Left = 6
+        Top = 20
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Distensión muscular.'
+        Caption = 'Dolor difuso en todo el músculo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox69: TCheckBox
+        Left = 6
+        Top = 36
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tirón muscular.'
+        Caption = 'Hematoma debido a rotura de vasos.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox70: TCheckBox
+        Left = 6
+        Top = 52
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Desgarro muscular.'
+        Caption = 'Hinchazón.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox71: TCheckBox
+        Left = 6
+        Top = 68
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Desgarro muscular.'
+        Caption = 'Sensación de dolor aumentada.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox72: TCheckBox
+        Left = 6
+        Top = 84
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Rotura muscular.'
+        Caption = 'Dolor brusco acentuado por contracción muscular.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox73: TCheckBox
+        Left = 6
+        Top = 100
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tendinitis.'
+        Caption = 'Dolor espontáneo cuando se ejerce presión.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox74: TCheckBox
+        Left = 6
+        Top = 116
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tendosinovitis.'
+        Caption = 'Inflamación de vainas sinoviales en tendones.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox77: TCheckBox
+        Left = 6
+        Top = 132
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Periostiosis.'
+        Caption = 'Inflamación del periostio (membrana que recubre los huesos).'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox363: TCheckBox
+        Left = 6
+        Top = 148
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Periostiosis.'
+        Caption = 'Dolor localizado que se calma con el reposo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox364: TCheckBox
+        Left = 6
+        Top = 164
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Esguince.'
+        Caption = 'Dolor, hinchazón e impotencia funcional.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+      object CheckBox365: TCheckBox
+        Left = 6
+        Top = 180
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Luxación.'
+        Caption = 'Dolor en el momento de la lesión y deformidad.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+      end
+      object CheckBox366: TCheckBox
+        Left = 6
+        Top = 196
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Artritis traumática.'
+        Caption = 'Dolor e hinchazón en la articulación.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 11
+      end
+      object CheckBox367: TCheckBox
+        Left = 6
+        Top = 212
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Artritis traumática.'
+        Caption = 'Derrame sinovial o hemartrosis (muñecas y dedos).'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 12
+      end
+      object CheckBox368: TCheckBox
+        Left = 6
+        Top = 228
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Lesiones en meniscos de la rodilla.'
+        Caption = 'Derrame articular y limitación funcional.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 13
+      end
+      object CheckBox369: TCheckBox
+        Left = 6
+        Top = 244
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Fractura del metatarsiano por sobrecarga.'
+        Caption = 'Dolor en el ante pie.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 14
+      end
+      object CheckBox370: TCheckBox
+        Left = 6
+        Top = 260
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome compartimental por ejercicio anterolateral'
+        Caption = 'Dolor en músculos anteriores del talón.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
+      end
+      object CheckBox371: TCheckBox
+        Left = 6
+        Top = 276
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome posteromedial.'
+        Caption = 'Hemorragia subperióstica y periostitis.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 16
+      end
+      object CheckBox372: TCheckBox
+        Left = 6
+        Top = 292
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome posteromedial.'
+        Caption = 'Dolor intenso al levantar dedos de los pies.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 17
+      end
+      object CheckBox373: TCheckBox
+        Left = 6
+        Top = 308
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome posteromedial.'
+        Caption = 'Hipersensibilidad en la cara medial de la tibia.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 18
+      end
+      object CheckBox374: TCheckBox
+        Left = 6
+        Top = 324
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tendinitis poplítea.'
+        Caption = 'Sensibilidad en la zona ant. al ligamento colateral peritoneo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 19
+      end
+      object CheckBox375: TCheckBox
+        Left = 6
+        Top = 340
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tendinitis aquílea.'
+        Caption = 'Dolor matutino que desaparece gradualmente.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 20
+      end
+      object CheckBox376: TCheckBox
+        Left = 6
+        Top = 356
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Tendinitis aquílea.'
+        Caption = 'Degeneración mucoide y fibrosis.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+      end
+      object CheckBox377: TCheckBox
+        Left = 6
+        Top = 372
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Dolor femororrotuliano'
+        Caption = 'Dolor anteromedial y anterolateral a la rótula y detrás.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 22
+      end
+      object CheckBox378: TCheckBox
+        Left = 6
+        Top = 388
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome piriforme.'
+        Caption = 'Dolor crónico punzante desde la nalga hacia abajo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 23
+      end
+      object CheckBox379: TCheckBox
+        Left = 6
+        Top = 404
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Esquince lumbar.'
+        Caption = 'Dolor lumbar brusco.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 24
+      end
+      object CheckBox380: TCheckBox
+        Left = 6
+        Top = 420
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Esguince grado 1.'
+        Caption = 'Sensibilidad leve con tumefacción discreta en tobillo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 25
+      end
+      object CheckBox381: TCheckBox
+        Left = 6
+        Top = 436
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Esguince grado 2.'
+        Caption = 'Tumefacción aparente, esquimosis, dif. para caminar.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 26
+      end
+      object CheckBox382: TCheckBox
+        Left = 6
+        Top = 452
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Esguince grado 3.'
+        Caption = 'Tumefacción, hemorragia, inestabilidad, inc. para caminar.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 27
+      end
+      object CheckBox383: TCheckBox
+        Left = 6
+        Top = 468
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Síndrome de espolón calcáneo (fascitis plantar).'
+        Caption = 'Dolor en superficie plantar del talón.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 28
+      end
+      object CheckBox384: TCheckBox
+        Left = 6
+        Top = 484
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Epifisitis del calcáneo (Afección de Server).'
+        Caption = 'Dolor en bordes medial y lateral del talón (en infantes).'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 29
+      end
+      object CheckBox385: TCheckBox
+        Left = 6
+        Top = 500
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Bursitis posterior al tendón de Aquiles (deformación de Haglud).'
+        Caption = 'Dolor en parte posterior al tendón de Aquiles.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 30
+      end
+      object CheckBox386: TCheckBox
+        Left = 6
+        Top = 516
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 
+          'Fractura de la tuberosidad posterolateral del astrágalo.  Bursit' +
+          'is retromalolar.  Bursitis anterior al tendón de Aquiles.'
+        Caption = 'Dolor en la parte anterior al tendón de Aquiles.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 31
+      end
+      object CheckBox387: TCheckBox
+        Left = 6
+        Top = 532
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 
+          'Neuralgia del nervio tibial posterior.  Síndrome de sobrecarga. ' +
+          ' Función anormal del pie.'
+        Caption = 'Dolor en inserción calcánea del tendón de Aquiles.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 32
+      end
+      object CheckBox388: TCheckBox
+        Left = 6
+        Top = 548
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Epifisitis del calcáneo'
+        Caption = 'Dolor a lo largo de los bordes del calcáneo (tobillo).'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 33
+      end
+      object CheckBox389: TCheckBox
+        Left = 6
+        Top = 564
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Epifisitis del calcáneo'
+        Caption = 'Calor y tumefacción a lo largo de los bordes del tobillo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 34
+      end
+      object CheckBox390: TCheckBox
+        Left = 6
+        Top = 580
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Bursitis posterior al tendón de Aquiles.'
+        Caption = 'Sensibilidad en la zona posterosuperior del talón.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 35
+      end
+      object CheckBox391: TCheckBox
+        Left = 6
+        Top = 596
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Fractura de tuberosidad posterolateral del astrágalo.'
+        Caption = 'Dolor y tumefacción por detrás del tobillo, temperatura.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 36
+      end
+      object CheckBox392: TCheckBox
+        Left = 6
+        Top = 612
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Bursitis anterior al tendón de Aquiles.'
+        Caption = 'Dificultad para caminar o calzarse el zapato.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 37
+      end
+      object CheckBox393: TCheckBox
+        Left = 6
+        Top = 628
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Neuralgia del nervio tibial posterior.'
+        Caption = 'Hormigueo o tumefacción distal (signo de Tinel).'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 38
+      end
+      object CheckBox394: TCheckBox
+        Left = 6
+        Top = 644
+        Width = 314
+        Height = 13
+        Cursor = crHandPoint
+        Hint = 'Dolor del nervio interdigital.'
+        Caption = 'Dolor súbito en nervios del pie hacie el antepie y dedos.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 39
+      end
+    end
+    object GroupBox15: TGroupBox
+      Left = 724
+      Top = 60
+      Width = 273
+      Height = 609
+      Caption = ' Lesiones deportivas frecuentes '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 13
+      object Button136: TButton
+        Left = 5
+        Top = 323
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Deformidad de Haglund.'
+        Caption = 'Bursitis posterior al tendón de Aquiles'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Button136Click
+      end
+      object Button138: TButton
+        Left = 5
+        Top = 303
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Síndrome de espolón calcáneo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button138Click
+      end
+      object Button140: TButton
+        Left = 5
+        Top = 243
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Esguince mínimo o leve sin rotura ligamentosa.'
+        Caption = 'Esguince de tobillo grado 1'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Button140Click
+      end
+      object Button141: TButton
+        Left = 5
+        Top = 223
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Hombro de nadador, tenista, lanzador, síndrome de pinzamiento su' +
+          'bacromial.'
+        Caption = 'Tendinitis del manguito de los rotadores'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Button141Click
+      end
+      object Button142: TButton
+        Left = 5
+        Top = 203
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Codo de jugador de golf, baloncesto y codo de botones.'
+        Caption = 'Epicondilitis medial'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Button142Click
+      end
+      object Button143: TButton
+        Left = 5
+        Top = 183
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Codo de tenista.'
+        Caption = 'Epicondilitis lateral'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+        OnClick = Button143Click
+      end
+      object Button144: TButton
+        Left = 5
+        Top = 163
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Dorsalgia por levantar pesas.'
+        Caption = 'Esguince lumbar'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+        OnClick = Button144Click
+      end
+      object Button145: TButton
+        Left = 5
+        Top = 143
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Dolor ciático.'
+        Caption = 'Síndrome piriforme / Ciática'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+        OnClick = Button145Click
+      end
+      object Button146: TButton
+        Left = 5
+        Top = 123
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Desgarro de los isquiotibiales.'
+        Caption = 'Distensión en musculatura femoral posterior'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+        OnClick = Button146Click
+      end
+      object Button147: TButton
+        Left = 5
+        Top = 103
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Rodilla del corredor.'
+        Caption = 'Dolor femororrotuliano'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+        OnClick = Button147Click
+      end
+      object Button148: TButton
+        Left = 5
+        Top = 83
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Tendinitis aquílea'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+        OnClick = Button148Click
+      end
+      object Button149: TButton
+        Left = 5
+        Top = 63
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Tendinitis poplítea'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 11
+        OnClick = Button149Click
+      end
+      object Button150: TButton
+        Left = 5
+        Top = 43
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Síndrome compartimental por ejercicio'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 12
+        OnClick = Button150Click
+      end
+      object Button151: TButton
+        Left = 5
+        Top = 23
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Fractura del metatarsiano por sobrecarga'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 13
+        OnClick = Button151Click
+      end
+      object Button59: TButton
+        Left = 5
+        Top = 343
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Fractura de tuberosidad posterolateral del astrágalo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 14
+        OnClick = Button59Click
+      end
+      object Button153: TButton
+        Left = 5
+        Top = 423
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Dolor en la articulación metatarsofalángica'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
+        OnClick = Button153Click
+      end
+      object Button154: TButton
+        Left = 5
+        Top = 403
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Metatarsalgia.  Dolor en la zona anterior de apoyo del pie.'
+        Caption = 'Dolor del nervio interdigital'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 16
+        OnClick = Button154Click
+      end
+      object Button155: TButton
+        Left = 5
+        Top = 383
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 
+          'Dolor que se extiende siguiendo el curso del nervio tibial poste' +
+          'rior.'
+        Caption = 'Neuralgia del nervio tibial posterior'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 17
+        OnClick = Button155Click
+      end
+      object Button156: TButton
+        Left = 5
+        Top = 363
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Afección de Albert.'
+        Caption = 'Bursitis anterior al tendón de Aquiles'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 18
+        OnClick = Button156Click
+      end
+      object Button157: TButton
+        Left = 5
+        Top = 443
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Artrosis de la 1ra articulación metatarsofalángica.'
+        Caption = 'Hallux Rigidus'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 19
+        OnClick = Button157Click
+      end
+      object Button158: TButton
+        Left = 5
+        Top = 483
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Síndrome compartimental por ejercicio anterolateral'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 20
+        OnClick = Button158Click
+      end
+      object Button159: TButton
+        Left = 5
+        Top = 463
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Fractura del metatarsiano por sobrecarga'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+        OnClick = Button159Click
+      end
+      object Button160: TButton
+        Left = 5
+        Top = 503
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Síndrome posteromedial'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 22
+        OnClick = Button160Click
+      end
+      object Button161: TButton
+        Left = 5
+        Top = 263
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Esguince moderado con rotura parcial o incompleta.'
+        Caption = 'Esguince de tobillo grado 2'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 23
+        OnClick = Button161Click
+      end
+      object Button162: TButton
+        Left = 5
+        Top = 563
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Función anormal del pie'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 24
+        OnClick = Button162Click
+      end
+      object Button163: TButton
+        Left = 5
+        Top = 543
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Síndrome de sobrecarga'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 25
+        OnClick = Button163Click
+      end
+      object Button164: TButton
+        Left = 5
+        Top = 523
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Bursitis retromalolar'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 26
+        OnClick = Button164Click
+      end
+      object Button165: TButton
+        Left = 5
+        Top = 283
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Hint = 'Rotura ligamentosa completa.'
+        Caption = 'Esguince de tobillo grado 3'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 27
+        OnClick = Button165Click
+      end
+      object Button166: TButton
+        Left = 5
+        Top = 583
+        Width = 260
+        Height = 18
+        Cursor = crHandPoint
+        Caption = 'Epifisitis del calcáneo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 28
+        OnClick = Button166Click
+      end
+    end
+    object GroupBox16: TGroupBox
+      Left = 344
+      Top = 4
+      Width = 305
+      Height = 165
+      Caption = ' Posible causa de lesión '
+      Color = clYellow
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 14
+      object CheckBox395: TCheckBox
+        Left = 15
+        Top = 24
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Calentamiento previo insuficiente.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox396: TCheckBox
+        Left = 15
+        Top = 40
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Enfriamiento posterior insuficiente.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox397: TCheckBox
+        Left = 15
+        Top = 56
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Falta de estiramiento antes y después de la sesión.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox398: TCheckBox
+        Left = 15
+        Top = 72
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Sobre entrenamiento.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox399: TCheckBox
+        Left = 15
+        Top = 88
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Falta de reposo.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox400: TCheckBox
+        Left = 15
+        Top = 104
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Calzado incorrecto.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox401: TCheckBox
+        Left = 15
+        Top = 120
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Equipo incorrecto.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox402: TCheckBox
+        Left = 15
+        Top = 136
+        Width = 270
+        Height = 13
+        Cursor = crHandPoint
+        Caption = 'Otra:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object Edit16: TEdit
+        Left = 64
+        Top = 136
+        Width = 229
+        Height = 16
+        BorderStyle = bsNone
+        TabOrder = 8
+      end
+    end
+    object BTerapiaEAF: TButton
+      Left = 412
+      Top = 504
+      Width = 77
+      Height = 18
+      Caption = 'Terapia fX'
+      TabOrder = 15
+      Visible = False
+      OnClick = BTerapiaEAFClick
+    end
+    object Button1: TButton
+      Left = 346
+      Top = 418
+      Width = 148
+      Height = 18
+      Cursor = crHandPoint
+      Caption = 'Potencia máxima'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 16
+      OnClick = Button1Click
+    end
+  end
+  object PPCraneales: TPanel
+    Left = 8
+    Top = 4
+    Width = 1005
+    Height = 433
+    BevelOuter = bvNone
+    Color = clAqua
+    TabOrder = 35
+    Visible = False
+    object Bevel26: TBevel
+      Left = 19
+      Top = 266
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel27: TBevel
+      Left = 20
+      Top = 44
+      Width = 970
+      Height = 14
+      Shape = bsBottomLine
+    end
+    object Bevel28: TBevel
+      Left = 20
+      Top = 58
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel29: TBevel
+      Left = 19
+      Top = 84
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel30: TBevel
+      Left = 19
+      Top = 110
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel31: TBevel
+      Left = 19
+      Top = 136
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel32: TBevel
+      Left = 19
+      Top = 162
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel33: TBevel
+      Left = 19
+      Top = 188
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel34: TBevel
+      Left = 19
+      Top = 214
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel35: TBevel
+      Left = 19
+      Top = 240
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel36: TBevel
+      Left = 19
+      Top = 292
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel37: TBevel
+      Left = 19
+      Top = 318
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel38: TBevel
+      Left = 19
+      Top = 344
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Bevel39: TBevel
+      Left = 19
+      Top = 370
+      Width = 970
+      Height = 26
+      Shape = bsBottomLine
+    end
+    object Label943: TLabel
+      Left = 496
+      Top = 40
+      Width = 32
+      Height = 13
+      Caption = 'Núcleo'
+      Transparent = True
+    end
+    object Label944: TLabel
+      Left = 788
+      Top = 40
+      Width = 37
+      Height = 13
+      Caption = 'Función'
+      Transparent = True
+    end
+    object Label945: TLabel
+      Left = 224
+      Top = 64
+      Width = 43
+      Height = 13
+      Caption = 'Sensorial'
+      Transparent = True
+    end
+    object Label946: TLabel
+      Left = 331
+      Top = 40
+      Width = 32
+      Height = 13
+      Caption = 'Origen'
+      Transparent = True
+    end
+    object Label947: TLabel
+      Left = 235
+      Top = 40
+      Width = 20
+      Height = 13
+      Caption = 'Tipo'
+      Transparent = True
+    end
+    object Label948: TLabel
+      Left = 212
+      Top = 108
+      Width = 66
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Motor +'#13#10'Parasimpático'
+      Transparent = True
+    end
+    object Label949: TLabel
+      Left = 224
+      Top = 88
+      Width = 43
+      Height = 13
+      Caption = 'Sensorial'
+      Transparent = True
+    end
+    object Label950: TLabel
+      Left = 231
+      Top = 192
+      Width = 28
+      Height = 13
+      Caption = 'Motor'
+      Transparent = True
+    end
+    object Label951: TLabel
+      Left = 231
+      Top = 140
+      Width = 28
+      Height = 13
+      Caption = 'Motor'
+      Transparent = True
+    end
+    object Label952: TLabel
+      Left = 224
+      Top = 160
+      Width = 43
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Sensitivo'#13#10'+ Motor'
+      Transparent = True
+    end
+    object Label953: TLabel
+      Left = 317
+      Top = 116
+      Width = 60
+      Height = 13
+      Caption = 'Mesencéfalo'
+      Transparent = True
+    end
+    object Label954: TLabel
+      Left = 320
+      Top = 64
+      Width = 55
+      Height = 13
+      Caption = 'Telencéfalo'
+      Transparent = True
+    end
+    object Label955: TLabel
+      Left = 322
+      Top = 88
+      Width = 50
+      Height = 13
+      Caption = 'Diencéfalo'
+      Transparent = True
+    end
+    object Label956: TLabel
+      Left = 317
+      Top = 140
+      Width = 60
+      Height = 13
+      Caption = 'Mesencéfalo'
+      Transparent = True
+    end
+    object Label957: TLabel
+      Left = 475
+      Top = 56
+      Width = 75
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Núcleo olfatorio'#13#10'anterior'
+      Transparent = True
+    end
+    object Label958: TLabel
+      Left = 330
+      Top = 168
+      Width = 34
+      Height = 13
+      Caption = 'Puente'
+      Transparent = True
+    end
+    object Label959: TLabel
+      Left = 306
+      Top = 186
+      Width = 82
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Margen posterior'#13#10'del puente'
+      Transparent = True
+    end
+    object Label960: TLabel
+      Left = 448
+      Top = 108
+      Width = 128
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Núcleo oculomotor,'#13#10'núcleo de Edinger-Westpal'
+      Transparent = True
+    end
+    object Label961: TLabel
+      Left = 463
+      Top = 82
+      Width = 98
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Células ganglionares'#13#10'de la retina'
+      Transparent = True
+    end
+    object Label962: TLabel
+      Left = 424
+      Top = 160
+      Width = 177
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Núcleo principal, espinal, mesenfálico'#13#10'y motor del trigémino'
+      Transparent = True
+    end
+    object Label963: TLabel
+      Left = 476
+      Top = 140
+      Width = 72
+      Height = 13
+      Caption = 'Núcleo troclear'
+      Transparent = True
+    end
+    object Label964: TLabel
+      Left = 420
+      Top = 290
+      Width = 184
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Nucleus ambiguus, núcleo dorsal vagal'#13#10'motor y núcleo solitario'
+      Transparent = True
+    end
+    object Label965: TLabel
+      Left = 231
+      Top = 322
+      Width = 28
+      Height = 13
+      Caption = 'Motor'
+      Transparent = True
+    end
+    object Label966: TLabel
+      Left = 223
+      Top = 296
+      Width = 44
+      Height = 13
+      Caption = 'Complejo'
+      Transparent = True
+    end
+    object Label967: TLabel
+      Left = 223
+      Top = 220
+      Width = 44
+      Height = 13
+      Caption = 'Complejo'
+      Transparent = True
+    end
+    object Label968: TLabel
+      Left = 223
+      Top = 272
+      Width = 44
+      Height = 13
+      Caption = 'Complejo'
+      Transparent = True
+    end
+    object Label969: TLabel
+      Left = 224
+      Top = 244
+      Width = 43
+      Height = 13
+      Caption = 'Sensorial'
+      Transparent = True
+    end
+    object Label970: TLabel
+      Left = 312
+      Top = 272
+      Width = 71
+      Height = 13
+      Caption = 'Bulbo raquídeo'
+      Transparent = True
+    end
+    object Label971: TLabel
+      Left = 286
+      Top = 238
+      Width = 123
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Lateral al VIIpar'#13#10'(ángulo pontocerebeloso)'
+      Transparent = True
+    end
+    object Label972: TLabel
+      Left = 330
+      Top = 220
+      Width = 34
+      Height = 13
+      Caption = 'Puente'
+      Transparent = True
+    end
+    object Label973: TLabel
+      Left = 307
+      Top = 316
+      Width = 80
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Raíces craneales'#13#10'y espinales'
+      Transparent = True
+    end
+    object Label974: TLabel
+      Left = 286
+      Top = 290
+      Width = 123
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Surco posterolateral de la'#13#10'médula oblongata'
+      Transparent = True
+    end
+    object Label975: TLabel
+      Left = 448
+      Top = 244
+      Width = 128
+      Height = 13
+      Caption = 'Núcleo vestibular y coclear'
+      Transparent = True
+    end
+    object Label976: TLabel
+      Left = 472
+      Top = 192
+      Width = 81
+      Height = 13
+      Caption = 'Núcleo abducens'
+      Transparent = True
+    end
+    object Label977: TLabel
+      Left = 620
+      Top = 136
+      Width = 350
+      Height = 22
+      Caption = 
+        'Inerva el músculo oblícuo superior, el cual deprime, rota latera' +
+        'lmente (alrededor del'#13#10'eje óptico) y rota internamente el globo ' +
+        'ocular, se localiza en la hendidura esfenoidal.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label978: TLabel
+      Left = 620
+      Top = 110
+      Width = 347
+      Height = 22
+      Caption = 
+        'Inerva los músculos: elevador del párpado superior, recto superi' +
+        'or, medial,'#13#10'inferior y oblícuo inferior, los cuales realizan la' +
+        ' mayoría de los movimientos oculares.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label979: TLabel
+      Left = 455
+      Top = 316
+      Width = 115
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Nucleus ambiguus y'#13#10'núcleo espinal accesorio'
+      Transparent = True
+    end
+    object Label980: TLabel
+      Left = 620
+      Top = 90
+      Width = 295
+      Height = 11
+      Caption = 
+        'Transmite información visual al cerebro, se localiza en el aguje' +
+        'ro óptico.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label981: TLabel
+      Left = 460
+      Top = 212
+      Width = 104
+      Height = 26
+      Caption = 'Núcleo facial, solitario'#13#10'y salivar superior'
+      Transparent = True
+    end
+    object Label982: TLabel
+      Left = 620
+      Top = 188
+      Width = 311
+      Height = 22
+      Caption = 
+        'Inerva el músculo recto lateral, el cual abduce el globo ocular,' +
+        ' ubicado en la'#13#10'hendidura esfenoidal.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label983: TLabel
+      Left = 620
+      Top = 162
+      Width = 327
+      Height = 22
+      Caption = 
+        'Percibe información sensitiva de la cara e inerva músculos de la' +
+        ' masticación, se'#13#10'ubica en la fisura orbital superior.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label984: TLabel
+      Left = 415
+      Top = 264
+      Width = 194
+      Height = 26
+      Alignment = taCenter
+      Caption = 'Nucleus ambiguus, núcleo salivar inferior'#13#10'y núcleo solitario'
+      Transparent = True
+    end
+    object Label985: TLabel
+      Left = 620
+      Top = 266
+      Width = 334
+      Height = 22
+      Caption = 
+        'Recibe impulsos gustativos, proporciona inervación secreto-motor' +
+        'a a la parótida e'#13#10'inervación motora al músculo estilofaríngeo y' +
+        ' estilogloso.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label986: TLabel
+      Left = 620
+      Top = 240
+      Width = 343
+      Height = 22
+      Caption = 
+        'Percepción de sonidos, rotación y gravedad. La rama vestibular l' +
+        'leva impulsos para'#13#10'coordinar el equilibrio y el brazo coclear l' +
+        'leva impulsos lleva impulsos auditivos.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label987: TLabel
+      Left = 620
+      Top = 292
+      Width = 334
+      Height = 22
+      Caption = 
+        'Inervación a la mayoría de músculos laríngeos y a todos los farí' +
+        'ngeos (excepto al'#13#10'estilofaríngeo), recibe el sentido del gusto ' +
+        'proveniente de la epiglotis.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label988: TLabel
+      Left = 620
+      Top = 214
+      Width = 359
+      Height = 22
+      Caption = 
+        'Lleva inervación motora a músculos de la expresión facial, vient' +
+        're posterior del músculo'#13#10'digástrico y estapedio, recibe impulso' +
+        's degustativos y prop. inervación a las salivales.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label989: TLabel
+      Left = 620
+      Top = 58
+      Width = 327
+      Height = 22
+      Caption = 
+        'Transmite los impulsos olfativos; se localiza en el foramen olfa' +
+        'torio en la lámina'#13#10'cribosa del etmoides.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label990: TLabel
+      Left = 231
+      Top = 348
+      Width = 28
+      Height = 13
+      Caption = 'Motor'
+      Transparent = True
+    end
+    object Label991: TLabel
+      Left = 312
+      Top = 348
+      Width = 71
+      Height = 13
+      Caption = 'Bulbo raquídeo'
+      Transparent = True
+    end
+    object Label992: TLabel
+      Left = 472
+      Top = 348
+      Width = 80
+      Height = 13
+      Caption = 'Núcleo hipogloso'
+      Transparent = True
+    end
+    object Label993: TLabel
+      Left = 224
+      Top = 376
+      Width = 43
+      Height = 13
+      Caption = 'Sensitivo'
+      Transparent = True
+    end
+    object Label994: TLabel
+      Left = 432
+      Top = 368
+      Width = 161
+      Height = 26
+      Alignment = taCenter
+      Caption = 
+        'Trígono olfatorio, circunvolución'#13#10'olfatoria media y lámina term' +
+        'inalis'
+      Transparent = True
+    end
+    object Bevel40: TBevel
+      Left = 208
+      Top = 40
+      Width = 17
+      Height = 357
+      Shape = bsLeftLine
+    end
+    object Bevel41: TBevel
+      Left = 280
+      Top = 40
+      Width = 17
+      Height = 357
+      Shape = bsLeftLine
+    end
+    object Bevel42: TBevel
+      Left = 412
+      Top = 40
+      Width = 17
+      Height = 357
+      Shape = bsLeftLine
+    end
+    object Bevel43: TBevel
+      Left = 612
+      Top = 40
+      Width = 17
+      Height = 357
+      Shape = bsLeftLine
+    end
+    object Label995: TLabel
+      Left = 620
+      Top = 318
+      Width = 335
+      Height = 22
+      Caption = 
+        'Controla músculos esternocleidomastoideo y trapecio, se superpon' +
+        'e con funciones'#13#10'del nervio vago.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label996: TLabel
+      Left = 620
+      Top = 344
+      Width = 354
+      Height = 22
+      Caption = 
+        'Proporciona inervación motora a músculos de lengua (excepto al m' +
+        'úsculo palatogloso),'#13#10'y otros músculos linguales. Deglusción y a' +
+        'rticulación de sonidos.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label997: TLabel
+      Left = 620
+      Top = 370
+      Width = 285
+      Height = 22
+      Caption = 
+        'Investigaciones recientes indican que puede tener un papel en la' +
+        #13#10'detección de las feromonas, se une al sistema olfatorio en emb' +
+        'riones.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label998: TLabel
+      Left = 88
+      Top = 40
+      Width = 37
+      Height = 13
+      Caption = 'Nombre'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Button695: TButton
+      Tag = 8
+      Left = 24
+      Top = 60
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'I - Nervio Olfatorio'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = Button695Click
+    end
+    object Button696: TButton
+      Tag = 8
+      Left = 24
+      Top = 86
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'II - Nervio Optico'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button696Click
+    end
+    object Button697: TButton
+      Tag = 8
+      Left = 24
+      Top = 112
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'III - Nervio Oculomotor'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Button697Click
+    end
+    object Button698: TButton
+      Tag = 8
+      Left = 24
+      Top = 138
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'IV - Nervio Troclear'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = Button698Click
+    end
+    object Button699: TButton
+      Tag = 8
+      Left = 24
+      Top = 164
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'V - Nervio trigémino'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnClick = Button699Click
+    end
+    object Button700: TButton
+      Tag = 8
+      Left = 24
+      Top = 190
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'VI - Nervio abducens'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      OnClick = Button700Click
+    end
+    object Button701: TButton
+      Tag = 8
+      Left = 24
+      Top = 216
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'VII - Nervio facial'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnClick = Button701Click
+    end
+    object Button702: TButton
+      Tag = 8
+      Left = 24
+      Top = 242
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'VIII - Nervio vestibulococlear'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+      OnClick = Button702Click
+    end
+    object Button703: TButton
+      Tag = 8
+      Left = 24
+      Top = 268
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'IX - Nervio glosofaríngeo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+      OnClick = Button703Click
+    end
+    object Button704: TButton
+      Tag = 8
+      Left = 24
+      Top = 294
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'X - Nervio vago o neumogástrico'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+      OnClick = Button704Click
+    end
+    object Button705: TButton
+      Tag = 8
+      Left = 24
+      Top = 320
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'XI - Nervio accesorio espinal'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
+      OnClick = Button705Click
+    end
+    object Button706: TButton
+      Tag = 8
+      Left = 24
+      Top = 346
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = 'XII - Nervio hipogloso'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 11
+      OnClick = Button706Click
+    end
+    object Button707: TButton
+      Tag = 8
+      Left = 24
+      Top = 372
+      Width = 180
+      Height = 20
+      Cursor = crHandPoint
+      Caption = '0 - Par craneal cero'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 12
+      OnClick = Button707Click
+    end
+    object Panel35: TPanel
+      Left = 980
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clAqua
+      TabOrder = 13
+      OnClick = Panel35Click
+    end
+  end
+  object Panel16: TPanel
+    Left = 8
+    Top = 4
+    Width = 1005
+    Height = 673
+    BevelOuter = bvNone
+    Color = clLime
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 45
+    Visible = False
+    object Label36: TLabel
+      Left = 42
+      Top = 12
+      Width = 116
+      Height = 23
+      Hint = 
+        'El término hormona fué acuñado en 1905, a partir del término gri' +
+        'ego que significa '#39'poner en movimiento'#39', aunque ya antes se habí' +
+        'an descubierto dos funciones hormonales.  La primera hormona des' +
+        'cubierta fué la adrenalina en 1901 y las segunda la tiroxina en ' +
+        '1914.'
+      Caption = 'HORMONAS'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Button79: TButton
+      Left = 804
+      Top = 624
+      Width = 177
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Estimular ítems elegídos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = Button79Click
+    end
+    object Button14: TButton
+      Left = 804
+      Top = 600
+      Width = 177
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Equilibrar ítems elegídos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button14Click
+    end
+    object GroupBox36: TGroupBox
+      Left = 40
+      Top = 528
+      Width = 141
+      Height = 121
+      Caption = ' Clasificaciones químicas '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      object CheckBox107: TCheckBox
+        Left = 13
+        Top = 16
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Aminas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox347: TCheckBox
+        Left = 13
+        Top = 80
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Péptidos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox358: TCheckBox
+        Left = 13
+        Top = 48
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Glucoproteínas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox359: TCheckBox
+        Left = 13
+        Top = 64
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'No esteroides'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox360: TCheckBox
+        Left = 13
+        Top = 32
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Esteroides'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox361: TCheckBox
+        Left = 13
+        Top = 96
+        Width = 100
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Protéicas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+    end
+    object GroupBox38: TGroupBox
+      Left = 40
+      Top = 208
+      Width = 921
+      Height = 317
+      Caption = ' Homonas peptídicas y derivadas de aminoácidos '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      object CheckBox26: TCheckBox
+        Left = 24
+        Top = 292
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona adrenocorticotrópica o ACTH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox29: TCheckBox
+        Left = 24
+        Top = 68
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Calcitonina o CT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox30: TCheckBox
+        Left = 24
+        Top = 260
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Gonadotropina coriónica humana o hCG'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox31: TCheckBox
+        Left = 24
+        Top = 100
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Colecistoquinina o CCK'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox32: TCheckBox
+        Left = 24
+        Top = 52
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Angiotensinógeno y Angiotensina o AGT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox33: TCheckBox
+        Left = 24
+        Top = 244
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Glucagón o GCG'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox36: TCheckBox
+        Left = 316
+        Top = 20
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona antidiurética o vasopresina o ADH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox37: TCheckBox
+        Left = 24
+        Top = 212
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Gastrina o GRP'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox139: TCheckBox
+        Left = 24
+        Top = 228
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Ghrelina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox145: TCheckBox
+        Left = 24
+        Top = 164
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Eritropoyetina o EPO'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+      object CheckBox149: TCheckBox
+        Left = 24
+        Top = 196
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Factor liberador de prolactina o PRF'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+      end
+      object CheckBox157: TCheckBox
+        Left = 24
+        Top = 276
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Histamina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 11
+      end
+      object CheckBox158: TCheckBox
+        Left = 24
+        Top = 148
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Endotelina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 12
+      end
+      object CheckBox99: TCheckBox
+        Left = 24
+        Top = 180
+        Width = 282
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Fact. de crecimiento insulínico o somatomedina o IGF-1'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 13
+      end
+      object CheckBox161: TCheckBox
+        Left = 24
+        Top = 132
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Encefalina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 14
+      end
+      object CheckBox24: TCheckBox
+        Left = 24
+        Top = 20
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Adiponectina o Acrp30'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
+      end
+      object CheckBox93: TCheckBox
+        Left = 24
+        Top = 36
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Adrenalina o epinefrina o EPI'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 16
+      end
+      object CheckBox86: TCheckBox
+        Left = 24
+        Top = 116
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Dopamina o DPM, PIH o DA'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 17
+      end
+      object CheckBox237: TCheckBox
+        Left = 24
+        Top = 84
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Catecolaminas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 18
+      end
+      object CheckBox25: TCheckBox
+        Left = 316
+        Top = 292
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Orexina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 19
+      end
+      object CheckBox27: TCheckBox
+        Left = 316
+        Top = 100
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona liberadora de corticotropina o CRH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 20
+      end
+      object CheckBox28: TCheckBox
+        Left = 608
+        Top = 52
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Péptido natridiurético auricular o atriopeptina o ANP'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+      end
+      object CheckBox34: TCheckBox
+        Left = 316
+        Top = 196
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Lactógeno placentario humano o HPL'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 22
+      end
+      object CheckBox35: TCheckBox
+        Left = 316
+        Top = 116
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona liberadora de gonadotropina o GnRH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 23
+      end
+      object CheckBox38: TCheckBox
+        Left = 316
+        Top = 164
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inhibina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 24
+      end
+      object CheckBox140: TCheckBox
+        Left = 316
+        Top = 84
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'H. estimuladora de los melanocitos o MSH o a-MSH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 25
+      end
+      object CheckBox141: TCheckBox
+        Left = 608
+        Top = 36
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Parathormona o PTH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 26
+      end
+      object CheckBox142: TCheckBox
+        Left = 608
+        Top = 20
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Oxitocina o OXT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 27
+      end
+      object CheckBox147: TCheckBox
+        Left = 316
+        Top = 180
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Insulina o INS'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 28
+      end
+      object CheckBox148: TCheckBox
+        Left = 316
+        Top = 212
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Leptina o LEP'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 29
+      end
+      object CheckBox151: TCheckBox
+        Left = 316
+        Top = 228
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Lipotropina or PRH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 30
+      end
+      object CheckBox152: TCheckBox
+        Left = 316
+        Top = 132
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona liberadora de tirotropina o TRH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 31
+      end
+      object CheckBox153: TCheckBox
+        Left = 316
+        Top = 68
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona estimuladora del folículo o FSH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 32
+      end
+      object CheckBox156: TCheckBox
+        Left = 316
+        Top = 260
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Neuropéptido Y o NPY'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 33
+      end
+      object CheckBox13: TCheckBox
+        Left = 316
+        Top = 148
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona luteinizante o LH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 34
+      end
+      object CheckBox9: TCheckBox
+        Left = 316
+        Top = 244
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Melatonina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 35
+      end
+      object CheckBox17: TCheckBox
+        Left = 316
+        Top = 36
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona antimulleriana o AMH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 36
+      end
+      object CheckBox12: TCheckBox
+        Left = 316
+        Top = 276
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Noradrenalina o norepinefrina o NRE'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 37
+      end
+      object CheckBox14: TCheckBox
+        Left = 316
+        Top = 52
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormona del crecimiento o somatropina o GH o hGH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 38
+      end
+      object CheckBox143: TCheckBox
+        Left = 608
+        Top = 116
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Relaxina o RLN'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 39
+      end
+      object CheckBox144: TCheckBox
+        Left = 608
+        Top = 100
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Prolactina o PRL'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 40
+      end
+      object CheckBox150: TCheckBox
+        Left = 608
+        Top = 292
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Trombopoyetina o T.P.O.'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 41
+      end
+      object CheckBox154: TCheckBox
+        Left = 608
+        Top = 68
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Péptido natriurético cerebral o BNP'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 42
+      end
+      object CheckBox155: TCheckBox
+        Left = 608
+        Top = 164
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Somatostina o SRIF'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 43
+      end
+      object CheckBox159: TCheckBox
+        Left = 608
+        Top = 84
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Polipéptido pancreático'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 44
+      end
+      object CheckBox160: TCheckBox
+        Left = 608
+        Top = 132
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Renina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 45
+      end
+      object CheckBox91: TCheckBox
+        Left = 608
+        Top = 196
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Tetrayodotironina o tiroxina o T4'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 46
+      end
+      object CheckBox92: TCheckBox
+        Left = 608
+        Top = 260
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Triyodotironina o T3'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 47
+      end
+      object CheckBox4: TCheckBox
+        Left = 608
+        Top = 228
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Tirotropina o TSH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 48
+      end
+      object CheckBox23: TCheckBox
+        Left = 608
+        Top = 148
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Secretina o SCT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 49
+      end
+      object CheckBox11: TCheckBox
+        Left = 608
+        Top = 180
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Serotonina o 5-HT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 50
+      end
+      object CheckBox220: TCheckBox
+        Left = 608
+        Top = 212
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Tirosina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 51
+      end
+      object CheckBox236: TCheckBox
+        Left = 608
+        Top = 276
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Triptófano'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 52
+      end
+      object CheckBox245: TCheckBox
+        Left = 608
+        Top = 244
+        Width = 280
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Tiroxina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 53
+      end
+    end
+    object GroupBox40: TGroupBox
+      Left = 40
+      Top = 36
+      Width = 693
+      Height = 169
+      Caption = ' Areas hormonales intrísecas '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      object CheckBox90: TCheckBox
+        Left = 8
+        Top = 80
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Circuitos largos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox96: TCheckBox
+        Left = 232
+        Top = 96
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormonas tróficas o trópicas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox5: TCheckBox
+        Left = 8
+        Top = 96
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Circuitos ultra cortos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox6: TCheckBox
+        Left = 8
+        Top = 64
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Circuitos cortos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox7: TCheckBox
+        Left = 232
+        Top = 16
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Feed-Back negativo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+        OnClick = CheckBox7Click
+      end
+      object CheckBox8: TCheckBox
+        Left = 460
+        Top = 64
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Receptores de membrana'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox22: TCheckBox
+        Left = 460
+        Top = 80
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Receptores intracelulares'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox163: TCheckBox
+        Left = 232
+        Top = 32
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Feed-Back positivo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox262: TCheckBox
+        Left = 8
+        Top = 48
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Bicapa lipídica'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox266: TCheckBox
+        Left = 232
+        Top = 128
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Membranas celulares y receptores'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+      object CheckBox285: TCheckBox
+        Left = 232
+        Top = 144
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Membrana plasmática de la célula diana'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+      end
+      object CheckBox302: TCheckBox
+        Left = 460
+        Top = 128
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Vía sanguínea'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 11
+      end
+      object CheckBox314: TCheckBox
+        Left = 8
+        Top = 144
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Espacio intersticial'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 12
+      end
+      object CheckBox316: TCheckBox
+        Left = 460
+        Top = 48
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Proteínas asociadas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 13
+      end
+      object CheckBox322: TCheckBox
+        Left = 8
+        Top = 16
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Acción autócrina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 14
+      end
+      object CheckBox330: TCheckBox
+        Left = 8
+        Top = 32
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Acción parácrina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
+      end
+      object CheckBox339: TCheckBox
+        Left = 8
+        Top = 112
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Comunicación celular'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 16
+      end
+      object CheckBox340: TCheckBox
+        Left = 460
+        Top = 32
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Organos asociados'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 17
+      end
+      object CheckBox350: TCheckBox
+        Left = 460
+        Top = 112
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Tejidos diana o blancos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 18
+      end
+      object CheckBox351: TCheckBox
+        Left = 460
+        Top = 96
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Sintetización hormonal'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 19
+      end
+      object CheckBox352: TCheckBox
+        Left = 232
+        Top = 64
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormonas asociadas (a proteínas)'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 20
+      end
+      object CheckBox353: TCheckBox
+        Left = 232
+        Top = 48
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormonas solas o biodisponibles'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+      end
+      object CheckBox354: TCheckBox
+        Left = 232
+        Top = 112
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Medioambiente'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 22
+      end
+      object CheckBox355: TCheckBox
+        Left = 232
+        Top = 80
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Hormonas estimuladoras o inhibidoras'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 23
+      end
+      object CheckBox356: TCheckBox
+        Left = 8
+        Top = 128
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Concentración plasmática de iones'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 24
+      end
+      object CheckBox357: TCheckBox
+        Left = 460
+        Top = 16
+        Width = 220
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Neuronas y actividad mental'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 25
+      end
+      object CheckBox125: TCheckBox
+        Left = 460
+        Top = 144
+        Width = 17
+        Height = 17
+        TabOrder = 26
+      end
+      object Edit11: TEdit
+        Left = 478
+        Top = 146
+        Width = 193
+        Height = 14
+        BorderStyle = bsNone
+        TabOrder = 27
+        OnChange = Edit11Change
+      end
+    end
+    object GroupBox41: TGroupBox
+      Left = 188
+      Top = 528
+      Width = 429
+      Height = 121
+      Caption = ' Items misceláneos '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+      object CheckBox87: TCheckBox
+        Left = 13
+        Top = 28
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Acetilcolina o ACh o ACo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox88: TCheckBox
+        Left = 13
+        Top = 60
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Endorfinas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox10: TCheckBox
+        Left = 13
+        Top = 76
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Feromonas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox111: TCheckBox
+        Left = 13
+        Top = 44
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Antígeno prostático específico o PSA'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox20: TCheckBox
+        Left = 225
+        Top = 92
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Somatocrinina o GHRH'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox98: TCheckBox
+        Left = 13
+        Top = 92
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inmunoglobulina A o IgA'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox97: TCheckBox
+        Left = 225
+        Top = 60
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inmunoglobulina G o IgG'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox1: TCheckBox
+        Left = 225
+        Top = 76
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inmunoglobulina M o IgM'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox2: TCheckBox
+        Left = 225
+        Top = 44
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inmunoglobulina E o IgE'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox3: TCheckBox
+        Left = 225
+        Top = 28
+        Width = 200
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inmunoglobulina D o IgD'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+    end
+    object GroupBox39: TGroupBox
+      Left = 740
+      Top = 16
+      Width = 221
+      Height = 189
+      Caption = ' Hormonas lipídicas '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      object CheckBox21: TCheckBox
+        Left = 12
+        Top = 84
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Dihidrotestosterona o DHT'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox173: TCheckBox
+        Left = 12
+        Top = 100
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Estradiol (17B-estradio) o E2'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox174: TCheckBox
+        Left = 12
+        Top = 116
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Estrona'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox89: TCheckBox
+        Left = 12
+        Top = 52
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Cortisol'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox100: TCheckBox
+        Left = 12
+        Top = 132
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Testosterona '
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox94: TCheckBox
+        Left = 12
+        Top = 36
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Androstenediona'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox108: TCheckBox
+        Left = 12
+        Top = 20
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Aldosterona'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox15: TCheckBox
+        Left = 12
+        Top = 68
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Dehidroepiandrosterona o DHEA'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox18: TCheckBox
+        Left = 12
+        Top = 148
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Progesterona o P4'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+        OnClick = CheckBox18Click
+      end
+      object CheckBox259: TCheckBox
+        Left = 12
+        Top = 164
+        Width = 180
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Prostaglandinas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+    end
+    object GroupBox37: TGroupBox
+      Left = 624
+      Top = 528
+      Width = 169
+      Height = 121
+      Caption = ' Efectos '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      object CheckBox16: TCheckBox
+        Left = 12
+        Top = 48
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Estimulante'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox19: TCheckBox
+        Left = 12
+        Top = 64
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Inhitorio'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox95: TCheckBox
+        Left = 12
+        Top = 96
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Trópico'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox101: TCheckBox
+        Left = 12
+        Top = 32
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Balance cuantittativo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox103: TCheckBox
+        Left = 12
+        Top = 16
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Antagonista'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox104: TCheckBox
+        Left = 12
+        Top = 80
+        Width = 130
+        Height = 17
+        Cursor = crHandPoint
+        Caption = 'Sinergista'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+    end
+    object Panel23: TPanel
+      Left = 979
+      Top = 4
+      Width = 22
+      Height = 22
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = '>'
+      Color = clLime
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 8
+      OnClick = Panel23Click
     end
   end
   object Panel24: TPanel
@@ -36513,7 +40039,7 @@ object Spinal: TSpinal
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 15
     Visible = False
     object Label589: TLabel
       Tag = 8
@@ -36538,22 +40064,6 @@ object Spinal: TSpinal
       Width = 229
       Height = 153
       Stretch = True
-    end
-    object Label37: TLabel
-      Left = 964
-      Top = 652
-      Width = 31
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Ayuda'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      Transparent = True
-      OnClick = Label37Click
     end
     object Label30: TLabel
       Left = 12
@@ -39079,7 +42589,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
     end
     object CheckBox203: TCheckBox
       Tag = 8
@@ -39093,7 +42603,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 3
     end
     object CheckBox208: TCheckBox
       Tag = 8
@@ -39107,7 +42617,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 4
     end
     object CheckBox209: TCheckBox
       Tag = 8
@@ -39121,7 +42631,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
     end
     object CheckBox210: TCheckBox
       Tag = 8
@@ -39135,7 +42645,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
     end
     object CheckBox211: TCheckBox
       Tag = 8
@@ -39149,7 +42659,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
     end
     object CheckBox212: TCheckBox
       Tag = 8
@@ -39163,7 +42673,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
     end
     object CheckBox213: TCheckBox
       Tag = 8
@@ -39177,7 +42687,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
     end
     object CheckBox214: TCheckBox
       Tag = 8
@@ -39191,7 +42701,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 10
     end
     object CheckBox215: TCheckBox
       Tag = 8
@@ -39205,7 +42715,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 12
+      TabOrder = 11
     end
     object CheckBox216: TCheckBox
       Tag = 8
@@ -39219,7 +42729,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 12
     end
     object CheckBox218: TCheckBox
       Tag = 8
@@ -39233,7 +42743,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 13
     end
     object CheckBox219: TCheckBox
       Tag = 8
@@ -39247,7 +42757,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 14
     end
     object CheckBox221: TCheckBox
       Tag = 8
@@ -39261,7 +42771,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 16
+      TabOrder = 15
     end
     object CheckBox222: TCheckBox
       Tag = 8
@@ -39275,7 +42785,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 17
+      TabOrder = 16
     end
     object CheckBox223: TCheckBox
       Tag = 8
@@ -39289,7 +42799,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 18
+      TabOrder = 17
     end
     object CheckBox224: TCheckBox
       Tag = 8
@@ -39303,7 +42813,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 19
+      TabOrder = 18
     end
     object CheckBox225: TCheckBox
       Tag = 8
@@ -39317,7 +42827,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 20
+      TabOrder = 19
     end
     object CheckBox226: TCheckBox
       Tag = 8
@@ -39331,7 +42841,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 21
+      TabOrder = 20
     end
     object CheckBox227: TCheckBox
       Tag = 8
@@ -39345,7 +42855,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 22
+      TabOrder = 21
     end
     object CheckBox228: TCheckBox
       Tag = 8
@@ -39359,7 +42869,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 23
+      TabOrder = 22
     end
     object CheckBox229: TCheckBox
       Tag = 8
@@ -39373,7 +42883,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 24
+      TabOrder = 23
     end
     object CheckBox230: TCheckBox
       Tag = 8
@@ -39387,7 +42897,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 25
+      TabOrder = 24
     end
     object CheckBox231: TCheckBox
       Tag = 8
@@ -39401,7 +42911,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 26
+      TabOrder = 25
     end
     object CheckBox232: TCheckBox
       Tag = 8
@@ -39415,7 +42925,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 27
+      TabOrder = 26
     end
     object CheckBox233: TCheckBox
       Tag = 8
@@ -39429,7 +42939,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 28
+      TabOrder = 27
     end
     object CheckBox234: TCheckBox
       Tag = 8
@@ -39443,7 +42953,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 29
+      TabOrder = 28
     end
     object CheckBox235: TCheckBox
       Tag = 8
@@ -39457,7 +42967,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 30
+      TabOrder = 29
     end
     object CheckBox207: TCheckBox
       Tag = 8
@@ -39471,7 +42981,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 31
+      TabOrder = 30
     end
     object CheckBox206: TCheckBox
       Tag = 8
@@ -39485,7 +42995,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 32
+      TabOrder = 31
     end
     object CheckBox204: TCheckBox
       Tag = 8
@@ -39499,7 +43009,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 33
+      TabOrder = 32
     end
     object CheckBox205: TCheckBox
       Tag = 8
@@ -39513,7 +43023,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 34
+      TabOrder = 33
     end
     object CheckBox238: TCheckBox
       Tag = 8
@@ -39527,7 +43037,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 35
+      TabOrder = 34
     end
     object CheckBox239: TCheckBox
       Tag = 8
@@ -39541,7 +43051,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 36
+      TabOrder = 35
     end
     object CheckBox240: TCheckBox
       Tag = 8
@@ -39555,7 +43065,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 37
+      TabOrder = 36
     end
     object CheckBox241: TCheckBox
       Tag = 8
@@ -39569,7 +43079,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 38
+      TabOrder = 37
     end
     object CheckBox242: TCheckBox
       Tag = 8
@@ -39583,7 +43093,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 39
+      TabOrder = 38
     end
     object CheckBox243: TCheckBox
       Tag = 8
@@ -39597,7 +43107,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 40
+      TabOrder = 39
     end
     object CheckBox244: TCheckBox
       Tag = 8
@@ -39611,7 +43121,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 41
+      TabOrder = 40
     end
     object CheckBox246: TCheckBox
       Tag = 8
@@ -39625,7 +43135,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 42
+      TabOrder = 41
     end
     object CheckBox247: TCheckBox
       Tag = 8
@@ -39639,7 +43149,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 43
+      TabOrder = 42
     end
     object CheckBox248: TCheckBox
       Tag = 8
@@ -39653,7 +43163,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 44
+      TabOrder = 43
     end
     object CheckBox249: TCheckBox
       Tag = 8
@@ -39667,7 +43177,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 45
+      TabOrder = 44
     end
     object CheckBox250: TCheckBox
       Tag = 8
@@ -39681,7 +43191,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 46
+      TabOrder = 45
     end
     object CheckBox251: TCheckBox
       Tag = 8
@@ -39695,7 +43205,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 47
+      TabOrder = 46
     end
     object CheckBox252: TCheckBox
       Tag = 8
@@ -39709,7 +43219,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 48
+      TabOrder = 47
     end
     object CheckBox253: TCheckBox
       Tag = 8
@@ -39723,7 +43233,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 49
+      TabOrder = 48
     end
     object CheckBox254: TCheckBox
       Tag = 8
@@ -39737,7 +43247,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 50
+      TabOrder = 49
     end
     object CheckBox255: TCheckBox
       Tag = 8
@@ -39751,7 +43261,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 51
+      TabOrder = 50
     end
     object CheckBox256: TCheckBox
       Tag = 8
@@ -39765,7 +43275,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 52
+      TabOrder = 51
     end
     object CheckBox257: TCheckBox
       Tag = 8
@@ -39779,7 +43289,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 53
+      TabOrder = 52
     end
     object CheckBox258: TCheckBox
       Tag = 8
@@ -39793,7 +43303,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 54
+      TabOrder = 53
     end
     object CheckBox260: TCheckBox
       Tag = 8
@@ -39807,7 +43317,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 55
+      TabOrder = 54
     end
     object CheckBox261: TCheckBox
       Tag = 8
@@ -39821,7 +43331,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 56
+      TabOrder = 55
     end
     object CheckBox263: TCheckBox
       Tag = 8
@@ -39835,7 +43345,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 57
+      TabOrder = 56
     end
     object CheckBox264: TCheckBox
       Tag = 8
@@ -39849,7 +43359,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 58
+      TabOrder = 57
     end
     object CheckBox265: TCheckBox
       Tag = 8
@@ -39863,7 +43373,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 59
+      TabOrder = 58
     end
     object CheckBox267: TCheckBox
       Tag = 8
@@ -39877,7 +43387,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 60
+      TabOrder = 59
     end
     object CheckBox268: TCheckBox
       Tag = 8
@@ -39891,7 +43401,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 61
+      TabOrder = 60
     end
     object CheckBox269: TCheckBox
       Tag = 8
@@ -39905,7 +43415,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 62
+      TabOrder = 61
     end
     object CheckBox270: TCheckBox
       Tag = 8
@@ -39919,7 +43429,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 63
+      TabOrder = 62
     end
     object CheckBox271: TCheckBox
       Tag = 8
@@ -39933,7 +43443,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 64
+      TabOrder = 63
     end
     object CheckBox272: TCheckBox
       Tag = 8
@@ -39947,7 +43457,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 65
+      TabOrder = 64
     end
     object CheckBox273: TCheckBox
       Tag = 8
@@ -39961,7 +43471,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 66
+      TabOrder = 65
     end
     object CheckBox274: TCheckBox
       Tag = 8
@@ -39975,7 +43485,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 67
+      TabOrder = 66
     end
     object CheckBox275: TCheckBox
       Tag = 8
@@ -39989,7 +43499,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 68
+      TabOrder = 67
     end
     object CheckBox276: TCheckBox
       Tag = 8
@@ -40003,7 +43513,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 69
+      TabOrder = 68
     end
     object CheckBox277: TCheckBox
       Tag = 8
@@ -40017,7 +43527,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 70
+      TabOrder = 69
     end
     object CheckBox278: TCheckBox
       Tag = 8
@@ -40031,7 +43541,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 71
+      TabOrder = 70
     end
     object CheckBox279: TCheckBox
       Tag = 8
@@ -40045,7 +43555,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 72
+      TabOrder = 71
     end
     object CheckBox280: TCheckBox
       Tag = 8
@@ -40059,7 +43569,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 73
+      TabOrder = 72
     end
     object CheckBox281: TCheckBox
       Tag = 8
@@ -40073,7 +43583,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 74
+      TabOrder = 73
     end
     object CheckBox282: TCheckBox
       Tag = 8
@@ -40087,7 +43597,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 75
+      TabOrder = 74
     end
     object CheckBox283: TCheckBox
       Tag = 8
@@ -40101,7 +43611,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 76
+      TabOrder = 75
     end
     object CheckBox284: TCheckBox
       Tag = 8
@@ -40115,7 +43625,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 77
+      TabOrder = 76
     end
     object CheckBox286: TCheckBox
       Tag = 8
@@ -40129,7 +43639,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 78
+      TabOrder = 77
     end
     object CheckBox287: TCheckBox
       Tag = 8
@@ -40143,7 +43653,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 79
+      TabOrder = 78
     end
     object CheckBox288: TCheckBox
       Tag = 8
@@ -40157,7 +43667,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 80
+      TabOrder = 79
     end
     object CheckBox289: TCheckBox
       Tag = 8
@@ -40171,7 +43681,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 81
+      TabOrder = 80
     end
     object CheckBox290: TCheckBox
       Tag = 8
@@ -40185,7 +43695,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 82
+      TabOrder = 81
     end
     object CheckBox291: TCheckBox
       Tag = 8
@@ -40199,7 +43709,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 83
+      TabOrder = 82
     end
     object CheckBox292: TCheckBox
       Tag = 8
@@ -40213,7 +43723,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 84
+      TabOrder = 83
     end
     object CheckBox293: TCheckBox
       Tag = 8
@@ -40227,7 +43737,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 85
+      TabOrder = 84
     end
     object CheckBox294: TCheckBox
       Tag = 8
@@ -40241,7 +43751,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 86
+      TabOrder = 85
     end
     object CheckBox295: TCheckBox
       Tag = 8
@@ -40255,7 +43765,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 87
+      TabOrder = 86
     end
     object CheckBox296: TCheckBox
       Tag = 8
@@ -40269,7 +43779,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 88
+      TabOrder = 87
     end
     object CheckBox297: TCheckBox
       Tag = 8
@@ -40283,7 +43793,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 89
+      TabOrder = 88
     end
     object CheckBox298: TCheckBox
       Tag = 8
@@ -40297,7 +43807,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 90
+      TabOrder = 89
     end
     object CheckBox299: TCheckBox
       Tag = 8
@@ -40311,7 +43821,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 91
+      TabOrder = 90
     end
     object CheckBox300: TCheckBox
       Tag = 8
@@ -40325,7 +43835,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 92
+      TabOrder = 91
     end
     object CheckBox301: TCheckBox
       Tag = 8
@@ -40339,7 +43849,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 93
+      TabOrder = 92
     end
     object CheckBox303: TCheckBox
       Tag = 8
@@ -40353,7 +43863,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 94
+      TabOrder = 93
     end
     object CheckBox304: TCheckBox
       Tag = 8
@@ -40367,7 +43877,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 95
+      TabOrder = 94
     end
     object CheckBox305: TCheckBox
       Tag = 8
@@ -40381,7 +43891,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 96
+      TabOrder = 95
     end
     object CheckBox306: TCheckBox
       Tag = 8
@@ -40395,7 +43905,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 97
+      TabOrder = 96
     end
     object CheckBox307: TCheckBox
       Tag = 8
@@ -40409,7 +43919,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 98
+      TabOrder = 97
     end
     object CheckBox308: TCheckBox
       Tag = 8
@@ -40423,7 +43933,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 99
+      TabOrder = 98
     end
     object CheckBox309: TCheckBox
       Tag = 8
@@ -40437,7 +43947,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 100
+      TabOrder = 99
     end
     object CheckBox310: TCheckBox
       Tag = 8
@@ -40451,7 +43961,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 101
+      TabOrder = 100
     end
     object CheckBox311: TCheckBox
       Tag = 8
@@ -40465,7 +43975,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 102
+      TabOrder = 101
     end
     object CheckBox312: TCheckBox
       Tag = 8
@@ -40479,7 +43989,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 103
+      TabOrder = 102
     end
     object CheckBox313: TCheckBox
       Tag = 8
@@ -40493,7 +44003,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 104
+      TabOrder = 103
     end
     object CheckBox315: TCheckBox
       Tag = 8
@@ -40507,7 +44017,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 105
+      TabOrder = 104
     end
     object CheckBox317: TCheckBox
       Tag = 8
@@ -40521,7 +44031,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 106
+      TabOrder = 105
     end
     object CheckBox318: TCheckBox
       Tag = 8
@@ -40535,7 +44045,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 107
+      TabOrder = 106
     end
     object CheckBox319: TCheckBox
       Tag = 8
@@ -40549,7 +44059,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 108
+      TabOrder = 107
     end
     object CheckBox320: TCheckBox
       Tag = 8
@@ -40563,7 +44073,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 109
+      TabOrder = 108
     end
     object CheckBox321: TCheckBox
       Tag = 8
@@ -40577,7 +44087,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 110
+      TabOrder = 109
     end
     object CheckBox323: TCheckBox
       Tag = 8
@@ -40591,7 +44101,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 111
+      TabOrder = 110
     end
     object CheckBox324: TCheckBox
       Tag = 8
@@ -40605,7 +44115,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 112
+      TabOrder = 111
     end
     object CheckBox325: TCheckBox
       Tag = 8
@@ -40619,7 +44129,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 113
+      TabOrder = 112
     end
     object CheckBox326: TCheckBox
       Tag = 8
@@ -40633,7 +44143,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 114
+      TabOrder = 113
     end
     object CheckBox327: TCheckBox
       Tag = 8
@@ -40647,7 +44157,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 115
+      TabOrder = 114
     end
     object CheckBox328: TCheckBox
       Tag = 8
@@ -40661,7 +44171,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 116
+      TabOrder = 115
     end
     object CheckBox329: TCheckBox
       Tag = 8
@@ -40675,7 +44185,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 117
+      TabOrder = 116
     end
     object CheckBox331: TCheckBox
       Tag = 8
@@ -40689,7 +44199,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 118
+      TabOrder = 117
     end
     object CheckBox332: TCheckBox
       Tag = 8
@@ -40703,7 +44213,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 119
+      TabOrder = 118
     end
     object CheckBox333: TCheckBox
       Tag = 8
@@ -40717,7 +44227,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 120
+      TabOrder = 119
     end
     object CheckBox334: TCheckBox
       Tag = 8
@@ -40731,7 +44241,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 121
+      TabOrder = 120
     end
     object CheckBox335: TCheckBox
       Tag = 8
@@ -40745,7 +44255,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 122
+      TabOrder = 121
     end
     object CheckBox336: TCheckBox
       Tag = 8
@@ -40759,7 +44269,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 123
+      TabOrder = 122
     end
     object CheckBox337: TCheckBox
       Tag = 8
@@ -40773,7 +44283,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 124
+      TabOrder = 123
     end
     object CheckBox338: TCheckBox
       Tag = 8
@@ -40787,7 +44297,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 125
+      TabOrder = 124
     end
     object CheckBox341: TCheckBox
       Tag = 8
@@ -40801,7 +44311,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 126
+      TabOrder = 125
     end
     object CheckBox342: TCheckBox
       Tag = 8
@@ -40815,7 +44325,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 127
+      TabOrder = 126
     end
     object CheckBox343: TCheckBox
       Tag = 8
@@ -40829,7 +44339,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 128
+      TabOrder = 127
     end
     object CheckBox344: TCheckBox
       Tag = 8
@@ -40843,7 +44353,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 129
+      TabOrder = 128
     end
     object CheckBox345: TCheckBox
       Tag = 8
@@ -40857,7 +44367,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 130
+      TabOrder = 129
     end
     object CheckBox346: TCheckBox
       Tag = 8
@@ -40871,7 +44381,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 131
+      TabOrder = 130
     end
     object CheckBox348: TCheckBox
       Tag = 8
@@ -40885,7 +44395,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 132
+      TabOrder = 131
     end
     object CheckBox349: TCheckBox
       Tag = 8
@@ -40899,7 +44409,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 133
+      TabOrder = 132
     end
     object CheckBox217: TCheckBox
       Tag = 8
@@ -40913,7 +44423,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 135
+      TabOrder = 134
     end
     object CheckBox362: TCheckBox
       Tag = 8
@@ -40927,58 +44437,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 136
-    end
-    object Memo5: TMemo
-      Left = 492
-      Top = 412
-      Width = 513
-      Height = 261
-      BorderStyle = bsNone
-      Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      Lines.Strings = (
-        'Pulse una vez sobre este panel para ocultarlo'
-        ''
-        
-          'De la parte superior izquierda elíja la sal que desea usar pulsa' +
-          'ndo sobre la etiqueta de la misma.'
-        ''
-        
-          'El sistema seleccionará los ítems que corresponden a la sal eleg' +
-          'ída.'
-        ''
-        'Puede seleccionar más ítems o deseleccionar los que no desee.'
-        ''
-        'Pulse '#39'Iniciar terapia'#39'.'
-        ''
-        
-          'Puede también seleccionar los ítems manualmente y a continuación' +
-          ' pulsar '#39'Iniciar terapia'#39'.'
-        ''
-        
-          'El programa ofrece la opción de realizar una terapia general aut' +
-          'omática.  Esto es un barrido de '
-        
-          'frecuencias usando en cada momento una o más frecuencias trivect' +
-          'oriales de las 12 sales para '
-        'diferentes afecciones.'
-        ''
-        
-          'Si desea transferir alguna condición a la matríz para mayor expl' +
-          'oración, pulse sobre la etiqueta '
-        
-          'para copiarla al cajetín de transferencia y a continuación pulse' +
-          ' sobre la etiqueta Transferir ítem a '
-        'test.')
-      ParentFont = False
-      TabOrder = 2
-      Visible = False
-      OnClick = Memo5Click
+      TabOrder = 135
     end
     object Panel1: TPanel
       Left = 979
@@ -40996,7 +44455,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 137
+      TabOrder = 136
       OnClick = Panel1Click
     end
     object Button167: TButton
@@ -41013,7 +44472,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 139
+      TabOrder = 138
       OnClick = Button167Click
     end
     object Button180: TButton
@@ -41031,7 +44490,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 134
+      TabOrder = 133
       OnClick = Button180Click
     end
     object BReaccion: TButton
@@ -41046,7 +44505,7 @@ object Spinal: TSpinal
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 138
+      TabOrder = 137
       Visible = False
       OnClick = BReaccionClick
     end
@@ -41061,7 +44520,7 @@ object Spinal: TSpinal
     BevelWidth = 4
     Caption = ' '
     Color = clPurple
-    TabOrder = 19
+    TabOrder = 18
     Visible = False
     object Label241: TLabel
       Left = 20
@@ -41742,21 +45201,6 @@ object Spinal: TSpinal
       ParentFont = False
       Transparent = True
     end
-    object Label305: TLabel
-      Left = 728
-      Top = 16
-      Width = 106
-      Height = 19
-      Caption = 'Rectificado |'
-      Color = clPurple
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clRed
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-    end
     object Label275: TLabel
       Left = 460
       Top = 480
@@ -41847,8 +45291,8 @@ object Spinal: TSpinal
       Visible = False
     end
     object Panel19: TPanel
-      Left = 8
-      Top = 6
+      Left = 0
+      Top = -2
       Width = 649
       Height = 608
       BevelOuter = bvNone
@@ -42200,7 +45644,7 @@ object Spinal: TSpinal
       end
       object Button99: TButton
         Left = 8
-        Top = 370
+        Top = 344
         Width = 197
         Height = 25
         Cursor = crHandPoint
@@ -42279,22 +45723,6 @@ object Spinal: TSpinal
         TabOrder = 5
         OnClick = Button105Click
       end
-      object Button106: TButton
-        Left = 8
-        Top = 344
-        Width = 197
-        Height = 25
-        Caption = 'Informe de cuadrantes'
-        Enabled = False
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-        OnClick = Button106Click
-      end
       object Button107: TButton
         Left = 8
         Top = 318
@@ -42307,7 +45735,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 8
+        TabOrder = 6
         OnClick = Button107Click
       end
       object Button108: TButton
@@ -42322,7 +45750,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 9
+        TabOrder = 7
         OnClick = Button108Click
       end
       object Button109: TButton
@@ -42337,7 +45765,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 10
+        TabOrder = 8
         OnClick = Button109Click
       end
       object Button110: TButton
@@ -42353,7 +45781,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 11
+        TabOrder = 9
         OnClick = Button110Click
       end
       object Button111: TButton
@@ -42368,89 +45796,8 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 12
+        TabOrder = 10
         OnClick = Button111Click
-      end
-      object Button113: TButton
-        Left = 8
-        Top = 396
-        Width = 197
-        Height = 25
-        Caption = 'Ayuda'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 14
-        OnClick = Button113Click
-      end
-      object Memo4: TMemo
-        Left = 10
-        Top = 168
-        Width = 307
-        Height = 253
-        BorderStyle = bsNone
-        Color = clMaroon
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clYellow
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        Lines.Strings = (
-          ''
-          'Use los botones correspondientes a cada cuadrante para '
-          'medir la neuropatía en cada cuadrante o en todo el sistema.  '
-          ''
-          'Gradualmente suba el dial del voltaje en el panel de controles '
-          'de hasta que la persona perciba un cosquilleo, entonces pulse '
-          'el botón '#39'Persona siente'#39'.'
-          ''
-          'Una vez se cierre el panel de controles el resultado del test '
-          'aparecerá bajo el botón correspondiente a cada cuadrante.'
-          ''
-          'Los números deben ser todos similares excepto el de la cabeza '
-          'que debe ser un poco más bajo.  Un valor demasiado alto en '
-          'referencia a los valores de los cuadrantes de las extremidades '
-          'indicará bloqueo y un valor demasiado bajo indicará demasiada '
-          'sensibilidad.'
-          ''
-          '      .:: Pulse 2 veces sobre este panel para ocultarlo ::.')
-        ParentFont = False
-        TabOrder = 13
-        Visible = False
-        OnDblClick = Memo4DblClick
-      end
-      object Memo3: TMemo
-        Left = 10
-        Top = 168
-        Width = 267
-        Height = 125
-        BorderStyle = bsNone
-        Color = clMaroon
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clYellow
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        Lines.Strings = (
-          ''
-          ' .:: Pulse 2 veces sobre este panel para ocultarlo ::.'
-          ''
-          '  Informe de lecturas neuropáticas de cuadrantes'
-          ''
-          '  Estas reflejan la condición básica sensorial nerviosa'
-          '  en cada uno de los cuadrantes del cuerpo de la'
-          '  persona.'
-          ''
-          ''
-          ''
-          '')
-        ParentFont = False
-        TabOrder = 7
-        Visible = False
-        OnDblClick = Memo3DblClick
       end
       object Panel7: TPanel
         Left = 623
@@ -42468,7 +45815,7 @@ object Spinal: TSpinal
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 15
+        TabOrder = 11
         OnClick = Panel7Click
       end
     end
@@ -42492,4389 +45839,3211 @@ object Spinal: TSpinal
       OnClick = Panel12Click
     end
   end
-  object PDermatomasCraneales: TPanel
-    Left = 420
-    Top = 4
-    Width = 593
-    Height = 505
-    BevelOuter = bvNone
-    Color = clWhite
-    TabOrder = 22
-    Visible = False
-    object IDermatomasCraneales: TImage
-      Left = 36
-      Top = 12
-      Width = 474
-      Height = 309
-      Stretch = True
-    end
-    object IDermatomasFaciales: TImage
-      Left = 424
-      Top = 256
-      Width = 137
-      Height = 229
-      Stretch = True
-    end
-    object Label266: TLabel
-      Tag = 8
-      Left = 12
-      Top = 88
-      Width = 125
-      Height = 26
-      Cursor = crHandPoint
-      Caption = 'Nervio oftalmológico (V1),'#13#10'rama del nervio trigémino.'
-      Transparent = True
-      OnClick = Label266Click
-    end
-    object Label307: TLabel
-      Tag = 8
-      Left = 12
-      Top = 164
-      Width = 127
-      Height = 26
-      Cursor = crHandPoint
-      Caption = 'Nervio maxilar (V2),'#13#10'rama del nervio trigeminal.'
-      Transparent = True
-      OnClick = Label307Click
-    end
-    object Label310: TLabel
-      Tag = 8
-      Left = 12
-      Top = 240
-      Width = 127
-      Height = 26
-      Cursor = crHandPoint
-      Caption = 'Nervio mandibular (V3),'#13#10'rama del nervio trigeminal.'
-      Transparent = True
-      OnClick = Label310Click
-    end
-    object Label311: TLabel
-      Tag = 8
-      Left = 420
-      Top = 232
-      Width = 121
-      Height = 13
-      Cursor = crHandPoint
-      Caption = 'Ramas del plexo cervical.'
-      Transparent = True
-      OnClick = Label311Click
-    end
-    object Label312: TLabel
-      Tag = 8
-      Left = 424
-      Top = 126
-      Width = 157
-      Height = 52
-      Cursor = crHandPoint
-      Caption = 
-        'Nota: rama auricular del nervio '#13#10'vago hasta el meatus externo '#13 +
-        #10'acústico y el área menor en la '#13#10'parte posteromedial del aurícu' +
-        'lo.'
-      Transparent = True
-      OnClick = Label312Click
-    end
-    object Label313: TLabel
-      Tag = 8
-      Left = 416
-      Top = 72
-      Width = 120
-      Height = 26
-      Cursor = crHandPoint
-      Caption = 'Ramas dorsales de los'#13#10'nervios de las cervicales.'
-      Transparent = True
-      OnClick = Label313Click
-    end
-    object Panel14: TPanel
-      Left = 567
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      TabOrder = 0
-      OnClick = Panel14Click
-    end
-  end
-  object PDermatomasCorporales: TPanel
-    Left = 399
-    Top = 4
-    Width = 614
-    Height = 673
-    BevelOuter = bvNone
-    Color = clWhite
-    TabOrder = 21
-    Visible = False
-    object IDermatomas: TImage
-      Left = 0
-      Top = 0
-      Width = 614
-      Height = 637
-      Align = alTop
-      Stretch = True
-    end
-    object Label350: TLabel
-      Tag = 8
-      Left = 280
-      Top = 28
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C2 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label350Click
-    end
-    object Label351: TLabel
-      Tag = 8
-      Left = 280
-      Top = 44
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C3 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label351Click
-    end
-    object Label352: TLabel
-      Tag = 8
-      Left = 280
-      Top = 60
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C4 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label352Click
-    end
-    object Label353: TLabel
-      Tag = 8
-      Left = 280
-      Top = 76
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C5 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label353Click
-    end
-    object Label354: TLabel
-      Tag = 8
-      Left = 280
-      Top = 92
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C6 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label354Click
-    end
-    object Label355: TLabel
-      Tag = 8
-      Left = 280
-      Top = 108
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C7 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label355Click
-    end
-    object Label356: TLabel
-      Tag = 8
-      Left = 280
-      Top = 124
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C8 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label356Click
-    end
-    object Label379: TLabel
-      Tag = 8
-      Left = 304
-      Top = 28
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T2 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label379Click
-    end
-    object Label380: TLabel
-      Tag = 8
-      Left = 304
-      Top = 44
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T3 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label380Click
-    end
-    object Label381: TLabel
-      Tag = 8
-      Left = 304
-      Top = 60
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T4 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label381Click
-    end
-    object Label382: TLabel
-      Tag = 8
-      Left = 304
-      Top = 76
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T5 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label382Click
-    end
-    object Label383: TLabel
-      Tag = 8
-      Left = 304
-      Top = 92
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T6 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label383Click
-    end
-    object Label384: TLabel
-      Tag = 8
-      Left = 304
-      Top = 108
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T7 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label384Click
-    end
-    object Label385: TLabel
-      Tag = 8
-      Left = 304
-      Top = 124
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T8 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label385Click
-    end
-    object Label386: TLabel
-      Tag = 8
-      Left = 304
-      Top = 140
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T9 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label386Click
-    end
-    object Label387: TLabel
-      Tag = 8
-      Left = 301
-      Top = 156
-      Width = 24
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T10 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label387Click
-    end
-    object Label388: TLabel
-      Tag = 8
-      Left = 301
-      Top = 172
-      Width = 24
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T11 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label388Click
-    end
-    object Label389: TLabel
-      Tag = 8
-      Left = 301
-      Top = 188
-      Width = 24
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T12 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label389Click
-    end
-    object Label390: TLabel
-      Tag = 8
-      Left = 328
-      Top = 12
-      Width = 17
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' L1 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label390Click
-    end
-    object Label391: TLabel
-      Tag = 8
-      Left = 328
-      Top = 28
-      Width = 17
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' L2 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label391Click
-    end
-    object Label392: TLabel
-      Tag = 8
-      Left = 328
-      Top = 44
-      Width = 17
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' L3 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label392Click
-    end
-    object Label393: TLabel
-      Tag = 8
-      Left = 328
-      Top = 60
-      Width = 17
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' L4 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label393Click
-    end
-    object Label394: TLabel
-      Tag = 8
-      Left = 328
-      Top = 76
-      Width = 17
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' L5 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label394Click
-    end
-    object Label395: TLabel
-      Tag = 8
-      Left = 352
-      Top = 12
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' S1 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label395Click
-    end
-    object Label396: TLabel
-      Tag = 8
-      Left = 352
-      Top = 28
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' S2 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label396Click
-    end
-    object Label397: TLabel
-      Tag = 8
-      Left = 352
-      Top = 44
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' S3 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label397Click
-    end
-    object Label398: TLabel
-      Tag = 8
-      Left = 352
-      Top = 60
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' S4 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label398Click
-    end
-    object Label357: TLabel
-      Tag = 8
-      Left = 352
-      Top = 76
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' S5 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label357Click
-    end
-    object Label366: TLabel
-      Tag = 8
-      Left = 304
-      Top = 12
-      Width = 18
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' T1 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label366Click
-    end
-    object Label375: TLabel
-      Tag = 8
-      Left = 280
-      Top = 12
-      Width = 19
-      Height = 13
-      Cursor = crHandPoint
-      Caption = ' C1 '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label375Click
-    end
-    object L_Nuevo_Patron_Pensamiento: TLabel
-      Left = 4
-      Top = 656
-      Width = 626
-      Height = 13
-      AutoSize = False
-      Caption = '|||'
-      Color = clWhite
-      ParentColor = False
-      Visible = False
-    end
-    object L_Conexion_Emocional: TLabel
-      Left = 4
-      Top = 640
-      Width = 626
-      Height = 13
-      AutoSize = False
-      Caption = '|||'
-      Color = clWhite
-      ParentColor = False
-      Visible = False
-    end
-    object LMaestra: TLabel
-      Left = 48
-      Top = 596
-      Width = 44
-      Height = 13
-      Caption = 'LMaestra'
-      Transparent = True
-      Visible = False
-    end
-    object Image4: TImage
-      Left = 6
-      Top = 600
-      Width = 30
-      Height = 30
-      Cursor = crHandPoint
-      Stretch = True
-      Transparent = True
-      OnClick = Image4Click
-    end
-    object Panel18: TPanel
-      Left = 616
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      TabOrder = 0
-      OnClick = Panel18Click
-    end
-    object BMaestroDermatomas: TButton
-      Left = 48
-      Top = 612
-      Width = 154
-      Height = 17
-      Cursor = crHandPoint
-      Caption = 'Botón Maestro Dermatomas'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      Visible = False
-      OnClick = BMaestroDermatomasClick
-    end
-    object Panel13: TPanel
-      Left = 588
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 2
-      OnClick = Panel13Click
-    end
-  end
-  object PTerapiaVertebra: TPanel
+  object PBasesDeDatos: TPanel
     Left = 8
-    Top = 448
-    Width = 1005
-    Height = 229
-    BevelOuter = bvNone
-    BevelWidth = 3
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 12
+    Top = 4
+    Width = 409
+    Height = 517
+    TabOrder = 44
     Visible = False
-    object Label439: TLabel
-      Left = 12
-      Top = 36
-      Width = 30
-      Height = 13
-      Caption = 'AREA'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label440: TLabel
-      Left = 12
-      Top = 68
-      Width = 47
-      Height = 13
-      Caption = 'EFECTOS'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label441: TLabel
-      Left = 12
-      Top = 100
-      Width = 193
-      Height = 13
-      Caption = 'CAUSAS EMOCIONALES PROBABLES'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label442: TLabel
-      Left = 12
-      Top = 132
-      Width = 182
-      Height = 13
-      Caption = 'NUEVO PATRON DE PENSAMIENTO'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label443: TLabel
-      Left = 12
-      Top = 52
-      Width = 18
-      Height = 13
-      Caption = 'XXX'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label444: TLabel
-      Left = 12
-      Top = 84
-      Width = 18
-      Height = 13
-      Caption = 'XXX'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label445: TLabel
-      Left = 12
-      Top = 116
-      Width = 18
-      Height = 13
-      Caption = 'XXX'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label446: TLabel
-      Left = 12
-      Top = 148
-      Width = 18
-      Height = 13
-      Caption = 'XXX'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label447: TLabel
-      Left = 12
+    object LBTerapias: TListBox
+      Left = 16
       Top = 192
-      Width = 610
+      Width = 193
       Height = 26
-      Caption = 
-        'Los desalineamientos de las vértebras espinales y discos pueden ' +
-        'causar irritación al sistema nervioso y afectar las estructuras,' +
-        ' '#13#10'órganos y funciones que pueden resultar en las condiciones qu' +
-        'e mencionan arriba.'
+      BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label448: TLabel
-      Left = 12
-      Top = 8
-      Width = 104
-      Height = 19
-      Caption = 'VERTEBRA |'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Button134: TButton
-      Left = 864
-      Top = 680
-      Width = 99
-      Height = 25
-      Caption = 'Cerrar'
-      TabOrder = 0
-      OnClick = Button134Click
-    end
-    object Button135: TButton
-      Tag = 8
-      Left = 784
-      Top = 196
-      Width = 213
-      Height = 25
-      Cursor = crHandPoint
-      Caption = 'Realizar terapia específica'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = Button135Click
-    end
-    object Panel26: TPanel
-      Left = 979
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = ANSI_CHARSET
       Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 2
-      OnClick = Panel26Click
-    end
-  end
-  object Panel15: TPanel
-    Left = 8
-    Top = 4
-    Width = 1005
-    Height = 673
-    Hint = 'Reparar la lesión hasta corregirla o repetir 5 veces máximo.'
-    BevelOuter = bvNone
-    BevelWidth = 4
-    Caption = ' '
-    Color = clYellow
-    Ctl3D = True
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentCtl3D = False
-    ParentFont = False
-    TabOrder = 8
-    Visible = False
-    OnDblClick = Panel15DblClick
-    object Label219: TLabel
-      Left = 739
-      Top = 4
-      Width = 207
-      Height = 25
-      Alignment = taRightJustify
-      Caption = 'Lesiones deportivas'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -21
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Label900: TLabel
-      Left = 436
-      Top = 440
-      Width = 57
-      Height = 13
-      Cursor = crHandPoint
-      Alignment = taRightJustify
-      Caption = 'Información'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label900Click
-    end
-    object Button56: TButton
-      Left = 12
-      Top = 644
-      Width = 61
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Extender duración de terapia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acupuntura.'
+        ' Alineamiento cuántico.'
+        ' Aromaterapia.'
+        ' Arte terapia.'
+        ' Artes marciales.'
+        ' Aura soma.'
+        ' Ayurveda.'
+        ' Caminata.'
+        ' Canto curativo.'
+        ' Chi Kung - Qi Gong.'
+        ' Circulo de cristales.'
+        ' Coaching.'
+        ' Colon terapia.'
+        ' Conexión Cuerpo-Mente.'
+        ' Constelaciones familiares.'
+        ' Cristaloterapia.'
+        ' Cromaterapia.'
+        ' Curación espiritual.'
+        ' Danza del vientre.'
+        ' Danzaterapia.'
+        
+          ' Desensibilización + Reprocesamiento por Movimientos Oculares - ' +
+          'EMDR.'
+        ' Dietética + Nutrición.'
+        ' Diksha.'
+        ' Drenaje linfático.'
+        ' EFT - Tapping.'
+        ' EMF Balancing Technique.'
+        ' Eneagrama.'
+        ' Energía taquionica.'
+        ' Eutonía.'
+        ' Facioterapia - Dien Chan.'
+        ' Feng Shui.'
+        ' Fitoterapia.'
+        ' Flores de Bach.'
+        ' Geo Qi.'
+        ' Geoterapia.'
+        ' Gestión del estrés.'
+        ' Hidroterapia.'
+        ' Hipnosis + Dehipnosis.'
+        ' Homeopatía.'
+        ' Homotoxicología.'
+        ' Inteligencia emocional.'
+        ' Iridología.'
+        ' Kinesiología.'
+        ' Kirlian.'
+        ' Kundalini Yoga.'
+        ' Linfoterapia.'
+        ' Litoterapia.'
+        ' Louise L. Hay System.'
+        ' Masaje tantra.'
+        ' Masajes.'
+        ' Medicina psicosomática.'
+        ' Medicina Tradicional China - MTC.'
+        ' Meditación.'
+        ' Meditaciones activas.'
+        ' Método cuerpo espejo.'
+        ' Método de cadenas musculares y articulaciones - GDS.'
+        ' Método Feldenkrais.'
+        ' Método Tomatis.'
+        ' Método Wilfart de respiración y voz.'
+        ' Micoterapia.'
+        ' Movimientos de Gurdjieff.'
+        ' Moxibustión.'
+        ' Musicoterapia.'
+        ' Natación.'
+        ' Naturopatía.'
+        ' Nuevos paradigmas.'
+        ' Oligoterapia.'
+        ' Osteopatía.'
+        ' Oxigenación hiperbárica.'
+        ' Oxitermia.'
+        ' Pares biomagnéticos.'
+        ' Pilates.'
+        ' Programación Neuro Lingüística - PNL.'
+        ' Proyecciología / Viaja Astral.'
+        ' Psicología transpersonal.'
+        ' Psicología.'
+        ' Psicoterapia.'
+        ' Quiromasaje.'
+        ' Rebirthing / Renacimiento.'
+        ' Reconexión o Sanación reconectiva.'
+        ' Reflexología facial.'
+        ' Reflexología podal.'
+        ' Registros Akáshicos.'
+        ' Reiki.'
+        ' Relajación.'
+        ' Resistencia al cambio.'
+        ' Risoterapia.'
+        ' Sanación Pránica.'
+        ' Sanergía.'
+        ' Shamballa.'
+        ' Shiatsu.'
+        ' Sofrología.'
+        ' Tai Chi Chuan / Taiji Quan.'
+        ' Tantra Yoga.'
+        ' Técnica Alexander.'
+        ' Técnica Nadeau.'
+        ' Terapia Breve Estratégica.'
+        ' Terapia con Geometría Sagrada.'
+        ' Terapia Craneosacral.'
+        ' Terapia de habitat.'
+        ' Terapia de polaridad.'
+        ' Terapia del sonido.'
+        ' Terapia Esenia.'
+        ' Terapia filosófica.'
+        ' Terapia geotermal.'
+        ' Terapia Gestalt.'
+        ' Terapia ortomolecular.'
+        ' Terapia piramidal.'
+        ' Terapia regresiva.'
+        ' Terapias con células madre.'
+        ' Terapias con plasma.'
+        ' Terapias vibracionales.'
+        ' Tian Gong.'
+        ' TRCD.'
+        ' Yoga reconectivo.'
+        ' Yoga.')
       ParentFont = False
       TabOrder = 1
-      Visible = False
-      OnClick = Button56Click
     end
-    object Button57: TButton
-      Left = 346
-      Top = 399
-      Width = 148
-      Height = 18
-      Cursor = crHandPoint
-      Caption = 'Potencia doble'
+    object BTerapias: TButton
+      Left = 216
+      Top = 192
+      Width = 180
+      Height = 26
+      Caption = 'BTerapias'
+      TabOrder = 0
+    end
+    object LBOrganosGlandulas: TListBox
+      Left = 16
+      Top = 48
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Bazo.'
+        ' Cerebro.'
+        ' Circuitos de la memoria.'
+        ' Corazón.'
+        ' Dentadura.'
+        ' Estómago.'
+        ' Gónadas.'
+        ' Hígado.'
+        ' Hipotálamo.'
+        ' Intestino delgado.'
+        ' Intestino grueso.'
+        ' Lengua.'
+        ' Lóbulo frontal del cerebro.'
+        ' Lóbulo occipital del cerebro.'
+        ' Lóbulo parietal del cerebro.'
+        ' Lóbulo temporal del cerebro.'
+        ' Médula espinal.'
+        ' Médula oblongata.'
+        ' Oído.'
+        ' Ojos.'
+        ' Páncreas.'
+        ' Paratiroides.'
+        ' Piel.'
+        ' Pineal.'
+        ' Pituitaria.'
+        ' Pulmones.'
+        ' Riñón.'
+        ' Sangre.'
+        ' Senos nasales.'
+        ' Sistema límbico.'
+        ' Sistema linfático.'
+        ' Suprarrenales.'
+        ' Timo.'
+        ' Tiroides.'
+        ' Vejiga.')
       ParentFont = False
-      ParentShowHint = False
-      ShowHint = False
       TabOrder = 2
-      OnClick = Button57Click
-    end
-    object Button65: TButton
-      Left = 12
-      Top = 644
-      Width = 61
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Realizar terapia a través de sonda de punto'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
       Visible = False
-      OnClick = Button65Click
     end
-    object Button16: TButton
-      Left = 12
-      Top = 644
-      Width = 61
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Reducir tiempo de terapia'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+    object BOrganosGlandulas: TButton
+      Left = 216
+      Top = 48
+      Width = 180
+      Height = 26
+      Caption = 'BOrganosGlandulas'
+      TabOrder = 3
+    end
+    object LBCausas: TListBox
+      Left = 16
+      Top = 12
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acciones de voluntad opuestas.'
+        ' Acciones disonantes.'
+        ' Acumulación de energía superflua.'
+        ' Agentes químicos.'
+        ' Ahogo de sentimientos.'
+        ' Alimentación incorrecta.'
+        ' Alteración cromosómica cualitativa.'
+        ' Alteración cromosómica cuantitativa.'
+        ' Alteración estructural de algún órgano.'
+        ' Alteración funcional de algún órgano.'
+        ' Alteración genética.'
+        ' Amebas.'
+        ' Bacteria.'
+        ' Balance del pH.'
+        ' Condiciones hereditarias.'
+        ' Contaminación electromagnética.'
+        ' Contaminación medio ambiental.'
+        ' Deficiencia en dieta.'
+        ' Deficiencia o exceso nutricional.'
+        ' Deseo excesivo.'
+        ' Desquilibrio en el pH.'
+        ' Elementos nutritivos (exceso o deficiencia).'
+        ' Estrés físico.'
+        ' Estrés mental.'
+        ' Exceso de azúcar.'
+        ' Exceso de energía.'
+        ' Factores hereditarios.'
+        ' Factores mecánicos traumáticos.'
+        ' Factores mentales.'
+        ' Factores psicológicos.'
+        ' Fases lunares.'
+        ' Hemorragia.'
+        ' Hidratación.'
+        ' Hiperreactividad.'
+        ' Hipertensión.'
+        ' Hipertermia general.'
+        ' Hipertermia local.'
+        ' Hipotensión.'
+        ' Hipotermia general.'
+        ' Hipotermia local.'
+        ' Impureza en sangre.'
+        ' Incredulidad.'
+        ' Infección.'
+        ' Inquietudes excesivas.'
+        ' Interacciones medio ambiantes.'
+        ' Interacciones sociales.'
+        ' Irritación, cólera, enfado.'
+        ' Medicaciones alopáticas.'
+        ' Metales pesados.'
+        ' Miasma / Predisposición.'
+        ' Opresión espiritual.'
+        ' Parásitos.'
+        ' Patógenos.'
+        ' Pensamientos discordantes.'
+        ' Pensamientos negativos.'
+        ' Postura incorrecta al caminar.'
+        ' Postura incorrecta al dormir.'
+        ' Postura incorrecta al sentarse.'
+        ' Priones.'
+        ' Procesos biológicos.'
+        ' Producción hormonal.'
+        ' Propósitos negativos.'
+        ' Protozoos.'
+        ' Radiaciones ionizantes.'
+        ' Repercusión kármica.'
+        ' Resistencia inconciente a cambiar o explorarse a sí mismo.'
+        ' Respiración incorrecta.'
+        ' Sentimientos disonantes.'
+        ' Shock.'
+        ' Supresión alopática.'
+        ' Tensión muscular.'
+        ' Toma de conciencia.'
+        ' Toxinas medioambientales.'
+        ' Toxinas propias.'
+        ' Transferencia de oxígeno.'
+        ' Trauma no sanado.'
+        ' Trauma o lesión.'
+        ' Virus.')
       ParentFont = False
       TabOrder = 4
       Visible = False
-      OnClick = Button16Click
     end
-    object Button23: TButton
-      Left = 346
-      Top = 380
-      Width = 148
-      Height = 18
-      Cursor = crHandPoint
-      Caption = 'Potencia normal'
-      Enabled = False
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = False
+    object BCausas: TButton
+      Left = 216
+      Top = 12
+      Width = 180
+      Height = 26
+      Caption = 'BCausas'
       TabOrder = 5
-      OnClick = Button23Click
+      Visible = False
     end
-    object Panel2: TPanel
-      Left = 979
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clLime
-      Font.Charset = ANSI_CHARSET
+    object LBMeridianos: TListBox
+      Left = 16
+      Top = 120
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Merdiano del Vaso Gobernador.'
+        ' Meridiano Circulación + Sexualidad.'
+        ' Meridiano de la Vejiga.'
+        ' Meridiano de la Vesícula Biliar.'
+        ' Meridiano del Bazo-Páncreas.'
+        ' Meridiano del Corazón.'
+        ' Meridiano del Estómago.'
+        ' Meridiano del Hígado.'
+        ' Meridiano del Intestino Delgado.'
+        ' Meridiano del Intestino Grueso.'
+        ' Meridiano del Maestro del Corazón o Pericardio.'
+        ' Meridiano del Pulmón.'
+        ' Meridiano del Riñón.'
+        ' Meridiano del Triple Calefactor.'
+        ' Meridiano del Vaso Concepción.')
       ParentFont = False
       TabOrder = 6
-      OnClick = Panel2Click
     end
-    object GroupBox8: TGroupBox
-      Left = 504
-      Top = 352
-      Width = 213
-      Height = 249
-      Caption = ' Músculos '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
+    object BMeridianos: TButton
+      Left = 216
+      Top = 120
+      Width = 180
+      Height = 26
+      Caption = 'BMeridianos'
       TabOrder = 7
-      object Button903: TButton
-        Left = 7
-        Top = 43
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Patología traumática-inflamatoria más frecuente en las actividad' +
-          'es deportivas.  Las consecuencias de la contusión dependerán del' +
-          ' sitio donde se recibió y la intensidad del traumatismo.  Su man' +
-          'ifestación es a través de dolor, rubor, calor y/o tumor, todos e' +
-          'stos datos del proceso inflamatorio.'
-        Caption = 'Contusión'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button903Click
-      end
-      object Button73: TButton
-        Left = 7
-        Top = 123
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Heridas provocadas por objetos que presentan punta, como: clavos' +
-          ', varillas, implementos deportivos, etc.'
-        Caption = 'Heridas punzantes'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button73Click
-      end
-      object Button82: TButton
-        Left = 7
-        Top = 103
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Provocadas por objetos romos en traumatismo directo; se pueden p' +
-          'rovocar por piedras, postes, gradas y las diversas áreas anatómi' +
-          'cas de contacto permitidas en deportes de combate.'
-        Caption = 'Heridas contusas o contundentes'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Button82Click
-      end
-      object Button92: TButton
-        Left = 7
-        Top = 163
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Es la lesión microscópica del músculo, que se produce al sobrepa' +
-          'sar los límites normales de la elasticidad, produciéndose un est' +
-          'iramiento de las fibras sin que exista un daño anatómico ni rupt' +
-          'ura de las mismas, por examen clínico no es demostrable una solu' +
-          'ción de continuidad del músculo.  Su manifestación clínica se ca' +
-          'racteriza por dolor intenso y súbito, el sujeto es capaz de tole' +
-          'rar la molestia y puede continuar su actividad. La evolución de ' +
-          'este tipo de lesión es rápida y favorable a la mejoría en pocos ' +
-          'días.  El tratamiento es a través del método HICER.'
-        Caption = 'Distensión'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Button92Click
-      end
-      object Button88: TButton
-        Left = 7
-        Top = 223
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Tirón'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-        OnClick = Button88Click
-      end
-      object Button90: TButton
-        Left = 7
-        Top = 143
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Ruptura macroscópica y parcial de un músculo, en el cual si se m' +
-          'uestra solución de continuidad, se considera como lesión grave, ' +
-          'ya que puede haber ruptura extensa de fibras musculares.  Su man' +
-          'ifestación clínica es dolor intenso y la incapacidad funcional, ' +
-          'se presenta frecuentemente un hematoma postraumático cuya magnit' +
-          'ud puede palparse como un abultamiento.'
-        Caption = 'Desgarro'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-        OnClick = Button90Click
-      end
-      object Button89: TButton
-        Left = 7
-        Top = 183
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Rotura total'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-        OnClick = Button89Click
-      end
-      object Button152: TButton
-        Left = 7
-        Top = 203
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Rotura parcial'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-        OnClick = Button152Click
-      end
-      object Button170: TButton
-        Left = 7
-        Top = 63
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Heridas causadas por fricción o frotamiento con una superficie á' +
-          'spera, también llamadas excoriaciones o raspones.  Por lo genera' +
-          'l solo dañan el tejido cutáneo y subcutáneo, se producen en terr' +
-          'enos irregulares o de superficies duras o ásperas.'
-        Caption = 'Heridas abrasivas'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-        OnClick = Button170Click
-      end
-      object Button171: TButton
-        Left = 7
-        Top = 23
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Son contracciones musculares dolorosas, de corta duración e invo' +
-          'luntarias, causadas por isquemia (irrigación insuficiente del mú' +
-          'sculo), contusión, desequilibrio hidro-electrolítico, sobrecarga' +
-          ' de trabajo muscular, uso de accesorios elásticos o utilización ' +
-          'de vendajes muy ajustados.  Sus manifestaciones clínicas son: do' +
-          'lor intenso y contracción del músculo afectado. El tratamiento c' +
-          'onsiste en estirar el músculo y al controlar la contracción dar ' +
-          'un ligero masaje para controlar el dolor e incrementar el flujo ' +
-          'sanguíneo.'
-        Caption = 'Contractura'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 9
-        OnClick = Button171Click
-      end
-      object Button11: TButton
-        Left = 7
-        Top = 83
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Se caracterizan por presentar bordes regulares y afrontan perfec' +
-          'tamente; se pueden producir por implementos deportivos, vidrios,' +
-          ' láminas, etc.'
-        Caption = 'Heridas contusas o contundentes'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 10
-        OnClick = Button11Click
-      end
     end
-    object GroupBox9: TGroupBox
-      Left = 344
-      Top = 524
-      Width = 153
-      Height = 145
-      Caption = ' Huesos '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+    object LBENegativas: TListBox
+      Left = 16
+      Top = 264
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Aburrimiento.'
+        ' Adicción.'
+        ' Agresión.'
+        ' Alteración.'
+        ' Ansiedad.'
+        ' Antagonismo.'
+        ' Apatía.'
+        ' Apego.'
+        ' Arrogancia.'
+        ' Asco.'
+        ' Autismo.'
+        ' Avaricia.'
+        ' Aversión.'
+        ' Catastrofismo.'
+        ' Celos.'
+        ' Codicia.'
+        ' Cólera.'
+        ' Conciencia.'
+        ' Concientización.'
+        ' Conflicto de identidad.'
+        ' Conflicto religioso.'
+        ' Confusión.'
+        ' Congoja.'
+        ' Conmoción.'
+        ' Coráje.'
+        ' Crítica.'
+        ' Culpa.'
+        ' Curiosidad.'
+        ' Decepción.'
+        ' Depresión.'
+        ' Desamor.'
+        ' Desamparo.'
+        ' Desánimo.'
+        ' Desasosiego.'
+        ' Desconcierto.'
+        ' Desconfianza.'
+        ' Desconsuelo.'
+        ' Descuido.'
+        ' Deseo (agudo).'
+        ' Deseo de que las cosas sean diferentes.'
+        ' Desesperación.'
+        ' Desgano.'
+        ' Desidia.'
+        ' Desilusión.'
+        ' Desolación.'
+        ' Desprecio.'
+        ' Dolor.'
+        ' Dominación.'
+        ' Duda de sí mismo.'
+        ' Duda.'
+        ' Duelo.'
+        ' Enfado.'
+        ' Enfoque mental.'
+        ' Enojo.'
+        ' Entusiasmo.'
+        ' Envidia.'
+        ' Espanto.'
+        ' Espiritualidad.'
+        ' Estupor (agudo).'
+        ' Extasis.'
+        ' Falta de concentración.'
+        ' Fastidio.'
+        ' Fobia.'
+        ' Frustración.'
+        ' Hostilidad.'
+        ' Hostilidad encubierta.'
+        ' Impaciencia.'
+        ' Impulsividad.'
+        ' Inadaptabilidad.'
+        ' Indiferencia.'
+        ' Indignación.'
+        ' Inquietud.'
+        ' Inseguridad.'
+        ' Intriga.'
+        ' Ira.'
+        ' Irrealismo.'
+        ' Irritación.'
+        ' Lealtad.'
+        ' Lujuria.'
+        ' Manías.'
+        ' Melancolía.'
+        ' Mezquindad.'
+        ' Miedo.'
+        ' Monotonía.'
+        ' Necesidad de cambio.'
+        ' Negación.'
+        ' Negociación.'
+        ' Nerviosismo.'
+        ' Nostalgia.'
+        ' Obnubilación.'
+        ' Observación.'
+        ' Obsesividad.'
+        ' Obstinación.'
+        ' Odio.'
+        ' Omnipotencia.'
+        ' Orgullo.'
+        ' Pánico.'
+        ' Pasividad.'
+        ' Pena.'
+        ' Pereza.'
+        ' Perfeccionismo.'
+        ' Pesimismo.'
+        ' Poder.'
+        ' Preocupación.'
+        ' Prepotencia.'
+        ' Proyección.'
+        ' Rabia.'
+        ' Racionalización.'
+        ' Rebeldía.'
+        ' Recelo.'
+        ' Rechazo.'
+        ' Regresión.'
+        ' Rencor.'
+        ' Repudio.'
+        ' Resentimiento.'
+        ' Resignación.'
+        ' Resistencia al cambio.'
+        ' Resquemor.'
+        ' Risa nerviosa.'
+        ' Sensualidad.'
+        ' Sentimiento de abandono.'
+        ' Sentimiento de incompresión.'
+        ' Sexualidad.'
+        ' Sobrecogimiento.'
+        ' Sumisión.'
+        ' Temerosidad.'
+        ' Temor.'
+        ' Terror.'
+        ' Timidez.'
+        ' Traición.'
+        ' Tristeza.'
+        ' Vacío existencial.'
+        ' Vanidad.'
+        ' Venganza.'
+        ' Vergüenza.')
       ParentFont = False
       TabOrder = 8
-      object Button102: TButton
-        Left = 7
-        Top = 20
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Periostitis'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button102Click
-      end
-      object Button25: TButton
-        Left = 7
-        Top = 40
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Fracturas completas'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button25Click
-      end
-      object Button128: TButton
-        Left = 7
-        Top = 60
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Fracturas incompletas'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Button128Click
-      end
-      object Button172: TButton
-        Left = 7
-        Top = 80
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'La piel pone en comunicación el foco de la fractura con el exter' +
-          'ior.  Este tipo de fractura es grave por el riesgo de infección,' +
-          ' exigiendo cuidados especiales.'
-        Caption = 'Fractura abierta'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Button172Click
-      end
-      object Button173: TButton
-        Left = 7
-        Top = 100
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'La piel permanece intacta, si este tipo de fractura se maneja de' +
-          ' forma inadecuada puede agravarse peligrosamente transformándose' +
-          ' en abierta o complicada.'
-        Caption = 'Fractura cerrada'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-        OnClick = Button173Click
-      end
-      object Button174: TButton
-        Left = 7
-        Top = 120
-        Width = 140
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Los fragmentos cortantes del hueso roto han dañado algún órgano ' +
-          '(vasos sanguíneos, nervios, pulmones, médula espinal). Esta clas' +
-          'e de fractura puede darse tanto en uno como en cualquiera de los' +
-          ' casos citados anteriores.'
-        Caption = 'Fractura complicada'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-        OnClick = Button174Click
-      end
     end
-    object GroupBox10: TGroupBox
-      Left = 504
-      Top = 604
-      Width = 213
-      Height = 65
-      Caption = ' Tendones '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
+    object BENegativas: TButton
+      Left = 216
+      Top = 264
+      Width = 180
+      Height = 26
+      Caption = 'BENegativas'
       TabOrder = 9
-      object Button112: TButton
-        Left = 5
-        Top = 20
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Tendinitis'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button112Click
-      end
-      object Button100: TButton
-        Left = 5
-        Top = 39
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Tendosinovitis'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button100Click
-      end
+      OnClick = BENegativasClick
     end
-    object GroupBox11: TGroupBox
-      Left = 504
-      Top = 176
-      Width = 213
-      Height = 85
-      Caption = ' Ligamentos '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+    object LBEPositivas: TListBox
+      Left = 16
+      Top = 228
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Admiración.'
+        ' Afecto.'
+        ' Alegría.'
+        ' Alivio.'
+        ' Amor.'
+        ' Ampliación.'
+        ' Añoranza.'
+        ' Armonía.'
+        ' Arrojo.'
+        ' Asombro.'
+        ' Autoelogio.'
+        ' Buen humor.'
+        ' Calma.'
+        ' Cambio.'
+        ' Cariño.'
+        ' Compartir.'
+        ' Compasión.'
+        ' Conciliación.'
+        ' Confianza.'
+        ' Construcción.'
+        ' Creatividad.'
+        ' Curiosidad.'
+        ' Deseo.'
+        ' Diversión.'
+        ' Ecuanimidad.'
+        ' Empatía.'
+        ' Ensimismamiento.'
+        ' Entusiasmo.'
+        ' Esperanza.'
+        ' Euforia.'
+        ' Excitación.'
+        ' Extasis.'
+        ' Felicidad.'
+        ' Fortaleza.'
+        ' Generosidad.'
+        ' Gratitud.'
+        ' Humildad.'
+        ' Inspiración.'
+        ' Interés por la vida.'
+        ' Optimismo.'
+        ' Orgullo.'
+        ' Paciencia.'
+        ' Pasión.'
+        ' Percepción.'
+        ' Perdón.'
+        ' Placer.'
+        ' Plenitud.'
+        ' Regocijo.'
+        ' Saboreo.'
+        ' Sanidad.'
+        ' Satisfacción.'
+        ' Seguridad.'
+        ' Serenidad.'
+        ' Sociego.'
+        ' Solidaridad.'
+        ' Sorpresa.'
+        ' Templanza.'
+        ' Ternura.'
+        ' Tranquilidad.'
+        ' Valentía.')
       ParentFont = False
       TabOrder = 10
-      object Button29: TButton
-        Left = 5
-        Top = 19
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Esguince mínimo o leve sin rotura ligamentosa.'
-        Caption = 'Esquince grado 1'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button29Click
-      end
-      object Button114: TButton
-        Left = 5
-        Top = 39
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Esguince moderado con rotura parcial o incompleta.'
-        Caption = 'Esquince grado 2'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button114Click
-      end
-      object Button126: TButton
-        Left = 5
-        Top = 59
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Rotura ligamentosa completa.'
-        Caption = 'Esquince grado 3'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Button126Click
-      end
     end
-    object GroupBox12: TGroupBox
-      Left = 504
-      Top = 264
-      Width = 213
-      Height = 85
-      Caption = ' Articulaciones '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
+    object BEPositivas: TButton
+      Left = 216
+      Top = 228
+      Width = 180
+      Height = 26
+      Caption = 'BEPositivas'
       TabOrder = 11
-      object Button129: TButton
-        Left = 5
-        Top = 59
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Meniscos de la rodilla'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button129Click
-      end
-      object Button139: TButton
-        Left = 5
-        Top = 19
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Artritis traumática'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button139Click
-      end
-      object Button115: TButton
-        Left = 5
-        Top = 39
-        Width = 200
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Una articulación está luxada cuando existe la pérdida de la rela' +
-          'ción normal de las caras articulares, es decir, existe desplazam' +
-          'iento de los huesos fuera de la articulación.  Las dislocaciones' +
-          ' generalmente son causadas por un impacto súbito a la articulaci' +
-          'ón y con frecuencia se presentan después de un golpe, una caída ' +
-          'u otro trauma.'
-        Caption = 'Luxación'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Button115Click
-      end
     end
-    object GroupBox13: TGroupBox
-      Left = 344
-      Top = 176
-      Width = 153
-      Height = 193
-      Caption = ' Sistemas orgánicos '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+    object LBProcesos: TListBox
+      Left = 16
+      Top = 156
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Adherencia celular.'
+        ' Alfa oxidación.'
+        ' Beta oxidación'
+        ' Circulación.'
+        ' Comunicación celular.'
+        ' Crecimiento celular.'
+        ' Diferenciación celular.'
+        ' Digestión.'
+        ' Enlaces moleculares.'
+        ' Estructura molecular.'
+        ' Expresión genética.'
+        ' Factores energéticos.'
+        ' Fermentación.'
+        ' Hidroxilación.'
+        ' Metabolismo: anabolismo.'
+        ' Metabolismo: catabolismo.'
+        ' Morfogénesis.'
+        ' Omega oxidación.'
+        ' Oxidación de ácidos grasos.'
+        ' Pigmentación.'
+        ' Proceso fisiológico celular.'
+        ' Procesos fisiológicos.'
+        ' Procesos químicos inducidos.'
+        ' Procesos termodinámicos.'
+        ' Producción de enzimas.'
+        ' Reconocimiento celular.'
+        ' Replicación del ADN.'
+        ' Reproducción.'
+        ' Respiración.'
+        ' Respuesta a estímulos.'
+        ' Salivación.'
+        ' Secreción.'
+        ' Síntesis de glúcidos.'
+        ' Síntesis de lípidos.'
+        ' Síntesis de proteínas.'
+        ' Síntesis del ARN.'
+        ' Transpiración.')
       ParentFont = False
       TabOrder = 12
-      object CheckBox76: TCheckBox
-        Left = 24
-        Top = 24
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Circulatorio'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object CheckBox60: TCheckBox
-        Left = 24
-        Top = 168
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Urinario'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-      end
-      object CheckBox75: TCheckBox
-        Left = 24
-        Top = 152
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Reproductivo'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-      object CheckBox61: TCheckBox
-        Left = 24
-        Top = 136
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Respiratorio'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-      end
-      object CheckBox67: TCheckBox
-        Left = 24
-        Top = 120
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Nervioso'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object CheckBox66: TCheckBox
-        Left = 24
-        Top = 104
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Muscular'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-      end
-      object CheckBox65: TCheckBox
-        Left = 24
-        Top = 88
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Linfático'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-      end
-      object CheckBox64: TCheckBox
-        Left = 24
-        Top = 72
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Esquelético'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-      end
-      object CheckBox63: TCheckBox
-        Left = 24
-        Top = 56
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Endocrino'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-      end
-      object CheckBox62: TCheckBox
-        Left = 24
-        Top = 40
-        Width = 90
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Digestivo'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 9
-      end
+      Visible = False
     end
-    object GroupBox14: TGroupBox
-      Left = 12
-      Top = 4
-      Width = 325
-      Height = 665
-      Caption = ' Síntomas y Signos '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
+    object BProcesos: TButton
+      Left = 216
+      Top = 156
+      Width = 180
+      Height = 26
+      Caption = 'BProcesos'
       TabOrder = 13
-      object CheckBox68: TCheckBox
-        Left = 6
-        Top = 20
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Distensión muscular.'
-        Caption = 'Dolor difuso en todo el músculo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object CheckBox69: TCheckBox
-        Left = 6
-        Top = 36
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tirón muscular.'
-        Caption = 'Hematoma debido a rotura de vasos.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-      end
-      object CheckBox70: TCheckBox
-        Left = 6
-        Top = 52
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Desgarro muscular.'
-        Caption = 'Hinchazón.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-      object CheckBox71: TCheckBox
-        Left = 6
-        Top = 68
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Desgarro muscular.'
-        Caption = 'Sensación de dolor aumentada.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-      end
-      object CheckBox72: TCheckBox
-        Left = 6
-        Top = 84
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Rotura muscular.'
-        Caption = 'Dolor brusco acentuado por contracción muscular.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object CheckBox73: TCheckBox
-        Left = 6
-        Top = 100
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tendinitis.'
-        Caption = 'Dolor espontáneo cuando se ejerce presión.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-      end
-      object CheckBox74: TCheckBox
-        Left = 6
-        Top = 116
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tendosinovitis.'
-        Caption = 'Inflamación de vainas sinoviales en tendones.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-      end
-      object CheckBox77: TCheckBox
-        Left = 6
-        Top = 132
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Periostiosis.'
-        Caption = 'Inflamación del periostio (membrana que recubre los huesos).'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-      end
-      object CheckBox363: TCheckBox
-        Left = 6
-        Top = 148
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Periostiosis.'
-        Caption = 'Dolor localizado que se calma con el reposo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-      end
-      object CheckBox364: TCheckBox
-        Left = 6
-        Top = 164
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Esguince.'
-        Caption = 'Dolor, hinchazón e impotencia funcional.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 9
-      end
-      object CheckBox365: TCheckBox
-        Left = 6
-        Top = 180
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Luxación.'
-        Caption = 'Dolor en el momento de la lesión y deformidad.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 10
-      end
-      object CheckBox366: TCheckBox
-        Left = 6
-        Top = 196
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Artritis traumática.'
-        Caption = 'Dolor e hinchazón en la articulación.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 11
-      end
-      object CheckBox367: TCheckBox
-        Left = 6
-        Top = 212
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Artritis traumática.'
-        Caption = 'Derrame sinovial o hemartrosis (muñecas y dedos).'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 12
-      end
-      object CheckBox368: TCheckBox
-        Left = 6
-        Top = 228
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Lesiones en meniscos de la rodilla.'
-        Caption = 'Derrame articular y limitación funcional.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 13
-      end
-      object CheckBox369: TCheckBox
-        Left = 6
-        Top = 244
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Fractura del metatarsiano por sobrecarga.'
-        Caption = 'Dolor en el ante pie.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 14
-      end
-      object CheckBox370: TCheckBox
-        Left = 6
-        Top = 260
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome compartimental por ejercicio anterolateral'
-        Caption = 'Dolor en músculos anteriores del talón.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 15
-      end
-      object CheckBox371: TCheckBox
-        Left = 6
-        Top = 276
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome posteromedial.'
-        Caption = 'Hemorragia subperióstica y periostitis.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 16
-      end
-      object CheckBox372: TCheckBox
-        Left = 6
-        Top = 292
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome posteromedial.'
-        Caption = 'Dolor intenso al levantar dedos de los pies.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 17
-      end
-      object CheckBox373: TCheckBox
-        Left = 6
-        Top = 308
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome posteromedial.'
-        Caption = 'Hipersensibilidad en la cara medial de la tibia.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 18
-      end
-      object CheckBox374: TCheckBox
-        Left = 6
-        Top = 324
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tendinitis poplítea.'
-        Caption = 'Sensibilidad en la zona ant. al ligamento colateral peritoneo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 19
-      end
-      object CheckBox375: TCheckBox
-        Left = 6
-        Top = 340
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tendinitis aquílea.'
-        Caption = 'Dolor matutino que desaparece gradualmente.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 20
-      end
-      object CheckBox376: TCheckBox
-        Left = 6
-        Top = 356
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Tendinitis aquílea.'
-        Caption = 'Degeneración mucoide y fibrosis.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 21
-      end
-      object CheckBox377: TCheckBox
-        Left = 6
-        Top = 372
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Dolor femororrotuliano'
-        Caption = 'Dolor anteromedial y anterolateral a la rótula y detrás.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 22
-      end
-      object CheckBox378: TCheckBox
-        Left = 6
-        Top = 388
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome piriforme.'
-        Caption = 'Dolor crónico punzante desde la nalga hacia abajo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 23
-      end
-      object CheckBox379: TCheckBox
-        Left = 6
-        Top = 404
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Esquince lumbar.'
-        Caption = 'Dolor lumbar brusco.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 24
-      end
-      object CheckBox380: TCheckBox
-        Left = 6
-        Top = 420
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Esguince grado 1.'
-        Caption = 'Sensibilidad leve con tumefacción discreta en tobillo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 25
-      end
-      object CheckBox381: TCheckBox
-        Left = 6
-        Top = 436
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Esguince grado 2.'
-        Caption = 'Tumefacción aparente, esquimosis, dif. para caminar.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 26
-      end
-      object CheckBox382: TCheckBox
-        Left = 6
-        Top = 452
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Esguince grado 3.'
-        Caption = 'Tumefacción, hemorragia, inestabilidad, inc. para caminar.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 27
-      end
-      object CheckBox383: TCheckBox
-        Left = 6
-        Top = 468
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Síndrome de espolón calcáneo (fascitis plantar).'
-        Caption = 'Dolor en superficie plantar del talón.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 28
-      end
-      object CheckBox384: TCheckBox
-        Left = 6
-        Top = 484
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Epifisitis del calcáneo (Afección de Server).'
-        Caption = 'Dolor en bordes medial y lateral del talón (en infantes).'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 29
-      end
-      object CheckBox385: TCheckBox
-        Left = 6
-        Top = 500
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Bursitis posterior al tendón de Aquiles (deformación de Haglud).'
-        Caption = 'Dolor en parte posterior al tendón de Aquiles.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 30
-      end
-      object CheckBox386: TCheckBox
-        Left = 6
-        Top = 516
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 
-          'Fractura de la tuberosidad posterolateral del astrágalo.  Bursit' +
-          'is retromalolar.  Bursitis anterior al tendón de Aquiles.'
-        Caption = 'Dolor en la parte anterior al tendón de Aquiles.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 31
-      end
-      object CheckBox387: TCheckBox
-        Left = 6
-        Top = 532
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 
-          'Neuralgia del nervio tibial posterior.  Síndrome de sobrecarga. ' +
-          ' Función anormal del pie.'
-        Caption = 'Dolor en inserción calcánea del tendón de Aquiles.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 32
-      end
-      object CheckBox388: TCheckBox
-        Left = 6
-        Top = 548
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Epifisitis del calcáneo'
-        Caption = 'Dolor a lo largo de los bordes del calcáneo (tobillo).'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 33
-      end
-      object CheckBox389: TCheckBox
-        Left = 6
-        Top = 564
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Epifisitis del calcáneo'
-        Caption = 'Calor y tumefacción a lo largo de los bordes del tobillo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 34
-      end
-      object CheckBox390: TCheckBox
-        Left = 6
-        Top = 580
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Bursitis posterior al tendón de Aquiles.'
-        Caption = 'Sensibilidad en la zona posterosuperior del talón.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 35
-      end
-      object CheckBox391: TCheckBox
-        Left = 6
-        Top = 596
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Fractura de tuberosidad posterolateral del astrágalo.'
-        Caption = 'Dolor y tumefacción por detrás del tobillo, temperatura.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 36
-      end
-      object CheckBox392: TCheckBox
-        Left = 6
-        Top = 612
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Bursitis anterior al tendón de Aquiles.'
-        Caption = 'Dificultad para caminar o calzarse el zapato.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 37
-      end
-      object CheckBox393: TCheckBox
-        Left = 6
-        Top = 628
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Neuralgia del nervio tibial posterior.'
-        Caption = 'Hormigueo o tumefacción distal (signo de Tinel).'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 38
-      end
-      object CheckBox394: TCheckBox
-        Left = 6
-        Top = 644
-        Width = 314
-        Height = 13
-        Cursor = crHandPoint
-        Hint = 'Dolor del nervio interdigital.'
-        Caption = 'Dolor súbito en nervios del pie hacie el antepie y dedos.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 39
-      end
     end
-    object GroupBox15: TGroupBox
-      Left = 724
-      Top = 60
-      Width = 273
-      Height = 609
-      Caption = ' Lesiones deportivas frecuentes '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
+    object LBAfirmaciones: TListBox
+      Left = 16
+      Top = 372
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          'A todos les gustan mis regalos. Compro con facilidad a precios q' +
+          'ue me puedo permitir.'
+        
+          'Abandono todos mis conflictos internos a fin de que venga a mí l' +
+          'a paz mental.'
+        'Abandono todos mis juicios y mi tendencia a hacer comparaciones.'
+        'Abrazo la vida y me abrazo a mí con amor y comprensión.'
+        'Abre tu corazón y deja ir toda resistencia al cambio.'
+        
+          'Abre tu corazón y libera toda resistencia.  Te sentirás mucho me' +
+          'jor.'
+        'Abre tu corazón y mente a inventar nuevas soluciones.'
+        'Abre tus sentidos.  Aprende.'
+        'Abriré mi corazón y me perdonaré.'
+        'Abro mi corazón y acepto a los demás como son.'
+        'Abro mi corazón y dejo fluir libremente el amor y la alegría.'
+        'Abro mi corazón y me regocijo en lo que soy.'
+        
+          'Abro mi imaginación para crear el mejor de los mundos para mi mi' +
+          'smo.'
+        
+          'Acabo con toda crítica. Con ella jamás se consigue nada positivo' +
+          '.'
+        
+          'Acepta la responsabilidad de edificarte a ti mismo y el valor de' +
+          ' acusarte a ti del fracaso.'
+        'Acepta los comentarios buenos con humildad.'
+        'Acepta los comentarios negativos con gracia.'
+        'Acepta los cumplidos como un regalo de prosperidad.'
+        'Acepta toda responsabilidad por todos los aspectos de tu vida.'
+        
+          'Acepto a los demás tal como son y sin pretender cambiarlos a mi ' +
+          'gusto.'
+        'Acepto cada día tal como se presenta y el amor en todo momento.'
+        'Acepto el amor de todos los que lo ofrecen.'
+        
+          'Acepto el milagro de la curación y permito ser totalmente curado' +
+          '.'
+        'Acepto el placer como parte de mi ser.'
+        'Acepto las opiniones o criterios dispares de los míos.'
+        'Acepto los cambios en mi vida y ensancho mis límites.'
+        'Acepto mi cuerpo; sé que es hermoso, magnífico y maravilloso.'
+        
+          'Acepto mi responsabilidad por cualquier afección que padezca. Ca' +
+          'mbio mis comportamientos.'
+        'Acepto mis imperfecciones y las supero cada día.'
+        'Acepto que la Naturaleza es sabia.'
+        
+          'Aclaro mis pensamientos y actúo de acuerdo a ellos. El Supremo m' +
+          'e muestra siempre el mejor camino para mí.'
+        'Actúo del modo más apropiado en todo momento.'
+        'Agradezco la generosidad de la vida conmigo, soy Bienaventurado.'
+        
+          'Agradezco profundamente al Universo que me haya dado esta increí' +
+          'ble vida.'
+        
+          'Agradezco todas las personas, lugares, cosas y experiencias que ' +
+          'llenan mi mundo. La vida es hermosa para todos, y yo contribuyo ' +
+          'a ello.'
+        'Agudiza tu creatividad y triunfarás.'
+        
+          'Ahora afirmo que cada célula de mi cuerpo está reaccionando a un' +
+          'a nueva fuerza.'
+        
+          'Ahora disuelvo cualquier pensamiento negativo o restrictivo. Me ' +
+          'libero y disuelvo todas las limitaciones del pasado. No me ata n' +
+          'ingún miedo ni limitación de la sociedad en la que vivo. Ya no m' +
+          'e identifico con ningún tipo de limitación.'
+        
+          'Ahora entro a un nuevo espacio en la conciencia, en donde me veo' +
+          ' de forma diferente. Estoy creando nuevos pensamientos acerca de' +
+          ' mi ser y de mi vida. Mi nueva forma de pensar se convierte en n' +
+          'uevas experiencias.'
+        'Ahora me permito Ser Feliz.'
+        'Ahora que has comenzado, termina.'
+        'Ahora reafirmo todo mi poder personal.'
+        
+          'Ahora sé y afirmo que formo una unidad con el Próspero Poder del' +
+          ' Universo. Y por lo tanto recibo multitud de bienes. La totalida' +
+          'd de las posibilidades está ante mí.'
+        
+          'Ahora solo veo y acepto lo bueno y lo bueno que hay en mí y en t' +
+          'odas las personas y situaciones en mi vida.'
+        'Ahora soy la persona que siempre quise ser.'
+        'Ahora todo lo que necesito viene a mí.'
+        'Ahora trasciendo mis viejos miedos y limitaciones.'
+        
+          'Al dormirte da las gracias por el día que has vivido.  Al desper' +
+          'tarte da las gracias por el día que vivirás.'
+        'Al ordenar mi hogar, ordeno también mi mente.'
+        
+          'Alégrate con los éxitos de los demás, sabiendo que hay mucho par' +
+          'a todos.'
+        
+          'Alguien nos dijo que somos nuestros sueños, que si no soñamos es' +
+          'tamos muertos.'
+        
+          'Ama y respeta todo lo que haces.  Las ganancias no serán tan sol' +
+          'o en forma monetaria.'
+        
+          'Amándome yo enseño a mis hijos a amarse y respetarse a sí mismos' +
+          '.'
+        'Amar a mi cuerpo es importante en cualquier fase de la vida.'
+        
+          'Amate tal cual eres y prémiate con pensamientos de halago hacia ' +
+          'tí mismo.'
+        
+          'Amo la naturaleza y estoy en armonía con ella, convierto la tier' +
+          'ra en un fértil jardín.'
+        'Amo sin esperar nada a cambio.'
+        
+          'Amo y respeto a mis congéneres y a todas las criaturas de Dios p' +
+          'orque son un regalo maravilloso.'
+        
+          'Amo y respeto a todas las fuerzas de la naturaleza y el Universo' +
+          '.'
+        'Amo y respeto mi cuerpo y lo cuido con cariño.'
+        
+          'Amo y respeto mi planeta y mi entorno.  Sembraré amor y respeto ' +
+          'todos los días.'
+        'Amo, respeto y honro a todas mis necesidades nutricionales.'
+        'Amo, valoro y apoyo a todas las personas de mi vida.'
+        
+          'Analizo los aspectos de mi vida en los que no me respeto ni me v' +
+          'aloro, y hago afirmaciones de poder.'
+        
+          'Antes de hablar, escucha. Antes de escribir, piensa. Antes de cr' +
+          'iticar, examínate. Antes de herir, siente. Antes de orar, perdon' +
+          'a. Antes de gastar, gana. Antes de rendirte, intenta.  Antes de ' +
+          'MORIR, VIVE.'
+        'Antes de pretender ayudar a otros, primero me ayudo a mí mismo.'
+        
+          'Aprende a nacer desde el dolor y a ser más grande que el más gra' +
+          'nde de los obstáculos.'
+        'Aprende de la persona que tienes delante de tí.'
+        
+          'Aprende de los fuertes, de los audaces, imita a los valientes, a' +
+          ' los energéticos, a los vencedores, a quienes no aceptan situaci' +
+          'ones, a quienes vencieron a pesar de todo.'
+        'Aprendo algo nuevo con cada experiencia.'
+        'Aprendo nuevas formas de vivir y cambio mi vida.'
+        
+          'Aprendo rápido y sin esfuerzo; soy mucho más inteligente de lo q' +
+          'ue pensaba.'
+        
+          'Asegúrate de darle las gracias a la persona delante tí cuando te' +
+          'rmine la sesión.'
+        'Así Es. Gracias Amado Universo.'
+        'Asumo el cuidado y responsabilidad de mi cuerpo todo el tiempo.'
+        'Asumo la responsabilidad de mi propia vida. Soy Libre.'
+        'Atiende a mis mensajes con diligencia.'
+        
+          'Atiende con amor a los mensajes de tu cuerpo.  Tu cuerpo debe si' +
+          'empre ser una imagen de salud total.'
+        'Atraigo gente con moral muy alta.'
+        
+          'Aunque es posible que no sepa cómo perdonar, me dispongo a comen' +
+          'zar el proceso, sabiendo que encontraré ayuda en todos los aspec' +
+          'tos de mi vida.'
+        
+          'Avanzo hacia el futuro conociendo y utilizando los tesoros que t' +
+          'engo dentro, solo lo bueno me aguarda.'
+        'Avanzo libre del pasado, estoy a salvo, soy libre.'
+        'Ayuda por amor, no por dinero o recompensa.'
+        
+          'Ayudo a crear un mundo seguro creando armonía con mis pensamient' +
+          'os.'
+        'Ayudo siempre que puedo.'
+        'Bendice a la persona que tienes delante de tí.'
+        'Bendigo mi trabajo con amor. Me satisface profundamente.'
+        'Bendigo y agradezco a Dios por todo el bien que me ha dado.'
+        'Busco el amor y lo encuentro en todas partes.'
+        'Busco la manera de hacer algo que me gusta.'
+        
+          'Cada día aprendo algo más sobre las leyes de la Vida y sobre "có' +
+          'mo" pensar para tener una vida sana, dichosa, amorosa y abundant' +
+          'e.'
+        
+          'Cada día avanzo con júbilo, soy un ser equilibrado, tenaz y libr' +
+          'e.'
+        
+          'Cada día dedico unos minutos a darle gracias a Dios por todo lo ' +
+          'que soy.'
+        'Cada día elogio a alguien; nunca están de más los elogios.'
+        'Cada día me siento nacer de nuevo en este sagrado planeta.'
+        
+          'Cada persona es una joya excepcional, con dotes y capacidades ún' +
+          'icas.'
+        
+          'Cambio algo en la casa, en mi estilo de vida o en el trabajo, y ' +
+          'eso nos beneficia a todos. Acepto el cambio y ensancho mis límit' +
+          'es.'
+        
+          'Cambio con facilidad y tranquilidad, avanzo siempre en la mejor ' +
+          'dirección.'
+        'Cambio todas las reglas y me creo una fantástica vida propia.'
+        
+          'Cambio todas mis reglas anticuadas y me creo una fantástica vida' +
+          ' propia.'
+        'Celebro mi existencia especial aceptándome tal como soy.'
+        
+          'Cierro la puerta de las viejas heridas y perdono a todo el mundo' +
+          '; me perdono también a mí.'
+        
+          'Cierro los ojos un momento y conecto con esa parte de mí que sab' +
+          'e lo que necesito.'
+        
+          'Combino las afirmaciones positivas con un programa de ejercicios' +
+          ' que me va bien.'
+        'Comienza y termina tu sesión de trabajo con gratitud.'
+        
+          'Comienzo a detener cualquier comportamiento abusivo desde el pri' +
+          'ncipio, aunque parezca algo sin importancia.'
+        
+          'Como criatura del Universo te mereces que todos tus sueños se co' +
+          'nviertan en realidad.'
+        'Como hijo del Universo que soy, sólo veo la perfección en todo.'
+        'Comprendo todo aquello que debo saber y comprender.'
+        
+          'Con alegría, recibo el regalo maravilloso del Hoy. Estoy en paz ' +
+          'y armonía conmigo y con los demás.'
+        
+          'Con Amor acepto mis decisiones, sabiendo que soy Libre para camb' +
+          'iarlas, estoy a salvo.'
+        'Con Amor cuido mi cuerpo, mi mente y mis emociones.'
+        'Con amor me libero totalmente del pasado, soy libre, soy Amor.'
+        
+          'Con Amor perdono y libero todo el pasado, elijo llenar mi mundo ' +
+          'de alegría, me amo y me apruebo.'
+        
+          'Con confianza acojo y experimento nuevas ideas actitudes, Me abr' +
+          'o para recibir todo lo bueno.'
+        
+          'Con confianza puedo responsabilizarme de mi propia vida, escojo ' +
+          'ser libre.'
+        
+          'Con facilidad me libero de todo lo que ya no necesito en la vida' +
+          '.'
+        
+          'Con gusto disuelvo todas las pautas de pensamiento negativo que ' +
+          'niegan o suprimen este caudal de amor.'
+        
+          'Con la organización, la constancia y la disciplina la vida es si' +
+          'mple y fácil.'
+        
+          'Con mis pensamientos y palabras hago sitio en mi cuerpo, mi ment' +
+          'e y mi espíritu para que el amor y la alegría fluyan abierta y l' +
+          'ibremente.'
+        'Conecto con ese tesoro que hay dentro de mí y lo utilizo.'
+        
+          'Conecto con mi sabiduría interna y la zozobra se convierte en pa' +
+          'z.'
+        
+          'Conecto con mi yo interior que es superior, es mi guía, siento s' +
+          'u amor y le permito crecer y expandirse.'
+        'Confía en tus conocimientos, tu formación y tu intuición.'
+        
+          'Confiadamente puedo experimentar alegría en todos los ámbitos de' +
+          ' mi vida, amo la vida.'
+        'Confió amorosamente en las personas que me aman.'
+        'Confío en Dios, mi creador y por eso actúo con fe y convicción.'
+        'Confió en el éxito final.'
+        
+          'Confío en el proceso de la vida, en mi vida solo tiene lugar la ' +
+          'buena y recta acción.'
+        
+          'Confío en el proceso de la vida, que me apoya y me guía siempre ' +
+          'que le permita hacerlo.'
+        'Confío en el proceso de la vida.'
+        'Confío en mi guía interior.'
+        
+          'Confío en mi intuición. Todo está bien en mi mundo, ahora y siem' +
+          'pre.'
+        'Confío en mi mismo, confío en mi intuición.'
+        
+          'Confío en mí y en mi intuición. Siento mi poder. Abandono mis vi' +
+          'ejas creencias y la Vida me apoya en cada paso del camino.'
+        
+          'Conserva tus pensamientos centrados en lo que deseas experimenta' +
+          'r.'
+        'Conserva tus pensamientos centrados en lo que deseas obtener.'
+        'Conservo mis pensamientos claros y tranquilos en los grupos.'
+        'Considero un regalo mi tiempo en soledad, en mi propia compañía.'
+        'Consigo que nadie enturbie mi mirada.'
+        'Consuelo a un niño que está triste.'
+        
+          'Contribuyo a crear un planeta sano donde todos prosperamos y viv' +
+          'imos dichosos y tranquilos.'
+        
+          'Contribuyo a la armonía que tenemos en el trabajo. Todos nos lle' +
+          'vamos muy bien.'
+        'Contribuyo a sanar la sociedad de un modo creativo y amoroso.'
+        'Controlo mis emociones positivamente.'
+        'Convéncete de que SI es posible.'
+        'Convierto en realidad todo mi gran potencial.'
+        
+          'Cosechas lo que siembras.  Estás aquí para sembrar amor y compas' +
+          'ión.'
+        'Cosechas lo que siembras.  Siembra amor y compasión.'
+        'Crea paz en tu mente y podrás ayudar a la persona delante de tí.'
+        'Creo la paz en mi mente, mi cuerpo y mi mundo.'
+        
+          'Creo paz en mi mente, y mi cuerpo la refleja con una salud perfe' +
+          'cta.'
+        'Creo paz y armonía en mi mente con pensamientos positivos.'
+        
+          'Creo un mundo seguro donde reina el amor y donde todos podemos s' +
+          'er felices y estar sanos y completos.'
+        
+          'Cuando encuentras la armonía y equilibrio en tu mente, lo encuen' +
+          'tras en tu vida.'
+        
+          'Cuando estoy de vacaciones dejo atrás todas mis preocupaciones y' +
+          ' sencillamente disfruto del momento presente.'
+        
+          'Cuando llegue la hora de mi partida de este mundo, será otra mar' +
+          'avillosa experiencia, apacible y serena.'
+        'Cuando pierdas, no pierdas la lección.'
+        
+          'Cuando siento inquietud, aflicción y congoja, me tomo el tiempo ' +
+          'necesario para entrar en mi interior y conectar con mi Sabiduría' +
+          ' Interna.'
+        
+          'Cuando todos y cada uno aprendamos a vivir con un amor incondici' +
+          'onal, se acabarán las guerras para siempre, y ese será el mejor ' +
+          'regalo para la humanidad.'
+        
+          'Cuando una puerta se cierra, otra se abre. Siempre tengo acceso ' +
+          'al Manantial Infinito de la Sabiduría. Estoy a salvo.'
+        
+          'Cuido amorosamente el jardín de mi mente. Arranco las hierbas ne' +
+          'gativas y dejo espacio para que crezcan afirmaciones positivas.'
+        'Cuido mi cuerpo siendo conciente de los cambios de estación.'
+        
+          'Cumple tus citas y llega a la hora.  Así demuestras tu respeto y' +
+          ' consideración por los demás.'
+        
+          'Da gracias a la persona delante de tí por permitirte el gran hon' +
+          'or de ayudarla.'
+        
+          'De hoy en adelante, sólo el bien sale de mí y sólo el bien regre' +
+          'sa a mí.'
+        
+          'Debes estar dispuesto a crecer y ocuparte de mis sentimientos.  ' +
+          'Exprésate como mejor lo desees.'
+        'Decido ver las cosas de manera diferente.'
+        'Decido vivir en el presente siempre jubiloso.'
+        'Declaro la paz y la armonía en mi interior y a mi alrededor.'
+        
+          'Declaro la paz, y la armonía en mi interior y en mi entorno, tod' +
+          'o esta bien.'
+        'Dejo de juzgarme. Dejo de juzgar a los demás.'
+        'Dejo el pasado y avanzo hacia lo nuevo.'
+        
+          'Dejo la pobreza de pensamientos para entrar en la prosperidad de' +
+          ' pensamientos.'
+        'Dejo marchar el pasado y perdono a todo el mundo.'
+        'Dejo que el amor de mi corazón sane el pasado, y soy libre.'
+        
+          'Dejo que el amor llegue a mi vida y me llene de felicidad y aleg' +
+          'ría.'
+        
+          'Desarrollo mi propia filosofía de vida y mis propias leyes: afir' +
+          'maciones según las cuales puedo vivir con plenitud, creencias qu' +
+          'e me apoyan y me nutren.'
+        
+          'Desarrollo mi sentido del humor. La risa es una forma maravillos' +
+          'a de adquirir una perspectiva diferente, y es un gran tónico par' +
+          'a el corazón.'
+        'Descubro lo maravilloso que soy.'
+        'Descubro mi propio don y lo realizo.'
+        'Desea que tu vida sea buena y alegre, y así será.'
+        'Deshago todos mis pensamientos erróneos y negativos.'
+        'Despierto mis poderes internos de curación.'
+        'Destina cada acto tuyo a ser un éxito rotundo.'
+        
+          'Dialoga con la persona y encuentra las deficiencias dietéticas o' +
+          'cultas.'
+        'Dialoga con la persona y encuentra las emociones ocultas.'
+        'Dialoga con la persona y encuentra las percepciones ocultas.'
+        
+          'Dios es el puro amor incondicional, comprensivo y compasivo, y e' +
+          'spera con paciencia a que aprendamos a comunicarnos con él.'
+        
+          'Dios es mi consejero y guía. Su sabiduría me guía y conduce a el' +
+          'egir siempre la mejor opción.'
+        
+          'Dios es un poder benévolo y amoroso, que lo dirige todo hacia el' +
+          ' bien en nuestra vida cuando se lo permitimos.'
+        
+          'Dios me ama. Yo me amo y perdono. Puedo dar y recibir amor sin l' +
+          'ímites.'
+        
+          'Dios y el Universo me proveen de todas las ideas necesarias para' +
+          ' tener el éxito que deseo.'
+        
+          'Dios, el Poder Universal ama a todas sus creaciones, y por ello ' +
+          'me ha dado el libre albedrío, para que tome mis propias decision' +
+          'es con toda libertad.'
+        
+          'Dios, la Vida y el Universo me aman y me aceptan tal como soy, n' +
+          'o me juzgan.'
+        
+          'Dios, permíteme que tu Paz siempre príncipe en mí.  Tu Paz, es a' +
+          'hora mi Paz.'
+        'Disfruta, ahora.'
+        'Disfruto compartiendo con otros lo mejor de mi.'
+        'Disfruto con mi sexualidad.'
+        'Disfruto de mi buena salud. Amo mi cuerpo y mi cuerpo me ama.'
+        'Disfruto de mi yo único y especial.'
+        'Disfruto de ser libre y abierto a la bondad que me rodea.'
+        
+          'Disfruto siendo un miembro de mi comunidad. Mi autoestima aument' +
+          'a sin cesar y me permite hacer algo valioso en bien de todos.'
+        'Disfruto totalmente de todo lo que hago.'
+        
+          'Dispongo de magnificas oportunidades para realizarme, muchas más' +
+          ' de las que nunca antes habían estado a mi alcance.'
+        
+          'Disponte para crecer y cambiar.  Cada momento te presenta una nu' +
+          'eva fabulosa oportunidad de ser más de quien eres.'
+        'Disuelvo y dejo marchar los viejos agravios y penas.'
+        
+          'Dondequiera que vaya, con quienquiera que me encuentre, siempre ' +
+          'está el amor esperándome.'
+        
+          'Doy de mí y de lo que soy lo mejor siempre, porque sé que todos ' +
+          'somos uno en espíritu.'
+        'Doy mi vida a una finalidad y un destino.'
+        'Doy todo el corazón y agradezco el privilegio de poder hacerlo.'
+        
+          'Durante todo el día algo me lleva a tomar las decisiones correct' +
+          'as.'
+        
+          'Ejercito mis músculos mentales. Me lo paso muy bien usando mi me' +
+          'nte. Soy una persona muy creativa.'
+        
+          'El Amor Divino cura mi vida de todo sentimiento que fuera contra' +
+          'rio a mi bien.'
+        
+          'El amor divino me rodea y libera de toda tensión o preocupación ' +
+          'y estoy en completo balance y equilibrio.'
+        'El amor es una medicina maravillosa.'
+        
+          'El amor es una medicina maravillosa.  El amarte a tí mismo hará ' +
+          'maravillas en tu vida.'
+        'El amor me rodea, ahora y para siempre.'
+        'El amor relaja y deja marchar, todo lo bueno se le parece.'
+        
+          'El bien fluye en tu vida a través de canales esperados e inesper' +
+          'ados.'
+        'El bien que yo le deseo a otros, es el bien que me desea a mí.'
+        'El dolor es un amigo que nos guía.  Escúchalo.'
+        'El espíritu de la verdad llega a mí y la verdad me hará libre.'
+        
+          'El éxito está asegurado en mi vida y mi mente está en completa p' +
+          'az.'
+        
+          'El hoy es el resultado de tu ayer, el mañana será el resultado d' +
+          'e tu hoy.  ¿Qué deseas para mañana?'
+        'El mundo es seguro confío en la vida estoy a salvo creciendo.'
+        
+          'El Océano de la vida derrocha abundancia, las oportunidades de o' +
+          'ro están en todo sitio.'
+        'El pasado ya ha pasado, elijo amarme y aprobarme en el presente.'
+        
+          'El pasado ya pasó y no puede ser cambiado.  Lo único que tienes ' +
+          'es el ahora, aprovéchalo.'
+        'El peligro es real, el miedo es una opción.'
+        
+          'El perdón es el primer paso hacia el camino del bienestar verdad' +
+          'ero.'
+        
+          'El perdón es el primer paso para ayudar a la persona delante de ' +
+          'tí.'
+        
+          'El que abras los brazos a los cambios o a otras culturas no sign' +
+          'ifica que te tengas que olvidar de tus valores.'
+        'El que mucho abarca poco aprieta.'
+        
+          'El Supremo guía todas mis acciones. El universo me ofrece todo a' +
+          'quello que necesito.'
+        
+          'El talento depende de la inspiración, pero el esfuerzo depende d' +
+          'e cada uno.'
+        
+          'El talento gana juegos, pero el trabajo en equipo y la inteligen' +
+          'cia ganan campeonatos.'
+        'El temor es el peor enemigo del bienestar.  Ríe, vive la vida.'
+        
+          'El Universo está más que dispuesto a manifestar mis nuevas creen' +
+          'cias y yo acepto la abundancia de esta vida con alegría, placer ' +
+          'y gratitud. Porque me lo merezco, lo acepto y sé que es verdad.'
+        
+          'El Universo gusta de gestos simbólicos. Ordeno mi hogar y lo man' +
+          'tengo ordenado, esto me aclara las ideas y veo mejor lo que quie' +
+          'ro hacer y cómo realizarlo.'
+        'El universo me proporciona todo lo que deseo y necesito.'
+        'Elevo mi energía sexual.'
+        'Elígete a tí mismo.'
+        'Elijo amarme y apreciarme en todo momento.'
+        'Elijo el amor como meta de felicidad.'
+        'Elijo hacer de mi vida algo sencillo, fácil y gozoso.'
+        'Elijo llenar mi mundo de alegría.'
+        
+          'Elijo perdonar a todo aquel que alguna vez haya hecho algo negat' +
+          'ivo. Éste es mi día del perdón. Me perdono por todo el daño que ' +
+          'hice en el pasado, a mí y a los demás.'
+        'Elijo vivir en el espacio abierto de mi corazón.'
+        
+          'Elijo vivir, en el dichoso momento Presente, mi vida es toda ale' +
+          'gría.'
+        
+          'Ellos son libres y yo soy libre. Somos uno con el poder que nos ' +
+          'ha creado estamos seguros y a salvo.'
+        'En cada momento soy libre para decidir.'
+        'En lugar de envejecer, simplemente continúo creciendo.'
+        'En lugar de juzgar, trato de comprender.'
+        
+          'En lugar de tratar de convencer, trato de comprender, y sigo con' +
+          ' constancia mi propio camino, sin dejarme influir por el ejemplo' +
+          ' negativo de otros.'
+        
+          'En mi alma solo hay belleza, paz y armonía, y todo eso se reflej' +
+          'a en mi buen semblante, manteniéndome joven y saludable.'
+        'En mi mente tengo libertad absoluta.'
+        'En todo momento recibo la guía divina.'
+        'Encaro con sentido del humor todas las experiencias de mi vida.'
+        'Encuentro dentro de mí lo que busco.'
+        'Encuentro mi propio ritmo.'
+        'Encuentro mi verdadera identidad.'
+        'Encuentro seguridad en mi interior.'
+        
+          'Enseña a respirar a la persona, ya que es a través de la respira' +
+          'ción como interactúa con el Universo.'
+        
+          'Enseño a mis hijos a respetarse a sí mismos y respetar a los dem' +
+          'ás.'
+        
+          'Entiendo que el camino que recorro es el camino que yo he elegid' +
+          'o.'
+        
+          'Eres ilimitado en tu manera de re-inventar tu vida todos los día' +
+          's.'
+        'Eres inteligente: naciste para servir a la humanidad.'
+        'Eres totalmente adecuado para esta situación.'
+        
+          'Eres totalmente libre de elegir pensamientos de alegría.  Es tu ' +
+          'derecho Divino el hacerlo.'
+        
+          'Eres un '#39#39'Doctor'#39#39' verdadero, usa todo tu conocimiento en pro de' +
+          ' la humanidad.'
+        'Eres un ejemplo a seguir: Sonríe.'
+        'Eres un ser dotado, inteligente y compasivo.  Demuéstralo.'
+        
+          'Eres un ser ilimitado en tu habilidad para decidir crear tu prop' +
+          'ia vida.'
+        
+          'Eres un ser único e irrepetible.  Posees dones, talentos y habil' +
+          'idades.  Explótalos.'
+        
+          'Es agradable ver como van creciendo mis ahorros. Luego puedo inv' +
+          'ertir y hacer que el dinero trabaje para mí en lugar de trabajar' +
+          ' por él.'
+        'Es bueno para los demás compartir mis sentimientos.'
+        
+          'Es esencial para mi bienestar que me ame y me aprecie en todo mo' +
+          'mento.'
+        
+          'Es mi derecho satisfacer mis necesidades, con facilidad y amor p' +
+          'ido lo que necesito.'
+        'Es mi vida. La vivo como realmente deseo.'
+        
+          'Es necesario que busque y encuentre mis recursos interiores y mi' +
+          ' conexión con la Sabiduría Divina.'
+        'Es seguro para mí compartir mis sentimientos.'
+        
+          'Es tu derecho de nacimiento el vivir libre y plenamente.  Disfru' +
+          'ta cada segundo de tu vida.'
+        
+          'Es un privilegio producir nuevas experiencias sólo con el pensam' +
+          'iento.'
+        
+          'Es una experiencia maravillosa vivir en esta época. Me entusiasm' +
+          'a estar aquí.'
+        
+          'Escucha atentamente a la persona delante de tí.  Puede ser la me' +
+          'jor medicina para ella.'
+        'Escucho las comunicaciones de la naturaleza.'
+        'Escucho mis sentimientos y los expreso en forma apropiada.'
+        'Está bien expresar todas mis emociones.'
+        
+          'Ésta es la senda de la curación. Vivo este día de tal modo que d' +
+          'esee Recordarlo mañana.'
+        
+          'Esta terapia será tan exitosa como tú decidas en tu mente y cora' +
+          'zón que sea.  Ten fe y positivismo.'
+        'Estamos seguros y a salvo, y todo está bien en nuestro mundo.'
+        
+          'Estás equipado mental y emocionalmente para disfrutar de una vid' +
+          'a próspera.  Siente totalmente realizado con lo que hagas.'
+        
+          'Estas tratando con un ser maravilloso.  Aprovecha esta oportunid' +
+          'ad.'
+        'Este año he explorado y expresado mi espectacular yo interior.'
+        
+          'Este ejército de diapasones de '#39#39'buenas vibraciones'#39#39' está ahora' +
+          ' mismo haciendo resonar la atmósfera del planeta con una melodía' +
+          ' de esperanza.'
+        
+          'Este es un día feliz, este es un día de salud y abundancia para ' +
+          'mí, mi familia y mis amigos.'
+        
+          'Este es un mes fabuloso para hacer ejercicio; mantengo en movimi' +
+          'ento mi cuerpo.'
+        
+          'Este es uno de los mejores meses de mi vida. Me abro para recibi' +
+          'r todo lo bueno que me ofrece la Vida.'
+        
+          'Este niño, vive respira el jubilo de vivir, se nutre de amor, Di' +
+          'os hace milagros todos los días.'
+        'Estoy a salvo en el Universo; la Vida me ama y me apoya.'
+        
+          'Estoy a salvo siendo yo, soy una persona maravillosa tal como so' +
+          'y, elijo vivir, opto por la alegría, me acepto.'
+        'Estoy a salvo, me relajo y dejo que la vida fluya jubilosamente.'
+        
+          'Estoy a salvo, mis sentimientos son normales y Aceptables, puedo' +
+          ' sentir sin temor.'
+        'Estoy a salvo.'
+        
+          'Estoy a salvo; esto es solo un cambio. El cambio es normal y nat' +
+          'ural.'
+        'Estoy abierto a mi sabiduría interior.'
+        'Estoy abierto nuevas experiencias de aprendizaje.'
+        'Estoy abierto y receptivo a todos los puntos de vista.'
+        
+          'Estoy aprendiendo a hacer afirmaciones positivas. Elijo pensamie' +
+          'ntos que me alienten y me hagan sentir bien.'
+        'Estoy conciente de cada instante de mi vida.'
+        'Estoy convencido que mi curación será efectiva.'
+        'Estoy dispuesto a curarme.'
+        'Estoy dispuesto a fluir con la vida.'
+        
+          'Estoy dispuesto a tener éxito aunque suponga agradar a mis padre' +
+          's.'
+        'Estoy en armonía con la naturaleza. La cuido y la protejo.'
+        
+          'Estoy en conexión con la Totalidad del Universo, y la Divinidad ' +
+          'me guía y me protege.'
+        'Estoy en manos de Dios.'
+        'Estoy en paz con todas mis emociones, me amo y me apruebo.'
+        'Estoy en paz con todos los aspectos de mi vida.'
+        
+          'Estoy en paz y me siento cómodo en todos los aspectos de mi vida' +
+          ', soy fuerte y capaz.'
+        'Estoy en paz.'
+        
+          'Estoy en perfecto equilibrio, a toda edad avanzo por la vida con' +
+          ' alegría y soltura.'
+        'Estoy libre de adicciones, antojos y sustancias nocivas.'
+        'Estoy libre de exceso de alergias.'
+        'Estoy libre de exceso de ansiedad.'
+        'Estoy libre de exceso de avaricia.'
+        'Estoy libre de exceso de ira.'
+        'Estoy libre de exceso de lujuria.'
+        'Estoy libre de exceso de preocupaciones.'
+        'Estoy libre de exceso de temor.'
+        'Estoy libre de exceso de tristeza.'
+        
+          'Estoy lleno de alegría, no sufro ninguna angustia mental porque ' +
+          'soy Uno con el Universo.'
+        'Estoy lleno de energía y entusiasmo.'
+        'Estoy lleno de entusiasmo por la vida.'
+        
+          'Estoy rebosante de alegría, la alegría emana de mi con cada lati' +
+          'do de mi corazón.'
+        'Estoy seguro al ser yo.'
+        'Estoy seguro de mi capacidad de expresión.'
+        'Estoy seguro y a salvo cuando expreso mis sentimientos.'
+        'Estoy siempre a salvo y protegido.'
+        
+          'Estoy totalmente abierto a un nuevo camino. No tengo nada que pe' +
+          'rder.'
+        'Evita sobre racionalizar, por lo general la respuesta es obvia.'
+        
+          'Exploro nuevas profundidades en mi interior y descubro nuevos te' +
+          'soros.'
+        'Expreso confianza en lo que digo y hago.'
+        
+          'Expreso la alegría de vivir y disfruto Plenamente de cada moment' +
+          'o del día, rejuvenezco.'
+        
+          'Fácil y sencillamente deja ir lo que ya no necesites.  Haz espac' +
+          'io en tu corazón para nuevas experiencias.'
+        
+          'Floto en el océano de la vida, y mis pensamientos están anclados' +
+          ' en la Verdad y el Amor.'
+        
+          'Fluyo con el perfecto despliegue de mi vida. Feliz y expectante ' +
+          'recibo y agradezco las nuevas experiencias.'
+        'Fluyo fácilmente con el cambio.'
+        'Fluyo suavemente con la vida y en cada experiencia.'
+        
+          'Formo un equipo sanador con mi terapeuta; me relajo y confío ple' +
+          'namente en que estoy en buenas manos.'
+        
+          'Formo una unidad con todo lo que existe, y a la vez soy ser inde' +
+          'pendiente, persona que tiene su propio camino que recorrer, únic' +
+          'o y especial.'
+        
+          'Fortalezco mi autoestima y mi carácter para ser capaz de negarme' +
+          ' a hacer lo que no quiero hacer y evitar que se me manipule.'
+        'Genero fuerza e inmunidad ante las situaciones negativas.'
+        'Gozo de la vida y aprendo cada día las lecciones que me enseña.'
+        
+          'Gracias Dios Mío por haberme dado el Don del perdón para con otr' +
+          'os y para conmigo mismo.'
+        
+          'Gracias Dios, por ser la fuente infinita de todo mi bien. Lo cre' +
+          'o y lo acepto con gratitud.'
+        'Gracias por ser quien eres y por estar aquí.'
+        
+          'Gracias, Dios, porque en mi hogar sólo hay orden y progreso para' +
+          ' mí y toda mi familia.'
+        'Hablo asertivamente y con fluidez porque hablo la verdad.'
+        
+          'Hablo con una persona sin hogar. Hago una meditación sanadora po' +
+          'r un delincuente.'
+        
+          'Hago actos de amabilidad al azar: recojo lo que los demás hayan ' +
+          'tirado al suelo en el campo o en la playa.'
+        
+          'Hago de mis afirmaciones positivas un hábito diario. Elijo pensa' +
+          'mientos que me alienten y me hagan sentir bien.'
+        
+          'Hago lo que me gusta y me llegará el dinero. Amo lo que hago y m' +
+          'e llega el dinero.'
+        'Hago todo lo que dije que haría por mi bienestar mental.'
+        
+          'Hago todo lo que puedo en toda circunstancia. Apruebo mis decisi' +
+          'ones, porque estoy buscando lo mejor para mí mismo.'
+        'Hago un rato de compañía a una persona mayor que vive sola.'
+        
+          'Hago una lista de afirmaciones que reflejan mi filosofía positiv' +
+          'a de la vida.'
+        'Hago uso de los maravillosos recursos que hay en mi interior.'
+        'Hay aquellos que son tan pobres que solo tienen dinero.'
+        'Hay tiempo para todo, AHORA es tiempo de aprender.'
+        
+          'Hay una gran abundancia en el Universo y está disponible para to' +
+          'dos aquellos que ampliamos nuestra conciencia.'
+        'Haz de esta consulta una celebración.'
+        'Haz de la compasión tu tarjeta de visita.'
+        'Haz de la pasión el motor de tu vida.'
+        'Haz del amarte a tí mismo un ejercicio diario.'
+        'Haz del perdón un ejercicio diario.  Perdónate a tí y a otros.'
+        
+          'Haz el espacio perfecto para vivir y trabajar y luego llénalos d' +
+          'e amor.'
+        'He sido creado perfecto y seguiré así.'
+        
+          'Hoy acepto la felicidad de mi mente, y ésta se refleja en mi vid' +
+          'a, mundo y cuerpo.'
+        'Hoy capto la maravilla y gloria de la vida con nuevos ojos.'
+        'Hoy comienzo mi viaje de sanación.'
+        'Hoy comienzo una nueva vida.'
+        'Hoy es el día que comienzo a hacer todas las cosas que deseé.'
+        
+          'Hoy es otro precioso día sobre la Tierra y vamos a vivirlo con a' +
+          'legría.'
+        'Hoy es un día fabuloso porque así lo has decidido.'
+        'Hoy estoy sano.'
+        
+          'Hoy me divierto y comparto mi alegría con otras personas que qui' +
+          'eren divertirse.'
+        'Hoy me lo paso muy bien.'
+        
+          'Hoy me regocijo, y le doy Gracias a Dios por brindarme este bien' +
+          '.'
+        
+          'Hoy nace un día glorioso en mi conciencia. Disfruto de este nuev' +
+          'o día y de todo lo que ofrece.'
+        'Hoy omito alguna de mis rutinas para hacer algo diferente.'
+        
+          'Hoy quiero trabajar la amabilidad, la bondad y la condescendenci' +
+          'a.'
+        
+          'Hoy siento que algo me lleva hacia mi mayor bien y lo acepto con' +
+          ' gratitud.'
+        'Hoy sigo la voluntad de Dios todo poderoso.'
+        'Hoy sigo mi propio criterio, sin desperdiciar el ajeno.'
+        'Hoy te desafío a que seas TU, sin trampa ni cartón.'
+        'Imagínate lo inimaginable.'
+        'Impulso mi vida con la energía que genero en el presente.'
+        
+          'Inicio cada día con gratitud, y por la noche duermo con mis ánge' +
+          'les. Sé que están siempre conmigo y que puedo acudir a ellos en ' +
+          'cualquier momento.'
+        'Inspiro la plenitud y la riqueza de la vida.'
+        'Inundo de amor mi casa, que es un verdadero cielo en la Tierra.'
+        'Invariablemente en cada dificultad se esconde una oportunidad.'
+        'Irradio energía sanadora hacia todo el mundo.'
+        'Irradio paz, calma y optimismo.'
+        'Jamás fracasaré porque estoy determinado a triunfar.'
+        'Juego con mi niño interior y los dos nos lo pasamos divinamente.'
+        'La alegría y la felicidad están en el centro de mi mundo.'
+        
+          'La Ciencia Médica no puede eliminar los efectos de mi condición ' +
+          'si esta es de origen mental.'
+        'La confianza en ti mismo debe ser tu slogan personal.'
+        'La Divinidad siempre está a mi lado, amándome y protegiéndome.'
+        
+          'La empatía con la persona delante de tí es el primer paso para a' +
+          'yudarla.'
+        
+          'La gente está a salvo en mi presencia y no necesita mi protecció' +
+          'n.'
+        
+          'La impaciencia es una emoción negativa no propia de un ser tan i' +
+          'nteligente como tú.'
+        
+          'La inteligencia Divina te dará todas las herramientas que necesi' +
+          'tas.  Solo debes canalizarla.'
+        'La luz al final del túnel está dentro de tí.'
+        'La naturaleza es sabia si dejamos de interferir.'
+        'La palabra '#39#39'Imposible'#39#39' no existe en mi vocabulario.'
+        'La paz debe ser tu objetivo primario.'
+        'La perseverancia es propia de aquellos que tienen fe.'
+        'La persona delante de tí es tu jefe.'
+        
+          'La persona delante de ti es un ser humano como tú.  Trátala con ' +
+          'el máximo respeto.'
+        'La persona delante de tí no es un '#39#39'protocolo'#39#39'.'
+        
+          'La persona delante de tí, te está presentando con una maravillos' +
+          'a oportunidad de expresar tu creatividad.'
+        'La puerta se abre al amor, al amor por mí.'
+        
+          'La risa constituye una parte muy importante de la evolución de m' +
+          'i alma.'
+        
+          'La tierra es verdaderamente nuestra madre, y la necesitamos para' +
+          ' sobrevivir. Si no la cuidamos nosotros, ¿quién lo hará? ¿Dónde ' +
+          'viviremos?'
+        'La tolerancia es una cualidad propia de las personas exitosas.'
+        'La vida me ama, me nutre y me apoya, estoy a salvo viviendo.'
+        
+          'La vida me muestra el camino hacia la prosperidad y la abundanci' +
+          'a.'
+        'La vida siempre es buena.  Todo está bien en mi mundo.'
+        'La vida siempre es buena. Todo está bien en mi mundo.'
+        
+          'Las creencias que tengo, las cosas que pienso y las palabras que' +
+          ' digo son muy poderosas; dan forma a mis experiencias y a mi vid' +
+          'a.'
+        
+          'Las críticas y los juicios se desvanecen, y a medida que desapar' +
+          'ecen me hago más libre para apreciar todo lo que soy.'
+        
+          'Las fiestas son divertidas y sanas. Las celebro con amigos y com' +
+          'pañeros de trabajo de modos que me hacen sentir bien.'
+        'Las personas incurables aún no han nacido.'
+        
+          'Le digo a mi cuerpo que lo quiero. Incluso le pido perdón por ha' +
+          'berlo odiado en el pasado.'
+        'Le digo a mis seres queridos que los amo.'
+        
+          'Le doy a la vida y a mis seres queridos lo mejor de mí, porque l' +
+          'o que doy vuelve a mí multiplicado. La mejor manera de recibir a' +
+          'mor es darlo.'
+        
+          'Libera la necesidad de por instinto culpar a otros por tus error' +
+          'es.'
+        'Libera toda creencia que no se ajuste a tu realidad.'
+        'Libera tu ira de maneras positivas.'
+        'Libera tu lucha interna, simplemente fluye y deja fluir.'
+        'Libero cualquier mala tendencia o comportamiento heredado.'
+        
+          'Libero el pasado y dejo que el tiempo cure todos los aspectos de' +
+          ' mi vida.'
+        
+          'Libero todo lo que no sea amor, hay tiempo y espacio para todo l' +
+          'o que deseo hacer.'
+        'Limpio mi cuerpo y mi ser continuamente.'
+        
+          'Limpio mi vida de los recuerdos del pasado y hago el maravilloso' +
+          ' presente de un nuevo principio, centrando mi conciencia en la a' +
+          'bundancia.'
+        'Lleno mi mente de pensamientos positivos, creativos y amorosos.'
+        'Llevo las riendas de mis finanzas, mi salud y mi futuro.'
+        'Llevo una vida llena de amor, dicha, paz y prosperidad.'
+        'Lo más peligroso que tiene la vida es vivirla.'
+        
+          'Lo mejor que puedo hacer por los niños que me rodean es aprender' +
+          ' a amarme a mí mismo, porque los niños aprenden con el ejemplo.'
+        
+          'Lo que das, recibes.  Da solo bondad y caridad y en turno, solo ' +
+          'bondad y caridad recibirás.'
+        
+          'Lo que doy, lo recibo de vuelta. Contribuyo a crear los aconteci' +
+          'mientos que tienen lugar en mi vida, y soy responsable de ellos.'
+        'Los actos de bondad me hacen sentir bien.'
+        
+          'Los momentos de meditación u oración son instantes especiales de' +
+          ' mi vida.'
+        
+          'Los pensamientos limpios y puros que son de Dios, fluyen a travé' +
+          's de mi mente.'
+        
+          'Los profesionales de la salud que me atienden respetan mis decis' +
+          'iones respecto a mis terapias.'
+        
+          'Los quehaceres domésticos son parte de la vida y los hago con so' +
+          'ltura y rapidez.'
+        
+          'Los regalos de la vida son la paz, el amor y la alegría. Los ace' +
+          'pto con gratitud y los comparto con los demás.'
+        'Maneja todas tus experiencias con sabiduría, amor y honestidad.'
+        
+          'Mantengo ágiles y flexibles mi mente y mi cuerpo hasta el último' +
+          ' día de mi vida.'
+        
+          'Me abro a la vida y estoy dispuesto a Experimentarla, a sentir c' +
+          'on toda confianza.'
+        'Me abro para experimentar todo lo bueno que me ofrezca la vida.'
+        
+          'Me acepto amorosamente. Defiendo lo que siento y lo que pienso, ' +
+          'y quienes me aman me aceptan tal cual soy.'
+        'Me acepto tal como soy.'
+        'Me acepto y me apruebo tal cual soy.'
+        'Me acepto y me apruebo.'
+        
+          'Me acuerdo de decirles a las personas de mi entorno lo mucho que' +
+          ' los quiero y lo maravillosos que son.'
+        
+          'Me alegro y gozo de la buena relación que tengo conmigo. Hago qu' +
+          'e sea la mejor y más amorosa que pueda tener.'
+        
+          'Me aliento a mí mismo y a los demás, y la vida nos alienta de mo' +
+          'dos muy especiales.'
+        
+          'Me alimento de un modo sano, bebo mucha agua natural y hago ejer' +
+          'cicio.'
+        'Me alimento de un modo sano, y hago ejercicio.'
+        'Me amo a mi mismo pase lo que pase.'
+        
+          'Me amo a mi mismo, y me regocijo en quien soy, porque sé que la ' +
+          'vida está aquí para mí y me proporciona todo lo que necesito.'
+        'Me amo tal como soy.'
+        'Me amo y disfruto de mi propia compañía.'
+        
+          'Me amo y me apruebo, con los ojos del amor me veo a mí y veo tod' +
+          'o lo que hago, estoy a salvo.'
+        
+          'Me amo y me apruebo, confío en el proceso de la vida, estoy a sa' +
+          'lvo.'
+        'Me amo y me apruebo.'
+        'Me amo y me apruebo. Me acepto tal como soy.'
+        'Me amo y me apruebo. Soy perfecto. Estoy en paz.'
+        
+          'Me armonizo ahora y bendigo a todas las personas, cosas y situac' +
+          'iones en mi vida.'
+        'Me atrevo a ver mi propio valor.'
+        'Me concentro en las bendiciones que recibo y las agradezco.'
+        
+          'Me construyo un mañana lo más sano, brillante y dichoso que pued' +
+          'a.'
+        'Me creo un conjunto de creencias que me apoyan y me nutren.'
+        
+          'Me creo un universo seguro, rebosante de amor y prosperidad, y a' +
+          'sí cuido con afecto de mi corazón y de mi alma.'
+        'Me desprendo jubilosamente del pasado, estoy en Paz.'
+        
+          'Me doy a la vida y a mis seres queridos lo mejor de mí, porque l' +
+          'o que doy vuelve a mí multiplicado. La mejor manera de recibir a' +
+          'mor es darlo.'
+        
+          'Me doy el tiempo que necesito para trabajar en la aflicción o el' +
+          ' duelo. La muerte es una parte natural de la vida.'
+        'Me doy permiso para cambiar.'
+        'Me doy permiso para disfrutar de mi cuerpo.'
+        'Me doy permiso para disfrutar totalmente de todo lo que hago.'
+        'Me doy permiso para realizarme.'
+        'Me doy permiso para ser próspero y feliz.'
+        
+          'Me doy permiso para ser todo lo que puedo ser, merezco lo mejor ' +
+          'de la vida. Me amo, amo y aprecio a los demás.'
+        
+          'Me doy todo el tiempo necesario para encontrar paz en mi interio' +
+          'r; sé que así llegaré a desarrollar todo mi potencial.'
+        
+          'Me doy todo el tiempo que necesito para hacer mis compras. Siemp' +
+          're compro dentro de mi presupuesto.'
+        'Me encanta comer buenos alimentos y dormir bien por la noche.'
+        
+          'Me encanta despertar por la mañana y saludar al glorioso nuevo d' +
+          'ía.'
+        
+          'Me encanta hacer los regalos que hago porque son expresiones que' +
+          ' nacen desde el fondo de mi corazón.'
+        
+          'Me encanta llegar a casa.  Experiencias placenteras llenan las h' +
+          'abitaciones.'
+        'Me encanta ser quien soy y hago valer mi poder con prudencia.'
+        'Me estimula la vida, estoy lleno de energía y entusiasmo.'
+        
+          'Me estoy creando un buen futuro económico. Mi dinero aumenta día' +
+          ' a día.'
+        'Me estoy limpiando todos los residuos negativos.'
+        'Me estoy renovando en cada momento de este día.'
+        'Me expreso como soy cuando estoy relajado.'
+        
+          'Me gusta ser una persona organizada y saber que lo que hago dura' +
+          '.'
+        
+          'Me hago cargo de mis pensamientos y comienzo a crear el mundo de' +
+          ' igualdad que deseo.'
+        
+          'Me hago cargo de todas mis necesidades nutricionales físicas, me' +
+          'ntales y emocionales.'
+        
+          'Me hallo en paz sabiendo que estoy protegido y guiado en todo mo' +
+          'mento.'
+        
+          'Me liberaré de mis dudas recordando que hay una razón para todo ' +
+          'lo que sucede.'
+        
+          'Me libero de la carga de la culpa y la vergüenza. Me alejo del p' +
+          'asado  y vivo en este momento con alegría y aceptación.'
+        
+          'Me libero de la necesidad de acusar o culpar, a otros y a mí; cu' +
+          'lpar es un acto inútil.'
+        'Me libero de la necesidad de criticar a los demás.'
+        'Me libero de mis adicciones.'
+        'Me libero de mis programas pasados.'
+        'Me libero de todo lo que me hace daño.'
+        'Me libero del dolor y del sufrimiento.'
+        
+          'Me libero y libero a los demás para hacer un perfecto viaje de a' +
+          'prendizaje.'
+        'Me lleno de saber para poder ayudar sabiamente.'
+        'Me merezco lo mejor, y lo acepto con alegría, placer y gratitud.'
+        'Me merezco prosperar. Mis ingresos aumentan constantemente.'
+        
+          'Me muevo de éxito en éxito, de alegría en alegría y de abundanci' +
+          'a en abundancia.'
+        
+          'Me nutro con pensamientos positivos, que me llenen de paz y aleg' +
+          'ría.'
+        'Me perdono a mi mismo y decido por la felicidad.'
+        'Me perdono completamente.'
+        'Me perdono por mis limitaciones.'
+        
+          'Me perdono por mis viejas creencias limitadoras. Ahora tengo pen' +
+          'samientos nuevos y me creo una vida nueva.'
+        'Me perdono por todos mis errores y rectifico.'
+        
+          'Me permito el tiempo y el espacio para estar en Paz conmigo mism' +
+          'o.'
+        'Me permito estar conmigo mismo.'
+        
+          'Me procuro momentos de silencio y quietud para conectar y comuni' +
+          'carme con la Sabiduría Divina.'
+        
+          'Me quiero a mí mismo, porque soy un ser excepcional e irrepetibl' +
+          'e.'
+        'Me quiero en presencia de los demás.'
+        'Me realizo creativamente todos los días de mi vida.'
+        
+          'Me recupero de mis lesiones y mi cuerpo se restaura a un equilib' +
+          'rio perfecto.'
+        'Me relajo después de comer.'
+        
+          'Me relajo y aquieto mi mente. Acepto con naturalidad los cambios' +
+          ' de mi vida.'
+        'Me relajo y libero mis tensiones a diario.'
+        'Me respeto a mi mismo todo el tiempo.'
+        'Me respeto a mí mismo y respeto también a los demás.'
+        'Me resulta fácil aceptar la salud perfecta.'
+        'Me resulta fácil dar amor a los demás.'
+        
+          'Me siento absolutamente en paz. Abro mi corazón y de él emana el' +
+          ' regalo del amor para todos.'
+        'Me siento amado y protegido.'
+        'Me siento despierto y fresco.'
+        'Me siento en paz con mi sexualidad y con la de los demás.'
+        
+          'Me siento en silencio y quietud y llevo toda mi atención hacia a' +
+          'dentro.'
+        'Me siento muy bien y sonrío.'
+        'Me siento seguro compartiendo mis sentimientos.'
+        'Me siento seguro tanto dando como recibiendo.'
+        'Me trato como a un ser muy amado.'
+        
+          'Me trato con amabilidad y comprensión, y lo mismo hago con los d' +
+          'emás.'
+        
+          'Me trato con amabilidad y comprensión, y lo mismo hago con los d' +
+          'emás. Encuentro mis recursos interiores.'
+        
+          'Me trato con amor y ternura, como desearía que me tratara una pe' +
+          'rsona muy querida.'
+        
+          'Me trato con mucho cariño, con amor y humor. Disfruta de mi vida' +
+          ' y la lleno de risas.'
+        'Me uno cada vez y cada día más a Dios.'
+        
+          'Me visualizo en el futuro sintiendo todavía más alegría y felici' +
+          'dad.'
+        
+          'Medito sobre mis temores y visualizo dejándolos caer uno a uno e' +
+          'n un riachuelo para que se disuelvan y desaparezcan arrastrados ' +
+          'por la corriente.'
+        'Merezco el amor, abundante amor.'
+        'Merezco la alegría y la felicidad.'
+        'Merezco la libertad, la libertad de ser todo lo que puedo ser.'
+        'Merezco la salud.'
+        'Merezco la vida, una vida buena.'
+        'Merezco muchas cosas más que todo eso: merezco todo lo bueno.'
+        'Merezco relaciones divertidas, fáciles y que me apoyen.'
+        'Merezco ser feliz.'
+        'Merezco ser feliz.  Yo ahora me acepto tal y como soy.'
+        'Merezco solo lo mejor para mi vida.'
+        'Merezco tenerlo todo.'
+        'Merezco vivir cómodamente y prosperar.'
+        
+          'Mi actual trabajo es el canal temporal por donde me llega el bie' +
+          'n desde el Manantial Infinito. No corro ningún riesgo si cambio ' +
+          'de canal.'
+        
+          'Mi casa es un lugar feliz para vivir. Bendigo a todos los que en' +
+          'tran en ella, también a mí.'
+        'Mi cerebro y sistema nervioso funciona perfectamente.'
+        
+          'Mi conciente y subconciente se unen y trabajan de común acuerdo ' +
+          'para mi bien.'
+        'Mi corazón está repleto de fuerza y confianza.'
+        'Mi corazón funciona perfectamente.'
+        'Mi cuerpo es un lugar seguro, cómodo y placentero donde estar.'
+        
+          'Mi cuerpo es un templo precioso. Si quiero tener una vida larga ' +
+          'y satisfactoria, es necesario que lo cuide.'
+        
+          'Mi cuerpo es un templo que siempre amaré y respetaré porque vivo' +
+          ' en él.'
+        
+          'Mi cuerpo es una maravillosa pieza de ingeniería donde que es un' +
+          ' placer habitar.'
+        'Mi cuerpo responde con rapidez a todas las situaciones.'
+        
+          'Mi cuerpo, mi mente y mi espíritu están sanos y llenos de una en' +
+          'ergía ilimitada.'
+        
+          'Mi familia se enorgullece de mí. De buena gana acepto sus elogio' +
+          's y me esfuerzo por demostrarles mi gratitud y mi reconocimiento' +
+          '.'
+        
+          'Mi futuro es esplendoroso y nuevo.  Espero con ilusión el mañana' +
+          '.'
+        'Mi hígado funciona perfectamente.'
+        'Mi hogar es el Universo.'
+        'Mi mente está siempre conectada con la Sabiduría Divina.'
+        
+          'Mi modo de pensar es en grande y por lo tanto haré grandes cosas' +
+          ' para el beneficio de la humanidad.'
+        'Mi pareja es una persona maravillosa, cariñosa y espiritual.'
+        
+          'Mi peso es el perfecto para mí. Me quiero, y por lo tanto me pro' +
+          'tejo con amor.'
+        'Mi piel funciona perfectamente.'
+        'Mi placer complace a los demás.'
+        'Mi presencia es naturalmente agradable para mí y para los demás.'
+        
+          'Mi relación con Dios, la Inteligencia Universal, el Poder Superi' +
+          'or o como quiera llamarle, es muy importante.'
+        'Mi sistema digestivo funciona perfectamente.'
+        'Mi sistema hormonal funciona perfectamente.'
+        'Mi sistema inmunitario funciona perfectamente.'
+        
+          'Mi tiempo a solas es tan satisfactorio como el que paso con otra' +
+          's personas, porque hago de mis pensamientos mis mejores amigos.'
+        
+          'Mi verdadera naturaleza es espiritual, mi espíritu no envejece. ' +
+          'Por lo tanto soy joven, sano y fuerte.'
+        'Mi vida es una magnifica aventura.'
+        'Mi vida es una taza rebosante de salud, libertad y tranquilidad.'
+        
+          'Mi vida está comenzando y me gusta. Soy una persona nueva en un ' +
+          'siglo nuevo.'
+        'Mi vida está llena de amor y respeto.'
+        
+          'Mi vida presente y futura comienza hoy. La vida merece la pena s' +
+          'er vivida integra.'
+        'Mi vida rebosa de libertad y tranquilidad.'
+        
+          'Mi vida viene en oleadas, con experiencias de aprendizaje y peri' +
+          'odos de evolución y renovación.'
+        'Mi vida y mi corazón rebosan de amor.'
+        'Mi vitalidad es una fuerza curadora del planeta.'
+        'Mientras más cosas agradezco, más tengo para agradecer.'
+        
+          'Mientras reconozco mi valía innata, mi vida se expande y prosper' +
+          'a de muchas y deliciosas maneras.'
+        'Miro tranquilo hacia lo profundo de mi ser.'
+        'Mis amigos y yo nos apoyamos de un modo positivo.'
+        
+          'Mis años de madurez pueden ser los más gratificantes y luminosos' +
+          ' de toda mi vida.'
+        'Mis cosas siempre se solucionan de la mejor manera.'
+        'Mis creencias espirituales me apoyan y me reconfortan.'
+        
+          'Mis familiares y amigos intercambian conmigo regalos del aprecio' +
+          ' y el amor.'
+        
+          'Mis hermanas y hermanos tienen un gran corazón. Somos tolerantes' +
+          ' y compasivos y nos queremos. Abro mi corazón a mi familia.'
+        
+          'Mis ideas son muy poderosas y liberadoras, y cuando creo en ella' +
+          's, se convierten en realidad.'
+        'Mis ingresos aumentan constantemente.'
+        'Mis mecanismos de desintoxicación funcionan perfectamente.'
+        
+          'Mis padres ya no tienen ningún poder sobre mí. Soy libre de vivi' +
+          'r mi vida.'
+        
+          'Mis pensamientos me consuelen y me reconforten. Son pensamientos' +
+          ' agradables, amistosos, risueños y llenos de amor.'
+        
+          'Mis pensamientos positivos fortalecen y estimulan mi sistema inm' +
+          'unitario.'
+        
+          'Mis pensamientos puros y libres me mantienen joven, fuerte y sal' +
+          'udable.'
+        
+          'Mis pensamientos son sabios e inspirados, y me ayudan a viajar p' +
+          'or la vida con armonía, dicha y paz.'
+        
+          'Mis pensamientos son sanos.  Controlo mis pensamientos con amor ' +
+          'y respeto.'
+        'Mis procesos corporales son normales y naturales.'
+        'Mis pulmones funcionan perfectamente.'
+        'Mis riñones funcionan perfectamente.'
+        'Mis sentidos funcionan perfectamente.'
+        
+          'Nadie nos dijo que fuéramos, nadie nos dijo que lo intentaramos,' +
+          ' nadie nos dijo que sería fácil.'
+        
+          'Nadie nos dijo que fuéramos, nadie nos dijo que lo intentáramos,' +
+          ' nadie nos dijo que sería fácil.'
+        
+          'Nadie puede arrebatarme jamás aquello que es mío por derecho pro' +
+          'pio.'
+        'Nadie tiene razón ni se equivoca. Todo es relativo.'
+        
+          'Ninguno tenemos la vida comprada.  Vive cada día como si fuera e' +
+          'l último y agradécelo.'
+        
+          'No confundas el tener menos con el ser menos, el tener más con s' +
+          'er más, tampoco confundas lo que posees con quien eres.'
+        'No digas nada que no creas.'
+        
+          'No es bella la vida es bella cuando hacemos las cosas con compas' +
+          'ión?'
+        
+          'No es el deseo de ganar el que hace a los triunfadores sino su d' +
+          'eseo de prepararse tanto física como mentalmente.'
+        'No es lo que dices sino como lo dices.'
+        
+          'No es lo que entra en tu boca lo que ofende sino lo que sale de ' +
+          'ella.'
+        
+          'No existe un camino único a donde quieres llegar.  Atiende a tod' +
+          'as las ideas de tu corazón.'
+        'No hay ni blanco ni negro, solo matices de gris.'
+        'No hay ni '#39#39'bueno'#39#39' ni '#39#39'malo'#39#39', solo diferente.'
+        
+          'No importa lo que haya pensado de mí en el pasado. Hoy es un nue' +
+          'vo día.  En este nuevo momento, comienzo a verme de forma más co' +
+          'mpasiva.'
+        'No intentes nada, simplemente hazlo.'
+        
+          'No le temo a las enfermedades, Dios siempre está a cargo de mi s' +
+          'alud y la de toda mi familia y amigos.'
+        'No me critico. Tampoco critico a los demás.'
+        
+          'No me preocupo más por el pasado, solo vivo en el eterno '#39#39'Ahora' +
+          #39#39'.'
+        
+          'No mires el obstáculo que has superado, sino aquellos que vas a ' +
+          'superar.'
+        'No necesito perseguir nada con el fin de estar completo.'
+        'No necesito sufrir para conseguir la felicidad.'
+        
+          'No olvides que la causa de tu presente, es tu pasado como la cau' +
+          'sa de tu futuro es tu presente.'
+        'No prometas nada que no puedas cumplir.'
+        
+          'No se puede amar y odiar al mismo tiempo. Contribuyo a crear un ' +
+          'mundo amoroso.'
+        
+          'No se trata de los más rápidos, ni los más fuertes o los más gra' +
+          'ndes, se trata de ser nosotros mismos.'
+        'No simplemente entiendas, comprende.'
+        'No te conformes, ni te limites.'
+        'No tengo deudas emocionales.'
+        'No tengo tiempo para perder en rencores y resentimientos.'
+        
+          'Nunca pienses en al suerte porque la suerte es el pretexto de lo' +
+          's fracasados.'
+        
+          'Nunca pienses en la suerte porque la suerte es el pretexto de lo' +
+          's fracasados.'
+        
+          'Nunca te quejes de tu pobreza, tu soledad o tu suerte, enfréntat' +
+          'e con valor y acepta que de una u otra manera son el resultado d' +
+          'e tus actos y las pruebas que has de ganar.'
+        
+          'Ocurra lo que ocurra, sé que puedo manejarlo. Soy una persona mu' +
+          'y capaz.'
+        'Ofrezco a los demás todo lo bueno que he recibido.'
+        
+          'Ofrezco aliento a los demás no tan afortunados como yo y los ayu' +
+          'do a ser lo mejor que pueden ser.'
+        
+          'Ofrezco aliento a los demás y los ayudo a ser lo mejor que puede' +
+          'n ser.'
+        'Otros te respetarán porque tú los respetas.'
+        'Otros te respetarán porque tú te respetas a tí mismo.'
+        
+          'Para cualquier circunstancia en tu vida, siempre, con actitud po' +
+          'sitiva.'
+        
+          'Para cumplir tus objetivos debes equiparte de mucha fuerza de vo' +
+          'luntad y tenacidad.'
+        
+          'Para volver a empezar corrígete, el triunfo del verdadero ser hu' +
+          'mano surge de las cenizas del error.'
+        
+          'Parto del espacio de amor de mi corazón y considero a cada perso' +
+          'na en este planeta alguien que necesita ser amado y valorado.'
+        'Pase lo que pase, sé que soy capaz de afrontarlo.'
+        
+          'Paso a paso.  No se puede concebir otra manera de lograr las cos' +
+          'as.'
+        
+          'Paso de la enfermedad a la salud, de la soledad al amor, de la p' +
+          'obreza a la abundancia y la plenitud.'
+        'Paso de las adicciones y me libero.'
+        
+          'Perdono a todas las personas y me perdono a mí mismo. Me libero ' +
+          'del pasado; soy libre para un futuro luminoso.'
+        'Perdono a todos aquellos que me han hecho daño.'
+        'Perdono con facilidad.'
+        
+          'Permanezco en contacto con mi Sabiduría Interior, y tengo una vi' +
+          'da maravillosa: sana, gratificante, creativa, dichosa y llena de' +
+          ' amor.'
+        
+          'Permita que la creatividad Divina le ilumine.  Descubrirá nuevos' +
+          ' e impensables horizontes.'
+        
+          'Permite a tu amor fluir libremente porque tu suministro de amor ' +
+          'es infinito.'
+        
+          'Permite que la inspiración Divina entre en tí y superarás cualqu' +
+          'ier limitación.'
+        
+          'Permito que la prosperidad entre en mi vida en un nivel en el cu' +
+          'al nunca entró. Merezco lo mejor y estoy dispuesta a aceptarlo.'
+        'Permito que mis pensamientos sean libres.'
+        
+          'Pide más entendimiento para así con más conocimiento y amor dar ' +
+          'forma a tu mundo y experiencias.'
+        'Pídele a la conciencia Divina que te ayude a conocerte mejor.'
+        'Pídele a la conciencia Divina que te ayude.'
+        'Piensa bien antes de responderle a la persona delante de tí.'
+        'Piensa calmada, pacífica y centradamente.'
+        
+          'Piensa menos en tus problemas y más en tu trabajo.  Los problema' +
+          's sin alimentarlos morirán.'
+        'Piensa, cree, actúa.'
+        
+          'Pienso como si mi vida dependiera de ello,  porque sé que es así' +
+          '.'
+        
+          'Pienso en todas las veces que me he sentido alegre y feliz, y me' +
+          ' permito sentir de nuevo esa dicha.'
+        'Pongo mis talentos al servicio de un todo mayor.'
+        'Pongo todo mi ser en cada acto de la vida.'
+        'Porque quiero, Puedo.'
+        
+          'Poseo vitalidad y energía para desarrollar las tareas de mi vida' +
+          '.'
+        'Practico la moderación en pensamiento y acción.'
+        
+          'Pregúntate si lo que estás haciendo hoy te acerca al lugar en el' +
+          ' que quieres estar mañana.'
+        
+          'Procura que para tí sea siempre fácil adaptarse y cambiar.  Eres' +
+          ' un ser flexible y que fluye con la vida.'
+        
+          'Procuro que mi relación con la naturaleza sea amorosa y armonios' +
+          'a.'
+        
+          'Puedo atraer magnificas experiencias y personas maravillosas, si' +
+          ' me creo paz y armonía en mi mente mediante pensamientos positiv' +
+          'os.'
+        
+          'Puedo desprenderme con confianza, de mi cuerpo solo sale lo que ' +
+          'ya no necesito.'
+        'Puedo hacerlo, lo haré y lo hago.'
+        'Puedo pedir todo lo que necesito, con amor y ternura.'
+        'Puedo sentir como la vida es más y más intensa y hermosa.'
+        'Qué fabuloso es sentirse bien.'
+        
+          'Quiero a mis amigos y encuentro tiempo para estar con ellos siem' +
+          'pre que puedo.'
+        'Reafirmo todo mi poder personal.'
+        'Recibo bendiciones que superan mis más acariciados sueños.'
+        
+          'Reconoce la magnificencia de tu ser y las habilidades únicas que' +
+          ' posees.'
+        
+          'Reconoce tus habilidades intuitivas.  Estas te ayudarán a conseg' +
+          'uir tu objetivo.'
+        'Reconozco las necesidades de mi cuerpo.'
+        
+          'Reconozco y acepto el Reino de Dios que mora en el centro de mi ' +
+          'ser. Paz, amor, salud y todo lo bueno.'
+        'Recuerda la ley biológica que dice: '#39#39'Úsalo o piérdelo'#39#39'.'
+        'Recuerda que ante todo, tú eres una persona.'
+        'Recuerda que antes de nutrir debes limpiar.'
+        'Recuerda que estas tratando con una criatura de Dios.'
+        
+          'Recuerdo que al Universo le gustan las personas agradecidas. Y r' +
+          'ecuerdo también que aquello en lo que centro la atención crece y' +
+          ' aumenta.'
+        'Recuerdo que el poder está siempre en el momento presente.'
+        
+          'Recuerdo que no es lo que como lo que me hace mal sino lo que me' +
+          ' estoy comiendo por dentro.'
+        
+          'Recuerdo siempre que el propósito de mi relación es compartir la' +
+          ' luz y dar felicidad.'
+        'Reduzco mi estrés viviendo de una manera armoniosa.'
+        
+          'Re-evalúa tus necesidades reales.  Estás aquí porque necesitas a' +
+          'yuda, aprovecha esta oportunidad.'
+        
+          'Renuevo mis pensamientos y mi vida y los lleno de amor y serenid' +
+          'ad.'
+        
+          'Renuevo mis pensamientos. Hago que sean mis mejores amigos y con' +
+          'figuren mi mundo de manera positiva.'
+        'Respeta a otros por ser diferentes, todos somos uno.'
+        
+          'Respeto a los demás porque Dios les dio Libre Albedrío para deci' +
+          'dir con sabiduría lo mejor.'
+        'Respeto el territorio de cada uno.'
+        'Respeto la libertad y necesidades de los que amo.'
+        'Respeto las creencias de los demás.'
+        
+          'Respeto las ideas y la senda de cada una de las personas que for' +
+          'man parte de mi vida. Comprendo que no tienen porque ser como la' +
+          's mías.'
+        
+          'Respira rítmica y plenamente ya que es a través de la respiració' +
+          'n como te conectas con el resto del Universo.'
+        'Respondo a las necesidades de otros sin alterar mi ser interior.'
+        'resta atención a lo que estás haciendo y hoy, evolucionarás.'
+        'Restituyo mi energía bloqueada.'
+        'Revitalizo mi cuerpo, mi espíritu y mi mente.'
+        
+          'Rompe tus esquemas repetitivos e inicia nuevas y creativas maner' +
+          'as de hacer las cosas.'
+        'Satisfago plenamente todas mis necesidades.'
+        'Se leal a tí mismo.  No hay lugar para la mediocridad.'
+        
+          'Sé lo maravilloso que soy, decido Amarme y disfrutar de mí mismo' +
+          '.'
+        
+          'Se puede aceptar un fallo, cualquiera puede fallar, pero no se p' +
+          'uede aceptar el no intentarlo.'
+        
+          'Sé que el amor es el estimulante del sistema inmunitario más pod' +
+          'eroso que se conoce. Por lo tanto hago todo lo que puedo para au' +
+          'mentar el amor que siento por mí y por los demás.'
+        
+          'Sé que está bien decir no cuando no me apetece o no me viene bie' +
+          'n salir, prestar algo, hablar por teléfono o hacer cualquier otr' +
+          'a cosa.'
+        'Sé que soy un ser maravilloso porque soy único e irrepetible.'
+        
+          'Se tolerante, compasivo y cariñoso con toda la gente, incluyéndo' +
+          'te a tí mismo.'
+        'Se uno con el poder y la fuerza que te crearon.'
+        
+          'Sea cual sea mi pasado, sea cual sea el ambiente del que procedo' +
+          ', empiezo a hacer cambios en este preciso momento.'
+        'Sea uno con el poder del Universo y tendrá todo lo que necesita.'
+        
+          'Si comienzo a ahorrar, aunque sea muy poco, puedo avanzar hacia ' +
+          'la riqueza.'
+        
+          'Si el amor y la compasión son tu guía, entonces esta consulta es' +
+          ' todo un éxito.'
+        
+          'Si el amor y la compasión son tu guía, entonces tienes un futuro' +
+          ' brillante.'
+        
+          'Si el miedo al fracaso te impide intentarlo, ya habrás fracasado' +
+          '.'
+        'Si emociona pensarlo, imagínate hacerlo.'
+        
+          'Si hay alguna parte de mi cuerpo con la que no me siento a gusto' +
+          ', dedico cada día un rato a enviarle amor.'
+        
+          'Si las semillas de mi pensamiento son buenas y positivas, la cos' +
+          'echa será excelente y abundante.'
+        
+          'Si me relajo y realmente creo que la vida me cuida y que estoy a' +
+          ' salvo, comienzo a fluir con ella.'
+        
+          'Si no sabes, admítelo, pero comprométete a buscar una respuesta.' +
+          '  La humanidad te lo agradecerá.'
+        
+          'Si no tengo tiempo para ver a mis amigos los les envío una tarje' +
+          'ta, les llamo por teléfono o les bendigo mentalmente.'
+        'Si te caes diez veces debes levantarte once veces.'
+        
+          'Si tengo cosas en casa que ya no me sirven, las tiro o regalo a ' +
+          'quien realmente las necesite.'
+        'Si tienes prisa, ve despacio.'
+        'Siempre encuentro tiempo para expresar mi creatividad.'
+        'Siempre estoy a salvo.  Es solo un cambio.'
+        
+          'Siempre estoy seguro y a salvo completamente en mi cuerpo físico' +
+          '.'
+        'Siempre me siento feliz conmigo mismo.'
+        'Siempre puedo expandir mi conciencia.'
+        
+          'Siempre recuerdo reírme de un modo sano con los demás, en lugar ' +
+          'de reírme de un modo insano de ellos.'
+        'Siempre sé hacia dónde voy y cómo llegar.'
+        
+          'Siempre tomo el camino correcto aunque a veces parezca que me eq' +
+          'uivoco.'
+        'Siempre veo la bondad de la vida.'
+        'Siéntete orgulloso de poder ayudar a la persona delante de tí.'
+        
+          'Siento el amor de Dios, que se manifiesta en el cariño que me br' +
+          'indan mis seres queridos. Recibo y doy amor.'
+        
+          'Siento el espectro de todas mis emociones sin quedar atrapado en' +
+          ' una de ellas.'
+        'Siento fortaleza y coraje interno.'
+        
+          'Siento la armonía y la unión entre la gente y contribuyo a logra' +
+          'rlas.'
+        
+          'Siento la armonía y la unión entre las gentes y contribuyo a log' +
+          'rarlas.'
+        'Siento mi armonía interna.'
+        'Siento mi fortaleza interna.'
+        'Siento que soy una persona creativa y poderosa.'
+        'Siento tolerancia, compasión y amor por todos, también por mi.'
+        
+          'Sigo a mi Estrella Interior y brillo a mi manera única y discret' +
+          'a. Amo la vida.'
+        'Sigo con constancia mi camino, único y especial.'
+        
+          'Sigo las R: Respeto a ti mismo, Respeto para los otros y Respons' +
+          'abilidad sobre todas mis acciones.'
+        
+          'Sigue las R: Respeto a ti mismo, Respeto para los otros y Respon' +
+          'sabilidad sobre todas tus acciones.'
+        'Solo a través de la humildad hallarás el camino verdadero.'
+        'Sólo deseo aquello que es para mi mayor bien.'
+        'Solo dí palabras amables, cariñosas, positivas y constructivas.'
+        'Solo los organismos saludables y simbióticos comparten mi vida.'
+        
+          'Sólo puedo recibir aquello para lo cual mi conciencia está recep' +
+          'tiva.'
+        
+          'Solo reconozco las virtudes y cualidades que existen dentro de m' +
+          'í y en cada uno de mis semejantes.'
+        
+          'Solo veo y reconozco a Dios dentro de mí y cada uno de mis semej' +
+          'antes.'
+        'Somos el resultado de lo que pensamos y de lo que sentimos.'
+        'Somos uno con el Poder que nos ha creado.'
+        'Soy alegre por naturaleza y la felicidad es mi estado natural.'
+        'Soy amable conmigo y con los demás mientras estamos aprendiendo.'
+        
+          'Soy amable y trato con consideración a los demás compradores. De' +
+          'jo espacio en la calle y en los mostradores. Este es un tiempo d' +
+          'e paz.'
+        
+          'Soy amor, ahora elijo, amarme y aprobarme, contemplo a los demás' +
+          ' con amor.'
+        'Soy bastante, tengo bastante, hago bastante.'
+        'Soy capaz de pedir lo que quiero fácilmente y con amor.'
+        'Soy capaz de sentir y eso me gusta.'
+        'Soy compasivo ante las debilidades de los seres que me rodean.'
+        
+          'Soy completamente inmune  a todas las ideas y experiencias negat' +
+          'ivas que hubiera a mi alrededor.'
+        'Soy conciente de mi cuerpo y de mi entorno.'
+        
+          'Soy conciente de que la vida tiene bueno y malo, feliz y triste.' +
+          '  Amo y respeto todo lo que la vida me presenta.'
+        'Soy decidido en mente y actitud.'
+        'Soy digno y valioso.'
+        'Soy el centro de mis propias fuerzas de curación.'
+        
+          'Soy el resultado de lo que pienso y de lo que siento. Por tanto,' +
+          ' pienso limpio y siento solo amor.'
+        'Soy el resultado de lo que pienso y siento.'
+        'Soy eternamente joven de espíritu.'
+        'Soy feliz en la intimidad.'
+        'Soy fuerte y capaz de manejar cualquier situación.'
+        'Soy fuerte y capaz.'
+        
+          'Soy fuerte, tengo amor. Hago de mi vida una experiencia bella y ' +
+          'digna de ser vivida.'
+        'Soy guiado y protegido, tanto en vigilia como en sueños.'
+        'Soy honesto conmigo mismo.'
+        'Soy inmensamente valioso.'
+        'Soy inocente.  Me perdono a mi mismo por pretender ser culpable.'
+        'Soy la alegría de vivir que se expresa y recibe.'
+        'Soy la persona que siempre quise ser.'
+        
+          'Soy libre de elegir mi camino espiritual, que puede tener que ve' +
+          'r o no con la religión.'
+        'Soy libre de ser yo mismo.'
+        
+          'Soy libre para experimentar todo lo bueno que ofrece el Universo' +
+          '. ¡Lo acepto, lo acepto, lo acepto!'
+        'Soy libre.'
+        'Soy merecedor de las cosas que se me dan cuando las necesito.'
+        'Soy mi propio jefe.'
+        
+          'Soy paciente ante las acciones negativas de otros a mi alrededor' +
+          '.'
+        'Soy paciente conmigo mismo y con todos a mi alrededor.'
+        'Soy poderoso e influyente en mi mundo.'
+        'Soy quien maneja mis emociones.'
+        
+          'Soy recibido con amor, y alegría, me encuentro seguro y a salvo,' +
+          ' estoy rodeado de Amor.'
+        'Soy resistente a la Contaminación electromagnética.'
+        
+          'Soy resistente a la toxicidad, mi cuerpo se desintoxica a diario' +
+          '.'
+        
+          'Soy resistente a todos los micro-organismos patógenos y a los pa' +
+          'rásitos.'
+        'Soy tolerante con la imperfección.'
+        'Soy un regalo de amor dejado en mi mundo.'
+        'Soy un regalo único de amor que habita en este mundo.'
+        'Soy un ser dotado de pureza.'
+        
+          'Soy un universo seguro. Cambio los pensamientos que no me apoyan' +
+          ' ni me nutren.'
+        'Soy una buena persona sienta lo que sienta.'
+        'Soy una buena persona, merezco una buena vida.'
+        'Soy una criatura amada del universo.'
+        
+          'Soy una expresión Divina, de la vida, me amo y me Acepto tal com' +
+          'o soy ahora.'
+        
+          'Soy una luz en el mundo; de algún modo, al estar aquí ayudo a ot' +
+          'ra persona a respirar mejor.'
+        
+          'Soy una persona independiente y autosuficiente que lleva las rie' +
+          'ndas de su vida.'
+        'Soy una persona maravillosa. Elijo amarme y disfrutar conmigo.'
+        
+          'Soy una persona organizada, eficiente y abierta a las ideas nuev' +
+          'as y creativas.'
+        'Soy una persona poderosa y digna de respeto.'
+        'Soy una persona robusta, fuerte y sana, enamorada de la Vida.'
+        'Soy uno con la fortaleza universal que hay dentro de mi.'
+        'Te tengo una noticia: recién acabas de empezar.'
+        
+          'Ten en cuenta que el gran amor y los grandes logros requieren gr' +
+          'andes riesgos.'
+        
+          'Tenga la edad que tenga, hago que el resto de mi vida sea un tie' +
+          'mpo maravilloso.'
+        
+          'Tenga la edad que tenga, hago que mi vida sea un tiempo maravill' +
+          'oso.'
+        'Tengo absoluta confianza en mí mismo.'
+        'Tengo absoluta confianza en mis juicios.'
+        'Tengo buen natural.'
+        'Tengo calma interior.'
+        
+          'Tengo casa, alimento y ropa y recibo amor de formas muy gratific' +
+          'antes.'
+        
+          'Tengo claro el sentido de mi vida y la dirección del futuro que ' +
+          'sigue.'
+        'Tengo derecho a ganarme bien la vida y disfrutar haciéndolo.'
+        'Tengo derecho a que mis necesidades sean satisfechas.'
+        'Tengo derecho a sentir lo que siento.'
+        
+          'Tengo el derecho de expresarme de formas creativas que me satisf' +
+          'agan profundamente.'
+        
+          'Tengo el poder de cambiar mi vida de tal manera que llegue un mo' +
+          'mento en que ni siquiera reconozca a mi antiguo yo.'
+        
+          'Tengo el poder de quien me creó, y expreso para mi mismo la gran' +
+          'deza que soy. Soy una expresión de la vida, divina y magnifica y' +
+          ' estoy abierto y receptivo a todo lo bueno.'
+        
+          'Tengo en mi interior una guía y una Sabiduría Divinas. Nunca est' +
+          'oy solo.'
+        'Tengo fe en el correcto desarrollo de mi destino.'
+        
+          'Tengo la certeza de que el universo se esta haciendo cargo de ll' +
+          'evarlo todo a cabo.'
+        
+          'Tengo muchísimas oportunidades para realizarme plenamente. Mi mu' +
+          'ndo esta abierto y receptivo.'
+        'Tengo paz interior y me abro a escuchar a otros.'
+        'Tengo pensamientos claros.'
+        'Tengo poder para triunfar.'
+        
+          'Tengo poder para triunfar.  Confío en mi mismo, confío en mi int' +
+          'uición.'
+        
+          'Tengo tiempo para todo. Ahora mismo es tiempo de relajarme y per' +
+          'mitir a la sanación fluir a través de mí.'
+        'Tengo todo lo que necesito para conseguir todo lo que quiero.'
+        'Tengo una actitud atenta en la ayuda.'
+        'Tengo una actitud dulce en la expresión.'
+        'Tengo una actitud tolerante en mis relaciones.'
+        
+          'Tengo una fuerte conexión espiritual con la vida. El Universo me' +
+          ' ama y me respalda.'
+        'Tengo una motivación: ¡Vivir feliz!.'
+        'Tengo una saludable actitud ante los problemas de otros.'
+        'Termina todo lo que comiences.'
+        'Tiendo la mano a la gente necesitada.'
+        
+          'Toda experiencia tiene beneficios para tí si aprendes a escuchar' +
+          ', ver y sentir.'
+        
+          'Toda situación difícil que se me presenta es una experiencia de ' +
+          'aprendizaje; sumerjo cada situación en el profundo pozo del amor' +
+          '.'
+        'Todas las personas bebemos menos agua de la que deberíamos.'
+        'Todas las personas siempre tenemos un grado de envenenamiento.'
+        
+          'Todas las personas tenemos necesidades nutricionales específicas' +
+          '.  Dialoga con un especialista.'
+        
+          'Todas las respuestas a todas las preguntas de mi vida las tengo ' +
+          'en mi interior.'
+        
+          'Todas mis células reaccionan de forma positiva a mis imágenes me' +
+          'ntales positivas.'
+        
+          'Todo cambio en tu vida te llevará a un nuevo nivel de entendimie' +
+          'nto.'
+        'Todo está bien en mi mundo.'
+        'Todo lo hago lo mejor posible. Cada día me resulta más fácil.'
+        'Todo propósito en la vida se consigue con la tenacidad.'
+        
+          'Todo se resuelve para mi mayor bien. De esta situación sólo pued' +
+          'e resultar algo bueno. Estoy a salvo.'
+        'Todos estamos aquí en la tierra para aprender y crecer.'
+        
+          'Todos hacemos lo mejor que podemos hacer con los conocimientos, ' +
+          'el entendimiento y el nivel de conciencia que tenemos en cada mo' +
+          'mento.'
+        
+          'Todos los acontecimientos que tienen lugar en mi vida y todas la' +
+          's personas con las que me relaciono me enseñan valiosas leccione' +
+          's.'
+        'Todos los conflictos se resuelven y todo está bien en mi vida.'
+        'Todos los días, en todas formas, estoy mejor y mejor.'
+        
+          'Todos mis bloqueos mentales son transmutados para que fluya haci' +
+          'a mí la salud, la abundancia y la felicidad.'
+        
+          'Todos necesitamos sanar primero nuestro espíritu para curar nues' +
+          'tro cuerpo y mantenerlo sano. ¡El amor y el perdón nos sanan a t' +
+          'odos!'
+        'Tomo alimentos frescos y naturales todos los días.'
+        'Trabaja con humildad y serás recompensado.'
+        
+          'Transformo mi trabajo en diversión, me resulta no solo agradable' +
+          ' y gratificante, sino también muy provechoso en el aspecto mater' +
+          'ial.'
+        'Transmito amor a todo mi cuerpo, mis células y todo el universo.'
+        'Trato a todo el mundo con amabilidad y cariño.'
+        
+          'Tu cuerpo es una máquina maravillosa y debes sentirte orgulloso ' +
+          'de habitar en ella.'
+        
+          'Tú eres el resultado de ti mismo no culpes nunca a nadie, nunca ' +
+          'te quejes de nada, porque fundamentalmente tú has hecho lo que q' +
+          'uieres de tu vida.'
+        
+          'Tú eres parte de la fuerza de tu vida ahora, despierta, lucha, c' +
+          'amina, decídete y triunfarás en la vida.'
+        'Tu fortaleza espiritual es la luz que te guía.'
+        'Tu oficio se resume en una palabra: SERVIR.'
+        'Tu paciencia es una virtud que los demás apreciamos en tí.'
+        'Tu sonrisa es tu carta de presentación.'
+        
+          'Tu súperconciente no se comunica con palabras.  Atiende a las ne' +
+          'cesidades de tu cuerpo.'
+        'Tu tenacidad es lo que convertirá tus sueños en realidad.'
+        
+          'Tu Trabajo, Tu Familia, Tu Salud, Tus amistades y Tu Vida Espiri' +
+          'tual, son cinco pelotas que debes mantener todas en el aire.'
+        'Tus pensamientos alegres crearán tu mundo alegre.'
+        'Un triunfador como tú nunca abandona.'
+        'Usa tu creatividad y convierte lo '#39#39'erróneo'#39#39' en algo positivo.'
+        'Usa tu sabiduría interior para regir el curso de esta consulta.'
+        'Veo ante mí un futuro plenamente feliz y dichoso.'
+        'Veo la armonía del universo en cada ser.'
+        'Visualizo un mundo de paz y abundancia.'
+        
+          'Vivir en el momento presente me permite entrar con alegría y seg' +
+          'uridad en todas las nuevas experiencias que voy encontrando en m' +
+          'i camino.'
+        
+          'Vivir es una magnifica aventura: la disfruto, la aprovecho, le s' +
+          'aco todo el partido que puedo.'
+        
+          'Vivir es una magnífica aventura: la disfruto, la aprovecho, le s' +
+          'aco todo el partido que puedo.'
+        'Vivo armónicamente conmigo y con mi entorno.'
+        'Vivo con facilidad y alegría.'
+        'Vivo el amor, la luz y la alegría sin límites.'
+        'Vivo el presente.'
+        'Vivo en armonía con todo el planeta.'
+        'Vivo este día como si fuera el último de mi existencia.'
+        'Vivo feliz cada instante de mi vida.'
+        'Vivo intensamente cada uno de los instantes que se me ofrecen.'
+        'Vivo mi sexualidad plenamente y de modo inocente.'
+        'Vivo una relación maravillosa con todos a mi alrededor.'
+        'Voy convirtiendo en realidad todo mi gran potencial.'
+        
+          'Yo ahora dejo ir todos mis problemas y doy gracias a la Sabidurí' +
+          'a Infinita por darme la guía correcta.'
+        
+          'Yo ahora dejo que la Sabiduría Divina se haga cargo de mi cuerpo' +
+          ', tengo una salud perfecta y permanente.')
       ParentFont = False
       TabOrder = 14
-      object Button136: TButton
-        Left = 5
-        Top = 323
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Deformidad de Haglund.'
-        Caption = 'Bursitis posterior al tendón de Aquiles'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Button136Click
-      end
-      object Button138: TButton
-        Left = 5
-        Top = 303
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Síndrome de espolón calcáneo'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Button138Click
-      end
-      object Button140: TButton
-        Left = 5
-        Top = 243
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Esguince mínimo o leve sin rotura ligamentosa.'
-        Caption = 'Esguince de tobillo grado 1'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Button140Click
-      end
-      object Button141: TButton
-        Left = 5
-        Top = 223
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Hombro de nadador, tenista, lanzador, síndrome de pinzamiento su' +
-          'bacromial.'
-        Caption = 'Tendinitis del manguito de los rotadores'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Button141Click
-      end
-      object Button142: TButton
-        Left = 5
-        Top = 203
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Codo de jugador de golf, baloncesto y codo de botones.'
-        Caption = 'Epicondilitis medial'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-        OnClick = Button142Click
-      end
-      object Button143: TButton
-        Left = 5
-        Top = 183
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Codo de tenista.'
-        Caption = 'Epicondilitis lateral'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-        OnClick = Button143Click
-      end
-      object Button144: TButton
-        Left = 5
-        Top = 163
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Dorsalgia por levantar pesas.'
-        Caption = 'Esguince lumbar'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-        OnClick = Button144Click
-      end
-      object Button145: TButton
-        Left = 5
-        Top = 143
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Dolor ciático.'
-        Caption = 'Síndrome piriforme / Ciática'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-        OnClick = Button145Click
-      end
-      object Button146: TButton
-        Left = 5
-        Top = 123
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Desgarro de los isquiotibiales.'
-        Caption = 'Distensión en musculatura femoral posterior'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-        OnClick = Button146Click
-      end
-      object Button147: TButton
-        Left = 5
-        Top = 103
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Rodilla del corredor.'
-        Caption = 'Dolor femororrotuliano'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 9
-        OnClick = Button147Click
-      end
-      object Button148: TButton
-        Left = 5
-        Top = 83
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Tendinitis aquílea'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 10
-        OnClick = Button148Click
-      end
-      object Button149: TButton
-        Left = 5
-        Top = 63
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Tendinitis poplítea'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 11
-        OnClick = Button149Click
-      end
-      object Button150: TButton
-        Left = 5
-        Top = 43
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Síndrome compartimental por ejercicio'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 12
-        OnClick = Button150Click
-      end
-      object Button151: TButton
-        Left = 5
-        Top = 23
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Fractura del metatarsiano por sobrecarga'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 13
-        OnClick = Button151Click
-      end
-      object Button59: TButton
-        Left = 5
-        Top = 343
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Fractura de tuberosidad posterolateral del astrágalo'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 14
-        OnClick = Button59Click
-      end
-      object Button153: TButton
-        Left = 5
-        Top = 423
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Dolor en la articulación metatarsofalángica'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 15
-        OnClick = Button153Click
-      end
-      object Button154: TButton
-        Left = 5
-        Top = 403
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Metatarsalgia.  Dolor en la zona anterior de apoyo del pie.'
-        Caption = 'Dolor del nervio interdigital'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 16
-        OnClick = Button154Click
-      end
-      object Button155: TButton
-        Left = 5
-        Top = 383
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 
-          'Dolor que se extiende siguiendo el curso del nervio tibial poste' +
-          'rior.'
-        Caption = 'Neuralgia del nervio tibial posterior'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 17
-        OnClick = Button155Click
-      end
-      object Button156: TButton
-        Left = 5
-        Top = 363
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Afección de Albert.'
-        Caption = 'Bursitis anterior al tendón de Aquiles'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 18
-        OnClick = Button156Click
-      end
-      object Button157: TButton
-        Left = 5
-        Top = 443
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Artrosis de la 1ra articulación metatarsofalángica.'
-        Caption = 'Hallux Rigidus'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 19
-        OnClick = Button157Click
-      end
-      object Button158: TButton
-        Left = 5
-        Top = 483
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Síndrome compartimental por ejercicio anterolateral'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 20
-        OnClick = Button158Click
-      end
-      object Button159: TButton
-        Left = 5
-        Top = 463
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Fractura del metatarsiano por sobrecarga'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 21
-        OnClick = Button159Click
-      end
-      object Button160: TButton
-        Left = 5
-        Top = 503
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Síndrome posteromedial'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 22
-        OnClick = Button160Click
-      end
-      object Button161: TButton
-        Left = 5
-        Top = 263
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Esguince moderado con rotura parcial o incompleta.'
-        Caption = 'Esguince de tobillo grado 2'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 23
-        OnClick = Button161Click
-      end
-      object Button162: TButton
-        Left = 5
-        Top = 563
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Función anormal del pie'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 24
-        OnClick = Button162Click
-      end
-      object Button163: TButton
-        Left = 5
-        Top = 543
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Síndrome de sobrecarga'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 25
-        OnClick = Button163Click
-      end
-      object Button164: TButton
-        Left = 5
-        Top = 523
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Bursitis retromalolar'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 26
-        OnClick = Button164Click
-      end
-      object Button165: TButton
-        Left = 5
-        Top = 283
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Hint = 'Rotura ligamentosa completa.'
-        Caption = 'Esguince de tobillo grado 3'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 27
-        OnClick = Button165Click
-      end
-      object Button166: TButton
-        Left = 5
-        Top = 583
-        Width = 260
-        Height = 18
-        Cursor = crHandPoint
-        Caption = 'Epifisitis del calcáneo'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 28
-        OnClick = Button166Click
-      end
     end
-    object GroupBox16: TGroupBox
-      Left = 344
-      Top = 4
-      Width = 305
-      Height = 165
-      Caption = ' Posible causa de lesión '
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-      TabOrder = 15
-      object CheckBox395: TCheckBox
-        Left = 15
-        Top = 24
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Calentamiento previo insuficiente.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object CheckBox396: TCheckBox
-        Left = 15
-        Top = 40
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Enfriamiento posterior insuficiente.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-      end
-      object CheckBox397: TCheckBox
-        Left = 15
-        Top = 56
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Falta de estiramiento antes y después de la sesión.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-      object CheckBox398: TCheckBox
-        Left = 15
-        Top = 72
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Sobre entrenamiento.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-      end
-      object CheckBox399: TCheckBox
-        Left = 15
-        Top = 88
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Falta de reposo.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object CheckBox400: TCheckBox
-        Left = 15
-        Top = 104
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Calzado incorrecto.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-      end
-      object CheckBox401: TCheckBox
-        Left = 15
-        Top = 120
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Equipo incorrecto.'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-      end
-      object CheckBox402: TCheckBox
-        Left = 15
-        Top = 136
-        Width = 270
-        Height = 13
-        Cursor = crHandPoint
-        Caption = 'Otra:'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-      end
-      object Edit16: TEdit
-        Left = 64
-        Top = 136
-        Width = 229
-        Height = 16
-        BorderStyle = bsNone
-        TabOrder = 8
-      end
-    end
-    object BTerapiaEAF: TButton
-      Left = 412
-      Top = 504
-      Width = 77
-      Height = 18
-      Caption = 'Terapia EAF'
-      TabOrder = 16
-      Visible = False
-      OnClick = BTerapiaEAFClick
-    end
-    object Button1: TButton
-      Left = 346
-      Top = 418
-      Width = 148
-      Height = 18
-      Cursor = crHandPoint
-      Caption = 'Potencia máxima'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = False
-      TabOrder = 17
-      OnClick = Button1Click
-    end
-    object Memo2: TMemo
-      Left = 476
-      Top = 92
-      Width = 525
-      Height = 579
-      BorderStyle = bsNone
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      Lines.Strings = (
-        
-          'Todos los especialistas y profesionales relacionados con la educ' +
-          'ación física y la medicina recomiendan a '
-        
-          'todo tipo de personas la práctica frecuente de ejercicio físico,' +
-          ' para provocar efectos beneficiosos y '
-        
-          'saludables en el organismo, así como aumentar la calidad de vida' +
-          '.'
-        ''
-        
-          'La práctica de este ejercicio físico puede conllevar en singular' +
-          'es ocasiones riesgos para la salud, '
-        
-          'provocando lesiones en el sujeto que la práctica. Por ello es ne' +
-          'cesario respetar algunas pautas de '
-        
-          'actuación para así prevenir el riesgo de padecer una lesión depo' +
-          'rtiva. Es en el análisis de estas pautas '
-        'donde quiero centrar la atención de este artículo.'
-        ''
-        
-          'Según la Real Academia de la Lengua Española (RAE), '#39'lesión'#39' es ' +
-          'el daño o detrimento corporal causado '
-        
-          'por una herida, un golpe o una enfermedad. Según esta definición' +
-          ' podemos decir que una lesión '
-        
-          'deportiva es el daño que se produce en el cuerpo humano como con' +
-          'secuencia de la práctica deportiva.'
-        
-          'La definición de lesión deportiva sería el daño que se produce e' +
-          'n un determinado tejido como resultado '
-        
-          'de la práctica deportiva o la realización de ejercicio físico. E' +
-          'n función del mecanismo de lesión y del '
-        
-          'comienzo de los síntomas se pueden clasificar en agudas o por us' +
-          'o excesivo.'
-        ''
-        
-          'Hay muy diversos tipos de lesiones deportivas según el parámetro' +
-          ' que analicemos. Tras analizar a '
-        
-          'diferentes autores tales como De la Cruz (1997), Mariscal (1987)' +
-          ' o Weineek, J. (1995), en este '
-        'programa consideramos las lesiones deportivas más frecuentes.'
-        ''
-        'Bibliografía'
-        #9
-        'http://www.monografias.com/trabajos11/wind/wind2.shtml'
-        ''
-        
-          'www.niams.nih.gov/portal_en_espanol/informacion_de_salud/Lesione' +
-          's_deportivas/'
-        #9
-        
-          'http://www.uaemex.mx/universiada2005/notas/Lesiones_mas_comunes_' +
-          'en_los_deportistas290405.pdf'
-        ''
-        
-          'http://es.wikipedia.org/wiki/Luxaci%C3%B3n#Primeros_auxilios_en_' +
-          'caso_de_luxaci.C3.B3n'
-        ''
-        'http://www.tutraumatologo.com/fractura.html'
-        ''
-        
-          'Vademécum de Kinesioterapia y de reeducación funcional.Yves Xhar' +
-          'dez.  Editorial el Ateneo.2000.'
-        ''
-        
-          'Medicina del deporte. Elisabeth Brunet- Guedj, Bernard Moyen, Je' +
-          'an Genéty.  Editorial Masson.·3º '
-        'edición1997'
-        ''
-        'Diccionario médico. 4º edición '
-        ''
-        
-          'http://www.monografias.com/trabajos901/nuevas-tecnologias-edicio' +
-          'n-montaje/nuevas-tecnologias-edicion-'
-        'montaje.shtml 1998. Editorial Masson.')
-      ParentFont = False
-      ReadOnly = True
-      TabOrder = 0
-      Visible = False
-      OnClick = Memo2Click
-    end
-  end
-  object CBAutomatico: TCheckBox
-    Left = 548
-    Top = 688
-    Width = 14
-    Height = 14
-    Cursor = crHandPoint
-    TabOrder = 32
-  end
-  object BVertebras: TButton
-    Left = 744
-    Top = 688
-    Width = 75
-    Height = 13
-    Caption = 'BVertebras'
-    TabOrder = 33
-    Visible = False
-    OnClick = BVertebrasClick
-  end
-  object Panel34: TPanel
-    Left = 0
-    Top = 707
-    Width = 1021
-    Height = 12
-    Align = alBottom
-    BevelOuter = bvNone
-    TabOrder = 34
-    object GProgreso: TGauge
-      Left = 150
-      Top = 0
-      Width = 871
-      Height = 12
-      Align = alClient
-      BorderStyle = bsNone
-      Color = clWhite
-      ForeColor = clBlue
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentColor = False
-      ParentFont = False
-      Progress = 0
-    end
-    object PTiempoEstimado: TPanel
-      Left = 0
-      Top = 0
-      Width = 150
-      Height = 12
-      Align = alLeft
-      BevelOuter = bvNone
-      Caption = 'Tiempo estimado en segs. | '
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-    end
-  end
-  object SETiempo: TSpinEdit
-    Left = 444
-    Top = 684
-    Width = 37
-    Height = 19
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -9
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    MaxValue = 20
-    MinValue = 3
-    ParentFont = False
-    TabOrder = 35
-    Value = 3
-  end
-  object PPCraneales: TPanel
-    Left = 8
-    Top = 4
-    Width = 1005
-    Height = 433
-    BevelOuter = bvNone
-    Color = clAqua
-    TabOrder = 36
-    Visible = False
-    object Bevel26: TBevel
-      Left = 19
-      Top = 266
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel27: TBevel
-      Left = 20
-      Top = 44
-      Width = 970
-      Height = 14
-      Shape = bsBottomLine
-    end
-    object Bevel28: TBevel
-      Left = 20
-      Top = 58
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel29: TBevel
-      Left = 19
-      Top = 84
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel30: TBevel
-      Left = 19
-      Top = 110
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel31: TBevel
-      Left = 19
-      Top = 136
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel32: TBevel
-      Left = 19
-      Top = 162
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel33: TBevel
-      Left = 19
-      Top = 188
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel34: TBevel
-      Left = 19
-      Top = 214
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel35: TBevel
-      Left = 19
-      Top = 240
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel36: TBevel
-      Left = 19
-      Top = 292
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel37: TBevel
-      Left = 19
-      Top = 318
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel38: TBevel
-      Left = 19
-      Top = 344
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Bevel39: TBevel
-      Left = 19
-      Top = 370
-      Width = 970
-      Height = 26
-      Shape = bsBottomLine
-    end
-    object Label943: TLabel
-      Left = 496
-      Top = 40
-      Width = 32
-      Height = 13
-      Caption = 'Núcleo'
-      Transparent = True
-    end
-    object Label944: TLabel
-      Left = 788
-      Top = 40
-      Width = 37
-      Height = 13
-      Caption = 'Función'
-      Transparent = True
-    end
-    object Label945: TLabel
-      Left = 224
-      Top = 64
-      Width = 43
-      Height = 13
-      Caption = 'Sensorial'
-      Transparent = True
-    end
-    object Label946: TLabel
-      Left = 331
-      Top = 40
-      Width = 32
-      Height = 13
-      Caption = 'Origen'
-      Transparent = True
-    end
-    object Label947: TLabel
-      Left = 235
-      Top = 40
-      Width = 20
-      Height = 13
-      Caption = 'Tipo'
-      Transparent = True
-    end
-    object Label948: TLabel
-      Left = 212
-      Top = 108
-      Width = 66
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Motor +'#13#10'Parasimpático'
-      Transparent = True
-    end
-    object Label949: TLabel
-      Left = 224
-      Top = 88
-      Width = 43
-      Height = 13
-      Caption = 'Sensorial'
-      Transparent = True
-    end
-    object Label950: TLabel
-      Left = 231
-      Top = 192
-      Width = 28
-      Height = 13
-      Caption = 'Motor'
-      Transparent = True
-    end
-    object Label951: TLabel
-      Left = 231
-      Top = 140
-      Width = 28
-      Height = 13
-      Caption = 'Motor'
-      Transparent = True
-    end
-    object Label952: TLabel
-      Left = 224
-      Top = 160
-      Width = 43
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Sensitivo'#13#10'+ Motor'
-      Transparent = True
-    end
-    object Label953: TLabel
-      Left = 317
-      Top = 116
-      Width = 60
-      Height = 13
-      Caption = 'Mesencéfalo'
-      Transparent = True
-    end
-    object Label954: TLabel
-      Left = 320
-      Top = 64
-      Width = 55
-      Height = 13
-      Caption = 'Telencéfalo'
-      Transparent = True
-    end
-    object Label955: TLabel
-      Left = 322
-      Top = 88
-      Width = 50
-      Height = 13
-      Caption = 'Diencéfalo'
-      Transparent = True
-    end
-    object Label956: TLabel
-      Left = 317
-      Top = 140
-      Width = 60
-      Height = 13
-      Caption = 'Mesencéfalo'
-      Transparent = True
-    end
-    object Label957: TLabel
-      Left = 475
-      Top = 56
-      Width = 75
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Núcleo olfatorio'#13#10'anterior'
-      Transparent = True
-    end
-    object Label958: TLabel
-      Left = 330
-      Top = 168
-      Width = 34
-      Height = 13
-      Caption = 'Puente'
-      Transparent = True
-    end
-    object Label959: TLabel
-      Left = 306
-      Top = 186
-      Width = 82
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Margen posterior'#13#10'del puente'
-      Transparent = True
-    end
-    object Label960: TLabel
-      Left = 448
-      Top = 108
-      Width = 128
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Núcleo oculomotor,'#13#10'núcleo de Edinger-Westpal'
-      Transparent = True
-    end
-    object Label961: TLabel
-      Left = 463
-      Top = 82
-      Width = 98
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Células ganglionares'#13#10'de la retina'
-      Transparent = True
-    end
-    object Label962: TLabel
-      Left = 424
-      Top = 160
-      Width = 177
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Núcleo principal, espinal, mesenfálico'#13#10'y motor del trigémino'
-      Transparent = True
-    end
-    object Label963: TLabel
-      Left = 476
-      Top = 140
-      Width = 72
-      Height = 13
-      Caption = 'Núcleo troclear'
-      Transparent = True
-    end
-    object Label964: TLabel
-      Left = 420
-      Top = 290
-      Width = 184
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Nucleus ambiguus, núcleo dorsal vagal'#13#10'motor y núcleo solitario'
-      Transparent = True
-    end
-    object Label965: TLabel
-      Left = 231
-      Top = 322
-      Width = 28
-      Height = 13
-      Caption = 'Motor'
-      Transparent = True
-    end
-    object Label966: TLabel
-      Left = 223
-      Top = 296
-      Width = 44
-      Height = 13
-      Caption = 'Complejo'
-      Transparent = True
-    end
-    object Label967: TLabel
-      Left = 223
-      Top = 220
-      Width = 44
-      Height = 13
-      Caption = 'Complejo'
-      Transparent = True
-    end
-    object Label968: TLabel
-      Left = 223
-      Top = 272
-      Width = 44
-      Height = 13
-      Caption = 'Complejo'
-      Transparent = True
-    end
-    object Label969: TLabel
-      Left = 224
-      Top = 244
-      Width = 43
-      Height = 13
-      Caption = 'Sensorial'
-      Transparent = True
-    end
-    object Label970: TLabel
-      Left = 312
-      Top = 272
-      Width = 71
-      Height = 13
-      Caption = 'Bulbo raquídeo'
-      Transparent = True
-    end
-    object Label971: TLabel
-      Left = 286
-      Top = 238
-      Width = 123
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Lateral al VIIpar'#13#10'(ángulo pontocerebeloso)'
-      Transparent = True
-    end
-    object Label972: TLabel
-      Left = 330
-      Top = 220
-      Width = 34
-      Height = 13
-      Caption = 'Puente'
-      Transparent = True
-    end
-    object Label973: TLabel
-      Left = 307
-      Top = 316
-      Width = 80
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Raíces craneales'#13#10'y espinales'
-      Transparent = True
-    end
-    object Label974: TLabel
-      Left = 286
-      Top = 290
-      Width = 123
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Surco posterolateral de la'#13#10'médula oblongata'
-      Transparent = True
-    end
-    object Label975: TLabel
-      Left = 448
-      Top = 244
-      Width = 128
-      Height = 13
-      Caption = 'Núcleo vestibular y coclear'
-      Transparent = True
-    end
-    object Label976: TLabel
-      Left = 472
-      Top = 192
-      Width = 81
-      Height = 13
-      Caption = 'Núcleo abducens'
-      Transparent = True
-    end
-    object Label977: TLabel
-      Left = 620
-      Top = 136
-      Width = 350
-      Height = 22
-      Caption = 
-        'Inerva el músculo oblícuo superior, el cual deprime, rota latera' +
-        'lmente (alrededor del'#13#10'eje óptico) y rota internamente el globo ' +
-        'ocular, se localiza en la hendidura esfenoidal.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label978: TLabel
-      Left = 620
-      Top = 110
-      Width = 347
-      Height = 22
-      Caption = 
-        'Inerva los músculos: elevador del párpado superior, recto superi' +
-        'or, medial,'#13#10'inferior y oblícuo inferior, los cuales realizan la' +
-        ' mayoría de los movimientos oculares.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label979: TLabel
-      Left = 455
-      Top = 316
-      Width = 115
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Nucleus ambiguus y'#13#10'núcleo espinal accesorio'
-      Transparent = True
-    end
-    object Label980: TLabel
-      Left = 620
-      Top = 90
-      Width = 295
-      Height = 11
-      Caption = 
-        'Transmite información visual al cerebro, se localiza en el aguje' +
-        'ro óptico.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label981: TLabel
-      Left = 460
-      Top = 212
-      Width = 104
-      Height = 26
-      Caption = 'Núcleo facial, solitario'#13#10'y salivar superior'
-      Transparent = True
-    end
-    object Label982: TLabel
-      Left = 620
-      Top = 188
-      Width = 311
-      Height = 22
-      Caption = 
-        'Inerva el músculo recto lateral, el cual abduce el globo ocular,' +
-        ' ubicado en la'#13#10'hendidura esfenoidal.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label983: TLabel
-      Left = 620
-      Top = 162
-      Width = 327
-      Height = 22
-      Caption = 
-        'Percibe información sensitiva de la cara e inerva músculos de la' +
-        ' masticación, se'#13#10'ubica en la fisura orbital superior.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label984: TLabel
-      Left = 415
-      Top = 264
-      Width = 194
-      Height = 26
-      Alignment = taCenter
-      Caption = 'Nucleus ambiguus, núcleo salivar inferior'#13#10'y núcleo solitario'
-      Transparent = True
-    end
-    object Label985: TLabel
-      Left = 620
-      Top = 266
-      Width = 334
-      Height = 22
-      Caption = 
-        'Recibe impulsos gustativos, proporciona inervación secreto-motor' +
-        'a a la parótida e'#13#10'inervación motora al músculo estilofaríngeo y' +
-        ' estilogloso.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label986: TLabel
-      Left = 620
-      Top = 240
-      Width = 343
-      Height = 22
-      Caption = 
-        'Percepción de sonidos, rotación y gravedad. La rama vestibular l' +
-        'leva impulsos para'#13#10'coordinar el equilibrio y el brazo coclear l' +
-        'leva impulsos lleva impulsos auditivos.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label987: TLabel
-      Left = 620
-      Top = 292
-      Width = 334
-      Height = 22
-      Caption = 
-        'Inervación a la mayoría de músculos laríngeos y a todos los farí' +
-        'ngeos (excepto al'#13#10'estilofaríngeo), recibe el sentido del gusto ' +
-        'proveniente de la epiglotis.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label988: TLabel
-      Left = 620
-      Top = 214
-      Width = 359
-      Height = 22
-      Caption = 
-        'Lleva inervación motora a músculos de la expresión facial, vient' +
-        're posterior del músculo'#13#10'digástrico y estapedio, recibe impulso' +
-        's degustativos y prop. inervación a las salivales.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label989: TLabel
-      Left = 620
-      Top = 58
-      Width = 327
-      Height = 22
-      Caption = 
-        'Transmite los impulsos olfativos; se localiza en el foramen olfa' +
-        'torio en la lámina'#13#10'cribosa del etmoides.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label990: TLabel
-      Left = 231
-      Top = 348
-      Width = 28
-      Height = 13
-      Caption = 'Motor'
-      Transparent = True
-    end
-    object Label991: TLabel
-      Left = 312
-      Top = 348
-      Width = 71
-      Height = 13
-      Caption = 'Bulbo raquídeo'
-      Transparent = True
-    end
-    object Label992: TLabel
-      Left = 472
-      Top = 348
-      Width = 80
-      Height = 13
-      Caption = 'Núcleo hipogloso'
-      Transparent = True
-    end
-    object Label993: TLabel
-      Left = 224
-      Top = 376
-      Width = 43
-      Height = 13
-      Caption = 'Sensitivo'
-      Transparent = True
-    end
-    object Label994: TLabel
-      Left = 432
-      Top = 368
-      Width = 161
-      Height = 26
-      Alignment = taCenter
-      Caption = 
-        'Trígono olfatorio, circunvolución'#13#10'olfatoria media y lámina term' +
-        'inalis'
-      Transparent = True
-    end
-    object Bevel40: TBevel
-      Left = 208
-      Top = 40
-      Width = 17
-      Height = 357
-      Shape = bsLeftLine
-    end
-    object Bevel41: TBevel
-      Left = 280
-      Top = 40
-      Width = 17
-      Height = 357
-      Shape = bsLeftLine
-    end
-    object Bevel42: TBevel
-      Left = 412
-      Top = 40
-      Width = 17
-      Height = 357
-      Shape = bsLeftLine
-    end
-    object Bevel43: TBevel
-      Left = 612
-      Top = 40
-      Width = 17
-      Height = 357
-      Shape = bsLeftLine
-    end
-    object Label995: TLabel
-      Left = 620
-      Top = 318
-      Width = 335
-      Height = 22
-      Caption = 
-        'Controla músculos esternocleidomastoideo y trapecio, se superpon' +
-        'e con funciones'#13#10'del nervio vago.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label996: TLabel
-      Left = 620
-      Top = 344
-      Width = 354
-      Height = 22
-      Caption = 
-        'Proporciona inervación motora a músculos de lengua (excepto al m' +
-        'úsculo palatogloso),'#13#10'y otros músculos linguales. Deglusción y a' +
-        'rticulación de sonidos.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label997: TLabel
-      Left = 620
-      Top = 370
-      Width = 285
-      Height = 22
-      Caption = 
-        'Investigaciones recientes indican que puede tener un papel en la' +
-        #13#10'detección de las feromonas, se une al sistema olfatorio en emb' +
-        'riones.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label998: TLabel
-      Left = 88
-      Top = 40
-      Width = 37
-      Height = 13
-      Caption = 'Nombre'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Button695: TButton
-      Tag = 8
-      Left = 24
-      Top = 60
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'I - Nervio Olfatorio'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-      OnClick = Button695Click
-    end
-    object Button696: TButton
-      Tag = 8
-      Left = 24
-      Top = 86
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'II - Nervio Optico'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-      OnClick = Button696Click
-    end
-    object Button697: TButton
-      Tag = 8
-      Left = 24
-      Top = 112
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'III - Nervio Oculomotor'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 2
-      OnClick = Button697Click
-    end
-    object Button698: TButton
-      Tag = 8
-      Left = 24
-      Top = 138
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'IV - Nervio Troclear'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
-      OnClick = Button698Click
-    end
-    object Button699: TButton
-      Tag = 8
-      Left = 24
-      Top = 164
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'V - Nervio trigémino'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 4
-      OnClick = Button699Click
-    end
-    object Button700: TButton
-      Tag = 8
-      Left = 24
-      Top = 190
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'VI - Nervio abducens'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 5
-      OnClick = Button700Click
-    end
-    object Button701: TButton
-      Tag = 8
-      Left = 24
-      Top = 216
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'VII - Nervio facial'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 6
-      OnClick = Button701Click
-    end
-    object Button702: TButton
-      Tag = 8
-      Left = 24
-      Top = 242
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'VIII - Nervio vestibulococlear'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-      OnClick = Button702Click
-    end
-    object Button703: TButton
-      Tag = 8
-      Left = 24
-      Top = 268
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'IX - Nervio glosofaríngeo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 8
-      OnClick = Button703Click
-    end
-    object Button704: TButton
-      Tag = 8
-      Left = 24
-      Top = 294
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'X - Nervio vago o neumogástrico'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 9
-      OnClick = Button704Click
-    end
-    object Button705: TButton
-      Tag = 8
-      Left = 24
-      Top = 320
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'XI - Nervio accesorio espinal'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 10
-      OnClick = Button705Click
-    end
-    object Button706: TButton
-      Tag = 8
-      Left = 24
-      Top = 346
-      Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = 'XII - Nervio hipogloso'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 11
-      OnClick = Button706Click
-    end
-    object Button707: TButton
-      Tag = 8
-      Left = 24
+    object BAfirmaciones: TButton
+      Left = 216
       Top = 372
       Width = 180
-      Height = 20
-      Cursor = crHandPoint
-      Caption = '0 - Par craneal cero'
+      Height = 26
+      Caption = 'BAfirmaciones'
+      TabOrder = 15
+    end
+    object LBAVM: TListBox
+      Left = 16
+      Top = 84
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acetogeninas annonáceas.'
+        ' Acido lipoico.'
+        ' Acido lisofosratídico.'
+        ' Acidos (alquifuranil)acilcarboxilicos (urofánicos).'
+        ' Acidos (alquifuranil)acilcarboxilicos (wyerona).'
+        ' Acidos grasos acetilénicos (ácido taririco).'
+        ' Acidos grasos cis.'
+        ' Acidos grasos de cadena impar (C13-C33).'
+        ' Acidos grasos endocíclicos (ácido endiándrico).'
+        ' Acidos grasos endocíclicos (ácido malválico).'
+        ' Acidos grasos endocíclicos prostanoides (eclonialactonas).'
+        ' Acidos grasos endocíclicos prostanoides (jasmonoides).'
+        ' Acidos grasos endocíclicos prostanoides (prostaglandinas).'
+        ' Acidos grasos endocíclicos prostanoides (tromboxanos).'
+        ' Acidos grasos insaturados.'
+        ' Acidos grasos monoinsaturados (ácido oleico).'
+        ' Acidos grasos poliinsaturados (ácido araquidónico).'
+        ' Acidos grasos poliinsaturados (ácido linoleico).'
+        ' Acidos grasos poliinsaturados (ácido linolénico).'
+        ' Acidos grasos ramificados (ácidos isoalquil).'
+        ' Acidos grasos ramificados (ácidos polimetilados).'
+        ' Acidos grasos ramificados (anteisoalquilcarboxílicos).'
+        ' Acidos grasos ramificados (metilcarboxílicos).'
+        ' Acidos grasos saturados cadena corta (ácido butírico).'
+        ' Acidos grasos saturados cadena corta (ácido isobutírico).'
+        ' Acidos grasos saturados cadena corta (ácido isovalérico).'
+        ' Acidos grasos saturados cadena corta (ácido nonanoico).'
+        ' Acidos grasos saturados cadena corta (ácido pirúvico).'
+        ' Acidos grasos saturados cadena corta (ácido valérico).'
+        ' Acidos grasos saturados cadena larga (ácido esteárico).'
+        ' Acidos grasos saturados cadena larga (ácido mirístico).'
+        ' Acidos grasos saturados cadena larga (ácido palmítico).'
+        ' Acidos grasos saturados de cadena media (C12-C14).'
+        ' Acidos grasos trans.'
+        ' Acidos grasos w-cíclicos arilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloclohexilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloheptilalquilcarboxílicos.'
+        
+          ' Acidos grasos w-cíclicos ciclopentenialquilcarboxílicos (ácido ' +
+          'hidnocárpico).'
+        ' Acidos grasos w-cíclicos hachijodinas.'
+        ' Acilhomoserinlactonas.'
+        ' ADN ligasa.'
+        ' Albúmina sérica.'
+        ' Alcoholes + Aldehídos grasos.'
+        ' Amidas grasas.'
+        ' Amilasa.'
+        ' Amiloglucosidasas.'
+        ' Aniones Cl-.'
+        ' Aniones CO3/2-.'
+        ' Aniones HCO3-.'
+        ' Aniones PO4/3-.'
+        ' Antocianinas.'
+        ' Auronas.'
+        ' Biocitina.'
+        ' Boro.'
+        ' Calcio.'
+        ' Carbonato cálcico.'
+        ' Cardiolipina.'
+        ' Catalasas.'
+        ' Cationes Ca2+.'
+        ' Cationes K+.'
+        ' Cationes Mg2+.'
+        ' Cationes Na+.'
+        ' Cationes NH4+.'
+        ' Celulasas.'
+        ' Chalconas'
+        ' Cianolípidos.'
+        ' Cobre.'
+        ' Coenzima A.'
+        ' Coenzima B12.'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        
+          ' Condensación de ácidos grasos (ácidos alquitricarboxílicos - ác' +
+          'ido agárico).'
+        ' Condensación de ácidos grasos (acilonas).'
+        ' Condensación de ácidos grasos (alquiltetronatos).'
+        
+          ' Condensación de ácidos grasos (anhídridos alquilsuccínicos - ca' +
+          'nadensólido).'
+        ' Condensación de ácidos grasos (esfingoides - esfingosa).'
+        ' Condensación de ácidos grasos (lipstanina).'
+        ' Condensación de ácidos grasos (macrocetonas - civetona).'
+        ' Condensación de ácidos grasos (nonádridos - rubratoxina).'
+        ' Cromo.'
+        ' Cuerpos cetónicos.'
+        ' Depósitos de triglicéridos.'
+        ' Diacilglicerol.'
+        ' Diacilglicerol-acil-transferasa (DGAT).'
+        ' Dihidroflavonoles.'
+        ' EC1 Oxidorreductasas.'
+        ' EC2 Transferasas.'
+        ' EC3Hidrolasas.'
+        ' EC4 Liasas.'
+        ' EC5 Isomerasas.'
+        ' EC6 Ligasas.'
+        ' Enzimas producidas por bacterias.'
+        ' Epoxidación (ácido vernólico).'
+        ' Escisión oxidativa (ácido traumático).'
+        ' Esfingolípidos.'
+        ' Espirocetales (chalcogranas).'
+        ' Esteres de ácidos grasos hidroxilados.'
+        ' Esteres de glicerol.'
+        ' Esteres simples.'
+        ' FAD (flavín-adenín dinucleótido).'
+        ' FH4 (ácido tetrafólico).'
+        ' Flavandioles.'
+        ' Flavanonas.'
+        ' Flavonas.'
+        ' Flavonoides.'
+        ' Flavonoles.'
+        ' Flúor.'
+        ' FMN (flavín mononucleótido).'
+        ' Fosfatdilinositol.'
+        ' Fosfatidilcolina.'
+        ' Fosfatidiletanolamina.'
+        ' Fosfatidilglicerol.'
+        ' Fosfatidilserina.'
+        ' Fosfato de calcio.'
+        ' Fósforo.'
+        ' Glicerina.'
+        ' Glucanasa.'
+        ' Glucosa isomerasa.'
+        ' Hepatocitos.'
+        ' Hidroxilasas (alcoholes acetilénicos).'
+        ' Hidroxilasas (hepoxilinas).'
+        ' Hidroxilasas (leucotrienos).'
+        ' Hidroxilasas (neuroprotectinas).'
+        ' Hidroxilasas (resolvinas).'
+        ' Hierro.'
+        ' Inhibición enzimática irreversible.'
+        ' Inhibición enzimática reversible acompetitivas.'
+        ' Inhibición enzimática reversible competitivas.'
+        ' Inhibición enzimática reversible mixtas.'
+        ' Isoflavonoides.'
+        ' Lactasas.'
+        ' Lactonas cucujólidos.'
+        ' Lactonas volátiles.'
+        ' Ligninasas.'
+        ' Lipasas.'
+        ' Lipoproteínas de muy baja densidad (VLDL).'
+        ' Lipoproteínas.'
+        ' Magnesio.'
+        ' Manganeso.'
+        ' Molibdeno.'
+        ' NAD+ (nicotín-adenín dinucleótido)'
+        ' NADP+ (nicotín-adenín dinucleótido fosfato).'
+        ' Neoflavonoides.'
+        ' Papaina.'
+        ' Pectinasas.'
+        ' PLP (fosfato de piridoxal).'
+        ' PMP (fosfato de piridoxamina).'
+        ' Polimerasas.'
+        ' Proteasas.'
+        ' Pululanasas.'
+        ' Renina.'
+        ' Retículo endoplásmico.'
+        ' Selenio.'
+        ' Silicatos.'
+        ' Sodio + Potasio.'
+        ' Sulfuro.'
+        ' Taninos condensados.'
+        ' Tejido adiposo (adipositos).'
+        ' TPP (pirofosfato de tiamina).'
+        ' Trigliceridos.'
+        ' Tripsina.'
+        ' Vitamina A (retinolflalina).'
+        ' Vitamina B1 (tiamina).'
+        ' Vitamina B12.'
+        ' Vitamina B2 (riboflavina).'
+        ' Vitamina B3 (niacina o ácidonicotínico).'
+        ' Vitamina B5 (ácido pantoténico).'
+        ' Vitamina B6 (piridoxina).'
+        ' Vitamina B7 (Biotina).'
+        ' Vitamina B9 (ácido fólico).'
+        ' Vitamina C (ácido ascórbico).'
+        ' Vitamina D (calciferol).'
+        ' Vitamina E (tocoferol).'
+        ' Vitamina K (antihemorrágica).'
+        ' Vitamina K1 (filoquinona).'
+        ' Xilanasas.'
+        ' Yodo.'
+        ' Zinc.')
       ParentFont = False
-      TabOrder = 12
-      OnClick = Button707Click
+      TabOrder = 16
     end
-    object Panel35: TPanel
-      Left = 980
-      Top = 4
-      Width = 22
-      Height = 22
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      BorderStyle = bsSingle
-      Caption = '>'
-      Color = clAqua
-      TabOrder = 13
-      OnClick = Panel35Click
+    object BAVM: TButton
+      Left = 216
+      Top = 84
+      Width = 180
+      Height = 26
+      Caption = 'BAVM'
+      TabOrder = 17
     end
-  end
-  object PDesarrollo: TPanel
-    Left = 0
-    Top = 0
-    Width = 1020
-    Height = 14
-    BevelOuter = bvNone
-    BevelWidth = 4
-    Color = clLime
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 0
-    Visible = False
-    OnClick = PDesarrolloClick
-    object Edit26: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
+    object LBSistemas: TListBox
+      Left = 16
+      Top = 336
+      Width = 193
+      Height = 26
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
+      Font.Color = clBlack
+      Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Sistema cardiovascular.'
+        ' Sistema circulatorio.'
+        ' Sistema digestivo.'
+        ' Sistema endocrino.'
+        ' Sistema esquelético.'
+        ' Sistema hormonal.'
+        ' Sistema inmunitario.'
+        ' Sistema linfático.'
+        ' Sistema muscular.'
+        ' Sistema nervioso.'
+        ' Sistema neurológico.'
+        ' Sistema óseo.'
+        ' Sistema reproductivo.'
+        ' Sistema respiratorio.'
+        ' Sistema sensorial.'
+        ' Sistema urinario.'
+        ' Tejido conectivo.')
       ParentFont = False
-      TabOrder = 0
-      Text = 'Edit26'
-      Visible = False
+      TabOrder = 18
     end
-    object Edit27: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
+    object BSistemas: TButton
+      Left = 216
+      Top = 336
+      Width = 180
+      Height = 26
+      Caption = 'BSistemas'
+      TabOrder = 19
+    end
+    object LBToxinas: TListBox
+      Left = 16
+      Top = 300
+      Width = 193
+      Height = 26
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
+      Font.Color = clBlack
+      Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Toxinas de medicaciones alopáticas.'
+        ' Contaminación medio ambiental.'
+        ' Toxicidad alcaloide o por cafeína.'
+        ' Toxicidad por radiación.'
+        ' Toxinas causadas por estrés.'
+        ' Mercurio y metales pesados.'
+        ' Toxinas esteroides.'
+        ' Toxinas biológicas.'
+        ' Toxinas físicas (carbón, asbestos, otros).'
+        ' Toxinas no identificadas.'
+        ' Toxinas propias.'
+        ' Pigmentaciones en piel.')
       ParentFont = False
-      TabOrder = 1
-      Text = 'Edit27'
-      Visible = False
+      TabOrder = 20
     end
-    object Edit28: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
+    object BToxinas: TButton
+      Left = 216
+      Top = 300
+      Width = 180
+      Height = 26
+      Caption = 'BToxinas'
+      TabOrder = 21
+    end
+    object LBAgendar: TListBox
+      Left = 16
+      Top = 444
+      Width = 193
+      Height = 26
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
+      Font.Color = clBlack
+      Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' 3 a 5 días.  Seguimiento intensivo.'
+        ' 7 a 9 días.  Seguimiento.'
+        ' 10 a 15 días.  Seguimiento normal.'
+        ' 15 a 20 días.  Seguimiento.'
+        ' 20 días a 4 semanas.  Visita de seguimiento.'
+        ' 4 a 5 semanas.  Visita de rutina.'
+        ' 5 a 6 semanas.  Seguimiento + Revisión.'
+        ' 6 a 7 semanas.  Seguimiento + Revisión.'
+        ' 7 a 8 semanas.  Nueva revisión.'
+        ' 8 a 10 semanas.  Nueva revisión.')
       ParentFont = False
-      TabOrder = 2
-      Text = 'Edit28'
-      Visible = False
+      TabOrder = 22
     end
-    object Edit29: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
+    object BAgenda: TButton
+      Left = 216
+      Top = 444
+      Width = 180
+      Height = 26
+      Caption = 'BAgenda'
+      TabOrder = 23
+    end
+    object LBCNutricionales: TListBox
+      Left = 16
+      Top = 408
+      Width = 193
+      Height = 26
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
+      Font.Color = clBlack
+      Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          ' Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas' +
+          ' de patata en la frente.'
+        
+          ' Cuando tengas dolor de estómago, toma tus alimentos desaliñados' +
+          ', sin lácteos ni azúcares.'
+        
+          ' Para desintoxicar el hígado toma una limonada en ayunas endulza' +
+          'da con miel de abejas.'
+        
+          ' Para el dolor de garganta exprime un limón en agua caliente con' +
+          ' miel de abeja y bébelo.'
+        
+          ' La aplicación de compresas de leche en las rodillas reduce su i' +
+          'nflamación.'
+        
+          ' Uno o dos plátanos comidos al día son un buen remedio para la c' +
+          'olitis ulcerosa.'
+        
+          ' En caso de molestias estomacales, el yogurt es más fácil de dig' +
+          'erir que la leche.'
+        
+          ' Para normalizar los niveles de azúcar toma una vez a la semana ' +
+          'una mandarina licuada con cascara en un vaso de agua.'
+        
+          ' Si estas nervioso/a, no comas, espera a sentirte y estar relaja' +
+          'do/a.'
+        
+          ' Los pies son estructuras complejas. No uses los mismos zapatos ' +
+          'todos los días.'
+        
+          ' Escoge zapatos hechos de fibras o materiales naturales para per' +
+          'mitir a tus pies respirar.'
+        
+          ' La cafeína es una droga que se encuentra naturalmente en 60 dif' +
+          'erentes tipos de plantas.'
+        
+          ' El café no hace que una persona ebria se ponga sobria, solo hac' +
+          'e que se despierte.'
+        
+          ' 2 latas de bebidas gaseosas al día pueden causar ansiedad y red' +
+          'ucen la capacidad para dormir.'
+        
+          ' El café no filtrado puede elevar los niveles de colesterol en l' +
+          'a sangre.'
+        
+          ' Usa zapatos con suficiente espacio para los dedos, de manera qu' +
+          'e puedas moverlos dentro.'
+        
+          ' El exceso de cafeína puede aumentar el riesgo de osteoporosis y' +
+          ' fracturas.'
+        
+          ' La fibra es buena para la constipación porque ayuda a evacuar l' +
+          'os intestinos.'
+        
+          ' Cuando te recuperes de una afección larga, el caminar será tu m' +
+          'ejor ejercicio para recuperar fuerzas.'
+        
+          ' Camina con la cabeza en alto, el cuerpo recto y respira semi pr' +
+          'ofundamente para evitar el mareo.'
+        
+          ' Las fuentes más comunes de cafeína son el café, el té, las bebi' +
+          'das gaseosas y las bebidas energéticas.'
+        
+          ' El caminar es un excelente ejercicio que ayuda siempre a recupe' +
+          'rar el ritmo de la vida después de un padecimiento.'
+        
+          ' La sopa de pollo con muchos vegetales, cebolla y ajo, es un ali' +
+          'mento esencial durante un resfrío o gripe.'
+        
+          ' Para un alivio inmediato durante la picazón de las mordeduras d' +
+          'e mosquitos aplica jabón en el área.'
+        
+          ' Bebe un par de vasos de agua antes de ejercitarte para evitar e' +
+          'l deshidratarse demasiado rápido.'
+        
+          ' Si tus codos están oscuros y resecos, mezcla glicerina con zumo' +
+          ' de limón y masajéala en el área.'
+        
+          ' El exceso de cafeína produce ansiedad, depresión, inquietud, pa' +
+          'lpitaciones, dolor de estómago y dolor de cabeza.'
+        
+          ' El aceite de oliva virgen es además de un alimento, útil para l' +
+          'a piel porque tiene propiedades rejuvenecedoras.'
+        
+          ' Los masajes funcionan a nivel físico y a nivel mental porque la' +
+          ' mente responde al toque humano.'
+        
+          ' Aprende a controlar tus emociones ante las dificultades, o esta' +
+          'rás condenado a ser esclavo de las circunstancias.'
+        
+          ' Una dieta sana debe proporcionar niveles óptimos de nutrientes ' +
+          'para el mantenimiento y regeneración del organismo.'
+        
+          ' Ingiere alimentos en pequeñas cantidades y de forma frecuente d' +
+          'urante el día.'
+        
+          ' Condimenta tus alimentos con zumo de limón o de naranja, o espe' +
+          'cias no picantes para mejorar su sabor.'
+        ' Lávate los dientes y la boca después de cada comida.'
+        ' No te acuestes inmediatamente después de haber comido.'
+        
+          ' Procura que tu dieta sea variada y rica en calorías. Añade a tu' +
+          's alimentos: aceite virgen de oliva, miel, mermelada.'
+        ' Lava muy bien las frutas y verduras que vayas a consumir.'
+        
+          ' La pérdida de peso ha de ser lenta pero progresiva.  No convien' +
+          'e que sea rápida.'
+        ' La obesidad aumenta la mortalidad y la movilidad.'
+        
+          ' Descongela los alimentos en el refrigerador. No pongas juntos a' +
+          'limentos crudos con cocidos.'
+        ' Siempre lávate las manos antes de comer. Bendice tus alimentos.'
+        
+          ' Todos los aceites no engordan lo mismo. Evita reutilizar los ac' +
+          'eites.'
+        
+          ' Si tienes sobre peso estas en riesgo de sufrir diabetes, hipert' +
+          'ensión y afecciones cardiovasculares.'
+        
+          ' La cocción al vapor conserva las vitaminas y minerales de los a' +
+          'limentos; además su aroma, sabor, color y textura.'
+        
+          ' La '#39#39'Moderación'#39#39' y NO la '#39#39'Privación'#39#39' te conducirán a una mej' +
+          'or calidad de vida.'
+        ' Mantén control de tu peso y de tu presión arterial.'
+        
+          ' Perder peso es una cosa, mantenerlo después de tanto esfuerzo e' +
+          's otra.'
+        
+          ' El agua no aporta energía pero es un factor indispensable dentr' +
+          'o de una dieta balanceada.'
+        
+          ' Todas las vitaminas son indispensables y deben obtenerse de los' +
+          ' alimentos.'
+        
+          ' Ni las vitaminas ni los minerales poseen calorías, por lo tanto' +
+          ' no engordan.'
+        
+          ' Nuestro organismo necesita cada día ácidos grasos esenciales. T' +
+          'odos los aceites vegetales los contienen.'
+        
+          ' Los carbohidratos de absorción rápida están en la fruta, zumos,' +
+          ' leche y derivados.'
+        
+          ' El aceite virgen de oliva es recomendado por su riqueza en ácid' +
+          'o oleico.'
+        
+          ' La dieta mediterránea es rica en grasas insaturadas procedentes' +
+          ' de pescados azules, aceite de oliva y frutos secos.'
+        
+          ' Los alimentos ricos en carbohidratos complejos deben ser los má' +
+          's abundantes: cereales y derivados, legumbres y arroz.'
+        
+          ' Los alimentos de una dieta deben ser variados, evitando la mono' +
+          'tonía y la exclusión.'
+        
+          ' Algunas hortalizas como la patata y los boniatos son ricos en h' +
+          'idratos de carbono.'
+        
+          ' Para mantener un peso óptimo, el contenido energético de la ali' +
+          'mentación debe ser proporcional al gasto energético diario.'
+        
+          ' La alimentación debe ser variada, suficiente en energía y sin e' +
+          'xcesos, para evitar obesidad o afecciones carenciales.'
+        
+          ' Existe una estrecha relación entre una dieta adecuada y balance' +
+          'ada, y un excelente estado de salud.'
+        
+          ' Los hábitos dietéticos sanos influyen de forma importante en nu' +
+          'estra salud.'
+        
+          ' La cantidad de energía en la alimentación depende de la edad, s' +
+          'exo, altura, actividad física y estado fisiológico.'
+        
+          ' Los 3 nutrientes principales de una dieta sana son: hidratos de' +
+          ' carbono, lípidos o grasas y proteínas.'
+        
+          ' El ácido oleico es un ácido graso mono insaturado que contribuy' +
+          'e al equilibrio del aporte diario de grasas.'
+        
+          ' La fibra dietética es un compuesto de los alimentos que no pued' +
+          'e ser digerido por las enzimas del tubo digestivo.'
+        
+          ' Los alimentos vegetales contienen 2 tipos de fibra, insoluble y' +
+          ' soluble, con efectos biológicos diferentes.'
+        
+          ' Los resultados de la composición corporal son una consecuencia ' +
+          'directa de lo que comes y bebes.'
+        
+          ' Los zumos naturales son una buena fuente de carbohidratos duran' +
+          'te las comidas.'
+        
+          ' Comer sanamente significa proporcionar al organismo lo que nece' +
+          'sita en la cantidad y proporción adecuadas.'
+        
+          ' La dieta mediterránea se correlaciona con una menor incidencia ' +
+          'de ciertos tipos de cáncer y afecciones cardiovasculares.'
+        
+          ' Los carbohidratos complejos (de absorción lenta) y simples (de ' +
+          'absorción rápida), aportan energía al organismo.'
+        
+          ' La dieta mediterránea se caracteriza por un consumo moderado de' +
+          ' carnes y grasas de origen animal.'
+        
+          ' El aceite virgen de oliva es eficaz en la prevención de afeccio' +
+          'nes como la arterosclerosis coronaria.'
+        
+          ' El valor nutritivo del pescado azul es semejante al de la carne' +
+          ' pero las proteínas se asimilan más fácil.'
+        
+          ' La ingesta de ajo, cebolla, tomate y frutos secos, aportan anti' +
+          'oxidantes y nutrientes protectores.'
+        
+          ' El consumo de pescado azul y aceite de oliva son beneficiosos p' +
+          'or la calidad y proporción de los lípidos que aportan.'
+        
+          ' Las necesidades hídricas son de 3 litros por día: 50% contenida' +
+          ' en los alimentos y 50% consumida en forma de bebida.'
+        
+          ' Acude a un especialista que te confeccione una dieta adecuada a' +
+          ' tus aspectos únicos e individuales.'
+        
+          ' Cuando necesites aumentar tu ingesta de carbohidratos, consider' +
+          'a el tomar fruta fresca después de una comida.'
+        
+          ' La fibra favorece la evacuación intestinal, la sensación de sac' +
+          'iedad y el crecimiento y reproducción de bacterias intestinales ' +
+          'protectoras.'
+        
+          ' Para evitar los calambres en las piernas es recomendable comer ' +
+          'un plátano diario.'
+        ' Toma frijoles y lentejas por lo menos dos veces a la semana.'
+        
+          ' Si te resfrías, bebe muchos líquidos como agua o zumos naturale' +
+          's.'
+        
+          ' En pequeñas inflamaciones de la piel aplique rodajas de patata ' +
+          'cruda. También mejora la cicatrización.'
+        
+          ' Conviértelo en un pasatiempo el encontrar maneras de mover tu c' +
+          'uerpo y ejercitarte tanto como puedas.'
+        
+          ' Busca algo que te inspire, eleva tu nivel de conciencia, motíva' +
+          'te y satisface tu alma.'
+        ' Ejercita tu cerebro. Lee, estudia, resuelve problemas. '
+        
+          ' El cerebro es un órgano que también se atrofia por falta de uso' +
+          '.'
+        
+          ' La fibra dietética en personas diabéticas disminuye los niveles' +
+          ' de glucosa en la sangre.'
+        
+          ' Sustituye total o parcialmente las harinas o panes molidos refi' +
+          'nados por sus presentaciones integrales.'
+        
+          ' Está comprobado científicamente que reírse incrementa la vida. ' +
+          'A reírse, vivir más alegra a cualquiera.'
+        
+          ' Para maximizar los beneficios de la fibra bebe mucha agua para ' +
+          'mejorar los movimientos intestinales.'
+        
+          ' La fibra dietética ayuda a disminuir el colesterol y previene e' +
+          'l cáncer de colon.')
       ParentFont = False
-      TabOrder = 3
-      Text = 'Edit29'
-      Visible = False
+      TabOrder = 24
     end
-    object Edit54: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 4
-      Text = '54'
-      Visible = False
+    object BCNutricionales: TButton
+      Left = 216
+      Top = 408
+      Width = 180
+      Height = 26
+      Caption = 'BCNutricionales'
+      TabOrder = 25
     end
-    object Edit55: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
+    object LBHomeopatia: TListBox
+      Left = 16
+      Top = 480
+      Width = 193
+      Height = 26
       BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 5
-      Text = '55'
-      Visible = False
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acanthosis Venom'
+        ' Aconite'
+        ' Antimony'
+        ' Apis Mel'
+        ' Arsenicum'
+        ' Aurum'
+        ' Belladonna'
+        ' Bothrops Venom'
+        ' Bryonia'
+        ' Buthus Venom'
+        ' Calcarea'
+        ' Carbolic Acidum'
+        ' Chinona'
+        ' Crotalis Venom'
+        ' Cuprum'
+        ' Ferrum'
+        ' Gelsemium'
+        ' Glonine'
+        ' Iodium'
+        ' Ipecacuanha'
+        ' Lachesis Venom'
+        ' Lactrodectus Venom'
+        ' Merc'
+        ' Mercury'
+        ' Naja Venom'
+        ' Notechis Venom'
+        ' Nux Vox'
+        ' Ophiophagus Venom'
+        ' Opium'
+        ' Passiflora'
+        ' Phosphorus'
+        ' Plutonium'
+        ' Pulsatilla'
+        ' Rhus Tox'
+        ' Sepia'
+        ' Sepia'
+        ' Silica'
+        ' Silver'
+        ' Stannum'
+        ' Sulphur'
+        ' Thuja'
+        ' Vespa Venom'
+        ' Zinc')
+      TabOrder = 26
     end
-    object Edit58: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 6
-      Text = '58'
-      Visible = False
-    end
-    object Edit59: TEdit
-      Left = 988
-      Top = 4
-      Width = 20
-      Height = 14
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-      Text = '59'
-      Visible = False
+    object BHomeopatia: TButton
+      Left = 216
+      Top = 480
+      Width = 180
+      Height = 26
+      Caption = 'BHomeopatia'
+      TabOrder = 27
     end
   end
   object MyChrono: TYRChronometre
@@ -46963,15 +49132,15 @@ object Spinal: TSpinal
     Enabled = False
     Interval = 2000
     OnTimer = TFMitigantesTimer
-    Left = 936
-    Top = 584
+    Left = 1060
+    Top = 564
   end
   object TSGorhamStout: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TSGorhamStoutTimer
-    Left = 904
-    Top = 520
+    Left = 1060
+    Top = 372
   end
   object TSMoebius: TTimer
     Enabled = False
@@ -46984,29 +49153,29 @@ object Spinal: TSpinal
     Enabled = False
     Interval = 2000
     OnTimer = TELATimer
-    Left = 968
-    Top = 520
+    Left = 1060
+    Top = 308
   end
   object TSPraderWilli: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TSPraderWilliTimer
-    Left = 968
-    Top = 552
+    Left = 1060
+    Top = 500
   end
   object TProgeria: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TProgeriaTimer
-    Left = 968
-    Top = 584
+    Left = 1060
+    Top = 532
   end
   object TSMarfan: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TSMarfanTimer
-    Left = 968
-    Top = 616
+    Left = 1060
+    Top = 628
   end
   object TCIPA: TTimer
     Enabled = False
@@ -47026,42 +49195,42 @@ object Spinal: TSpinal
     Enabled = False
     Interval = 2000
     OnTimer = TSGTTimer
-    Left = 936
-    Top = 520
+    Left = 1060
+    Top = 404
   end
   object TCicatrizacion: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TCicatrizacionTimer
-    Left = 936
-    Top = 552
+    Left = 1060
+    Top = 468
   end
   object TSSchonleinHechoch: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TSSchonleinHechochTimer
-    Left = 904
-    Top = 584
+    Left = 1060
+    Top = 596
   end
   object TTSomatomorfos: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TTSomatomorfosTimer
-    Left = 904
-    Top = 552
+    Left = 1060
+    Top = 436
   end
   object TTartamudeo: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TTartamudeoTimer
-    Left = 964
-    Top = 488
+    Left = 1060
+    Top = 340
   end
   object TTartamudeo2: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = TTartamudeo2Timer
-    Left = 932
-    Top = 488
+    Left = 1060
+    Top = 276
   end
 end

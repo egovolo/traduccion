@@ -4,9 +4,7 @@ object Biorythms1: TBiorythms1
   VertScrollBar.Style = ssFlat
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Programas Metafísicos :::'
+  Caption = '::: gENiO® iOS ::: Programas Metafísicos :::'
   ClientHeight = 698
   ClientWidth = 1048
   Color = clSilver
@@ -20,8 +18,6 @@ object Biorythms1: TBiorythms1
   ShowHint = True
   OnClose = FormClose
   OnCreate = FormCreate
-  OnDeactivate = FormDeactivate
-  OnHide = FormHide
   OnMouseDown = FormMouseDown
   OnMouseMove = FormMouseMove
   OnMouseUp = FormMouseUp
@@ -2179,7 +2175,6 @@ object Biorythms1: TBiorythms1
     Caption = '.AVI'
     Color = clBlack
     TabOrder = 8
-    OnDblClick = PanelAVIDblClick
     OnMouseMove = PanelAVIMouseMove
   end
   object Panel5: TPanel
@@ -3589,7 +3584,6 @@ object Biorythms1: TBiorythms1
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 7
-      OnClick = Button27Click
     end
     object Button23: TButton
       Left = 489
@@ -3686,7 +3680,6 @@ object Biorythms1: TBiorythms1
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 8
-      OnClick = Button28Click
     end
   end
   object Panel9: TPanel
@@ -4695,14 +4688,6 @@ object Biorythms1: TBiorythms1
       Font.Style = []
       ParentFont = False
     end
-    object Image9: TImage
-      Left = 172
-      Top = 540
-      Width = 117
-      Height = 117
-      Stretch = True
-      Transparent = True
-    end
     object RadioGroup1: TRadioGroup
       Left = 140
       Top = 88
@@ -4961,10 +4946,10 @@ object Biorythms1: TBiorythms1
       Left = 116
       Top = 424
       Width = 749
-      Height = 22
+      Height = 16
       Cursor = crIBeam
       BorderStyle = bsNone
-      Color = clSilver
+      Color = clWhite
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -5009,10 +4994,10 @@ object Biorythms1: TBiorythms1
       Left = 116
       Top = 468
       Width = 749
-      Height = 22
+      Height = 16
       Cursor = crIBeam
       BorderStyle = bsNone
-      Color = clSilver
+      Color = clWhite
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -5285,7 +5270,7 @@ object Biorythms1: TBiorythms1
       Width = 222
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Cargar fotografía de la otra persona'
+      Caption = 'Cargar imagen de la otra persona'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -5961,7 +5946,7 @@ object Biorythms1: TBiorythms1
       Height = 22
       Cursor = crHandPoint
       Hint = 'Este botón introducirá una onda de consciencia en el paciente.'
-      Caption = 'Estimular conciencia de riesgos'
+      Caption = 'Estimular conciencia a riesgos'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -6034,7 +6019,6 @@ object Biorythms1: TBiorythms1
   end
   object Timer1: TTimer
     Enabled = False
-    OnTimer = Timer1Timer
     Left = 826
     Top = 50
   end

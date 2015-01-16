@@ -30,8 +30,6 @@ type
     CheckBox361: TCheckBox;
     CheckBox362: TCheckBox;
     CheckBox363: TCheckBox;
-    Panel6: TPanel;
-    Label617: TLabel;
     Label208: TLabel;
     Label209: TLabel;
     Label210: TLabel;
@@ -64,9 +62,8 @@ type
     Label85: TLabel;
     Label86: TLabel;
     Label91: TLabel;
-    Label539: TLabel;
-    Label540: TLabel;
-    Button84: TButton;
+    LProcesos: TLabel;
+    LMeridianos: TLabel;
     Button82: TButton;
     Panel8: TPanel;
     Label130: TLabel;
@@ -113,10 +110,6 @@ type
     Label171: TLabel;
     Label172: TLabel;
     Label173: TLabel;
-    Label183: TLabel;
-    Label184: TLabel;
-    Label185: TLabel;
-    Label186: TLabel;
     Label111: TLabel;
     Label112: TLabel;
     Label113: TLabel;
@@ -160,10 +153,10 @@ type
     Button34: TButton;
     Button35: TButton;
     Button26: TButton;
-    Label1: TLabel;
+    LOrganosGlandulas: TLabel;
     Image1: TImage;
     Label2: TLabel;
-    Label3: TLabel;
+    LCausas: TLabel;
     Button1: TButton;
     Panel68: TPanel;
     LCrono2: TLabel;
@@ -174,10 +167,7 @@ type
     Label5: TLabel;
     Panel1: TPanel;
     Label4: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
+    LAVM: TLabel;
     Label10: TLabel;
     Label11: TLabel;
     Label12: TLabel;
@@ -193,11 +183,43 @@ type
     GProgreso: TGauge;
     PTiempoEstimado: TPanel;
     Panel2: TPanel;
-    procedure Button84Click(Sender: TObject);
+    Label14: TLabel;
+    Label15: TLabel;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAfirmaciones: TListBox;
+    BAfirmaciones: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    LHomeopatia: TLabel;
+    LAfirmaciones: TLabel;
+    LSistemas: TLabel;
+    LToxinas: TLabel;
+    LEPositivas: TLabel;
+    LENegativas: TLabel;
+
     procedure FormShow(Sender: TObject);
     procedure Button77Click(Sender: TObject);
     procedure Button82Click(Sender: TObject);
-    procedure Button83Click(Sender: TObject);
     procedure Label196DblClick(Sender: TObject);
     procedure Label91DblClick(Sender: TObject);
     procedure Label198DblClick(Sender: TObject);
@@ -256,9 +278,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Time_CronoTimer(Sender: TObject);
     procedure Label194DblClick(Sender: TObject);
-    procedure CheckBox1Click(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Image3Click(Sender: TObject);
     procedure Label218Click(Sender: TObject);
     procedure Label80Click(Sender: TObject);
@@ -278,9 +298,9 @@ type
     procedure Label73Click(Sender: TObject);
     procedure Label4Click(Sender: TObject);
     procedure Label72Click(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
-    procedure Label8Click(Sender: TObject);
-    procedure Label3Click(Sender: TObject);
+    procedure LOrganosGlandulasClick(Sender: TObject);
+    procedure LAVMClick(Sender: TObject);
+    procedure LCausasClick(Sender: TObject);
     procedure Label219Click(Sender: TObject);
     procedure Label12Click(Sender: TObject);
     procedure Label10Click(Sender: TObject);
@@ -296,6 +316,25 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Panel2Click(Sender: TObject);
+    procedure Label14Click(Sender: TObject);
+    procedure Label15Click(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
+    procedure BAfirmacionesClick(Sender: TObject);
+    procedure BSistemasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BProcesosClick(Sender: TObject);
+    procedure LMeridianosClick(Sender: TObject);
+    procedure LProcesosClick(Sender: TObject);
+    procedure LToxinasClick(Sender: TObject);
+    procedure LSistemasClick(Sender: TObject);
+    procedure LAfirmacionesClick(Sender: TObject);
+    procedure LHomeopatiaClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -311,9 +350,8 @@ type
     procedure Rectificacion();
     procedure RectificacionFinal();
     procedure Gabi();
-    Procedure AreasEntrelazadas();
     Procedure TerapiaExtendida();
-  end;
+ end;
 
 var
   FCancer_Explorer: TFCancer_Explorer;
@@ -325,7 +363,7 @@ uses Risks, CNSCIOS, Unit_Cancer1,flash,Freq2,AMath, DataMod,Wawp, FREQ,spine,
 
 {$R *.DFM}
 
-procedure TFCancer_Explorer.Button84Click(Sender: TObject);
+procedure TFCancer_Explorer.Label14Click(Sender: TObject);
 begin
 Gabi();
 riskchart.can:=riskchart.can+20;
@@ -377,40 +415,34 @@ procedure TFCancer_Explorer.Panel1Click(Sender: TObject);
 begin
 Panel68.Top := 296;
 panel8.visible:=false;
-LRectificado.Caption:='Rectificado |';
+LRectificado.Caption:='Rectificado | ';
 end;
 
 procedure TFCancer_Explorer.Button82Click(Sender: TObject);
 begin
 MyChrono.start;
 Gabi();
-panel6.caption:='Explorando emociones + nutrición cerebral...';
-panel6.refresh;
-vtiempo := 10+Random(10);
+vtiempo := 5+Random(5);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+2);
-
-        Button84.enabled:=true;
         label208.visible:=false;
         label209.visible:=false;
         label210.visible:=false;
-         panel6.visible:=true;
-         panel6.refresh;
 repeat
 debilidad();
   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-         ChangingPulses(1000,111,1000,7,1,3,
+         ChangingPulses(1000,111,1000,7,1,1,
          '11111111','11111111');
          GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-          ChangingPulses(5555,555+random(50),5555,5+random(5),5,3,
+          ChangingPulses(5555,555+random(50),5555,5+random(5),5,1,
          '11111111','01111111');
          GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-         ChangingPulses(1000,111+random(100),1000,7,1+random(10),3,
+         ChangingPulses(1000,111+random(100),1000,7,1+random(10),1,
          '11111111','11111111');
          GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -418,251 +450,30 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-panel6.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 if  FMain.shaping>85 then Fmain.recmain:=Fmain.recmain+1;
 freq1.cursor:=crdefault;
-panel6.refresh;
 fring:=35+random(75);
 if fring>100 then begin
 fring:=100;
 end;
 FMain.shaping:=50+random(85);
 if FMain.shaping>103 then
- FRecompensa.label79.caption:=inttostr(FMain.shaping);
 LRectificado.caption:='Rectificado | '+inttostr(fring);
 If fring>84 Then RectificacionFinal();
-oeg:=random(139);
-if oeg=0 then Label1.caption:='pulmones. ';
-if oeg=1 then Label1.caption:='piel. ';
-if oeg=2 then Label1.caption:='cerebro. ';
-if oeg=3 then Label1.caption:='senos nasales. ';
-if oeg=4 then Label1.caption:='estómago. ';
-if oeg=5 then Label1.caption:='ojos. ';
-if oeg=6 then Label1.caption:='intestinos. ';
-if oeg=7 then Label1.caption:='pulmones. ';
-if oeg=8 then Label1.caption:='estómago. ';
-if oeg=9 then Label1.caption:='suprarrenales. ';
-if oeg=10 then Label1.caption:='senos nasales. ';
-if oeg=11 then Label1.caption:='emociones. ';
-if oeg=12 then Label1.caption:='sangre. ';
-if oeg=13 then Label1.caption:='sistema linfático. ';
-if oeg=14 then Label1.caption:='dentadura. ';
-if oeg=15 then Label1.caption:='formación reticular. ';
-if oeg=16 then Label1.caption:='médula oblongata. ';
-if oeg=17 then Label1.caption:='lóbulo frontal del cerebro. ';
-if oeg=18 then Label1.caption:='lóbulo parietal del cerebro. ';
-if oeg=19 then Label1.caption:='lóbulo occipital del cerebro. ';
-if oeg=20 then Label1.caption:='lóbulo temporal del cerebro. ';
-if oeg=21 then Label1.caption:='tiroides. ';
-if oeg=22 then Label1.caption:='timo. ';
-if oeg=23 then Label1.caption:='médula espinal. ';
-if oeg=24 then Label1.caption:='sistema límbico. ';
-if oeg=25 then Label1.caption:='circuitos de la memoria. ';
-if oeg=26 then Label1.caption:='hipotálamo. ';
-if oeg=27 then Label1.caption:='glándula pineal. ';
-if oeg=28 then Label1.caption:='pituitaria. ';
-if oeg=29 then Label1.caption:='paratiroides. ';
-if oeg=30 then Label1.caption:='sangre. ';
-if oeg=31 then Label1.caption:='sistema linfático. ';
-if oeg=32 then Label1.caption:='dentadura. ';
-if oeg=33 then Label1.caption:='pulmones. ';
-if oeg=34 then Label1.caption:='piel. ';
-if oeg=35 then Label1.caption:='cerebro. ';
-if oeg=36 then Label1.caption:='karma. ';
-if oeg=37 then Label1.caption:='estómago. ';
-if oeg=38 then Label1.caption:='karma. ';
-if oeg=39 then Label1.caption:='intestinos. ';
-if oeg=40 then Label1.caption:='formación reticular. ';
-if oeg=41 then Label1.caption:='estómago. ';
-if oeg=42 then Label1.caption:='suprarrenales. ';
-if oeg=43 then Label1.caption:='formación reticular. ';
-if oeg=44 then Label1.caption:='emociones. ';
-if oeg=45 then Label1.caption:='sangre. ';
-if oeg=46 then Label1.caption:='sistema linfático. ';
-if oeg=47  then Label1.caption:='digestión / interrupción en la absorpción. ';
-
-if oeg=48  then Label8.caption:='sales no específicas en tejidos. ';
-if oeg=49  then Label8.caption:='ácidos grasos en general. ';
-if oeg=50  then Label8.caption:='carbonos de rango bajo en las cadenas de ácidos grasos. ';
-if oeg=51  then Label8.caption:='carbonos de rango bajo en las cadenas de ácidos grasos. ';
-if oeg=52  then Label8.caption:='aracadónica relacionada con las cadenas de ácidos grasos. ';
-if oeg=53  then Label8.caption:='mielina en las cadenas de ácidos grasos. ';
-if oeg=54  then Label8.caption:='deficiencia nutricional de todos los ácidos grasos. ';
-if oeg=55  then Label8.caption:='Carbonos de rango alto en las cadenas de ácidos grasos. ';
-if oeg=56  then Label8.caption:='enzimas relacionadas con los ácidos grasos. ';
-if oeg=57  then Label8.caption:='vitamina E. ';
-if oeg=58  then Label8.caption:='vitamina E1. ';
-if oeg=59  then Label8.caption:='vitamina E2. ';
-if oeg=60  then Label8.caption:='vitamina E3. ';
-if oeg=61  then Label8.caption:='vitamina K. ';
-if oeg=62  then Label8.caption:='vitamina K1. ';
-if oeg=63  then Label8.caption:='vitamina K3. ';
-if oeg=64  then Label8.caption:='todas las vitaminas K. ';
-if oeg=65  then Label8.caption:='vitamina U / Ubiquinona. ';
-if oeg=66  then Label8.caption:='CoQ6. ';
-if oeg=67  then Label8.caption:='CoQ7. ';
-if oeg=68  then Label8.caption:='CoQ8. ';
-if oeg=69  then Label8.caption:='CoQ9. ';
-if oeg=70  then Label8.caption:='CoQ10. ';
-if oeg=71  then Label8.caption:='todos los CoQ.';
-if oeg=72  then Label8.caption:='ciclo de la ubiquinona. ';
-if oeg=73  then Label8.caption:='vitamnina C. ';
-if oeg=74  then Label8.caption:='bioflavenoides. ';
-if oeg=75  then Label8.caption:='rutina. ';
-if oeg=76  then Label8.caption:='ácido hespárico. ';
-if oeg=77  then Label8.caption:='tirosina. ';
-if oeg=78  then Label8.caption:='tirosinasa. ';
-if oeg=79  then Label8.caption:='ase de la vitamina C. ';
-if oeg=80  then Label8.caption:='ácido ascórbico. ';
-if oeg=81  then Label8.caption:='vitamina D. ';
-if oeg=82  then Label8.caption:='vitamina D1. ';
-if oeg=83  then Label8.caption:='vitamina D2. ';
-if oeg=84  then Label8.caption:='vitamina D3. ';
-if oeg=85  then Label8.caption:='vitamina D4. ';
-if oeg=86  then Label8.caption:='vitamina A. ';
-if oeg=87  then Label8.caption:='betacarotina. ';
-if oeg=88  then Label8.caption:='aceite de pescado. ';
-if oeg=89  then Label8.caption:='retinol. ';
-if oeg=90  then Label8.caption:='precursores de la vitamina A. ';
-if oeg=91  then Label8.caption:='vitamina A en cartílagos. ';
-if oeg=92  then Label8.caption:='enzimas en general. ';
-if oeg=93  then Label8.caption:='enzimas de la reducción de oxidación. ';
-if oeg=94  then Label8.caption:= 'enzimas de la hidrolización durante la digestión. ';
-if oeg=95  then Label8.caption:='enzimas de la fosforilasión de los procesos de pensamiento. ';
-if oeg=96  then Label8.caption:='enzimas de la decarboxilasa en la respiración. ';
-if oeg=97  then Label8.caption:='enzimas de regulación del agua de la hidrolasa. ';
-if oeg=98  then Label8.caption:='enzimas relacionadas con la regulación del ADN. ';
-if oeg=99  then Label8.caption:='enzimas de transmutación de isómeros de la mutasa. ';
-if oeg=100  then Label8.caption:='enzimas de transmutación de isómeros de la mutasa. ';
-if oeg=101 then Label8.caption:='ácidos grasos en general. ';
-if oeg=102 then Label8.caption:='carbonos bajos en las cadenas de ácidos grasos. ';
-if oeg=103 then Label8.caption:='carbonos de rango medio en las cadenas de ácidos grasos. ';
-if oeg=104 then Label8.caption:='aracadónica relacionada con las cadenas de ácidos grasos. ';
-if oeg=105 then Label8.caption:='cadenas de la mielina en los ácidos grasos. ';
-if oeg=106 then Label8.caption:='deficiencia nutricional de todos los ácidos grasos. ';
-if oeg=107 then Label8.caption:='carbones altos en la cadena de ácidos grasos. ';
-if oeg=108 then Label8.caption:='enzimas relacionadas con los ácidos grasos. ';
-if oeg=109 then Label8.caption:='ácidos grasos en general. ';
-if oeg=110 then Label8.caption:='carbonos bajos en las cadenas de ácidos grasos. ';
-if oeg=111 then Label8.caption:='carbonos de rango medio en las cadenas de ácidos grasos. ';
-if oeg=112 then Label8.caption:='aracadónica relacionada con las cadenas de ácidos grasos. ';
-if oeg=113 then Label8.caption:='cadenas de la mielina en los ácidos grasos. ';
-if oeg=114 then Label8.caption:='deficiencia nutricional de todos los ácidos grasos. ';
-if oeg=115 then Label8.caption:='carbones altos en la cadena de ácidos grasos. ';
-if oeg=116 then Label8.caption:='enzimas relacionadas con los ácidos grasos. ';
-if oeg=117 then Label8.caption:='enzimas en general. ';
-if oeg=118 then Label8.caption:='enzimas de la reducción de oxidación. ';
-if oeg=119 then Label8.caption:= 'enzimas de la hidrolización durante la digestión. ';
-if oeg=120 then Label8.caption:='enzimas de la fosforilasión de los procesos de pensamiento. ';
-if oeg=121 then Label8.caption:='enzimas de la decarboxilasa en la respiración. ';
-if oeg=122 then Label8.caption:='enzimas de regulación del agua de la hidrolasa. ';
-if oeg=123 then Label8.caption:='enzimas relacionadas con la regulación del ADN. ';
-if oeg>123 then Label8.caption:='enzimas de transmutación de isómeros de la mutasa. ';
-
-oeg:=random(26);
-if oeg<1 then label539.Caption:='Triptofan | Regulación del humor, energía, sanación, sueño.';
-if oeg=2 then label539.Caption:='Fenilalanina | Control del dolor, nervios.';
-if oeg=3 then label539.Caption:='Alanina | Riñones, nervios.';
-if oeg=4 then label539.Caption:='Asparatina | Destrucción de tejidos nerviosos.';
-if oeg=5 then label539.Caption:='Cisteina | Utilización de los riñones.';
-if oeg=6 then label539.Caption:='Leucina | Control del humor, emociones.';
-if oeg=7 then label539.Caption:='Isoleucina | Control emocional, nervios.';
-if oeg=8 then label539.Caption:='Serina | Conversión de los carbohidratos en energía.';
-if oeg=9 then label539.Caption:='Tryptophan | Serotonina, relajación.';
-if oeg=10 then label539.Caption:='Histidina | Anti inflamatorio, anti alérgico.';
-if oeg=11 then label539.Caption:='Metionina | Hígado, oxigenación.';
-if oeg=12 then label539.Caption:='Lisina | Anti herpes, lesiones, nervios.';
-if oeg=13 then label539.Caption:='Treonina | Producción hormonal, energía.';
-if oeg=14 then label539.Caption:='Tirosina | Tiroides, pituitaria y función suprarrenal.';
-if oeg=15 then label539.Caption:='Valina | Regulación de las células de la sangre.';
-if oeg=16 then label539.Caption:='Glutamina | Suple energía al cerebro.';
-if oeg=17 then label539.Caption:='Prolina | Desórdenes del sulfúro.';
-if oeg=18 then label539.Caption:='Arginina | Nervios, piel.';
-if oeg=19 then label539.Caption:='Acido glutamínico | Suple energía al cerebro.';
-if oeg=20 then label539.Caption:='Acido aspártico | Destrucción de tejidos nerviosos.';
-if oeg=21 then label539.Caption:='Adenosina | Circulación, energía.';
-if oeg=22 then label539.Caption:='Uracil | Funciones del ARN.';
-if oeg=23 then label539.Caption:='Adenina | Funciones del ADN y ARN.';
-if oeg=24 then label539.Caption:='Guanina | Funciones del ADN y ARN.';
-if oeg=25 then label539.Caption:='Citosina | Funciones del ADN y ARN.';
-if oeg>25 then label539.Caption:='Tiamina | Funciones del ADN y ARN.';
-oeg:=random(26);
-if oeg=1 then label540.Caption:='Calcio | Osteoporosis, nervios, suprarrenales.';
-if oeg=2 then label540.Caption:='Potasio | Fatiga, nervios, energía, corazón.';
-if oeg=3 then label540.Caption:='Sodio | Depresión, nervios, fatiga, digestión.';
-if oeg=4 then label540.Caption:='Cloro | Balance del pH, afecciones de acidez estomacal, nervios.';
-if oeg=5 then label540.Caption:='Magnesio | Regulación suprarrenal, oxígeno, energía.';
-if oeg=6 then label540.Caption:='Hierro | Anemia, fatiga, oxígeno.';
-if oeg=7 then label540.Caption:='Sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if oeg=8 then label540.Caption:='Manganeso | Afecciones nerviosas y musculares.';
-if oeg=9 then label540.Caption:='Cromo | Regulación del azúcar, músculos.';
-if oeg=10 then label540.Caption:='Zinc | Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if oeg=11 then label540.Caption:='Selenio | Desintoxicación, nervios, energía, piel.';
-if oeg=12 then label540.Caption:='Yodo | Funciones de la tiroides, energía, metabolismo.';
-if oeg=13 then label540.Caption:='Fósforo | Funciones celulares, energía, pensamiento.';
-if oeg=14 then label540.Caption:='Boron | Regulación nerviosa, demencia, depresión.';
-if oeg=15 then label540.Caption:='Molidebno | Funciones de la tiroides, lactación, fatiga.';
-if oeg=16 then label540.Caption:='Silicona | Huesos, piel, nervios.';
-if oeg=17 then label540.Caption:='Cobalto | Anemia, sistema inmunitario.';
-if oeg=18 then label540.Caption:='Litio | Nervios, pensamiento, energía, funciones del hipotálamo.';
-if oeg=19 then label540.Caption:='Germanio | Nervios, oxigenación, piel, energía.';
-if oeg=20 then label540.Caption:='Arsénico | Energía, nervios.';
-if oeg=21 then label540.Caption:='Antimonio | Piel, desintoxicación, funciones de la flora intestinal.';
-if oeg=22 then label540.Caption:='Estaño | Nervios, músculos.';
-if oeg=23 then label540.Caption:='Carbón | Energía, regulación de la vida.';
-if oeg=24 then label540.Caption:='Vanadio | Funciones del hígado, músculos del corazón.';
-if oeg=25 then label540.Caption:='Aluminio | Nervios, regulación del pensamiento.';
-if oeg>25 then label540.Caption:='Cobre | Nervios, energía, desintoxicación.';
-
-  oeg:=random(41);
-if oeg<2 then Label3.Caption:='Inflamación';
-if oeg=2 then Label3.Caption:='Cáncer';
-if oeg=3 then Label3.Caption:='Estrés';
-if oeg=4 then Label3.Caption:='Hipoadrenia';
-if oeg=5 then Label3.Caption:='Emociones';
-if oeg=6 then Label3.Caption:='Infección';
-if oeg=7 then Label3.Caption:='Toxicidad';
-if oeg=8 then Label3.Caption:='Traumas';
-if oeg=9 then Label3.Caption:='Causas heredadas';
-if oeg=10 then Label3.Caption:='Exceso o deficiencia de vitaminas';
-if oeg=11 then Label3.Caption:='Sistema cardio vascular';
-if oeg=12 then Label3.Caption:='Sistema hormonal';
-if oeg=13 then Label3.Caption:='Sistema linfático';
-if oeg=14 then Label3.Caption:='Hígado';
-if oeg=15 then Label3.Caption:='Riñones';
-if oeg=16 then Label3.Caption:='Sistema digestivo';
-if oeg=17 then Label3.Caption:='Tejido conectivo';
-if oeg=18 then Label3.Caption:='Huesos';
-if oeg=19 then Label3.Caption:='Agua alcalina o ácida';
-if oeg=20 then Label3.Caption:='Sangre';
-if oeg=21 then Label3.Caption:='Entorno';
-if oeg=22 then Label3.Caption:='Alergias';
-if oeg=23 then Label3.Caption:='Riesgo emocional';
-if oeg=24 then Label3.Caption:='Circulación';
-if oeg=25 then Label3.Caption:='Sistema inmunitario';
-if oeg=26 then Label3.Caption:='Radiación';
-if oeg=27 then Label3.Caption:='Bacterias';
-if oeg=28 then Label3.Caption:='Fungosidades';
-if oeg=29 then Label3.Caption:='Virus';
-if oeg=30 then Label3.Caption:='Parásitos';
-if oeg=31 then Label3.Caption:='Amebas';
-if oeg=32 then Label3.Caption:='Envenenamiento alimentario';
-if oeg=33 then Label3.Caption:='Regulación de azúcar';
-if oeg=34 then Label3.Caption:='Sistema neurológico';
-if oeg=35 then Label3.Caption:='Sistema sensorial';
-if oeg=36 then Label3.Caption:='Colesterol';
-if oeg=37 then Label3.Caption:='Sistema respiratorio';
-if oeg=38 then Label3.Caption:='Oxidación';
-if oeg=39 then Label3.Caption:='Hidratación';
-if oeg>39 then Label3.Caption:='Cognicción';
+BOrganosGlandulas.Click;
+BAVM.Click;
+BCausas.Click;
+BMeridianos.Click;
+BProcesos.Click;
+BHomeopatia.Click;
+BAfirmaciones.Click;
+BSistemas.Click;
+BToxinas.Click;
+BEPositivas.Click;
+BENegativas.Click;
 MyChrono.stop;
 If FRing>84 Then Button82.Enabled:=False;
-end;
-
-procedure TFCancer_Explorer.Button83Click(Sender: TObject);
-begin
-  button84.visible:=true;
 end;
 
 procedure TFCancer_Explorer.Exploracion_Cerebral();
@@ -672,11 +483,10 @@ begin
 MyChrono.start;
 GProgreso.Progress := 0;
 LRectificado.caption:='Rectificado | ';
-vtiempo := 60+Random(60);
+vtiempo := 60+Random(30);
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
-Panel6.visible:=true;
 fred:=1;
 repeat
 Debilidad();
@@ -690,12 +500,7 @@ Debilidad();
  '11111111','11111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(1000,111+RandomRange(1,100),1000,7,1+RandomRange(1,9),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- until
+until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -706,62 +511,7 @@ GProgreso.Refresh;
 If fring>84 Then RectificacionFinal();
  end;
   LRectificado.caption:='Rectificado | '+inttostr(fring);
-  PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-  Panel6.visible:=false;
- oeg:=random(26);
-if oeg<1 then label539.Caption:='Triptofan | Regulación del humor, energía, sanación, sueño.';
-if oeg=2 then label539.Caption:='Fenilalanina | Control del dolor, nervios.';
-if oeg=3 then label539.Caption:='Alanina | Riñones, nervios.';
-if oeg=4 then label539.Caption:='Asparatina | Destrucción de tejidos nerviosos.';
-if oeg=5 then label539.Caption:='Cisteina | Utilización de los riñones.';
-if oeg=6 then label539.Caption:='Leucina | Control del humor, emociones.';
-if oeg=7 then label539.Caption:='Isoleucina | Control emocional, nervios.';
-if oeg=8 then label539.Caption:='Serina | Conversión de los carbohidratos en energía.';
-if oeg=9 then label539.Caption:='Tryptophan | Serotonina, relajación.';
-if oeg=10 then label539.Caption:='Histidina | Anti inflamatorio, anti alérgico.';
-if oeg=11 then label539.Caption:='Metionina | Hígado, oxigenación.';
-if oeg=12 then label539.Caption:='Lisina | Anti herpes, lesiones, nervios.';
-if oeg=13 then label539.Caption:='Treonina | Producción hormonal, energía.';
-if oeg=14 then label539.Caption:='Tirosina | Tiroides, pituitaria y función suprarrenal.';
-if oeg=15 then label539.Caption:='Valina | Regulación de las células de la sangre.';
-if oeg=16 then label539.Caption:='Glutamina | Suple energía al cerebro.';
-if oeg=17 then label539.Caption:='Prolina | Desórdenes del sulfúro.';
-if oeg=18 then label539.Caption:='Arginina | Nervios, piel.';
-if oeg=19 then label539.Caption:='Acido glutamínico | Suple energía al cerebro.';
-if oeg=20 then label539.Caption:='Acido aspártico | Destrucción de tejidos nerviosos.';
-if oeg=21 then label539.Caption:='Adenosina | Circulación, energía.';
-if oeg=22 then label539.Caption:='Uracil | Funciones del ARN.';
-if oeg=23 then label539.Caption:='Adenina | Funciones del ADN y ARN.';
-if oeg=24 then label539.Caption:='Guanina | Funciones del ADN y ARN.';
-if oeg=25 then label539.Caption:='Citosina | Funciones del ADN y ARN.';
-if oeg>25 then label539.Caption:='Tiamina | Funciones del ADN y ARN.';
-oeg:=random(26);
-if oeg=1 then label540.Caption:='Calcio | Osteoporosis, nervios, suprarrenales.';
-if oeg=2 then label540.Caption:='Potasio | Fatiga, nervios, energía, corazón.';
-if oeg=3 then label540.Caption:='Sodio | Depresión, nervios, fatiga, digestión.';
-if oeg=4 then label540.Caption:='Cloro | Balance del pH, afecciones de acidez estomacal, nervios.';
-if oeg=5 then label540.Caption:='Magnesio | Regulación suprarrenal, oxígeno, energía.';
-if oeg=6 then label540.Caption:='Hierro | Anemia, fatiga, oxígeno.';
-if oeg=7 then label540.Caption:='Sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if oeg=8 then label540.Caption:='Manganeso | Afecciones nerviosas y musculares.';
-if oeg=9 then label540.Caption:='Cromo | Regulación del azúcar, músculos.';
-if oeg=10 then label540.Caption:='Zinc | Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if oeg=11 then label540.Caption:='Selenio | Desintoxicación, nervios, energía, piel.';
-if oeg=12 then label540.Caption:='Yodo | Funciones de la tiroides, energía, metabolismo.';
-if oeg=13 then label540.Caption:='Fósforo | Funciones celulares, energía, pensamiento.';
-if oeg=14 then label540.Caption:='Boron | Regulación nerviosa, demencia, depresión.';
-if oeg=15 then label540.Caption:='Molidebno | Funciones de la tiroides, lactación, fatiga.';
-if oeg=16 then label540.Caption:='Silicona | Huesos, piel, nervios.';
-if oeg=17 then label540.Caption:='Cobalto | Anemia, sistema inmunitario.';
-if oeg=18 then label540.Caption:='Litio | Nervios, pensamiento, energía, funciones del hipotálamo.';
-if oeg=19 then label540.Caption:='Germanio | Nervios, oxigenación, piel, energía.';
-if oeg=20 then label540.Caption:='Arsénico | Energía, nervios.';
-if oeg=21 then label540.Caption:='Antimonio | Piel, desintoxicación, funciones de la flora intestinal.';
-if oeg=22 then label540.Caption:='Estaño | Nervios, músculos.';
-if oeg=23 then label540.Caption:='Carbón | Energía, regulación de la vida.';
-if oeg=24 then label540.Caption:='Vanadio | Funciones del hígado, músculos del corazón.';
-if oeg=25 then label540.Caption:='Aluminio | Nervios, regulación del pensamiento.';
-if oeg>25 then label540.Caption:='Cobre | Nervios, energía, desintoxicación.';
+  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.stop;
 If (fring<85) and (CBAutomatico.Checked=True) Then Exploracion_Cerebral();
 If (fring>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -769,441 +519,378 @@ end;
 
 procedure TFCancer_Explorer.Label68Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando lóbulo parietal...';
 Exploracion_Cerebral();
 If fring>84 Then Label68.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label67Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando área de comprensión de la lectura...';
 Exploracion_Cerebral();
 If fring>84 Then Label67.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label90Click(Sender: TObject);
 begin
- Panel6.caption:='Equilibrando área de Wernicke (Habla sensorial)...';
  Exploracion_Cerebral();
  If fring>84 Then Label90.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label75Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando lóbulo occipital...';
 Exploracion_Cerebral();
 If fring>84 Then Label75.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label76Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando cerebelo...';
 Exploracion_Cerebral();
 If fring>84 Then Label76.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label77Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando médula oblongata...';
 Exploracion_Cerebral();
 If fring>84 Then Label77.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label79Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Cisura longitudinal...';
 Exploracion_Cerebral();
 If fring>84 Then Label79.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label74Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando lóbulo frontal...';
 Exploracion_Cerebral();
 If fring>84 Then Label74.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label70Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando área premotora...';
 Exploracion_Cerebral();
 If fring>84 Then Label70.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label82Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Circunvolución parietal ascendente...';
 Exploracion_Cerebral();
 If fring>84 Then Label82.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label71Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Circunvolución frontal ascendente...';
 Exploracion_Cerebral();
 If fring>84 Then Label71.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label196DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a duda de sí mismo/a...';
 Emociones();
 If fring>84 Then Label196.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label85Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando área de Broca (Habla motora)...';
 Exploracion_Cerebral();
 If fring>84 Then Label85.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label86Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando lóbulo temporal...';
 Exploracion_Cerebral();
 If fring>84 Then Label86.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label91DblClick(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando puente de Varolio...';
 Exploracion_Cerebral();
 If fring>84 Then Label91.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label198DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a abandono...';
 Emociones();
 If fring>84 Then Label198.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label130DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a agresión...';
 Emociones();
 If fring>84 Then Label130.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label143DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a alegría...';
 Emociones();
 If fring>84 Then Label143.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label132DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a ansiedad...';
 Emociones();
 If fring>84 Then Label132.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label134DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a atención...';
 Emociones();
 If fring>84 Then Label134.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label133DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a autismo...';
 Emociones();
 If fring>84 Then Label133.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label140DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a avaricia...';
 Emociones();
 If fring>84 Then Label140.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label142DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a celos...';
 Emociones();
 If fring>84 Then Label142.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label56DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a conflicto religioso...';
 Emociones();
 If fring>84 Then Label56.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label136DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a confusión...';
 Emociones();
 If fring>84 Then Label136.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label135DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a descuido...';
 Emociones();
 If fring>84 Then Label135.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label137DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a desilusión...';
 Emociones();
 If fring>84 Then Label137.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label203DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a dolor psíquico...';
 Emociones();
 If fring>84 Then Label203.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label138DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a duda...';
 Emociones();
 If fring>84 Then Label138.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label204DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a Percepción Extra Sensorial - ESP...';
 Emociones();
 If fring>84 Then Label204.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label149DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a imprudencia...';
 Emociones();
 If fring>84 Then Label149.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label131DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a íra...';
 Emociones();
 If fring>84 Then Label131.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label144DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a lujuria...';
 Emociones();
 If fring>84 Then Label144.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label139DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a miedo...';
 Emociones();
 If fring>84 Then Label139.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label202DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a negación...';
 Emociones();
 If fring>84 Then Label202.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label145DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a pasividad...';
 Emociones();
 If fring>84 Then Label145.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label146DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a poder...';
 Emociones();
 If fring>84 Then Label146.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label151DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a preocupación...';
 Emociones();
 If fring>84 Then Label151.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label147DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a proyección...';
 Emociones();
 If fring>84 Then Label147.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label148DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a racionalización...';
 Emociones();
 If fring>84 Then Label148.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label200DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a rechazo...';
 Emociones();
 If fring>84 Then Label200.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label150DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a tristeza...';
 Emociones();
 If fring>84 Then Label150.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label141DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a vacilación...';
 Emociones();
 If fring>84 Then Label141.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label112DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con acetilcolina...';
 Emociones();
 If fring>84 Then Label112.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label113DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con dopamina...';
 Emociones();
 If fring>84 Then Label113.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label114DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con norepinefirina...';
 Emociones();
 If fring>84 Then Label114.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label115DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con serotonina...';
 Emociones();
 If fring>84 Then Label115.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label125DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con sustancia P...';
 Emociones();
 If fring>84 Then Label125.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label175DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con glutamina...';
 Emociones();
 If fring>84 Then Label175.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label176DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con aspartata...';
 Emociones();
 If fring>84 Then Label176.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label116DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con GABA...';
 Emociones();
 If fring>84 Then Label116.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label117DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con endorfina...';
 Emociones();
 If fring>84 Then Label117.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label177DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con histamina...';
 Emociones();
 If fring>84 Then Label177.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label178DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con vasopresina...';
 Emociones();
 If fring>84 Then Label178.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label174DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con glicina...';
 Emociones();
 If fring>84 Then Label174.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label120DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con leucina encafilina...';
 Emociones();
 If fring>84 Then Label120.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label118DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con morfino encafilina...';
 Emociones();
 If fring>84 Then Label118.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label179DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con CCK...';
 Emociones();
 If fring>84 Then Label179.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label188DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con carnosina...';
 Emociones();
 If fring>84 Then Label188.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label189DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con bradikinina...';
 Emociones();
 If fring>84 Then Label189.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label190DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con tipos opioide...';
 Emociones();
 If fring>84 Then Label190.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label191DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con taurina...';
 Emociones();
 If fring>84 Then Label191.Enabled := False;
 end;
 
 procedure TFCancer_Explorer.Label192DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia con oxitocina...';
 Emociones();
 If fring>84 Then Label192.Enabled := False;
 end;
@@ -1211,7 +898,6 @@ end;
 procedure TFCancer_Explorer.Emociones();
 begin
 MyChrono.Start;
-panel6.visible:=true;
 GProgreso.Progress:=0;
 label211.caption:='--';
 label213.caption:='--';
@@ -1244,11 +930,6 @@ GProgreso.Refresh;
  '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(1000,111+random(100),1000,7,1+random(10),3,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
 until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
@@ -1259,8 +940,7 @@ fring:=100;
 If fring>84 Then RectificacionFinal();
 end;
 LRectificado.caption:='Rectificado | '+inttostr(fring);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-panel6.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  MyChrono.Stop;
 If (fring<85) and (CBAutomatico.Checked=True) Then Exploracion_Cerebral();
 If (fring>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -1274,7 +954,6 @@ vtiempo := 60+Random(60);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
-Panel6.Visible := True;
 DM.Conscida.open; DM.Conscida.IndexName:='';
  DM.Conscida.First;
 DM.Conscida.FindKey([734]);
@@ -1334,93 +1013,16 @@ label210.visible:=true;
 end;
 
 repeat
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en lóbulo frontal...';
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
  '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
- end;
-   oeg:=random(6);
-   if (oeg>4) then begin
-    Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en lóbulo parietal...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en lóbulo occipital...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en lóbulo temporal...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en sistema límbico...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en formación reticular...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en hipotálamo...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if oeg>4 then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en Cingulate Gyrus...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
-  oeg:=random(6);
-  if (oeg>4) then begin
-Panel6.Caption := 'Efectuando terapia de Frecuencias Ultra Altas en Corpus Callosum...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
 until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-  Panel6.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   fring:=45+random(75);
   if fring>100 then fring:=100;
 If fring>84 Then RectificacionFinal();
@@ -1434,7 +1036,6 @@ End;
 procedure TFCancer_Explorer.Button35Click(Sender: TObject);
 begin
 Gabi();
-Panel6.Caption:='Equilibrando desorden de hiperactividad e impulsividad...';
 Sofia();
 If FRing>84 Then Button35.Enabled := False;
 end;
@@ -1442,7 +1043,6 @@ end;
 procedure TFCancer_Explorer.Button34Click(Sender: TObject);
 begin
 Gabi();
-Panel6.Caption:='Reparando problemas generales de aprendizaje - LEAP...';
 Sofia();
 If FRing>84 Then Button34.Enabled := False;
 end;
@@ -1450,7 +1050,6 @@ end;
 procedure TFCancer_Explorer.Button37Click(Sender: TObject);
 begin
 Gabi();
-Panel6.Caption:='Reparando dislexia y disfonía...';
 Sofia();
 If FRing>84 Then Button37.Enabled := False;
 end;
@@ -1463,8 +1062,6 @@ vtiempo := 120+Random(60);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
- panel6.visible:=true;
- panel6.refresh;
 repeat
 debilidad();
   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
@@ -1472,104 +1069,11 @@ debilidad();
  '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
- oeg:=random(6);
- if oeg>4 then begin
-    Panel6.Caption := 'Equilibrando lóbulo frontal...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando lóbulo parietal...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando lóbulo occipital...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando lóbulo temporal...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando sistema límbico...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando formación reticular...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando hipotálamo...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- oeg:=random(6);
- if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando Cingulate Gyrus...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
-  oeg:=random(6);
-  if (oeg>4) then begin
-    Panel6.Caption := 'Equilibrando Corpus Callosum...';
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(22222+Random(1000),Random(55555),88888,1+random(20),1+random(10),1,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- end;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(5555,555+random(50),5555,5+random(5),5,5,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(1000,111+random(100),1000,7,1+random(10),5,
- '11111111','11111111');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
 until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-  Panel6.visible:=false;
- Panel6.refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   fring:=45+random(75);
   if fring>100 then fring:=100;
 Rectificacion();
@@ -1923,7 +1427,6 @@ end;
 
 procedure TFCancer_Explorer.Label80Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando lóbulo frontal...';
 Exploracion_Cerebral();
 If fring>84 Then Label80.Enabled:=False;
 end;
@@ -1972,121 +1475,58 @@ GProgreso.Progress := 0;
  DM.Conscida.last;
 End;
 
-
 procedure TFCancer_Explorer.Label194DblClick(Sender: TObject);
 begin
-Panel6.Caption:='Realizando terapia a culpabilidad...';
 Emociones();
 If fring>84 Then Label194.Enabled := False;
 end;
 
-procedure TFCancer_Explorer.AreasEntrelazadas();
-begin
-  oeg:=random(41);
-if oeg<2 then Label3.Caption:='Inflamación';
-if oeg=2 then Label3.Caption:='Cáncer';
-if oeg=3 then Label3.Caption:='Estrés';
-if oeg=4 then Label3.Caption:='Hipoadrenia';
-if oeg=5 then Label3.Caption:='Emociones';
-if oeg=6 then Label3.Caption:='Infección';
-if oeg=7 then Label3.Caption:='Toxicidad';
-if oeg=8 then Label3.Caption:='Traumas';
-if oeg=9 then Label3.Caption:='Causas heredadas';
-if oeg=10 then Label3.Caption:='Exceso o deficiencia de vitaminas';
-if oeg=11 then Label3.Caption:='Sistema cardio vascular';
-if oeg=12 then Label3.Caption:='Sistema hormonal';
-if oeg=13 then Label3.Caption:='Sistema linfático';
-if oeg=14 then Label3.Caption:='Hígado';
-if oeg=15 then Label3.Caption:='Riñones';
-if oeg=16 then Label3.Caption:='Sistema digestivo';
-if oeg=17 then Label3.Caption:='Tejido conectivo';
-if oeg=18 then Label3.Caption:='Huesos';
-if oeg=19 then Label3.Caption:='Agua alcalina o ácida';
-if oeg=20 then Label3.Caption:='Sangre';
-if oeg=21 then Label3.Caption:='Entorno';
-if oeg=22 then Label3.Caption:='Alergias';
-if oeg=23 then Label3.Caption:='Riesgo emocional';
-if oeg=24 then Label3.Caption:='Circulación';
-if oeg=25 then Label3.Caption:='Sistema inmunitario';
-if oeg=26 then Label3.Caption:='Radiación';
-if oeg=27 then Label3.Caption:='Bacterias';
-if oeg=28 then Label3.Caption:='Fungosidades';
-if oeg=29 then Label3.Caption:='Virus';
-if oeg=30 then Label3.Caption:='Parásitos';
-if oeg=31 then Label3.Caption:='Amebas';
-if oeg=32 then Label3.Caption:='Envenenamiento alimentario';
-if oeg=33 then Label3.Caption:='Regulación de azúcar';
-if oeg=34 then Label3.Caption:='Sistema neurológico';
-if oeg=35 then Label3.Caption:='Sistema sensorial';
-if oeg=36 then Label3.Caption:='Colesterol';
-if oeg=37 then Label3.Caption:='Sistema respiratorio';
-if oeg=38 then Label3.Caption:='Oxidación';
-if oeg=39 then Label3.Caption:='Hidratación';
-if oeg>39 then Label3.Caption:='Cognicción';
-Label3.Refresh;
-End;
-
 procedure TFCancer_Explorer.Label211Click(Sender: TObject);
 begin
 If Label211.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label213Click(Sender: TObject);
 begin
 If Label213.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label214Click(Sender: TObject);
 begin
 If Label214.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label215Click(Sender: TObject);
 begin
 If Label215.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label216Click(Sender: TObject);
 begin
 If Label216.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label217Click(Sender: TObject);
 begin
 If Label217.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label219Click(Sender: TObject);
 begin
 If Label219.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label221Click(Sender: TObject);
 begin
 If Label221.Caption='--' Then Exit;
-AreasEntrelazadas();
-end;
-
-procedure TFCancer_Explorer.CheckBox1Click(Sender: TObject);
-begin
-If CheckBox1.Checked = True Then Label617.Visible := True
-else
-Label617.Visible := False;
-End;
-
-procedure TFCancer_Explorer.FormClose(Sender: TObject;
-  var Action: TCloseAction);
-begin
-Label539.Caption := '|||||';
-Label540.Caption := '|||||';
-Label1.Caption := '|||||';
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Image3Click(Sender: TObject);
@@ -2109,82 +1549,71 @@ end;
 procedure TFCancer_Explorer.Label218Click(Sender: TObject);
 begin
 If Label218.Caption='--' Then Exit;
-AreasEntrelazadas();
+BCausas.Click;
 end;
 
 procedure TFCancer_Explorer.Label73Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Lóbulo occipital...';
 Exploracion_Cerebral();
 If fring>84 Then Label73.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label4Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Corpus Callosum...';
 Exploracion_Cerebral();
 If fring>84 Then Label4.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label72Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Lóbulo parietal...';
 Exploracion_Cerebral();
 If fring>84 Then Label72.Enabled:=False;
 end;
 
-procedure TFCancer_Explorer.Label1Click(Sender: TObject);
+procedure TFCancer_Explorer.LOrganosGlandulasClick(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando '+Label1.Caption+'...';
 Exploracion_Cerebral();
-If fring>84 Then Label1.Enabled:=False;
+If fring>84 Then LOrganosGlandulas.Enabled:=False;
 end;
 
-procedure TFCancer_Explorer.Label8Click(Sender: TObject);
+procedure TFCancer_Explorer.LAVMClick(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando '+Label1.Caption+'...';
 Exploracion_Cerebral();
-If fring>84 Then Label8.Enabled:=False;
+If fring>84 Then LAVM.Enabled:=False;
 end;
 
-procedure TFCancer_Explorer.Label3Click(Sender: TObject);
+procedure TFCancer_Explorer.LCausasClick(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando '+Label3.Caption+'...';
 Exploracion_Cerebral();
-If fring>84 Then Label3.Enabled:=False;
+If fring>84 Then LCausas.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label12Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando hipotálamo...';
 Exploracion_Cerebral();
 If fring>84 Then Label12.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label10Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando Cingulate Gyrus...';
 Exploracion_Cerebral();
 If fring>84 Then Label10.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label11Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando sistema límbico...';
 Exploracion_Cerebral();
 If fring>84 Then Label11.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Label13Click(Sender: TObject);
 begin
-Panel6.caption:='Equilibrando '+Label13.Caption+'...';
 Exploracion_Cerebral();
 If fring>84 Then Label13.Enabled:=False;
 end;
 
 procedure TFCancer_Explorer.Button2Click(Sender: TObject);
 begin
-Panel6.caption:='Estimulación general a cerebro...';
 Exploracion_Cerebral();
 If fring>84 Then Begin
 Button2.Enabled:=False;
@@ -2204,7 +1633,6 @@ end;
 procedure TFCancer_Explorer.Button3Click(Sender: TObject);
 begin
 Gabi();
-Panel6.Caption:='Mejorando pulso eléctrico neuronal...';
 Sofia();
 If FRing>84 Then Button3.Enabled := False;
 end;
@@ -2212,6 +1640,124 @@ end;
 procedure TFCancer_Explorer.Panel2Click(Sender: TObject);
 begin
 Panel5.Visible := False;
+end;
+
+procedure TFCancer_Explorer.Label15Click(Sender: TObject);
+begin
+ Frecompensa.Showmodal;
+end;
+
+procedure TFCancer_Explorer.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+LCausas.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+LOrganosGlandulas.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+LAVM.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BHomeopatiaClick(Sender: TObject);
+begin
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+LHomeopatia.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BAfirmacionesClick(Sender: TObject);
+begin
+randomize;
+LBAfirmaciones.Itemindex:=Random(LBAfirmaciones.Items.Count);
+LAfirmaciones.Caption := LBAfirmaciones.Items[LBAfirmaciones.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BSistemasClick(Sender: TObject);
+begin
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+LSistemas.Caption := LBSistemas.Items[LBSistemas.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+LToxinas.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+LMeridianos.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BProcesosClick(Sender: TObject);
+begin
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+LProcesos.Caption := LBProcesos.Items[LBProcesos.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.LMeridianosClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LMeridianos.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.LProcesosClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LProcesos.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.LToxinasClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LToxinas.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.LSistemasClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LSistemas.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.LAfirmacionesClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LAfirmaciones.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.LHomeopatiaClick(Sender: TObject);
+begin
+Exploracion_Cerebral();
+If fring>84 Then LHomeopatia.Enabled:=False;
+end;
+
+procedure TFCancer_Explorer.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+LEPositivas.Caption := LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure TFCancer_Explorer.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+LENegativas.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
 end;
 
 end.

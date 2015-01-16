@@ -10,7 +10,6 @@ uses
 type
   TfrmCDPlayer = class(TForm)
     Timer1: TTimer;
-    PDesarrollo: TPanel;
     Button2: TButton;
     Button3: TButton;
     Button6: TButton;
@@ -69,19 +68,6 @@ type
     Panel11: TPanel;
     CBTerapiaExtendida: TCheckBox;
     Label8: TLabel;
-    GBAdicional: TGroupBox;
-    Label231: TLabel;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Button62: TButton;
-    Button63: TButton;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
-    Edit11: TEdit;
     Image1: TImage;
     GBLobulos: TGroupBox;
     label45: TLabel;
@@ -306,7 +292,6 @@ type
     Button135: TButton;
     Button136: TButton;
     Button137: TButton;
-    MTumores: TMemo;
     PTumores2: TPanel;
     Panel18: TPanel;
     GroupBox14: TGroupBox;
@@ -540,20 +525,6 @@ type
     THabilidades: TTimer;
     Button71: TButton;
     ELesiones: TEdit;
-    Button87: TButton;
-    Button220: TButton;
-    Button232: TButton;
-    Button237: TButton;
-    Button238: TButton;
-    Button239: TButton;
-    Button240: TButton;
-    Button241: TButton;
-    Button242: TButton;
-    Button243: TButton;
-    Button244: TButton;
-    Button245: TButton;
-    Button246: TButton;
-    Button247: TButton;
     PMejora: TPanel;
     Button248: TButton;
     EMejora: TEdit;
@@ -708,14 +679,6 @@ type
     CheckBox127: TCheckBox;
     CheckBox128: TCheckBox;
     CheckBox129: TCheckBox;
-    Ed1: TEdit;
-    Ed2: TEdit;
-    Ed3: TEdit;
-    Ed4: TEdit;
-    Ed5: TEdit;
-    Ed6: TEdit;
-    Ed7: TEdit;
-    Ed8: TEdit;
     CheckBox103: TCheckBox;
     CheckBox104: TCheckBox;
     CheckBox105: TCheckBox;
@@ -839,7 +802,6 @@ type
     Label20: TLabel;
     Label21: TLabel;
     Button4: TButton;
-    Edit2: TEdit;
     Button402: TButton;
     Button404: TButton;
     Button405: TButton;
@@ -936,6 +898,29 @@ type
     IContinuar: TImage;
     Q_Filtro: TQuery;
     DS_Filtro: TDataSource;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
 
     Procedure MyWinExecChar;
     procedure FormCreate(Sender: TObject);
@@ -949,7 +934,6 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button78Click(Sender: TObject);
-    procedure PDesarrolloClick(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button18Click(Sender: TObject);
     procedure Button19Click(Sender: TObject);
@@ -986,11 +970,8 @@ type
     procedure Button52Click(Sender: TObject);
     procedure Button53Click(Sender: TObject);
     procedure Button55Click(Sender: TObject);
-    procedure Button56Click(Sender: TObject);
     procedure Button59Click(Sender: TObject);
     procedure Button60Click(Sender: TObject);
-    procedure Button62Click(Sender: TObject);
-    procedure Button63Click(Sender: TObject);
     procedure Button66Click(Sender: TObject);
     procedure CancerEnergeticScan1Click(Sender: TObject);
     procedure Button83Click(Sender: TObject);
@@ -1022,15 +1003,6 @@ type
     procedure Button101Click(Sender: TObject);
     procedure Button72Click(Sender: TObject);
     procedure Button89Click(Sender: TObject);
-    procedure Edit3Click(Sender: TObject);
-    procedure Edit4Click(Sender: TObject);
-    procedure Edit5Click(Sender: TObject);
-    procedure Edit7Click(Sender: TObject);
-    procedure Edit6Click(Sender: TObject);
-    procedure Edit8Click(Sender: TObject);
-    procedure Edit9Click(Sender: TObject);
-    procedure Edit10Click(Sender: TObject);
-    procedure Edit11Click(Sender: TObject);
     procedure Time_CronoTimer(Sender: TObject);
     procedure Btn_1Click(Sender: TObject);
     procedure Btn_2Click(Sender: TObject);
@@ -1260,20 +1232,6 @@ type
     procedure Button162Click(Sender: TObject);
     procedure Button158Click(Sender: TObject);
     procedure DBGrid3ColEnter(Sender: TObject);
-    procedure Button87Click(Sender: TObject);
-    procedure Button220Click(Sender: TObject);
-    procedure Button232Click(Sender: TObject);
-    procedure Button237Click(Sender: TObject);
-    procedure Button238Click(Sender: TObject);
-    procedure Button239Click(Sender: TObject);
-    procedure Button240Click(Sender: TObject);
-    procedure Button241Click(Sender: TObject);
-    procedure Button242Click(Sender: TObject);
-    procedure Button243Click(Sender: TObject);
-    procedure Button244Click(Sender: TObject);
-    procedure Button245Click(Sender: TObject);
-    procedure Button246Click(Sender: TObject);
-    procedure Button247Click(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
     procedure Button269Click(Sender: TObject);
     procedure ESistemasClick(Sender: TObject);
@@ -1467,8 +1425,6 @@ type
     procedure Button323Click(Sender: TObject);
     procedure IContinuarClick(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure Edit2Click(Sender: TObject);
-    procedure Edit2Change(Sender: TObject);
     procedure Button196Click(Sender: TObject);
     procedure Button185Click(Sender: TObject);
     procedure Button201Click(Sender: TObject);
@@ -1564,7 +1520,6 @@ type
 
   private
     { Private declarations }
-        QstringF :String;
       QstringAlpha, QString:string;
 
   public
@@ -1589,7 +1544,6 @@ type
     Procedure ISCD2();
     procedure ActualizaValores();
     procedure ActualizaValores2(ss: string);
-    procedure EAF();
     procedure TerapiaExtendida();
     procedure LimpiarStanine();
     procedure Stanine();
@@ -1630,8 +1584,7 @@ function BreakDown( nValue : longint ) : string;
 implementation
 
 Uses
-Unit_Cancer1,
-Freq2,spine, testdata,repordat,homeo,freq,PicUnit,Denta, DataMod,
+Unit_Cancer1,Freq2,spine, testdata,repordat,homeo,freq,PicUnit,Denta, DataMod,
   natdig, Age, Nut, UVoice,UnitVol,Wawp, Patname, Cnscios, scrollu,flash,
   Risks, Calibrat, uscioworking, CDMain, UCancer_Explorer, ucomport,
   Urecompensa, patform, ondas, Testdata_Alterna;
@@ -1688,7 +1641,6 @@ begin
               if GetDriveType( sCRoot ) = DRIVE_CDROM then
              bFound := True;
          end;
-
      if bFound then
      Begin
          { MessageDlg( 'CDROM found at ' + Chr(nDrive), mtInformation, [mbOK], 0)}
@@ -1698,10 +1650,8 @@ begin
           on EMCIDeviceError do MessageDlg('La unidad de CD está en uso...', mtInformation,
           [mbOk], 0);
          End;
-
          CDVAN:=True;
          breproduce := true;
-
      end
      else
      Begin
@@ -1855,7 +1805,7 @@ end;
 procedure TfrmCDPlayer.Button2Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PAdolecentes.Visible := True;
 end;
@@ -1863,7 +1813,7 @@ end;
 procedure TfrmCDPlayer.Button3Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PAntiDolor.Visible := True;
 end;
@@ -1871,7 +1821,7 @@ end;
 procedure TfrmCDPlayer.Button6Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PRejuvenecimiento.Visible := True;
 end;
@@ -1879,7 +1829,7 @@ end;
 procedure TfrmCDPlayer.Button7Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PRendimiento.visible := True;
 end;
@@ -1888,22 +1838,16 @@ procedure TfrmCDPlayer.Button78Click(Sender: TObject);
 begin
 PEjercicio.Visible := False;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de habilidades cerebrales...';
 If CBAutomatico2.Checked = True Then THabilidades.Enabled := True;
 BMaestro.Click;
 THabilidades.Enabled := False;
 if rec >84 Then Button78.Enabled := False;
 end;
 
-procedure TfrmCDPlayer.PDesarrolloClick(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
-end;
-
 procedure TfrmCDPlayer.Button5Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PSistemas.Visible := True;
 end;
@@ -1911,7 +1855,7 @@ end;
 procedure TfrmCDPlayer.Button18Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PAfeccionesND.Visible := True;
 end;
@@ -1919,7 +1863,7 @@ end;
 procedure TfrmCDPlayer.Button19Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PLesiones.Visible := True;
 end;
@@ -1927,7 +1871,7 @@ end;
 procedure TfrmCDPlayer.Button23Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PageControl1.activepage := TabSheet1;
 TabSheet1.Caption := 'Incidencia Galvánica';
@@ -2048,7 +1992,6 @@ end;
 procedure TfrmCDPlayer.Button29Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Oxigenación...';
 BMaestro.Click;
 if rec >84 Then Button29.Enabled := False;
 end;
@@ -2056,7 +1999,6 @@ end;
 procedure TfrmCDPlayer.Button31Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Voluntad Divina / Pineal...';
 BMaestro.Click;
 if rec >84 Then Button31.Enabled := False;
 end;
@@ -2064,7 +2006,6 @@ end;
 procedure TfrmCDPlayer.Button32Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Agresividad...';
 BMaestro.Click;
 if rec >84 Then Button32.Enabled := False;
 end;
@@ -2072,7 +2013,6 @@ end;
 procedure TfrmCDPlayer.Button33Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Rebeldía...';
 BMaestro.Click;
 if rec >84 Then Button33.Enabled := False;
 end;
@@ -2080,7 +2020,6 @@ end;
 procedure TfrmCDPlayer.Button34Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Elasticidad celular...';
 BMaestro.Click;
 if rec >84 Then Button34.Enabled := False;
 end;
@@ -2088,7 +2027,6 @@ end;
 procedure TfrmCDPlayer.Button35Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Reacción y Agilidad...';
 BMaestro.Click;
 if rec >84 Then Button35.Enabled := False;
 end;
@@ -2096,7 +2034,6 @@ end;
 procedure TfrmCDPlayer.Button37Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Relajación y Sueño...';
 BMaestro.Click;
 if rec >84 Then Button37.Enabled := False;
 end;
@@ -2104,7 +2041,6 @@ end;
 procedure TfrmCDPlayer.Button38Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema digestivo...';
 BMaestro.Click;
 if rec >84 Then Button38.Enabled := False;
 end;
@@ -2112,14 +2048,12 @@ end;
 procedure TfrmCDPlayer.Button39Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Telomerasa...';
 BMaestro.Click;
 if rec >84 Then Button39.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.FormShow(Sender: TObject);
 begin
-DM.Bitacora('Carga Estimulación neuro cerebral');
 image1.Picture.loadfromfile ('Blur10.jpg');
 IContinuar.Picture.loadfromfile ('atom.bmp');
 Image8.picture := testForm1.Image2.picture;
@@ -2218,348 +2152,14 @@ ActualizaDBGrid3();
  Freq2.TestAmp:=1;
 ISCD();
 If CDVAN=True Then UpdateTracks;
-
-oeg:=random(43);
-if oeg=1 then Edit3.text:=Edit3.text+' | Inflamación';
-if oeg=2 then Edit3.text:=Edit3.text+' | Cáncer';
-if oeg=3 then Edit3.text:=Edit3.text+' | Estrés';
-if oeg=4 then Edit3.text:=Edit3.text+' | Hipoadrenia';
-if oeg=5 then Edit3.text:=Edit3.text+' | Emociones';
-if oeg=6 then Edit3.text:=Edit3.text+' | Infección';
-if oeg=7 then Edit3.text:=Edit3.text+' | Toxicidad';
-if oeg=8 then Edit3.text:=Edit3.text+' | Trauma';
-if oeg=9 then Edit3.text:=Edit3.text+' | Factores hereditarios';
-if oeg=10 then Edit3.text:=Edit3.text+' | Def. o exceso de vitaminas';
-if oeg=11 then Edit3.text:=Edit3.text+' | Sistema cardiovascular';
-if oeg=12 then Edit3.text:=Edit3.text+' | Sistema hormonal';
-if oeg=13 then Edit3.text:=Edit3.text+' | Sistema linfático';
-if oeg=14 then Edit3.text:=Edit3.text+' | Hígado';
-if oeg=15 then Edit3.text:=Edit3.text+' | Riñones';
-if oeg=16 then Edit3.text:=Edit3.text+' | Sistema digestivo';
-if oeg=17 then Edit3.text:=Edit3.text+' | Tejido conectivo';
-if oeg=18 then Edit3.text:=Edit3.text+' | Sistema óseo';
-if oeg=19 then Edit3.text:=Edit3.text+' | Agua - Alcalina o ácida';
-if oeg=20 then Edit3.text:=Edit3.text+' | Sangre';
-if oeg=21 then Edit3.text:=Edit3.text+' | Medio ambiental';
-if oeg=22 then Edit3.text:=Edit3.text+' | Alergias';
-if oeg=23 then Edit3.text:=Edit3.text+' | Riesgo emocional';
-if oeg=24 then Edit3.text:=Edit3.text+' | Sistema circulatorio';
-if oeg=25 then Edit3.text:=Edit3.text+' | Sistema inmune';
-if oeg=26 then Edit3.text:=Edit3.text+' | Radiación';
-if oeg=27 then Edit3.text:=Edit3.text+' | Bacterias';
-if oeg=28 then Edit3.text:=Edit3.text+' | Fungosidades';
-if oeg=29 then Edit3.text:=Edit3.text+' | Virus';
-if oeg=30 then Edit3.text:=Edit3.text+' | Parásitos';
-if oeg=31 then Edit3.text:=Edit3.text+' | Ameba';
-if oeg=32 then Edit3.text:=Edit3.text+' | Envenamiento alimentario';
-if oeg=33 then Edit3.text:=Edit3.text+' | Regulación del azúcar';
-if oeg=34 then Edit3.text:=Edit3.text+' | Sistema neurológico';
-if oeg=35 then Edit3.text:=Edit3.text+' | Sistema sensorial';
-if oeg=36 then Edit3.text:=Edit3.text+' | Colesterol';
-if oeg=37 then Edit3.text:=Edit3.text+' | Sistema respiratorio';
-if oeg=38 then Edit3.text:=Edit3.text+' | Oxidación';
-if oeg=39 then Edit3.text:=Edit3.text+' | Hidratación';
-if oeg=40 then Edit3.text:=Edit3.text+' | Sistema cognictivo';
-oeg:=random(16);
-if oeg=0 then Edit3.text:=Edit3.text+' | Paso enzimático';
-if oeg=1 then Edit3.text:=Edit3.text+' | Conexión energética';
-if oeg=2 then Edit3.text:=Edit3.text+' | Cerebro';
-if oeg=3 then Edit3.text:=Edit3.text+' | Sistema nervioso';
-if oeg=4 then Edit3.text:=Edit3.text+' | Paso enzimático';
-if oeg=5 then Edit3.text:=Edit3.text+' | Sistema hormonal';
-if oeg=6 then Edit3.text:=Edit3.text+' | Flora intestinal';
-if oeg=7 then Edit3.text:=Edit3.text+' | Sangre';
-if oeg=8 then Edit3.text:=Edit3.text+' | Hormonas';
-if oeg=9 then Edit3.text:=Edit3.text+' | Suprarrenanles';
-if oeg=10 then Edit3.text:=Edit3.text+' | Pituitaria';
-if oeg=11 then Edit3.text:=Edit3.text+' | Emociones';
-if oeg=12 then Edit3.text:=Edit3.text+' | Sangre';
-if oeg=13 then Edit3.text:=Edit3.text+' | Sistema linfático';
-if oeg=14 then Edit3.text:=Edit3.text+' | Sistema energético';
-if oeg=15 then Edit3.text:=Edit3.text+' | Desintoxicación';
-if oeg=16 then Edit3.text:=Edit3.text+' | Intoxicación';
-
-if riskchart.ims>60 then Edit4.text:=Edit4.text+' | Sistema inmune';
-if riskchart.emo>60 then Edit4.text:=Edit4.text+' | Factores emocionales';
-if riskchart.infl>60 then Edit4.text:=Edit4.text+' | Inflamación';
-if riskchart.can>60 then Edit4.text:=Edit4.text+' | Cáncer';
-if riskchart.str>60 then Edit4.text:=Edit4.text+' | Estrés';
-if riskchart.infe>60 then Edit4.text:=Edit4.text+' | Infección';
-if riskchart.tox>60 then Edit4.text:=Edit4.text+' | Toxicidad';
-if riskchart.car>60 then Edit4.text:=Edit4.text+' | Sistema cardiovascular';
-if riskchart.Nut>60 then Edit4.text:=Edit4.text+' | Nutrientes';
-if riskchart.hor>60 then Edit4.text:=Edit4.text+' | Sistema hormonal';
-if riskchart.lym>60 then Edit4.text:=Edit4.text+' | Sistema linfático';
-if riskchart.bld>60 then Edit4.text:=Edit4.text+' | Sangre';
-if riskchart.cir>60 then Edit4.text:=Edit4.text+' | Sistema circulatorio';
-if riskchart.cho>60 then Edit4.text:=Edit4.text+' | Colesterol';
-if riskchart.oxi>60 then Edit4.text:=Edit4.text+' | Oxidación';
-if riskchart.hyd>60 then Edit4.text:=Edit4.text+' | Hidratación';
-if riskchart.hypa>60 then Edit4.text:=Edit4.text+' | Hipoadrenia';
-if riskchart.tra>60 then Edit4.text:=Edit4.text+' | Trauma/s';
-if riskchart.inh>60 then Edit4.text:=Edit4.text+' | Factores heredados';
-if riskchart.liv>60 then Edit4.text:=Edit4.text+' | Hígado';
-if riskchart.kid>60 then Edit4.text:=Edit4.text+' | Riñones';
-if riskchart.dig>60 then Edit4.text:=Edit4.text+' | Sistema digestivo';
-if riskchart.cnt>60 then Edit4.text:=Edit4.text+' | Tejido conectivo';
-if riskchart.bon>60 then Edit4.text:=Edit4.text+' | Sistema óseo';
-if riskchart.acid>60 then Edit4.text:=Edit4.text+' | Balance del pH';
-if riskchart.env>60 then Edit4.text:=Edit4.text+' | Medio ambiente';
-if riskchart.aler>60 then Edit4.text:=Edit4.text+' | Alergias';
-if riskchart.rad>60 then Edit4.text:=Edit4.text+' | Radiación';
-if riskchart.bac>60 then Edit4.text:=Edit4.text+' | Bacterias';
-if riskchart.fun>60 then Edit4.text:=Edit4.text+' | Fungosidades';
-if riskchart.vir>60 then Edit4.text:=Edit4.text+' | Virus';
-if riskchart.par>60 then Edit4.text:=Edit4.text+' | Parásitos';
-if riskchart.ameo>60 then Edit4.text:=Edit4.text+' | Ameba';
-if riskchart.fdp>60 then Edit4.text:=Edit4.text+' | Envenenamiento alimentario';
-if riskchart.sug>60 then Edit4.text:=Edit4.text+' | Regulación del azúcar';
-if riskchart.ner>60 then Edit4.text:=Edit4.text+' | Sistema neurológico';
-if riskchart.sener>60 then Edit4.text:=Edit4.text+' | Sistema sensorial';
-if riskchart.res>60 then Edit4.text:=Edit4.text+' | Sistema respiratorio';
-if riskchart.cog>60 then Edit4.text:=Edit4.text+' | Cognicción';
-oeg:=random(32);
-if oeg=0 then Edit7.text:=Edit7.text+' | Pulmones';
-if oeg=1 then Edit7.text:=Edit7.text+' | Piel';
-if oeg=2 then Edit7.text:=Edit7.text+' | Cerebro';
-if oeg=3 then Edit7.text:=Edit7.text+' | Senos nasales';
-if oeg=4 then Edit7.text:=Edit7.text+' | Estómago';
-if oeg=5 then Edit7.text:=Edit7.text+' | Ojos';
-if oeg=6 then Edit7.text:=Edit7.text+' | Flora intestinal';
-if oeg=7 then Edit7.text:=Edit7.text+' | Pulmones';
-if oeg=8 then Edit7.text:=Edit7.text+' | Estómago';
-if oeg=9 then Edit7.text:=Edit7.text+' | Suprarrenales';
-if oeg=10 then Edit7.text:=Edit7.text+' | Senos nasales';
-if oeg=11 then Edit7.text:=Edit7.text+' | Emociones';
-if oeg=12 then Edit7.text:=Edit7.text+' | Sangre';
-if oeg=13 then Edit7.text:=Edit7.text+' | Sistema linfático';
-if oeg=14 then Edit7.text:=Edit7.text+' | Dentadura';
-if oeg=15 then Edit7.text:=Edit7.text+' | Formación reticular';
-if oeg=16 then Edit7.text:=Edit7.text+' | Médula oblongata';
-if oeg=17 then Edit7.text:=Edit7.text+' | Lóbulo frontal del cerebro';
-if oeg=18 then Edit7.text:=Edit7.text+' | Lóbulo parietal del cerebro';
-if oeg=19 then Edit7.text:=Edit7.text+' | Lóbulo occipital del cerebro';
-if oeg=20 then Edit7.text:=Edit7.text+' | Lóbulo temporal del cerebro';
-if oeg=21 then Edit7.text:=Edit7.text+' | Tiroides';
-if oeg=22 then Edit7.text:=Edit7.text+' | Timo';
-if oeg=23 then Edit7.text:=Edit7.text+' | Médula espinal';
-if oeg=24 then Edit7.text:=Edit7.text+' | Sistema límbico';
-if oeg=25 then Edit7.text:=Edit7.text+' | Circuitos de la memoria';
-if oeg=26 then Edit7.text:=Edit7.text+' | Hipotálamo';
-if oeg=27 then Edit7.text:=Edit7.text+' | Pineal';
-if oeg=28 then Edit7.text:=Edit7.text+' | Pituitaria';
-if oeg=29 then Edit7.text:=Edit7.text+' | Paratiroides';
-if oeg=30 then Edit7.text:=Edit7.text+' | Sangre';
-if oeg=31 then Edit7.text:=Edit7.text+' | Sistema linfático';
-if oeg=32 then Edit7.text:=Edit7.text+' | Dentadura';
-if riskchart.ims>110 then Edit7.text:=Edit7.text+' | Sistema inmune';
-if riskchart.emo>110 then Edit7.text:=Edit7.text+' | Factores emocionales';
-if riskchart.infl>110 then Edit7.text:=Edit7.text+' | Inflamación';
-if riskchart.can>110 then Edit7.text:=Edit7.text+' | Cáncer';
-if riskchart.str>110 then Edit7.text:=Edit7.text+' | Estrés';
-if riskchart.infe>110 then Edit7.text:=Edit7.text+' | Infección';
-if riskchart.tox>110 then Edit7.text:=Edit7.text+' | Toxicidad';
-if riskchart.car>110 then Edit7.text:=Edit7.text+' | Sistema cardiovascular';
-if riskchart.Nut>110 then Edit7.text:=Edit7.text+' | Nutrientes';
-if riskchart.hor>110 then Edit7.text:=Edit7.text+' | Sistema hormonal';
-if riskchart.lym>110 then Edit7.text:=Edit7.text+' | Sistema linfático';
-if riskchart.bld>110 then Edit7.text:=Edit7.text+' | Sangre';
-if riskchart.cir>110 then Edit7.text:=Edit7.text+' | Sistema circulatorio';
-if riskchart.cho>110 then Edit7.text:=Edit7.text+' | Colesterol';
-if riskchart.oxi>110 then Edit7.text:=Edit7.text+' | Oxidación';
-if riskchart.hyd>110 then Edit7.text:=Edit7.text+' | Hidratación';
-if riskchart.hypa>110 then Edit7.text:=Edit7.text+' | Hipoadrenia';
-if riskchart.tra>110 then Edit7.text:=Edit7.text+' | Trauma/s';
-if riskchart.inh>110 then Edit7.text:=Edit7.text+' | Factores heredados';
-if riskchart.liv>110 then Edit7.text:=Edit7.text+' | Hígado';
-if riskchart.kid>110 then Edit7.text:=Edit7.text+' | Riñones';
-if riskchart.dig>110 then Edit7.text:=Edit7.text+' | Sistema digestivo';
-if riskchart.cnt>110 then Edit7.text:=Edit7.text+' | Tejido conectivo';
-if riskchart.bon>110 then Edit7.text:=Edit7.text+' | Sistema óseo';
-if riskchart.acid>110 then Edit7.text:=Edit7.text+' | Balance del pH';
-if riskchart.env>110 then Edit7.text:=Edit7.text+' | Medio ambiente';
-if riskchart.aler>110 then Edit7.text:=Edit7.text+' | Alergias';
-if riskchart.rad>110 then Edit7.text:=Edit7.text+' | Radiación';
-if riskchart.bac>110 then Edit7.text:=Edit7.text+' | Bacterias';
-if riskchart.fun>110 then Edit7.text:=Edit7.text+' | Fungosidades';
-if riskchart.vir>110 then Edit7.text:=Edit7.text+' | Virus';
-if riskchart.par>110 then Edit7.text:=Edit7.text+' | Parásitos';
-if riskchart.ameo>110 then Edit7.text:=Edit7.text+' | Ameba';
-if riskchart.fdp>110 then Edit7.text:=Edit7.text+' | Envenenamiento alimentario';
-if riskchart.sug>110 then Edit7.text:=Edit7.text+' | Regulación del azúcar';
-if riskchart.ner>110 then Edit7.text:=Edit7.text+' | Sistema neurológico';
-if riskchart.sener>110 then Edit7.text:=Edit7.text+' | Sistema sensorial';
-if riskchart.res>110 then Edit7.text:=Edit7.text+' | Sistema respiratorio';
-if riskchart.cog>110 then Edit7.text:=Edit7.text+' | Cognicción';
-
-oeg:=random(75);
-if oeg<2    then  Edit6.text:=Edit6.text+' | Regresión';
-if oeg= 2   then  Edit6.text:=Edit6.text+' | Agresión';
-if oeg=3    then  Edit6.text:=Edit6.text+' | Ira';
-if oeg=4    then  Edit6.text:=Edit6.text+' | Ansiedad';
-if oeg=5    then  Edit6.text:=Edit6.text+' | Conciencia';
-if oeg=6    then  Edit6.text:=Edit6.text+' | Tristeza';
-if oeg=7    then  Edit6.text:=Edit6.text+' | Culpa';
-if oeg=8    then  Edit6.text:=Edit6.text+' | Autismo emocional';
-if oeg=9    then  Edit6.text:=Edit6.text+' | Negación';
-if oeg=10    then  Edit6.text:=Edit6.text+' | Descuido';
-if oeg=11    then  Edit6.text:=Edit6.text+' | Decepción';
-if oeg=12    then  Edit6.text:=Edit6.text+' | Depresión';
-if oeg=13    then  Edit6.text:=Edit6.text+' | Poder';
-if oeg=14    then  Edit6.text:=Edit6.text+' | Duda de sí mismo/a';
-if oeg=15    then  Edit6.text:=Edit6.text+' | Miedo';
-if oeg=16    then  Edit6.text:=Edit6.text+' | Confusión';
-if oeg=17    then  Edit6.text:=Edit6.text+' | Vacilación';
-if oeg=18    then  Edit6.text:=Edit6.text+' | Celos';
-if oeg=19    then  Edit6.text:=Edit6.text+' | Alegría';
-if oeg=20    then  Edit6.text:=Edit6.text+' | Lujuria';
-if oeg=21    then  Edit6.text:=Edit6.text+' | Codicia';
-if oeg=22    then  Edit6.text:=Edit6.text+' | Poderes Extra Sensoriales - ESP';
-if oeg=23    then  Edit6.text:=Edit6.text+' | Dolor psíquico';
-if oeg=24    then  Edit6.text:=Edit6.text+' | Pasividad';
-if oeg=25    then  Edit6.text:=Edit6.text+' | Proyección';
-if oeg=26    then  Edit6.text:=Edit6.text+' | Racionalización';
-if oeg=27    then  Edit6.text:=Edit6.text+' | Imprudencia';
-if oeg=28    then  Edit6.text:=Edit6.text+' | Preocupación';
-if oeg=29    then  Edit6.text:=Edit6.text+' | Abandono';
-if oeg=30    then  Edit6.text:=Edit6.text+' | Avergonzamiento';
-if oeg=31    then  Edit6.text:=Edit6.text+' | Traición';
-if oeg=32    then  Edit6.text:=Edit6.text+' | Malentendimiento';
-if oeg=33    then  Edit6.text:=Edit6.text+' | Curiosidad';
-if oeg=34    then  Edit6.text:=Edit6.text+' | Sobrecogimiento';
-if oeg=35    then  Edit6.text:=Edit6.text+' | Conflicto religioso';
-if oeg=36    then  Edit6.text:=Edit6.text+' | Conflicto de identidad';
-if oeg=37    then  Edit6.text:=Edit6.text+' | Resistencia al cambio';
-if oeg=38    then  Edit6.text:=Edit6.text+' | Nervios';
-if oeg=39    then  Edit6.text:=Edit6.text+' | Risa';
-if oeg=40    then  Edit6.text:=Edit6.text+' | Entusiasmo';
-if oeg=41    then  Edit6.text:=Edit6.text+' | Vanidad';
-if oeg=42    then  Edit6.text:=Edit6.text+' | Regateo';
-if oeg=43    then  Edit6.text:=Edit6.text+' | Valentía';
-if oeg=44    then  Edit6.text:=Edit6.text+' | Vergüenza';
-if oeg=45    then  Edit6.text:=Edit6.text+' | Monotonía';
-if oeg=46    then  Edit6.text:=Edit6.text+' | Necesidad de cambio';
-if oeg=47    then  Edit6.text:=Edit6.text+' | Obsevación';
-if oeg=48    then  Edit6.text:=Edit6.text+' | Antagonismo';
-if oeg=49    then  Edit6.text:=Edit6.text+' | Sensualidad';
-if oeg=50    then  Edit6.text:=Edit6.text+' | Espiritualidad';
-if oeg=51    then  Edit6.text:=Edit6.text+' | Sexualidad';
-if oeg=52    then  Edit6.text:=Edit6.text+' | Adicción';
-if oeg=53    then  Edit6.text:=Edit6.text+' | Juzgamiento';
-if oeg=54    then  Edit6.text:=Edit6.text+' | Apatía';
-if oeg=55    then  Edit6.text:=Edit6.text+' | Extasis';
-if oeg=56    then  Edit6.text:=Edit6.text+' | Inadaptabilidad';
-if oeg=57    then  Edit6.text:=Edit6.text+' | Deseo de que las cosas sean diferentes';
-if oeg=58    then  Edit6.text:=Edit6.text+' | Perfeccionismo';
-if oeg=59    then  Edit6.text:=Edit6.text+' | Desesperación sin esperanza';
-if oeg=60    then  Edit6.text:=Edit6.text+' | Control';
-if oeg=61    then  Edit6.text:=Edit6.text+' | Subordinamiento';
-if oeg=62    then  Edit6.text:=Edit6.text+' | Orgullo';
-if oeg=63    then  Edit6.text:=Edit6.text+' | Resentimiento';
-if oeg=64    then  Edit6.text:=Edit6.text+' | Conmoción';
-if oeg=65    then  Edit6.text:=Edit6.text+' | Inconciencia';
-if oeg=66    then  Edit6.text:=Edit6.text+' | Obsesividad';
-if oeg=67    then  Edit6.text:=Edit6.text+' | Compulsividad';
-if oeg=68    then  Edit6.text:=Edit6.text+' | Manía incontrolable';
-if oeg=69    then  Edit6.text:=Edit6.text+' | Impulsividad';
-if oeg=70    then  Edit6.text:=Edit6.text+' | Lealtad inalterable';
-if oeg=71    then  Edit6.text:=Edit6.text+' | Fácil distracción';
-if oeg=72    then  Edit6.text:=Edit6.text+' | Enfoque mental';
-if oeg=73    then  Edit6.text:=Edit6.text+' | Irrealismo';
-if oeg>73    then  Edit6.text:=Edit6.text+' | Frustración';
-oeg:=random(75);
-if oeg<2    then  Edit6.text:=Edit6.text+' | Regresión';
-if oeg= 2   then  Edit6.text:=Edit6.text+' | Agresión';
-if oeg=3    then  Edit6.text:=Edit6.text+' | Ira';
-if oeg=4    then  Edit6.text:=Edit6.text+' | Ansiedad';
-if oeg=5    then  Edit6.text:=Edit6.text+' | Conciencia';
-if oeg=6    then  Edit6.text:=Edit6.text+' | Tristeza';
-if oeg=7    then  Edit6.text:=Edit6.text+' | Culpa';
-if oeg=8    then  Edit6.text:=Edit6.text+' | Autismo emocional';
-if oeg=9    then  Edit6.text:=Edit6.text+' | Negación';
-if oeg=10    then  Edit6.text:=Edit6.text+' | Descuido';
-if oeg=11    then  Edit6.text:=Edit6.text+' | Decepción';
-if oeg=12    then  Edit6.text:=Edit6.text+' | Depresión';
-if oeg=13    then  Edit6.text:=Edit6.text+' | Poder';
-if oeg=14    then  Edit6.text:=Edit6.text+' | Duda de sí mismo/a';
-if oeg=15    then  Edit6.text:=Edit6.text+' | Miedo';
-if oeg=16    then  Edit6.text:=Edit6.text+' | Confusión';
-if oeg=17    then  Edit6.text:=Edit6.text+' | Vacilación';
-if oeg=18    then  Edit6.text:=Edit6.text+' | Celos';
-if oeg=19    then  Edit6.text:=Edit6.text+' | Alegría';
-if oeg=20    then  Edit6.text:=Edit6.text+' | Lujuria';
-if oeg=21    then  Edit6.text:=Edit6.text+' | Codicia';
-if oeg=22    then  Edit6.text:=Edit6.text+' | Poderes Extra Sensoriales - ESP';
-if oeg=23    then  Edit6.text:=Edit6.text+' | Dolor psíquico';
-if oeg=24    then  Edit6.text:=Edit6.text+' | Pasividad';
-if oeg=25    then  Edit6.text:=Edit6.text+' | Proyección';
-if oeg=26    then  Edit6.text:=Edit6.text+' | Racionalización';
-if oeg=27    then  Edit6.text:=Edit6.text+' | Imprudencia';
-if oeg=28    then  Edit6.text:=Edit6.text+' | Preocupación';
-if oeg=29    then  Edit6.text:=Edit6.text+' | Abandono';
-if oeg=30    then  Edit6.text:=Edit6.text+' | Avergonzamiento';
-if oeg=31    then  Edit6.text:=Edit6.text+' | Traición';
-if oeg=32    then  Edit6.text:=Edit6.text+' | Malentendimiento';
-if oeg=33    then  Edit6.text:=Edit6.text+' | Curiosidad';
-if oeg=34    then  Edit6.text:=Edit6.text+' | Sobrecogimiento';
-if oeg=35    then  Edit6.text:=Edit6.text+' | Conflicto religioso';
-if oeg=36    then  Edit6.text:=Edit6.text+' | Conflicto de identidad';
-if oeg=37    then  Edit6.text:=Edit6.text+' | Resistencia al cambio';
-if oeg=38    then  Edit6.text:=Edit6.text+' | Nervios';
-if oeg=39    then  Edit6.text:=Edit6.text+' | Risa';
-if oeg=40    then  Edit6.text:=Edit6.text+' | Entusiasmo';
-if oeg=41    then  Edit6.text:=Edit6.text+' | Vanidad';
-if oeg=42    then  Edit6.text:=Edit6.text+' | Regateo';
-if oeg=43    then  Edit6.text:=Edit6.text+' | Valentía';
-if oeg=44    then  Edit6.text:=Edit6.text+' | Vergüenza';
-if oeg=45    then  Edit6.text:=Edit6.text+' | Monotonía';
-if oeg=46    then  Edit6.text:=Edit6.text+' | Necesidad de cambio';
-if oeg=47    then  Edit6.text:=Edit6.text+' | Obsevación';
-if oeg=48    then  Edit6.text:=Edit6.text+' | Antagonismo';
-if oeg=49    then  Edit6.text:=Edit6.text+' | Sensualidad';
-if oeg=50    then  Edit6.text:=Edit6.text+' | Espiritualidad';
-if oeg=51    then  Edit6.text:=Edit6.text+' | Sexualidad';
-if oeg=52    then  Edit6.text:=Edit6.text+' | Adicción';
-if oeg=53     then  Edit6.text:=Edit6.text+' | Juzgamiento';
-if oeg=54    then  Edit6.text:=Edit6.text+' | Apatía';
-if oeg=55    then  Edit6.text:=Edit6.text+' | Extasis';
-if oeg=56    then  Edit6.text:=Edit6.text+' | Inadaptabilidad';
-if oeg=57    then  Edit6.text:=Edit6.text+' | Deseo de que las cosas sean diferentes';
-if oeg=58    then  Edit6.text:=Edit6.text+' | Perfeccionismo';
-if oeg=59    then  Edit6.text:=Edit6.text+' | Desesperación sin esperanza';
-if oeg=60    then  Edit6.text:=Edit6.text+' | Control';
-if oeg=61    then  Edit6.text:=Edit6.text+' | Subordinamiento';
-if oeg=62    then  Edit6.text:=Edit6.text+' | Orgullo';
-if oeg=63    then  Edit6.text:=Edit6.text+' | Resentimiento';
-if oeg=64    then  Edit6.text:=Edit6.text+' | Conmoción';
-if oeg=65    then  Edit6.text:=Edit6.text+' | Inconciencia';
-if oeg=66    then  Edit6.text:=Edit6.text+' | Obsesividad';
-if oeg=67    then  Edit6.text:=Edit6.text+' | Compulsividad';
-if oeg=68    then  Edit6.text:=Edit6.text+' | Manía incontrolable';
-if oeg=69    then  Edit6.text:=Edit6.text+' | Impulsividad';
-if oeg=70    then  Edit6.text:=Edit6.text+' | Lealtad inalterable';
-if oeg=71    then  Edit6.text:=Edit6.text+' | Fácil distracción';
-if oeg=72    then  Edit6.text:=Edit6.text+' | Enfoque mental';
-if oeg=73    then  Edit6.text:=Edit6.text+' | Irrealismo';
-if oeg>73    then  Edit6.text:=Edit6.text+' | Frustración';
-Label55.caption:='Rectificado |';
+Label55.caption:='Rectificado | ';
 button24.visible:=true;
-//button25.visible:=true;
 vart:=1;
-if testform1.pn2>2 then Edit5.text:=Edit5.text+' | Toxinas de medicaciones alopáticas.';
-if testform1.pn3>20 then Edit5.text:=Edit5.text+'| Tabaquismo.';
-if testform1.pn8>10 then Edit5.text:=Edit5.text+' | Cafeína o alcaloides.';
-if testform1.pn12>10 then Edit5.text:=Edit5.text+' | Radiación.';
-if testform1.pn7>9 then Edit5.text:=Edit5.text+' | Toxinas de estrés.';
-if testform1.pn5>6 then Edit5.text:=Edit5.text+' | Mercurio o metales pesados.';
-if testform1.pn4>2 then Edit5.text:=Edit5.text+' | Toxinas esteroides.';
-
 end;
 
 procedure TfrmCDPlayer.Button41Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Biología...';
 BMaestro.Click;
 if rec >84 Then Button41.Enabled := False;
 end;
@@ -2567,7 +2167,6 @@ end;
 procedure TfrmCDPlayer.Button42Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Hidratación...';
 BMaestro.Click;
 if rec >84 Then Button42.Enabled := False;
 end;
@@ -2575,7 +2174,6 @@ end;
 procedure TfrmCDPlayer.Button43Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Procesos naturales...';
 BMaestro.Click;
 if rec >84 Then Button43.Enabled := False;
 end;
@@ -2583,7 +2181,6 @@ end;
 procedure TfrmCDPlayer.Button44Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Radicales libres / Oxidación...';
 BMaestro.Click;
 if rec >84 Then Button44.Enabled := False;
 end;
@@ -2591,7 +2188,6 @@ end;
 procedure TfrmCDPlayer.Button45Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Replicación del ADN...';
 BMaestro.Click;
 if rec >84 Then Button45.Enabled := False;
 end;
@@ -2599,7 +2195,6 @@ end;
 procedure TfrmCDPlayer.Button47Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Ansiedad...';
 BMaestro.Click;
 if rec >84 Then Button47.Enabled := False;
 end;
@@ -2607,7 +2202,6 @@ end;
 procedure TfrmCDPlayer.Button48Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Circuitos mentales...';
 BMaestro.Click;
 if rec >84 Then Button48.Enabled := False;
 end;
@@ -2615,7 +2209,6 @@ end;
 procedure TfrmCDPlayer.Button50Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Inflamación...';
 BMaestro.Click;
 if rec >84 Then Button50.Enabled := False;
 end;
@@ -2623,7 +2216,6 @@ end;
 procedure TfrmCDPlayer.Button51Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Demencias seniles...';
 BMaestro.Click;
 if rec >84 Then Button51.Enabled := False;
 end;
@@ -2631,7 +2223,6 @@ end;
 procedure TfrmCDPlayer.Button52Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Deseo de que las cosas sean diferentes...';
 BMaestro.Click;
 if rec >84 Then Button52.Enabled := False;
 end;
@@ -2639,7 +2230,6 @@ end;
 procedure TfrmCDPlayer.Button53Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a TDAH | Combinado...';
 BMaestro.Click;
 if rec >84 Then Button53.Enabled := False;
 end;
@@ -2647,30 +2237,19 @@ end;
 procedure TfrmCDPlayer.Button55Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Reloj biológico...';
 BMaestro.Click;
 if rec >84 Then Button55.Enabled := False;
-end;
-
-procedure TfrmCDPlayer.Button56Click(Sender: TObject);
-begin
-EAF();
-scioworking.button16.caption:='Detener terapia para '+Edit2.Text;
-scioworking.button15.caption:='Iniciar terapia para '+Edit2.Text;
-scioworking.button2.caption:='Terapia para '+Edit2.Text;
-Rx();
 end;
 
 procedure TfrmCDPlayer.Panel6Click(Sender: TObject);
 begin
 PEAF.visible:=false;
-Label55.Caption:='Rectificado |'; 
+Label55.Caption:='Rectificado | '; 
 end;
 
 procedure TfrmCDPlayer.Button59Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a estrés por Problemas académicos...';
 BMaestro.Click;
 if rec >84 Then Button59.Enabled := False;
 end;
@@ -2678,25 +2257,12 @@ end;
 procedure TfrmCDPlayer.Button60Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Estrés biológico...';
 BMaestro.Click;
 if rec >84 Then Button60.Enabled := False;end;
-
-procedure TfrmCDPlayer.Button62Click(Sender: TObject);
-begin
-GBAdicional.visible:=false;
-end;
-
-procedure TfrmCDPlayer.Button63Click(Sender: TObject);
-begin
-GBAdicional.visible:=false;
-showmessage('Patrones adicionales cargados.');
-end;
 
 procedure TfrmCDPlayer.Button66Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Fuerza muscular y Vitalidad...';
 BMaestro.Click;
 if rec >84 Then Button66.Enabled := False;
 end;
@@ -2704,7 +2270,6 @@ end;
 procedure TfrmCDPlayer.CancerEnergeticScan1Click(Sender: TObject);
 begin
 riskchart.can:=riskchart.can+30;
-//panel10.visible:=true;
   FCancer_Explorer.Button82.caption :='Revisar emociones';
   FCancer_Explorer.showmodal;
 end;
@@ -2712,7 +2277,6 @@ end;
 procedure TfrmCDPlayer.Button83Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Polio y Síndrome de post-polio (PPS)...';
 BMaestro.Click;
 if rec >84 Then Button83.Enabled := False;
 end;
@@ -2720,19 +2284,14 @@ end;
 procedure TfrmCDPlayer.ScanAccess1Click(Sender: TObject);
 begin
 riskchart.can:=riskchart.can+30;
-  FCancer_Explorer.Button84.caption:='Explorar focos cerebrales';
-  FCancer_Explorer.Button82.caption :='Revisar emociones';
   FCancer_Explorer.showmodal;
-
 end;
 
 procedure TfrmCDPlayer.Button69Click(Sender: TObject);
 begin
 Reaccion_Irregular(); MyChrono.Start;
-PDesarrollo.Caption:='Enviando ELF correspondientes a la matriz de frecuencias...';
-PDesarrollo.Visible := True;
 LimpiarStanine();
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 GProgreso.Progress := 0;
 GBLobulos.Enabled := True;
@@ -2776,13 +2335,12 @@ StanineFinal();
 TSintomas.Enabled := False;
 MyChrono.Stop;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.Visible := False;
 rec := 20+random(100)+Round((trackbar9.position)+(trackbar10.position));
 if rec > 100 Then rec := 100;
-Label55.Caption:='Rectificado |'+Inttostr(rec);
+Label55.Caption:='Rectificado | '+Inttostr(rec);
 Label55.Refresh;
 FMain.shaping:=RandomRange(1,105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GBLobulos.Enabled := False;
 if CBAutomatico.Checked = True Then LimpiaSintomas();
 if CBTerapiaExtendida.checked=true then TerapiaExtendida();
@@ -2797,7 +2355,7 @@ end;
 procedure TfrmCDPlayer.Button75Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 GBHabilidadesCerebrales.Visible := True;
 end;
@@ -2860,7 +2418,6 @@ end;
 procedure TfrmCDPlayer.Button76Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa de Creutfeldt-Jakob...';
 BMaestro.Click;
 if rec >84 Then Button76.Enabled := False;
 end;
@@ -2868,7 +2425,6 @@ end;
 procedure TfrmCDPlayer.Button86Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Contusiones / Cardenales...';
 BMaestro.Click;
 if rec >84 Then Button86.Enabled := False;
 end;
@@ -2893,19 +2449,13 @@ end;
 
 procedure TfrmCDPlayer.Button92Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar estimulación de habilidades extra sensoriales';
-scioworking.button16.caption:='Detener estimulación de habilidades extra sensoriales';
-scioworking.button2.caption:='Estimulación de habilidades extra sensoriales';
+scioworking.button2.caption:='Habilidades extra sensoriales - ESP fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button93Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para degeneración';
-scioworking.button15.caption:='Iniciar terapia para degeneración';
-scioworking.button2.caption:='Terapia para degeneración';
+scioworking.button2.caption:='Degeneración fX';
 Rx();
 end;
 
@@ -2916,55 +2466,37 @@ end;
 
 procedure TfrmCDPlayer.Button95Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para fiebre';
-scioworking.button15.caption:='Iniciar terapia para fiebre';
-scioworking.button2.caption:='Terapia para fiebre';
+scioworking.button2.caption:='Fiebre fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button97Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para inflamación';
-scioworking.button15.caption:='Iniciar terapia para inflamación';
-scioworking.button2.caption:='Terapia para inflamación';
+scioworking.button2.caption:='Inflamación fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button96Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para gripe';
-scioworking.button15.caption:='Iniciar terapia para gripe';
-scioworking.button2.caption:='Terapia para gripe';
+scioworking.button2.caption:='Gripe fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button98Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para alteraciones psicosomáticas';
-scioworking.button15.caption:='Iniciar terapia para alteraciones psicosomáticas';
-scioworking.button2.caption:='Terapia para alteraciones psicosomáticas';
+scioworking.button2.caption:='Alteraciones psicosomáticas';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button99Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para tensión arterial alta';
-scioworking.button15.caption:='Iniciar terapia para tensión arterial alta';
-scioworking.button2.caption:='Terapia para tensión arterial alta';
+scioworking.button2.caption:='Tensión arterial alta fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button100Click(Sender: TObject);
 begin
-EAF();
-scioworking.button16.caption:='Detener terapia para alteraciones inmunitarias';
-scioworking.button15.caption:='Iniciar terapia para alteraciones inmunitarias';
-scioworking.button2.caption:='Terapia para alteraciones inmunitarias';
+scioworking.button2.caption:='Alteraciones inmunitarias fX';
 Rx();
 end;
 
@@ -2993,10 +2525,7 @@ end;
 
 procedure TfrmCDPlayer.Button101Click(Sender: TObject);
 begin
-EAF();
-  scioworking.button16.caption:='Detener terapia para tensión arterial baja';
-  scioworking.button15.caption:='Iniciar terapia para tensión arterial baja';
-  scioworking.button2.caption:='Terapia para tensión arterial baja';
+  scioworking.button2.caption:='Tensión arterial baja fX';
 Rx();
 end;
 
@@ -3004,7 +2533,6 @@ end;
 procedure TfrmCDPlayer.Button72Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Atrofia muscular espinal...';
 BMaestro.Click;
 if rec >84 Then Button72.Enabled := False;
 end;
@@ -3012,54 +2540,8 @@ end;
 procedure TfrmCDPlayer.Button89Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Hematomas / Coagulos de sangre...';
 BMaestro.Click;
 if rec >84 Then Button89.Enabled := False;
-end;
-
-procedure TfrmCDPlayer.Edit3Click(Sender: TObject);
-begin
-Edit3.Text:='Nosodes: ';
-end;
-
-procedure TfrmCDPlayer.Edit4Click(Sender: TObject);
-begin
-Edit4.Text:='Isodes: ';
-end;
-
-procedure TfrmCDPlayer.Edit5Click(Sender: TObject);
-begin
-Edit5.Text:='Alersodes: ';
-end;
-
-procedure TfrmCDPlayer.Edit7Click(Sender: TObject);
-begin
-Edit7.Text:='Sarcodes: ';
-end;
-
-procedure TfrmCDPlayer.Edit6Click(Sender: TObject);
-begin
-Edit6.Text:='Síntoma principal: ';
-end;
-
-procedure TfrmCDPlayer.Edit8Click(Sender: TObject);
-begin
-Edit8.Text:='Conexión emocional principal: ';
-end;
-
-procedure TfrmCDPlayer.Edit9Click(Sender: TObject);
-begin
-Edit9.Text:='Preocupación espiritual principal: ';
-end;
-
-procedure TfrmCDPlayer.Edit10Click(Sender: TObject);
-begin
-Edit10.Text:='Preocupación social principal: ';
-end;
-
-procedure TfrmCDPlayer.Edit11Click(Sender: TObject);
-begin
-Edit11.Text:='Preocupación psicológica principal: ';
 end;
 
 procedure TfrmCDPlayer.Time_CronoTimer(Sender: TObject);
@@ -3141,7 +2623,6 @@ end;
 procedure TfrmCDPlayer.Button94Click(Sender: TObject);
 begin
    ed_valor.text := '';
-//      ActualizaValores();
 end;
 
 procedure TfrmCDPlayer.ActualizaValores();
@@ -3230,7 +2711,6 @@ end;
 procedure TfrmCDPlayer.Button104Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Laceraciones...';
 BMaestro.Click;
 if rec >84 Then Button104.Enabled := False;
 end;
@@ -3238,87 +2718,9 @@ end;
 procedure TfrmCDPlayer.Button103Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Enviando ELF correspondientes a '+ed_valor.text+' Hz ...';
 BMaestro.Click;
 if rec >84 Then Button103.Enabled := False;
 end;
-
-procedure TfrmCDPlayer.EAF();
-begin
-Randomize;
-oeg := random(72);
-If oeg <2 Then Showmessage('Tú eres el resultado de ti mismo no culpes nunca a nadie, nunca te quejes de nada, porque fundamentalmente tú has hecho lo que quieres de tu vida.');
-If oeg =2 Then Showmessage('Acepta la responsabilidad de edificarte a ti mismo y el valor de acusarte a ti del fracaso.');
-If oeg =3 Then Showmessage('Para volver a empezar corrígete, el triunfo del verdadero ser humano surge de las cenizas del error.');
-If oeg =4 Then Showmessage('Nunca te quejes de tu pobreza, tu soledad o tu suerte, enfréntate con valor y acepta que de una u otra manera son el resultado de tus actos y las pruebas que has de ganar.');
-If oeg =5 Then Showmessage('No olvides que la causa de tu presente, es tu pasado como la causa de tu futuro es tu presente.');
-If oeg =6 Then Showmessage('Aprende de los fuertes, de los audaces, imita a los valientes, a los energéticos, a los vencedores, a quienes no aceptan situaciones, a quienes vencieron a pesar de todo.');
-If oeg =7 Then Showmessage('No es el deseo de ganar el que hace a los triunfadores sino su deseo de prepararse tanto física como mentalmente.');
-If oeg =8 Then Showmessage('Piensa menos en tus problemas y más en tu trabajo.  Los problemas sin alimentarlos morirán.');
-If oeg =9 Then Showmessage('Aprende a nacer desde el dolor y a ser más grande que el más grande de los obstáculos.');
-If oeg =10 Then Showmessage('Tú eres parte de la fuerza de tu vida ahora, despierta, lucha, camina, decídete y triunfarás en la vida.');
-If oeg =11 Then Showmessage('Nunca pienses en al suerte porque la suerte es el pretexto de los fracasados.');
-If oeg =12 Then Showmessage('Nadie nos dijo que fuéramos, nadie nos dijo que lo intentaramos, nadie nos dijo que sería fácil.');
-If oeg =13 Then Showmessage('Alguien nos dijo que somos nuestros sueños, que si no soñamos estamos muertos.');
-If oeg =14 Then Showmessage('No mires el obstáculo que has superado, sino aquellos que vas a superar.');
-If oeg =15 Then Showmessage('No se trata de los más rápidos, ni los más fuertes o los más grandes, se trata de ser nosotros mismos.');
-If oeg =16 Then Showmessage('Tu Trabajo, Tu Familia, Tu Salud, Tus amistades y Tu Vida Espiritual, son cinco pelotas que debes mantener todas en el aire.');
-If oeg =17 Then Showmessage('Antes de hablar, escucha. Antes de escribir, piensa. Antes de criticar, examínate. Antes de herir, siente. Antes de orar, perdona. Antes de gastar, gana. Antes de rendirte, intenta.  Antes de MORIR, VIVE.');
-If oeg =18 Then Showmessage('Ten en cuenta que el gran amor y los grandes logros requieren grandes riesgos.');
-If oeg =19 Then Showmessage('Cuando pierdas, no pierdas la lección.');
-If oeg =20 Then Showmessage('Sigue las 3 R: Respeto a ti mismo, Respeto para los otros y Responsabilidad sobre todas tus acciones.');
-If oeg =21 Then Showmessage('El que abras los brazos a los cambios o a otras culturas no significa que te tengas que olvidar de tus valores.');
-If oeg =22 Then Showmessage('Se puede aceptar un fallo, cualquiera puede fallar, pero no se puede aceptar el no intentarlo.');
-If oeg =23 Then Showmessage('El talento gana juegos, pero el trabajo en equipo y la inteligencia ganan campeonatos.');
-If oeg =24 Then Showmessage('Paso a paso.  No se puede coincibir otra manera de lograr las cosas.');
-If oeg =25 Then Showmessage('Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana.');
-If oeg =26 Then Showmessage('El talento depende de la inspiración, pero el esfuerzo depende de cada uno.');
-If oeg =27 Then Showmessage('Si emociona pensarlo, imagínate hacerlo.');
-If oeg =28 Then Showmessage('Invariablemente en cada dificultad se esconde una oportunidad.');
-If oeg =29 Then Showmessage('El peligro es real, el miedo es una opción.');
-If oeg =30 Then Showmessage('Si el miedo al fracaso te impide intentarlo, ya habrás fracasado.');
-If oeg =31 Then Showmessage('No confundas el tener menos con el ser menos, el tener más con ser más, tampoco confundas lo que posees con quien eres.');
-If oeg =32 Then Showmessage('Yo me merezco todo lo bueno, no algo, un poquito, sino todo lo bueno.');
-If oeg =33 Then Showmessage('Ahora disuelvo cualquier pensamiento negativo o restrictivo. Me libero y disuelvo todas las limitaciones del pasado. No me ata ningún miedo ni limitación de la sociedad en la que vivo. Ya no me identifico con ningún tipo de limitación.');
-If oeg =34 Then Showmessage('En mi mente tengo libertad absoluta.');
-If oeg =35 Then Showmessage('Ahora entro a un nuevo espacio en la conciencia, en donde me veo de forma diferente. Estoy creando nuevos pensamientos acerca de mi ser y de mi vida. Mi nueva forma de pensar se convierte en nuevas experiencias.');
-If oeg =36 Then Showmessage('Ahora sé y afirmo que formo una unidad con el Próspero Poder del Universo. Y por lo tanto recibo multitud de bienes. La totalidad de las posibilidades está ante mí.');
-If oeg =37 Then Showmessage('Merezco la vida, una vida buena.');
-If oeg =38 Then Showmessage('Merezco el amor, abundante amor.');
-If oeg =39 Then Showmessage('Merezco la salud.');
-If oeg =40 Then Showmessage('Merezco vivir cómodamente y prosperar.');
-If oeg =41 Then Showmessage('Merezco la alegría y la felicidad.');
-If oeg =42 Then Showmessage('Merezco la libertad, la libertad de ser todo lo que puedo ser.');
-If oeg =43 Then Showmessage('Merezco muchas cosas más que todo eso: merezco todo lo bueno.');
-If oeg =44 Then Showmessage('El Universo está más que dispuesto a manifestar mis nuevas creencias y yo acepto la abundancia de esta vida con alegría, placer y gratitud. Porque me lo merezco, lo acepto y sé que es verdad.');
-If oeg =45 Then Showmessage('Así Es. Gracias Amado Universo.');
-If oeg =46 Then Showmessage('Permito que la prosperidad entre en mi vida en un nivel en el cual nunca entró. Merezco lo mejor y estoy dispuesta a aceptarlo.');
-If oeg =47 Then Showmessage('Mis ingresos aumentan constantemente.');
-If oeg =48 Then Showmessage('Dejo la pobreza de pensamientos para entrar en la prosperidad de pensamientos.');
-If oeg =49 Then Showmessage('Me amo a mi mismo, y me regocijo en quien soy, porque sé que la vida está aquí para mí y me proporciona todo lo que necesito.');
-If oeg =50 Then Showmessage('Me muevo de éxito en éxito, de alegría en alegría y de abundancia en abundancia.');
-If oeg =51 Then Showmessage('Tengo el poder de quien me creó, y expreso para mi mismo la grandeza que soy. Soy una expresión de la vida, divina y magnifica y estoy abierto y receptivo a todo lo bueno.');
-If oeg =52 Then Showmessage('Hoy es otro precioso día sobre la Tierra y vamos a vivirlo con alegría.');
-If oeg =53 Then Showmessage('Nadie puede arrebatarme jamás aquello que es mío por derecho propio.');
-If oeg =54 Then Showmessage('Aunque es posible que no sepa cómo perdonar, me dispongo a comenzar el proceso, sabiendo que encontraré ayuda en todos los aspectos de mi vida.');
-If oeg =55 Then Showmessage('Elijo perdonar a todo aquel que alguna vez haya hecho algo negativo. Éste es mi día del perdón. Me perdono por todo el daño que hice en el pasado, a mí y a los demás.');
-If oeg =56 Then Showmessage('Ellos son libres y yo soy libre. Somos uno con el poder que nos ha creado estamos seguros y a salvo.');
-If oeg =57 Then Showmessage('No importa lo que haya pensado de mí en el pasado. Hoy es un nuevo día.  En este nuevo momento, comienzo a verme de forma más compasiva.');
-If oeg =58 Then Showmessage('Las críticas y los juicios se desvanecen, y a medida que desaparecen me hago más libre para apreciar todo lo que soy.');
-If oeg =59 Then Showmessage('Pienso como si mi vida dependiera de ello,  porque sé que es así.');
-If oeg =60 Then Showmessage('La puerta se abre al amor, al amor por mí.');
-If oeg =61 Then Showmessage('Ésta es la senda de la curación. Vivo este día de tal modo que desee Recordarlo mañana.');
-If oeg =62 Then Showmessage('Hoy comienzo mi viaje de sanación.');
-If oeg =63 Then Showmessage('Somos uno con el Poder que nos ha creado.');
-If oeg =64 Then Showmessage('Estamos seguros y a salvo, y todo está bien en nuestro mundo.');
-If oeg =65 Then Showmessage('Sé que el amor es el estimulante del sistema inmunitario más poderoso que se conoce. Por lo tanto hago todo lo que puedo para aumentar el amor que siento por mí y por los demás.');
-If oeg =66 Then Showmessage('Con gusto disuelvo todas las pautas de pensamiento negativo que niegan o suprimen este caudal de amor.');
-If oeg =67 Then Showmessage('Soy completamente inmune  a todas las ideas y experiencias negativas que hubiera a mi alrededor.');
-If oeg =68 Then Showmessage('No tengo tiempo para perder en rencores y resentimientos.');
-If oeg =69 Then Showmessage('Ahora afirmo que cada célula de mi cuerpo está reaccionando a una nueva fuerza.');
-If oeg =70 Then Showmessage('Me estoy renovando en cada momento de este día.');
-If oeg >70 Then Showmessage('Me libero de la carga de la culpa y la vergüenza. Me alejo del pasado  y vivo en este momento con alegría y aceptación.');
-End;
 
 procedure TfrmCDPlayer.Panel10Click(Sender: TObject);
 begin
@@ -3500,7 +2902,7 @@ end;
 procedure TfrmCDPlayer.Button15Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PCM.Visible := True;
 end;
@@ -3528,247 +2930,105 @@ end;
 procedure TfrmCDPlayer.Button91Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PTumores.Visible := True;
 end;
 
 procedure TfrmCDPlayer.Button122Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Aquellos que se originan en el cerebro, es decir, que no tienen su origen en otras partes del cuerpo. Suelen aparecer durante '+
-'la infancia y también a partir de los cuarenta o cincuenta años. El tipo de tumor y su localización vienen determinados por la edad; en la '+
-'infancia y adolescencia predominan los astrocitomas infratentoriales y los tumores de la línea media como el meduloblastoma y el pinealoma; en la '+
-'edad adulta, los astrocitomas anaplásicos y glioblastomas (que son los tumores intracraneales primarios más diagnosticados aunque el más frecuente '+
-'en series autópsicas es el meningioma).  El origen de los tumores intracraneales primarios es desconocida. Algunas enfermedades hereditarias '+
-'presentan una elevada incidencia de tumores intracraneales, lo que sugiere la existencia de factores genéticos predisponentes.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Intracraneales primarios en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Intracraneales primarios...';
 BMaestro.Click;
 if rec >84 Then Button122.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button121Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Los gliomas son tumores que crecen a partir de los tejidos que sostienen y rodean a las células nerviosas.  El astrocitoma comprende '+
-'un grupo de tumores con formas de conducta biológica muy diferente.  Existen astrocitomas pilocíticos, difusos y anaplásicos.  El tratamiento del '+
-'astrocitoma pilocítico es quirúrgico.  En los astrocitomas difusos de bajo grado de malignidad se recomienda practicar radioterapia después de la '+
-'cirugía, sobre todo si quedan restos tumorales.  El tratamiento de los anaplásicos es el mismo que el de los glioblastomas.  La supervivencia está en '+
-'relación al grado de malignidad.  La mayoría de los tumores pilocíticos no aparecen de nuevo después de haber sido extirpados en su totalidad.  Por '+
-'contra, la supervivencia media de los pacientes con astrocitoma anaplásico es inferior a los 3 años.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Astrocitoma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Astrocitoma...';
 BMaestro.Click;
 if rec >84 Then Button121.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button127Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Este tumor representa el 20 por ciento de todos los tumores intracraneales y pertenece a la familia de unos tumores llamados gliomas '+
-'(en realidad, la mitad de los gliomas, son glioblastomas).  Los gliomas son tumores que crecen a partir de los tejidos que sostienen y rodean a las células '+
-'nerviosas.  Suele aparecer en la quinta o sexta década de vida y afecta más a los hombres que a las mujeres (un 60 por ciento a hombres y un 40 por ciento '+
-'a mujeres).  Se localiza habitualmente en los hemisferios cerebrales y en un 5-10 por ciento de los casos se origina en más de un lugar.  Se comporta con '+
-'marcada malignidad, invadiendo rápidamente el tejido cerebral y a menudo tiene ya un gran tamaño en el momento de ser diagnosticado, ocupando más de un '+
-'lóbulo cerebral o extendiéndose al hemisferio opuesto a través del cuerpo calloso (el cuerpo calloso es un conglomerado de fibras nerviosas blancas que '+
-'conectan estos dos hemisferios).  El cuadro clínico consiste inicialmente en manifestaciones generales como cefalea, vómitos, trastornos mentales y crisis '+
-'convulsivas (epilépticas) siguiéndose al cabo de pocas semanas de un síndrome focal lobar o de un síndrome del cuerpo calloso.  Dado que se trata de un '+
-'tumor muy vascularizado en ocasiones el debut puede ser ictal (con muerte de tejido cerebral) debido a una hemorragia intratumoral.  El tratamiento '+
-'consiste en cirugía lo más radical posible seguida de radioterapia.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Glioblastoma multiforme en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Glioblastoma multiforme...';
 BMaestro.Click;
 if rec >84 Then Button127.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button126Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Es un tumor derivado de las células ependimarias.  Estudiando el tejido aparece como "benigno", pero una minoría de tumores presentan '+
-'cambios anaplásicos. El cuadro clínico depende de la localización.  Los ependimomas del cuarto ventrículo causan hidrocefalia (dilatación anormal de los '+
-'ventrículos cerebrales a causa del exceso de líquido cefalorraquídeo en el cerebro) y un síndrome de hipertensión intracraneal general.  El tratamiento '+
-'consiste en la extirpación del tumor seguida de radioterapia local.  En los ependimomas anaplásicos se recomienda radioterapia craneoespinal para prevenir '+
-'la diseminación de las células tumorales.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Ependimona en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Ependimona...';
 BMaestro.Click;
 if rec >84 Then Button126.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button129Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Es un tumor benigno originado a partir de células aracnoideas.  Representa el 15 por ciento de todos los tumores intracraneales, '+
-'predomina en mujeres en proporción de 2 a 1 y su máxima frecuencia se da en la séptima década de la vida.  Es un tumor bien delimitado, redondeado o '+
-'aplanado (meningioma en placa) y separado del tejido esencial del cerebro por una cápsula.  Se origina en las células de la membrana que recubre el cerebro. '+
-' El tratamiento ideal es la extirpación radical del tumor.  Cuando su situación no permite extraerlo completamente lo habitual es que vuelva a aparecer, '+
-'en este caso se recomienda la radioterapia local sobre el lecho tumoral.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Meningioma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Meningioma...';
 BMaestro.Click;
 if rec >84 Then Button129.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button128Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Representa el 1-2 por ciento de todos los tumores intracraneales primarios pero su incidencia está aumentando debido a la asociación que '+
-'tiene con estados de inmunosupresión adquirida (SIDA, quimioterapia prolongada, trasplantados) o congénita (ataxia-telangiectasia , síndrome de Wiskott-'+
-'Aldrich ).  En su mayoría son linfomas de células B (tumores del tejido linfático) con grado intermedio o alto de malignidad.  Se localizan en cualquier '+
-'parte del cerebro, cerebelo y médula espinal y en un 10 por ciento de los casos se hallan en más de una localización.  Es un tumor de crecimiento rápido, '+
-'altamente celular e infiltrativo y con gran capacidad para invadir el sistema ventricular y el espacio subaracnoideo causando ventriculitis y meningitis '+
-'linfomatosas.  El 30 por ciento de los linfomas cerebrales primarios desaparecen con tratamiento esteroideo, pero posteriormente vuelven a aparecer.  '+
-'La cirugía sólo tiene valor diagnóstico.  La radioterapia holocraneal consigue supervivencias medias de 12 meses.  El tratamiento combinado de radioterapia '+
-'y quimioterapia ha ofrecido en estudios preliminares mejores resultados que la radioterapia sola.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Linfoma cerebral primario en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Linfoma cerebral primario...';
 BMaestro.Click;
 if rec >84 Then Button128.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button131Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Se trata de un tumor con origen en las células embrionarias.  Su comportamiento es maligno.  El cuadro clínico se caracteriza por cefalea '+
-'matutina progresiva, vómitos, vértigos y sensación de inestabilidad.  La exploración física muestra coordinación escasa y movimientos inseguros, movimientos '+
-'inconscientes y rápidos del globo ocular y papiledema (inflamación del nervio óptico en su entrada en el ojo).  No es infrecuente la aparición de metástasis '+
-'sistémicas (reproducción de las células tumorales) en ganglios linfáticos, huesos y pulmón.  El tratamiento consiste en la extirpación del tumor seguida de '+
-'radioterapia sobre todo en el neuro eje.  Se recomienda quimioterapia si la extracción del tumor sólo ha sido parcial o existe riesgo de que vuelva a aparecer.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Meduloblastoma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Meduloblastoma...';
 BMaestro.Click;
 if rec >84 Then Button131.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button130Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Se trata de un tumor benigno que suele situarse en el cerebelo causando un síndrome vermiano o hemisférico con ataxia (incapacidad para '+
-'controlar los movimientos musculares voluntarios), nistagmo (movimientos inconscientes y rápidos del globo ocular), cefalea e inflamación del nervio óptico '+
-'en su entrada en el ojo (papiledema).  El hemangioblastoma del cerebelo a menudo se acompaña de angiomas retinianos (lunares en la retina) y de otras '+
-'alteraciones típicas de la enfermedad de Von Hippel- Lindau como quistes pancreáticos y tumores derivado de las células de los túbulos renales (hipernefroma).'+
-'  La extirpación completa del tumor es curativa.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Hemangioblastoma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Hemangioblastoma...';
 BMaestro.Click;
 if rec >84 Then Button130.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button133Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Son tumores originados en la glándula pineal. Ésta, situada en medio del cerebro, controla el reloj biológico del organismo, más '+
-'concretamente, el mecanismo que controla el ciclo del sueño y la vigilia.  Se distinguen varios tipos histológicos: germinoma, pinealoma (pineocitoma, '+
-'pineoblastoma), teratoma y glioma.  El más frecuente es el germinoma.  El germinoma suele aparecer en la infancia y primera adolescencia con leve predominio '+
-'en varones.  El cuadro clínico consta de un síndrome de hipertensión intracraneal combinado con signos típicos como parálisis de la mirada vertical hacia '+
-'arriba (síndrome de Parinaud) y alteraciones pupilares.  El tratamiento consiste en la extirpación quirúrgica lo más amplia posible seguida de radioterapia.  '+
-'En general tiene muy buen pronóstico excepto en las personas cuyo germinoma tiene componentes de coriocarcinoma y carcinoma embrionario en los que se '+
-'recomienda combinar el tratamiento con quimioterapia.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Pinealoma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Pinealoma...';
 BMaestro.Click;
 if rec >84 Then Button133.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button136Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Se origina en el epitelio de los plexos coroideos, sobre todo en el ventrículo lateral y en el cuarto ventrículo.  Son tumores de la '+
-'infancia, el 5O por ciento aparece durante el primer año y el 75 por ciento en la primera década.  El cuadro clínico consta de cefalea, somnolencia, '+
-'vómitos, diplopía (visión doble de los objetos, debido a trastornos de la coordinación de los músculos oculares), alteración de la marcha y papiledema '+
-'(inflamación del nervio óptico en su entrada en el ojo).';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Papiloma del cuarto ventrículo en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Papiloma del cuarto ventrículo...';
 BMaestro.Click;
 if rec >84 Then Button136.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button132Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Se trata de un tumor congénito.  Aparece en la infancia y adolescencia tardía.  Provoca comprensión del quiasma óptico y, por eso, el '+
-'cuadro clínico combina síntomas dependientes de la hipertensión intracraneal (cefalea, vómitos, papiledema) con alteraciones quiasmáticas (atrofia óptica, '+
-'hemianopsia o visión deficiente en la mitad del campo visual).  También produce alteraciones hipofisarias (amenorrea, trastorno de la líbido) e '+
-'hipotalámicas (somnolencia, anomalías en el control de la temperatura corporal, diabetes insípida).';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Craniofaringioma en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Craniofaringioma...';
 BMaestro.Click;
 if rec >84 Then Button132.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button135Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='La mayor incidencia se da en la quinta y sexta década, afectando a ambos sexos por igual. La clínica depende del tamaño. En la primera '+
-'etapa aparecen los síntomas de hipoacusia (disminución de la sensibilidad auditiva), vértigo y acúfenos (sensaciones anormales en los oídos, normalmente, '+
-'zumbidos).  A medida que se extiende aparece paresia facial (parálisis incompleta o transitoria facial), ataxia (incapacidad de coordinar movimientos '+
-'musculares voluntarios), hipoestesia de la cara, dismetría (trastorno de la amplitud de los movimientos), parálisis del hipogloso (del nervio debajo de la '+
-'lengua) y del vago (nervio neumogástrico) e hidrocefalia (dilatación anormal de los ventrículos cerebrales a causa del exceso de líquido en el cerebro).';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Neurinoma del acústico en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Neurinoma del acústico...';
 BMaestro.Click;
 if rec >84 Then Button135.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button134Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='La hipófisis, localizada en la base del cráneo, controla gran parte del sistema endocrino.  Los tumores de la glándula de la hipófisis '+
-'suelen ser benignos, pero secretan cantidades exageradas de hormonas hipofisarias.  El cuadro clínico consta de anomalías endocrinológicas: 1) Amenorrea: '+
-'interrupción de la menstruación, 2) Galactorrea: producción de leche en las mujerse que no están amamantando, 3) Enfermedad de Cushing: debido a niveles '+
-'elevados de glucocorticoides circulantes, en particular de cortisol, se presentan síntomas como: enrojecimiento de las mejillas, obesidad, aumento del '+
-'apetito, cara de luna llena, piel fina que se lesiona con facilidad, mala cicatrización de las heridas, etc. y 4) Acromegalia: aumento desproporcionado del '+
-'tamaño de la cabeza, la cara, las manos, los pies y el tórax.  También se sufren cefaleas y alteraciones campimétricas sobre todo hemianopsia (disminución o '+
-'pérdida de la mitad de la visión) bitemporal.  Mucho más raras son la presencia de afectación de nervios craneales por compresión del seno cavernoso o de '+
-'difunción hipotalámica.  El tratamiento depende del tamaño.  Si permanece intraselar o la extensión extraselar es escasa se recomienda radioterapia o '+
-'cirugía por vía transesfenoidal; si el tumor es ampliamente extraselar debe abordarse mediante craneotomía frontal.';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Adenomas de hipofisis en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Adenomas de hipofisis...';
 BMaestro.Click;
 if rec >84 Then Button134.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button137Click(Sender: TObject);
 begin
-MTumores.Lines[0]:='Sólo representan el 1 por ciento de los tumores intracraneales, pero son importantes por que pueden simular otras enfermedades '+
-'neurológicas (esclerosis múltiple, siringomielia, esclerosis lateral amiotrófica, mielopatía por cervicoartrosis) y porque, a pesar de ser benignos y de '+
-'localización extradural, si no se diagnostican precozmente causan lesiones neurológicas irreversibles.  Suelen ser meningiomas o neurofibromas.  El cuadro '+
-'clínico es muy variable.  Los síntomas más frecuentes son el dolor en la región occipital irradiado a hombro y la presencia de disestesias (trastorno de la '+
-'sensibilidad con disminución y retardo en las sensaciones) en extremidades superiores.  A medida que el tumor crece se añaden debilidad muscular (paresia '+
-'braquial, crural, tetraparesia, paraparesia), trastorno de la marcha, incontinencia esfinteriana y afectación de los pares craneales bajos (sobre todo del '+
-'nervio espinal).';
-Mtumores.Refresh;
 Reaccion_Irregular();
-If EPosicion.Text<>'' Then PDesarrollo.Caption:='Realizando corrección a Tumores del foramen mágnum en '+EPosicion.Text+'...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Tumores del foramen mágnum...';
 BMaestro.Click;
 if rec >84 Then Button137.Enabled := False;
 end;
@@ -3781,7 +3041,7 @@ end;
 procedure TfrmCDPlayer.Button22Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PTumores2.Visible := True;
 end;
@@ -3820,8 +3080,6 @@ red1:=RandomRange(1,9000)+1000;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-//SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-//FormComPort.Treat1secondGrid2('SINUS',10000,2,4,255,Random(10));
  end;
 
 procedure TfrmCDPlayer.Reaccion_Irregular();
@@ -3829,18 +3087,9 @@ begin
 alarm := random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
 end;
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
-
 red1:=RandomRange(1,9000);
 red2:=RandomRange(1,9)+1;
 red3:=RandomRange(1,2000);
@@ -3850,8 +3099,6 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
   ChangingPulses(red1,red2,red3,red4,red5,5,
 '11111111','11111111');
 End;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
 end;
 
 procedure TfrmCDPlayer.Label5Click(Sender: TObject);
@@ -4349,10 +3596,8 @@ end;
 procedure TfrmCDPlayer.BMaestroClick(Sender: TObject);
 begin
 MyChrono.Start;
-PDesarrollo.visible:=true;
-PDesarrollo.Refresh;
 LimpiarStanine();
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 GProgreso.Progress := 0;
 GBLobulos.Enabled := True;
@@ -4375,15 +3620,14 @@ TSintomas.Enabled := False;
 LimpiaSintomas();
 LimpiaAutismo();
 MyChrono.Stop;
-PDesarrollo.Visible := False;
 rec := 20+random(100)+Round((trackbar9.position)+(trackbar10.position));
 if rec > 100 Then rec := 85+Random(15);
-Label55.Caption:='Rectificado |'+Inttostr(rec);
+Label55.Caption:='Rectificado | '+Inttostr(rec);
 Label55.Refresh;
 if rec > 85 Then StanineFinal2();
 FMain.shaping:=RandomRange(1,100);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GBLobulos.Enabled := False;
 if (rec<85) and (CBAutomaticoGral.Checked = True) Then BMaestro.Click;
 if (rec>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -4397,7 +3641,7 @@ end;
 procedure TfrmCDPlayer.Button9Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PFasesCerebrales.Visible := True;
 end;
@@ -4405,7 +3649,6 @@ end;
 procedure TfrmCDPlayer.Button212Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Delta...';
 BMaestro.Click;
 if rec >84 Then Button212.Enabled := False;
 end;
@@ -4413,7 +3656,6 @@ end;
 procedure TfrmCDPlayer.Button223Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Theta...';
 BMaestro.Click;
 if rec >84 Then Button223.Enabled := False;
 end;
@@ -4421,7 +3663,6 @@ end;
 procedure TfrmCDPlayer.Button233Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Alfa...';
 BMaestro.Click;
 if rec >84 Then Button233.Enabled := False;
 end;
@@ -4429,7 +3670,6 @@ end;
 procedure TfrmCDPlayer.Button222Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Beta...';
 BMaestro.Click;
 if rec >84 Then Button222.Enabled := False;
 end;
@@ -4437,7 +3677,6 @@ end;
 procedure TfrmCDPlayer.Button228Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Gama...';
 BMaestro.Click;
 if rec >84 Then Button228.Enabled := False;
 end;
@@ -4457,7 +3696,6 @@ end;
 procedure TfrmCDPlayer.Button214Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Adormecimiento...';
 BMaestro.Click;
 if rec >84 Then Button214.Enabled := False;
 end;
@@ -4465,7 +3703,6 @@ end;
 procedure TfrmCDPlayer.Button231Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Sueño ligero...';
 BMaestro.Click;
 if rec >84 Then Button231.Enabled := False;
 end;
@@ -4473,7 +3710,6 @@ end;
 procedure TfrmCDPlayer.Button218Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Transición hacia sueño profundo...';
 BMaestro.Click;
 if rec >84 Then Button218.Enabled := False;
 end;
@@ -4481,7 +3717,6 @@ end;
 procedure TfrmCDPlayer.Button234Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de Sueño profundo...';
 BMaestro.Click;
 if rec >84 Then Button234.Enabled := False;
 end;
@@ -4489,7 +3724,6 @@ end;
 procedure TfrmCDPlayer.Button236Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase a ''Sueño paradógico''...';
 BMaestro.Click;
 if rec >84 Then Button236.Enabled := False;
 end;
@@ -4497,7 +3731,6 @@ end;
 procedure TfrmCDPlayer.Button227Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Sináptica...';
 BMaestro.Click;
 if rec >84 Then Button227.Enabled := False;
 end;
@@ -4505,7 +3738,6 @@ end;
 procedure TfrmCDPlayer.Button230Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Neurogénesis...';
 BMaestro.Click;
 if rec >84 Then Button230.Enabled := False;
 end;
@@ -4513,7 +3745,6 @@ end;
 procedure TfrmCDPlayer.Button224Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Funcional...';
 BMaestro.Click;
 if rec >84 Then Button224.Enabled := False;
 end;
@@ -4521,7 +3752,6 @@ end;
 procedure TfrmCDPlayer.Button215Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Equivalente...';
 BMaestro.Click;
 if rec >84 Then Button215.Enabled := False;
 end;
@@ -4529,7 +3759,6 @@ end;
 procedure TfrmCDPlayer.Button225Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Paradójica...';
 BMaestro.Click;
 if rec >84 Then Button225.Enabled := False;
 end;
@@ -4537,7 +3766,6 @@ end;
 procedure TfrmCDPlayer.Button226Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase Ultraparadójica...';
 BMaestro.Click;
 if rec >84 Then Button226.Enabled := False;
 end;
@@ -4545,7 +3773,6 @@ end;
 procedure TfrmCDPlayer.Button221Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Racionalidad...';
 BMaestro.Click;
 if rec >84 Then Button221.Enabled := False;
 end;
@@ -4553,7 +3780,6 @@ end;
 procedure TfrmCDPlayer.Button216Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Análisis...';
 BMaestro.Click;
 if rec >84 Then Button216.Enabled := False;
 end;
@@ -4561,7 +3787,6 @@ end;
 procedure TfrmCDPlayer.Button235Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Creatividad...';
 BMaestro.Click;
 if rec >84 Then Button235.Enabled := False;
 end;
@@ -4569,7 +3794,6 @@ end;
 procedure TfrmCDPlayer.Button217Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de Imaginación...';
 BMaestro.Click;
 if rec >84 Then Button217.Enabled := False;
 end;
@@ -4577,7 +3801,6 @@ end;
 procedure TfrmCDPlayer.Button229Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de fase de '+EFases.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button229.Enabled := False;
 end;
@@ -4597,7 +3820,6 @@ end;
 procedure TfrmCDPlayer.Button26Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Alzheimer (EA)...';
 BMaestro.Click;
 if rec >84 Then Button26.Enabled := False;
 end;
@@ -4605,7 +3827,6 @@ end;
 procedure TfrmCDPlayer.Button213Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa '+EAfeccionesND.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button213.Enabled := False;
 end;
@@ -4613,7 +3834,6 @@ end;
 procedure TfrmCDPlayer.Button184Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Aneurisma...';
 BMaestro.Click;
 if rec >84 Then Button184.Enabled := False;
 end;
@@ -4621,7 +3841,6 @@ end;
 procedure TfrmCDPlayer.Button57Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Ataxia de Friedreich...';
 BMaestro.Click;
 if rec >84 Then Button57.Enabled := False;
 end;
@@ -4629,7 +3848,6 @@ end;
 procedure TfrmCDPlayer.Button181Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Apoplejia o Derrame cerebral...';
 BMaestro.Click;
 if rec >84 Then Button181.Enabled := False;
 end;
@@ -4637,7 +3855,6 @@ end;
 procedure TfrmCDPlayer.Button70Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Demencia con cuerpos de Lewy...';
 BMaestro.Click;
 if rec >84 Then Button70.Enabled := False;
 end;
@@ -4645,7 +3862,6 @@ end;
 procedure TfrmCDPlayer.Button179Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Distonia...';
 BMaestro.Click;
 if rec >84 Then Button79.Enabled := False;
 end;
@@ -4653,7 +3869,6 @@ end;
 procedure TfrmCDPlayer.Button182Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Encefalitis...';
 BMaestro.Click;
 if rec >84 Then Button182.Enabled := False;
 end;
@@ -4661,7 +3876,6 @@ end;
 procedure TfrmCDPlayer.Button82Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Esclerosis múltiple...';
 BMaestro.Click;
 if rec >84 Then Button82.Enabled := False;
 end;
@@ -4669,7 +3883,6 @@ end;
 procedure TfrmCDPlayer.Button14Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Esclerosis lateral amiotrófica...';
 BMaestro.Click;
 if rec >84 Then Button14.Enabled := False;
 end;
@@ -4677,7 +3890,6 @@ end;
 procedure TfrmCDPlayer.Button68Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa de Huntington...';
 BMaestro.Click;
 if rec >84 Then Button68.Enabled := False;
 end;
@@ -4685,7 +3897,6 @@ end;
 procedure TfrmCDPlayer.Button183Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Meningitis...';
 BMaestro.Click;
 if rec >84 Then Button183.Enabled := False;
 end;
@@ -4693,7 +3904,6 @@ end;
 procedure TfrmCDPlayer.Button74Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Parkinson...';
 BMaestro.Click;
 if rec >84 Then Button74.Enabled := False;
 end;
@@ -4701,7 +3911,6 @@ end;
 procedure TfrmCDPlayer.Button80Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Síndrome de Rett...';
 BMaestro.Click;
 if rec >84 Then Button80.Enabled := False;
 end;
@@ -4709,7 +3918,6 @@ end;
 procedure TfrmCDPlayer.Button180Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Temblor esencial...';
 BMaestro.Click;
 if rec >84 Then Button180.Enabled := False;
 end;
@@ -4717,7 +3925,6 @@ end;
 procedure TfrmCDPlayer.Button77Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Trastornos cerebrales genéticos...';
 BMaestro.Click;
 if rec >84 Then Button77.Enabled := False;
 end;
@@ -4725,7 +3932,6 @@ end;
 procedure TfrmCDPlayer.Button25Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción Afasia...';
 BMaestro.Click;
 if rec >84 Then Button25.Enabled := False;
 end;
@@ -4733,7 +3939,6 @@ end;
 procedure TfrmCDPlayer.Button124Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción Agnosia...';
 BMaestro.Click;
 if rec >84 Then Button124.Enabled := False;
 end;
@@ -4741,7 +3946,6 @@ end;
 procedure TfrmCDPlayer.Button125Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción Alteraciones campimétricas...';
 BMaestro.Click;
 if rec >84 Then Button125.Enabled := False;
 end;
@@ -4749,7 +3953,6 @@ end;
 procedure TfrmCDPlayer.Button24Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción Disfasia...';
 BMaestro.Click;
 if rec >84 Then Button24.Enabled := False;
 end;
@@ -4757,7 +3960,6 @@ end;
 procedure TfrmCDPlayer.Button36Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción Disprosodia...';
 BMaestro.Click;
 if rec >84 Then Button36.Enabled := False;
 end;
@@ -4765,7 +3967,6 @@ end;
 procedure TfrmCDPlayer.Button13Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de motricidad Disartria...';
 BMaestro.Click;
 if rec >84 Then Button13.Enabled := False;
 end;
@@ -4773,7 +3974,6 @@ end;
 procedure TfrmCDPlayer.Button1Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de motricidad Apraxia...';
 BMaestro.Click;
 if rec >84 Then Button1.Enabled := False;
 end;
@@ -4781,7 +3981,6 @@ end;
 procedure TfrmCDPlayer.Button123Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de motricidad Paresias...';
 BMaestro.Click;
 if rec >84 Then Button123.Enabled := False;
 end;
@@ -4794,7 +3993,6 @@ end;
 procedure TfrmCDPlayer.Button219Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de cognicción / motricidad '+ECyM.Text+ '...';
 BMaestro.Click;
 if rec >84 Then Button219.Enabled := False;
 end;
@@ -4914,7 +4112,6 @@ end;
 procedure TfrmCDPlayer.Button54Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Desobediencia...';
 BMaestro.Click;
 if rec >84 Then Button54.Enabled := False;
 end;
@@ -4922,7 +4119,6 @@ end;
 procedure TfrmCDPlayer.Button208Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Emociones en general...';
 BMaestro.Click;
 if rec >84 Then Button208.Enabled := False;
 end;
@@ -4930,7 +4126,6 @@ end;
 procedure TfrmCDPlayer.Button209Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Inseguridad...';
 BMaestro.Click;
 if rec >84 Then Button209.Enabled := False;
 end;
@@ -4938,7 +4133,6 @@ end;
 procedure TfrmCDPlayer.Button67Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a TDAH | Falta de atención...';
 BMaestro.Click;
 if rec >84 Then Button67.Enabled := False;
 end;
@@ -4946,7 +4140,6 @@ end;
 procedure TfrmCDPlayer.Button46Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a TDAH | Hiperactividad / Impulsividad...';
 BMaestro.Click;
 if rec >84 Then Button46.Enabled := False;
 end;
@@ -4959,7 +4152,6 @@ end;
 procedure TfrmCDPlayer.Button206Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de '+ESintomas.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button206.Enabled := False;
 end;
@@ -4967,7 +4159,6 @@ end;
 procedure TfrmCDPlayer.Button84Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lesiones penetrantes...';
 BMaestro.Click;
 if rec >84 Then Button84.Enabled := False;
 end;
@@ -4975,7 +4166,6 @@ end;
 procedure TfrmCDPlayer.Button71Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de '+EMemoria.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button403.Enabled := False;
 end;
@@ -4995,7 +4185,6 @@ end;
 procedure TfrmCDPlayer.Button90Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lesiones cerradas de cabeza...';
 BMaestro.Click;
 if rec >84 Then Button90.Enabled := False;
 end;
@@ -5003,7 +4192,6 @@ end;
 procedure TfrmCDPlayer.Button105Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lesión cerebral cerrada primaria...';
 BMaestro.Click;
 if rec >84 Then Button105.Enabled := False;
 end;
@@ -5011,7 +4199,6 @@ end;
 procedure TfrmCDPlayer.Button109Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Fractura craneal...';
 BMaestro.Click;
 if rec >84 Then Button109.Enabled := False;
 end;
@@ -5019,7 +4206,6 @@ end;
 procedure TfrmCDPlayer.Button110Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Daño a los nervios (lesión axional difusa...';
 BMaestro.Click;
 if rec >84 Then Button110.Enabled := False;
 end;
@@ -5027,7 +4213,6 @@ end;
 procedure TfrmCDPlayer.Button88Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lesión cerebral cerrada secundaria...';
 BMaestro.Click;
 if rec >84 Then Button88.Enabled := False;
 end;
@@ -5035,7 +4220,6 @@ end;
 procedure TfrmCDPlayer.Button108Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Anemia...';
 BMaestro.Click;
 if rec >84 Then Button108.Enabled := False;
 end;
@@ -5043,7 +4227,6 @@ end;
 procedure TfrmCDPlayer.Button107Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Baja cantidad de sodio...';
 BMaestro.Click;
 if rec >84 Then Button107.Enabled := False;
 end;
@@ -5051,7 +4234,6 @@ end;
 procedure TfrmCDPlayer.Button118Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Cambios cardíacos...';
 BMaestro.Click;
 if rec >84 Then Button118.Enabled := False;
 end;
@@ -5059,7 +4241,6 @@ end;
 procedure TfrmCDPlayer.Button119Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Cambios pulmonares...';
 BMaestro.Click;
 if rec >84 Then Button119.Enabled := False;
 end;
@@ -5067,7 +4248,6 @@ end;
 procedure TfrmCDPlayer.Button120Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Cambios nutricionales...';
 BMaestro.Click;
 if rec >84 Then Button120.Enabled := False;
 end;
@@ -5075,7 +4255,6 @@ end;
 procedure TfrmCDPlayer.Button102Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Coagulación anormal de la sangre...';
 BMaestro.Click;
 if rec >84 Then Button102.Enabled := False;
 end;
@@ -5083,7 +4262,6 @@ end;
 procedure TfrmCDPlayer.Button117Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Dióxido de carbono | Demasiado o poco...';
 BMaestro.Click;
 if rec >84 Then Button117.Enabled := False;
 end;
@@ -5091,7 +4269,6 @@ end;
 procedure TfrmCDPlayer.Button114Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Edema cerebral (inflamación)...';
 BMaestro.Click;
 if rec >84 Then Button114.Enabled := False;
 end;
@@ -5099,7 +4276,6 @@ end;
 procedure TfrmCDPlayer.Button112Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Epilepsia...';
 BMaestro.Click;
 if rec >84 Then Button112.Enabled := False;
 end;
@@ -5107,7 +4283,6 @@ end;
 procedure TfrmCDPlayer.Button115Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Fiebre...';
 BMaestro.Click;
 if rec >84 Then Button115.Enabled := False;
 end;
@@ -5115,7 +4290,6 @@ end;
 procedure TfrmCDPlayer.Button116Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Hematoma...';
 BMaestro.Click;
 if rec >84 Then Button116.Enabled := False;
 end;
@@ -5123,7 +4297,6 @@ end;
 procedure TfrmCDPlayer.Button111Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Hipertensión craneal...';
 BMaestro.Click;
 if rec >84 Then Button111.Enabled := False;
 end;
@@ -5131,7 +4304,6 @@ end;
 procedure TfrmCDPlayer.Button113Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Infección intracraneal...';
 BMaestro.Click;
 if rec >84 Then Button113.Enabled := False;
 end;
@@ -5139,7 +4311,6 @@ end;
 procedure TfrmCDPlayer.Button106Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Tensión arterial alta o baja...';
 BMaestro.Click;
 if rec >84 Then Button106.Enabled := False;
 end;
@@ -5147,7 +4318,6 @@ end;
 procedure TfrmCDPlayer.Button85Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Apetito sexual...';
 BMaestro.Click;
 if rec >84 Then Button85.Enabled := False;
 end;
@@ -5155,7 +4325,6 @@ end;
 procedure TfrmCDPlayer.Button40Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Cicatrices y Líneas de expresión...';
 BMaestro.Click;
 if rec >84 Then Button40.Enabled := False;
 end;
@@ -5163,7 +4332,6 @@ end;
 procedure TfrmCDPlayer.Button28Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Degeneración...';
 BMaestro.Click;
 if rec >84 Then Button28.Enabled := False;
 end;
@@ -5171,7 +4339,6 @@ end;
 procedure TfrmCDPlayer.Button64Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Finalismo...';
 BMaestro.Click;
 if rec >84 Then Button64.Enabled := False;
 end;
@@ -5179,7 +4346,6 @@ end;
 procedure TfrmCDPlayer.Button73Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Metales pesados...';
 BMaestro.Click;
 if rec >84 Then Button73.Enabled := False;
 end;
@@ -5187,7 +4353,6 @@ end;
 procedure TfrmCDPlayer.Button30Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Tejido adiposo...';
 BMaestro.Click;
 if rec >84 Then Button30.Enabled := False;
 end;
@@ -5195,7 +4360,6 @@ end;
 procedure TfrmCDPlayer.Button65Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Tensión arterial...';
 BMaestro.Click;
 if rec >84 Then Button65.Enabled := False;
 end;
@@ -5203,10 +4367,6 @@ end;
 procedure TfrmCDPlayer.Button170Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-If CheckBox94.Checked = True Then
-PDesarrollo.Caption := 'Realizando corrección a Sistema circulatorio usando quelación...'
-Else
-PDesarrollo.Caption:='Realizando corrección a Sistema circulatorio...';
 BMaestro.Click;
 if rec >84 Then Button170.Enabled := False;
 end;
@@ -5214,7 +4374,6 @@ end;
 procedure TfrmCDPlayer.Button17Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema endocrino...';
 BMaestro.Click;
 if rec >84 Then Button17.Enabled := False;
 end;
@@ -5222,7 +4381,6 @@ end;
 procedure TfrmCDPlayer.Button143Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema esquelético...';
 BMaestro.Click;
 if rec >84 Then Button143.Enabled := False;
 end;
@@ -5230,7 +4388,6 @@ end;
 procedure TfrmCDPlayer.Button145Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema linfático...';
 BMaestro.Click;
 if rec >84 Then Button145.Enabled := False;
 end;
@@ -5238,7 +4395,6 @@ end;
 procedure TfrmCDPlayer.Button147Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema muscular...';
 BMaestro.Click;
 if rec >84 Then Button147.Enabled := False;
 end;
@@ -5246,7 +4402,6 @@ end;
 procedure TfrmCDPlayer.Button167Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema nervioso...';
 BMaestro.Click;
 if rec >84 Then Button167.Enabled := False;
 end;
@@ -5254,7 +4409,6 @@ end;
 procedure TfrmCDPlayer.Button165Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema respiratorio...';
 BMaestro.Click;
 if rec >84 Then Button165.Enabled := False;
 end;
@@ -5262,7 +4416,6 @@ end;
 procedure TfrmCDPlayer.Button171Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema reproductivo...';
 BMaestro.Click;
 if rec >84 Then Button171.Enabled := False;
 end;
@@ -5270,7 +4423,6 @@ end;
 procedure TfrmCDPlayer.Button172Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema urinario...';
 BMaestro.Click;
 if rec >84 Then Button172.Enabled := False;
 end;
@@ -5278,7 +4430,6 @@ end;
 procedure TfrmCDPlayer.Button173Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Gusto...';
 BMaestro.Click;
 if rec >84 Then Button173.Enabled := False;
 end;
@@ -5286,7 +4437,6 @@ end;
 procedure TfrmCDPlayer.Button175Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Oído...';
 BMaestro.Click;
 if rec >84 Then Button175.Enabled := False;
 end;
@@ -5294,7 +4444,6 @@ end;
 procedure TfrmCDPlayer.Button140Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Olfato...';
 BMaestro.Click;
 if rec >84 Then Button140.Enabled := False;
 end;
@@ -5302,7 +4451,6 @@ end;
 procedure TfrmCDPlayer.Button169Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Tacto...';
 BMaestro.Click;
 if rec >84 Then Button169.Enabled := False;
 end;
@@ -5310,7 +4458,6 @@ end;
 procedure TfrmCDPlayer.Button166Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Vista...';
 BMaestro.Click;
 if rec >84 Then Button166.Enabled := False;
 end;
@@ -5318,7 +4465,6 @@ end;
 procedure TfrmCDPlayer.Button204Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Ecolocalización...';
 BMaestro.Click;
 if rec >84 Then Button170.Enabled := False;
 end;
@@ -5326,7 +4472,6 @@ end;
 procedure TfrmCDPlayer.Button139Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a electrorrecepción...';
 BMaestro.Click;
 if rec >84 Then Button139.Enabled := False;
 end;
@@ -5334,7 +4479,6 @@ end;
 procedure TfrmCDPlayer.Button211Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sistema nervioso entérico y Corazón...';
 BMaestro.Click;
 if rec >84 Then Button211.Enabled := False;
 end;
@@ -5342,7 +4486,6 @@ end;
 procedure TfrmCDPlayer.Button202Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Equilibriocepción...';
 BMaestro.Click;
 if rec >84 Then Button202.Enabled := False;
 end;
@@ -5350,7 +4493,6 @@ end;
 procedure TfrmCDPlayer.Button174Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Extra sensorial...';
 BMaestro.Click;
 if rec >84 Then Button174.Enabled := False;
 end;
@@ -5358,7 +4500,6 @@ end;
 procedure TfrmCDPlayer.Button203Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Magnetorrecepción...';
 BMaestro.Click;
 if rec >84 Then Button203.Enabled := False;
 end;
@@ -5366,7 +4507,6 @@ end;
 procedure TfrmCDPlayer.Button168Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Propiocepción...';
 BMaestro.Click;
 if rec >84 Then Button168.Enabled := False;
 end;
@@ -5374,7 +4514,6 @@ end;
 procedure TfrmCDPlayer.Button210Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sentido común...';
 BMaestro.Click;
 if rec >84 Then Button210.Enabled := False;
 end;
@@ -5382,7 +4521,6 @@ end;
 procedure TfrmCDPlayer.Button205Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sentido de alerta...';
 BMaestro.Click;
 if rec >84 Then Button205.Enabled := False;
 end;
@@ -5390,7 +4528,6 @@ end;
 procedure TfrmCDPlayer.Button176Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sexto sentido / Intuición...';
 BMaestro.Click;
 if rec >84 Then Button176.Enabled := False;
 end;
@@ -5398,7 +4535,6 @@ end;
 procedure TfrmCDPlayer.Button177Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Termocepción...';
 BMaestro.Click;
 if rec >84 Then Button177.Enabled := False;
 end;
@@ -5406,7 +4542,6 @@ end;
 procedure TfrmCDPlayer.Button157Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Angioma...';
 BMaestro.Click;
 if rec >84 Then Button157.Enabled := False;
 end;
@@ -5414,7 +4549,6 @@ end;
 procedure TfrmCDPlayer.Button151Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Fibroma...';
 BMaestro.Click;
 if rec >84 Then Button151.Enabled := False;
 end;
@@ -5422,7 +4556,6 @@ end;
 procedure TfrmCDPlayer.Button61Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Condroma...';
 BMaestro.Click;
 if rec >84 Then Button61.Enabled := False;
 end;
@@ -5430,7 +4563,6 @@ end;
 procedure TfrmCDPlayer.Button159Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Cordoma...';
 BMaestro.Click;
 if rec >84 Then Button159.Enabled := False;
 end;
@@ -5438,7 +4570,6 @@ end;
 procedure TfrmCDPlayer.Button152Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Linfoma...';
 BMaestro.Click;
 if rec >84 Then Button152.Enabled := False;
 end;
@@ -5446,7 +4577,6 @@ end;
 procedure TfrmCDPlayer.Button154Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lipoma...';
 BMaestro.Click;
 if rec >84 Then Button154.Enabled := False;
 end;
@@ -5454,7 +4584,6 @@ end;
 procedure TfrmCDPlayer.Button138Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Lixoma...';
 BMaestro.Click;
 if rec >84 Then Button138.Enabled := False;
 end;
@@ -5462,7 +4591,6 @@ end;
 procedure TfrmCDPlayer.Button153Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Osteoma...';
 BMaestro.Click;
 if rec >84 Then Button153.Enabled := False;
 end;
@@ -5470,7 +4598,6 @@ end;
 procedure TfrmCDPlayer.Button161Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Sarcoma...';
 BMaestro.Click;
 if rec >84 Then Button161.Enabled := False;
 end;
@@ -5478,7 +4605,6 @@ end;
 procedure TfrmCDPlayer.Button141Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Compuestos simples...';
 BMaestro.Click;
 if rec >84 Then Button141.Enabled := False;
 end;
@@ -5486,7 +4612,6 @@ end;
 procedure TfrmCDPlayer.Button142Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Embrioma...';
 BMaestro.Click;
 if rec >84 Then Button142.Enabled := False;
 end;
@@ -5494,7 +4619,6 @@ end;
 procedure TfrmCDPlayer.Button144Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Teratoma...';
 BMaestro.Click;
 if rec >84 Then Button144.Enabled := False;
 end;
@@ -5502,7 +4626,6 @@ end;
 procedure TfrmCDPlayer.Button149Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Adenoma...';
 BMaestro.Click;
 if rec >84 Then Button149.Enabled := False;
 end;
@@ -5510,7 +4633,6 @@ end;
 procedure TfrmCDPlayer.Button150Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Carcinoma...';
 BMaestro.Click;
 if rec >84 Then Button150.Enabled := False;
 end;
@@ -5518,7 +4640,6 @@ end;
 procedure TfrmCDPlayer.Button146Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Epitelioma o carcinoma epidermoide...';
 BMaestro.Click;
 if rec >84 Then Button146.Enabled := False;
 end;
@@ -5526,7 +4647,6 @@ end;
 procedure TfrmCDPlayer.Button148Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Papiloma...';
 BMaestro.Click;
 if rec >84 Then Button148.Enabled := False;
 end;
@@ -5534,7 +4654,6 @@ end;
 procedure TfrmCDPlayer.Button164Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Leiomioma...';
 BMaestro.Click;
 if rec >84 Then Button164.Enabled := False;
 end;
@@ -5542,7 +4661,6 @@ end;
 procedure TfrmCDPlayer.Button160Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Rabdomioma...';
 BMaestro.Click;
 if rec >84 Then Button160.Enabled := False;
 end;
@@ -5550,7 +4668,6 @@ end;
 procedure TfrmCDPlayer.Button155Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Astrocitoma...';
 BMaestro.Click;
 if rec >84 Then Button155.Enabled := False;
 end;
@@ -5558,7 +4675,6 @@ end;
 procedure TfrmCDPlayer.Button156Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Glioma...';
 BMaestro.Click;
 if rec >84 Then Button156.Enabled := False;
 end;
@@ -5566,7 +4682,6 @@ end;
 procedure TfrmCDPlayer.Button163Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Neuroma...';
 BMaestro.Click;
 if rec >84 Then Button163.Enabled := False;
 end;
@@ -5574,7 +4689,6 @@ end;
 procedure TfrmCDPlayer.Button162Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Neuroma ganglionara...';
 BMaestro.Click;
 if rec >84 Then Button162.Enabled := False;
 end;
@@ -5582,7 +4696,6 @@ end;
 procedure TfrmCDPlayer.Button158Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Neuro-epitelioma...';
 BMaestro.Click;
 if rec >84 Then Button158.Enabled := False;
 end;
@@ -5594,162 +4707,6 @@ MDescripcion.Text  := DBGrid3.Columns[2].Field.AsString;
 MDescripcion.refresh;
 end;
 
-procedure TfrmCDPlayer.Button87Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='La hipófisis, localizada en la base del cráneo, controla gran parte del sistema endocrino.  Los tumores de la glándula de la hipófisis '+
-'suelen ser benignos, pero secretan cantidades exageradas de hormonas hipofisarias.  El cuadro clínico consta de anomalías endocrinológicas: 1) Amenorrea: '+
-'interrupción de la menstruación, 2) Galactorrea: producción de leche en las mujerse que no están amamantando, 3) Enfermedad de Cushing: debido a niveles '+
-'elevados de glucocorticoides circulantes, en particular de cortisol, se presentan síntomas como: enrojecimiento de las mejillas, obesidad, aumento del '+
-'apetito, cara de luna llena, piel fina que se lesiona con facilidad, mala cicatrización de las heridas, etc. y 4) Acromegalia: aumento desproporcionado del '+
-'tamaño de la cabeza, la cara, las manos, los pies y el tórax.  También se sufren cefaleas y alteraciones campimétricas sobre todo hemianopsia (disminución o '+
-'pérdida de la mitad de la visión) bitemporal.  Mucho más raras son la presencia de afectación de nervios craneales por compresión del seno cavernoso o de '+
-'difunción hipotalámica.  El tratamiento depende del tamaño.  Si permanece intraselar o la extensión extraselar es escasa se recomienda radioterapia o '+
-'cirugía por vía transesfenoidal; si el tumor es ampliamente extraselar debe abordarse mediante craneotomía frontal.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button220Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Los gliomas son tumores que crecen a partir de los tejidos que sostienen y rodean a las células nerviosas.  El astrocitoma comprende '+
-'un grupo de tumores con formas de conducta biológica muy diferente.  Existen astrocitomas pilocíticos, difusos y anaplásicos.  El tratamiento del '+
-'astrocitoma pilocítico es quirúrgico.  En los astrocitomas difusos de bajo grado de malignidad se recomienda practicar radioterapia después de la '+
-'cirugía, sobre todo si quedan restos tumorales.  El tratamiento de los anaplásicos es el mismo que el de los glioblastomas.  La supervivencia está en '+
-'relación al grado de malignidad.  La mayoría de los tumores pilocíticos no aparecen de nuevo después de haber sido extirpados en su totalidad.  Por '+
-'contra, la supervivencia media de los pacientes con astrocitoma anaplásico es inferior a los 3 años.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button232Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Se trata de un tumor congénito.  Aparece en la infancia y adolescencia tardía.  Provoca comprensión del quiasma óptico y, por eso, el '+
-'cuadro clínico combina síntomas dependientes de la hipertensión intracraneal (cefalea, vómitos, papiledema) con alteraciones quiasmáticas (atrofia óptica, '+
-'hemianopsia o visión deficiente en la mitad del campo visual).  También produce alteraciones hipofisarias (amenorrea, trastorno de la líbido) e '+
-'hipotalámicas (somnolencia, anomalías en el control de la temperatura corporal, diabetes insípida).';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button237Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Es un tumor derivado de las células ependimarias.  Estudiando el tejido aparece como "benigno", pero una minoría de tumores presentan '+
-'cambios anaplásicos. El cuadro clínico depende de la localización.  Los ependimomas del cuarto ventrículo causan hidrocefalia (dilatación anormal de los '+
-'ventrículos cerebrales a causa del exceso de líquido cefalorraquídeo en el cerebro) y un síndrome de hipertensión intracraneal general.  El tratamiento '+
-'consiste en la extirpación del tumor seguida de radioterapia local.  En los ependimomas anaplásicos se recomienda radioterapia craneoespinal para prevenir '+
-'la diseminación de las células tumorales.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button238Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Este tumor representa el 20 por ciento de todos los tumores intracraneales y pertenece a la familia de unos tumores llamados gliomas '+
-'(en realidad, la mitad de los gliomas, son glioblastomas).  Los gliomas son tumores que crecen a partir de los tejidos que sostienen y rodean a las células '+
-'nerviosas.  Suele aparecer en la quinta o sexta década de vida y afecta más a los hombres que a las mujeres (un 60 por ciento a hombres y un 40 por ciento '+
-'a mujeres).  Se localiza habitualmente en los hemisferios cerebrales y en un 5-10 por ciento de los casos se origina en más de un lugar.  Se comporta con '+
-'marcada malignidad, invadiendo rápidamente el tejido cerebral y a menudo tiene ya un gran tamaño en el momento de ser diagnosticado, ocupando más de un '+
-'lóbulo cerebral o extendiéndose al hemisferio opuesto a través del cuerpo calloso (el cuerpo calloso es un conglomerado de fibras nerviosas blancas que '+
-'conectan estos dos hemisferios).  El cuadro clínico consiste inicialmente en manifestaciones generales como cefalea, vómitos, trastornos mentales y crisis '+
-'convulsivas (epilépticas) siguiéndose al cabo de pocas semanas de un síndrome focal lobar o de un síndrome del cuerpo calloso.  Dado que se trata de un '+
-'tumor muy vascularizado en ocasiones el debut puede ser ictal (con muerte de tejido cerebral) debido a una hemorragia intratumoral.  El tratamiento '+
-'consiste en cirugía lo más radical posible seguida de radioterapia.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button239Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Se trata de un tumor benigno que suele situarse en el cerebelo causando un síndrome vermiano o hemisférico con ataxia (incapacidad para '+
-'controlar los movimientos musculares voluntarios), nistagmo (movimientos inconscientes y rápidos del globo ocular), cefalea e inflamación del nervio óptico '+
-'en su entrada en el ojo (papiledema).  El hemangioblastoma del cerebelo a menudo se acompaña de angiomas retinianos (lunares en la retina) y de otras '+
-'alteraciones típicas de la enfermedad de Von Hippel- Lindau como quistes pancreáticos y tumores derivado de las células de los túbulos renales (hipernefroma).'+
-'  La extirpación completa del tumor es curativa.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button240Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Aquellos que se originan en el cerebro, es decir, que no tienen su origen en otras partes del cuerpo. Suelen aparecer durante '+
-'la infancia y también a partir de los cuarenta o cincuenta años. El tipo de tumor y su localización vienen determinados por la edad; en la '+
-'infancia y adolescencia predominan los astrocitomas infratentoriales y los tumores de la línea media como el meduloblastoma y el pinealoma; en la '+
-'edad adulta, los astrocitomas anaplásicos y glioblastomas (que son los tumores intracraneales primarios más diagnosticados aunque el más frecuente '+
-'en series autópsicas es el meningioma).  El origen de los tumores intracraneales primarios es desconocida. Algunas enfermedades hereditarias '+
-'presentan una elevada incidencia de tumores intracraneales, lo que sugiere la existencia de factores genéticos predisponentes.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button241Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Representa el 1-2 por ciento de todos los tumores intracraneales primarios pero su incidencia está aumentando debido a la asociación que '+
-'tiene con estados de inmunosupresión adquirida (SIDA, quimioterapia prolongada, trasplantados) o congénita (ataxia-telangiectasia , síndrome de Wiskott-'+
-'Aldrich ).  En su mayoría son linfomas de células B (tumores del tejido linfático) con grado intermedio o alto de malignidad.  Se localizan en cualquier '+
-'parte del cerebro, cerebelo y médula espinal y en un 10 por ciento de los casos se hallan en más de una localización.  Es un tumor de crecimiento rápido, '+
-'altamente celular e infiltrativo y con gran capacidad para invadir el sistema ventricular y el espacio subaracnoideo causando ventriculitis y meningitis '+
-'linfomatosas.  El 30 por ciento de los linfomas cerebrales primarios desaparecen con tratamiento esteroideo, pero posteriormente vuelven a aparecer.  '+
-'La cirugía sólo tiene valor diagnóstico.  La radioterapia holocraneal consigue supervivencias medias de 12 meses.  El tratamiento combinado de radioterapia '+
-'y quimioterapia ha ofrecido en estudios preliminares mejores resultados que la radioterapia sola.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button242Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Se trata de un tumor con origen en las células embrionarias.  Su comportamiento es maligno.  El cuadro clínico se caracteriza por cefalea '+
-'matutina progresiva, vómitos, vértigos y sensación de inestabilidad.  La exploración física muestra coordinación escasa y movimientos inseguros, movimientos '+
-'inconscientes y rápidos del globo ocular y papiledema (inflamación del nervio óptico en su entrada en el ojo).  No es infrecuente la aparición de metástasis '+
-'sistémicas (reproducción de las células tumorales) en ganglios linfáticos, huesos y pulmón.  El tratamiento consiste en la extirpación del tumor seguida de '+
-'radioterapia sobre todo en el neuro eje.  Se recomienda quimioterapia si la extracción del tumor sólo ha sido parcial o existe riesgo de que vuelva a aparecer.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button243Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Es un tumor benigno originado a partir de células aracnoideas.  Representa el 15 por ciento de todos los tumores intracraneales, '+
-'predomina en mujeres en proporción de 2 a 1 y su máxima frecuencia se da en la séptima década de la vida.  Es un tumor bien delimitado, redondeado o '+
-'aplanado (meningioma en placa) y separado del tejido esencial del cerebro por una cápsula.  Se origina en las células de la membrana que recubre el cerebro. '+
-' El tratamiento ideal es la extirpación radical del tumor.  Cuando su situación no permite extraerlo completamente lo habitual es que vuelva a aparecer, '+
-'en este caso se recomienda la radioterapia local sobre el lecho tumoral.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button244Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='La mayor incidencia se da en la quinta y sexta década, afectando a ambos sexos por igual. La clínica depende del tamaño. En la primera '+
-'etapa aparecen los síntomas de hipoacusia (disminución de la sensibilidad auditiva), vértigo y acúfenos (sensaciones anormales en los oídos, normalmente, '+
-'zumbidos).  A medida que se extiende aparece paresia facial (parálisis incompleta o transitoria facial), ataxia (incapacidad de coordinar movimientos '+
-'musculares voluntarios), hipoestesia de la cara, dismetría (trastorno de la amplitud de los movimientos), parálisis del hipogloso (del nervio debajo de la '+
-'lengua) y del vago (nervio neumogástrico) e hidrocefalia (dilatación anormal de los ventrículos cerebrales a causa del exceso de líquido en el cerebro).';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button245Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Se origina en el epitelio de los plexos coroideos, sobre todo en el ventrículo lateral y en el cuarto ventrículo.  Son tumores de la '+
-'infancia, el 5O por ciento aparece durante el primer año y el 75 por ciento en la primera década.  El cuadro clínico consta de cefalea, somnolencia, '+
-'vómitos, diplopía (visión doble de los objetos, debido a trastornos de la coordinación de los músculos oculares), alteración de la marcha y papiledema '+
-'(inflamación del nervio óptico en su entrada en el ojo).';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button246Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Son tumores originados en la glándula pineal. Ésta, situada en medio del cerebro, controla el reloj biológico del organismo, más '+
-'concretamente, el mecanismo que controla el ciclo del sueño y la vigilia.  Se distinguen varios tipos histológicos: germinoma, pinealoma (pineocitoma, '+
-'pineoblastoma), teratoma y glioma.  El más frecuente es el germinoma.  El germinoma suele aparecer en la infancia y primera adolescencia con leve predominio '+
-'en varones.  El cuadro clínico consta de un síndrome de hipertensión intracraneal combinado con signos típicos como parálisis de la mirada vertical hacia '+
-'arriba (síndrome de Parinaud) y alteraciones pupilares.  El tratamiento consiste en la extirpación quirúrgica lo más amplia posible seguida de radioterapia.  '+
-'En general tiene muy buen pronóstico excepto en las personas cuyo germinoma tiene componentes de coriocarcinoma y carcinoma embrionario en los que se '+
-'recomienda combinar el tratamiento con quimioterapia.';
-Mtumores.Refresh;
-end;
-
-procedure TfrmCDPlayer.Button247Click(Sender: TObject);
-begin
-MTumores.Lines[0]:='Sólo representan el 1 por ciento de los tumores intracraneales, pero son importantes por que pueden simular otras enfermedades '+
-'neurológicas (esclerosis múltiple, siringomielia, esclerosis lateral amiotrófica, mielopatía por cervicoartrosis) y porque, a pesar de ser benignos y de '+
-'localización extradural, si no se diagnostican precozmente causan lesiones neurológicas irreversibles.  Suelen ser meningiomas o neurofibromas.  El cuadro '+
-'clínico es muy variable.  Los síntomas más frecuentes son el dolor en la región occipital irradiado a hombro y la presencia de disestesias (trastorno de la '+
-'sensibilidad con disminución y retardo en las sensaciones) en extremidades superiores.  A medida que el tumor crece se añaden debilidad muscular (paresia '+
-'braquial, crural, tetraparesia, paraparesia), trastorno de la marcha, incontinencia esfinteriana y afectación de los pares craneales bajos (sobre todo del '+
-'nervio espinal).';
-Mtumores.Refresh;
-end;
-
 procedure TfrmCDPlayer.Panel7Click(Sender: TObject);
 begin
 PMejora.Visible := False
@@ -5758,7 +4715,6 @@ end;
 procedure TfrmCDPlayer.Button269Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Equlibrio...';
 BMaestro.Click;
 if rec >84 Then Button269.Enabled := False;
 end;
@@ -5771,7 +4727,6 @@ end;
 procedure TfrmCDPlayer.Button270Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a '+ESistemas.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button270.Enabled := False;
 end;
@@ -5786,7 +4741,6 @@ end;
 procedure TfrmCDPlayer.Button249Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento con glucosa...';
 BMaestro.Click;
 if rec >84 Then Button249.Enabled := False;
 end;
@@ -5794,7 +4748,6 @@ end;
 procedure TfrmCDPlayer.Button251Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento con Vitaminas del complejo B...';
 BMaestro.Click;
 if rec >84 Then Button251.Enabled := False;
 end;
@@ -5802,7 +4755,6 @@ end;
 procedure TfrmCDPlayer.Button253Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento con Aceites Omega 3...';
 BMaestro.Click;
 if rec >84 Then Button253.Enabled := False;
 end;
@@ -5810,7 +4762,6 @@ end;
 procedure TfrmCDPlayer.Button250Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento con Antioxidantes y Minerales...';
 BMaestro.Click;
 if rec >84 Then Button250.Enabled := False;
 end;
@@ -5818,7 +4769,6 @@ end;
 procedure TfrmCDPlayer.Button252Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento para Oxigenación...';
 BMaestro.Click;
 if rec >84 Then Button252.Enabled := False;
 end;
@@ -5826,7 +4776,6 @@ end;
 procedure TfrmCDPlayer.Button268Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Conocimiento hereditario inconciente...';
 BMaestro.Click;
 if rec >84 Then Button268.Enabled := False;
 end;
@@ -5834,7 +4783,6 @@ end;
 procedure TfrmCDPlayer.Button267Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Potencialidad...';
 BMaestro.Click;
 if rec >84 Then Button267.Enabled := False;
 end;
@@ -5842,7 +4790,6 @@ end;
 procedure TfrmCDPlayer.Button266Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Conexión conciencia-inconciencia...';
 BMaestro.Click;
 if rec >84 Then Button266.Enabled := False;
 end;
@@ -5850,7 +4797,6 @@ end;
 procedure TfrmCDPlayer.Button254Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Aprendizaje...';
 BMaestro.Click;
 if rec >84 Then Button254.Enabled := False;
 end;
@@ -5858,7 +4804,6 @@ end;
 procedure TfrmCDPlayer.Button255Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Concentración...';
 BMaestro.Click;
 if rec >84 Then Button255.Enabled := False;
 end;
@@ -5866,7 +4811,6 @@ end;
 procedure TfrmCDPlayer.Button256Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Atención...';
 BMaestro.Click;
 if rec >84 Then Button256.Enabled := False;
 end;
@@ -5874,7 +4818,6 @@ end;
 procedure TfrmCDPlayer.Button264Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Análisis...';
 BMaestro.Click;
 if rec >84 Then Button264.Enabled := False;
 end;
@@ -5882,7 +4825,6 @@ end;
 procedure TfrmCDPlayer.Button272Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Control...';
 BMaestro.Click;
 if rec >84 Then Button272.Enabled := False;
 end;
@@ -5890,7 +4832,6 @@ end;
 procedure TfrmCDPlayer.Button273Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Emisión...';
 BMaestro.Click;
 if rec >84 Then Button273.Enabled := False;
 end;
@@ -5898,7 +4839,6 @@ end;
 procedure TfrmCDPlayer.Button262Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Percepción...';
 BMaestro.Click;
 if rec >84 Then Button262.Enabled := False;
 end;
@@ -5906,7 +4846,6 @@ end;
 procedure TfrmCDPlayer.Button265Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Retención...';
 BMaestro.Click;
 if rec >84 Then Button265.Enabled := False;
 end;
@@ -5914,7 +4853,6 @@ end;
 procedure TfrmCDPlayer.Button259Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Capacidad cognictiva...';
 BMaestro.Click;
 if rec >84 Then Button259.Enabled := False;
 end;
@@ -5922,7 +4860,6 @@ end;
 procedure TfrmCDPlayer.Button260Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Conexiones sinápticas...';
 BMaestro.Click;
 if rec >84 Then Button260.Enabled := False;
 end;
@@ -5930,7 +4867,6 @@ end;
 procedure TfrmCDPlayer.Button261Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Conteo neuronal...';
 BMaestro.Click;
 if rec >84 Then Button261.Enabled := False;
 end;
@@ -5938,7 +4874,6 @@ end;
 procedure TfrmCDPlayer.Button257Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Funcionamiento neuronal...';
 BMaestro.Click;
 if rec >84 Then Button257.Enabled := False;
 end;
@@ -5946,7 +4881,6 @@ end;
 procedure TfrmCDPlayer.Button263Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Gestión de la memoria...';
 BMaestro.Click;
 if rec >84 Then Button263.Enabled := False;
 end;
@@ -5954,7 +4888,6 @@ end;
 procedure TfrmCDPlayer.Button258Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Regeneración cerebral...';
 BMaestro.Click;
 if rec >84 Then Button258.Enabled := False;
 end;
@@ -5974,7 +4907,6 @@ end;
 procedure TfrmCDPlayer.Button248Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a '+EMejora.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button248.Enabled := False;
 end;
@@ -5982,7 +4914,6 @@ end;
 procedure TfrmCDPlayer.Button301Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando relajación a '+ERelajacion.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button301.Enabled := False;
 end;
@@ -5995,7 +4926,7 @@ end;
 procedure TfrmCDPlayer.Button27Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PRelajacion.Visible := True;
 end;
@@ -6045,7 +4976,6 @@ end;
 procedure TfrmCDPlayer.Button282Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Activación de hemisferios...';
 BMaestro.Click;
 if rec >84 Then Button282.Enabled := False;
 end;
@@ -6053,7 +4983,6 @@ end;
 procedure TfrmCDPlayer.Button286Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Adrenalina, Noradrenalina y Serotonina...';
 BMaestro.Click;
 if rec >84 Then Button286.Enabled := False;
 end;
@@ -6061,7 +4990,6 @@ end;
 procedure TfrmCDPlayer.Button296Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Agilidad mental...';
 BMaestro.Click;
 if rec >84 Then Button296.Enabled := False;
 end;
@@ -6069,7 +4997,6 @@ end;
 procedure TfrmCDPlayer.Button292Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Ansiedad...';
 BMaestro.Click;
 if rec >84 Then Button292.Enabled := False;
 end;
@@ -6077,7 +5004,6 @@ end;
 procedure TfrmCDPlayer.Button302Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Chakras...';
 BMaestro.Click;
 if rec >84 Then Button302.Enabled := False;
 end;
@@ -6085,7 +5011,6 @@ end;
 procedure TfrmCDPlayer.Button291Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Claridad...';
 BMaestro.Click;
 if rec >84 Then Button291.Enabled := False;
 end;
@@ -6093,7 +5018,6 @@ end;
 procedure TfrmCDPlayer.Button274Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Creatividad...';
 BMaestro.Click;
 if rec >84 Then Button274.Enabled := False;
 end;
@@ -6101,7 +5025,6 @@ end;
 procedure TfrmCDPlayer.Button275Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Colesterol y Grasas en sangre...';
 BMaestro.Click;
 if rec >84 Then Button275.Enabled := False;
 end;
@@ -6109,7 +5032,6 @@ end;
 procedure TfrmCDPlayer.Button304Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Conciencia...';
 BMaestro.Click;
 if rec >84 Then Button304.Enabled := False;
 end;
@@ -6117,7 +5039,6 @@ end;
 procedure TfrmCDPlayer.Button277Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Corazón...';
 BMaestro.Click;
 if rec >84 Then Button277.Enabled := False;
 end;
@@ -6125,7 +5046,6 @@ end;
 procedure TfrmCDPlayer.Button290Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Depresión...';
 BMaestro.Click;
 if rec >84 Then Button290.Enabled := False;
 end;
@@ -6133,7 +5053,6 @@ end;
 procedure TfrmCDPlayer.Button311Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Desdoblamiento astral...';
 BMaestro.Click;
 if rec >84 Then Button311.Enabled := False;
 end;
@@ -6141,7 +5060,6 @@ end;
 procedure TfrmCDPlayer.Button303Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Despertar...';
 BMaestro.Click;
 if rec >84 Then Button303.Enabled := False;
 end;
@@ -6149,7 +5067,6 @@ end;
 procedure TfrmCDPlayer.Button300Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Dolor de cabeza...';
 BMaestro.Click;
 if rec >84 Then Button300.Enabled := False;
 end;
@@ -6157,7 +5074,6 @@ end;
 procedure TfrmCDPlayer.Button305Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Energía mental...';
 BMaestro.Click;
 if rec >84 Then Button305.Enabled := False;
 end;
@@ -6165,7 +5081,6 @@ end;
 procedure TfrmCDPlayer.Button307Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Energía sexual...';
 BMaestro.Click;
 if rec >84 Then Button307.Enabled := False;
 end;
@@ -6173,7 +5088,6 @@ end;
 procedure TfrmCDPlayer.Button306Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Equilibrio mental...';
 BMaestro.Click;
 if rec >84 Then Button306.Enabled := False;
 end;
@@ -6181,7 +5095,6 @@ end;
 procedure TfrmCDPlayer.Button309Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Estimulación...';
 BMaestro.Click;
 if rec >84 Then Button309.Enabled := False;
 end;
@@ -6189,7 +5102,6 @@ end;
 procedure TfrmCDPlayer.Button287Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Estrés...';
 BMaestro.Click;
 if rec >84 Then Button287.Enabled := False;
 end;
@@ -6197,7 +5109,6 @@ end;
 procedure TfrmCDPlayer.Button295Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Felicidad...';
 BMaestro.Click;
 if rec >84 Then Button295.Enabled := False;
 end;
@@ -6205,7 +5116,6 @@ end;
 procedure TfrmCDPlayer.Button293Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Fibromialgia...';
 BMaestro.Click;
 if rec >84 Then Button293.Enabled := False;
 end;
@@ -6213,7 +5123,6 @@ end;
 procedure TfrmCDPlayer.Button298Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Frustración...';
 BMaestro.Click;
 if rec >84 Then Button298.Enabled := False;
 end;
@@ -6221,7 +5130,6 @@ end;
 procedure TfrmCDPlayer.Button297Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Hiperactividad...';
 BMaestro.Click;
 if rec >84 Then Button297.Enabled := False;
 end;
@@ -6229,7 +5137,6 @@ end;
 procedure TfrmCDPlayer.Button289Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Hipertensión...';
 BMaestro.Click;
 if rec >84 Then Button289.Enabled := False;
 end;
@@ -6237,7 +5144,6 @@ end;
 procedure TfrmCDPlayer.Button310Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Insomnio...';
 BMaestro.Click;
 if rec >84 Then Button310.Enabled := False;
 end;
@@ -6245,7 +5151,6 @@ end;
 procedure TfrmCDPlayer.Button299Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Inspiración...';
 BMaestro.Click;
 if rec >84 Then Button299.Enabled := False;
 end;
@@ -6253,7 +5158,6 @@ end;
 procedure TfrmCDPlayer.Button312Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Memoria...';
 BMaestro.Click;
 if rec >84 Then Button312.Enabled := False;
 end;
@@ -6261,7 +5165,6 @@ end;
 procedure TfrmCDPlayer.Button314Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Migrañas...';
 BMaestro.Click;
 if rec >84 Then Button314.Enabled := False;
 end;
@@ -6269,7 +5172,6 @@ end;
 procedure TfrmCDPlayer.Button288Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Oxigenación periférica...';
 BMaestro.Click;
 if rec >84 Then Button288.Enabled := False;
 end;
@@ -6277,7 +5179,6 @@ end;
 procedure TfrmCDPlayer.Button283Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Producción de leucocitos...';
 BMaestro.Click;
 if rec >84 Then Button283.Enabled := False;
 end;
@@ -6285,7 +5186,6 @@ end;
 procedure TfrmCDPlayer.Button280Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Sistema inmunitario...';
 BMaestro.Click;
 if rec >84 Then Button280.Enabled := False;
 end;
@@ -6293,7 +5193,6 @@ end;
 procedure TfrmCDPlayer.Button294Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Inteligencia...';
 BMaestro.Click;
 if rec >84 Then Button294.Enabled := False;
 end;
@@ -6301,7 +5200,6 @@ end;
 procedure TfrmCDPlayer.Button276Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Paz y Tranquilidad...';
 BMaestro.Click;
 if rec >84 Then Button276.Enabled := False;
 end;
@@ -6309,7 +5207,6 @@ end;
 procedure TfrmCDPlayer.Button278Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Ritmo cardíaco...';
 BMaestro.Click;
 if rec >84 Then Button278.Enabled := False;
 end;
@@ -6317,7 +5214,6 @@ end;
 procedure TfrmCDPlayer.Button281Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Presión arterial...';
 BMaestro.Click;
 if rec >84 Then Button281.Enabled := False;
 end;
@@ -6325,7 +5221,6 @@ end;
 procedure TfrmCDPlayer.Button279Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Respiración...';
 BMaestro.Click;
 if rec >84 Then Button279.Enabled := False;
 end;
@@ -6333,7 +5228,6 @@ end;
 procedure TfrmCDPlayer.Button284Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Riego sanguíneo...';
 BMaestro.Click;
 if rec >84 Then Button284.Enabled := False;
 end;
@@ -6341,7 +5235,6 @@ end;
 procedure TfrmCDPlayer.Button308Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Sueño...';
 BMaestro.Click;
 if rec >84 Then Button308.Enabled := False;
 end;
@@ -6349,7 +5242,6 @@ end;
 procedure TfrmCDPlayer.Button285Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Tensión muscular...';
 BMaestro.Click;
 if rec >84 Then Button285.Enabled := False;
 end;
@@ -6357,7 +5249,6 @@ end;
 procedure TfrmCDPlayer.Button313Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Inteligencia...';
 BMaestro.Click;
 if rec >84 Then Button313.Enabled := False;
 end;
@@ -6365,7 +5256,6 @@ end;
 procedure TfrmCDPlayer.Button315Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia de relajación para Voluntad...';
 BMaestro.Click;
 if rec >84 Then Button315.Enabled := False;
 end;
@@ -6443,7 +5333,7 @@ end;
 procedure TfrmCDPlayer.Button8Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PEAF.Visible := True;
 end;
@@ -6451,7 +5341,6 @@ end;
 procedure TfrmCDPlayer.Button207Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a Aceptación...';
 BMaestro.Click;
 if rec >84 Then Button207.Enabled := False;
 end;
@@ -6516,7 +5405,6 @@ end;
 procedure TfrmCDPlayer.Button49Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección a '+EOtra.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button49.Enabled := False;
 end;
@@ -6524,7 +5412,6 @@ end;
 procedure TfrmCDPlayer.Button79Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Corpus Callosum...';
 BMaestro.Click;
 if rec >84 Then Button79.Enabled := False;
 end;
@@ -6544,7 +5431,6 @@ end;
 procedure TfrmCDPlayer.Button326Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Amígdala...';
 BMaestro.Click;
 if rec >84 Then Button326.Enabled := False;
 end;
@@ -6552,7 +5438,6 @@ end;
 procedure TfrmCDPlayer.Button330Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex de la ínsula...';
 BMaestro.Click;
 if rec >84 Then Button330.Enabled := False;
 end;
@@ -6560,7 +5445,6 @@ end;
 procedure TfrmCDPlayer.Button340Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex singular anterior (CCA)...';
 BMaestro.Click;
 if rec >84 Then Button340.Enabled := False;
 end;
@@ -6568,7 +5452,6 @@ end;
 procedure TfrmCDPlayer.Button336Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex sensorial primario (S1)...';
 BMaestro.Click;
 if rec >84 Then Button336.Enabled := False;
 end;
@@ -6576,7 +5459,6 @@ end;
 procedure TfrmCDPlayer.Button346Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Corteza cerebral...';
 BMaestro.Click;
 if rec >84 Then Button346.Enabled := False;
 end;
@@ -6584,7 +5466,6 @@ end;
 procedure TfrmCDPlayer.Button335Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Diencéfalo...';
 BMaestro.Click;
 if rec >84 Then Button335.Enabled := False;
 end;
@@ -6592,7 +5473,6 @@ end;
 procedure TfrmCDPlayer.Button318Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Formación reticulada...';
 BMaestro.Click;
 if rec >84 Then Button318.Enabled := False;
 end;
@@ -6600,7 +5480,6 @@ end;
 procedure TfrmCDPlayer.Button319Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Haz espinobraquial...';
 BMaestro.Click;
 if rec >84 Then Button319.Enabled := False;
 end;
@@ -6608,7 +5487,6 @@ end;
 procedure TfrmCDPlayer.Button348Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Haz espinobraquial hipotalámico (SPH)...';
 BMaestro.Click;
 if rec >84 Then Button348.Enabled := False;
 end;
@@ -6616,7 +5494,6 @@ end;
 procedure TfrmCDPlayer.Button321Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Hipotálamo...';
 BMaestro.Click;
 if rec >84 Then Button321.Enabled := False;
 end;
@@ -6624,7 +5501,6 @@ end;
 procedure TfrmCDPlayer.Button334Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Locus coeruleus...';
 BMaestro.Click;
 if rec >84 Then Button334.Enabled := False;
 end;
@@ -6632,7 +5508,6 @@ end;
 procedure TfrmCDPlayer.Button355Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Médula espinal...';
 BMaestro.Click;
 if rec >84 Then Button355.Enabled := False;
 end;
@@ -6640,7 +5515,6 @@ end;
 procedure TfrmCDPlayer.Button347Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Núcleo ventral posterolateral...';
 BMaestro.Click;
 if rec >84 Then Button347.Enabled := False;
 end;
@@ -6648,7 +5522,6 @@ end;
 procedure TfrmCDPlayer.Button344Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Tectum...';
 BMaestro.Click;
 if rec >84 Then Button344.Enabled := False;
 end;
@@ -6656,7 +5529,6 @@ end;
 procedure TfrmCDPlayer.Button349Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Tracto espinotalámico (STT)...';
 BMaestro.Click;
 if rec >84 Then Button349.Enabled := False;
 end;
@@ -6664,7 +5536,6 @@ end;
 procedure TfrmCDPlayer.Button351Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Sustancia gris periacueductal...';
 BMaestro.Click;
 if rec >84 Then Button351.Enabled := False;
 end;
@@ -6672,7 +5543,6 @@ end;
 procedure TfrmCDPlayer.Button350Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Rombencéfalo...';
 BMaestro.Click;
 if rec >84 Then Button350.Enabled := False;
 end;
@@ -6680,7 +5550,6 @@ end;
 procedure TfrmCDPlayer.Button353Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Mielencéfalo...';
 BMaestro.Click;
 if rec >84 Then Button353.Enabled := False;
 end;
@@ -6688,7 +5557,6 @@ end;
 procedure TfrmCDPlayer.Button331Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cerebelo...';
 BMaestro.Click;
 if rec >84 Then Button331.Enabled := False;
 end;
@@ -6696,7 +5564,6 @@ end;
 procedure TfrmCDPlayer.Button339Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Putamen...';
 BMaestro.Click;
 if rec >84 Then Button339.Enabled := False;
 end;
@@ -6704,7 +5571,6 @@ end;
 procedure TfrmCDPlayer.Button337Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Globo pálido...';
 BMaestro.Click;
 if rec >84 Then Button337.Enabled := False;
 end;
@@ -6712,7 +5578,6 @@ end;
 procedure TfrmCDPlayer.Button342Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex motora suplementaria...';
 BMaestro.Click;
 if rec >84 Then Button342.Enabled := False;
 end;
@@ -6720,7 +5585,6 @@ end;
 procedure TfrmCDPlayer.Button341Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex premotora ventral...';
 BMaestro.Click;
 if rec >84 Then Button341.Enabled := False;
 end;
@@ -6728,7 +5592,6 @@ end;
 procedure TfrmCDPlayer.Button333Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cortex anterior del cíngulo...';
 BMaestro.Click;
 if rec >84 Then Button333.Enabled := False;
 end;
@@ -6736,7 +5599,6 @@ end;
 procedure TfrmCDPlayer.Button327Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Sistema de analgesia cerebral...';
 BMaestro.Click;
 if rec >84 Then Button327.Enabled := False;
 end;
@@ -6744,7 +5606,6 @@ end;
 procedure TfrmCDPlayer.Button338Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Sustancia gris perisiliviana...';
 BMaestro.Click;
 if rec >84 Then Button338.Enabled := False;
 end;
@@ -6752,7 +5613,6 @@ end;
 procedure TfrmCDPlayer.Button352Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Procesamiento somatosensorial...';
 BMaestro.Click;
 if rec >84 Then Button352.Enabled := False;
 end;
@@ -6760,7 +5620,6 @@ end;
 procedure TfrmCDPlayer.Button329Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Procesos motores...';
 BMaestro.Click;
 if rec >84 Then Button329.Enabled := False;
 end;
@@ -6768,7 +5627,6 @@ end;
 procedure TfrmCDPlayer.Button357Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Procesos de atención...';
 BMaestro.Click;
 if rec >84 Then Button357.Enabled := False;
 end;
@@ -6776,7 +5634,6 @@ end;
 procedure TfrmCDPlayer.Button359Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Funciones autonómicas...';
 BMaestro.Click;
 if rec >84 Then Button359.Enabled := False;
 end;
@@ -6791,7 +5648,6 @@ end;
 procedure TfrmCDPlayer.Button345Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a '+EAntiDolor.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button345.Enabled := False;
 end;
@@ -6799,7 +5655,7 @@ end;
 procedure TfrmCDPlayer.Button12Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PMemoria.Visible := True;
 end;
@@ -6812,7 +5668,7 @@ end;
 procedure TfrmCDPlayer.Button10Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PPensamiento.Visible := True;
 end;
@@ -6849,7 +5705,6 @@ end;
 procedure TfrmCDPlayer.Button324Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Codificación...';
 BMaestro.Click;
 if rec >84 Then Button324.Enabled := False;
 end;
@@ -6857,15 +5712,14 @@ end;
 procedure TfrmCDPlayer.Label17Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
-Label55.Refresh;
-GBAdicional.Visible := True;
+Label55.Caption:='Rectificado | ';
+FRecompensa.ShowModal;
 end;
 
 procedure TfrmCDPlayer.Label18Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
   Application.CreateForm(TF_Voice, F_Voice);
   F_Voice.showmodal;
@@ -6875,7 +5729,7 @@ end;
 procedure TfrmCDPlayer.Label19Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 FCancer_Explorer.showmodal;
 end;
@@ -6883,7 +5737,7 @@ end;
 procedure TfrmCDPlayer.Label20Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 Application.CreateForm(TEmotion, Emotion);
   Emotion.showmodal;
@@ -6893,27 +5747,14 @@ end;
 procedure TfrmCDPlayer.Label21Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
-{PDesarrollo.Caption := 'Explorando cerebro para entrar a Psicobiología...';
-PDesarrollo.Visible := True;
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(1000,111,1000,7,1,3+RandomRange(1,3),
- '11111111','11111111');
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(5555,555+RandomRange(1,50),5555,5+RandomRange(1,5),5,3,
- '11111111','11111111');
-  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(1000,111+RandomRange(1,100),1000,7,1+RandomRange(1,9),3,
- '11111111','11111111');
-PDesarrollo.Visible := False;  }
 Form_cancer.showmodal;
 end;
 
 procedure TfrmCDPlayer.Button401Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Taquipsiquia o pensamiento acelerado...';
 BMaestro.Click;
 if rec >84 Then Button401.Enabled := False;
 end;
@@ -6921,7 +5762,6 @@ end;
 procedure TfrmCDPlayer.Button400Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fuga de ideas o pensamiento ideofugitivo...';
 BMaestro.Click;
 if rec >84 Then Button400.Enabled := False;
 end;
@@ -6929,7 +5769,6 @@ end;
 procedure TfrmCDPlayer.Button399Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bradipsiquia o pensamiento inhibido...';
 BMaestro.Click;
 if rec >84 Then Button399.Enabled := False;
 end;
@@ -6937,7 +5776,6 @@ end;
 procedure TfrmCDPlayer.Button398Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bloqueo de pensamientos...';
 BMaestro.Click;
 if rec >84 Then Button398.Enabled := False;
 end;
@@ -6945,7 +5783,6 @@ end;
 procedure TfrmCDPlayer.Button397Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Preocupaciones...';
 BMaestro.Click;
 if rec >84 Then Button397.Enabled := False;
 end;
@@ -6953,7 +5790,6 @@ end;
 procedure TfrmCDPlayer.Button396Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ideas falsas o erróneas...';
 BMaestro.Click;
 if rec >84 Then Button396.Enabled := False;
 end;
@@ -6961,7 +5797,6 @@ end;
 procedure TfrmCDPlayer.Button393Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ideas sobre valoradas...';
 BMaestro.Click;
 if rec >84 Then Button393.Enabled := False;
 end;
@@ -6969,7 +5804,6 @@ end;
 procedure TfrmCDPlayer.Button392Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ideas obsesivas...';
 BMaestro.Click;
 if rec >84 Then Button392.Enabled := False;
 end;
@@ -6977,7 +5811,6 @@ end;
 procedure TfrmCDPlayer.Button394Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ideas fóbicas...';
 BMaestro.Click;
 if rec >84 Then Button394.Enabled := False;
 end;
@@ -6985,7 +5818,6 @@ end;
 procedure TfrmCDPlayer.Button395Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento mágico...';
 BMaestro.Click;
 if rec >84 Then Button395.Enabled := False;
 end;
@@ -6993,7 +5825,6 @@ end;
 procedure TfrmCDPlayer.Button380Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento circumstancial...';
 BMaestro.Click;
 if rec >84 Then Button380.Enabled := False;
 end;
@@ -7001,7 +5832,6 @@ end;
 procedure TfrmCDPlayer.Button387Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento distraído...';
 BMaestro.Click;
 if rec >84 Then Button387.Enabled := False;
 end;
@@ -7009,7 +5839,6 @@ end;
 procedure TfrmCDPlayer.Button386Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento divagatorio...';
 BMaestro.Click;
 if rec >84 Then Button386.Enabled := False;
 end;
@@ -7017,7 +5846,6 @@ end;
 procedure TfrmCDPlayer.Button385Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento tangencial...';
 BMaestro.Click;
 if rec >84 Then Button385.Enabled := False;
 end;
@@ -7025,7 +5853,6 @@ end;
 procedure TfrmCDPlayer.Button384Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento prolijo...';
 BMaestro.Click;
 if rec >84 Then Button384.Enabled := False;
 end;
@@ -7033,7 +5860,6 @@ end;
 procedure TfrmCDPlayer.Button383Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pensamiento perseverante o perseveración...';
 BMaestro.Click;
 if rec >84 Then Button383.Enabled := False;
 end;
@@ -7041,7 +5867,6 @@ end;
 procedure TfrmCDPlayer.Button382Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Disgregación...';
 BMaestro.Click;
 if rec >84 Then Button382.Enabled := False;
 end;
@@ -7049,7 +5874,6 @@ end;
 procedure TfrmCDPlayer.Button381Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Incoherencia...';
 BMaestro.Click;
 if rec >84 Then Button381.Enabled := False;
 end;
@@ -7057,7 +5881,6 @@ end;
 procedure TfrmCDPlayer.Button371Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Asociación rítmica...';
 BMaestro.Click;
 if rec >84 Then Button371.Enabled := False;
 end;
@@ -7065,7 +5888,6 @@ end;
 procedure TfrmCDPlayer.Button390Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alogía...';
 BMaestro.Click;
 if rec >84 Then Button390.Enabled := False;
 end;
@@ -7073,7 +5895,6 @@ end;
 procedure TfrmCDPlayer.Button332Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Almacenamiento...';
 BMaestro.Click;
 if rec >84 Then Button332.Enabled := False;
 end;
@@ -7081,7 +5902,6 @@ end;
 procedure TfrmCDPlayer.Button328Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Recuperación...';
 BMaestro.Click;
 if rec >84 Then Button328.Enabled := False;
 end;
@@ -7089,7 +5909,6 @@ end;
 procedure TfrmCDPlayer.Button343Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Sensorial...';
 BMaestro.Click;
 if rec >84 Then Button343.Enabled := False;
 end;
@@ -7097,7 +5916,6 @@ end;
 procedure TfrmCDPlayer.Button368Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Icónica...';
 BMaestro.Click;
 if rec >84 Then Button368.Enabled := False;
 end;
@@ -7105,7 +5923,6 @@ end;
 procedure TfrmCDPlayer.Button365Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Ecoica...';
 BMaestro.Click;
 if rec >84 Then Button365.Enabled := False;
 end;
@@ -7113,7 +5930,6 @@ end;
 procedure TfrmCDPlayer.Button364Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria De corto plazo...';
 BMaestro.Click;
 if rec >84 Then Button364.Enabled := False;
 end;
@@ -7121,7 +5937,6 @@ end;
 procedure TfrmCDPlayer.Button363Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria De largo plazo...';
 BMaestro.Click;
 if rec >84 Then Button363.Enabled := False;
 end;
@@ -7129,7 +5944,6 @@ end;
 procedure TfrmCDPlayer.Button360Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Procidemental...';
 BMaestro.Click;
 if rec >84 Then Button360.Enabled := False;
 end;
@@ -7137,7 +5951,6 @@ end;
 procedure TfrmCDPlayer.Button358Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Declarativa...';
 BMaestro.Click;
 if rec >84 Then Button358.Enabled := False;
 end;
@@ -7145,7 +5958,6 @@ end;
 procedure TfrmCDPlayer.Button356Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Semántica...';
 BMaestro.Click;
 if rec >84 Then Button356.Enabled := False;
 end;
@@ -7153,7 +5965,6 @@ end;
 procedure TfrmCDPlayer.Button320Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Memoria Episódica...';
 BMaestro.Click;
 if rec >84 Then Button320.Enabled := False;
 end;
@@ -7161,7 +5972,6 @@ end;
 procedure TfrmCDPlayer.Button379Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Reminiscencia...';
 BMaestro.Click;
 if rec >84 Then Button379.Enabled := False;
 end;
@@ -7169,7 +5979,6 @@ end;
 procedure TfrmCDPlayer.Button374Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ilusión de la memoria...';
 BMaestro.Click;
 if rec >84 Then Button374.Enabled := False;
 end;
@@ -7177,7 +5986,6 @@ end;
 procedure TfrmCDPlayer.Button325Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alucinación de la memoria...';
 BMaestro.Click;
 if rec >84 Then Button325.Enabled := False;
 end;
@@ -7185,7 +5993,6 @@ end;
 procedure TfrmCDPlayer.Button377Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fenómeno de lo ya visto...';
 BMaestro.Click;
 if rec >84 Then Button377.Enabled := False;
 end;
@@ -7193,7 +6000,6 @@ end;
 procedure TfrmCDPlayer.Button378Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fenómeno de lo nunca visto...';
 BMaestro.Click;
 if rec >84 Then Button378.Enabled := False;
 end;
@@ -7201,7 +6007,6 @@ end;
 procedure TfrmCDPlayer.Button354Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amnesia...';
 BMaestro.Click;
 if rec >84 Then Button354.Enabled := False;
 end;
@@ -7209,7 +6014,6 @@ end;
 procedure TfrmCDPlayer.Button376Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Anmesia Global...';
 BMaestro.Click;
 if rec >84 Then Button376.Enabled := False;
 end;
@@ -7217,7 +6021,6 @@ end;
 procedure TfrmCDPlayer.Button375Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amnesia parcial...';
 BMaestro.Click;
 if rec >84 Then Button375.Enabled := False;
 end;
@@ -7225,7 +6028,6 @@ end;
 procedure TfrmCDPlayer.Button369Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amnesia anterograda...';
 BMaestro.Click;
 if rec >84 Then Button369.Enabled := False;
 end;
@@ -7233,7 +6035,6 @@ end;
 procedure TfrmCDPlayer.Button362Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amnesia retrograda...';
 BMaestro.Click;
 if rec >84 Then Button362.Enabled := False;
 end;
@@ -7241,7 +6042,6 @@ end;
 procedure TfrmCDPlayer.Button372Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hipermnesia...';
 BMaestro.Click;
 if rec >84 Then Button372.Enabled := False;
 end;
@@ -7249,7 +6049,6 @@ end;
 procedure TfrmCDPlayer.Button373Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hipomnesia...';
 BMaestro.Click;
 if rec >84 Then Button373.Enabled := False;
 end;
@@ -7257,7 +6056,6 @@ end;
 procedure TfrmCDPlayer.Button361Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dismnesia...';
 BMaestro.Click;
 if rec >84 Then Button361.Enabled := False;
 end;
@@ -7265,7 +6063,6 @@ end;
 procedure TfrmCDPlayer.Button370Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Alzheimer...';
 BMaestro.Click;
 if rec >84 Then Button370.Enabled := False;
 end;
@@ -7273,7 +6070,6 @@ end;
 procedure TfrmCDPlayer.Button323Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Korsakoff...';
 BMaestro.Click;
 if rec >84 Then Button323.Enabled := False;
 end;
@@ -7293,26 +6089,13 @@ end;
 procedure TfrmCDPlayer.Button4Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ataxia Espino Cerebelosa...';
 BMaestro.Click;
 if rec >84 Then Button4.Enabled := False;
-end;
-
-procedure TfrmCDPlayer.Edit2Click(Sender: TObject);
-begin
-Edit2.Text := '';
-end;
-
-procedure TfrmCDPlayer.Edit2Change(Sender: TObject);
-begin
-If Edit2.Text<>'' then Button367.Enabled := True Else
-Button367.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button196Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cerebelo...';
 BMaestro.Click;
 if rec >84 Then Button196.Enabled := False;
 end;
@@ -7320,7 +6103,6 @@ end;
 procedure TfrmCDPlayer.Button185Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Cerebro (estimulación general)...';
 BMaestro.Click;
 if rec >84 Then Button185.Enabled := False;
 end;
@@ -7328,7 +6110,6 @@ end;
 procedure TfrmCDPlayer.Button201Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Glándula pineal...';
 BMaestro.Click;
 if rec >84 Then Button201.Enabled := False;
 end;
@@ -7336,7 +6117,6 @@ end;
 procedure TfrmCDPlayer.Button198Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Lóbulo frontal...';
 BMaestro.Click;
 if rec >84 Then Button198.Enabled := False;
 end;
@@ -7344,7 +6124,6 @@ end;
 procedure TfrmCDPlayer.Button187Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Lóbulo occipital...';
 BMaestro.Click;
 if rec >84 Then Button187.Enabled := False;
 end;
@@ -7352,7 +6131,6 @@ end;
 procedure TfrmCDPlayer.Button188Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Lóbulo parietal...';
 BMaestro.Click;
 if rec >84 Then Button188.Enabled := False;
 end;
@@ -7360,7 +6138,6 @@ end;
 procedure TfrmCDPlayer.Button190Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Lóbulo temporal...';
 BMaestro.Click;
 if rec >84 Then Button190.Enabled := False;
 end;
@@ -7368,7 +6145,6 @@ end;
 procedure TfrmCDPlayer.Button178Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Capacidad para interpretar lo que se ve...';
 BMaestro.Click;
 if rec >84 Then Button178.Enabled := False;
 end;
@@ -7376,7 +6152,6 @@ end;
 procedure TfrmCDPlayer.Button422Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Comportamiento sexual...';
 BMaestro.Click;
 if rec >84 Then Button422.Enabled := False;
 end;
@@ -7384,7 +6159,6 @@ end;
 procedure TfrmCDPlayer.Button197Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Conocimiento de los números y sus relaciones...';
 BMaestro.Click;
 if rec >84 Then Button197.Enabled := False;
 end;
@@ -7392,7 +6166,6 @@ end;
 procedure TfrmCDPlayer.Button191Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Control de los impulsos...';
 BMaestro.Click;
 if rec >84 Then Button191.Enabled := False;
 end;
@@ -7400,7 +6173,6 @@ end;
 procedure TfrmCDPlayer.Button428Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Expontaniedad...';
 BMaestro.Click;
 if rec >84 Then Button428.Enabled := False;
 end;
@@ -7408,7 +6180,6 @@ end;
 procedure TfrmCDPlayer.Button421Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Funciones motoras...';
 BMaestro.Click;
 if rec >84 Then Button421.Enabled := False;
 end;
@@ -7416,7 +6187,6 @@ end;
 procedure TfrmCDPlayer.Button193Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Juicio...';
 BMaestro.Click;
 if rec >84 Then Button193.Enabled := False;
 end;
@@ -7424,7 +6194,6 @@ end;
 procedure TfrmCDPlayer.Button200Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Manipulación de los objetos...';
 BMaestro.Click;
 if rec >84 Then Button200.Enabled := False;
 end;
@@ -7432,7 +6201,6 @@ end;
 procedure TfrmCDPlayer.Button194Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Memoria funcional (de trabajo, de corto plazo)...';
 BMaestro.Click;
 if rec >84 Then Button194.Enabled := False;
 end;
@@ -7440,7 +6208,6 @@ end;
 procedure TfrmCDPlayer.Button192Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Memoria visual (caras, imágenes)...';
 BMaestro.Click;
 if rec >84 Then Button192.Enabled := False;
 end;
@@ -7448,7 +6215,6 @@ end;
 procedure TfrmCDPlayer.Button195Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Nombre de los objetos...';
 BMaestro.Click;
 if rec >84 Then Button195.Enabled := False;
 end;
@@ -7456,7 +6222,6 @@ end;
 procedure TfrmCDPlayer.Button427Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Producción de imágenes...';
 BMaestro.Click;
 if rec >84 Then Button427.Enabled := False;
 end;
@@ -7464,7 +6229,6 @@ end;
 procedure TfrmCDPlayer.Button199Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Producción del lenguaje...';
 BMaestro.Click;
 if rec >84 Then Button199.Enabled := False;
 end;
@@ -7472,7 +6236,6 @@ end;
 procedure TfrmCDPlayer.Button186Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Procesamiento de la información sensorial...';
 BMaestro.Click;
 if rec >84 Then Button186.Enabled := False;
 end;
@@ -7480,7 +6243,6 @@ end;
 procedure TfrmCDPlayer.Button189Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Recuerdo de las palabras...';
 BMaestro.Click;
 if rec >84 Then Button189.Enabled := False;
 end;
@@ -7488,7 +6250,6 @@ end;
 procedure TfrmCDPlayer.Button423Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Regulación de emociones...';
 BMaestro.Click;
 if rec >84 Then Button423.Enabled := False;
 end;
@@ -7496,80 +6257,55 @@ end;
 procedure TfrmCDPlayer.Button429Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando mejora de rendimiento a Socialización...';
 BMaestro.Click;
 if rec >84 Then Button429.Enabled := False;
 end;
 
 procedure TfrmCDPlayer.Button406Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para tumefacción';
-scioworking.button16.caption:='Detener terapia para tumefacción';
-scioworking.button2.caption:='Terapia para tumefacción';
+scioworking.button2.caption:='Tumefacción fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button405Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para hiperreactividad / hipersensibilidad';
-scioworking.button16.caption:='Detener terapia para hiperreactividad / hipersensibilidad';
-scioworking.button2.caption:='Terapia para hiperreactividad / hipersensibilidad';
+scioworking.button2.caption:='Hiperreactividad / hipersensibilidad fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button404Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para trauma psicológico';
-scioworking.button16.caption:='Detener terapia para trauma psicológico';
-scioworking.button2.caption:='Terapia para trauma psicológico';
+scioworking.button2.caption:='Trauma psicológico fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button402Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para alteraciones vasculares';
-scioworking.button16.caption:='Detener terapia para alteraciones vasculares';
-scioworking.button2.caption:='Terapia para alteraciones vasculares';
+scioworking.button2.caption:='Alteraciones vasculares fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button21Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para alteraciones tisulares';
-scioworking.button16.caption:='Detener terapia para alteraciones tisulares';
-scioworking.button2.caption:='Terapia para alteraciones tisulares';
+scioworking.button2.caption:='Alteraciones tisulares fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button20Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para comezón';
-scioworking.button16.caption:='Detener terapia para comezón';
-scioworking.button2.caption:='Terapia para comezón';
+scioworking.button2.caption:='Comezón fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button16Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para dolor';
-scioworking.button16.caption:='Detener terapia para dolor';
-scioworking.button2.caption:='Terapia para dolor';
+scioworking.button2.caption:='Dolor fX';
 Rx();
 end;
 
 procedure TfrmCDPlayer.Button11Click(Sender: TObject);
 begin
-EAF();
-scioworking.button15.caption:='Iniciar terapia para lesión';
-scioworking.button16.caption:='Detener terapia para lesión';
-scioworking.button2.caption:='Terapia para lesión';
+scioworking.button2.caption:='Lesión fX';
 Rx();
 end;
 
@@ -7588,7 +6324,6 @@ end;
 procedure TfrmCDPlayer.Button81Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de afección neuro degenerativa Trastornos neurológicos de los diabéticos...';
 BMaestro.Click;
 if rec >84 Then Button81.Enabled := False;
 end;
@@ -7603,7 +6338,7 @@ end;
 procedure TfrmCDPlayer.Button366Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
-Label55.Caption:='Rectificado |';
+Label55.Caption:='Rectificado | ';
 Label55.Refresh;
 PAutismo.Visible := True;
 end;
@@ -7817,7 +6552,6 @@ end;
 procedure TfrmCDPlayer.Button388Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Button388.Caption+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -7827,7 +6561,6 @@ end;
 procedure TfrmCDPlayer.Button410Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Button410.Caption+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -7837,7 +6570,6 @@ end;
 procedure TfrmCDPlayer.Button408Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Button408.Caption+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -7847,7 +6579,6 @@ end;
 procedure TfrmCDPlayer.Button420Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Button420.Caption+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -7857,7 +6588,6 @@ end;
 procedure TfrmCDPlayer.Button413Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Button413.Caption+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -7867,7 +6597,6 @@ end;
 procedure TfrmCDPlayer.Button367Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia para '+Edit12.Text+'...';
 If CBAutismo.Checked = True Then TAutismo.Enabled := True;
 BMaestro.Click;
 TAutismo.Enabled := False;
@@ -8256,7 +6985,6 @@ end;
 procedure TfrmCDPlayer.Button317Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando corrección de '+Edit1.Text+'...';
 BMaestro.Click;
 if rec >84 Then Button317.Enabled := False;
 end;

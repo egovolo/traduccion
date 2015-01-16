@@ -302,7 +302,6 @@ type
     Label506: TLabel;
     Label507: TLabel;
     Label510: TLabel;
-    Button11: TButton;
     Label513: TLabel;
     Label514: TLabel;
     Button14: TButton;
@@ -310,25 +309,24 @@ type
     DBGrid2: TDBGrid;
     Button25: TButton;
     Button26: TButton;
-    Label520: TLabel;
-    Label521: TLabel;
-    Label522: TLabel;
+    LProcesos: TLabel;
+    LTerapias: TLabel;
+    LEPositivas: TLabel;
     Label523: TLabel;
     Label524: TLabel;
     Label525: TLabel;
     Label526: TLabel;
-    Label527: TLabel;
-    Label528: TLabel;
-    Label529: TLabel;
-    Label530: TLabel;
-    Label531: TLabel;
+    LCausas: TLabel;
+    LOrganosGlandulas: TLabel;
+    LAVM: TLabel;
+    LMeridianos: TLabel;
+    LENegativas: TLabel;
     Button27: TButton;
     Edit1: TEdit;
     Button28: TButton;
     Label534: TLabel;
     Label535: TLabel;
     Label536: TLabel;
-    Label538: TLabel;
     Label539: TLabel;
     Label540: TLabel;
     Button29: TButton;
@@ -369,419 +367,12 @@ type
     Button69: TButton;
     Button70: TButton;
     Button71: TButton;
-    Button72: TButton;
     Label552: TLabel;
     Bevel2: TBevel;
-    PDesarrollo: TPanel;
     Button75: TButton;
     Label553: TLabel;
     Button76: TButton;
     Button77: TButton;
-    Panel11: TPanel;
-    Label554: TLabel;
-    Button78: TButton;
-    Panel12: TPanel;
-    Button81: TButton;
-    Label663: TLabel;
-    Panel13: TPanel;
-    Label734: TLabel;
-    Label743: TLabel;
-    Button83: TButton;
-    Button84: TButton;
-    Button85: TButton;
-    Button86: TButton;
-    GroupBox1: TGroupBox;
-    Label735: TLabel;
-    Label738: TLabel;
-    Label739: TLabel;
-    Label740: TLabel;
-    Label741: TLabel;
-    Label744: TLabel;
-    Label747: TLabel;
-    Label748: TLabel;
-    Label750: TLabel;
-    RadioButton233: TRadioButton;
-    RadioButton234: TRadioButton;
-    RadioButton235: TRadioButton;
-    RadioButton236: TRadioButton;
-    RadioButton237: TRadioButton;
-    RadioButton238: TRadioButton;
-    RadioButton239: TRadioButton;
-    RadioButton241: TRadioButton;
-    RadioButton242: TRadioButton;
-    RadioButton244: TRadioButton;
-    Label813: TLabel;
-    GroupBox2: TGroupBox;
-    Label722: TLabel;
-    Label723: TLabel;
-    Label724: TLabel;
-    Label726: TLabel;
-    Label728: TLabel;
-    Label731: TLabel;
-    RadioButton171: TRadioButton;
-    RadioButton172: TRadioButton;
-    RadioButton173: TRadioButton;
-    RadioButton174: TRadioButton;
-    RadioButton175: TRadioButton;
-    RadioButton176: TRadioButton;
-    Label727: TLabel;
-    Label729: TLabel;
-    Label730: TLabel;
-    Label732: TLabel;
-    RadioButton177: TRadioButton;
-    RadioButton178: TRadioButton;
-    RadioButton179: TRadioButton;
-    RadioButton180: TRadioButton;
-    RadioButton181: TRadioButton;
-    RadioButton182: TRadioButton;
-    RadioButton183: TRadioButton;
-    RadioButton184: TRadioButton;
-    RadioButton185: TRadioButton;
-    RadioButton186: TRadioButton;
-    Label805: TLabel;
-    Label807: TLabel;
-    Label808: TLabel;
-    Label810: TLabel;
-    Label811: TLabel;
-    Label812: TLabel;
-    GroupBox3: TGroupBox;
-    Label742: TLabel;
-    Label749: TLabel;
-    Label751: TLabel;
-    Label752: TLabel;
-    Label753: TLabel;
-    Label754: TLabel;
-    Label755: TLabel;
-    Label757: TLabel;
-    Label758: TLabel;
-    Label759: TLabel;
-    Label761: TLabel;
-    Label763: TLabel;
-    Label766: TLabel;
-    RadioButton243: TRadioButton;
-    RadioButton245: TRadioButton;
-    RadioButton246: TRadioButton;
-    RadioButton247: TRadioButton;
-    RadioButton248: TRadioButton;
-    RadioButton249: TRadioButton;
-    RadioButton250: TRadioButton;
-    RadioButton251: TRadioButton;
-    RadioButton252: TRadioButton;
-    RadioButton253: TRadioButton;
-    RadioButton254: TRadioButton;
-    RadioButton255: TRadioButton;
-    Label621: TLabel;
-    GroupBox4: TGroupBox;
-    Label631: TLabel;
-    Label636: TLabel;
-    Label637: TLabel;
-    Label638: TLabel;
-    Label639: TLabel;
-    Label640: TLabel;
-    Label641: TLabel;
-    Label642: TLabel;
-    Label643: TLabel;
-    Label644: TLabel;
-    Label647: TLabel;
-    Label650: TLabel;
-    RadioButton94: TRadioButton;
-    RadioButton95: TRadioButton;
-    RadioButton96: TRadioButton;
-    RadioButton97: TRadioButton;
-    RadioButton98: TRadioButton;
-    RadioButton99: TRadioButton;
-    RadioButton100: TRadioButton;
-    RadioButton101: TRadioButton;
-    RadioButton102: TRadioButton;
-    RadioButton103: TRadioButton;
-    RadioButton104: TRadioButton;
-    RadioButton105: TRadioButton;
-    GroupBox5: TGroupBox;
-    RadioButton54: TRadioButton;
-    RadioButton55: TRadioButton;
-    Label603: TLabel;
-    Label604: TLabel;
-    Label605: TLabel;
-    Label606: TLabel;
-    Label607: TLabel;
-    Label608: TLabel;
-    Label609: TLabel;
-    Label610: TLabel;
-    Label611: TLabel;
-    Label612: TLabel;
-    Label613: TLabel;
-    Label614: TLabel;
-    Label615: TLabel;
-    Label616: TLabel;
-    Label617: TLabel;
-    Label618: TLabel;
-    Label619: TLabel;
-    Label620: TLabel;
-    RadioButton56: TRadioButton;
-    RadioButton57: TRadioButton;
-    RadioButton58: TRadioButton;
-    RadioButton59: TRadioButton;
-    RadioButton60: TRadioButton;
-    RadioButton61: TRadioButton;
-    RadioButton62: TRadioButton;
-    RadioButton63: TRadioButton;
-    RadioButton64: TRadioButton;
-    RadioButton65: TRadioButton;
-    RadioButton77: TRadioButton;
-    RadioButton78: TRadioButton;
-    RadioButton79: TRadioButton;
-    RadioButton80: TRadioButton;
-    RadioButton81: TRadioButton;
-    GroupBox6: TGroupBox;
-    Label623: TLabel;
-    Label624: TLabel;
-    Label625: TLabel;
-    Label626: TLabel;
-    Label627: TLabel;
-    Label628: TLabel;
-    Label629: TLabel;
-    Label630: TLabel;
-    Label632: TLabel;
-    Label633: TLabel;
-    Label634: TLabel;
-    Label635: TLabel;
-    RadioButton82: TRadioButton;
-    RadioButton83: TRadioButton;
-    RadioButton84: TRadioButton;
-    RadioButton85: TRadioButton;
-    RadioButton86: TRadioButton;
-    RadioButton87: TRadioButton;
-    RadioButton88: TRadioButton;
-    RadioButton89: TRadioButton;
-    RadioButton90: TRadioButton;
-    RadioButton91: TRadioButton;
-    RadioButton92: TRadioButton;
-    RadioButton93: TRadioButton;
-    GroupBox7: TGroupBox;
-    RadioButton11: TRadioButton;
-    RadioButton12: TRadioButton;
-    RadioButton13: TRadioButton;
-    RadioButton14: TRadioButton;
-    RadioButton15: TRadioButton;
-    RadioButton16: TRadioButton;
-    RadioButton17: TRadioButton;
-    RadioButton18: TRadioButton;
-    RadioButton19: TRadioButton;
-    RadioButton20: TRadioButton;
-    RadioButton21: TRadioButton;
-    RadioButton22: TRadioButton;
-    RadioButton23: TRadioButton;
-    RadioButton24: TRadioButton;
-    RadioButton25: TRadioButton;
-    RadioButton26: TRadioButton;
-    RadioButton27: TRadioButton;
-    RadioButton28: TRadioButton;
-    RadioButton29: TRadioButton;
-    RadioButton30: TRadioButton;
-    RadioButton31: TRadioButton;
-    RadioButton32: TRadioButton;
-    RadioButton33: TRadioButton;
-    RadioButton34: TRadioButton;
-    RadioButton35: TRadioButton;
-    RadioButton36: TRadioButton;
-    RadioButton37: TRadioButton;
-    RadioButton38: TRadioButton;
-    RadioButton39: TRadioButton;
-    RadioButton40: TRadioButton;
-    RadioButton41: TRadioButton;
-    RadioButton42: TRadioButton;
-    RadioButton43: TRadioButton;
-    RadioButton44: TRadioButton;
-    RadioButton45: TRadioButton;
-    RadioButton46: TRadioButton;
-    RadioButton47: TRadioButton;
-    RadioButton48: TRadioButton;
-    RadioButton49: TRadioButton;
-    RadioButton50: TRadioButton;
-    RadioButton51: TRadioButton;
-    RadioButton52: TRadioButton;
-    RadioButton53: TRadioButton;
-    Label556: TLabel;
-    Label557: TLabel;
-    Label558: TLabel;
-    Label559: TLabel;
-    Label560: TLabel;
-    Label561: TLabel;
-    Label562: TLabel;
-    Label563: TLabel;
-    Label564: TLabel;
-    Label565: TLabel;
-    Label566: TLabel;
-    Label567: TLabel;
-    Label568: TLabel;
-    Label569: TLabel;
-    Label570: TLabel;
-    Label571: TLabel;
-    Label572: TLabel;
-    Label573: TLabel;
-    Label574: TLabel;
-    Label575: TLabel;
-    Label576: TLabel;
-    Label577: TLabel;
-    Label578: TLabel;
-    Label579: TLabel;
-    Label580: TLabel;
-    Label581: TLabel;
-    Label582: TLabel;
-    Label583: TLabel;
-    Label584: TLabel;
-    Label585: TLabel;
-    Label586: TLabel;
-    Label587: TLabel;
-    Label588: TLabel;
-    Label589: TLabel;
-    Label590: TLabel;
-    Label591: TLabel;
-    Label592: TLabel;
-    Label593: TLabel;
-    Label594: TLabel;
-    Label595: TLabel;
-    Label596: TLabel;
-    Label597: TLabel;
-    Label598: TLabel;
-    Label599: TLabel;
-    Label600: TLabel;
-    Label602: TLabel;
-    GroupBox8: TGroupBox;
-    Label697: TLabel;
-    Label698: TLabel;
-    Label699: TLabel;
-    Label701: TLabel;
-    Label702: TLabel;
-    Label703: TLabel;
-    Label704: TLabel;
-    Label705: TLabel;
-    Label707: TLabel;
-    Label708: TLabel;
-    Label709: TLabel;
-    Label710: TLabel;
-    Label711: TLabel;
-    Label712: TLabel;
-    Label713: TLabel;
-    Label715: TLabel;
-    Label716: TLabel;
-    Label717: TLabel;
-    Label718: TLabel;
-    Label720: TLabel;
-    Label721: TLabel;
-    Label725: TLabel;
-    RadioButton148: TRadioButton;
-    RadioButton149: TRadioButton;
-    RadioButton151: TRadioButton;
-    RadioButton152: TRadioButton;
-    RadioButton153: TRadioButton;
-    RadioButton154: TRadioButton;
-    RadioButton155: TRadioButton;
-    RadioButton156: TRadioButton;
-    RadioButton157: TRadioButton;
-    RadioButton158: TRadioButton;
-    RadioButton159: TRadioButton;
-    RadioButton160: TRadioButton;
-    RadioButton162: TRadioButton;
-    RadioButton164: TRadioButton;
-    RadioButton165: TRadioButton;
-    RadioButton166: TRadioButton;
-    RadioButton167: TRadioButton;
-    RadioButton168: TRadioButton;
-    RadioButton169: TRadioButton;
-    RadioButton170: TRadioButton;
-    GroupBox9: TGroupBox;
-    Label673: TLabel;
-    Label675: TLabel;
-    Label676: TLabel;
-    Label677: TLabel;
-    Label678: TLabel;
-    Label679: TLabel;
-    Label680: TLabel;
-    Label681: TLabel;
-    Label682: TLabel;
-    Label683: TLabel;
-    Label684: TLabel;
-    Label685: TLabel;
-    Label686: TLabel;
-    Label687: TLabel;
-    Label688: TLabel;
-    Label689: TLabel;
-    Label690: TLabel;
-    Label691: TLabel;
-    Label692: TLabel;
-    Label693: TLabel;
-    Label694: TLabel;
-    RadioButton126: TRadioButton;
-    RadioButton127: TRadioButton;
-    RadioButton128: TRadioButton;
-    RadioButton129: TRadioButton;
-    RadioButton130: TRadioButton;
-    RadioButton131: TRadioButton;
-    RadioButton132: TRadioButton;
-    RadioButton133: TRadioButton;
-    RadioButton134: TRadioButton;
-    RadioButton135: TRadioButton;
-    RadioButton136: TRadioButton;
-    RadioButton137: TRadioButton;
-    RadioButton138: TRadioButton;
-    RadioButton139: TRadioButton;
-    RadioButton140: TRadioButton;
-    RadioButton141: TRadioButton;
-    RadioButton142: TRadioButton;
-    RadioButton143: TRadioButton;
-    RadioButton144: TRadioButton;
-    RadioButton145: TRadioButton;
-    RadioButton146: TRadioButton;
-    GroupBox10: TGroupBox;
-    RadioButton119: TRadioButton;
-    RadioButton120: TRadioButton;
-    RadioButton121: TRadioButton;
-    Label661: TLabel;
-    Label664: TLabel;
-    Label665: TLabel;
-    Label666: TLabel;
-    Label667: TLabel;
-    Label668: TLabel;
-    Label669: TLabel;
-    Label670: TLabel;
-    Label672: TLabel;
-    RadioButton122: TRadioButton;
-    RadioButton123: TRadioButton;
-    RadioButton124: TRadioButton;
-    RadioButton125: TRadioButton;
-    Label645: TLabel;
-    Label646: TLabel;
-    Label648: TLabel;
-    Label649: TLabel;
-    Label651: TLabel;
-    Label652: TLabel;
-    Label653: TLabel;
-    Label654: TLabel;
-    Label655: TLabel;
-    Label656: TLabel;
-    Label657: TLabel;
-    Label658: TLabel;
-    Label659: TLabel;
-    Label660: TLabel;
-    RadioButton106: TRadioButton;
-    RadioButton107: TRadioButton;
-    RadioButton108: TRadioButton;
-    RadioButton109: TRadioButton;
-    RadioButton110: TRadioButton;
-    RadioButton111: TRadioButton;
-    RadioButton112: TRadioButton;
-    RadioButton113: TRadioButton;
-    RadioButton114: TRadioButton;
-    RadioButton115: TRadioButton;
-    RadioButton116: TRadioButton;
-    RadioButton117: TRadioButton;
-    RadioButton118: TRadioButton;
-    Label662: TLabel;
-    Bevel5: TBevel;
-    Bevel6: TBevel;
-    RadioButton187: TRadioButton;
-    Label772: TLabel;
     Label779: TLabel;
     Label781: TLabel;
     Label789: TLabel;
@@ -1332,7 +923,6 @@ type
     MyChrono: TYRChronometre;
     Button2: TButton;
     Label500: TLabel;
-    Label501: TLabel;
     DBGrid1: TDBGrid;
     Label57: TLabel;
     Label80: TLabel;
@@ -1375,9 +965,6 @@ type
     Panel17: TPanel;
     Panel19: TPanel;
     Panel20: TPanel;
-    Panel21: TPanel;
-    Panel22: TPanel;
-    Panel23: TPanel;
     Panel24: TPanel;
     Panel25: TPanel;
     LOrden2: TLabel;
@@ -1385,7 +972,6 @@ type
     LNombre2: TLabel;
     Image25: TImage;
     Label457: TLabel;
-    Label533: TLabel;
     Label555: TLabel;
     Button7: TButton;
     Edit8: TEdit;
@@ -1477,6 +1063,39 @@ type
     BNutricion: TButton;
     SETiempo: TSpinEdit;
     Label499: TLabel;
+    Label533: TLabel;
+    LToxinas: TLabel;
+    LSistemas: TLabel;
+    LAfirmaciones: TLabel;
+    Label520: TLabel;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    LBTerapias: TListBox;
+    BTerapias: TButton;
+    BAfirmaciones: TButton;
+    LBAfirmaciones: TListBox;
+    Label501: TLabel;
 
     procedure Label2Click(Sender: TObject);
     procedure Label3Click(Sender: TObject);
@@ -1508,14 +1127,12 @@ type
     procedure Label496DblClick(Sender: TObject);
     procedure label497DblClick(Sender: TObject);
     procedure Button10Click(Sender: TObject);
-    procedure Button11Click(Sender: TObject);
     procedure Button14Click(Sender: TObject);
     procedure Label455Click(Sender: TObject);
     procedure Label15Click(Sender: TObject);
     procedure Panel8DblClick(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
     procedure Label98DblClick(Sender: TObject);
-    procedure Label83DblClick(Sender: TObject);
     procedure Label10Click(Sender: TObject);
     procedure Label11Click(Sender: TObject);
     procedure Label12Click(Sender: TObject);
@@ -1573,210 +1190,9 @@ type
     procedure Button71Click(Sender: TObject);
     procedure Button70Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Button72Click(Sender: TObject);
     procedure Button75Click(Sender: TObject);
-    procedure RadioButton1Click(Sender: TObject);
-    procedure RadioButton2Click(Sender: TObject);
-    procedure RadioButton3Click(Sender: TObject);
-    procedure RadioButton4Click(Sender: TObject);
-    procedure RadioButton5Click(Sender: TObject);
-    procedure RadioButton6Click(Sender: TObject);
-    procedure RadioButton7Click(Sender: TObject);
-    procedure RadioButton8Click(Sender: TObject);
-    procedure RadioButton9Click(Sender: TObject);
-    procedure RadioButton10Click(Sender: TObject);
     procedure Button76Click(Sender: TObject);
     procedure Button77Click(Sender: TObject);
-    procedure Button78Click(Sender: TObject);
-    procedure Button81Click(Sender: TObject);
-    procedure Button86Click(Sender: TObject);
-    procedure Button85Click(Sender: TObject);
-    procedure Button84Click(Sender: TObject);
-    procedure Button83Click(Sender: TObject);
-    procedure RadioButton11Click(Sender: TObject);
-    procedure RadioButton12Click(Sender: TObject);
-    procedure RadioButton13Click(Sender: TObject);
-    procedure RadioButton14Click(Sender: TObject);
-    procedure RadioButton15Click(Sender: TObject);
-    procedure RadioButton16Click(Sender: TObject);
-    procedure RadioButton17Click(Sender: TObject);
-    procedure RadioButton18Click(Sender: TObject);
-    procedure RadioButton19Click(Sender: TObject);
-    procedure RadioButton20Click(Sender: TObject);
-    procedure RadioButton21Click(Sender: TObject);
-    procedure RadioButton23Click(Sender: TObject);
-    procedure RadioButton25Click(Sender: TObject);
-    procedure RadioButton22Click(Sender: TObject);
-    procedure RadioButton24Click(Sender: TObject);
-    procedure RadioButton26Click(Sender: TObject);
-    procedure RadioButton27Click(Sender: TObject);
-    procedure RadioButton28Click(Sender: TObject);
-    procedure RadioButton29Click(Sender: TObject);
-    procedure RadioButton30Click(Sender: TObject);
-    procedure RadioButton31Click(Sender: TObject);
-    procedure RadioButton32Click(Sender: TObject);
-    procedure RadioButton33Click(Sender: TObject);
-    procedure RadioButton34Click(Sender: TObject);
-    procedure RadioButton35Click(Sender: TObject);
-    procedure RadioButton36Click(Sender: TObject);
-    procedure RadioButton37Click(Sender: TObject);
-    procedure RadioButton38Click(Sender: TObject);
-    procedure RadioButton39Click(Sender: TObject);
-    procedure RadioButton40Click(Sender: TObject);
-    procedure RadioButton41Click(Sender: TObject);
-    procedure RadioButton42Click(Sender: TObject);
-    procedure RadioButton43Click(Sender: TObject);
-    procedure RadioButton44Click(Sender: TObject);
-    procedure RadioButton45Click(Sender: TObject);
-    procedure RadioButton46Click(Sender: TObject);
-    procedure RadioButton47Click(Sender: TObject);
-    procedure RadioButton48Click(Sender: TObject);
-    procedure RadioButton49Click(Sender: TObject);
-    procedure RadioButton50Click(Sender: TObject);
-    procedure RadioButton51Click(Sender: TObject);
-    procedure RadioButton52Click(Sender: TObject);
-    procedure RadioButton53Click(Sender: TObject);
-    procedure RadioButton94Click(Sender: TObject);
-    procedure RadioButton95Click(Sender: TObject);
-    procedure RadioButton96Click(Sender: TObject);
-    procedure RadioButton97Click(Sender: TObject);
-    procedure RadioButton98Click(Sender: TObject);
-    procedure RadioButton99Click(Sender: TObject);
-    procedure RadioButton100Click(Sender: TObject);
-    procedure RadioButton101Click(Sender: TObject);
-    procedure RadioButton102Click(Sender: TObject);
-    procedure RadioButton104Click(Sender: TObject);
-    procedure RadioButton105Click(Sender: TObject);
-    procedure RadioButton103Click(Sender: TObject);
-    procedure RadioButton82Click(Sender: TObject);
-    procedure RadioButton83Click(Sender: TObject);
-    procedure RadioButton84Click(Sender: TObject);
-    procedure RadioButton85Click(Sender: TObject);
-    procedure RadioButton86Click(Sender: TObject);
-    procedure RadioButton87Click(Sender: TObject);
-    procedure RadioButton88Click(Sender: TObject);
-    procedure RadioButton89Click(Sender: TObject);
-    procedure RadioButton90Click(Sender: TObject);
-    procedure RadioButton91Click(Sender: TObject);
-    procedure RadioButton92Click(Sender: TObject);
-    procedure RadioButton93Click(Sender: TObject);
-    procedure RadioButton54Click(Sender: TObject);
-    procedure RadioButton55Click(Sender: TObject);
-    procedure RadioButton56Click(Sender: TObject);
-    procedure RadioButton57Click(Sender: TObject);
-    procedure RadioButton58Click(Sender: TObject);
-    procedure RadioButton59Click(Sender: TObject);
-    procedure RadioButton60Click(Sender: TObject);
-    procedure RadioButton61Click(Sender: TObject);
-    procedure RadioButton62Click(Sender: TObject);
-    procedure RadioButton63Click(Sender: TObject);
-    procedure RadioButton64Click(Sender: TObject);
-    procedure RadioButton65Click(Sender: TObject);
-    procedure RadioButton77Click(Sender: TObject);
-    procedure RadioButton78Click(Sender: TObject);
-    procedure RadioButton79Click(Sender: TObject);
-    procedure RadioButton80Click(Sender: TObject);
-    procedure RadioButton81Click(Sender: TObject);
-    procedure RadioButton106Click(Sender: TObject);
-    procedure RadioButton107Click(Sender: TObject);
-    procedure RadioButton108Click(Sender: TObject);
-    procedure RadioButton109Click(Sender: TObject);
-    procedure RadioButton110Click(Sender: TObject);
-    procedure RadioButton111Click(Sender: TObject);
-    procedure RadioButton187Click(Sender: TObject);
-    procedure RadioButton112Click(Sender: TObject);
-    procedure RadioButton113Click(Sender: TObject);
-    procedure RadioButton114Click(Sender: TObject);
-    procedure RadioButton115Click(Sender: TObject);
-    procedure RadioButton116Click(Sender: TObject);
-    procedure RadioButton117Click(Sender: TObject);
-    procedure RadioButton118Click(Sender: TObject);
-    procedure RadioButton119Click(Sender: TObject);
-    procedure RadioButton120Click(Sender: TObject);
-    procedure RadioButton121Click(Sender: TObject);
-    procedure RadioButton122Click(Sender: TObject);
-    procedure RadioButton123Click(Sender: TObject);
-    procedure RadioButton124Click(Sender: TObject);
-    procedure RadioButton125Click(Sender: TObject);
-    procedure RadioButton126Click(Sender: TObject);
-    procedure RadioButton127Click(Sender: TObject);
-    procedure RadioButton128Click(Sender: TObject);
-    procedure RadioButton130Click(Sender: TObject);
-    procedure RadioButton129Click(Sender: TObject);
-    procedure RadioButton131Click(Sender: TObject);
-    procedure RadioButton132Click(Sender: TObject);
-    procedure RadioButton133Click(Sender: TObject);
-    procedure RadioButton134Click(Sender: TObject);
-    procedure RadioButton135Click(Sender: TObject);
-    procedure RadioButton136Click(Sender: TObject);
-    procedure RadioButton137Click(Sender: TObject);
-    procedure RadioButton138Click(Sender: TObject);
-    procedure RadioButton139Click(Sender: TObject);
-    procedure RadioButton140Click(Sender: TObject);
-    procedure RadioButton141Click(Sender: TObject);
-    procedure RadioButton142Click(Sender: TObject);
-    procedure RadioButton143Click(Sender: TObject);
-    procedure RadioButton144Click(Sender: TObject);
-    procedure RadioButton146Click(Sender: TObject);
-    procedure RadioButton145Click(Sender: TObject);
-    procedure RadioButton148Click(Sender: TObject);
-    procedure RadioButton149Click(Sender: TObject);
-    procedure RadioButton151Click(Sender: TObject);
-    procedure RadioButton152Click(Sender: TObject);
-    procedure RadioButton153Click(Sender: TObject);
-    procedure RadioButton154Click(Sender: TObject);
-    procedure RadioButton155Click(Sender: TObject);
-    procedure RadioButton156Click(Sender: TObject);
-    procedure RadioButton157Click(Sender: TObject);
-    procedure RadioButton158Click(Sender: TObject);
-    procedure RadioButton159Click(Sender: TObject);
-    procedure RadioButton160Click(Sender: TObject);
-    procedure RadioButton162Click(Sender: TObject);
-    procedure RadioButton164Click(Sender: TObject);
-    procedure RadioButton165Click(Sender: TObject);
-    procedure RadioButton166Click(Sender: TObject);
-    procedure RadioButton167Click(Sender: TObject);
-    procedure RadioButton168Click(Sender: TObject);
-    procedure RadioButton169Click(Sender: TObject);
-    procedure RadioButton170Click(Sender: TObject);
-    procedure RadioButton171Click(Sender: TObject);
-    procedure RadioButton172Click(Sender: TObject);
-    procedure RadioButton173Click(Sender: TObject);
-    procedure RadioButton174Click(Sender: TObject);
-    procedure RadioButton175Click(Sender: TObject);
-    procedure RadioButton176Click(Sender: TObject);
-    procedure RadioButton177Click(Sender: TObject);
-    procedure RadioButton178Click(Sender: TObject);
-    procedure RadioButton179Click(Sender: TObject);
-    procedure RadioButton180Click(Sender: TObject);
-    procedure RadioButton181Click(Sender: TObject);
-    procedure RadioButton182Click(Sender: TObject);
-    procedure RadioButton183Click(Sender: TObject);
-    procedure RadioButton184Click(Sender: TObject);
-    procedure RadioButton185Click(Sender: TObject);
-    procedure RadioButton186Click(Sender: TObject);
-    procedure RadioButton243Click(Sender: TObject);
-    procedure RadioButton245Click(Sender: TObject);
-    procedure RadioButton246Click(Sender: TObject);
-    procedure RadioButton247Click(Sender: TObject);
-    procedure RadioButton248Click(Sender: TObject);
-    procedure RadioButton249Click(Sender: TObject);
-    procedure RadioButton250Click(Sender: TObject);
-    procedure RadioButton251Click(Sender: TObject);
-    procedure RadioButton252Click(Sender: TObject);
-    procedure RadioButton253Click(Sender: TObject);
-    procedure RadioButton254Click(Sender: TObject);
-    procedure RadioButton255Click(Sender: TObject);
-    procedure RadioButton233Click(Sender: TObject);
-    procedure RadioButton234Click(Sender: TObject);
-    procedure RadioButton235Click(Sender: TObject);
-    procedure RadioButton236Click(Sender: TObject);
-    procedure RadioButton237Click(Sender: TObject);
-    procedure RadioButton238Click(Sender: TObject);
-    procedure RadioButton239Click(Sender: TObject);
-    procedure RadioButton241Click(Sender: TObject);
-    procedure RadioButton242Click(Sender: TObject);
-    procedure RadioButton244Click(Sender: TObject);
     procedure Label510DblClick(Sender: TObject);
     procedure Label504DblClick(Sender: TObject);
     procedure Label505DblClick(Sender: TObject);
@@ -1787,47 +1203,8 @@ type
     procedure Label544DblClick(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Click(Sender: TObject);
-    procedure Label84DblClick(Sender: TObject);
-    procedure Label85DblClick(Sender: TObject);
-    procedure Label86DblClick(Sender: TObject);
-    procedure Label87DblClick(Sender: TObject);
-    procedure Label88DblClick(Sender: TObject);
-    procedure Label89DblClick(Sender: TObject);
-    procedure Label523DblClick(Sender: TObject);
-    procedure Label524DblClick(Sender: TObject);
-    procedure Label527DblClick(Sender: TObject);
-    procedure Label528DblClick(Sender: TObject);
-    procedure Label529DblClick(Sender: TObject);
-    procedure Label520DblClick(Sender: TObject);
-    procedure Label521DblClick(Sender: TObject);
-    procedure Label522DblClick(Sender: TObject);
-    procedure Label534DblClick(Sender: TObject);
-    procedure Label536DblClick(Sender: TObject);
-    procedure Label539DblClick(Sender: TObject);
-    procedure Label540DblClick(Sender: TObject);
-    procedure Label535DblClick(Sender: TObject);
     procedure Button16Click(Sender: TObject);
     procedure Button88Click(Sender: TObject);
-    procedure Label33DblClick(Sender: TObject);
-    procedure Label34DblClick(Sender: TObject);
-    procedure Label35DblClick(Sender: TObject);
-    procedure Label36DblClick(Sender: TObject);
-    procedure Label37DblClick(Sender: TObject);
-    procedure Label38DblClick(Sender: TObject);
-    procedure Label40DblClick(Sender: TObject);
-    procedure Label41DblClick(Sender: TObject);
-    procedure Label42DblClick(Sender: TObject);
-    procedure Label43DblClick(Sender: TObject);
-    procedure Label44DblClick(Sender: TObject);
-    procedure Label45DblClick(Sender: TObject);
-    procedure Label46DblClick(Sender: TObject);
-    procedure Label47DblClick(Sender: TObject);
-    procedure Label48DblClick(Sender: TObject);
-    procedure Label49DblClick(Sender: TObject);
-    procedure Label50DblClick(Sender: TObject);
-    procedure Label52DblClick(Sender: TObject);
-    procedure Label39DblClick(Sender: TObject);
-    procedure Label51DblClick(Sender: TObject);
     procedure Label460Click(Sender: TObject);
     procedure Button50Click(Sender: TObject);
     procedure Button51Click(Sender: TObject);
@@ -1850,8 +1227,6 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Label53Click(Sender: TObject);
     procedure Label54Click(Sender: TObject);
-    procedure Label53DblClick(Sender: TObject);
-    procedure Label54DblClick(Sender: TObject);
     procedure Label57Click(Sender: TObject);
     procedure Label80Click(Sender: TObject);
     procedure Label81Click(Sender: TObject);
@@ -1890,7 +1265,6 @@ type
     procedure Label714Click(Sender: TObject);
     procedure Image25Click(Sender: TObject);
     procedure Label457Click(Sender: TObject);
-    procedure Label533Click(Sender: TObject);
     procedure Label555Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Edit8Change(Sender: TObject);
@@ -1918,6 +1292,37 @@ type
     procedure Button6Click(Sender: TObject);
     procedure BNutricionClick(Sender: TObject);
     procedure Button12Click(Sender: TObject);
+    procedure Label534Click(Sender: TObject);
+    procedure Label540Click(Sender: TObject);
+    procedure Label539Click(Sender: TObject);
+    procedure Label536Click(Sender: TObject);
+    procedure Label535Click(Sender: TObject);
+    procedure Label533Click(Sender: TObject);
+    procedure Label520Click(Sender: TObject);
+    procedure BCNutricionalesClick(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BProcesosClick(Sender: TObject);
+    procedure BTerapiasClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BSistemasClick(Sender: TObject);
+    procedure BAfirmacionesClick(Sender: TObject);
+    procedure LCausasClick(Sender: TObject);
+    procedure LOrganosGlandulasClick(Sender: TObject);
+    procedure LAVMClick(Sender: TObject);
+    procedure LMeridianosClick(Sender: TObject);
+    procedure LProcesosClick(Sender: TObject);
+    procedure LTerapiasClick(Sender: TObject);
+    procedure LEPositivasClick(Sender: TObject);
+    procedure LENegativasClick(Sender: TObject);
+    procedure LToxinasClick(Sender: TObject);
+    procedure LSistemasClick(Sender: TObject);
+    procedure LAfirmacionesClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -1930,14 +1335,17 @@ type
      procedure Adriana();
      procedure Lora();
      procedure Reaccion_Irregular();
-     procedure Olga(Sender :Tobject);
      Procedure Ancho();
      procedure TerapiaExtendida();
      procedure pFiltraInicialBase(vQstring:String;sender:Tobject);
      procedure pFiltraInicial(vQstring:String);
-
+     procedure EnlaceEtiquetas();
+     procedure EnlaceEtiquetas2();
+     procedure EnlaceLabel522();
+     procedure EnlaceHints();
+     procedure NutricionPrincipal();
+     procedure Conciencia(Sender :Tobject);
   public
-
     { Public declarations }
 canstop : Integer;
     reaction2,
@@ -1974,17 +1382,16 @@ n436,n437,n438,n439,n440,n441,n442,n443,n444,n445,n446,n447,n448, n450,n451,n452
  cutofBkp,cutof, cutofInv : Integer;
  TT_cutof, TT_cutofInv : Integer;
  vsql :string;
-    vcambio,
-    vvalue : Integer;
-    Vvalor : String;
+ vcambio,vvalue : Integer;
+  Vvalor   : String;
   end;
 type
 TLabelEnabRec = record
 L83,L84,L85,L86,L87,L88,L89,L523,L524,L527,L528,L529,L520,L521,L522:boolean;
 end;
+
 var
   nutr: Tnutr;
-
   ComponentName : String;
   Comp : TComponent;
   labelEnabled: array[1..15] of TLabelEnabRec;
@@ -2675,25 +2082,10 @@ DM.Conscida.FindKey([2528]);
 procedure Tnutr.Label2Click(Sender: TObject);
 begin
 labelEnNo:=2;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label2.Caption;
 panel1.visible:=true;
-Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label62.caption)+strtoint(label65.caption)+strtoint(label69.caption)+strtoint(label71.caption)+strtoint(label73.caption)+strtoint(label74.caption)+strtoint(label75.caption)+strtoint(label77.caption)+strtoint(label78.caption))/10);
- Gvit:=round((strtoint(label59.caption)+strtoint(label61.caption)+strtoint(label63.caption)+strtoint(label64.caption)+strtoint(label66.caption)+strtoint(label67.caption)+strtoint(label68.caption)+strtoint(label70.caption)+strtoint(label72.caption)+strtoint(label76.caption)+strtoint(label79.caption))/10);
  Label58.Caption:=IntToStr(round((n763+n1263+n2288+55)/3));
  Label60.Caption:=IntToStr(round((n775+n425+n2289+45)/3));
  Label61.Caption:=IntToStr(round((n776+n426+32)/2));
@@ -2716,6 +2108,9 @@ Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label6
          Label74.Caption:=IntToStr (n1439);
           Label75.Caption:=IntToStr (n1455);
            Label76.Caption:=IntToStr (n1454);
+Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label62.caption)+strtoint(label65.caption)+strtoint(label69.caption)+strtoint(label71.caption)+strtoint(label73.caption)+strtoint(label74.caption)+strtoint(label75.caption)+strtoint(label77.caption)+strtoint(label78.caption))/10);
+Gvit:=round((strtoint(label59.caption)+strtoint(label61.caption)+strtoint(label63.caption)+strtoint(label64.caption)+strtoint(label66.caption)+strtoint(label67.caption)+strtoint(label68.caption)+strtoint(label70.caption)+strtoint(label72.caption)+strtoint(label76.caption)+strtoint(label79.caption))/10);
+
            dbgrid2.visible:=true;
  DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
  DM.Conscida.Filtered:=True;
@@ -2724,26 +2119,26 @@ Label90.Caption:=IntToStr (Bvit );
 Label83.Caption:='Promedio de vitaminas B.';
 Label91.Caption:=IntToStr (Gvit );
 Label84.Caption:='Promedio de vitaminas G.';
-Label92.Caption:='000';
-Label85.Caption:='0000';
-Label93.Caption:='000';
-Label86.Caption:='0000';
-Label94.Caption:='000';
-Label87.Caption:='0000';
-Label95.Caption:='000';
-Label88.Caption:='0000';
-Label96.Caption:='000';
-Label89.Caption:='0000';
-Label525.Caption:='000';
-Label523.Caption:='0000';
-Label526.Caption:='000';
-Label524.Caption:='0000';
+Label92.Caption:='';
+Label85.Caption:='';
+Label93.Caption:='';
+Label86.Caption:='';
+Label94.Caption:='';
+Label87.Caption:='';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
-procedure Tnutr.Label3Click(Sender: TObject);
+procedure Tnutr.EnlaceEtiquetas();
 begin
-labelEnNo:=3;
 label83.Enabled:=labelEnabled[labelEnNo].L83;
 label84.Enabled:=labelEnabled[labelEnNo].L84;
 label85.Enabled:=labelEnabled[labelEnNo].L85;
@@ -2753,19 +2148,16 @@ label88.Enabled:=labelEnabled[labelEnNo].L88;
 label89.Enabled:=labelEnabled[labelEnNo].L89;
 label523.Enabled:=labelEnabled[labelEnNo].L523;
 label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
 label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+end;
+
+procedure Tnutr.Label3Click(Sender: TObject);
+begin
+labelEnNo:=3;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label3.Caption;
 panel1.visible:=true;
-{Button110.parent  := panel2;
-Button110.visible := true;  }
-
-Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label62.caption)+strtoint(label65.caption)+strtoint(label69.caption)+strtoint(label71.caption)+strtoint(label73.caption)+strtoint(label74.caption)+strtoint(label75.caption)+strtoint(label77.caption)+strtoint(label78.caption))/10);
- Gvit:=round((strtoint(label59.caption)+strtoint(label61.caption)+strtoint(label63.caption)+strtoint(label64.caption)+strtoint(label66.caption)+strtoint(label67.caption)+strtoint(label68.caption)+strtoint(label70.caption)+strtoint(label72.caption)+strtoint(label76.caption)+strtoint(label79.caption))/10);
  Label58.Caption:=IntToStr(round((n763+n1263+n2288+55)/3));
  Label60.Caption:=IntToStr(round((n775+n425+n2289+45)/3));
  Label61.Caption:=IntToStr(round((n776+n426+32)/2));
@@ -2788,7 +2180,9 @@ Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label6
          Label74.Caption:=IntToStr (n1439);
           Label75.Caption:=IntToStr (n1455);
            Label76.Caption:=IntToStr (n1454);
-           dbgrid2.visible:=true;
+Bvit:=round((strtoint(label58.caption)+strtoint(label60.caption)+strtoint(label62.caption)+strtoint(label65.caption)+strtoint(label69.caption)+strtoint(label71.caption)+strtoint(label73.caption)+strtoint(label74.caption)+strtoint(label75.caption)+strtoint(label77.caption)+strtoint(label78.caption))/10);
+ Gvit:=round((strtoint(label59.caption)+strtoint(label61.caption)+strtoint(label63.caption)+strtoint(label64.caption)+strtoint(label66.caption)+strtoint(label67.caption)+strtoint(label68.caption)+strtoint(label70.caption)+strtoint(label72.caption)+strtoint(label76.caption)+strtoint(label79.caption))/10);
+dbgrid2.visible:=true;
  DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
  DM.Conscida.Filtered:=True;
 panel2.visible:=true;
@@ -2796,21 +2190,22 @@ Label90.Caption:=IntToStr (Bvit );
 Label83.Caption:='Promedio de vitaminas B.';
 Label91.Caption:=IntToStr (Gvit );
 Label84.Caption:='Promedio de vitaminas G.';
-Label92.Caption:='000';
-Label85.Caption:='0000';
-Label93.Caption:='000';
-Label86.Caption:='----';
-Label94.Caption:='000';
-Label87.Caption:='----';
-Label95.Caption:='000';
-Label88.Caption:='----';
-Label96.Caption:='000';
-Label89.Caption:='----';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label92.Caption:='';
+Label85.Caption:='';
+Label93.Caption:='';
+Label86.Caption:='';
+Label94.Caption:='';
+Label87.Caption:='';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label14Click(Sender: TObject);
@@ -2823,27 +2218,13 @@ end;
 procedure Tnutr.Label4Click(Sender: TObject);
 begin
 labelEnNo:=4;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label4.Caption;
 dbgrid2.visible:=true;
  DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
  DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n2298 );
 Label83.Caption:='Bioflavenoides.';
 Label91.Caption:=IntToStr (n449 );
@@ -2858,36 +2239,23 @@ Label95.Caption:=IntToStr (n780 );
 Label88.Caption:='Asa de la vitamina C.';
 Label96.Caption:=IntToStr (n728 );
 Label89.Caption:='Acido ascórbico.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label1Click(Sender: TObject);
 begin
 labelEnNo:=1;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label1.Caption;
 DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
 DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n2291 );
 Label83.Caption:='Betacarotina.';
 Label91.Caption:=IntToStr (n779 );
@@ -2898,41 +2266,28 @@ Label93.Caption:=IntToStr (n778 );
 Label86.Caption:='Precursor de la vitamina A.';
 Label94.Caption:=IntToStr (n412);
 Label87.Caption:='Vitamina A del cartílago.';
-Label95.Caption:='000';
-Label88.Caption:='----';
-Label96.Caption:='000';
-Label89.Caption:='----';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label5Click(Sender: TObject);
 begin
 labelEnNo:=5;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label5.Caption;
 dbgrid2.visible:=true;
- DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
- DM.Conscida.Filtered:=True;
+DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
+DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n1450 );
 Label83.Caption:='Vitamina D1.';
 Label91.Caption:=IntToStr (n1449 );
@@ -2941,124 +2296,85 @@ Label92.Caption:=IntToStr (n1448 );
 Label85.Caption:='Vitamina D3.';
 Label93.Caption:=IntToStr (n1461 );
 Label86.Caption:='Vitamina D4.';
-Label94.Caption:='000';
-Label87.Caption:='----';
-Label95.Caption:='000';
-Label88.Caption:='----';
-Label96.Caption:='000';
-Label89.Caption:='----';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label94.Caption:='';
+Label87.Caption:='';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label6Click(Sender: TObject);
 begin
 labelEnNo:=6;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label6.Caption;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n781 );
 Label83.Caption:='Vitamina E1.';
 Label91.Caption:=IntToStr (n2997 );
 Label84.Caption:='Vitamina E2.';
 Label92.Caption:=IntToStr (n3002 );
 Label85.Caption:='Vitamina E3.';
-Label93.Caption:='000';
-Label86.Caption:='----';
-Label94.Caption:='000';
-Label87.Caption:='----';
-Label95.Caption:='000';
-Label88.Caption:='----';
-Label96.Caption:='000';
-Label89.Caption:='----';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label93.Caption:='';
+Label86.Caption:='';
+Label94.Caption:='';
+Label87.Caption:='';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label8Click(Sender: TObject);
 begin
 labelEnNo:=8;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label8.Caption;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n422 );
 Label83.Caption:='Vitamina K1.';
 Label91.Caption:=IntToStr (n2288);
 Label84.Caption:='Vitamina  K2.';
 Label92.Caption:=IntToStr (round(n422+n2288/2)+10);
 Label85.Caption:='Toda la vitamina K.';
-Label93.Caption:='000';
-Label86.Caption:='----';
-Label94.Caption:='000';
-Label87.Caption:='----';
-Label95.Caption:='000';
-Label88.Caption:='----';
-Label96.Caption:='000';
-Label89.Caption:='----';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label93.Caption:='';
+Label86.Caption:='';
+Label94.Caption:='';
+Label87.Caption:='';
+Label95.Caption:='';
+Label88.Caption:='';
+Label96.Caption:='';
+Label89.Caption:='';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label9Click(Sender: TObject);
 begin
 labelEnNo:=9;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label9.Caption;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n2300 );
 Label83.Caption:='CoQ6.';
 Label91.Caption:=IntToStr (n2301 );
@@ -3073,11 +2389,12 @@ Label95.Caption:=IntToStr (n2305 );
 Label88.Caption:='Todos los CoQ.';
 Label96.Caption:=IntToStr (n397 );
 Label89.Caption:='Ciclo de la ubiquinona.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Button3Click(Sender: TObject);
@@ -3110,7 +2427,7 @@ DM.Conscida.FindKey([1387]);
 DM.Conscida.FindKey([1]);
  n279:=DM.Conscidavalue.asinteger ;
  label279.caption :=inttostr(n279);
- DM.Conscida.FindKey([10208]);
+ DM.Conscida.FindKey([10209]);
  n280:=DM.Conscidavalue.asinteger ;
  label280.caption :=inttostr(n280);
   label462.caption :=inttostr(n280);
@@ -3636,11 +2953,14 @@ DM.Conscida.FindKey([367]);
 DM.Conscida.FindKey([10208]);
  n452:=DM.Conscidavalue.asinteger ;
  label452.caption:=inttostr(n452);
- DM.Conscida.FindKey([10218]);
+
+  DM.Conscida.FindKey([10218]);
  n452:=DM.Conscidavalue.asinteger ;
  label471.caption:=inttostr(n452);
- label461.caption:=inttostr(n452);
 
+ DM.Conscida.FindKey([10208]);
+ n452:=DM.Conscidavalue.asinteger ;
+  label461.caption:=inttostr(n452);
 DM.Conscida.FindKey([11]);
  n453:=DM.Conscidavalue.asinteger ;
  label895.caption :=inttostr(n453);
@@ -4073,10 +3393,7 @@ if  button4.caption='Equilibrar ítems superiores' then
 begin
 MyChrono.Start;
 GProgreso.Progress:=0;
-PDesarrollo.Caption:='Equilibrando ítems superiores...';
-PDesarrollo.Refresh;
-PDesarrollo.Visible:=True;
-tiempo := 10+Random(60);
+tiempo := 30+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := tiempo;
  GProgreso.Refresh;
@@ -4297,17 +3614,15 @@ MyChrono.TimeElapsed > tiempo;
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.Visible:=False;
 reaction1:=random(125);
 reaction2:=random(125);
 reaction3:=70+random(50);
-If Reaction3>100 Then Reaction3 := 100;
-Label537.Caption:='Resonancia | '+inttostr(reaction2);
-Label796.Caption:='Coherencia | '+inttostr(reaction1);
-LRectificado.Caption:='Rectificado | '+inttostr(reaction3);
 if reaction1>100 then reaction1:=85+Random(15);
 if reaction2>100 then reaction2:=85+Random(15);
 if reaction3>100 then reaction3:=85+Random(15);
+Label537.Caption:='Resonancia | '+inttostr(reaction2);
+Label796.Caption:='Coherencia | '+inttostr(reaction1);
+LRectificado.Caption:='Rectificado | '+inttostr(reaction3);
 If reaction3>84 Then Button4.Enabled:=False;
  end;
 
@@ -4684,14 +3999,6 @@ if n449>q then label449.color:=clAqua;
 if n450>q then label450.color:=clAqua;
 if n451>q then label451.color:=clAqua;
 if n452>q then label452.color :=clAqua;
-{ For i:= 0 to self.ComponentCount -1 do Begin
- if (self.Components[i] is TLabel) then
- if (copy  ((self.Components[i] as TLabel).caption,1,1) <> '|') and
- ((self.Components[i] as TLabel).Tag <> 0)  then Begin
- if strtoint((self.Components[i] as TLabel).caption)  >q then
- (self.Components[i] as TLabel).color :=clAqua;
- end;  }
-// end;
 button5.enabled:=true;
 button4.caption:='Equilibrar ítems superiores';
 MyChrono.Stop;
@@ -4876,25 +4183,11 @@ if n447   =max then label447.color:=clred;
 if n448   =max then label448.color:=clred;
 if n449   =max then label449.color:=clred;
 if n450   =max then label450.color:=clred;
- if n451   =max then label451.color:=clred;
- if n452   = max then label452.color :=clred;
-
-{
-  For i:= 0 to self.ComponentCount -1 do Begin
-       if (self.Components[i] is TLabel) then
-        if (copy  ((self.Components[i] as TLabel).caption,1,1) <> '|') and
-           ((self.Components[i] as TLabel).Tag <> 0)  then Begin
-             if strtoint((self.Components[i] as TLabel).caption) = max  then
-                (self.Components[i] as TLabel).color :=clred;
-        end;
- end;
-       }
-
- {**********************************************************************************}
- hom1:=hom1+274;
-
-  if hom1=276    then label276.color:=clred;
- if hom1=276   then label277.color:=clred;
+if n451   =max then label451.color:=clred;
+if n452   =max then label452.color :=clred;
+hom1:=hom1+274;
+if hom1=276    then label276.color:=clred;
+if hom1=276   then label277.color:=clred;
 if hom1=278   then label278.color:=clred;
 if hom1=279  then label279.color:=clred;
 if hom1=280   then label280.color:=clred;
@@ -5073,9 +4366,9 @@ if hom1=450     then label450.color:=clred;
  {**********************************************************************************}
  if  button5.caption='Equilibrar simile energético' then begin
 MyChrono.Start;
-label537.caption:='Resonancia |';
+label537.caption:='Resonancia | ';
 label796.caption:='Coherencia |';
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress:=0;
 vtiempo := 20+random(60);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -5186,8 +4479,6 @@ If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
      oeg5:=3090+ ((random(150)+1));
   if hom1>230 then
      hom1:=round(hom1/2);
-
-
   if ((3069<oeg2)and(oeg2<3090)) then
      oeg2:=3434+hom1;
   if ((3300<oeg2)and(oeg2<3384)) then
@@ -5224,11 +4515,8 @@ If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
       oeg1:=3434+hom1;
   if ((2961<oeg1)and(oeg1<3015)) then
       oeg1:=3434+hom1;
-
-
   DM.Conscida.open; DM.Conscida.IndexName:='';
   DM.Conscida.disablecontrols;
-
   if DM.conscida.FindKey([oeg1])= true then
      Label504.Caption:=DM.conscida.Fieldbyname('Name').AsString
   else
@@ -5249,7 +4537,6 @@ If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
       Label510.Caption:=DM.conscida.Fieldbyname('Name').AsString
   else
     Label510.Caption:='----';
-
  DM.Conscida.enablecontrols;
  panel5.visible:=true;
  Button9.Click;
@@ -5349,27 +4636,13 @@ end;
 procedure Tnutr.Label7Click(Sender: TObject);
 begin
 labelEnNo:=7;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label7.Caption;
 dbgrid2.visible:=true;
- DM.Conscida.Filter:='NO >= 2385 AND NO <= 2469';
- DM.Conscida.Filtered:=True;
+DM.Conscida.Filter:='NO >= 2385 AND NO <= 2469';
+DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n775+25 );
 Label83.Caption:='Cadenas de carbones bajos.';
 Label91.Caption:=IntToStr (N776+20);
@@ -5384,40 +4657,27 @@ Label95.Caption:=IntToStr (n412+36);
 Label88.Caption:='Cadenas de carbones altos.';
 Label96.Caption:=IntToStr (n1263+37);
 Label89.Caption:='Relación enzimática.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label16Click(Sender: TObject);
 begin
 labelEnNo:=15;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label16.Caption;
-Panel9.Top:=396;
-Panel9.Left:=318;
+Panel9.Top:=400;
+Panel9.Left:=309;
 panel9.visible:=true;
 dbgrid2.visible:=true;
- DM.Conscida.Filter:='NO >= 2648 AND NO <= 2732';
- DM.Conscida.Filtered:=True;
+DM.Conscida.Filter:='NO >= 2648 AND NO <= 2732';
+DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (n20);
 Label83.Caption:='Reducción de la oxidación, energía.';
 Label91.Caption:=IntToStr (n21);
@@ -5432,11 +4692,12 @@ Label95.Caption:= IntToStr (n25);;
 Label88.Caption:='Hidrolasas, regulación del agua.';
 Label96.Caption:=IntToStr (n26);;
 Label89.Caption:='Regulación del ADN, división celular.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Panel5Click(Sender: TObject);
@@ -5639,9 +4900,9 @@ end;
 
 procedure Tnutr.Button9Click(Sender: TObject);
 begin
-label537.caption:='Resonancia |';
+label537.caption:='Resonancia | ';
 label796.caption:='Coherencia |';
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress:=0;
 Panel5.Refresh;
 astr:=random(12);
@@ -5779,197 +5040,18 @@ doctor:=passworddlg.label6.Caption;
   old:=old-20  ;
   until old<21;
   if old<0 then old:=1;
-   if astr=1 then label486.caption:='Ferrum';
-    if astr=2 then label486.caption:='Cuprum';
-      if astr=3 then label486.caption:='Merc';
-        if astr=4 then label486.caption:='Silver';
-          if astr=5 then label486.caption:='Aurum';
-            if astr=6 then label486.caption:='Antimony';
-              if astr=7 then label486.caption:='Cuprum';
-                if astr=8 then label486.caption:='Sulphur';
-                  if astr=9 then label486.caption:='Stannum';
-                    if astr=10 then label486.caption:='Zinc';
-                      if astr=11 then label486.caption:='Plutonium';
-                        if astr=12 then label486.caption:='Iodium';
-     astr1:=round((astr+old)/2);
-   if astr1=1 then label514.caption:='Tendencia alergénica.';
-    if astr1=2 then label514.caption:='Cáncer.';
-      if astr1=3 then label514.caption:='Fatiga crónica.';
-        if astr1=4 then label514.caption:='Cólera.';
-          if astr1=5 then label514.caption:='Fungosidades.';
-            if astr1=6 then label514.caption:='Lepra.';
-              if astr1=7 then label514.caption:='Factores mentales.';
-                if astr1=8 then label514.caption:='Sarampión, rubeola.';
-                  if astr1=9 then label514.caption:='Psoriasis.';
-                    if astr1=10 then label514.caption:='Sicosis.';
-                      if astr1=11 then label514.caption:='Sífilis.';
-                        if astr1=12 then label514.caption:='Tuberculosis.';
-                      if astr1=13 then label514.caption:='Tétano.';
-                      if astr1=14 then label514.caption:='Vacunas';
-                        if astr1=15 then label514.caption:='Sensitividad a virus.';
-                        if astr1=16 then label514.caption:='Acumulación de grasas.';
-     if numer=1 then label487.caption:='Arsenicum';
-       if numer=2 then label487.caption:='Opium';
-        if numer=3 then label487.caption:='Glonine';
-         if numer=4 then label487.caption:='Carbolic Acidum';
-          if numer=5 then label487.caption:='Sepia';
-           if numer=6 then label487.caption:='Nux Vox';
-            if numer=7 then label487.caption:='Silica';
-             if numer=8 then label487.caption:='Thuja';
-              if numer=9 then label487.caption:='Rhus Tox';
-               if numer=10 then label487.caption:='ADN';
-                if birthyear=0 then  label488.caption:='Arsenicum';
-    if birthyear=1 then  label488.caption:='Ipecacuanha';
-       if birthyear=2 then  label488.caption:='Bryonia';
-       if birthyear=3 then  label488.caption:='Gelsemium';
-       if birthyear=4 then  label488.caption:='Phosphorus';
-       if birthyear=5 then  label488.caption:='Belladonna';
-       if birthyear=6 then  label488.caption:='Aconite';
-       if birthyear=7 then  label488.caption:='Calcarea';
-       if birthyear=8 then  label488.caption:='Chinona';
-       if birthyear=9 then  label488.caption:='Apis Mel';
-       if birthyear=10 then  label488.caption:='Pulsatilla';
-            if old=0 then  label493.caption:='Arsenicum';
-    if old=1 then  label493.caption:='Sepia';
-       if old=2 then  label493.caption:='Bryonia';
-       if old=3 then  label493.caption:='Gelsemium';
-       if old=4 then  label493.caption:='Phosphorus';
-       if old=5 then  label493.caption:='Belladonna';
-       if old=6 then  label493.caption:='Aconite';
-       if old=7 then  label493.caption:='Passiflora';
-       if old=8 then  label493.caption:='Mercury';
-       if old=9 then  label493.caption:='Apis Mel';
-       if old=10 then  label493.caption:='Pulsatilla';
-                  if old=0 then  label493.caption:='Arsenicum';
-    if old=11 then  label493.caption:='Crotalis Venom';
-       if old=12 then  label493.caption:='Buthus Venom';
-       if old=13 then  label493.caption:='Acanthosis Venom';
-       if old=14 then  label493.caption:='Bothrops Venom';
-       if old=15 then  label493.caption:='Naja Venom';
-       if old=16 then  label493.caption:='Ophiophagus Venom';
-       if old=17 then  label493.caption:='Lachesis Venom';
-       if old=18 then  label493.caption:='Notechis Venom';
-       if old=19 then  label493.caption:='Lactrodectus Venom';
-       if old=20 then  label493.caption:='Vespa Venom';
-             harm:=astr+old+numer+birthyear;
-        if harm=1 then label497.caption:='Ferrum';
-    if harm=2 then label497.caption:='Cuprum';
-      if harm=3 then label497.caption:='Merc';
-        if harm=4 then label497.caption:='Silver';
-          if harm=5 then label497.caption:='Aurum';
-            if harm=6 then label497.caption:='Antimony';
-              if harm=7 then label497.caption:='Cuprum';
-                if harm=8 then label497.caption:='Sulphur';
-                  if harm=9 then label497.caption:='Stannum';
-                    if harm=10 then label497.caption:='Zinc';
-                      if harm=11 then label497.caption:='Plutonium';
-                        if harm=12 then label497.caption:='Iodium';
-    if harm=41 then label497.caption:='Arsenicum';
-       if harm=42 then label497.caption:='Opium';
-        if harm=43 then label497.caption:='Glonine';
-         if harm=44 then label497.caption:='Carbolic Acidum';
-          if harm=45 then label497.caption:='Sepia';
-           if harm=46 then label497.caption:='Nux Vox';
-            if harm=47 then label497.caption:='Silica';
-             if harm=48 then label497.caption:='Thuja';
-              if harm=49 then label497.caption:='Rhus Tox';
-               if harm=50 then label497.caption:='ADN';
-                if harm=0 then  label497.caption:='Arsenicum';
-    if harm=31 then  label497.caption:='Ipecacuanha';
-       if harm=32 then  label497.caption:='Bryonia';
-       if harm=33 then  label497.caption:='Gelsemium';
-       if harm=34 then  label497.caption:='Phosphorus';
-       if harm=35 then  label497.caption:='Belladonna';
-       if harm=36 then  label497.caption:='Aconite';
-       if harm=37 then  label497.caption:='Calcarea';
-       if harm=38 then  label497.caption:='Chinona';
-       if harm=39 then  label497.caption:='Apis Mel';
-       if harm=40 then  label497.caption:='Pulsatilla';
-            if harm=0 then  label497.caption:='Arsenicum';
-    if harm=21 then  label497.caption:='Sepia';
-       if harm=22 then  label497.caption:='Bryonia';
-       if harm=23 then  label497.caption:='Gelsemium';
-       if harm=24 then  label497.caption:='Phosphorus';
-       if harm=25 then  label497.caption:='Belladonna';
-       if harm=26 then  label497.caption:='Aconite';
-       if harm=27 then  label497.caption:='Passiflora';
-       if harm=28 then  label497.caption:='Mercury';
-       if harm=29 then  label497.caption:='Apis Mel';
-       if harm=30 then  label497.caption:='Pulsatilla';
-                  if harm=0 then  label497.caption:='Arsenicum';
-    if harm=11 then  label497.caption:='Crotalis Venom';
-       if harm=12 then  label497.caption:='Buthus Venom';
-       if harm=13 then  label497.caption:='Acanthosis Venom';
-       if harm=14 then  label497.caption:='Bothrops Venom';
-       if harm=15 then  label497.caption:='Naja Venom';
-       if harm=16 then  label497.caption:='Ophiophagus Venom';
-       if harm=17 then  label497.caption:='Lachesis Venom';
-       if harm=18 then  label497.caption:='Notechis Venom';
-       if harm=19 then  label497.caption:='Lactrodectus Venom';
-       if harm=20 then  label497.caption:='Vespa Venom';
-       harm:=harm+5 ;
-             if harm=1 then label496.caption:='Ferrum';
-    if harm=2 then label496.caption:='Cuprum';
-      if harm=3 then label496.caption:='Merc';
-        if harm=4 then label496.caption:='Silver';
-          if harm=5 then label496.caption:='Aurum';
-            if harm=6 then label496.caption:='Antimony';
-              if harm=7 then label496.caption:='Cuprum';
-                if harm=8 then label496.caption:='Sulphur';
-                  if harm=9 then label496.caption:='Stannum';
-                    if harm=10 then label496.caption:='Zinc';
-                      if harm=11 then label496.caption:='Plutonium';
-                        if harm=12 then label496.caption:='Iodium';
-    if harm=41 then label496.caption:='Arsenicum';
-       if harm=42 then label496.caption:='Opium';
-        if harm=43 then label496.caption:='Glonine';
-         if harm=44 then label496.caption:='Carbolic Acidum';
-          if harm=45 then label496.caption:='Sepia';
-           if harm=46 then label496.caption:='Nux Vox';
-            if harm=47 then label496.caption:='Silica';
-             if harm=48 then label496.caption:='Thuja';
-              if harm=49 then label496.caption:='Rhus Tox';
-               if harm=50 then label496.caption:='ADN';
-                if harm=0 then  label496.caption:='Arsenicum';
-    if harm=31 then  label496.caption:='Ipecacuanha';
-       if harm=32 then  label496.caption:='Bryonia';
-       if harm=33 then  label496.caption:='Gelsemium';
-       if harm=34 then  label496.caption:='Phosphorus';
-       if harm=35 then  label496.caption:='Belladonna';
-       if harm=36 then  label496.caption:='Aconite';
-       if harm=37 then  label496.caption:='Calcarea';
-       if harm=38 then  label496.caption:='Chinona';
-       if harm=39 then  label496.caption:='Apis Mel';
-       if harm=40 then  label496.caption:='Pulsatilla';
-            if harm=0 then  label496.caption:='Arsenicum';
-    if harm=21 then  label496.caption:='Sepia';
-       if harm=22 then  label496.caption:='Bryonia';
-       if harm=23 then  label496.caption:='Gelsemium';
-       if harm=24 then  label496.caption:='Phosphorus';
-       if harm=25 then  label496.caption:='Belladonna';
-       if harm=26 then  label496.caption:='Aconite';
-       if harm=27 then  label496.caption:='Passiflora';
-       if harm=28 then  label496.caption:='Mercury';
-       if harm=29 then  label496.caption:='Apis Mel';
-       if harm=30 then  label496.caption:='Pulsatilla';
-                  if harm=0 then  label496.caption:='Arsenicum';
-    if harm=11 then  label496.caption:='Crotalis Venom';
-       if harm=12 then  label496.caption:='Buthus Venom';
-       if harm=13 then  label496.caption:='Acanthosis Venom';
-       if harm=14 then  label496.caption:='Bothrops Venom';
-       if harm=15 then  label496.caption:='Naja Venom';
-       if harm=16 then  label496.caption:='Ophiophagus Venom';
-       if harm=17 then  label496.caption:='Lachesis Venom';
-       if harm=18 then  label496.caption:='Notechis Venom';
-       if harm=19 then  label496.caption:='Lactrodectus Venom';
-       if harm=20 then  label496.caption:='Vespa Venom';
-Timer1.ENABLED := TRUE;
+ BHomeopatia.Click;
+
+ Timer1.ENABLED := TRUE;
 If Patform1.RadioButton1.Checked = True Then Button26.Enabled := True;
 If Patform1.RadioButton2.Checked = True Then Button25.Enabled := True;
 If (Patform1.RadioButton3.Checked = True) or (Patform1.RadioButton37.Checked = True) Then Begin
 Button25.Enabled := True;
 Button26.Enabled := True;
 end;
+If Patform1.RadioButton1.Checked = True Then Button44.Caption := 'Estimular Próstata';
+If Patform1.RadioButton2.Checked = True Then Button44.Caption := 'Estimular Ovarios';
+If (Patform1.RadioButton3.Checked = True) or (Patform1.RadioButton37.Checked = True) Then Button44.Caption := 'Estimular Gónadas';
 end;
 
 procedure Tnutr.pFiltraInicial(vQstring:String);
@@ -5989,7 +5071,6 @@ end;
 
 procedure Tnutr.Label486DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático mineral | '+Label486.Caption+'...';
 Isabel(Label486);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label486);
 if rectificado>84 then Label486.Enabled:=False;
@@ -5997,7 +5078,6 @@ end;
 
 procedure Tnutr.Label487DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático corporal y orgánico | '+Label487.Caption+'...';
 Isabel(Label487);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label487);
 if rectificado>84 then Label487.Enabled:=False;
@@ -6005,7 +5085,6 @@ end;
 
 procedure Tnutr.Label488DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático mental | '+Label488.Caption+'...';
 Isabel(Label488);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label488);
 if rectificado>84 then Label488.Enabled:=False;
@@ -6013,7 +5092,6 @@ end;
 
 procedure Tnutr.Label493DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático social | '+Label493.Caption+'...';
 Isabel(Label493);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label493);
 if rectificado>84 then Label493.Enabled:=False;
@@ -6021,7 +5099,6 @@ end;
 
 procedure Tnutr.Label496DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático espiritual | '+Label496.Caption+'...';
 Isabel(Label496);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label496);
 if rectificado>84 then Label496.Enabled:=False;
@@ -6029,7 +5106,6 @@ end;
 
 procedure Tnutr.label497DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia con homeopático armónico general | '+Label497.Caption+'...';
 Isabel(Label497);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label497);
 if rectificado>84 then Label497.Enabled:=False;
@@ -6043,419 +5119,12 @@ label509.caption:='---';
 Label555.enabled:=false;
 panel7.visible:=true;
 soc := strtoint(PatForm1.Label21.Caption);
-gama := Random(119);
-         if gama < 10 then
-         label502.caption:='Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas de patata en la frente.';
-         if gama = 11 then
-         label502.caption:='Cuando tengas dolor de estómago, toma tus alimentos desaliñados, sin lácteos ni azúcares.';
-         if gama = 12  then
-         label502.caption:='Para desintoxicar el hígado toma una limonada en ayunas endulzada con miel de abejas.';
-         if gama = 13  then
-         label502.caption:='Para el dolor de garganta exprime un limón en agua caliente con miel de abeja y bébelo.';
-         if gama = 14  then
-         label502.caption:='La aplicación de compresas de leche en las rodillas reduce su inflamación.';
-         if gama = 15  then
-         label502.caption:='Uno o dos plátanos comidos al día son un buen remedio para la colitis ulcerosa.';
-         if gama = 16  then
-         label502.caption:='En caso de molestias estomacales, el yogurt es más fácil de digerir que la leche.';
-         if gama = 17  then
-         label502.caption:='Para normalizar los niveles de azúcar toma una vez a la semana una mandarina licuada con cascara en un vaso de agua.';
-         if gama = 18  then
-         label502.caption:='Si estas nervioso/a, no comas, espera a sentirte y estar relajado/a.';
-         if gama = 19  then
-         label502.caption:='Los pies son estructuras complejas. No uses los mismos zapatos todos los días.';
-         if gama = 20  then
-         label502.caption:='Escoge zapatos hechos de fibras o materiales naturales para permitir a tus pies respirar.';
-         if gama = 21  then
-         label502.caption:='La cafeína es una droga que se encuentra naturalmente en 60 diferentes tipos de plantas.';
-         if gama = 22  then
-         label502.caption:='El café no hace que una persona ebria se ponga sobria, solo hace que se despierte.';
-         if gama = 23  then
-         label502.caption:='2 latas de bebidas gaseosas al día pueden causar ansiedad y reducen la capacidad para dormir.';
-         if gama = 24  then
-         label502.caption:='El café no filtrado puede elevar los niveles de colesterol en la sangre.';
-         if gama = 25  then
-         label502.caption:='Usa zapatos con suficiente espacio para los dedos, de manera que puedas moverlos dentro.';
-         if gama = 26  then
-         label502.caption:='El exceso de cafeína puede aumentar el riesgo de osteoporosis y fracturas.';
-         if gama = 27  then
-         label502.caption:='La fibra es buena para la constipación porque ayuda a evacuar los intestinos.';
-         if gama = 28  then
-         label502.caption:='Cuando te recuperes de una afección larga, el caminar será tu mejor ejercicio para recuperar fuerzas.';
-         if gama = 29  then
-         label502.caption:='Camina con la cabeza en alto, el cuerpo recto y respira semi profundamente para evitar el mareo.';
-         if gama = 30  then
-         label502.caption:='Las fuentes más comunes de cafeína son el café, el té, las bebidas gaseosas y las bebidas energéticas.';
-         if gama = 31  then
-         label502.caption:='El caminar es un excelente ejercicio que ayuda siempre a recuperar el ritmo de la vida después de un padecimiento.';
-         if gama = 32  then
-         label502.caption:='La sopa de pollo con muchos vegetales, cebolla y ajo, es un alimento esencial durante un resfrío o gripe.';
-         if gama = 33  then
-         label502.caption:='Para un alivio inmediato durante la picazón de las mordeduras de mosquitos aplica jabón en el área.';
-         if gama = 34  then
-         label502.caption:='Bebe un par de vasos de agua antes de ejercitarte para evitar el deshidratarse demasiado rápido.';
-         if gama = 35  then
-         label502.caption:='Si tus codos están oscuros y resecos, mezcla glicerina con zumo de limón y masajéala en el área.';
-         if gama = 36  then
-         label502.caption:='El exceso de cafeína produce ansiedad, depresión, inquietud, palpitaciones, dolor de estómago y dolor de cabeza.';
-         if gama = 37  then
-         label502.caption:='El aceite de oliva virgen es además de un alimento, útil para la piel porque tiene propiedades rejuvenecedoras.';
-         if gama = 38  then
-         label502.caption:='Los masajes funcionan a nivel físico y a nivel mental porque la mente responde al toque humano.';
-         if gama = 39  then
-         label502.caption:='Aprende a controlar tus emociones ante las dificultades, o estarás condenado a ser esclavo de las circumstancias.';
-         if gama = 40  then
-         label502.caption:='Una dieta sana debe proporcionar niveles óptimos de nutrientes para el mantenimiento y regeneración del organismo.';
-         if gama = 41  then
-         label502.caption:='Ingiere alimentos en pequeñas cantidades y de forma frecuente durante el día.';
-         if gama = 42  then
-         label502.caption:='Condimenta tus alimentos con zumo de limón o de naranja, o especias no picantes para mejorar su sabor.';
-         if gama = 43  then
-         label502.caption:='Lavate los dientes y la boca después de cada comida.';
-         if gama = 44  then
-         label502.caption:='No te acuestes inmediatamente después de haber comido.';
-         if gama = 45  then
-         label502.caption:='Procura que tu dieta sea variada y rica en calorías. Añade a tus alimentos: aceite virgen de oliva, miel, mermelada.';
-         if gama = 46  then
-         label502.caption:='Lava muy bien las frutas y verduras que vayas a consumir.';
-         if gama = 47  then
-         label502.caption:='La perdida de peso ha de ser lenta pero progresiva.  No conviene que sea rápida.';
-         if gama = 48  then
-         label502.caption:='La obesidad aumenta la mortalidad y la mobilidad.';
-         if gama = 49  then
-         label502.caption:='Descongela los alimentos en el refrigerador. No pongas juntos alimentos crudos con cocidos.';
-         if gama = 50  then
-         label502.caption:='Siempre lavate las manos antes de comer. Bendice tus alimentos.';
-         if gama = 51  then
-         label502.caption:='Todos los aceites no engordan lo mismo. Evita reutilizar los aceites.';
-         if gama = 52  then
-         label502.caption:='Si tienes sobre peso estas en riesgo de sufrir diabetes, dislipidemis, hipertensión y afecciones cardiovasculares.';
-         if gama = 53  then
-         label502.caption:='La cocción al vapor conserva las vitaminas y minerales de los alimentos; además su aroma, sabor, color y textura.';
-         if gama = 54  then
-         label502.caption:='La ''Moderación'' y NO la ''Privación'' te conducirán a una mejor calidad de vida.';
-         if gama = 55  then
-         label502.caption:='Mantén control de tu peso y de tu presión arterial.';
-         if gama = 56  then
-         label502.caption:='Perder peso es una cosa, mantenerlo después de tanto esfuerzo es otra.';
-         if gama = 57  then
-         label502.caption:='El agua no aporta energía pero es un factor indispensable dentro de una dieta balanceada.';
-         if gama = 58  then
-         label502.caption:='Todas las vitaminas son indispensables y deben obtenerse de los alimentos.';
-         if gama = 59  then
-         label502.caption:='Ni las vitaminas ni los minerales poseen calorías, por lo tanto no engordan.';
-         if gama = 60  then
-         label502.caption:='Nuestro organismo necesita cada día ácidos grasos esenciales. Todos los aceites vegetales los contienen.';
-         if gama = 61  then
-         label502.caption:='Los carbohidratos de absorción rápida están en la fruta, zumos, leche y derivados.';
-         if gama = 62  then
-         label502.caption:='El aceite virgen de oliva es recomendado por su riqueza en ácido oleico.';
-         if gama = 63  then
-         label502.caption:='La dieta mediterránea es rica en grasas insaturadas procendentes de pescados azules, aceite de oliva y frutos secos.';
-         if gama = 64  then
-         label502.caption:='Los alimentos ricos en carbohidratos complejos deben ser los más abundantes: cereales y derivados, legumbres y arroz.';
-         if gama = 65  then
-         label502.caption:='Los alimentos de una dieta deben ser variados, evitando la monotonía y la exclusión.';
-         if gama = 66  then
-         label502.caption:='Algunas hortalizas como la patata y los boniatos son ricos en hidratos de carbono.';
-         if gama = 67  then
-         label502.caption:='Para mantener un peso óptimo, el contenido energético de la alimentación debe ser proporcional al gasto energético diario.';
-         if gama = 68  then
-         label502.caption:='La alimentación debe ser variada, suficiente en energía y sin excesos, para evitar obesidad o afecciones carenciales.';
-         if gama = 69  then
-         label502.caption:='Existe una estrecha relación entre una dieta adecuada y balanceada, y un excelente estado de salud.';
-         if gama = 70  then
-         label502.caption:='Los hábitos dietéticos sanos influyen de forma importante en nuestra salud.';
-         if gama = 71  then
-         label502.caption:='La cantidad de energía en la alimentación depende de la edad, sexo, altura, actividad física y estado fisiológico.';
-         if gama = 72  then
-         label502.caption:='Los 3 nutrientes principales de una dieta sana son: hidratos de carbono, lípidos o grasas y proteínas.';
-         if gama = 73  then
-         label502.caption:='El ácido oleico es un ácido graso monoinsaturado que contribuye al equilibrio del aporte diario de grasas.';
-         if gama = 73  then
-         label502.caption:='La fibra dietética es un compuesto de los alimentos que no puede ser digerido por las enzimas del tubo digestivo.';
-         if gama = 74  then
-         label502.caption:='Los alimentos vegetales contienen 2 tipos de fibra, insoluble y soluble, con efectos biológicos diferentes.';
-         if gama = 75  then
-         label502.caption:='Los resultados de la composición corporal son una consecuencia directa de lo que comes y bebes.';
-          if gama = 76  then
-         label502.caption:='Los zumos naturales son una buena fuente de carbohidratos durante las comidas.';
-          if gama = 77  then
-         label502.caption:='Comer sanamente significa proporcionar al organismo lo que necesita en la cantidad y proporción adecuadas.';
-          if gama = 78  then
-         label502.caption:='La dieta mediterránea se correlaciona con una menor incidencia de ciertos tipos de cáncer y afecciones cardiovasculares.';
-          if gama = 79  then
-         label502.caption:='Los carbohidratos complejos (de absorción lenta) y simples (de absorción rápida), aportan energía al organismo.';
-          if gama = 80  then
-         label502.caption:='La dieta mediterránea se caracteriza por un consumo moderado de carnes y grasas de origen animal.';
-          if gama = 81  then
-         label502.caption:='El aceite virgen de oliva es eficaz en la prevención de afecciones como la arterosclerosis coronaria.';
-          if gama = 82  then
-         label502.caption:='El valor nutritivo del pescado azul es semejante al de la carne pero las proteínas se asimilan más fácil.';
-          if gama = 83  then
-         label502.caption:='La ingesta de ajo, cebolla, tomate y frutos secos, aportan antioxidantes y nutrientes protectores.';
-          if gama = 84  then
-         label502.caption:='El consumo de pescado azul y aceite de oliva son beneficiosos por la calidad y proporción de los lípidos que aportan.';
-          if gama = 85  then
-         label502.caption:='Las necesidades hídricas son de 3 Lts. por día: 50% contenida en los alimentos y 50% consumida en forma de bebida.';
-          if gama = 86  then
-         label502.caption:='Acude a un especialista que te confeccione una dieta adecuada a tus aspectos únicos e individuales.';
-          if gama = 87  then
-         label502.caption:='Cuando necesites aumentar tu ingesta de carbohidratos, considera el tomar fruta fresca después de una comida.';
-          if gama = 88  then
-         label502.caption:='La fibra favorece la evacuación intestinal, la sensación de saciedad y el crecimiento y reproducción de bacterias intestinales protectoras.';
-          if gama = 89  then
-         label502.caption:='Para evitar los calambres en las piernas es recomendable comer un plátano diario.';
-          if gama = 90  then
-         label502.caption:='Toma frijoles y lentejas por lo menos dos veces a la semana.';
-          if gama = 91  then
-         label502.caption:='Si te resfrías manténte hidratado bebiendo muchos líquidos como agua o zumos naturales.';
-          if gama = 92  then
-         label502.caption:='En pequeñas inflamaciones de la piel aplique rodajas de patata cruda. También mejora la cicatrización.';
-          if gama = 93  then
-         label502.caption:='Conviertelo en un pasatiempo el encontrar maneres de mover tu cuerpo y ejercitarte tanto como puedas.';
-          if gama = 94  then
-         label502.caption:='Busca algo que te inspire, eleva tu nivel de conciencia, motívate y satisface tu alma.';
-          if gama = 95  then
-         label502.caption:='Ejercita tu cerebro. Lee, estudia, resuelve problemas. El cerebro es un órgano que también se atrofia por falta de uso.';
-          if gama = 96  then
-         label502.caption:='La fibra dietética en personas diabéticas disminuye los niveles de glucosa en la sangre.';
-          if gama = 97  then
-         label502.caption:='Sustituye total o parcialmente las harinas o panes molidos refinados por sus presentaciones intergrales.';
-          if gama = 98  then
-         label502.caption:='Está comprobado científicamente que reírse incrementa la vida. A reírse, vivir más alegra a cualquiera.';
-          if gama = 99  then
-         label502.caption:='Para maximizar los beneficios de la fibra bebe mucha agua para mejorar los movimientos intestinales.';
-          if gama > 99  then
-         label502.caption:='La fibra dietética ayuda a disminuir el colesterol y previene el cáncer de colon.';
-gama := Random(110);
-         if gama < 10 then
-         label503.caption:='Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas de patata en la frente.';
-         if gama = 11 then
-         label503.caption:='Cuando tengas dolor de estómago, toma tus alimentos desaliñados, sin lácteos ni azúcares.';
-         if gama = 12  then
-         label503.caption:='Para desintoxicar el hígado toma una limonada en ayunas endulzada con miel de abejas.';
-         if gama = 13  then
-         label503.caption:='Para el dolor de garganta exprime un limón en agua caliente con miel de abeja y bébelo.';
-         if gama = 14  then
-         label503.caption:='La aplicación de compresas de leche en las rodillas reduce su inflamación.';
-         if gama = 15  then
-         label503.caption:='Uno o dos plátanos comidos al día son un buen remedio para la colitis ulcerosa.';
-         if gama = 16  then
-         label503.caption:='En caso de molestias estomacales, el yogurt es más fácil de digerir que la leche.';
-         if gama = 17  then
-         label503.caption:='Para normalizar los niveles de azúcar toma una vez a la semana una mandarina licuada con cascara en un vaso de agua.';
-         if gama = 18  then
-         label503.caption:='Si estas nervioso/a, no comas, espera a sentirte y estar relajado/a.';
-         if gama = 19  then
-         label503.caption:='Los pies son estructuras complejas. No uses los mismos zapatos todos los días.';
-         if gama = 20  then
-         label503.caption:='Escoge zapatos hechos de fibras o materiales naturales para permitir a tus pies respirar.';
-         if gama = 21  then
-         label503.caption:='La cafeína es una droga que se encuentra naturalmente en 60 diferentes tipos de plantas.';
-         if gama = 22  then
-         label503.caption:='El café no hace que una persona ebria se ponga sobria, solo hace que se despierte.';
-         if gama = 23  then
-         label503.caption:='2 latas de bebidas gaseosas al día pueden causar ansiedad y reducen la capacidad para dormir.';
-         if gama = 24  then
-         label503.caption:='El café no filtrado puede elevar los niveles de colesterol en la sangre.';
-         if gama = 25  then
-         label503.caption:='Usa zapatos con suficiente espacio para los dedos, de manera que puedas moverlos dentro.';
-         if gama = 26  then
-         label503.caption:='El exceso de cafeína puede aumentar el riesgo de osteoporosis y fracturas.';
-         if gama = 27  then
-         label503.caption:='La fibra es buena para la constipación porque ayuda a evacuar los intestinos.';
-         if gama = 28  then
-         label503.caption:='Cuando te recuperes de una afección larga, el caminar será tu mejor ejercicio para recuperar fuerzas.';
-         if gama = 29  then
-         label503.caption:='Camina con la cabeza en alto, el cuerpo recto y respira semi profundamente para evitar el mareo.';
-         if gama = 30  then
-         label503.caption:='Las fuentes más comunes de cafeína son el café, el té, las bebidas gaseosas y las bebidas energéticas.';
-         if gama = 31  then
-         label503.caption:='El caminar es un excelente ejercicio que ayuda siempre a recuperar el ritmo de la vida después de un padecimiento.';
-         if gama = 32  then
-         label503.caption:='La sopa de pollo con muchos vegetales, cebolla y ajo, es un alimento esencial durante un resfrío o gripe.';
-         if gama = 33  then
-         label503.caption:='Para un alivio inmediato durante la picazón de las mordeduras de mosquitos aplica jabón en el área.';
-         if gama = 34  then
-         label503.caption:='Bebe un par de vasos de agua antes de ejercitarte para evitar el deshidratarse demasiado rápido.';
-         if gama = 35  then
-         label503.caption:='Si tus codos están oscuros y resecos, mezcla glicerina con zumo de limón y masajéala en el área.';
-         if gama = 36  then
-         label503.caption:='El exceso de cafeína produce ansiedad, depresión, inquietud, palpitaciones, dolor de estómago y dolor de cabeza.';
-         if gama = 37  then
-         label503.caption:='El aceite de oliva virgen es además de un alimento, útil para la piel porque tiene propiedades rejuvenecedoras.';
-         if gama = 38  then
-         label503.caption:='Los masajes funcionan a nivel físico y a nivel mental porque la mente responde al toque humano.';
-         if gama = 39  then
-         label503.caption:='Aprende a controlar tus emociones ante las dificultades, o estarás condenado a ser esclavo de las circumstancias.';
-         if gama = 40  then
-         label503.caption:='Una dieta sana debe proporcionar niveles óptimos de nutrientes para el mantenimiento y regeneración del organismo.';
-         if gama = 41  then
-         label503.caption:='Ingiere alimentos en pequeñas cantidades y de forma frecuente durante el día.';
-         if gama = 42  then
-         label503.caption:='Condimenta tus alimentos con zumo de limón o de naranja, o especias no picantes para mejorar su sabor.';
-         if gama = 43  then
-         label503.caption:='Lavate los dientes y la boca después de cada comida.';
-         if gama = 44  then
-         label503.caption:='No te acuestes inmediatamente después de haber comido.';
-         if gama = 45  then
-         label503.caption:='Procura que tu dieta sea variada y rica en calorías. Añade a tus alimentos: aceite virgen de oliva, miel, mermelada.';
-         if gama = 46  then
-         label503.caption:='Lava muy bien las frutas y verduras que vayas a consumir.';
-         if gama = 47  then
-         label503.caption:='La perdida de peso ha de ser lenta pero progresiva.  No conviene que sea rápida.';
-         if gama = 48  then
-         label503.caption:='La obesidad aumenta la mortalidad y la mobilidad.';
-         if gama = 49  then
-         label503.caption:='Descongela los alimentos en el refrigerador. No pongas juntos alimentos crudos con cocidos.';
-         if gama = 50  then
-         label503.caption:='Siempre lavate las manos antes de comer. Bendice tus alimentos.';
-         if gama = 51  then
-         label503.caption:='Todos los aceites no engordan lo mismo. Evita reutilizar los aceites.';
-         if gama = 52  then
-         label503.caption:='Si tienes sobre peso estas en riesgo de sufrir diabetes, dislipidemis, hipertensión y afecciones cardiovasculares.';
-         if gama = 53  then
-         label503.caption:='La cocción al vapor conserva las vitaminas y minerales de los alimentos; además su aroma, sabor, color y textura.';
-         if gama = 54  then
-         label503.caption:='La ''Moderación'' y NO la ''Privación'' te conducirán a una mejor calidad de vida.';
-         if gama = 55  then
-         label503.caption:='Mantén control de tu peso y de tu presión arterial.';
-         if gama = 56  then
-         label503.caption:='Perder peso es una cosa, mantenerlo después de tanto esfuerzo es otra.';
-         if gama = 57  then
-         label503.caption:='El agua no aporta energía pero es un factor indispensable dentro de una dieta balanceada.';
-         if gama = 58  then
-         label503.caption:='Todas las vitaminas son indispensables y deben obtenerse de los alimentos.';
-         if gama = 59  then
-         label503.caption:='Ni las vitaminas ni los minerales poseen calorías, por lo tanto no engordan.';
-         if gama = 60  then
-         label503.caption:='Nuestro organismo necesita cada día ácidos grasos esenciales. Todos los aceites vegetales los contienen.';
-         if gama = 61  then
-         label503.caption:='Los carbohidratos de absorción rápida están en la fruta, zumos, leche y derivados.';
-         if gama = 62  then
-         label503.caption:='El aceite virgen de oliva es recomendado por su riqueza en ácido oleico.';
-         if gama = 63  then
-         label503.caption:='La dieta mediterránea es rica en grasas insaturadas procendentes de pescados azules, aceite de oliva y frutos secos.';
-         if gama = 64  then
-         label503.caption:='Los alimentos ricos en carbohidratos complejos deben ser los más abundantes: cereales y derivados, legumbres y arroz.';
-         if gama = 65  then
-         label503.caption:='Los alimentos de una dieta deben ser variados, evitando la monotonía y la exclusión.';
-         if gama = 66  then
-         label503.caption:='Algunas hortalizas como la patata y los boniatos son ricos en hidratos de carbono.';
-         if gama = 67  then
-         label503.caption:='Para mantener un peso óptimo, el contenido energético de la alimentación debe ser proporcional al gasto energético diario.';
-         if gama = 68  then
-         label503.caption:='La alimentación debe ser variada, suficiente en energía y sin excesos, para evitar obesidad o afecciones carenciales.';
-         if gama = 69  then
-         label503.caption:='Existe una estrecha relación entre una dieta adecuada y balanceada, y un excelente estado de salud.';
-         if gama = 70  then
-         label503.caption:='Los hábitos dietéticos sanos influyen de forma importante en nuestra salud.';
-         if gama = 71  then
-         label503.caption:='La cantidad de energía en la alimentación depende de la edad, sexo, altura, actividad física y estado fisiológico.';
-         if gama = 72  then
-         label503.caption:='Los 3 nutrientes principales de una dieta sana son: hidratos de carbono, lípidos o grasas y proteínas.';
-         if gama = 73  then
-         label503.caption:='El ácido oleico es un ácido graso monoinsaturado que contribuye al equilibrio del aporte diario de grasas.';
-         if gama = 73  then
-         label503.caption:='La fibra dietética es un compuesto de los alimentos que no puede ser digerido por las enzimas del tubo digestivo.';
-         if gama = 74  then
-         label503.caption:='Los alimentos vegetales contienen 2 tipos de fibra, insoluble y soluble, con efectos biológicos diferentes.';
-         if gama = 75  then
-         label503.caption:='Los resultados de la composición corporal son una consecuencia directa de lo que comes y bebes.';
-          if gama = 76  then
-         label503.caption:='Los zumos naturales son una buena fuente de carbohidratos durante las comidas.';
-          if gama = 77  then
-         label503.caption:='Comer sanamente significa proporcionar al organismo lo que necesita en la cantidad y proporción adecuadas.';
-          if gama = 78  then
-         label503.caption:='La dieta mediterránea se correlaciona con una menor incidencia de ciertos tipos de cáncer y afecciones cardiovasculares.';
-          if gama = 79  then
-         label503.caption:='Los carbohidratos complejos (de absorción lenta) y simples (de absorción rápida), aportan energía al organismo.';
-          if gama = 80  then
-         label503.caption:='La dieta mediterránea se caracteriza por un consumo moderado de carnes y grasas de origen animal.';
-          if gama = 81  then
-         label503.caption:='El aceite virgen de oliva es eficaz en la prevención de afecciones como la arterosclerosis coronaria.';
-          if gama = 82  then
-         label503.caption:='El valor nutritivo del pescado azul es semejante al de la carne pero las proteínas se asimilan más fácil.';
-          if gama = 83  then
-         label503.caption:='La ingesta de ajo, cebolla, tomate y frutos secos, aportan antioxidantes y nutrientes protectores.';
-          if gama = 84  then
-         label503.caption:='El consumo de pescado azul y aceite de oliva son beneficiosos por la calidad y proporción de los lípidos que aportan.';
-          if gama = 85  then
-         label503.caption:='Las necesidades hídricas son de 3 Lts. por día: 50% contenida en los alimentos y 50% consumida en forma de bebida.';
-          if gama = 86  then
-         label503.caption:='Acude a un especialista que te confeccione una dieta adecuada a tus aspectos únicos e individuales.';
-          if gama = 87  then
-         label503.caption:='Cuando necesites aumentar tu ingesta de carbohidratos, considera el tomar fruta fresca después de una comida.';
-          if gama = 88  then
-         label503.caption:='La fibra favorece la evacuación intestinal, la sensación de saciedad y el crecimiento y reproducción de bacterias intestinales protectoras.';
-          if gama = 89  then
-         label503.caption:='Para evitar los calambres en las piernas es recomendable comer un plátano diario.';
-          if gama = 90  then
-         label503.caption:='Toma frijoles y lentejas por lo menos dos veces a la semana.';
-          if gama = 91  then
-         label503.caption:='Si te resfrías manténte hidratado bebiendo muchos líquidos como agua o zumos naturales.';
-          if gama = 92  then
-         label503.caption:='En pequeñas inflamaciones de la piel aplique rodajas de patata cruda. También mejora la cicatrización.';
-          if gama = 93  then
-         label503.caption:='Conviertelo en un pasatiempo el encontrar maneres de mover tu cuerpo y ejercitarte tanto como puedas.';
-          if gama = 94  then
-         label503.caption:='Busca algo que te inspire, eleva tu nivel de conciencia, motívate y satisface tu alma.';
-          if gama = 95  then
-         label503.caption:='Ejercita tu cerebro. Lee, estudia, resuelve problemas. El cerebro es un órgano que también se atrofia por falta de uso.';
-          if gama = 96  then
-         label503.caption:='La fibra dietética en personas diabéticas disminuye los niveles de glucosa en la sangre.';
-          if gama = 97  then
-         label503.caption:='Sustituye total o parcialmente las harinas o panes molidos refinados por sus presentaciones intergrales.';
-          if gama = 98  then
-         label503.caption:='Está comprobado científicamente que reírse incrementa la vida. A reírse, vivir más alegra a cualquiera.';
-          if gama = 99  then
-         label503.caption:='Para maximizar los beneficios de la fibra bebe mucha agua para mejorar los movimientos intestinales.';
-          if gama >99  then
-         label503.caption:='La fibra dietética ayuda a disminuir el colesterol y previene el cáncer de colon.';
-
-
-If patform1.edit6.text<>'0' then LConsejo1.Caption := 'El tabaquismo disminuye seriamente la capacidad de procrear.';    //tabaquismo
-If patform1.edit7.text<>'0' then LConsejo2.Caption := 'El consumo de esteroides afecta al sistema genito-reproductor.';    //esteroides
-If patform1.edit9.text<>'0' then LConsejo3.Caption := 'El consumo de estuperfacientes está vinculado con la infertilidad.';       //estuperfacientes
-If patform1.edit35.text>'10' then LConsejo4.Caption := 'La excesiva delgadez o la obesidad está relacionada con la infertilidad.';     //sobrepeso
-If patform1.edit36.text>'6' then  LConsejo5.Caption := 'El consumo excesivo de grasas en tu dieta no es aconsejable.';     //grasas
-
-If LConsejo1.Caption = '' then begin
-gama := random(4);
-if gama < 2 then LConsejo1.Caption := 'Consume más proteína vegetal: fríjoles, habas, lentejas, alberjas, quínoa y garbanzos.';
-if gama = 2 then LConsejo1.Caption := 'Toma un complementos con Omega 3 para aumentar las HDLs (grasas buenas) y algas marinas.';
-if gama > 2 then LConsejo1.Caption := 'Consume productos lácteos, bebe un vaso de leche entera o ingiere un yogurt al día.';
-end;
-If LConsejo2.Caption = '' then begin
-gama := random(4);
-if gama < 2 then LConsejo2.Caption := 'Aumenta el uso de grasas no saturadas como el aceite de oliva o aceite de arroz integral.';
-if gama = 2 then LConsejo2.Caption := 'Toma complementos vitamínicos que contengas 400 IU de ácido fólico y variantes de la vitamina B.';
-if gama > 2 then LConsejo2.Caption := 'Revisa tu índice ''ISO'' de este programa y asegúrate de corregír las áreas débiles.';
-end;
-If LConsejo3.Caption = '' then begin
-gama := random(4);
-if gama < 2 then LConsejo3.Caption := 'Come como colación almendras crudas, pistachos y piñones.';
-if gama = 2 then LConsejo3.Caption := 'Dile a tu pareja que también tiene que cuidarse, este tema es de dos :)';
-if gama > 2 then LConsejo3.Caption := 'Es importante atender a los ciclos ovulares para incrementar las posibilidades de embarazo.';
-end;
-If LConsejo4.Caption = '' then begin
-gama := random(4);
-if gama < 2 then LConsejo4.Caption := 'Elije carbohidratos complejos como lo son los cereales integrales.';
-if gama = 2 then LConsejo4.Caption := 'Si lleváis un año intentando concebir sin resultado, debéis acudir a un especialista.';
-if gama > 2 then LConsejo4.Caption := 'Lo que bebes es importante: toma mucha agua.  Café, té y alcohol están bien pero con moderación.';
-end;
-If LConsejo5.Caption = '' then begin
-gama := random(4);
-if gama < 2 then LConsejo5.Caption := 'Causas de infertilidad: 30% causas masculinas, 30% causas femeninas, 20% ambos, 20% causas desconocidas.';
-if gama = 2 then LConsejo5.Caption := 'Continúa señalando la evidencia que la reducción del estrés está muy vinculada a la fertilidad.';
-if gama > 2 then LConsejo5.Caption := 'Los estudios vinculan a la acupuntura para ayudar a estimular la fertilidad en general.';
-end;
+BCNutricionales.Click;
 end;
 
-procedure Tnutr.Button11Click(Sender: TObject);
+procedure Tnutr.Label533Click(Sender: TObject);
 begin
-button11.Enabled:=False;
+Label533.Enabled:=False;
 DM.Info.Open;
 DM.Info.first;
 DM.Info.Last;
@@ -6480,9 +5149,9 @@ Dm.Info.FlushBuffers;
 
 procedure Tnutr.Label457Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
  Label58.Caption:=IntToStr(round((n763+n1263+n2288+55)/3));
  Label60.Caption:=IntToStr(round((n775+n425+n2289+45)/3));
@@ -6536,113 +5205,113 @@ inc(no); DM.Info.Appendrecord([no,nil,'']);
 inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME NUTRICIONAL -----' ]);
 inc(no); DM.Info.Appendrecord([no,nil,'Los valores por lo general indican deficiencias, pero los excesos también son posibles.' ]);
 inc(no); DM.Info.Appendrecord([no,nil,'VISION GENERAL:' ]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label17.caption),' | '+ label1.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label18.caption),' | '+ label2.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label19.caption),' | '+ label3.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label20.caption),' | '+ label4.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label21.caption),' | '+ label5.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label22.caption),' | '+ label6.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label23.caption),' | '+ label7.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label24.caption),' | '+ label8.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label25.caption),' | '+ label9.caption]);
-inc(no); DM.Info.Appendrecord([no,nil,'DIGESTION / ABSORPCION:' ]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label26.caption),' | '+ label10.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label27.caption),' | '+ label11.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label28.caption),' | '+ label12.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label29.caption),' | '+ label13.caption]);
-inc(no); DM.Info.Appendrecord([no,nil,'FAMILIA DE LAS VITAMINAS B:'  ]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label58.caption),' | '+ label33.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label59.caption),' | '+ label34.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label60.caption),' | '+ label35.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label61.caption),' | '+ label36.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label62.caption),' | '+ label37.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label63.caption),' | '+ label38.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label64.caption),' | '+ label39.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label65.caption),' | '+ label40.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label66.caption),' | '+ label41.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label67.caption),' | '+ label42.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label68.caption),' | '+ label43.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label69.caption),' | '+ label44.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label70.caption),' | '+ label45.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label71.caption),' | '+ label46.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label72.caption),' | '+ label47.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label73.caption),' | '+ label48.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label74.caption),' | '+ label49.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label75.caption),' | '+ label50.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label76.caption),' | '+ label51.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label77.caption),' | '+ label52.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label78.caption),' | '+ label53.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label79.caption),' | '+ label54.caption]);
-inc(no); DM.Info.Appendrecord([no,nil,'SALES BIQUÍMICAS DE SCHÜSSLER:' ]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label461.caption),' | '+ label473.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label462.caption),' | '+ label474.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label463.caption),' | '+ label475.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label464.caption),' | '+ label476.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label465.caption),' | '+ label477.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label466.caption),' | '+ label478.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label467.caption),' | '+ label479.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label468.caption),' | '+ label480.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label469.caption),' | '+ label481.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label470.caption),' | '+ label482.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label471.caption),' | '+ label483.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label472.caption),' | '+ label484.caption]);
-inc(no); DM.Info.Appendrecord([no,nil,'ACIDOS GRASOS EN GENERAL:' ]);
-inc(no); DM.Info.Appendrecord([no,(n775+25 ),' | Cadenas de carbones bajos' ]);
-inc(no); DM.Info.Appendrecord([no,(n776+20) ,' | Cadenas de carbones medios' ]);
-inc(no); DM.Info.Appendrecord([no,(n776+36),' | Cadenas de ácidos aracadónicos'  ]);
-inc(no); DM.Info.Appendrecord([no,(n771+40),' | Cadenas de mielina' ]);
-inc(no); DM.Info.Appendrecord([no,(n519+45),' | Deficiencia nutricional general'  ]);
-inc(no); DM.Info.Appendrecord([no,(n412+36),' | Cadenas de carbones altos'  ]);
-inc(no); DM.Info.Appendrecord([no,(n1263+37),' | Items enzimáticos'  ]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label17.caption),' '+ label1.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label18.caption),' '+ label2.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label19.caption),' '+ label3.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label20.caption),' '+ label4.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label21.caption),' '+ label5.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label22.caption),' '+ label6.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label23.caption),' '+ label7.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label24.caption),' '+ label8.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label25.caption),' '+ label9.caption]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- DIGESTION / ABSORPCION: -----' ]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label26.caption),' '+ label10.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label27.caption),' '+ label11.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label28.caption),' '+ label12.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label29.caption),' '+ label13.caption]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- FAMILIA DE LAS VITAMINAS B: -----'  ]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label58.caption),' '+ label33.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label59.caption),' '+ label34.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label60.caption),' '+ label35.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label61.caption),' '+ label36.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label62.caption),' '+ label37.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label63.caption),' '+ label38.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label64.caption),' '+ label39.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label65.caption),' '+ label40.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label66.caption),' '+ label41.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label67.caption),' '+ label42.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label68.caption),' '+ label43.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label69.caption),' '+ label44.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label70.caption),' '+ label45.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label71.caption),' '+ label46.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label72.caption),' '+ label47.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label73.caption),' '+ label48.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label74.caption),' '+ label49.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label75.caption),' '+ label50.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label76.caption),' '+ label51.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label77.caption),' '+ label52.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label78.caption),' '+ label53.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label79.caption),' '+ label54.caption]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- SALES BIQUÍMICAS DE SCHÜSSLER: -----' ]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label461.caption),' '+ label473.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label462.caption),' '+ label474.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label463.caption),' '+ label475.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label464.caption),' '+ label476.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label465.caption),' '+ label477.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label466.caption),' '+ label478.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label467.caption),' '+ label479.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label468.caption),' '+ label480.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label469.caption),' '+ label481.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label470.caption),' '+ label482.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label471.caption),' '+ label483.caption]);
+inc(no); DM.Info.Appendrecord([no,strtoint(label472.caption),' '+ label484.caption]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- ACIDOS GRASOS EN GENERAL: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n775+25 ),' Cadenas de carbones bajos.' ]);
+inc(no); DM.Info.Appendrecord([no,(n776+20) ,' Cadenas de carbones medios.' ]);
+inc(no); DM.Info.Appendrecord([no,(n776+36),' Cadenas de ácidos aracadónicos.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n771+40),' Cadenas de mielina.' ]);
+inc(no); DM.Info.Appendrecord([no,(n519+45),' Deficiencia nutricional general.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n412+36),' Cadenas de carbones altos.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n1263+37),' Items enzimáticos.'  ]);
 n775:=(n775+25 ) ;
 n776:=(n776+20) ;
 n771:=(n771+40);
 n519:=(n519+45) ;
 n412:=(n412+36) ;
 n1263:=(n1263+37);
-inc(no); DM.Info.Appendrecord([no,nil,'FAMILIA DE LA VITAMINA E:' ]);
-inc(no); DM.Info.Appendrecord([no,(n781 ),' | Vitamina E1'  ]);
-inc(no); DM.Info.Appendrecord([no,(n2997 ) ,' | Vitamina E2' ]);
-inc(no); DM.Info.Appendrecord([no,(n3002 ),' | Vitamina E3'  ]);
-inc(no); DM.Info.Appendrecord([no,nil,'FAMILIA DE LA VITAMINA K:' ]);
-inc(no); DM.Info.Appendrecord([no,(n422 ),' | Vitamina K1'  ]);
-inc(no); DM.Info.Appendrecord([no,(n2288 ) ,' | Vitamina K3' ]);
-inc(no); DM.Info.Appendrecord([no,(round(n422+n2288+20)/2 ),' | Todas las vitaminas K'  ]);
-inc(no); DM.Info.Appendrecord([no,nil,'VITAMINA U / UBIQUINONA:' ]);
-inc(no); DM.Info.Appendrecord([no,(n2300 ) ,' | CoQ6' ]);
-inc(no); DM.Info.Appendrecord([no,(n2301 ) ,' | CoQ7' ]);
-inc(no); DM.Info.Appendrecord([no,(n2302 ) ,' | CoQ8' ]);
-inc(no); DM.Info.Appendrecord([no,(n2303 ),' | CoQ9'  ]);
-inc(no); DM.Info.Appendrecord([no, (n2304 ),' | CoQ10' ]);
-inc(no); DM.Info.Appendrecord([no, (n2305 ),' | Todos los CoQ' ]);
-inc(no); DM.Info.Appendrecord([no,(n397 ),' | Ciclo de la ubiquinona'  ]);
-inc(no); DM.Info.Appendrecord([no,nil,'COMPONENTES DE LA VITAMINA C:' ]);
-inc(no); DM.Info.Appendrecord([no,(n2298 ),' | Bioflavenoides'  ]);
-inc(no); DM.Info.Appendrecord([no,(n449 ),' | Rutin'  ]);
-inc(no); DM.Info.Appendrecord([no,(n2990 ),' | Acido hesparico'  ]);
-inc(no); DM.Info.Appendrecord([no,(n456 ),' | Tirosina'  ]);
-inc(no); DM.Info.Appendrecord([no, (n1259 ),' | Tirosinasa' ]);
-inc(no); DM.Info.Appendrecord([no, (n780 ),' | Vitamina C ase' ]);
-inc(no); DM.Info.Appendrecord([no,(n728 ),' | Acido ascorbico'  ]);
-inc(no); DM.Info.Appendrecord([no,nil,'FAMILIA DE LA VITAMINA D:' ]);
-inc(no); DM.Info.Appendrecord([no,(n1450 ),' | Vitamina D1'  ]);
-inc(no); DM.Info.Appendrecord([no,(n1449 ),' | Vitamina D2 '  ]);
-inc(no); DM.Info.Appendrecord([no,(n1448 ),' | Vitamina D3'  ]);
-inc(no); DM.Info.Appendrecord([no,(n1461 ),' | Vitamina D4'  ]);
-inc(no); DM.Info.Appendrecord([no,nil,'FAMILIA DE LA VITAMINA A:' ]);
-inc(no); DM.Info.Appendrecord([no,(n2291 ),' | Beta carotena'  ]);
-inc(no); DM.Info.Appendrecord([no,(n779 ),' | Aceite de pescado'  ]);
-inc(no); DM.Info.Appendrecord([no,(n2288 ),' | Retinol'  ]);
-inc(no); DM.Info.Appendrecord([no,(n778 ),' | Precursores de la vitamina A'  ]);
-inc(no); DM.Info.Appendrecord([no, (n412 ),' | Vitamina A en cartílagos' ]);
-inc(no); DM.Info.Appendrecord([no,nil,'ENZIMAS GENERALES:' ]);
-inc(no); DM.Info.Appendrecord([no,(n20 ),' | Enzimas reductoras de la oxidación']);
-inc(no); DM.Info.Appendrecord([no,(n21 ), ' | Enzimas en la regulación de la hidrolización durante la digestión']);
-inc(no); DM.Info.Appendrecord([no,(n22 ) ,' | Enzimas en la fosforilización durante los procesos del pensamiento']);
-inc(no); DM.Info.Appendrecord([no,(n23 ) ,' | Enzimas en la regulación de la descarbolización en la respiración']);
-inc(no); DM.Info.Appendrecord([no, (n25 ),' | Enzimas en la regulación de la hidrolización del agua']);
-inc(no); DM.Info.Appendrecord([no, (n26 ),' | Enzimas regulatorias del ADN' ]);
-inc(no); DM.Info.Appendrecord([no,(n24 ) ,' | Enzimas en la transmutación de isómeros mutasos']);
+inc(no); DM.Info.Appendrecord([no,nil,'----- FAMILIA DE LA VITAMINA E: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n781 ),' Vitamina E1.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n2997 ) ,' Vitamina E2.' ]);
+inc(no); DM.Info.Appendrecord([no,(n3002 ),' Vitamina E3.'  ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- FAMILIA DE LA VITAMINA K: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n422 ),' Vitamina K1.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n2288 ) ,' Vitamina K3.' ]);
+inc(no); DM.Info.Appendrecord([no,(round(n422+n2288+20)/2 ),' Todas las vitaminas K'  ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- VITAMINA U / UBIQUINONA: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n2300 ) ,' CoQ6.' ]);
+inc(no); DM.Info.Appendrecord([no,(n2301 ) ,' CoQ7.' ]);
+inc(no); DM.Info.Appendrecord([no,(n2302 ) ,' CoQ8.' ]);
+inc(no); DM.Info.Appendrecord([no,(n2303 ),' CoQ9.'  ]);
+inc(no); DM.Info.Appendrecord([no, (n2304 ),' CoQ10.' ]);
+inc(no); DM.Info.Appendrecord([no, (n2305 ),' Todos los CoQ.' ]);
+inc(no); DM.Info.Appendrecord([no,(n397 ),' Ciclo de la ubiquinona.'  ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- COMPONENTES DE LA VITAMINA C: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n2298 ),' Bioflavenoides.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n449 ),' Rutina.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n2990 ),' Acido hespárico.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n456 ),' Tirosina.'  ]);
+inc(no); DM.Info.Appendrecord([no, (n1259 ),' Tirosinasa.' ]);
+inc(no); DM.Info.Appendrecord([no, (n780 ),' Vitamina C ase.' ]);
+inc(no); DM.Info.Appendrecord([no,(n728 ),' Acido ascórbico.'  ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- FAMILIA DE LA VITAMINA D: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n1450 ),' Vitamina D1.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n1449 ),' Vitamina D2.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n1448 ),' Vitamina D3.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n1461 ),' Vitamina D4.'  ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- FAMILIA DE LA VITAMINA A: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n2291 ),' Beta carotena.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n779 ),' Aceite de pescado.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n2288 ),' Retinol.'  ]);
+inc(no); DM.Info.Appendrecord([no,(n778 ),' Precursores de la vitamina A.'  ]);
+inc(no); DM.Info.Appendrecord([no, (n412 ),' Vitamina A en cartílagos.' ]);
+inc(no); DM.Info.Appendrecord([no,nil,'----- ENZIMAS GENERALES: -----' ]);
+inc(no); DM.Info.Appendrecord([no,(n20 ),' Enzimas reductoras de la oxidación.']);
+inc(no); DM.Info.Appendrecord([no,(n21 ), ' Enzimas en la regulación de la hidrolización durante la digestión.']);
+inc(no); DM.Info.Appendrecord([no,(n22 ) ,' Enzimas en la fosforilización durante los procesos del pensamiento.']);
+inc(no); DM.Info.Appendrecord([no,(n23 ) ,' Enzimas en la regulación de la descarbolización en la respiración.']);
+inc(no); DM.Info.Appendrecord([no, (n25 ),' Enzimas en la regulación de la hidrolización del agua.']);
+inc(no); DM.Info.Appendrecord([no, (n26 ),' Enzimas regulatorias del ADN.' ]);
+inc(no); DM.Info.Appendrecord([no,(n24 ) ,' Enzimas en la transmutación de isómeros de las mutasas.']);
 inc(no); DM.Info.Appendrecord([no,nil,nil ]);
 inc(no); DM.Info.Appendrecord([no,nil,nil ]);
 if (edit1.text<>'Insertar afección: ') then begin
@@ -6651,129 +5320,7 @@ inc(no); DM.Info.Appendrecord([no,nil,'Primero | '+ label536.caption]);
 inc(no); DM.Info.Appendrecord([no,nil,'Segundo | '+ label539.caption]);
 inc(no); DM.Info.Appendrecord([no,nil,'Tercero | '+ label540.caption]);
 end;
-riskchart.memo2.lines.clear;
-riskchart.memo2.lines.add('----- INFORME NUTRICIONAL -----');
-riskchart.memo2.lines.add('Los valores por lo general indican deficiencias, pero los excesos también son posibles.' );
-riskchart.memo2.lines.add('VISION GENERAL:' );
-riskchart.memo2.lines.add(( nutr.label17.caption)+nutr.label1.caption);
-riskchart.memo2.lines.add( (nutr.label18.caption)+nutr.label2.caption);
-riskchart.memo2.lines.add( (nutr.label19.caption)+nutr.label3.caption);
-riskchart.memo2.lines.add( (nutr.label20.caption)+nutr.label4.caption);
-riskchart.memo2.lines.add( (nutr.label21.caption)+nutr.label5.caption);
-riskchart.memo2.lines.add( (nutr.label22.caption)+nutr.label6.caption);
-riskchart.memo2.lines.add( (nutr.label23.caption)+nutr.label7.caption);
-riskchart.memo2.lines.add( (nutr.label24.caption)+nutr.label8.caption);
-riskchart.memo2.lines.add( (nutr.label25.caption)+nutr.label9.caption);
-riskchart.memo2.lines.add('DIGESTION / ABSORPCION:' );
-riskchart.memo2.lines.add( (nutr.label26.caption)+nutr.label10.caption);
-riskchart.memo2.lines.add( (nutr.label27.caption)+nutr.label11.caption);
-riskchart.memo2.lines.add( (nutr.label28.caption)+nutr.label12.caption);
-riskchart.memo2.lines.add( (nutr.label29.caption)+nutr.label13.caption);
-riskchart.memo2.lines.add('FAMILIA DE LA VITAMINA B:'  );
-riskchart.memo2.lines.add( (nutr.label58.caption)+nutr.label33.caption);
-riskchart.memo2.lines.add( (nutr.label59.caption)+nutr.label34.caption);
-riskchart.memo2.lines.add( (nutr.label60.caption)+nutr.label35.caption);
-riskchart.memo2.lines.add( (nutr.label61.caption)+nutr.label36.caption);
-riskchart.memo2.lines.add( (nutr.label62.caption)+nutr.label37.caption);
-riskchart.memo2.lines.add( (nutr.label63.caption)+nutr.label38.caption);
-riskchart.memo2.lines.add( (nutr.label64.caption)+nutr.label39.caption);
-riskchart.memo2.lines.add( (nutr.label65.caption)+ nutr.label40.caption);
-riskchart.memo2.lines.add( (nutr.label66.caption)+ nutr.label41.caption);
-riskchart.memo2.lines.add( (nutr.label67.caption)+ nutr.label42.caption);
-riskchart.memo2.lines.add( (nutr.label68.caption)+nutr.label43.caption);
-riskchart.memo2.lines.add( (nutr.label69.caption)+nutr.label44.caption);
-riskchart.memo2.lines.add( (nutr.label70.caption)+ nutr.label45.caption);
-riskchart.memo2.lines.add( (nutr.label71.caption)+nutr.label46.caption);
-riskchart.memo2.lines.add( (nutr.label72.caption)+ nutr.label47.caption);
-riskchart.memo2.lines.add( (nutr.label73.caption)+nutr.label48.caption);
-riskchart.memo2.lines.add( (nutr.label74.caption)+nutr.label49.caption);
-riskchart.memo2.lines.add( (nutr.label75.caption)+nutr.label50.caption);
-riskchart.memo2.lines.add( (nutr.label76.caption)+nutr.label51.caption);
-riskchart.memo2.lines.add( (nutr.label77.caption)+nutr.label52.caption);
-riskchart.memo2.lines.add( (nutr.label78.caption)+nutr.label53.caption);
-riskchart.memo2.lines.add( (nutr.label79.caption)+nutr.label54.caption);
-riskchart.memo2.lines.add('SALES EN TEJIDOS:' );
-riskchart.memo2.lines.add( (nutr.label461.caption)+ nutr.label473.caption);
-riskchart.memo2.lines.add( (nutr.label462.caption)+ nutr.label474.caption);
-riskchart.memo2.lines.add( (nutr.label463.caption)+ nutr.label475.caption);
-riskchart.memo2.lines.add( (nutr.label464.caption)+ nutr.label476.caption);
-riskchart.memo2.lines.add( (nutr.label465.caption)+ nutr.label477.caption);
-riskchart.memo2.lines.add( (nutr.label466.caption)+ nutr.label478.caption);
-riskchart.memo2.lines.add( (nutr.label467.caption)+ nutr.label479.caption);
-riskchart.memo2.lines.add( (nutr.label468.caption)+ nutr.label480.caption);
-riskchart.memo2.lines.add( (nutr.label469.caption)+ nutr.label481.caption);
-riskchart.memo2.lines.add( (nutr.label470.caption)+ nutr.label482.caption);
-riskchart.memo2.lines.add( (nutr.label471.caption)+ nutr.label483.caption);
-riskchart.memo2.lines.add( (nutr.label472.caption)+ nutr.label484.caption);
-riskchart.memo2.lines.add('ACIDOS GRASOS GENERALES:' );
-riskchart.memo2.lines.add(inttostr(nutr.n775 ) +' | Cadenas de carbones bajos' );
-riskchart.memo2.lines.add(inttostr(nutr.n776) +' | Cadenas de carbones medios' );
-n7:=(nutr.n776)+16;
-riskchart.memo2.lines.add(inttostr( n7  )+' | Cadenas relacionadas con el ácido aracadónico'  );
-riskchart.memo2.lines.add(inttostr(nutr.n771 )+' | Cadenas de mielina'  );
-riskchart.memo2.lines.add(inttostr(nutr.n519 )+' | Deficiencias nutricionales generales'  );
-riskchart.memo2.lines.add(inttostr(nutr.n412 )+' | Cadenas de carbones altos'  );
-riskchart.memo2.lines.add(inttostr(nutr.n1263 )+' | Items relacionados con los procesos enzimáticos'  );
-riskchart.memo2.lines.add('FAMILIA DE LA VITAMINA E:' );
-riskchart.memo2.lines.add(inttostr(nutr.n781)+' | Vitamina E1'  );
-riskchart.memo2.lines.add(inttostr(nutr.n2997) +' | Vitamina E2' );
-riskchart.memo2.lines.add(inttostr(nutr.n3002)+' | Vitamian E3'  );
-riskchart.memo2.lines.add('VITAMINA K:' );
-riskchart.memo2.lines.add(inttostr(nutr.n422)+' | Vitamina K1'  );
-riskchart.memo2.lines.add(inttostr(nutr.n2288) +' | Vitamina K3' );
-n8:=nutr.n422 +random(32)  ;
-riskchart.memo2.lines.add(inttostr(n8)+' | Todas las vitaminas K'  );
-riskchart.memo2.lines.add('VITAMINA U / UBIQUINONA:' );
-riskchart.memo2.lines.add(inttostr(nutr.n2300) +' | CoQ6' );
-riskchart.memo2.lines.add(inttostr(nutr.n2301) +' | CoQ7' );
-riskchart.memo2.lines.add(inttostr(nutr.n2302) +' | CoQ8' );
-riskchart.memo2.lines.add(inttostr(nutr.n2303)+' | CoQ9'  );
-riskchart.memo2.lines.add(inttostr(nutr.n2304)+' | CoQ10' );
-riskchart.memo2.lines.add(inttostr(nutr.n2305)+' | Todos los CoQ' );
-riskchart.memo2.lines.add(inttostr(nutr.n397)+' | Ciclo de la ubiquinona'  );
-riskchart.memo2.lines.add('COMPONENTES DE LA VITAMINA C:' );
-riskchart.memo2.lines.add(inttostr(nutr.n2298)+' | Bioflavenoides'  );
-riskchart.memo2.lines.add(inttostr(nutr.n449)+' | Rutina'  );
-riskchart.memo2.lines.add(inttostr(nutr.n2990)+' | Acido hespárico'  );
-riskchart.memo2.lines.add(inttostr(nutr.n456)+' | Tirosina'  );
-riskchart.memo2.lines.add(inttostr(nutr.n1259)+' | Tirosinasa' );
-riskchart.memo2.lines.add(inttostr(nutr.n780)+' | Vitamina C ase' );
-riskchart.memo2.lines.add(inttostr(nutr.n728)+' | Acido ascorbico'  );
-riskchart.memo2.lines.add('FAMILIA DE LA VITAMINA D:' );
-riskchart.memo2.lines.add(inttostr(nutr.n1450 )+' | Vitamina D1'  );
-riskchart.memo2.lines.add(inttostr(nutr.n1449 )+' | Vitamina D2'  );
-riskchart.memo2.lines.add(inttostr(nutr.n1448 )+' | Vitamina D3'  );
-riskchart.memo2.lines.add(inttostr(nutr.n1461 )+' | Vitamina D4'  );
-riskchart.memo2.lines.add('FAMILIA DE LA VITAMINA A:' );
-riskchart.memo2.lines.add(inttostr(nutr.n2291)+' | Beta carotena'  );
-riskchart.memo2.lines.add(inttostr(nutr.n779)+' | Aceite de pescado'  );
-riskchart.memo2.lines.add(inttostr(nutr.n2288)+' | Retinol'  );
-riskchart.memo2.lines.add(inttostr(nutr.n778)+' | Precursores de la vitamina A'  );
-riskchart.memo2.lines.add(inttostr(nutr.n412)+' | Vitamina A en cartílagos' );
-riskchart.memo2.lines.add('ENZIMAS GENERALES:' );
-riskchart.memo2.lines.add(inttostr(nutr.n20)+' | Enzimas reductoras de la oxidación');
-riskchart.memo2.lines.add(inttostr(nutr.n21)+' | Enzimas en la regulación de la hidrolización durante la digestión');
-riskchart.memo2.lines.add(inttostr(nutr.n22) +' | Enzimas en la fosforilización durante los procesos del pensamiento');
-riskchart.memo2.lines.add(inttostr(nutr.n23) +' | Enzimas en la regulación de la descarbolización en la respiración');
-riskchart.memo2.lines.add(inttostr(nutr.n25)+' | Enzimas en la regulación de la hidrolización del agua');
-riskchart.memo2.lines.add(inttostr(nutr.n26)+' | Enzimas regulatorias del ADN' );
-riskchart.memo2.lines.add(inttostr(nutr.n24) +' | Enzimas en la transmutación de isómeros mutasos');
-riskchart.memo2.lines.add('DATOS COMPLEMENTARIOS:');
-if  (strtoint(nutr.label17.caption))>(strtoint(nutr.label23.caption))then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label1.caption);
-if  strtoint(nutr.label18.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label2.caption);
-if  strtoint(nutr.label19.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label3.caption);
-if  strtoint(nutr.label20.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label4.caption);
-if  strtoint(nutr.label21.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label5.caption);
-if  strtoint(nutr.label22.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label6.caption);
-if  strtoint(nutr.label24.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label8.caption);
-if  strtoint(nutr.label25.caption)>strtoint(nutr.label23.caption)then riskchart.memo2.lines.add('Se debe prestar atención a: '+ nutr.label9.caption);
-if (nutr.edit1.text<>'Insertar afección: ') then begin
-riskchart.memo2.lines.add(nutr. edit1.text);
-riskchart.memo2.lines.add( 'Primero:'+ nutr.label536.caption);
-riskchart.memo2.lines.add( 'Segundo: '+ nutr.label539.caption);
-riskchart.memo2.lines.add( 'Tercero: '+ nutr.label540.caption);
-end;
-  ShowMessage('El informe ha sido cargado.');
+ShowMessage('El informe ha sido cargado.');
 Dm.Info.FlushBuffers;
 end;
 
@@ -6789,105 +5336,27 @@ const
 begin
 //dbgrid2.visible:=true;
 Label90.Caption:=IntToStr (n2517+(6*pn7)+(6*pn3)+(6*pn11)+(8*pn4) );
-Label83.Caption:='Adrenalina';
+Label83.Caption:=' Adrenalina.';
 Label91.Caption:=IntToStr (n2528+(4*pn3)+(6*pn11)+(5*pn7) );
-Label84.Caption:='Prostaglandina';
+Label84.Caption:=' Prostaglandina.';
 Label92.Caption:=IntToStr (n2561 +(4*me12)+(3*me10)+(3*pn7)+(3*pn8)+ (3*pn3));
-Label85.Caption:='Testosterona';
+Label85.Caption:=' Testosterona.';
 Label93.Caption:=IntToStr (n2532+(4*ve1)+(3*ve2)+(3*pn7)+(3*ve3)+(4*ve4)+(3*ve5)+(4*ve6) );
-Label86.Caption:='Cortisol';
+Label86.Caption:=' Cortisol.';
 Label94.Caption:=IntToStr (n2531+(5*me4)+(3*me12)+(3*pn19)+(4*me6));
-Label87.Caption:='Histamina';
+Label87.Caption:=' Histamina.';
 Label95.Caption:=IntToStr (n749+(4*me13)+(5*me12)+(3*pn7)+(3*me7)+(4*pn19)+(3*me12)+(3*pn6)+(5*pn2) );
-Label88.Caption:='Glándula pineal, pituitaria e hipotálamo';
+Label88.Caption:=' Pineal, pituitaria e hipotálamo.';
 Label96.Caption:=IntToStr (n2524+(5*ve5)+(5*ve2)+(3*pn3)+(5*pn7)+(3*ve1)+(pn17*6));
-Label89.Caption:='Tendencia a las alergias emocionales';
+Label89.Caption:=' Tendencia a las alergias emocionales.';
 Label525.Caption:=IntToStr (n2536+(4*ve4)+(5*ve1)+(3*pn6)+(4*pn7) );
-Label523.Caption:='Factor liberador de la corticotropina';
+Label523.Caption:=' Factor liberador de la corticotropina.';
 Label526.Caption:=IntToStr (n2476 +(6*ve1)+(6*ve3)+(3*pn7)+(3*pn8));
-Label524.Caption:='ACTH ';
+Label524.Caption:=' ACTH.';
 panel2.visible:=true;
-
-
- if (pn11>3) or (cb5 <0) then label511.caption:='No tome ninguna carne de ave con piel, allí se acumula toda la grasa.';
- if (pn8>4) or (cb4 <0) then label511.caption:='Consuma azúcares naturales y frutas, evite el azúcar refinada.';
- if (pn3>5) or (cb5 <0) then label511.caption:='Zumos de zanahoria y perejil, lecitina, fécula de trigo, pimienta cayena.';
- if (pn10>4)or (cb5 <0)  then label511.caption:='Siempre que pueda use las escaleras, camine tanto como pueda.';
- if (pn9<2)or (cb14 <0)  then label511.caption:='Coma en plato de postre, cabe menos cantidad y psicológicamente se cree que se consumió un plato.';
- if (pn12>10)or (cb9 <0)  then label511.caption:='El estómago tarda 25 min. en convencerse de que está lleno. Espere antes de tomar el postre.';
- if (pn4>0)or (cb4 <0) then label511.caption:='En sus manos está el decir ''No'' a la gula y excesos en la ingesta de alimentos.';
- if (pn7>8)or (cb10 <0)  then label511.caption:='Evite los alimentos que le producen alergias.  Manténga una alimentación balanceada.';
-
- if (pn11>3) or (cb5 <0) then label512.caption:='Evite los azucares de absorción rápida porque elevan de forma brusca los niveles de glucosa.';
- if (pn8>4) or (cb4 <0) then label512.caption:='Coma poco y a menudo varias veces al día evitando las comidas copiosas.';
- if (pn3>5) or (cb5 <0) then label512.caption:='En personas adultas, las bebidas con alcohol no deben superar los dos vasos al día.';
- if (pn10>4)or (cb5 <0)  then label512.caption:='Consuma con moderación carne y huevos procurando que la ingesta de pescado sea siempre mayor.';
- if (pn9<2)or (cb14 <0)  then label512.caption:='Al cocinar, disminuya o elimine las grasas de origen animal.';
- if (pn12>10)or (cb9 <0)  then label512.caption:='Cuando se coman legumbres se puede suprimir la carne.';
- if (pn4>0)or (cb4 <0) then label512.caption:='Las verduras y hortalizas son muy aconsejables al menos dos veces al día.';
- if (pn7>8)or (cb10 <0)  then label512.caption:='Se recomienda que el 10-20% de calorías se suministren con las proteínas.';
-
- if (pn11>3) or (cb5 <0) then label509.caption:='Tome vegetales frescos y naturales, consuma más agua de manantial y repollo.';
- if (pn8>4) or (cb4 <0) then label509.caption:='Beber un vaso de agua al levantarse le ayudará a combatir el estreñimiento.';
- if (pn3>5) or (cb5 <0) then label509.caption:='Tómese su tiempo para comer y mastique muy bien los alimentos.';
- if (pn10>4)or (cb5 <0)  then label509.caption:='No emplee salsas aceitosas y ricas en grasas para acompañar sus platos.';
- if (pn9<2)or (cb14 <0)  then label509.caption:='Condimente las comidas con hierbas como el perejil, el estragón, el tomillo y el laurel.';
- if (pn12>10)or (cb9 <0)  then label509.caption:='Use especias aromáticas como canela, curry o azafrán.';
- if (pn4>0)or (cb4 <0) then label509.caption:='Prepare aliños con cebolla, ajo, limón y vinagre.';
- if (pn7>8)or (cb10 <0)  then label509.caption:='Evite las frituras.  Las carnes y los pescados deben guisarse con aromas y poco aceite.';
-
- rr:=random(12)+1;
- if rr=1 then label515.caption:='Consuma tés y cafés descafeinados, tóme más frutas y vegetales frescos y naturales, evite las carnes rojas.';
- if rr=2 then label515.caption:='Zumos de toronja, manzana y limón.  Consuma más fruta y vegetales frescos y naturales, evite las carnes rojas.';
- if rr=3 then label515.caption:='Una nutrición balanceada y ejercicio con regularidad son buenos para la salud mental y física.';
- if rr=4 then label515.caption:='Ejercítese más, consuma más agua, rebaje la consumición de calorías, evite el queso y toda grasa animal.';
- if rr=5 then label515.caption:='No consuma más de 2 vasos de bebidas alcoholicas por día, consuma zumos de frutas frescas y mucha agua.';
- if rr=6 then label515.caption:='Zumos de zanahoria y perejil, lecitina, fécula de trigo, pimienta cayena.';
- if rr=7 then label515.caption:='Consuma azúcares naturales y frutas, evite el azúcar refinada.';
- if rr=8 then label515.caption:='Beber un vaso de agua antes de acostarse ayudará a diluir los ácidos úricos.';
- if rr=9 then label515.caption:='Introduce muchas frutas y verduras crudas o cocidas en tu dieta diaria.';
- if rr=10 then label515.caption:='El consumo de colesterol debe limitarse a 300 mg/día, o menos.';
- if rr=11 then label515.caption:='Menos del 10% de las calorías deben proceder de grasas saturadas.';
- if rr=12 then label515.caption:='Evite los alimentos muy salados.  La sal favorece la retención de líquidos.';
- if rr=13 then label515.caption:='Relájese durante al menos 30 min. después de comer.';
-
- rr:=random(12)+1;
- if rr=1 then label516.caption:='Ajo, manzana y jugo de perejil.';
- if rr=2 then label516.caption:='Piña, papaya y zumo de guayaba.';
- if rr=3 then label516.caption:='Brócoli, coliflor, albaricoque, almendra y zumo de zarzamora.';
- if rr=4 then label516.caption:='Piña, papaya, todos los vegetales y zumo de guayaba.';
- if rr=5 then label516.caption:='Uvas, repollo, rábano y jugo de ápio.';
- if rr=6 then label516.caption:='Piña, papaya, rábano, lechuga y zumo de guayaba.';
- if rr=7 then label516.caption:='Caléndula, perejil, apio, zumo de patata.';
- if rr=8 then label516.caption:='Mermelada, apio, col roja, manzana, uva, zanahoria, zumos de avenas.';
- if rr=9 then label516.caption:='Perejil, nuez moscada, pimienta, aguacate, zumo de mango.';
- if rr=10 then label516.caption:='Cereza, arándano, apio, lechuga, zumo de albaricoque.';
- if rr=11 then label516.caption:='Arándano, lechuga, perejil, nuez moscada, chirivía, zumo de zanahoria.';
- if rr=12 then label516.caption:='Rabano, arándano, apio, patata, tomate y zumo de zanahoria.';
- if rr=13 then label516.caption:='Guayaba, mango, almendras, zumo de zanahoria.';
-
- if ran1=1 then label517.caption:='Ajo, manzana y jugo de perejil.';
- if ran1=2 then label517.caption:='Piña, papaya y zumo de guayaba.';
- if ran1=3 then label517.caption:='Brócoli, coliflor, albaricoque, almendra y zumo de zarzamora.';
- if ran1=4 then label517.caption:='Piña, papaya, todos los vegetales y zumo de guayaba.';
- if ran1=5 then label517.caption:='Uvas, repollo, rábano y jugo de ápio.';
- if ran1=6 then label517.caption:='Piña, papaya, rábano, lechuga y zumo de guayaba.';
- if ran1=7 then label517.caption:='Caléndula, perejil, apio, zumo de patata.';
- if ran1=8 then label517.caption:='Mermelada, apio, col roja, manzana, uva, zanahoria, zumos de avenas.';
- if ran1=9 then label517.caption:='Perejil, nuez moscada, pimienta, aguacate, zumo de mango.';
- if ran1=10 then label517.caption:='Cereza, arándano, apio, lechuga, zumo de albaricoque.';
- if ran1=11 then label517.caption:='Arándano, lechuga, perejil, nuez moscada, chirivía, zumo de zanahoria.';
- if ran1=12 then label517.caption:='Rabano, arándano, apio, patata, tomate y zumo de zanahoria.';
- if ran1=13 then label517.caption:='Guayaba, mango, almendras, zumo de zanahoria.';
- if ran1=14 then label517.caption:='Consuma azúcares naturales y frutas, evite el azúcar refinada.';
- if ran1=15 then label517.caption:='Limite la cantidad de grasa adicional tal como mantequilla o margarina en el pan.';
- if ran1=16 then label517.caption:='Zumos de zanahoria y perejil, lecitina, fécula de trigo, pimienta cayena.';
- if ran1=17 then label517.caption:='Las frutas y verduras aportan nutrientes esenciales, tienen pocas calorías y sacian.';
- if ran1=18 then label517.caption:='Tomar un vaso de un zumo cítrico antes de comer desintoxica el intestino y reduce el apetito.';
- if ran1=19 then label517.caption:='Ajo, perejil y zumos de manzana y toronja o pomelos a diario.';
- if ran1=21 then label517.caption:='Consuma la carne horneada, a la parrilla o asada en vez de frita.';
- if ran1=20 then label517.caption:='Después de comer no se quede en la mesa, una caminata ligera le ayudará a mejorar la digestión.';
-
+Ancho();
+BCNutricionales.Click;
+Button38.Click;
      Index:=''; DM.Conscida.IndexName:=Index;
      DM.Conscida.FindKey([n1]); ac1:=ac1+DM.ConscidaValue.AsInteger +15;
      DM.Conscida.FindKey([n2]); ac1:=ac1+DM.ConscidaValue.AsInteger +15;
@@ -6943,21 +5412,7 @@ panel2.visible:=true;
  if ac4<ac5 then ac6:=5;
  if ac4>ac5 then ac5:=ac4;
 
-     if cg2=0 then label508.caption:= 'Toronja, papaya, piña.';
-      if cg2=1  then  label508.caption:= 'Manzana, frutos secos, naranja.';
-     if cg2=2  then  label508.caption:= 'Cereza, albaricoque, melón.';
-      if cg2=3  then  label508.caption:= 'Pera, dátiles, kiwi.';
-     if cg2=4  then  label508.caption:= 'Dátiles, ciruelas, mango.';
-     if cg2=5  then  label508.caption:= 'Toronja, pera, dátiles.';
-     if cg2=6  then  label508.caption:= 'Uvas pasas, frutas pequeñas.';
-     if cg2=7  then  label508.caption:= 'Piña, dátiles, ciruela.';
-     if cg2=8  then  label508.caption:= 'Sandía, kiwi, melón.';
-     if cg2=9  then  label508.caption:= 'Pera, uva, melocotón.';
-     if cg2=10  then  label508.caption:= 'Papaya, naranja, kiwi.';
-     if cg2=12  then  label508.caption:= 'Mango, coco, cereza.';
-     if cg2=13  then  label508.caption:= 'Miel, dátiles, aguacate.';
-
-        Index:='ByValue';
+   Index:='ByValue';
    DM.Conscida.IndexName := Index;
    DM.Conscida.last;
    DM.Conscida.first;
@@ -6972,59 +5427,6 @@ Label555.enabled:=false;
     DM.Info.first;
     DM.Info.Last;
     no := DM.Info.FieldbyName('no').asInteger;
-
- if ac6=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Comidas con sal, acelga, comidas de mar, espinaca, tomato, espárragos, algas, coco, papaya, pepino, cebada.' ]);
-end;
- if ac6=2 then begin inc(no); DM.Info.Appendrecord([no,nil,'Comidas amargas, rábano, ruibarbo, berenjena, manzana, melón, ciruelas, granos verdes, pavo, avena.']);
-end;
- if ac6=3 then begin inc(no); DM.Info.Appendrecord([no,nil,'Comidas dulces, zanahoria, apio, carne de vaca y búfalo, albaricoque, piña, dátiles, col, patata, pollo, trigo.' ]);
-end;
- if ac6=4 then begin inc(no); DM.Info.Appendrecord([no,nil,'Comidas condimentadas, cebolla, ajo, pimienta, rábano, puerro, baya, cereza, dátiles, granos y legúmbres, mijo.' ]);
-end;
- if ac6=5 then begin inc(no); DM.Info.Appendrecord([no,nil,'Comidas agrias, vinagre, hortalizas, mostaza, pera, durazno, kiwi, banana, naranja, ciruela, cól, maíz, mijo.' ]);
-end;
- if (pn11>3) or (cb5 <0) then begin inc(no); DM.Info.Appendrecord([no,nil,'Consuma tés y cafés descafeinados, tóme más frutas y vegetales frescos y naturales, evite las carnes rojas.' ]);
-end;
- if  (pn8>4) or (cb4 <0) then begin inc(no); DM.Info.Appendrecord([no,nil,'Consuma azúcares naturales y frutas, evite el azúcar refinada.' ]);
-end;
- if  (pn3>5) or (cb5 <0) then begin inc(no); DM.Info.Appendrecord([no,nil,'Zumos de zanahoria y perejil, lecitina, fécula de trigo, pimienta cayena.' ]);
-end;
- if  (pn10>4)or (cb5 <0)  then begin inc(no); DM.Info.Appendrecord([no,nil,'No consuma alcohol, consuma zumos de frutas frescas y mucha agua.' ]);
-end;
- if  (pn9<2)or (cb14 <0)  then begin inc(no); DM.Info.Appendrecord([no,nil,'Ejercítese más, consuma más agua, rebaje la consumición de calorías, evite el queso y toda grasa animal.' ]);
-end;
- if  (pn12>10)or (cb9 <0)  then begin inc(no); DM.Info.Appendrecord([no,nil,'Ajo, perejil y zumos de manzana y toronja o pomelos a diario.' ]);
-end;
- if  (pn4>0)or (cb4 <0) then begin inc(no); DM.Info.Appendrecord([no,nil,'Zumos de toronja, manzana y limón.  Consuma más fruta y vegetales frescos y naturales, evite las carnes rojas.' ]);
-end;
- if  (pn7>8)or (cb10 <0)  then begin inc(no); DM.Info.Appendrecord([no,nil,'Relájese durante al menos 30 min. después de comer.' ]);
-end;
- if  cb1 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Ajo, manzana y jugo de perejil.' ]);
-end;
- if  cb2 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Piña, papaya y zumo de guayaba.' ]);
-end;
- if  cb3 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Brócoli, coliflor, albaricoque, almendra y zumo de zarzamora.' ]);
-end;
- if  cb4 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Piña, papaya, todos los vegetales y zumo de guayaba.' ]);
-end;
- if  cb5 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Uvas, repollo, rábano y jugo de ápio.' ]);
-end;
- if  cb6 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Piña, papaya, rábano, lechuga y zumo de guayaba.' ]);
-end;
- if  cb7 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Caléndula, perejil, apio, zumo de patata.' ]);
-end;
- if  cb8 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Mermelada, apio, col roja, manzana, uva, zanahoria, zumos de avenas.' ]);
-end;
- if  cb9 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Perejil, nuez moscada, pimienta, aguacate, zumo de mango.' ]);
-end;
- if  cb10 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Cereza, arándano, apio, lechuga, zumo de albaricoque.' ]);
-end;
- if  cb11 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Arándano, lechuga, perejil, nuez moscada, chirivía, zumo de zanahoria.' ]);
-end;
- if  cb12 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Rabano, arándano, apio, patata, tomate y zumo de zanahoria.' ]);
-end;
- if  cb13 >=1 then begin inc(no); DM.Info.Appendrecord([no,nil,'Guayaba, mango, almendras, zumo de zanahoria.']);
-end;
            inc(no); DM.Info.Appendrecord([no,nil,label503.caption  ]);
                 inc(no); DM.Info.Appendrecord([no,nil,label508.caption  ]);
                 inc(no); DM.Info.Appendrecord([no,nil,label516.caption  ]);
@@ -7066,50 +5468,25 @@ procedure Tnutr.Panel7Click(Sender: TObject);
 begin
 ad1:=ad1+1;
 dbgrid2.enabled:=true;
-if ad1>3 then begin
-//Ancho();
-panel8.visible:=true;
-end;
+if ad1>3 then panel8.visible:=true;
 end;
 
 procedure Tnutr.Label98DblClick(Sender: TObject);
 begin
-//Ancho();
 panel8.visible:=true;
-end;
-
-procedure Tnutr.Label83DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label83.Caption+'...';
-Montserrat(Label83);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label83);
 end;
 
 procedure Tnutr.Label10Click(Sender: TObject);
 begin
 labelEnNo:=11;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label10.Caption;
- dig22:=dig22+1;
+dig22:=dig22+1;
 panel2.visible:=true;
-
 dbgrid2.visible:=true;
- DM.Conscida.Filter:='NO >= 2648 AND NO <= 2732';
- DM.Conscida.Filtered:=True;
+DM.Conscida.Filter:='NO >= 2648 AND NO <= 2732';
+DM.Conscida.Filtered:=True;
 Label90.Caption:=IntToStr (dig1);
 Label83.Caption:='Peptidos básicos, tripsina, duodeno.';
 Label91.Caption:=IntToStr ( (dig2));
@@ -7124,35 +5501,22 @@ Label95.Caption:=IntToStr ( (dig6));
 Label88.Caption:='Conversión de la proteína animal.';
 Label96.Caption:=IntToStr ( dig7);
 Label89.Caption:='Ciclo de la ubiquinona.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label11Click(Sender: TObject);
 begin
 labelEnNo:=12;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label11.Caption;
 dig33:=dig33+1;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (dig8);
 Label83.Caption:='Disacaridos, deficiencia de sodio.';
 Label91.Caption:=IntToStr (dig9);
@@ -7167,36 +5531,23 @@ Label95.Caption:=IntToStr (dig13);
 Label88.Caption:='Tipo de lactosa.';
 Label96.Caption:=IntToStr (dig14);
 Label89.Caption:='Sucrosa, Tipo de isomaltosa.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label12Click(Sender: TObject);
 
 begin
 labelEnNo:=13;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label12.Caption;
 dig44:=dig44+1;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (dig15);
 Label83.Caption:='Equilibrio del factor Michellizing.';
 Label91.Caption:=IntToStr (dig16);
@@ -7208,38 +5559,25 @@ Label86.Caption:='Monoglicerida.';
 Label94.Caption:=IntToStr (dig19);
 Label87.Caption:='Colesterol.';
 Label95.Caption:=IntToStr (dig20);
-Label88.Caption:='Acidos grasos, coA ligase.';
+Label88.Caption:='Acidos grasos, CoA ligase.';
 Label96.Caption:=IntToStr (dig21);
 Label89.Caption:='Triglicéridos.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Label13Click(Sender: TObject);
 begin
 labelEnNo:=14;
-label83.Enabled:=labelEnabled[labelEnNo].L83;
-label84.Enabled:=labelEnabled[labelEnNo].L84;
-label85.Enabled:=labelEnabled[labelEnNo].L85;
-label86.Enabled:=labelEnabled[labelEnNo].L86;
-label87.Enabled:=labelEnabled[labelEnNo].L87;
-label88.Enabled:=labelEnabled[labelEnNo].L88;
-label89.Enabled:=labelEnabled[labelEnNo].L89;
-label523.Enabled:=labelEnabled[labelEnNo].L523;
-label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
-label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
+EnlaceEtiquetas();
+EnlaceEtiquetas2();
 Label550.Caption:=Label13.Caption;
 dig55:=dig55+1;
 panel2.visible:=true;
-
 Label90.Caption:=IntToStr (dig23);
 Label83.Caption:='Boca.';
 Label91.Caption:=IntToStr (dig24);
@@ -7254,1358 +5592,123 @@ Label95.Caption:=IntToStr (dig28);
 Label88.Caption:='Colon.';
 Label96.Caption:=IntToStr (dig29);
 Label89.Caption:='Flora intestinal.';
-Label525.Caption:='000';
-Label523.Caption:='----';
-Label526.Caption:='000';
-Label524.Caption:='----';
+Label525.Caption:='';
+Label523.Caption:='';
+Label526.Caption:='';
+Label524.Caption:='';
 Button27.Visible:=True;
+Ancho();
 end;
 
 procedure Tnutr.Button25Click(Sender: TObject);
 begin
 me22:=0;
- button44.caption:='Terapia de ovarios';
-  button44.enabled:=true;
-{FEMALE}   panel2.visible:=true;
-//Button110.visible := false;
-  if MessageDlg( '¿Desea usar las preguntas?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me22:=10;;    end;
- button27.caption:='Equilibrar hormonas';
- if me22= 10 then begin
- if (Label524.Caption='---')or(patform1.both>5) then begin
-          panel2.height:=729;
-   if dold>14380 then begin
-    if MessageDlg( '¿Se encuentra usted en estado de menopausia?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me1:=10;;    end;
-               if MessageDlg( '¿Son las calenturas excesivas?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me10:=10;;
-       end;
-           if MessageDlg( '¿Es el deseo sexual poco frecuente?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me11:=10;;
-       end;
-               if MessageDlg( '¿Son los calambres peores que la depresión?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me7:=10;;
-       end;
-           if MessageDlg( '¿Es la depresión peor que los calambres?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me8:=10;;
-       end;
-
-     end;
-       if dold<6935 then begin
-    if MessageDlg( '¿Es usted post adolescente? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me2:=10;;
-       end;
-     end;
-            if me1<10 then begin
-              if MessageDlg( '¿Tiene menstruación?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me9:=10;;
-       end;
-    if MessageDlg( '¿Es la menstruación regular?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me3:=10;;
-       end;
-         if MessageDlg( '¿Empeoran los síntomas durante la pre-menstruación y se detienen cuando la menstruación comienza?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me4:=10;;
-       end;
-         if MessageDlg( '¿Empeoran los síntomas durante la post-menstruación?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me5:=10;;
-       end;
-           if MessageDlg( '¿Empeoran los síntomas durante la ovulación, o hay dolor durante la ovulación?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me6:=10;;
-       end;
-            if MessageDlg( '¿Son los calambres peores que la depresión?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me7:=10;;
-       end;
-           if MessageDlg( '¿Es la depresión peor que los calambres?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me8:=10;;
-       end;
-                if MessageDlg( '¿Se siente irritable en exceso?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me12:=10;;
-       end;
-       me15:=10;
-           if MessageDlg( '¿Tiene usted un lazo emocional fuerte con alguien aparte de hijos o padres?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me15:=0;;
-       end;
-     end;
-              if MessageDlg( '¿Se siente por lo general felíz?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me13:=10;;
-       end;
-           if MessageDlg( '¿Se siente libre? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me14:=10;;
-       end;
-       end;
-        end;
-dbgrid2.visible:=true;
+ panel2.visible:=true;
  DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
  DM.Conscida.Filtered:=True;
-panel2.visible:=true;
-//Button110.visible := false;
 Label90.Caption:=IntToStr (n2550+(3*me11)+(3*me1)+(3*pn11)+(3*pn3));
-Label83.Caption:='Estrogenos';
+Label83.Caption:=' Estrógenos.';
 Label91.Caption:=IntToStr (n2557+(4*me4)+(3*me12)+(3*pn7)+(3*me7) );
-Label84.Caption:='Progesterona';
+Label84.Caption:=' Progesterona.';
 Label92.Caption:=IntToStr (n2561 +(4*me12)+(3*me10)+(3*pn7)+(3*pn8)+ (3*pn3));
-Label85.Caption:='Testosterona';
+Label85.Caption:=' Testosterona.';
 Label93.Caption:=IntToStr (n2551+(4*me7)+(3*me5)+(3*pn7)+(3*me6) );
-Label86.Caption:='Hormona estimulante de la folícula';
+Label86.Caption:=' Hormona estimulante de la folícula.';
 Label94.Caption:=IntToStr (n2531+(4*me4)+(3*me12)+(3*pn19)+(3*me6));
-Label87.Caption:='Hormona leutizante';
+Label87.Caption:=' Hormona leutizante.';
 Label95.Caption:=IntToStr (n749+(4*me13)+(5*me12)+(3*pn7)+(3*me7)+(4*pn19)+(3*me12)+(3*pn6)+(5*pn2) );
-Label88.Caption:='Glándulas pineal, pituitaria e hipotálamo';
+Label88.Caption:=' Pineal, pituitaria e hipotálamo.';
 Label96.Caption:=IntToStr (n2524+(5*me15)+(3*me12)+(3*pn3)+(3*pn7)+(3*me11)+(pn17*5));
-Label89.Caption:='Oxitocina';
+Label89.Caption:=' Oxitocina.';
 Label525.Caption:=IntToStr (n2475+(4*me14)+(5*me11)+(3*pn6)+(3*pn7) );
-Label523.Caption:='Dopamina';
+Label523.Caption:=' Dopamina.';
 Label526.Caption:=IntToStr (n2476 +(6*me11)+(6*me13)+(3*pn7)+(3*pn8));
-Label524.Caption:='Serotonina';
+Label524.Caption:=' Serotonina.';
+EnlaceEtiquetas2();
+Ancho();
+end;
 
-  Label528.Caption:='Factores de afección:';
-if pn2>2 then   Label528.Caption:=Label528.Caption+' | Iatrogénico.';
-if pn3>10 then   Label528.Caption:=Label528.Caption+' | Nicotina.';
-if pn6>1 then   Label528.Caption:=Label528.Caption+' | Impulso adictivo.';
-if pn7>8 then   Label528.Caption:=Label528.Caption+' | Estrés.';
-if pn8>3 then   Label528.Caption:=Label528.Caption+' | Azúcar.';
-if pn11>2 then   Label528.Caption:=Label528.Caption+' | Cafeína.';
-if pn16>4 then   Label528.Caption:=Label528.Caption+' | Negatividad.';
-if pn19>3 then   Label528.Caption:=Label528.Caption+' | Factores mentales.';
-if pn15>10 then   Label528.Caption:=Label528.Caption+' | Exceso de grasas.';
-if Label528.Caption='Factores de afección:'  then Label528.Caption:='Factores de afección: Mal manejo de estrés emocional.';
-    Label527.Caption:='| Desequilibrios hormonales: ';
-  if me1>5 then   Label527.Caption:=Label527.Caption+' | Adrenalina';
-if (me2>5)or(me5>5)or(me10>5)or(me11>5)or(me7>5)or(me6>5) then   Label527.Caption:=Label527.Caption+' | Estrogenos';
-if (me11>5)or(me12>5) then   Label527.Caption:=Label527.Caption+' | Testosterona';
-if me4>5 then   Label527.Caption:=Label527.Caption+' | Progesterona';
-if me15>5 then   Label527.Caption:=Label527.Caption+' | Oxitocina';
-if me13>5 then   Label527.Caption:=Label527.Caption+' | Serotonina';
-if me14>5 then   Label527.Caption:=Label527.Caption+' | Dopamina';
-if me9>5 then   Label527.Caption:=Label527.Caption+' | Exceso de grasas';
-me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T3';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T4';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Tiroides';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pineal';
-    me16:=random(10);
-    if me16>4 then   Label527.Caption:=Label527.Caption+' | Hipotálamo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pituitaria';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Timo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Inflamación';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Infección';
-      Label529.Caption:= '| Otros conflictos con: ';
-       me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Toxicidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Sistema inmunitario';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Vacunas';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Iatrogénicos';
-       me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Factores emocionales';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Necesidad de perdonar';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Culpabilidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Ira';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Desilusión de sí mismo/a';
-     DM.Conscida.Open;
-oeg4:=2470+random(87);
-DM.Conscida.enablecontrols;
-   DM.conscida.FindKey([oeg4]);
-   Label520.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg2:=2470+random(87);  DM.Conscida.Close; DM.Conscida.Open;
-    DM.Conscida.enablecontrols;
-   DM.conscida.FindKey([oeg2]);
-   Label521.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg3 :=2646+random(82);  DM.Conscida.Close; DM.Conscida.Open;
-    DM.Conscida.enablecontrols;
-  DM.conscida.FindKey([oeg3]);
-Label522.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    if label520.caption=label521.caption   then begin
-t1:=random(125);
-    if t1=1  then label521.caption:= label1.caption;
-      if t1=2  then label521.caption:= label2.caption;
- if t1=3  then label521.caption:= label3.caption;
- if t1=4  then label521.caption:= label4.caption;
- if t1=5  then label521.caption:= label5.caption;
- if t1=6  then label521.caption:= label6.caption;
- if t1=7  then label521.caption:= label7.caption;
- if t1=8  then label521.caption:= label8.caption;
- if t1=9  then label521.caption:= label9.caption;
-         if t1=10  then label521.caption:='Disturbios en digestión / absorpción.' ;
-        if t1=11  then label521.caption:= label10.caption;
-    if t1=12  then label521.caption:= label11.caption;
- if t1=13  then label521.caption:= label12.caption;
- if t1=14  then label521.caption:= label13.caption;
-  if t1=15  then label521.caption:='Vitaminas B no especificadas.'  ;
-      if t1=16  then label521.caption:= label33.caption;
-       if t1=17  then label521.caption:= label34.caption;
-       if t1=18  then label521.caption:= label35.caption;
-       if t1=19  then label521.caption:= label36.caption;
-      if t1=20  then label521.caption:= label37.caption;
-       if t1=21  then label521.caption:= label38.caption;
-      if t1=22  then label521.caption:= label39.caption;
-       if t1=23  then label521.caption:= label40.caption;
-       if t1=24  then label521.caption:= label41.caption;
-        if t1=25  then label521.caption:= label42.caption;
-      if t1=26  then label521.caption:= label43.caption;
-        if t1=27  then label521.caption:= label44.caption;
-       if t1=28  then label521.caption:= label45.caption;
-        if t1=29  then label521.caption:= label46.caption;
-       if t1=30  then label521.caption:= label47.caption;
-      if t1=31  then label521.caption:= label48.caption;
-     if t1=32  then label521.caption:= label49.caption;
-     if t1=33  then label521.caption:= label50.caption;
-       if t1=34  then label521.caption:= label51.caption;
-      if t1=35  then label521.caption:= label52.caption;
-      if t1=36  then label521.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label521.caption:= label473.caption;
-      if t1=38  then label521.caption:= label474.caption;
- if t1=39  then label521.caption:= label475.caption;
- if t1=40  then label521.caption:= label476.caption;
- if t1=41  then label521.caption:= label477.caption;
- if t1=42  then label521.caption:= label478.caption;
- if t1=43  then label521.caption:= label479.caption;
- if t1=44  then label521.caption:= label480.caption;
- if t1=45  then label521.caption:= label481.caption;
- if t1=46  then label521.caption:= label482.caption;
- if t1=47  then label521.caption:= label483.caption;
- if t1=48  then label521.caption:= label484.caption;
-if t1=49 then label521.caption:='Acidos grasos en general.';
-if t1=50 then label521.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label521.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label521.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label521.caption:='Deficiencia de cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label521.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label521.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label521.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label521.caption:='Vitamina E.' ;
-if t1=58 then label521.caption:='Vitamina E1.'  ;
-if t1=59 then label521.caption:='Vitamina E2.' ;
-if t1=60 then label521.caption:='Vitamina E3.'  ;
-if t1=61 then label521.caption:='Vitamina K1.'  ;
-if t1=62 then label521.caption:='Vitamina K3.' ;
-if t1=63 then label521.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label521.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label521.caption:='CoQ6.' ;
-if t1=66 then label521.caption:='CoQ7.' ;
-if t1=67 then label521.caption:='CoQ8.' ;
-if t1=68 then label521.caption:='CoQ9.'  ;
-if t1=69 then label521.caption:='CoQ10.' ;
-if t1=70 then label521.caption:='Todos los CoQ.';
-if t1=71 then label521.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label521.caption:='Vitamina C.';
-if t1=73 then label521.caption:='Bioflavenoides.'  ;
-if t1=74 then label521.caption:='Deficiencia de rutina.'  ;
-if t1=75 then label521.caption:='Acido hespárico.'  ;
-if t1=76 then label521.caption:='Tirosina.'  ;
-if t1=77 then label521.caption:='Tirosinasea.' ;
-if t1=78 then label521.caption:='Vitamina C ase.' ;
-if t1=79 then label521.caption:='Acido ascórbico.'  ;
-if t1=80 then label521.caption:='Vitamina D.' ;
-if t1=81 then label521.caption:='Vitamina D1.'  ;
-if t1=82 then label521.caption:='Vitamina D2.'  ;
-if t1=83 then label521.caption:='Vitamina D3.'  ;
-if t1=84 then label521.caption:='Vitamina D4.'  ;
-if t1=85 then label521.caption:='Vitamina A.' ;
-if t1=86 then label521.caption:='Beta carotina.'  ;
-if t1=87 then label521.caption:='Aceite de pescado.'  ;
-if t1=88 then label521.caption:='Retinol.'  ;
-if t1=89 then label521.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label521.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label521.caption:='Enzimas en general.' ;
-if t1=92 then label521.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label521.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label521.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label521.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label521.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label521.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label521.caption:='Acidos grasos en general.' ;
-if t1=101 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label521.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label521.caption:='Acidos grasos en general.' ;
-if t1=109 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label521.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label521.caption:='Enzimas generales.' ;
-if t1=117 then label521.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label521.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label521.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label521.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label521.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label521.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-    end;
-    if label520.caption=label522.caption   then begin 
-t1:=random(125);
-    if t1=1  then label522.caption:= label1.caption;
-      if t1=2  then label522.caption:= label2.caption;
- if t1=3  then label522.caption:= label3.caption;
- if t1=4  then label522.caption:= label4.caption;
- if t1=5  then label522.caption:= label5.caption;
- if t1=6  then label522.caption:= label6.caption;
- if t1=7  then label522.caption:= label7.caption;
- if t1=8  then label522.caption:= label8.caption;
- if t1=9  then label522.caption:= label9.caption;
-         if t1=10  then label522.caption:='Disturbios en digestión / absorpción.' ;
-        if t1=11  then label522.caption:= label10.caption;
-    if t1=12  then label522.caption:= label11.caption;
- if t1=13  then label522.caption:= label12.caption;
- if t1=14  then label522.caption:= label13.caption;
-  if t1=15  then label522.caption:='Vitaminas B no especificadas.'  ;
-      if t1=16  then label522.caption:= label33.caption;
-       if t1=17  then label522.caption:= label34.caption;
-       if t1=18  then label522.caption:= label35.caption;
-       if t1=19  then label522.caption:= label36.caption;
-      if t1=20  then label522.caption:= label37.caption;
-       if t1=21  then label522.caption:= label38.caption;
-      if t1=22  then label522.caption:= label39.caption;
-       if t1=23  then label522.caption:= label40.caption;
-       if t1=24  then label522.caption:= label41.caption;
-        if t1=25  then label522.caption:= label42.caption;
-      if t1=26  then label522.caption:= label43.caption;
-        if t1=27  then label522.caption:= label44.caption;
-       if t1=28  then label522.caption:= label45.caption;
-        if t1=29  then label522.caption:= label46.caption;
-       if t1=30  then label522.caption:= label47.caption;
-      if t1=31  then label522.caption:= label48.caption;
-     if t1=32  then label522.caption:= label49.caption;
-     if t1=33  then label522.caption:= label50.caption;
-       if t1=34  then label522.caption:= label51.caption;
-      if t1=35  then label522.caption:= label52.caption;
-      if t1=36  then label522.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label522.caption:= label473.caption;
-      if t1=38  then label522.caption:= label474.caption;
- if t1=39  then label522.caption:= label475.caption;
- if t1=40  then label522.caption:= label476.caption;
- if t1=41  then label522.caption:= label477.caption;
- if t1=42  then label522.caption:= label478.caption;
- if t1=43  then label522.caption:= label479.caption;
- if t1=44  then label522.caption:= label480.caption;
- if t1=45  then label522.caption:= label481.caption;
- if t1=46  then label522.caption:= label482.caption;
- if t1=47  then label522.caption:= label483.caption;
- if t1=48  then label522.caption:= label484.caption;
-if t1=49 then label522.caption:='Acidos grasos en general.';
-if t1=50 then label522.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label522.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label522.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label522.caption:='Deficiencia de cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label522.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label522.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label522.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label522.caption:='Vitamina E.' ;
-if t1=58 then label522.caption:='Vitamina E1.'  ;
-if t1=59 then label522.caption:='Vitamina E2.' ;
-if t1=60 then label522.caption:='Vitamina E3.'  ;
-if t1=61 then label522.caption:='Vitamina K1.'  ;
-if t1=62 then label522.caption:='Vitamina K3.' ;
-if t1=63 then label522.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label522.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label522.caption:='CoQ6.' ;
-if t1=66 then label522.caption:='CoQ7.' ;
-if t1=67 then label522.caption:='CoQ8.' ;
-if t1=68 then label522.caption:='CoQ9.'  ;
-if t1=69 then label522.caption:='CoQ10.' ;
-if t1=70 then label522.caption:='Todos los CoQ.';
-if t1=71 then label522.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label522.caption:='Vitamina C.';
-if t1=73 then label522.caption:='Bioflavenoides.'  ;
-if t1=74 then label522.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label522.caption:='Acido hespárico.'  ;
-if t1=76 then label522.caption:='Tirosina.'  ;
-if t1=77 then label522.caption:='Tirosinasea.' ;
-if t1=78 then label522.caption:='Vitamina C ase.' ;
-if t1=79 then label522.caption:='Acido ascórbico.'  ;
-if t1=80 then label522.caption:='Vitamina D.' ;
-if t1=81 then label522.caption:='Vitamina D1.'  ;
-if t1=82 then label522.caption:='Vitamina D2.'  ;
-if t1=83 then label522.caption:='Vitamina D3.'  ;
-if t1=84 then label522.caption:='Vitamina D4.'  ;
-if t1=85 then label522.caption:='Vitamina A.' ;
-if t1=86 then label522.caption:='Beta carotina.'  ;
-if t1=87 then label522.caption:='Aceite de pescado.'  ;
-if t1=88 then label522.caption:='Retinol.'  ;
-if t1=89 then label522.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label522.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label522.caption:='Enzimas en general.' ;
-if t1=92 then label522.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label522.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label522.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label522.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label522.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label522.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label522.caption:='Acidos grasos en general.' ;
-if t1=101 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label522.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label522.caption:='Acidos grasos en general.' ;
-if t1=109 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label522.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label522.caption:='Enzimas generales.' ;
-if t1=117 then label522.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label522.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label522.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label522.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label522.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label522.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
- end;
-      Label531.Caption:= '| Terapia sugerida: ';
-       me16:=random(10);
-    if me16>1 then   Label531.Caption:=Label531.Caption+' | Sesiones regulares con el sistema.';
-         me16:=random(10);
-    if me16>3 then   Label531.Caption:=Label531.Caption+' | Homeopatía.';
-
-    me16:=random(10);
-    if me16>4 then   Label531.Caption:=Label531.Caption+' | Nutricional.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Reducción del estrés.';
-    me16:=random(10);
-    if me16>7 then   Label531.Caption:=Label531.Caption+' | Fitoterapia.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Ejercicio moderado.';
-       me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Asesoría emocional.';
+procedure Tnutr.EnlaceEtiquetas2();
+begin
+BCausas.Click;
+BOrganosGlandulas.Click;
+BENegativas.Click;
+BAVM.Click;
+BMeridianos.Click;
+BProcesos.Click;
+Bterapias.Click;
+BEPositivas.Click;
+BENegativas.Click;
+BToxinas.Click;
+BSistemas.Click;
+BAfirmaciones.Click;
 end;
 
 procedure Tnutr.Button26Click(Sender: TObject);
 begin
 me22:=0;
- button44.caption:='Terapia de próstata';
-  button44.enabled:=true;
 panel2.visible:=true;
-//Button110.visible := false;
  button27.caption:='Equilibrar hormonas';
-  if MessageDlg( '¿Desea usar las preguntas? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me22:=10;;    end;
- if me22= 10 then begin
-
-   if MessageDlg( '¿Es el deseo sexual poco frecuente? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me11:=10;;
-       end;
-          if MessageDlg( '¿Tiene síntomas de problemas de próstata? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me17:=10;;
-       end;
-          if MessageDlg( '¿Siente que su energía es insuficiente? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me18:=10;;
-       end;
-                    if MessageDlg( '¿Se encuentra irritable en exceso? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me12:=10;;
-       end;
-           if MessageDlg( '¿Tiene algún lazo emocional fuerte con alguien en especial?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me15:=10;;
-       end;
-     
-              if MessageDlg( '¿Es usted realmente felíz? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me13:=10;;
-       end;
-           if MessageDlg( '¿Se siente libre? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      me14:=10;;
-       end;
-      end;
-
    {MALE}dbgrid2.visible:=true;
  DM.Conscida.Filter:='NO >= 2470 AND NO <= 2562';
  DM.Conscida.Filtered:=True;
 panel2.visible:=true;
-//Button110.visible := false;
 Label90.Caption:=IntToStr (n2517+(6*pn7)+(6*pn3)+(6*pn11)+(8*pn4) );
-Label83.Caption:='Adrenalina';
+Label83.Caption:=' Adrenalina.';
 Label91.Caption:=IntToStr (n2528+(6*pn3)+(6*pn11)+(4*pn7) );
-Label84.Caption:='Hormona del crecimiento';
+Label84.Caption:=' Hormona del crecimiento.';
 Label92.Caption:=IntToStr (n2561 +(4*me12)+(3*me10)+(3*pn7)+(3*pn8)+ (3*pn3));
-Label85.Caption:='Testosterona';
+Label85.Caption:=' Testosterona.';
 Label93.Caption:=IntToStr (n2551+(4*me7)+(3*me5)+(3*pn7)+(3*me6) );
-Label86.Caption:='Hormona de la estimulación del folículo';
+Label86.Caption:=' Hormona de la estimulación del folículo.';
 Label94.Caption:=IntToStr (n2531+(4*me4)+(3*me12)+(3*pn19)+(3*me6));
-Label87.Caption:='Hormona de leuteinizar';
+Label87.Caption:=' Hormona de leuteinizar.';
 Label95.Caption:=IntToStr (n749+(4*me13)+(5*me12)+(3*pn7)+(3*me7)+(4*pn19)+(3*me12)+(3*pn6)+(5*pn2) );
-Label88.Caption:='Glándulas pineal y pituitaria, hipotálamo';
+Label88.Caption:=' Pineal y pituitaria, hipotálamo.';
 Label96.Caption:=IntToStr (n2524+(5*me15)+(3*me12)+(3*pn3)+(3*pn7)+(3*me11)+(pn17*5));
-Label89.Caption:='Oxitocina';
+Label89.Caption:=' Oxitocina.';
 Label525.Caption:=IntToStr (n2475+(4*me14)+(5*me11)+(3*pn6)+(3*pn7) );
-Label523.Caption:='Dopamina';
+Label523.Caption:=' Dopamina.';
 Label526.Caption:=IntToStr (n2476 +(6*me11)+(6*me13)+(3*pn7)+(3*pn8));
-Label524.Caption:='Serotonina';
+Label524.Caption:=' Serotonina.';
+EnlaceEtiquetas2();
+Ancho();
+end;
 
-
-  Label528.Caption:='Factores de afección: ';
-if pn2>2 then   Label528.Caption:=Label528.Caption+' | Iatrogénicos.';
-if pn3>10 then   Label528.Caption:=Label528.Caption+' | Nicotina.';
-if pn6>1 then   Label528.Caption:=Label528.Caption+' | Impulsos adictivos.';
-if pn7>8 then   Label528.Caption:=Label528.Caption+' | Estrés.';
-if pn8>3 then   Label528.Caption:=Label528.Caption+' | Azúcar.';
-if pn11>2 then   Label528.Caption:=Label528.Caption+' | Cafeína.';
-if pn16>4 then   Label528.Caption:=Label528.Caption+' | Negatividad.';
-if pn19>3 then   Label528.Caption:=Label528.Caption+' | Factores mentales.';
-if pn15>10 then   Label528.Caption:=Label528.Caption+' | Exceso de grasa.';
-if Label528.Caption='Factores de afección: '  then Label528.Caption:='Factores de afección: estrés emocional mal administrado.';
-    Label527.Caption:='| Imbalances hormonales: ';
-  if me1>5 then   Label527.Caption:=Label527.Caption+' | Adrenalina';
-if (me2>5)or(me5>5)or(me10>5)or(me11>5)or(me7>5)or(me6>5) then   Label527.Caption:=Label527.Caption+' | Estrogenos';
-if (me11>5)or(me12>5) then   Label527.Caption:=Label527.Caption+' | Testosterona';
-if me4>5 then   Label527.Caption:=Label527.Caption+' | Progesterona';
-if me15>5 then   Label527.Caption:=Label527.Caption+' | Oxitocina';
-if me13>5 then   Label527.Caption:=Label527.Caption+' | Serotonina';
-if me14>5 then   Label527.Caption:=Label527.Caption+' | Dopamina';
-if me9>5 then   Label527.Caption:=Label527.Caption+' | Exceso de grasa';
-me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T3';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T4';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Tiroides';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pineal';
-    me16:=random(10);
-    if me16>4 then   Label527.Caption:=Label527.Caption+' | Hipotálamo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pituitaria';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Timo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Inflamación';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Infección';
-      Label529.Caption:= '| Otros conflictos con: ';
-       me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Toxicidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Sistema inmunitario';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Vacunas';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Iatrogénicos';
-       me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label529.Caption+' | Factores emocionales';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Necesidad de perdonar';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Culpabilidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Ira';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Desilusión de sí mismo/a';
-  DM.Conscida.Open;
-              oeg4:=2470+random(87);
-
-
-        DM.Conscida.enablecontrols;
-   DM.conscida.FindKey([oeg4]);
-   Label520.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg2:=2470+random(87);  DM.Conscida.enablecontrols;
-
-   DM.conscida.FindKey([oeg2]);
-
-   Label521.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg3 :=2646+random(82);
-        Label531.Caption:= '| Terapia sugerida: ';
-       me16:=random(10);
-    if me16>3 then   Label531.Caption:=Label531.Caption+' | Sesiones regulares con el sistema.';
-        me16:=random(10);
-    if me16>3 then   Label531.Caption:=Label531.Caption+' | Homeopatía.';
-    me16:=random(10);
-    if me16>4 then   Label531.Caption:=Label531.Caption+' | Nutricional.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Reducción del estrés.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Fitoterapia.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Ejercicio moderado.';
-       me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Asesoría emocional.';
-  
-         DM.Conscida.enablecontrols;
-
-  DM.conscida.FindKey([oeg3]);
-
-    Label522.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-      
-
-if label520.caption=label521.caption   then begin
-t1:=random(125);
-if t1=1 then label521.caption:= label1.caption;
-if t1=2 then label521.caption:= label2.caption;
-if t1=3 then label521.caption:= label3.caption;
-if t1=4 then label521.caption:= label4.caption;
-if t1=5 then label521.caption:= label5.caption;
-if t1=6 then label521.caption:= label6.caption;
-if t1=7 then label521.caption:= label7.caption;
-if t1=8 then label521.caption:= label8.caption;
-if t1=9 then label521.caption:= label9.caption;
-if t1=10 then label521.caption:='Disturbios en digestión / absorpción.' ;
-if t1=11 then label521.caption:= label10.caption;
-if t1=12 then label521.caption:= label11.caption;
-if t1=13 then label521.caption:= label12.caption;
-if t1=14 then label521.caption:= label13.caption;
-if t1=15 then label521.caption:='Vitaminas B no especificadas.'  ;
-if t1=16 then label521.caption:= label33.caption;
-if t1=17 then label521.caption:= label34.caption;
-       if t1=18  then label521.caption:= label35.caption;
-       if t1=19  then label521.caption:= label36.caption;
-      if t1=20  then label521.caption:= label37.caption;
-       if t1=21  then label521.caption:= label38.caption;
-      if t1=22  then label521.caption:= label39.caption;
-       if t1=23  then label521.caption:= label40.caption;
-       if t1=24  then label521.caption:= label41.caption;
-        if t1=25  then label521.caption:= label42.caption;
-      if t1=26  then label521.caption:= label43.caption;
-        if t1=27  then label521.caption:= label44.caption;
-       if t1=28  then label521.caption:= label45.caption;
-        if t1=29  then label521.caption:= label46.caption;
-       if t1=30  then label521.caption:= label47.caption;
-      if t1=31  then label521.caption:= label48.caption;
-     if t1=32  then label521.caption:= label49.caption;
-     if t1=33  then label521.caption:= label50.caption;
-       if t1=34  then label521.caption:= label51.caption;
-      if t1=35  then label521.caption:= label52.caption;
-      if t1=36  then label521.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label521.caption:= label473.caption;
-      if t1=38  then label521.caption:= label474.caption;
- if t1=39  then label521.caption:= label475.caption;
- if t1=40  then label521.caption:= label476.caption;
- if t1=41  then label521.caption:= label477.caption;
- if t1=42  then label521.caption:= label478.caption;
- if t1=43  then label521.caption:= label479.caption;
- if t1=44  then label521.caption:= label480.caption;
- if t1=45  then label521.caption:= label481.caption;
- if t1=46  then label521.caption:= label482.caption;
- if t1=47  then label521.caption:= label483.caption;
- if t1=48  then label521.caption:= label484.caption;
-if t1=49 then label521.caption:='Acidos grasos en general.';
-if t1=50 then label521.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label521.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label521.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label521.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label521.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label521.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label521.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label521.caption:='Vitamina E.' ;
-if t1=58 then label521.caption:='Vitamina E1.'  ;
-if t1=59 then label521.caption:='Vitamina E2.' ;
-if t1=60 then label521.caption:='Vitamina E3.'  ;
-if t1=61 then label521.caption:='Vitamina K1.'  ;
-if t1=62 then label521.caption:='Vitamina K3.' ;
-if t1=63 then label521.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label521.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label521.caption:='CoQ6.' ;
-if t1=66 then label521.caption:='CoQ7.' ;
-if t1=67 then label521.caption:='CoQ8.' ;
-if t1=68 then label521.caption:='CoQ9.'  ;
-if t1=69 then label521.caption:='CoQ10.' ;
-if t1=70 then label521.caption:='Todos los CoQ.';
-if t1=71 then label521.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label521.caption:='Vitamina C.';
-if t1=73 then label521.caption:='Bioflavenoides.'  ;
-if t1=74 then label521.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label521.caption:='Acido hespárico.'  ;
-if t1=76 then label521.caption:='Tirosina.'  ;
-if t1=77 then label521.caption:='Tirosinasea.' ;
-if t1=78 then label521.caption:='Vitamina C ase.' ;
-if t1=79 then label521.caption:='Acido ascórbico.'  ;
-if t1=80 then label521.caption:='Vitamina D.' ;
-if t1=81 then label521.caption:='Vitamina D1.'  ;
-if t1=82 then label521.caption:='Vitamina D2.'  ;
-if t1=83 then label521.caption:='Vitamina D3.'  ;
-if t1=84 then label521.caption:='Vitamina D4.'  ;
-if t1=85 then label521.caption:='Vitamina A.' ;
-if t1=86 then label521.caption:='Beta carotina.'  ;
-if t1=87 then label521.caption:='Aceite de pescado.'  ;
-if t1=88 then label521.caption:='Retinol.'  ;
-if t1=89 then label521.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label521.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label521.caption:='Enzimas en general.' ;
-if t1=92 then label521.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label521.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label521.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label521.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label521.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label521.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label521.caption:='Acidos grasos en general.' ;
-if t1=101 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label521.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label521.caption:='Acidos grasos en general.' ;
-if t1=109 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label521.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label521.caption:='Enzimas generales.' ;
-if t1=117 then label521.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label521.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label521.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label521.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label521.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label521.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-    end;
-    if label520.caption=label522.caption   then begin
-t1:=random(125);
-    if t1=1  then label522.caption:= label1.caption;
-      if t1=2  then label522.caption:= label2.caption;
- if t1=3  then label522.caption:= label3.caption;
- if t1=4  then label522.caption:= label4.caption;
- if t1=5  then label522.caption:= label5.caption;
- if t1=6  then label522.caption:= label6.caption;
- if t1=7  then label522.caption:= label7.caption;
- if t1=8  then label522.caption:= label8.caption;
- if t1=9  then label522.caption:= label9.caption;
-         if t1=10  then label522.caption:='Disturbios en digestión / absorpción.' ;
-        if t1=11  then label522.caption:= label10.caption;
-    if t1=12  then label522.caption:= label11.caption;
- if t1=13  then label522.caption:= label12.caption;
- if t1=14  then label522.caption:= label13.caption;
-  if t1=15  then label522.caption:='Vitaminas B no especificadas.'  ;
-      if t1=16  then label522.caption:= label33.caption;
-       if t1=17  then label522.caption:= label34.caption;
-       if t1=18  then label522.caption:= label35.caption;
-       if t1=19  then label522.caption:= label36.caption;
-      if t1=20  then label522.caption:= label37.caption;
-       if t1=21  then label522.caption:= label38.caption;
-      if t1=22  then label522.caption:= label39.caption;
-       if t1=23  then label522.caption:= label40.caption;
-       if t1=24  then label522.caption:= label41.caption;
-        if t1=25  then label522.caption:= label42.caption;
-      if t1=26  then label522.caption:= label43.caption;
-        if t1=27  then label522.caption:= label44.caption;
-       if t1=28  then label522.caption:= label45.caption;
-        if t1=29  then label522.caption:= label46.caption;
-       if t1=30  then label522.caption:= label47.caption;
-      if t1=31  then label522.caption:= label48.caption;
-     if t1=32  then label522.caption:= label49.caption;
-     if t1=33  then label522.caption:= label50.caption;
-       if t1=34  then label522.caption:= label51.caption;
-      if t1=35  then label522.caption:= label52.caption;
-      if t1=36  then label522.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label522.caption:= label473.caption;
-      if t1=38  then label522.caption:= label474.caption;
- if t1=39  then label522.caption:= label475.caption;
- if t1=40  then label522.caption:= label476.caption;
- if t1=41  then label522.caption:= label477.caption;
- if t1=42  then label522.caption:= label478.caption;
- if t1=43  then label522.caption:= label479.caption;
- if t1=44  then label522.caption:= label480.caption;
- if t1=45  then label522.caption:= label481.caption;
- if t1=46  then label522.caption:= label482.caption;
- if t1=47  then label522.caption:= label483.caption;
- if t1=48  then label522.caption:= label484.caption;
-if t1=49 then label522.caption:='Acidos grasos en general.';
-if t1=50 then label522.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label522.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label522.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label522.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label522.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label522.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label522.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label522.caption:='Vitamina E.' ;
-if t1=58 then label522.caption:='Vitamina E1.'  ;
-if t1=59 then label522.caption:='Vitamina E2.' ;
-if t1=60 then label522.caption:='Vitamina E3.'  ;
-if t1=61 then label522.caption:='Vitamina K1.'  ;
-if t1=62 then label522.caption:='Vitamina K3.' ;
-if t1=63 then label522.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label522.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label522.caption:='CoQ6.' ;
-if t1=66 then label522.caption:='CoQ7.' ;
-if t1=67 then label522.caption:='CoQ8.' ;
-if t1=68 then label522.caption:='CoQ9.'  ;
-if t1=69 then label522.caption:='CoQ10.' ;
-if t1=70 then label522.caption:='Todos los CoQ.';
-if t1=71 then label522.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label522.caption:='Vitamina C.';
-if t1=73 then label522.caption:='Bioflavenoides.'  ;
-if t1=74 then label522.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label522.caption:='Acido hespárico.'  ;
-if t1=76 then label522.caption:='Tirosina.'  ;
-if t1=77 then label522.caption:='Tirosinasea.' ;
-if t1=78 then label522.caption:='Vitamina C ase.' ;
-if t1=79 then label522.caption:='Acido ascórbico.'  ;
-if t1=80 then label522.caption:='Vitamina D.' ;
-if t1=81 then label522.caption:='Vitamina D1.'  ;
-if t1=82 then label522.caption:='Vitamina D2.'  ;
-if t1=83 then label522.caption:='Vitamina D3.'  ;
-if t1=84 then label522.caption:='Vitamina D4.'  ;
-if t1=85 then label522.caption:='Vitamina A.' ;
-if t1=86 then label522.caption:='Beta carotina.'  ;
-if t1=87 then label522.caption:='Aceite de pescado.'  ;
-if t1=88 then label522.caption:='Retinol.'  ;
-if t1=89 then label522.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label522.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label522.caption:='Enzimas en general.' ;
-if t1=92 then label522.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label522.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label522.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label522.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label522.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label522.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label522.caption:='Acidos grasos en general.' ;
-if t1=101 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label522.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label522.caption:='Acidos grasos en general.' ;
-if t1=109 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label522.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label522.caption:='Enzimas generales.' ;
-if t1=117 then label522.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label522.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label522.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label522.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label522.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label522.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-    end;
+procedure Tnutr.EnlaceLabel522();
+begin
+BAVM.Click;
 end;
 
 procedure Tnutr.Button27Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-If Button27.Caption='Equilibrar nutri-energéticamente' Then PDesarrollo.Caption:='Equilibrando nutri-energéticamente...';
-If Button27.Caption='Equilibrar hormonas' Then PDesarrollo.Caption:='Equilibrando hormonas...';
-If Button27.Caption='Equilibrar suprarrenales' Then PDesarrollo.Caption:='Equilibrando suprarrenales...';
 BNutricion.Click;
 If reaction2>84 Then Button27.Enabled:=False;
-
-
 end;
 
 procedure Tnutr.Button28Click(Sender: TObject);
 begin
-Label534.Visible:=True;
-Label536.Visible:=True;
-Label539.Visible:=True;
-Label540.Visible:=True;
-Label538.Visible:=True;
-Label535.Visible:=True;
-PDesarrollo.Caption:='Testando '+Edit8.Text+' a los mejores suplementos nutricionales...';
-PDesarrollo.Refresh;
-PDesarrollo.Visible:=True;
 Button28.Enabled:=False;
-t1:=random(125);
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+Label796.Caption := 'Deficiencia | ';
+Label537.Caption := 'Resonancia | ';
+LRectificado.Caption := 'Rectificado | ';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(77777,tooth+random(7),88888,astr+random(7),numer+random(7),7+random(3),
+ChangingPulses(77777,tooth+random(7),88888,astr+random(7),numer+random(7),2,
  '11111111','11111111');
-
-if t1=1  then label535.caption:= label1.caption;
-if t1=2  then label535.caption:= label2.caption;
-if t1=3  then label535.caption:= label3.caption;
-if t1=4  then label535.caption:= label4.caption;
-if t1=5  then label535.caption:= label5.caption;
-if t1=6  then label535.caption:= label6.caption;
-if t1=7  then label535.caption:= label7.caption;
-if t1=8  then label535.caption:= label8.caption;
-if t1=9  then label535.caption:= label9.caption;
-if t1=10 then label535.caption:='Disturbios en digestión / absorpción.' ;
-if t1=11 then label535.caption:= label10.caption;
-if t1=12 then label535.caption:= label11.caption;
-if t1=13 then label535.caption:= label12.caption;
-if t1=14 then label535.caption:= label13.caption;
-if t1=15 then label535.caption:='Vitaminas B no especificadas.'  ;
-if t1=16 then label535.caption:= label33.caption;
-if t1=17 then label535.caption:= label34.caption;
-if t1=18 then label535.caption:= label35.caption;
-if t1=19 then label535.caption:= label36.caption;
-if t1=20 then label535.caption:= label37.caption;
-if t1=21 then label535.caption:= label38.caption;
-if t1=22 then label535.caption:= label39.caption;
-if t1=23 then label535.caption:= label40.caption;
-if t1=24 then label535.caption:= label41.caption;
-if t1=25 then label535.caption:= label42.caption;
-if t1=26 then label535.caption:= label43.caption;
-if t1=27 then label535.caption:= label44.caption;
-if t1=28 then label535.caption:= label45.caption;
-if t1=29 then label535.caption:= label46.caption;
-if t1=30 then label535.caption:= label47.caption;
-if t1=31 then label535.caption:= label48.caption;
-if t1=32 then label535.caption:= label49.caption;
-if t1=33 then label535.caption:= label50.caption;
-if t1=34 then label535.caption:= label51.caption;
-if t1=35 then label535.caption:= label52.caption;
-if t1=36 then label535.caption:='Sales en tejidos no especificados.' ;
-if t1=37 then label535.caption:= label473.caption;
-if t1=38 then label535.caption:= label474.caption;
-if t1=39 then label535.caption:= label475.caption;
-if t1=40 then label535.caption:= label476.caption;
-if t1=41 then label535.caption:= label477.caption;
-if t1=42 then label535.caption:= label478.caption;
-if t1=43 then label535.caption:= label479.caption;
-if t1=44 then label535.caption:= label480.caption;
-if t1=45 then label535.caption:= label481.caption;
-if t1=46 then label535.caption:= label482.caption;
-if t1=47 then label535.caption:= label483.caption;
-if t1=48 then label535.caption:= label484.caption;
-if t1=49 then label535.caption:='Acidos grasos en general.';
-if t1=50 then label535.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label535.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label535.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label535.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label535.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label535.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label535.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label535.caption:='Vitamina E.' ;
-if t1=58 then label535.caption:='Vitamina E1.'  ;
-if t1=59 then label535.caption:='Vitamina E2.' ;
-if t1=60 then label535.caption:='Vitamina E3.'  ;
-if t1=61 then label535.caption:='Vitamina K1.'  ;
-if t1=62 then label535.caption:='Vitamina K3.' ;
-if t1=63 then label535.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label535.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label535.caption:='CoQ6.' ;
-if t1=66 then label535.caption:='CoQ7.' ;
-if t1=67 then label535.caption:='CoQ8.' ;
-if t1=68 then label535.caption:='CoQ9.'  ;
-if t1=69 then label535.caption:='CoQ10.' ;
-if t1=70 then label535.caption:='Todos los CoQ.';
-if t1=71 then label535.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label535.caption:='Vitamina C.';
-if t1=73 then label535.caption:='Bioflavenoides.'  ;
-if t1=74 then label535.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label535.caption:='Acido hespárico.'  ;
-if t1=76 then label535.caption:='Tirosina.'  ;
-if t1=77 then label535.caption:='Tirosinasea.' ;
-if t1=78 then label535.caption:='Vitamina C ase.' ;
-if t1=79 then label535.caption:='Acido ascórbico.'  ;
-if t1=80 then label535.caption:='Vitamina D.' ;
-if t1=81 then label535.caption:='Vitamina D1.'  ;
-if t1=82 then label535.caption:='Vitamina D2.'  ;
-if t1=83 then label535.caption:='Vitamina D3.'  ;
-if t1=84 then label535.caption:='Vitamina D4.'  ;
-if t1=85 then label535.caption:='Vitamina A.' ;
-if t1=86 then label535.caption:='Beta carotina.'  ;
-if t1=87 then label535.caption:='Aceite de pescado.'  ;
-if t1=88 then label535.caption:='Retinol.'  ;
-if t1=89 then label535.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label535.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label535.caption:='Enzimas en general.' ;
-if t1=92 then label535.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label535.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label535.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label535.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label535.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label535.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label535.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label535.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label535.caption:='Acidos grasos en general.' ;
-if t1=101 then label535.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label535.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label535.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label535.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label535.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label535.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label535.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label535.caption:='Acidos grasos en general.' ;
-if t1=109 then label535.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label535.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label535.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label535.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label535.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label535.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label535.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label535.caption:='Enzimas generales.' ;
-if t1=117 then label535.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label535.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label535.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label535.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label535.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label535.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label535.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label535.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-t1:=random(125);
-if t1=1  then label534.caption:= label1.caption;
-if t1=2  then label534.caption:= label2.caption;
-if t1=3  then label534.caption:= label3.caption;
-if t1=4  then label534.caption:= label4.caption;
-if t1=5  then label534.caption:= label5.caption;
-if t1=6  then label534.caption:= label6.caption;
-if t1=7  then label534.caption:= label7.caption;
-if t1=8  then label534.caption:= label8.caption;
-if t1=9  then label534.caption:= label9.caption;
-if t1=10 then label534.caption:='Disturbios en digestión / absorpción.' ;
-if t1=11 then label534.caption:= label10.caption;
-if t1=12 then label534.caption:= label11.caption;
-if t1=13 then label534.caption:= label12.caption;
-if t1=14 then label534.caption:= label13.caption;
-if t1=15 then label534.caption:='Vitaminas B no especificadas.'  ;
-if t1=16 then label534.caption:= label33.caption;
-if t1=17 then label534.caption:= label34.caption;
-if t1=18 then label534.caption:= label35.caption;
-if t1=19 then label534.caption:= label36.caption;
-if t1=20 then label534.caption:= label37.caption;
-if t1=21 then label534.caption:= label38.caption;
-if t1=22 then label534.caption:= label39.caption;
-if t1=23 then label534.caption:= label40.caption;
-if t1=24 then label534.caption:= label41.caption;
-if t1=25 then label534.caption:= label42.caption;
-if t1=26 then label534.caption:= label43.caption;
-if t1=27 then label534.caption:= label44.caption;
-if t1=28 then label534.caption:= label45.caption;
-if t1=29 then label534.caption:= label46.caption;
-if t1=30 then label534.caption:= label47.caption;
-if t1=31 then label534.caption:= label48.caption;
-if t1=32 then label534.caption:= label49.caption;
-if t1=33 then label534.caption:= label50.caption;
-if t1=34 then label534.caption:= label51.caption;
-if t1=35 then label534.caption:= label52.caption;
-if t1=36 then label534.caption:='Sales en tejidos no especificados.' ;
-if t1=37 then label534.caption:= label473.caption;
-if t1=38 then label534.caption:= label474.caption;
-if t1=39 then label534.caption:= label475.caption;
-if t1=40 then label534.caption:= label476.caption;
-if t1=41 then label534.caption:= label477.caption;
-if t1=42 then label534.caption:= label478.caption;
-if t1=43 then label534.caption:= label479.caption;
-if t1=44 then label534.caption:= label480.caption;
-if t1=45 then label534.caption:= label481.caption;
-if t1=46 then label534.caption:= label482.caption;
-if t1=47 then label534.caption:= label483.caption;
-if t1=48 then label534.caption:= label484.caption;
-if t1=49 then label534.caption:='Acidos grasos en general.';
-if t1=50 then label534.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label534.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label534.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label534.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label534.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label534.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label534.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label534.caption:='Vitamina E.' ;
-if t1=58 then label534.caption:='Vitamina E1.'  ;
-if t1=59 then label534.caption:='Vitamina E2.' ;
-if t1=60 then label534.caption:='Vitamina E3.'  ;
-if t1=61 then label534.caption:='Vitamina K1.'  ;
-if t1=62 then label534.caption:='Vitamina K3.' ;
-if t1=63 then label534.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label534.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label534.caption:='CoQ6.' ;
-if t1=66 then label534.caption:='CoQ7.' ;
-if t1=67 then label534.caption:='CoQ8.' ;
-if t1=68 then label534.caption:='CoQ9.'  ;
-if t1=69 then label534.caption:='CoQ10.' ;
-if t1=70 then label534.caption:='Todos los CoQ.';
-if t1=71 then label534.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label534.caption:='Vitamina C.';
-if t1=73 then label534.caption:='Bioflavenoides.'  ;
-if t1=74 then label534.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label534.caption:='Acido hespárico.'  ;
-if t1=76 then label534.caption:='Tirosina.'  ;
-if t1=77 then label534.caption:='Tirosinasea.' ;
-if t1=78 then label534.caption:='Vitamina C ase.' ;
-if t1=79 then label534.caption:='Acido ascórbico.'  ;
-if t1=80 then label534.caption:='Vitamina D.' ;
-if t1=81 then label534.caption:='Vitamina D1.'  ;
-if t1=82 then label534.caption:='Vitamina D2.'  ;
-if t1=83 then label534.caption:='Vitamina D3.'  ;
-if t1=84 then label534.caption:='Vitamina D4.'  ;
-if t1=85 then label534.caption:='Vitamina A.' ;
-if t1=86 then label534.caption:='Beta carotina.'  ;
-if t1=87 then label534.caption:='Aceite de pescado.'  ;
-if t1=88 then label534.caption:='Retinol.'  ;
-if t1=89 then label534.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label534.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label534.caption:='Enzimas en general.' ;
-if t1=92 then label534.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label534.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label534.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label534.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label534.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label534.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label534.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label534.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label534.caption:='Acidos grasos en general.' ;
-if t1=101 then label534.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label534.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label534.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label534.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label534.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label534.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label534.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label534.caption:='Acidos grasos en general.' ;
-if t1=109 then label534.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label534.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label534.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label534.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label534.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label534.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label534.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label534.caption:='Enzimas generales.' ;
-if t1=117 then label534.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label534.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label534.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label534.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label534.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label534.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label534.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label534.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-t1:=random(125);
-if t1=1  then label536.caption:= label1.caption;
-if t1=2  then label536.caption:= label2.caption;
-if t1=3  then label536.caption:= label3.caption;
-if t1=4  then label536.caption:= label4.caption;
-if t1=5  then label536.caption:= label5.caption;
-if t1=6  then label536.caption:= label6.caption;
-if t1=7  then label536.caption:= label7.caption;
-if t1=8  then label536.caption:= label8.caption;
-if t1=9  then label536.caption:= label9.caption;
-if t1=10 then label536.caption:='Disturbios en digestión / absorpción.' ;
-if t1=11 then label536.caption:= label10.caption;
-if t1=12 then label536.caption:= label11.caption;
-if t1=13 then label536.caption:= label12.caption;
-if t1=14 then label536.caption:= label13.caption;
-if t1=15 then label536.caption:='Vitaminas B no especificadas.'  ;
-if t1=16 then label536.caption:= label33.caption;
-if t1=17 then label536.caption:= label34.caption;
-if t1=18 then label536.caption:= label35.caption;
-if t1=19 then label536.caption:= label36.caption;
-if t1=20 then label536.caption:= label37.caption;
-if t1=21 then label536.caption:= label38.caption;
-if t1=22 then label536.caption:= label39.caption;
-if t1=23 then label536.caption:= label40.caption;
-if t1=24 then label536.caption:= label41.caption;
-if t1=25 then label536.caption:= label42.caption;
-if t1=26 then label536.caption:= label43.caption;
-if t1=27 then label536.caption:= label44.caption;
-if t1=28 then label536.caption:= label45.caption;
-if t1=29 then label536.caption:= label46.caption;
-if t1=30 then label536.caption:= label47.caption;
-if t1=31 then label536.caption:= label48.caption;
-if t1=32 then label536.caption:= label49.caption;
-if t1=33 then label536.caption:= label50.caption;
-if t1=34 then label536.caption:= label51.caption;
-if t1=35 then label536.caption:= label52.caption;
-if t1=36 then label536.caption:='Sales en tejidos no especificados.' ;
-if t1=37 then label536.caption:= label473.caption;
-if t1=38 then label536.caption:= label474.caption;
-if t1=39 then label536.caption:= label475.caption;
-if t1=40 then label536.caption:= label476.caption;
-if t1=41 then label536.caption:= label477.caption;
-if t1=42 then label536.caption:= label478.caption;
-if t1=43 then label536.caption:= label479.caption;
-if t1=44 then label536.caption:= label480.caption;
-if t1=45 then label536.caption:= label481.caption;
-if t1=46 then label536.caption:= label482.caption;
-if t1=47 then label536.caption:= label483.caption;
-if t1=48 then label536.caption:= label484.caption;
-if t1=49 then label536.caption:='Acidos grasos en general.';
-if t1=50 then label536.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label536.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label536.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label536.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label536.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label536.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label536.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label536.caption:='Vitamina E.' ;
-if t1=58 then label536.caption:='Vitamina E1.'  ;
-if t1=59 then label536.caption:='Vitamina E2.' ;
-if t1=60 then label536.caption:='Vitamina E3.'  ;
-if t1=61 then label536.caption:='Vitamina K1.'  ;
-if t1=62 then label536.caption:='Vitamina K3.' ;
-if t1=63 then label536.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label536.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label536.caption:='CoQ6.' ;
-if t1=66 then label536.caption:='CoQ7.' ;
-if t1=67 then label536.caption:='CoQ8.' ;
-if t1=68 then label536.caption:='CoQ9.'  ;
-if t1=69 then label536.caption:='CoQ10.' ;
-if t1=70 then label536.caption:='Todos los CoQ.';
-if t1=71 then label536.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label536.caption:='Vitamina C.';
-if t1=73 then label536.caption:='Bioflavenoides.'  ;
-if t1=74 then label536.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label536.caption:='Acido hespárico.'  ;
-if t1=76 then label536.caption:='Tirosina.'  ;
-if t1=77 then label536.caption:='Tirosinasea.' ;
-if t1=78 then label536.caption:='Vitamina C ase.' ;
-if t1=79 then label536.caption:='Acido ascórbico.'  ;
-if t1=80 then label536.caption:='Vitamina D.' ;
-if t1=81 then label536.caption:='Vitamina D1.'  ;
-if t1=82 then label536.caption:='Vitamina D2.'  ;
-if t1=83 then label536.caption:='Vitamina D3.'  ;
-if t1=84 then label536.caption:='Vitamina D4.'  ;
-if t1=85 then label536.caption:='Vitamina A.' ;
-if t1=86 then label536.caption:='Beta carotina.'  ;
-if t1=87 then label536.caption:='Aceite de pescado.'  ;
-if t1=88 then label536.caption:='Retinol.'  ;
-if t1=89 then label536.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label536.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label536.caption:='Enzimas en general.' ;
-if t1=92 then label536.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label536.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label536.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label536.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label536.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label536.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label536.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label536.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label536.caption:='Acidos grasos en general.' ;
-if t1=101 then label536.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label536.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label536.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label536.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label536.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label536.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label536.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label536.caption:='Acidos grasos en general.' ;
-if t1=109 then label536.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label536.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label536.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label536.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label536.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label536.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label536.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label536.caption:='Enzimas generales.' ;
-if t1=117 then label536.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label536.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label536.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label536.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label536.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label536.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label536.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label536.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-    t1:=random(27);
-if t1=1 then label539.Caption:=' Triptofan | Regulación del humor, energía, sanación, sueño.';
-if t1=2 then label539.Caption:='Fenilalanina | Control del dolor, nervios.';
-if t1=3 then label539.Caption:='Alanina | Riñones, nervios.';
-if t1=4 then label539.Caption:='Asparatina | Destrucción de tejidos nerviosos.';
-if t1=5 then label539.Caption:='Cisteina | Utilización de los riñones.';
-if t1=6 then label539.Caption:='Leucina | Control del humor, emociones.';
-if t1=7 then label539.Caption:='Isoleucina | Control emocional, nervios.';
-if t1=8 then label539.Caption:='Serina | Conversión de los carbohidratos en energía.';
-if t1=9 then label539.Caption:='Tryptophan | Serotonina, relajación.';
-if t1=10 then label539.Caption:='Histidina | Anti inflamatorio, anti alérgico.';
-if t1=11 then label539.Caption:='Metionina | Hígado, oxigenación.';
-if t1=12 then label539.Caption:='Lisina | Anti herpes, lesiones, nervios.';
-if t1=13 then label539.Caption:='Treonina | Producción hormonal, energía.';
-if t1=14 then label539.Caption:='Tirosina | Tiroides, pituitaria y función suprarrenal.';
-if t1=15 then label539.Caption:='Valina | Regulación de las células de la sangre.';
-if t1=16 then label539.Caption:='Glutamina | Suple energía al cerebro.';
-if t1=17 then label539.Caption:='Prolina | Desórdenes del sulfúro.';
-if t1=18 then label539.Caption:='Arginina | Nervios, piel.';
-if t1=19 then label539.Caption:='Acido glutamínico | Suple energía al cerebro.';
-if t1=20 then label539.Caption:='Acido aspártico | Destrucción de tejidos nerviosos.';
-if t1=21 then label539.Caption:='Adenosina | Circulación, energía.';
-if t1=22 then label539.Caption:='Uracil | Funciones del ARN.';
-if t1=23 then label539.Caption:='Adenina | Funciones del ADN y ARN.';
-if t1=24 then label539.Caption:='Guanina | Funciones del ADN y ARN.';
-if t1=25 then label539.Caption:='Citosina | Funciones del ADN y ARN.';
-if t1=26 then label539.Caption:='Tiamina | Funciones del ADN y ARN.';
-t1:=random(27);
-if t1=1 then label540.Caption:='Calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=2 then label540.Caption:='Potasio | Fatiga, nervios, energía, corazón.';
-if t1=3 then label540.Caption:='Sodio | Depresión, nervios, fatiga, digestión.';
-if t1=4 then label540.Caption:='Cloro | Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=5 then label540.Caption:='Magnesio | Regulación suprarrenal, oxígeno, energía.';
-if t1=6 then label540.Caption:='Hierro | Anemia, fatiga, oxígeno.';
-if t1=7 then label540.Caption:='Sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=8 then label540.Caption:='Manganeso | Afecciones nerviosas y musculares.';
-if t1=9 then label540.Caption:='Cromo | Regulación del azúcar, músculos.';
-if t1=10 then label540.Caption:='Zinc | Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=11 then label540.Caption:='Selenio | Desintoxicación, nervios, energía, piel.';
-if t1=12 then label540.Caption:='Yodo | Funciones de la tiroides, energía, metabolismo.';
-if t1=13 then label540.Caption:='Fósforo | Funciones celulares, energía, pensamiento.';
-if t1=14 then label540.Caption:='Boron | Regulación nerviosa, demencia, depresión.';
-if t1=15 then label540.Caption:='Molidebno | Funciones de la tiroides, lactación, fatiga.';
-if t1=16 then label540.Caption:='Silicona | Huesos, piel, nervios.';
-if t1=17 then label540.Caption:='Cobalto | Anemia, sistema inmunitario.';
-if t1=18 then label540.Caption:='Litio | Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=19 then label540.Caption:='Germanio | Nervios, oxigenación, piel, energía.';
-if t1=20 then label540.Caption:='Arsénico | Energía, nervios.';
-if t1=21 then label540.Caption:='Antimonio | Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=22 then label540.Caption:='Estaño | Nervios, músculos.';
-if t1=23 then label540.Caption:='Carbón | Energía, regulación de la vida.';
-if t1=24 then label540.Caption:='Vanadio | Funciones del hígado, músculos del corazón.';
-if t1=25 then label540.Caption:='Aluminio | Nervios, regulación del pensamiento.';
-if t1=26 then label540.Caption:='Cobre | Nervios, energía, desintoxicación.';
+BAVM.Click;
+BCausas.Click;
+BToxinas.Click;
+BOrganosGlandulas.Click;
+BProcesos.Click;
+Label534.Visible := True;
+Label536.Visible := True;
+Label539.Visible := True;
+Label540.Visible := True;
+Label535.Visible := True;
 FMain.shaping:=random(105);
 If FMain.shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
-PDesarrollo.Visible:=False;
-if label534.caption<>'----' then testform1.Edit8.text:= testform1.Edit8.text+label534.caption;
 end;
 
 procedure Tnutr.Button33Click(Sender: TObject);
@@ -8618,28 +5721,12 @@ procedure Tnutr.Button30Click(Sender: TObject);
 begin
 MyChrono.start;
 GProgreso.Progress := 0;
-PDesarrollo.caption:='Explorando similias por coherencia repertórica y coherencia eléctrica...';
-PDesarrollo.Visible:=True;
-PDesarrollo.Refresh;
 repeat
 dir:=500+random(100);
 rb9:=1+random(5);
-{SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2+rb9,1+random(6),
-'00000000','00000000');
-}
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2+rb9,1+random(3),
+    ChangingPulses(5000,dir,5*dir,rb9,2+rb9,1+random(3),
 '11111111','01111111');
-
-if rb9<4 then begin
-   PDesarrollo.caption:='Similia por coherencia repertorica + coherencia eléctrica, no iguales...';
-PDesarrollo.refresh;
- end;
- if rb9>4 then begin
-   PDesarrollo.caption:='La exploración de coherencia eléctrica Vs. coherencia repertórica continúa...';
-PDesarrollo.refresh;
- end;
  until
  rb9=5;
    Randomize;
@@ -8675,7 +5762,6 @@ PDesarrollo.refresh;
    DM.Conscida.last;
    DM.Conscida.Refresh;
    MyChrono.stop;
-PDesarrollo.visible:=false;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 GProgreso.Progress := 100;
 end;
@@ -8785,7 +5871,6 @@ if label544.caption='Conexión con homeopatía clásica difícil debido a fluctuacio
        if yq=8 then  label543.caption:='Chinona';
        if yq=9 then  label543.caption:='Apis Mel';
        if yq=10 then  label543.caption:='Pulsatilla';
-
         end;
 end;
 
@@ -8843,7 +5928,6 @@ Begin
 end;
 end;
 end;
-
 
 procedure Tnutr.Button32Click(Sender: TObject);
 var
@@ -9092,374 +6176,30 @@ if (Label524.Caption='----')or(patform1.both>5) then begin
 panel2.visible:=true;
 //Button110.visible := false;
 Label90.Caption:=IntToStr (n2517+(6*pn7)+(6*pn3)+(6*pn11)+(8*pn4) );
-Label83.Caption:='Adrenalina.';
+Label83.Caption:=' Adrenalina.';
 Label91.Caption:=IntToStr (n2528+(6*pn3)+(6*pn11)+(4*pn7) );
-Label84.Caption:='Hormona del crecimiento.';
+Label84.Caption:=' Hormona del crecimiento.';
 Label92.Caption:=IntToStr (n2561 +(4*me12)+(3*me10)+(3*pn7)+(3*pn8)+ (3*pn3));
-Label85.Caption:='Testosterona.';
+Label85.Caption:=' Testosterona.';
 Label93.Caption:=IntToStr (n2532+(4*ve1)+(3*ve2)+(3*pn7)+(3*ve3)+(4*ve4)+(3*ve5)+(4*ve6) );
-Label86.Caption:='Cortisol.';
+Label86.Caption:=' Cortisol.';
 Label94.Caption:=IntToStr (n2531+(4*me4)+(3*me12)+(3*pn19)+(3*me6));
-Label87.Caption:='Grupo de hormonas sexuales.';
+Label87.Caption:=' Grupo de hormonas sexuales.';
 Label95.Caption:=IntToStr (n749+(4*me13)+(5*me12)+(3*pn7)+(3*me7)+(4*pn19)+(3*me12)+(3*pn6)+(5*pn2) );
-Label88.Caption:='Glándulas pineal, pituitaria e hipotálamo.';
+Label88.Caption:=' Pineal, pituitaria e hipotálamo.';
 Label96.Caption:=IntToStr (n2524+(5*ve5)+(3*ve2)+(3*pn3)+(3*pn7)+(3*ve1)+(pn17*5));
-Label89.Caption:='Aldosterona.';
+Label89.Caption:=' Aldosterona.';
 Label525.Caption:=IntToStr (n2536+(4*ve4)+(5*ve1)+(3*pn6)+(3*pn7) );
-Label523.Caption:='Factor de secreción de la corticotropina.';
+Label523.Caption:=' Factor de secreción de la corticotropina.';
 Label526.Caption:=IntToStr (n2476 +(6*ve1)+(6*ve3)+(3*pn7)+(3*pn8));
-Label524.Caption:='ACTH.';
-  Label528.Caption:='Factores de afección: ';
-if (pn2>2)or(ve5=10) then   Label528.Caption:=Label528.Caption+'Iatrogénicos.';
-if pn3>10 then   Label528.Caption:=Label528.Caption+'Nicotina.';
-if pn6>1 then   Label528.Caption:=Label528.Caption+'Impulsos adictivos.';
-if pn7>8 then   Label528.Caption:=Label528.Caption+'Estrés.';
-if pn8>3 then   Label528.Caption:=Label528.Caption+'Azúcar.';
-if pn11>2 then   Label528.Caption:=Label528.Caption+'Cafeína.';
-if pn16>4 then   Label528.Caption:=Label528.Caption+'Negatividad.';
-if pn19>3 then   Label528.Caption:=Label528.Caption+'Factores mentales.';
-if pn15>10 then   Label528.Caption:=Label528.Caption+'Exceso de grasa.';
-if Label528.Caption='Factores de afección: '  then Label528.Caption:='Factores de afección: estrés emocional mal administrado.';
-    Label527.Caption:=' | Desequilibrios hormonales: ';
-  if me1>5 then   Label527.Caption:=Label527.Caption+' | Adrenalina';
-if (ve2>5)or(ve5>5)or(ve1>5)or(ve2>5)or(ve3>5)or(ve6>5) then   Label527.Caption:=Label527.Caption+' | Cortisol';
-if (me11>5)or(me12>5) then   Label527.Caption:=Label527.Caption+' | Testosterona';
-if me4>5 then   Label527.Caption:=Label527.Caption+' | Progesterona';
-if me15>5 then   Label527.Caption:=Label527.Caption+' | Oxitocina';
-if me13>5 then   Label527.Caption:=Label527.Caption+' | Serotonina';
-if me14>5 then   Label527.Caption:=Label527.Caption+' | Dopamina';
-if me9>5 then   Label527.Caption:=Label527.Caption+' | Exceso de grasa';
-me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T3';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | T4';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Tiroides';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pineal';
-    me16:=random(10);
-    if me16>4 then   Label527.Caption:=Label527.Caption+' | Hipotálamo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Pituitaria';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Timo';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Inflamación';
-    me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Infección';
-      Label529.Caption:= '| Otros conflictos con: ';
-       me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Toxicidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Insuficiencia suprarrenal';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Sistema inmunitario';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Vacunas';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Iatrogénicos';
-       me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Factores emocionales';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Necesidad de perdonar';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Culpabilidad';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Ira';
-    me16:=random(10);
-    if me16>5 then   Label529.Caption:=Label529.Caption+' | Desilusión de sí mismo/a';
-  DM.Conscida.Open;
-              oeg4:=2470+random(87);
-
-
-        DM.Conscida.enablecontrols;
-   DM.conscida.FindKey([oeg4]);
-   Label520.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg2:=2470+random(87);  DM.Conscida.enablecontrols;
-   DM.conscida.FindKey([oeg2]);
-   Label521.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-    oeg3 :=2646+random(82);
-        Label531.Caption:= '| Terapia sugerida: ';
-       me16:=random(10);
-    if me16>3 then   Label531.Caption:=Label531.Caption+' | Sesiones regulares con el sistema.';
-        me16:=random(10);
-    if me16>3 then   Label531.Caption:=Label531.Caption+' | Homeopatía.';
-    me16:=random(10);
-    if me16>4 then   Label531.Caption:=Label531.Caption+' | Nutricional.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Reducción del estrés.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Fitoterapia.';
-    me16:=random(10);
-    if me16>5 then   Label531.Caption:=Label531.Caption+' | Ejercicio moderado.';
-       me16:=random(10);
-    if me16>5 then   Label527.Caption:=Label527.Caption+' | Asesoría emocional.';
-
-         DM.Conscida.enablecontrols;
-  DM.conscida.FindKey([oeg3]);
-    Label522.Caption:=DM.conscida.Fieldbyname('Name').AsString;
-
-if label520.caption=label521.caption   then begin
-t1:=random(125);
-if t1=1 then label521.caption:= label1.caption;
-if t1=2 then label521.caption:= label2.caption;
-if t1=3 then label521.caption:= label3.caption;
-if t1=4 then label521.caption:= label4.caption;
-if t1=5 then label521.caption:= label5.caption;
-if t1=6 then label521.caption:= label6.caption;
-if t1=7 then label521.caption:= label7.caption;
-if t1=8 then label521.caption:= label8.caption;
-if t1=9 then label521.caption:= label9.caption;
-if t1=10 then label521.caption:='Disturbios en digestión / absorpción.' ;
-if t1=11 then label521.caption:= label10.caption;
-if t1=12 then label521.caption:= label11.caption;
-if t1=13 then label521.caption:= label12.caption;
-if t1=14 then label521.caption:= label13.caption;
-if t1=15 then label521.caption:='Vitaminas B no especificadas.'  ;
-if t1=16 then label521.caption:= label33.caption;
-if t1=17 then label521.caption:= label34.caption;
-       if t1=18  then label521.caption:= label35.caption;
-       if t1=19  then label521.caption:= label36.caption;
-      if t1=20  then label521.caption:= label37.caption;
-       if t1=21  then label521.caption:= label38.caption;
-      if t1=22  then label521.caption:= label39.caption;
-       if t1=23  then label521.caption:= label40.caption;
-       if t1=24  then label521.caption:= label41.caption;
-        if t1=25  then label521.caption:= label42.caption;
-      if t1=26  then label521.caption:= label43.caption;
-        if t1=27  then label521.caption:= label44.caption;
-       if t1=28  then label521.caption:= label45.caption;
-        if t1=29  then label521.caption:= label46.caption;
-       if t1=30  then label521.caption:= label47.caption;
-      if t1=31  then label521.caption:= label48.caption;
-     if t1=32  then label521.caption:= label49.caption;
-     if t1=33  then label521.caption:= label50.caption;
-       if t1=34  then label521.caption:= label51.caption;
-      if t1=35  then label521.caption:= label52.caption;
-      if t1=36  then label521.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label521.caption:= label473.caption;
-      if t1=38  then label521.caption:= label474.caption;
- if t1=39  then label521.caption:= label475.caption;
- if t1=40  then label521.caption:= label476.caption;
- if t1=41  then label521.caption:= label477.caption;
- if t1=42  then label521.caption:= label478.caption;
- if t1=43  then label521.caption:= label479.caption;
- if t1=44  then label521.caption:= label480.caption;
- if t1=45  then label521.caption:= label481.caption;
- if t1=46  then label521.caption:= label482.caption;
- if t1=47  then label521.caption:= label483.caption;
- if t1=48  then label521.caption:= label484.caption;
-if t1=49 then label521.caption:='Acidos grasos en general.';
-if t1=50 then label521.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label521.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label521.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label521.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label521.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label521.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label521.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label521.caption:='Vitamina E.' ;
-if t1=58 then label521.caption:='Vitamina E1.'  ;
-if t1=59 then label521.caption:='Vitamina E2.' ;
-if t1=60 then label521.caption:='Vitamina E3.'  ;
-if t1=61 then label521.caption:='Vitamina K1.'  ;
-if t1=62 then label521.caption:='Vitamina K3.' ;
-if t1=63 then label521.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label521.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label521.caption:='CoQ6.' ;
-if t1=66 then label521.caption:='CoQ7.' ;
-if t1=67 then label521.caption:='CoQ8.' ;
-if t1=68 then label521.caption:='CoQ9.'  ;
-if t1=69 then label521.caption:='CoQ10.' ;
-if t1=70 then label521.caption:='Todos los CoQ.';
-if t1=71 then label521.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label521.caption:='Vitamina C.';
-if t1=73 then label521.caption:='Bioflavenoides.'  ;
-if t1=74 then label521.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label521.caption:='Acido hespárico.'  ;
-if t1=76 then label521.caption:='Tirosina.'  ;
-if t1=77 then label521.caption:='Tirosinasea.' ;
-if t1=78 then label521.caption:='Vitamina C ase.' ;
-if t1=79 then label521.caption:='Acido ascórbico.'  ;
-if t1=80 then label521.caption:='Vitamina D.' ;
-if t1=81 then label521.caption:='Vitamina D1.'  ;
-if t1=82 then label521.caption:='Vitamina D2.'  ;
-if t1=83 then label521.caption:='Vitamina D3.'  ;
-if t1=84 then label521.caption:='Vitamina D4.'  ;
-if t1=85 then label521.caption:='Vitamina A.' ;
-if t1=86 then label521.caption:='Beta carotina.'  ;
-if t1=87 then label521.caption:='Aceite de pescado.'  ;
-if t1=88 then label521.caption:='Retinol.'  ;
-if t1=89 then label521.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label521.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label521.caption:='Enzimas en general.' ;
-if t1=92 then label521.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label521.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label521.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label521.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label521.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label521.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label521.caption:='Acidos grasos en general.' ;
-if t1=101 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label521.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label521.caption:='Acidos grasos en general.' ;
-if t1=109 then label521.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label521.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label521.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label521.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label521.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label521.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label521.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label521.caption:='Enzimas generales.' ;
-if t1=117 then label521.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label521.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label521.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label521.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label521.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label521.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label521.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-    end;
-    if label520.caption=label522.caption   then begin
-t1:=random(125);
-    if t1=1  then label522.caption:= label1.caption;
-      if t1=2  then label522.caption:= label2.caption;
- if t1=3  then label522.caption:= label3.caption;
- if t1=4  then label522.caption:= label4.caption;
- if t1=5  then label522.caption:= label5.caption;
- if t1=6  then label522.caption:= label6.caption;
- if t1=7  then label522.caption:= label7.caption;
- if t1=8  then label522.caption:= label8.caption;
- if t1=9  then label522.caption:= label9.caption;
-         if t1=10  then label522.caption:='Disturbios en digestión / absorpción.' ;
-        if t1=11  then label522.caption:= label10.caption;
-    if t1=12  then label522.caption:= label11.caption;
- if t1=13  then label522.caption:= label12.caption;
- if t1=14  then label522.caption:= label13.caption;
-  if t1=15  then label522.caption:='Vitaminas B no especificadas.'  ;
-      if t1=16  then label522.caption:= label33.caption;
-       if t1=17  then label522.caption:= label34.caption;
-       if t1=18  then label522.caption:= label35.caption;
-       if t1=19  then label522.caption:= label36.caption;
-      if t1=20  then label522.caption:= label37.caption;
-       if t1=21  then label522.caption:= label38.caption;
-      if t1=22  then label522.caption:= label39.caption;
-       if t1=23  then label522.caption:= label40.caption;
-       if t1=24  then label522.caption:= label41.caption;
-        if t1=25  then label522.caption:= label42.caption;
-      if t1=26  then label522.caption:= label43.caption;
-        if t1=27  then label522.caption:= label44.caption;
-       if t1=28  then label522.caption:= label45.caption;
-        if t1=29  then label522.caption:= label46.caption;
-       if t1=30  then label522.caption:= label47.caption;
-      if t1=31  then label522.caption:= label48.caption;
-     if t1=32  then label522.caption:= label49.caption;
-     if t1=33  then label522.caption:= label50.caption;
-       if t1=34  then label522.caption:= label51.caption;
-      if t1=35  then label522.caption:= label52.caption;
-      if t1=36  then label522.caption:='Sales en tejidos no especificados.' ;
-        if t1=37  then label522.caption:= label473.caption;
-      if t1=38  then label522.caption:= label474.caption;
- if t1=39  then label522.caption:= label475.caption;
- if t1=40  then label522.caption:= label476.caption;
- if t1=41  then label522.caption:= label477.caption;
- if t1=42  then label522.caption:= label478.caption;
- if t1=43  then label522.caption:= label479.caption;
- if t1=44  then label522.caption:= label480.caption;
- if t1=45  then label522.caption:= label481.caption;
- if t1=46  then label522.caption:= label482.caption;
- if t1=47  then label522.caption:= label483.caption;
- if t1=48  then label522.caption:= label484.caption;
-if t1=49 then label522.caption:='Acidos grasos en general.';
-if t1=50 then label522.caption:='Cadenas de ácidos grasos de carbón bajo.' ;
-if t1=51 then label522.caption:='Cadenas de ácidos grasos de carbón mediano.' ;
-if t1=52 then label522.caption:='Cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if t1=53 then label522.caption:='Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if t1=54 then label522.caption:='Deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label522.caption:='Cadenas de ácidos grasos de carbón alto.'  ;
-if t1=56 then label522.caption:='Acidos grasos relacionados con las enzimas.'  ;
-if t1=57 then label522.caption:='Vitamina E.' ;
-if t1=58 then label522.caption:='Vitamina E1.'  ;
-if t1=59 then label522.caption:='Vitamina E2.' ;
-if t1=60 then label522.caption:='Vitamina E3.'  ;
-if t1=61 then label522.caption:='Vitamina K1.'  ;
-if t1=62 then label522.caption:='Vitamina K3.' ;
-if t1=63 then label522.caption:='Todas las vitaminas K.'  ;
-if t1=64 then label522.caption:='Vitamina U / Ubiquinona.' ;
-if t1=65 then label522.caption:='CoQ6.' ;
-if t1=66 then label522.caption:='CoQ7.' ;
-if t1=67 then label522.caption:='CoQ8.' ;
-if t1=68 then label522.caption:='CoQ9.'  ;
-if t1=69 then label522.caption:='CoQ10.' ;
-if t1=70 then label522.caption:='Todos los CoQ.';
-if t1=71 then label522.caption:='Ciclo de la ubiquinona.'  ;
-if t1=72 then label522.caption:='Vitamina C.';
-if t1=73 then label522.caption:='Bioflavenoides.'  ;
-if t1=74 then label522.caption:='Deficiencia de '+'rutina.'  ;
-if t1=75 then label522.caption:='Acido hespárico.'  ;
-if t1=76 then label522.caption:='Tirosina.'  ;
-if t1=77 then label522.caption:='Tirosinasea.' ;
-if t1=78 then label522.caption:='Vitamina C ase.' ;
-if t1=79 then label522.caption:='Acido ascórbico.'  ;
-if t1=80 then label522.caption:='Vitamina D.' ;
-if t1=81 then label522.caption:='Vitamina D1.'  ;
-if t1=82 then label522.caption:='Vitamina D2.'  ;
-if t1=83 then label522.caption:='Vitamina D3.'  ;
-if t1=84 then label522.caption:='Vitamina D4.'  ;
-if t1=85 then label522.caption:='Vitamina A.' ;
-if t1=86 then label522.caption:='Beta carotina.'  ;
-if t1=87 then label522.caption:='Aceite de pescado.'  ;
-if t1=88 then label522.caption:='Retinol.'  ;
-if t1=89 then label522.caption:='Precursores de la vitamina A.'  ;
-if t1=90 then label522.caption:='Vitamina A en cartílagos.' ;
-if t1=91 then label522.caption:='Enzimas en general.' ;
-if t1=92 then label522.caption:='Enzimas para la reducción de la oxidación.';
-if t1=93 then label522.caption:='Enzimas para la hidrolización de la digestión.';
-if t1=94 then label522.caption:='Enzimas para la fosforilización del cerebro.';
-if t1=95 then label522.caption:='Enzimas para las descarbonización de los pulmónes.';
-if t1=96 then label522.caption:='Enzimas para la regularización de la hidrolización del agua.';
-if t1=97 then label522.caption:='Enzimas para la regulación del ADN.' ;
-if t1=98 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=99 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=100 then label522.caption:='Acidos grasos en general.' ;
-if t1=101 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=102 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=103 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=104 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=105 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=106 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=107 then label522.caption:='Cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if t1=108 then label522.caption:='Acidos grasos en general.' ;
-if t1=109 then label522.caption:='Cadenas de ácidos grasos de carbones bajos.' ;
-if t1=110 then label522.caption:='Cadenas de ácidos grasos de carbones medios.' ;
-if t1=111 then label522.caption:='Cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if t1=112 then label522.caption:='Cadenas de ácidos grasos de la mielina.'  ;
-if t1=113 then label522.caption:='Todos los ácidos grasos relacionados a la desnutrición.' ;
-if t1=114 then label522.caption:='Cadenas de ácidos grasos de carbones altos.'  ;
-if t1=115 then label522.caption:='Acidos grasos relacionados con procesos enzimáticos.'  ;
-if t1=116 then label522.caption:='Enzimas generales.' ;
-if t1=117 then label522.caption:='Enzimas en la reducción de la oxidación.';
-if t1=118 then label522.caption:='Enzimas digestivas, hidrolización.';
-if t1=119 then label522.caption:='Enzimas en el pensamiento, fosforilación.';
-if t1=120 then label522.caption:='Enzimas en la respiración decarboxilasa.';
-if t1=121 then label522.caption:='Enzimas en la regulación del agua hidrolasa.';
-if t1=122 then label522.caption:='Enzimas en la regulación del ADN.' ;
-if t1=123 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-if t1=124 then label522.caption:='Enzimas de transmutación en los isómeros de la mutasa.';
-end;
+Label524.Caption:=' ACTH.';
+EnlaceEtiquetas2();
+Ancho();
 end;
 
 procedure Tnutr.Button38Click(Sender: TObject);
 begin
-label550.caption:='Items alérgicos';
+label550.caption:='Items hiperreactivos';
 Button38.Enabled:=False;
 Button37.Enabled:=True;
 DM.QueryFilter.Active:=False;
@@ -9472,6 +6212,7 @@ DM.QueryFilter.Active:=False;
   DBGrid2.dataSource:=DM.DSFilter;
   DM.QueryFilter.first;
   DM.QueryFilter.Last; { Last Record }
+  Ancho();
 end;
 
 procedure Tnutr.Button37Click(Sender: TObject);
@@ -9490,6 +6231,7 @@ DM.QueryFilter.Active:=False;
   DBGrid1.dataSource:=DM.DSFilter;
     DM.QueryFilter.first;
   DM.QueryFilter.Last; { Last Record }
+  Ancho();
 end;
 
 procedure Tnutr.DBGrid2DrawDataCell(Sender: TObject; const Rect: TRect;
@@ -9502,12 +6244,9 @@ if testForm1.ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
            (sender as TDBgrid).canvas.brush.color := clfuchsia
         else
            (sender as TDBgrid).canvas.brush.color := claqua;
-
         if field.asfloat >testForm1.TT_cutof+9 then
               (sender as TDBgrid).canvas.brush.color := clred;
-
-
-        if (field.asfloat <testForm1.TT_cutof+1)and (field.asfloat>testForm1.TT_cutof-6) then
+       if (field.asfloat <testForm1.TT_cutof+1)and (field.asfloat>testForm1.TT_cutof-6) then
               (sender as TDBgrid).canvas.brush.color := clyellow;
          if field.asfloat =0 then
            (sender as TDBgrid).canvas.brush.color := clWhite;
@@ -9520,10 +6259,8 @@ if testForm1.ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
         (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
       end
       else (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
-
 end
 else Begin
-
 if field.fieldname ='Value' then
 begin
   if field.asfloat >cutof then
@@ -9603,7 +6340,6 @@ DM.Conscida.FindKey([1446]);
  n1446:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([772]);
  n772:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
-
 DM.Conscida.FindKey([2979]);
  n2979:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([412]);
@@ -9646,7 +6382,7 @@ DM.Conscida.FindKey([2745]);
  n2745:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
    DM.Conscida.open; DM.Conscida.IndexName:='';
  DM.Conscida.First;
-                  DM.Conscida.FindKey([778]);
+DM.Conscida.FindKey([778]);
  n778:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
  DM.Conscida.FindKey([2291]);
  n2291:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
@@ -9788,8 +6524,6 @@ DM.Conscida.FindKey([1245]);
  n1245:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([2986]);
  n2986:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
-
-
  DM.Conscida.FindKey([2550]);
  n2550:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([2557]);
@@ -9814,10 +6548,9 @@ DM.Conscida.FindKey([2475]);
  n2475:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([2476]);
  n2476:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
-
-     DM.Conscida.open; DM.Conscida.IndexName:='';
+ DM.Conscida.open; DM.Conscida.IndexName:='';
  DM.Conscida.First;
-                  DM.Conscida.FindKey([778]);
+DM.Conscida.FindKey([778]);
  n778:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
  DM.Conscida.FindKey([2291]);
  n2291:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
@@ -9963,9 +6696,7 @@ DM.Conscida.FindKey([2986]);
  n2517:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
 DM.Conscida.FindKey([2528]);
  n2528:=DM.Conscidavalue.asinteger+random(25)-random(26) ;
-
-
-          Index:='ByValue';
+ Index:='ByValue';
    DM.Conscida.IndexName := Index;
   DM.Conscida.first;
   DM.Conscida.last;
@@ -9986,21 +6717,19 @@ DM.Conscida.FindKey([2528]);
        Label30.Caption:=IntToStr(n781+random(25) );
        Label31.Caption:=IntToStr((round(( n932+n710+37)/2)));
         Label32.Caption:=IntToStr( (round(( n932+n397+21)/2)));
-
 end;
 
 procedure Tnutr.Button49Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button49.Caption+'...';
 Adriana();
 If rectificado > 84 then Button49.Enabled := False;
 end;
 
 procedure Tnutr.Button65Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 GProgreso.progress:=0;
 Label848.caption:='ENZIMAS Y FACTORES ''MICHELLIZING''';
 button49.caption:='Aumentar producción de HCL';
@@ -10011,7 +6740,6 @@ button53.caption:='Aumentar producción de lipasa';
 button54.caption:='Aumentar producción de protasa';
 button55.caption:='Aumentar producción de amilasa';
 button56.caption:='Aumentar producción de pensamiento';
-
 button57.caption:='Aumentar producción de bilis';
 button58.caption:='Aumentar producción de todas las enzimas';
 button59.caption:='Aumentar producción de hidrolitos';
@@ -10026,9 +6754,9 @@ end;
 
 procedure Tnutr.Button67Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 GProgreso.progress:=0;
 Label848.caption:='HORMONAS Y FACTORES DEL ARN';
 button49.caption:='Aumentar producción de hormonas suprarrenales';
@@ -10054,146 +6782,175 @@ end;
 procedure Tnutr.Label37Click(Sender: TObject);
 begin
 sysreport.nutr16:=label37.caption;
+Montserrat(Label37);
 end;
 
 procedure Tnutr.Label33Click(Sender: TObject);
 begin
 sysreport.nutr16:=label33.caption;
+Montserrat(Label33);
 end;
 
 procedure Tnutr.Label34Click(Sender: TObject);
 begin
 sysreport.nutr16:=label34.caption;
+Montserrat(Label34);
 end;
 
 procedure Tnutr.Label35Click(Sender: TObject);
 begin
 sysreport.nutr16:=label35.caption;
+Montserrat(Label35);
 end;
 
 procedure Tnutr.Label36Click(Sender: TObject);
 begin
 sysreport.nutr16:=label36.caption;
+Montserrat(Label36);
 end;
 
 procedure Tnutr.Label38Click(Sender: TObject);
 begin
 sysreport.nutr16:=label38.caption;
+Montserrat(Label38);
 end;
 
 procedure Tnutr.Label39Click(Sender: TObject);
 begin
 sysreport.nutr16:=label39.caption;
+Montserrat(Label39);
 end;
 
 procedure Tnutr.Label40Click(Sender: TObject);
 begin
 sysreport.nutr16:=label40.caption;
+Montserrat(Label40);
 end;
 
 procedure Tnutr.Label41Click(Sender: TObject);
 begin
 sysreport.nutr16:=label41.caption;
+Montserrat(Label41);
 end;
 
 procedure Tnutr.Label42Click(Sender: TObject);
 begin
 sysreport.nutr16:=label42.caption;
+Montserrat(Label42);
 end;
 
 procedure Tnutr.Label43Click(Sender: TObject);
 begin
 sysreport.nutr16:=label43.caption;
+Montserrat(Label43);
 end;
 
 procedure Tnutr.Label44Click(Sender: TObject);
 begin
 sysreport.nutr16:=label44.caption;
+Montserrat(Label44);
 end;
 
 procedure Tnutr.Label45Click(Sender: TObject);
 begin
 sysreport.nutr16:=label45.caption;
+Montserrat(Label45);
 end;
 
 procedure Tnutr.Label46Click(Sender: TObject);
 begin
 sysreport.nutr16:=label46.caption;
+Montserrat(Label46);
 end;
 
 procedure Tnutr.Label47Click(Sender: TObject);
 begin
 sysreport.nutr16:=label47.caption;
+Montserrat(Label47);
 end;
 
 procedure Tnutr.Label48Click(Sender: TObject);
 begin
 sysreport.nutr16:=label48.caption;
+Montserrat(Label48);
 end;
 
 procedure Tnutr.Label49Click(Sender: TObject);
 begin
 sysreport.nutr16:=label49.caption;
+Montserrat(Label49);
 end;
 
 procedure Tnutr.Label50Click(Sender: TObject);
 begin
 sysreport.nutr16:=label50.caption;
+Montserrat(Label50);
 end;
 
 procedure Tnutr.Label51Click(Sender: TObject);
 begin
 sysreport.nutr16:=label51.caption;
+Montserrat(Label51);
 end;
 
 procedure Tnutr.Label52Click(Sender: TObject);
 begin
 sysreport.nutr16:=label52.caption;
+Montserrat(Label52);
 end;
 
 procedure Tnutr.Label83Click(Sender: TObject);
 begin
 sysreport.nutr16:=label83.caption;
+Montserrat(Label83);
 end;
 
 procedure Tnutr.Label84Click(Sender: TObject);
 begin
 sysreport.nutr16:=label84.caption;
+Montserrat(label84);
 end;
 
 procedure Tnutr.Label85Click(Sender: TObject);
 begin
 sysreport.nutr16:=label85.caption;
+Montserrat(label85);
 end;
 
 procedure Tnutr.Label86Click(Sender: TObject);
 begin
 sysreport.nutr16:=label86.caption;
+Montserrat(label86);
 end;
 
 procedure Tnutr.Label87Click(Sender: TObject);
 begin
 sysreport.nutr16:=label87.caption;
+Montserrat(Label87);
 end;
 
 procedure Tnutr.Label88Click(Sender: TObject);
 begin
 sysreport.nutr16:=label88.caption;
+Montserrat(Label88);
 end;
 
 procedure Tnutr.Label89Click(Sender: TObject);
 begin
 sysreport.nutr16:=label89.caption;
+Montserrat(Label89);
 end;
 
 procedure Tnutr.Label523Click(Sender: TObject);
 begin
 sysreport.nutr16:=label523.caption;
+Montserrat(Label523);
 end;
 
 procedure Tnutr.Label524Click(Sender: TObject);
 begin
 sysreport.nutr16:=label524.caption;
+Montserrat(Label524);
 end;
 
 procedure Tnutr.DBGrid2DblClick(Sender: TObject);
@@ -10206,9 +6963,9 @@ end;
 
 procedure Tnutr.Button71Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 GProgreso.progress:=0;
 Label848.caption:='HORMONAS Y FACTORES DEL ARN';
 button49.caption:='Estabilizar producción de hormonas suprarrenales';
@@ -10233,9 +6990,9 @@ end;
 
 procedure Tnutr.Button70Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 GProgreso.progress:=0;
 Label848.caption:='ENZIMAS Y FACTORES ''MICHELLIZING''';
 button49.caption:='Estabilizr producción del HCL';
@@ -10260,45 +7017,51 @@ end;
 
 procedure Tnutr.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 FMain.button83.Enabled:=false;
-if label535.caption<>'N/A' then  sysreport.nutr1:=label535.caption;
-if label536.caption<>'N/A' then  sysreport.nutr2:=label536.caption;
-if label539.caption<>'N/A' then  sysreport.nutr3:=label539.caption;
-if label540.caption<>'N/A' then  sysreport.nutr4:=label540.caption;
+if label535.caption<>'----' then  sysreport.nutr1:=label535.caption;
+if label536.caption<>'----' then  sysreport.nutr2:=label536.caption;
+if label539.caption<>'----' then  sysreport.nutr3:=label539.caption;
+if label540.caption<>'----' then  sysreport.nutr4:=label540.caption;
  DM.Conscida.Filtered:=false;
 timer1.enabled:=false;
-if label497.caption<>'N/A' then testform1.Edit10.text:= testform1.Edit10.text+label497.caption+'';
 Edit1.Text:='Insertar afección: ';
 end;
 
-procedure Tnutr.Button72Click(Sender: TObject);
+procedure Tnutr.Label520Click(Sender: TObject);
 begin
 DM.Info.Open;
 DM.Info.first;
 DM.Info.Last;
 no:=1;
-If DM.info.RecordCount<>0 Then no := DM.Info.FieldbyName('no').asInteger;
+//If DM.info.RecordCount<>0 Then
+ no := DM.Info.FieldbyName('no').asInteger;
 inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME NUTRICIONAL -----'  ]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label90.caption),' | '+ label83.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label91.caption),' | '+ label84.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label92.caption),' | '+ label85.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label93.caption),' | '+ label86.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label94.caption),' | '+ label87.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label95.caption),' | '+ label88.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label96.caption),' | '+ label89.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label525.caption),' | '+ label523.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label526.caption),' | '+ label524.caption]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label527.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label528.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label529.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label520.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label521.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label522.caption)]);
-inc(no); DM.Info.Appendrecord([no,strtoint(label531.caption)]);
+inc(no); DM.Info.Appendrecord([no,nil,label550.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label90.caption+' '+label83.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label91.caption+' '+label84.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label92.caption+' '+label85.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label93.caption+' '+label86.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label94.caption+' '+label87.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label95.caption+' '+label88.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label96.caption+' '+label89.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label525.caption+' '+label523.Caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,label526.caption+' '+label524.Caption  ]);
+
+inc(no); DM.Info.Appendrecord([no,nil,LCausas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LOrganosGlandulas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LAVM.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LMeridianos.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LProcesos.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LTerapias.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LEPositivas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LENegativas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LToxinas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LSistemas.caption  ]);
+inc(no); DM.Info.Appendrecord([no,nil,LAfirmaciones.caption  ]);
 inc(no); DM.Info.Appendrecord([no,nil,nil ]);
 ShowMessage('El informe ha sido cargado.');
 Dm.Info.FlushBuffers;
@@ -10306,10 +7069,7 @@ end;
 
 procedure Tnutr.Button75Click(Sender: TObject);
 begin
-scioworking.label26.caption:=label365.caption+' | '+label366.caption;
-scioworking.Button15.caption:='Iniciar Est. de nutrientes, enzimas y hormonas';
-scioworking.button16.caption:='Detener Est. de nutrientes, enzimas y hormonas';
-scioworking.button2.caption:='Estimulación de nutrientes, enzimas y hormonas';
+scioworking.button2.caption:= nutr.Button75.Caption;
 scioworking.label27.caption:='000';
 scioworking.label27.refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
@@ -10320,62 +7080,16 @@ SCIOworking.Panel1.Visible:=True;
 SCIOworking.ShowModal;
 end;
 
-procedure Tnutr.RadioButton1Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_alimentos.doc');
-end;
-
-procedure Tnutr.RadioButton2Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_general.doc');
-end;
-
-procedure Tnutr.RadioButton3Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_mujeres.doc');
-end;
-
-procedure Tnutr.RadioButton4Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_desordenes.doc');
-end;
-
-procedure Tnutr.RadioButton5Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_infantes.doc');
-end;
-
-procedure Tnutr.RadioButton6Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_prevención_ejercicio.doc');
-end;
-
-procedure Tnutr.RadioButton7Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_impresos.doc');
-end;
-
-procedure Tnutr.RadioButton8Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_causas_obesidad.doc');
-end;
-
-procedure Tnutr.RadioButton9Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_secuelas_obesidad.doc');
-end;
-
-procedure Tnutr.RadioButton10Click(Sender: TObject);
-begin
-MyWinexec('write.exe','nutricion_consejos_peso_saludable.doc');
-end;
-
 procedure Tnutr.Button76Click(Sender: TObject);
 begin
 button76.Visible:=False;
 Button77.Visible:=True;
 DBGrid2.Left:=12;
 DBGrid2.Width:=973;
+dbgrid2.Columns[0].width := 40;
+dbgrid2.Columns[1].width := 40;
+dbgrid2.Columns[2].width := 860;
+dbgrid2.Columns[3].width := 0;
 end;
 
 procedure Tnutr.Button77Click(Sender: TObject);
@@ -10384,979 +7098,11 @@ button77.Visible:=False;
 Button76.Visible:=True;
 DBGrid2.Left:=280;
 DBGrid2.Width:=705;
-end;
-
-procedure Tnutr.Button78Click(Sender: TObject);
-begin
-Panel11.Visible:=False;
-Panel13.Visible:=False;
-Panel12.Visible:=True;
-end;
-
-procedure Tnutr.Button81Click(Sender: TObject);
-begin
-Panel12.Visible:=False;
-Panel13.Visible:=False;
-Panel11.Visible:=True;
-end;
-
-procedure Tnutr.Button86Click(Sender: TObject);
-begin
-Panel11.Visible:=False;
-Panel13.Visible:=False;
-Panel12.Visible:=True;
-end;
-
-procedure Tnutr.Button85Click(Sender: TObject);
-begin
-Panel11.Visible:=False;
-Panel12.Visible:=False;
-Panel13.Visible:=True;
-end;
-
-procedure Tnutr.Button84Click(Sender: TObject);
-begin
-Panel11.Visible:=False;
-Panel12.Visible:=False;
-Panel13.Visible:=True;
-end;
-
-procedure Tnutr.Label533Click(Sender: TObject);
-begin
-Panel11.Visible:=True;
-end;
-
-procedure Tnutr.Button83Click(Sender: TObject);
-begin
-Panel12.Visible:=False;
-Panel13.Visible:=False;
-Panel11.Visible:=True;
-end;
-
-procedure Tnutr.RadioButton11Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','elementos_organicos.doc');
-end;
-
-procedure Tnutr.RadioButton12Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','hidratos_de_carbono.doc');
-end;
-
-procedure Tnutr.RadioButton13Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','bioquimica_elemental_de_los_hidratos_de_carbono.doc');
-end;
-
-procedure Tnutr.RadioButton14Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','proteinas.doc');
-end;
-
-procedure Tnutr.RadioButton15Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','aminoacidos.doc');
-end;
-
-procedure Tnutr.RadioButton16Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','lipidos_o_grasas.doc');
-end;
-
-procedure Tnutr.RadioButton17Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','acidos_grasos.doc');
-end;
-
-procedure Tnutr.RadioButton18Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','acidos_grasos_omega3_y_omega6.doc');
-end;
-
-procedure Tnutr.RadioButton19Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','elementos_inorganicos.doc');
-end;
-
-procedure Tnutr.RadioButton20Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','macro_micro_minerales.doc');
-end;
-
-procedure Tnutr.RadioButton21Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sodio.doc');
-end;
-
-procedure Tnutr.RadioButton23Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calcio.doc');
-end;
-
-procedure Tnutr.RadioButton25Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','magnesio.doc');
-end;
-
-procedure Tnutr.RadioButton22Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','potasio.doc');
-end;
-
-procedure Tnutr.RadioButton24Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','fosforo.doc');
-end;
-
-procedure Tnutr.RadioButton26Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','azufre.doc');
-end;
-
-procedure Tnutr.RadioButton27Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','cobre.doc');
-end;
-
-procedure Tnutr.RadioButton28Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','yodo.doc');
-end;
-
-procedure Tnutr.RadioButton29Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','hierro.doc');
-end;
-
-procedure Tnutr.RadioButton30Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','manganeso.doc');
-end;
-
-procedure Tnutr.RadioButton31Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','cromo.doc');
-end;
-
-procedure Tnutr.RadioButton32Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','cobalto.doc');
-end;
-
-procedure Tnutr.RadioButton33Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','selenio.doc');
-end;
-
-procedure Tnutr.RadioButton34Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','zinc.doc');
-end;
-
-procedure Tnutr.RadioButton35Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitaminas_en_general.doc');
-end;
-
-procedure Tnutr.RadioButton36Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitaminas_liposolubles.doc');
-end;
-
-procedure Tnutr.RadioButton37Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_a.doc');
-end;
-
-procedure Tnutr.RadioButton38Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_d.doc');
-end;
-
-procedure Tnutr.RadioButton39Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_e.doc');
-end;
-
-procedure Tnutr.RadioButton40Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_k.doc');
-end;
-
-procedure Tnutr.RadioButton41Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitaminas_hidrosolubles.doc');
-end;
-
-procedure Tnutr.RadioButton42Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_c.doc');
-end;
-
-procedure Tnutr.RadioButton43Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_b1_tiamina.doc');
-end;
-
-procedure Tnutr.RadioButton44Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_b2_riboflavina.doc');
-end;
-
-procedure Tnutr.RadioButton45Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_b3_niacina.doc');
-end;
-
-procedure Tnutr.RadioButton46Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_b6_piridoxina.doc');
-end;
-
-procedure Tnutr.RadioButton47Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_b12_cobalamina.doc');
-end;
-
-procedure Tnutr.RadioButton48Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','acidos_considerados_vitaminas.doc');
-end;
-
-procedure Tnutr.RadioButton49Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','acido_folico.doc');
-end;
-
-procedure Tnutr.RadioButton50Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','biotina.doc');
-end;
-
-procedure Tnutr.RadioButton51Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','carnitina.doc');
-end;
-
-procedure Tnutr.RadioButton52Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','funciones_lcarnitina.doc');
-end;
-
-procedure Tnutr.RadioButton53Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','acido_pantotenico.doc');
-end;
-
-procedure Tnutr.RadioButton94Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','valor_biologico_y_complementacion_proteica.doc');
-end;
-
-procedure Tnutr.RadioButton95Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','aceites.doc');
-end;
-
-procedure Tnutr.RadioButton96Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','antioxidantes.doc');
-end;
-
-procedure Tnutr.RadioButton97Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitaminas_y_antioxidantes_esenciales.doc');
-end;
-
-procedure Tnutr.RadioButton98Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','ventajas_del_consumo_de_avena.doc');
-end;
-
-procedure Tnutr.RadioButton99Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','efectos_del_consumo_excesivo_de_azucar.doc');
-end;
-
-procedure Tnutr.RadioButton100Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','las_fibras_en_los_alimentos.doc');
-end;
-
-procedure Tnutr.RadioButton101Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','desc_gen_de_los_acidos_grasos_omega3y6.doc');
-end;
-
-procedure Tnutr.RadioButton102Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','los_acidos_omega3_en_los_pescados.doc');
-end;
-
-procedure Tnutr.RadioButton104Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','algo_mas_sobre_vitaminas_y_otros_nutrientes.doc');
-end;
-
-procedure Tnutr.RadioButton105Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','los_minerales_y_su_importancia_en_la_alimentacion.doc');
-end;
-
-procedure Tnutr.RadioButton103Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','los_aceites_naturales_y_los_acidos_grasos_omega6.doc');
-end;
-
-procedure Tnutr.RadioButton82Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','que_es_una_dieta.doc');
-end;
-
-procedure Tnutr.RadioButton83Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','que_son_las_calorias.doc');
-end;
-
-procedure Tnutr.RadioButton84Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','la_fisica_y_la_energia_en_la_alimentacion_cotidiana.doc');
-end;
-
-procedure Tnutr.RadioButton85Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','alimentacion_y_nutricion.doc');
-end;
-
-procedure Tnutr.RadioButton86Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','la_importancia_del_desayuno.doc');
-end;
-
-procedure Tnutr.RadioButton87Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','las_colaciones.doc');
-end;
-
-procedure Tnutr.RadioButton88Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','el_aumento_de_peso_despues_de_una_dieta.doc');
-end;
-
-procedure Tnutr.RadioButton89Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','los_lactobacilos.doc');
-end;
-
-procedure Tnutr.RadioButton90Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','alimentos_transgenicos.doc');
-end;
-
-procedure Tnutr.RadioButton91Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','alimentos_geneticamente_modificados.doc');
-end;
-
-procedure Tnutr.RadioButton92Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','causas_consecuencias_del_sobrepeso.doc');
-end;
-
-procedure Tnutr.RadioButton93Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','los_efectos_y_resultados_de_las_dietas_magicas.doc');
-end;
-
-procedure Tnutr.RadioButton54Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','objetivos_de_la_alimentacion.doc');
-end;
-
-procedure Tnutr.RadioButton55Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','funcion_de_los_alimentos.doc');
-end;
-
-procedure Tnutr.RadioButton56Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','necesidades_diarias_del_organismo_a_nivel_nutricional.doc');
-end;
-
-procedure Tnutr.RadioButton57Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','la_fisica_y_la_energia_en_la_alimentacion_cotidiana.doc');
-end;
-
-procedure Tnutr.RadioButton58Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','grupos_en_riesgo.doc');
-end;
-
-procedure Tnutr.RadioButton59Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','consejos_para_una_alimentacion_completa.doc');
-end;
-
-procedure Tnutr.RadioButton60Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','piramide_nutricional.doc');
-end;
-
-procedure Tnutr.RadioButton61Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','distribucion_adecuada_de_las_comidas.doc');
-end;
-
-procedure Tnutr.RadioButton62Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','la_actividad_fisica.doc');
-end;
-
-procedure Tnutr.RadioButton63Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','requerimientos_diarios_de_vitaminas_y_minerales.doc');
-end;
-
-procedure Tnutr.RadioButton64Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','pesos_ideales.doc');
-end;
-
-procedure Tnutr.RadioButton65Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calculo_del_indice_de_masa_corporal.doc');
-end;
-
-procedure Tnutr.RadioButton77Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calculo_del_indice_de_contextura.doc');
-end;
-
-procedure Tnutr.RadioButton78Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','el_agua_como_bebida.doc');
-end;
-
-procedure Tnutr.RadioButton79Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','caracteristicas_del_agua_mineral.doc');
-end;
-
-procedure Tnutr.RadioButton80Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','las_bebidas_alcoholicas.doc');
-end;
-
-procedure Tnutr.RadioButton81Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','la_cafeina.doc');
-end;
-
-
-procedure Tnutr.RadioButton106Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','ventajas_consumo_yogurt.doc');
-end;
-
-procedure Tnutr.RadioButton107Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','prevencion_osteoporosis.doc');
-end;
-
-procedure Tnutr.RadioButton108Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dietetica_correcta_alimentacion_buena_salud.doc');
-end;
-
-procedure Tnutr.RadioButton109Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','artrosis_alimentacion.doc');
-end;
-
-procedure Tnutr.RadioButton110Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','estres_nutricion.doc');
-end;
-
-procedure Tnutr.RadioButton111Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','estres_colesterol.doc');
-end;
-
-procedure Tnutr.RadioButton187Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','estres_alimentacion.doc');
-end;
-
-procedure Tnutr.RadioButton112Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','colesterol.doc');
-end;
-
-procedure Tnutr.RadioButton113Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','alimentacion_colesterol.doc');
-end;
-
-procedure Tnutr.RadioButton114Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','nutrientes_intervinientes_funciones_cerebrales.doc');
-end;
-
-procedure Tnutr.RadioButton115Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','beneficios_movimiento_actividad_fisica.doc');
-end;
-
-procedure Tnutr.RadioButton116Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','antioxidantes_vs_radicales_libres.doc');
-end;
-
-procedure Tnutr.RadioButton117Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sustitutos_sal.doc');
-end;
-
-procedure Tnutr.RadioButton118Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sustitutos_grasas.doc');
-end;
-
-procedure Tnutr.RadioButton119Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diferencia_alimentaria.doc');
-end;
-
-procedure Tnutr.RadioButton120Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','veganos_o_vegetarianos_totales.doc');
-end;
-
-procedure Tnutr.RadioButton121Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','ovo_lacto_vegetarianos.doc');
-end;
-
-procedure Tnutr.RadioButton122Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','etapas_de_especial_cuidado.doc');
-end;
-
-procedure Tnutr.RadioButton123Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sugerencias_alimenticias.doc');
-end;
-
-procedure Tnutr.RadioButton124Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dieta_mediterranea.doc');
-end;
-
-procedure Tnutr.RadioButton125Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dieta_longevus.doc');
-end;
-
-procedure Tnutr.RadioButton126Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','afeccion_celiaca.doc');
-end;
-
-procedure Tnutr.RadioButton127Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diabetes.doc');
-end;
-
-procedure Tnutr.RadioButton128Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','seleccion_alimentos_diabeticos.doc');
-end;
-
-procedure Tnutr.RadioButton130Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','hipercolesterolemia.doc');
-end;
-
-procedure Tnutr.RadioButton129Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','regimen_hipograso.doc');
-end;
-
-procedure Tnutr.RadioButton131Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sustitutos_grasas.doc');
-end;
-
-procedure Tnutr.RadioButton132Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','hipertension_arterial_y_problemas_cardiovasculares.doc');
-end;
-
-procedure Tnutr.RadioButton133Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','seleccion_de_alimentos_hiposodicos.doc');
-end;
-
-procedure Tnutr.RadioButton134Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sustitutos_sal.doc');
-end;
-
-procedure Tnutr.RadioButton135Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dislipidemia.doc');
-end;
-
-procedure Tnutr.RadioButton136Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dietas_hipograsas_e_hipocaloricas.doc');
-end;
-
-procedure Tnutr.RadioButton137Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','sustitutos_grasas.doc');
-end;
-
-procedure Tnutr.RadioButton138Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','insuficiencia_hepatica_hepatitis_ab.doc');
-end;
-
-procedure Tnutr.RadioButton139Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','hepatitis_noa_nob_delta.doc');
-end;
-
-procedure Tnutr.RadioButton140Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','seleccion_de_alimentos_hepatitis.doc');
-end;
-
-procedure Tnutr.RadioButton141Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabla_comparativa_virus_hepaticos.doc');
-end;
-
-procedure Tnutr.RadioButton142Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','insuficiencia_renal.doc');
-end;
-
-procedure Tnutr.RadioButton143Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','seleccion_alimentos_insuficiencia_renal.doc');
-end;
-
-procedure Tnutr.RadioButton144Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','patologias_pancreas.doc');
-end;
-
-procedure Tnutr.RadioButton146Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','patologias_vias_biliares.doc');
-end;
-
-procedure Tnutr.RadioButton145Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','seleccion_de_alimentos_pancreas_vesicula.doc');
-end;
-
-procedure Tnutr.RadioButton148Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','ulceras.doc');
-end;
-
-procedure Tnutr.RadioButton149Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','gastritis.doc');
-end;
-
-procedure Tnutr.RadioButton151Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','regimen_gastrico.doc');
-end;
-
-procedure Tnutr.RadioButton152Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diverticulosis_sin_dolor.doc');
-end;
-
-procedure Tnutr.RadioButton153Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','regimen_estimulante_intestinal.doc');
-end;
-
-procedure Tnutr.RadioButton154Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diverticulosis_con_dolor.doc');
-end;
-
-procedure Tnutr.RadioButton155Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','regimen_estimulante_intestinal_moderado_1.doc');
-end;
-
-procedure Tnutr.RadioButton156Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','colitis_ulcerosa.doc');
-end;
-
-procedure Tnutr.RadioButton157Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','colon_irritable.doc');
-end;
-
-procedure Tnutr.RadioButton158Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','enfermedad_de_crohn.doc');
-end;
-
-procedure Tnutr.RadioButton159Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','inflamacion_intestinal.doc');
-end;
-
-procedure Tnutr.RadioButton160Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diarreas_cronicas.doc');
-end;
-
-procedure Tnutr.RadioButton162Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','regimen_estimulante_intestinal_moderado_2.doc');
-end;
-
-procedure Tnutr.RadioButton164Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','anorexia_bulimia.doc');
-end;
-
-procedure Tnutr.RadioButton165Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','peso_durantel_embarazo.doc');
-end;
-
-procedure Tnutr.RadioButton166Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','alimentacion_durante_embarazo.doc');
-end;
-
-procedure Tnutr.RadioButton167Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','descanso_durante_embarazo.doc');
-end;
-
-procedure Tnutr.RadioButton168Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','5_frases_futura_madre_no_desea_oir.doc');
-end;
-
-procedure Tnutr.RadioButton169Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','recuperacion_partos_cesarea.doc');
-end;
-
-procedure Tnutr.RadioButton170Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','vitamina_d_durante_lactancia.doc');
-end;
-
-procedure Tnutr.RadioButton171Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','cancer_mama_incidencia_vitaminas.doc');
-end;
-
-procedure Tnutr.RadioButton172Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','diferencia_ventaja_parches_anticonceptivos.doc');
-end;
-
-procedure Tnutr.RadioButton173Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','cuidados_del_cuerpo_previo_al_verano.doc');
-end;
-
-procedure Tnutr.RadioButton174Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','deteccion_falencias_alimenticias.doc');
-end;
-
-procedure Tnutr.RadioButton175Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','consumo_tabaco_consecuencias.doc');
-end;
-
-procedure Tnutr.RadioButton176Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_efectos_nocivos_del_consumo.doc');
-end;
-
-procedure Tnutr.RadioButton177Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_periodoncia.doc');
-end;
-
-procedure Tnutr.RadioButton178Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_odontologia_placa_calculo.doc');
-end;
-
-procedure Tnutr.RadioButton179Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_odontologia_gingivitis.doc');
-end;
-
-procedure Tnutr.RadioButton180Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','efecto_del_tabaco_sobre_no_fumadores.doc');
-end;
-
-procedure Tnutr.RadioButton181Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','exposicion_prenatal_al_tabaco.doc');
-end;
-
-procedure Tnutr.RadioButton182Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','muerte_subita_fetal.doc');
-end;
-
-procedure Tnutr.RadioButton183Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_durante_embarazo.doc');
-end;
-
-procedure Tnutr.RadioButton184Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','patologia_pediatrica_y_tabaquismo_pasivo.doc');
-end;
-
-procedure Tnutr.RadioButton185Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','tabaquismo_conducta_niños.doc');
-end;
-
-procedure Tnutr.RadioButton186Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','evolucion_organismo_abandonar_tabaquismo.doc');
-end;
-
-procedure Tnutr.RadioButton243Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','pesos_ideales.doc');
-end;
-
-procedure Tnutr.RadioButton245Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calculo_del_indice_de_masa_corporal.doc');
-end;
-
-procedure Tnutr.RadioButton246Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calculo_del_indice_de_contextura.doc');
-end;
-
-procedure Tnutr.RadioButton247Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_caracteristicas_carnes.doc');
-end;
-
-procedure Tnutr.RadioButton248Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_caracteristicas_huevos_cereales.doc');
-end;
-
-procedure Tnutr.RadioButton249Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_caracteristicas_fiambres.doc');
-end;
-
-procedure Tnutr.RadioButton250Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_caracteristicas_frutas.doc');
-end;
-
-procedure Tnutr.RadioButton251Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','clases_tipos_caracteristicas_hortalizas_verduras.doc');
-end;
-
-procedure Tnutr.RadioButton252Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','aporte_nutricional_comidas_rapidas.doc');
-end;
-
-procedure Tnutr.RadioButton253Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calendario_estacional_disponibilidad_frutas_verduras.doc');
-end;
-
-procedure Tnutr.RadioButton254Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_vitaminas_lacteos.doc');
-end;
-
-procedure Tnutr.RadioButton255Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','calorias_minerales_caracteristicas_pescados.doc');
-end;
-
-procedure Tnutr.RadioButton233Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','beneficios_actividad_deportiva_periodica.doc');
-end;
-
-procedure Tnutr.RadioButton234Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','beneficios_momentos_optimos.doc');
-end;
-
-procedure Tnutr.RadioButton235Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','utilidad_entrada_calor.doc');
-end;
-
-procedure Tnutr.RadioButton236Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','actividades_recomendadas_gimnasios.doc');
-end;
-
-procedure Tnutr.RadioButton237Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','metodos_controlar_mejorar_resistencia_aerobica.doc');
-end;
-
-procedure Tnutr.RadioButton238Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','flexibilidad_entrada_calor_vuelta_calma.doc');
-end;
-
-procedure Tnutr.RadioButton239Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','entrenamiento_fuerza.doc');
-end;
-
-procedure Tnutr.RadioButton241Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','transpiracion_perdida_peso.doc');
-end;
-
-procedure Tnutr.RadioButton242Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','efectos_anabolicos_esteroides.doc');
-end;
-
-procedure Tnutr.RadioButton244Click(Sender: TObject);
-begin
- MyWinexec('Winword.exe','dietas_pastillas.doc');
+Ancho();
 end;
 
 procedure Tnutr.Label510DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label510.Caption+'...';
 Isabel(Label51);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label51);
 Panel4.Visible:=False;
@@ -11364,7 +7110,6 @@ end;
 
 procedure Tnutr.Label504DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label504.Caption+'...';
 Isabel(Label504);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label504);
 Panel4.Visible:=False;
@@ -11372,7 +7117,6 @@ end;
 
 procedure Tnutr.Label505DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label505.Caption+'...';
 Isabel(Label505);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label505);
 Panel4.Visible:=False;
@@ -11380,7 +7124,6 @@ end;
 
 procedure Tnutr.Label506DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label506.Caption+'...';
 Isabel(Label506);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label506);
 Panel4.Visible:=False;
@@ -11388,7 +7131,6 @@ end;
 
 procedure Tnutr.Label507DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label507.Caption+'...';
 Isabel(Label507);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label507);
 Panel4.Visible:=False;
@@ -11396,14 +7138,12 @@ end;
 
 procedure Tnutr.Label541DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label541.Caption+'...';
 Isabel(Label541);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label541);
 end;
 
 procedure Tnutr.Label543DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label543.Caption+'...';
 Isabel(Label543);
 Edit1.Text := Label543.Caption;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label543);
@@ -11411,7 +7151,6 @@ end;
 
 procedure Tnutr.Label544DblClick(Sender: TObject);
 begin
-PDesarrollo.caption:='Equilibrando '+Label544.Caption+'...';
 Isabel(Label544);
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Isabel(Label544);
 end;
@@ -11428,142 +7167,8 @@ begin
 Edit1.Text:='';
 end;
 
-procedure Tnutr.Label84DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label84.Caption+'...';
-Montserrat(label84);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label84);
-end;
-
-procedure Tnutr.Label85DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label85.Caption+'...';
-Montserrat(Label85);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label85);
-end;
-
-procedure Tnutr.Label86DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label86.Caption+'...';
-Montserrat(Label86);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label86);
-end;
-
-procedure Tnutr.Label87DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label87.Caption+'...';
-Montserrat(Label87);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label87);
-end;
-
-procedure Tnutr.Label88DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label88.Caption+'...';
-Montserrat(Label88);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label88);
-end;
-
-procedure Tnutr.Label89DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label89.Caption+'...';
-Montserrat(Label89);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label89);
-end;
-
-procedure Tnutr.Label523DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label523.Caption+'...';
-Montserrat(Label523);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label523);
-end;
-
-procedure Tnutr.Label524DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label524.Caption+'...';
-Montserrat(Label524);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label524);
-end;
-
-procedure Tnutr.Label527DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label527.Caption+'...';
-Montserrat(Label527);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label527);
-end;
-
-procedure Tnutr.Label528DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label528.Caption+'...';
-Montserrat(Label528);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label528);
-end;
-
-procedure Tnutr.Label529DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label529.Caption+'...';
-Montserrat(Label529);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label529);
-end;
-
-procedure Tnutr.Label520DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label520.Caption+'...';
-Montserrat(Label520);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label520);
-end;
-
-procedure Tnutr.Label521DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label521.Caption+'...';
-Montserrat(Label521);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label521);
-end;
-
-procedure Tnutr.Label522DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label522.Caption+'...';
-Montserrat(Label521);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label522);
-end;
-
-procedure Tnutr.Label534DblClick(Sender: TObject);
-begin
-Olga(label534);
-If (rectificado<85) and (CBAutomatico.Checked=True) Then Olga(Label534);
-If Rectificado>84 Then Label534.Enabled := False;
-end;
-
-procedure Tnutr.Label536DblClick(Sender: TObject);
-begin
-Olga(label536);
-If (rectificado<85) and (CBAutomatico.Checked=True) Then Olga(Label536);
-If Rectificado>84 Then Label536.Enabled := False;
-end;
-
-procedure Tnutr.Label539DblClick(Sender: TObject);
-begin
-Olga(label539);
-If (rectificado<85) and (CBAutomatico.Checked=True) Then Olga(Label539);
-If Rectificado>84 Then Label539.Enabled := False;
-end;
-
-procedure Tnutr.Label540DblClick(Sender: TObject);
-begin
-Olga(label540);
-If (rectificado<85) and (CBAutomatico.Checked=True) Then Olga(Label540);
-If Rectificado>84 Then Label540.Enabled := False;
-end;
-
-procedure Tnutr.Label535DblClick(Sender: TObject);
-begin
-Olga(label535);
-If (rectificado<85) and (CBAutomatico.Checked=True) Then Olga(Label535);
-If Rectificado>84 Then Label535.Enabled := False;
-end;
-
 procedure Tnutr.Button16Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button16.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then Button16.Enabled := False;
 end;
@@ -11620,148 +7225,11 @@ End;
 PInfertilidad.Visible := True;
 end;
 
-procedure Tnutr.Label33DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label33.Caption+'...';
-Montserrat(Label33);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label33);
-end;
-
-procedure Tnutr.Label34DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label34.Caption+'...';
-Montserrat(Label34);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label34);
-end;
-
-procedure Tnutr.Label35DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label35.Caption+'...';
-Montserrat(Label35);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label35);
-end;
-
-procedure Tnutr.Label36DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label36.Caption+'...';
-Montserrat(Label36);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label36);
-end;
-
-procedure Tnutr.Label37DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label37.Caption+'...';
-Montserrat(Label37);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label37);
-end;
-
-procedure Tnutr.Label38DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label38.Caption+'...';
-Montserrat(Label38);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label38);
-end;
-
-procedure Tnutr.Label40DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label40.Caption+'...';
-Montserrat(Label40);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label40);
-end;
-
-procedure Tnutr.Label41DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label41.Caption+'...';
-Montserrat(Label41);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label41);
-end;
-
-procedure Tnutr.Label42DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label42.Caption+'...';
-Montserrat(Label42);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label42);
-end;
-
-procedure Tnutr.Label43DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label43.Caption+'...';
-Montserrat(Label43);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label43);
-end;
-
-procedure Tnutr.Label44DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label44.Caption+'...';
-Montserrat(Label44);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label44);
-end;
-
-procedure Tnutr.Label45DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label45.Caption+'...';
-Montserrat(Label45);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label45);
-end;
-
-procedure Tnutr.Label46DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label46.Caption+'...';
-Montserrat(Label46);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label46);
-end;
-
-procedure Tnutr.Label47DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label47.Caption+'...';
-Montserrat(Label47);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label47);
-end;
-
-procedure Tnutr.Label48DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label48.Caption+'...';
-Montserrat(Label48);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label48);
-end;
-
-procedure Tnutr.Label49DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label49.Caption+'...';
-Montserrat(Label49);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label49);
-end;
-
-procedure Tnutr.Label50DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label50.Caption+'...';
-Montserrat(Label50);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label50);
-end;
-
-procedure Tnutr.Label52DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label52.Caption+'...';
-Montserrat(Label52);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label52);
-end;
-
-procedure Tnutr.Label39DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label39.Caption+'...';
-Montserrat(Label39);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label39);
-end;
-
-procedure Tnutr.Label51DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label51.Caption+'...';
-Montserrat(Label51);
-If (Rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Label51);
-end;
-
 procedure Tnutr.Label460Click(Sender: TObject);
 begin
+Button3.click;
+Panel6.Visible := True;
+Nutr.Panel4.Visible := False;
 labelEnNo:=10;
 label83.Enabled:=labelEnabled[labelEnNo].L83;
 label84.Enabled:=labelEnabled[labelEnNo].L84;
@@ -11772,108 +7240,87 @@ label88.Enabled:=labelEnabled[labelEnNo].L88;
 label89.Enabled:=labelEnabled[labelEnNo].L89;
 label523.Enabled:=labelEnabled[labelEnNo].L523;
 label524.Enabled:=labelEnabled[labelEnNo].L524;
-label527.Enabled:=labelEnabled[labelEnNo].L527;
-label528.Enabled:=labelEnabled[labelEnNo].L528;
-label529.Enabled:=labelEnabled[labelEnNo].L529;
 label520.Enabled:=labelEnabled[labelEnNo].L520;
-label521.Enabled:=labelEnabled[labelEnNo].L521;
-label522.Enabled:=labelEnabled[labelEnNo].L522;
-Panel6.Visible:=True;
 end;
 
 procedure Tnutr.Button50Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button50.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button51Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button51.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button52Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button52.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button53Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button53.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button54Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button54.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button55Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button55.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button63Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button63.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button62Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button62.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button56Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button56.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button57Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button57.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button58Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button58.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button59Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button59.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button60Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button60.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button61Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button61.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button64Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para '+Button64.Caption+'...';
 Adriana();
 end;
 
 procedure Tnutr.Button44Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+ Button44.Caption+'...';
+Reaccion_Irregular();
 BNutricion.Click;
 If rectificado>84 Then button44.Enabled := False;
 end;
@@ -11903,9 +7350,14 @@ for i:=0 to self.ComponentCount-1 do
   if (self.Components[i] as TEdit).tag = 8 then begin
    (self.Components[i] as TEdit).enabled := true;
 end;
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+for i:=0 to self.ComponentCount-1 do
+ if (self.Components[i] is TLabel) then
+  if (self.Components[i] as TLabel).tag = 7 then begin
+   (self.Components[i] as TLabel).enabled := true;
+end;
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 end;
 
@@ -11924,13 +7376,11 @@ if (Sender as Tobject) is TLabel then Begin
       if TLabel(sender).Caption='Conexión con homeopatía clásica difícil debido a fluctuaciones emocionales.' then exit;
       if TLabel(sender).Caption='Conexión con homeopatía clásica difícil debido a karmas.' then exit;
       if TLabel(sender).Caption='Conexión con homeopatía clásica difícil debido a exposiciones tóxicas.' then exit;
-      if TLabel(sender).Caption='Conexión con homeopatía clásica difícil debido a energías perversas.' then exit;
+      if TLabel(sender).Caption='Conexión con homeopatía clásica difícil debido a contaminación electromagnética.' then exit;
 End  ;
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Coherencia |';
-LRectificado.Caption:='Rectificado |';
-PDesarrollo.Visible:=True;
-PDesarrollo.Refresh;
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Coherencia | ';
+LRectificado.Caption:='Rectificado | ';
 Repeat
 tooth:=harm;
 tooth1:= astr+numer+old;
@@ -11964,26 +7414,21 @@ if (rectificado>84) and ((Sender as Tobject) is TLabel ) then
     (sender as tlabel).Enabled :=false;
 if (rectificado>84) and ((Sender as Tobject) is TEdit ) then
     (sender as tEdit).Enabled :=false;
-PDesarrollo.Visible:=False;
 MyChrono.Stop;
 end;
 
 procedure Tnutr.Montserrat(Sender: TObject);
 begin
+if (TLabel(sender).Caption='0') or (TLabel(sender).Caption='---') then exit
+else
 Reaccion_Irregular();
 MyChrono.Start;
-if TLabel(sender).Caption='0' then exit;
-Randomize;
-Fmain.recmain:=Fmain.recmain+1;
-if label520.caption<>'0' then testform1.Edit8.text:= testform1.Edit8.text+label520.caption;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 Vart1:=Random(10)+2;
-vtiempo := 90+Random(90);
+vtiempo := 90+Random(60);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
@@ -12008,176 +7453,14 @@ if reaction2>100 then reaction2:=85+Random(15);
 if rectificado>100 then rectificado:=85+Random(15);
 
 Label537.caption:='Resonancia | '+inttostr(reaction1);
-Label796.caption:='Probabilidad de deficiencia | '+inttostr(reaction2);
+Label796.caption:='Deficiencia | '+inttostr(reaction2);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-oeg:=random(41);
-if oeg<2 then label535.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label535.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label535.hint:='Involucrado con: Estrés.';
-if oeg=4 then label535.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label535.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label535.hint:='Involucrado con: Infección.';
-if oeg=7 then label535.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label535.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label535.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label535.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label535.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label535.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label535.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label535.hint:='Involucrado con: Hígado.';
-if oeg=15 then label535.hint:='Involucrado con: Riñones.';
-if oeg=16 then label535.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label535.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label535.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label535.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label535.hint:='Involucrado con: Sangre.';
-if oeg=21 then label535.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label535.hint:='Involucrado con: Alergias.';
-if oeg=23 then label535.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label535.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label535.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label535.hint:='Involucrado con: Radiación.';
-if oeg=27 then label535.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label535.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label535.hint:='Involucrado con: Virus.';
-if oeg=30 then label535.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label535.hint:='Involucrado con: Ameba.';
-if oeg=32 then label535.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label535.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label535.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label535.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label535.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label535.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label535.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label535.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label535.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label536.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label536.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label536.hint:='Involucrado con: Estrés.';
-if oeg=4 then label536.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label536.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label536.hint:='Involucrado con: Infección.';
-if oeg=7 then label536.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label536.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label536.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label536.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label536.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label536.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label536.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label536.hint:='Involucrado con: Hígado.';
-if oeg=15 then label536.hint:='Involucrado con: Riñones.';
-if oeg=16 then label536.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label536.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label536.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label536.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label536.hint:='Involucrado con: Sangre.';
-if oeg=21 then label536.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label536.hint:='Involucrado con: Alergias.';
-if oeg=23 then label536.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label536.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label536.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label536.hint:='Involucrado con: Radiación.';
-if oeg=27 then label536.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label536.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label536.hint:='Involucrado con: Virus.';
-if oeg=30 then label536.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label536.hint:='Involucrado con: Ameba.';
-if oeg=32 then label536.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label536.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label536.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label536.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label536.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label536.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label536.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label536.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label536.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label539.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label539.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label539.hint:='Involucrado con: Estrés.';
-if oeg=4 then label539.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label539.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label539.hint:='Involucrado con: Infección.';
-if oeg=7 then label539.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label539.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label539.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label539.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label539.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label539.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label539.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label539.hint:='Involucrado con: Hígado.';
-if oeg=15 then label539.hint:='Involucrado con: Riñones.';
-if oeg=16 then label539.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label539.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label539.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label539.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label539.hint:='Involucrado con: Sangre.';
-if oeg=21 then label539.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label539.hint:='Involucrado con: Alergias.';
-if oeg=23 then label539.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label539.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label539.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label539.hint:='Involucrado con: Radiación.';
-if oeg=27 then label539.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label539.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label539.hint:='Involucrado con: Virus.';
-if oeg=30 then label539.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label539.hint:='Involucrado con: Ameba.';
-if oeg=32 then label539.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label539.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label539.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label539.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label539.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label539.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label539.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label539.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label539.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label540.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label540.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label540.hint:='Involucrado con: Estrés.';
-if oeg=4 then label540.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label540.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label540.hint:='Involucrado con: Infección.';
-if oeg=7 then label540.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label540.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label540.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label540.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label540.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label540.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label540.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label540.hint:='Involucrado con: Hígado.';
-if oeg=15 then label540.hint:='Involucrado con: Riñones.';
-if oeg=16 then label540.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label540.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label540.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label540.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label540.hint:='Involucrado con: Sangre.';
-if oeg=21 then label540.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label540.hint:='Involucrado con: Alergias.';
-if oeg=23 then label540.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label540.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label540.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label540.hint:='Involucrado con: Radiación.';
-if oeg=27 then label540.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label540.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label540.hint:='Involucrado con: Virus.';
-if oeg=30 then label540.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label540.hint:='Involucrado con: Ameba.';
-if oeg=32 then label540.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label540.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label540.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label540.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label540.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label540.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label540.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label540.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label540.hint:='Involucrado con: Cognicción.';
-PDesarrollo.visible:=false;
+EnlaceHints();
+Fmain.recmain:=Fmain.recmain+1;
 MyChrono.Stop;
 if rectificado>84 then TLabel(sender).Enabled:=false;
+If (rectificado<85) and (CBAutomatico.Checked=True) Then Montserrat(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
@@ -12187,11 +7470,10 @@ Reaccion_Irregular();
 MyChrono.Start;
 rectificado:=0;
 GProgreso.progress:=0;
-LRectificado.Caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.Caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 Fmain.recmain:=Fmain.recmain+1;
-PDesarrollo.Visible:=True;
 Label848.refresh;
 vtiempo := 90+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -12210,132 +7492,130 @@ GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
- FRecompensa.label79.caption:=inttostr(FMain.shaping);
-PDesarrollo.Visible:=False;
+ 
 rectificado:=random(75)+25;
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 oeg:=random(27);
-if oeg=0 then panel9.hint:='Resistencia inconciente a cambiar o explorarse a sí mismo/a.';
-if oeg=1 then panel9.hint:='Reducción de estrés.';
-if oeg=2 then panel9.hint:='Toma de conciencia y/o educación.';
-if oeg=3 then panel9.hint:='Factores mentales o imponderables.';
-if oeg=4 then panel9.hint:='Homeopatía metabólica o genética.';
-if oeg=5 then panel9.hint:='Terapia de alersodes.';
-if oeg=6 then panel9.hint:='Desintoxicación de isodes o xenobióticos.';
-if oeg=7 then panel9.hint:='Nosodes para patógenos.';
-if oeg=19 then panel9.hint:='Terapia nutricional.';
-if oeg=8 then panel9.hint:='Imponderables para energías perversas.';
-if oeg=9 then panel9.hint:='Fitoterapia.';
-if oeg=10 then panel9.hint:='Terapia de sarcodes.';
-if oeg=11 then panel9.hint:='Homeopatía combinativa.';
-if oeg=12 then panel9.hint:='Terapia vitamínica.';
-if oeg=20 then panel9.hint:='Toma de conciencia de sí mismo/a.';
-if oeg=13 then panel9.hint:='Desarrollo de habilidades mentales curativas.';
-if oeg=14 then panel9.hint:='Terapia oligo mineral.';
-if oeg=15 then panel9.hint:='Tratar flora intestinal.';
-if oeg=16 then panel9.hint:='Desintoxicación de flora intestinal e hígado.';
-if oeg=17 then panel9.hint:='Control de dieta.';
-if oeg=22 then panel9.hint:='Terapia nutricional.';
-if oeg=18 then panel9.hint:='Ejercicio, cardiovascular.';
-if oeg=21 then panel9.hint:='Ejercicio, yoga.';
-if oeg=23 then panel9.hint:='Ejercicio, caminar.';
-if oeg=24 then panel9.hint:='Terapia de ajuste y postura.';
-if oeg=25 then panel9.hint:='Acupuntura.';
-if oeg>25 then panel9.hint:='Medicina bio-energética.';
-
-if riskchart.ims>165 then panel9.hint:=panel9.hint+' / Sistema inmunitario.';
-if riskchart.emo>165 then panel9.hint:=panel9.hint+' / Factores emocionales.';
-if riskchart.infl>165 then panel9.hint:=panel9.hint+' / Inflamación.';
-if riskchart.can>165 then panel9.hint:=panel9.hint+' / Cáncer.';
-if riskchart.str>165 then panel9.hint:=panel9.hint+' / Estrés.';
-if riskchart.infe>165 then panel9.hint:=panel9.hint+' / Infeccción.';
-if riskchart.tox>165 then panel9.hint:=panel9.hint+' / Toxicidad.';
-if riskchart.car>165 then panel9.hint:=panel9.hint+' / Sistema cardiovascular.';
-if riskchart.Nut>165 then panel9.hint:=panel9.hint+' / Nutrientes.';
-if riskchart.hor>165 then panel9.hint:=panel9.hint+' / Hormonas.';
-if riskchart.lym>165 then panel9.hint:=panel9.hint+' / Sistema linfático.';
-if riskchart.bld>165 then panel9.hint:=panel9.hint+' / Sangre.';
-if riskchart.cir>165 then panel9.hint:=panel9.hint+' / Sistema circulatorio.';
-if riskchart.cho>165 then panel9.hint:=panel9.hint+' / Colesterol.';
-if riskchart.oxi>165 then panel9.hint:=panel9.hint+' / Oxidación.';
-if riskchart.hyd>165 then panel9.hint:=panel9.hint+' / Hidratación.';
-if riskchart.hypa>165 then panel9.hint:=panel9.hint+' / Hipoadrenia.';
-if riskchart.tra>165 then panel9.hint:=panel9.hint+' / Trauma/s.';
-if riskchart.inh>165 then panel9.hint:=panel9.hint+' / Factores heredados.';
-if riskchart.liv>165 then panel9.hint:=panel9.hint+' / Hígado.';
-if riskchart.kid>165 then panel9.hint:=panel9.hint+' / Riñones.';
-if riskchart.dig>165 then panel9.hint:=panel9.hint+' / Aparato digestivo.';
-if riskchart.cnt>165 then panel9.hint:=panel9.hint+' / Tejido conectivo.';
-if riskchart.bon>165 then panel9.hint:=panel9.hint+' / Sistema óseo.';
-if riskchart.acid>165 then panel9.hint:=panel9.hint+' / Balance del pH.';
-if riskchart.env>165 then panel9.hint:=panel9.hint+' / Medio ambiente.';
-if riskchart.aler>165 then panel9.hint:=panel9.hint+' / Alergias.';
-if riskchart.rad>165 then panel9.hint:=panel9.hint+' / Radiación.';
-if riskchart.bac>165 then panel9.hint:=panel9.hint+' / Bacterias.';
-if riskchart.fun>165 then panel9.hint:=panel9.hint+' / Fungosidades.';
-if riskchart.vir>165 then panel9.hint:=panel9.hint+' / Virus.';
-if riskchart.par>165 then panel9.hint:=panel9.hint+' / Parásitos.';
-if riskchart.ameo>165 then panel9.hint:=panel9.hint+' / Amebas.';
-if riskchart.fdp>165 then panel9.hint:=panel9.hint+' / Envenenamiento alimentario.';
-if riskchart.sug>165 then panel9.hint:=panel9.hint+' / Regulación del azúcar.';
-if riskchart.ner>165 then panel9.hint:=panel9.hint+' / Sistema neurológico.';
-if riskchart.sener>165 then panel9.hint:=panel9.hint+' / Sistema sensorial.';
-if riskchart.res>165 then panel9.hint:=panel9.hint+' / Sistema respiratorio.';
-if riskchart.cog>165 then panel9.hint:=panel9.hint+' / Cognicción.';
+if oeg=0 then panel9.hint:=' Resistencia inconciente a cambiar o explorarse a sí mismo.';
+if oeg=1 then panel9.hint:=' Reducción de estrés.';
+if oeg=2 then panel9.hint:=' Toma de conciencia y/o educación.';
+if oeg=3 then panel9.hint:=' Factores mentales o imponderables.';
+if oeg=4 then panel9.hint:=' Homeopatía metabólica o genética.';
+if oeg=5 then panel9.hint:=' Terapia de alersodes.';
+if oeg=6 then panel9.hint:=' Desintoxicación de isodes o xenobióticos.';
+if oeg=7 then panel9.hint:=' Nosodes para patógenos.';
+if oeg=19 then panel9.hint:=' Terapia nutricional.';
+if oeg=8 then panel9.hint:=' Imponderables para energías perversas.';
+if oeg=9 then panel9.hint:=' Fitoterapia.';
+if oeg=10 then panel9.hint:=' Sarcodes.';
+if oeg=11 then panel9.hint:=' Homeopatía combinativa.';
+if oeg=12 then panel9.hint:=' Terapia vitamínica.';
+if oeg=20 then panel9.hint:=' Toma de conciencia de sí mismo/a.';
+if oeg=13 then panel9.hint:=' Desarrollo de habilidades mentales curativas.';
+if oeg=14 then panel9.hint:=' Terapia oligo mineral.';
+if oeg=15 then panel9.hint:=' Flora intestinal.';
+if oeg=16 then panel9.hint:=' Desintoxicación de flora intestinal e hígado.';
+if oeg=17 then panel9.hint:=' Control de dieta.';
+if oeg=22 then panel9.hint:=' Terapia nutricional.';
+if oeg=18 then panel9.hint:=' Ejercicio, cardiovascular.';
+if oeg=21 then panel9.hint:=' Ejercicio, yoga.';
+if oeg=23 then panel9.hint:=' Ejercicio, caminar.';
+if oeg=24 then panel9.hint:=' Terapia de ajuste y postura.';
+if oeg=25 then panel9.hint:=' Acupuntura.';
+if oeg>25 then panel9.hint:=' Medicina bio-energética.';
+if riskchart.ims>165 then panel9.hint:=panel9.hint+' Sistema inmunitario.';
+if riskchart.emo>165 then panel9.hint:=panel9.hint+' Factores emocionales.';
+if riskchart.infl>165 then panel9.hint:=panel9.hint+' Inflamación.';
+if riskchart.can>165 then panel9.hint:=panel9.hint+' Cáncer.';
+if riskchart.str>165 then panel9.hint:=panel9.hint+' Estrés.';
+if riskchart.infe>165 then panel9.hint:=panel9.hint+' Infeccción.';
+if riskchart.tox>165 then panel9.hint:=panel9.hint+' Toxicidad.';
+if riskchart.car>165 then panel9.hint:=panel9.hint+' Sistema cardiovascular.';
+if riskchart.Nut>165 then panel9.hint:=panel9.hint+' Nutrientes.';
+if riskchart.hor>165 then panel9.hint:=panel9.hint+' Hormonas.';
+if riskchart.lym>165 then panel9.hint:=panel9.hint+' Sistema linfático.';
+if riskchart.bld>165 then panel9.hint:=panel9.hint+' Sangre.';
+if riskchart.cir>165 then panel9.hint:=panel9.hint+' Sistema circulatorio.';
+if riskchart.cho>165 then panel9.hint:=panel9.hint+' Colesterol.';
+if riskchart.oxi>165 then panel9.hint:=panel9.hint+' Oxidación.';
+if riskchart.hyd>165 then panel9.hint:=panel9.hint+' Hidratación.';
+if riskchart.hypa>165 then panel9.hint:=panel9.hint+' Hipoadrenia.';
+if riskchart.tra>165 then panel9.hint:=panel9.hint+' Trauma.';
+if riskchart.inh>165 then panel9.hint:=panel9.hint+' Factores heredados.';
+if riskchart.liv>165 then panel9.hint:=panel9.hint+' Hígado.';
+if riskchart.kid>165 then panel9.hint:=panel9.hint+' Riñones.';
+if riskchart.dig>165 then panel9.hint:=panel9.hint+' Aparato digestivo.';
+if riskchart.cnt>165 then panel9.hint:=panel9.hint+' Tejido conectivo.';
+if riskchart.bon>165 then panel9.hint:=panel9.hint+' Sistema óseo.';
+if riskchart.acid>165 then panel9.hint:=panel9.hint+' Balance del pH.';
+if riskchart.env>165 then panel9.hint:=panel9.hint+' Medio ambiente / Entorno.';
+if riskchart.aler>165 then panel9.hint:=panel9.hint+' Alérgia/s.';
+if riskchart.rad>165 then panel9.hint:=panel9.hint+' Radiación.';
+if riskchart.bac>165 then panel9.hint:=panel9.hint+' Bacterias.';
+if riskchart.fun>165 then panel9.hint:=panel9.hint+' Fungosidades.';
+if riskchart.vir>165 then panel9.hint:=panel9.hint+' Virus.';
+if riskchart.par>165 then panel9.hint:=panel9.hint+' Parásitos.';
+if riskchart.ameo>165 then panel9.hint:=panel9.hint+' Amíbas.';
+if riskchart.fdp>165 then panel9.hint:=panel9.hint+' Intolerancia alimentaria.';
+if riskchart.sug>165 then panel9.hint:=panel9.hint+' Regulación del azúcar.';
+if riskchart.ner>165 then panel9.hint:=panel9.hint+' Sistema neurológico.';
+if riskchart.sener>165 then panel9.hint:=panel9.hint+' Sistema sensorial.';
+if riskchart.res>165 then panel9.hint:=panel9.hint+' Sistema respiratorio.';
+if riskchart.cog>165 then panel9.hint:=panel9.hint+' Cognicción.';
   oeg:=random(55);
-if oeg<2    then  panel9.hint:=panel9.hint+' / Ocúpese de: Regresión.';
-if oeg= 2   then  panel9.hint:=panel9.hint+' / Ocúpese de: Agresión.';
-if oeg=3    then  panel9.hint:=panel9.hint+' / Ocúpese de: Ira.';
-if oeg=4    then  panel9.hint:=panel9.hint+' / Ocúpese de: Ansiedad.';
-if oeg=5    then  panel9.hint:=panel9.hint+' / Ocúpese de: Conciencia.';
-if oeg=6    then  panel9.hint:=panel9.hint+' / Ocúpese de: Tristeza.';
-if oeg=7    then  panel9.hint:=panel9.hint+' / Ocúpese de: Culpabilidad.';
-if oeg=8    then  panel9.hint:=panel9.hint+' / Ocúpese de: Autismo.';
-if oeg=9    then  panel9.hint:=panel9.hint+' / Ocúpese de: Negación.';
-if oeg=10    then  panel9.hint:=panel9.hint+' / Ocúpese de: Descuido.';
-if oeg=11    then  panel9.hint:=panel9.hint+' / Ocúpese de: Desilusión.';
-if oeg=12    then  panel9.hint:=panel9.hint+' / Ocúpese de: Depresión.';
-if oeg=13    then  panel9.hint:=panel9.hint+' / Ocúpese de: Poder.';
-if oeg=14    then  panel9.hint:=panel9.hint+' / Ocúpese de: Duda de sí mismo/a.';
-if oeg=15    then  panel9.hint:=panel9.hint+' / Ocúpese de: Temor.';
-if oeg=16    then  panel9.hint:=panel9.hint+' / Ocúpese de: Confusión.';
-if oeg=17    then  panel9.hint:=panel9.hint+' / Ocúpese de: Duda.';
-if oeg=18    then  panel9.hint:=panel9.hint+' / Ocúpese de: Celos.';
-if oeg=19    then  panel9.hint:=panel9.hint+' / Ocúpese de: Alegría.';
-if oeg=20    then  panel9.hint:=panel9.hint+' / Ocúpese de: Lujuria.';
-if oeg=21    then  panel9.hint:=panel9.hint+' / Ocúpese de: Avaricia.';
-if oeg=22    then  panel9.hint:=panel9.hint+' / Ocúpese de: Poderes Extra Sensoriales.';
-if oeg=23    then  panel9.hint:=panel9.hint+' / Ocúpese de: Dolor psíquico.';
-if oeg=24    then  panel9.hint:=panel9.hint+' / Ocúpese de: Pasividad.';
-if oeg=25    then  panel9.hint:=panel9.hint+' / Ocúpese de: Proyección.';
-if oeg=26    then  panel9.hint:=panel9.hint+' / Ocúpese de: Racionalización.';
-if oeg=27    then  panel9.hint:=panel9.hint+' / Ocúpese de: Imprudencia.';
-if oeg=28    then  panel9.hint:=panel9.hint+' / Ocúpese de: Preocupación.';
-if oeg=29    then  panel9.hint:=panel9.hint+' / Ocúpese de: Abandono.';
-if oeg=30    then  panel9.hint:=panel9.hint+' / Ocúpese de: Avergonzamiento.';
-if oeg=31    then  panel9.hint:=panel9.hint+' / Ocúpese de: Traición.';
-if oeg=32    then  panel9.hint:=panel9.hint+' / Ocúpese de: Malentendimiento.';
-if oeg=33    then  panel9.hint:=panel9.hint+' / Ocúpese de: Curiosidad.';
-if oeg=34    then  panel9.hint:=panel9.hint+' / Ocúpese de: Sobrecogimiento.';
-if oeg=35    then  panel9.hint:=panel9.hint+' / Ocúpese de: Conflicto religioso.';
-if oeg=36    then  panel9.hint:=panel9.hint+' / Ocúpese de: Identidad de conflicto.';
-if oeg=37    then  panel9.hint:=panel9.hint+' / Ocúpese de: Resistencia al cambio.';
-if oeg=38    then  panel9.hint:=panel9.hint+' / Ocúpese de: Nervios.';
-if oeg=39    then  panel9.hint:=panel9.hint+' / Ocúpese de: Risa.';
-if oeg=40    then  panel9.hint:=panel9.hint+' / Ocúpese de: Entusiasmo.';
-if oeg=41    then  panel9.hint:=panel9.hint+' / Ocúpese de: Vanidad.';
-if oeg=42    then  panel9.hint:=panel9.hint+' / Ocúpese de: Negociación.';
-if oeg=43    then  panel9.hint:=panel9.hint+' / Ocúpese de: Coraje.';
-if oeg=44    then  panel9.hint:=panel9.hint+' / Ocúpese de: Vergüenza.';
-if oeg=45    then  panel9.hint:=panel9.hint+' / Ocúpese de: Monotonía.';
-if oeg=46    then  panel9.hint:=panel9.hint+' / Ocúpese de: Necesidad de cambio.';
-if oeg=47    then  panel9.hint:=panel9.hint+' / Ocúpese de: Observación.';
-if oeg=48    then  panel9.hint:=panel9.hint+' / Ocúpese de: Antagonismo.';
-if oeg=49    then  panel9.hint:=panel9.hint+' / Ocúpese de: Sensualidad.';
-if oeg=50    then  panel9.hint:=panel9.hint+' / Ocúpese de: Espiritualidad.';
-if oeg=51    then  panel9.hint:=panel9.hint+' / Ocúpese de: Sexualidad.';
-if oeg>51    then  panel9.hint:=panel9.hint+' / Ocúpese de: Adictividad.';
+if oeg<2    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Regresión.';
+if oeg= 2   then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Agresión.';
+if oeg=3    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Ira.';
+if oeg=4    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Ansiedad.';
+if oeg=5    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Conciencia.';
+if oeg=6    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Tristeza.';
+if oeg=7    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Culpabilidad.';
+if oeg=8    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Autismo.';
+if oeg=9    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Negación.';
+if oeg=10    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Descuido.';
+if oeg=11    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Desilusión.';
+if oeg=12    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Depresión.';
+if oeg=13    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Poder.';
+if oeg=14    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Duda de sí mismo.';
+if oeg=15    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Temor.';
+if oeg=16    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Confusión.';
+if oeg=17    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Duda.';
+if oeg=18    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Celos.';
+if oeg=19    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Alegría.';
+if oeg=20    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Lujuria.';
+if oeg=21    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Avaricia.';
+if oeg=22    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Poderes Extra Sensoriales - ESP.';
+if oeg=23    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Dolor psíquico.';
+if oeg=24    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Pasividad.';
+if oeg=25    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Proyección.';
+if oeg=26    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Racionalización.';
+if oeg=27    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Imprudencia.';
+if oeg=28    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Preocupación.';
+if oeg=29    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Abandono.';
+if oeg=30    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Vergüenza.';
+if oeg=31    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Traición.';
+if oeg=32    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Malentendimiento.';
+if oeg=33    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Curiosidad.';
+if oeg=34    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Sobrecogimiento.';
+if oeg=35    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Conflicto religioso.';
+if oeg=36    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Identidad de conflicto.';
+if oeg=37    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Resistencia al cambio.';
+if oeg=38    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Nervios.';
+if oeg=39    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Risa.';
+if oeg=40    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Entusiasmo.';
+if oeg=41    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Vanidad.';
+if oeg=42    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Negociación.';
+if oeg=43    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Coraje.';
+if oeg=44    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Vergüenza.';
+if oeg=45    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Monotonía.';
+if oeg=46    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Necesidad de cambio.';
+if oeg=47    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Observación.';
+if oeg=48    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Antagonismo.';
+if oeg=49    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Sensualidad.';
+if oeg=50    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Espiritualidad.';
+if oeg=51    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Sexualidad.';
+if oeg>51    then  panel9.hint:=panel9.hint+' Ocúpese de:'+' Adicciones.';
 MyChrono.stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Adriana();
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -12346,11 +7626,6 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 GProgreso.Progress:=0;
-Randomize;
-Fmain.recmain:=Fmain.recmain+1;
-if label520.caption<>'----' then testform1.Edit8.text:=testform1.Edit8.text+label520.caption;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 90+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -12373,177 +7648,21 @@ If reaction1>100 Then reaction1:=85+Random(15);
 If reaction2>100 Then reaction2:=85+Random(15);
 If rectificado>100 Then rectificado:=85+Random(15);
 Label537.Caption:='Resonancia | '+inttostr(reaction2);
-Label796.Caption:='Probabilidad de deficiencia | '+inttostr(reaction1);
+Label796.Caption:='Deficiencia | '+inttostr(reaction1);
 LRectificado.Caption:='Rectificado | '+inttostr(rectificado);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-oeg:=random(41);
-if oeg>2 then label535.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label535.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label535.hint:='Involucrado con: Estrés.';
-if oeg=4 then label535.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label535.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label535.hint:='Involucrado con: Infección.';
-if oeg=7 then label535.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label535.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label535.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label535.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label535.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label535.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label535.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label535.hint:='Involucrado con: Hígado.';
-if oeg=15 then label535.hint:='Involucrado con: Riñones.';
-if oeg=16 then label535.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label535.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label535.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label535.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label535.hint:='Involucrado con: Sangre.';
-if oeg=21 then label535.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label535.hint:='Involucrado con: Alergias.';
-if oeg=23 then label535.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label535.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label535.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label535.hint:='Involucrado con: Radiación.';
-if oeg=27 then label535.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label535.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label535.hint:='Involucrado con: Virus.';
-if oeg=30 then label535.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label535.hint:='Involucrado con: Ameba.';
-if oeg=32 then label535.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label535.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label535.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label535.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label535.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label535.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label535.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label535.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label535.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label536.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label536.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label536.hint:='Involucrado con: Estrés.';
-if oeg=4 then label536.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label536.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label536.hint:='Involucrado con: Infección.';
-if oeg=7 then label536.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label536.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label536.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label536.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label536.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label536.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label536.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label536.hint:='Involucrado con: Hígado.';
-if oeg=15 then label536.hint:='Involucrado con: Riñones.';
-if oeg=16 then label536.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label536.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label536.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label536.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label536.hint:='Involucrado con: Sangre.';
-if oeg=21 then label536.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label536.hint:='Involucrado con: Alergias.';
-if oeg=23 then label536.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label536.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label536.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label536.hint:='Involucrado con: Radiación.';
-if oeg=27 then label536.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label536.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label536.hint:='Involucrado con: Virus.';
-if oeg=30 then label536.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label536.hint:='Involucrado con: Ameba.';
-if oeg=32 then label536.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label536.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label536.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label536.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label536.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label536.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label536.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label536.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label536.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label539.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label539.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label539.hint:='Involucrado con: Estrés.';
-if oeg=4 then label539.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label539.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label539.hint:='Involucrado con: Infección.';
-if oeg=7 then label539.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label539.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label539.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label539.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label539.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label539.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label539.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label539.hint:='Involucrado con: Hígado.';
-if oeg=15 then label539.hint:='Involucrado con: Riñones.';
-if oeg=16 then label539.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label539.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label539.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label539.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label539.hint:='Involucrado con: Sangre.';
-if oeg=21 then label539.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label539.hint:='Involucrado con: Alergias.';
-if oeg=23 then label539.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label539.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label539.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label539.hint:='Involucrado con: Radiación.';
-if oeg=27 then label539.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label539.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label539.hint:='Involucrado con: Virus.';
-if oeg=30 then label539.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label539.hint:='Involucrado con: Ameba.';
-if oeg=32 then label539.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label539.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label539.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label539.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label539.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label539.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label539.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label539.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label539.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg<2 then label540.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label540.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label540.hint:='Involucrado con: Estrés.';
-if oeg=4 then label540.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label540.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label540.hint:='Involucrado con: Infección.';
-if oeg=7 then label540.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label540.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label540.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label540.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label540.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label540.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label540.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label540.hint:='Involucrado con: Hígado.';
-if oeg=15 then label540.hint:='Involucrado con: Riñones.';
-if oeg=16 then label540.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label540.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label540.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label540.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label540.hint:='Involucrado con: Sangre.';
-if oeg=21 then label540.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label540.hint:='Involucrado con: Alergias.';
-if oeg=23 then label540.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label540.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label540.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label540.hint:='Involucrado con: Radiación.';
-if oeg=27 then label540.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label540.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label540.hint:='Involucrado con: Virus.';
-if oeg=30 then label540.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label540.hint:='Involucrado con: Ameba.';
-if oeg=32 then label540.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label540.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label540.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label540.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label540.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label540.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label540.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label540.hint:='Involucrado con: Hidratación.';
-if oeg>39 then label540.hint:='Involucrado con: Cognicción.';
-PDesarrollo.visible:=false;
+EnlaceHints();
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Lora();
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+end;
+
+procedure Tnutr.EnlaceHints();
+begin
+BCausas.Click;
+BAVM.Click;
+BToxinas.Click;
+BProcesos.Click;
 end;
 
 procedure Tnutr.Button1Click(Sender: TObject);
@@ -12557,12 +7676,8 @@ begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -12577,28 +7692,21 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(Random(9000),Random(9)+1,Random(2000),Random(30)+1,Random(30)+1,1,
+ChangingPulses(Random(9000),Random(9)+1,Random(2000),Random(30)+1,Random(30)+1,1,
 '11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
@@ -12606,229 +7714,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
 
-procedure Tnutr.Olga(Sender: TObject);
-var
-    Var1,reaction1 : Integer;
-begin
-Reaccion_Irregular();
-if TLabel(sender).Caption='----' then exit;
-Randomize;
-Fmain.recmain:=Fmain.recmain+1;
-if label520.caption<>'----' then testform1.Edit8.text:= testform1.Edit8.text+label520.caption;
-PDesarrollo.Caption:='Equilibrando ítem...';
-PDesarrollo.refresh;
-PDesarrollo.visible:=true;
-Var1:=Random(10)+2;
-LRectificado.Caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
-vtiempo := 90+Random(90);
-If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
- GProgreso.MaxValue := vtiempo;
- GProgreso.Refresh;
-Repeat
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(5555,Random(500),Random(500),2,1,1,
- 'llllllll','llllllll');
- GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(5555,Random(5000),Random(500),2+random(5),1+random(5),1,
-'llllllll','llllllll');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-Until
-MyChrono.TimeElapsed > vtiempo;
-GProgreso.Progress := round(MyChrono.pTEcoule);
-GProgreso.Refresh;
-reaction2:=random(125);
-reaction1:=random(155);
-if reaction2>100 then reaction2:=85+Random(15);
-if reaction1>100 then reaction1:=85+Random(15);
-label537.caption:='Resonancia | '+inttostr(reaction2);
-label796.caption:='Probabilidad de deficiencia | '+inttostr(reaction1);
-reaction2:=33+random(95);
-if reaction2>100 then reaction2:=85+Random(15);
-LRectificado.caption:=inttostr(reaction2);
-if reaction2>84 then TLabel(sender).Enabled:=false;
-oeg:=random(41);
-if oeg=1 then label535.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label535.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label535.hint:='Involucrado con: Estrés.';
-if oeg=4 then label535.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label535.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label535.hint:='Involucrado con: Infección.';
-if oeg=7 then label535.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label535.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label535.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label535.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label535.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label535.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label535.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label535.hint:='Involucrado con: Hígado.';
-if oeg=15 then label535.hint:='Involucrado con: Riñones.';
-if oeg=16 then label535.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label535.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label535.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label535.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label535.hint:='Involucrado con: Sangre.';
-if oeg=21 then label535.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label535.hint:='Involucrado con: Alergias.';
-if oeg=23 then label535.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label535.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label535.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label535.hint:='Involucrado con: Radiación.';
-if oeg=27 then label535.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label535.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label535.hint:='Involucrado con: Virus.';
-if oeg=30 then label535.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label535.hint:='Involucrado con: Ameba.';
-if oeg=32 then label535.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label535.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label535.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label535.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label535.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label535.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label535.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label535.hint:='Involucrado con: Hidratación.';
-if oeg=40 then label535.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg=1 then label536.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label536.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label536.hint:='Involucrado con: Estrés.';
-if oeg=4 then label536.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label536.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label536.hint:='Involucrado con: Infección.';
-if oeg=7 then label536.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label536.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label536.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label536.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label536.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label536.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label536.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label536.hint:='Involucrado con: Hígado.';
-if oeg=15 then label536.hint:='Involucrado con: Riñones.';
-if oeg=16 then label536.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label536.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label536.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label536.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label536.hint:='Involucrado con: Sangre.';
-if oeg=21 then label536.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label536.hint:='Involucrado con: Alergias.';
-if oeg=23 then label536.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label536.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label536.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label536.hint:='Involucrado con: Radiación.';
-if oeg=27 then label536.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label536.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label536.hint:='Involucrado con: Virus.';
-if oeg=30 then label536.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label536.hint:='Involucrado con: Ameba.';
-if oeg=32 then label536.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label536.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label536.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label536.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label536.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label536.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label536.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label536.hint:='Involucrado con: Hidratación.';
-if oeg=40 then label536.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg=1 then label539.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label539.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label539.hint:='Involucrado con: Estrés.';
-if oeg=4 then label539.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label539.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label539.hint:='Involucrado con: Infección.';
-if oeg=7 then label539.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label539.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label539.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label539.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label539.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label539.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label539.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label539.hint:='Involucrado con: Hígado.';
-if oeg=15 then label539.hint:='Involucrado con: Riñones.';
-if oeg=16 then label539.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label539.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label539.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label539.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label539.hint:='Involucrado con: Sangre.';
-if oeg=21 then label539.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label539.hint:='Involucrado con: Alergias.';
-if oeg=23 then label539.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label539.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label539.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label539.hint:='Involucrado con: Radiación.';
-if oeg=27 then label539.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label539.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label539.hint:='Involucrado con: Virus.';
-if oeg=30 then label539.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label539.hint:='Involucrado con: Ameba.';
-if oeg=32 then label539.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label539.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label539.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label539.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label539.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label539.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label539.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label539.hint:='Involucrado con: Hidratación.';
-if oeg=40 then label539.hint:='Involucrado con: Cognicción.';
-oeg:=random(41);
-if oeg=1 then label540.hint:='Involucrado con: Inflamación.';
-if oeg=2 then label540.hint:='Involucrado con: Cáncer.';
-if oeg=3 then label540.hint:='Involucrado con: Estrés.';
-if oeg=4 then label540.hint:='Involucrado con: Hipoadrenia.';
-if oeg=5 then label540.hint:='Involucrado con: Factores emocionales.';
-if oeg=6 then label540.hint:='Involucrado con: Infección.';
-if oeg=7 then label540.hint:='Involucrado con: Toxicidad.';
-if oeg=8 then label540.hint:='Involucrado con: Trauma/s.';
-if oeg=9 then label540.hint:='Involucrado con: Factores heredados.';
-if oeg=10 then label540.hint:='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then label540.hint:='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then label540.hint:='Involucrado con: Producción hormonal.';
-if oeg=13 then label540.hint:='Involucrado con: Sistema linfático.';
-if oeg=14 then label540.hint:='Involucrado con: Hígado.';
-if oeg=15 then label540.hint:='Involucrado con: Riñones.';
-if oeg=16 then label540.hint:='Involucrado con: Sistema digestivo.';
-if oeg=17 then label540.hint:='Involucrado con: Tejido conectivo.';
-if oeg=18 then label540.hint:='Involucrado con: Sistema óseo.';
-if oeg=19 then label540.hint:='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then label540.hint:='Involucrado con: Sangre.';
-if oeg=21 then label540.hint:='Involucrado con: Medio ambiente.';
-if oeg=22 then label540.hint:='Involucrado con: Alergias.';
-if oeg=23 then label540.hint:='Involucrado con: Riesgo emocional.';
-if oeg=24 then label540.hint:='Involucrado con: Sistema circulatorio.';
-if oeg=25 then label540.hint:='Involucrado con: Sistema inmunitario.';
-if oeg=26 then label540.hint:='Involucrado con: Radiación.';
-if oeg=27 then label540.hint:='Involucrado con: Bacteria.';
-if oeg=28 then label540.hint:='Involucrado con: Fungosidades.';
-if oeg=29 then label540.hint:='Involucrado con: Virus.';
-if oeg=30 then label540.hint:='Involucrado con: Parásitos.';
-if oeg=31 then label540.hint:='Involucrado con: Ameba.';
-if oeg=32 then label540.hint:='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then label540.hint:='Involucrado con: Regulación del azúcar.';
-if oeg=34 then label540.hint:='Involucrado con: Sistema neurológico.';
-if oeg=35 then label540.hint:='Involucrado con: Sistema sensorial.';
-if oeg=36 then label540.hint:='Involucrado con: Colesterol.';
-if oeg=37 then label540.hint:='Involucrado con: Sistema respiratorio.';
-if oeg=38 then label540.hint:='Involucrado con: Oxidación.';
-if oeg=39 then label540.hint:='Involucrado con: Hidratación.';
-if oeg=40 then label540.hint:='Involucrado con: Cognicción.';
-PDesarrollo.visible:=false;
-If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
-end;
-
 procedure Tnutr.Button2Click(Sender: TObject);
 var
-  i :integer;
+i: integer;
 begin
 Reaccion_Irregular();
 MyChrono.Start;
@@ -12838,12 +7731,9 @@ Label504.Enabled := False;
 Label505.Enabled := False;
 Label506.Enabled := False;
 Label507.Enabled := False;
-label537.caption:='Resonancia |';
+label537.caption:='Resonancia | ';
 label796.caption:='Coherencia |';
-LRectificado.caption:='Rectificado |';
-PDesarrollo.Caption := 'Rectificando todos los ítems relevantes...';
-PDesarrollo.Refresh;
-PDesarrollo.Visible:=True;
+LRectificado.caption:='Rectificado | ';
 vtiempo := 15+Random(15);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -12867,7 +7757,7 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  tooth2:=random(23);
  tooth1:=tooth1+random(70);
 if tooth1>100 then tooth1:=85+Random(15);
@@ -12898,32 +7788,19 @@ for i:=0 to self.ComponentCount-1 do
 end;
 end;
 end;
-PDesarrollo.Visible:=False;
 MyChrono.Stop;
 end;
 
 procedure Tnutr.Label53Click(Sender: TObject);
 begin
 sysreport.nutr16:=label53.caption;
+Montserrat(Label53);
 end;
 
 procedure Tnutr.Label54Click(Sender: TObject);
 begin
 sysreport.nutr16:=label54.caption;
-end;
-
-procedure Tnutr.Label53DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label53.Caption+'...';
-Montserrat(Label53);
-if reaction2>84 then Label53.Enabled:=False;
-end;
-
-procedure Tnutr.Label54DblClick(Sender: TObject);
-begin
-PDesarrollo.Caption:='Equilibrando '+label54.Caption+'...';
 Montserrat(Label54);
-if reaction2>84 then Label54.Enabled:=False;
 end;
 
 procedure Tnutr.Label57Click(Sender: TObject);
@@ -12972,333 +7849,326 @@ DM.Info.first;
 DM.Info.last;
 no := DM.Info.fieldbyname('no').asinteger+1;
 DM.Info.Appendrecord([no,nil,'----- HOMEOPATÍA CONSTITUCIONAL -----' ]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label333.caption),' '+ label156.caption+' | '+Label156.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label876.caption),' '+ label1015.caption+' | '+Label1015.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label98.caption),' '+ label988.caption+' | '+Label988.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label987.caption),' '+ label1126.caption+' | '+Label1126.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label336.caption),' '+ label159.caption+' | '+Label159.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label334.caption),' '+ label157.caption+' | '+Label157.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label850.caption),' '+ label989.caption+' | '+Label989.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label851.caption),' '+ label990.caption+' | '+Label990.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label852.caption),' '+ label991.caption+' | '+Label991.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label853.caption),' '+ label992.caption+' | '+Label992.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label307.caption),' '+ label130.caption+' | '+Label130.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label276.caption),' '+ label111.caption+' | '+Label111.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label277.caption),' '+ label110.caption+' | '+Label110.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label335.caption),' '+ label158.caption+' | '+Label158.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label854.caption),' '+ label993.caption+' | '+Label993.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label855.caption),' '+ label994.caption+' | '+Label994.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label856.caption),' '+ label995.caption+' | '+Label995.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label278.caption),' '+ label102.caption+' | '+Label102.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label338.caption),' '+ label160.caption+' | '+Label160.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label337.caption),' '+ label214.caption+' | '+Label214.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label339.caption),' '+ label161.caption+' | '+Label161.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label857.caption),' '+ label996.caption+' | '+Label996.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label344.caption),' '+ label166.caption+' | '+Label166.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label343.caption),' '+ label165.caption+' | '+Label165.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label341.caption),' '+ label163.caption+' | '+Label163.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label858.caption),' '+ label997.caption+' | '+Label997.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label345.caption),' '+ label167.caption+' | '+Label167.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label340.caption),' '+ label162.caption+' | '+Label162.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label346.caption),' '+ label168.caption+' | '+Label168.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label349.caption),' '+ label171.caption+' | '+Label171.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label859.caption),' '+ label998.caption+' | '+Label998.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label860.caption),' '+ label999.caption+' | '+Label999.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label861.caption),' '+ label1000.caption+' | '+Label1000.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label862.caption),' '+ label1001.caption+' | '+Label1001.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label281.caption),' '+ label101.caption+' | '+Label101.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label279.caption),' '+ label99.caption+' | '+Label99.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label280.caption),' '+ label100.caption+' | '+Label100.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label282.caption),' '+ label104.caption+' | '+Label104.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label864.caption),' '+ label1003.caption+' | '+Label1003.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label350.caption),' '+ label172.caption+' | '+Label172.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label865.caption),' '+ label1004.caption+' | '+Label1004.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label866.caption),' '+ label1005.caption+' | '+Label1005.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label981.caption),' '+ label1120.caption+' | '+Label1120.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label867.caption),' '+ label1006.caption+' | '+Label1006.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label980.caption),' '+ label1119.caption+' | '+Label1119.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label309.caption),' '+ label132.caption+' | '+Label132.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label283.caption),' '+ label103.caption+' | '+Label103.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label284.caption),' '+ label105.caption+' | '+Label105.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label979.caption),' '+ label1118.caption+' | '+Label1118.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label983.caption),' '+ label1122.caption+' | '+Label1122.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label454.caption),' '+ label453.caption+' | '+Label453.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label348.caption),' '+ label170.caption+' | '+Label170.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label352.caption),' '+ label174.caption+' | '+Label174.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label868.caption),' '+ label1007.caption+' | '+Label1007.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label870.caption),' '+ label1009.caption+' | '+Label1009.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label982.caption),' '+ label1121.caption+' | '+Label1121.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label351.caption),' '+ label173.caption+' | '+Label173.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label869.caption),' '+ label1008.caption+' | '+Label1008.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label871.caption),' '+ label1010.caption+' | '+Label1010.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label984.caption),' '+ label1123.caption+' | '+Label1123.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label863.caption),' '+ label1002.caption+' | '+Label1002.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label872.caption),' '+ label1011.caption+' | '+Label1011.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label353.caption),' '+ label175.caption+' | '+Label175.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label873.caption),' '+ label1012.caption+' | '+Label1012.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label875.caption),' '+ label1014.caption+' | '+Label1014.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label874.caption),' '+ label1013.caption+' | '+Label1013.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label285.caption),' '+ label106.caption+' | '+Label106.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label354.caption),' '+ label176.caption+' | '+Label176.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label356.caption),' '+ label180.caption+' | '+Label180.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label355.caption),' '+ label177.caption+' | '+Label177.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label358.caption),' '+ label179.caption+' | '+Label179.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label877.caption),' '+ label1016.caption+' | '+Label1016.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label878.caption),' '+ label1017.caption+' | '+Label1017.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label357.caption),' '+ label178.caption+' | '+Label178.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label879.caption),' '+ label1018.caption+' | '+Label1018.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label880.caption),' '+ label1019.caption+' | '+Label1019.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label881.caption),' '+ label1020.caption+' | '+Label1020.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label287.caption),' '+ label108.caption+' | '+Label108.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label882.caption),' '+ label1021.caption+' | '+Label1021.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label286.caption),' '+ label107.caption+' | '+Label107.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label883.caption),' '+ label1022.caption+' | '+Label1022.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label359.caption),' '+ label181.caption+' | '+Label181.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label884.caption),' '+ label1023.caption+' | '+Label1023.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label288.caption),' '+ label109.caption+' | '+Label109.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label362.caption),' '+ label184.caption+' | '+Label184.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label360.caption),' '+ label182.caption+' | '+Label182.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label361.caption),' '+ label183.caption+' | '+Label183.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label363.caption),' '+ label185.caption+' | '+Label185.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label365.caption),' '+ label187.caption+' | '+Label187.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label381.caption),' '+ label202.caption+' | '+Label202.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label364.caption),' '+ label186.caption+' | '+Label186.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label289.caption),' '+ label112.caption+' | '+Label112.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label366.caption),' '+ label188.caption+' | '+Label188.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label370.caption),' '+ label192.caption+' | '+Label192.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label367.caption),' '+ label189.caption+' | '+Label189.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label369.caption),' '+ label191.caption+' | '+Label191.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label368.caption),' '+ label190.caption+' | '+Label190.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label374.caption),' '+ label196.caption+' | '+Label196.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label885.caption),' '+ label1024.caption+' | '+Label1024.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label375.caption),' '+ label213.caption+' | '+Label213.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label372.caption),' '+ label194.caption+' | '+Label194.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label373.caption),' '+ label195.caption+' | '+Label195.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label377.caption),' '+ label198.caption+' | '+Label198.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label376.caption),' '+ label197.caption+' | '+Label197.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label378.caption),' '+ label199.caption+' | '+Label199.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label291.caption),' '+ label114.caption+' | '+Label114.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label292.caption),' '+ label115.caption+' | '+Label115.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label293.caption),' '+ label116.caption+' | '+Label116.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label294.caption),' '+ label117.caption+' | '+Label117.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label295.caption),' '+ label118.caption+' | '+Label118.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label342.caption),' '+ label119.caption+' | '+Label119.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label379.caption),' '+ label200.caption+' | '+Label200.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label382.caption),' '+ label203.caption+' | '+Label203.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label380.caption),' '+ label201.caption+' | '+Label201.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label388.caption),' '+ label209.caption+' | '+Label209.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label886.caption),' '+ label1025.caption+' | '+Label1025.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label887.caption),' '+ label1026.caption+' | '+Label1026.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label387.caption),' '+ label210.caption+' | '+Label210.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label383.caption),' '+ label204.caption+' | '+Label204.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label888.caption),' '+ label1027.caption+' | '+Label1027.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label389.caption),' '+ label208.caption+' | '+Label208.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label384.caption),' '+ label205.caption+' | '+Label205.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label385.caption),' '+ label206.caption+' | '+Label206.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label386.caption),' '+ label207.caption+' | '+Label207.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label297.caption),' '+ label120.caption+' | '+Label120.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label298.caption),' '+ label121.caption+' | '+Label121.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label299.caption),' '+ label122.caption+' | '+Label122.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label300.caption),' '+ label123.caption+' | '+Label123.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label390.caption),' '+ label211.caption+' | '+Label211.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label301.caption),' '+ label124.caption+' | '+Label124.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label302.caption),' '+ label125.caption+' | '+Label125.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label371.caption),' '+ label193.caption+' | '+Label193.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label391.caption),' '+ label212.caption+' | '+Label212.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label397.caption),' '+ label220.caption+' | '+Label220.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label392.caption),' '+ label215.caption+' | '+Label215.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label305.caption),' '+ label128.caption+' | '+Label128.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label985.caption),' '+ label1124.caption+' | '+Label124.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label303.caption),' '+ label126.caption+' | '+Label126.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label304.caption),' '+ label127.caption+' | '+Label127.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label306.caption),' '+ label129.caption+' | '+Label129.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label393.caption),' '+ label216.caption+' | '+Label216.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label891.caption),' '+ label1030.caption+' | '+Label1030.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label394.caption),' '+ label217.caption+' | '+Label217.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label892.caption),' '+ label1031.caption+' | '+Label1031.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label395.caption),' '+ label218.caption+' | '+Label218.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label398.caption),' '+ label221.caption+' | '+Label221.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label399.caption),' '+ label222.caption+' | '+Label222.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label396.caption),' '+ label219.caption+' | '+Label219.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label889.caption),' '+ label1028.caption+' | '+Label1028.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label890.caption),' '+ label1029.caption+' | '+Label1029.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label400.caption),' '+ label223.caption+' | '+Label223.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label893.caption),' '+ label1032.caption+' | '+Label1032.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label308.caption),' '+ label131.caption+' | '+Label131.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label894.caption),' '+ label1033.caption+' | '+Label1033.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label895.caption),' '+ label1034.caption+' | '+Label1034.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label310.caption),' '+ label133.caption+' | '+Label133.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label311.caption),' '+ label134.caption+' | '+Label134.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label896.caption),' '+ label1035.caption+' | '+Label1035.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label312.caption),' '+ label135.caption+' | '+Label135.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label313.caption),' '+ label136.caption+' | '+Label136.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label314.caption),' '+ label137.caption+' | '+Label137.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label315.caption),' '+ label138.caption+' | '+Label138.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label897.caption),' '+ label1036.caption+' | '+Label1036.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label347.caption),' '+ label169.caption+' | '+Label169.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label898.caption),' '+ label1037.caption+' | '+Label1037.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label401.caption),' '+ label224.caption+' | '+Label224.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label316.caption),' '+ label139.caption+' | '+Label139.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label403.caption),' '+ label226.caption+' | '+Label226.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label402.caption),' '+ label225.caption+' | '+Label225.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label404.caption),' '+ label227.caption+' | '+Label227.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label405.caption),' '+ label228.caption+' | '+Label228.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label900.caption),' '+ label1039.caption+' | '+Label1039.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label317.caption),' '+ label140.caption+' | '+Label140.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label899.caption),' '+ label1038.caption+' | '+Label1038.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label318.caption),' '+ label141.caption+' | '+Label141.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label407.caption),' '+ label230.caption+' | '+Label230.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label901.caption),' '+ label1040.caption+' | '+Label1040.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label409.caption),' '+ label232.caption+' | '+Label232.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label319.caption),' '+ label142.caption+' | '+Label142.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label408.caption),' '+ label231.caption+' | '+Label231.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label410.caption),' '+ label233.caption+' | '+Label233.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label1127.caption),' '+ label1129.caption+' | '+Label1129.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label413.caption),' '+ label236.caption+' | '+Label236.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label290.caption),' '+ label113.caption+' | '+Label113.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label320.caption),' '+ label143.caption+' | '+Label143.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label321.caption),' '+ label144.caption+' | '+Label144.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label904.caption),' '+ label1043.caption+' | '+Label1043.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label902.caption),' '+ label1041.caption+' | '+Label1041.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label412.caption),' '+ label235.caption+' | '+Label235.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label414.caption),' '+ label237.caption+' | '+Label237.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label903.caption),' '+ label1042.caption+' | '+Label1042.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label411.caption),' '+ label234.caption+' | '+Label234.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label415.caption),' '+ label241.caption+' | '+Label241.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label905.caption),' '+ label1044.caption+' | '+Label1044.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label906.caption),' '+ label1045.caption+' | '+Label1045.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label322.caption),' '+ label145.caption+' | '+Label145.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label416.caption),' '+ label238.caption+' | '+Label238.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label907.caption),' '+ label1046.caption+' | '+Label1046.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label908.caption),' '+ label1047.caption+' | '+Label1047.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label417.caption),' '+ label239.caption+' | '+Label239.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label418.caption),' '+ label240.caption+' | '+Label240.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label909.caption),' '+ label1048.caption+' | '+Label1048.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label420.caption),' '+ label243.caption+' | '+Label243.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label419.caption),' '+ label242.caption+' | '+Label242.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label913.caption),' '+ label1052.caption+' | '+Label1052.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label910.caption),' '+ label1049.caption+' | '+Label1049.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label911.caption),' '+ label1050.caption+' | '+Label1050.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label912.caption),' '+ label1051.caption+' | '+Label1051.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label421.caption),' '+ label244.caption+' | '+Label244.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label422.caption),' '+ label245.caption+' | '+Label245.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label914.caption),' '+ label1053.caption+' | '+Label1053.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label423.caption),' '+ label246.caption+' | '+Label246.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label424.caption),' '+ label247.caption+' | '+Label247.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label425.caption),' '+ label248.caption+' | '+Label248.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label915.caption),' '+ label1054.caption+' | '+Label1054.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label916.caption),' '+ label1055.caption+' | '+Label1055.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label917.caption),' '+ label1056.caption+' | '+Label1056.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label918.caption),' '+ label1057.caption+' | '+Label1057.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label430.caption),' '+ label253.caption+' | '+Label253.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label548.caption),' '+ label547.caption+' | '+Label547.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label919.caption),' '+ label1058.caption+' | '+Label1058.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label429.caption),' '+ label252.caption+' | '+Label252.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label426.caption),' '+ label249.caption+' | '+Label249.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label920.caption),' '+ label1059.caption+' | '+Label1059.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label921.caption),' '+ label1060.caption+' | '+Label1060.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label922.caption),' '+ label1061.caption+' | '+Label1061.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label428.caption),' '+ label251.caption+' | '+Label251.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label432.caption),' '+ label255.caption+' | '+Label255.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label923.caption),' '+ label1062.caption+' | '+Label1062.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label427.caption),' '+ label250.caption+' | '+Label250.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label431.caption),' '+ label254.caption+' | '+Label254.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label323.caption),' '+ label146.caption+' | '+Label146.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label924.caption),' '+ label1063.caption+' | '+Label1063.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label925.caption),' '+ label1064.caption+' | '+Label1064.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label926.caption),' '+ label1065.caption+' | '+Label1065.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label928.caption),' '+ label1067.caption+' | '+Label1067.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label927.caption),' '+ label1066.caption+' | '+Label1066.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label324.caption),' '+ label147.caption+' | '+Label147.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label325.caption),' '+ label148.caption+' | '+Label148.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label930.caption),' '+ label1069.caption+' | '+Label1069.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label929.caption),' '+ label1068.caption+' | '+Label1068.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label433.caption),' '+ label256.caption+' | '+Label256.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label435.caption),' '+ label258.caption+' | '+Label258.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label434.caption),' '+ label257.caption+' | '+Label257.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label986.caption),' '+ label1125.caption+' | '+Label1125.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label931.caption),' '+ label1070.caption+' | '+Label1070.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label326.caption),' '+ label149.caption+' | '+Label149.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label439.caption),' '+ label262.caption+' | '+Label262.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label436.caption),' '+ label259.caption+' | '+Label259.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label327.caption),' '+ label150.caption+' | '+Label150.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label933.caption),' '+ label1072.caption+' | '+Label1072.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label934.caption),' '+ label1073.caption+' | '+Label1073.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label437.caption),' '+ label260.caption+' | '+Label260.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label936.caption),' '+ label1075.caption+' | '+Label1075.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label937.caption),' '+ label1076.caption+' | '+Label1076.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label438.caption),' '+ label261.caption+' | '+Label261.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label938.caption),' '+ label1077.caption+' | '+Label1077.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label935.caption),' '+ label1074.caption+' | '+Label1074.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label939.caption),' '+ label1078.caption+' | '+Label1078.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label441.caption),' '+ label264.caption+' | '+Label264.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label940.caption),' '+ label1079.caption+' | '+Label1079.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label942.caption),' '+ label1081.caption+' | '+Label1081.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label440.caption),' '+ label263.caption+' | '+Label263.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label941.caption),' '+ label1080.caption+' | '+Label1080.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label943.caption),' '+ label1082.caption+' | '+Label1082.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label932.caption),' '+ label1071.caption+' | '+Label1071.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label944.caption),' '+ label1083.caption+' | '+Label1083.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label945.caption),' '+ label1084.caption+' | '+Label1084.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label442.caption),' '+ label265.caption+' | '+Label265.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label328.caption),' '+ label151.caption+' | '+Label151.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label946.caption),' '+ label1085.caption+' | '+Label1085.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label947.caption),' '+ label1086.caption+' | '+Label1086.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label948.caption),' '+ label1087.caption+' | '+Label1087.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label443.caption),' '+ label266.caption+' | '+Label266.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label949.caption),' '+ label1088.caption+' | '+Label1088.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label950.caption),' '+ label1089.caption+' | '+Label1089.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label444.caption),' '+ label267.caption+' | '+Label267.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label951.caption),' '+ label1090.caption+' | '+Label1090.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label952.caption),' '+ label1091.caption+' | '+Label1091.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label452.caption),' '+ label275.caption+' | '+Label275.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label329.caption),' '+ label152.caption+' | '+Label152.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label953.caption),' '+ label1092.caption+' | '+Label1092.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label954.caption),' '+ label1093.caption+' | '+Label1093.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label955.caption),' '+ label1094.caption+' | '+Label1094.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label445.caption),' '+ label268.caption+' | '+Label268.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label447.caption),' '+ label270.caption+' | '+Label270.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label296.caption),' '+ label164.caption+' | '+Label164.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label956.caption),' '+ label1095.caption+' | '+Label1095.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label957.caption),' '+ label1096.caption+' | '+Label1096.Hint]);
-
-inc(no); DM.Info.Appendrecord([no, strtoint(label958.caption),' '+ label1097.caption+' | '+Label1097.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label959.caption),' '+ label1098.caption+' | '+Label1098.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label448.caption),' '+ label271.caption+' | '+Label271.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label449.caption),' '+ label272.caption+' | '+Label272.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label960.caption),' '+ label1099.caption+' | '+Label1099.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label961.caption),' '+ label1100.caption+' | '+Label1100.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label446.caption),' '+ label269.caption+' | '+Label269.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label962.caption),' '+ label1101.caption+' | '+Label1101.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label963.caption),' '+ label1102.caption+' | '+Label1102.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label406.caption),' '+ label229.caption+' | '+Label229.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label964.caption),' '+ label1103.caption+' | '+Label1103.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label965.caption),' '+ label1104.caption+' | '+Label1104.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label966.caption),' '+ label1105.caption+' | '+Label1105.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label967.caption),' '+ label1106.caption+' | '+Label1106.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label450.caption),' '+ label273.caption+' | '+Label273.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label968.caption),' '+ label1107.caption+' | '+Label1107.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label331.caption),' '+ label154.caption+' | '+Label154.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label969.caption),' '+ label1108.caption+' | '+Label1108.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label970.caption),' '+ label1109.caption+' | '+Label1109.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label971.caption),' '+ label1110.caption+' | '+Label1110.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label972.caption),' '+ label1111.caption+' | '+Label1111.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label1128.caption),' '+ label1130.caption+' | '+Label1130.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label330.caption),' '+ label153.caption+' | '+Label153.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label973.caption),' '+ label1112.caption+' | '+Label1112.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label974.caption),' '+ label1113.caption+' | '+Label1113.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label975.caption),' '+ label1114.caption+' | '+Label1114.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label976.caption),' '+ label1115.caption+' | '+Label115.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label332.caption),' '+ label155.caption+' | '+Label155.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label977.caption),' '+ label1116.caption+' | '+Label1116.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label451.caption),' '+ label274.caption+' | '+Label274.Hint]);
-inc(no); DM.Info.Appendrecord([no, strtoint(label978.caption),' '+ label1117.caption+' | '+Label1117.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label333.caption),' '+ label156.caption+' '+Label156.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label876.caption),' '+ label1015.caption+' '+Label1015.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label98.caption),' '+ label988.caption+' '+Label988.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label987.caption),' '+ label1126.caption+' '+Label1126.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label336.caption),' '+ label159.caption+' '+Label159.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label334.caption),' '+ label157.caption+' '+Label157.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label850.caption),' '+ label989.caption+' '+Label989.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label851.caption),' '+ label990.caption+' '+Label990.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label852.caption),' '+ label991.caption+' '+Label991.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label853.caption),' '+ label992.caption+' '+Label992.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label307.caption),' '+ label130.caption+' '+Label130.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label276.caption),' '+ label111.caption+' '+Label111.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label277.caption),' '+ label110.caption+' '+Label110.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label335.caption),' '+ label158.caption+' '+Label158.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label854.caption),' '+ label993.caption+' '+Label993.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label855.caption),' '+ label994.caption+' '+Label994.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label856.caption),' '+ label995.caption+' '+Label995.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label278.caption),' '+ label102.caption+' '+Label102.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label338.caption),' '+ label160.caption+' '+Label160.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label337.caption),' '+ label214.caption+' '+Label214.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label339.caption),' '+ label161.caption+' '+Label161.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label857.caption),' '+ label996.caption+' '+Label996.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label344.caption),' '+ label166.caption+' '+Label166.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label343.caption),' '+ label165.caption+' '+Label165.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label341.caption),' '+ label163.caption+' '+Label163.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label858.caption),' '+ label997.caption+' '+Label997.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label345.caption),' '+ label167.caption+' '+Label167.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label340.caption),' '+ label162.caption+' '+Label162.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label346.caption),' '+ label168.caption+' '+Label168.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label349.caption),' '+ label171.caption+' '+Label171.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label859.caption),' '+ label998.caption+' '+Label998.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label860.caption),' '+ label999.caption+' '+Label999.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label861.caption),' '+ label1000.caption+' '+Label1000.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label862.caption),' '+ label1001.caption+' '+Label1001.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label281.caption),' '+ label101.caption+' '+Label101.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label279.caption),' '+ label99.caption+' '+Label99.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label280.caption),' '+ label100.caption+' '+Label100.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label282.caption),' '+ label104.caption+' '+Label104.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label864.caption),' '+ label1003.caption+' '+Label1003.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label350.caption),' '+ label172.caption+' '+Label172.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label865.caption),' '+ label1004.caption+' '+Label1004.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label866.caption),' '+ label1005.caption+' '+Label1005.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label981.caption),' '+ label1120.caption+' '+Label1120.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label867.caption),' '+ label1006.caption+' '+Label1006.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label980.caption),' '+ label1119.caption+' '+Label1119.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label309.caption),' '+ label132.caption+' '+Label132.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label283.caption),' '+ label103.caption+' '+Label103.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label284.caption),' '+ label105.caption+' '+Label105.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label979.caption),' '+ label1118.caption+' '+Label1118.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label983.caption),' '+ label1122.caption+' '+Label1122.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label454.caption),' '+ label453.caption+' '+Label453.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label348.caption),' '+ label170.caption+' '+Label170.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label352.caption),' '+ label174.caption+' '+Label174.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label868.caption),' '+ label1007.caption+' '+Label1007.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label870.caption),' '+ label1009.caption+' '+Label1009.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label982.caption),' '+ label1121.caption+' '+Label1121.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label351.caption),' '+ label173.caption+' '+Label173.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label869.caption),' '+ label1008.caption+' '+Label1008.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label871.caption),' '+ label1010.caption+' '+Label1010.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label984.caption),' '+ label1123.caption+' '+Label1123.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label863.caption),' '+ label1002.caption+' '+Label1002.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label872.caption),' '+ label1011.caption+' '+Label1011.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label353.caption),' '+ label175.caption+' '+Label175.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label873.caption),' '+ label1012.caption+' '+Label1012.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label875.caption),' '+ label1014.caption+' '+Label1014.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label874.caption),' '+ label1013.caption+' '+Label1013.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label285.caption),' '+ label106.caption+' '+Label106.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label354.caption),' '+ label176.caption+' '+Label176.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label356.caption),' '+ label180.caption+' '+Label180.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label355.caption),' '+ label177.caption+' '+Label177.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label358.caption),' '+ label179.caption+' '+Label179.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label877.caption),' '+ label1016.caption+' '+Label1016.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label878.caption),' '+ label1017.caption+' '+Label1017.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label357.caption),' '+ label178.caption+' '+Label178.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label879.caption),' '+ label1018.caption+' '+Label1018.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label880.caption),' '+ label1019.caption+' '+Label1019.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label881.caption),' '+ label1020.caption+' '+Label1020.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label287.caption),' '+ label108.caption+' '+Label108.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label882.caption),' '+ label1021.caption+' '+Label1021.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label286.caption),' '+ label107.caption+' '+Label107.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label883.caption),' '+ label1022.caption+' '+Label1022.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label359.caption),' '+ label181.caption+' '+Label181.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label884.caption),' '+ label1023.caption+' '+Label1023.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label288.caption),' '+ label109.caption+' '+Label109.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label362.caption),' '+ label184.caption+' '+Label184.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label360.caption),' '+ label182.caption+' '+Label182.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label361.caption),' '+ label183.caption+' '+Label183.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label363.caption),' '+ label185.caption+' '+Label185.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label365.caption),' '+ label187.caption+' '+Label187.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label381.caption),' '+ label202.caption+' '+Label202.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label364.caption),' '+ label186.caption+' '+Label186.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label289.caption),' '+ label112.caption+' '+Label112.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label366.caption),' '+ label188.caption+' '+Label188.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label370.caption),' '+ label192.caption+' '+Label192.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label367.caption),' '+ label189.caption+' '+Label189.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label369.caption),' '+ label191.caption+' '+Label191.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label368.caption),' '+ label190.caption+' '+Label190.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label374.caption),' '+ label196.caption+' '+Label196.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label885.caption),' '+ label1024.caption+' '+Label1024.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label375.caption),' '+ label213.caption+' '+Label213.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label372.caption),' '+ label194.caption+' '+Label194.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label373.caption),' '+ label195.caption+' '+Label195.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label377.caption),' '+ label198.caption+' '+Label198.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label376.caption),' '+ label197.caption+' '+Label197.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label378.caption),' '+ label199.caption+' '+Label199.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label291.caption),' '+ label114.caption+' '+Label114.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label292.caption),' '+ label115.caption+' '+Label115.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label293.caption),' '+ label116.caption+' '+Label116.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label294.caption),' '+ label117.caption+' '+Label117.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label295.caption),' '+ label118.caption+' '+Label118.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label342.caption),' '+ label119.caption+' '+Label119.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label379.caption),' '+ label200.caption+' '+Label200.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label382.caption),' '+ label203.caption+' '+Label203.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label380.caption),' '+ label201.caption+' '+Label201.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label388.caption),' '+ label209.caption+' '+Label209.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label886.caption),' '+ label1025.caption+' '+Label1025.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label887.caption),' '+ label1026.caption+' '+Label1026.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label387.caption),' '+ label210.caption+' '+Label210.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label383.caption),' '+ label204.caption+' '+Label204.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label888.caption),' '+ label1027.caption+' '+Label1027.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label389.caption),' '+ label208.caption+' '+Label208.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label384.caption),' '+ label205.caption+' '+Label205.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label385.caption),' '+ label206.caption+' '+Label206.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label386.caption),' '+ label207.caption+' '+Label207.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label297.caption),' '+ label120.caption+' '+Label120.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label298.caption),' '+ label121.caption+' '+Label121.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label299.caption),' '+ label122.caption+' '+Label122.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label300.caption),' '+ label123.caption+' '+Label123.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label390.caption),' '+ label211.caption+' '+Label211.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label301.caption),' '+ label124.caption+' '+Label124.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label302.caption),' '+ label125.caption+' '+Label125.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label371.caption),' '+ label193.caption+' '+Label193.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label391.caption),' '+ label212.caption+' '+Label212.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label397.caption),' '+ label220.caption+' '+Label220.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label392.caption),' '+ label215.caption+' '+Label215.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label305.caption),' '+ label128.caption+' '+Label128.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label985.caption),' '+ label1124.caption+' '+Label124.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label303.caption),' '+ label126.caption+' '+Label126.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label304.caption),' '+ label127.caption+' '+Label127.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label306.caption),' '+ label129.caption+' '+Label129.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label393.caption),' '+ label216.caption+' '+Label216.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label891.caption),' '+ label1030.caption+' '+Label1030.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label394.caption),' '+ label217.caption+' '+Label217.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label892.caption),' '+ label1031.caption+' '+Label1031.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label395.caption),' '+ label218.caption+' '+Label218.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label398.caption),' '+ label221.caption+' '+Label221.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label399.caption),' '+ label222.caption+' '+Label222.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label396.caption),' '+ label219.caption+' '+Label219.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label889.caption),' '+ label1028.caption+' '+Label1028.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label890.caption),' '+ label1029.caption+' '+Label1029.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label400.caption),' '+ label223.caption+' '+Label223.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label893.caption),' '+ label1032.caption+' '+Label1032.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label308.caption),' '+ label131.caption+' '+Label131.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label894.caption),' '+ label1033.caption+' '+Label1033.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label895.caption),' '+ label1034.caption+' '+Label1034.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label310.caption),' '+ label133.caption+' '+Label133.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label311.caption),' '+ label134.caption+' '+Label134.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label896.caption),' '+ label1035.caption+' '+Label1035.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label312.caption),' '+ label135.caption+' '+Label135.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label313.caption),' '+ label136.caption+' '+Label136.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label314.caption),' '+ label137.caption+' '+Label137.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label315.caption),' '+ label138.caption+' '+Label138.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label897.caption),' '+ label1036.caption+' '+Label1036.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label347.caption),' '+ label169.caption+' '+Label169.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label898.caption),' '+ label1037.caption+' '+Label1037.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label401.caption),' '+ label224.caption+' '+Label224.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label316.caption),' '+ label139.caption+' '+Label139.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label403.caption),' '+ label226.caption+' '+Label226.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label402.caption),' '+ label225.caption+' '+Label225.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label404.caption),' '+ label227.caption+' '+Label227.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label405.caption),' '+ label228.caption+' '+Label228.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label900.caption),' '+ label1039.caption+' '+Label1039.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label317.caption),' '+ label140.caption+' '+Label140.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label899.caption),' '+ label1038.caption+' '+Label1038.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label318.caption),' '+ label141.caption+' '+Label141.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label407.caption),' '+ label230.caption+' '+Label230.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label901.caption),' '+ label1040.caption+' '+Label1040.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label409.caption),' '+ label232.caption+' '+Label232.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label319.caption),' '+ label142.caption+' '+Label142.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label408.caption),' '+ label231.caption+' '+Label231.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label410.caption),' '+ label233.caption+' '+Label233.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label1127.caption),' '+ label1129.caption+' '+Label1129.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label413.caption),' '+ label236.caption+' '+Label236.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label290.caption),' '+ label113.caption+' '+Label113.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label320.caption),' '+ label143.caption+' '+Label143.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label321.caption),' '+ label144.caption+' '+Label144.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label904.caption),' '+ label1043.caption+' '+Label1043.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label902.caption),' '+ label1041.caption+' '+Label1041.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label412.caption),' '+ label235.caption+' '+Label235.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label414.caption),' '+ label237.caption+' '+Label237.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label903.caption),' '+ label1042.caption+' '+Label1042.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label411.caption),' '+ label234.caption+' '+Label234.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label415.caption),' '+ label241.caption+' '+Label241.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label905.caption),' '+ label1044.caption+' '+Label1044.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label906.caption),' '+ label1045.caption+' '+Label1045.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label322.caption),' '+ label145.caption+' '+Label145.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label416.caption),' '+ label238.caption+' '+Label238.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label907.caption),' '+ label1046.caption+' '+Label1046.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label908.caption),' '+ label1047.caption+' '+Label1047.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label417.caption),' '+ label239.caption+' '+Label239.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label418.caption),' '+ label240.caption+' '+Label240.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label909.caption),' '+ label1048.caption+' '+Label1048.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label420.caption),' '+ label243.caption+' '+Label243.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label419.caption),' '+ label242.caption+' '+Label242.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label913.caption),' '+ label1052.caption+' '+Label1052.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label910.caption),' '+ label1049.caption+' '+Label1049.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label911.caption),' '+ label1050.caption+' '+Label1050.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label912.caption),' '+ label1051.caption+' '+Label1051.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label421.caption),' '+ label244.caption+' '+Label244.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label422.caption),' '+ label245.caption+' '+Label245.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label914.caption),' '+ label1053.caption+' '+Label1053.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label423.caption),' '+ label246.caption+' '+Label246.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label424.caption),' '+ label247.caption+' '+Label247.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label425.caption),' '+ label248.caption+' '+Label248.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label915.caption),' '+ label1054.caption+' '+Label1054.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label916.caption),' '+ label1055.caption+' '+Label1055.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label917.caption),' '+ label1056.caption+' '+Label1056.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label918.caption),' '+ label1057.caption+' '+Label1057.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label430.caption),' '+ label253.caption+' '+Label253.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label548.caption),' '+ label547.caption+' '+Label547.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label919.caption),' '+ label1058.caption+' '+Label1058.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label429.caption),' '+ label252.caption+' '+Label252.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label426.caption),' '+ label249.caption+' '+Label249.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label920.caption),' '+ label1059.caption+' '+Label1059.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label921.caption),' '+ label1060.caption+' '+Label1060.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label922.caption),' '+ label1061.caption+' '+Label1061.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label428.caption),' '+ label251.caption+' '+Label251.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label432.caption),' '+ label255.caption+' '+Label255.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label923.caption),' '+ label1062.caption+' '+Label1062.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label427.caption),' '+ label250.caption+' '+Label250.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label431.caption),' '+ label254.caption+' '+Label254.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label323.caption),' '+ label146.caption+' '+Label146.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label924.caption),' '+ label1063.caption+' '+Label1063.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label925.caption),' '+ label1064.caption+' '+Label1064.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label926.caption),' '+ label1065.caption+' '+Label1065.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label928.caption),' '+ label1067.caption+' '+Label1067.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label927.caption),' '+ label1066.caption+' '+Label1066.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label324.caption),' '+ label147.caption+' '+Label147.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label325.caption),' '+ label148.caption+' '+Label148.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label930.caption),' '+ label1069.caption+' '+Label1069.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label929.caption),' '+ label1068.caption+' '+Label1068.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label433.caption),' '+ label256.caption+' '+Label256.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label435.caption),' '+ label258.caption+' '+Label258.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label434.caption),' '+ label257.caption+' '+Label257.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label986.caption),' '+ label1125.caption+' '+Label1125.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label931.caption),' '+ label1070.caption+' '+Label1070.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label326.caption),' '+ label149.caption+' '+Label149.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label439.caption),' '+ label262.caption+' '+Label262.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label436.caption),' '+ label259.caption+' '+Label259.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label327.caption),' '+ label150.caption+' '+Label150.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label933.caption),' '+ label1072.caption+' '+Label1072.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label934.caption),' '+ label1073.caption+' '+Label1073.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label437.caption),' '+ label260.caption+' '+Label260.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label936.caption),' '+ label1075.caption+' '+Label1075.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label937.caption),' '+ label1076.caption+' '+Label1076.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label438.caption),' '+ label261.caption+' '+Label261.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label938.caption),' '+ label1077.caption+' '+Label1077.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label935.caption),' '+ label1074.caption+' '+Label1074.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label939.caption),' '+ label1078.caption+' '+Label1078.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label441.caption),' '+ label264.caption+' '+Label264.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label940.caption),' '+ label1079.caption+' '+Label1079.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label942.caption),' '+ label1081.caption+' '+Label1081.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label440.caption),' '+ label263.caption+' '+Label263.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label941.caption),' '+ label1080.caption+' '+Label1080.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label943.caption),' '+ label1082.caption+' '+Label1082.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label932.caption),' '+ label1071.caption+' '+Label1071.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label944.caption),' '+ label1083.caption+' '+Label1083.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label945.caption),' '+ label1084.caption+' '+Label1084.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label442.caption),' '+ label265.caption+' '+Label265.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label328.caption),' '+ label151.caption+' '+Label151.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label946.caption),' '+ label1085.caption+' '+Label1085.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label947.caption),' '+ label1086.caption+' '+Label1086.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label948.caption),' '+ label1087.caption+' '+Label1087.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label443.caption),' '+ label266.caption+' '+Label266.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label949.caption),' '+ label1088.caption+' '+Label1088.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label950.caption),' '+ label1089.caption+' '+Label1089.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label444.caption),' '+ label267.caption+' '+Label267.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label951.caption),' '+ label1090.caption+' '+Label1090.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label952.caption),' '+ label1091.caption+' '+Label1091.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label452.caption),' '+ label275.caption+' '+Label275.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label329.caption),' '+ label152.caption+' '+Label152.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label953.caption),' '+ label1092.caption+' '+Label1092.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label954.caption),' '+ label1093.caption+' '+Label1093.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label955.caption),' '+ label1094.caption+' '+Label1094.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label445.caption),' '+ label268.caption+' '+Label268.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label447.caption),' '+ label270.caption+' '+Label270.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label296.caption),' '+ label164.caption+' '+Label164.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label956.caption),' '+ label1095.caption+' '+Label1095.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label957.caption),' '+ label1096.caption+' '+Label1096.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label958.caption),' '+ label1097.caption+' '+Label1097.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label959.caption),' '+ label1098.caption+' '+Label1098.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label448.caption),' '+ label271.caption+' '+Label271.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label449.caption),' '+ label272.caption+' '+Label272.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label960.caption),' '+ label1099.caption+' '+Label1099.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label961.caption),' '+ label1100.caption+' '+Label1100.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label446.caption),' '+ label269.caption+' '+Label269.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label962.caption),' '+ label1101.caption+' '+Label1101.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label963.caption),' '+ label1102.caption+' '+Label1102.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label406.caption),' '+ label229.caption+' '+Label229.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label964.caption),' '+ label1103.caption+' '+Label1103.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label965.caption),' '+ label1104.caption+' '+Label1104.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label966.caption),' '+ label1105.caption+' '+Label1105.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label967.caption),' '+ label1106.caption+' '+Label1106.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label450.caption),' '+ label273.caption+' '+Label273.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label968.caption),' '+ label1107.caption+' '+Label1107.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label331.caption),' '+ label154.caption+' '+Label154.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label969.caption),' '+ label1108.caption+' '+Label1108.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label970.caption),' '+ label1109.caption+' '+Label1109.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label971.caption),' '+ label1110.caption+' '+Label1110.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label972.caption),' '+ label1111.caption+' '+Label1111.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label1128.caption),' '+ label1130.caption+' '+Label1130.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label330.caption),' '+ label153.caption+' '+Label153.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label973.caption),' '+ label1112.caption+' '+Label1112.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label974.caption),' '+ label1113.caption+' '+Label1113.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label975.caption),' '+ label1114.caption+' '+Label1114.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label976.caption),' '+ label1115.caption+' '+Label115.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label332.caption),' '+ label155.caption+' '+Label155.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label977.caption),' '+ label1116.caption+' '+Label1116.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label451.caption),' '+ label274.caption+' '+Label274.Hint]);
+inc(no); DM.Info.Appendrecord([no, strtoint(label978.caption),' '+ label1117.caption+' '+Label1117.Hint]);
 ShowMessage('El informe ha sido cargado.');
 Dm.Info.FlushBuffers;
 end;
@@ -13315,26 +8185,8 @@ DM.Info.first;
 DM.Info.last;
 no := DM.Info.fieldbyname('no').asinteger+1;
 
-{DM.Info.Open;
-DM.Info.First;
-DM.Info.Last;
-no := DM.Info.FieldbyName('no').asInteger;  }
-
 DM.Info.Appendrecord([no,nil,'' ]);
 DM.Info.Appendrecord([no,nil,'----- SALES BIOQUÍMICAS DE SCHÜSSLER -----' ]);
-{inc(no); DM.Info.Appendrecord([no, strtoint(label461.caption),' | Calcium fluoratum - La sal de la elasticidad.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label462.caption),' | Calcium phosphoricum - La sal de los huesos y los dientes.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label463.caption),' | Ferrum phosphoricum - La sal de los primeros auxilios.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label464.caption),' | Kalium chloratum - La sal de las membranas mucosas.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label465.caption),' | Kalium phosphoricum - La sal de la mente y el sistema nervioso.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label466.caption),' | Kalium sulfuricum - La sal de la inflamación crónica.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label467.caption),' | Magnesium phosphoricum - La sal de los calambres y dolores.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label468.caption),' | Natrium chloratum - La sal del equilibrio de los fluidos corporales.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label469.caption),' | Natrium phosphoricum - La sal del equilibro ácido-base.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label470.caption),' | Natrium sulfuricum - La sal de la eliminación de toxinas.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label471.caption),' | Silicea - La sal del cabello, las uñas y la piel.']);
-inc(no); DM.Info.Appendrecord([no, strtoint(label472.caption),' | Calcium sulfuricum - La sal de los procesos depurativos.']); }
-
 inc(no); DM.Info.Appendrecord([no, strtoint(label461.caption),' '+ label473.caption]);
 inc(no); DM.Info.Appendrecord([no, strtoint(label462.caption),' '+ label474.caption]);
 inc(no); DM.Info.Appendrecord([no, strtoint(label463.caption),' '+ label475.caption]);
@@ -13354,84 +8206,72 @@ end;
 
 procedure Tnutr.Label473Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label473.Caption+'...';
 Lora();
 if reaction3>84 then Label473.Enabled:=false;
 end;
 
 procedure Tnutr.Label474Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label474.Caption+'...';
 Lora();
 if reaction3>84 then Label474.Enabled:=false;
 end;
 
 procedure Tnutr.Label475Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label475.Caption+'...';
 Lora();
 if reaction3>84 then Label475.Enabled:=false;
 end;
 
 procedure Tnutr.Label476Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label476.Caption+'...';
 Lora();
 if reaction3>84 then Label476.Enabled:=false;
 end;
 
 procedure Tnutr.Label477Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label477.Caption+'...';
 Lora();
 if reaction3>84 then Label477.Enabled:=false;
 end;
 
 procedure Tnutr.Label478Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label478.Caption+'...';
 Lora();
 if reaction3>84 then Label478.Enabled:=false;
 end;
 
 procedure Tnutr.Label479Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label479.Caption+'...';
 Lora();
 if reaction3>84 then Label479.Enabled:=false;
 end;
 
 procedure Tnutr.Label480Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label480.Caption+'...';
 Lora();
 if reaction3>84 then Label480.Enabled:=false;
 end;
 
 procedure Tnutr.Label481Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label481.Caption+'...';
 Lora();
 if reaction3>84 then Label481.Enabled:=false;
 end;
 
 procedure Tnutr.Label482Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label482.Caption+'...';
 Lora();
 if reaction3>84 then Label482.Enabled:=false;
 end;
 
 procedure Tnutr.Label483Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label483.Caption+'...';
 Lora();
 if reaction3>84 then Label483.Enabled:=false;
 end;
 
 procedure Tnutr.Label484Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+Label484.Caption+'...';
 Lora();
 if reaction3>84 then Label484.Enabled:=false;
 end;
@@ -13440,19 +8280,18 @@ procedure Tnutr.Label786Click(Sender: TObject);
 begin
 testform1.vtransferencia := true;
 testform1.vtransferencia := true;
-testform1.edit32.text:=edit1.text+' | ';
+testform1.edit32.text:=edit1.text+' ';
 testform1.vtransferencia := true;
-testform1.edit34.text:=edit1.text+' | ';
+testform1.edit34.text:=edit1.text+' ';
 testform1.edit32.Refresh;
 testform1.edit34.Refresh;
 FMain.button83.Enabled:=false;
-if label535.caption<>'N/A' then  sysreport.nutr1:=label535.caption;
-if label536.caption<>'N/A' then  sysreport.nutr2:=label536.caption;
-if label539.caption<>'N/A' then  sysreport.nutr3:=label539.caption;
-if label540.caption<>'N/A' then  sysreport.nutr4:=label540.caption;
+if label535.caption<>'----' then  sysreport.nutr1:=label535.caption;
+if label536.caption<>'----' then  sysreport.nutr2:=label536.caption;
+if label539.caption<>'----' then  sysreport.nutr3:=label539.caption;
+if label540.caption<>'----' then  sysreport.nutr4:=label540.caption;
  DM.Conscida.Filtered:=false;
 timer1.enabled:=false;
-if label497.caption<>'N/A' then testform1.Edit10.text:= testform1.Edit10.text+label497.caption+'';
 close;
 end;
 
@@ -13462,6 +8301,10 @@ dbgrid1.Columns[0].width := 40;
 dbgrid1.Columns[1].width := 40;
 dbgrid1.Columns[2].width := 846;
 dbgrid1.Columns[3].width := 0;
+dbgrid2.Columns[0].width := 40;
+dbgrid2.Columns[1].width := 40;
+dbgrid2.Columns[2].width := 590;
+dbgrid2.Columns[3].width := 0;
 End;
 
 procedure Tnutr.LOrdenClick(Sender: TObject);
@@ -13600,6 +8443,8 @@ begin
 end;
 
 procedure Tnutr.Panel3Click(Sender: TObject);
+var
+i : Integer;
 begin
 label550.caption:='';
 dbgrid2.enabled:=true;
@@ -13607,21 +8452,28 @@ panel7.visible:=false;
 label550.visible:=false;
   DM.QueryFilter.Active:=false;
   DM.QueryFilter.Active:=true;
+for i:=0 to self.ComponentCount-1 do
+ if (self.Components[i] is TLabel) then
+  if (self.Components[i] as TLabel).tag = 7 then begin
+   (self.Components[i] as TLabel).enabled := true;
+end;
+  EnlaceEtiquetas2();
 end;
 
 procedure Tnutr.Panel14Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-Label796.caption:='Probabilidad de deficiencia |';
-Label537.caption:='Resonancia |';
+LRectificado.caption:='Rectificado | ';
+Label796.caption:='Deficiencia | ';
+Label537.caption:='Resonancia | ';
 GProgreso.progress:=0;
 PANEL9.visible :=false;
+Panel9.Top := 12;
+Panel9.Left := 16;
 end;
 
 procedure Tnutr.Panel15Click(Sender: TObject);
 begin
 panel2.visible:=false;
-//Button110.visible := false;
 panel7.visible:=false;
 Panel1.Visible:=False;
 Panel9.Visible:=False;
@@ -13630,63 +8482,60 @@ end;
 
 procedure Tnutr.Panel17Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 panel8.visible:=false;
 end;
 
 procedure Tnutr.Panel19Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 panel1.visible:=false;
 end;
 
 procedure Tnutr.Panel20Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 panel6.visible:=false;
 end;
 
 procedure Tnutr.Panel21Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
-Panel11.Visible:=False;
 end;
 
 procedure Tnutr.Panel22Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
-Panel12.Visible:=False;
 end;
 
 procedure Tnutr.Panel23Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
-Panel13.Visible:=False;
 end;
 
 procedure Tnutr.Panel24Click(Sender: TObject);
 begin
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GProgreso.Progress:=0;
 panel4.visible:=false;
 Button4.Enabled:=True;
@@ -13798,10 +8647,6 @@ end;
 
 procedure Tnutr.Button7Click(Sender: TObject);
 begin
-scioworking.label26.caption:=label365.caption+' | '+label366.caption;
-scioworking.Button15.caption:='Iniciar Rx para mejorar la fertilidad';
-scioworking.button16.caption:='Detener Rx para mejorar la fertilidad';
-scioworking.button2.caption:='Rx para mejorar la fertilidad';
 scioworking.label27.caption:='000';
 scioworking.label27.refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
@@ -14030,11 +8875,9 @@ begin
 MyChrono.Start;
 Randomize;
 Fmain.recmain:=Fmain.recmain+1;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
 GBBFertilidad.Visible := True;
 TBFertilidad.Enabled := True;
 GProgreso.Progress:=0;
@@ -14058,49 +8901,48 @@ if reaction2>100 then reaction2:=100;
 LRectificado.caption:='Rectificado | '+inttostr(reaction2);
 GBBFertilidad.Visible := False;
 TBFertilidad.Enabled := False;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 oeg:=random(41);
-if oeg<2 then LInvolucrado.Caption :='Involucrado con: Inflamación.';
-if oeg=2 then LInvolucrado.Caption :='Involucrado con: Cáncer.';
-if oeg=3 then LInvolucrado.Caption :='Involucrado con: Estrés.';
-if oeg=4 then LInvolucrado.Caption :='Involucrado con: Hipoadrenia.';
-if oeg=5 then LInvolucrado.Caption :='Involucrado con: Factores emocionales.';
-if oeg=6 then LInvolucrado.Caption :='Involucrado con: Infección.';
-if oeg=7 then LInvolucrado.Caption :='Involucrado con: Toxicidad.';
-if oeg=8 then LInvolucrado.Caption :='Involucrado con: Trauma/s.';
-if oeg=9 then LInvolucrado.Caption :='Involucrado con: Factores heredados.';
-if oeg=10 then LInvolucrado.Caption :='Involucrado con: Deficiencia o exceso de vitaminas.';
-if oeg=11 then LInvolucrado.Caption :='Involucrado con: Sistema cardiovascular.';
-if oeg=12 then LInvolucrado.Caption :='Involucrado con: Producción hormonal.';
-if oeg=13 then LInvolucrado.Caption :='Involucrado con: Sistema linfático.';
-if oeg=14 then LInvolucrado.Caption :='Involucrado con: Hígado.';
-if oeg=15 then LInvolucrado.Caption :='Involucrado con: Riñones.';
-if oeg=16 then LInvolucrado.Caption :='Involucrado con: Sistema digestivo.';
-if oeg=17 then LInvolucrado.Caption :='Involucrado con: Tejido conectivo.';
-if oeg=18 then LInvolucrado.Caption :='Involucrado con: Sistema óseo.';
-if oeg=19 then LInvolucrado.Caption :='Involucrado con: Acidez o alcalinidad del agua.';
-if oeg=20 then LInvolucrado.Caption :='Involucrado con: Sangre.';
-if oeg=21 then LInvolucrado.Caption :='Involucrado con: Medio ambiente.';
-if oeg=22 then LInvolucrado.Caption :='Involucrado con: Alergias.';
-if oeg=23 then LInvolucrado.Caption :='Involucrado con: Riesgo emocional.';
-if oeg=24 then LInvolucrado.Caption :='Involucrado con: Sistema circulatorio.';
-if oeg=25 then LInvolucrado.Caption :='Involucrado con: Sistema inmunitario.';
-if oeg=26 then LInvolucrado.Caption :='Involucrado con: Radiación.';
-if oeg=27 then LInvolucrado.Caption :='Involucrado con: Bacteria.';
-if oeg=28 then LInvolucrado.Caption :='Involucrado con: Fungosidades.';
-if oeg=29 then LInvolucrado.Caption :='Involucrado con: Virus.';
-if oeg=30 then LInvolucrado.Caption :='Involucrado con: Parásitos.';
-if oeg=31 then LInvolucrado.Caption :='Involucrado con: Ameba.';
-if oeg=32 then LInvolucrado.Caption :='Involucrado con: Envenenamiento alimentario.';
-if oeg=33 then LInvolucrado.Caption :='Involucrado con: Regulación del azúcar.';
-if oeg=34 then LInvolucrado.Caption :='Involucrado con: Sistema neurológico.';
-if oeg=35 then LInvolucrado.Caption :='Involucrado con: Sistema sensorial.';
-if oeg=36 then LInvolucrado.Caption :='Involucrado con: Colesterol.';
-if oeg=37 then LInvolucrado.Caption :='Involucrado con: Sistema respiratorio.';
-if oeg=38 then LInvolucrado.Caption :='Involucrado con: Oxidación.';
-if oeg=39 then LInvolucrado.Caption :='Involucrado con: Hidratación.';
-if oeg>39 then LInvolucrado.Caption :='Involucrado con: Cognicción.';
-PDesarrollo.visible:=false;
+if oeg<2 then LInvolucrado.Caption :=' Inflamación.';
+if oeg=2 then LInvolucrado.Caption :=' Cáncer.';
+if oeg=3 then LInvolucrado.Caption :=' Estrés.';
+if oeg=4 then LInvolucrado.Caption :=' Hipoadrenia.';
+if oeg=5 then LInvolucrado.Caption :=' Factores emocionales.';
+if oeg=6 then LInvolucrado.Caption :=' Infección.';
+if oeg=7 then LInvolucrado.Caption :=' Toxicidad.';
+if oeg=8 then LInvolucrado.Caption :=' Trauma.';
+if oeg=9 then LInvolucrado.Caption :=' Factores heredados.';
+if oeg=10 then LInvolucrado.Caption :=' Deficiencia o exceso de vitaminas.';
+if oeg=11 then LInvolucrado.Caption :=' Sistema cardiovascular.';
+if oeg=12 then LInvolucrado.Caption :=' Producción hormonal.';
+if oeg=13 then LInvolucrado.Caption :=' Sistema linfático.';
+if oeg=14 then LInvolucrado.Caption :=' Hígado.';
+if oeg=15 then LInvolucrado.Caption :=' Riñones.';
+if oeg=16 then LInvolucrado.Caption :=' Sistema digestivo.';
+if oeg=17 then LInvolucrado.Caption :=' Tejido conectivo.';
+if oeg=18 then LInvolucrado.Caption :=' Sistema óseo.';
+if oeg=19 then LInvolucrado.Caption :=' pH del agua.';
+if oeg=20 then LInvolucrado.Caption :=' Sangre.';
+if oeg=21 then LInvolucrado.Caption :=' Medio ambiente.';
+if oeg=22 then LInvolucrado.Caption :=' Alergia/s.';
+if oeg=23 then LInvolucrado.Caption :=' Riesgo emocional.';
+if oeg=24 then LInvolucrado.Caption :=' Sistema circulatorio.';
+if oeg=25 then LInvolucrado.Caption :=' Sistema inmunitario.';
+if oeg=26 then LInvolucrado.Caption :=' Radiación.';
+if oeg=27 then LInvolucrado.Caption :=' Bacteria.';
+if oeg=28 then LInvolucrado.Caption :=' Fungosidades.';
+if oeg=29 then LInvolucrado.Caption :=' Virus.';
+if oeg=30 then LInvolucrado.Caption :=' Parásitos.';
+if oeg=31 then LInvolucrado.Caption :=' Amíbas.';
+if oeg=32 then LInvolucrado.Caption :=' Intolerancia alimentaria.';
+if oeg=33 then LInvolucrado.Caption :=' Regulación del azúcar.';
+if oeg=34 then LInvolucrado.Caption :=' Sistema neurológico.';
+if oeg=35 then LInvolucrado.Caption :=' Sistema sensorial.';
+if oeg=36 then LInvolucrado.Caption :=' Colesterol.';
+if oeg=37 then LInvolucrado.Caption :=' Sistema respiratorio.';
+if oeg=38 then LInvolucrado.Caption :=' Oxidación.';
+if oeg=39 then LInvolucrado.Caption :=' Hidratación.';
+if oeg>39 then LInvolucrado.Caption :=' Cognicción.';
 MyChrono.Stop;
 If (reaction2<85) and (CBAutomatico.Checked=True) Then BMaestroInfertilidad.Click;
 If (reaction2>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -14108,7 +8950,6 @@ end;
 
 procedure Tnutr.BInfertilidad01Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad01.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad01.Enabled := False;
 end;
@@ -14124,63 +8965,54 @@ CBTerapiaExtendida.checked:=false;
 
 procedure Tnutr.BInfertilidad02Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad02.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad02.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad03Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad03.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad03.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad04Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad04.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad04.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad05Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad05.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad05.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad06Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad06.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad06.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad07Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad07.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad07.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad08Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad08.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad08.Enabled := False;
 end;
 
 procedure Tnutr.BInfertilidad09Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad09.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad09.Enabled := False;
 end;
 
 procedure Tnutr.BAInfertilidadClick(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+EAInfertilidad.Text+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BAInfertilidad.Enabled := False;
 end;
@@ -14199,14 +9031,12 @@ end;
 
 procedure Tnutr.BInfertilidad00Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+BInfertilidad00.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then BInfertilidad00.Enabled := False;
 end;
 
 procedure Tnutr.Button6Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button6.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then Button6.Enabled := False;
 end;
@@ -14215,12 +9045,11 @@ procedure Tnutr.BNutricionClick(Sender: TObject);
 begin
 MyChrono.Start;
 GProgreso.Progress := 0;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-Label537.Caption:='Resonancia |';
-Label796.Caption:='Probabilidad de deficiencia |';
-LRectificado.Caption:='Rectificado |';
-   panel2.visible:=true;
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
+panel2.visible:=true;
+Ancho();
 vtiempo := 90+Random(60);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -14236,19 +9065,17 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- FMain.shaping:=random(105);
- FRecompensa.label79.caption:=inttostr(FMain.shaping);
-reaction2:=random(125);
-reaction1:=random(125);
-if reaction2>100 then reaction2:=100;
-if reaction1>100 then reaction1:=100;
-Label537.caption:='Resonancia | '+inttostr(reaction2);
-Label796.caption:='Indice de reactividad | '+inttostr(reaction1);
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+FMain.shaping:=random(105);
+reaction2:=random(120);
+reaction1:=random(120);
 rectificado:= random(120);
-if reaction2>100 then reaction2:=100;
+if reaction2>100 then reaction2:=85+Random(15);
+if reaction1>100 then reaction1:=85+Random(15);
+if rectificado>100 then rectificado:=85+Random(15);
+Label537.caption:='Resonancia | '+inttostr(reaction2);
+Label796.caption:='Reactividad | '+inttostr(reaction1);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
-PDesarrollo.visible:=false;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then BNutricion.Click;
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -14256,9 +9083,329 @@ end;
 
 procedure Tnutr.Button12Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button12.Caption+'...';
 BMaestroInfertilidad.Click;
 If Reaction2>84 Then Button12.Enabled := False;
+end;
+
+procedure Tnutr.Label534Click(Sender: TObject);
+begin
+NutricionPrincipal();
+If rectificado>84 Then Label534.Enabled := False;
+end;
+
+procedure Tnutr.Label540Click(Sender: TObject);
+begin
+NutricionPrincipal();
+If rectificado>84 Then Label540.Enabled := False;
+end;
+
+procedure Tnutr.Label539Click(Sender: TObject);
+begin
+NutricionPrincipal();
+If rectificado>84 Then Label539.Enabled := False;
+end;
+
+procedure Tnutr.Label536Click(Sender: TObject);
+begin
+NutricionPrincipal();
+If rectificado>84 Then Label536.Enabled := False;
+end;
+
+procedure Tnutr.Label535Click(Sender: TObject);
+begin
+NutricionPrincipal();
+If rectificado>84 Then Label535.Enabled := False;
+end;
+
+procedure Tnutr.NutricionPrincipal();
+begin
+MyChrono.Start;
+GProgreso.Progress := 0;
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
+vtiempo := 90+Random(60);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+   ChangingPulses(random(10000),random(1000),random(10000),1,random(500),1,
+   '11111111','01111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+ FMain.shaping:=random(105);
+ 
+reaction2:=random(120);
+reaction1:=random(120);
+rectificado:= random(120);
+if reaction2>100 then reaction2:=85+Random(15);
+if reaction1>100 then reaction1:=85+Random(15);
+if rectificado>100 then rectificado:=85+Random(15);
+Label537.caption:='Resonancia | '+inttostr(reaction2);
+Label796.caption:='Reactividad | '+inttostr(reaction1);
+LRectificado.caption:='Rectificado | '+inttostr(rectificado);
+MyChrono.Stop;
+If (rectificado<85) and (CBAutomatico.Checked=True) Then NutricionPrincipal();;
+If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+end;
+
+procedure Tnutr.BCNutricionalesClick(Sender: TObject);
+begin
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LConsejo1.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LConsejo2.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LConsejo3.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LConsejo4.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LConsejo5.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label502.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label503.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label511.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label512.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label508.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label509.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label515.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label516.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label517.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+end;
+
+procedure Tnutr.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Nutr.Label536.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Nutr.LCausas.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure Tnutr.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+Label540.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+LOrganosGlandulas.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure Tnutr.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Nutr.Label534.Caption := LBAVM.Items[LBAVM.ItemIndex];
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Nutr.LAVM.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure Tnutr.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Nutr.LMeridianos.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure Tnutr.BProcesosClick(Sender: TObject);
+begin
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+Nutr.Label535.Caption := LBProcesos.Items[LBProcesos.ItemIndex];
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+Nutr.LProcesos.Caption := LBProcesos.Items[LBProcesos.ItemIndex];
+end;
+
+procedure Tnutr.BTerapiasClick(Sender: TObject);
+begin
+randomize;
+LBTerapias.Itemindex:=Random(LBTerapias.Items.Count);
+Nutr.LTerapias.Caption := LBTerapias.Items[LBTerapias.ItemIndex];
+end;
+
+procedure Tnutr.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+Nutr.LEPositivas.Caption := LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure Tnutr.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Nutr.LENegativas.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure Tnutr.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Nutr.Label539.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Nutr.LToxinas.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure Tnutr.BSistemasClick(Sender: TObject);
+begin
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+Nutr.LSistemas.Caption := LBSistemas.Items[LBSistemas.ItemIndex];
+end;
+
+procedure Tnutr.BAfirmacionesClick(Sender: TObject);
+begin
+randomize;
+LBAfirmaciones.Itemindex:=Random(LBAfirmaciones.Items.Count);
+Nutr.LAfirmaciones.Caption := LBAfirmaciones.Items[LBAfirmaciones.ItemIndex];
+end;
+
+procedure Tnutr.Conciencia(Sender: TObject);
+begin
+MyChrono.Start;
+Label537.Caption:='Resonancia | ';
+Label796.Caption:='Deficiencia | ';
+LRectificado.Caption:='Rectificado | ';
+GProgreso.Progress:=0;
+Vart1:=Random(10)+2;
+vtiempo := 10+Random(5);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+ GProgreso.Refresh;
+ PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ChangingPulses(5555,random(100000),random(30000),2,random(5),1,
+ 'llllllll','llllllll');
+ GProgreso.progress :=  round(MyChrono.pTEcoule);
+   GProgreso.Refresh;
+   until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+rectificado:=random(125);
+if rectificado>100 then rectificado:=85+Random(15);
+LRectificado.caption:='Rectificado | '+inttostr(rectificado);
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+Fmain.recmain:=Fmain.recmain+1;
+MyChrono.Stop;
+if rectificado>84 then TLabel(sender).Enabled:=false;
+If (rectificado<85) and (CBAutomatico.Checked=True) Then Conciencia(Sender);
+If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+end;
+
+procedure Tnutr.LCausasClick(Sender: TObject);
+begin
+Conciencia(LCausas);
+end;
+
+procedure Tnutr.LOrganosGlandulasClick(Sender: TObject);
+begin
+Conciencia(LOrganosGlandulas);
+end;
+
+procedure Tnutr.LAVMClick(Sender: TObject);
+begin
+Conciencia(LAVM);
+end;
+
+procedure Tnutr.LMeridianosClick(Sender: TObject);
+begin
+Conciencia(LMeridianos);
+end;
+
+procedure Tnutr.LProcesosClick(Sender: TObject);
+begin
+Conciencia(LProcesos);
+end;
+
+procedure Tnutr.LTerapiasClick(Sender: TObject);
+begin
+Conciencia(LTerapias);
+end;
+
+procedure Tnutr.LEPositivasClick(Sender: TObject);
+begin
+Conciencia(LEPositivas);
+end;
+
+procedure Tnutr.LENegativasClick(Sender: TObject);
+begin
+Conciencia(LENegativas);
+end;
+
+procedure Tnutr.LToxinasClick(Sender: TObject);
+begin
+Conciencia(LToxinas);
+end;
+
+procedure Tnutr.LSistemasClick(Sender: TObject);
+begin
+Conciencia(LSistemas);
+end;
+
+procedure Tnutr.LAfirmacionesClick(Sender: TObject);
+begin
+Conciencia(LAfirmaciones);
+end;
+
+procedure Tnutr.BHomeopatiaClick(Sender: TObject);
+begin
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label486.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label487.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label488.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label493.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label496.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label497.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+Label514.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
 end;
 
 end.

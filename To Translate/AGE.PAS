@@ -5,7 +5,7 @@ interface
 uses
   SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
   Forms, Dialogs, ExtCtrls, MPlayer, Gauges, Grids, Calendar, StdCtrls,
-  ComCtrls, jpeg;
+  ComCtrls, jpeg, Spin, YRChrono;
 
 type
   TAging = class(TForm)
@@ -16,7 +16,6 @@ type
     Timer1: TTimer;
     Gauge2: TGauge;
     Button2: TButton;
-    Image1: TImage;
     Label11: TLabel;
     Label12: TLabel;
     Label13: TLabel;
@@ -35,7 +34,6 @@ type
     Label22: TLabel;
     Label23: TLabel;
     Label24: TLabel;
-    Label25: TLabel;
     Label26: TLabel;
     Timer2: TTimer;
     Label27: TLabel;
@@ -94,12 +92,10 @@ type
     Label104: TLabel;
     Label237: TLabel;
     MediaPlayer2: TMediaPlayer;
-    Edit6: TEdit;
     Button21: TButton;
     Button24: TButton;
     Bevel3: TBevel;
     Button25: TButton;
-    Panel4: TPanel;
     Button26: TButton;
     Button29: TButton;
     Label71: TLabel;
@@ -128,21 +124,36 @@ type
     Label10: TLabel;
     Button3: TButton;
     Label70: TLabel;
-    Label91: TLabel;
     Label92: TLabel;
     Button23: TButton;
-    Image2: TImage;
-    Label67: TLabel;
     Label93: TLabel;
     Label94: TLabel;
     Label95: TLabel;
     Label97: TLabel;
     Label98: TLabel;
-    GProgreso: TGauge;
     Panel6: TPanel;
     Panel7: TPanel;
     Panel8: TPanel;
     Image3: TImage;
+    Panel34: TPanel;
+    GProgreso: TGauge;
+    PTiempoEstimado: TPanel;
+    Image1: TImage;
+    Label189: TLabel;
+    LRectificado: TLabel;
+    Label787: TLabel;
+    IContinuar: TImage;
+    Label942: TLabel;
+    Label349: TLabel;
+    Panel4: TPanel;
+    LCrono3: TLabel;
+    Label148: TLabel;
+    ETransferencia: TEdit;
+    CBTerapiaExtendida: TCheckBox;
+    CBAutomatico: TCheckBox;
+    SETiempo: TSpinEdit;
+    MyChrono: TYRChronometre;
+    Time_Crono: TTimer;
     procedure Timer1Timer(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -192,7 +203,6 @@ type
     procedure Button26Click(Sender: TObject);
     procedure Button29Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure Label91Click(Sender: TObject);
     procedure Edit6Change(Sender: TObject);
     procedure Label46Click(Sender: TObject);
     procedure Label47Click(Sender: TObject);
@@ -215,7 +225,6 @@ type
     procedure Label59Click(Sender: TObject);
     procedure Label60Click(Sender: TObject);
     procedure Label66Click(Sender: TObject);
-    procedure Image2DblClick(Sender: TObject);
     procedure Label98Click(Sender: TObject);
     procedure Label93Click(Sender: TObject);
     procedure Label94Click(Sender: TObject);
@@ -229,13 +238,18 @@ type
     procedure Panel6Click(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
     procedure Panel8Click(Sender: TObject);
+    procedure Label189Click(Sender: TObject);
+    procedure IContinuarClick(Sender: TObject);
+    procedure Time_CronoTimer(Sender: TObject);
 
   private
     { Private declarations }
     Procedure Terapia();
 
+
   public
     { Public declarations }
+    Procedure TerapiaExtendida();
   end;
 
 var
@@ -245,16 +259,16 @@ var
         cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12,cb13,cb14,cb15,cb16,cb17,cb18,
         cb19,cb20,cb21,cb22,cb23,cb24,cb25,cb26,cb27,cb28,cb29,cb30,cb31,cb32,cb33,cb34,cb35,cb36,cb37,
         cb38,cb39,cb40,cb41,cb42,cb43,cb44,cb45,cb46,cb47,cb48,cb49,cb50,cb51,cb52,cb53,cb54,cb55,cb56,cb57,
-        cb58,numer,astr,old,tin33,tin44,tin55,tin66  :integer;
+        cb58,numer,astr,old,tin33,tin44,tin55,tin66,vtiempo,rectificado : integer;
         wave3:integer;
 
         ba1,ba2,ba3,ba4,ba5,ba6,ba7,ba8,ba9,ba10,ba11,soc,phase: integer ;
         pn1, pn2, pn3, pn4, pn5, pn6, pn7, pn8, pn9, pn10, pn11 ,pn12, pn13, pn14 ,pn15,pn16, pn17,pn18,pn19,pn20,pn21,alg  : integer;
         t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t23,t24,reaction2,t21,t22  :integer;
-        l,gage,fred,gage2,start,tim,tim2,gama,tota,neg,oeg,spin,spin1,spin2,spin3:longint;
+        l,gage,fred,gage2,start,tim,tim2,gama,tota,neg,oeg,spin1,spin2,spin3:longint;
 implementation
  Uses Freq2,spine, repordat,homeo,freq,UnitVol, DataMod, subsp, Patname,wawp, shellapi,
-  Cnscios, Testdata, ucomport, uscioworking, Risks, speachunit;
+  Cnscios, Testdata, ucomport, uscioworking, Risks, speachunit, ondas;
 {$R *.DFM}
 
  { Editor = 'write.exe' or 'notepad.exe'}
@@ -433,8 +447,8 @@ end;
 
 procedure TAging.Button2Click(Sender: TObject);
 begin
-        If Freq2.SCIOBox=True Then
-        FormComPort.TreatStart('SINUS',5000,2,4,255);
+MyChrono.Start;
+        If Freq2.SCIOBox=True Then FormComPort.TreatStart('SINUS',5000,2,4,255);
         Label26.Caption := '|||';
         panel1.visible:=false;
         timer1.enabled:=true;
@@ -448,8 +462,30 @@ begin
         label13.visible:=true;
         label71.visible:=true;
         label14.visible:=true;
-                ChangingPulses(5000,132,6500,6,13,10,
+LRectificado.Caption := 'Rectificado |';
+GProgreso.Progress := 0;
+vtiempo := 10+Random(5);
+If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+                ChangingPulses(5000,132,6500,6,13,1,
 '11111111','11111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+rectificado := Random(125);
+If rectificado > 100 Then rectificado := 85+Random(15);
+LRectificado.Caption := 'Rectificado | '+InttoStr(rectificado);
+If (rectificado<85) and (CBAutomatico.Checked=True) Then Button2.Click;
+If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
+MyChrono.Stop;
 end;
 
 procedure TAging.FormCreate(Sender: TObject);
@@ -457,9 +493,6 @@ begin
         DoubleBuffered:=true;
         l:=0;
         tim2:=1;
-
-     //   If fileExists('pastlife.txt') then button4.enabled:=true;
-
         If RHDD then
         Begin
                 l:=1;
@@ -487,20 +520,11 @@ Var
         R : Byte;
 begin
         showmessage ('Relájese y libere toda la negatividad, pulse ''OK'' cuando esté listo/a.');
-        Panel4.Caption:='Realizando búsqueda inconciente...';
-        panel4.visible:=true;
-        panel4.refresh;
+MyChrono.Start;
         button7.enabled:=false;
         aging.refresh;
-        if l=0 then
-                ChangingPulses(50000,555,11111,5,1,15,'00000000','00000000');
-        if l=1 then
-                ChangingPulses(50000,555,11111,5,5,15, '11111111','11111111');
-
-        if l=0 then
-                ChangingPulses(50000,555,11111,5,1,3,'00000000','00000000');
-        if l=1 then
-                ChangingPulses(5555,555,55555,5,5,3,'11111111','11111111');
+                ChangingPulses(50000,555,11111,5,5,5,
+                '11111111','11111111');
         R:=Random(255-33)+33;
         While not ((R<123) AND (R>64))  do
                 R:=Random(255-33)+33;
@@ -582,12 +606,6 @@ begin
                 R:=Random(255-33)+33;
         Label90.Caption:=Chr(R);
 
-        gama := Random(1000);
-        gama := gama + ( Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000));
-        gama := gama + ( Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000));
-        gama := gama + ( Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000)+ Random(1000));
-        gama := gama + ( Random(1000)+ Random(1000)+ Random(1000)+ Random(10000)+ Random(1000)+ Random(1000));
-        gama := Round(((gama) / (25))) ;
         label40.refresh;
         label35.refresh;
         label36.refresh;
@@ -595,10 +613,6 @@ begin
         label38.refresh;
         label39.refresh;
         tota := random(1000) ;
-        if tota = 666 then
-                label20.caption := 'El test no será exitoso hoy.';
-        if tota <> 666 then
-                label20.caption := 'El test puede ser realizado hoy.';
         If (tota < 599) and (tota > 499) then
                 label20.Caption := 'Australia';
         if tota < 450 then
@@ -638,175 +652,169 @@ begin
         DM.Conscida.First;
         DM.Conscida.last;
 
-If tota = 666 Then
-Label23.Caption:= 'Fallo en personalidad incorregíble.';
-If tota = 666 Then
-Label22.Caption:= 'El test no será exitoso.';
-If tota <> 666 Then
-Label23.Caption:= 'Fallo en personalidad corregíble.';
-If tota <> 666 Then
-Label22.Caption:= 'El test será exitoso.';
-
 If tota=0 Then
-Label22.Caption:='Persona real. ';
+Label22.Caption:='Persona de la Realeza.';
 
 If (tota > 0) And (tota < 50) Then
-Label22.Caption:= 'Personal de servicio. ';
+Label22.Caption:= 'Personal de servicio.';
 
 If tota=50 Then
-Label22.Caption:=' Artista. ';
+Label22.Caption:=' Artista.';
 
 If (tota > 50) And (tota < 100) Then
-Label22.Caption:='Investigación / Desarrollo. ';
+Label22.Caption:='Investigación / Desarrollo.';
 
 If tota=100 Then
-Label22.Caption:='Servicio Militar. ';
+Label22.Caption:='Servicio Militar.';
 
 If (tota > 100) And (tota < 150) Then
-Label22.Caption:='Biología. ';
+Label22.Caption:='Biología.';
 
 If tota=150 Then
-Label22.Caption:='Magisterio. ';
+Label22.Caption:='Magisterio.';
 
 If (tota > 150) And (tota < 200) Then
-Label22.Caption:='Teología. ';
+Label22.Caption:='Teología.';
 
 If tota=200 Then
-Label22.Caption:='Seguridad estatal. ';
+Label22.Caption:='Seguridad estatal.';
 
 If (tota > 200) And (tota < 250) Then
-Label22.Caption:='Bellas Artes / Filosofía. ';
+Label22.Caption:='Bellas Artes / Filosofía.';
 
 If tota=250 Then
-Label22.Caption:='Conducción / Piloto. ';
+Label22.Caption:='Conducción / Piloto.';
 
 If (tota > 250) And (tota < 300) Then
-Label22.Caption:='Ingeniería. ';
+Label22.Caption:='Ingeniería.';
 
 If tota=300 Then
-Label22.Caption:='Administración. ';
+Label22.Caption:='Administración.';
 
 If (tota > 300) And (tota < 350) Then
-Label22.Caption:='Artes Plásticas. ';
+Label22.Caption:='Artes Plásticas.';
 
 If tota=350 Then
-Label22.Caption:='Ingeniería Mecánica / Civil. ';
+Label22.Caption:='Ingeniería Mecánica / Civil.';
 
 If (tota > 350) And (tota < 400) Then
-Label22.Caption:='Periodismo. ';
+Label22.Caption:='Periodismo.';
 
 If tota=400 Then
-Label22.Caption:='Contaduría. ';
+Label22.Caption:='Contaduría.';
 
 If (tota > 400) And (tota < 450) Then
-Label22.Caption := 'Medicina. ';
+Label22.Caption := 'Medicina.';
 
 If tota=450 Then
-Label22.Caption:='Periodismo. ';
+Label22.Caption:='Periodismo.';
 
 If (tota > 450) And (tota < 500) Then
-Label22.Caption := 'Veterinaria. ';
+Label22.Caption := 'Veterinaria.';
 
 If tota=500 Then
-Label22.Caption:='Magisterio de Alto Rango. ';
+Label22.Caption:='Magisterio de Alto Rango.';
 
 If (tota > 500) And (tota < 550) Then
-Label22.Caption := 'Letras y Filosofía. ';
+Label22.Caption := 'Letras y Filosofía.';
 
 If tota=550 Then
-Label22.Caption:='Adjudicaturía. ';
+Label22.Caption:='Adjudicaturía.';
 
 If (tota > 550) And (tota < 600) Then
-Label22.Caption := 'Teología. ';
+Label22.Caption := 'Teología.';
 
 If tota=600 Then
-Label22.Caption:='Alfarería / Ofebrería. ';
+Label22.Caption:='Alfarería / Ofebrería.';
 
 If (tota > 600) And (tota < 650) Then
-Label22.Caption := 'Servicio Público. ';
+Label22.Caption := 'Servicio Público.';
 
 If tota=650 Then
-Label22.Caption:='Farmacéutica. ';
+Label22.Caption:='Farmacéutica.';
 
 If (tota > 650) And (tota < 700) Then
-Label22.Caption := 'Política / Oratoria. ';
+Label22.Caption := 'Política / Oratoria.';
 
 If tota=700 Then
-Label22.Caption:='Parapsicología / Ciencias Ocultas. ';
+Label22.Caption:='Parapsicología / Ciencias Ocultas.';
 
 If (tota > 700) And (tota < 750) Then
-Label22.Caption := 'Peluquero/a. ';
+Label22.Caption := 'Peluquero/a.';
 
 If tota=750 Then
-Label22.Caption:='Deportes de Alto Rendimiento. ';
+Label22.Caption:='Deportes de Alto Rendimiento.';
 
 If (tota > 750) And (tota < 800) Then
-Label22.Caption := 'Comercio de Alimentos. ';
+Label22.Caption := 'Comercio de Alimentos.';
 
 If tota=800 Then
-Label22.Caption:='Banca pública. ';
+Label22.Caption:='Banca pública.';
 
 If (tota > 800) And (tota < 849) Then
-Label22.Caption := 'Esteticismo. ';
+Label22.Caption := 'Esteticismo.';
 
 If tota=850 Then
-Label22.Caption:='Desarrollo de Nuevas Tecnologías. ';
+Label22.Caption:='Desarrollo de Nuevas Tecnologías.';
 
 If (tota > 850) And (tota < 900) Then
-Label22.Caption := 'Planeamiento Civil. ';
+Label22.Caption := 'Planeamiento Civil.';
 
 If tota=900 Then
-Label22.Caption:='Banca privada. ';
+Label22.Caption:='Banca privada.';
 
 If (tota > 900) And (tota < 950) Then
-Label22.Caption := 'Bienes raíces. ';
+Label22.Caption := 'Bienes raíces.';
 
 If tota=950 Then
-Label22.Caption:='Arquitectura. ';
+Label22.Caption:='Arquitectura.';
 
 If (tota > 950) And (tota < 1000) Then
-Label22.Caption:='Hotelería y Turismo. ';
+Label22.Caption:='Hotelería y Turismo.';
 
 If tota=1000 Then
-Label22.Caption:='Persona Religiosa de Alto Rango. ';
+Label22.Caption:='Persona Religiosa de Alto Rango.';
 
         button8.Enabled:=true;
         Label18.caption:=inttostr(gama*(1+random(2)));
         neg:=random(10);
         if neg <2 then
                 label24.visible :=true;
-        label28.caption:='Mujer. ';
+        label28.caption:='Mujer.';
         tota:=random(10);
         if tota>5 then
-                label28.caption:='Hombre. ';
+                label28.caption:='Hombre.';
         tota:=random(15);
         if tota=6 then
                 label29.visible:=true;
-
-        Panel4.Visible:=False;
+MyChrono.Stop;
 end;
 
 procedure TAging.Button8Click(Sender: TObject);
 begin
-        tim2:=tim2+1;
-        label29.visible :=false ;
-        showmessage ('Relájese y libere toda la negatividad, pulse ''OK'' cuando esté listo/a.');
-        Panel4.Caption:='Liberando conflicto...';
-        panel4.visible:=true;
-        panel4.refresh;
-        tim:=5+random(25);
-        aging.refresh;
-
-        if l=0 then
-                ChangingPulses(50000,555,11111,5,1,tim,'00000000','00000000');
-        if l=1 then
-                ChangingPulses(50000,555,11111,5,5,tim,'11111111','11111111');
+showmessage ('Relájese y libere toda la negatividad, pulse ''OK'' cuando esté listo/a.');
+MyChrono.Start;
+tim2:=tim2+1;
+label29.visible :=false ;
+LRectificado.Caption := 'Rectificado |';
+GProgreso.Progress := 0;
+vtiempo := 60+Random(60);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ChangingPulses(50000,555,11111,5,5,1,
+'11111111','11111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
         tota:=random(1000) ;
-        if tota = 666 then
-                label23.caption := 'Fallo en personalidad incorregíble.';
-
-        if tota = 666 then
-                label29.caption := 'Fallo en personalidad incorregíble.';
         if tota = 666 then
                 button8.enabled:= false;
         if tota <> 666 then
@@ -905,8 +913,8 @@ begin
                 if tota > 900 then
                         label45.caption:='Se ha detectado abuso físico o lesión.' ;
         end;
-        Panel4.Visible:=False;
-end;
+        MyChrono.Stop;
+        end;
 
 procedure TAging.Panel6Click(Sender: TObject);
 begin
@@ -922,11 +930,10 @@ begin
                 time:=0;
                 time:=time+1;
                 time1:=113+random(15);
-                label25.refresh;
                 repeat
                 time:=time+1;
                 until  time=time1;
-                label25.refresh;
+
                 timer2.enabled:=false;
                 timer2.enabled:=true;
         end;
@@ -934,6 +941,7 @@ end;
 
 procedure TAging.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+Time_Crono.Enabled := False;
         timer1.enabled:=false;
         timer2.enabled:=false;
 end;
@@ -1011,9 +1019,8 @@ procedure TAging.FormShow(Sender: TObject);
 var
         rap33:integer;
 begin
-        DM.Bitacora('Carga Rejuvenecimiento');
-        image1.picture.loadfromfile('atom.bmp');
-        image2.picture.loadfromfile('atom.bmp');
+Time_Crono.Enabled := True;
+        IContinuar.picture.loadfromfile('atom.bmp');
         button29.enabled:=true;
         button26.enabled:=true;
         randomize;
@@ -1280,130 +1287,127 @@ end;
 
 procedure TAging.Label61Click(Sender: TObject);
 begin
-Panel4.Caption := 'Reparando telómeros de la trenza del ADN...';
 Terapia();
 If reaction2>84 Then Label61.Enabled := False;
 end;
 
 procedure TAging.Edit6Enter(Sender: TObject);
 begin
-        edit6.text:='';
+ETransferencia.text:='';
 end;
 
 procedure TAging.Label61DblClick(Sender: TObject);
 begin
-        edit6.text:=label61.Caption;
+        ETransferencia.text:=label61.Caption;
 end;
 
 procedure TAging.Label46DblClick(Sender: TObject);
 begin
-        edit6.text:=label46.Caption;
+        ETransferencia.Text:=label46.Caption;
 end;
 
 procedure TAging.Label47DblClick(Sender: TObject);
 begin
-        edit6.text:=label47.Caption;
+        ETransferencia.Text:=label47.Caption;
 end;
 
 procedure TAging.Label55DblClick(Sender: TObject);
 begin
-        edit6.text:=label55.Caption;
+        ETransferencia.Text:=label55.Caption;
 end;
 
 procedure TAging.Label49DblClick(Sender: TObject);
 begin
-        edit6.text:=label49.Caption;
+        ETransferencia.Text:=label49.Caption;
 end;
 
 procedure TAging.Label50DblClick(Sender: TObject);
 begin
-        edit6.text:=label50.Caption;
+        ETransferencia.Text:=label50.Caption;
 end;
 
 procedure TAging.Label51DblClick(Sender: TObject);
 begin
-        edit6.text:=label51.Caption;
+        ETransferencia.Text:=label51.Caption;
 end;
 
 procedure TAging.Label52DblClick(Sender: TObject);
 begin
-        edit6.text:=label52.Caption;
+        ETransferencia.Text:=label52.Caption;
 end;
 
 procedure TAging.Label53DblClick(Sender: TObject);
 begin
-        edit6.text:=label53.Caption;
+        ETransferencia.Text:=label53.Caption;
 end;
 
 procedure TAging.Label54DblClick(Sender: TObject);
 begin
-        edit6.text:=label54.Caption;
+        ETransferencia.Text:=label54.Caption;
 end;
 
 procedure TAging.Label48DblClick(Sender: TObject);
 begin
-        edit6.text:=label48.Caption;
+        ETransferencia.Text:=label48.Caption;
 end;
 
 procedure TAging.Label68DblClick(Sender: TObject);
 begin
-        edit6.text:=label68.Caption;
+        ETransferencia.Text:=label68.Caption;
 end;
 
 procedure TAging.Label57DblClick(Sender: TObject);
 begin
-        edit6.text:=label57.Caption;
+        ETransferencia.Text:=label57.Caption;
 end;
 
 procedure TAging.Label58DblClick(Sender: TObject);
 begin
-        edit6.text:=label58.Caption;
+        ETransferencia.Text:=label58.Caption;
 end;
 
 procedure TAging.Label59DblClick(Sender: TObject);
 begin
-        edit6.text:=label59.Caption;
+        ETransferencia.Text:=label59.Caption;
 end;
 
 procedure TAging.Label60DblClick(Sender: TObject);
 begin
-        edit6.text:=label60.Caption;
+        ETransferencia.Text:=label60.Caption;
 end;
 
 procedure TAging.Label62DblClick(Sender: TObject);
 begin
-        edit6.text:=label62.Caption;
+        ETransferencia.Text:=label62.Caption;
 end;
 
 procedure TAging.Label63DblClick(Sender: TObject);
 begin
-        edit6.text:=label63.Caption;
+        ETransferencia.Text:=label63.Caption;
 end;
 
 procedure TAging.Label56DblClick(Sender: TObject);
 begin
-        edit6.text:=label56.Caption;
+        ETransferencia.Text:=label56.Caption;
 end;
 
 procedure TAging.Label64DblClick(Sender: TObject);
 begin
-        edit6.text:=label64.Caption;
+        ETransferencia.Text:=label64.Caption;
 end;
 
 procedure TAging.Label65DblClick(Sender: TObject);
 begin
-        edit6.text:=label65.Caption;
+        ETransferencia.Text:=label65.Caption;
 end;
 
 procedure TAging.Button21Click(Sender: TObject);
 begin
-Panel4.Caption := 'Rejuveneciendo...';
 Terapia();
 end;
 
 procedure TAging.Button23Click(Sender: TObject);
 begin
-Panel4.Caption := 'Reparando telómero del ADN...';
 Terapia();
 end;
 
@@ -1424,45 +1428,50 @@ end;
 
 procedure TAging.Button24Click(Sender: TObject);
 begin
-        showmessage ('Pida a la persona que se relaje y olvide la negatividad, pulse ''OK'' cuando la persona esté lista.');
-        Panel4.Caption:='Estimulando trance de vida pasada...';
-        panel4.visible:=true;
-        panel4.refresh;
-        button7.enabled:=false;
-        aging.refresh;
+showmessage ('Pida a la persona que se relaje y olvide la negatividad, pulse ''OK'' cuando la persona esté lista.');
+button7.enabled:=false;
+LRectificado.Caption := 'Rectificado |';
+GProgreso.Progress := 0;
+vtiempo := 60+Random(60);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+                ChangingPulses(50000,555,11111,5+random(7),5+random(7),1,
+                '11111111','11111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
-        if l=0 then
-                ChangingPulses(50000,555,11111,5+random(7),1+random(7),52+random(7),'00000000','00000000');
-        if l=1 then
-                ChangingPulses(50000,555,11111,5+random(7),5+random(7),52+random(7),'11111111','11111111');
-
-        if l=0 then
-                ChangingPulses(50000,555,11111,5+random(7),1+random(7),52+random(7),'00000000','00000000');
-        if l=1 then
-                ChangingPulses(5555,555,55555,5+random(7),5+random(7),52+random(7),'11111111','11111111');
-        if l=0 then
-                ChangingPulses(50000,555,11111,5+random(7),1+random(7),52+random(7),'00000000','00000000');
-        if l=1 then
-                ChangingPulses(5555,555,55555,5+random(7),5+random(7),52+random(7),'11111111','11111111');
+If (rectificado<85) and (CBAutomatico.Checked=True) Then Button24.Click;
+If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 
         tota:=random(15);
         if tota=6 then label29.visible:=true;
-        Panel4.Visible:=False;
         button7.enabled:=true;
 end;
 
+procedure TAging.TerapiaExtendida();
+begin
+ Application.CreateForm(Tondas_frm, ondas_frm);
+ ondas_frm.CheckBox1.Checked := True;
+  ondas.ondas_frm.showmodal;
+  ondas.ondas_frm.Free;
+ end;
+
+
 procedure TAging.Button25Click(Sender: TObject);
 begin
-Panel4.Caption:='Testando vibración alienígena...';
-        panel4.visible:=true;
-        panel4.refresh;
-        ChangingPulses(55555,9990,1111,1,1,8,'llllllll','llllllll');
-        oeg:=random(75);
-        if oeg=66 then
-        begin
-                SCIOworking.trackbar1.position:=SCIOworking.trackbar1.position-random(7);
-        end;
-        panel4.visible:=false;
+MyChrono.Start;
+        ChangingPulses(55555,9990,1111,1,1,8,
+        'llllllll','llllllll');
+MyChrono.Stop;
 end;
 
 procedure TAging.Button26Click(Sender: TObject);
@@ -1471,8 +1480,6 @@ begin
         scioworking.radiobutton6.checked:=true;
         SCIOworking.trackbar1.position:=3;
         SCIOworking.radiobutton1.checked:=true;
-        SCIOworking.button11.caption:='Detener terapia';
-        SCIOworking.button11.visible:=true;
         showmessage('Gradualmente suba el voltaje en el panel de controles hasta que la persona sienta cosquilleo en la frente, repita esto con las extremidades hasta que la persona haya sentido lo mismo que en la frente. Detenga la terapia después de 5 min.');
 
         repeat
@@ -1491,28 +1498,14 @@ begin
                 ChangingPulses(50000,111,300,1+random(2),1+random(2),1,'00000000','11110000');
                 application.ProcessMessages;
         until riskchart.xyz=10;
-
         scioworking.wirequadrant:='';
         scioworking.radiogroup1.itemindex:=0;
-        SCIOworking.label9.visible:=false;
 end;
 
 procedure TAging.Button29Click(Sender: TObject);
 begin
-             Showmessage('El sistema le puede ayudar a prevenir el envejecimiento o a contenerlo, pero primero usted debe saber y aceptar lo ' +
-                chr(13)+'siguiente: El sistema no permite al subconsciente usarle en una forma negativa, tentativas de hacerlo serán' +
-                chr(13)+'infructiosas e incluso desastrosas para quien lo intente. Concéntre su mente y energía en los no-juicios hacia otros,' +
-                chr(13)+'líberese de sus objetivos, deseos, fijaciones, miedos, íras, desiluciones y toda negatividad que pueda florecer.' +
-                chr(13)+''+
-                chr(13)+'Permíta que la tensión y presiones se desvanescan. Descargue todos sus roles, quítese sus máscaras y cambie sus'+
-                chr(13)+'concéptos falsos de personalidad por caridad y altruísmo mental. Deje ir, permita que Dios le ilumine, permita que' +
-                chr(13)+'las emociones fluyan a través de usted, como la música a través de una flauta, o la luz a través de una ventana limpia.'+
-                chr(13)+'El poder proviene de la gracia obtenida a través de la observación, la auto estima y el respeto hacia otros seres y la naturaleza.' );
-
         ChangingPulses(1000,111+random(3),10000,1+random(3),1+random(3),1,'11111111','11111111');
-        scioworking.button16.caption:='Finalizar retroceso de envejecimiento';
-        scioworking.button15.caption:='Iniciar retroceso de envejecimiento';
-        scioworking.button2.caption:='Revertir envejecimiento';
+        scioworking.button2.caption:='Rejuvejecimiento';
         SCIOworking.RadioGroup2.enabled:=true;
         SCIOworking.RadioGroup2.ItemIndex:=5;
         SCIOworking.SC_Command:='';
@@ -1527,18 +1520,17 @@ procedure TAging.Button3Click(Sender: TObject);
 var
 nIndex : integer;
 begin
-Panel1.Visible := False;
-        panel1.visible:=false;
+MyChrono.Start;
+LRectificado.Caption := 'Rectificado |';
+GProgreso.Progress := 0;
         Label26.Caption := '|||';
         gauge2.progress:=0;
-        spin:=1;
         spin1:=50;
         spin2:=1;
         spin3:=1;
-          aging.refresh;
         repeat
                 ChangingPulses(50000,555,11111,5,1,1,'00000000','00000000');
-                spin:=spin+1;
+
                 spin1:=round((random(100)+random(100)+random(100)+random(100))/4);
                 if (patform1.male =10)    then   spin1:=round((random(105)+random(110)+random(105)+random(105))/4);
                 if  (patform1.both=10)   then   spin1:=round((random(109)+random(115)+random(109)+random(112))/4);
@@ -1551,8 +1543,8 @@ Panel1.Visible := False;
                 if spin1<50 then gauge1.progress:=gauge1.progress-1;
                 if spin1>50 then spin2:=spin2+1;
                 if spin1<50 then spin3:=spin3+1;
-                Gauge2.progress:=round(spin /2);
-                if spin= 2 then
+
+                if spin1= 2 then
                 begin
                         for nIndex := 0 to 5 do
                         begin
@@ -1560,7 +1552,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 19 then
+                if spin1= 19 then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1569,7 +1561,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 21 then
+                if spin1= 21 then
                 begin
 
                         for nIndex := 0 to 15 do
@@ -1578,7 +1570,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 41 then
+                if spin1= 41 then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1587,7 +1579,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if (spin= 49)and (gauge1.progress>46) then
+                if (spin1= 49)and (gauge1.progress>46) then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1596,7 +1588,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 59 then
+                if spin1= 59 then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1605,7 +1597,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 89 then
+                if spin1= 89 then
                 begin
 
                         for nIndex := 0 to 8 do
@@ -1614,7 +1606,7 @@ Panel1.Visible := False;
                                 aging.Color:=RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if (spin= 99)and (gauge1.progress<20) then
+                if (spin1= 99)and (gauge1.progress<20) then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1623,7 +1615,7 @@ Panel1.Visible := False;
                                 aging.Color :=    RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 109 then
+                if spin1= 109 then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1632,7 +1624,7 @@ Panel1.Visible := False;
                                 aging.Color :=    RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if (spin= 159)and (gauge1.progress<16) then
+                if (spin1= 159)and (gauge1.progress<16) then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1641,7 +1633,7 @@ Panel1.Visible := False;
                                 aging.Color :=    RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if (spin= 159)and (gauge1.progress>46) then
+                if (spin1= 159)and (gauge1.progress>46) then
                 begin
                         for nIndex := 0 to 5 do
                         begin
@@ -1649,7 +1641,7 @@ Panel1.Visible := False;
                         aging.Color :=    RGB(nIndex,nIndex,100);;
                         end;
                 end;
-                if spin= 179 then
+                if spin1= 179 then
                 begin
 
                         for nIndex := 0 to 5 do
@@ -1658,33 +1650,28 @@ Panel1.Visible := False;
                                 aging.Color :=    RGB(nIndex,nIndex,100);;
                         end;
                 end;
-        until (spin=200) or (gauge1.progress= 59) or (gauge1.progress= 1);
-
-        aging.Color := clpurple;
-        panel1.visible:=true;
+        until (spin1=200) or (gauge1.progress= 59) or (gauge1.progress= 1);
 
         if gauge1.progress>30 then label4.caption:='Positiva.';
         if gauge1.progress<30 then label4.caption:='No muy positiva.';
       //  label5.caption:='La intensidad de su mente es:';
         label6.caption:= ''+inttostr(abs(30-gauge1.progress)+40);
-        if spin<60 then label6.caption:='100%';
-        if spin<90 then label6.caption:='95%';
-        if spin<120 then label6.caption:='82%';
-        if spin<180 then label6.caption:='75%';
-        if spin<200 then label6.caption:='70%';
-      //  label7.caption:='La cantidad de efecto positivo fue: ';
-        label8.caption:= ''+inttostr(spin2);
-       // label9.caption:='El efecto total acumulado es: ';
-        label10.caption:=''+inttostr(spin2-spin3);
-        label1.caption:='El test ha terminado.  ¿Desea intentarlo de nuevo?';
+        if spin1<60 then label6.caption:='100%';
+        if spin1<90 then label6.caption:='95%';
+        if spin1<120 then label6.caption:='82%';
+        if spin1<180 then label6.caption:='75%';
+        if spin1<200 then label6.caption:='70%';
+        label8.caption:= inttostr(spin2);
+        label10.caption:=inttostr(spin2-spin3);
+MyChrono.Stop;
 end;
 
-procedure TAging.Label91Click(Sender: TObject);
+procedure TAging.Label189Click(Sender: TObject);
 begin
         testform1.vtransferencia := true;
-       testform1.edit32.text:=edit6.text+' | ';
+       testform1.edit32.text:=ETransferencia.Text+' | ';
        testform1.vtransferencia := true;
-        testform1.edit34.text:=edit6.text+' | ';
+        testform1.edit34.text:=ETransferencia.text+' | ';
         testform1.edit32.Refresh;
         testform1.edit34.Refresh;
         close;
@@ -1697,96 +1684,75 @@ end;
 
 procedure TAging.Edit6Change(Sender: TObject);
 begin
-If edit6.Text <> '' Then label91.Enabled := False
+If ETransferencia.Text <> '' Then label189.Enabled := False
 else
-label91.Enabled := True;
+label189.Enabled := True;
 end;
 
 procedure TAging.Terapia();
 begin
-        GProgreso.Progress :=0;
-        
+MyChrono.Start;
+LRectificado.Caption := 'Rectificado |';
+GProgreso.Progress := 0;
+vtiempo := 60+Random(60);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
         ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=10;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=20;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=30;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=40;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=50;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=60;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=70;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=80;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=90;
-        
-        ChangingPulses(5555,5+random(200),1111,5+random(2),10,5+random(2),'11100000','11100111');
-        GProgreso.Progress :=100;
-
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
         reaction2:=45+random(69);
-        if reaction2>100 then reaction2:=101;
-        label67.caption:='Rectificado: '+inttostr(reaction2);
-        Panel4.Visible := False;
+        if reaction2>100 then reaction2:=85+Random(15);
+        LRectificado.caption:='Rectificado: '+inttostr(reaction2);
+MyChrono.Stop;
         end;
 
 procedure TAging.Label46Click(Sender: TObject);
 begin
-Panel4.Caption := 'Dehidropiandrosterona (DHEA)...';
 Terapia();
 If reaction2>84 Then Label46.Enabled := False;
 end;
 
 procedure TAging.Label47Click(Sender: TObject);
 begin
-Panel4.Caption := 'Melatonina...';
 Terapia();
 If reaction2>84 Then Label47.Enabled := False;
 end;
 
 procedure TAging.Label55Click(Sender: TObject);
 begin
-Panel4.Caption := 'Hormona paratiroidea...';
 Terapia();
 If reaction2>84 Then Label55.Enabled := False;
 end;
 
 procedure TAging.Label49Click(Sender: TObject);
 begin
-Panel4.Caption := 'Hormona del crecimiento...';
 Terapia();
 If reaction2>84 Then Label49.Enabled := False;
 end;
 
 procedure TAging.Label50Click(Sender: TObject);
 begin
-Panel4.Caption := 'Factor de liberación de la hormona del crecimiento...';
 Terapia();
 If reaction2>84 Then Label50.Enabled := False;
 end;
 
 procedure TAging.Label51Click(Sender: TObject);
 begin
-Panel4.Caption := 'Fórmula anti-envejecimiento...';
 Terapia();
 If reaction2>84 Then Label51.Enabled := False;
 end;
 
 procedure TAging.Label52Click(Sender: TObject);
 begin
-Panel4.Caption := '';
 Terapia();
 If reaction2>84 Then Label52.Enabled := False;
 end;
@@ -1823,7 +1789,6 @@ end;
 
 procedure TAging.Label53Click(Sender: TObject);
 begin
-Panel4.Caption := 'Acidos grasos...';
 Terapia();
 If reaction2>84 Then Label53.Enabled := False;
 end;
@@ -1876,36 +1841,16 @@ Terapia();
 If reaction2>84 Then Label66.Enabled := False;
 end;
 
-procedure TAging.Image2DblClick(Sender: TObject);
+procedure TAging.IContinuarClick(Sender: TObject);
+var
+ i : Integer;
 begin
 Showmessage(Testform1.Label254.Caption+', solo usa esta opción si tienes la absoluta seguridad de entender lo que estás haciendo.');
-Label61.Enabled := True;
-Label46.Enabled := True;
-Label47.Enabled := True;
-Label55.Enabled := True;
-Label49.Enabled := True;
-Label50.Enabled := True;
-Label51.Enabled := True;
-Label52.Enabled := True;
-Label53.Enabled := True;
-Label54.Enabled := True;
-Label48.Enabled := True;
-Label68.Enabled := True;
-Label57.Enabled := True;
-Label58.Enabled := True;
-Label59.Enabled := True;
-Label60.Enabled := True;
-Label62.Enabled := True;
-Label63.Enabled := True;
-Label56.Enabled := True;
-Label64.Enabled := True;
-Label65.Enabled := True;
-Label94.Enabled := True;
-Label95.Enabled := True;
-Label97.Enabled := True;
-Label93.Enabled := True;
-Label98.Enabled := True;
-Label66.Enabled := True;
+for i:=0 to self.ComponentCount-1 do
+ if (self.Components[i] is TLabel) then
+  if (self.Components[i] as TLabel).tag = 8 then begin
+   (self.Components[i] as TLabel).enabled := true;
+end;
 end;
 
 procedure TAging.Label98Click(Sender: TObject);
@@ -1940,27 +1885,33 @@ end;
 
 procedure TAging.Label98DblClick(Sender: TObject);
 begin
-edit6.text:=label98.Caption;
+ETransferencia.Text:=label98.Caption;
 end;
 
 procedure TAging.Label93DblClick(Sender: TObject);
 begin
-edit6.text:=label93.Caption;
+ETransferencia.Text:=label93.Caption;
 end;
 
 procedure TAging.Label94DblClick(Sender: TObject);
 begin
-edit6.text:=label94.Caption;
+ETransferencia.Text:=label94.Caption;
 end;
 
 procedure TAging.Label97DblClick(Sender: TObject);
 begin
-edit6.text:=label97.Caption;
+ETransferencia.Text:=label97.Caption;
 end;
 
 procedure TAging.Label95DblClick(Sender: TObject);
 begin
-edit6.text:=label95.Caption;
+ETransferencia.Text:=label95.Caption;
+end;
+
+procedure TAging.Time_CronoTimer(Sender: TObject);
+begin
+Label148.Caption:=TimeToStr(Time);
+Lcrono3.Caption := MyChrono.Time2Str(MyChrono.TimeElapsed);
 end;
 
 end.

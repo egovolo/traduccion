@@ -1,12 +1,12 @@
 object SCIOworking: TSCIOworking
-  Left = 31
-  Top = 139
+  Left = 225
+  Top = 506
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Panel de controles de la caja de interfaz ::: '
-  ClientHeight = 314
+    '::: gENiO® iOS ::: Panel de controles de la caja de interfaz :::' +
+    ' '
+  ClientHeight = 293
   ClientWidth = 925
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -24,71 +24,6 @@ object SCIOworking: TSCIOworking
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
-  object Label4: TLabel
-    Left = 252
-    Top = 12
-    Width = 36
-    Height = 14
-    Caption = 'Label4'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label8: TLabel
-    Left = 116
-    Top = 8
-    Width = 323
-    Height = 16
-    Caption = 'Sistema en modo virtual...  Arneses desactivados...'
-    Color = clFuchsia
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clLime
-    Font.Height = -13
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label9: TLabel
-    Left = 320
-    Top = 12
-    Width = 193
-    Height = 14
-    Alignment = taRightJustify
-    Caption = 'Regresando al '#39'Clasp32.64 Castellano'#39'...'
-    Color = clGray
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clLime
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label10: TLabel
-    Left = 84
-    Top = 292
-    Width = 93
-    Height = 14
-    Caption = 'Por favor espere'
-    Color = clGray
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clInactiveCaption
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
   object Label25: TLabel
     Left = 320
     Top = 36
@@ -123,114 +58,6 @@ object SCIOworking: TSCIOworking
     ParentFont = False
     Transparent = True
   end
-  object Label81: TLabel
-    Left = 696
-    Top = 16
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label83: TLabel
-    Left = 352
-    Top = 279
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label84: TLabel
-    Left = 628
-    Top = 8
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label85: TLabel
-    Left = 408
-    Top = 279
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label86: TLabel
-    Left = 352
-    Top = 293
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label87: TLabel
-    Left = 408
-    Top = 293
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
   object Label88: TLabel
     Left = 696
     Top = 36
@@ -249,99 +76,9 @@ object SCIOworking: TSCIOworking
     Transparent = True
     Visible = False
   end
-  object Label89: TLabel
-    Left = 172
-    Top = 288
-    Width = 12
-    Height = 14
-    Hint = 'Cap/Ind/SubS'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label90: TLabel
-    Left = 724
-    Top = 16
-    Width = 12
-    Height = 14
-    Hint = 'resistance vector'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label91: TLabel
-    Left = 380
-    Top = 279
-    Width = 12
-    Height = 14
-    Hint = 'resistance vector'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label92: TLabel
-    Left = 380
-    Top = 293
-    Width = 12
-    Height = 14
-    Hint = 'resistance vector'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
   object Label93: TLabel
     Left = 724
     Top = 36
-    Width = 12
-    Height = 14
-    Hint = 'resistance vector'
-    Caption = '00'
-    Color = clAqua
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clSilver
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    Transparent = True
-    Visible = False
-  end
-  object Label94: TLabel
-    Left = 524
-    Top = 16
     Width = 12
     Height = 14
     Hint = 'resistance vector'
@@ -432,84 +169,33 @@ object SCIOworking: TSCIOworking
     Visible = False
     OnDblClick = Label7DblClick
   end
-  object Button7: TButton
-    Left = 580
-    Top = 10
-    Width = 146
-    Height = 19
-    Cursor = crHandPoint
-    Caption = 'Detener test + Resetear'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 17
-    Visible = False
-    OnClick = Button7Click
-  end
-  object Button11: TButton
-    Left = 584
-    Top = 10
-    Width = 146
-    Height = 19
-    Cursor = crHandPoint
-    Caption = 'La persona siente'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 24
-    Visible = False
-    OnClick = Button11Click
-  end
-  object Button3: TButton
-    Left = 576
-    Top = 10
-    Width = 146
-    Height = 19
-    Cursor = crHandPoint
-    Caption = 'La persona no siente'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 6
-    Visible = False
-    OnClick = Button3Click
-  end
-  object Button8: TButton
-    Left = 584
-    Top = 7
-    Width = 150
-    Height = 20
-    Cursor = crHandPoint
-    Caption = 'Detener terapia continua'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 19
-    Visible = False
-    OnClick = Button8Click
-  end
-  object Button1: TButton
-    Left = 8
-    Top = 8
-    Width = 47
+  object LEPositivas: TLabel
+    Left = 4
+    Top = 14
+    Width = 4
     Height = 13
-    Cursor = crHandPoint
-    Caption = 'Close'
-    TabOrder = 0
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     Visible = False
-    OnClick = Button1Click
+  end
+  object LENegativas: TLabel
+    Left = 4
+    Top = 2
+    Width = 4
+    Height = 13
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
   end
   object RadioButton1: TRadioButton
     Left = 4
@@ -526,7 +212,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     OnClick = RadioButton1Click
   end
   object RadioButton2: TRadioButton
@@ -544,7 +230,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     OnClick = RadioButton2Click
   end
   object RadioButton3: TRadioButton
@@ -562,7 +248,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
     OnClick = RadioButton3Click
   end
   object RadioGroup1: TRadioGroup
@@ -587,14 +273,14 @@ object SCIOworking: TSCIOworking
       'Cabeza')
     ParentColor = False
     ParentFont = False
-    TabOrder = 25
+    TabOrder = 19
     OnClick = RadioGroup1Click
   end
   object Panel1: TPanel
     Left = 0
     Top = 224
     Width = 917
-    Height = 89
+    Height = 65
     BevelOuter = bvNone
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
@@ -603,11 +289,11 @@ object SCIOworking: TSCIOworking
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 26
+    TabOrder = 20
     Visible = False
     object Bevel3: TBevel
       Left = 792
-      Top = 12
+      Top = 4
       Width = 120
       Height = 33
       Shape = bsFrame
@@ -665,7 +351,7 @@ object SCIOworking: TSCIOworking
       ParentFont = False
     end
     object Label15: TLabel
-      Left = 620
+      Left = 580
       Top = 0
       Width = 10
       Height = 11
@@ -683,7 +369,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label16: TLabel
-      Left = 620
+      Left = 580
       Top = 15
       Width = 10
       Height = 11
@@ -701,7 +387,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label17: TLabel
-      Left = 692
+      Left = 652
       Top = 0
       Width = 10
       Height = 11
@@ -719,7 +405,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label18: TLabel
-      Left = 692
+      Left = 652
       Top = 15
       Width = 10
       Height = 11
@@ -737,7 +423,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label19: TLabel
-      Left = 620
+      Left = 580
       Top = 29
       Width = 10
       Height = 11
@@ -755,7 +441,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label20: TLabel
-      Left = 692
+      Left = 652
       Top = 29
       Width = 10
       Height = 11
@@ -773,7 +459,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label21: TLabel
-      Left = 620
+      Left = 580
       Top = 44
       Width = 10
       Height = 11
@@ -791,7 +477,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label22: TLabel
-      Left = 692
+      Left = 652
       Top = 44
       Width = 10
       Height = 11
@@ -808,22 +494,9 @@ object SCIOworking: TSCIOworking
       Transparent = True
       Visible = False
     end
-    object Label23: TLabel
-      Left = 8
-      Top = 70
-      Width = 12
-      Height = 13
-      Caption = '---'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-    end
     object Label24: TLabel
-      Left = 560
-      Top = 54
+      Left = 492
+      Top = 34
       Width = 48
       Height = 13
       Caption = '00000000'
@@ -834,22 +507,9 @@ object SCIOworking: TSCIOworking
       Font.Style = []
       ParentFont = False
     end
-    object Label26: TLabel
-      Left = 8
-      Top = 58
-      Width = 12
-      Height = 13
-      Caption = '---'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-    end
     object Label27: TLabel
       Left = 878
-      Top = 20
+      Top = 12
       Width = 24
       Height = 16
       Caption = '000'
@@ -865,7 +525,7 @@ object SCIOworking: TSCIOworking
     end
     object Label28: TLabel
       Left = 800
-      Top = 20
+      Top = 12
       Width = 77
       Height = 16
       Caption = 'Rectificado:'
@@ -880,7 +540,7 @@ object SCIOworking: TSCIOworking
       Transparent = True
     end
     object Label29: TLabel
-      Left = 656
+      Left = 616
       Top = 0
       Width = 10
       Height = 11
@@ -898,7 +558,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label30: TLabel
-      Left = 656
+      Left = 616
       Top = 15
       Width = 10
       Height = 11
@@ -916,7 +576,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label31: TLabel
-      Left = 656
+      Left = 616
       Top = 29
       Width = 10
       Height = 11
@@ -934,7 +594,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label32: TLabel
-      Left = 656
+      Left = 616
       Top = 44
       Width = 10
       Height = 11
@@ -952,7 +612,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label33: TLabel
-      Left = 728
+      Left = 688
       Top = 0
       Width = 10
       Height = 11
@@ -970,7 +630,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label34: TLabel
-      Left = 728
+      Left = 688
       Top = 15
       Width = 10
       Height = 11
@@ -988,7 +648,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label35: TLabel
-      Left = 728
+      Left = 688
       Top = 29
       Width = 10
       Height = 11
@@ -1006,7 +666,7 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label36: TLabel
-      Left = 728
+      Left = 688
       Top = 44
       Width = 10
       Height = 11
@@ -1024,29 +684,14 @@ object SCIOworking: TSCIOworking
       Visible = False
     end
     object Label39: TLabel
-      Left = 484
-      Top = 54
+      Left = 416
+      Top = 34
       Width = 74
       Height = 13
       Caption = 'Frecuencia Hz |'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label40: TLabel
-      Left = 456
-      Top = 72
-      Width = 287
-      Height = 11
-      Caption = 
-        'Cuando la rectificación alcance su valor máximo este panel se ce' +
-        'rrará.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -9
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
@@ -1135,9 +780,9 @@ object SCIOworking: TSCIOworking
       OnClick = RadioButton8Click
     end
     object Button15: TButton
-      Left = 328
-      Top = 18
-      Width = 282
+      Left = 340
+      Top = 10
+      Width = 200
       Height = 20
       Cursor = crHandPoint
       Hint = 'Incia terapias específicas.'
@@ -1154,9 +799,9 @@ object SCIOworking: TSCIOworking
       OnClick = Button15Click
     end
     object Button16: TButton
-      Left = 328
-      Top = 18
-      Width = 282
+      Left = 340
+      Top = 10
+      Width = 200
       Height = 20
       Cursor = crHandPoint
       Hint = 'Detiene terapias específicas.'
@@ -1174,8 +819,8 @@ object SCIOworking: TSCIOworking
       OnClick = Button16Click
     end
     object Panel11: TPanel
-      Left = 760
-      Top = 65
+      Left = 756
+      Top = 41
       Width = 157
       Height = 22
       BevelOuter = bvNone
@@ -1221,9 +866,9 @@ object SCIOworking: TSCIOworking
       end
     end
     object BRifeDetener: TButton
-      Left = 328
-      Top = 18
-      Width = 282
+      Left = 340
+      Top = 10
+      Width = 200
       Height = 20
       Cursor = crHandPoint
       Caption = 'Detener terapia fX'
@@ -1239,9 +884,9 @@ object SCIOworking: TSCIOworking
       OnClick = BRifeDetenerClick
     end
     object BRifeIniciar: TButton
-      Left = 328
-      Top = 18
-      Width = 282
+      Left = 340
+      Top = 10
+      Width = 200
       Height = 20
       Cursor = crHandPoint
       Hint = 'Incia terapias específicas.'
@@ -1284,7 +929,7 @@ object SCIOworking: TSCIOworking
       'Sistema inmune-neurológico')
     ParentColor = False
     ParentFont = False
-    TabOrder = 27
+    TabOrder = 21
   end
   object CBAutomatico: TCheckBox
     Left = 4
@@ -1304,7 +949,7 @@ object SCIOworking: TSCIOworking
     ParentColor = False
     ParentFont = False
     State = cbChecked
-    TabOrder = 28
+    TabOrder = 22
     OnClick = CBAutomaticoClick
   end
   object GroupBox1: TGroupBox
@@ -1322,14 +967,15 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 29
+    TabOrder = 23
     object Label3: TLabel
-      Left = 14
+      Left = 15
       Top = 15
-      Width = 61
+      Width = 60
       Height = 11
       Hint = 'Use este control para variar la amplitud de voltaje del '#39'SCIO'#39'.'
-      Caption = 'Subespacio=0 '
+      Alignment = taRightJustify
+      Caption = 'Radionica = 0 '
       Color = clSilver
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -1654,7 +1300,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 6
     OnClick = RadioButton7Clic
   end
   object RadioButton6: TRadioButton
@@ -1672,7 +1318,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 5
     OnClick = RadioButton6Click
   end
   object RadioButton4: TRadioButton
@@ -1690,7 +1336,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
     OnClick = RadioButton4Click
   end
   object RadioButton11: TRadioButton
@@ -1708,7 +1354,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 31
+    TabOrder = 25
     OnClick = RadioButton11Click
   end
   object RadioButton12: TRadioButton
@@ -1726,7 +1372,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 32
+    TabOrder = 26
     OnClick = RadioButton12Click
   end
   object RadioButton14: TRadioButton
@@ -1744,7 +1390,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 34
+    TabOrder = 28
     OnClick = RadioButton14Click
   end
   object RadioButton5: TRadioButton
@@ -1763,7 +1409,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
     TabStop = True
     Visible = False
     OnClick = RadioButton5Click
@@ -1784,7 +1430,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 9
   end
   object CheckBox2: TCheckBox
     Left = 406
@@ -1804,7 +1450,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 8
   end
   object CheckBox1: TCheckBox
     Left = 406
@@ -1812,7 +1458,7 @@ object SCIOworking: TSCIOworking
     Width = 172
     Height = 17
     Cursor = crHandPoint
-    Hint = 'Usar para un pulso extra intensivo de reparación de alergias.'
+    Hint = 'Usar para hiperreactividad o hipersensibilidad.'
     Caption = 'Bio cascada'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
@@ -1822,7 +1468,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 7
   end
   object CheckBox5: TCheckBox
     Left = 406
@@ -1842,7 +1488,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 13
+    TabOrder = 11
   end
   object CheckBox6: TCheckBox
     Left = 578
@@ -1862,7 +1508,7 @@ object SCIOworking: TSCIOworking
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 14
+    TabOrder = 12
   end
   object CheckBox7: TCheckBox
     Left = 578
@@ -1882,7 +1528,7 @@ object SCIOworking: TSCIOworking
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 15
+    TabOrder = 13
   end
   object CheckBox8: TCheckBox
     Left = 578
@@ -1902,7 +1548,7 @@ object SCIOworking: TSCIOworking
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 16
+    TabOrder = 14
   end
   object CheckBox4: TCheckBox
     Left = 578
@@ -1922,7 +1568,7 @@ object SCIOworking: TSCIOworking
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 12
+    TabOrder = 10
   end
   object CheckBox10: TCheckBox
     Left = 112
@@ -1940,7 +1586,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 16
   end
   object CheckBox12: TCheckBox
     Left = 284
@@ -1958,7 +1604,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 22
+    TabOrder = 18
   end
   object CheckBox11: TCheckBox
     Left = 448
@@ -1976,7 +1622,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 21
+    TabOrder = 17
   end
   object CheckBox9: TCheckBox
     Left = 619
@@ -1994,33 +1640,14 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 18
-  end
-  object Button10: TButton
-    Left = 580
-    Top = 7
-    Width = 146
-    Height = 19
-    Cursor = crHandPoint
-    Hint = 'Set Virtual for Pacemaker patients'
-    Caption = 'Deshacer modo virtual'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 23
-    Visible = False
-    OnClick = Button10Click
+    TabOrder = 15
   end
   object Button2: TPanel
-    Left = 4
+    Left = 20
     Top = 4
-    Width = 917
+    Width = 129
     Height = 25
     BevelOuter = bvNone
-    Caption = 'Caja de interfaz funcionando correctamente...'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
@@ -2028,7 +1655,8 @@ object SCIOworking: TSCIOworking
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 35
+    TabOrder = 29
+    Visible = False
   end
   object RadioButton13: TRadioButton
     Left = 4
@@ -2045,7 +1673,7 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 33
+    TabOrder = 27
     OnClick = RadioButton2Click
   end
   object RadioButton10: TRadioButton
@@ -2063,37 +1691,286 @@ object SCIOworking: TSCIOworking
     Font.Style = []
     ParentColor = False
     ParentFont = False
-    TabOrder = 30
+    TabOrder = 24
     OnClick = RadioButton10Click
+  end
+  object LBENegativas: TListBox
+    Left = 224
+    Top = 8
+    Width = 193
+    Height = 25
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 13
+    Items.Strings = (
+      ' Aburrimiento.'
+      ' Adicción.'
+      ' Agresión.'
+      ' Alteración.'
+      ' Ansiedad.'
+      ' Antagonismo.'
+      ' Apatía.'
+      ' Apego.'
+      ' Arrogancia.'
+      ' Asco.'
+      ' Autismo.'
+      ' Avaricia.'
+      ' Aversión.'
+      ' Catastrofismo.'
+      ' Celos.'
+      ' Codicia.'
+      ' Cólera.'
+      ' Conciencia.'
+      ' Concientización.'
+      ' Conflicto de identidad.'
+      ' Conflicto religioso.'
+      ' Confusión.'
+      ' Congoja.'
+      ' Conmoción.'
+      ' Coráje.'
+      ' Crítica.'
+      ' Culpa.'
+      ' Curiosidad.'
+      ' Decepción.'
+      ' Depresión.'
+      ' Desamor.'
+      ' Desamparo.'
+      ' Desánimo.'
+      ' Desasosiego.'
+      ' Desconcierto.'
+      ' Desconfianza.'
+      ' Desconsuelo.'
+      ' Descuido.'
+      ' Deseo (agudo).'
+      ' Deseo de que las cosas sean diferentes.'
+      ' Desesperación.'
+      ' Desgano.'
+      ' Desidia.'
+      ' Desilusión.'
+      ' Desolación.'
+      ' Desprecio.'
+      ' Dolor.'
+      ' Dominación.'
+      ' Duda de sí mismo.'
+      ' Duda.'
+      ' Duelo.'
+      ' Enfado.'
+      ' Enfoque mental.'
+      ' Enojo.'
+      ' Entusiasmo.'
+      ' Envidia.'
+      ' Espanto.'
+      ' Espiritualidad.'
+      ' Estupor (agudo).'
+      ' Extasis.'
+      ' Falta de concentración.'
+      ' Fastidio.'
+      ' Fobia.'
+      ' Frustración.'
+      ' Hostilidad.'
+      ' Hostilidad encubierta.'
+      ' Impaciencia.'
+      ' Impulsividad.'
+      ' Inadaptabilidad.'
+      ' Indiferencia.'
+      ' Indignación.'
+      ' Inquietud.'
+      ' Inseguridad.'
+      ' Intriga.'
+      ' Ira.'
+      ' Irrealismo.'
+      ' Irritación.'
+      ' Lealtad.'
+      ' Lujuria.'
+      ' Manías.'
+      ' Melancolía.'
+      ' Mezquindad.'
+      ' Miedo.'
+      ' Monotonía.'
+      ' Necesidad de cambio.'
+      ' Negación.'
+      ' Negociación.'
+      ' Nerviosismo.'
+      ' Nostalgia.'
+      ' Obnubilación.'
+      ' Observación.'
+      ' Obsesividad.'
+      ' Obstinación.'
+      ' Odio.'
+      ' Omnipotencia.'
+      ' Orgullo.'
+      ' Pánico.'
+      ' Pasividad.'
+      ' Pena.'
+      ' Pereza.'
+      ' Perfeccionismo.'
+      ' Pesimismo.'
+      ' Poder.'
+      ' Preocupación.'
+      ' Prepotencia.'
+      ' Proyección.'
+      ' Rabia.'
+      ' Racionalización.'
+      ' Rebeldía.'
+      ' Recelo.'
+      ' Rechazo.'
+      ' Regresión.'
+      ' Rencor.'
+      ' Repudio.'
+      ' Resentimiento.'
+      ' Resignación.'
+      ' Resistencia al cambio.'
+      ' Resquemor.'
+      ' Risa nerviosa.'
+      ' Sensualidad.'
+      ' Sentimiento de abandono.'
+      ' Sentimiento de incompresión.'
+      ' Sexualidad.'
+      ' Sobrecogimiento.'
+      ' Sumisión.'
+      ' Temerosidad.'
+      ' Temor.'
+      ' Terror.'
+      ' Timidez.'
+      ' Traición.'
+      ' Tristeza.'
+      ' Vacío existencial.'
+      ' Vanidad.'
+      ' Venganza.'
+      ' Vergüenza.')
+    ParentFont = False
+    TabOrder = 30
+    Visible = False
+  end
+  object BENegativas: TButton
+    Left = 408
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'BENegativas'
+    TabOrder = 31
+    Visible = False
+    OnClick = BENegativasClick
+  end
+  object LBEPositivas: TListBox
+    Left = 360
+    Top = 5
+    Width = 193
+    Height = 28
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 13
+    Items.Strings = (
+      ' Admiración.'
+      ' Afecto.'
+      ' Alegría.'
+      ' Alivio.'
+      ' Amor.'
+      ' Ampliación.'
+      ' Añoranza.'
+      ' Armonía.'
+      ' Arrojo.'
+      ' Asombro.'
+      ' Autoelogio.'
+      ' Buen humor.'
+      ' Calma.'
+      ' Cambio.'
+      ' Cariño.'
+      ' Compartir.'
+      ' Compasión.'
+      ' Conciliación.'
+      ' Confianza.'
+      ' Construcción.'
+      ' Creatividad.'
+      ' Curiosidad.'
+      ' Deseo.'
+      ' Diversión.'
+      ' Ecuanimidad.'
+      ' Empatía.'
+      ' Ensimismamiento.'
+      ' Entusiasmo.'
+      ' Esperanza.'
+      ' Euforia.'
+      ' Excitación.'
+      ' Extasis.'
+      ' Felicidad.'
+      ' Fortaleza.'
+      ' Generosidad.'
+      ' Gratitud.'
+      ' Humildad.'
+      ' Inspiración.'
+      ' Interés por la vida.'
+      ' Optimismo.'
+      ' Orgullo.'
+      ' Paciencia.'
+      ' Pasión.'
+      ' Percepción.'
+      ' Perdón.'
+      ' Placer.'
+      ' Plenitud.'
+      ' Regocijo.'
+      ' Saboreo.'
+      ' Sanidad.'
+      ' Satisfacción.'
+      ' Seguridad.'
+      ' Serenidad.'
+      ' Sociego.'
+      ' Solidaridad.'
+      ' Sorpresa.'
+      ' Templanza.'
+      ' Ternura.'
+      ' Tranquilidad.'
+      ' Valentía.')
+    ParentFont = False
+    TabOrder = 32
+    Visible = False
+  end
+  object BEPositivas: TButton
+    Left = 844
+    Top = 8
+    Width = 75
+    Height = 18
+    Caption = 'BEPositivas'
+    TabOrder = 33
+    Visible = False
+    OnClick = BEPositivasClick
   end
   object Timer1: TTimer
     Enabled = False
     Interval = 200
     OnTimer = Timer1Timer
-    Left = 12
-    Top = 8
+    Left = 280
+    Top = 112
   end
   object Timer1Second: TTimer
     Enabled = False
     Interval = 60000
     OnTimer = Timer1SecondTimer
-    Left = 44
-    Top = 8
+    Left = 272
+    Top = 112
   end
   object MyChrono: TYRChronometre
-    Left = 80
-    Top = 8
+    Left = 272
+    Top = 112
   end
   object Timer4: TTimer
     Enabled = False
     OnTimer = Timer4Timer
-    Left = 116
-    Top = 8
+    Left = 332
+    Top = 108
   end
   object TAutomatico: TTimer
     Enabled = False
     OnTimer = TAutomaticoTimer
-    Left = 156
-    Top = 12
+    Left = 368
+    Top = 104
   end
 end

@@ -9,10 +9,8 @@ uses
 
 type
   Tactform = class(TForm)
-    PDesarrollo: TPanel;
     Timer1: TTimer;
     Image1: TImage;
-    Memo4: TMemo;
     MediaPlayer1: TMediaPlayer;
     Panel5: TPanel;
     Button10: TButton;
@@ -23,7 +21,6 @@ type
     Button52: TButton;
     Button53: TButton;
     Button57: TButton;
-    CheckBox292: TCheckBox;
     Panel68: TPanel;
     LCrono: TLabel;
     Label271: TLabel;
@@ -113,7 +110,6 @@ type
     Label198: TLabel;
     Label264: TLabel;
     Label254: TLabel;
-    Label206: TLabel;
     Edit20: TEdit;
     Button61: TButton;
     GroupBox1: TGroupBox;
@@ -124,14 +120,6 @@ type
     RadioGroup3: TRadioGroup;
     RadioGroup4: TRadioGroup;
     MCaracteristicas: TMemo;
-    MPomada: TMemo;
-    MComprimidos: TMemo;
-    MGotas: TMemo;
-    MTrituraciones: TMemo;
-    MSupositorios: TMemo;
-    MColirios: TMemo;
-    MLinimentos: TMemo;
-    Memo5: TMemo;
     Panel12: TPanel;
     Bevel4: TBevel;
     Label195: TLabel;
@@ -296,7 +284,6 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label5: TLabel;
-    Label16: TLabel;
     Label6: TLabel;
     Label17: TLabel;
     Label8: TLabel;
@@ -310,8 +297,6 @@ type
     Label278: TLabel;
     Label174: TLabel;
     Image3: TImage;
-    Label199: TLabel;
-    Label200: TLabel;
     Label201: TLabel;
     Label202: TLabel;
     Label175: TLabel;
@@ -319,12 +304,6 @@ type
     Edit3: TEdit;
     Panel20: TPanel;
     RadioGroup1: TRadioGroup;
-    RadioButton1: TRadioButton;
-    RadioButton2: TRadioButton;
-    RadioButton3: TRadioButton;
-    RadioButton4: TRadioButton;
-    CheckBox290: TCheckBox;
-    CheckBox289: TCheckBox;
     CheckBox291: TCheckBox;
     CheckBox293: TCheckBox;
     Edit32: TEdit;
@@ -649,7 +628,6 @@ type
     Label170: TLabel;
     Label171: TLabel;
     Label172: TLabel;
-    Button23: TButton;
     Button25: TButton;
     Panel13: TPanel;
     Label9: TLabel;
@@ -668,9 +646,7 @@ type
     Edit13: TEdit;
     Edit14: TEdit;
     Button43: TButton;
-    Button44: TButton;
     Button45: TButton;
-    Memo2: TMemo;
     Panel7: TPanel;
     Panel16: TPanel;
     Panel17: TPanel;
@@ -742,6 +718,9 @@ type
     Panel27: TPanel;
     GProgreso: TGauge;
     PTiempoEstimado: TPanel;
+    Button5: TButton;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -749,12 +728,7 @@ type
     procedure Button8Click(Sender: TObject);
     procedure Button10Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
-    procedure Button14Click(Sender: TObject);
     procedure BiGauge1Click(Sender: TObject);
-    procedure RadioButton2Click(Sender: TObject);
-    procedure RadioButton3Click(Sender: TObject);
-    procedure RadioButton4Click(Sender: TObject);
-    procedure RadioButton1Click(Sender: TObject);
     procedure Edit1Exit(Sender: TObject);
     procedure Button19Click(Sender: TObject);
     procedure Button16Click(Sender: TObject);
@@ -762,17 +736,12 @@ type
     procedure Panel5DblClick(Sender: TObject);
     procedure Panel11DblClick(Sender: TObject);
     procedure Button17Click(Sender: TObject);
-    procedure Button23Click(Sender: TObject);
     procedure Button25Click(Sender: TObject);
     procedure Button28Click(Sender: TObject);
     procedure Button29Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormActivate(Sender: TObject);
-    procedure CheckBox290Click(Sender: TObject);
-    procedure CheckBox289Click(Sender: TObject);
     procedure CheckBox291Click(Sender: TObject);
-    procedure CheckBox289Exit(Sender: TObject);
-    procedure PDesarrolloDblClick(Sender: TObject);
     procedure Button30Click(Sender: TObject);
     procedure Panel12DblClick(Sender: TObject);
     procedure Button31Click(Sender: TObject);
@@ -789,8 +758,6 @@ type
     procedure Button41Click(Sender: TObject);
     procedure Button43Click(Sender: TObject);
     procedure Button42Click(Sender: TObject);
-    procedure Button44Click(Sender: TObject);
-    procedure Memo2DblClick(Sender: TObject);
     procedure Button45Click(Sender: TObject);
     procedure Edit5Change(Sender: TObject);
     procedure Edit7Change(Sender: TObject);
@@ -857,7 +824,6 @@ type
     procedure DBNavigator2Click(Sender: TObject; Button: TNavigateBtn);
     procedure Button98Click(Sender: TObject);
     procedure Button99Click(Sender: TObject);
-    procedure Memo4DblClick(Sender: TObject);
     procedure Memo4Change(Sender: TObject);
     procedure Button101Click(Sender: TObject);
     procedure Edit20Enter(Sender: TObject);
@@ -878,7 +844,6 @@ type
     procedure RadioButton14Click(Sender: TObject);
     procedure RadioButton16Click(Sender: TObject);
     procedure RadioButton17Click(Sender: TObject);
-    procedure RadioButton18Click(Sender: TObject);
     procedure Edit32DblClick(Sender: TObject);
     procedure Time_CronoAHTimer(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -949,8 +914,6 @@ type
     procedure Label274Click(Sender: TObject);
     procedure Label275Click(Sender: TObject);
     procedure Label7Click(Sender: TObject);
-    procedure Label206Click(Sender: TObject);
-    procedure Memo5Click(Sender: TObject);
     procedure RadioGroup3Click(Sender: TObject);
     procedure RadioGroup4Click(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
@@ -977,12 +940,12 @@ type
     procedure LTransferirItemClick(Sender: TObject);
     procedure Edit32Click(Sender: TObject);
     procedure Edit32Change(Sender: TObject);
-    procedure Label199Click(Sender: TObject);
-    procedure Label200Click(Sender: TObject);
     procedure Edit21Enter(Sender: TObject);
     procedure Edit20Change(Sender: TObject);
     procedure Button54Click(Sender: TObject);
-//   Procedure SaveBodyVariables;
+    procedure Button5Click(Sender: TObject);
+    procedure Label202Click(Sender: TObject);
+
   private
     { Private declarations }
     QstringF :String;
@@ -992,8 +955,6 @@ type
     procedure pFiltra(vQstring,vOrder:String);
     procedure pFiltra2(vQstring,vOrder:String);
     procedure Zap();
-    procedure LimpiaMemo();
-    procedure Advice1();
     procedure Reaccion_Irregular();
     procedure RectificadoHomeopatico();
     procedure TerapiaExtendida();
@@ -1084,7 +1045,6 @@ end;
 
 procedure Tactform.Button2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Realizando terapia con ítem seleccionado...';
 Zap();
 End;
 
@@ -1877,254 +1837,13 @@ end;
 
 procedure Tactform.Button12Click(Sender: TObject);
 begin
-GProgreso.progress :=0;
-      gama := Random(1000);
-         gama := gama + ( Random(1000)+ Random(1000)+ Random(1000)+ Random(10000)+ Random(1000)+ Random(1000));
-         gama := Round(((gama) / (25))) ;
-         gama := round(gama/10) ;
-         if gama < 10 then
-         label16.caption := ' | Me perdono por mis viejas creencias limitadoras. Ahora tengo pensamientos nuevos y me creo una vida nueva. | ';
-         if gama = 11 then
-         label16.caption := ' | Confío en mí y en mi intuición. Siento mi poder. Abandono mis viejas creencias y la Vida me apoya en cada paso del camino. | ';
-         if gama = 12  then
-         label16.caption := ' | Tengo casa, alimento y ropa y recibo amor de formas muy gratificantes. | ';
-         if gama = 13  then
-         label16.caption := ' | Mientras reconozco mi valía innata, mi vida se expande y prospera de muchas y deliciosas maneras. | ';
-         if gama = 14  then
-         label16.caption := ' | Este es uno de los mejores meses de mi vida. Me abro para recibir todo lo bueno que me ofrece la Vida. | ';
-         if gama = 15  then
-         label16.caption := ' | Soy una luz en el mundo; de algún modo, al estar aquí ayudo a otra persona a respirar mejor. | ';
-         if gama = 16  then
-         label16.caption := ' | Cambio algo en la casa, en mi estilo de vida o en el trabajo, y eso nos beneficia a todos. Acepto el cambio y ensancho mis límites. | ';
-         if gama = 17  then
-         label16.caption := ' | Cada día aprendo algo más sobre las leyes de la Vida y sobre "cómo" pensar para tener una vida sana, dichosa, amorosa y abundante. | ';
-         if gama = 18  then
-         label16.caption := ' | Cuando todos y cada uno aprendamos a vivir con un amor incondicional, se acabarán las guerras para siempre, y ese será el mejor regalo para la humanidad. | ';
-         if gama = 19  then
-         label16.caption := ' | Estoy aprendiendo a hacer afirmaciones positivas. Elijo pensamientos que me alienten y me hagan sentir bien. | ';
-         if gama = 20  then
-         label16.caption := ' | Tengo muchísimas oportunidades para realizarme plenamente. Mi mundo esta abierto y receptivo. | ';
-         if gama = 21  then
-         label16.caption := ' | Agradezco todas las personas, lugares, cosas y experiencias que llenan mi mundo. La vida es hermosa para todos, y yo contribuyo a ello. | ';
-         if gama = 22  then
-         label16.caption := ' | Fluyo con el perfecto despliegue de mi vida. Feliz y expectante recibo y agradezco las nuevas experiencias. | ';
-         if gama = 23  then
-         label16.caption := ' | Me acuerdo de decirles a las personas de mi entorno lo mucho que los quiero y lo maravillosos que son. | ';
-         if gama = 24  then
-         label16.caption := ' | Ejercito mis músculos mentales. Me lo paso muy bien usando mi mente. Soy una persona muy creativa. | ';
-         if gama = 25  then
-         label16.caption := ' | Estoy en conexión con la Totalidad del Universo, y la Divinidad me guía y me protege. | ';
-         if gama = 26  then
-         label16.caption := ' | Los regalos de la vida son la paz, el amor y la alegría. Los acepto con gratitud y los comparto con los demás. | ';
-         if gama = 27  then
-         label16.caption := ' | Hoy nace un día glorioso en mi conciencia. Disfruto de este nuevo día y de todo lo que ofrece. | ';
-         if gama = 28  then
-         label16.caption := ' | Me doy todo el tiempo que necesito para hacer mis compras. Siempre compro dentro de mi presupuesto. | ';
-         if gama = 29  then
-         label16.caption := ' | Las fiestas son divertidas y sanas. Las celebro con amigos y compañeros de trabajo de modos que me hacen sentir bien. | ';
-         if gama = 30  then
-         label16.caption := ' | A todos les gustan mis regalos. Compro con facilidad a precios que me puedo permitir. | ';
-         if gama = 31  then
-         label16.caption := ' | Me doy el tiempo que necesito para trabajar en la aflicción o el duelo. La muerte es una parte natural de la vida. | ';
-         if gama = 32  then
-         label16.caption := ' | Soy libre para experimentar todo lo bueno que ofrece el Universo. ¡Lo acepto, lo acepto, lo acepto! | ';
-         if gama = 33  then
-         label16.caption := ' | Cuido amorosamente el jardín de mi mente. Arranco las hierbas negativas y dejo espacio para que crezcan afirmaciones positivas. | ';
-         if gama = 34  then
-         label16.caption := ' | Soy amable y trato con consideración a los demás compradores. Dejo espacio en la calle y en los mostradores. Este es un tiempo de paz. | ';
-         if gama = 35  then
-         label16.caption := ' | Mi actual trabajo es el canal temporal por donde me llega el bien desde el Manantial Infinito. No corro ningún riesgo si cambio de canal. | ';
-         if gama = 36  then
-         label16.caption := ' | Cuando una puerta se cierra, otra se abre. Siempre tengo acceso al Manantial Infinito de la Sabiduría. Estoy a salvo. | ';
-         if gama = 37  then
-         label16.caption := ' | Mi casa es un lugar feliz para vivir. Bendigo a todos los que entran en ella, también a mí. | ';
-         if gama = 38  then
-         label16.caption := ' | Mis hermanas y hermanos tienen un gran corazón. Somos tolerantes y compasivos y nos queremos. Abro mi corazón a mi familia. | ';
-         if gama = 39  then
-         label16.caption := ' | Me siento absolutamente en paz. Abro mi corazón y de él emana el regalo del amor para todos. | ';
-         if gama = 40  then
-         label16.caption := ' | Me doy todo el tiempo necesario para encontrar paz en mi interior; sé que así llegaré a desarrollar todo mi potencial. | ';
-         if gama = 41  then
-         label16.caption := ' | Disfruto siendo un miembro de mi comunidad. Mi autoestima aumenta sin cesar y me permite hacer algo valioso en bien de todos. | ';
-         if gama = 42  then
-         label16.caption := ' | Me hago cargo de mis pensamientos y comienzo a crear el mundo de igualdad que deseo. | ';
-         if gama = 43  then
-         label16.caption := ' | Creo un mundo seguro donde reina el amor y donde todos podemos ser felices y estar sanos y completos. | ';
-         if gama = 44  then
-         label16.caption := ' | Las creencias que tengo, las cosas que pienso y las palabras que digo son muy poderosas; dan forma a mis experiencias y a mi vida. | ';
-         if gama = 45  then
-         label16.caption := ' | Sea cual sea mi pasado, sea cual sea el ambiente del que procedo, empiezo a hacer cambios en este preciso momento. | ';
-         if gama = 46  then
-         label16.caption := ' | Mis ideas son muy poderosas y liberadoras, y cuando creo en ellas, se convierten en realidad. | ';
-         if gama = 47  then
-         label16.caption := ' | Mi cuerpo es un templo precioso. Si quiero tener una vida larga y satisfactoria, es necesario que lo cuide. | ';
-         if gama = 48  then
-         label16.caption := ' | Confío en el proceso de la vida, que me apoya y me guía siempre que le permita hacerlo. | ';
-         if gama = 49  then
-         label16.caption := ' | Si me relajo y realmente creo que la vida me cuida y que estoy a salvo, comienzo a fluir con ella. | ';
-         if gama = 50  then
-         label16.caption := ' | Me creo un universo seguro, rebosante de amor y prosperidad, y así cuido con afecto de mi corazón y de mi alma. | ';
-         if gama = 51  then
-         label16.caption := ' | Mi relación con Dios, la Inteligencia Universal, el Poder Superior o como quiera llamarle, es muy importante. | ';
-         if gama = 52  then
-         label16.caption := ' | Me procuro momentos de silencio y quietud para conectar y comunicarme con la Sabiduría Divina. | ';
-         if gama = 53  then
-         label16.caption := ' | Me trato con amor y ternura, como desearía que me tratara una persona muy querida. | ';
-         if gama = 54  then
-         label16.caption := ' | Mi tiempo a solas es tan satisfactorio como el que paso con otras personas, porque hago de mis pensamientos mis mejores amigos. | ';
-         if gama = 55  then
-         label16.caption := ' | Fortalezco mi autoestima y mi carácter para ser capaz de negarme a hacer lo que no quiero hacer y evitar que se me manipule. | ';
-         if gama = 56  then
-         label16.caption := ' | Comienzo a detener cualquier comportamiento abusivo desde el principio, aunque parezca algo sin importancia. | ';
-         if gama = 57  then
-         label16.caption := ' | Analizo los aspectos de mi vida en los que no me respeto ni me valoro, y hago afirmaciones de poder. | ';
-         if gama = 58  then
-         label16.caption := ' | Desarrollo mi sentido del humor. La risa es una forma maravillosa de adquirir una perspectiva diferente, y es un gran tónico para el corazón. | ';
-         if gama = 59  then
-         label16.caption := ' | Siempre recuerdo reírme de un modo sano con los demás, en lugar de reírme de un modo insano de ellos. | ';
-         if gama = 60  then
-         label16.caption := ' | Si hay alguna parte de mi cuerpo con la que no me siento a gusto, dedico cada día un rato a enviarle amor. | ';
-         if gama = 61  then
-         label16.caption := ' | Le digo a mi cuerpo que lo quiero. Incluso le pido perdón por haberlo odiado en el pasado. | ';
-         if gama = 62  then
-         label16.caption := ' | Si tengo cosas en casa que ya no me sirven, las tiro o regalo a quien realmente las necesite. | ';
-         if gama = 63  then
-         label16.caption := ' | Limpio mi vida de los recuerdos del pasado y hago el maravilloso presente de un nuevo principio, centrando mi conciencia en la abundancia. | ';
-         if gama = 64  then
-         label16.caption := ' | Pienso en todas las veces que me he sentido alegre y feliz, y me permito sentir de nuevo esa dicha. | ';
-         if gama = 65  then
-         label16.caption := ' | Lo que doy, lo recibo de vuelta. Contribuyo a crear los acontecimientos que tienen lugar en mi vida, y soy responsable de ellos. | ';
-         if gama = 66  then
-         label16.caption := ' | Puedo atraer magnificas experiencias y personas maravillosas, si me creo paz y armonía en mi mente mediante pensamientos positivos. | ';
-         if gama = 67  then
-         label16.caption := ' | Es agradable ver como van creciendo mis ahorros. Luego puedo invertir y hacer que el dinero trabaje para mí en lugar de trabajar por él. | ';
-         if gama = 68  then
-         label16.caption := ' | Hay una gran abundancia en el universo y está disponible para todos aquellos que ampliamos nuestra conciencia. | ';
-         if gama = 69  then
-         label16.caption := ' | Todos los acontecimientos que tienen lugar en mi vida y todas las personas con las que me relaciono me enseñan valiosas lecciones. | ';
-         if gama = 70  then
-         label16.caption := ' | Mi vida viene en oleadas, con experiencias de aprendizaje y periodos de evolución y renovación. | ';
-         if gama = 71  then
-         label16.caption := ' | Parto del espacio de amor de mi corazón y considero a cada persona en este planeta alguien que necesita ser amado y valorado. | ';
-         if gama = 72  then
-         label16.caption := ' | Contribuyo a crear un planeta sano donde todos prosperamos y vivimos dichosos y tranquilos. | ';
-         if gama = 73  then
-         label16.caption := ' | La tierra es verdaderamente nuestra madre, y la necesitamos para sobrevivir. Si no la cuidamos nosotros, ¿quien lo hará? ¿Dónde viviremos? | ';
-         if gama = 73  then
-         label16.caption := ' | Dios, el Poder Universal ama a todas sus creaciones, y por ello me ha dado el libre albedrío, para que tome mis propias decisiones con toda libertad. | ';
-         if gama = 74  then
-         label16.caption := ' | Dios es un poder benévolo y amoroso, que lo dirige todo hacia el bien en nuestra vida cuando se lo permitimos. | ';
-         if gama = 75  then
-         label16.caption := ' | Dios es el puro amor incondicional, comprensivo y compasivo, y espera con paciencia a que aprendamos a comunicarnos con él. | ';
-          if gama = 76  then
-         label16.caption := ' | Todos hacemos lo mejor que podemos hacer con los conocimientos, el entendimiento y el nivel de conciencia que tenemos en cada momento. | ';
-          if gama = 77  then
-         label16.caption := ' | Me trato con amabilidad y comprensión, y lo mismo hago con los demás. Encuentro mis recursos interiores. | ';
-          if gama = 78  then
-         label16.caption := ' | Dispongo de magnificas oportunidades para realizarme, muchas más de las que nunca antes habían estado a mi alcance. | ';
-          if gama = 79  then
-         label16.caption := ' | Es necesario que busque y encuentre mis recursos interiores y mi conexión con la Sabiduría Divina. | ';
-          if gama = 80  then
-         label16.caption := ' | Hago actos de amabilidad al azar: recojo lo que los demás hayan tirado al suelo en el campo o en la playa. | ';
-          if gama = 81  then
-         label16.caption := ' | Hablo con una persona sin hogar. Hago una meditación sanadora por un delincuente. | ';
-          if gama = 82  then
-         label16.caption := ' | Me alegro y gozo de la buena relación que tengo conmigo. Hago que sea la mejor y más amorosa que pueda tener. | ';
-          if gama = 83  then
-         label16.caption := ' | Transoformo mi trabajo en diversión, me resulta no solo agradable y gratificante, sino también muy provechoso en el aspecto material. | ';
-          if gama = 84  then
-         label16.caption := ' | Permanezco en contacto con mi Sabiduría Interior, y tengo una vida maravillosa: sana, gratificante, creativa, dichosa y llena de amor. | ';
-          if gama = 85  then
-         label16.caption := ' | Formo una unidad con todo lo que existe, y a la vez soy ser independiente, persona que tiene su propio camino que recorrer, único y especial. | ';
-          if gama = 86  then
-         label16.caption := ' | Respeto las ideas y la senda de cada una de las personas que forman parte de mi vida. Comprendo que no tienen porque ser como las mías. | ';
-          if gama = 87  then
-         label16.caption := ' | En lugar de tratar de convencer, trato de comprender, y sigo con constancia mi propio camino, sin dejarme influir por el ejemplo negativo de otros. | ';
-          if gama = 88  then
-         label16.caption := ' | Tengo el poder de cambiar mi vida de tal manera que llegue un momento en que ni siquiera reconozca a mi antiguo yo. | ';
-          if gama = 89  then
-         label16.caption := ' | Paso de la enfermedad a la salud, de la soledad al amor, de la pobreza a la abundancia y la plenitud. | ';
-          if gama = 90  then
-         label16.caption := ' | Cuando siento inquietud, aflicción y congoja, me tomo el tiempo necesario para entrar en mi interior y conectar con mi Sabiduría Interna. | ';
-          if gama = 91  then
-         label16.caption := ' | Avanzo hacia el futuro conociendo y utilizando los tesoros que tengo dentro, solo lo bueno me aguarda. | ';
-          if gama = 92  then
-         label16.caption := ' | Cuando llegue la hora de mi partida de este mundo, será otra maravillosa experiencia, apacible y serena. | ';
-          if gama = 93  then
-         label16.caption := ' | Vivir es una magnifica aventura: la disfruto, la aprovecho, le saco todo el partido que puedo. | ';
-          if gama = 94  then
-         label16.caption := ' | Cierro la puerta de las viejas heridas y perdono a todo el mundo; me perdono también a mí. | ';
-          if gama = 95  then
-         label16.caption := ' | Le doy a la vida y a mis seres queridos lo mejor de mí, porque lo que doy vuelve a mí multiplicado. La mejor manera de recibir amor es darlo. | ';
-          if gama = 96  then
-         label16.caption := ' | Mi familia se enorgullece de mí. De buena gana acepto sus elogios y me esfuerzo por demostrarles mi gratitud y mi reconocimiento. | ';
-          if gama = 97  then
-         label16.caption := ' | Dondequiera que vaya, con quienquiera que me encuentre, siempre está el amor esperándome. | ';
-          if gama = 98  then
-         label16.caption := ' | Cuando estoy de vacaciones dejo atrás todas mis preocupaciones y sencillamente disfruto del momento presente. | ';
-          if gama = 99  then
-         label16.caption := ' | Todo se resuelve para mi mayor bien. De esta situación sólo puede resultar algo bueno. Estoy a salvo. | ';
-          if gama = 100  then
-         label16.caption := ' | Los profesionales de la salud que me atienden respetan mis decisiones respecto a las terapias. | ';
-end;
-
-procedure Tactform.Button14Click(Sender: TObject);
-begin
-Reaccion_Irregular(); MyChrono.Start;
-GProgreso.progress:=0;
-PDesarrollo.Caption:='Testando reacción de '+edit1.text+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,4,
-'00000000','00000000');
-
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,4,
-'11111111','11111111');
-
-reaction := random(123)+11;
-GProgreso.progress := (reaction);
-FMain.shaping:=random(100);
- If FMain.shaping>99 Then FMain.Shaping:=100;
-  FRecompensa.label79.caption:=inttostr(FMain.shaping);
-PDesarrollo.visible:=false;
-If reaction > 84 then Label266.Enabled := True;
-MyChrono.Stop;
+GProgreso.Progress := 0;
+TestForm1.BAfirmaciones.Click();
 end;
 
 procedure Tactform.BiGauge1Click(Sender: TObject);
 begin
 gauge1.progress:=99;
-end;
-
-procedure Tactform.RadioButton2Click(Sender: TObject);
-begin
-{ Activate Harness }
-testForm1.MenuState:=2;
-testForm1.ActivateHarness1Click(Sender);
-l:=1;
-end;
-
-procedure Tactform.RadioButton3Click(Sender: TObject);
-begin
- { Activate virtuall }
-// testForm1.ActivateVirtual1Click(Sender);
- testForm1.MenuState:=3;
-l:=0;
-end;
-
-procedure Tactform.RadioButton4Click(Sender: TObject);
-begin
- { Activate All }
- testForm1.ActivateAll1Click(Sender);
- testForm1.MenuState:=4;
-l:=1;
-end;
-
-procedure Tactform.RadioButton1Click(Sender: TObject);
-begin
-  l:=0;
-  testForm1.MenuState:=1;
-  testForm1.TestTray1Click(Sender);
 end;
 
 procedure Tactform.Edit1Exit(Sender: TObject);
@@ -2810,11 +2529,6 @@ label171 .caption:=inttostr(5*(c7+c9+c11+c12+c28+c29+c48+c58+c40+c257+c34+c35+c3
 label172 .caption:=inttostr(5*(c8+c10+c17+c30+c47+c42+c43+c45+c41+c45+c46+c44+c52+c54+c34  ) );
 end;
 
-procedure Tactform.Button23Click(Sender: TObject);
-begin
- MyWinexec('write.exe','dsm4.txt');
-end;
-
 procedure Tactform.Button25Click(Sender: TObject);
 begin
 panel11.visible:=false;
@@ -2830,67 +2544,31 @@ end;
 
 procedure Tactform.Button28Click(Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono.Start;
+Reaccion_Irregular();
+MyChrono.Start;
 GProgreso.progress:=0;
-PDesarrollo.Caption:='Realizando zap usando '+edit1.Text+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
+LRectificado.Caption := 'Rectificado | ';
+GProgreso.Progress := 0;
+vtiempo := 120+Random(60);
+If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
+GProgreso.MaxValue := vtiempo;
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
+repeat
+SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
+ChangingPulses(5000,dir,5*random(5000),random(1000),2,2,
 '11111111','11111111');
-GProgreso.progress := 10;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress := 20;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress := 30;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=40;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=50;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=60;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=70;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=80;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-//WawPlay('music.wav',false);
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
-GProgreso.progress :=90;
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,20,
-'11111111','11111111');
+GProgreso.progress :=  round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+until
+MyChrono.TimeElapsed > vtiempo;
+GProgreso.Progress := round(MyChrono.pTEcoule);
+GProgreso.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 reaction := random(123)+11;
 GProgreso.progress := (reaction);
-PDesarrollo.visible:=false;
 FMain.shaping:=random(105);
  If FMain.shaping>100 Then FMain.shaping:=100;
- FRecompensa.label79.caption:=inttostr(FMain.shaping);
  MyChrono.Stop;
 end;
 
@@ -2908,13 +2586,9 @@ end;
 procedure Tactform.FormShow(Sender: TObject);
 var
   SSA :string;
-begin   
-memo4.text := testForm1.MemActivat.text;
-
-DM.Bitacora('Carga Activación Homeopaticática');
+begin
 Time_CronoAH.Enabled:=True;
-
- GetDir(0,SSA );
+GetDir(0,SSA );
   image1.picture.loadfromfile('blur10.jpg');
 if testForm1.Image2.picture <> nil then begin
   image3.stretch := true;
@@ -3164,29 +2838,9 @@ pname :=patform1.pname;
 if edit3.text='' then edit3.text:=' '+pname;
 end;
 
-procedure Tactform.CheckBox290Click(Sender: TObject);
-begin
-  checkbox289.checked:=false;
-end;
-
-procedure Tactform.CheckBox289Click(Sender: TObject);
-begin
-  checkbox290.checked:=false;
-end;
-
 procedure Tactform.CheckBox291Click(Sender: TObject);
 begin
 Zap();
-end;
-
-procedure Tactform.CheckBox289Exit(Sender: TObject);
-begin
-checkbox289.checked:=true;
-end;
-
-procedure Tactform.PDesarrolloDblClick(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
 end;
 
 procedure Tactform.Button30Click(Sender: TObject);
@@ -3215,14 +2869,11 @@ label184.visible:=false;
 button33.enabled:=true;
  PatForm1.SocCalculate(Sender);
   Soc:=PatForm1.Soc;
-PDesarrollo.Caption:='Explorando '+edit1.Text+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
    sp1:=0;
    sp2:=0;
    sp3:=0;
    sp4:=0;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 30+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -3238,7 +2889,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
                                          {++++++++++++++++++++++++++++++++++++++++++++++++++++++}
   cb1:= strtoint(patform1.label29.caption);  {vas }
   cb2:=strtoint(patform1.label30.caption); {inflam }
@@ -3316,8 +2967,6 @@ pn15:=strtoint(patform1.label57.caption);
 pn16:=strtoint(patform1.label58.caption);  {neg}
 pn17:=strtoint(patform1.label59.caption);
 soc := strtoint(PatForm1.Label21.Caption);
-Advice1();
-
  spinedit2.value:=sp2;
  spinedit3.value:=sp3;
  spinedit5.value:=sp3;
@@ -3399,8 +3048,6 @@ label181.caption:='Armónicos: '+inttostr(ha1)+' | '+inttostr(random(5)+ha1)+' | 
 label182.caption:='Armónicos: '+inttostr(ha2)+' | '+inttostr(random(5)+ha2)+' | '+inttostr(random(20)+ha2)+' | '+inttostr(random(50)+ha2)+' | '+inttostr(random(100)+ha2);
 label183.caption:='Armónicos: '+inttostr(ha3)+' | '+inttostr(random(5)+ha3)+' | '+inttostr(random(10)+ha3)+' | '+inttostr(random(20)+ha3)+' | '+inttostr(random(30)+ha3);
 label184.caption:='Armónicos: '+inttostr(ha4)+' | '+inttostr(random(5)+ha4)+' | '+inttostr(random(10)+ha4)+' | '+inttostr(random(20)+ha4)+' | '+inttostr(random(30)+ha4);
-
-PDesarrollo.visible:=false;
 rand2:=25;
  rand1:=random(100);
  Label194.caption:='% 10MM: '+inttostr(rand1);
@@ -3501,7 +3148,6 @@ pn15:=strtoint(patform1.label57.caption);
 pn16:=strtoint(patform1.label58.caption);  {neg}
 pn17:=strtoint(patform1.label59.caption);
 soc := strtoint(PatForm1.Label21.Caption);
-Advice1()
 End
 Else
 Button14.Enabled := False;
@@ -3590,9 +3236,6 @@ var
         st:string;
         ij:integer;
 begin
-
-     {DM.Conscida.IndexName:='';}
-
      fine:=DM.Query_remedy.FieldByName('name').AsString;
      if testform1.ment41<>'' then testform1.ment41:=fine;
        testform1.ment42:=fine;
@@ -3606,7 +3249,6 @@ begin
        edit19.text:= trim(st);
        edit1.text:= trim(st);
        testForm1.MemActivat.lines.add(trim(DM.Query_remedy.FieldByName('name').AsString));
-       memo4.lines.add(trim(DM.Query_remedy.FieldByName('name').AsString));
        if (edit23.text='') then begin
            edit23.text:= trim(st);
            exit;
@@ -3705,31 +3347,24 @@ end;
 
 procedure Tactform.Button43Click(Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono.Start;
-PDesarrollo.caption:='Cargando repertorio...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
+Reaccion_Irregular();
+MyChrono.Start;
    if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,1+random(10),
 '00000000','00000000');
   if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,1+random(10),
 '11111111','11111111');
 panel13.visible:=false;
 button42.enabled:=true;
-PDesarrollo.caption:='Interfaz activa...  Por favor espere.';
-PDesarrollo.visible:=false;
 MyChrono.Stop;
-showmessage('Cierre y pulse el botón "Explorar homeopático similar".');
+showmessage('Cierre y pulse el botón ''Explorar homeopático similar''.');
 end;
 
 procedure Tactform.Button42Click(Sender: TObject);
    begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.caption:='Exploración de similia de repertorio + valores eléctricos.';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 button42.enabled:=false;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 15+Random(15);
 GProgreso.MaxValue := vtiempo;
@@ -3745,22 +3380,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-
-riskchart.edit1.text:=actform.edit1.text;
-riskchart.edit5.text:=actform.edit5.text;
-riskchart.edit6.text:=actform.edit6.text;
-riskchart.edit7.text:=actform.edit7.text;
-riskchart.edit8.text:=actform.edit8.text;
-riskchart.edit9.text:=actform.edit9.text;
-riskchart.edit10.text:=actform.edit10.text;
-riskchart.edit11.text:=actform.edit11.text;
-riskchart.edit12.text:=actform.edit12.text;
-riskchart.edit13.text:=actform.edit13.text;
-riskchart.edit14.text:=actform.edit14.text;
-riskchart.edit15.text:=actform.edit15.text;
-riskchart.edit16.text:=actform.edit16.text;
-riskchart.edit4.text:=actform.edit4.text;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
      DM.Remedy.DisableControls;
       DM.Remedy.Open;
@@ -3813,18 +3433,7 @@ riskchart.edit4.text:=actform.edit4.text;
    DM.Remedy.last;
              DM.Remedy.Refresh;
 panel13.visible:=false;
-PDesarrollo.visible:=false;
 MyChrono.Stop;
-end;
-
-procedure Tactform.Button44Click(Sender: TObject);
-begin
-memo2.visible:=true;
-end;
-
-procedure Tactform.Memo2DblClick(Sender: TObject);
-begin
-memo2.visible:=false;
 end;
 
 procedure Tactform.Button45Click(Sender: TObject);
@@ -3850,19 +3459,6 @@ begin
   ShowMessage('El informe ha sido cargado.');
   
 riskchart.edit1.text:=actform.edit1.text;
-riskchart.edit5.text:=actform.edit5.text;
-riskchart.edit6.text:=actform.edit6.text;
-riskchart.edit7.text:=actform.edit7.text;
-riskchart.edit8.text:=actform.edit8.text;
-riskchart.edit9.text:=actform.edit9.text;
-riskchart.edit10.text:=actform.edit10.text;
-riskchart.edit11.text:=actform.edit11.text;
-riskchart.edit12.text:=actform.edit12.text;
-riskchart.edit13.text:=actform.edit13.text;
-riskchart.edit14.text:=actform.edit14.text;
-riskchart.edit15.text:=actform.edit15.text;
-riskchart.edit16.text:=actform.edit16.text;
-riskchart.edit4.text:=actform.edit4.text;
 end;
 
 procedure Tactform.Edit5Change(Sender: TObject);
@@ -3985,8 +3581,6 @@ label133.caption:=inttostr(c287+c14+c264+c80+c273+c151+c106+c178+c203+c287+c14+c
 c287+c14+c264+c80+c273+c151+c106+c178+c203);
 label134.caption:=inttostr(c231+c242+c14+c26+c34+c231+c242+c14+c26+c34+c231+c242+c14+c26+c34+c231+c242+c14+c26+c34);
 label135.caption:=inttostr(c232+c52+c230+c231+c203+c14+c239+c241+c180+c174+c232+c52+c230+c231+c203+c14+c239+c241+c180+c174);
-{label136.caption:=inttostr( );
-label138.caption:=inttostr(  );  }
 label140.caption:=inttostr(c240+c242+c223+c256+c178+c236+c106+c185+c287+c154+
 c268+c61+c204+c169+c171+c274+c287+c203+c231+c232);
 end;
@@ -4049,16 +3643,13 @@ Begin
       end
       else (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
              end;
-
      end;
-   
 end;
 
 procedure Tactform.Button50Click(Sender: TObject);
 begin
 GProgreso.progress :=0;
 Application.CreateForm(Tnutr, nutr);
-//nutr.button1click(Sender);
 nutr.button3click(Sender);
 nutr.button8click(Sender);
 nutr.panel4.visible:=true;
@@ -4076,10 +3667,7 @@ procedure Tactform.Button52Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption := 'Equilibrando ítem elegído...';
-PDesarrollo.visible:=true;
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 30+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -4096,11 +3684,10 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Rec := 80+Random(30);
 If Rec>100 Then Rec := 85+Random(15);
-LRectificado.Caption := 'Rectificado |'+Inttostr(Rec);
-PDesarrollo.visible:=false;
+LRectificado.Caption := 'Rectificado | '+Inttostr(Rec);
 MyChrono.Stop;
 end;
 
@@ -4141,7 +3728,7 @@ end;
 
 procedure Tactform.Label195DblClick(Sender: TObject);
 begin
-edit4.text :=edit4.text+' | Tintura.';
+edit4.text :=edit4.text+' Tintura.';
 end;
 
 procedure Tactform.Edit4DblClick(Sender: TObject);
@@ -4168,10 +3755,6 @@ procedure Tactform.Button57Click(Sender: TObject);
 begin
 panel15.visible:=true;
 button57.enabled:=false;
-
-{ Index:='ByValue';
-   DM.Conscida.IndexName := Index;
-   DM.Conscida.last;     }
 end;
 
 procedure Tactform.DBGridBDblClick(Sender: TObject);
@@ -4179,10 +3762,7 @@ var
         st:string;
         ij:integer;
 begin
-
-     {DM.Conscida.IndexName:='';}
-
-     fine:=DM.conscidaname.AsString;
+fine:=DM.conscidaname.AsString;
        edit1.text:=(Edit1.text+'  '+fine);
        Edit32.text:=(fine);
        if testform1.ment43<>'' then testform1.ment43:=fine;   testform1.ment44:=fine;
@@ -4206,7 +3786,6 @@ begin
           edit29.text:=trim(st);
           exit;
        end;
-      memo4.lines.add(DM.conscidaname.AsString);
 end;
 
 procedure Tactform.Button59Click(Sender: TObject);
@@ -4215,16 +3794,11 @@ GProgreso.progress :=0;
  if edit1.text<>'' then showmessage('Por favor vacíe el cajetín maestro de edición.');
 Reaccion_Irregular(); MyChrono.Start;
  button59.enabled:=false;
- PDesarrollo.caption:='Revisando reactividad armónica de'+edit3.text+' a '+edit19.text+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.Refresh;
   sp1:=0;
    sp2:=0;
    sp3:=0;
    sp4:=0;
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,4,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,4,
+     ChangingPulses(5000,dir,5*dir,rb9,2,4,
 '11111111','11111111');
 
                                          {++++++++++++++++++++++++++++++++++++++++++++++++++++++}
@@ -4304,7 +3878,6 @@ pn15:=strtoint(patform1.label57.caption);
 pn16:=strtoint(patform1.label58.caption);  {neg}
 pn17:=strtoint(patform1.label59.caption);
 soc := strtoint(PatForm1.Label21.Caption);
-Advice1();
 repeat
 sp1:=sp1+1;
 spinedit1.value:=sp1;
@@ -4315,9 +3888,7 @@ end;
 sp1:=sp1+1;
  spinedit1.value:=sp1;
 until sp1>999;
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,1,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,1,
+ ChangingPulses(5000,dir,5*dir,rb9,2,1,
 '11111111','11111111');
 repeat
 sp2:=sp2+1;
@@ -4329,9 +3900,7 @@ end;
 sp2:=sp2+1;
  spinedit2.value:=sp2;
 until sp2>499;
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,1,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,1,
+  ChangingPulses(5000,dir,5*dir,rb9,2,1,
 '11111111','11111111');
 repeat
 sp3:=sp3+1;
@@ -4341,9 +3910,7 @@ sp3:=sp3+1;
  spinedit3.value:=sp3;
  spinedit5.value:=sp3;
 until sp3>99;
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,1,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,1,
+    ChangingPulses(5000,dir,5*dir,rb9,2,1,
 '11111111','11111111');
 repeat
 sp4:=sp4+1;
@@ -4357,9 +3924,7 @@ sp1:=0;
 sp2:=0;
 sp3:=0;
 sp4:=0;
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,3,
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,2,
+    ChangingPulses(5000,dir,5*dir,rb9,2,2,
 '11111111','11111111');
 spinedit1.value:=sp5;
 spinedit2.value:=sp6;
@@ -4445,7 +4010,6 @@ label183.caption:='Armónicos: '+inttostr(ha3)+' | '+inttostr(random(5)+ha3)+' | 
 label184.caption:='Armónicos: '+inttostr(ha4)+' | '+inttostr(random(5)+ha4)+' | '+inttostr(random(10)+ha4)+' | '+inttostr(random(20)+ha4)+' | '+inttostr(random(30)+ha4);
 
 end;
-PDesarrollo.visible:=false;
 rand2:=25;
  rand1:=random(100);
  Label194.caption:='% 10MM: '+inttostr(rand1);
@@ -4458,7 +4022,6 @@ if rand1>74 then   begin
 label196.caption:='% Similia: '+inttostr(85+random(25));
  FMain.shaping:=random(105);
   If FMain.shaping>99 Then FMain.Shaping:=100;
- FRecompensa.label79.caption:=inttostr(FMain.shaping);
  if FMain.shaping>80 then FMain.shaping:=80+random(10);
 if FMain.shaping>93 then  edit1.text:=edit19.text;
  label196.caption:='% Similia: '+inttostr(FMain.shaping+20);
@@ -4495,327 +4058,135 @@ MyChrono.Start;
 button61.enabled:=false;
 GProgreso.progress :=0;
 oeg:=random(9);
-PDesarrollo.Caption:='Explorando dosis de '+Edit20.Text+'...';
-PDesarrollo.visible:=true; PDesarrollo.refresh;
 dir:=100+random(10);
 rb9:=10+random(2);
- if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,3+random(3),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,1+random(3),
+   ChangingPulses(5000,dir,5*dir,rb9,2,1+random(3),
 '11111111','11111111');
 
 If RadioGroup3.ItemIndex = 0 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' ampollas cada 3 horas.';
 End
 Else
 If RadioGroup3.ItemIndex = 1 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' colirios cada 3 horas.';
 End
 Else
 If RadioGroup3.ItemIndex = 2 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gotas cada 3 horas.';
 End
 Else
 If RadioGroup3.ItemIndex = 3 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gotas nasales cada 3 horas.';
 End
 Else
 If RadioGroup3.ItemIndex = 4 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' linimentos cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 0 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' comprimidos cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 1 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' gránulos/glóbulos cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 2 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' óvulos cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 3 Then Begin
-  If PatForm1.soc >0 Then Label198.Caption := '1 aplicación cada 24 horas';
-  If PatForm1.soc >150 Then Label198.Caption := '1 aplicación cada 12 horas';
-  If PatForm1.soc >200 Then Label198.Caption := '1 aplicación cada 6 horas';
-  If PatForm1.soc >300 Then Label198.Caption := '1 aplicación cada 3 horas';
+  If PatForm1.soc >0 Then Label198.Caption := '1 aplicación cada 24 horas.';
+  If PatForm1.soc >150 Then Label198.Caption := '1 aplicación cada 12 horas.';
+  If PatForm1.soc >200 Then Label198.Caption := '1 aplicación cada 6 horas.';
+  If PatForm1.soc >300 Then Label198.Caption := '1 aplicación cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 4 Then Begin
-  If PatForm1.soc >0 Then Label198.Caption := '1 supositorio cada 24 horas';
-  If PatForm1.soc >150 Then Label198.Caption := '1 supositorio cada 12 horas';
-  If PatForm1.soc >200 Then Label198.Caption := '1 supositorio cada 6 horas';
-  If PatForm1.soc >300 Then Label198.Caption := '1 supositorio cada 3 horas';
+  If PatForm1.soc >0 Then Label198.Caption := '1 supositorio cada 24 horas.';
+  If PatForm1.soc >150 Then Label198.Caption := '1 supositorio cada 12 horas.';
+  If PatForm1.soc >200 Then Label198.Caption := '1 supositorio cada 6 horas.';
+  If PatForm1.soc >300 Then Label198.Caption := '1 supositorio cada 3 horas.';
 End
 Else
 If RadioGroup4.ItemIndex = 5 Then Begin
 Exp := 1+random(3);
-  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 24 horas';
+  If PatForm1.soc >0 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 24 horas.';
 Exp := 3+random(3);
-  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 12 horas';
+  If PatForm1.soc >150 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 12 horas.';
 Exp := 5+random(3);
-  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 6 horas';
+  If PatForm1.soc >200 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 6 horas.';
 Exp := 7+random(3);
-  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 3 horas';
+  If PatForm1.soc >300 Then Label198.Caption := Inttostr(Exp) + ' tomas cada 3 horas.';
 End
 Else
 If RadioButton17.Checked = True Then Begin
    Label198.Caption := 'Ud. decide la dosis.';
 End;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
    sp1:=0;
    sp2:=0;
    sp3:=0;
    sp4:=0;
-
-   if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,2,4,
-'00000000','00000000');
-
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,2,4,
+  ChangingPulses(5000,dir,5*dir,rb9,2,4,
 '11111111','11111111');
 soc := strtoint(PatForm1.Label21.Caption);
-dis:=round(soc/(3.5) );
- if dis<2 then  label193.caption:='Perspiración, cera en los oídos, complexión ruda.';
- if dis<2 then label188.caption:='Búsqueda total de síntomas mentales, físicos y emocionales.';
-if dis=16 then label193.caption:='Furúnculoa, eritema, dermatitis, eczema, piodermias, etc.';
-if dis=16 then label188.caption:='Simple condición física general o patrón mental general.';
-if dis=31 then  label193.caption:='Ateromas, verrugas, keratosis, dolores de cabeza, etc.';
-if dis=46 then label188.caption:='Los miasmas dominan la condición actual.';
-if dis=46 then  label193.caption:='Tatuajes, pigmentaciones, etc.';
-if dis=46 then label188.caption:='Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=61 then  label193.caption:='Dermataosis, lupus vulgaris, leprosis.';
-if dis=61 then  label188.caption:='Método de secuencia de remedios o síntomas funcionales de cambios funcionales.';
-if dis=76 then label193.caption:='Ulcus rodens, basalioma.';
-if dis=76 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=2 then label193.caption:='Saliva, resfríos, catarros, etc.';
-if dis=2 then label188.caption:='Síntomas inflamatorios localas más confirmación de síntomas generales.';
-if dis=17 then label193.caption:='Estomatitis, rinitis, aplastamientos.';
-if dis=17 then label188.caption:='Síntomas inflamatorios locales más síntomas generales o mentales.';
-if dis=32 then label193.caption:='Pólipos nasales, quistes.';
-if dis=32 then label188.caption:='Síntomas físicos generales con síntomas peculiares comunes o mentales.';
-if dis=47 then label193.caption:='Leucoplaquia, etc.';
-if dis=47 then label188.caption:='Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=62 then label193.caption:='Rinitis atrófica crónica.';
-if dis=62 then label188.caption:='Síntomas funcionales con cambios multifuncionales.';
-if dis=77 then label193.caption:='Cáncer de nariz y boca.';
-if dis=77 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=3 then label193.caption:='Secreción celular neuro-hormonal.';
-if dis=3 then label188.caption:='Prescripción total, búsqueda de síntomas peculiares emocionales, mentales y físicos.';
-if dis=18 then label193.caption:='Poliomielitis en estado febril, herpes zoster.';
-if dis=18 then label188.caption:='Síntomas de una condición específica con confirmación de síntomas peculiares.';
-if dis=33 then label193.caption:='Neuromas benignos, neuralgias.';
-if dis=33 then label188.caption:='Causa aetiológica única, búsqueda de la causa más importante de la condición.';
-if dis=48 then label193.caption:='Migrañas, contracciones nerviosas de los ojos, virus, infección por polio u otros.';
-if dis=48 then label188.caption:='Miasmas concurrentes o discrasias con remedios simples + drenaje.';
-if dis=63 then label193.caption:='Paresis, esclerosis, atrofía del nervio óptico, siringoma.';
-if dis=63 then label188.caption:='Método de capas Eizayaga + nosodes + sarcodes.';
-if dis=78 then label193.caption:='Neuroma, gliosarcoma.';
-if dis=78 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=4 then label193.caption:='Secreción de las células neuro-hormonales.';
-if dis=4 then label188.caption:='Prescripción total, búsqueda de síntomas emocionales, metales y físicos.';
-if dis=19 then label193.caption:='Neuralgia, herpes, afección en el nervio vago o nervio craneal.';
-if dis=19 then label188.caption:='Síntomas locales con confirmación de síntomas mentales o generales.';
-if dis=34 then label193.caption:='Neuromas benignos, inflamación del nervio vago, condición craneal.';
-if dis=34 then label188.caption:='Prescripción funcional simple, búsqueda de un cambio único en la función de los síntomas.';
-if dis=49 then label193.caption:='Asma, úlceras ventriculares o en el duodeno.';
-if dis=49 then label188.caption:='Concurrent Miasms (Sing Method)and Dyscrasias with simple remedy+drainage';
-if dis=64 then label193.caption:='Neurofibromatosis, etc.';
-if dis=64 then label188.caption:='Miasmas complejos (Sing) + apoyo local.';
-if dis=79 then label193.caption:='Gliosarcoma, etc.';
-if dis=79 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=5 then label193.caption:='Secreción de vesícula biliar, estercobilina CO2, intestinos intoxicados.';
-if dis=5 then label188.caption:='Síntomas psico-emocionales con apoyo a órganos.';
-if dis=20 then label193.caption:='Faringitis, laringitis, colitis, enteritis.';
-if dis=20 then label188.caption:='Síntomas de inflamación aguda + confirmación general de síntomas.';
-if dis=35 then label193.caption:='Pólipos de las membranas mucosas, constipación, megacolon.';
-if dis=35 then label188.caption:='Prescripción funcional simple.';
-if dis=50 then label193.caption:='Asma, ronquera, úlcera ventricular, duodeno, úlcera venerea (chancro), pre-cáncer.';
-if dis=50 then label188.caption:='Método Sing, miasmas concurrentes y discrasias con remedios simples + drenaje.';
-if dis=65 then label193.caption:='Tuberculosis pulmonar e intestinal, toxicidad.';
-if dis=65 then label188.caption:='Síntomas funcionales de cambios funcionales + drenaje local.';
-if dis=80 then label193.caption:='Cáncer de la laringe, estómago, intestinos, recto.';
-if dis=80 then label188.caption:='Antídoto para medicaciones alópatas actuales, entonces método de capas Eizayaga.';
-if dis=6 then label193.caption:='Bilis, jugos pancreáticos, hormonas tiroides.';
-if dis=6 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=21 then label193.caption:='Parotitis, neumonía, hepatitis, colangitis.';
-if dis=21 then label188.caption:='Bloqueo por miasmas múltiples + drenaje de órganos.';
-if dis=36 then label193.caption:='Silicosis, expansión de la tiroides, cálculos vesiculares.';
-if dis=36 then label188.caption:='Prescripción funcional simple, búsqueda de un cambio del funcionamiento de los síntomas.';
-if dis=51 then label193.caption:='Condición tóxica del hígado, infiltración pulmonar, condición iatrogénica.';
-if dis=51 then label188.caption:='Síntomas físicos generales + apoyo local y drenaje.';
-if dis=66 then label193.caption:='Cirrosis de hígado, hipertiroidismo.';
-if dis=66 then label188.caption:='Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=81 then label193.caption:='Cáncer de hígado, vesícula biliar, páncreas, tiroides o pulmones.';
-if dis=81 then label188.caption:='Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=7 then label193.caption:='Sustancia interestitial, alergias, ácidos hialónicos.';
-if dis=7 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=22 then label193.caption:='Abcesos, flema, carbuncos, inflamación aguda del tejido conectivo.';
-if dis=22 then label188.caption:='Drenaje de órganos locales individualmente.';
-if dis=37 then label193.caption:='Obesidad, gota, edemas, hinchazón después de las comidas.';
-if dis=37 then label188.caption:='Prescripción funcional simple + cambio de dieta / estilo de vida.';
-if dis=52 then label193.caption:='Edemas, inflamación, elefantitis, virus de la influenza.';
-if dis=52 then label188.caption:='Remedio para la condición local + confirmación general de síntomas.';
-if dis=67 then label193.caption:='Escleroderma, cachexia, malnutrición, desgaste, labia dilatada.';
-if dis=67 then label188.caption:='Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=82 then label193.caption:='Sarcoma en varios lugares.';
-if dis=82 then label188.caption:='Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=8 then label193.caption:='Efecto de haematopoeiesis (desarrollo de las células de la sangre).';
-if dis=8 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=23 then label193.caption:='Osteomielitis, inflamción de la médula espinal.';
-if dis=23 then label188.caption:='Bloqueos por miasmas múltiples y drenaje de órganos, condición iatrogénica.';
-if dis=38 then label193.caption:='Exostosis, huesos estribados u otros crecimientos anormales de los huesos, condición iatrogénica.';
-if dis=38 then label188.caption:='Terapias localizadas, enfoque en el estado de la condición.';
-if dis=53 then label193.caption:='Osteomalacia, degeneración de huesos o ablandamiento.';
-if dis=53 then label188.caption:='Terapias localizadas, enfoque en los síntomas de la condición.';
-if dis=68 then label193.caption:='Espondilitis, inflamación de la columna vertebral.';
-if dis=68 then label188.caption:='Capas formal Eizayaga + buena nutrición.';
-if dis=83 then label193.caption:='Cáncer de huesos.';
-if dis=83 then label188.caption:='Capas formal Eizayaga + apoyo a órganos y tejidos.';
-if dis=9 then label193.caption:='Liberación de la menstruación, formación de anticuerpos.';
-if dis=9 then label188.caption:='Síntomas generales + drenaje de órganos más significativos.';
-if dis=24 then label193.caption:='Endocarditis, fiebre tifoidea, sepsia, embolismo.';
-if dis=24 then label188.caption:='Alternación de los dos mejores remedios indicados.';
-if dis=39 then label193.caption:='Varices, venas varicosas, trombi esclerosis.';
-if dis=39 then label188.caption:='Causas terapéuticas localizadas.';
-if dis=54 then label193.caption:='Angina pectorial, miocarditis.';
-if dis=54 then label188.caption:='Posibles aetiologías simples, búsqueda de varias causas recientes o pasadas.';
-if dis=69 then label193.caption:='Infarto micardial, infección del corazón, anemia perniciosa.';
-if dis=69 then label188.caption:='Capas formal Eizayaga + posible apoyo a órganos.';
-if dis=84 then label193.caption:='Leucemia mieloide, angiosarcoma, afección iatrogénica.';
-if dis=84 then label188.caption:='Terapia miasmiatica + apoyo al órgano más vulnerable.';
-if dis=10 then label193.caption:='Formación linfática y anticuerpos, afección iatrogénica.';
-if dis=10 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=25 then label193.caption:='Amigdalitis, apendicitis, adenoides.';
-if dis=25 then label188.caption:='Prescripción simple aguda o alternación de los dos mejores remedios indicados.';
-if dis=40 then label193.caption:='Inflamación de glándulas linfáticas, afección iatrogénica.';
-if dis=40 then label188.caption:='Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=55 then label193.caption:='Linfatismo, congestión linfática, toxicidad, afección iatrogénica.';
-if dis=55 then label188.caption:='Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=70 then label193.caption:='Linfogranulomatosis, afección iatrogénica.';
-if dis=70 then label188.caption:='Capas formales Eizayaga basado en afección de lesión de capa y síntomas primero.';
-if dis=85 then label193.caption:='Linfosarcoma, leucemia linfática.';
-if dis=85 then label188.caption:='Síntomas degenerativos de lesión de tejido + drenaje local de órganos y apoyo.';
-if dis=11 then label193.caption:='Fluído sinovial, bilis, orina.';
-if dis=11 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=26 then label193.caption:='Poliartritis, afección iagrogénica.';
-if dis=26 then label188.caption:='Miasmas múltiples + cambio de dieta / estilo de vida.';
-if dis=41 then label193.caption:='Hidropesía, fatiga, afección iatrogénica.';
-if dis=41 then label188.caption:='Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=56 then label193.caption:='Hidrocéfalo, afección iatrogénica.';
-if dis=56 then label188.caption:='Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=71 then label193.caption:='Coxartrosis, artritis de la cadera.';
-if dis=71 then label188.caption:='Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero.';
-if dis=86 then label193.caption:='Condriosarcoma, tumor de cartílago.';
-if dis=86 then label188.caption:='Síntomas de lesión degenerativa.';
-if dis=12 then label193.caption:='Orina y productos desechados metabolicamente, afección iatrogénica.';
-if dis=12 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=27 then label193.caption:='Cistitis, pielitis, nefritis, inflamación de riñones.';
-if dis=27 then label188.caption:='Síntomas de inflamación + confirmación de síntomas generales.';
-if dis=42 then label193.caption:='Hipertrofia de próstata, infección de riñones, cálculos renales.';
-if dis=42 then label188.caption:='Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=57 then label193.caption:='Albuminuria, hidronefrosis, afección iatrogénica.';
-if dis=57 then label188.caption:='Aetiologías secuenciales. Buscar secuencia de causas históricas.';
-if dis=72 then label193.caption:='Nefritis, atrofia renal.';
-if dis=72 then label188.caption:='Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero + apoyo a órganos.';
-if dis=87 then label193.caption:='Cáncer de riñones, afección iatrogénica.';
-if dis=87 then label188.caption:='Síntomas de lesión degenerativa + apoyo local de órganos.';
-if dis=13 then label193.caption:='Secreción de membranas serosas.';
-if dis=13 then label188.caption:='Métodos generales físicos simples.';
-if dis=28 then label193.caption:='Pleuritis, pericarditis, peritonitis.';
-if dis=28 then label188.caption:='Alternación de los dos mejores remedios indicados.';
-if dis=43 then label193.caption:='Exudación pleural, ascitis.';
-if dis=43 then label188.caption:='Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=58 then label193.caption:='Pre-cáncer de membranas serosas.';
-if dis=58 then label188.caption:='Remedio miasmiatico + drenaje de órganos significativos.';
-if dis=73 then label193.caption:='Tuberculosis de membranas serosas.';
-if dis=73 then label188.caption:='Método de tejidos lesionados Eizayaga + miasmas + apoyo a órganos.';
-if dis=88 then label193.caption:='Cáncer de tejido seroso, afección iatrogénica.';
-if dis=88 then label188.caption:='Método de tejidos lesionados Eizayaga + apoyo a órganos.';
-if dis=14 then label193.caption:='Menstruación, esperma, ovulación, fluído prostático.';
-if dis=14 then label188.caption:='Prescripción simple psico-emocional + apoyo a órganos o sarcodes / nosodes.';
-if dis=29 then label193.caption:='Anexitis, metritis, ovaritis, inflamación de los canales de falopio, prostatitis.';
-if dis=29 then label188.caption:='Síntomas de inflamación local + miasmas + confirmación de síntomas generales.';
-if dis=44 then label193.caption:='Miomas, prostatitis, quistes, quistes en ovarios.';
-if dis=44 then label188.caption:='Afección terapéutica o general y simple + miasmas + apoyo a órganos.';
-if dis=59 then label193.caption:='Pre-cáncer de órganos reproductivos.';
-if dis=59 then label188.caption:='Miasmas + constitucionales + apoyo a órganos.';
-if dis=74 then label193.caption:='Impotencia, esteliridad, frigidez.';
-if dis=74 then label188.caption:='Miasmas + constitucionales + drenaje.';
-if dis=89 then label193.caption:='Cáncer de órganos reproductivos, afección iatrogénica.';
-if dis=89 then label188.caption:='Tejidos lesionados Eizayaga + nosodes + sarcodes.';
-if dis=15 then label193.caption:='Acido láctico, andrógenos, liberación de oxígeno.';
-if dis=15 then label188.caption:='Similitud general simple con síntomas psico-emocionales confirmados.';
-if dis=30 then label193.caption:='Reumatismo (músculos), miositis.';
-if dis=30 then label188.caption:='Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=45 then label193.caption:='Reumatismo progresivo, afección iatrogénica.';
-if dis=45 then label188.caption:='Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=60 then label193.caption:='Músculos inflamados debido a una deposición de calcio.';
-if dis=60 then label188.caption:='Síntomas locales + confirmación general + sarcodes.';
-if dis=75 then label193.caption:='Distrofia muscular, afección iatrogénica.';
-if dis=75 then label188.caption:='Miasma múltiple (método Sing) + sarcodes + nosodes + apoyo nutricional.';
-if dis>89 then label193.caption:='Músculo sarcoma o músculo degenerado y/o afección de tejido conectivo.';
-if dis>89 then label188.caption:='Capa de lesión eizayaga + nosodes + sarcodes + apoyo nutricional.';
 label203.caption:='Método de prescripción: '+label188.caption;
-PDesarrollo.visible:=false;
 MyChrono.Stop;
 end;
 
@@ -4836,7 +4207,7 @@ end;
 
 procedure Tactform.Edit4Click(Sender: TObject);
 begin
- Edit32.text:=Edit32.text+' | '+edit4.text;
+ Edit32.text:=Edit32.text+edit4.text;
 end;
 
 procedure Tactform.Button65Click(Sender: TObject);
@@ -4865,9 +4236,7 @@ end;
 procedure Tactform.Button67Click(Sender: TObject);
 begin
 GProgreso.progress :=0;
-// SpeachForm.SMessageTalk('Limpiador de transportador cargado...'
-//     +chr(13)+'Pulse ''OK'' para proceder.' );
-      ChangingPulses(1000,111,1000,3,1,1,'11111111','11111111');
+ChangingPulses(1000,111,1000,3,1,1,'11111111','11111111');
 end;
 
 procedure Tactform.Button69Click(Sender: TObject);
@@ -4897,7 +4266,6 @@ oeg:=random(100);
 if oeg>80 then edit24.text:=edit24.text+' CM';
 oeg:=random(100);
 if oeg>80 then edit24.text:=edit24.text+' MM';
-PDesarrollo.visible :=false;
 MyChrono.Stop;
 if  edit24.text='Potencia: ' then showmessage('No se ha podido determinar una potencia, por favor repíta.')
 end;
@@ -4933,7 +4301,6 @@ oeg:=random(100);
 if oeg>80 then edit26.text:=edit26.text+' CM';
 oeg:=random(100);
 if oeg>80 then edit26.text:=edit26.text+' MM';
-PDesarrollo.visible :=false;
 MyChrono.Stop;
 if  edit26.text='Potencia: ' then showmessage('No se ha podido determinar una potencia, por favor repíta.');
 end;
@@ -4965,7 +4332,6 @@ oeg:=random(100);
 if oeg>80 then edit28.text:=edit28.text+' CM';
 oeg:=random(100);
 if oeg>80 then edit28.text:=edit28.text+' MM';
-PDesarrollo.visible :=false;
 MyChrono.Stop;
 if  edit28.text='Potencia: '  then showmessage('No se ha podido determinar una potencia, por favor repíta.');
 end;
@@ -4997,7 +4363,6 @@ oeg:=random(100);
 if oeg>80 then edit30.text:=edit30.text+' CM';
 oeg:=random(100);
 if oeg>80 then edit30.text:=edit30.text+' MM';
-PDesarrollo.visible :=false;
 actform.refresh;
 MyChrono.Stop;
 if  edit30.text='Potencia: '  then showmessage('No se ha podido determinar una potencia, por favor repíta.');
@@ -5008,10 +4373,7 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 button79.Enabled:=false;
- PDesarrollo.caption:='Revisando potencia...';
-   PDesarrollo.visible :=true;
-  PDesarrollo.refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 10;
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -5028,26 +4390,21 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 end;
 
 procedure Tactform.Button71Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption:='Rectificando '+Edit23.Text+'...';
 RectificadoHomeopatico();
 end;
 
 procedure Tactform.RectificadoHomeopatico();
 begin
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
 actform.refresh;
-if dir<4 then dir:=4+random(100);
-if rb9<4 then rb9:=4+random(100);
 oeg:=random(10);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 30+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -5055,21 +4412,18 @@ GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
+dir:=random(100);
+rb9:=random(100);
 ChangingPulses(5000,dir,5*dir,rb9,1+random(5),2,
 '00000000','00000000');
-GProgreso.progress :=  round(MyChrono.pTEcoule);
-GProgreso.Refresh;
-ChangingPulses(5000,dir,5*dir,rb9,1+random(5),2,
-'11111111','11111111');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-LRectificado.Caption:= 'Rectificado | '+inttostr(90+random(10));
-PDesarrollo.visible :=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+LRectificado.Caption:= 'Rectificado | '+inttostr(85+random(15));
 MyChrono.Stop;
 end;
 
@@ -5123,29 +4477,18 @@ begin
   QString:='VENOM';
   QStringF := QString;
  DM.Query_remedy.SQL.Clear;
-  { DM.Query_remedy.SQL.Add('SELECT * from Remedy ');
-  DM.Query_remedy.SQL.Add('WHERE upper(remedy) like ''%'+Qstring+'%''');
-  DM.Query_remedy.SQL.Add('ORDER BY 2 '); { Remedy }
-
-
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
   dbgrid1.datasource := dm.V;
   ActualizaDBGrid1();
-
-
-
 end;
 
 procedure Tactform.Button87Click(Sender: TObject);
 begin
-
   DM.Query_remedy.Active:=False;
   QString:='BACH';
   QStringF := QString;
@@ -5153,8 +4496,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
-  
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5171,7 +4512,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5204,7 +4544,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5221,7 +4560,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5239,7 +4577,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5256,7 +4593,6 @@ begin
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA ');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+Qstring+'%''');
   DM.Query_remedy.SQL.Add('ORDER BY 2 ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5294,21 +4630,14 @@ end;
 procedure Tactform.Button98Click(Sender: TObject);
 begin
 GProgreso.progress :=0;
-memo4.visible:=true;
 button99.enabled:=true;
 end;
 
 procedure Tactform.Button99Click(Sender: TObject);
 begin
-memo4.lines.clear;
 Button100.Enabled := False;
 end;
 
-procedure Tactform.Memo4DblClick(Sender: TObject);
-begin
-memo4.visible:=false;
-button100.enabled:=false;
-end;
 
 procedure Tactform.Memo4Change(Sender: TObject);
 begin
@@ -5324,7 +4653,6 @@ end;
 procedure Tactform.Edit20Enter(Sender: TObject);
 begin
 Edit20.Text:='';
-//Showmessage('Por favor no olvide indicar en que forma se encuentra el homeopático en cuestión.');
 end;
 
 procedure Tactform.Button104Click(Sender: TObject);
@@ -5339,17 +4667,13 @@ GProgreso.progress :=0;
  ChangingPulses(1000,111,1000,3,1,1,'11111111','11111111');
 end;
 
-
 procedure Tactform.pFiltra(vQstring,vOrder:String);
 begin
   DM.Query_remedy.Active:=False;
-  //QString:='(C)';
   DM.Query_remedy.SQL.Clear;
   DM.Query_remedy.SQL.Add('SELECT * from CONSCIDA a');
   DM.Query_remedy.SQL.Add('WHERE upper(name) like ''%'+uppercase(vQstring)+'%''');
- // DM.Query_remedy.SQL.Add('ORDER BY a."value" ');
   DM.Query_remedy.SQL.Add('ORDER BY a."'+vOrder+'" ');
-
   DM.Query_remedy.Active:=True;
   DM.Query_remedy.First;
   DM.Query_remedy.Last;
@@ -5381,7 +4705,6 @@ end;
 
 procedure Tactform.pFiltra2(vQstring,vOrder:String);
 begin
-
   DM.QueryFilter.Active:=False;
   DM.QueryFilter.SQL.Clear;
   DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA a ');
@@ -5419,25 +4742,21 @@ end;
 
 procedure Tactform.Button70Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Realizando zap o duplicación a '+edit23.Text+'...';
 Zap();
 end;
 
 procedure Tactform.Button74Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Realizando zap o duplicación a '+edit25.Text+'...';
 Zap();
 end;
 
 procedure Tactform.Button77Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Realizando zap o duplicación a '+edit27.Text+'...';
 Zap();
 end;
 
 procedure Tactform.Button80Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Realizando zap o duplicación a '+edit29.Text+'...';
 Zap();
 end;
 
@@ -5445,7 +4764,6 @@ procedure Tactform.Button75Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption:='Rectificando '+Edit25.Text+'...';
 RectificadoHomeopatico();
 end;
 
@@ -5453,7 +4771,6 @@ procedure Tactform.Button78Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption:='Rectificando '+Edit27.Text+'...';
 RectificadoHomeopatico();
 end;
 
@@ -5461,7 +4778,6 @@ procedure Tactform.Button81Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.Caption:='Rectificando '+Edit29.Text+'...';
 RectificadoHomeopatico();
 end;
 
@@ -5491,12 +4807,6 @@ RadioGroup3.ItemIndex := -1;
 RadioGroup4.ItemIndex := -1;
 Edit21.Enabled:=True;
 MCaracteristicas.Lines.Clear;
-LimpiaMemo();
-end;
-
-procedure Tactform.RadioButton18Click(Sender: TObject);
-begin
-MyWinexec('write.exe','afirmaciones.doc');
 end;
 
 procedure Tactform.Edit32DblClick(Sender: TObject);
@@ -5506,16 +4816,10 @@ end;
 
 procedure Tactform.Time_CronoAHTimer(Sender: TObject);
 begin
-If fileExists('neutral.dll') then
-begin
- label17.caption:='PCN';
- label17.refresh;
-end;
-
-        Label271.Caption:=TimeToStr(Time);
-        Label271.refresh;
-        Lcrono.Caption := MyChrono.Time2Str(MyChrono.TimeElapsed) ;
-        Lcrono.refresh;
+Label271.Caption:=TimeToStr(Time);
+Label271.refresh;
+Lcrono.Caption := MyChrono.Time2Str(MyChrono.TimeElapsed) ;
+Lcrono.refresh;
 end;
 
 procedure Tactform.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -5804,53 +5108,7 @@ end;
 
 procedure Tactform.CheckBox293Click(Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono.Start;
-PDesarrollo.caption:='Cargando patrón de información desde sonda de punto...';
-  checkbox291.Refresh;
-  PDesarrollo.visible :=true;
-  PDesarrollo.refresh;
-//  if edit3.text='' then PDesarrollo.caption:='No hay conexión con la persona, la información no es correcta.';
-    alg:=random(7)+1;
-  if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'11111111','11111111');
-
-      al := al +( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-      al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-       al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-         al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-         al := Round(((al) / (24))) ;
-      al := (al * al) * 3+random(20);
-      if al > 100 then al := 100 ;
-
-
-       if al < 100 then  repeat ;
-           alg:=random(7)+2;
-           PDesarrollo.caption:='Repitiendo conexión...';
-           PDesarrollo.refresh;
-  if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'11111111','11111111');
-  if l=0 then   ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'00000000','00000000');
-  if l=1 then      ChangingPulses(5000,dir,5*dir,rb9,3,(alg),
-'11111111','11111111');
-
-      al := al +( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-      al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-       al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-         al := al + ( Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10)+ Random(10));
-         al := Round(((al) / (24))) ;
-      al := (al * al) * 3+random(20);
-      until al>99 ;
-         if al > 100 then al := 100+random(10) ;
-       Label5.caption := floattostr(al);
-
-        PDesarrollo.visible :=false;
-        button2.caption:='Enviar energía a bandeja';
-        MyChrono.Stop;
+Zap();
 end;
 
 procedure Tactform.Button9Click(Sender: TObject);
@@ -5864,11 +5122,10 @@ begin
   DM.Info.First;
   DM.Info.Last;
   no := DM.Info.FieldbyName('no').asInteger;
-
 if edit1.text<>'' then begin  inc(no); DM.Info.Appendrecord([no,nil,edit1.text ]);
-      Inc(no);
-      Showmessage('El ítem ha sido cargado al informe.');
-      end;
+Inc(no);
+Showmessage('El ítem ha sido cargado al informe.');
+end;
 end;
 
 procedure Tactform.Label266Click(Sender: TObject);
@@ -5970,10 +5227,7 @@ panel2.visible:=false;
 panel3.visible:=false;
 panel4.visible:=false;
 button2.caption:='&Iniciar';
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
-alg:=random(10)+2;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 30+Random(15);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -5989,14 +5243,11 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible :=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(100);
 If FMain.shaping>99 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
 MyChrono.Stop;
 if CBTerapiaExtendida.checked=true then TerapiaExtendida();
-
 End;
 
 procedure Tactform.TerapiaExtendida();
@@ -6004,16 +5255,6 @@ begin
 Application.CreateForm(Tondas_frm, ondas_frm);
 ondas.ondas_frm.showmodal;
 ondas.ondas_frm.Free;
-end;
-
-procedure Tactform.Label206Click(Sender: TObject);
-begin
-Memo5.Visible := True;
-end;
-
-procedure Tactform.Memo5Click(Sender: TObject);
-begin
-Memo5.Visible := False;
 end;
 
 procedure Tactform.RadioGroup3Click(Sender: TObject);
@@ -6026,7 +5267,6 @@ MCaracteristicas.Lines[0]:='Pueden ser estériles para beber o para inyectar.  '+
 'Todas se pueden beber.  El vehículo es suero fisiológico o glucosado.  '+
 'Las bebibles, normalmente no se pueden inyectar, pues a veces se utiliza alcohol de 15º como vehículo.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
 End
 Else
 If RadioGroup3.ItemIndex = 1 Then Begin
@@ -6034,8 +5274,6 @@ MCaracteristicas.Lines.Clear;
 MCaracteristicas.Lines[0]:='Se preparan en suero fisiológico isotónico.  '+
 'Son preparaciones estériles, con caducidad muy corta.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MColirios.Visible := True;
 End
 Else
 If RadioGroup3.ItemIndex = 2 Then Begin
@@ -6045,24 +5283,18 @@ MCaracteristicas.Lines[0]:='Se toman entre 10 a 50 gotas del medicamento homeopá
 'Se presentan en frascos de cristal color topacio de 30, 60, 125, 250 ó incluso 500 mL.  '+
 'Se deja el producto un minuto debajo de la lengua antes de tragarlo.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MGotas.Visible := True;
 End
 Else
 If RadioGroup3.ItemIndex = 3 Then Begin
 MCaracteristicas.Lines.Clear;
 MCaracteristicas.Lines[0]:='Para ser absorbidos a través de la mucosa nasal.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MGotas.Visible := True;
 End
 Else
 If RadioGroup3.ItemIndex = 4 Then Begin
 MCaracteristicas.Lines.Clear;
 MCaracteristicas.Lines[0]:='Se aplican exclusivamente por vía externa.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MLinimentos.Visible := True;
 End;
 end;
 
@@ -6076,8 +5308,6 @@ MCaracteristicas.Lines[0]:='Pueden ser de distinto tamaño.  '+
 'Unos se hacen mediante la compresión de una trituración o mezcla.  '+
 'Otros, se impregnan como los gránulos al 2%.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MComprimidos.Visible := True;
 End
 Else
 If RadioGroup4.ItemIndex = 1 Then Begin
@@ -6089,7 +5319,6 @@ MCaracteristicas.Lines[0]:='Son pequeñas esferas de lactosa o sacarosa, que tien
 'Los glóbulos en tubitos monodosis.  '+
 'Se toman vertiéndolos debajo de la lengua, hasta ser disueltos.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
 End
 Else
 If RadioGroup4.ItemIndex = 2 Then Begin
@@ -6098,8 +5327,6 @@ MCaracteristicas.Lines[0]:='Se emplean en tratamientos vaginales, '+
 'con efecto antiséptico y antiinflamatorio.  '+
 'Tienen de 10 a 16 gramos.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-
 End
 Else
 If RadioGroup4.ItemIndex = 3 Then Begin
@@ -6108,8 +5335,6 @@ MCaracteristicas.Lines[0]:='Son formas semisólidas que se elaboran adicionando l
 'a diferentes vehículos de absorción cutánea.  '+
 'Se utiliza como vehículo la lanolina, vaselina, etc.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MPomada.Visible := True;
 End
 Else
 If RadioGroup4.ItemIndex = 4 Then Begin
@@ -6119,8 +5344,6 @@ MCaracteristicas.Lines[0]:='Son formas de absorción por la mucosa rectal.  '+
 'Se preparan añadiendo las diluciones líquidas en el vehículo, '+
 'mientras este se encuentra en estado líquido.  Tienen 1 ó 2 gramos.';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MSupositorios.Visible := True;
 End
 Else
 If RadioGroup4.ItemIndex = 5 Then Begin
@@ -6130,20 +5353,7 @@ MCaracteristicas.Lines[0]:='Se presentan en frascos de 15, 30 ó 60 gramos.  '+
 '(trituraciones verdaderas) o mediante impregnación al 1% de determinadas '+
 'diluciones líquidas usando como vehículo la lactosa (polvos impregnados).';
 MCaracteristicas.Refresh;
-LimpiaMemo();
-MTrituraciones.Visible := True;
 End;
-end;
-
-procedure Tactform.LimpiaMemo();
-begin
-MLinimentos.Visible := False;
-MColirios.Visible := False;
-MSupositorios.Visible := False;
-MTrituraciones.Visible := False;
-MGotas.Visible := False;
-MComprimidos.Visible := False;
-MPomada.Visible := False;
 end;
 
 procedure Tactform.Panel7Click(Sender: TObject);
@@ -6178,19 +5388,6 @@ gra:=0; cal:=0; ars:=0; arg:=0; pho:=0; aco:=0; bel:=0; gel:=0; all:=0; api:=0;
 arn:=0; bry:=0; cap:=0; car:=0; ipe:=0; cup:=0; eup:=0; fer:=0; kal:=0; led:=0;
 can:=0; rhu:=0; thu:=0; zin:=0;
 riskchart.edit1.text:=actform.edit1.text;
-riskchart.edit5.text:=actform.edit5.text;
-riskchart.edit6.text:=actform.edit6.text;
-riskchart.edit7.text:=actform.edit7.text;
-riskchart.edit8.text:=actform.edit8.text;
-riskchart.edit9.text:=actform.edit9.text;
-riskchart.edit10.text:=actform.edit10.text;
-riskchart.edit11.text:=actform.edit11.text;
-riskchart.edit12.text:=actform.edit12.text;
-riskchart.edit13.text:=actform.edit13.text;
-riskchart.edit14.text:=actform.edit14.text;
-riskchart.edit15.text:=actform.edit15.text;
-riskchart.edit16.text:=actform.edit16.text;
-riskchart.edit4.text:=actform.edit4.text;
 end;
 
 procedure Tactform.Panel19Click(Sender: TObject);
@@ -6222,19 +5419,6 @@ procedure Tactform.Panel25Click(Sender: TObject);
 begin
 panel8.visible:=false;
 riskchart.edit1.text:=actform.edit1.text;
-riskchart.edit5.text:=actform.edit5.text;
-riskchart.edit6.text:=actform.edit6.text;
-riskchart.edit7.text:=actform.edit7.text;
-riskchart.edit8.text:=actform.edit8.text;
-riskchart.edit9.text:=actform.edit9.text;
-riskchart.edit10.text:=actform.edit10.text;
-riskchart.edit11.text:=actform.edit11.text;
-riskchart.edit12.text:=actform.edit12.text;
-riskchart.edit13.text:=actform.edit13.text;
-riskchart.edit14.text:=actform.edit14.text;
-riskchart.edit15.text:=actform.edit15.text;
-riskchart.edit16.text:=actform.edit16.text;
-riskchart.edit4.text:=actform.edit4.text;
 end;
 
 procedure Tactform.Panel26Click(Sender: TObject);
@@ -6311,9 +5495,9 @@ end;
 procedure Tactform.LTransferirItemClick(Sender: TObject);
 begin
 testform1.vtransferencia := true;
-testform1.edit32.text:=Edit32.text+' | ';
+testform1.edit32.text:=Edit32.text;
 testform1.vtransferencia := true;
-testform1.edit34.text:=Edit32.text+' | ';
+testform1.edit34.text:=Edit32.text;
 testform1.edit32.Refresh;
 testform1.edit34.Refresh;
 close;
@@ -6330,222 +5514,6 @@ If Edit32.Text <> '' Then LTransferirItem.Enabled := False
 Else
 LTransferirItem.Enabled := True;
 end;
-
-procedure Tactform.Label199Click(Sender: TObject);
-begin
-MyWinexec('write.exe','como_redactar_afirmaciones.doc');
-
-end;
-
-procedure Tactform.Label200Click(Sender: TObject);
-begin
-MyWinexec('write.exe','afirmaciones.doc');
-end;
-
-procedure Tactform.Advice1();
-begin
-dis:=round(soc/(3.5) );
-if soc=0 then dis:=random(85);
-if soc<2 then label119.caption:=inttostr(100-(random(50)));
-if soc<2 then label120.caption:=inttostr(100-(random(50)));
-if soc<2 then label111.caption:=inttostr(100-(random(50)));
-if soc<2 then label112.caption:=inttostr(100-(random(50)));
-if soc<2 then label113.caption:=inttostr(100-(random(50)));
-if pn2>0 then label174.caption:='Medicaciones alopáticas.';
-if pn3>0 then label175.caption:='Tabaquismo.';
-if pn4>0 then label176.caption:='Supresión alopática.';
-if pn8>0 then label189.caption:='Uso del azúcar.';
-if pn12>0 then label190.caption:='Toxicidad.';
-if pn7>0 then label191.caption:='Estrés.';
-if pn5>0 then label192.caption:='Metales pesados.';
- if dis<2 then  label193.caption:='Perspiración, cera en los oídos, complexión ruda.';
- if dis<2 then label188.caption:='Búsqueda total de síntomas mentales, físicos y emocionales.';
-if dis=16 then label193.caption:='Furúnculoa, eritema, dermatitis, eczema, piodermias, etc.';
-if dis=16 then label188.caption:='Simple condición física general o patrón mental general.';
-if dis=31 then  label193.caption:='Ateromas, verrugas, keratosis, dolores de cabeza, etc.';
-if dis=46 then label188.caption:='Los miasmas dominan la condición actual.';
-if dis=46 then  label193.caption:='Tatuajes, pigmentaciones, etc.';
-if dis=46 then label188.caption:='Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=61 then  label193.caption:='Dermataosis, lupus vulgaris, leprosis.';
-if dis=61 then  label188.caption:='Método de secuencia de remedios o síntomas funcionales de cambios funcionales.';
-if dis=76 then label193.caption:='Ulcus rodens, basalioma.';
-if dis=76 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=2 then label193.caption:='Saliva, resfríos, catarros, etc.';
-if dis=2 then label188.caption:='Síntomas inflamatorios localas más confirmación de síntomas generales.';
-if dis=17 then label193.caption:='Estomatitis, rinitis, aplastamientos.';
-if dis=17 then label188.caption:='Síntomas inflamatorios locales más síntomas generales o mentales.';
-if dis=32 then label193.caption:='Pólipos nasales, quistes.';
-if dis=32 then label188.caption:='Síntomas físicos generales con síntomas peculiares comunes o mentales.';
-if dis=47 then label193.caption:='Leucoplaquia, etc.';
-if dis=47 then label188.caption:='Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=62 then label193.caption:='Rinitis atrófica crónica.';
-if dis=62 then label188.caption:='Síntomas funcionales con cambios multifuncionales.';
-if dis=77 then label193.caption:='Cáncer de nariz y boca.';
-if dis=77 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=3 then label193.caption:='Secreción celular neuro-hormonal.';
-if dis=3 then label188.caption:='Prescripción total, búsqueda de síntomas peculiares emocionales, mentales y físicos.';
-if dis=18 then label193.caption:='Poliomielitis en estado febril, herpes zoster.';
-if dis=18 then label188.caption:='Síntomas de una condición específica con confirmación de síntomas peculiares.';
-if dis=33 then label193.caption:='Neuromas benignos, neuralgias.';
-if dis=33 then label188.caption:='Causa aetiológica única, búsqueda de la causa más importante de la condición.';
-if dis=48 then label193.caption:='Migrañas, contracciones nerviosas de los ojos, virus, infección por polio u otros.';
-if dis=48 then label188.caption:='Miasmas concurrentes o discrasias con remedios simples + drenaje.';
-if dis=63 then label193.caption:='Paresis, esclerosis, atrofía del nervio óptico, siringoma.';
-if dis=63 then label188.caption:='Método de capas Eizayaga + nosodes + sarcodes.';
-if dis=78 then label193.caption:='Neuroma, gliosarcoma.';
-if dis=78 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=4 then label193.caption:='Secreción de las células neuro-hormonales.';
-if dis=4 then label188.caption:='Prescripción total, búsqueda de síntomas emocionales, metales y físicos.';
-if dis=19 then label193.caption:='Neuralgia, herpes, afección en el nervio vago o nervio craneal.';
-if dis=19 then label188.caption:='Síntomas locales con confirmación de síntomas mentales o generales.';
-if dis=34 then label193.caption:='Neuromas benignos, inflamación del nervio vago, condición craneal.';
-if dis=34 then label188.caption:='Prescripción funcional simple, búsqueda de un cambio único en la función de los síntomas.';
-if dis=49 then label193.caption:='Asma, úlceras ventriculares o en el duodeno.';
-if dis=49 then label188.caption:='Concurrent Miasms (Sing Method)and Dyscrasias with simple remedy+drainage';
-if dis=64 then label193.caption:='Neurofibromatosis, etc.';
-if dis=64 then label188.caption:='Miasmas complejos (Sing) + apoyo local.';
-if dis=79 then label193.caption:='Gliosarcoma, etc.';
-if dis=79 then label188.caption:='Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=5 then label193.caption:='Secreción de vesícula biliar, estercobilina CO2, intestinos intoxicados.';
-if dis=5 then label188.caption:='Síntomas psico-emocionales con apoyo a órganos.';
-if dis=20 then label193.caption:='Faringitis, laringitis, colitis, enteritis.';
-if dis=20 then label188.caption:='Síntomas de inflamación aguda + confirmación general de síntomas.';
-if dis=35 then label193.caption:='Pólipos de las membranas mucosas, constipación, megacolon.';
-if dis=35 then label188.caption:='Prescripción funcional simple.';
-if dis=50 then label193.caption:='Asma, ronquera, úlcera ventricular, duodeno, úlcera venerea (chancro), pre-cáncer.';
-if dis=50 then label188.caption:='Método Sing, miasmas concurrentes y discrasias con remedios simples + drenaje.';
-if dis=65 then label193.caption:='Tuberculosis pulmonar e intestinal, toxicidad.';
-if dis=65 then label188.caption:='Síntomas funcionales de cambios funcionales + drenaje local.';
-if dis=80 then label193.caption:='Cáncer de la laringe, estómago, intestinos, recto.';
-if dis=80 then label188.caption:='Antídoto para medicaciones alópatas actuales, entonces método de capas Eizayaga.';
-if dis=6 then label193.caption:='Bilis, jugos pancreáticos, hormonas tiroides.';
-if dis=6 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=21 then label193.caption:='Parotitis, neumonía, hepatitis, colangitis.';
-if dis=21 then label188.caption:='Bloqueo por miasmas múltiples + drenaje de órganos.';
-if dis=36 then label193.caption:='Silicosis, expansión de la tiroides, cálculos vesiculares.';
-if dis=36 then label188.caption:='Prescripción funcional simple, búsqueda de un cambio del funcionamiento de los síntomas.';
-if dis=51 then label193.caption:='Condición tóxica del hígado, infiltración pulmonar, condición iatrogénica.';
-if dis=51 then label188.caption:='Síntomas físicos generales + apoyo local y drenaje.';
-if dis=66 then label193.caption:='Cirrosis de hígado, hipertiroidismo.';
-if dis=66 then label188.caption:='Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=81 then label193.caption:='Cáncer de hígado, vesícula biliar, páncreas, tiroides o pulmones.';
-if dis=81 then label188.caption:='Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=7 then label193.caption:='Sustancia interestitial, alergias, ácidos hialónicos.';
-if dis=7 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=22 then label193.caption:='Abcesos, flema, carbuncos, inflamación aguda del tejido conectivo.';
-if dis=22 then label188.caption:='Drenaje de órganos locales individualmente.';
-if dis=37 then label193.caption:='Obesidad, gota, edemas, hinchazón después de las comidas.';
-if dis=37 then label188.caption:='Prescripción funcional simple + cambio de dieta / estilo de vida.';
-if dis=52 then label193.caption:='Edemas, inflamación, elefantitis, virus de la influenza.';
-if dis=52 then label188.caption:='Remedio para la condición local + confirmación general de síntomas.';
-if dis=67 then label193.caption:='Escleroderma, cachexia, malnutrición, desgaste, labia dilatada.';
-if dis=67 then label188.caption:='Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=82 then label193.caption:='Sarcoma en varios lugares.';
-if dis=82 then label188.caption:='Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=8 then label193.caption:='Efecto de haematopoeiesis (desarrollo de las células de la sangre).';
-if dis=8 then label188.caption:='Terapia psico-emocional con apoyo a órganos.';
-if dis=23 then label193.caption:='Osteomielitis, inflamción de la médula espinal.';
-if dis=23 then label188.caption:='Bloqueos por miasmas múltiples y drenaje de órganos, condición iatrogénica.';
-if dis=38 then label193.caption:='Exostosis, huesos estribados u otros crecimientos anormales de los huesos, condición iatrogénica.';
-if dis=38 then label188.caption:='Terapias localizadas, enfoque en el estado de la condición.';
-if dis=53 then label193.caption:='Osteomalacia, degeneración de huesos o ablandamiento.';
-if dis=53 then label188.caption:='Terapias localizadas, enfoque en los síntomas de la condición.';
-if dis=68 then label193.caption:='Espondilitis, inflamación de la columna vertebral.';
-if dis=68 then label188.caption:='Capas formal Eizayaga + buena nutrición.';
-if dis=83 then label193.caption:='Cáncer de huesos.';
-if dis=83 then label188.caption:='Capas formal Eizayaga + apoyo a órganos y tejidos.';
-if dis=9 then label193.caption:='Liberación de la menstruación, formación de anticuerpos.';
-if dis=9 then label188.caption:='Síntomas generales + drenaje de órganos más significativos.';
-if dis=24 then label193.caption:='Endocarditis, fiebre tifoidea, sepsia, embolismo.';
-if dis=24 then label188.caption:='Alternación de los dos mejores remedios indicados.';
-if dis=39 then label193.caption:='Varices, venas varicosas, trombi esclerosis.';
-if dis=39 then label188.caption:='Causas terapéuticas localizadas.';
-if dis=54 then label193.caption:='Angina pectorial, miocarditis.';
-if dis=54 then label188.caption:='Posibles aetiologías simples, búsqueda de varias causas recientes o pasadas.';
-if dis=69 then label193.caption:='Infarto micardial, infección del corazón, anemia perniciosa.';
-if dis=69 then label188.caption:='Capas formal Eizayaga + posible apoyo a órganos.';
-if dis=84 then label193.caption:='Leucemia mieloide, angiosarcoma, afección iatrogénica.';
-if dis=84 then label188.caption:='Terapia miasmiatica + apoyo al órgano más vulnerable.';
-if dis=10 then label193.caption:='Formación linfática y anticuerpos, afección iatrogénica.';
-if dis=10 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=25 then label193.caption:='Amigdalitis, apendicitis, adenoides.';
-if dis=25 then label188.caption:='Prescripción simple aguda o alternación de los dos mejores remedios indicados.';
-if dis=40 then label193.caption:='Inflamación de glándulas linfáticas, afección iatrogénica.';
-if dis=40 then label188.caption:='Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=55 then label193.caption:='Linfatismo, congestión linfática, toxicidad, afección iatrogénica.';
-if dis=55 then label188.caption:='Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=70 then label193.caption:='Linfogranulomatosis, afección iatrogénica.';
-if dis=70 then label188.caption:='Capas formales Eizayaga basado en afección de lesión de capa y síntomas primero.';
-if dis=85 then label193.caption:='Linfosarcoma, leucemia linfática.';
-if dis=85 then label188.caption:='Síntomas degenerativos de lesión de tejido + drenaje local de órganos y apoyo.';
-if dis=11 then label193.caption:='Fluído sinovial, bilis, orina.';
-if dis=11 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=26 then label193.caption:='Poliartritis, afección iagrogénica.';
-if dis=26 then label188.caption:='Miasmas múltiples + cambio de dieta / estilo de vida.';
-if dis=41 then label193.caption:='Hidropesía, fatiga, afección iatrogénica.';
-if dis=41 then label188.caption:='Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=56 then label193.caption:='Hidrocéfalo, afección iatrogénica.';
-if dis=56 then label188.caption:='Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=71 then label193.caption:='Coxartrosis, artritis de la cadera.';
-if dis=71 then label188.caption:='Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero.';
-if dis=86 then label193.caption:='Condriosarcoma, tumor de cartílago.';
-if dis=86 then label188.caption:='Síntomas de lesión degenerativa.';
-if dis=12 then label193.caption:='Orina y productos desechados metabolicamente, afección iatrogénica.';
-if dis=12 then label188.caption:='Drenaje de los órganos significativos.';
-if dis=27 then label193.caption:='Cistitis, pielitis, nefritis, inflamación de riñones.';
-if dis=27 then label188.caption:='Síntomas de inflamación + confirmación de síntomas generales.';
-if dis=42 then label193.caption:='Hipertrofia de próstata, infección de riñones, cálculos renales.';
-if dis=42 then label188.caption:='Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=57 then label193.caption:='Albuminuria, hidronefrosis, afección iatrogénica.';
-if dis=57 then label188.caption:='Aetiologías secuenciales. Buscar secuencia de causas históricas.';
-if dis=72 then label193.caption:='Nefritis, atrofia renal.';
-if dis=72 then label188.caption:='Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero + apoyo a órganos.';
-if dis=87 then label193.caption:='Cáncer de riñones, afección iatrogénica.';
-if dis=87 then label188.caption:='Síntomas de lesión degenerativa + apoyo local de órganos.';
-if dis=13 then label193.caption:='Secreción de membranas serosas.';
-if dis=13 then label188.caption:='Métodos generales físicos simples.';
-if dis=28 then label193.caption:='Pleuritis, pericarditis, peritonitis.';
-if dis=28 then label188.caption:='Alternación de los dos mejores remedios indicados.';
-if dis=43 then label193.caption:='Exudación pleural, ascitis.';
-if dis=43 then label188.caption:='Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=58 then label193.caption:='Pre-cáncer de membranas serosas.';
-if dis=58 then label188.caption:='Remedio miasmiatico + drenaje de órganos significativos.';
-if dis=73 then label193.caption:='Tuberculosis de membranas serosas.';
-if dis=73 then label188.caption:='Método de tejidos lesionados Eizayaga + miasmas + apoyo a órganos.';
-if dis=88 then label193.caption:='Cáncer de tejido seroso, afección iatrogénica.';
-if dis=88 then label188.caption:='Método de tejidos lesionados Eizayaga + apoyo a órganos.';
-if dis=14 then label193.caption:='Menstruación, esperma, ovulación, fluído prostático.';
-if dis=14 then label188.caption:='Prescripción simple psico-emocional + apoyo a órganos o sarcodes / nosodes.';
-if dis=29 then label193.caption:='Anexitis, metritis, ovaritis, inflamación de los canales de falopio, prostatitis.';
-if dis=29 then label188.caption:='Síntomas de inflamación local + miasmas + confirmación de síntomas generales.';
-if dis=44 then label193.caption:='Miomas, prostatitis, quistes, quistes en ovarios.';
-if dis=44 then label188.caption:='Afección terapéutica o general y simple + miasmas + apoyo a órganos.';
-if dis=59 then label193.caption:='Pre-cáncer de órganos reproductivos.';
-if dis=59 then label188.caption:='Miasmas + constitucionales + apoyo a órganos.';
-if dis=74 then label193.caption:='Impotencia, esteliridad, frigidez.';
-if dis=74 then label188.caption:='Miasmas + constitucionales + drenaje.';
-if dis=89 then label193.caption:='Cáncer de órganos reproductivos, afección iatrogénica.';
-if dis=89 then label188.caption:='Tejidos lesionados Eizayaga + nosodes + sarcodes.';
-if dis=15 then label193.caption:='Acido láctico, andrógenos, liberación de oxígeno.';
-if dis=15 then label188.caption:='Similitud general simple con síntomas psico-emocionales confirmados.';
-if dis=30 then label193.caption:='Reumatismo (músculos), miositis.';
-if dis=30 then label188.caption:='Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=45 then label193.caption:='Reumatismo progresivo, afección iatrogénica.';
-if dis=45 then label188.caption:='Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=60 then label193.caption:='Músculos inflamados debido a una deposición de calcio.';
-if dis=60 then label188.caption:='Síntomas locales + confirmación general + sarcodes.';
-if dis=75 then label193.caption:='Distrofia muscular, afección iatrogénica.';
-if dis=75 then label188.caption:='Miasma múltiple (método Sing) + sarcodes + nosodes + apoyo nutricional.';
-if dis>89 then label193.caption:='Músculo sarcoma o músculo degenerado y/o afección de tejido conectivo.';
-if dis>89 then label188.caption:='Capa de lesión eizayaga + nosodes + sarcodes + apoyo nutricional.';
- if pn2>2 then label193.caption:=label193.caption+' debido a medicaciones alopáticas.';
-if pn3>10 then label193.caption:=label193.caption+' debido a tabaquismo.';
-if pn4>0 then label193.caption:=label193.caption+' debido a supresión alopática.';
-if pn8>5 then label193.caption:=label193.caption+' debido a uso del azúcar.';
-if pn12>10 then label193.caption:=label193.caption+' debido a toxicidad.';
-if pn7>7 then label193.caption:=label193.caption+' debido a estrés.';
-if pn5>4 then label193.caption:=label193.caption+' debido a metales pesados.';
-End;
 
 procedure Tactform.Edit21Enter(Sender: TObject);
 begin
@@ -6564,12 +5532,8 @@ begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -6584,21 +5548,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -6613,9 +5570,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
@@ -6624,9 +5579,18 @@ procedure Tactform.Button54Click(Sender: TObject);
 begin
 If edit1.text='' Then ShowMessage ('En el cajetín maestro de edición Debe escribir el nombre del homeopático que va duplicar,')
 else begin
-PDesarrollo.Caption:='Realizando duplicación a '+edit1.Text+'...';
 Zap();
 end;
+end;
+
+procedure Tactform.Button5Click(Sender: TObject);
+begin
+FRecompensa.Showmodal;
+end;
+
+procedure Tactform.Label202Click(Sender: TObject);
+begin
+FRecompensa.ShowModal;
 end;
 
 initialization

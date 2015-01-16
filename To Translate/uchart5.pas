@@ -63,15 +63,6 @@ type
     Label32: TLabel;
     ImmuneStimulation1: TMenuItem;
     AddPiggyBackTherapies1: TMenuItem;
-    GroupBox2: TGroupBox;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Button51: TButton;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Button14: TButton;
     N7: TMenuItem;
     N9: TMenuItem;
     Fundirconciencias1: TMenuItem;
@@ -129,7 +120,6 @@ type
     AdjustCranialBones1: TMenuItem;
     ATPActiveTransport1: TMenuItem;
     LargeIntestine1: TMenuItem;
-    Male1: TMenuItem;
     BodytoSoulConnection1: TMenuItem;
     Throat1: TMenuItem;
     Prostate1: TMenuItem;
@@ -155,7 +145,6 @@ type
     Personalizar2: TMenuItem;
     N4: TMenuItem;
     LearningDisability2: TMenuItem;
-    MediaPlayer1: TMediaPlayer;
     HypnosisorDehypnosis1: TMenuItem;
     Dehipnosis1: TMenuItem;
     IncreaseMathSkills1: TMenuItem;
@@ -186,7 +175,6 @@ type
     Contaminacinelectromagntica1: TMenuItem;
     N12: TMenuItem;
     Reactividad1: TMenuItem;
-    SubspaceActive2: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
@@ -307,7 +295,6 @@ type
     Combinado1: TMenuItem;
     Personalizar9: TMenuItem;
     N10: TMenuItem;
-    Panel1: TPanel;
     Cuadrantes1: TMenuItem;
     N18: TMenuItem;
     Espiritual1: TMenuItem;
@@ -490,6 +477,8 @@ type
     VasoTacnYinYinQiaoMai7: TMenuItem;
     VasoTacnYangYangQiaoMai7: TMenuItem;
     N26: TMenuItem;
+    SubspaceActive2: TLabel;
+    Repositorio1: TMenuItem;
     procedure Timer1Timer(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -507,7 +496,6 @@ type
     procedure Edit12Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure MediaPlayer1Notify(Sender: TObject);
     procedure Biofeedback1Click(Sender: TObject);
     procedure Close2Click(Sender: TObject);
     procedure Bone1Click(Sender: TObject);
@@ -515,7 +503,6 @@ type
     procedure Digestion1Click(Sender: TObject);
     procedure Kidney1Click(Sender: TObject);
     procedure Lymph1Click(Sender: TObject);
-    procedure Male1Click(Sender: TObject);
     procedure Female1Click(Sender: TObject);
     procedure Sinus1Click(Sender: TObject);
     procedure Throat1Click(Sender: TObject);
@@ -528,7 +515,6 @@ type
     procedure Shoulder1Click(Sender: TObject);
     procedure Pain1Click(Sender: TObject);
     procedure InnerEar1Click(Sender: TObject);
-    procedure Male2Click(Sender: TObject);
     procedure Liver1Click(Sender: TObject);
     procedure Pancreas1Click(Sender: TObject);
     procedure RelaxMind1Click(Sender: TObject);
@@ -536,7 +522,6 @@ type
     procedure NerveConduction1Click(Sender: TObject);
     procedure SynapseStabilization1Click(Sender: TObject);
     procedure ATPActiveTransport1Click(Sender: TObject);
-    procedure DiffusionStim1Click(Sender: TObject);
     procedure Circulation1Click(Sender: TObject);
     procedure Woundrepair1Click(Sender: TObject);
     procedure ReleaseDeepPotential1Click(Sender: TObject);
@@ -544,10 +529,8 @@ type
     procedure WaterTreatmentActivation1min1Click(Sender: TObject);
     procedure LearningDisability1Click(Sender: TObject);
     procedure BrainIntrospection1Click(Sender: TObject);
-    procedure AutoColorTherapy1Click(Sender: TObject);
     procedure PainTherapy1Click(Sender: TObject);
     procedure N1minTrivector1Click(Sender: TObject);
-    procedure SwimwiththeDolphins1Click(Sender: TObject);
     procedure ReleasePhobias1Click(Sender: TObject);
     procedure EstablishSpirituallink1Click(Sender: TObject);
     procedure Image5Click(Sender: TObject);
@@ -558,8 +541,6 @@ type
     procedure AutismADDrepair1Click(Sender: TObject);
     procedure CorpusCallosumStability1Click(Sender: TObject);
     procedure SmallIntestine1Click(Sender: TObject);
-    procedure AddPiggyBackTherapies1Click(Sender: TObject);
-    procedure Button14Click(Sender: TObject);
     procedure Fundirconciencias1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormClick(Sender: TObject);
@@ -567,13 +548,6 @@ type
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure Time_Crono2Timer(Sender: TObject);
     procedure Eleccininconcientedeterapia1Click(Sender: TObject);
-    procedure Edit1Click(Sender: TObject);
-    procedure Edit2Click(Sender: TObject);
-    procedure Edit3Click(Sender: TObject);
-    procedure Edit4Click(Sender: TObject);
-    procedure Edit5Change(Sender: TObject);
-    procedure Edit6Change(Sender: TObject);
-    procedure TuneBrainFunction1Click(Sender: TObject);
     procedure BodytoSoulConnection1Click(Sender: TObject);
     procedure SnowProgram1Click(Sender: TObject);
     procedure RemoteViewing1Click(Sender: TObject);
@@ -722,7 +696,6 @@ type
     procedure Larnyx1Click(Sender: TObject);
     procedure Sueoslcidos1Click(Sender: TObject);
     procedure N1minBioresonance1Click(Sender: TObject);
-    procedure Panel1Click(Sender: TObject);
     procedure Entorno1Click(Sender: TObject);
     procedure Espiritual1Click(Sender: TObject);
     procedure Fsico1Click(Sender: TObject);
@@ -879,6 +852,8 @@ type
     procedure VasoConectorYinYinWeiMai7Click(Sender: TObject);
     procedure VasoCeidorDaiMai6Click(Sender: TObject);
     procedure VasoPenetranteChongMai6Click(Sender: TObject);
+    procedure CBTExtendidaClick(Sender: TObject);
+    procedure Repositorio1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -927,32 +902,6 @@ begin
   Label32.Caption:=Application.Hint;
 end;
 
-{function TFChart5.validaarchivo(Filename :String) :String ;
-var
-  vext,path: String;
-Begin
-  SubspaceActive2.Visible := False;
-  GetDir(0,path);
-  path:=ExtractFileDir(path);
-
- if length(Filename) > 0 then
- if not  fileexists(Filename) then  Begin
-     if  (Lowercase(Copy(filename,Length(filename)-3,4))= '.mp3') then
-          Filename:= '2ESCLIPPRO1.mp3'
-     else
-     If Lowercase(Copy(filename,Length(filename)-3,4))= '.wav'  then
-       Filename:= 'SSalida.wav'
-     else
-      If (Lowercase(Copy(filename,Length(filename)-3,4))= '.jpg')or
-        (Lowercase(Copy(filename,Length(filename)-3,4))= '.bmp')or
-        (Lowercase(Copy(filename,Length(filename)-3,4))= '.gif')then
-        filename:='BACK017.bmp'
-      else
-         Filename :=''
-  end  ;
-  result := Filename
-End; }
-
 Procedure MyWinExec(Editor : String;Sfile : String);
 Var S : String;
     S1: String;
@@ -961,10 +910,8 @@ Begin
   GetDir(0,S); { 0 = Current drive }
   S:=ExtractFilePath(S);
   S:=S+'PROGRAM\'+Sfile;
-  {S1:='write.exe '+S;}
    S1:=Editor+' '+S;
   StrPCopy(K,S1);
-//magm   Winexec(K,1);
 End;
 
 procedure TFChart5.LIniciarClick(Sender: TObject);
@@ -1018,9 +965,6 @@ begin
     IF sky <> 7 Then
         Timer1.Enabled:=False;
     if sky= 1234 then
-
-
-
    if   (frac1=0) and
  (frac2=0) and
  (frac3=0) and
@@ -1068,19 +1012,12 @@ end;
     IBuf5[0]:=170;
   end
   else Begin
-
-
   IBuf1[0]:=IBuf1[0]+Random(150);
   IBuf2[0]:=IBuf2[0]+Random(150);
   IBuf3[0]:=IBuf3[0]+Random(150);
   IBuf4[0]:=IBuf4[0]+Random(150);
   IBuf5[0]:=IBuf5[0]+Random(150);
   end;
-
-
-
-  
-
   With Series1 do
   Begin
     Delete(0); { <-- remove the first point }
@@ -1091,7 +1028,6 @@ end;
     Repaint;
     Inc(Z1);
   end;
-
   With Series2 do
   Begin
     Delete(0); { <-- remove the first point }
@@ -1101,7 +1037,6 @@ end;
     RefreshSeries;
     Inc(Z2);
   end;
-
   With Series3 do
   Begin
     Delete(0); { <-- remove the first point }
@@ -1111,7 +1046,6 @@ end;
     RefreshSeries;
     Inc(Z3);
   end;
-
   With Series4 do
   Begin
     Delete(0); { <-- remove the first point }
@@ -1121,7 +1055,6 @@ end;
     RefreshSeries;
     Inc(Z4);
   end;
-
   With Series5 do
   Begin
     Delete(0); { <-- remove the first point }
@@ -1131,7 +1064,6 @@ end;
     RefreshSeries;
     Inc(Z5);
   end;
-
   With Series6 do
   Begin
 
@@ -1141,15 +1073,7 @@ end;
     Inc(C);
     RefreshSeries;
     Inc(Z5);
-
-        { <-- remove the first point
-    Delete(0);
-    AddXY( 20,Random(200),'',clTeeColor);
-    Repaint;
-    RefreshSeries;   }
   end;
-
-  { ------------------------------}
    Randomize;
    read:=read+1;
    read1:=random(70)-round((soc-(pn22*4))/4);
@@ -1164,15 +1088,6 @@ end;
                 if pname='' then read:=10;
 
  Randomize;
-{
-frac1:=200 -read1- random(read);
-frac2:=200- read1-random(read);
-frac3:=200- read1-random(read);
-frac4:=200- read1-random(read);
-frac5:=200- read1-random(read);
-frac6:=200- read1-random(read);
-frac7:=200- read1-random(read);
-}
 frac1:=frac1 -read1-random(2);
 frac2:=frac2- read1-random(2);
 frac3:=frac3- read1-random(2);
@@ -1180,8 +1095,6 @@ frac4:=frac4- read1-random(2);
 frac5:=frac5- read1-random(2);
 frac6:=frac6- read1-random(2);
 frac7:=frac7- read1-random(2);
-
-
   Randomize;
       frac17:= frac1+frac2+frac3+frac4+frac5+frac6+frac7 ;
            frac17:=round(frac17/7);
@@ -1196,9 +1109,7 @@ frac7:=frac7- read1-random(2);
              frac13:=frac18-random(30);
              frac14:=frac18-random(30);
              frac15:=frac18-random(30);
-
                  frac19:=frac13+frac14+frac15;
-
                  frac16:=round(frac19/3)-round(30);
                  if frac1<0 then frac1:=0;
                  if frac2<0 then frac2:=0;
@@ -1232,12 +1143,7 @@ frac7:=frac7- read1-random(2);
           label20.caption:=inttostr(frac14);
  label21.caption:=inttostr(frac15);
      label22.caption:=inttostr(frac16);
-
-             frac16:=round(frac19/3)-round(30);
-
-  { ------------------------------}
-
-
+            frac16:=round(frac19/3)-round(30);
   Timer1.Enabled:=True; { <-- restart timer }
 end;
 
@@ -1247,7 +1153,6 @@ begin
  freq2.Allinterruptsenabled:=false;
  Application.OnHint:=Nil;
 end;
-
 
 procedure TFChart5.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
@@ -1273,25 +1178,20 @@ frac4:=200- read1-random(read);
 frac5:=200- read1-random(read);
 frac6:=200- read1-random(read);
 frac7:=200- read1-random(read);
-
  vbiofeedback := true;
  Randomize;
-
-
  Series1.Clear;
  Series2.Clear;
  Series3.Clear;
  Series4.Clear;
  Series5.Clear;
  Series6.Clear;
-
  Series1.FillSampleValues(20);
  Series2.FillSampleValues(20);
  Series3.FillSampleValues(20);
  Series4.FillSampleValues(20);
  Series5.FillSampleValues(20);
  Series6.FillSampleValues(20);
-
  Replay:=True;
  Timer1.Enabled:=True;
  ZCount:=0;
@@ -1300,7 +1200,6 @@ frac7:=200- read1-random(read);
  Z3:=0;
  Z4:=0;
  Z5:=0;
-
 end;
 
 procedure TFChart5.Button1Click(Sender: TObject);
@@ -1309,7 +1208,7 @@ var
 begin
 MyChrono.start;
 GBTerapiapersonalizada.Visible := False;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 randomize;
 snow := 1;
@@ -1334,13 +1233,10 @@ GProgreso.Refresh;
   pn22:=patform1.pn22;
   pname:=patform1.pname;
   if soc>250 then soc:=250;
-
-   {++++++++++++++++++++++++++++++++++++++++}
-
       read:=read+1;
       read1:=random(70)-round((soc-(pn22*4))/4);
       if read>200 then read:=180;
-           read2:=(read+random(10));
+      read2:=(read+random(10));
       read3:=round(soc/3);
       if read2>10+read3 then read1:=85;
       if read2>20+read3 then read1:=100;
@@ -1443,14 +1339,13 @@ TextCount:=1;
  Z4:=0;
  Z5:=0;
 rectificado := 70+Random(50);
-If rectificado > 100 Then Rectificado := 100;
+If rectificado > 100 Then Rectificado := 85+Random(15);
 LRectificado.caption := 'Rectificado | '+inttostr(rectificado);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+SubspaceActive2.Visible := False;
 MyChrono.stop;
 Sleep(1000);
-If (Rectificado < 85) and (CBTExtendida.Checked = True) Then Button1.Click;
 If (Rectificado < 85) and (CBAutomatico.Checked = True) Then Button1.Click;
-SubspaceActive2.Visible := False;
 If (Rectificado > 84) and (CBTExtendida.Checked = True) Then TerapiaExtendida();
 end;
 
@@ -1576,14 +1471,7 @@ If Patform1.RadioButton2.Checked = True Then Prostate1.Enabled := False;
         Series6.YValues.Value[ 0 ] := 1500 ;
 
           Time_Crono2.enabled := true;
-          DM.Bitacora('Carga Biofeedback');
           vvideo := false;
-
-          {
-          if id_terapia = 0 then
-          ChangingPulses(5555,555,55555,5,5,1,
-                        '11111111','11111111');
-                        }
            freq2.Allinterruptsenabled:=true;
           For I1:=0 to 4 do
                ISum:= ISum+IBuf1[I1]+IBuf2[I1]+IBuf3[I1]+IBuf4[I1]+IBuf5[I1];
@@ -1592,45 +1480,17 @@ If Patform1.RadioButton2.Checked = True Then Prostate1.Enabled := False;
                if res3>96 then
                   Fmain.recmain:=Fmain.recmain+1;
                Close;
-        // end;
-
          fred:=1;
          soc:=patform1.soc;
          pn22:=patform1.pn22;
          pname:=patform1.pname;
          ISUm:=0;
-          {
-          if id_terapia = 0 then
-         ChangingPulses(5555,500,700,2,1,1,
-                        '11111111','11111111');
-                        }
-         alarm3:=random(500);
-         if (alarm3=66 ) and (alarm4=10) then begin
-             showmessage('Respuesta de alarma.');
-             
-         end;
          For I1:=0 to 4 do
              ISum:= ISum+IBuf1[I1]+IBuf2[I1]+IBuf3[I1]+IBuf4[I1]+IBuf5[I1];
              if (ISum =0)or((OP_win2000=true)and(isum=120)) then   begin
-             //  SubspaceActive2.visible:=true;
                if res3>96 then
                  Fmain.recmain:=Fmain.recmain+1;
        end;
-end;
-
-procedure TFChart5.MediaPlayer1Notify(Sender: TObject);
-Var  MyString: string;
-begin
-  case MediaPlayer1.NotifyValue of
-    nvSuccessful : Begin
-                     MyString := 'Success!';
-                     if snow < 5 then
-                     MediaPlayer1.Play;
-                   end;
-    nvSuperseded : MyString := 'Superseded!';
-    nvAborted    : MyString := 'Aborted!';
-    nvFailure    : MyString := 'Failure!';
-  end;   
 end;
 
 procedure TFChart5.Biofeedback1Click(Sender: TObject);
@@ -1653,7 +1513,7 @@ end;
 
 procedure TFChart5.Brain1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando cerebro...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Brain1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Brain1.Enabled := False;
@@ -1661,7 +1521,7 @@ end;
 
 procedure TFChart5.Bone1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equlibrando sistema esquelético...';
+SubspaceActive2.Caption := 'Equlibrando sistema '+Bone1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Bone1.Enabled := False;
@@ -1669,14 +1529,14 @@ end;
 
 procedure TFChart5.Digestion1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de la digestión...';
+SubspaceActive2.Caption := 'Mejorando funciones de la '+Digestion1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Digestion1.Enabled := False;
 end;
 procedure TFChart5.Kidney1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Riñones...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Kidney1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Kidney1.Enabled := False;
@@ -1684,23 +1544,15 @@ end;
 
 procedure TFChart5.Lymph1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equlibrando sistema linfático...';
+SubspaceActive2.Caption := 'Equlibrando sistema '+Lymph1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Lymph1.Enabled := False;
 end;
 
-procedure TFChart5.Male1Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Genitales...';
-SubspaceActive2.visible := true;
-Button1.Click;
-If Rectificado >84 Then Male1.Enabled := False;
-end;
-
 procedure TFChart5.Female1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Senos...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Female1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Female1.Enabled := False;
@@ -1708,7 +1560,7 @@ end;
 
 procedure TFChart5.Sinus1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Senos nasales...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Sinus1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Sinus1.Enabled := False;
@@ -1716,7 +1568,7 @@ end;
 
 procedure TFChart5.Throat1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Garganta...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Throat1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Throat1.Enabled := False;
@@ -1724,7 +1576,7 @@ end;
 
 procedure TFChart5.Cholesterol1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando colesterol...';
+SubspaceActive2.Caption := 'Reparando '+Cholesterol1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Cholesterol1.Enabled := False;
@@ -1733,7 +1585,7 @@ end;
 
 procedure TFChart5.Diaphragm1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Diafragma...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Diaphragm1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Diaphragm1.Enabled := False;
@@ -1741,7 +1593,7 @@ end;
 
 procedure TFChart5.Abdominal1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Abdomen...';
+SubspaceActive2.Caption := Additional1.Caption+' '+Abdominal1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Abdominal1.Enabled := False;
@@ -1749,7 +1601,7 @@ end;
 
 procedure TFChart5.Heart1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Corazón...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Heart1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Heart1.Enabled := False;
@@ -1757,7 +1609,7 @@ end;
 
 procedure TFChart5.Allergy1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando alergias...';
+SubspaceActive2.Caption := 'Reparando '+Allergy1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Allergy1.Enabled := False;
@@ -1765,43 +1617,36 @@ end;
 
 procedure TFChart5.Knee1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Rodilla...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Knee1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
 end;
 procedure TFChart5.Shoulder1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Hombro...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Shoulder1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Shoulder1.Enabled := False;
 end;
 procedure TFChart5.Pain1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando dolor...';
+SubspaceActive2.Caption := 'Reparando '+Pain1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Pain1.Enabled := False;
 end;
 procedure TFChart5.InnerEar1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Oído interno...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+InnerEar1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then InnerEar1.Enabled := False;
 end;
 
-procedure TFChart5.Male2Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Próstata...';
-SubspaceActive2.visible := true;
-Button1.Click;
-end;
-
 procedure TFChart5.Liver1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Hígado...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Liver1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
@@ -1809,7 +1654,7 @@ end;
 
 procedure TFChart5.Pancreas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Páncreas...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Pancreas1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Pancreas1.Enabled := False;
@@ -1817,7 +1662,7 @@ end;
 
 procedure TFChart5.RelaxMind1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando concientización de sí mismo/a...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+RelaxMind1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then RelaxMind1.Enabled := False;
@@ -1825,7 +1670,7 @@ end;
 
 procedure TFChart5.Connection21Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando al Universo (Cosmos)...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+Connection21.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Connection21.Enabled := False;
@@ -1833,7 +1678,7 @@ end;
 
 procedure TFChart5.NerveConduction1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de la conducción nerviosa...';
+SubspaceActive2.Caption := 'Mejorando funciones de la '+NerveConduction1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then NerveConduction1.Enabled := False;
@@ -1841,7 +1686,7 @@ end;
 
 procedure TFChart5.SynapseStabilization1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de la sinapsis...';
+SubspaceActive2.Caption := 'Mejorando funciones de la '+SynapseStabilization1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SynapseStabilization1.Enabled := False;
@@ -1849,22 +1694,15 @@ end;
 
 procedure TFChart5.ATPActiveTransport1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones transporte activo de trifosfato adenosino - ATP...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+ATPActiveTransport1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
 end;
 
-procedure TFChart5.DiffusionStim1Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Equilibrando desordenes fibrosos...';
-SubspaceActive2.visible := true;
-Button1.Click;
-end;
-
 procedure TFChart5.Circulation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando sistema circulatorio...';
+SubspaceActive2.Caption := 'Reparando '+Circulation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Circulation1.Enabled := False;
@@ -1872,7 +1710,7 @@ end;
 
 procedure TFChart5.Woundrepair1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando heridas...';
+SubspaceActive2.Caption := 'Reparando '+Woundrepair1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Woundrepair1.Enabled := False;
@@ -1880,7 +1718,7 @@ end;
 
 procedure TFChart5.ReleaseDeepPotential1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando potencial profundo...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+ReleaseDeepPotential1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ReleaseDeepPotential1.Enabled := False;
@@ -1888,7 +1726,7 @@ end;
 
 procedure TFChart5.AdjustCranialBones1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Ajustando huesos craneales...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+AdjustCranialBones1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then AdjustCranialBones1.Enabled := False;
@@ -1896,14 +1734,14 @@ end;
 
 procedure TFChart5.WaterTreatmentActivation1min1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Limpiando ítem en bandeja de test...';
+SubspaceActive2.Caption := 'Limpiando ítem en bandeja de test'+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then WaterTreatmentActivation1min1.Enabled := False;
 end;
 procedure TFChart5.LearningDisability1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando inhabilidad de aprendizaje...';
+SubspaceActive2.Caption := 'Mejorando '+LearningDisability1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then LearningDisability1.Enabled := False;
@@ -1911,22 +1749,15 @@ end;
 
 procedure TFChart5.BrainIntrospection1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando introspección cerebral...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+BrainIntrospection1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then BrainIntrospection1.Enabled := False;
 end;
 
-procedure TFChart5.AutoColorTherapy1Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Liberando dolor psíquico...';
-SubspaceActive2.visible := true;
-Button1.Click;
-end;
-
 procedure TFChart5.PainTherapy1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando trauma físico...';
+SubspaceActive2.Caption := 'Reparando '+PainTherapy1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then PainTherapy1.Enabled := False;
@@ -1934,22 +1765,15 @@ end;
 
 procedure TFChart5.N1minTrivector1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando patrón trivectorial...';
+SubspaceActive2.Caption := 'Mejorando '+N1minTrivector1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then N1minTrivector1.Enabled := False;
 end;
 
-procedure TFChart5.SwimwiththeDolphins1Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Antienvejecimiento...';
-SubspaceActive2.visible := true;
-Button1.Click;
-end;
-
 procedure TFChart5.ReleasePhobias1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando fobias...';
+SubspaceActive2.Caption := 'Reparando '+ReleasePhobias1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ReleasePhobias1.Enabled := False;
@@ -1957,7 +1781,7 @@ end;
 
 procedure TFChart5.EstablishSpirituallink1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando lazos espirituales...';
+SubspaceActive2.Caption := 'Reparando '+EstablishSpirituallink1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then EstablishSpirituallink1.Enabled := False;
@@ -1970,7 +1794,7 @@ end;
 
 procedure TFChart5.UnconsciousInteraction1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando Pasado-Presente: Proyección...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+UnconsciousInteraction1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then UnconsciousInteraction1.Enabled := False;
@@ -1978,7 +1802,7 @@ end;
 
 procedure TFChart5.TrivectorStabilization1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando patrón trivectorial...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+TrivectorStabilization1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then TrivectorStabilization1.Enabled := False;
@@ -1986,7 +1810,7 @@ end;
 
 procedure TFChart5.SuperlearningStimulation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando circuitos de súper aprendizaje...';
+SubspaceActive2.Caption :=  RelaxationMethods1.Caption+' '+SuperlearningStimulation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SuperlearningStimulation1.Enabled := False;
@@ -1994,7 +1818,7 @@ end;
 
 procedure TFChart5.Auditorycallosumrepair1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del Corpus Callosum...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+Auditorycallosumrepair1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Auditorycallosumrepair1.Enabled := False;
@@ -2002,14 +1826,14 @@ end;
 
 procedure TFChart5.AutismADDrepair1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando autismo...';
+SubspaceActive2.Caption := 'Reparando '+AutismADDrepair1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then AutismADDrepair1.Enabled := False;
 end;
 procedure TFChart5.CorpusCallosumStability1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando Corpus Callosum...';
+SubspaceActive2.Caption := 'Mejorando '+CorpusCallosumStability1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then CorpusCallosumStability1.Enabled := False;
@@ -2017,728 +1841,15 @@ end;
 
 procedure TFChart5.SmallIntestine1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Intestino delgado...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+SmallIntestine1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SmallIntestine1.Enabled := False;
 end;
 
-procedure TFChart5.AddPiggyBackTherapies1Click(Sender: TObject);
-begin
-groupbox2.visible:=true;
-     oeg:=random(10);
-if oeg<5 then Edit1.text:= Edit1.text+ ' Disfunción en pulmones y regulación del oxígeno.';
-if oeg>5 then   Edit1.text:= Edit1.text+ ' Sistema inmunitario.';
-if testform1.pn2>3 then Edit1.text:= Edit1.text+ ' Sistema linfático.';
-if testform1.pn3>15 then Edit1.text:='Pulmones.';
-if testform1.pn8>5 then Edit1.text:= Edit1.text+ ' Pancreas';
-if testform1.pn12>10 then Edit1.text:= Edit1.text+ ' Hígado.';
-if testform1.pn7>9 then Edit1.text:= Edit1.text+ ' Sistema endocrino.';
-if testform1.pn5>10 then Edit1.text:= Edit1.text+ ' Dentadura.';
-if testform1.pn4>4 then Edit1.text:= Edit1.text+ ' Suprarrenales.';
-if testform1.pn10>3 then Edit1.text:= Edit1.text+ ' Hígado.';
-if testform1.pn19>4 then Edit1.text:= Edit1.text+ ' Cerebro.';
-
-     oeg:=random(125);
-if oeg=0 then Edit1.text:=Edit1.text+'  Conectado con: '+'Pulmones.';
-if oeg=1 then Edit1.text:=Edit1.text+' Conectado con: '+'Piel.';
-if oeg=2 then Edit1.text:=Edit1.text+' Conectado con: '+'Cerebro.';
-if oeg=3 then Edit1.text:=Edit1.text+' Conectado con: '+'Senos nasales.';
-if oeg=4 then Edit1.text:=Edit1.text+' Conectado con: '+'Estómago.';
-if oeg=5 then Edit1.text:=Edit1.text+' Conectado con: '+'Ojos.';
-if oeg=6 then Edit1.text:=Edit1.text+' Conectado con: '+'Intestinos.';
-if oeg=7 then Edit1.text:=Edit1.text+' Conectado con: '+'Pulmones.';
-if oeg=8 then Edit1.text:=Edit1.text+' Conectado con: '+'Estómago.';
-if oeg=9 then Edit1.text:=Edit1.text+' Conectado con: '+'Suprarrenales.';
-if oeg=10 then Edit1.text:=Edit1.text+' Conectado con: '+'Senos nasales.';
-if oeg=11 then Edit1.text:=Edit1.text+' Conectado con: '+'Emociones.';
-if oeg=12 then Edit1.text:=Edit1.text+' Conectado con: '+'Sangre.';
-if oeg=13 then Edit1.text:=Edit1.text+' Conectado con: '+'Sistema linfático.';
-if oeg=14 then Edit1.text:=Edit1.text+' Conectado con: '+'Dentadura.';
-if oeg=15 then Edit1.text:=Edit1.text+' Conectado con: '+'Formación reticular.';
-if oeg=16 then Edit1.text:=Edit1.text+' Conectado con: '+'Médula oblongata.';
-if oeg=17 then Edit1.text:=Edit1.text+' Conectado con: '+'Lóbulo frontal del cerebro.';
-if oeg=18 then Edit1.text:=Edit1.text+' Conectado con: '+'Lóbulo parietal del cerebro.';
-if oeg=19 then Edit1.text:=Edit1.text+' Conectado con: '+'Lóbulo occipital del cerebro.';
-if oeg=20 then Edit1.text:=Edit1.text+' Conectado con: '+'Lóbulo temporal del cerebro.';
-if oeg=21 then Edit1.text:=Edit1.text+' Conectado con: '+'Tiroides.';
-if oeg=22 then Edit1.text:=Edit1.text+' Conectado con: '+'Timo.';
-if oeg=23 then Edit1.text:=Edit1.text+' Conectado con: '+'Médula espinal.';
-if oeg=24 then Edit1.text:=Edit1.text+' Conectado con: '+'Sistema límbico.';
-if oeg=25 then Edit1.text:=Edit1.text+' Conectado con: '+'Circuitos de la memoria.';
-if oeg=26 then Edit1.text:=Edit1.text+' Conectado con: '+'Hipotálamo.';
-if oeg=27 then Edit1.text:=Edit1.text+' Conectado con: '+'Pineal.';
-if oeg=28 then Edit1.text:=Edit1.text+' Conectado con: '+'Pituitaria.';
-if oeg=29 then Edit1.text:=Edit1.text+' Conectado con: '+'Paratiroides.';
-if oeg=30 then Edit1.text:=Edit1.text+' Conectado con: '+'Sangre.';
-if oeg=31 then Edit1.text:=Edit1.text+' Conectado con: '+'Sistema linfático.';
-if oeg=32 then Edit1.text:=Edit1.text+' Conectado con: '+'Dentadura.';
-if oeg=33 then Edit1.text:=Edit1.text+' Conectado con: '+'Pulmones.';
-if oeg=34 then Edit1.text:=Edit1.text+' Conectado con: '+'Piel.';
-if oeg=35 then Edit1.text:=Edit1.text+' Conectado con: '+'Cerebro.';
-if oeg=36 then Edit1.text:=Edit1.text+' Conectado con: '+'Karma.';
-if oeg=37 then Edit1.text:=Edit1.text+' Conectado con: '+'Estómago.';
-if oeg=38 then Edit1.text:=Edit1.text+' Conectado con: '+'Karma.';
-if oeg=39 then Edit1.text:=Edit1.text+' Conectado con: '+'Intestinos.';
-if oeg=40 then Edit1.text:=Edit1.text+' Conectado con: '+'Formación reticular.';
-if oeg=41 then Edit1.text:=Edit1.text+' Conectado con: '+'Estómago.';
-if oeg=42 then Edit1.text:=Edit1.text+' Conectado con: '+'Suprarrenales.';
-if oeg=43 then Edit1.text:=Edit1.text+' Conectado con: '+'Formación reticular.';
-if oeg=44 then Edit1.text:=Edit1.text+' Conectado con: '+'Emociones.';
-if oeg=45 then Edit1.text:=Edit1.text+' Conectado con: '+'Sangre.';
-if oeg=46 then Edit1.text:=Edit1.text+' Conectado con: '+'Sistema linfático.';
-if oeg=47 then Edit1.text:=Edit1.text+' Conectado con: '+'Digestión / Disturbio en la absorción.' ;
-if oeg=48 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Sales en tejidos no específicos.' ;
-if oeg=49 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=50 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=51 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=52 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=53 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=54 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=55 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=56 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=57 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina E.' ;
-if oeg=58 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina E1.'  ;
-if oeg=59 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina E2.' ;
-if oeg=60 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina E3.'  ;
-if oeg=61 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina K1.'  ;
-if oeg=62 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina K3.' ;
-if oeg=63 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Toda la vitamina K.'  ;
-if oeg=64 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina U / Ubiquinona.' ;
-if oeg=65 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'CoQ6.' ;
-if oeg=66 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'CoQ7.' ;
-if oeg=67 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'CoQ8.' ;
-if oeg=68 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'CoQ9.'  ;
-if oeg=69 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'CoQ10.' ;
-if oeg=70 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Todos los CoQ.' ;
-if oeg=71 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Ciclo de la ubiquinona.'  ;
-if oeg=72 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina C.' ;
-if oeg=73 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Bioflavenoides.'  ;
-if oeg=74 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Rutina.'  ;
-if oeg=75 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acido hespárico.'  ;
-if oeg=76 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Tirosina.'  ;
-if oeg=77 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Tirosinasa.' ;
-if oeg=78 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina C ase.' ;
-if oeg=79 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acido ascórbico.'  ;
-if oeg=80 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina D.' ;
-if oeg=81 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina D1.'  ;
-if oeg=82 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina D2.'  ;
-if oeg=83 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina D3.'  ;
-if oeg=84 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina D4.'  ;
-if oeg=85 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina A.' ;
-if oeg=86 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Betacarotina.'  ;
-if oeg=87 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Aceite de pescado.'  ;
-if oeg=88 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Retinol.'  ;
-if oeg=89 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Precursores de la vitamina A.'  ;
-if oeg=90 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Vitamina A de cartílagos.' ;
-if oeg=91 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en general.' ;
-if oeg=92 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas reductoras de la oxidación.';
-if oeg=93 then Edit1.text:=Edit1.text+' | Deficiencia de: '+ 'Enzimas hidrolizantes en la digestión.';
-if oeg=94 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas fosforilación en el pensamiento.';
-if oeg=95 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas decarboxilasa en la respiración.';
-if oeg=96 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en la regulación de agua hidrolasa.';
-if oeg=97 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en la regulación del ADN.';
-if oeg=98 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-if oeg=99 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-if oeg=100 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=101 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=102 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=103 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=104 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=105 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=106 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=107 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=108 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=109 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=110 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=111 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=112 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=113 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=114 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=115 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=116 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en general.' ;
-if oeg=117 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas reductoras de la oxidación.';
-if oeg=118 then Edit1.text:=Edit1.text+' | Deficiencia de: '+ 'Enzimas hidrolizantes en la digestión.';
-if oeg=119 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas fosforilación en el pensamiento.';
-if oeg=120 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas decarboxilasa en la respiración.';
-if oeg=121 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en la regulación de agua hidrolasa.';
-if oeg=122 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Enzimas en la regulación del ADN.';
-if oeg>122 then Edit1.text:=Edit1.text+' | Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-
-oeg:=46+random(80);
-
-if oeg=47 then Edit2.text:=Edit2.text+' Conectado con: '+'Digestión / Disturbio en la absorción.' ;
-if oeg=48 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Sales en tejidos no específicos.' ;
-if oeg=49 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=50 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=51 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=52 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=53 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=54 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=55 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=56 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=57 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina E.' ;
-if oeg=58 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina E1.'  ;
-if oeg=59 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina E2.' ;
-if oeg=60 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina E3.'  ;
-if oeg=61 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina K1.'  ;
-if oeg=62 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina K3.' ;
-if oeg=63 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Toda la vitamina K.'  ;
-if oeg=64 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina U / Ubiquinona.' ;
-if oeg=65 then Edit2.text:=Edit2.text+' Deficiencia de: '+'CoQ6.' ;
-if oeg=66 then Edit2.text:=Edit2.text+' Deficiencia de: '+'CoQ7.' ;
-if oeg=67 then Edit2.text:=Edit2.text+' Deficiencia de: '+'CoQ8.' ;
-if oeg=68 then Edit2.text:=Edit2.text+' Deficiencia de: '+'CoQ9.'  ;
-if oeg=69 then Edit2.text:=Edit2.text+' Deficiencia de: '+'CoQ10.' ;
-if oeg=70 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Todos los CoQ.' ;
-if oeg=71 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Ciclo de la ubiquinona.'  ;
-if oeg=72 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina C.' ;
-if oeg=73 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Bioflavenoides.'  ;
-if oeg=74 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Rutina.'  ;
-if oeg=75 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acido hespárico.'  ;
-if oeg=76 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Tirosina.'  ;
-if oeg=77 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Tirosinasa.' ;
-if oeg=78 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina C ase.' ;
-if oeg=79 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acido ascórbico.'  ;
-if oeg=80 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina D.' ;
-if oeg=81 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina D1.'  ;
-if oeg=82 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina D2.'  ;
-if oeg=83 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina D3.'  ;
-if oeg=84 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina D4.'  ;
-if oeg=85 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina A.' ;
-if oeg=86 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Betacarotina.'  ;
-if oeg=87 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Aceite de pescado.'  ;
-if oeg=88 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Retinol.'  ;
-if oeg=89 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Precursores de la vitamina A.'  ;
-if oeg=90 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Vitamina A de cartílagos.' ;
-if oeg=91 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en general.' ;
-if oeg=92 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas reductoras de la oxidación.';
-if oeg=93 then Edit2.text:=Edit2.text+' Deficiencia de: '+ 'Enzimas hidrolizantes en la digestión.';
-if oeg=94 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas fosforilación en el pensamiento.';
-if oeg=95 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas decarboxilasa en la respiración.';
-if oeg=96 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en la regulación de agua hidrolasa.';
-if oeg=97 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en la regulación del ADN.';
-if oeg=98 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-if oeg=99 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-if oeg=100 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=101 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=102 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=103 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=104 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=105 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=106 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=107 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=108 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos generales.' ;
-if oeg=109 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos bajos.' ;
-if oeg=110 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos medios.' ;
-if oeg=111 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas relacionadas al aracadónico.'  ;
-if oeg=112 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de mielina.'  ;
-if oeg=113 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Todos los ácidos grasos en deficiencias nutricionales.'  ;
-if oeg=114 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos en las cadenas de carbonos altos.'  ;
-if oeg=115 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Acidos grasos relacionados con los procesos enzimáticos.'  ;
-if oeg=116 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en general.' ;
-if oeg=117 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas reductoras de la oxidación.';
-if oeg=118 then Edit2.text:=Edit2.text+' Deficiencia de: '+ 'Enzimas hidrolizantes en la digestión.';
-if oeg=119 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas fosforilación en el pensamiento.';
-if oeg=120 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas decarboxilasa en la respiración.';
-if oeg=121 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en la regulación de agua hidrolasa.';
-if oeg=122 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Enzimas en la regulación del ADN.';
-if oeg>122 then Edit2.text:=Edit2.text+' Deficiencia de: '+'Isomeros de la mutasa en la transmutación de enzimas.';
-
-if testform1.pn2>2 then edit1.text:=edit1.text+' Toxinas de las medicaciones alopáticas.';
-if testform1.pn3>20 then edit1.text:=edit1.text+' Tabaquismo.';
-if testform1.pn8>10 then edit1.text:=edit1.text+' Cafeína o alcaloide.';
-if testform1.pn12>10 then edit1.text:=edit1.text+' Radiación.';
-if testform1.pn7>9 then edit1.text:=edit1.text+' Toxinas por el estrés.t';
-if testform1.pn5>6 then edit1.text:=edit1.text+' Mercurio.';
-if testform1.pn4>2 then edit1.text:=edit1.text+' Toxinas de esteroides.';
-
-   DM.QueryFilter.Active:=False;
-  QString:='Solvent';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
- Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-  Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-    DM.QueryFilter.prior;
-   Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-
-  QString:='toxic';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-
- DM.QueryFilter.Active:=False;
- dis:=round(soc/(3.5) );
-if dis<2 then  Edit1.text:=Edit1.text+' Perspiración, cera en los oídos, complexión ruda.';
-if dis<2 then Edit1.text:=Edit1.text+' Búsqueda total de síntomas mentales, físicos y emocionales.';
-if dis=16 then Edit1.text:=Edit1.text+' Furúnculoa, eritema, dermatitis, eczema, piodermias, etc.';
-if dis=16 then Edit1.text:=Edit1.text+' Simple condición física general o patrón mental general.';
-if dis=31 then  Edit1.text:=Edit1.text+' Ateromas, verrugas, keratosis, dolores de cabeza, etc.';
-if dis=46 then Edit1.text:=Edit1.text+' Los miasmas dominan la condición actual.';
-if dis=46 then  Edit1.text:=Edit1.text+' Tatuajes, pigmentaciones, etc.';
-if dis=46 then Edit1.text:=Edit1.text+' Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=61 then  Edit1.text:=Edit1.text+' Dermataosis, lupus vulgaris, leprosis.';
-if dis=61 then  Edit1.text:=Edit1.text+' Método de secuencia de remedios o síntomas funcionales de cambios funcionales.';
-if dis=76 then Edit1.text:=Edit1.text+' Ulcus rodens, basalioma.';
-if dis=76 then Edit1.text:=Edit1.text+' Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=2 then Edit1.text:=Edit1.text+' Saliva, resfríos, catarros, etc.';
-if dis=2 then Edit1.text:=Edit1.text+' Síntomas inflamatorios localas más confirmación de síntomas generales.';
-if dis=17 then Edit1.text:=Edit1.text+' Estomatitis, rinitis, aplastamientos.';
-if dis=17 then Edit1.text:=Edit1.text+' Síntomas inflamatorios locales más síntomas generales o mentales.';
-if dis=32 then Edit1.text:=Edit1.text+' Pólipos nasales, quistes.';
-if dis=32 then Edit1.text:=Edit1.text+' Síntomas físicos generales con síntomas peculiares comunes o mentales.';
-if dis=47 then Edit1.text:=Edit1.text+' Leucoplaquia, etc.';
-if dis=47 then Edit1.text:=Edit1.text+' Funciones de sistemas de órganos localizados, síntomas locales simples y drenaje.';
-if dis=62 then Edit1.text:=Edit1.text+' Rinitis atrófica crónica.';
-if dis=62 then Edit1.text:=Edit1.text+' Síntomas funcionales con cambios multifuncionales.';
-if dis=77 then Edit1.text:=Edit1.text+' Cáncer de nariz y boca.';
-if dis=77 then Edit1.text:=Edit1.text+' Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=3 then Edit1.text:=Edit1.text+' Secreción celular neuro-hormonal.';
-if dis=3 then Edit1.text:=Edit1.text+' Prescripción total, búsqueda de síntomas peculiares emocionales, mentales y físicos.';
-if dis=18 then Edit1.text:=Edit1.text+' Poliomielitis en estado febril, herpes zoster.';
-if dis=18 then Edit1.text:=Edit1.text+' Síntomas de una condición específica con confirmación de síntomas peculiares.';
-if dis=33 then Edit1.text:=Edit1.text+' Neuromas benignos, neuralgias.';
-if dis=33 then Edit1.text:=Edit1.text+' Causa aetiológica única, búsqueda de la causa más importante de la condición.';
-if dis=48 then Edit1.text:=Edit1.text+' Migrañas, contracciones nerviosas de los ojos, virus, infección por polio u otros.';
-if dis=48 then Edit1.text:=Edit1.text+' Miasmas concurrentes o discrasias con remedios simples + drenaje.';
-if dis=63 then Edit1.text:=Edit1.text+' Paresis, esclerosis, atrofía del nervio óptico, siringoma.';
-if dis=63 then Edit1.text:=Edit1.text+' Método de capas Eizayaga + nosodes + sarcodes.';
-if dis=78 then Edit1.text:=Edit1.text+' Neuroma, gliosarcoma.';
-if dis=78 then Edit1.text:=Edit1.text+' Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=4 then Edit1.text:=Edit1.text+' Secreción de las células neuro-hormonales.';
-if dis=4 then Edit1.text:=Edit1.text+' Prescripción total, búsqueda de síntomas emocionales, metales y físicos.';
-if dis=19 then Edit1.text:=Edit1.text+' Neuralgia, herpes, afección en el nervio vago o nervio craneal.';
-if dis=19 then Edit1.text:=Edit1.text+' Síntomas locales con confirmación de síntomas mentales o generales.';
-if dis=34 then Edit1.text:=Edit1.text+' Neuromas benignos, inflamación del nervio vago, condición craneal.';
-if dis=34 then Edit1.text:=Edit1.text+' Prescripción funcional simple, búsqueda de un cambio único en la función de los síntomas.';
-if dis=49 then Edit1.text:=Edit1.text+' Asma, úlceras ventriculares o en el duodeno.';
-if dis=49 then Edit1.text:=Edit1.text+' Método Sing, miasmas concurrentes y discrasias con remedios simples + drenaje.';
-if dis=64 then Edit1.text:=Edit1.text+' Neurofibromatosis, etc.';
-if dis=64 then Edit1.text:=Edit1.text+' Miasmas complejos (Sing) + apoyo local.';
-if dis=79 then Edit1.text:=Edit1.text+' Gliosarcoma, etc.';
-if dis=79 then Edit1.text:=Edit1.text+' Medicación y terapia de capas inmediata basada en los antídotos para la medicación.';
-if dis=5 then Edit1.text:=Edit1.text+' Secreción de vesícula biliar, estercobilina CO2, intestinos intoxicados.';
-if dis=5 then Edit1.text:=Edit1.text+' Síntomas psico-emocionales con apoyo a órganos.';
-if dis=20 then Edit1.text:=Edit1.text+' Faringitis, laringitis, colitis, enteritis.';
-if dis=20 then Edit1.text:=Edit1.text+' Síntomas de inflamación aguda + confirmación general de síntomas.';
-if dis=35 then Edit1.text:=Edit1.text+' Pólipos de las membranas mucosas, constipación, megacolon.';
-if dis=35 then Edit1.text:=Edit1.text+' Prescripción funcional simple.';
-if dis=50 then Edit1.text:=Edit1.text+' Asma, ronquera, úlcera ventricular, duodeno, úlcera venerea (chancro), pre-cáncer.';
-if dis=50 then Edit1.text:=Edit1.text+' Método Sing, miasmas concurrentes y discrasias con remedios simples + drenaje.';
-if dis=65 then Edit1.text:=Edit1.text+' Tuberculosis pulmonar e intestinal, toxicidad.';
-if dis=65 then Edit1.text:=Edit1.text+' Síntomas funcionales de cambios funcionales + drenaje local.';
-if dis=80 then Edit1.text:=Edit1.text+' Cáncer de la laringe, estómago, intestinos, recto.';
-if dis=80 then Edit1.text:=Edit1.text+' Antídoto para medicaciones alópatas actuales, entonces método de capas Eizayaga.';
-if dis=6 then Edit1.text:=Edit1.text+' Bilis, jugos pancreáticos, hormonas tiroides.';
-if dis=6 then Edit1.text:=Edit1.text+' Terapia psico-emocional con apoyo a órganos.';
-if dis=21 then Edit1.text:=Edit1.text+' Parotitis, neumonía, hepatitis, colangitis.';
-if dis=21 then Edit1.text:=Edit1.text+' Bloqueo por miasmas múltiples + drenaje de órganos.';
-if dis=36 then Edit1.text:=Edit1.text+' Silicosis, expansión de la tiroides, cálculos vesiculares.';
-if dis=36 then Edit1.text:=Edit1.text+' Prescripción funcional simple, búsqueda de un cambio del funcionamiento de los síntomas.';
-if dis=51 then Edit1.text:=Edit1.text+' Condición tóxica del hígado, infiltración pulmonar, condición iatrogénica.';
-if dis=51 then Edit1.text:=Edit1.text+' Síntomas físicos generales + apoyo local y drenaje.';
-if dis=66 then Edit1.text:=Edit1.text+' Cirrosis de hígado, hipertiroidismo.';
-if dis=66 then Edit1.text:=Edit1.text+' Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=81 then Edit1.text:=Edit1.text+' Cáncer de hígado, vesícula biliar, páncreas, tiroides o pulmones.';
-if dis=81 then Edit1.text:=Edit1.text+' Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=7 then Edit1.text:=Edit1.text+' Sustancia interestitial, alergias, ácidos hialónicos.';
-if dis=7 then Edit1.text:=Edit1.text+' Terapia psico-emocional con apoyo a órganos.';
-if dis=22 then Edit1.text:=Edit1.text+' Abcesos, flema, carbuncos, inflamación aguda del tejido conectivo.';
-if dis=22 then Edit1.text:=Edit1.text+' Drenaje de órganos locales individualmente.';
-if dis=37 then Edit1.text:=Edit1.text+' Obesidad, gota, edemas, hinchazón después de las comidas.';
-if dis=37 then Edit1.text:=Edit1.text+' Prescripción funcional simple + cambio de dieta / estilo de vida.';
-if dis=52 then Edit1.text:=Edit1.text+' Edemas, inflamación, elefantitis, virus de la influenza.';
-if dis=52 then Edit1.text:=Edit1.text+' Remedio para la condición local + confirmación general de síntomas.';
-if dis=67 then Edit1.text:=Edit1.text+' Escleroderma, cachexia, malnutrición, desgaste, labia dilatada.';
-if dis=67 then Edit1.text:=Edit1.text+' Método de capas Eizayaga basado en la reversión de la supresión por métodos alópatas.';
-if dis=82 then Edit1.text:=Edit1.text+' Sarcoma en varios lugares.';
-if dis=82 then Edit1.text:=Edit1.text+' Método de capas Eizayaga + apoyo a los órganos más vulnerables.';
-if dis=8 then Edit1.text:=Edit1.text+' Efecto de haematopoeiesis (desarrollo de las células de la sangre).';
-if dis=8 then Edit1.text:=Edit1.text+' Terapia psico-emocional con apoyo a órganos.';
-if dis=23 then Edit1.text:=Edit1.text+' Osteomielitis, inflamción de la médula espinal.';
-if dis=23 then Edit1.text:=Edit1.text+' Bloqueos por miasmas múltiples y drenaje de órganos, condición iatrogénica.';
-if dis=38 then Edit1.text:=Edit1.text+' Exostosis, huesos estribados u otros crecimientos anormales de los huesos, condición iatrogénica.';
-if dis=38 then Edit1.text:=Edit1.text+' Terapias localizadas, enfoque en el estado de la condición.';
-if dis=53 then Edit1.text:=Edit1.text+' Osteomalacia, degeneración de huesos o ablandamiento.';
-if dis=53 then Edit1.text:=Edit1.text+' Terapias localizadas, enfoque en los síntomas de la condición.';
-if dis=68 then Edit1.text:=Edit1.text+' Espondilitis, inflamación de la columna vertebral.';
-if dis=68 then Edit1.text:=Edit1.text+' Capas formal Eizayaga + buena nutrición.';
-if dis=83 then Edit1.text:=Edit1.text+' Cáncer de huesos.';
-if dis=83 then Edit1.text:=Edit1.text+' Capas formal Eizayaga + apoyo a órganos y tejidos.';
-if dis=9 then Edit1.text:=Edit1.text+' Liberación de la menstruación, formación de anticuerpos.';
-if dis=9 then Edit1.text:=Edit1.text+' Síntomas generales + drenaje de órganos más significativos.';
-if dis=24 then Edit1.text:=Edit1.text+' Endocarditis, fiebre tifoidea, sepsia, embolismo.';
-if dis=24 then Edit1.text:=Edit1.text+' Alternación de los dos mejores remedios indicados.';
-if dis=39 then Edit1.text:=Edit1.text+' Varices, venas varicosas, trombi esclerosis.';
-if dis=39 then Edit1.text:=Edit1.text+' Causas terapéuticas localizadas.';
-if dis=54 then Edit1.text:=Edit1.text+' Angina pectorial, miocarditis.';
-if dis=54 then Edit1.text:=Edit1.text+' Posibles aetiologías simples, búsqueda de varias causas recientes o pasadas.';
-if dis=69 then Edit1.text:=Edit1.text+' Infarto micardial, infección del corazón, anemia perniciosa.';
-if dis=69 then Edit1.text:=Edit1.text+' Capas formal Eizayaga + posible apoyo a órganos.';
-if dis=84 then Edit1.text:=Edit1.text+' Leucemia mieloide, angiosarcoma, afección iatrogénica.';
-if dis=84 then Edit1.text:=Edit1.text+' Terapia miasmiatica + apoyo al órgano más vulnerable.';
-if dis=10 then Edit1.text:=Edit1.text+' Formación linfática y anticuerpos, afección iatrogénica.';
-if dis=10 then Edit1.text:=Edit1.text+' Drenaje de los órganos significativos.';
-if dis=25 then Edit1.text:=Edit1.text+' Amigdalitis, apendicitis, adenoides.';
-if dis=25 then Edit1.text:=Edit1.text+' Prescripción simple aguda o alternación de los dos mejores remedios indicados.';
-if dis=40 then Edit1.text:=Edit1.text+' Inflamación de glándulas linfáticas, afección iatrogénica.';
-if dis=40 then Edit1.text:=Edit1.text+' Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=55 then Edit1.text:=Edit1.text+' Linfatismo, congestión linfática, toxicidad, afección iatrogénica.';
-if dis=55 then Edit1.text:=Edit1.text+' Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=70 then Edit1.text:=Edit1.text+' Linfogranulomatosis, afección iatrogénica.';
-if dis=70 then Edit1.text:=Edit1.text+' Capas formales Eizayaga basado en afección de lesión de capa y síntomas primero.';
-if dis=85 then Edit1.text:=Edit1.text+' Linfosarcoma, leucemia linfática.';
-if dis=85 then Edit1.text:=Edit1.text+' Síntomas degenerativos de lesión de tejido + drenaje local de órganos y apoyo.';
-if dis=11 then Edit1.text:=Edit1.text+' Fluído sinovial, bilis, orina.';
-if dis=11 then Edit1.text:=Edit1.text+' Drenaje de los órganos significativos.';
-if dis=26 then Edit1.text:=Edit1.text+' Poliartritis, afección iagrogénica.';
-if dis=26 then Edit1.text:=Edit1.text+' Miasmas múltiples + cambio de dieta / estilo de vida.';
-if dis=41 then Edit1.text:=Edit1.text+' Hidropesía, fatiga, afección iatrogénica.';
-if dis=41 then Edit1.text:=Edit1.text+' Procesos terapéuticos localizados, enfoque en el estado de la afección.';
-if dis=56 then Edit1.text:=Edit1.text+' Hidrocéfalo, afección iatrogénica.';
-if dis=56 then Edit1.text:=Edit1.text+' Aetiologías múltiples, búsqueda de las diversas causas recientes o anteriores.';
-if dis=71 then Edit1.text:=Edit1.text+' Coxartrosis, artritis de la cadera.';
-if dis=71 then Edit1.text:=Edit1.text+' Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero.';
-if dis=86 then Edit1.text:=Edit1.text+' Condriosarcoma, tumor de cartílago.';
-if dis=86 then Edit1.text:=Edit1.text+' Síntomas de lesión degenerativa.';
-if dis=12 then Edit1.text:=Edit1.text+' Orina y productos desechados metabolicamente, afección iatrogénica.';
-if dis=12 then Edit1.text:=Edit1.text+' Drenaje de los órganos significativos.';
-if dis=27 then Edit1.text:=Edit1.text+' Cistitis, pielitis, nefritis, inflamación de riñones.';
-if dis=27 then Edit1.text:=Edit1.text+' Síntomas de inflamación + confirmación de síntomas generales.';
-if dis=42 then Edit1.text:=Edit1.text+' Hipertrofia de próstata, infección de riñones, cálculos renales.';
-if dis=42 then Edit1.text:=Edit1.text+' Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=57 then Edit1.text:=Edit1.text+' Albuminuria, hidronefrosis, afección iatrogénica.';
-if dis=57 then Edit1.text:=Edit1.text+' Aetiologías secuenciales. Buscar secuencia de causas históricas.';
-if dis=72 then Edit1.text:=Edit1.text+' Nefritis, atrofia renal.';
-if dis=72 then Edit1.text:=Edit1.text+' Capas formales Eizayaga basado en lesión de capa - síntoma de afección primero + apoyo a órganos.';
-if dis=87 then Edit1.text:=Edit1.text+' Cáncer de riñones, afección iatrogénica.';
-if dis=87 then Edit1.text:=Edit1.text+' Síntomas de lesión degenerativa + apoyo local de órganos.';
-if dis=13 then Edit1.text:=Edit1.text+' Secreción de membranas serosas.';
-if dis=13 then Edit1.text:=Edit1.text+' Métodos generales físicos simples.';
-if dis=28 then Edit1.text:=Edit1.text+' Pleuritis, pericarditis, peritonitis.';
-if dis=28 then Edit1.text:=Edit1.text+' Alternación de los dos mejores remedios indicados.';
-if dis=43 then Edit1.text:=Edit1.text+' Exudación pleural, ascitis.';
-if dis=43 then Edit1.text:=Edit1.text+' Afección terapeutica, simple o general, individualización de una afección común.';
-if dis=58 then Edit1.text:=Edit1.text+' Pre-cáncer de membranas serosas.';
-if dis=58 then Edit1.text:=Edit1.text+' Remedio miasmiatico + drenaje de órganos significativos.';
-if dis=73 then Edit1.text:=Edit1.text+' Tuberculosis de membranas serosas.';
-if dis=73 then Edit1.text:=Edit1.text+' Método de tejidos lesionados Eizayaga + miasmas + apoyo a órganos.';
-if dis=88 then Edit1.text:=Edit1.text+' Cáncer de tejido seroso, afección iatrogénica.';
-if dis=88 then Edit1.text:=Edit1.text+' Método de tejidos lesionados Eizayaga + apoyo a órganos.';
-if dis=14 then Edit1.text:=Edit1.text+' Menstruación, esperma, ovulación, fluído prostático.';
-if dis=14 then Edit1.text:=Edit1.text+' Prescripción simple psico-emocional + apoyo a órganos o sarcodes / nosodes.';
-if dis=29 then Edit1.text:=Edit1.text+' Anexitis, metritis, ovaritis, inflamación de los canales de falopio, prostatitis.';
-if dis=29 then Edit1.text:=Edit1.text+' Síntomas de inflamación local + miasmas + confirmación de síntomas generales.';
-if dis=44 then Edit1.text:=Edit1.text+' Miomas, prostatitis, quistes, quistes en ovarios.';
-if dis=44 then Edit1.text:=Edit1.text+' Afección terapéutica o general y simple + miasmas + apoyo a órganos.';
-if dis=59 then Edit1.text:=Edit1.text+' Pre-cáncer de órganos reproductivos.';
-if dis=59 then Edit1.text:=Edit1.text+' Miasmas + constitucionales + apoyo a órganos.';
-if dis=74 then Edit1.text:=Edit1.text+' Impotencia, esteliridad, frigidez.';
-if dis=74 then Edit1.text:=Edit1.text+' Miasmas + constitucionales + drenaje.';
-if dis=89 then Edit1.text:=Edit1.text+' Cáncer de órganos reproductivos, afección iatrogénica.';
-if dis=89 then Edit1.text:=Edit1.text+' Tejidos lesionados Eizayaga + nosodes + sarcodes.';
-if dis=15 then Edit1.text:=Edit1.text+' Acido láctico, andrógenos, liberación de oxígeno.';
-if dis=15 then Edit1.text:=Edit1.text+' Similitud general simple con síntomas psico-emocionales confirmados.';
-if dis=30 then Edit1.text:=Edit1.text+' Reumatismo (músculos), miositis.';
-if dis=30 then Edit1.text:=Edit1.text+' Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=45 then Edit1.text:=Edit1.text+' Reumatismo progresivo, afección iatrogénica.';
-if dis=45 then Edit1.text:=Edit1.text+' Constitucionales + sarcodes + cambio de dieta / estilo de vida.';
-if dis=60 then Edit1.text:=Edit1.text+' Músculos inflamados debido a una deposición de calcio.';
-if dis=60 then Edit1.text:=Edit1.text+' Síntomas locales + confirmación general + sarcodes.';
-if dis=75 then Edit1.text:=Edit1.text+' Distrofia muscular, afección iatrogénica.';
-if dis=75 then Edit1.text:=Edit1.text+' Miasma múltiple (método Sing) + sarcodes + nosodes + apoyo nutricional.';
-if dis>89 then Edit1.text:=Edit1.text+' Músculo sarcoma o músculo degenerado y/o afección de tejido conectivo.';
-if dis>89 then Edit1.text:=Edit1.text+' Capa de lesión eizayaga + nosodes + sarcodes + apoyo nutricional.';
-if pn2>0 then  Edit1.text:=Edit1.text+' Medicaciones alopáticas.';
-if pn3>10 then  Edit1.text:=Edit1.text+' Tabaquismo.';
-if pn4>0 then Edit1.text:=Edit1.text+' Supresión alopática.';
-if pn8>5 then  Edit1.text:=Edit1.text+' Uso del azúcar.';
-if pn12>0 then  Edit1.text:=Edit1.text+' Toxicidad.';
-if pn7>8 then  Edit1.text:=Edit1.text+' Estrés.';
-if pn5>4 then  Edit1.text:=Edit1.text+' Metales pesados.';
-    oeg:=random(110);
-if oeg=0 then Edit4.text:=Edit4.text+'  EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then Edit4.text:=Edit4.text+'  BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then Edit4.text:=Edit4.text+' | BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then Edit4.text:=Edit4.text+'  BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then Edit4.text:=Edit4.text+'  SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then Edit4.text:=Edit4.text+'  ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then Edit4.text:=Edit4.text+'  PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then Edit4.text:=Edit4.text+'  REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then Edit4.text:=Edit4.text+'  REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then Edit4.text:=Edit4.text+'  DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then Edit4.text:=Edit4.text+'  DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then Edit4.text:=Edit4.text+'  EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then Edit4.text:=Edit4.text+'  EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then Edit4.text:=Edit4.text+'  AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then Edit4.text:=Edit4.text+'  PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then Edit4.text:=Edit4.text+'  AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then Edit4.text:=Edit4.text+'  CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then Edit4.text:=Edit4.text+'  CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then Edit4.text:=Edit4.text+'  CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then Edit4.text:=Edit4.text+'  SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then Edit4.text:=Edit4.text+'  ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then Edit4.text:=Edit4.text+'  RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then Edit4.text:=Edit4.text+'  POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then Edit4.text:=Edit4.text+'  SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then Edit4.text:=Edit4.text+'  AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then Edit4.text:=Edit4.text+'  AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then Edit4.text:=Edit4.text+'  AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then Edit4.text:=Edit4.text+'  AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then Edit4.text:=Edit4.text+'  BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then Edit4.text:=Edit4.text+'  BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then Edit4.text:=Edit4.text+'  BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then Edit4.text:=Edit4.text+'  AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then Edit4.text:=Edit4.text+' METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then Edit4.text:=Edit4.text+' METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then Edit4.text:=Edit4.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then Edit4.text:=Edit4.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then Edit4.text:=Edit4.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then Edit4.text:=Edit4.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then Edit4.text:=Edit4.text+' INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then Edit4.text:=Edit4.text+' INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then Edit4.text:=Edit4.text+' LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then Edit4.text:=Edit4.text+' LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then Edit4.text:=Edit4.text+' CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then Edit4.text:=Edit4.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then Edit4.text:=Edit4.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then Edit4.text:=Edit4.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then Edit4.text:=Edit4.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then Edit4.text:=Edit4.text+' APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then Edit4.text:=Edit4.text+' NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then Edit4.text:=Edit4.text+' NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then Edit4.text:=Edit4.text+' NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then Edit4.text:=Edit4.text+' NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then Edit4.text:=Edit4.text+' NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then Edit4.text:=Edit4.text+' INFLAMACION CRONICA | Debido a una función anormal neurofila, fármacos anti-inflamatorios esp. los corticosteroides, pobre riego sanguíneo, pobre nutrición general.';
-if oeg=61 then Edit4.text:=Edit4.text+' INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then Edit4.text:=Edit4.text+' INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then Edit4.text:=Edit4.text+' INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then Edit4.text:=Edit4.text+' PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then Edit4.text:=Edit4.text+' HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then Edit4.text:=Edit4.text+' INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then Edit4.text:=Edit4.text+' MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then Edit4.text:=Edit4.text+' NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then Edit4.text:=Edit4.text+' NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then Edit4.text:=Edit4.text+' NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then Edit4.text:=Edit4.text+' ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then Edit4.text:=Edit4.text+' ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then Edit4.text:=Edit4.text+' ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then Edit4.text:=Edit4.text+' ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then Edit4.text:=Edit4.text+' ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then Edit4.text:=Edit4.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, Inmune supresión.';
-if oeg=92 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then Edit4.text:=Edit4.text+' HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then Edit4.text:=Edit4.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then Edit4.text:=Edit4.text+' ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then Edit4.text:=Edit4.text+' ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then Edit4.text:=Edit4.text+' INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then Edit4.text:=Edit4.text+' DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then Edit4.text:=Edit4.text+' LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then Edit4.text:=Edit4.text+' NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then Edit4.text:=Edit4.text+' NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg>108 then Edit4.text:=Edit4.text+' NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
-
-    oeg:=random(110);
-if oeg=0 then Edit1.text:=Edit1.text+' EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then Edit1.text:=Edit1.text+' BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then Edit1.text:=Edit1.text+' BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then Edit1.text:=Edit1.text+' BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then Edit1.text:=Edit1.text+' SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then Edit1.text:=Edit1.text+' ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then Edit1.text:=Edit1.text+' PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then Edit1.text:=Edit1.text+' REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then Edit1.text:=Edit1.text+' REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then Edit1.text:=Edit1.text+' DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then Edit1.text:=Edit1.text+' DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then Edit1.text:=Edit1.text+' EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then Edit1.text:=Edit1.text+' EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then Edit1.text:=Edit1.text+' AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then Edit1.text:=Edit1.text+' PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then Edit1.text:=Edit1.text+' AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then Edit1.text:=Edit1.text+' CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then Edit1.text:=Edit1.text+' CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then Edit1.text:=Edit1.text+' CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then Edit1.text:=Edit1.text+' SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then Edit1.text:=Edit1.text+' ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then Edit1.text:=Edit1.text+' RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then Edit1.text:=Edit1.text+' POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then Edit1.text:=Edit1.text+' SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then Edit1.text:=Edit1.text+' BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then Edit1.text:=Edit1.text+' BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then Edit1.text:=Edit1.text+' BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then Edit1.text:=Edit1.text+' METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then Edit1.text:=Edit1.text+' METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then Edit1.text:=Edit1.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then Edit1.text:=Edit1.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then Edit1.text:=Edit1.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then Edit1.text:=Edit1.text+' LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then Edit1.text:=Edit1.text+' INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then Edit1.text:=Edit1.text+' INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then Edit1.text:=Edit1.text+' LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then Edit1.text:=Edit1.text+' LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then Edit1.text:=Edit1.text+' CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then Edit1.text:=Edit1.text+' AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then Edit1.text:=Edit1.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then Edit1.text:=Edit1.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then Edit1.text:=Edit1.text+' INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then Edit1.text:=Edit1.text+' APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then Edit1.text:=Edit1.text+' NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then Edit1.text:=Edit1.text+' NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then Edit1.text:=Edit1.text+' NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then Edit1.text:=Edit1.text+' NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then Edit1.text:=Edit1.text+' NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then Edit1.text:=Edit1.text+' INFLAMACION CRONICA | Debido a una función anormal neurofila, fármacos anti-inflamatorios esp. los corticosteroides, pobre riego sanguíneo, pobre nutrición general.';
-if oeg=61 then Edit1.text:=Edit1.text+' INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then Edit1.text:=Edit1.text+' INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then Edit1.text:=Edit1.text+' INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then Edit1.text:=Edit1.text+' PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then Edit1.text:=Edit1.text+' HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then Edit1.text:=Edit1.text+' INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then Edit1.text:=Edit1.text+' MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then Edit1.text:=Edit1.text+' NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then Edit1.text:=Edit1.text+' NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then Edit1.text:=Edit1.text+' NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then Edit1.text:=Edit1.text+' ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then Edit1.text:=Edit1.text+' ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then Edit1.text:=Edit1.text+' ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then Edit1.text:=Edit1.text+' ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then Edit1.text:=Edit1.text+' ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then Edit1.text:=Edit1.text+' HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, Inmune supresión.';
-if oeg=92 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then Edit1.text:=Edit1.text+' HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then Edit1.text:=Edit1.text+' METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then Edit1.text:=Edit1.text+' ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then Edit1.text:=Edit1.text+' ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then Edit1.text:=Edit1.text+' INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then Edit1.text:=Edit1.text+' DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then Edit1.text:=Edit1.text+' LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then Edit1.text:=Edit1.text+' NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then Edit1.text:=Edit1.text+' NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg>108 then Edit1.text:=Edit1.text+' NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
-  QString:='solvent';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-Edit2.text:=Edit2.text+','+DM.QueryFilterName.Value;
-  QString:='ALR';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.First;
-  DM.QueryFilter.Last;
-  Edit3.text:=Edit3.text+','+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-   alr11:= DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-if alr11<>DM.QueryFilterName.Value then Edit3.text:=Edit3.text+','+DM.QueryFilterName.Value;
-if alr11=DM.QueryFilterName.Value then begin
- oeg:=random(6);
-if oeg<3 then Edit3.text:=Edit3.text+', azúcar refinada.';
-if oeg=3 then Edit3.text:=Edit3.text+', granos no específicos.';
-if oeg=4 then Edit3.text:=Edit3.text+', toxinas de sí mismo, ácaros.';
-if oeg>3 then Edit3.text:=Edit3.text+', pólen no específico.';
-end;
-Edit3.text:=Edit3.text+','+DM.QueryFilterName.Value;
-end;
-
-procedure TFChart5.Button14Click(Sender: TObject);
-begin
-edit1.text:='Nosodes:';
-edit2.text:='Isode:';
-edit3.text:='Alersode:';
-edit4.text:='Síntoma:';
-edit5.text:='Nutrición:';
-Edit6.text:='Clásicos o herbales:';
-end;
-
 procedure TFChart5.Fundirconciencias1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando cuadrantes...';
+SubspaceActive2.Caption :=RelaxationMethods1.Caption+' '+Fundirconciencias1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Fundirconciencias1.Enabled := False;
@@ -2754,7 +1865,7 @@ procedure TFChart5.Eleccininconcientedeterapia1Click(Sender: TObject);
 Var R : Integer;
 begin
   Randomize;
-  R:=Random(119);
+  R:=Random(104);
   Case R of
 1 : Corazn2.Click;
 2 : Estmago1.Click;
@@ -2804,121 +1915,68 @@ begin
 46 : VasoGobernador8.Click;
 47 : Vejiga8.Click;
 48 : VesculaBiliar8.Click;
-//49 : .Click;
-//50 : Corazn5.Click;
-//51 : Estmago4.Click;
-//52 : Hgado4.Click;
-//53 : IntestinoDelgado7.Click;
-//54 : IntestinoGrueso7.Click;
-{55 : MaestrodelCoraznoPericardio7.Click;
-56 : Pulmn7.Click;
-57 : Rin7.Click;
-58 : TripleCalentador7.Click;
-59 : VasoConcepcin7.Click;
-60 : VasoGobernador7.Click;
-61 : Vejiga7.Click;
-62 : VesculaBiliar7.Click; }
-63 : BazoPncreas5.Click;
-64 : Corazn9.Click;
-65 : Estmago8.Click;
-66 : Hgado5.Click;
-67 : IntestinoDelgado6.Click;
-68 : IntestinoGrueso6.Click;
-69 : MaestrodelCoraznoPericardio6.Click;
-70 : Pulmn6.Click;
-71 : Rin6.Click;
-72 : TripleCalentador6.Click;
-73 : VasoConcepcin6.Click;
-74 : VasoGobernador6.Click;
-75 : Vejiga6.Click;
-76 : VesculaBiliar6.Click;
-77 : BazoPncreas6.Click;
-78 : Corazn6.Click;
-79 : Estmago5.Click;
-80 : Hgado8.Click;
-81 : IntestinoDelgado5.Click;
-82 : IntestinoGrueso5.Click;
-83 : MaestrodelCoraznoPericardio5.Click;
-84 : Pulmn5.Click;
-85 : Rin5.Click;
-86 : TripleCalentador5.Click;
-87 : VasoConcepcin5.Click;
-88 : VasoGobernador5.Click;
-89 : Vejiga5.Click;
-90 : VesculaBiliar5.Click;
-91 : BazoPncreas7.Click;
-92 : Corazn7.Click;
-93 : Estmago6.Click;
-94 : Hgado7.Click;
-95 : IntestinoDelgado4.Click;
-96 : IntestinoGrueso4.Click;
-97 : MaestrodelCoraznoPericardio4.Click;
-98 : Pulmn4.Click;
-99 : Rin4.Click;
-100 : TripleCalentador4.Click;
-101 : VasoConcepcin4.Click;
-102 : VasoGobernador4.Click;
-103 : Vejiga4.Click;
-104 : VesculaBiliar4.Click;
-105 : BazoPncreas8.Click;
-106 : Corazn8.Click;
-107 : Estmago7.Click;
-108 : Hgado6.Click;
-109 : IntestinoDelgado3.Click;
-110 : IntestinoGrueso3.Click;
-111 : MaestrodelCoraznoPericardio3.Click;
-112 : Pulmn3.Click;
-113 : Rin3.Click;
-114 : TripleCalentador3.Click;
-115 : VasoConcepcin3.Click;
-116 : VasoGobernador3.Click;
-117 : Vejiga3.Click;
-118 : VesculaBiliar3.Click;
-119 : BazoPncreas1.Click;
+49 : BazoPncreas5.Click;
+50 : Corazn9.Click;
+51 : Estmago8.Click;
+52 : Hgado5.Click;
+53 : IntestinoDelgado6.Click;
+54 : IntestinoGrueso6.Click;
+55 : MaestrodelCoraznoPericardio6.Click;
+56 : Pulmn6.Click;
+57 : Rin6.Click;
+58 : TripleCalentador6.Click;
+59 : VasoConcepcin6.Click;
+60 : VasoGobernador6.Click;
+61 : Vejiga6.Click;
+62 : VesculaBiliar6.Click;
+63 : BazoPncreas6.Click;
+64 : Corazn6.Click;
+65 : Estmago5.Click;
+66 : Hgado8.Click;
+67 : IntestinoDelgado5.Click;
+68 : MaestrodelCoraznoPericardio5.Click;
+69 : Pulmn5.Click;
+70 : Rin5.Click;
+71 : TripleCalentador5.Click;
+72 : VasoConcepcin5.Click;
+73 : VasoGobernador5.Click;
+74 : Vejiga5.Click;
+75 : VesculaBiliar5.Click;
+76 : BazoPncreas7.Click;
+77 : Corazn7.Click;
+78 : Estmago6.Click;
+79 : Hgado7.Click;
+80 : IntestinoDelgado4.Click;
+81 : IntestinoGrueso4.Click;
+82 : MaestrodelCoraznoPericardio4.Click;
+83 : Pulmn4.Click;
+84 : Rin4.Click;
+85 : TripleCalentador4.Click;
+86 : VasoConcepcin4.Click;
+87 : VasoGobernador4.Click;
+88 : Vejiga4.Click;
+89 : VesculaBiliar4.Click;
+90 : BazoPncreas8.Click;
+91 : Corazn8.Click;
+92 : Estmago7.Click;
+93 : Hgado6.Click;
+94 : IntestinoDelgado3.Click;
+95 : IntestinoGrueso3.Click;
+96 : MaestrodelCoraznoPericardio3.Click;
+97 : Pulmn3.Click;
+98 : Rin3.Click;
+99 : TripleCalentador3.Click;
+100 : VasoConcepcin3.Click;
+101 : VasoGobernador3.Click;
+102 : Vejiga3.Click;
+103 : VesculaBiliar3.Click;
+104 : BazoPncreas1.Click;
   End;
-end;
-
-procedure TFChart5.Edit1Click(Sender: TObject);
-begin
-Edit1.Text := 'Nosode/s: ';
-end;
-
-procedure TFChart5.Edit2Click(Sender: TObject);
-begin
-Edit2.Text := 'Isode/s: ';
-end;
-
-procedure TFChart5.Edit3Click(Sender: TObject);
-begin
-Edit3.Text := 'Alersode/s: ';
-end;
-
-procedure TFChart5.Edit4Click(Sender: TObject);
-begin
-Edit4.Text := 'Síntoma/s: ';
-end;
-
-procedure TFChart5.Edit5Change(Sender: TObject);
-begin
-Edit5.Text := 'Sarcodes: ';
-end;
-
-procedure TFChart5.Edit6Change(Sender: TObject);
-begin
-Edit6.Text := 'Clásico/s o herbal/es: ';
-end;
-
-procedure TFChart5.TuneBrainFunction1Click(Sender: TObject);
-begin
-SubspaceActive2.Caption := 'Afinando función cerebral...';
-SubspaceActive2.visible := true;
-Button1.Click;
-If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
 end;
 
 procedure TFChart5.BodytoSoulConnection1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando cuerpo-alma...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+BodytoSoulConnection1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then BodytoSoulConnection1.Enabled := False;
@@ -2926,7 +1984,7 @@ end;
 
 procedure TFChart5.SnowProgram1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando polaridad magnética...';
+SubspaceActive2.Caption := 'Reparando '+SnowProgram1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SnowProgram1.Enabled := False;
@@ -2934,7 +1992,7 @@ end;
 
 procedure TFChart5.RemoteViewing1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Deteniendo visión remota moderada...';
+SubspaceActive2.Caption := RemoteViewing1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then RemoteViewing1.Enabled := False;
@@ -2942,7 +2000,7 @@ end;
 
 procedure TFChart5.RemoteViewing21Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Deteniendo visión remota dañina...';
+SubspaceActive2.Caption := RemoteViewing21.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then RemoteViewing21.Enabled := False;
@@ -2950,7 +2008,7 @@ end;
 
 procedure TFChart5.ConnectiontoUniverse1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando al Universo (Sí mismo/a)...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+ConnectiontoUniverse1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ConnectiontoUniverse1.Enabled := False;
@@ -2958,7 +2016,7 @@ end;
 
 procedure TFChart5.OxygenStimulation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de oxigenación...';
+SubspaceActive2.Caption := 'Mejorando funciones de '+OxygenStimulation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then OxygenStimulation1.Enabled := False;
@@ -2966,7 +2024,7 @@ end;
 
 procedure TFChart5.StabilizeThanatosandEros1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando tanatos-eros...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+StabilizeThanatosandEros1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then StabilizeThanatosandEros1.Enabled := False;
@@ -2974,7 +2032,7 @@ end;
 
 procedure TFChart5.StimulateCreativity1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando complejo de creatividad...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+StimulateCreativity1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then StimulateCreativity1.Enabled := False;
@@ -2982,7 +2040,7 @@ end;
 
 procedure TFChart5.BalanceUnconsciouswithConscious1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando conciente - inconciente...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+BalanceUnconsciouswithConscious1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then BalanceUnconsciouswithConscious1.Enabled := False;
@@ -2990,7 +2048,7 @@ end;
 
 procedure TFChart5.HypnosisorDehypnosis1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando hipnosis...';
+SubspaceActive2.Caption := 'Mejorando '+HypnosisorDehypnosis1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then HypnosisorDehypnosis1.Enabled := False;
@@ -2998,7 +2056,7 @@ end;
 
 procedure TFChart5.IncreaseMathSkills1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando habilidades cerebrales...';
+SubspaceActive2.Caption := 'Reparando '+IncreaseMathSkills1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then IncreaseMathSkills1.Enabled := False;
@@ -3006,7 +2064,7 @@ end;
 
 procedure TFChart5.LearningDisability2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando circuitos de la memoria...';
+SubspaceActive2.Caption := 'Reparando '+LearningDisability2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then LearningDisability2.Enabled := False;
@@ -3014,7 +2072,7 @@ end;
 
 procedure TFChart5.DeepMuscleRelaxation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando circuitos musculares...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+DeepMuscleRelaxation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then DeepMuscleRelaxation1.Enabled := False;
@@ -3022,7 +2080,7 @@ end;
 
 procedure TFChart5.ReleaseKarma1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando reprogramación de karma...';
+SubspaceActive2.Caption := 'Mejorando '+ReleaseKarma1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ReleaseKarma1.Enabled := False;
@@ -3030,7 +2088,7 @@ end;
 
 procedure TFChart5.RestoreMylienofNerves1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando mielina en nervios (factor de crecimiento nervioso)...';
+SubspaceActive2.Caption := 'Reparandoo '+RestoreMylienofNerves1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then RestoreMylienofNerves1.Enabled := False;
@@ -3038,7 +2096,7 @@ end;
 
 procedure TFChart5.SkinStabilization1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Piel...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+SkinStabilization1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SkinStabilization1.Enabled := False;
@@ -3046,7 +2104,7 @@ end;
 
 procedure TFChart5.AdrenalStim1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de las suprarrenales...';
+SubspaceActive2.Caption := 'Mejorando funciones de las '+AdrenalStim1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then AdrenalStim1.Enabled := False;
@@ -3054,7 +2112,7 @@ end;
 
 procedure TFChart5.ImmuneStimulation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del sistema inmunitario...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+ImmuneStimulation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ImmuneStimulation1.Enabled := False;
@@ -3062,7 +2120,7 @@ end;
 
 procedure TFChart5.LargeIntestine1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Intestino grueso...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+LargeIntestine1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
@@ -3070,7 +2128,7 @@ end;
 
 procedure TFChart5.EmotionalRelease1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando emociones...';
+SubspaceActive2.Caption := 'Reparando '+EmotionalRelease1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then EmotionalRelease1.Enabled := False;
@@ -3078,14 +2136,14 @@ end;
 
 procedure TFChart5.Endocrine1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema endocrino...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Endocrine1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Endocrine1.Enabled := False;
 end;
 procedure TFChart5.Lungs1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Pulmones...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Lungs1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Lungs1.Enabled := False;
@@ -3093,7 +2151,7 @@ end;
 
 procedure TFChart5.EmotionalTrauma1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando trauma emocional...';
+SubspaceActive2.Caption := 'Reparando '+EmotionalTrauma1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then EmotionalTrauma1.Enabled := False;
@@ -3101,7 +2159,7 @@ end;
 
 procedure TFChart5.ArteriesandVeins1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Arterias y Venas...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+ArteriesandVeins1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ArteriesandVeins1.Enabled := False;
@@ -3124,7 +2182,7 @@ end;
 
 procedure TFChart5.UterineFibroids1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando fibromas uterinos...';
+SubspaceActive2.Caption := 'Reparando '+UterineFibroids1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then UterineFibroids1.Enabled := False;
@@ -3132,7 +2190,7 @@ end;
 
 procedure TFChart5.StabilizeSpeach1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del Habla...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+StabilizeSpeach1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then StabilizeSpeach1.Enabled := False;
@@ -3140,7 +2198,7 @@ end;
 
 procedure TFChart5.ReleaseKarmicBonds1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando lazos kármicos...';
+SubspaceActive2.Caption := 'Reparando '+ReleaseKarmicBonds1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
@@ -3148,7 +2206,7 @@ end;
 
 procedure TFChart5.AntiAging1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando telómeros del ADN (rejuvenecimiento)...';
+SubspaceActive2.Caption := 'Reparando '+AntiAging1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then AntiAging1.Enabled := False;
@@ -3156,7 +2214,7 @@ end;
 
 procedure TFChart5.MetabolicRepair1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando metabolismo...';
+SubspaceActive2.Caption := 'Reparando '+MetabolicRepair1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then MetabolicRepair1.Enabled := False;
@@ -3171,7 +2229,7 @@ end;
 
 procedure TFChart5.AutoFreqModulation1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando modulación de frecuencias automáticas...';
+SubspaceActive2.Caption := 'Mejorando '+AutoFreqModulation1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then AutoFreqModulation1.Enabled := False;
@@ -3187,7 +2245,7 @@ end;
 
 procedure TFChart5.Afinarfuncincerebral1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del cerebro...';
+SubspaceActive2.Caption := 'Mejorando funciones del'+Espinadorsal1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Afinarfuncincerebral1.Enabled := False;
@@ -3195,7 +2253,7 @@ end;
 
 procedure TFChart5.Inflamacin1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando inflamación...';
+SubspaceActive2.Caption := 'Reparando '+Inflamacin1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Inflamacin1.Enabled := False;
@@ -3203,7 +2261,7 @@ end;
 
 procedure TFChart5.Prostate1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Próstata...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Prostate1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Prostate1.Enabled := False;
@@ -3211,7 +2269,7 @@ end;
 
 procedure TFChart5.Floraintestinal1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de la flora intestinal...';
+SubspaceActive2.Caption := 'Mejorando funciones de la '+Floraintestinal1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Floraintestinal1.Enabled := False;
@@ -3219,7 +2277,7 @@ end;
 
 procedure TFChart5.Dehipnosis1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando dehipnosis...';
+SubspaceActive2.Caption := 'Mejorando '+Dehipnosis1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Dehipnosis1.Enabled := False;
@@ -3227,7 +2285,7 @@ end;
 
 procedure TFChart5.Espinadorsal1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones de la columna vertebral...';
+SubspaceActive2.Caption := 'Mejorando funciones de la '+Espinadorsal1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Espinadorsal1.Enabled := False;
@@ -3235,35 +2293,35 @@ end;
 
 procedure TFChart5.Espiritual1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando cuadrante espiritual...';
+SubspaceActive2.Caption := 'Estimulando '+Espiritual1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 end;
 
 procedure TFChart5.Fsico1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando cuadrante físico...';
+SubspaceActive2.Caption := 'Estimulando '+Fsico1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 end;
 
 procedure TFChart5.Mental1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando cuadrante mental...';
+SubspaceActive2.Caption := 'Estimulando cuadrante '+Mental1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 end;
 
 procedure TFChart5.Social1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando cuadrante social...';
+SubspaceActive2.Caption := 'Estimulando '+Social1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 end;
 
 procedure TFChart5.Entorno1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando cuadrante entorno...';
+SubspaceActive2.Caption := 'Estimulando cuadrante '+Entorno1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 end;
@@ -3283,7 +2341,7 @@ end;
 
 procedure TFChart5.Contaminacinelectromagntica1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Deshaciendo contaminación electromagnética...';
+SubspaceActive2.Caption := 'Deshaciendo '+Contaminacinelectromagntica1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
@@ -3291,7 +2349,7 @@ end;
 
 procedure TFChart5.Circulatorio1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema circulatorio...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Circulatorio1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Circulatorio1.Enabled := False;
@@ -3299,7 +2357,7 @@ end;
 
 procedure TFChart5.Digestivo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema digestivo...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Digestivo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Digestivo1.Enabled := False;
@@ -3307,7 +2365,7 @@ end;
 
 procedure TFChart5.Muscular1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema muscular...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Muscular1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Muscular1.Enabled := False;
@@ -3315,7 +2373,7 @@ end;
 
 procedure TFChart5.Nervioso1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema nervioso...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Nervioso1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Nervioso1.Enabled := False;
@@ -3323,7 +2381,7 @@ end;
 
 procedure TFChart5.Respiratorio1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema respiratorio...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Respiratorio1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Respiratorio1.Enabled := False;
@@ -3331,7 +2389,7 @@ end;
 
 procedure TFChart5.Reproductivo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema reproductivo...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Reproductivo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Reproductivo1.Enabled := False;
@@ -3339,7 +2397,7 @@ end;
 
 procedure TFChart5.Urinario1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando sistema urinario...';
+SubspaceActive2.Caption := 'Equilibrando sistema '+Urinario1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Urinario1.Enabled := False;
@@ -3347,7 +2405,7 @@ end;
 
 procedure TFChart5.Reactividad1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando reactividad...';
+SubspaceActive2.Caption := 'Reparando '+Reactividad1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Reactividad1.Enabled := False;
@@ -3417,7 +2475,6 @@ begin
    6 : Diaphragm1.Click;
    7 : Stomach1.Click;
    8 : Throat1.Click;
-   9 : Male1.Click;
    10 : Liver1.Click;
    11 : Shoulder1.Click;
    12 : SmallIntestine1.Click;
@@ -3495,7 +2552,7 @@ end;
 
 procedure TFChart5.Muscular2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando emociones...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+Muscular2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Muscular2.Enabled := False;
@@ -3503,7 +2560,7 @@ end;
 
 procedure TFChart5.Bubbles1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando polos electromagnéticos...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+Bubbles1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Bubbles1.Enabled := False;
@@ -3511,7 +2568,7 @@ end;
 
 procedure TFChart5.Inteligenciainnata1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando inteligencia innata...';
+SubspaceActive2.Caption := 'Estimulando '+Inteligenciainnata1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Inteligenciainnata1.Enabled := False;
@@ -3519,7 +2576,7 @@ end;
 
 procedure TFChart5.Reactividad2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando reactividad...';
+SubspaceActive2.Caption := 'Estimulando '+Reactividad2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Reactividad2.Enabled := False;
@@ -3527,7 +2584,7 @@ end;
 
 procedure TFChart5.Habilidadescerebrales1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando habilidades cerebrales...';
+SubspaceActive2.Caption := 'Estimulando '+Habilidadescerebrales1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Habilidadescerebrales1.Enabled := False;
@@ -3535,7 +2592,7 @@ end;
 
 procedure TFChart5.Habilidadesfsicas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando habilidades físicas...';
+SubspaceActive2.Caption := 'Estimulando '+Habilidadesfsicas1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Habilidadesfsicas1.Enabled := False;
@@ -3543,7 +2600,7 @@ end;
 
 procedure TFChart5.Habilidadesfsicas2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando habilidades físicas...';
+SubspaceActive2.Caption := 'Reparando '+Habilidadesfsicas2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Habilidadesfsicas2.Enabled := False;
@@ -3551,7 +2608,7 @@ end;
 
 procedure TFChart5.Habilidadesextrasensoriales1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando habilidades extra sensoriales...';
+SubspaceActive2.Caption := 'Reparando '+Habilidadesextrasensoriales1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Habilidadesextrasensoriales1.Enabled := False;
@@ -3559,7 +2616,7 @@ end;
 
 procedure TFChart5.Habilidadesextrasensoriales2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando habilidades extra sensoriales...';
+SubspaceActive2.Caption := 'Estimulando '+Habilidadesextrasensoriales2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Habilidadesextrasensoriales2.Enabled := False;
@@ -3567,7 +2624,7 @@ end;
 
 procedure TFChart5.Glndulapineal1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando glándula pineal...';
+SubspaceActive2.Caption := 'Estimulando '+Glndulapineal1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Glndulapineal1.Enabled := False;
@@ -3575,7 +2632,7 @@ end;
 
 procedure TFChart5.Polaridadmagntica1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Estimulando polaridad magnética...';
+SubspaceActive2.Caption := 'Estimulando '+Polaridadmagntica1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Polaridadmagntica1.Enabled := False;
@@ -3584,7 +2641,7 @@ end;
 procedure TFChart5.Agresionesuopresionesespirituales1Click(
   Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando de agresiones u opreiones espirituales...';
+SubspaceActive2.Caption := 'Liberando de '+Agresionesuopresionesespirituales1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Agresionesuopresionesespirituales1.Enabled := False;
@@ -3598,7 +2655,7 @@ end;
 
 procedure TFChart5.Asmismoa1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando de sí mismo/a...';
+SubspaceActive2.Caption := 'Liberando de '+Asmismoa1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Asmismoa1.Enabled := False;
@@ -3606,7 +2663,7 @@ end;
 
 procedure TFChart5.SistemaNerviosoParasimptico1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del Sistema Nervioso Parasimpático...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+SistemaNerviosoParasimptico1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SistemaNerviosoParasimptico1.Enabled := False;
@@ -3614,7 +2671,7 @@ end;
 
 procedure TFChart5.SistemaNerviosoSimptico1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del Sistema Nervioso Simpático...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+SistemaNerviosoSimptico1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SistemaNerviosoSimptico1.Enabled := False;
@@ -3622,7 +2679,7 @@ end;
 
 procedure TFChart5.SistemaNerviosoCentral1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando funciones del Sistema Nervioso Central...';
+SubspaceActive2.Caption := 'Mejorando funciones del '+SistemaNerviosoCentral1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then SistemaNerviosoCentral1.Enabled := False;
@@ -3631,7 +2688,7 @@ end;
 
 procedure TFChart5.Lazosespirituales1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando de lazos espirituales...';
+SubspaceActive2.Caption := 'Liberando de '+Lazosespirituales1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ATPActiveTransport1.Enabled := False;
@@ -3639,7 +2696,7 @@ end;
 
 procedure TFChart5.Lazoskrmicos1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando de lazos kármicos...';
+SubspaceActive2.Caption := 'Liberando de '+Lazoskrmicos1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Lazoskrmicos1.Enabled := False;
@@ -3683,7 +2740,7 @@ end;
 
 procedure TFChart5.Shocknervioso1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Conectando Yin Yang...';
+SubspaceActive2.Caption := RelaxationMethods1.Caption+' '+Shocknervioso1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Shocknervioso1.Enabled := False;
@@ -3691,7 +2748,7 @@ end;
 
 procedure TFChart5.Respiracin1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando sistema respiratorio...';
+SubspaceActive2.Caption := 'Reparando '+Respiracin1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Respiracin1.Enabled := False;
@@ -3699,7 +2756,7 @@ end;
 
 procedure TFChart5.Osmosis1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando osmosis...';
+SubspaceActive2.Caption := 'Reparando '+Osmosis1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Osmosis1.Enabled := False;
@@ -3707,7 +2764,7 @@ end;
 
 procedure TFChart5.ArteriasyVenas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando arterias y venas...';
+SubspaceActive2.Caption := 'Reparando '+ArteriasyVenas1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ArteriasyVenas1.Enabled := False;
@@ -3715,8 +2772,8 @@ end;
 
 procedure TFChart5.EspacioLugar1Click(Sender: TObject);
 begin
-Showmessage('Para una terapia más profunda y completa use el programa ''Om Mani Padme Hum®''.');
-SubspaceActive2.Caption := 'Reparando espacio/lugar...';
+Showmessage('Para una terapia más profunda y completa use el programa ''Nirvana 360®''.');
+SubspaceActive2.Caption := 'Reparando '+EspacioLugar1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then EspacioLugar1.Enabled := False;
@@ -3724,7 +2781,7 @@ end;
 
 procedure TFChart5.Alcohol1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a alcohol...';
+SubspaceActive2.Caption := 'Equilibrando adicción a '+Alcohol1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Alcohol1.Enabled := False;
@@ -3732,7 +2789,7 @@ end;
 
 procedure TFChart5.Azcar2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al azúcar...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Azcar2.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Azcar2.Enabled := False;
@@ -3740,7 +2797,7 @@ end;
 
 procedure TFChart5.Trabajo2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al trabajo...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Trabajo2.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Trabajo2.Enabled := False;
@@ -3748,7 +2805,7 @@ end;
 
 procedure TFChart5.Marihuana1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la marihuana...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Marihuana1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Marihuana1.Enabled := False;
@@ -3756,7 +2813,7 @@ end;
 
 procedure TFChart5.Tabaco1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al tabaco...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Tabaco1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Tabaco1.Enabled := False;
@@ -3764,7 +2821,7 @@ end;
 
 procedure TFChart5.Cocana1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la cocaína...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Cocana1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Cocana1.Enabled := False;
@@ -3772,7 +2829,7 @@ end;
 
 procedure TFChart5.Telfono1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al teléfono...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Telfono1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Telfono1.Enabled := False;
@@ -3780,7 +2837,7 @@ end;
 
 procedure TFChart5.Sexo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al sexo...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Sexo1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Sexo1.Enabled := False;
@@ -3788,7 +2845,7 @@ end;
 
 procedure TFChart5.Gastocompulsivo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al gasto compulsivo...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Gastocompulsivo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Gastocompulsivo1.Enabled := False;
@@ -3796,7 +2853,7 @@ end;
 
 procedure TFChart5.Juego1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al juego...';
+SubspaceActive2.Caption := 'Equilibrando adicción '+Juego1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Juego1.Enabled := False;
@@ -3804,7 +2861,7 @@ end;
 
 procedure TFChart5.Internet1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al Internet...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Internet1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Internet1.Enabled := False;
@@ -3812,7 +2869,7 @@ end;
 
 procedure TFChart5.Relacionesfatales1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a las relaciones fatales...';
+SubspaceActive2.Caption := 'Equilibrando adicción a las '+Relacionesfatales1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Relacionesfatales1.Enabled := False;
@@ -3820,7 +2877,7 @@ end;
 
 procedure TFChart5.Codependencias1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a las codepencidencias...';
+SubspaceActive2.Caption := 'Equilibrando adicción a las '+Codependencias1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Codependencias1.Enabled := False;
@@ -3828,7 +2885,7 @@ end;
 
 procedure TFChart5.Romances1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a los romances...';
+SubspaceActive2.Caption := 'Equilibrando adicción a los '+Romances1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Romances1.Enabled := False;
@@ -3836,7 +2893,7 @@ end;
 
 procedure TFChart5.Sectas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a las sectas...';
+SubspaceActive2.Caption := 'Equilibrando adicción a las '+Sectas1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Sectas1.Enabled := False;
@@ -3844,7 +2901,7 @@ end;
 
 procedure TFChart5.Sedantes1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a los sedantes hipnóticos...';
+SubspaceActive2.Caption := 'Equilibrando adicción a los '+Sedantes1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Sedantes1.Enabled := False;
@@ -3852,7 +2909,7 @@ end;
 
 procedure TFChart5.Opio1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al ópio...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Opio1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Opio1.Enabled := False;
@@ -3860,7 +2917,7 @@ end;
 
 procedure TFChart5.Herona1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la heroína...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Herona1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Herona1.Enabled := False;
@@ -3868,7 +2925,7 @@ end;
 
 procedure TFChart5.Anfetaminas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a las anfetaminas...';
+SubspaceActive2.Caption := 'Equilibrando adicción a las '+Anfetaminas1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Anfetaminas1.Enabled := False;
@@ -3876,7 +2933,7 @@ end;
 
 procedure TFChart5.Extasis1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción al éxtasis...';
+SubspaceActive2.Caption := 'Equilibrando adicción al '+Extasis1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Extasis1.Enabled := False;
@@ -3898,7 +2955,7 @@ end;
 
 procedure TFChart5.Bulimia1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando bulimia...';
+SubspaceActive2.Caption := 'Equilibrando '+Bulimia1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Bulimia1.Enabled := False;
@@ -3906,7 +2963,7 @@ end;
 
 procedure TFChart5.Anorexianerviosa1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando anorexia nerviosa...';
+SubspaceActive2.Caption := 'Equilibrando '+Anorexianerviosa1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Anorexianerviosa1.Enabled := False;
@@ -4066,7 +3123,7 @@ End;
 
 procedure TFChart5.Comida2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la ingestión compulsiva de comida...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Ingestincompulsiva1.Caption+' '+Comida2.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Comida2.Enabled := False;
@@ -4074,7 +3131,7 @@ end;
 
 procedure TFChart5.Bebidadgaseosas1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la ingestión compulsiva de bebidas gaseosas...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Ingestincompulsiva1.Caption+' '+Bebidadgaseosas1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then Bebidadgaseosas1.Enabled := False;
@@ -4082,7 +3139,7 @@ end;
 
 procedure TFChart5.CafTena1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando adicción a la ingestión compulsiva de café / teína...';
+SubspaceActive2.Caption := 'Equilibrando adicción a la '+Ingestincompulsiva1.Caption+' '+CafTena1.Caption+'...';
 SubspaceActive2.visible := true;
 Adicciones();
 If Rectificado >84 Then CafTena1.Enabled := False;
@@ -4090,7 +3147,7 @@ end;
 
 procedure TFChart5.Afectivobipolar1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno afectivo bipolar...';
+SubspaceActive2.Caption := 'Equilibrando trastorno '+Afectivobipolar1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Afectivobipolar1.Enabled := False;
@@ -4098,7 +3155,7 @@ end;
 
 procedure TFChart5.Obsesivocompulsivo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno obsesivo compulsivo...';
+SubspaceActive2.Caption := 'Equilibrando trastorno '+Obsesivocompulsivo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Obsesivocompulsivo1.Enabled := False;
@@ -4106,7 +3163,7 @@ end;
 
 procedure TFChart5.Personalidad1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de personalidad...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Personalidad1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Personalidad1.Enabled := False;
@@ -4114,7 +3171,7 @@ end;
 
 procedure TFChart5.Conductasuicida1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de conducta bipolar...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Conductasuicida1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Conductasuicida1.Enabled := False;
@@ -4122,7 +3179,7 @@ end;
 
 procedure TFChart5.Conducta1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de conducta...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Conducta1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Conducta1.Enabled := False;
@@ -4130,7 +3187,7 @@ end;
 
 procedure TFChart5.Esquizofrenia1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de esquizofrenia...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Esquizofrenia1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Esquizofrenia1.Enabled := False;
@@ -4138,7 +3195,7 @@ end;
 
 procedure TFChart5.Estrsposttrauma1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de estrés post-trauma...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Estrsposttrauma1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Estrsposttrauma1.Enabled := False;
@@ -4146,7 +3203,7 @@ end;
 
 procedure TFChart5.EstrsagudoFatiga1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de estrés agudo / fatiga...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+EstrsagudoFatiga1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then EstrsagudoFatiga1.Enabled := False;
@@ -4154,7 +3211,7 @@ end;
 
 procedure TFChart5.Pensamiento1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno psiquiatricos...';
+SubspaceActive2.Caption := 'Equilibrando trastorno '+Pensamiento1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Pensamiento1.Enabled := False;
@@ -4162,7 +3219,7 @@ end;
 
 procedure TFChart5.Pensamiento2Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando trastorno de pensamiento...';
+SubspaceActive2.Caption := 'Equilibrando trastorno de '+Pensamiento2.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Pensamiento2.Enabled := False;
@@ -4182,7 +3239,7 @@ end;
 
 procedure TFChart5.Matoneo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando víctima de matoneo...';
+SubspaceActive2.Caption := 'Equilibrando '+Matoneo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Matoneo1.Enabled := False;
@@ -4190,7 +3247,7 @@ end;
 
 procedure TFChart5.Ansiedad1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando ansiedad...';
+SubspaceActive2.Caption := 'Equilibrando '+Ansiedad1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Ansiedad1.Enabled := False;
@@ -4198,7 +3255,7 @@ end;
 
 procedure TFChart5.Estrs1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando estrés...';
+SubspaceActive2.Caption := 'Equilibrando '+Estrs1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Estrs1.Enabled := False;
@@ -4206,7 +3263,7 @@ end;
 
 procedure TFChart5.Desobediencia1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando desobediencia...';
+SubspaceActive2.Caption := 'Equilibrando '+Desobediencia1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Desobediencia1.Enabled := False;
@@ -4214,15 +3271,14 @@ end;
 
 procedure TFChart5.Rebelda1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando rebeldía...';
-SubspaceActive2.visible := true;
+SubspaceActive2.Caption := 'Equilibrando '+Rebelda1.Caption+'...';
 Button1.Click;
 If Rectificado >84 Then Rebelda1.Enabled := False;
 end;
 
 procedure TFChart5.Agresividad1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando agresividad...';
+SubspaceActive2.Caption := 'Equilibrando '+Agresividad1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Agresividad1.Enabled := False;
@@ -4230,7 +3286,7 @@ end;
 
 procedure TFChart5.PAcadmicos1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando problemas académicos...';
+SubspaceActive2.Caption := 'Equilibrando '+PAcadmicos1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then PAcadmicos1.Enabled := False;
@@ -4238,7 +3294,7 @@ end;
 
 procedure TFChart5.Faltadeatencin1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando TDAH - Falta de atención...';
+SubspaceActive2.Caption := 'Equilibrando TDAH - '+Faltadeatencin1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Faltadeatencin1.Enabled := False;
@@ -4246,7 +3302,7 @@ end;
 
 procedure TFChart5.HiperactividadImpulsividad1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando TDAH - Hiperactividad / Impulsividad...';
+SubspaceActive2.Caption := 'Equilibrando TDAH - '+HiperactividadImpulsividad1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then HiperactividadImpulsividad1.Enabled := False;
@@ -4254,7 +3310,7 @@ end;
 
 procedure TFChart5.Combinado1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando TDAH - Combinado...';
+SubspaceActive2.Caption := 'Equilibrando TDAH - '+Combinado1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Combinado1.Enabled := False;
@@ -4262,7 +3318,7 @@ end;
 
 procedure TFChart5.Corona1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra de la corona - Sahasrara...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra de la '+Corona1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Corona1.Enabled := False;
@@ -4270,7 +3326,7 @@ end;
 
 procedure TFChart5.Entrecejo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra del entrecejo - Ajna...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra del '+Entrecejo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Entrecejo1.Enabled := False;
@@ -4278,7 +3334,7 @@ end;
 
 procedure TFChart5.Garganta1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra de la garganta - Vishuddha...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra de la '+Garganta1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Garganta1.Enabled := False;
@@ -4286,7 +3342,7 @@ end;
 
 procedure TFChart5.Corazn1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra del corazón - Anahata...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra del '+Corazn1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Corazn1.Enabled := False;
@@ -4294,7 +3350,7 @@ end;
 
 procedure TFChart5.Plexosolar1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra del plexo solar - Manipura...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra del '+Plexosolar1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Plexosolar1.Enabled := False;
@@ -4302,7 +3358,7 @@ end;
 
 procedure TFChart5.Ombligo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra del ombligo - Swadisthana...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra del '+Ombligo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Ombligo1.Enabled := False;
@@ -4310,7 +3366,7 @@ end;
 
 procedure TFChart5.Raz1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Reparando y estabilizando chakra raíz o base - Muladhara...';
+SubspaceActive2.Caption := 'Reparando y estabilizando chakra '+Raz1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Raz1.Enabled := False;
@@ -4323,7 +3379,7 @@ end;
 
 procedure TFChart5.Agresiones1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando agresiones...';
+SubspaceActive2.Caption := 'Liberando '+Agresiones1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Agresiones1.Enabled := False;
@@ -4331,7 +3387,7 @@ end;
 
 procedure TFChart5.Negatividadinconciente1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Liberando negatividad inconciente...';
+SubspaceActive2.Caption := 'Liberando '+Negatividadinconciente1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Negatividadinconciente1.Enabled := False;
@@ -4339,7 +3395,7 @@ end;
 
 procedure TFChart5.Spleen1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando bazo...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Spleen1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Spleen1.Enabled := False;
@@ -4347,7 +3403,7 @@ end;
 
 procedure TFChart5.Stomach1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando estómago...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Stomach1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Stomach1.Enabled := False;
@@ -4355,7 +3411,7 @@ end;
 
 procedure TFChart5.Larnyx1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'laringe...';
+SubspaceActive2.Caption :=  Additional1.Caption+' '+Larnyx1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Larnyx1.Enabled := False;
@@ -4363,7 +3419,7 @@ end;
 
 procedure TFChart5.Sueoslcidos1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando sueños lúcidos...';
+SubspaceActive2.Caption := 'Mejorando '+Sueoslcidos1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Sueoslcidos1.Enabled := False;
@@ -4371,15 +3427,10 @@ end;
 
 procedure TFChart5.N1minBioresonance1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando biorresonancia...';
+SubspaceActive2.Caption := 'Mejorando '+N1minBioresonance1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then N1minBioresonance1.Enabled := False;
-end;
-
-procedure TFChart5.Panel1Click(Sender: TObject);
-begin
-groupbox2.visible:=false;
 end;
 
 procedure TFChart5.Label6Click(Sender: TObject);
@@ -4423,7 +3474,7 @@ end;
 
 procedure TFChart5.Energavital1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Equilibrando energía vital / Chi en meridianos...';
+SubspaceActive2.Caption := 'Equilibrando '+Energavital1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Energavital1.Enabled := False;
@@ -4431,7 +3482,7 @@ end;
 
 procedure TFChart5.Eslabncuerposenergaespritufsico1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando eslabón de los cuerpos energía-espíritu-físico...';
+SubspaceActive2.Caption := 'Mejorando '+Eslabncuerposenergaespritufsico1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Eslabncuerposenergaespritufsico1.Enabled := False;
@@ -4439,7 +3490,7 @@ end;
 
 procedure TFChart5.RelajacinMentalFsica1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando relajación Mental + Física...';
+SubspaceActive2.Caption := 'Mejorando '+RelajacinMentalFsica1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then RelajacinMentalFsica1.Enabled := False;
@@ -4447,7 +3498,7 @@ end;
 
 procedure TFChart5.Circuitodeflujoenergtico1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando circuito de flujo energético...';
+SubspaceActive2.Caption := 'Mejorando '+Circuitodeflujoenergtico1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then Circuitodeflujoenergtico1.Enabled := False;
@@ -4461,7 +3512,7 @@ end;
 
 procedure TFChart5.ActividaddelTimo1Click(Sender: TObject);
 begin
-SubspaceActive2.Caption := 'Mejorando actividad del Timo...';
+SubspaceActive2.Caption := 'Mejorando '+ActividaddelTimo1.Caption+'...';
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then ActividaddelTimo1.Enabled := False;
@@ -5601,6 +4652,18 @@ SubspaceActive2.Caption := 'Equilibrando viento en meridiano de '+VasoPenetrante
 SubspaceActive2.visible := true;
 Button1.Click;
 If Rectificado >84 Then VasoPenetranteChongMai6.Enabled := False;
+end;
+
+procedure TFChart5.CBTExtendidaClick(Sender: TObject);
+begin
+If CBTExtendida.Checked = True Then CBAutomatico.Checked := True
+Else
+CBAutomatico.Checked := False;
+end;
+
+procedure TFChart5.Repositorio1Click(Sender: TObject);
+begin
+ Frecompensa.Showmodal;
 end;
 
 end.

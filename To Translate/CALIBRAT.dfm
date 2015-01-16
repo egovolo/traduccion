@@ -3,9 +3,7 @@ object calibForm1: TcalibForm1
   Top = 168
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Sincronización ::: '
+  Caption = '::: gENiO® iOS ::: Sincronización ::: '
   ClientHeight = 671
   ClientWidth = 1077
   Color = clWhite

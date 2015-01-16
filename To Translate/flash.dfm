@@ -1,12 +1,10 @@
 object Emotion: TEmotion
-  Left = 131
-  Top = 174
+  Left = 155
+  Top = 148
   VertScrollBar.Style = ssFlat
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Programación Neuro Lingüística ::: '
+  Caption = '::: gENiO® iOS ::: Programación Neuro Lingüística ::: '
   ClientHeight = 704
   ClientWidth = 1009
   Color = clInactiveCaption
@@ -38,7 +36,7 @@ object Emotion: TEmotion
   object Label462: TLabel
     Tag = 8
     Left = 12
-    Top = 176
+    Top = 172
     Width = 12
     Height = 13
     Cursor = crHandPoint
@@ -56,7 +54,7 @@ object Emotion: TEmotion
   end
   object Label1: TLabel
     Left = 12
-    Top = 124
+    Top = 120
     Width = 12
     Height = 13
     Alignment = taCenter
@@ -71,7 +69,7 @@ object Emotion: TEmotion
   end
   object Label314: TLabel
     Left = 12
-    Top = 159
+    Top = 155
     Width = 12
     Height = 13
     Caption = '|||'
@@ -87,7 +85,7 @@ object Emotion: TEmotion
   end
   object Label461: TLabel
     Left = 12
-    Top = 141
+    Top = 137
     Width = 12
     Height = 13
     Caption = '|||'
@@ -166,7 +164,7 @@ object Emotion: TEmotion
   end
   object Label470: TLabel
     Left = 907
-    Top = 364
+    Top = 360
     Width = 79
     Height = 13
     Cursor = crHandPoint
@@ -184,7 +182,7 @@ object Emotion: TEmotion
   end
   object Label471: TLabel
     Left = 901
-    Top = 348
+    Top = 344
     Width = 85
     Height = 13
     Cursor = crHandPoint
@@ -201,7 +199,7 @@ object Emotion: TEmotion
   end
   object Label472: TLabel
     Left = 942
-    Top = 332
+    Top = 328
     Width = 44
     Height = 13
     Cursor = crHandPoint
@@ -233,7 +231,7 @@ object Emotion: TEmotion
   end
   object Label683: TLabel
     Left = 320
-    Top = 364
+    Top = 360
     Width = 29
     Height = 13
     Cursor = crHandPoint
@@ -249,7 +247,7 @@ object Emotion: TEmotion
   end
   object Lorden: TLabel
     Left = 356
-    Top = 364
+    Top = 360
     Width = 66
     Height = 13
     Cursor = crHandPoint
@@ -265,7 +263,7 @@ object Emotion: TEmotion
   end
   object Lvalor: TLabel
     Left = 432
-    Top = 364
+    Top = 360
     Width = 62
     Height = 13
     Cursor = crHandPoint
@@ -282,7 +280,7 @@ object Emotion: TEmotion
   end
   object Lnombre: TLabel
     Left = 504
-    Top = 364
+    Top = 360
     Width = 74
     Height = 13
     Cursor = crHandPoint
@@ -298,7 +296,7 @@ object Emotion: TEmotion
   end
   object GoToNo: TButton
     Left = 776
-    Top = 363
+    Top = 359
     Width = 37
     Height = 18
     Cursor = crHandPoint
@@ -310,12 +308,12 @@ object Emotion: TEmotion
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
-    TabOrder = 64
+    TabOrder = 63
     OnClick = GoToNoClick
   end
   object Edit44: TEdit
     Left = 724
-    Top = 364
+    Top = 360
     Width = 48
     Height = 16
     Cursor = crIBeam
@@ -328,14 +326,14 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 63
+    TabOrder = 62
     OnChange = Edit44Change
     OnEnter = Edit44Enter
     OnKeyPress = Edit44KeyPress
   end
   object e_buscar: TEdit
     Left = 588
-    Top = 364
+    Top = 360
     Width = 129
     Height = 16
     BorderStyle = bsNone
@@ -345,7 +343,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 62
+    TabOrder = 61
     Text = 'Buscar ítem:'
     OnChange = e_buscarChange
     OnEnter = e_buscarEnter
@@ -353,55 +351,55 @@ object Emotion: TEmotion
   end
   object EdConsida6: TEdit
     Left = 777
-    Top = 636
-    Width = 220
-    Height = 18
-    BorderStyle = bsNone
-    TabOrder = 60
-  end
-  object EdConsida5: TEdit
-    Left = 777
-    Top = 612
+    Top = 632
     Width = 220
     Height = 18
     BorderStyle = bsNone
     TabOrder = 59
   end
-  object EdConsida4: TEdit
-    Left = 548
-    Top = 636
+  object EdConsida5: TEdit
+    Left = 777
+    Top = 608
     Width = 220
     Height = 18
     BorderStyle = bsNone
     TabOrder = 58
   end
-  object EdConsida3: TEdit
+  object EdConsida4: TEdit
     Left = 548
-    Top = 612
+    Top = 632
     Width = 220
     Height = 18
     BorderStyle = bsNone
     TabOrder = 57
   end
-  object EdConsida2: TEdit
-    Left = 320
-    Top = 636
+  object EdConsida3: TEdit
+    Left = 548
+    Top = 608
     Width = 220
     Height = 18
     BorderStyle = bsNone
     TabOrder = 56
   end
-  object EdConsida1: TEdit
+  object EdConsida2: TEdit
     Left = 320
-    Top = 612
+    Top = 632
     Width = 220
     Height = 18
     BorderStyle = bsNone
     TabOrder = 55
   end
+  object EdConsida1: TEdit
+    Left = 320
+    Top = 608
+    Width = 220
+    Height = 18
+    BorderStyle = bsNone
+    TabOrder = 54
+  end
   object DBGrid3: TDBGrid
     Left = 320
-    Top = 384
+    Top = 380
     Width = 673
     Height = 221
     Cursor = crHandPoint
@@ -414,7 +412,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 54
+    TabOrder = 53
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clBlack
     TitleFont.Height = -11
@@ -425,11 +423,11 @@ object Emotion: TEmotion
   end
   object PFiltros: TPanel
     Left = 320
-    Top = 384
+    Top = 380
     Width = 677
     Height = 221
     BevelOuter = bvNone
-    TabOrder = 61
+    TabOrder = 60
     Visible = False
     object Label103: TLabel
       Left = 32
@@ -1167,7 +1165,7 @@ object Emotion: TEmotion
   object Button144: TButton
     Tag = 8
     Left = 12
-    Top = 346
+    Top = 342
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1178,12 +1176,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 51
+    TabOrder = 50
     OnClick = Button144Click
   end
   object Button42: TButton
     Left = 500
-    Top = 142
+    Top = 138
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1194,13 +1192,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 46
+    TabOrder = 45
     OnClick = Button42Click
   end
   object Button23: TButton
     Tag = 8
     Left = 12
-    Top = 298
+    Top = 294
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1211,13 +1209,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 45
+    TabOrder = 44
     OnClick = Button23Click
   end
   object Button3: TButton
     Tag = 8
     Left = 12
-    Top = 418
+    Top = 414
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1233,7 +1231,7 @@ object Emotion: TEmotion
   end
   object Button2: TButton
     Left = 500
-    Top = 286
+    Top = 282
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1250,7 +1248,7 @@ object Emotion: TEmotion
   object Button1: TButton
     Tag = 8
     Left = 12
-    Top = 226
+    Top = 222
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1266,11 +1264,11 @@ object Emotion: TEmotion
   end
   object Button5: TButton
     Left = 500
-    Top = 214
+    Top = 210
     Width = 300
     Height = 22
     Cursor = crHandPoint
-    Caption = 'Factores mentales + cuadro de emociones >'
+    Caption = 'Factores mentales + Cuadro de emociones >'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -1282,7 +1280,7 @@ object Emotion: TEmotion
   end
   object Edit5: TEdit
     Left = 12
-    Top = 92
+    Top = 88
     Width = 789
     Height = 20
     Cursor = crIBeam
@@ -1301,26 +1299,7 @@ object Emotion: TEmotion
   end
   object Edit4: TEdit
     Left = 12
-    Top = 68
-    Width = 789
-    Height = 20
-    Cursor = crIBeam
-    BorderStyle = bsNone
-    Color = clWhite
-    Enabled = False
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 12
-    Text = 'Detalle la condición física actual: '
-    OnChange = Edit4Change
-  end
-  object Edit3: TEdit
-    Left = 12
-    Top = 44
+    Top = 64
     Width = 789
     Height = 20
     Cursor = crIBeam
@@ -1334,12 +1313,12 @@ object Emotion: TEmotion
     Font.Style = []
     ParentFont = False
     TabOrder = 11
-    Text = 'Detalle todos los problemas psicológicos actuales: '
-    OnChange = Edit3Change
+    Text = 'Detalle la condición física actual: '
+    OnChange = Edit4Change
   end
-  object Edit1: TEdit
+  object Edit3: TEdit
     Left = 12
-    Top = 20
+    Top = 40
     Width = 789
     Height = 20
     Cursor = crIBeam
@@ -1353,12 +1332,31 @@ object Emotion: TEmotion
     Font.Style = []
     ParentFont = False
     TabOrder = 10
+    Text = 'Detalle todos los problemas psicológicos actuales: '
+    OnChange = Edit3Change
+  end
+  object Edit1: TEdit
+    Left = 12
+    Top = 16
+    Width = 789
+    Height = 20
+    Cursor = crIBeam
+    BorderStyle = bsNone
+    Color = clWhite
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
     Text = 'Detalle todos los problemas psicológicos pasados: '
     OnChange = Edit1Change
   end
   object Button12: TButton
     Left = 12
-    Top = 442
+    Top = 438
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1369,32 +1367,32 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 13
     OnClick = Button12Click
   end
   object Button15: TButton
     Tag = 8
     Left = 12
-    Top = 442
+    Top = 438
     Width = 300
     Height = 22
     Cursor = crHandPoint
     Hint = 'Terapia de 1 min. para estimular el inconsciente.'
-    Caption = 'Estimular crecimiento emocional + mecanismos de defensa'
+    Caption = 'Estimular crecimiento emocional + Mecanismos de defensa'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 14
     Visible = False
     OnClick = Button15Click
   end
   object Button18: TButton
     Tag = 8
     Left = 12
-    Top = 490
+    Top = 486
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1406,13 +1404,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 15
     OnClick = Button18Click
   end
   object Button19: TButton
     Tag = 8
     Left = 12
-    Top = 514
+    Top = 510
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1423,13 +1421,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 17
+    TabOrder = 16
     OnClick = Button19Click
   end
   object Button20: TButton
     Tag = 8
     Left = 12
-    Top = 562
+    Top = 558
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1440,13 +1438,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 18
+    TabOrder = 17
     OnClick = Button20Click
   end
   object Button25: TButton
     Tag = 8
     Left = 12
-    Top = 394
+    Top = 390
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1458,12 +1456,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 19
+    TabOrder = 18
     OnClick = Button25Click
   end
   object Button27: TButton
     Left = 500
-    Top = 262
+    Top = 258
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1474,13 +1472,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 19
     OnClick = Button27Click
   end
   object Button28: TButton
     Tag = 8
     Left = 12
-    Top = 322
+    Top = 318
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1492,13 +1490,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 21
+    TabOrder = 20
     OnClick = Button28Click
   end
   object Button30: TButton
     Tag = 8
     Left = 12
-    Top = 274
+    Top = 270
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1509,13 +1507,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 23
+    TabOrder = 22
     OnClick = Button30Click
   end
   object Button33: TButton
     Tag = 8
     Left = 500
-    Top = 118
+    Top = 114
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1526,13 +1524,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 25
+    TabOrder = 24
     OnClick = Button33Click
   end
   object Button32: TButton
     Tag = 8
     Left = 12
-    Top = 466
+    Top = 462
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1543,13 +1541,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 24
+    TabOrder = 23
     OnClick = Button32Click
   end
   object Button34: TButton
     Tag = 8
     Left = 12
-    Top = 250
+    Top = 246
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1560,13 +1558,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 26
+    TabOrder = 25
     OnClick = Button34Click
   end
   object Button29: TButton
     Tag = 8
     Left = 12
-    Top = 370
+    Top = 366
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1577,12 +1575,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 22
+    TabOrder = 21
     OnClick = Button29Click
   end
   object Button35: TButton
     Left = 500
-    Top = 310
+    Top = 306
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1593,12 +1591,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 27
+    TabOrder = 26
     OnClick = Button35Click
   end
   object Button54: TButton
     Left = 500
-    Top = 190
+    Top = 186
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1609,13 +1607,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 29
+    TabOrder = 28
     OnClick = Button54Click
   end
   object Button57: TButton
     Tag = 8
     Left = 12
-    Top = 538
+    Top = 534
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1627,12 +1625,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 30
+    TabOrder = 29
     OnClick = Button57Click
   end
   object Button66: TButton
     Left = 500
-    Top = 166
+    Top = 162
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1643,12 +1641,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 31
+    TabOrder = 30
     OnClick = Button66Click
   end
   object Button74: TButton
     Left = 500
-    Top = 238
+    Top = 234
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1659,13 +1657,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 34
+    TabOrder = 33
     OnClick = Button74Click
   end
   object Button78: TButton
     Tag = 8
     Left = 12
-    Top = 586
+    Top = 582
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1676,12 +1674,12 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 35
+    TabOrder = 34
     OnClick = Button78Click
   end
   object Button83: TButton
     Left = 500
-    Top = 334
+    Top = 330
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1692,13 +1690,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 37
+    TabOrder = 36
     OnClick = Button83Click
   end
   object Button105: TButton
     Tag = 8
     Left = 12
-    Top = 610
+    Top = 606
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1709,13 +1707,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 39
+    TabOrder = 38
     OnClick = Button105Click
   end
   object Button106: TButton
     Tag = 8
     Left = 12
-    Top = 634
+    Top = 630
     Width = 300
     Height = 22
     Cursor = crHandPoint
@@ -1726,7 +1724,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 40
+    TabOrder = 39
     OnClick = Button106Click
   end
   object Edit34: TEdit
@@ -1750,9 +1748,9 @@ object Emotion: TEmotion
   end
   object Panel13: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 689
-    Height = 613
+    Height = 637
     Hint = 'Para terapia emocional.'
     BevelOuter = bvNone
     BevelWidth = 2
@@ -1763,7 +1761,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 13
+    TabOrder = 12
     Visible = False
     object Edit15: TEdit
       Left = 16
@@ -1779,7 +1777,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 11
       Text = '¿Qué debe aceptar el grupo?: '
     end
     object Edit6: TEdit
@@ -1968,22 +1966,6 @@ object Emotion: TEmotion
       TabOrder = 10
       Visible = False
     end
-    object Button44: TButton
-      Left = 20
-      Top = 556
-      Width = 214
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Ayuda'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 11
-      OnClick = Button44Click
-    end
     object Button45: TButton
       Left = 236
       Top = 556
@@ -1998,7 +1980,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 12
       OnClick = Button45Click
     end
     object Edit24: TEdit
@@ -2015,7 +1997,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 13
       Text = '¿Qué soluciones fueron ensayadas?: '
     end
     object Edit25: TEdit
@@ -2032,7 +2014,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 16
+      TabOrder = 14
       Text = '¿Quién las saboteó?: '
     end
     object Edit26: TEdit
@@ -2049,7 +2031,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 17
+      TabOrder = 15
       Text = '¿Dónde están el amor y el respeto de los bloqueos?: '
     end
     object Edit27: TEdit
@@ -2066,7 +2048,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 18
+      TabOrder = 16
       Text = '¿Cuales son los deseos callados y profundos de cada uno?: '
     end
     object Edit28: TEdit
@@ -2083,61 +2065,8 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 19
+      TabOrder = 17
       Text = 'Añadir su propia pregunta: '
-    end
-    object Memo2: TMemo
-      Left = 16
-      Top = 52
-      Width = 657
-      Height = 181
-      BorderStyle = bsNone
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      Lines.Strings = (
-        
-          'Use este cuestionario para iniciar y registrar el flujo de conve' +
-          'rsación entre los miembros de un grupo o de una familia.  Podrá ' +
-          'introducir '
-        'información en cada uno de los cajetínes de Edición.'
-        ''
-        
-          'Este formulario le permitirá agilizar el registro del flujo de p' +
-          'ensamientos instantaneamente.  Cuando pulse el botón '#39'Guardar '
-        
-          'cuestionario'#39', los textos editados quedarán guardados.  Utilícel' +
-          'o tantas veces como sea necesario para registrar el flújo de la '
-        
-          'conversación.  La finalidad de esta terapia es aliviar el sufrim' +
-          'iento, darse cuenta de que en la vida hay buenos   y malos momen' +
-          'tos, '
-        
-          'reemplazar el miedo y la ira por el amor, cambiar uno mismo, ent' +
-          'ender que intentar cambiar a otros provoca sufrimientos, guiarse' +
-          ' mejor '
-        
-          'por el ejemplo que por el hostigamiento, nunca ser tan insistent' +
-          'e con alguien cercano, etc.'
-        ''
-        
-          'Se debe respetar el camino de otros, pero respetar el propio aún' +
-          ' más, ya que no puede ayudar a otros hasta ayudarse a sí mismo. ' +
-          ' El '
-        
-          'inconciente de las partes constituye el inconciente del todo, as' +
-          'í que déjelo fluir.'
-        ''
-        
-          '                                      .:: Pulsar 2 veces sobre e' +
-          'ste panel para ocultarlo ::.')
-      ParentFont = False
-      TabOrder = 12
-      Visible = False
-      OnDblClick = Memo2DblClick
     end
     object Panel23: TPanel
       Left = 663
@@ -2155,13 +2084,13 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 20
+      TabOrder = 18
       OnClick = Panel23Click
     end
   end
   object Panel14: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     BevelOuter = bvNone
@@ -2173,15 +2102,15 @@ object Emotion: TEmotion
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 33
+    TabOrder = 32
     Visible = False
     object Label283: TLabel
-      Left = 72
-      Top = 143
-      Width = 165
+      Left = 56
+      Top = 200
+      Width = 169
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Dolor y sufrimiento -> Estrés'
+      Caption = 'Dolor + Sufrimiento -> Estrés'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2190,12 +2119,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label284: TLabel
-      Left = 142
-      Top = 212
+      Left = 130
+      Top = 302
       Width = 95
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Ira - Agresividad'
+      Caption = 'Ira / Agresividad'
       Color = clYellow
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2206,8 +2135,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label285: TLabel
-      Left = 166
-      Top = 121
+      Left = 154
+      Top = 166
       Width = 71
       Height = 16
       Alignment = taRightJustify
@@ -2220,8 +2149,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label286: TLabel
-      Left = 188
-      Top = 98
+      Left = 176
+      Top = 132
       Width = 49
       Height = 16
       Alignment = taRightJustify
@@ -2234,8 +2163,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label287: TLabel
-      Left = 172
-      Top = 75
+      Left = 160
+      Top = 98
       Width = 65
       Height = 16
       Alignment = taRightJustify
@@ -2248,12 +2177,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label288: TLabel
-      Left = 164
-      Top = 235
+      Left = 152
+      Top = 336
       Width = 73
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Miedo - Odio'
+      Caption = 'Miedo / Odio'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2262,12 +2191,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label289: TLabel
-      Left = 101
-      Top = 258
+      Left = 89
+      Top = 370
       Width = 136
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Negatividad - Desilusión'
+      Caption = 'Negatividad / Desilusión'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2276,12 +2205,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label290: TLabel
-      Left = 95
-      Top = 303
+      Left = 83
+      Top = 438
       Width = 142
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Discusión - Preocupación'
+      Caption = 'Discusión / Preocupación'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2290,8 +2219,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label291: TLabel
-      Left = 120
-      Top = 326
+      Left = 108
+      Top = 472
       Width = 117
       Height = 16
       Alignment = taRightJustify
@@ -2304,8 +2233,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label292: TLabel
-      Left = 143
-      Top = 349
+      Left = 131
+      Top = 506
       Width = 94
       Height = 16
       Alignment = taRightJustify
@@ -2318,8 +2247,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label293: TLabel
-      Left = 151
-      Top = 166
+      Left = 139
+      Top = 234
       Width = 86
       Height = 16
       Alignment = taRightJustify
@@ -2332,12 +2261,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label294: TLabel
-      Left = 115
-      Top = 281
+      Left = 103
+      Top = 404
       Width = 122
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Pena - Resentimiento'
+      Caption = 'Pena / Resentimiento'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2346,12 +2275,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label295: TLabel
-      Left = 131
-      Top = 189
+      Left = 119
+      Top = 268
       Width = 106
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Confusión - Ilusión'
+      Caption = 'Confusión / Ilusión'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -13
@@ -2360,12 +2289,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label296: TLabel
-      Left = 144
-      Top = 52
-      Width = 93
+      Left = 142
+      Top = 64
+      Width = 83
       Height = 19
       Alignment = taRightJustify
-      Caption = 'Luz espiritual'
+      Caption = 'Iluminación'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -2374,8 +2303,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label297: TLabel
-      Left = 97
-      Top = 372
+      Left = 85
+      Top = 540
       Width = 140
       Height = 19
       Alignment = taRightJustify
@@ -2388,25 +2317,26 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label298: TLabel
-      Left = 108
-      Top = 20
-      Width = 663
-      Height = 29
+      Left = 196
+      Top = 32
+      Width = 579
+      Height = 23
       Caption = 
-        'EMOCIONES                                                     BI' +
-        'OLOGÍA'
+        'EMOCIONES                                                       ' +
+        '          BIOLOGÍA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
-      Font.Height = -24
+      Font.Height = -19
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
     end
     object Label299: TLabel
-      Left = 420
-      Top = 96
+      Left = 408
+      Top = 112
       Width = 309
       Height = 16
+      Alignment = taRightJustify
       Caption = 'El estrés se introduce en gran variedad de formas -->'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2416,8 +2346,8 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label300: TLabel
-      Left = 690
-      Top = 56
+      Left = 678
+      Top = 64
       Width = 39
       Height = 19
       Caption = 'Salud'
@@ -2429,11 +2359,12 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label301: TLabel
-      Left = 681
-      Top = 372
-      Width = 48
+      Left = 657
+      Top = 540
+      Width = 60
       Height = 19
-      Caption = 'Muerte'
+      Alignment = taRightJustify
+      Caption = 'Afección'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -2442,10 +2373,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label302: TLabel
-      Left = 442
-      Top = 135
+      Left = 430
+      Top = 159
       Width = 287
       Height = 16
+      Alignment = taRightJustify
       Caption = '1. Reacción de alarma con síntomas de intensidad'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2455,10 +2387,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label303: TLabel
-      Left = 517
-      Top = 190
+      Left = 505
+      Top = 207
       Width = 212
       Height = 16
+      Alignment = taRightJustify
       Caption = '2. Estado de adaptación sin síntomas'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2468,10 +2401,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label304: TLabel
-      Left = 532
-      Top = 216
+      Left = 520
+      Top = 254
       Width = 197
       Height = 14
+      Alignment = taRightJustify
       Caption = 'a) Disturbio funcional de los órganos'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2481,10 +2415,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label305: TLabel
-      Left = 576
-      Top = 243
+      Left = 564
+      Top = 302
       Width = 153
       Height = 14
+      Alignment = taRightJustify
       Caption = 'b) Disturbio físico y orgánico'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2494,10 +2429,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label306: TLabel
-      Left = 509
-      Top = 293
+      Left = 497
+      Top = 350
       Width = 220
       Height = 16
+      Alignment = taRightJustify
       Caption = '3. Extenuación o colapso de la energía'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2507,10 +2443,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label307: TLabel
-      Left = 637
-      Top = 313
+      Left = 625
+      Top = 397
       Width = 92
       Height = 14
+      Alignment = taRightJustify
       Caption = 'a) Muerte celular'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2520,10 +2457,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label308: TLabel
-      Left = 612
-      Top = 333
+      Left = 600
+      Top = 445
       Width = 117
       Height = 14
+      Alignment = taRightJustify
       Caption = 'b) Muerte del órgano'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2533,10 +2471,11 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Label309: TLabel
-      Left = 561
-      Top = 352
+      Left = 549
+      Top = 492
       Width = 168
       Height = 14
+      Alignment = taRightJustify
       Caption = 'c) Muerte del sistema orgánico'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
@@ -2545,26 +2484,11 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
     end
-    object Label310: TLabel
-      Left = 28
-      Top = 552
-      Width = 66
-      Height = 16
-      Caption = 'Afirmación:'
-      Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentColor = False
-      ParentFont = False
-    end
     object TrackBar1: TTrackBar
-      Left = 244
-      Top = 52
-      Width = 37
-      Height = 345
+      Left = 232
+      Top = 60
+      Width = 33
+      Height = 500
       Cursor = crHandPoint
       Max = 100
       Orientation = trVertical
@@ -2573,14 +2497,14 @@ object Emotion: TEmotion
       SelEnd = 0
       SelStart = 0
       TabOrder = 0
-      TickMarks = tmBottomRight
-      TickStyle = tsAuto
+      TickMarks = tmBoth
+      TickStyle = tsNone
     end
     object TrackBar7: TTrackBar
-      Left = 736
-      Top = 52
-      Width = 41
-      Height = 345
+      Left = 724
+      Top = 60
+      Width = 33
+      Height = 500
       Cursor = crHandPoint
       Max = 100
       Orientation = trVertical
@@ -2589,14 +2513,14 @@ object Emotion: TEmotion
       SelEnd = 0
       SelStart = 0
       TabOrder = 1
-      TickMarks = tmBottomRight
-      TickStyle = tsAuto
+      TickMarks = tmBoth
+      TickStyle = tsNone
     end
     object Edit32: TEdit
-      Left = 32
-      Top = 520
-      Width = 729
-      Height = 21
+      Left = 12
+      Top = 12
+      Width = 273
+      Height = 16
       Cursor = crIBeam
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
@@ -2611,12 +2535,12 @@ object Emotion: TEmotion
       OnExit = Edit32Exit
     end
     object Button76: TButton
-      Left = 60
-      Top = 584
-      Width = 330
+      Left = 120
+      Top = 604
+      Width = 280
       Height = 22
       Cursor = crHandPoint
-      Caption = 'Afirmación de la elección súperconciente'
+      Caption = 'Afirmación Positiva'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clPurple
       Font.Height = -11
@@ -2627,9 +2551,9 @@ object Emotion: TEmotion
       OnClick = Button76Click
     end
     object Button77: TButton
-      Left = 400
-      Top = 584
-      Width = 330
+      Left = 688
+      Top = 604
+      Width = 280
       Height = 22
       Cursor = crHandPoint
       Caption = 'Testar y equilibrar cuadros de flujos'
@@ -2643,9 +2567,9 @@ object Emotion: TEmotion
       OnClick = Button77Click
     end
     object Button79: TButton
-      Left = 60
-      Top = 608
-      Width = 330
+      Left = 404
+      Top = 604
+      Width = 280
       Height = 22
       Cursor = crHandPoint
       Caption = 'Disrrupción vínculo hipotálamo / vesícula biliar'
@@ -2655,91 +2579,8 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
-      OnClick = Button78Click
-    end
-    object Memo4: TMemo
-      Left = 32
-      Top = 400
-      Width = 729
-      Height = 113
-      BorderStyle = bsNone
-      Color = clActiveCaption
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      Lines.Strings = (
-        ''
-        
-          '  Este programa está diseñado para mostrarle dónde está situada ' +
-          'la persona en la tabla de flujos de '
-        
-          '  salud emocional y biológica. Cuando el dolor y el sufrimiento ' +
-          'entran en nuestro cuerpo, responde-'
-        
-          '  mos con reacciones de alarma, cólera emocional, miedo, etc.; c' +
-          'omo si descendiéramos hacia la'
-        
-          '  oscuridad y la muerte hasta que aceptando la afección, restitu' +
-          'imos la causa y reparamos los órga-'
-        
-          '  nos y las emociones dañadas mediante la liberación, el crecimi' +
-          'ento, la aceptación y el cambio. '
-        ''
-        
-          '  Cuando la persona entiende y acepta el sufrimiento a niveles p' +
-          'rofundos, ésta podrá entonces, '
-        
-          '  rebotar como una cinta de goma e ir hacia la luz del bienestar' +
-          '.  El sufrimiento nos afecta a todos,'
-        
-          '  es universal, ya que pretender cambiar sufrimiento por dinero ' +
-          'o trabajo es poco realista. La vida tiene'
-        
-          '  buenos y malos momentos, y si sólo aceptamos los buenos, enton' +
-          'ces nos provocaremos un sufrimi-'
-        '  ento ficticio.'
-        ''
-        
-          '  El sufrimiento y el dolor siempre nos inducen una tendencia ha' +
-          'cia las emociones negativas.  Pelearse'
-        
-          '  con ellas nos crea más sufrimiento, es cuando ignoramos su rea' +
-          'lidad que la potenciamos.  Cuando a'
-        
-          '  esta emoción negativa se la da su merecido sin provocar más su' +
-          'frimiento o dolor en uno o en los otros, '
-        
-          '  entonces podemos tener la esperanza de que las cosas sean dife' +
-          'rentes, lo cual nos prepara, a su vez, '
-        
-          '  para recaer en el sufrimiento o de rebotar desde la oscuridad ' +
-          'hacia la luz.  El entusiasmo es esta luz  '
-        
-          '  interior: el rebote hacia la luz, forma parte de la condición ' +
-          'natural del ser humano.  El tiempo cura todas '
-        
-          '  las heridas pero con aceptación, cambio, humildad, oranción o ' +
-          'espiritualidad y determinación, '
-        
-          '  podemos acelerar el proceso de sanación.  Una vez consigamos l' +
-          'a luz conoceremos el dolor y al '
-        '  mismo tiempo, riqueza.  La vida es así.'
-        ''
-        
-          '  La rueda del progreso gira y cada camino a escoger le conducir' +
-          'á tanto al placer como al dolor.  No se'
-        
-          '  ha de cambiar el camino sino al caminante.  Trace un plan de c' +
-          'ambio y cura, úse el sistema para conocer'
-        
-          '  la diferencia.  Las etiquetas rojas indican las cicatrices por' +
-          ' curar.')
-      ParentFont = False
-      ScrollBars = ssVertical
       TabOrder = 5
+      OnClick = Button78Click
     end
     object Panel24: TPanel
       Left = 959
@@ -2757,7 +2598,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
       OnClick = Panel24Click
     end
   end
@@ -2768,7 +2609,7 @@ object Emotion: TEmotion
     Height = 22
     BevelOuter = bvNone
     Color = clBlack
-    TabOrder = 44
+    TabOrder = 43
     object LCrono2: TLabel
       Left = 84
       Top = 4
@@ -2804,7 +2645,7 @@ object Emotion: TEmotion
   end
   object Panel8: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     BevelOuter = bvNone
@@ -5251,7 +5092,7 @@ object Emotion: TEmotion
   end
   object Panel7: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 465
     Hint = 'Inicia exploración EPR de reacciones a señales emocionales.'
@@ -5265,13 +5106,14 @@ object Emotion: TEmotion
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 28
+    TabOrder = 27
     Visible = False
     object Label102: TLabel
       Left = 12
       Top = 44
       Width = 122
       Height = 13
+      Alignment = taRightJustify
       Caption = ' Testar hasta esta edad: '
       Font.Charset = ANSI_CHARSET
       Font.Color = clBlack
@@ -5487,7 +5329,7 @@ object Emotion: TEmotion
       Transparent = True
     end
     object Label100: TLabel
-      Left = 230
+      Left = 222
       Top = 44
       Width = 28
       Height = 13
@@ -5501,7 +5343,7 @@ object Emotion: TEmotion
       Transparent = True
     end
     object Label650: TLabel
-      Left = 138
+      Left = 126
       Top = 8
       Width = 18
       Height = 13
@@ -5515,7 +5357,7 @@ object Emotion: TEmotion
       Transparent = True
     end
     object Label651: TLabel
-      Left = 50
+      Left = 52
       Top = 24
       Width = 18
       Height = 13
@@ -5547,6 +5389,7 @@ object Emotion: TEmotion
       Top = 8
       Width = 105
       Height = 13
+      Alignment = taRightJustify
       Caption = 'Fecha de nacimiento |'
       Font.Charset = ANSI_CHARSET
       Font.Color = clBlack
@@ -5559,9 +5402,9 @@ object Emotion: TEmotion
     object Label654: TLabel
       Left = 16
       Top = 24
-      Width = 28
+      Width = 31
       Height = 13
-      Caption = 'Edad:'
+      Caption = 'Edad |'
       Font.Charset = ANSI_CHARSET
       Font.Color = clBlack
       Font.Height = -11
@@ -5571,7 +5414,7 @@ object Emotion: TEmotion
       Transparent = True
     end
     object Label655: TLabel
-      Left = 322
+      Left = 306
       Top = 45
       Width = 27
       Height = 13
@@ -5583,6 +5426,57 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       Transparent = True
+    end
+    object Label310: TLabel
+      Left = 897
+      Top = 164
+      Width = 78
+      Height = 13
+      Cursor = crHandPoint
+      Alignment = taRightJustify
+      Caption = 'Homotoxicología'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clPurple
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label310Click
+    end
+    object Label617: TLabel
+      Left = 898
+      Top = 180
+      Width = 77
+      Height = 13
+      Cursor = crHandPoint
+      Alignment = taRightJustify
+      Caption = 'Neuro Anatomía'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clPurple
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label617Click
+    end
+    object Label657: TLabel
+      Left = 896
+      Top = 196
+      Width = 79
+      Height = 13
+      Cursor = crHandPoint
+      Alignment = taRightJustify
+      Caption = 'Realizar Informe'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clPurple
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      Transparent = True
+      OnClick = Label657Click
     end
     object Button63: TButton
       Left = 12
@@ -5597,11 +5491,11 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 11
       OnClick = Button63Click
     end
     object SpinEdit1: TSpinEdit
-      Left = 148
+      Left = 136
       Top = 40
       Width = 77
       Height = 22
@@ -5692,62 +5586,6 @@ object Emotion: TEmotion
       TabOrder = 4
       OnClick = Button39Click
     end
-    object Button40: TButton
-      Left = 723
-      Top = 246
-      Width = 249
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Conectar a homotoxicología'
-      Enabled = False
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clPurple
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 5
-      OnClick = Button40Click
-    end
-    object Button41: TButton
-      Left = 723
-      Top = 270
-      Width = 249
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Conectar a espina dorsal'
-      Enabled = False
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clPurple
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 6
-      OnClick = Button41Click
-    end
-    object Button46: TButton
-      Left = 723
-      Top = 294
-      Width = 249
-      Height = 22
-      Cursor = crHandPoint
-      Caption = 'Realizar informe'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clPurple
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 7
-      OnClick = Button46Click
-    end
     object Button55: TButton
       Tag = 8
       Left = 725
@@ -5766,7 +5604,7 @@ object Emotion: TEmotion
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 8
+      TabOrder = 5
       OnClick = Button55Click
     end
     object Button56: TButton
@@ -5785,7 +5623,7 @@ object Emotion: TEmotion
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 9
+      TabOrder = 6
       OnClick = Button56Click
     end
     object SpinEdit2: TSpinEdit
@@ -5803,7 +5641,7 @@ object Emotion: TEmotion
       MaxValue = 45
       MinValue = 1
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 7
       Value = 1
       OnChange = SpinEdit2Change
     end
@@ -5824,7 +5662,7 @@ object Emotion: TEmotion
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 11
+      TabOrder = 8
       OnClick = Button58Click
     end
     object Button60: TButton
@@ -5842,7 +5680,7 @@ object Emotion: TEmotion
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 12
+      TabOrder = 9
       OnClick = Button60Click
     end
     object Button61: TButton
@@ -5858,7 +5696,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 10
       OnClick = Button61Click
     end
     object Edit37: TEdit
@@ -5876,7 +5714,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 12
       OnChange = Edit37Change
       OnClick = Edit37Click
     end
@@ -5897,7 +5735,7 @@ object Emotion: TEmotion
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 16
+      TabOrder = 13
       OnClick = Button136Click
     end
     object ComboBox1: TComboBox
@@ -5914,7 +5752,7 @@ object Emotion: TEmotion
       Font.Style = []
       ItemHeight = 13
       ParentFont = False
-      TabOrder = 17
+      TabOrder = 14
       OnChange = ComboBox1Change
       OnClick = ComboBox1Click
       OnDblClick = ComboBox1DblClick
@@ -5997,7 +5835,7 @@ object Emotion: TEmotion
         'Vergüenza')
     end
     object SpinEdit8: TSpinEdit
-      Left = 268
+      Left = 256
       Top = 40
       Width = 45
       Height = 22
@@ -6010,7 +5848,7 @@ object Emotion: TEmotion
       MaxValue = 50000
       MinValue = 1
       ParentFont = False
-      TabOrder = 18
+      TabOrder = 15
       Value = 1
       OnChange = SpinEdit8Change
       OnEnter = SpinEdit8Enter
@@ -6031,13 +5869,13 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 19
+      TabOrder = 16
       OnClick = Panel26Click
     end
   end
   object Panel16: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     BevelOuter = bvNone
@@ -6049,7 +5887,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 38
+    TabOrder = 37
     Visible = False
     object Label359: TLabel
       Left = 40
@@ -6315,7 +6153,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button80Click
     end
     object Button96: TButton
@@ -6332,7 +6170,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
       OnClick = Button81Click
     end
     object Edit33: TEdit
@@ -6350,7 +6188,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
     end
     object Button97: TButton
       Left = 688
@@ -6365,7 +6203,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 3
       OnClick = Button97Click
     end
     object Button98: TButton
@@ -6381,7 +6219,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 4
       OnClick = Button98Click
     end
     object Button99: TButton
@@ -6397,7 +6235,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
       OnClick = Button99Click
     end
     object Button100: TButton
@@ -6413,7 +6251,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
       OnClick = Button100Click
     end
     object Button101: TButton
@@ -6429,7 +6267,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = Button101Click
     end
     object Button111: TButton
@@ -6445,7 +6283,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
       Visible = False
       OnClick = Button111Click
     end
@@ -6462,7 +6300,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
       Visible = False
       OnClick = Button121Click
     end
@@ -6479,7 +6317,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 10
       Visible = False
       OnClick = Button122Click
     end
@@ -6496,7 +6334,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 12
+      TabOrder = 11
       Visible = False
       OnClick = Button123Click
     end
@@ -6513,7 +6351,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 12
       Visible = False
       OnClick = Button124Click
     end
@@ -6530,7 +6368,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 13
       Visible = False
       OnClick = Button125Click
     end
@@ -6547,7 +6385,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 14
       Visible = False
       OnClick = Button126Click
     end
@@ -6564,7 +6402,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 16
+      TabOrder = 15
       Visible = False
       OnClick = Button127Click
     end
@@ -6581,7 +6419,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 17
+      TabOrder = 16
       Visible = False
       OnClick = Button128Click
     end
@@ -6598,7 +6436,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 18
+      TabOrder = 17
       Visible = False
       OnClick = Button129Click
     end
@@ -6615,7 +6453,7 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 19
+      TabOrder = 18
       Visible = False
       OnClick = Button130Click
     end
@@ -6632,53 +6470,9 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 20
+      TabOrder = 19
       Visible = False
       OnClick = Button131Click
-    end
-    object Memo6: TMemo
-      Left = 144
-      Top = 8
-      Width = 509
-      Height = 169
-      Cursor = crHandPoint
-      Hint = 'Pulsar para el significado de la vida'
-      BorderStyle = bsNone
-      Color = clBlue
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWhite
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      Lines.Strings = (
-        ''
-        
-          '     En la psicología del Budismo existen varios niveles de exis' +
-          'tencia mental, estos a menudo esconden'
-        
-          '     secretos.  La persona desea mantener secretos de los demás ' +
-          'a vecer aparentando algo que no es.'
-        ''
-        
-          '     Todos tenemos secretos ocultos y ultimadamente nuestro inco' +
-          'nciente tiene secretos que el '
-        '     conciente ignora; algunos secretos son bastante profundos.'
-        ''
-        
-          '     Este programa ha sido diseñado para medir reacciones inconc' +
-          'ientes a ciertas pautas referentes'
-        
-          '     a los secretos.  Use este programa eticamente y siempre con' +
-          ' permiso de la persona.'
-        ''
-        ''
-        
-          '                                                    .:: Pulse 2 ' +
-          'veces sobre este panel para proseguir ::.'
-        '    ')
-      ParentFont = False
-      TabOrder = 0
-      OnDblClick = Memo6DblClick
     end
     object Panel27: TPanel
       Left = 959
@@ -6696,13 +6490,13 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 21
+      TabOrder = 20
       OnClick = Panel27Click
     end
   end
   object Panel11: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     BevelOuter = bvNone
@@ -6713,7 +6507,7 @@ object Emotion: TEmotion
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 32
+    TabOrder = 31
     Visible = False
     object Label615: TLabel
       Left = 16
@@ -10712,7 +10506,7 @@ object Emotion: TEmotion
   end
   object Panel9: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     Hint = 'La entrevista y preguntas respondidas son esenciales'
@@ -10729,42 +10523,45 @@ object Emotion: TEmotion
     Visible = False
     OnDblClick = Panel9DblClick
     object Label2: TLabel
-      Left = 916
-      Top = 448
-      Width = 40
-      Height = 23
-      Caption = '0000'
+      Left = 933
+      Top = 168
+      Width = 35
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '00000'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
-      Font.Height = -19
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
     end
     object Label95: TLabel
-      Left = 916
-      Top = 484
-      Width = 40
-      Height = 23
-      Caption = '0000'
+      Left = 933
+      Top = 184
+      Width = 35
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '00000'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
-      Font.Height = -19
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
       Transparent = True
     end
     object Label96: TLabel
-      Left = 916
-      Top = 520
-      Width = 40
-      Height = 23
-      Caption = '0000'
+      Left = 933
+      Top = 200
+      Width = 35
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '00000'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
-      Font.Height = -19
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
@@ -10772,7 +10569,7 @@ object Emotion: TEmotion
     end
     object Label126: TLabel
       Left = 20
-      Top = 204
+      Top = 208
       Width = 16
       Height = 13
       Caption = '----'
@@ -10788,23 +10585,7 @@ object Emotion: TEmotion
     end
     object Label127: TLabel
       Left = 20
-      Top = 288
-      Width = 16
-      Height = 13
-      Caption = '----'
-      Color = clYellow
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentColor = False
-      ParentFont = False
-      Transparent = True
-    end
-    object Label128: TLabel
-      Left = 20
-      Top = 252
+      Top = 268
       Width = 16
       Height = 13
       Caption = '----'
@@ -10820,7 +10601,7 @@ object Emotion: TEmotion
     end
     object Label129: TLabel
       Left = 20
-      Top = 304
+      Top = 284
       Width = 16
       Height = 13
       Caption = '----'
@@ -10850,7 +10631,7 @@ object Emotion: TEmotion
     end
     object Label98: TLabel
       Left = 19
-      Top = 272
+      Top = 248
       Width = 109
       Height = 16
       Caption = 'Items sanadores'
@@ -10862,23 +10643,9 @@ object Emotion: TEmotion
       ParentFont = False
       Transparent = True
     end
-    object Label99: TLabel
-      Left = 20
-      Top = 236
-      Width = 16
-      Height = 13
-      Caption = '----'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
     object Label101: TLabel
       Left = 20
-      Top = 220
+      Top = 224
       Width = 16
       Height = 13
       Caption = '----'
@@ -10892,894 +10659,1874 @@ object Emotion: TEmotion
       ParentFont = False
       Transparent = True
     end
-    object Label4: TLabel
-      Left = 740
-      Top = 380
-      Width = 72
-      Height = 13
-      Caption = 'Sobre ambición'
+    object GroupBox1: TGroupBox
+      Left = 13
+      Top = 333
+      Width = 716
+      Height = 268
+      Caption = ' Psicología negativa '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label5: TLabel
-      Left = 40
-      Top = 476
-      Width = 38
-      Height = 13
-      Caption = 'Avaricia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label6: TLabel
-      Left = 40
-      Top = 524
-      Width = 34
-      Height = 13
-      Caption = 'Codicia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label7: TLabel
-      Left = 320
-      Top = 412
-      Width = 34
-      Height = 13
-      Caption = 'Envidia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label8: TLabel
-      Left = 40
-      Top = 428
-      Width = 31
-      Height = 13
-      Caption = 'Apatía'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label9: TLabel
-      Left = 600
-      Top = 380
-      Width = 36
-      Height = 13
-      Caption = 'Psicosis'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label10: TLabel
-      Left = 180
-      Top = 396
-      Width = 43
-      Height = 13
-      Caption = 'Debilidad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label11: TLabel
-      Left = 320
-      Top = 428
-      Width = 64
-      Height = 13
-      Caption = 'Esquizofrenia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label12: TLabel
-      Left = 180
-      Top = 412
-      Width = 29
-      Height = 13
-      Caption = 'Delirio'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label13: TLabel
-      Left = 320
-      Top = 492
-      Width = 36
-      Height = 13
-      Caption = 'Histeria'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label14: TLabel
-      Left = 460
-      Top = 396
-      Width = 49
-      Height = 13
-      Caption = 'Mal humor'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label15: TLabel
-      Left = 460
-      Top = 460
-      Width = 58
-      Height = 13
-      Caption = 'Obsesividad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label16: TLabel
-      Left = 460
-      Top = 444
-      Width = 41
-      Height = 13
-      Caption = 'Neurosis'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label17: TLabel
-      Left = 320
-      Top = 444
-      Width = 26
-      Height = 13
-      Caption = 'Fobia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label18: TLabel
-      Left = 180
-      Top = 428
-      Width = 48
-      Height = 13
-      Caption = 'Depresión'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label19: TLabel
-      Left = 860
-      Top = 364
-      Width = 35
-      Height = 13
-      Caption = 'Timidez'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label20: TLabel
-      Left = 320
-      Top = 348
-      Width = 52
-      Height = 13
-      Caption = 'Disociación'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label21: TLabel
-      Left = 180
-      Top = 444
-      Width = 71
-      Height = 13
-      Caption = 'Desadaptación'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label22: TLabel
-      Left = 600
-      Top = 364
-      Width = 94
-      Height = 13
-      Caption = 'Problemas sexuales'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label23: TLabel
-      Left = 40
-      Top = 364
-      Width = 39
-      Height = 13
-      Caption = 'Adicción'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label24: TLabel
-      Left = 20
-      Top = 328
-      Width = 129
-      Height = 13
-      Caption = 'Criterios preocupantes'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      Transparent = True
-    end
-    object Label25: TLabel
-      Left = 40
-      Top = 460
-      Width = 55
-      Height = 13
-      Caption = 'Ausentismo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label26: TLabel
-      Left = 40
-      Top = 348
-      Width = 57
-      Height = 13
-      Caption = 'Abatimiento'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label27: TLabel
-      Left = 460
-      Top = 428
-      Width = 39
-      Height = 13
-      Caption = 'Mutismo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label28: TLabel
-      Left = 180
-      Top = 524
-      Width = 52
-      Height = 13
-      Caption = 'Distracción'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label29: TLabel
-      Left = 460
-      Top = 348
-      Width = 71
-      Height = 13
-      Caption = 'Inexpresividad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label30: TLabel
-      Left = 320
-      Top = 364
-      Width = 25
-      Height = 13
-      Caption = 'Dolor'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label31: TLabel
-      Left = 40
-      Top = 396
-      Width = 42
-      Height = 13
-      Caption = 'Angustia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label32: TLabel
-      Left = 180
-      Top = 364
-      Width = 69
-      Height = 13
-      Caption = 'Crisis nerviosa'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label33: TLabel
-      Left = 320
-      Top = 460
-      Width = 54
-      Height = 13
-      Caption = 'Frustración'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label34: TLabel
-      Left = 600
-      Top = 396
-      Width = 41
-      Height = 13
-      Caption = 'Rebeldía'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label35: TLabel
-      Left = 460
-      Top = 524
-      Width = 48
-      Height = 13
-      Caption = 'Pesimismo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label36: TLabel
-      Left = 460
-      Top = 364
-      Width = 54
-      Height = 13
-      Caption = 'Irritabilidad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label37: TLabel
-      Left = 320
-      Top = 524
-      Width = 48
-      Height = 13
-      Caption = 'Indecisión'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label38: TLabel
-      Left = 320
-      Top = 508
-      Width = 46
-      Height = 13
-      Caption = 'Hostilidad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label39: TLabel
-      Left = 460
-      Top = 492
-      Width = 34
-      Height = 13
-      Caption = 'Orgullo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label40: TLabel
-      Left = 460
-      Top = 380
-      Width = 36
-      Height = 13
-      Caption = 'Lástima'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label41: TLabel
-      Left = 180
-      Top = 508
-      Width = 47
-      Height = 13
-      Caption = 'Desilusión'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label42: TLabel
-      Left = 180
-      Top = 492
-      Width = 64
-      Height = 13
-      Caption = 'Desconfianza'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label43: TLabel
-      Left = 180
-      Top = 476
-      Width = 60
-      Height = 13
-      Caption = 'Desasosiego'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label44: TLabel
-      Left = 180
-      Top = 460
-      Width = 46
-      Height = 13
-      Caption = 'Desánimo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label45: TLabel
-      Left = 180
-      Top = 380
-      Width = 57
-      Height = 13
-      Caption = 'Culpabilidad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label46: TLabel
-      Left = 180
-      Top = 348
-      Width = 48
-      Height = 13
-      Caption = 'Confusión'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label47: TLabel
-      Left = 40
-      Top = 508
-      Width = 26
-      Height = 13
-      Caption = 'Celos'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label48: TLabel
-      Left = 40
-      Top = 444
-      Width = 77
-      Height = 13
-      Caption = 'Arrepentimiento'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label49: TLabel
-      Left = 40
-      Top = 492
-      Width = 49
-      Height = 13
-      Caption = 'Cansancio'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label50: TLabel
-      Left = 40
-      Top = 412
-      Width = 44
-      Height = 13
-      Caption = 'Ansiedad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label51: TLabel
-      Left = 40
-      Top = 380
-      Width = 56
-      Height = 13
-      Caption = 'Agresividad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label52: TLabel
-      Left = 460
-      Top = 412
-      Width = 28
-      Height = 13
-      Caption = 'Miedo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label53: TLabel
-      Left = 860
-      Top = 348
-      Width = 37
-      Height = 13
-      Caption = 'Tensión'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label54: TLabel
-      Left = 740
-      Top = 396
-      Width = 38
-      Height = 13
-      Caption = 'Soledad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label55: TLabel
-      Left = 460
-      Top = 508
-      Width = 53
-      Height = 13
-      Caption = 'Perplejidad'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label56: TLabel
-      Left = 600
-      Top = 348
-      Width = 64
-      Height = 13
-      Caption = 'Preocupación'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label57: TLabel
-      Left = 20
-      Top = 552
-      Width = 72
-      Height = 13
-      Caption = 'Otros criterios:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label58: TLabel
-      Left = 740
-      Top = 364
-      Width = 42
-      Height = 13
-      Caption = 'Soberbia'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label59: TLabel
-      Left = 460
-      Top = 476
-      Width = 22
-      Height = 13
-      Caption = 'Odio'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label60: TLabel
-      Left = 740
-      Top = 348
-      Width = 34
-      Height = 13
-      Caption = 'Rencor'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label61: TLabel
-      Left = 860
-      Top = 380
-      Width = 38
-      Height = 13
-      Caption = 'Tristeza'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label62: TLabel
-      Left = 320
-      Top = 396
-      Width = 27
-      Height = 13
-      Caption = 'Enojo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label63: TLabel
-      Left = 320
-      Top = 380
-      Width = 34
-      Height = 13
-      Caption = 'Enfado'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object Label64: TLabel
-      Left = 320
-      Top = 476
-      Width = 44
-      Height = 13
-      Caption = 'Hartazgo'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-    end
-    object L_Consejo: TLabel
-      Left = 24
-      Top = 600
-      Width = 21
-      Height = 13
-      Caption = '|||'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clNavy
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
-    object Edit7: TEdit
-      Left = 96
-      Top = 548
-      Width = 473
-      Height = 20
-      BorderStyle = bsNone
-      Color = clWhite
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
+      TabOrder = 10
+      object Label5: TLabel
+        Left = 40
+        Top = 164
+        Width = 38
+        Height = 13
+        Caption = 'Avaricia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label6: TLabel
+        Left = 40
+        Top = 212
+        Width = 34
+        Height = 13
+        Caption = 'Codicia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label7: TLabel
+        Left = 320
+        Top = 68
+        Width = 34
+        Height = 13
+        Caption = 'Envidia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label8: TLabel
+        Left = 40
+        Top = 116
+        Width = 31
+        Height = 13
+        Caption = 'Apatía'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label10: TLabel
+        Left = 180
+        Top = 68
+        Width = 43
+        Height = 13
+        Caption = 'Debilidad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label11: TLabel
+        Left = 320
+        Top = 84
+        Width = 64
+        Height = 13
+        Caption = 'Esquizofrenia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label12: TLabel
+        Left = 180
+        Top = 84
+        Width = 29
+        Height = 13
+        Caption = 'Delirio'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label13: TLabel
+        Left = 320
+        Top = 148
+        Width = 36
+        Height = 13
+        Caption = 'Histeria'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label14: TLabel
+        Left = 460
+        Top = 40
+        Width = 49
+        Height = 13
+        Caption = 'Mal humor'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label15: TLabel
+        Left = 460
+        Top = 104
+        Width = 58
+        Height = 13
+        Caption = 'Obsesividad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label16: TLabel
+        Left = 460
+        Top = 88
+        Width = 41
+        Height = 13
+        Caption = 'Neurosis'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label17: TLabel
+        Left = 320
+        Top = 100
+        Width = 26
+        Height = 13
+        Caption = 'Fobia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label18: TLabel
+        Left = 180
+        Top = 100
+        Width = 48
+        Height = 13
+        Caption = 'Depresión'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label20: TLabel
+        Left = 180
+        Top = 212
+        Width = 52
+        Height = 13
+        Caption = 'Disociación'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label21: TLabel
+        Left = 180
+        Top = 116
+        Width = 71
+        Height = 13
+        Caption = 'Desadaptación'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label23: TLabel
+        Left = 40
+        Top = 52
+        Width = 39
+        Height = 13
+        Caption = 'Adicción'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label25: TLabel
+        Left = 40
+        Top = 148
+        Width = 55
+        Height = 13
+        Caption = 'Ausentismo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label26: TLabel
+        Left = 40
+        Top = 36
+        Width = 57
+        Height = 13
+        Caption = 'Abatimiento'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label27: TLabel
+        Left = 460
+        Top = 72
+        Width = 39
+        Height = 13
+        Caption = 'Mutismo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label28: TLabel
+        Left = 180
+        Top = 196
+        Width = 52
+        Height = 13
+        Caption = 'Distracción'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label29: TLabel
+        Left = 320
+        Top = 196
+        Width = 71
+        Height = 13
+        Caption = 'Inexpresividad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label30: TLabel
+        Left = 180
+        Top = 228
+        Width = 25
+        Height = 13
+        Caption = 'Dolor'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label31: TLabel
+        Left = 40
+        Top = 84
+        Width = 42
+        Height = 13
+        Caption = 'Angustia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label32: TLabel
+        Left = 180
+        Top = 36
+        Width = 69
+        Height = 13
+        Caption = 'Crisis nerviosa'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label33: TLabel
+        Left = 320
+        Top = 116
+        Width = 54
+        Height = 13
+        Caption = 'Frustración'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label35: TLabel
+        Left = 460
+        Top = 168
+        Width = 48
+        Height = 13
+        Caption = 'Pesimismo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label36: TLabel
+        Left = 320
+        Top = 212
+        Width = 54
+        Height = 13
+        Caption = 'Irritabilidad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label37: TLabel
+        Left = 320
+        Top = 180
+        Width = 48
+        Height = 13
+        Caption = 'Indecisión'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label38: TLabel
+        Left = 320
+        Top = 164
+        Width = 46
+        Height = 13
+        Caption = 'Hostilidad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label39: TLabel
+        Left = 460
+        Top = 136
+        Width = 34
+        Height = 13
+        Caption = 'Orgullo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label40: TLabel
+        Left = 320
+        Top = 228
+        Width = 36
+        Height = 13
+        Caption = 'Lástima'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label41: TLabel
+        Left = 180
+        Top = 180
+        Width = 47
+        Height = 13
+        Caption = 'Desilusión'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label42: TLabel
+        Left = 180
+        Top = 164
+        Width = 64
+        Height = 13
+        Caption = 'Desconfianza'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label43: TLabel
+        Left = 180
+        Top = 148
+        Width = 60
+        Height = 13
+        Caption = 'Desasosiego'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label44: TLabel
+        Left = 180
+        Top = 132
+        Width = 46
+        Height = 13
+        Caption = 'Desánimo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label45: TLabel
+        Left = 180
+        Top = 52
+        Width = 57
+        Height = 13
+        Caption = 'Culpabilidad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label46: TLabel
+        Left = 40
+        Top = 228
+        Width = 48
+        Height = 13
+        Caption = 'Confusión'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label47: TLabel
+        Left = 40
+        Top = 196
+        Width = 26
+        Height = 13
+        Caption = 'Celos'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label48: TLabel
+        Left = 40
+        Top = 132
+        Width = 77
+        Height = 13
+        Caption = 'Arrepentimiento'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label49: TLabel
+        Left = 40
+        Top = 180
+        Width = 49
+        Height = 13
+        Caption = 'Cansancio'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label50: TLabel
+        Left = 40
+        Top = 100
+        Width = 44
+        Height = 13
+        Caption = 'Ansiedad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label51: TLabel
+        Left = 40
+        Top = 68
+        Width = 56
+        Height = 13
+        Caption = 'Agresividad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label52: TLabel
+        Left = 460
+        Top = 56
+        Width = 28
+        Height = 13
+        Caption = 'Miedo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label55: TLabel
+        Left = 460
+        Top = 152
+        Width = 53
+        Height = 13
+        Caption = 'Perplejidad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label59: TLabel
+        Left = 460
+        Top = 120
+        Width = 22
+        Height = 13
+        Caption = 'Odio'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label62: TLabel
+        Left = 320
+        Top = 52
+        Width = 27
+        Height = 13
+        Caption = 'Enojo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label63: TLabel
+        Left = 320
+        Top = 36
+        Width = 34
+        Height = 13
+        Caption = 'Enfado'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label64: TLabel
+        Left = 320
+        Top = 132
+        Width = 44
+        Height = 13
+        Caption = 'Hartazgo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label4: TLabel
+        Left = 600
+        Top = 72
+        Width = 72
+        Height = 13
+        Caption = 'Sobre ambición'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label9: TLabel
+        Left = 460
+        Top = 216
+        Width = 36
+        Height = 13
+        Caption = 'Psicosis'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label19: TLabel
+        Left = 600
+        Top = 120
+        Width = 35
+        Height = 13
+        Caption = 'Timidez'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label22: TLabel
+        Left = 460
+        Top = 200
+        Width = 94
+        Height = 13
+        Caption = 'Problemas sexuales'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label34: TLabel
+        Left = 460
+        Top = 232
+        Width = 41
+        Height = 13
+        Caption = 'Rebeldía'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label53: TLabel
+        Left = 600
+        Top = 104
+        Width = 37
+        Height = 13
+        Caption = 'Tensión'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label54: TLabel
+        Left = 600
+        Top = 88
+        Width = 38
+        Height = 13
+        Caption = 'Soledad'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label56: TLabel
+        Left = 460
+        Top = 184
+        Width = 64
+        Height = 13
+        Caption = 'Preocupación'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label58: TLabel
+        Left = 600
+        Top = 56
+        Width = 42
+        Height = 13
+        Caption = 'Soberbia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label60: TLabel
+        Left = 600
+        Top = 40
+        Width = 34
+        Height = 13
+        Caption = 'Rencor'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object Label61: TLabel
+        Left = 600
+        Top = 136
+        Width = 38
+        Height = 13
+        Caption = 'Tristeza'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+      end
+      object CheckBox1: TCheckBox
+        Left = 20
+        Top = 36
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox2: TCheckBox
+        Left = 20
+        Top = 52
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox3: TCheckBox
+        Left = 20
+        Top = 68
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox4: TCheckBox
+        Left = 20
+        Top = 84
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox5: TCheckBox
+        Left = 20
+        Top = 100
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox6: TCheckBox
+        Left = 20
+        Top = 228
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox7: TCheckBox
+        Left = 160
+        Top = 36
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox8: TCheckBox
+        Left = 160
+        Top = 52
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox9: TCheckBox
+        Left = 160
+        Top = 68
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox10: TCheckBox
+        Left = 160
+        Top = 84
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 9
+      end
+      object CheckBox11: TCheckBox
+        Left = 160
+        Top = 212
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 10
+      end
+      object CheckBox12: TCheckBox
+        Left = 160
+        Top = 228
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 11
+      end
+      object CheckBox13: TCheckBox
+        Left = 300
+        Top = 36
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 12
+      end
+      object CheckBox14: TCheckBox
+        Left = 300
+        Top = 52
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 13
+      end
+      object CheckBox16: TCheckBox
+        Left = 300
+        Top = 68
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 14
+      end
+      object CheckBox17: TCheckBox
+        Left = 300
+        Top = 196
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 15
+      end
+      object CheckBox18: TCheckBox
+        Left = 300
+        Top = 212
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 16
+      end
+      object CheckBox19: TCheckBox
+        Left = 300
+        Top = 228
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 17
+      end
+      object CheckBox20: TCheckBox
+        Left = 440
+        Top = 40
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 18
+      end
+      object CheckBox21: TCheckBox
+        Left = 440
+        Top = 56
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 19
+      end
+      object CheckBox22: TCheckBox
+        Left = 20
+        Top = 116
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 20
+      end
+      object CheckBox23: TCheckBox
+        Left = 20
+        Top = 132
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 21
+      end
+      object CheckBox24: TCheckBox
+        Left = 440
+        Top = 88
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 22
+      end
+      object CheckBox25: TCheckBox
+        Left = 440
+        Top = 72
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 23
+      end
+      object CheckBox26: TCheckBox
+        Left = 300
+        Top = 100
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 24
+      end
+      object CheckBox27: TCheckBox
+        Left = 300
+        Top = 84
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 25
+      end
+      object CheckBox28: TCheckBox
+        Left = 160
+        Top = 116
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 26
+      end
+      object CheckBox29: TCheckBox
+        Left = 160
+        Top = 100
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 27
+      end
+      object CheckBox30: TCheckBox
+        Left = 20
+        Top = 148
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 28
+      end
+      object CheckBox31: TCheckBox
+        Left = 20
+        Top = 164
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 29
+      end
+      object CheckBox32: TCheckBox
+        Left = 440
+        Top = 168
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 30
+      end
+      object CheckBox33: TCheckBox
+        Left = 440
+        Top = 152
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 31
+      end
+      object CheckBox34: TCheckBox
+        Left = 440
+        Top = 136
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 32
+      end
+      object CheckBox35: TCheckBox
+        Left = 440
+        Top = 120
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 33
+      end
+      object CheckBox36: TCheckBox
+        Left = 440
+        Top = 104
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 34
+      end
+      object CheckBox37: TCheckBox
+        Left = 300
+        Top = 180
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 35
+      end
+      object CheckBox38: TCheckBox
+        Left = 300
+        Top = 164
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 36
+      end
+      object CheckBox39: TCheckBox
+        Left = 300
+        Top = 148
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 37
+      end
+      object CheckBox40: TCheckBox
+        Left = 300
+        Top = 132
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 38
+      end
+      object CheckBox41: TCheckBox
+        Left = 300
+        Top = 116
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 39
+      end
+      object CheckBox42: TCheckBox
+        Left = 160
+        Top = 196
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 40
+      end
+      object CheckBox43: TCheckBox
+        Left = 160
+        Top = 180
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 41
+      end
+      object CheckBox44: TCheckBox
+        Left = 160
+        Top = 164
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 42
+      end
+      object CheckBox45: TCheckBox
+        Left = 160
+        Top = 148
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 43
+      end
+      object CheckBox46: TCheckBox
+        Left = 160
+        Top = 132
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 44
+      end
+      object CheckBox47: TCheckBox
+        Left = 20
+        Top = 212
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 45
+      end
+      object CheckBox48: TCheckBox
+        Left = 20
+        Top = 196
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 46
+      end
+      object CheckBox49: TCheckBox
+        Left = 20
+        Top = 180
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 47
+      end
+      object CheckBox50: TCheckBox
+        Left = 440
+        Top = 232
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 48
+      end
+      object CheckBox51: TCheckBox
+        Left = 440
+        Top = 216
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 49
+      end
+      object CheckBox52: TCheckBox
+        Left = 440
+        Top = 200
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 50
+      end
+      object CheckBox53: TCheckBox
+        Left = 440
+        Top = 184
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 51
+      end
+      object CheckBox54: TCheckBox
+        Left = 580
+        Top = 40
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 52
+      end
+      object CheckBox55: TCheckBox
+        Left = 580
+        Top = 56
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 53
+      end
+      object CheckBox56: TCheckBox
+        Left = 580
+        Top = 72
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 54
+      end
+      object CheckBox57: TCheckBox
+        Left = 580
+        Top = 88
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 55
+      end
+      object CheckBox58: TCheckBox
+        Left = 580
+        Top = 104
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 56
+      end
+      object CheckBox59: TCheckBox
+        Left = 580
+        Top = 120
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 57
+      end
+      object CheckBox60: TCheckBox
+        Left = 580
+        Top = 136
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 58
+      end
+      object CBAutomaticoPN: TCheckBox
+        Left = 644
+        Top = 12
+        Width = 65
+        Height = 17
+        Alignment = taLeftJustify
+        Caption = 'Automático'
+        Checked = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        State = cbChecked
+        TabOrder = 59
+      end
+      object Edit7: TEdit
+        Left = 600
+        Top = 152
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 60
+        OnChange = Edit7Change
+      end
+      object CheckBox62: TCheckBox
+        Left = 580
+        Top = 152
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 61
+      end
+      object CheckBox63: TCheckBox
+        Left = 580
+        Top = 168
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 62
+      end
+      object CheckBox64: TCheckBox
+        Left = 580
+        Top = 184
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 63
+      end
+      object CheckBox65: TCheckBox
+        Left = 580
+        Top = 200
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 64
+      end
+      object CheckBox66: TCheckBox
+        Left = 580
+        Top = 216
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 65
+      end
+      object CheckBox67: TCheckBox
+        Left = 580
+        Top = 232
+        Width = 14
+        Height = 14
+        Cursor = crHandPoint
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 66
+      end
+      object Edit45: TEdit
+        Left = 600
+        Top = 168
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 67
+        OnChange = Edit45Change
+      end
+      object Edit46: TEdit
+        Left = 600
+        Top = 184
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 68
+        OnChange = Edit46Change
+      end
+      object Edit60: TEdit
+        Left = 600
+        Top = 200
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 69
+        OnChange = Edit60Change
+      end
+      object Edit62: TEdit
+        Left = 600
+        Top = 216
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 70
+        OnChange = Edit62Change
+      end
+      object Edit63: TEdit
+        Left = 600
+        Top = 232
+        Width = 97
+        Height = 13
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 71
+        OnChange = Edit63Change
+      end
     end
     object Button4: TButton
       Tag = 8
-      Left = 588
-      Top = 498
-      Width = 309
+      Left = 748
+      Top = 550
+      Width = 220
       Height = 22
       Cursor = crHandPoint
       Caption = 'Iniciar terapia'
@@ -11789,14 +12536,31 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
       OnClick = Button4Click
     end
     object Edit8: TEdit
       Left = 20
       Top = 16
-      Width = 780
-      Height = 20
+      Width = 500
+      Height = 16
+      BorderStyle = bsNone
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Defina los pensamientos negativos: '
+      OnChange = Edit8Change
+    end
+    object Edit9: TEdit
+      Left = 20
+      Top = 44
+      Width = 500
+      Height = 16
       BorderStyle = bsNone
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -11806,14 +12570,14 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       TabOrder = 1
-      Text = 'Defina los pensamientos negativos: '
-      OnChange = Edit8Change
+      Text = 'Describa el primer incidente: '
+      OnChange = Edit9Change
     end
-    object Edit9: TEdit
+    object Edit10: TEdit
       Left = 20
-      Top = 44
-      Width = 780
-      Height = 20
+      Top = 72
+      Width = 500
+      Height = 16
       BorderStyle = bsNone
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -11823,14 +12587,14 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       TabOrder = 2
-      Text = 'Describa el primer incidente: '
-      OnChange = Edit9Change
+      Text = 'Describa el último incidente: '
+      OnChange = Edit10Change
     end
-    object Edit10: TEdit
+    object Edit11: TEdit
       Left = 20
-      Top = 72
-      Width = 780
-      Height = 20
+      Top = 156
+      Width = 500
+      Height = 16
       BorderStyle = bsNone
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -11840,14 +12604,14 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       TabOrder = 3
-      Text = 'Describa el último incidente: '
-      OnChange = Edit10Change
+      Text = '¿Qué desea sea diferente?: '
+      OnChange = Edit11Change
     end
-    object Edit11: TEdit
+    object Edit12: TEdit
       Left = 20
-      Top = 156
-      Width = 780
-      Height = 20
+      Top = 128
+      Width = 500
+      Height = 16
       BorderStyle = bsNone
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -11857,31 +12621,14 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       TabOrder = 4
-      Text = '¿Qué desea sea diferente?: '
-      OnChange = Edit11Change
-    end
-    object Edit12: TEdit
-      Left = 20
-      Top = 128
-      Width = 780
-      Height = 20
-      BorderStyle = bsNone
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 5
       Text = 'Defina la curación que desea: '
       OnChange = Edit12Change
     end
     object Edit17: TEdit
       Left = 20
       Top = 100
-      Width = 780
-      Height = 20
+      Width = 500
+      Height = 16
       BorderStyle = bsNone
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -11890,13 +12637,13 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
       Text = '¿Qué beneficios encuentra a su afección?: '
     end
     object Button64: TButton
-      Left = 588
-      Top = 523
-      Width = 309
+      Left = 748
+      Top = 603
+      Width = 220
       Height = 22
       Cursor = crHandPoint
       Caption = 'Terapia máxima'
@@ -11907,14 +12654,14 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = Button64Click
     end
     object Button120: TButton
       Tag = 8
-      Left = 588
-      Top = 548
-      Width = 309
+      Left = 748
+      Top = 576
+      Width = 220
       Height = 22
       Cursor = crHandPoint
       Caption = 'Disipar segunda onda cerebral detectada'
@@ -11925,834 +12672,8 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
       OnClick = Button120Click
-    end
-    object CheckBox1: TCheckBox
-      Left = 20
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 10
-    end
-    object CheckBox2: TCheckBox
-      Left = 20
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 11
-    end
-    object CheckBox3: TCheckBox
-      Left = 20
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 12
-    end
-    object CheckBox4: TCheckBox
-      Left = 20
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 13
-    end
-    object CheckBox5: TCheckBox
-      Left = 20
-      Top = 412
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 14
-    end
-    object CheckBox6: TCheckBox
-      Left = 160
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 15
-    end
-    object CheckBox7: TCheckBox
-      Left = 160
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 16
-    end
-    object CheckBox8: TCheckBox
-      Left = 160
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 17
-    end
-    object CheckBox9: TCheckBox
-      Left = 160
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 18
-    end
-    object CheckBox10: TCheckBox
-      Left = 160
-      Top = 412
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 19
-    end
-    object CheckBox11: TCheckBox
-      Left = 300
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 20
-    end
-    object CheckBox12: TCheckBox
-      Left = 300
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 21
-    end
-    object CheckBox13: TCheckBox
-      Left = 300
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 22
-    end
-    object CheckBox14: TCheckBox
-      Left = 300
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 23
-    end
-    object CheckBox16: TCheckBox
-      Left = 300
-      Top = 412
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 24
-    end
-    object CheckBox17: TCheckBox
-      Left = 440
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 25
-    end
-    object CheckBox18: TCheckBox
-      Left = 440
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 26
-    end
-    object CheckBox19: TCheckBox
-      Left = 440
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 27
-    end
-    object CheckBox20: TCheckBox
-      Left = 440
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 28
-    end
-    object CheckBox21: TCheckBox
-      Left = 440
-      Top = 412
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 29
-    end
-    object CheckBox22: TCheckBox
-      Left = 20
-      Top = 428
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 30
-    end
-    object CheckBox23: TCheckBox
-      Left = 20
-      Top = 444
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 31
-    end
-    object CheckBox24: TCheckBox
-      Left = 440
-      Top = 444
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 32
-    end
-    object CheckBox25: TCheckBox
-      Left = 440
-      Top = 428
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 33
-    end
-    object CheckBox26: TCheckBox
-      Left = 300
-      Top = 444
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 34
-    end
-    object CheckBox27: TCheckBox
-      Left = 300
-      Top = 428
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 35
-    end
-    object CheckBox28: TCheckBox
-      Left = 160
-      Top = 444
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 36
-    end
-    object CheckBox29: TCheckBox
-      Left = 160
-      Top = 428
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 37
-    end
-    object CheckBox30: TCheckBox
-      Left = 20
-      Top = 460
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 38
-    end
-    object CheckBox31: TCheckBox
-      Left = 20
-      Top = 476
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 39
-    end
-    object CheckBox32: TCheckBox
-      Left = 440
-      Top = 524
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 40
-    end
-    object CheckBox33: TCheckBox
-      Left = 440
-      Top = 508
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 41
-    end
-    object CheckBox34: TCheckBox
-      Left = 440
-      Top = 492
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 42
-    end
-    object CheckBox35: TCheckBox
-      Left = 440
-      Top = 476
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 43
-    end
-    object CheckBox36: TCheckBox
-      Left = 440
-      Top = 460
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 44
-    end
-    object CheckBox37: TCheckBox
-      Left = 300
-      Top = 524
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 45
-    end
-    object CheckBox38: TCheckBox
-      Left = 300
-      Top = 508
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 46
-    end
-    object CheckBox39: TCheckBox
-      Left = 300
-      Top = 492
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 47
-    end
-    object CheckBox40: TCheckBox
-      Left = 300
-      Top = 476
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 48
-    end
-    object CheckBox41: TCheckBox
-      Left = 300
-      Top = 460
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 49
-    end
-    object CheckBox42: TCheckBox
-      Left = 160
-      Top = 524
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 50
-    end
-    object CheckBox43: TCheckBox
-      Left = 160
-      Top = 508
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 51
-    end
-    object CheckBox44: TCheckBox
-      Left = 160
-      Top = 492
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 52
-    end
-    object CheckBox45: TCheckBox
-      Left = 160
-      Top = 476
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 53
-    end
-    object CheckBox46: TCheckBox
-      Left = 160
-      Top = 460
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 54
-    end
-    object CheckBox47: TCheckBox
-      Left = 20
-      Top = 524
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 55
-    end
-    object CheckBox48: TCheckBox
-      Left = 20
-      Top = 508
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 56
-    end
-    object CheckBox49: TCheckBox
-      Left = 20
-      Top = 492
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 57
-    end
-    object CheckBox50: TCheckBox
-      Left = 580
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 58
-    end
-    object CheckBox51: TCheckBox
-      Left = 580
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 59
-    end
-    object CheckBox52: TCheckBox
-      Left = 580
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 60
-    end
-    object CheckBox53: TCheckBox
-      Left = 580
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 61
-    end
-    object CheckBox54: TCheckBox
-      Left = 720
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 62
-    end
-    object CheckBox55: TCheckBox
-      Left = 720
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 63
-    end
-    object CheckBox56: TCheckBox
-      Left = 720
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 64
-    end
-    object CheckBox57: TCheckBox
-      Left = 720
-      Top = 396
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 65
-    end
-    object CheckBox58: TCheckBox
-      Left = 840
-      Top = 348
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 66
-    end
-    object CheckBox59: TCheckBox
-      Left = 840
-      Top = 364
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 67
-    end
-    object CheckBox60: TCheckBox
-      Left = 840
-      Top = 380
-      Width = 14
-      Height = 14
-      Cursor = crHandPoint
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 68
     end
     object Panel30: TPanel
       Left = 959
@@ -12770,29 +12691,29 @@ object Emotion: TEmotion
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 69
+      TabOrder = 9
       OnClick = Panel30Click
     end
   end
   object Panel19: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 801
     Height = 125
     BevelOuter = bvNone
     BevelWidth = 3
-    TabOrder = 41
+    TabOrder = 40
     Visible = False
     object Label616: TLabel
-      Left = 256
-      Top = 92
-      Width = 364
-      Height = 26
+      Left = 8
+      Top = 104
+      Width = 618
+      Height = 13
       Alignment = taCenter
       Caption = 
         'Elíja la dirección del desplazamiento, introduzca el número de z' +
-        'onas horarios'#13#10'atravezadas y a continuación pulse el botón '#39'Inic' +
-        'iar'#39'.'
+        'onas horarios atravezadas y a continuación pulse el botón '#39'Inici' +
+        'ar'#39'.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
       Font.Height = -11
@@ -12856,20 +12777,6 @@ object Emotion: TEmotion
       Font.Style = []
       ParentFont = False
       Transparent = True
-    end
-    object Label119: TLabel
-      Left = 320
-      Top = 68
-      Width = 140
-      Height = 13
-      Caption = 'Consejos para un mejor viaje'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsUnderline]
-      ParentFont = False
-      OnClick = Label119Click
     end
     object SpinEdit7: TSpinEdit
       Left = 444
@@ -12962,22 +12869,23 @@ object Emotion: TEmotion
   end
   object Panel21: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 530
     Height = 481
     BevelOuter = bvNone
     BevelWidth = 2
     BorderWidth = 3
-    TabOrder = 42
+    Color = clHighlight
+    TabOrder = 41
     Visible = False
     object Label241: TLabel
-      Left = 8
+      Left = 24
       Top = 420
       Width = 215
       Height = 13
       Caption = 'Remarcar o comentar diagnosis brevemente.'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clGray
+      Font.Color = clMaroon
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
@@ -13249,9 +13157,9 @@ object Emotion: TEmotion
       ParentFont = False
     end
     object Edit31: TEdit
-      Left = 8
+      Left = 20
       Top = 436
-      Width = 501
+      Width = 489
       Height = 18
       Cursor = crIBeam
       BorderStyle = bsNone
@@ -13265,13 +13173,13 @@ object Emotion: TEmotion
       TabOrder = 0
     end
     object Button59: TButton
-      Left = 300
-      Top = 384
-      Width = 209
+      Left = 328
+      Top = 372
+      Width = 180
       Height = 22
       Cursor = crHandPoint
       Hint = 'Cierra este panel sin anotar la diagnosis.'
-      Caption = 'Cerrar sin cargar ítem/s'
+      Caption = 'Cerrar sin cargar ítem'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -13282,16 +13190,16 @@ object Emotion: TEmotion
       OnClick = Button59Click
     end
     object Button62: TButton
-      Left = 300
-      Top = 360
-      Width = 209
+      Left = 328
+      Top = 396
+      Width = 180
       Height = 22
       Cursor = crHandPoint
       Hint = 
         'Una vez haya marcado el cajetín o cajetines correspondientes y r' +
         'emarcado la diagnosis brevemente (opcional),'#13#10'el sistema conecta' +
         'rá la información con el resto del programa.'
-      Caption = 'Cerrar + cargar ítem/s'
+      Caption = 'Cerrar + Cargar ítem'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -13556,7 +13464,7 @@ object Emotion: TEmotion
   end
   object PPiramideMaslow: TPanel
     Left = 12
-    Top = 20
+    Top = 16
     Width = 985
     Height = 637
     BevelOuter = bvNone
@@ -13567,7 +13475,7 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 47
+    TabOrder = 46
     Visible = False
     object IMaslow: TImage
       Left = 0
@@ -13993,9 +13901,9 @@ object Emotion: TEmotion
   end
   object Panel15: TPanel
     Left = 12
-    Top = 20
+    Top = 8
     Width = 985
-    Height = 637
+    Height = 645
     BevelOuter = bvNone
     BevelWidth = 4
     Color = clWhite
@@ -14005,7 +13913,7 @@ object Emotion: TEmotion
     Font.Name = 'Monotype Corsiva'
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
-    TabOrder = 36
+    TabOrder = 35
     Visible = False
     object Label341: TLabel
       Left = 140
@@ -15924,7 +15832,6 @@ object Emotion: TEmotion
       ParentFont = False
       State = cbChecked
       TabOrder = 55
-      OnClick = CheckBox15Click
     end
     object Button88: TButton
       Left = 572
@@ -16151,15 +16058,15 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 8
     Visible = False
     OnClick = Panel5Click
   end
   object PIHolistica: TPanel
     Left = 12
-    Top = 20
+    Top = 8
     Width = 985
-    Height = 637
+    Height = 645
     BevelOuter = bvNone
     Color = clSilver
     Font.Charset = DEFAULT_CHARSET
@@ -16168,13 +16075,13 @@ object Emotion: TEmotion
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 48
+    TabOrder = 47
     Visible = False
     object IHolistica: TImage
       Left = 0
       Top = 0
       Width = 985
-      Height = 637
+      Height = 645
       Align = alClient
     end
     object Label473: TLabel
@@ -16550,12 +16457,12 @@ object Emotion: TEmotion
   end
   object Panel2: TPanel
     Left = 816
-    Top = 50
+    Top = 46
     Width = 177
     Height = 127
     BevelOuter = bvNone
     BevelWidth = 2
-    TabOrder = 43
+    TabOrder = 42
     object Image17: TImage
       Left = 0
       Top = 0
@@ -16571,7 +16478,7 @@ object Emotion: TEmotion
     Width = 14
     Height = 14
     Cursor = crHandPoint
-    TabOrder = 49
+    TabOrder = 48
   end
   object CBTerapiaExtendida: TCheckBox
     Left = 652
@@ -16579,58 +16486,8 @@ object Emotion: TEmotion
     Width = 14
     Height = 14
     Cursor = crHandPoint
-    TabOrder = 50
+    TabOrder = 49
     OnClick = CBTerapiaExtendidaClick
-  end
-  object PDesarrollo: TPanel
-    Left = 0
-    Top = 0
-    Width = 1009
-    Height = 14
-    BevelOuter = bvNone
-    BevelWidth = 3
-    Color = clLime
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 8
-    Visible = False
-    OnClick = PDesarrolloClick
-    object Label657: TLabel
-      Left = 838
-      Top = 1
-      Width = 157
-      Height = 11
-      Alignment = taRightJustify
-      Caption = 'Afección primaria incluída en terapia...'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      Visible = False
-    end
-    object Label617: TLabel
-      Left = 5
-      Top = 1
-      Width = 206
-      Height = 11
-      Alignment = taRightJustify
-      Caption = 'Se está usando un estímulo de electro-quelación...'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      Visible = False
-    end
   end
   object Panel6: TPanel
     Left = 0
@@ -16639,7 +16496,7 @@ object Emotion: TEmotion
     Height = 12
     Align = alBottom
     BevelOuter = bvNone
-    TabOrder = 52
+    TabOrder = 51
     object GProgreso: TGauge
       Left = 150
       Top = 0
@@ -16690,19 +16547,1176 @@ object Emotion: TEmotion
     MaxValue = 20
     MinValue = 3
     ParentFont = False
-    TabOrder = 53
+    TabOrder = 52
     Value = 3
+  end
+  object PBasesDeDatos: TPanel
+    Left = 12
+    Top = 244
+    Width = 409
+    Height = 409
+    TabOrder = 64
+    Visible = False
+    object LBOrganosGlandulas: TListBox
+      Left = 16
+      Top = 48
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Bazo.'
+        ' Cerebro.'
+        ' Circuitos de la memoria.'
+        ' Corazón.'
+        ' Dentadura.'
+        ' Estómago.'
+        ' Gónadas.'
+        ' Hígado.'
+        ' Hipotálamo.'
+        ' Intestino delgado.'
+        ' Intestino grueso.'
+        ' Lengua.'
+        ' Lóbulo frontal del cerebro.'
+        ' Lóbulo occipital del cerebro.'
+        ' Lóbulo parietal del cerebro.'
+        ' Lóbulo temporal del cerebro.'
+        ' Médula espinal.'
+        ' Médula oblongata.'
+        ' Oído.'
+        ' Ojos.'
+        ' Páncreas.'
+        ' Paratiroides.'
+        ' Piel.'
+        ' Pineal.'
+        ' Pituitaria.'
+        ' Pulmones.'
+        ' Riñón.'
+        ' Sangre.'
+        ' Senos nasales.'
+        ' Sistema límbico.'
+        ' Sistema linfático.'
+        ' Suprarrenales.'
+        ' Timo.'
+        ' Tiroides.'
+        ' Vejiga.')
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+    end
+    object BOrganosGlandulas: TButton
+      Left = 216
+      Top = 48
+      Width = 180
+      Height = 26
+      Caption = 'BOrganosGlandulas'
+      TabOrder = 1
+      OnClick = BOrganosGlandulasClick
+    end
+    object LBCausas: TListBox
+      Left = 16
+      Top = 12
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acciones de voluntad opuestas.'
+        ' Acciones disonantes.'
+        ' Acumulación de energía superflua.'
+        ' Agentes químicos.'
+        ' Ahogo de sentimientos.'
+        ' Alimentación incorrecta.'
+        ' Alteración cromosómica cualitativa.'
+        ' Alteración cromosómica cuantitativa.'
+        ' Alteración estructural de algún órgano.'
+        ' Alteración funcional de algún órgano.'
+        ' Alteración genética.'
+        ' Amebas.'
+        ' Bacteria.'
+        ' Balance del pH.'
+        ' Condiciones hereditarias.'
+        ' Contaminación electromagnética.'
+        ' Contaminación medio ambiental.'
+        ' Deficiencia en dieta.'
+        ' Deficiencia o exceso nutricional.'
+        ' Deseo excesivo.'
+        ' Desquilibrio en el pH.'
+        ' Elementos nutritivos (exceso o deficiencia).'
+        ' Estrés físico.'
+        ' Estrés mental.'
+        ' Exceso de azúcar.'
+        ' Exceso de energía.'
+        ' Factores hereditarios.'
+        ' Factores mecánicos traumáticos.'
+        ' Factores mentales.'
+        ' Factores psicológicos.'
+        ' Fases lunares.'
+        ' Hemorragia.'
+        ' Hidratación.'
+        ' Hiperreactividad.'
+        ' Hipertensión.'
+        ' Hipertermia general.'
+        ' Hipertermia local.'
+        ' Hipotensión.'
+        ' Hipotermia general.'
+        ' Hipotermia local.'
+        ' Impureza en sangre.'
+        ' Incredulidad.'
+        ' Infección.'
+        ' Inquietudes excesivas.'
+        ' Interacciones medio ambiantes.'
+        ' Interacciones sociales.'
+        ' Irritación, cólera, enfado.'
+        ' Medicaciones alopáticas.'
+        ' Metales pesados.'
+        ' Miasma / Predisposición.'
+        ' Opresión espiritual.'
+        ' Parásitos.'
+        ' Patógenos.'
+        ' Pensamientos discordantes.'
+        ' Pensamientos negativos.'
+        ' Postura incorrecta al caminar.'
+        ' Postura incorrecta al dormir.'
+        ' Postura incorrecta al sentarse.'
+        ' Priones.'
+        ' Procesos biológicos.'
+        ' Producción hormonal.'
+        ' Propósitos negativos.'
+        ' Protozoos.'
+        ' Radiaciones ionizantes.'
+        ' Repercusión kármica.'
+        ' Resistencia inconciente a cambiar o explorarse a sí mismo.'
+        ' Respiración incorrecta.'
+        ' Sentimientos disonantes.'
+        ' Shock.'
+        ' Supresión alopática.'
+        ' Tensión muscular.'
+        ' Toma de conciencia.'
+        ' Toxinas medioambientales.'
+        ' Toxinas propias.'
+        ' Transferencia de oxígeno.'
+        ' Trauma no sanado.'
+        ' Trauma o lesión.'
+        ' Virus.')
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object BCausas: TButton
+      Left = 216
+      Top = 12
+      Width = 180
+      Height = 26
+      Caption = 'BCausas'
+      TabOrder = 3
+      Visible = False
+      OnClick = BCausasClick
+    end
+    object LBMeridianos: TListBox
+      Left = 16
+      Top = 120
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Merdiano del Vaso Gobernador.'
+        ' Meridiano Circulación + Sexualidad.'
+        ' Meridiano de la Vejiga.'
+        ' Meridiano de la Vesícula Biliar.'
+        ' Meridiano del Bazo-Páncreas.'
+        ' Meridiano del Corazón.'
+        ' Meridiano del Estómago.'
+        ' Meridiano del Hígado.'
+        ' Meridiano del Intestino Delgado.'
+        ' Meridiano del Intestino Grueso.'
+        ' Meridiano del Maestro del Corazón o Pericardio.'
+        ' Meridiano del Pulmón.'
+        ' Meridiano del Riñón.'
+        ' Meridiano del Triple Calefactor.'
+        ' Meridiano del Vaso Concepción.')
+      ParentFont = False
+      TabOrder = 4
+    end
+    object BMeridianos: TButton
+      Left = 216
+      Top = 120
+      Width = 180
+      Height = 26
+      Caption = 'BMeridianos'
+      TabOrder = 5
+    end
+    object LBENegativas: TListBox
+      Left = 16
+      Top = 228
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Aburrimiento.'
+        ' Adicción.'
+        ' Agresión.'
+        ' Alteración.'
+        ' Ansiedad.'
+        ' Antagonismo.'
+        ' Apatía.'
+        ' Apego.'
+        ' Arrogancia.'
+        ' Asco.'
+        ' Autismo.'
+        ' Avaricia.'
+        ' Aversión.'
+        ' Catastrofismo.'
+        ' Celos.'
+        ' Codicia.'
+        ' Cólera.'
+        ' Conciencia.'
+        ' Concientización.'
+        ' Conflicto de identidad.'
+        ' Conflicto religioso.'
+        ' Confusión.'
+        ' Congoja.'
+        ' Conmoción.'
+        ' Coráje.'
+        ' Crítica.'
+        ' Culpa.'
+        ' Curiosidad.'
+        ' Decepción.'
+        ' Depresión.'
+        ' Desamor.'
+        ' Desamparo.'
+        ' Desánimo.'
+        ' Desasosiego.'
+        ' Desconcierto.'
+        ' Desconfianza.'
+        ' Desconsuelo.'
+        ' Descuido.'
+        ' Deseo (agudo).'
+        ' Deseo de que las cosas sean diferentes.'
+        ' Desesperación.'
+        ' Desgano.'
+        ' Desidia.'
+        ' Desilusión.'
+        ' Desolación.'
+        ' Desprecio.'
+        ' Dolor.'
+        ' Dominación.'
+        ' Duda de sí mismo.'
+        ' Duda.'
+        ' Duelo.'
+        ' Enfado.'
+        ' Enfoque mental.'
+        ' Enojo.'
+        ' Entusiasmo.'
+        ' Envidia.'
+        ' Espanto.'
+        ' Espiritualidad.'
+        ' Estupor (agudo).'
+        ' Extasis.'
+        ' Falta de concentración.'
+        ' Fastidio.'
+        ' Fobia.'
+        ' Frustración.'
+        ' Hostilidad.'
+        ' Hostilidad encubierta.'
+        ' Impaciencia.'
+        ' Impulsividad.'
+        ' Inadaptabilidad.'
+        ' Indiferencia.'
+        ' Indignación.'
+        ' Inquietud.'
+        ' Inseguridad.'
+        ' Intriga.'
+        ' Ira.'
+        ' Irrealismo.'
+        ' Irritación.'
+        ' Lealtad.'
+        ' Lujuria.'
+        ' Manías.'
+        ' Melancolía.'
+        ' Mezquindad.'
+        ' Miedo.'
+        ' Monotonía.'
+        ' Necesidad de cambio.'
+        ' Negación.'
+        ' Negociación.'
+        ' Nerviosismo.'
+        ' Nostalgia.'
+        ' Obnubilación.'
+        ' Observación.'
+        ' Obsesividad.'
+        ' Obstinación.'
+        ' Odio.'
+        ' Omnipotencia.'
+        ' Orgullo.'
+        ' Pánico.'
+        ' Pasividad.'
+        ' Pena.'
+        ' Pereza.'
+        ' Perfeccionismo.'
+        ' Pesimismo.'
+        ' Poder.'
+        ' Preocupación.'
+        ' Prepotencia.'
+        ' Proyección.'
+        ' Rabia.'
+        ' Racionalización.'
+        ' Rebeldía.'
+        ' Recelo.'
+        ' Rechazo.'
+        ' Regresión.'
+        ' Rencor.'
+        ' Repudio.'
+        ' Resentimiento.'
+        ' Resignación.'
+        ' Resistencia al cambio.'
+        ' Resquemor.'
+        ' Risa nerviosa.'
+        ' Sensualidad.'
+        ' Sentimiento de abandono.'
+        ' Sentimiento de incompresión.'
+        ' Sexualidad.'
+        ' Sobrecogimiento.'
+        ' Sumisión.'
+        ' Temerosidad.'
+        ' Temor.'
+        ' Terror.'
+        ' Timidez.'
+        ' Traición.'
+        ' Tristeza.'
+        ' Vacío existencial.'
+        ' Vanidad.'
+        ' Venganza.'
+        ' Vergüenza.')
+      ParentFont = False
+      TabOrder = 6
+    end
+    object BENegativas: TButton
+      Left = 216
+      Top = 228
+      Width = 180
+      Height = 26
+      Caption = 'BENegativas'
+      TabOrder = 7
+      OnClick = BENegativasClick
+    end
+    object LBEPositivas: TListBox
+      Left = 16
+      Top = 192
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Admiración.'
+        ' Afecto.'
+        ' Alegría.'
+        ' Alivio.'
+        ' Amor.'
+        ' Ampliación.'
+        ' Añoranza.'
+        ' Armonía.'
+        ' Arrojo.'
+        ' Asombro.'
+        ' Autoelogio.'
+        ' Buen humor.'
+        ' Calma.'
+        ' Cambio.'
+        ' Cariño.'
+        ' Compartir.'
+        ' Compasión.'
+        ' Conciliación.'
+        ' Confianza.'
+        ' Construcción.'
+        ' Creatividad.'
+        ' Curiosidad.'
+        ' Deseo.'
+        ' Diversión.'
+        ' Ecuanimidad.'
+        ' Empatía.'
+        ' Ensimismamiento.'
+        ' Entusiasmo.'
+        ' Esperanza.'
+        ' Euforia.'
+        ' Excitación.'
+        ' Extasis.'
+        ' Felicidad.'
+        ' Fortaleza.'
+        ' Generosidad.'
+        ' Gratitud.'
+        ' Humildad.'
+        ' Inspiración.'
+        ' Interés por la vida.'
+        ' Optimismo.'
+        ' Orgullo.'
+        ' Paciencia.'
+        ' Pasión.'
+        ' Percepción.'
+        ' Perdón.'
+        ' Placer.'
+        ' Plenitud.'
+        ' Regocijo.'
+        ' Saboreo.'
+        ' Sanidad.'
+        ' Satisfacción.'
+        ' Seguridad.'
+        ' Serenidad.'
+        ' Sociego.'
+        ' Solidaridad.'
+        ' Sorpresa.'
+        ' Templanza.'
+        ' Ternura.'
+        ' Tranquilidad.'
+        ' Valentía.')
+      ParentFont = False
+      TabOrder = 8
+    end
+    object BEPositivas: TButton
+      Left = 216
+      Top = 192
+      Width = 180
+      Height = 26
+      Caption = 'BEPositivas'
+      TabOrder = 9
+      OnClick = BEPositivasClick
+    end
+    object LBProcesos: TListBox
+      Left = 16
+      Top = 156
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Adherencia celular.'
+        ' Alfa oxidación.'
+        ' Beta oxidación'
+        ' Circulación.'
+        ' Comunicación celular.'
+        ' Crecimiento celular.'
+        ' Diferenciación celular.'
+        ' Digestión.'
+        ' Enlaces moleculares.'
+        ' Estructura molecular.'
+        ' Expresión genética.'
+        ' Factores energéticos.'
+        ' Fermentación.'
+        ' Hidroxilación.'
+        ' Metabolismo: anabolismo.'
+        ' Metabolismo: catabolismo.'
+        ' Morfogénesis.'
+        ' Omega oxidación.'
+        ' Oxidación de ácidos grasos.'
+        ' Pigmentación.'
+        ' Proceso fisiológico celular.'
+        ' Procesos fisiológicos.'
+        ' Procesos químicos inducidos.'
+        ' Procesos termodinámicos.'
+        ' Producción de enzimas.'
+        ' Reconocimiento celular.'
+        ' Replicación del ADN.'
+        ' Reproducción.'
+        ' Respiración.'
+        ' Respuesta a estímulos.'
+        ' Salivación.'
+        ' Secreción.'
+        ' Síntesis de glúcidos.'
+        ' Síntesis de lípidos.'
+        ' Síntesis de proteínas.'
+        ' Síntesis del ARN.'
+        ' Transpiración.')
+      ParentFont = False
+      TabOrder = 10
+      Visible = False
+    end
+    object BProcesos: TButton
+      Left = 216
+      Top = 156
+      Width = 180
+      Height = 26
+      Caption = 'BProcesos'
+      TabOrder = 11
+    end
+    object LBAVM: TListBox
+      Left = 16
+      Top = 84
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Acetogeninas annonáceas.'
+        ' Acido lipoico.'
+        ' Acido lisofosratídico.'
+        ' Acidos (alquifuranil)acilcarboxilicos (urofánicos).'
+        ' Acidos (alquifuranil)acilcarboxilicos (wyerona).'
+        ' Acidos grasos acetilénicos (ácido taririco).'
+        ' Acidos grasos cis.'
+        ' Acidos grasos de cadena impar (C13-C33).'
+        ' Acidos grasos endocíclicos (ácido endiándrico).'
+        ' Acidos grasos endocíclicos (ácido malválico).'
+        ' Acidos grasos endocíclicos prostanoides (eclonialactonas).'
+        ' Acidos grasos endocíclicos prostanoides (jasmonoides).'
+        ' Acidos grasos endocíclicos prostanoides (prostaglandinas).'
+        ' Acidos grasos endocíclicos prostanoides (tromboxanos).'
+        ' Acidos grasos insaturados.'
+        ' Acidos grasos monoinsaturados (ácido oleico).'
+        ' Acidos grasos poliinsaturados (ácido araquidónico).'
+        ' Acidos grasos poliinsaturados (ácido linoleico).'
+        ' Acidos grasos poliinsaturados (ácido linolénico).'
+        ' Acidos grasos ramificados (ácidos isoalquil).'
+        ' Acidos grasos ramificados (ácidos polimetilados).'
+        ' Acidos grasos ramificados (anteisoalquilcarboxílicos).'
+        ' Acidos grasos ramificados (metilcarboxílicos).'
+        ' Acidos grasos saturados cadena corta (ácido butírico).'
+        ' Acidos grasos saturados cadena corta (ácido isobutírico).'
+        ' Acidos grasos saturados cadena corta (ácido isovalérico).'
+        ' Acidos grasos saturados cadena corta (ácido nonanoico).'
+        ' Acidos grasos saturados cadena corta (ácido pirúvico).'
+        ' Acidos grasos saturados cadena corta (ácido valérico).'
+        ' Acidos grasos saturados cadena larga (ácido esteárico).'
+        ' Acidos grasos saturados cadena larga (ácido mirístico).'
+        ' Acidos grasos saturados cadena larga (ácido palmítico).'
+        ' Acidos grasos saturados de cadena media (C12-C14).'
+        ' Acidos grasos trans.'
+        ' Acidos grasos w-cíclicos arilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloclohexilalquilcarboxílicos.'
+        ' Acidos grasos w-cíclicos cicloheptilalquilcarboxílicos.'
+        
+          ' Acidos grasos w-cíclicos ciclopentenialquilcarboxílicos (ácido ' +
+          'hidnocárpico).'
+        ' Acidos grasos w-cíclicos hachijodinas.'
+        ' Acilhomoserinlactonas.'
+        ' ADN ligasa.'
+        ' Albúmina sérica.'
+        ' Alcoholes + Aldehídos grasos.'
+        ' Amidas grasas.'
+        ' Amilasa.'
+        ' Amiloglucosidasas.'
+        ' Aniones Cl-.'
+        ' Aniones CO3/2-.'
+        ' Aniones HCO3-.'
+        ' Aniones PO4/3-.'
+        ' Antocianinas.'
+        ' Auronas.'
+        ' Biocitina.'
+        ' Boro.'
+        ' Calcio.'
+        ' Carbonato cálcico.'
+        ' Cardiolipina.'
+        ' Catalasas.'
+        ' Cationes Ca2+.'
+        ' Cationes K+.'
+        ' Cationes Mg2+.'
+        ' Cationes Na+.'
+        ' Cationes NH4+.'
+        ' Celulasas.'
+        ' Chalconas'
+        ' Cianolípidos.'
+        ' Cobre.'
+        ' Coenzima A.'
+        ' Coenzima B12.'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        ' Condensación de ácidos grasos (ácidos 2-alquil-2-acilacéticos).'
+        
+          ' Condensación de ácidos grasos (ácidos alquitricarboxílicos - ác' +
+          'ido agárico).'
+        ' Condensación de ácidos grasos (acilonas).'
+        ' Condensación de ácidos grasos (alquiltetronatos).'
+        
+          ' Condensación de ácidos grasos (anhídridos alquilsuccínicos - ca' +
+          'nadensólido).'
+        ' Condensación de ácidos grasos (esfingoides - esfingosa).'
+        ' Condensación de ácidos grasos (lipstanina).'
+        ' Condensación de ácidos grasos (macrocetonas - civetona).'
+        ' Condensación de ácidos grasos (nonádridos - rubratoxina).'
+        ' Cromo.'
+        ' Cuerpos cetónicos.'
+        ' Depósitos de triglicéridos.'
+        ' Diacilglicerol.'
+        ' Diacilglicerol-acil-transferasa (DGAT).'
+        ' Dihidroflavonoles.'
+        ' EC1 Oxidorreductasas.'
+        ' EC2 Transferasas.'
+        ' EC3Hidrolasas.'
+        ' EC4 Liasas.'
+        ' EC5 Isomerasas.'
+        ' EC6 Ligasas.'
+        ' Enzimas producidas por bacterias.'
+        ' Epoxidación (ácido vernólico).'
+        ' Escisión oxidativa (ácido traumático).'
+        ' Esfingolípidos.'
+        ' Espirocetales (chalcogranas).'
+        ' Esteres de ácidos grasos hidroxilados.'
+        ' Esteres de glicerol.'
+        ' Esteres simples.'
+        ' FAD (flavín-adenín dinucleótido).'
+        ' FH4 (ácido tetrafólico).'
+        ' Flavandioles.'
+        ' Flavanonas.'
+        ' Flavonas.'
+        ' Flavonoides.'
+        ' Flavonoles.'
+        ' Flúor.'
+        ' FMN (flavín mononucleótido).'
+        ' Fosfatdilinositol.'
+        ' Fosfatidilcolina.'
+        ' Fosfatidiletanolamina.'
+        ' Fosfatidilglicerol.'
+        ' Fosfatidilserina.'
+        ' Fosfato de calcio.'
+        ' Fósforo.'
+        ' Glicerina.'
+        ' Glucanasa.'
+        ' Glucosa isomerasa.'
+        ' Hepatocitos.'
+        ' Hidroxilasas (alcoholes acetilénicos).'
+        ' Hidroxilasas (hepoxilinas).'
+        ' Hidroxilasas (leucotrienos).'
+        ' Hidroxilasas (neuroprotectinas).'
+        ' Hidroxilasas (resolvinas).'
+        ' Hierro.'
+        ' Inhibición enzimática irreversible.'
+        ' Inhibición enzimática reversible acompetitivas.'
+        ' Inhibición enzimática reversible competitivas.'
+        ' Inhibición enzimática reversible mixtas.'
+        ' Isoflavonoides.'
+        ' Lactasas.'
+        ' Lactonas cucujólidos.'
+        ' Lactonas volátiles.'
+        ' Ligninasas.'
+        ' Lipasas.'
+        ' Lipoproteínas de muy baja densidad (VLDL).'
+        ' Lipoproteínas.'
+        ' Magnesio.'
+        ' Manganeso.'
+        ' Molibdeno.'
+        ' NAD+ (nicotín-adenín dinucleótido)'
+        ' NADP+ (nicotín-adenín dinucleótido fosfato).'
+        ' Neoflavonoides.'
+        ' Papaina.'
+        ' Pectinasas.'
+        ' PLP (fosfato de piridoxal).'
+        ' PMP (fosfato de piridoxamina).'
+        ' Polimerasas.'
+        ' Proteasas.'
+        ' Pululanasas.'
+        ' Renina.'
+        ' Retículo endoplásmico.'
+        ' Selenio.'
+        ' Silicatos.'
+        ' Sodio + Potasio.'
+        ' Sulfuro.'
+        ' Taninos condensados.'
+        ' Tejido adiposo (adipositos).'
+        ' TPP (pirofosfato de tiamina).'
+        ' Trigliceridos.'
+        ' Tripsina.'
+        ' Vitamina A (retinolflalina).'
+        ' Vitamina B1 (tiamina).'
+        ' Vitamina B12.'
+        ' Vitamina B2 (riboflavina).'
+        ' Vitamina B3 (niacina o ácidonicotínico).'
+        ' Vitamina B5 (ácido pantoténico).'
+        ' Vitamina B6 (piridoxina).'
+        ' Vitamina B7 (Biotina).'
+        ' Vitamina B9 (ácido fólico).'
+        ' Vitamina C (ácido ascórbico).'
+        ' Vitamina D (calciferol).'
+        ' Vitamina E (tocoferol).'
+        ' Vitamina K (antihemorrágica).'
+        ' Vitamina K1 (filoquinona).'
+        ' Xilanasas.'
+        ' Yodo.'
+        ' Zinc.')
+      ParentFont = False
+      TabOrder = 12
+    end
+    object BAVM: TButton
+      Left = 216
+      Top = 84
+      Width = 180
+      Height = 26
+      Caption = 'BAVM'
+      TabOrder = 13
+      OnClick = BAVMClick
+    end
+    object LBSistemas: TListBox
+      Left = 16
+      Top = 300
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Sistema cardiovascular.'
+        ' Sistema circulatorio.'
+        ' Sistema digestivo.'
+        ' Sistema endocrino.'
+        ' Sistema esquelético.'
+        ' Sistema hormonal.'
+        ' Sistema inmunitario.'
+        ' Sistema linfático.'
+        ' Sistema muscular.'
+        ' Sistema nervioso.'
+        ' Sistema neurológico.'
+        ' Sistema óseo.'
+        ' Sistema reproductivo.'
+        ' Sistema respiratorio.'
+        ' Sistema sensorial.'
+        ' Sistema urinario.'
+        ' Tejido conectivo.')
+      ParentFont = False
+      TabOrder = 14
+    end
+    object BSistemas: TButton
+      Left = 216
+      Top = 300
+      Width = 180
+      Height = 26
+      Caption = 'BSistemas'
+      TabOrder = 15
+    end
+    object LBToxinas: TListBox
+      Left = 16
+      Top = 264
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        ' Toxinas de medicaciones alopáticas.'
+        ' Contaminación medio ambiental.'
+        ' Toxicidad alcaloide o por cafeína.'
+        ' Toxicidad por radiación.'
+        ' Toxinas causadas por estrés.'
+        ' Mercurio y metales pesados.'
+        ' Toxinas esteroides.'
+        ' Toxinas biológicas.'
+        ' Toxinas físicas (carbón, asbestos, otros).'
+        ' Toxinas no identificadas.'
+        ' Toxinas propias.'
+        ' Pigmentaciones en piel.')
+      ParentFont = False
+      TabOrder = 16
+    end
+    object BToxinas: TButton
+      Left = 216
+      Top = 264
+      Width = 180
+      Height = 26
+      Caption = 'BToxinas'
+      TabOrder = 17
+      OnClick = BToxinasClick
+    end
+    object LBCNutricionales: TListBox
+      Left = 16
+      Top = 336
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 13
+      Items.Strings = (
+        
+          ' Para los dolores de cabeza o fiebre, es bueno ponerse rebanadas' +
+          ' de patata en la frente.'
+        
+          ' Cuando tengas dolor de estómago, toma tus alimentos desaliñados' +
+          ', sin lácteos ni azúcares.'
+        
+          ' Para desintoxicar el hígado toma una limonada en ayunas endulza' +
+          'da con miel de abejas.'
+        
+          ' Para el dolor de garganta exprime un limón en agua caliente con' +
+          ' miel de abeja y bébelo.'
+        
+          ' La aplicación de compresas de leche en las rodillas reduce su i' +
+          'nflamación.'
+        
+          ' Uno o dos plátanos comidos al día son un buen remedio para la c' +
+          'olitis ulcerosa.'
+        
+          ' En caso de molestias estomacales, el yogurt es más fácil de dig' +
+          'erir que la leche.'
+        
+          ' Para normalizar los niveles de azúcar toma una vez a la semana ' +
+          'una mandarina licuada con cascara en un vaso de agua.'
+        
+          ' Si estas nervioso/a, no comas, espera a sentirte y estar relaja' +
+          'do/a.'
+        
+          ' Los pies son estructuras complejas. No uses los mismos zapatos ' +
+          'todos los días.'
+        
+          ' Escoge zapatos hechos de fibras o materiales naturales para per' +
+          'mitir a tus pies respirar.'
+        
+          ' La cafeína es una droga que se encuentra naturalmente en 60 dif' +
+          'erentes tipos de plantas.'
+        
+          ' El café no hace que una persona ebria se ponga sobria, solo hac' +
+          'e que se despierte.'
+        
+          ' 2 latas de bebidas gaseosas al día pueden causar ansiedad y red' +
+          'ucen la capacidad para dormir.'
+        
+          ' El café no filtrado puede elevar los niveles de colesterol en l' +
+          'a sangre.'
+        
+          ' Usa zapatos con suficiente espacio para los dedos, de manera qu' +
+          'e puedas moverlos dentro.'
+        
+          ' El exceso de cafeína puede aumentar el riesgo de osteoporosis y' +
+          ' fracturas.'
+        
+          ' La fibra es buena para la constipación porque ayuda a evacuar l' +
+          'os intestinos.'
+        
+          ' Cuando te recuperes de una afección larga, el caminar será tu m' +
+          'ejor ejercicio para recuperar fuerzas.'
+        
+          ' Camina con la cabeza en alto, el cuerpo recto y respira semi pr' +
+          'ofundamente para evitar el mareo.'
+        
+          ' Las fuentes más comunes de cafeína son el café, el té, las bebi' +
+          'das gaseosas y las bebidas energéticas.'
+        
+          ' El caminar es un excelente ejercicio que ayuda siempre a recupe' +
+          'rar el ritmo de la vida después de un padecimiento.'
+        
+          ' La sopa de pollo con muchos vegetales, cebolla y ajo, es un ali' +
+          'mento esencial durante un resfrío o gripe.'
+        
+          ' Para un alivio inmediato durante la picazón de las mordeduras d' +
+          'e mosquitos aplica jabón en el área.'
+        
+          ' Bebe un par de vasos de agua antes de ejercitarte para evitar e' +
+          'l deshidratarse demasiado rápido.'
+        
+          ' Si tus codos están oscuros y resecos, mezcla glicerina con zumo' +
+          ' de limón y masajéala en el área.'
+        
+          ' El exceso de cafeína produce ansiedad, depresión, inquietud, pa' +
+          'lpitaciones, dolor de estómago y dolor de cabeza.'
+        
+          ' El aceite de oliva virgen es además de un alimento, útil para l' +
+          'a piel porque tiene propiedades rejuvenecedoras.'
+        
+          ' Los masajes funcionan a nivel físico y a nivel mental porque la' +
+          ' mente responde al toque humano.'
+        
+          ' Aprende a controlar tus emociones ante las dificultades, o esta' +
+          'rás condenado a ser esclavo de las circunstancias.'
+        
+          ' Una dieta sana debe proporcionar niveles óptimos de nutrientes ' +
+          'para el mantenimiento y regeneración del organismo.'
+        
+          ' Ingiere alimentos en pequeñas cantidades y de forma frecuente d' +
+          'urante el día.'
+        
+          ' Condimenta tus alimentos con zumo de limón o de naranja, o espe' +
+          'cias no picantes para mejorar su sabor.'
+        ' Lávate los dientes y la boca después de cada comida.'
+        ' No te acuestes inmediatamente después de haber comido.'
+        
+          ' Procura que tu dieta sea variada y rica en calorías. Añade a tu' +
+          's alimentos: aceite virgen de oliva, miel, mermelada.'
+        ' Lava muy bien las frutas y verduras que vayas a consumir.'
+        
+          ' La pérdida de peso ha de ser lenta pero progresiva.  No convien' +
+          'e que sea rápida.'
+        ' La obesidad aumenta la mortalidad y la movilidad.'
+        
+          ' Descongela los alimentos en el refrigerador. No pongas juntos a' +
+          'limentos crudos con cocidos.'
+        ' Siempre lávate las manos antes de comer. Bendice tus alimentos.'
+        
+          ' Todos los aceites no engordan lo mismo. Evita reutilizar los ac' +
+          'eites.'
+        
+          ' Si tienes sobre peso estas en riesgo de sufrir diabetes, hipert' +
+          'ensión y afecciones cardiovasculares.'
+        
+          ' La cocción al vapor conserva las vitaminas y minerales de los a' +
+          'limentos; además su aroma, sabor, color y textura.'
+        
+          ' La '#39#39'Moderación'#39#39' y NO la '#39#39'Privación'#39#39' te conducirán a una mej' +
+          'or calidad de vida.'
+        ' Mantén control de tu peso y de tu presión arterial.'
+        
+          ' Perder peso es una cosa, mantenerlo después de tanto esfuerzo e' +
+          's otra.'
+        
+          ' El agua no aporta energía pero es un factor indispensable dentr' +
+          'o de una dieta balanceada.'
+        
+          ' Todas las vitaminas son indispensables y deben obtenerse de los' +
+          ' alimentos.'
+        
+          ' Ni las vitaminas ni los minerales poseen calorías, por lo tanto' +
+          ' no engordan.'
+        
+          ' Nuestro organismo necesita cada día ácidos grasos esenciales. T' +
+          'odos los aceites vegetales los contienen.'
+        
+          ' Los carbohidratos de absorción rápida están en la fruta, zumos,' +
+          ' leche y derivados.'
+        
+          ' El aceite virgen de oliva es recomendado por su riqueza en ácid' +
+          'o oleico.'
+        
+          ' La dieta mediterránea es rica en grasas insaturadas procedentes' +
+          ' de pescados azules, aceite de oliva y frutos secos.'
+        
+          ' Los alimentos ricos en carbohidratos complejos deben ser los má' +
+          's abundantes: cereales y derivados, legumbres y arroz.'
+        
+          ' Los alimentos de una dieta deben ser variados, evitando la mono' +
+          'tonía y la exclusión.'
+        
+          ' Algunas hortalizas como la patata y los boniatos son ricos en h' +
+          'idratos de carbono.'
+        
+          ' Para mantener un peso óptimo, el contenido energético de la ali' +
+          'mentación debe ser proporcional al gasto energético diario.'
+        
+          ' La alimentación debe ser variada, suficiente en energía y sin e' +
+          'xcesos, para evitar obesidad o afecciones carenciales.'
+        
+          ' Existe una estrecha relación entre una dieta adecuada y balance' +
+          'ada, y un excelente estado de salud.'
+        
+          ' Los hábitos dietéticos sanos influyen de forma importante en nu' +
+          'estra salud.'
+        
+          ' La cantidad de energía en la alimentación depende de la edad, s' +
+          'exo, altura, actividad física y estado fisiológico.'
+        
+          ' Los 3 nutrientes principales de una dieta sana son: hidratos de' +
+          ' carbono, lípidos o grasas y proteínas.'
+        
+          ' El ácido oleico es un ácido graso mono insaturado que contribuy' +
+          'e al equilibrio del aporte diario de grasas.'
+        
+          ' La fibra dietética es un compuesto de los alimentos que no pued' +
+          'e ser digerido por las enzimas del tubo digestivo.'
+        
+          ' Los alimentos vegetales contienen 2 tipos de fibra, insoluble y' +
+          ' soluble, con efectos biológicos diferentes.'
+        
+          ' Los resultados de la composición corporal son una consecuencia ' +
+          'directa de lo que comes y bebes.'
+        
+          ' Los zumos naturales son una buena fuente de carbohidratos duran' +
+          'te las comidas.'
+        
+          ' Comer sanamente significa proporcionar al organismo lo que nece' +
+          'sita en la cantidad y proporción adecuadas.'
+        
+          ' La dieta mediterránea se correlaciona con una menor incidencia ' +
+          'de ciertos tipos de cáncer y afecciones cardiovasculares.'
+        
+          ' Los carbohidratos complejos (de absorción lenta) y simples (de ' +
+          'absorción rápida), aportan energía al organismo.'
+        
+          ' La dieta mediterránea se caracteriza por un consumo moderado de' +
+          ' carnes y grasas de origen animal.'
+        
+          ' El aceite virgen de oliva es eficaz en la prevención de afeccio' +
+          'nes como la arterosclerosis coronaria.'
+        
+          ' El valor nutritivo del pescado azul es semejante al de la carne' +
+          ' pero las proteínas se asimilan más fácil.'
+        
+          ' La ingesta de ajo, cebolla, tomate y frutos secos, aportan anti' +
+          'oxidantes y nutrientes protectores.'
+        
+          ' El consumo de pescado azul y aceite de oliva son beneficiosos p' +
+          'or la calidad y proporción de los lípidos que aportan.'
+        
+          ' Las necesidades hídricas son de 3 litros por día: 50% contenida' +
+          ' en los alimentos y 50% consumida en forma de bebida.'
+        
+          ' Acude a un especialista que te confeccione una dieta adecuada a' +
+          ' tus aspectos únicos e individuales.'
+        
+          ' Cuando necesites aumentar tu ingesta de carbohidratos, consider' +
+          'a el tomar fruta fresca después de una comida.'
+        
+          ' La fibra favorece la evacuación intestinal, la sensación de sac' +
+          'iedad y el crecimiento y reproducción de bacterias intestinales ' +
+          'protectoras.'
+        
+          ' Para evitar los calambres en las piernas es recomendable comer ' +
+          'un plátano diario.'
+        ' Toma frijoles y lentejas por lo menos dos veces a la semana.'
+        
+          ' Si te resfrías, bebe muchos líquidos como agua o zumos naturale' +
+          's.'
+        
+          ' En pequeñas inflamaciones de la piel aplique rodajas de patata ' +
+          'cruda. También mejora la cicatrización.'
+        
+          ' Conviértelo en un pasatiempo el encontrar maneras de mover tu c' +
+          'uerpo y ejercitarte tanto como puedas.'
+        
+          ' Busca algo que te inspire, eleva tu nivel de conciencia, motíva' +
+          'te y satisface tu alma.'
+        ' Ejercita tu cerebro. Lee, estudia, resuelve problemas. '
+        
+          ' El cerebro es un órgano que también se atrofia por falta de uso' +
+          '.'
+        
+          ' La fibra dietética en personas diabéticas disminuye los niveles' +
+          ' de glucosa en la sangre.'
+        
+          ' Sustituye total o parcialmente las harinas o panes molidos refi' +
+          'nados por sus presentaciones integrales.'
+        
+          ' Está comprobado científicamente que reírse incrementa la vida. ' +
+          'A reírse, vivir más alegra a cualquiera.'
+        
+          ' Para maximizar los beneficios de la fibra bebe mucha agua para ' +
+          'mejorar los movimientos intestinales.'
+        
+          ' La fibra dietética ayuda a disminuir el colesterol y previene e' +
+          'l cáncer de colon.')
+      ParentFont = False
+      TabOrder = 18
+    end
+    object BCNutricionales: TButton
+      Left = 216
+      Top = 336
+      Width = 180
+      Height = 26
+      Caption = 'BCNutricionales'
+      TabOrder = 19
+    end
+    object LBHomeopatia: TListBox
+      Left = 16
+      Top = 372
+      Width = 193
+      Height = 26
+      BorderStyle = bsNone
+      ItemHeight = 14
+      Items.Strings = (
+        ' Acanthosis Venom'
+        ' Aconite'
+        ' Antimony'
+        ' Apis Mel'
+        ' Arsenicum'
+        ' Aurum'
+        ' Belladonna'
+        ' Bothrops Venom'
+        ' Bryonia'
+        ' Buthus Venom'
+        ' Calcarea'
+        ' Carbolic Acidum'
+        ' Chinona'
+        ' Crotalis Venom'
+        ' Cuprum'
+        ' Ferrum'
+        ' Gelsemium'
+        ' Glonine'
+        ' Iodium'
+        ' Ipecacuanha'
+        ' Lachesis Venom'
+        ' Lactrodectus Venom'
+        ' Merc'
+        ' Mercury'
+        ' Naja Venom'
+        ' Notechis Venom'
+        ' Nux Vox'
+        ' Ophiophagus Venom'
+        ' Opium'
+        ' Passiflora'
+        ' Phosphorus'
+        ' Plutonium'
+        ' Pulsatilla'
+        ' Rhus Tox'
+        ' Sepia'
+        ' Sepia'
+        ' Silica'
+        ' Silver'
+        ' Stannum'
+        ' Sulphur'
+        ' Thuja'
+        ' Vespa Venom'
+        ' Zinc')
+      TabOrder = 20
+    end
+    object BHomeopatia: TButton
+      Left = 216
+      Top = 372
+      Width = 180
+      Height = 26
+      Caption = 'BHomeopatia'
+      TabOrder = 21
+      OnClick = BHomeopatiaClick
+    end
   end
   object Timer1: TTimer
     Enabled = False
     Interval = 500
     OnTimer = Timer1Timer
-    Left = 960
-    Top = 192
+    Left = 1004
+    Top = 272
   end
   object MainMenu1: TMainMenu
-    Left = 960
-    Top = 256
+    Left = 1004
+    Top = 328
     object Programs1: TMenuItem
       Caption = 'Programas'
       object SurvialAwarenessForm1: TMenuItem
@@ -16787,6 +17801,13 @@ object Emotion: TEmotion
         Caption = 'Añadir afección primaria a terapias'
         OnClick = Button33Click
       end
+      object Repositorio1: TMenuItem
+        Caption = 'Repositorio'
+        OnClick = Repositorio1Click
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
       object Cuestionarioyconsejos1: TMenuItem
         Tag = 8
         Caption = 'Crecimiento emocional | Cuestionario y consejos'
@@ -16795,6 +17816,7 @@ object Emotion: TEmotion
       object Equilibratalteracindelpatrndelritmodelsueo1: TMenuItem
         Tag = 8
         Caption = 'Equilibrar alteración del patrón del ritmo del sueño'
+        OnClick = Button144Click
       end
       object ZapForJetLag1: TMenuItem
         Tag = 8
@@ -17056,81 +18078,67 @@ object Emotion: TEmotion
         OnClick = AntiAging1Click
       end
     end
-    object Information1: TMenuItem
-      Caption = 'Información'
-      object Affirmations1: TMenuItem
-        Caption = 'Afirmaciones positivas | Cómo redactar'
-        OnClick = Affirmations1Click
-      end
-      object Listadodeafirmaciones1: TMenuItem
-        Caption = 'Afirmaciones positivas | Listado de'
-        OnClick = Listadodeafirmaciones1Click
-      end
-      object InfoGeneral1: TMenuItem
-        Caption = 'Información | Cuestionario y consejos'
-      end
-      object AlcoholismTest1: TMenuItem
-        Caption = 'Texto | Alcoholismo'
-      end
-      object ds1: TMenuItem
-        Caption = 'Texto | DSM-IV'
-        OnClick = ds1Click
-      end
-      object WomensTakeHomeChart1: TMenuItem
-        Caption = 'Texto | Condiciones femeninas'
-      end
-      object EmotionTest1: TMenuItem
-        Caption = 'Texto | Emociones'
-      end
-      object N6: TMenuItem
-        Caption = '-'
-        Visible = False
-      end
-      object StressTest1: TMenuItem
-        Caption = 'Texto | Estrés'
-        Visible = False
-      end
-      object CancerAssignmentText1: TMenuItem
-        Caption = 'Texto | Cáncer'
-        Visible = False
-      end
-    end
     object SpecialSCIOTherapies1: TMenuItem
-      Caption = 'Terapias fX'
+      Caption = 'Terapias fX >'
+      object DNACorrection1: TMenuItem
+        Tag = 8
+        Caption = 'ADN'
+        OnClick = DNACorrection1Click
+      end
+      object AllergyTreatment1: TMenuItem
+        Tag = 8
+        Caption = 'Alergias'
+        OnClick = AllergyTreatment1Click
+      end
       object Degeneration1: TMenuItem
         Tag = 8
-        Caption = 'Anti degeneración'
+        Caption = 'Degeneración'
         OnClick = Degeneration1Click
       end
       object Infection1: TMenuItem
         Tag = 8
-        Caption = 'Anti infección'
+        Caption = 'Infección'
         OnClick = Infection1Click
       end
       object Inflamation1: TMenuItem
         Tag = 8
-        Caption = 'Anti inflamación'
+        Caption = 'Inflamación'
         OnClick = Inflamation1Click
       end
-      object Energy1: TMenuItem
+      object AddictionRelease2: TMenuItem
         Tag = 8
-        Caption = 'Aumento de psico-energía'
-        OnClick = Energy1Click
+        Caption = 'Adicciones'
+        OnClick = AddictionRelease2Click
       end
-      object DNACorrection1: TMenuItem
+      object SpiritualConnection1: TMenuItem
         Tag = 8
-        Caption = 'Corrección del ADN'
-        OnClick = DNACorrection1Click
-      end
-      object ImmunoNeuro1: TMenuItem
-        Tag = 8
-        Caption = 'Estimulación del sistema inmune-neurológico'
-        OnClick = ImmunoNeuro1Click
+        Caption = 'Conexión espiritual'
+        OnClick = SpiritualConnection1Click
       end
       object BuildEnlightenment1: TMenuItem
         Tag = 8
-        Caption = 'Estimulación de poderes mentales'
+        Caption = 'Poderes mentales'
         OnClick = BuildEnlightenment1Click
+      end
+      object Energy1: TMenuItem
+        Tag = 8
+        Caption = 'Psico-energía'
+        OnClick = Energy1Click
+      end
+      object Injury1: TMenuItem
+        Tag = 8
+        Caption = 'Lesiones y traumas'
+        OnClick = Injury1Click
+      end
+      object GeneralHealth1: TMenuItem
+        Tag = 8
+        Caption = 'Salud general'
+        OnClick = GeneralHealth1Click
+      end
+      object ImmunoNeuro1: TMenuItem
+        Tag = 8
+        Caption = 'Sistema inmuno-neurológico'
+        OnClick = ImmunoNeuro1Click
       end
       object Trastornossomatomorfos1: TMenuItem
         Caption = 'Trastornos Somatomorfos'
@@ -17171,57 +18179,38 @@ object Emotion: TEmotion
           OnClick = Somatomorfoindiferenciado1Click
         end
       end
-      object GeneralHealth1: TMenuItem
-        Tag = 8
-        Caption = 'Fomento de salud general'
-        OnClick = GeneralHealth1Click
-      end
-      object AddictionRelease2: TMenuItem
-        Tag = 8
-        Caption = 'Liberación de adicciones'
-        OnClick = AddictionRelease2Click
-      end
-      object SpiritualConnection1: TMenuItem
-        Tag = 8
-        Caption = 'Mejorar conexión espiritual'
-        OnClick = SpiritualConnection1Click
-      end
-      object Injury1: TMenuItem
-        Tag = 8
-        Caption = 'Reparación de lesiones y traumas'
-        OnClick = Injury1Click
-      end
-      object AllergyTreatment1: TMenuItem
-        Tag = 8
-        Caption = 'Reducción de alergias'
-        OnClick = AllergyTreatment1Click
-      end
     end
   end
   object MyChrono: TYRChronometre
-    Left = 960
-    Top = 224
+    Left = 1004
+    Top = 300
   end
   object Time_Crono: TTimer
     Enabled = False
     OnTimer = Time_CronoTimer
-    Left = 960
-    Top = 290
+    Left = 1004
+    Top = 418
   end
   object TRelajacion: TTimer
     Enabled = False
     Interval = 12000
     OnTimer = TRelajacionTimer
-    Left = 928
-    Top = 290
+    Left = 1004
+    Top = 446
   end
   object Q_Filtro: TQuery
-    Left = 960
-    Top = 353
+    Left = 1004
+    Top = 357
   end
   object DS_Filtro: TDataSource
     DataSet = Q_Filtro
-    Left = 960
-    Top = 323
+    Left = 1004
+    Top = 387
+  end
+  object TAutomatico: TTimer
+    Enabled = False
+    OnTimer = TAutomaticoTimer
+    Left = 1004
+    Top = 272
   end
 end

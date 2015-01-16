@@ -48,7 +48,7 @@ object Welcome: TWelcome
     Top = 176
     Width = 271
     Height = 11
-    Caption = '© Francisco Martínez 2009-2014.  Reservados todos los derechos.'
+    Caption = '© Francisco Martínez 2009-2015.  Reservados todos los derechos.'
     Color = clBlack
     Font.Charset = ANSI_CHARSET
     Font.Color = clSilver
@@ -83,7 +83,7 @@ object Welcome: TWelcome
     Width = 339
     Height = 16
     Alignment = taRightJustify
-    Caption = 'Comunicación Bio-Instrumental y Electro Dinámica Cuántica'
+    Caption = 'Comunicación Bio-Instrumental | Electro Dinámica Cuántica'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWhite
     Font.Height = -13

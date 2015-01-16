@@ -3,9 +3,7 @@ object FMainScio: TFMainScio
   Top = 122
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Biofeedback Cibernético ::: Visualizador de f' +
-    'recuencias ::: '
+  Caption = '::: gENiO® iOS ::: Visualizador de frecuencias ::: '
   ClientHeight = 730
   ClientWidth = 940
   Color = -2147483621

@@ -1461,19 +1461,11 @@ end;
 
 procedure TDM.T_ExamineAfterPost(DataSet: TDataSet);
 begin
-// If DM.T_Examine.RecordCount = 0 Then Sysreport.Bit_Edit.Enabled:=False;
-
  Sysreport.Bit_New.Enabled:=True;
-// Sysreport.Bit_Edit.Enabled:=True;
  Sysreport.Bit_Save.Enabled:=False;
  Sysreport.Bit_Cancel.Enabled:=False;
-// Sysreport.SpinButton1.Enabled:=False;
-// Sysreport.SpinButton2.Enabled:=False;
  Sysreport.Combo_order.Enabled:=True;
- Sysreport.BitBtn1.Enabled:=True;
  Sysreport.Close1.enabled:=True; { Close Menu }
-// Sysreport.SpeedButton4.Enabled:=False;
-
  Sysreport.B_Reload.Enabled:=False;
  Sysreport.Button4.Enabled:=False;
  Sysreport.OpenOldfile1.Enabled:=False;
@@ -1506,16 +1498,10 @@ end;
 procedure TDM.T_ExamineAfterEdit(DataSet: TDataSet);
 begin
  Sysreport.Bit_New.Enabled:=False;
-// Sysreport.Bit_Edit.Enabled:=False;
  Sysreport.Bit_Save.Enabled:=True;
  Sysreport.Bit_Cancel.Enabled:=True;
-// Sysreport.SpinButton1.Enabled:=True;
-// Sysreport.SpinButton2.Enabled:=True;
  Sysreport.Combo_order.Enabled:=False;
- Sysreport.BitBtn1.Enabled:=False;
  Sysreport.Close1.enabled:=false; { Close Menu }
-// Sysreport.SpeedButton4.Enabled:=True;
-
  Sysreport.B_Reload.Enabled:=True;
  Sysreport.Button4.Enabled:=True;
  Sysreport.OpenOldFile1.Enabled:=True;

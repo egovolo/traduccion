@@ -1,9 +1,9 @@
 object AboutBox: TAboutBox
-  Left = 179
-  Top = 478
+  Left = 248
+  Top = 273
   BorderIcons = [biSystemMenu]
   BorderStyle = bsNone
-  ClientHeight = 371
+  ClientHeight = 379
   ClientWidth = 555
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -19,7 +19,7 @@ object AboutBox: TAboutBox
   TextHeight = 16
   object Comments: TLabel
     Left = 24
-    Top = 266
+    Top = 270
     Width = 57
     Height = 19
     Caption = 'Créditos'
@@ -35,7 +35,7 @@ object AboutBox: TAboutBox
   end
   object Label1: TLabel
     Left = 24
-    Top = 288
+    Top = 292
     Width = 491
     Height = 65
     Caption = 
@@ -56,20 +56,21 @@ object AboutBox: TAboutBox
   end
   object Label7: TLabel
     Left = 144
-    Top = 18
+    Top = 10
     Width = 389
-    Height = 143
+    Height = 156
     Caption = 
       'gENiO® iOS | Comunicación Bio-Instrumental / Electro Dinámica Cu' +
-      'ántica'#13#10'Versión 2014.5.0.0 pS1 '#13#10'© Francisco Martínez 2009-2015.' +
-      '  Reservados todos los derechos.'#13#10'© Laboratorio Tecnonatura, S.A' +
-      '.S. 2011-2014.  Reservados todos los derechos.'#13#10'Páginas Web: www' +
-      '.tecnonatura.co | www.tiendascio.com '#13#10'Correo Electrónico: c.bio' +
-      'instrumental@tecnonatura.co'#13#10'Soporte: www.scioformacion.com'#13#10'Red' +
-      'es sociales: www.facebook.com/comunicacion.bioinstrumental'#13#10'    ' +
-      '                      www.twitter.com/@comu_bio'#13#10'               ' +
-      '           www.skype.com/c-bioinstrumental'#13#10'                    ' +
-      '      c.bioinstrumental@groups.facebook.com'
+      'ántica'#13#10'Versión 2015.1.0.0'#13#10'© Francisco Martínez 2009-2015.  Res' +
+      'ervados todos los derechos.'#13#10'© Laboratorio Tecnonatura, S.A.S. 2' +
+      '011-2015.  Reservados todos los derechos.'#13#10'Páginas Web: www.tecn' +
+      'onatura.co | www.tiendascio.com '#13#10'Correo Electrónico: c.bioinstr' +
+      'umental@tecnonatura.co'#13#10'Soporte: www.scioformacion.com'#13#10'Redes so' +
+      'ciales: www.facebook.com/comunicacion.bioinstrumental'#13#10'         ' +
+      '                 www.twitter.com/@comu_bio'#13#10'                    ' +
+      '      www.skype.com/c-bioinstrumental'#13#10'                         ' +
+      ' c.bioinstrumental@groups.facebook.com'#13#10'                        ' +
+      '  whatsapp: +34 647 550 324'
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -11
@@ -81,14 +82,14 @@ object AboutBox: TAboutBox
   object Image1: TImage
     Left = 36
     Top = 28
-    Width = 80
-    Height = 80
+    Width = 70
+    Height = 70
     Stretch = True
     Transparent = True
   end
   object Label11: TLabel
     Left = 92
-    Top = 152
+    Top = 156
     Width = 4
     Height = 19
     Caption = ' '
@@ -130,7 +131,7 @@ object AboutBox: TAboutBox
   end
   object Label9: TLabel
     Left = 24
-    Top = 151
+    Top = 155
     Width = 112
     Height = 19
     Caption = 'Agradecimientos'
@@ -622,7 +623,7 @@ object AboutBox: TAboutBox
   end
   object Memo1: TMemo
     Left = 22
-    Top = 172
+    Top = 176
     Width = 511
     Height = 93
     BorderStyle = bsNone

@@ -20,9 +20,6 @@ type
     SveCurrentPatient1: TMenuItem;
     Cancel1: TMenuItem;
     Close1: TMenuItem;
-    Help1: TMenuItem;
-    HelpMemoonProcedure1: TMenuItem;
-    Helponsecondvisits1: TMenuItem;
     BirthTimeandPlace1: TMenuItem;
     Enterbirthdata1: TMenuItem;
     Panel4: TPanel;
@@ -305,8 +302,6 @@ type
     IslasBaleares1: TMenuItem;
     IslasCanarias1: TMenuItem;
     Image8: TImage;
-    Memo1: TMemo;
-    Memo2: TMemo;
     Panel6: TPanel;
     Panel2: TPanel;
     Label1: TLabel;
@@ -369,8 +364,6 @@ type
     procedure SveCurrentPatient1Click(Sender: TObject);
     procedure Cancel1Click(Sender: TObject);
     procedure Close1Click(Sender: TObject);
-    procedure HelpMemoonProcedure1Click(Sender: TObject);
-    procedure Helponsecondvisits1Click(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
     procedure Bit_EditClick(Sender: TObject);
     procedure Enterbirthdata1Click(Sender: TObject);
@@ -635,8 +628,6 @@ type
     procedure Image5Click(Sender: TObject);
     procedure Geography1Click(Sender: TObject);
     procedure Image2Click(Sender: TObject);
-    procedure Memo2Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
     procedure Panel2Click(Sender: TObject);
     procedure Panel6Click(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
@@ -1496,18 +1487,6 @@ end;
 procedure TPat_form.Close1Click(Sender: TObject);
 begin
 Close;
-end;
-
-procedure TPat_form.HelpMemoonProcedure1Click(Sender: TObject);
-begin
-memo2.visible:=false;
-memo1.visible:=true;
-end;
-
-procedure TPat_form.Helponsecondvisits1Click(Sender: TObject);
-begin
-memo1.visible:=false;
-memo2.visible:=true;
 end;
 
 procedure TPat_form.CheckBox1Click(Sender: TObject);
@@ -5058,16 +5037,6 @@ begin
 panel4.visible:=false;
 ast1:=ast1+1;
 showmessage('La información ha sido cargada.');
-end;
-
-procedure TPat_form.Memo2Click(Sender: TObject);
-begin
-memo2.visible:=false;
-end;
-
-procedure TPat_form.Memo1Click(Sender: TObject);
-begin
-memo1.visible:=false;
 end;
 
 procedure TPat_form.Panel2Click(Sender: TObject);

@@ -6,7 +6,7 @@ uses
   SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,freq2,
   Forms, Dialogs, StdCtrls, ExtCtrls, TabNotBk, Buttons, patname, shellapi,
    Gauges, OleCtrls, ComCtrls, TeeProcs, TeEngine, Chart, Series, ArrowCha,
-  MPlayer, jpeg, YRChrono, Spin;
+  MPlayer, jpeg, YRChrono, Spin, Grids, DBGrids, DBCtrls, Db, DBTables;
 
 type
   Tfreq1 = class(TForm)
@@ -47,7 +47,6 @@ type
     Label33: TLabel;
     Button7: TButton;
     Label41: TLabel;
-    Panel3: TPanel;
     Button9: TButton;
     Button10: TButton;
     Timer1: TTimer;
@@ -80,19 +79,18 @@ type
     Panel5: TPanel;
     LCrono: TLabel;
     Label2: TLabel;
-    Edit2: TEdit;
     Panel4: TPanel;
     IECG: TImage;
     Shape2: TShape;
-    Label27: TLabel;
-    Label28: TLabel;
-    Label29: TLabel;
-    Label30: TLabel;
-    Label31: TLabel;
-    Label34: TLabel;
-    Label35: TLabel;
-    Label36: TLabel;
-    Label54: TLabel;
+    LCausas: TLabel;
+    LOrganosGlandulas: TLabel;
+    LEPositivas: TLabel;
+    LENegativas: TLabel;
+    LAVM: TLabel;
+    LToxinas: TLabel;
+    LMeridianos: TLabel;
+    LSistemas: TLabel;
+    LProcesos: TLabel;
     Button18: TButton;
     Label23: TLabel;
     Image3: TImage;
@@ -586,6 +584,108 @@ type
     Panel10: TPanel;
     GProgreso: TGauge;
     PTiempoEstimado: TPanel;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    LCNutricionales: TLabel;
+    LHomeopatia: TLabel;
+    Lnombre: TLabel;
+    Lvalor: TLabel;
+    Lorden: TLabel;
+    Label27: TLabel;
+    e_buscar: TEdit;
+    DBGrid3: TDBGrid;
+    PFiltros: TPanel;
+    L_ag: TLabel;
+    L_ad: TLabel;
+    L_af: TLabel;
+    L_agtb: TLabel;
+    L_ab: TLabel;
+    L_ac: TLabel;
+    L_ay: TLabel;
+    L_bc: TLabel;
+    L_ba: TLabel;
+    L_ca: TLabel;
+    L_cr: TLabel;
+    L_dt: TLabel;
+    L_dg: TLabel;
+    L_em: TLabel;
+    L_ep: TLabel;
+    L_en: TLabel;
+    L_ef: TLabel;
+    L_fn: TLabel;
+    L_Fb: TLabel;
+    L_fg: TLabel;
+    L_ho: TLabel;
+    L_hi: TLabel;
+    L_vtm: TLabel;
+    L_Vr: TLabel;
+    L_vt: TLabel;
+    L_vn: TLabel;
+    L_slv: TLabel;
+    L_scr: TLabel;
+    L_sngr: TLabel;
+    L_res: TLabel;
+    L_rem: TLabel;
+    L_po: TLabel;
+    L_pa: TLabel;
+    L_No: TLabel;
+    L_mus: TLabel;
+    L_mr: TLabel;
+    L_mp: TLabel;
+    L_mc: TLabel;
+    L_ma: TLabel;
+    L_id: TLabel;
+    L_if: TLabel;
+    L_hc: TLabel;
+    L_hu: TLabel;
+    L_hm: TLabel;
+    Todos: TLabel;
+    Panel15: TPanel;
+    GoToNo: TButton;
+    E_Ir: TEdit;
+    GroupBox8: TGroupBox;
+    LT1: TLabel;
+    LT2: TLabel;
+    LT3: TLabel;
+    LT4: TLabel;
+    LT5: TLabel;
+    LT6: TLabel;
+    LT7: TLabel;
+    LT8: TLabel;
+    EdConsida4: TEdit;
+    EdConsida3: TEdit;
+    EdConsida2: TEdit;
+    EdConsida1: TEdit;
+    EdConsida5: TEdit;
+    EdConsida6: TEdit;
+    EdConsida7: TEdit;
+    EdConsida8: TEdit;
+    MDescripcion: TDBMemo;
+    Q_Filtro: TQuery;
+    DS_Filtro: TDataSource;
+    Query1: TQuery;
+    DataSource1: TDataSource;
 
     procedure FormCreate(Sender: TObject);
     Function Just_Send_Port_String:String;
@@ -762,9 +862,112 @@ type
     procedure Label60Click(Sender: TObject);
     procedure Label61Click(Sender: TObject);
     procedure Panel18Click(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BProcesosClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BSistemasClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
+    procedure BCNutricionalesClick(Sender: TObject);
+    procedure Label27Click(Sender: TObject);
+    procedure LordenClick(Sender: TObject);
+    procedure LvalorClick(Sender: TObject);
+    procedure LnombreClick(Sender: TObject);
+    procedure e_buscarChange(Sender: TObject);
+    procedure e_buscarEnter(Sender: TObject);
+    procedure e_buscarExit(Sender: TObject);
+    procedure E_IrChange(Sender: TObject);
+    procedure E_IrEnter(Sender: TObject);
+    procedure E_IrKeyPress(Sender: TObject; var Key: Char);
+    procedure GoToNoClick(Sender: TObject);
+    procedure TodosClick(Sender: TObject);
+    procedure Panel15Click(Sender: TObject);
+    procedure L_agClick(Sender: TObject);
+    procedure L_adClick(Sender: TObject);
+    procedure L_afClick(Sender: TObject);
+    procedure L_agtbClick(Sender: TObject);
+    procedure L_abClick(Sender: TObject);
+    procedure L_acClick(Sender: TObject);
+    procedure L_ayClick(Sender: TObject);
+    procedure L_bcClick(Sender: TObject);
+    procedure L_baClick(Sender: TObject);
+    procedure L_caClick(Sender: TObject);
+    procedure L_epClick(Sender: TObject);
+    procedure L_crClick(Sender: TObject);
+    procedure L_dtClick(Sender: TObject);
+    procedure L_dgClick(Sender: TObject);
+    procedure L_emClick(Sender: TObject);
+    procedure L_efClick(Sender: TObject);
+    procedure L_enClick(Sender: TObject);
+    procedure L_remClick(Sender: TObject);
+    procedure L_fnClick(Sender: TObject);
+    procedure L_FbClick(Sender: TObject);
+    procedure L_fgClick(Sender: TObject);
+    procedure L_hoClick(Sender: TObject);
+    procedure L_hiClick(Sender: TObject);
+    procedure L_hmClick(Sender: TObject);
+    procedure L_huClick(Sender: TObject);
+    procedure L_hcClick(Sender: TObject);
+    procedure L_ifClick(Sender: TObject);
+    procedure L_idClick(Sender: TObject);
+    procedure L_maClick(Sender: TObject);
+    procedure L_mcClick(Sender: TObject);
+    procedure L_mpClick(Sender: TObject);
+    procedure L_mrClick(Sender: TObject);
+    procedure L_musClick(Sender: TObject);
+    procedure L_NoClick(Sender: TObject);
+    procedure L_paClick(Sender: TObject);
+    procedure L_poClick(Sender: TObject);
+    procedure L_resClick(Sender: TObject);
+    procedure L_sngrClick(Sender: TObject);
+    procedure L_scrClick(Sender: TObject);
+    procedure L_slvClick(Sender: TObject);
+    procedure L_vnClick(Sender: TObject);
+    procedure L_vtClick(Sender: TObject);
+    procedure L_VrClick(Sender: TObject);
+    procedure L_vtmClick(Sender: TObject);
+    procedure EdConsida1Change(Sender: TObject);
+    procedure EdConsida1Click(Sender: TObject);
+    procedure EdConsida2Click(Sender: TObject);
+    procedure EdConsida3Click(Sender: TObject);
+    procedure EdConsida4Click(Sender: TObject);
+    procedure EdConsida5Click(Sender: TObject);
+    procedure EdConsida6Click(Sender: TObject);
+    procedure EdConsida7Change(Sender: TObject);
+    procedure EdConsida7Click(Sender: TObject);
+    procedure EdConsida8Click(Sender: TObject);
+    procedure EdConsida2Change(Sender: TObject);
+    procedure EdConsida3Change(Sender: TObject);
+    procedure EdConsida4Change(Sender: TObject);
+    procedure EdConsida5Change(Sender: TObject);
+    procedure EdConsida6Change(Sender: TObject);
+    procedure EdConsida8Change(Sender: TObject);
+    procedure LT1Click(Sender: TObject);
+    procedure LT2Click(Sender: TObject);
+    procedure LT3Click(Sender: TObject);
+    procedure LT4Click(Sender: TObject);
+    procedure LT5Click(Sender: TObject);
+    procedure LT6Click(Sender: TObject);
+    procedure LT7Click(Sender: TObject);
+    procedure LT8Click(Sender: TObject);
+    procedure DBGrid3CellClick(Column: TColumn);
+    procedure DBGrid3ColEnter(Sender: TObject);
+    procedure DBGrid3DblClick(Sender: TObject);
+    procedure DBGrid3DrawDataCell(Sender: TObject; const Rect: TRect;
+      Field: TField; State: TGridDrawState);
+    procedure DBGrid3KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure DBGrid3KeyPress(Sender: TObject; var Key: Char);
+    procedure DBGrid3KeyUp(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
 
   private
     { Private declarations }
+    QstringAlpha, QString:string;
     procedure OndasCerebrales();
     procedure LimpiaOndas();
     procedure Sincronizar();
@@ -777,10 +980,22 @@ type
     procedure LimpiaTASNA();
     procedure ActualizaDiales();
     procedure LimpiaAreas();
+    procedure Conexiones();
+    procedure ActualizaDBGrid3();
 
+    
   public
+      { Public declarations }
+
+      vorder,vorder2,
+    vsql :string;
   fring,canstop : Integer;
-    { Public declarations }
+        pfiltra_I: integer;
+    Q_Filtro_order,
+    Q_Filtro_sql :String;
+    Q_Filtro_sql2 :String;
+    procedure pFiltra_Conscida(pQString :String);
+    Function StrToInt2(S2 : String) : Integer;
       end;
 
 var
@@ -808,6 +1023,18 @@ implementation
   Password, Cnscios, uscioworking, ucomport, UCancer_Explorer, USarcodes,
   Urecompensa, Calibrat, ondas;
 {$R *.DFM}
+
+Function Tfreq1.StrToInt2(S2 : String) : Integer;
+Var i  : Integer;
+    S3 : String;
+Begin
+  S3:='';
+  for i := 1 to Length(S2) do
+  Begin
+    If S2[i] in ['0'..'9'] then S3:=S3+S2[i];
+  end;
+  StrToInt2:=StrToInt(S3);
+end;
 
 
 Procedure MyWinExec(Editor : String;Sfile : String);
@@ -849,8 +1076,6 @@ Begin
   CloseFile(F);
   MyFileCreate := 0;
 end;
-
-
 
 procedure Tfreq1.FormCreate(Sender: TObject);
 begin
@@ -958,13 +1183,6 @@ procedure Tfreq1.Button4Click(Sender: TObject);
 begin
 MyChrono.Start;
 Sincronizar();
-If RBAlpha.Checked = True Then panel3.caption := 'Equilibrando cerebro con onda de forma Alfa...';
-If RBBeta.Checked = True Then panel3.caption := 'Equilibrando cerebro con onda de forma Beta...';
-If RBTheta.Checked = True Then panel3.caption := 'Equilibrando cerebro con onda de forma Teta...';
-If RBDelta.Checked = True Then panel3.caption := 'Equilibrando cerebro con onda de forma Delta...';
-If RBGamma.Checked = True Then panel3.caption := 'Equilibrando cerebro con onda de forma Gamma...';
-panel3.visible:=true;
-panel3.refresh;
 If CBAreas.Checked = True Then TAreas.Enabled := True;
 GBAreas.Visible := True;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
@@ -1060,10 +1278,10 @@ else
 rec:= random(84);
 end;
 LRectificado.caption:='Rectificado | '+inttostr(rec);
-Panel3.Visible := False;
 TAreas.Enabled := False;
 GBAreas.Visible := False;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+Conexiones();
 MyChrono.Stop;
 If (rec<85) and (CBTAutomatica.Checked=True) Then Begin
 Sleep(1000);
@@ -1090,7 +1308,6 @@ end;
 
 procedure Tfreq1.Button7Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button7.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button7.Enabled := False;
 end;
@@ -1104,14 +1321,12 @@ end;
 
 procedure Tfreq1.Button9Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button9.Caption+'...';
 BMSNA.Click;
 If rec>84 Then Button9.Enabled := False;
 end;
 
 procedure Tfreq1.Button10Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button10.Caption+'...';
 BMSNA.Click;
 If rec>84 Then Button10.Enabled := False;
 end;
@@ -1129,20 +1344,6 @@ end;
 
 procedure Tfreq1.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-{FormComPort.ledsw:= FormComPort.ledsw and    $7FFF;
-FormComPort.ledsw:= FormComPort.ledsw and   $BFFF;
- FormComPort.ledsw:= FormComPort.ledsw and  $DFFF;
-FormComPort.ledsw:= FormComPort.ledsw and   $EFFF;
- FormComPort.ledsw:= FormComPort.ledsw and  $F7FF;
-FormComPort.ledsw:= FormComPort.ledsw and  $FBFF;
- FormComPort.ledsw:= FormComPort.ledsw and $FDFF;
-FormComPort.ledsw:= FormComPort.ledsw and $FEFF;
- FormComPort.ledsw:= FormComPort.ledsw and $FFEF;
-   FormComPort.ledsw:= FormComPort.ledsw and $FFF7;
- FormComPort.ledsw:= FormComPort.ledsw and $FFFB;
- FormComPort.ledsw:= FormComPort.ledsw and $FFFE;
-  FormComPort.ledsw:= FormComPort.ledsw and $FFFD;
-  FormComPort.leds(FormComPort.ledsw);  }
 timer1.enabled:=false;
 Close;
 end;
@@ -1161,7 +1362,6 @@ end;
 
 procedure Tfreq1.FormShow(Sender: TObject);
 begin
-DM.Bitacora('Frecuencias y Patrones trivectoriales');
 image15.picture := testForm1.Image2.picture;
 IContinuar.picture.loadfromfile('atom.bmp');
 image1.picture.loadfromfile('blur10.jpg');
@@ -1178,6 +1378,12 @@ IParesCraneales.Picture.loadfromfile('IParesCraneales.jpg');
 Timer1.Enabled := True;
 button3.Click;
 BMPOC.Click;
+MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+MDescripcion.refresh;
+LvalorClick(Sender);
+Q_Filtro_sql := '';
+Q_Filtro_order := '';
+ActualizaDBGrid3();
 end;
 
 procedure Tfreq1.Edit1Change(Sender: TObject);
@@ -1194,7 +1400,6 @@ end;
 
 procedure Tfreq1.Button17Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button17.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button17.Enabled := False;
 end;
@@ -1222,17 +1427,19 @@ begin
  DM.Info.first;
  DM.Info.Last;
  no := DM.Info.FieldbyName('no').asInteger;
-   inc(no); DM.Info.Appendrecord([no,nil,'']);
-     inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE FRECUENCIAS + PATRONES ELÉCTRICOS -----']);
- inc(no); DM.Info.Appendrecord([no,nil,label27.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label28.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label31.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label35.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label54.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label29.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label30.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label34.caption ]);
- inc(no); DM.Info.Appendrecord([no,nil,label36.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,'']);
+ inc(no); DM.Info.Appendrecord([no,nil,'----- INFORME DE FRECUENCIAS + PATRONES ELÉCTRICOS -----']);
+ inc(no); DM.Info.Appendrecord([no,nil,LCausas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LOrganosGlandulas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LAVM.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LMeridianos.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LProcesos.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LEPositivas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LENegativas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LToxinas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LSistemas.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LCNutricionales.caption ]);
+ inc(no); DM.Info.Appendrecord([no,nil,LHomeopatia.caption ]);
   ShowMessage('El informe ha sido cargado.');
 end;
 
@@ -1244,14 +1451,12 @@ end;
 
 procedure Tfreq1.Button24Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button24.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button24.Enabled := False;
 end;
 
 procedure Tfreq1.Button25Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button25.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button25.Enabled := False;
 Button25.Enabled := True;
@@ -1261,13 +1466,6 @@ procedure Tfreq1.Button30Click(Sender: TObject);
 begin
 GProgreso.Progress := 0;
 LRectificado.Caption := 'Rectificado  |';
-If RBAlpha.Checked = True Then panel3.caption := 'Estimulando cerebro con onda de forma Alfa...';
-If RBBeta.Checked = True Then panel3.caption := 'Estimulando cerebro con onda de forma Beta...';
-If RBTheta.Checked = True Then panel3.caption := 'Estimulando cerebro con onda de forma Teta...';
-If RBDelta.Checked = True Then panel3.caption := 'Estimulando cerebro con onda de forma Delta...';
-If RBGamma.Checked = True Then panel3.caption := 'Estimulando cerebro con onda de forma Gamma...';
-panel3.visible:=true;
-panel3.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 30+Random(60);
     GProgreso.MaxValue := vtiempo;
@@ -1335,9 +1533,8 @@ MyChrono.TimeElapsed > vtiempo;
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 Edit_A_freq.Text := ''; //IntToStr(random(100));
- panel3.visible:=false;
   heart1:=  50+random(60);
- if heart1 >100 then heart1:=100;
+ if heart1 >100 then heart1:=85+Random(15);
  LRectificado.caption:='Rectificado | '+inttostr(heart1);
  If heart1>84 Then Begin
  Button30.Enabled := False;
@@ -1362,6 +1559,7 @@ Edit_A_freq.Text := ''; //IntToStr(random(100));
  ActualizaDiales();
  end;
  end;
+ Conexiones();
  MyChrono.Stop;
  If (heart1<85) and (CBTAutomatica.Checked=True) Then Button30.Click;
  If (heart1>84) and (CBTExtendida.Checked=True) Then TerapiaExtendida();
@@ -1369,7 +1567,6 @@ end;
 
 procedure Tfreq1.Button33Click(Sender: TObject);
 Begin
-Panel3.Caption := 'Equilibrando '+Button33.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button33.Enabled := False;
 end;
@@ -1523,15 +1720,12 @@ procedure Tfreq1.Button1Click(Sender: TObject);
 begin
 MyChrono.Start;
 Sincronizar();
-Panel3.Caption := 'Equilibrando todas las ondas cerebrales...';
-panel3.visible:=true;
-panel3.refresh;
 If CBAreas.Checked = True Then TAreas.Enabled := True;
 GBAreas.Visible := True;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(60);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  application.processmessages;
@@ -1621,9 +1815,9 @@ Else
 rec:= random(84);
 LRectificado.caption:='Rectificado | '+inttostr(rec);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 TAreas.Enabled := False;
 GBAreas.Visible := False;
+Conexiones();
 MyChrono.Stop;
 If (rec<85) and (CBTAutomatica.Checked=True) Then Begin
 Sleep(2000);
@@ -1637,7 +1831,6 @@ end;
 
 procedure Tfreq1.Button18Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button18.Caption+'...';
 OndasCerebrales();
 If Rec>84 Then Button18.Enabled := False;
 end;
@@ -1684,12 +1877,10 @@ MyChrono.Start;
 If CBAreas.Checked = True Then TAreas.Enabled := True;
 GBAreas.Visible := True;
 Sincronizar();
-panel3.visible:=true;
-panel3.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  repeat
@@ -1713,7 +1904,6 @@ rec:= random(120);
 if rec>100 then rec:=100;
 LRectificado.caption:='Rectificado | '+inttostr(rec);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 If rec>84 Then Begin
 TBAlpha.Position := 25;
 TBBeta.Position:= 91;
@@ -1724,9 +1914,10 @@ end;
 TAreas.Enabled := False;
 GBAreas.Visible := False;
 ActualizaDiales();
+Conexiones();
 MyChrono.Stop;
 If (rec<85) and (CBTAutomatica.Checked=True) Then Begin
-Sleep(2000);
+Sleep(1000);
 OndasCerebrales();
 end;
 If (rec>84) and (CBTExtendida.Checked=True) Then TerapiaExtendida();
@@ -1735,66 +1926,58 @@ end;
 procedure Tfreq1.Sincronizar();
 begin
 GProgreso.Progress := 0;
-label27.caption:='--';
-label28.caption:='--';
-label29.caption:='--';
-label30.caption:='--';
-label31.caption:='--';
-label34.caption:='--';
-label35.caption:='--';
-label36.caption:='--';
-label54.caption:='--';
-alg:=random(75);
-if alg=66 then begin
-panel3.caption:='Sincronizando...';
-panel3.Color := clYellow;
-panel3.visible:=true;
-panel3.refresh;
-ChangingPulses(1000,111,1000,3,1,4,
- '11111111','11111111');
-ChangingPulses(1000,111,1000,4,1,3,
- '11111111','11111111');
-ChangingPulses(1000,111,1000,5,1,2,
- '11111111','11111111');
-ChangingPulses(1000,111,1000,6,1,1,
- '11111111','11111111');
-ChangingPulses(1000,111,1000,7,1,1,
- '11111111','11111111');
+LCausas.caption := '';
+LOrganosGlandulas.caption := '';
+LAVM.caption := '';
+LMeridianos.caption := '';
+LProcesos.caption := '';
+LEPositivas.caption := '';
+LENegativas.caption := '';
+LToxinas.caption := '';
+LSistemas.caption := '';
+LCNutricionales.caption := '';
+LHomeopatia.caption := '';
 alg:=random(100);
- if alg>76 then begin
- ChangingPulses(1000,111,1000,3,1,4,
+if alg<5 then begin
+ChangingPulses(1000,111,1000,3,1,1,
  '11111111','11111111');
-ChangingPulses(1000,111,1000,4,1,3,
+ChangingPulses(1000,111,1000,4,1,1,
  '11111111','11111111');
-ChangingPulses(1000,111,1000,5,1,2,
+ChangingPulses(1000,111,1000,5,1,1,
  '11111111','11111111');
 ChangingPulses(1000,111,1000,6,1,1,
  '11111111','11111111');
 ChangingPulses(1000,111,1000,7,1,1,
  '11111111','11111111');
-Panel3.Color := clLime;
-Panel3.Refresh;
+ if alg>95 then begin
+ ChangingPulses(1000,111,1000,3,1,1,
+ '11111111','11111111');
+ChangingPulses(1000,111,1000,4,1,1,
+ '11111111','11111111');
+ChangingPulses(1000,111,1000,5,1,1,
+ '11111111','11111111');
+ChangingPulses(1000,111,1000,6,1,1,
+ '11111111','11111111');
+ChangingPulses(1000,111,1000,7,1,1,
+ '11111111','11111111');
  end;
  end;
  end;
 
 procedure Tfreq1.Button37Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button37.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button37.Enabled := False;
 end;
 
 procedure Tfreq1.Button40Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia personalizada para '+Edit3.Text+'...';
 OndasCerebrales();
 If rec>84 Then Button40.Enabled := False;
 end;
 
 procedure Tfreq1.Button38Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button38.Caption+'...';
 BMSNA.Click;
 If rec>84 Then Button38.Enabled := False;
 end;
@@ -1839,12 +2022,10 @@ begin
 PParesCraneales.Visible := True;
 MyChrono.Start;
 Sincronizar();
-  panel3.visible:=true;
-   panel3.refresh;
    If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 90+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  repeat
@@ -1863,11 +2044,11 @@ until
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
  rec:= rec+random(50);
-if rec>100 then rec:=100;
+if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 Edit_A_freq.Text := IntToStr(random(1000000));
+Conexiones();
 MyChrono.Stop;
 PParesCraneales.Visible := False;
 If (rec<85) and (CBTAutomatica.Checked = True) Then BMParesCraneales.Click;
@@ -1901,84 +2082,72 @@ end;
 
 procedure Tfreq1.Button2Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button2.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button2.Enabled := False;
 end;
 
 procedure Tfreq1.Button48Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button48.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button48.Enabled := False;
 end;
 
 procedure Tfreq1.Button49Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button49.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button49.Enabled := False;
 end;
 
 procedure Tfreq1.Button50Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button50.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button50.Enabled := False;
 end;
 
 procedure Tfreq1.Button51Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button51.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button51.Enabled := False;
 end;
 
 procedure Tfreq1.Button52Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button52.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button52.Enabled := False;
 end;
 
 procedure Tfreq1.Button53Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button53.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button53.Enabled := False;
 end;
 
 procedure Tfreq1.Button54Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button54.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button54.Enabled := False;
 end;
 
 procedure Tfreq1.Button55Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button55.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button55.Enabled := False;
 end;
 
 procedure Tfreq1.Button56Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button56.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button56.Enabled := False;
 end;
 
 procedure Tfreq1.Button57Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button57.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button57.Enabled := False;
 end;
 
 procedure Tfreq1.Button58Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a '+Button58.Caption+'...';
 BMParesCraneales.Click;
 If rec>84 Then Button58.Enabled := False;
 end;
@@ -1994,12 +2163,10 @@ MyChrono.Start;
 Sincronizar();
 GProgreso.Progress := 0;
 TSNP.Enabled := True;
-  panel3.visible:=true;
-   panel3.refresh;
    If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 90+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  repeat
@@ -2018,23 +2185,13 @@ until
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
  rec:= rec+random(50);
-if rec>100 then rec:=100;
+if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 TSNP.Enabled := False;
 testform1.autoemg:=10;
-if (100-pn3+pn9-pn4-pn7-(7*pn1)) < 73 then Label27.caption:='Imbalance pulmonar.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(30)) < 73 then Label28.caption:='Imbalance intestinal.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(22)) < 80 then Label35.caption:='Imbalance en riñón.';
-if (100-(4*pn16)-(pn12)-(13*pn5)-(12*pn1)-random(45))<73 then Label31.caption:='Imbalance en hígado.';
-if (100-(2*pn3)-(10*pn8)-(12*cb13)-(12*cb2))<73 then  Label29.caption:='Imbalance en bazo.';
-If (100-(9*pn2)-pn3-pn10-(10*cb8)-(15*cb3)-(10*cb7))<73 then      Label30.caption:='Imbalance en páncreas.';
-if random(20)<9 then label34.caption:='Imbalance en vejiga.';
-if random(20)<9 then label36.caption:='Imbalance en estómago.';
-if random(20)<15 then   label35.caption:='Imbalance en el sistema inmunitario.';
-If random(20)<8 then label36.caption :='Desorden de oscilación del sistema eléctrico.';
 Edit_A_freq.Text := IntToStr(random(1000000));
+Conexiones();
 MyChrono.Stop;
 If (rec<85) and (CBTAutomatica.Checked = True) Then BMParesCraneales.Click;
 If (rec>84) and (CBTExtendida.Checked = True) Then TerapiaExtendida();
@@ -2042,42 +2199,36 @@ end;
 
 procedure Tfreq1.Button16Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button16.Caption+'...';
 BMSNP.Click;
 If rec>84 then Button16.Enabled := False;
 end;
 
 procedure Tfreq1.Button60Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button60.Caption+'...';
 BMSNP.Click;
 If rec>84 then Button60.Enabled := False;
 end;
 
 procedure Tfreq1.Button61Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button61.Caption+'...';
 BMSNP.Click;
 If rec>84 then Button61.Enabled := False;
 end;
 
 procedure Tfreq1.Button62Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button62.Caption+'...';
 BMSNP.Click;
 If rec>84 then Button62.Enabled := False;
 end;
 
 procedure Tfreq1.Button63Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button63.Caption+'...';
 BMSNP.Click;
 If rec>84 then Button63.Enabled := False;
 end;
 
 procedure Tfreq1.Button64Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Edit1.Text+'...';
 BMSNP.Click;
 If rec>84 then Button64.Enabled := False;
 end;
@@ -2262,8 +2413,6 @@ TASNA.Enabled := True;
 If CBSNA.Checked = True Then TSNA.Enabled := True;
 If CBSNAEspecificos.Checked = True Then TSNAEspecificos.Enabled := True;
 If CBAreasSNA.Checked = True Then TAreasSNA.Enabled := True;
-  panel3.visible:=true;
-   panel3.refresh;
    If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 90+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
@@ -2286,29 +2435,19 @@ until
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 rec:= rec+random(50);
-if rec>100 then rec:=100;
+if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 TSNA.Enabled := False;
 TSNAEspecificos.Enabled := False;
 TAreasSNA.Enabled := False;
 LimpiaSNA();
 LimpiaSNAEspecificos();
 LimpiaTASNA();
+Conexiones();
 MyChrono.Stop;
 TASNA.Enabled := False;
 Fmain.recmain:=Fmain.recmain+1;
-if (100-pn3+pn9-pn4-pn7-(7*pn1)) < 73 then Label27.caption:='Imbalance en sistema nervioso central.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(30)) < 73 then Label28.caption:='Imbalance en sistema nervioso parasimpático.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(22)) < 80 then Label35.caption:='Imbalance en sistema lumbar simpático.';
-if (100-(4*pn16)-(pn12)-(13*pn5)-(12*pn1)-random(45))<73 then Label31.caption:='Imbalance en sistema torácico simpático.';
-if (100-(2*pn3)-(10*pn8)-(12*cb13)-(12*cb2))<73 then  Label29.caption:='Imbalance craneal parasimpático.';
-If (100-(9*pn2)-pn3-pn10-(10*cb8)-(15*cb3)-(10*cb7))<73 then      Label30.caption:='Imbalance sacral parasimpático.';
-if random(20)<9 then label34.caption:='Imbalance en sistema nervioso simpático.';
-if random(20)<9 then label36.caption:='Imbalance en nervio vago.';
-if random(20)<15 then   label35.caption:='Imbalance en el sistema inmunitario.';
-If random(20)<8 then label36.caption :='Desorden de oscilación del sistema eléctrico.';
 Edit_A_freq.Text := IntToStr(random(1000000));
 If (rec<85) and (CBTAutomatica.Checked=True) Then BMSNA.Click;
 If (rec>84) and (CBTExtendida.Checked = True) Then TerapiaExtendida();
@@ -2469,8 +2608,6 @@ begin
 Sincronizar();
 MyChrono.Start;
 TSNC.Enabled := True;
-panel3.visible:=true;
-panel3.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 90+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
@@ -2493,23 +2630,13 @@ until
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
   rec:= rec+random(50);
-if rec>100 then rec:=100;
+if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-Panel3.Visible := False;
 TSNC.Enabled := False;
 LimpiaSNC();
-if (100-pn3+pn9-pn4-pn7-(7*pn1)) < 73 then Label27.caption:='Imbalance trivectorial.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(30)) < 73 then Label28.caption:='Imbalance en resistencia.';
-if (100-pn10-pn4-pn7-pn8-pn12-pn16-random(22)) < 80 then Label35.caption:='Imbalance en capacitancia lumbar.';
-if (100-(4*pn16)-(pn12)-(13*pn5)-(12*pn1)-random(45))<73 then Label31.caption:='Imbalance en inductancia torácica.';
-if (100-(2*pn3)-(10*pn8)-(12*cb13)-(12*cb2))<73 then  Label29.caption:='Imbalance en capacitancia craneal.';
-If (100-(9*pn2)-pn3-pn10-(10*cb8)-(15*cb3)-(10*cb7))<73 then      Label30.caption:='Imbalance en inductancia sacral.';
-if random(20)<9 then label34.caption:='Imbalance en inductancia lumbar.';
-if random(20)<9 then label36.caption:='Imbalance en capacitancia lumbar.';
-if random(20)<15 then   label35.caption:='Imbalance en resistencia lumbar.';
-If random(20)<8 then label36.caption :='Imbalance en capacitancia cervical.';
 Edit_A_freq.Text := IntToStr(random(1000000));
+Conexiones();
 MyChrono.Stop;
 If (rec<85) and (CBTAutomatica.Checked = True) Then BMSNA.Click;
 If (rec>84) and (CBTExtendida.Checked = True) Then TerapiaExtendida();
@@ -2590,42 +2717,36 @@ end;
 
 procedure Tfreq1.Button20Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button20.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button20.Enabled := False;
 end;
 
 procedure Tfreq1.Button41Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button41.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button41.Enabled := False;
 end;
 
 procedure Tfreq1.Button36Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button36.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button36.Enabled := False;
 end;
 
 procedure Tfreq1.Button42Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button42.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button42.Enabled := False;
 end;
 
 procedure Tfreq1.Button44Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button44.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button44.Enabled := False;
 end;
 
 procedure Tfreq1.Button45Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button45.Caption+'...';
 GBDesmielinizacion.Visible := True;
 TDesmielinizacion.Enabled := True;
 BMSNC.Click;
@@ -2636,14 +2757,12 @@ end;
 
 procedure Tfreq1.Button46Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button46.Caption+'...';
 BMSNC.Click;
 If rec>84 then Button46.Enabled := False;
 end;
 
 procedure Tfreq1.Button43Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Edit4.Text+'...';
 BMSNC.Click;
 If rec>84 then Button43.Enabled := False;
 end;
@@ -2657,21 +2776,8 @@ end;
 
 procedure Tfreq1.Button13Click(Sender: TObject);
 begin
-If RadioButton27.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton27.Caption+'...';
-If RadioButton26.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton26.Caption+'...';
-If RadioButton25.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton25.Caption+'...';
-If RadioButton16.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton16.Caption+'...';
-If RadioButton17.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton17.Caption+'...';
-If RadioButton18.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton18.Caption+'...';
-If RadioButton19.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton19.Caption+'...';
-If RadioButton20.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton20.Caption+'...';
-If RadioButton21.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton21.Caption+'...';
-If RadioButton23.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton23.Caption+'...';
-If RadioButton28.Checked = True Then Panel3.Caption := 'Estimulando con Potencial Evocado: '+RadioButton28.Caption+'...';
-
 OndasCerebrales();
 TPE.Enabled := False;
-
 If (rec>84) and (RadioButton27.Checked = True) Then RadioButton27.Enabled := False;
 If (rec>84) and (RadioButton26.Checked = True) Then RadioButton26.Enabled := False;
 If (rec>84) and (RadioButton25.Checked = True) Then RadioButton25.Enabled := False;
@@ -2687,84 +2793,72 @@ end;
 
 procedure Tfreq1.Button12Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button12.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button12.Enabled := False;
 end;
 
 procedure Tfreq1.Button14Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button14.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button14.Enabled := False;
 end;
 
 procedure Tfreq1.Button21Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button21.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button21.Enabled := False;
 end;
 
 procedure Tfreq1.Button23Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button23.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button23.Enabled := False;
 end;
 
 procedure Tfreq1.Button26Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button26.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button26.Enabled := False;
 end;
 
 procedure Tfreq1.Button27Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button27.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button27.Enabled := False;
 end;
 
 procedure Tfreq1.Button28Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button28.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button28.Enabled := False;
 end;
 
 procedure Tfreq1.Button29Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button29.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button29.Enabled := False;
 end;
 
 procedure Tfreq1.Button31Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button31.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button31.Enabled := False;
 end;
 
 procedure Tfreq1.Button32Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button32.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button32.Enabled := False;
 end;
 
 procedure Tfreq1.Button34Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button34.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button34.Enabled := False;
 end;
 
 procedure Tfreq1.Button35Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando '+Button35.Caption+'...';
 OndasCerebrales();
 If rec>84 Then Button35.Enabled := False;
 end;
@@ -2818,8 +2912,6 @@ MyChrono.Start;
 TECG.Enabled := True;
 LRectificado.Caption := 'Rectificado |';
 GProgreso.Progress := 0;
-    panel3.visible:=true;
-    panel3.refresh;
     If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
     vtiempo := 30+Random(60);
     PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
@@ -2827,24 +2919,9 @@ GProgreso.Progress := 0;
     GProgreso.Refresh;
     repeat
     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,111,100000,5,1,1,
+    ChangingPulses(50000,Random(111),100000,5,1,1,
     '11111111','11111111');
        GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-   SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,1,100000,5,1,1,
-    '11111111','01111111');
-           GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-    SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,11,7,5,1,1,
-    '11111111','01111111');
-           GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-    SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,2,11,5,100,1,
-    '11111111','01111111');
-           GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
     ChangingPulses(50000,2,11,4,100,1,
@@ -2856,50 +2933,29 @@ GProgreso.Progress := 0;
     '11111111','01111111');
            GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
-    SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,2,11,1,100,1,
-    '11111111','01111111');
-           GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-    ChangingPulses(50000,1,5+random(10),1+random(10),1+random(10),3+random(3),
-    '11111111','01111111');
-        GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-    ChangingPulses(50000,4,15+random(10),1+random(10),1+random(10),3+random(3),
- '11111111','01111111');
-        GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-  ChangingPulses(50000,1,11,1,100,6,
+    ChangingPulses(50000,4,15+random(10),1+random(10),1+random(10),1,
  '11111111','01111111');
         GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
    ChangingPulses(50000,4,15+random(10),1+random(10),1+random(10),3+random(3),
- '11111111','01111111');
-        GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
- ChangingPulses(50000,(555+random(20)),55555,1+random(10),1,15,
  '11111111','11111111');
- SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-     ChangingPulses(1000,11,7000,5,5,6,
- '11111111','01111111');
-         GProgreso.progress :=  round(MyChrono.pTEcoule);
+        GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 application.ProcessMessages;
  until
   MyChrono.TimeElapsed > vtiempo;
   GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
- panel3.visible:=false;
  heart1:=  45+random(heart1);
- if heart1 >100 then heart1:=100;
+ if heart1 >100 then heart1:=85+Random(15);
  LRectificado.caption:='Rectificado | '+inttostr(heart1);
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  TECG.Enabled := False;
  LimpiaECG();
  Edit_A_freq.Text := IntToStr(random(1000000));
+ Conexiones();
  MyChrono.Stop;
  If (heart1<85) and (CBTAutomatica.Checked=True) Then BMECG.Click;
  If (heart1>84) and (CBTExtendida.Checked=True) Then TerapiaExtendida();
@@ -3333,7 +3389,6 @@ end;
 
 procedure Tfreq1.Button47Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button47.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button47.Enabled := False;
 Button25.Enabled := True;
@@ -3341,7 +3396,6 @@ end;
 
 procedure Tfreq1.Button39Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button39.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button39.Enabled := False;
 end;
@@ -3418,77 +3472,66 @@ end;
 
 procedure Tfreq1.Button59Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button59.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button59.Enabled := False;
 end;
 
 procedure Tfreq1.Button65Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button65.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button65.Enabled := False;
 end;
 
 procedure Tfreq1.Button66Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button66.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button66.Enabled := False;
 end;
 
 procedure Tfreq1.Button67Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button67.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button67.Enabled := False;
 end;
 
 procedure Tfreq1.Button68Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button68.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button68.Enabled := False;
 end;
 
 procedure Tfreq1.Button69Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button69.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button69.Enabled := False;
 end;
 
 procedure Tfreq1.Button70Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button70.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button70.Enabled := False;
 end;
 
 procedure Tfreq1.Button71Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button71.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button71.Enabled := False;
 end;
 
 procedure Tfreq1.Button72Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button72.Caption+'...';
 BMECG.Click;
 If heart1>84 Then Button72.Enabled := False;
 end;
 
 procedure Tfreq1.Button73Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Edit10.Text+'...';
 BMECG.Click;
 If heart1>84 Then Button73.Enabled := False;
 end;
 
 procedure Tfreq1.Button74Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Edit11.Text+'...';
 BMECG.Click;
 If heart1>84 Then Button74.Enabled := False;
 end;
@@ -6638,59 +6681,7 @@ label9.caption:=inttostr(abs(random(100)-bw)+(6*cb9)+(5*pn8)+pn7+(pn2*5) );
 label19.caption:=inttostr(abs(random(60)-bw)+pn12+pn10+pn6);
 label20.caption:=inttostr(abs(random(60)-bw));
 label21.caption:=inttostr(norm);
-label54.caption:='Tensión emocional encubierta.';
-   con5:=con5-4;
-     if 7*cb9+6*cb13+con5+random(15)+pn3+pn6+pn8+cb5*7+pn10+pn11         >54   then Label27.caption:='Patrón de adicción detectado.';
-     if 7*cb9+6*cb13+con5+random(15)+pn7+pn9+pn4+pn4+pn7         >54   then Label28.caption:='Patrón de deficiencia mineral detectado.';
-     if 7*cb9+6*cb13+con5+random(15)+pn5+pn8+pn7+pn5+pn8+5*cb7         >54   then Label35.caption:='Patrón de deficiencia de amino ácidos detectado.';
-    if 7*cb9+6*cb13+con5+random(15)+pn1+pn16+pn7+pn1+pn16+7*cb6          >54     then Label31.caption:='Patrón de deficiencia de vitaminas detectado.';
-    if  7*cb9+6*cb13+con5+random(15)+pn1+pn16+pn7+pn7+pn16+7*cb9         >54   then  Label29.caption:='Patrón de estrés medioambiental detectado.';
-    If 7*cb9+6*cb13+con5+random(15)+pn2+pn4+pn3+pn11+7*cb18          >54        then      Label30.caption:='Patrón de estrés social detectado.';
-    if 10*cb9+6*cb13+con5+random(15)+pn5+pn3+pn8+pn1+pn2          >54    then label34.caption:='Patrón de trauma pasado detectado.';
-    if 7*cb9+6*cb13+con5+random(15)+pn8+pn10+pn11+pn9+pn8          >54    then label36.caption:='Patrón de dolor emocional detectado.';
-    if 7*cb9+9*cb13+con5+random(15)+pn2+pn8+pn6+pn12+pn12          >54    then   label35.caption:='Inhabilidad para concentrarse.';
-    If 7*cb9+6*cb13+con5+random(15)+pn5+pn1+pn2+pn2+pn3          >54    then label36.caption :='Patrón de falta de sueño detectado.';
- if strtoint(label18.caption)>39 then label54.caption:='Posible superimposición emocional.';
-    if pn1+pn2+pn3+pn4+pn5+pn6+pn7+pn8+pn10+pn11+pn12+pn13+pn14+pn15+pn16 <4 then begin
-        if 7*cb9+6*cb13+con5+random(75)+pn3+pn6+pn8+cb5*7+pn10+pn11         >54   then Label27.caption:='Patrón de adicción detectado.';
-     if 7*cb9+6*cb13+con5+random(75)+pn7+pn9+pn4+pn4+pn7         >54   then Label28.caption:='Patrón de deficiencia mineral detectado.';
-     if 7*cb9+6*cb13+con5+random(75)+pn5+pn8+pn7+pn5+pn8+5*cb7         >54   then Label35.caption:='Patrón de deficiencia de amino ácidos detectado.';
-    if 7*cb9+6*cb13+con5+random(75)+pn1+pn16+pn7+pn1+pn16+7*cb6          >54     then Label31.caption:='Patrón de deficiencia de vitaminas detectado.';
-    if  7*cb9+6*cb13+con5+random(75)+pn1+pn16+pn7+pn7+pn16+7*cb9         >54   then  Label29.caption:='Patrón de estrés medioambiental detectado.';
-    If 7*cb9+6*cb13+con5+random(75)+pn2+pn4+pn3+pn11+7*cb18          >54        then      Label30.caption:='Patrón de estrés social detectado.';
-    if 10*cb9+6*cb13+con5+random(75)+pn5+pn3+pn8+pn1+pn2          >54    then label34.caption:='Patrón de trauma pasado detectado.';
-    if 7*cb9+6*cb13+con5+random(75)+pn8+pn10+pn11+pn9+pn8          >54    then label36.caption:='Patrón de dolor emocional detectado.';
-    if 7*cb9+9*cb13+con5+random(75)+pn2+pn8+pn6+pn12+pn12          >54    then   label35.caption:='Inhabilidad para concentrarse.';
-    If 7*cb9+6*cb13+con5+random(75)+pn5+pn1+pn2+pn2+pn3          >54    then label36.caption :='Patrón de falta de sueño detectado.';
-end;
-if strtoint(label18.caption)>31  then begin
-label54.caption:='Tensión emocional encubierta.';
-   con5:=con5-4;
-     if 7*cb9+6*cb13+con5+random(15)+pn3+pn6+pn8+cb5*7+pn10+pn11         >54   then Label27.caption:='Patrón de adicción detectado.';
-     if 7*cb9+6*cb13+con5+random(15)+pn7+pn9+pn4+pn4+pn7         >54   then Label28.caption:='Patrón de agresión detectado.';
-     if 7*cb9+6*cb13+con5+random(15)+pn5+pn8+pn7+pn5+pn8+5*cb7         >54   then Label35.caption:='Patrón de depresión detectado.';
-    if 7*cb9+6*cb13+con5+random(15)+pn1+pn16+pn7+pn1+pn16+7*cb6          >54     then Label31.caption:='Patrón de preocupación detectado.';
-    if  7*cb9+6*cb13+con5+random(15)+pn1+pn16+pn7+pn7+pn16+7*cb9         >54   then  Label29.caption:='Patrón de temor detectado.';
-    If 7*cb9+6*cb13+con5+random(15)+pn2+pn4+pn3+pn11+7*cb18          >54        then      Label30.caption:='Patrón de tristeza detectado.';
-    if 10*cb9+6*cb13+con5+random(15)+pn5+pn3+pn8+pn1+pn2          >54    then label34.caption:='Patrón de culpabilidad detectado.';
-    if 7*cb9+6*cb13+con5+random(15)+pn8+pn10+pn11+pn9+pn8          >54    then label36.caption:='Patrón de obsesividad detectado.';
-    if 7*cb9+9*cb13+con5+random(15)+pn2+pn8+pn6+pn12+pn12          >54    then   label35.caption:='Inhabilidad para concentrarse.';
-    If 7*cb9+6*cb13+con5+random(15)+pn5+pn1+pn2+pn2+pn3          >54    then label36.caption :='Patrón de maniacodepresión / frenetismo detectado.';
- if   strtoint(label18.caption)>39           then  label54.caption:='Posible superimposición emocional.';
- end;
- if pn1+pn2+pn3+pn4+pn5+pn6+pn7+pn8+pn10+pn11+pn12+pn13+pn14+pn15+pn16 <4 then begin
-       if 3*cb9+3*cb13+con5+random(75)+pn3+pn6+pn8+cb5*7+pn10+pn11         >54   then Label27.caption:='Patrón de adicción detectado.';
-     if 3*cb9+3*cb13+con5+random(75)+pn7+pn9+pn4+pn4+pn7         >54   then Label28.caption:='Patrón de agresión detectado.';
-     if 3*cb9+3*cb13+con5+random(75)+pn5+pn8+pn7+pn5+pn8+5*cb7         >54   then Label35.caption:='Patrón de depresión detectado.';
-    if 3*cb9+3*cb13+con5+random(75)+pn1+pn16+pn7+pn1+pn16+7*cb6          >54     then Label31.caption:='Patrón de preocupación detectado.';
-    if  3*cb9+3*cb13+con5+random(75)+pn1+pn16+pn7+pn7+pn16+7*cb9         >54   then  Label29.caption:='Patrón de temor detectado.';
-    If 3*cb9+3*cb13+con5+random(75)+pn2+pn4+pn3+pn11+7*cb18          >54        then      Label30.caption:='Patrón de tristeza detectado.';
-    if 10*cb9+6*cb13+con5+random(75)+pn5+pn3+pn8+pn1+pn2          >54    then label34.caption:='Patrón de culpabilidad detectado.';
-    if 3*cb9+3*cb13+con5+random(75)+pn8+pn10+pn11+pn9+pn8          >54    then label36.caption:='Patrón de obsesividad detectado.';
-    if 7*cb9+9*cb13+con5+random(75)+pn2+pn8+pn6+pn12+pn12          >54    then   label35.caption:='Inhabilidad para concentrarse.';
-    If 3*cb9+3*cb13+con5+random(75)+pn5+pn1+pn2+pn2+pn3          >54    then label36.caption :='Patrón de maniacodepresión / frenetismo detectado.';
- if   strtoint(label21.caption)<33           then  label54.caption:='Posible superimposición emocional.';
- end;
+Conexiones();
 Edit_A_freq.Text := IntToStr(random(1000000));
 end;
 
@@ -6700,16 +6691,11 @@ Sincronizar();
 MyChrono.Start;
 GProgreso.Progress := 0;
 LRectificado.Caption := 'Rectificado  |';
-panel3.caption := 'Estimulando cerebro con todas las onda de forma...';
-panel3.visible:=true;
-panel3.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(90);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
     GProgreso.MaxValue := vtiempo;
     GProgreso.Refresh;
-beg:=Random(30);
-en:=40 ;
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(50000,55,111,1,1,1,
@@ -6718,7 +6704,7 @@ ChangingPulses(50000,55,111,1,1,1,
    GProgreso.Refresh;
 BMPOC.Click;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-   ChangingPulses(5555,beg,en,1,1,1,
+   ChangingPulses(5555,random(30),random(40),1,1,1,
  '11111111','01111111');
              GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
@@ -6739,12 +6725,12 @@ RBDelta.Enabled := False;
 RBGamma.Enabled := False;
 ActualizaDiales();
 Edit_A_freq.Text := IntToStr(random(100));
- panel3.visible:=false;
   heart1:=  45+random(heart1);
   If heart1>84 Then Button5.Enabled := False;
- if heart1 >100 then heart1:=100;
+ if heart1 >100 then heart1:=85+Random(15);
  LRectificado.caption:='Rectificado | '+inttostr(heart1);
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
+ Conexiones();
  MyChrono.Stop;
  If (heart1<85) and (CBTAutomatica.Checked=True) Then Button5.Click;
  If (heart1>84) and (CBTExtendida.Checked=True) Then TerapiaExtendida();
@@ -6755,28 +6741,6 @@ begin
 MyChrono.Start;
 GProgreso.Progress := 0;
 LRectificado.Caption := 'Rectificado  |';
-If RadioButton15.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton15.Caption+'...';
-If RadioButton14.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton14.Caption+'...';
-If RadioButton13.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton13.Caption+'...';
-If RadioButton6.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton6.Caption+'...';
-If RadioButton7.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton7.Caption+'...';
-If RadioButton8.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton8.Caption+'...';
-If RadioButton9.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton9.Caption+'...';
-If RadioButton10.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton10.Caption+'...';
-If RadioButton11.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton12.Caption+'...';
-If RadioButton12.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton12.Caption+'...';
-If RadioButton22.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton22.Caption+'...';
-If RadioButton24.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton24.Caption+'...';
-If RadioButton29.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton29.Caption+'...';
-If RadioButton30.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton30.Caption+'...';
-If RadioButton31.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton31.Caption+'...';
-If RadioButton32.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton32.Caption+'...';
-If RadioButton33.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton33.Caption+'...';
-If RadioButton34.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton34.Caption+'...';
-If RadioButton35.Checked = True Then Panel3.caption := 'Equlibrando patrón mental correspondiente a: '+RadioButton35.Caption+'...';
-
-panel3.visible:=true;
-panel3.refresh;
 If CBAreas.Checked = True Then TAreas.Enabled := True;
 GBAreas.Visible := True;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
@@ -6820,9 +6784,8 @@ TBBeta.Position := 91;
 TBGamma.Position := 219;
 ActualizaDiales();
 Edit_A_freq.Text := IntToStr(random(100));
- panel3.visible:=false;
   heart1:=  45+random(heart1);
- if heart1 >100 then heart1:=100;
+ if heart1 >100 then heart1:=85+Random(15);
  LRectificado.caption:='Rectificado | '+inttostr(heart1);
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
   If (heart1>84) and (RadioButton15.Checked=True) Then RadioButton15.Enabled := False;
@@ -6846,6 +6809,7 @@ Edit_A_freq.Text := IntToStr(random(100));
   If (heart1>84) and (RadioButton35.Checked=True) Then RadioButton35.Enabled := False;
 TAreas.Enabled := False;
 GBAreas.Visible := False;
+Conexiones();
 MyChrono.Stop;
 If (heart1<85) and (CBTAutomatica.Checked=True) Then Button8.Click;
 If (heart1>84) and (CBTExtendida.Checked=True) Then TerapiaExtendida();
@@ -7764,7 +7728,6 @@ end;
 
 procedure Tfreq1.Button11Click(Sender: TObject);
 begin
-Panel3.Caption := 'Equilibrando con todos los Potenciales Evocados...';
 TPE.Enabled := True;
 OndasCerebrales();
 TPE.Enabled := False;
@@ -7918,7 +7881,6 @@ end;
 
 procedure Tfreq1.Button15Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button15.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7929,7 +7891,6 @@ end;
 
 procedure Tfreq1.Button19Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button15.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7940,7 +7901,6 @@ end;
 
 procedure Tfreq1.Button77Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button77.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7951,7 +7911,6 @@ end;
 
 procedure Tfreq1.Button80Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button80.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7962,7 +7921,6 @@ end;
 
 procedure Tfreq1.Button75Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button75.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7973,7 +7931,6 @@ end;
 
 procedure Tfreq1.Button76Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button76.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -7984,7 +7941,6 @@ end;
 
 procedure Tfreq1.Button78Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia para '+Button78.Caption+'...';
 TDesmielinizacion.Enabled := True;
 GBDesmielinizacion.Visible := True;
 BMSNC.Click;
@@ -8148,6 +8104,993 @@ end;
 procedure Tfreq1.Panel18Click(Sender: TObject);
 begin
 GBAreas.Visible := False;
+end;
+
+procedure Tfreq1.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+LCausas.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure Tfreq1.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+LOrganosGlandulas.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure Tfreq1.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+LAVM.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure Tfreq1.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+LMeridianos.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure Tfreq1.BProcesosClick(Sender: TObject);
+begin
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+LProcesos.Caption := LBProcesos.Items[LBProcesos.ItemIndex];
+end;
+
+procedure Tfreq1.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+LEPositivas.Caption := LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure Tfreq1.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+LENegativas.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure Tfreq1.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+LToxinas.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure Tfreq1.BSistemasClick(Sender: TObject);
+begin
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+LSistemas.Caption := LBSistemas.Items[LBSistemas.ItemIndex];
+end;
+
+procedure Tfreq1.BHomeopatiaClick(Sender: TObject);
+begin
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+LHomeopatia.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+end;
+
+procedure Tfreq1.BCNutricionalesClick(Sender: TObject);
+begin
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LCNutricionales.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+end;
+
+procedure Tfreq1.Conexiones();
+begin
+BCausas.click;
+BOrganosGlandulas.click;
+BAVM.click;
+BMeridianos.click;
+BProcesos.click;
+BEPositivas.click;
+BENegativas.click;
+BToxinas.click;
+BSistemas.click;
+BCNutricionales.click;
+BHomeopatia.click;
+end;
+
+procedure Tfreq1.Label27Click(Sender: TObject);
+begin
+PFiltros.Visible := True;
+end;
+
+procedure Tfreq1.LordenClick(Sender: TObject);
+begin
+  lorden.enabled := false;
+  lvalor.enabled := true;
+  lnombre.enabled := true;
+DM.QueryFilter.Active:=False;
+  DM.QueryFilter.SQL.Clear;
+  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
+  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
+  DM.QueryFilter.SQL.Add('ORDER BY 1 ');
+  DM.QueryFilter.Active:=True;
+  DBGrid3.dataSource:=DM.DSFilter;
+  DM.QueryFilter.first;
+  DM.QueryFilter.Last;
+ ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.ActualizaDBGrid3();
+Begin
+      dbgrid3.columns[0].fieldname := 'No';
+      dbgrid3.columns[0].title.caption := 'Orden';
+      dbgrid3.columns[0].width := 35;
+      dbgrid3.columns[1].fieldname := 'Value';
+      dbgrid3.columns[1].title.caption := 'Valor';
+      dbgrid3.columns[1].width := 35;
+      dbgrid3.columns[2].fieldname := 'Name';
+      dbgrid3.columns[2].title.caption := 'Nombre';
+      dbgrid3.columns[2].width := 616;
+      dbgrid3.columns[3].width := 0;
+     ((dbgrid3.DataSource).dataset as Tquery).last;
+end;
+
+procedure Tfreq1.LvalorClick(Sender: TObject);
+begin
+  lorden.enabled := true;
+  lvalor.enabled := false;
+  lnombre.enabled := true;
+DM.QueryFilter.Active:=False;
+  DM.QueryFilter.SQL.Clear;
+  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
+  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
+  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
+  DM.QueryFilter.Active:=True;
+  DBGrid3.dataSource:=DM.DSFilter;
+  DM.QueryFilter.first;
+  DM.QueryFilter.Last;
+ ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.LnombreClick(Sender: TObject);
+begin
+  lorden.enabled := true;
+  lvalor.enabled := true;
+  lnombre.enabled := false;
+DM.QueryFilter.Active:=False;
+  DM.QueryFilter.SQL.Clear;
+  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
+  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
+  DM.QueryFilter.SQL.Add('ORDER BY 3 ');
+  DM.QueryFilter.Active:=True;
+  DBGrid3.dataSource:=DM.DSFilter;
+  DM.QueryFilter.first;
+  DM.QueryFilter.Last;
+ ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.e_buscarChange(Sender: TObject);
+begin
+vorder := ' 2';
+        if DM.QueryFilter.databasename = '' then begin
+          DM.QueryFilter.Active:=False;
+          DM.QueryFilter.databasename := DM.Conscida.DatabaseName;
+        end;
+        QString:=Uppercase(e_buscar.text);
+        DM.QueryFilter.SQL.Clear;
+        if  Q_Filtro_sql = '' then begin
+           DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
+           DM.QueryFilter.SQL.Add(' WHERE UPPER(name) like ''%'+Qstring+'%'' and UPPER(name)like ''%'+Uppercase(Qstringalpha)+'%''');
+           vsql :=DM.QueryFilter.sql.text;
+           DM.QueryFilter.SQL.Add('ORDER BY  '+vorder);
+           DM.QueryFilter.Active:=True;
+           DM.QueryFilter.First;
+           DM.QueryFilter.Last;
+           DBGrid3.DataSource := DM.DSFilter;
+              end
+              else begin
+                       DM.QueryFilter.SQL.clear;
+                       DM.QueryFilter.SQL.Add(Q_Filtro_sql );
+                       DM.QueryFilter.SQL.Add(' and UPPER(name) like ''%'+Qstring+'%'' and UPPER(name) like ''%'+Uppercase(Qstringalpha)+'%''');
+                       vsql :=Q_Filtro.sql.text;
+                       DM.QueryFilter.SQL.Add(Q_Filtro_order);
+                       DBGrid3.DataSource := DM.DSFilter;
+                       DM.QueryFilter.Active := true;
+                       DM.QueryFilter.first;
+           end;
+        DBGrid3.refresh;
+       ((DBGrid3.DataSource).dataset as Tquery).last;
+ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.e_buscarEnter(Sender: TObject);
+begin
+ e_buscar.text := '';
+ ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.e_buscarExit(Sender: TObject);
+begin
+ e_buscar.text := 'Buscar ítem:';
+ ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.E_IrChange(Sender: TObject);
+begin
+If E_Ir.Text<>'' Then GoToNo.enabled:=true
+Else
+GoToNo.enabled:=false;
+end;
+
+procedure Tfreq1.E_IrEnter(Sender: TObject);
+begin
+E_Ir.text:='';
+ActualizaDBGrid3();
+end;
+
+procedure Tfreq1.E_IrKeyPress(Sender: TObject; var Key: Char);
+begin
+if not(Key in ['0'..'9',#8]) then
+begin
+Key:=#0;
+end;
+end;
+
+procedure Tfreq1.GoToNoClick(Sender: TObject);
+var
+  r, N: Integer;
+begin
+TodosClick(Sender);
+     if ((DBGrid3.DataSource).dataset is Tquery)  then begin
+        if not ((DBGrid3.DataSource).dataset as Tquery).locate('No',StrToInt2(E_Ir.Text),[]) then
+         showmessage('El número de ítem que ha insertado no existe en esta base de datos.  Cerciorese de estar en la ''Matriz Principal''.');
+     end
+     else
+     if ((DBGrid3.DataSource).dataset is Ttable)  then begin
+        if not ((DBGrid3.DataSource).dataset as Ttable).locate('No',StrToInt2(E_Ir.Text),[]) then
+         showmessage('El número de ítem que ha insertado no existe en esta base de datos.  Cerciorese de estar en la ''Matriz Principal''.');
+     end ;
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
+end;
+
+procedure Tfreq1.TodosClick(Sender: TObject);
+begin
+  QString:='';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.Panel15Click(Sender: TObject);
+begin
+pFiltra_Conscida(QString);
+PFiltros.Visible := False;
+ActualizaDBGrid3();
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
+end;
+
+ procedure Tfreq1.pFiltra_Conscida(pQString :String);
+ Begin
+ if trim(DM.QFiltroVisita.databasename)='' then
+    DM.QFiltroVisita.databasename := dM.conscida.databasename;
+      DM.QueryFilter.Active:=False;
+      DM.QueryFilter.SQL.Clear;
+      DM.QueryFilter.SQL.Add('SELECT a."no" , a."Value" , a."name",a."Oldvalue" ,0 as id , '''' as cutof, '''' as cutofinv'+
+                             '  from CONSCIDA a ');
+      DM.QueryFilter.SQL.Add('WHERE a."name" like ''%'+pQstring+'%''');
+      Q_Filtro_sql :=trim(DM.QueryFilter.sql.text);
+      DM.QueryFilter.SQL.Add('ORDER BY 2 '); { Value }
+
+
+      DM.QueryFilter.Active:=True;
+      DM.QueryFilter.first;
+      DM.QueryFilter.refresh;
+      if DBGrid3.dataSource         <> DM.DSFilter then begin
+            DBGrid3.dataSource         := nil;
+            DBGrid3.dataSource.free;
+            DBGrid3.dataSource         := DM.DSFilter;
+            DBGrid3.refresh;
+            DM.QueryFilter.Last;
+      end
+      else
+        DM.QueryFilter.Last;
+        DBGrid3.setfocus;
+        DM.QueryFilter.prior;
+        DM.QueryFilter.next;
+        if pfiltra_I = 0 then begin
+        pfiltra_I := 1;
+        pFiltra_Conscida(pQString)
+       end;
+ end;
+
+
+procedure Tfreq1.L_agClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Acido Graso';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_adClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(a)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_afClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='}';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_agtbClick(Sender: TObject);
+begin
+ DM.QueryFilter.Active:=False;
+  QString:='Biological Warfare';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_abClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(ALR)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_acClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='amino acid';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_ayClick(Sender: TObject);
+begin
+DM.QueryFilter.Active:=False;
+  QString:='Ayurvedic';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_bcClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='@';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_baClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Buen alimento';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_caClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(C)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_epClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(ep)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_crClick(Sender: TObject);
+begin
+ DM.QueryFilter.Active:=False;
+  QString:='CROMOSOMA';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_dtClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='TOOTH';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_dgClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='++';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_emClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Emotion';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_efClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(FE)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_enClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='ase';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_remClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='hgdie';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_fnClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Fenol';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_FbClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='BACH';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_fgClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='^';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_hoClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='\';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_hiClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='imponderable';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_hmClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='hormon';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_huClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='HUESO';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_hcClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='CRANEAL';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_ifClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Infección';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_idClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='dental isode';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_maClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='ALO';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_mcClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='meridiano de acupuntura';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_mpClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='Metal';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_mrClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='mineral';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_musClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='MUSCULO';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_NoClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='D Nosode';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_paClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='*';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_poClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='(PC)';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_resClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='rtc';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_sngrClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='SANGRE';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_scrClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='sarcode';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_slvClick(Sender: TObject);
+begin
+ DM.QueryFilter.Active:=False;
+  QString:='SOLVENT';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_vnClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='VENOM';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_vtClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='VERTEBRA';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_VrClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='#';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.L_vtmClick(Sender: TObject);
+begin
+  DM.QueryFilter.Active:=False;
+  QString:='VITAMIN';
+Panel15Click(Sender);
+end;
+
+procedure Tfreq1.EdConsida1Change(Sender: TObject);
+begin
+If EdConsida1.Text <> '' Then LT1.Enabled := True
+Else
+LT1.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida1Click(Sender: TObject);
+begin
+EdConsida1.Text := '';
+end;
+
+procedure Tfreq1.EdConsida2Click(Sender: TObject);
+begin
+EdConsida2.Text := '';
+end;
+
+procedure Tfreq1.EdConsida3Click(Sender: TObject);
+begin
+EdConsida3.Text := '';
+end;
+
+procedure Tfreq1.EdConsida4Click(Sender: TObject);
+begin
+EdConsida4.Text := '';
+end;
+
+procedure Tfreq1.EdConsida5Click(Sender: TObject);
+begin
+EdConsida5.Text := '';
+end;
+
+procedure Tfreq1.EdConsida6Click(Sender: TObject);
+begin
+EdConsida6.Text := '';
+end;
+
+procedure Tfreq1.EdConsida7Change(Sender: TObject);
+begin
+If EdConsida7.Text <> '' Then LT7.Enabled := True
+Else
+LT7.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida7Click(Sender: TObject);
+begin
+EdConsida7.Text := '';
+end;
+
+procedure Tfreq1.EdConsida8Click(Sender: TObject);
+begin
+EdConsida8.Text := '';
+end;
+
+procedure Tfreq1.EdConsida2Change(Sender: TObject);
+begin
+If EdConsida2.Text <> '' Then LT2.Enabled := True
+Else
+LT2.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida3Change(Sender: TObject);
+begin
+If EdConsida3.Text <> '' Then LT3.Enabled := True
+Else
+LT3.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida4Change(Sender: TObject);
+begin
+If EdConsida4.Text <> '' Then LT4.Enabled := True
+Else
+LT4.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida5Change(Sender: TObject);
+begin
+If EdConsida5.Text <> '' Then LT5.Enabled := True
+Else
+LT5.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida6Change(Sender: TObject);
+begin
+If EdConsida6.Text <> '' Then LT6.Enabled := True
+Else
+LT6.Enabled := False;
+end;
+
+procedure Tfreq1.EdConsida8Change(Sender: TObject);
+begin
+If EdConsida8.Text <> '' Then LT8.Enabled := True
+Else
+LT8.Enabled := False;
+end;
+
+procedure Tfreq1.LT1Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida1.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida1.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT2Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida2.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida2.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT3Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida3.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida3.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT4Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida4.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida4.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT5Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida5.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida5.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT6Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida6.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida6.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT7Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida7.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida7.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.LT8Click(Sender: TObject);
+begin
+GProgreso.Progress := 0;
+testform1.vtransferencia := true;
+testform1.edit32.text:=EdConsida8.text+' | ';
+testform1.vtransferencia := true;
+testform1.edit34.text:=EdConsida8.text+' | ';
+testform1.edit32.Refresh;
+testform1.edit34.Refresh;
+close;
+end;
+
+procedure Tfreq1.DBGrid3CellClick(Column: TColumn);
+begin
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
+end;
+
+procedure Tfreq1.DBGrid3ColEnter(Sender: TObject);
+begin
+DBGrid3.BeginDrag(True);
+MDescripcion.Text  := DBGrid3.Columns[2].Field.AsString;
+MDescripcion.refresh;
+end;
+
+procedure Tfreq1.DBGrid3DblClick(Sender: TObject);
+var
+ij : integer;
+ss,st : string;
+vusado : boolean;
+begin
+  ss:= ((dbgrid3.DataSource).dataset as Tquery).fieldbyname('Name').asstring;
+  i := pos('|',ss);
+  st := copy(ss,1,i-1);
+  if trim(st)='VACIO' then
+    ShowMessage('Los campos vacios no se pueden manipular.')
+  else begin
+  If trim(EdConsida1.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida2.text) = trim(st) then
+     vusado := true
+  Else
+  If trim(EdConsida3.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida4.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida5.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida6.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida7.text) = trim(st) then
+     vusado := true
+  else
+  If trim(EdConsida8.text) = trim(st) then
+     vusado := true;
+
+      if vusado = true then begin
+          showmessage('El ítem ya ha sido agregado.');
+          exit;
+      end;
+ end;
+
+If trim(EdConsida1.text) = '' then
+     EdConsida1.text := st
+  else
+  If trim(EdConsida2.text) = '' then
+     EdConsida2.text := st
+  Else
+  If trim(EdConsida3.text) = '' then
+     EdConsida3.text := st
+  else
+  If trim(EdConsida4.text) = '' then
+     EdConsida4.text := st
+  else
+  If trim(EdConsida5.text) = '' then
+     EdConsida5.text := st
+  else
+  If trim(EdConsida6.text) = '' then
+     EdConsida6.text := st
+  else
+    If trim(EdConsida7.text) = '' then
+     EdConsida7.text := st
+  else
+    If trim(EdConsida8.text) = '' then
+     EdConsida8.text := st
+  else
+showmessage('Despeje un cajetin para cargar un ítem nuevo.');
+end;
+
+procedure Tfreq1.DBGrid3DrawDataCell(Sender: TObject;
+  const Rect: TRect; Field: TField; State: TGridDrawState);
+begin
+    if testForm1.ConscidaGrid.DataSource = DM.DSFiltroVisita then Begin
+     if field.AsString <> '' then begin
+      if field.fieldname ='Value' then  begin
+            if field.asfloat >testForm1.TT_cutof then
+               (sender as TDBgrid).canvas.brush.color := clfuchsia
+            else
+               (sender as TDBgrid).canvas.brush.color := claqua;
+
+            if field.asfloat >testForm1.TT_cutof+9 then
+                  (sender as TDBgrid).canvas.brush.color := clred;
+
+            if (field.asfloat <testForm1.TT_cutof+1)and (field.asfloat>testForm1.TT_cutof-6) then
+                  (sender as TDBgrid).canvas.brush.color := clyellow;
+             if field.asfloat =0 then
+               (sender as TDBgrid).canvas.brush.color := clWhite;
+             if (field.asfloat <testForm1.TT_cutofInv) and (field.asfloat <>0) then
+               (sender as TDBgrid).canvas.brush.color := clGray;
+             if (field.asfloat <testForm1.TT_cutofInv+9) and (field.asfloat >=testForm1.TT_cutofInv) then
+               (sender as TDBgrid).canvas.brush.color := clblue;
+             if (field.asfloat <testForm1.TT_cutofInv+14) and (field.asfloat >=testForm1.TT_cutofInv+9) then
+               (sender as TDBgrid).canvas.brush.color := cllime;
+            (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+      end
+      else
+        (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+     end;
+     end else
+     Begin
+      if field.fieldname ='Value' then
+      begin
+        if field.asfloat >testForm1.cutof then
+           (sender as TDBgrid).canvas.brush.color := clfuchsia
+        else
+           (sender as TDBgrid).canvas.brush.color := claqua;
+        if field.asfloat >testForm1.cutof+9 then
+              (sender as TDBgrid).canvas.brush.color := clred;
+        if (field.asfloat <testForm1.cutof+1)and (field.asfloat>testForm1.cutof-6) then
+              (sender as TDBgrid).canvas.brush.color := clyellow;
+         if field.asfloat =0 then
+           (sender as TDBgrid).canvas.brush.color := clWhite;
+         if (field.asfloat <testForm1.cutofInv) and (field.asfloat <>0) then
+           (sender as TDBgrid).canvas.brush.color := clGray;
+         if (field.asfloat <testForm1.cutofInv+9) and (field.asfloat >=testForm1.cutofInv) then
+           (sender as TDBgrid).canvas.brush.color := clblue;
+         if (field.asfloat <testForm1.cutofInv+14) and (field.asfloat >=testForm1.cutofInv+9) then
+           (sender as TDBgrid).canvas.brush.color := cllime;
+        (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+      end
+      else (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+end;
+      if field.fieldname ='Name' then
+         If (Pos('(DR)',field.AsString)<>0) OR (Pos('(NV)',field.AsString)<>0) Then  Begin
+            (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+         end;
+      if field.fieldname ='Name' then
+         If (Pos('@', field.AsString)<>0) Then  Begin
+           (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+        end;
+      if field.fieldname ='Name' then
+          If (Pos('BACH', field.AsString)<>0) Then Begin
+          (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+         end;
+       if field.fieldname ='Name' then
+         If (Pos('#', field.AsString)<>0) Then  Begin
+           (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+         end;
+       if field.fieldname ='Name' then
+         If (Pos('ALR', field.AsString)<>0) Then  Begin
+          (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+         end;
+       if field.fieldname ='Name' then
+       If (Pos('*', field.AsString)<>0) Then   Begin
+          (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+       end;
+       if field.fieldname ='Name' then
+        If (Pos('^', field.AsString)<>0) Then  Begin
+          (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+        end;
+      if field.fieldname ='Name' then
+       If (Pos('CHRO', field.AsString)<>0) Then  Begin
+         (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
+      end;
+end;
+
+procedure Tfreq1.DBGrid3KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
+end;
+
+procedure Tfreq1.DBGrid3KeyPress(Sender: TObject; var Key: Char);
+begin
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
+end;
+
+procedure Tfreq1.DBGrid3KeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+   MDescripcion.Text  :=DBGrid3.Columns[2].Field.AsString;
+   MDescripcion.refresh;
 end;
 
 end.

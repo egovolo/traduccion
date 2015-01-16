@@ -15,7 +15,6 @@ type
     Button36: TButton;
     Label1: TLabel;
     Edit2: TEdit;
-    Panel3: TPanel;
     Label28: TLabel;
     Label29: TLabel;
     Label30: TLabel;
@@ -150,6 +149,7 @@ type
     CBAutomatico: TCheckBox;
     Label787: TLabel;
     CBTerapiaExtendida: TCheckBox;
+    Label6: TLabel;
 
     procedure FormCreate(Sender: TObject);
     procedure FormHide(Sender: TObject);
@@ -274,6 +274,7 @@ type
     procedure Label3Click(Sender: TObject);
     procedure Edit1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
+    procedure Label6Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -301,7 +302,8 @@ var
   implementation
 Uses
 Freq2,spine, testdata,repordat,homeo,freq,PicUnit,Denta, DataMod,
-   Age, Nut,UnitVol,Wawp, Patname, Cnscios, uscioworking, ondas;
+   Age, Nut,UnitVol,Wawp, Patname, Cnscios, uscioworking, ondas,
+  Urecompensa;
 {$R *.DFM}
 
  { Editor = 'write.exe' or 'notepad.exe'}
@@ -350,38 +352,10 @@ MyChrono.Start;
 GProgreso.Progress := 0;
   GProgreso.MaxValue := vtag;
   Label159.Caption := 'Rectificado | 0';
-  If Edit4.Text<>'' Then Panel3.Caption := 'Testando sistema craneo-sacral en referencia a: '+Edit4.Text+'...'
-  Else
-  Panel3.Caption := 'Testando sistema craneo-sacral...';
-  panel3.visible:=true;
   panel2.refresh;
   SCIOworking.trackbar1.position:=SCIOworking.trackbar1.position+random(7)-random(7);
   ChangingPulses(5000,189,6500,5,12,3,'11111111','11111111');
-{  if alarm  = 6 then begin //deshabilitar etiquetas tag 150
-    pDeshabilitar();
-    if MessageDlg('¡Reacción de Alarma!  ¿Desea rectificar?' ,mtConfirmation, [mbYes, mbNo], 0) = mrYes then begin
-    SCIOworking.trackbar1.position:=SCIOworking.trackbar1.position+random(7)-random(7);
-        ChangingPulses(50000,55,1111,5,1,(10+ Testform1.alg),'00000000','00000000');
-        randomize();
-        Testform1.alg:=random(10);
-        if (Testform1.alg>8) then begin
-            showmessage('Respuesta de alarma no corregída.');
-        end
-        else
-        if (Testform1.alarm1>3)and(Testform1.alg>5) then begin
-            showmessage('La respuesta de alarma no es corregíble. No más terapia.');
-            SCIOworking.RadioButton4.checked:=True;
-            Testform1.TreatandTestAlarmResponse1.enabled:=false;
-       end
-       else begin
-          phabilitar();
-          //showmessage('Respuesta de alarma corregída.');
-        end;
-    end;
-    exit;
-  end;  }
   for xy:= 1 to vtag do begin
-//    Label6.caption := 'Progreso:'+inttostr(trunc((xy/vtag)*100))+' %';
     vrealiza  := false;
     for i:=1 to self.ComponentCount-1 do  begin
             if (self.Components[i] is TLabel) then
@@ -406,14 +380,12 @@ GProgreso.Progress := 0;
     GProgreso.Progress:=xy;
   end;
   Button36.Caption := 'Rectificar remanentes';
-  panel3.visible:=false;
   Fmain.recmain:=Fmain.recmain+1;
   MyChrono.Stop;
 end;
 
 procedure TFECraneoSacral.Panel3Click(Sender: TObject);
 begin
-panel3.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 end;
 
@@ -433,7 +405,7 @@ Time_Crono.Enabled := True;
      DM.Info.FindKey([7]);
      ComboBox2.Items.Add(DM.Info.FieldByName('Value').AsString+' | Cuadrante Social');
      DM.Info.FindKey([8]);
-     ComboBox2.Items.Add(DM.Info.FieldByName('Value').AsString+' | Cuadrante de Espiritual');
+     ComboBox2.Items.Add(DM.Info.FieldByName('Value').AsString+' | Cuadrante Espiritual');
 end;
 
 procedure TFECraneoSacral.Gabriela();
@@ -441,8 +413,6 @@ begin
 MyChrono.Start;
 GProgreso.Progress := 0;
 Label159.Caption := 'Rectificado | 0';
-panel3.visible:=true;
-Panel3.Refresh;
 vtiempo := 50+Random(10);
 If SETiempo.Value>1 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -458,10 +428,9 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rectificado := Random(120);
 if rectificado >100 then rectificado := 85+Random(15);
-panel3.visible:=false;
 Label159.Caption := 'Rectificado | '+inttostr(rectificado);
 Fmain.recmain:=Fmain.recmain+1;
 MyChrono.Stop;
@@ -489,7 +458,6 @@ end;
 
 procedure TFECraneoSacral.Label62Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 1er chakra para reparar desgarre...';
 Edit2.Text := Label62.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -498,7 +466,6 @@ end;
 
 procedure TFECraneoSacral.Label61Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 2do chakra para reparar desgarre...';
 Edit2.Text := Label61.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -507,7 +474,6 @@ end;
 
 procedure TFECraneoSacral.Label60Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 3er chakra para reparar desgarre...';
 Edit2.Text := Label60.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -516,7 +482,6 @@ end;
 
 procedure TFECraneoSacral.Label59Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 4to chakra para reparar desgarre...';
 Edit2.Text := Label59.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -525,7 +490,6 @@ end;
 
 procedure TFECraneoSacral.Label58Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 5to chakra para reparar desgarre...';
 Edit2.Text := Label58.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -534,7 +498,6 @@ end;
 
 procedure TFECraneoSacral.Label57Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 6to chakra para reparar desgarre...';
 Edit2.Text := Label57.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -543,7 +506,6 @@ end;
 
 procedure TFECraneoSacral.Label56Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 7mo chakra para reparar desgarre...';
 Edit2.Text := Label56.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -552,7 +514,6 @@ end;
 
 procedure TFECraneoSacral.Label55Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a 8vo chakra para reparar desgarre...';
 Edit2.Text := Label55.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -561,7 +522,6 @@ end;
 
 procedure TFECraneoSacral.Label49Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a articulación esfeno-basilar para corregír retorcimiento...';
 Edit2.Text := Label49.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -570,7 +530,6 @@ end;
 
 procedure TFECraneoSacral.Label72Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a Articulación Temporo Mandibular para equilibrar...';
 Edit2.Text := Label72.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -579,7 +538,6 @@ end;
 
 procedure TFECraneoSacral.Label29Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a bioelectricidad a órganos para mejorar...';
 Edit2.Text := Label29.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -588,7 +546,6 @@ end;
 
 procedure TFECraneoSacral.Label151Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a cadenas musculares para mejorar comunicación...';
 Edit2.Text := Label51.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -597,7 +554,6 @@ end;
 
 procedure TFECraneoSacral.Label78Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a campo electromagnético (aura) para reparar...';
 Edit2.Text := Label78.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -606,7 +562,6 @@ end;
 
 procedure TFECraneoSacral.Label147Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a cerebro periférico para reparar...';
 Edit2.Text := Label47.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -615,7 +570,6 @@ end;
 
 procedure TFECraneoSacral.Label129Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a columna vertebral para desbloquear...';
 Edit2.Text := Label129.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -624,7 +578,6 @@ end;
 
 procedure TFECraneoSacral.Label71Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a coordinación para mejorar...';
 Edit2.Text := Label71.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -633,7 +586,6 @@ end;
 
 procedure TFECraneoSacral.Label155Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a congestión intracraneal para despejar...';
 Edit2.Text := Label155.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -642,7 +594,6 @@ end;
 
 procedure TFECraneoSacral.Label70Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a contensión de órganos para mejorar...';
 Edit2.Text := Label70.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -651,7 +602,6 @@ end;
 
 procedure TFECraneoSacral.Label146Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a ''correas de transmisión'' para ajustar...';
 Edit2.Text := Label146.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -660,7 +610,6 @@ end;
 
 procedure TFECraneoSacral.Label143Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a Cuerpo, Alma, Espíritu para conectar...';
 Edit2.Text := Label143.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -669,7 +618,6 @@ end;
 
 procedure TFECraneoSacral.Label38Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a debilidad: '+ComboBox2.Text+' para reparar...';
 Edit2.Text := Label38.Caption+': '+ComboBox2.text;
 Edit2.Refresh;
 Gabriela();
@@ -678,7 +626,6 @@ end;
 
 procedure TFECraneoSacral.Label68Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a psíquico-corporal para desbloquear...';
 Edit2.Text := Label68.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -687,7 +634,6 @@ end;
 
 procedure TFECraneoSacral.Label65Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a desgarros misceláneos para reparar...';
 Edit2.Text := Label65.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -696,7 +642,6 @@ end;
 
 procedure TFECraneoSacral.Label66Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a músculos para reparar desgarros...';
 Edit2.Text := Label66.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -705,7 +650,6 @@ end;
 
 procedure TFECraneoSacral.Label136Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a diafragma pélvico para abrir...';
 Edit2.Text := Label136.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -714,7 +658,6 @@ end;
 
 procedure TFECraneoSacral.Label31Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a diafragma pulmonar para revitalizar...';
 Edit2.Text := Label31.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -723,8 +666,6 @@ end;
 
 procedure TFECraneoSacral.Label39Click(Sender: TObject);
 begin
-
-Panel3.Caption := 'Realizando terapia a emoción de baja vibración: '+ComboBox1.text+' para reparar...';
 Edit2.Text := Label39.Caption+': '+ComboBox1.Text;
 Edit2.Refresh;
 Gabriela();
@@ -733,7 +674,6 @@ end;
 
 procedure TFECraneoSacral.Label74Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a emociones viscerales para liberar...';
 Edit2.Text := Label74.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -742,7 +682,6 @@ end;
 
 procedure TFECraneoSacral.Label50Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a energía para corregír retorcimiento...';
 Edit2.Text := Label50.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -751,7 +690,6 @@ end;
 
 procedure TFECraneoSacral.Label51Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a envoltura de la médula espinal para reparar...';
 Edit2.Text := Label51.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -760,7 +698,6 @@ end;
 
 procedure TFECraneoSacral.Label52Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a envoltura del sistema nervioso para reparar deterioro...';
 Edit2.Text := Label52.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -769,7 +706,6 @@ end;
 
 procedure TFECraneoSacral.Label54Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a esclerosis de tejido para reparar ...';
 Edit2.Text := Label54.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -778,7 +714,6 @@ end;
 
 procedure TFECraneoSacral.Label150Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas de la columna vertebral para normalizar...';
 Edit2.Text := Label150.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -787,7 +722,6 @@ end;
 
 procedure TFECraneoSacral.Label137Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas del cráneo para normalizar...';
 Edit2.Text := Label137.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -796,7 +730,6 @@ end;
 
 procedure TFECraneoSacral.Label154Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas del rostro para normalizar...';
 Edit2.Text := Label154.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -805,7 +738,6 @@ end;
 
 procedure TFECraneoSacral.Label156Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas del sacro-cóccix para normalizar...';
 Edit2.Text := Label156.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -814,7 +746,6 @@ end;
 
 procedure TFECraneoSacral.Label131Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a fascias o meninges para polarizar...';
 Edit2.Text := Label131.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -823,7 +754,6 @@ end;
 
 procedure TFECraneoSacral.Label40Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a fuerza electromagnética para aumentar...';
 Edit2.Text := Label40.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -832,7 +762,6 @@ end;
 
 procedure TFECraneoSacral.Label30Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a flujo de sangre al cerebro para aumentar...';
 Edit2.Text := Label130.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -841,7 +770,6 @@ end;
 
 procedure TFECraneoSacral.Label149Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a hígado para reparar...';
 Edit2.Text := Label149.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -850,7 +778,6 @@ end;
 
 procedure TFECraneoSacral.Label37Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a hígado para reparar...';
 Edit2.Text := Label137.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -859,7 +786,6 @@ end;
 
 procedure TFECraneoSacral.Label64Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a homeostasis para equilibrar...';
 Edit2.Text := Label64.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -868,7 +794,6 @@ end;
 
 procedure TFECraneoSacral.Label140Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a huesos craneales para mejorar movimiento...';
 Edit2.Text := Label140.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -877,7 +802,6 @@ end;
 
 procedure TFECraneoSacral.Label75Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a iluminación para abrir...';
 Edit2.Text := Label75.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -886,7 +810,6 @@ end;
 
 procedure TFECraneoSacral.Label36Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a impulso rítmico craneal para mejorar...';
 Edit2.Text := Label36.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -895,7 +818,6 @@ end;
 
 procedure TFECraneoSacral.Label130Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a impulso rítmico craneal para polarizar...';
 Edit2.Text := Label130.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -904,7 +826,6 @@ end;
 
 procedure TFECraneoSacral.Label144Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a intercambios y defensas para mejorar...';
 Edit2.Text := Label144.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -913,7 +834,6 @@ end;
 
 procedure TFECraneoSacral.Label76Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a intuición para mejorar...';
 Edit2.Text := Label76.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -922,7 +842,6 @@ end;
 
 procedure TFECraneoSacral.Label63Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a lesiones en tejido fascial o meninges para reparar...';
 Edit2.Text := Label63.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -931,7 +850,6 @@ end;
 
 procedure TFECraneoSacral.Label135Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a líneas de tejido conectivo para polarizar...';
 Edit2.Text := Label135.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -940,7 +858,6 @@ end;
 
 procedure TFECraneoSacral.Label138Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a líquido cefalorraquídeo para mejorar circulación...';
 Edit2.Text := Label138.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -949,7 +866,6 @@ end;
 
 procedure TFECraneoSacral.Label145Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a medios intra y extra celulares para mejorar comunicación...';
 Edit2.Text := Label145.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -958,7 +874,6 @@ end;
 
 procedure TFECraneoSacral.Label79Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a médula espinal para revitalizar...';
 Edit2.Text := Label79.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -967,7 +882,6 @@ end;
 
 procedure TFECraneoSacral.Label134Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a transferencia de bio-electricidad para mejorar...';
 Edit2.Text := Label134.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -976,7 +890,6 @@ end;
 
 procedure TFECraneoSacral.Label148Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a memoria celular para fortalecer...';
 Edit2.Text := Label148.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -985,7 +898,6 @@ end;
 
 procedure TFECraneoSacral.Label128Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a musculatura pubocoxígea para reparar...';
 Edit2.Text := Label128.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -994,7 +906,6 @@ end;
 
 procedure TFECraneoSacral.Label133Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a naturalidad para recuperar...';
 Edit2.Text := Label133.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1003,7 +914,6 @@ end;
 
 procedure TFECraneoSacral.Label48Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a nervios y vasos sanguíneos afectados para reparar...';
 Edit2.Text := Label48.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1012,7 +922,6 @@ end;
 
 procedure TFECraneoSacral.Label33Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a nivel de energía y vibración Ida Nadi para aumentar...';
 Edit2.Text := Label33.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1021,7 +930,6 @@ end;
 
 procedure TFECraneoSacral.Label32Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a nivel de energía y vibración Pingala Nadi para aumentar...';
 Edit2.Text := Label32.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1030,7 +938,6 @@ end;
 
 procedure TFECraneoSacral.Label7Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a nivel de energía y vibración Susuma Nada para aumentar...';
 Edit2.Text := Label7.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1039,7 +946,6 @@ end;
 
 procedure TFECraneoSacral.Label69Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a postura para mejorar...';
 Edit2.Text := Label69.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1048,7 +954,6 @@ end;
 
 procedure TFECraneoSacral.Label139Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a respiración óseo-craneal para mejorar...';
 Edit2.Text := Label139.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1057,7 +962,6 @@ end;
 
 procedure TFECraneoSacral.Label42Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a riñones para reparar...';
 Edit2.Text := Label42.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1066,7 +970,6 @@ end;
 
 procedure TFECraneoSacral.Label67Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a roturas fibrilares para reparar...';
 Edit2.Text := Label67.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1075,7 +978,6 @@ end;
 
 procedure TFECraneoSacral.Label46Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a secuelas ocasionadas por vacunas para reparar...';
 Edit2.Text := Label46.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1084,7 +986,6 @@ end;
 
 procedure TFECraneoSacral.Label44Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema inmunitario para fortalecer...';
 Edit2.Text := Label44.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1093,7 +994,6 @@ end;
 
 procedure TFECraneoSacral.Label28Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema craneo-sacral para corregír retorcimiento...';
 Edit2.Text := Label28.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1102,7 +1002,6 @@ end;
 
 procedure TFECraneoSacral.Label142Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema nervioso central (SNC) para fortalecer...';
 Edit2.Text := Label142.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1111,7 +1010,6 @@ end;
 
 procedure TFECraneoSacral.Label53Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema nervioso deteriorado para revitalizar...';
 Edit2.Text := Label53.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1120,7 +1018,6 @@ end;
 
 procedure TFECraneoSacral.Label34Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a nervioso simpático para reparar...';
 Edit2.Text := Label34.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1129,7 +1026,6 @@ end;
 
 procedure TFECraneoSacral.Label5Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema nervioso parasimpático para reparar...';
 Edit2.Text := Label5.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1138,7 +1034,6 @@ end;
 
 procedure TFECraneoSacral.Label43Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a suprarrenales para potenciar...';
 Edit2.Text := Label43.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1147,7 +1042,6 @@ end;
 
 procedure TFECraneoSacral.Label45Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a tejido conectivo para reparar...';
 Edit2.Text := Label45.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1156,7 +1050,6 @@ end;
 
 procedure TFECraneoSacral.Label41Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a tejidos contraídos para relajar...';
 Edit2.Text := Label41.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1165,7 +1058,6 @@ end;
 
 procedure TFECraneoSacral.Label132Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a tejidos en general para polarizar...';
 Edit2.Text := Label132.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1174,7 +1066,6 @@ end;
 
 procedure TFECraneoSacral.Label141Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a tensiones membranosas para despejar...';
 Edit2.Text := Label141.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1183,7 +1074,6 @@ end;
 
 procedure TFECraneoSacral.Label73Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a trabéculas óseas / fibras de Sharpey para reparar...';
 Edit2.Text := Label73.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1192,7 +1082,6 @@ end;
 
 procedure TFECraneoSacral.Label152Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a traumatismos físicos por mala postura para reparar...';
 Edit2.Text := Label152.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1201,7 +1090,6 @@ end;
 
 procedure TFECraneoSacral.Label158Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a túnel metacarpiano para reparar...';
 Edit2.Text := Label158.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1210,7 +1098,6 @@ end;
 
 procedure TFECraneoSacral.Label157Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a ventrículos cerebrales para mejorar comunicación...';
 Edit2.Text := Label157.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1219,7 +1106,6 @@ end;
 
 procedure TFECraneoSacral.Label77Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a vibración para mejorar...';
 Edit2.Text := Label77.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1228,7 +1114,6 @@ end;
 
 procedure TFECraneoSacral.Label47Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a visión para reparar...';
 Edit2.Text := Label47.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1238,7 +1123,6 @@ end;
 procedure TFECraneoSacral.pTagged();
 var
   i :integer;
-
 begin
    vtag :=1;
            for i:=0 to self.ComponentCount-1 do
@@ -1277,7 +1161,6 @@ end;
 
 procedure TFECraneoSacral.Label35Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a circuitos de la memoria para fortalecer...';
 Gabriela();
 If Rectificado>84 Then Label35.Enabled := False;
 end;
@@ -1291,7 +1174,6 @@ end;
 
 procedure TFECraneoSacral.Label164Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a ''Aliento de vida'' para potenciar...';
 Edit2.Text := Label164.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1300,7 +1182,6 @@ end;
 
 procedure TFECraneoSacral.Label180Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a aura a para restaurar...';
 Edit2.Text := Label180.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1309,7 +1190,6 @@ end;
 
 procedure TFECraneoSacral.Label178Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a biofotones para multiplicar...';
 Edit2.Text := Label178.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1318,7 +1198,6 @@ end;
 
 procedure TFECraneoSacral.Label166Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a canal pineal-pituitaria para abrir...';
 Edit2.Text := Label166.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1327,7 +1206,6 @@ end;
 
 procedure TFECraneoSacral.Label171Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a equilibrio fisiológico interno para integrar...';
 Edit2.Text := Label171.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1336,7 +1214,6 @@ end;
 
 procedure TFECraneoSacral.Label173Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a inhalación y exhalación para mejorar...';
 Edit2.Text := Label173.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1345,7 +1222,6 @@ end;
 
 procedure TFECraneoSacral.Label185Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a flexibilidad craneal para mejorar...';
 Edit2.Text := Label185.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1354,7 +1230,6 @@ end;
 
 procedure TFECraneoSacral.Label182Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a flexión y extensión del cráneo para mejorar...';
 Edit2.Text := Label182.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1363,7 +1238,6 @@ end;
 
 procedure TFECraneoSacral.Label175Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a fluído cerebroespinal para mejorar...';
 Edit2.Text := Label175.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1372,7 +1246,6 @@ end;
 
 procedure TFECraneoSacral.Label168Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a glándula pituitaria para abrir...';
 Edit2.Text := Label168.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1381,7 +1254,6 @@ end;
 
 procedure TFECraneoSacral.Label167Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a glándula pineal para abrir...';
 Edit2.Text := Label167.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1390,7 +1262,6 @@ end;
 
 procedure TFECraneoSacral.Label174Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a marea larga para potenciar...';
 Edit2.Text := Label174.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1399,7 +1270,6 @@ end;
 
 procedure TFECraneoSacral.Label161Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a marea media para potenciar...';
 Edit2.Text := Label161.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1408,7 +1278,6 @@ end;
 
 procedure TFECraneoSacral.Label179Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a matriz original para restablecer...';
 Edit2.Text := Label179.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1417,7 +1286,6 @@ end;
 
 procedure TFECraneoSacral.Label184Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a mecanismo respiratorio para mejorar...';
 Edit2.Text := Label184.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1426,7 +1294,6 @@ end;
 
 procedure TFECraneoSacral.Label177Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a memoria holográfica para aumentar...';
 Edit2.Text := Label177.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1435,7 +1302,6 @@ end;
 
 procedure TFECraneoSacral.Label169Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a motilidad para mejorar...';
 Edit2.Text := Label169.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1444,7 +1310,6 @@ end;
 
 procedure TFECraneoSacral.Label162Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a movimiento rítmico de las mareas para mejorar...';
 Edit2.Text := Label162.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1453,7 +1318,6 @@ end;
 
 procedure TFECraneoSacral.Label181Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a neuronas para mejorar comunicación...';
 Edit2.Text := Label181.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1462,7 +1326,6 @@ end;
 
 procedure TFECraneoSacral.Label186Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a pies para '+Edit1.Text+'...';
 Edit2.Text := Label186.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1471,7 +1334,6 @@ end;
 
 procedure TFECraneoSacral.Label183Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a reflejos vasomotores espinales para mejorar...';
 Edit2.Text := Label183.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1480,7 +1342,6 @@ end;
 
 procedure TFECraneoSacral.Label165Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistema endocrino para despejar...';
 Edit2.Text := Label165.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1489,7 +1350,6 @@ end;
 
 procedure TFECraneoSacral.Label176Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a sistemas orgánicos para conectar entre sí...';
 Edit2.Text := Label176.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1498,7 +1358,6 @@ end;
 
 procedure TFECraneoSacral.Label170Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a visión de sí mismo para ampliar...';
 Edit2.Text := Label170.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1520,7 +1379,6 @@ end;
 
 procedure TFECraneoSacral.Label2Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas de las extremidades superiores para normalizar...';
 Edit2.Text := Label2.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1529,7 +1387,6 @@ end;
 
 procedure TFECraneoSacral.Label3Click(Sender: TObject);
 begin
-Panel3.Caption := 'Realizando terapia a estructuras fisiológicas de las extremidades inferiores para normalizar...';
 Edit2.Text := Label2.Caption;
 Edit2.Refresh;
 Gabriela();
@@ -1546,6 +1403,11 @@ begin
 If Edit1.Text<>'' Then Label186.Enabled := True
 Else
 Label186.Enabled := False;
+end;
+
+procedure TFECraneoSacral.Label6Click(Sender: TObject);
+begin
+ Frecompensa.Showmodal;
 end;
 
 end.

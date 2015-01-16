@@ -3,9 +3,7 @@ object Sysreport: TSysreport
   Top = 145
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 
-    '::: gENiO® iOS ::: Comunicación Bio-Instrumental | Electro Dinám' +
-    'ica Cuántica ::: Informe Sencillo ::: '
+  Caption = '::: gENiO® iOS ::: Informe Sencillo ::: '
   ClientHeight = 674
   ClientWidth = 993
   Color = clBtnFace
@@ -47,12 +45,6 @@ object Sysreport: TSysreport
     ParentColor = False
     ParentFont = False
     Transparent = True
-  end
-  object Label13: TLabel
-    Left = 636
-    Top = 92
-    Width = 4
-    Height = 16
   end
   object Label4: TLabel
     Left = 684
@@ -156,18 +148,18 @@ object Sysreport: TSysreport
     OnClick = SpeedButton3Click
   end
   object Label7: TLabel
-    Left = 681
-    Top = 44
+    Left = 673
+    Top = 40
     Width = 51
     Height = 16
     Caption = 'Método:'
     Visible = False
   end
   object Image3: TImage
-    Left = 672
-    Top = 8
-    Width = 69
-    Height = 69
+    Left = 776
+    Top = 84
+    Width = 50
+    Height = 50
     Stretch = True
     Transparent = True
   end
@@ -499,7 +491,7 @@ object Sysreport: TSysreport
     Height = 24
     DataField = 'Pay'
     DataSource = DM.DS_Examine
-    TabOrder = 3
+    TabOrder = 2
     Visible = False
   end
   object dfecha: TDateTimePicker
@@ -520,24 +512,7 @@ object Sysreport: TSysreport
     Kind = dtkDate
     ParseInput = False
     ParentFont = False
-    TabOrder = 4
-  end
-  object BitBtn1: TBitBtn
-    Left = 588
-    Top = 196
-    Width = 240
-    Height = 22
-    Cursor = crHandPoint
-    Caption = 'Cerrar'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 5
-    OnClick = BitBtn1Click
-    NumGlyphs = 2
+    TabOrder = 3
   end
   object Button_Table: TButton
     Left = 759
@@ -553,7 +528,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 4
     Visible = False
     OnClick = Button_TableClick
   end
@@ -570,7 +545,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 5
     Visible = False
     OnClick = B_reloadClick
   end
@@ -587,7 +562,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 6
     Visible = False
     OnClick = Button4Click
   end
@@ -604,7 +579,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 7
     Visible = False
     OnClick = Button9Click
   end
@@ -621,7 +596,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 8
     Visible = False
   end
   object Bit_New: TBitBtn
@@ -638,7 +613,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 9
     Visible = False
     OnClick = Bit_NewClick
     NumGlyphs = 2
@@ -657,7 +632,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 12
+    TabOrder = 10
     Visible = False
     OnClick = Button10Click
   end
@@ -668,7 +643,7 @@ object Sysreport: TSysreport
     Height = 14
     Lines.Strings = (
       '')
-    TabOrder = 13
+    TabOrder = 11
     Visible = False
   end
   object GroupBox3: TGroupBox
@@ -684,7 +659,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 12
     Visible = False
     object Combo_Order: TComboBox
       Left = 8
@@ -723,7 +698,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 13
     Visible = False
     OnClick = BitBtn2Click
   end
@@ -739,7 +714,7 @@ object Sysreport: TSysreport
     Font.Style = []
     ItemHeight = 14
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 14
     Text = 'Caja conjunto 1'
     Visible = False
     OnChange = ComboBox1Change
@@ -752,7 +727,7 @@ object Sysreport: TSysreport
     Hint = 'Manera de pago ej. efectivo, cheque, etc.'
     DataField = 'PayMethod'
     DataSource = DM.DS_Examine
-    TabOrder = 17
+    TabOrder = 15
     Visible = False
   end
   object DBNavigator1: TDBNavigator
@@ -765,7 +740,7 @@ object Sysreport: TSysreport
     VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete, nbCancel]
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 18
+    TabOrder = 16
     Visible = False
     OnClick = DBNavigator1Click
   end
@@ -783,13 +758,13 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 19
+    TabOrder = 17
     Visible = False
     OnClick = Button8Click
   end
   object Button11: TButton
     Left = 588
-    Top = 148
+    Top = 192
     Width = 240
     Height = 22
     Cursor = crHandPoint
@@ -800,7 +775,7 @@ object Sysreport: TSysreport
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 18
     OnClick = Button11Click
   end
   object Panel13: TPanel
@@ -811,7 +786,7 @@ object Sysreport: TSysreport
     BevelWidth = 2
     BorderStyle = bsSingle
     Color = clSilver
-    TabOrder = 23
+    TabOrder = 21
     Visible = False
     object c1: TLabel
       Left = 28
@@ -1251,7 +1226,7 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 24
+    TabOrder = 22
     Visible = False
     OnClick = Bit_CancelClick
     NumGlyphs = 2
@@ -1271,26 +1246,10 @@ object Sysreport: TSysreport
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 25
+    TabOrder = 23
     Visible = False
     OnClick = Bit_SaveClick
     NumGlyphs = 2
-  end
-  object BAyuda: TButton
-    Left = 588
-    Top = 172
-    Width = 240
-    Height = 22
-    Cursor = crHandPoint
-    Caption = 'Ayuda'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 26
-    OnClick = BAyudaClick
   end
   object GroupBox5: TGroupBox
     Left = 832
@@ -1304,7 +1263,7 @@ object Sysreport: TSysreport
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 21
+    TabOrder = 19
     object Label14: TLabel
       Left = 95
       Top = 16
@@ -1535,7 +1494,7 @@ object Sysreport: TSysreport
     Top = 52
     Width = 37
     Height = 107
-    TabOrder = 22
+    TabOrder = 20
     Visible = False
     object LL10: TLabel
       Left = 12
@@ -1645,7 +1604,7 @@ object Sysreport: TSysreport
   end
   object Button5: TButton
     Left = 588
-    Top = 124
+    Top = 168
     Width = 241
     Height = 22
     Cursor = crHandPoint
@@ -1656,12 +1615,12 @@ object Sysreport: TSysreport
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 27
+    TabOrder = 24
     OnClick = LoadChartmakerAndColorReport1Click
   end
   object Button7: TButton
     Left = 588
-    Top = 100
+    Top = 144
     Width = 241
     Height = 22
     Cursor = crHandPoint
@@ -1672,101 +1631,9 @@ object Sysreport: TSysreport
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 28
+    TabOrder = 25
     Visible = False
     OnClick = Button7Click
-  end
-  object Memo1: TMemo
-    Left = 4
-    Top = 4
-    Width = 825
-    Height = 217
-    Hint = 'Texto de ayuda para hacer informes.'
-    BorderStyle = bsNone
-    Color = clLime
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    Lines.Strings = (
-      
-        '                                                                ' +
-        '                                 ::: PULSE 2 VECES PARA OCULTAR ' +
-        ':::'
-      ''
-      
-        'Una vez haya realizado el test inicial a la visita podrá acceder' +
-        ' a esta pantalla desde el menú de la matriz principal o desde cu' +
-        'alquiera de los otros '
-      
-        'accesos en las diferentes pantallas del programa, el programa ca' +
-        'rgará automáticamente los textos guardados en el informe corresp' +
-        'ondiente y '
-      
-        'toda la información allí consignada desde cada una de las pantal' +
-        'las que ofrecen la posibilidad de '#39'Realizar informe'#39'.'
-      ''
-      
-        'Desde esta pantalla podrá acceder a '#39'Informes a color'#39' para desd' +
-        'e la pestaña de '#39'Bases de datos'#39' añadir otra información relevan' +
-        'te no añadida al '
-      
-        'informe maestro en la pantalla de la matriz principal.  Tenga en' +
-        ' cuenta que si no ha realizado el test la información NO corresp' +
-        'onderá a la visita '
-      'en curso.'
-      ''
-      
-        'El botón '#39'Guardar informe en formato '#39'RTF'#39' guardará el informe e' +
-        'n tal formato.  Cualquiera de los programas instalados en el ord' +
-        'enador '
-      
-        'compatibles con tal formato se ejecutará (tomará algunos segundo' +
-        's), y guardará el informe en C:\gENiO iOS\Program.'
-      ''
-      
-        'El botón '#39'Guardar informe en formato '#39'PDF'#39' guardará el informe e' +
-        'n tal formato.  Cualquiera de los programas instalados en el ord' +
-        'enador '
-      
-        'compatibles con tal formato se ejecutará (tomará algunos segundo' +
-        's), y guardará el informe en C:\gENiO iOS\Program.'
-      ''
-      
-        'Le sugerimos una vez esté en el programa externo que ha guardado' +
-        ' el informe desde allí imprimirlo o cambiarle la ruta o carpeta ' +
-        '(Guardar '
-      
-        'Como), y guardarlo allí, ya que cada nuevo test a la misma visit' +
-        'a sobre-escribirá el archivo guardado en la ruta C:\gENiO iOS\Pr' +
-        'ogram'#39'.'
-      ''
-      
-        'Para añadir al informe la fecha de la siguiente visita deberá ca' +
-        'mbiarla en el cajetín adecuado y pulsar sobre '#39'Añadir fecha de s' +
-        'iguiente visita'#39'.'
-      ''
-      
-        'Puede en el cajetín '#39'Objetivo de la visita'#39' editar o añadir más ' +
-        'datos y a continuación pulsar sobre '#39'Añadir objetivo de la visit' +
-        'a'#39' para incluír esa '
-      'información el en informe.'
-      ''
-      
-        'Puede cambiar el nombre que aparece en el cajetín del nombre del' +
-        ' terapeuta.  Por defecto el programa carga el nombre con el cual' +
-        ' se ha '
-      
-        'registrado la licencia del programa.  Si decide cambiar el nombr' +
-        'e deberá hacerlo en el cajetín apropiado y a continuación pulsar' +
-        ' sobre '#39'Editar '
-      'nombre del terapeuta'#39'.')
-    ParentFont = False
-    ScrollBars = ssVertical
-    TabOrder = 2
-    Visible = False
-    OnDblClick = Memo1DblClick
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = 'txt'
@@ -1834,7 +1701,6 @@ object Sysreport: TSysreport
       end
       object Ayuda1: TMenuItem
         Caption = 'Ayuda'
-        OnClick = Ayuda1Click
       end
       object Close1: TMenuItem
         Caption = '&Cerrar'
@@ -2354,7 +2220,7 @@ object Sysreport: TSysreport
   object PdfDoc1: TPdfDoc
     AutoConnect = False
     ConnectKind = ckRunningOrNew
-    Left = 760
+    Left = 764
     Top = 32
   end
 end

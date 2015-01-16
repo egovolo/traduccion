@@ -44,24 +44,12 @@ type
     Button7: TButton;
     LFMinima: TLabel;
     LFMaxima: TLabel;
-    RadioButton8: TRadioButton;
-    RadioButton9: TRadioButton;
-    RadioButton10: TRadioButton;
-    RadioButton11: TRadioButton;
-    RadioButton12: TRadioButton;
-    RadioButton13: TRadioButton;
-    RadioButton14: TRadioButton;
-    RadioButton15: TRadioButton;
-    RadioButton16: TRadioButton;
-    RadioButton17: TRadioButton;
     Button12: TButton;
     Button15: TButton;
     Panel5: TPanel;
     Button17: TButton;
     Label27: TLabel;
-    PDesarrollo: TPanel;
     Label28: TLabel;
-    label40: TLabel;
     Label29: TLabel;
     Label30: TLabel;
     Label31: TLabel;
@@ -81,8 +69,6 @@ type
     Edit6: TEdit;
     Label41: TLabel;
     Label42: TLabel;
-    Label43: TLabel;
-    Label44: TLabel;
     Label45: TLabel;
     Button21: TButton;
     Panel8: TPanel;
@@ -150,7 +136,6 @@ type
     ScrollBar2: TScrollBar;
     ScrollBar3: TScrollBar;
     Button27: TButton;
-    Panel11: TPanel;
     Button28: TButton;
     Label88: TLabel;
     Label89: TLabel;
@@ -193,9 +178,6 @@ type
     Edit14: TEdit;
     Label122: TLabel;
     Label123: TLabel;
-    Panel12: TPanel;
-    Memo1: TMemo;
-    Button39: TButton;
     Label124: TLabel;
     Label125: TLabel;
     Button43: TButton;
@@ -210,7 +192,6 @@ type
     Panel15: TPanel;
     Label138: TLabel;
     Label139: TLabel;
-    Memo2: TMemo;
     Label153: TLabel;
     Label154: TLabel;
     Button49: TButton;
@@ -238,16 +219,6 @@ type
     LFSelye: TLabel;
     Label166: TLabel;
     CheckBox21: TCheckBox;
-    Memo3: TMemo;
-    CheckBox22: TCheckBox;
-    Label168: TLabel;
-    CheckBox23: TCheckBox;
-    CheckBox24: TCheckBox;
-    CheckBox25: TCheckBox;
-    CheckBox26: TCheckBox;
-    ProgressBar8: TProgressBar;
-    Edit18: TEdit;
-    Label169: TLabel;
     Label170: TLabel;
     Label171: TLabel;
     Label172: TLabel;
@@ -399,7 +370,6 @@ type
     Label334: TLabel;
     Label335: TLabel;
     Label336: TLabel;
-    Bevel10: TBevel;
     Button105: TButton;
     Label15: TLabel;
     Label295: TLabel;
@@ -445,7 +415,6 @@ type
     Label400: TLabel;
     Label402: TLabel;
     Label403: TLabel;
-    Button73: TButton;
     Label9: TLabel;
     Panel28: TPanel;
     Button112: TButton;
@@ -457,7 +426,6 @@ type
     Time_Crono: TTimer;
     Query11: TQuery;
     Query1: TTable;
-    Label19: TLabel;
     Label84: TLabel;
     Label87: TLabel;
     Label174: TLabel;
@@ -573,7 +541,6 @@ type
     Edit27: TEdit;
     Edit28: TEdit;
     Panel26: TPanel;
-    Panel32: TPanel;
     Panel33: TPanel;
     Panel34: TPanel;
     Panel35: TPanel;
@@ -587,7 +554,6 @@ type
     Button84: TButton;
     Label97: TLabel;
     LRectificado: TLabel;
-    Label14: TLabel;
     Panel13: TPanel;
     Label237: TLabel;
     Label238: TLabel;
@@ -899,7 +865,6 @@ type
     Label233: TLabel;
     Label239: TLabel;
     Label290: TLabel;
-    Label291: TLabel;
     Label292: TLabel;
     CBTerapiaExtendida: TCheckBox;
     CBAutomatico: TCheckBox;
@@ -926,14 +891,10 @@ type
     Shape6: TShape;
     Label293: TLabel;
     BEspiritus: TButton;
-    Label80: TLabel;
-    Memo4: TMemo;
-    Label210: TLabel;
     Panel10: TPanel;
     GProgreso: TGauge;
     PTiempoEstimado: TPanel;
     Label85: TLabel;
-    Panel14: TPanel;
     Label20: TLabel;
     Label118: TLabel;
     Label211: TLabel;
@@ -1096,22 +1057,48 @@ type
     BVTYin: TButton;
     BVTYang: TButton;
     BVGovernador: TButton;
+    PBasesDeDatos: TPanel;
+    LBTerapias: TListBox;
+    BTerapias: TButton;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAfirmaciones: TListBox;
+    BAfirmaciones: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBAgendar: TListBox;
+    BAgenda: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    LRepositorio: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label19: TLabel;
+    Label40: TLabel;
+    Label43: TLabel;
+    Label44: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Edit3KeyPress(Sender: TObject; var Key: Char);
-    procedure RadioButton8Click(Sender: TObject);
-    procedure RadioButton9Click(Sender: TObject);
-    procedure RadioButton10Click(Sender: TObject);
-    procedure RadioButton11Click(Sender: TObject);
-    procedure RadioButton12Click(Sender: TObject);
-    procedure RadioButton13Click(Sender: TObject);
-    procedure RadioButton14Click(Sender: TObject);
-    procedure RadioButton15Click(Sender: TObject);
-    procedure RadioButton16Click(Sender: TObject);
-    procedure RadioButton17Click(Sender: TObject);
     procedure RadioButton31Click(Sender: TObject);
     procedure RadioButton41Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
@@ -1137,7 +1124,6 @@ type
     procedure RadioButton2Click(Sender: TObject);
     procedure RadioButton3Click(Sender: TObject);
     procedure RadioButton4Click(Sender: TObject);
-    procedure Panel11DblClick(Sender: TObject);
     procedure Button28Click(Sender: TObject);
     procedure Button29Click(Sender: TObject);
     procedure ScrollBar1Exit(Sender: TObject);
@@ -1151,8 +1137,6 @@ type
     procedure RadioButton99Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormActivate(Sender: TObject);
-    procedure Button39Click(Sender: TObject);
-    procedure Memo1Change(Sender: TObject);
     procedure Button43Click(Sender: TObject);
     procedure Button44Click(Sender: TObject);
     procedure Panel13DblClick(Sender: TObject);
@@ -1161,33 +1145,23 @@ type
     procedure Button49Click(Sender: TObject);
     procedure Panel15DblClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure Memo2Change(Sender: TObject);
-    procedure Memo2DblClick(Sender: TObject);
     procedure Button51Click(Sender: TObject);
     procedure Button54Click(Sender: TObject);
     procedure PDesarrolloClick(Sender: TObject);
     procedure Button58Click(Sender: TObject);
-    procedure Memo3DblClick(Sender: TObject);
-    procedure CheckBox26Click(Sender: TObject);
     procedure CheckBox22Click(Sender: TObject);
-    procedure CheckBox23Click(Sender: TObject);
-    procedure CheckBox24Click(Sender: TObject);
-    procedure CheckBox25Click(Sender: TObject);
-    procedure Edit8Change(Sender: TObject);
     procedure Edit9Change(Sender: TObject);
     procedure Edit10Change(Sender: TObject);
     procedure Edit17Change(Sender: TObject);
     procedure Edit12Change(Sender: TObject);
     procedure Edit11Change(Sender: TObject);
     procedure Button65Click(Sender: TObject);
-    procedure Edit18Change(Sender: TObject);
     procedure Edit11Enter(Sender: TObject);
     procedure Button66Click(Sender: TObject);
     procedure Button67Click(Sender: TObject);
     procedure Button68Click(Sender: TObject);
     procedure Panel17DblClick(Sender: TObject);
     procedure Button70Click(Sender: TObject);
-    procedure Button73Click(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure Button75Click(Sender: TObject);
     procedure Panel5DblClick(Sender: TObject);
@@ -1335,7 +1309,6 @@ type
     procedure Panel26Click(Sender: TObject);
     procedure Panel27Click(Sender: TObject);
     procedure Panel31Click(Sender: TObject);
-    procedure Panel32Click(Sender: TObject);
     procedure Panel33Click(Sender: TObject);
     procedure Panel34Click(Sender: TObject);
     procedure Panel35Click(Sender: TObject);
@@ -1345,7 +1318,6 @@ type
     procedure Panel39Click(Sender: TObject);
     procedure Panel40Click(Sender: TObject);
     procedure Panel41Click(Sender: TObject);
-    procedure Label14Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure IContinuarClick(Sender: TObject);
@@ -1359,7 +1331,6 @@ type
     procedure Label233Click(Sender: TObject);
     procedure Label239Click(Sender: TObject);
     procedure Label290Click(Sender: TObject);
-    procedure Label291Click(Sender: TObject);
     procedure Label292Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button20Click(Sender: TObject);
@@ -1375,10 +1346,7 @@ type
     procedure Button31Click(Sender: TObject);
     procedure Button32Click(Sender: TObject);
     procedure BEspiritusClick(Sender: TObject);
-    procedure Label80Click(Sender: TObject);
-    procedure Label210Click(Sender: TObject);
     procedure Label85Click(Sender: TObject);
-    procedure Panel14Click(Sender: TObject);
     procedure Label20Click(Sender: TObject);
     procedure Label118Click(Sender: TObject);
     procedure Edit19Click(Sender: TObject);
@@ -1459,6 +1427,14 @@ type
     procedure BVTYinClick(Sender: TObject);
     procedure BVTYangClick(Sender: TObject);
     procedure BVGovernadorClick(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BCNutricionalesClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure LRepositorioClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -1633,7 +1609,6 @@ autorif:=0;
  If RHDD then
  Begin
    l:=1;
-   Panel11.visible:=false;
 end;
 end;
 
@@ -1648,13 +1623,10 @@ begin
 Reaccion_Irregular();
 Timer2.Enabled:=True;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.progress :=0;
 purt:=10;
 half:=half+1;
-PDesarrollo.caption:='Realizando Rx de Biorresonancia total...';
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
  label147.caption:=inttostr(soc);
  label148.caption:=inttostr(volt);
  label149.caption:=inttostr(amp);
@@ -1770,8 +1742,6 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
  '10000000','11111111');
  GProgreso.progress :=  round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-
-
  trackbar1.position:=random(10);
  trackbar2.position:=random(10);
  label98.caption:=inttostr(random(1000));
@@ -1808,12 +1778,6 @@ GProgreso.Refresh;
  label31.refresh;
  label33.refresh;
 tot23:=volt+amp+resis+proton;
-if (proton<69) and (tot23<>0) then label162.caption:='Reparación de lesiones completada por hoy.';
-if (hydr<65 ) and (tot23<>0) then label162.Caption:='Reparación de lesiones completada por hoy.';
-if (oxid<65 ) and (tot23<>0) then label162.Caption:='Reparación de lesiones completada por hoy.';
-if (79<con)and(con>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
-if (79<cap)and(cap>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
-if (79<ind)and(ind>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
  trackbar1.position:=random(10);
  trackbar2.position:=random(10);
  if con=99 then cancer:=66;
@@ -1838,197 +1802,22 @@ Until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
+if (proton<69) and (tot23<>0) then label162.caption:='Reparación de lesiones completada por hoy.';
+if (hydr<65 ) and (tot23<>0) then label162.Caption:='Reparación de lesiones completada por hoy.';
+if (oxid<65 ) and (tot23<>0) then label162.Caption:='Reparación de lesiones completada por hoy.';
+if (79<con)and(con>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
+if (79<cap)and(cap>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
+if (79<ind)and(ind>91) then label97.caption:=' Se han corregído muchas señales irregulares pero no todas.';
 oeg := Random(5);
 If oeg = 3 Then Espiritus();
 FMain.shaping:=random(105);
 If FMain.shaping>100 Then
 FMain.shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-Fmain.recmain:=Fmain.recmain+1;
 
-oeg:=random(139);
-if oeg=0 then label234.caption:=label234.caption+' Entrelazado con:'+' Pulmones.';
-if oeg=1 then label234.caption:=label234.caption+' Entrelazado con:'+' Piel.';
-if oeg=2 then label234.caption:=label234.caption+' Entrelazado con:'+' Cerebro.';
-if oeg=3 then label234.caption:=label234.caption+' Entrelazado con:'+' Sinus.';
-if oeg=4 then label234.caption:=label234.caption+' Entrelazado con:'+' Estómago.';
-if oeg=5 then label234.caption:=label234.caption+' Entrelazado con:'+' Ojos.';
-if oeg=6 then label234.caption:=label234.caption+' Entrelazado con:'+' Flora.';
-if oeg=7 then label234.caption:=label234.caption+' Entrelazado con:'+' Pulmones.';
-if oeg=8 then label234.caption:=label234.caption+' Entrelazado con:'+' Estómago.';
-if oeg=9 then label234.caption:=label234.caption+' Entrelazado con:'+' Suprarrenales.';
-if oeg=10 then label234.caption:=label234.caption+' Entrelazado con:'+' Sinus.';
-if oeg=11 then label234.caption:=label234.caption+' Entrelazado con:'+' Emociones.';
-if oeg=12 then label234.caption:=label234.caption+' Entrelazado con:'+' Sangre.';
-if oeg=13 then label234.caption:=label234.caption+' Entrelazado con:'+' Sistema linfático.';
-if oeg=14 then label234.caption:=label234.caption+' Entrelazado con:'+' Dentadura.';
-if oeg=15 then label234.caption:=label234.caption+' Entrelazado con:'+' Formación reticular.';
-if oeg=16 then label234.caption:=label234.caption+' Entrelazado con:'+' Médula oblongata.';
-if oeg=17 then label234.caption:=label234.caption+' Entrelazado con:'+' Lóbulo frontal del cerebro.';
-if oeg=18 then label234.caption:=label234.caption+' Entrelazado con:'+' Lóbulo parietal del cerebro.';
-if oeg=19 then label234.caption:=label234.caption+' Entrelazado con:'+' Lóbulo occipital del cerebro.';
-if oeg=20 then label234.caption:=label234.caption+' Entrelazado con:'+' Lóbulo temporal del cerebro.';
-if oeg=21 then label234.caption:=label234.caption+' Entrelazado con:'+' Tiroides.';
-if oeg=22 then label234.caption:=label234.caption+' Entrelazado con:'+' Timo.';
-if oeg=23 then label234.caption:=label234.caption+' Entrelazado con:'+' Médula espinal.';
-if oeg=24 then label234.caption:=label234.caption+' Entrelazado con:'+' Sistema límbico.';
-if oeg=25 then label234.caption:=label234.caption+' Entrelazado con:'+' Circuitos de la memoria.';
-if oeg=26 then label234.caption:=label234.caption+' Entrelazado con:'+' Hipotálamo.';
-if oeg=27 then label234.caption:=label234.caption+' Entrelazado con:'+' Glándula pineal.';
-if oeg=28 then label234.caption:=label234.caption+' Entrelazado con:'+' Glándula pituitaria.';
-if oeg=29 then label234.caption:=label234.caption+' Entrelazado con:'+' Glándula paratiroides.';
-if oeg=30 then label234.caption:=label234.caption+' Entrelazado con:'+' Sangre.';
-if oeg=31 then label234.caption:=label234.caption+' Entrelazado con:'+' Sistema linfático.';
-if oeg=32 then label234.caption:=label234.caption+' Entrelazado con:'+' Dentadura.';
-if oeg=33 then label234.caption:=label234.caption+' Entrelazado con:'+' Pulmones.';
-if oeg=34 then label234.caption:=label234.caption+' Entrelazado con:'+' Piel.';
-if oeg=35 then label234.caption:=label234.caption+' Entrelazado con:'+' Cerebro.';
-if oeg=36 then label234.caption:=label234.caption+' Entrelazado con:'+' Karma.';
-if oeg=37 then label234.caption:=label234.caption+' Entrelazado con:'+' Estómago.';
-if oeg=38 then label234.caption:=label234.caption+' Entrelazado con:'+' Karma.';
-if oeg=39 then label234.caption:=label234.caption+' Entrelazado con:'+' Flora.';
-if oeg=40 then label234.caption:=label234.caption+' Entrelazado con:'+' Formación reticular.';
-if oeg=41 then label234.caption:=label234.caption+' Entrelazado con:'+' Estómago.';
-if oeg=42 then label234.caption:=label234.caption+' Entrelazado con:'+' Suprarrenales.';
-if oeg=43 then label234.caption:=label234.caption+' Entrelazado con:'+' Formación reticular.';
-if oeg=44 then label234.caption:=label234.caption+' Entrelazado con:'+' Emociones.';
-if oeg=45 then label234.caption:=label234.caption+' Entrelazado con:'+' Sangre.';
-if oeg=46 then label234.caption:=label234.caption+' Entrelazado con:'+' Sistema linfático.';
-if oeg=47 then label234.caption:=label234.caption+' Entrelazado con:'+' Digestión / Problema de absorpción.';
-if oeg=48 then label234.caption:=label234.caption+' Deficiencia de '+'sales en tejidos no especificados.';
-if oeg=49 then label234.caption:=label234.caption+' Deficiencia de '+'ácidos grasos en general.';
-if oeg=50 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbón bajo.' ;
-if oeg=51 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbón mediano.' ;
-if oeg=52 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos relacionados con el aracadonico.'  ;
-if oeg=53 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=54 then label234.caption:=label234.caption+' Deficiencia de '+'todos los ácidos grasos.'  ;
-if oeg=55 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbón alto.'  ;
-if oeg=56 then label234.caption:=label234.caption+' Deficiencia de '+'ácidos grasos relacionados con las enzimas.'  ;
-if oeg=57 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina E.' ;
-if oeg=58 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina E1.'  ;
-if oeg=59 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina E2.' ;
-if oeg=60 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina E3.'  ;
-if oeg=0  then label234.caption:=label234.caption+' Deficiencia de '+'vitamina K.' ;
-if oeg=61 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina K1.'  ;
-if oeg=62 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina K3.' ;
-if oeg=63 then label234.caption:=label234.caption+' Deficiencia de '+'todas las vitaminas K.'  ;
-if oeg=64 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina U / Ubiquinona.' ;
-if oeg=65 then label234.caption:=label234.caption+' Deficiencia de '+'CoQ6.' ;
-if oeg=66 then label234.caption:=label234.caption+' Deficiencia de '+'CoQ7.' ;
-if oeg=67 then label234.caption:=label234.caption+' Deficiencia de '+'CoQ8.' ;
-if oeg=68 then label234.caption:=label234.caption+' Deficiencia de '+'CoQ9.'  ;
-if oeg=69 then label234.caption:=label234.caption+' Deficiencia de '+'CoQ10.' ;
-if oeg=70 then label234.caption:=label234.caption+' Deficiencia de '+'todos los CoQ.';
-if oeg=71 then label234.caption:=label234.caption+' Deficiencia de '+'ciclo de la ubiquinona.'  ;
-if oeg=72 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina C.';
-if oeg=73 then label234.caption:=label234.caption+' Deficiencia de '+'bioflavenoides.'  ;
-if oeg=74 then label234.caption:=label234.caption+' Deficiencia de '+'rutina.'  ;
-if oeg=75 then label234.caption:=label234.caption+' Deficiencia de '+'acido hespárico.'  ;
-if oeg=76 then label234.caption:=label234.caption+' Deficiencia de '+'tirosina.'  ;
-if oeg=77 then label234.caption:=label234.caption+' Deficiencia de '+'tirosinasea.' ;
-if oeg=78 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina C ase.' ;
-if oeg=79 then label234.caption:=label234.caption+' Deficiencia de '+'ácido ascórbico.'  ;
-if oeg=80 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina D.' ;
-if oeg=81 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina D1.'  ;
-if oeg=82 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina D2.'  ;
-if oeg=83 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina D3.'  ;
-if oeg=84 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina D4.'  ;
-if oeg=85 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina A.' ;
-if oeg=86 then label234.caption:=label234.caption+' Deficiencia de '+'beta carotina.'  ;
-if oeg=87 then label234.caption:=label234.caption+' Deficiencia de '+'aceite de pescado.'  ;
-if oeg=88 then label234.caption:=label234.caption+' Deficiencia de '+'retinol.'  ;
-if oeg=89 then label234.caption:=label234.caption+' Deficiencia de '+'precursores de la vitamina A.'  ;
-if oeg=90 then label234.caption:=label234.caption+' Deficiencia de '+'vitamina A en cartílagos.' ;
-if oeg=91 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en general.' ;
-if oeg=92 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas para la reducción de la oxidación.';
-if oeg=93 then label234.caption:=label234.caption+' Deficiencia de '+ 'enzimas para la hidrolización de la digestión.';
-if oeg=94 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas para la fosforilización del cerebro.';
-if oeg=95 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas para las descarbonización de los pulmónes.';
-if oeg=96 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas para la regularización de la hidrolización del agua.';
-if oeg=97 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas para la regulación del ADN.' ;
-if oeg=98 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=99 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=100 then label234.caption:=label234.caption+' Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=101 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=102 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=103 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=104 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=105 then label234.caption:=label234.caption+' Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=106 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=107 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos relacionados a los procesos enzimáticos .'  ;
-if oeg=108 then label234.caption:=label234.caption+' Deficiencia de '+'ácidos grasos en general.' ;
-if oeg=109 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones bajos.' ;
-if oeg=110 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones medios.' ;
-if oeg=111 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos relacionados a los aracadónicos .'  ;
-if oeg=112 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de la mielina.'  ;
-if oeg=113 then label234.caption:=label234.caption+' Deficiencia de '+'todos los ácidos grasos relacionados a la desnutrición.' ;
-if oeg=114 then label234.caption:=label234.caption+' Deficiencia de '+'cadenas de ácidos grasos de carbones altos.'  ;
-if oeg=115 then label234.caption:=label234.caption+' Deficiencia de '+'ácidos grasos relacionados con procesos enzimáticos.'  ;
-if oeg=116 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas generales.' ;
-if oeg=117 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en la reducción de la oxidación.';
-if oeg=118 then label234.caption:=label234.caption+' Deficiencia de '+ 'enzimas digestivas, hidrolización.';
-if oeg=119 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en el pensamiento, fosforilación.';
-if oeg=120 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en la respiración decarboxilasa.';
-if oeg=121 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en la regulación del agua hidrolasa.';
-if oeg=122 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas en la regulación del ADN.' ;
-if oeg=123 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-if oeg=124 then label234.caption:=label234.caption+' Deficiencia de '+'enzimas de transmutación en los isómeros de la mutasa.';
-t1:=random(27);
-if t1=1 then label236.Caption:=' Triptofan | Regulación del humor, energía, sanación, sueño.';
-if t1=2  then label236.Caption:='Fenilalanina | Control del dolor, nervios.';
-if t1=3  then label236.Caption:='Alanina | Riñones, nervios.';
-if t1=4  then label236.Caption:='Asparatina | Destrucción de tejidos nerviosos.';
-if t1=5  then label236.Caption:='Cisteina | Utilización de los riñones.';
-if t1= 6 then label236.Caption:='Leucina | Control del humor, emociones.';
-if t1=7  then label236.Caption:='Isoleucina | Control emocional, nervios.';
-if t1=8  then label236.Caption:='Serina | Conversión de los carbohidratos en energía.';
-if t1=9  then label236.Caption:='Triptofan | Serotonina, relajación.';
-if t1=10  then label236.Caption:='Histidina | Anti inflamatorio, anti alérgico.';
-if t1=11  then label236.Caption:='Metionina | Hígado, oxigenación.';
-if t1=12  then label236.Caption:='Lisina | Anti herpes, lesiones, nervios.';
-if t1=13  then label236.Caption:='Treonina | Producción hormonal, energía.';
-if t1=14  then label236.Caption:='Tirosina | Tiroides, pituitaria y función suprarrenal.';
-if t1=15  then label236.Caption:='Valina | Regulación de las células de la sangre.';
-if t1=16  then label236.Caption:='Glutamina | Suple energía al cerebro.';
-if t1=17  then label236.Caption:='Prolina | Desórdenes del sulfúro.';
-if t1=18  then label236.Caption:='Arginina | Nervios, piel.';
-if t1=19  then label236.Caption:='Acido glutamínico | Suple energía al cerebro.';
-if t1=20  then label236.Caption:='Acido aspártico | Destrucción de tejidos nerviosos.';
-if t1=21  then label236.Caption:='Adenosina | Circulación, energía.';
-if t1=22  then label236.Caption:='Uracil | Funciones del ARN.';
-if t1=23  then label236.Caption:='Adenina | Funciones del ADN y ARN.';
-if t1=24  then label236.Caption:='Guanina | Funciones del ADN y ARN.';
-if t1=25  then label236.Caption:='Citosina | Funciones del ADN y ARN.';
-if t1=26  then label236.Caption:='Tiamina | Funciones del ADN y ARN.';
-t1:=random(27);
-if t1=1 then label235.Caption:='Calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=2 then label235.Caption:='Potasio | Fatiga, nervios, energía, corazón.';
-if t1=3 then label235.Caption:='Sodio | Depresión, nervios, fatiga, digestión.';
-if t1=4 then label235.Caption:='Cloro | Balance del pH, afecciones de acidez estomacal, nervios.';
-if t1=5 then label235.Caption:='Magnesio | Regulación suprarrenal, oxígeno, energía.';
-if t1=6 then label235.Caption:='Hierro | Anemia, fatiga, oxígeno.';
-if t1=7 then label235.Caption:='Sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=8 then label235.Caption:='Manganeso | Afecciones nerviosas y musculares.';
-if t1=9 then label235.Caption:='Cromo | Regulación del azúcar, músculos.';
-if t1=10 then label235.Caption:='Zinc | Sistema inmunitario, oxígeno, afecciones metabólicas.';
-if t1=11 then label235.Caption:='Selenio | Desintoxicación, nervios, energía, piel.';
-if t1=12 then label235.Caption:='Yodo | Funciones de la tiroides, energía, metabolismo.';
-if t1=13 then label235.Caption:='Fósforo | Funciones celulares, energía, pensamiento.';
-if t1=14 then label235.Caption:='Boron | Regulación nerviosa, demencia, depresión.';
-if t1=15 then label235.Caption:='Molidebno | Funciones de la tiroides, lactación, fatiga.';
-if t1=16 then label235.Caption:='Silicona | Huesos, piel, nervios.';
-if t1=17 then label235.Caption:='Cobalto | Anemia, sistema inmunitario.';
-if t1=18 then label235.Caption:='Litio | Nervios, pensamiento, energía, funciones del hipotálamo.';
-if t1=19 then label235.Caption:='Germanio | Nervios, oxigenación, piel, energía.';
-if t1=20 then label235.Caption:='Arsénico | Energía, nervios.';
-if t1=21 then label235.Caption:='Antimonio | Piel, desintoxicación, funciones de la flora intestinal.';
-if t1=22 then label235.Caption:='Estaño | Nervios, músculos.';
-if t1=23 then label235.Caption:='Carbón | Energía, regulación de la vida.';
-if t1=24 then label235.Caption:='Vanadio | Funciones del hígado, músculos del corazón.';
-if t1=25 then label235.Caption:='Aluminio | Nervios, regulación del pensamiento.';
-if t1=26 then label235.Caption:='Cobre | Nervios, energía, desintoxicación.';
-PDesarrollo.visible:=false;
-Label97.Caption := '|||';
+Fmain.recmain:=Fmain.recmain+1;
+BOrganosGlandulas.Click;
+BAVM.Click;
+Label97.Caption := '';
 rectificado := 30+random(110);
 if rectificado>100 Then rectificado:=85+Random(15);
 If rectificado>84 Then Begin
@@ -2055,7 +1844,7 @@ Gauge9.Progress := 85+Random(15);
  label33.caption:= inttostr(ind);
 end;
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Timer2.Enabled:=False;
 MyChrono.Stop;
 If rectificado >84 Then Button5.Enabled := False;
@@ -2073,7 +1862,7 @@ procedure Tthera.Button7Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 5+Random(5);
 GProgreso.MaxValue := vtiempo;
@@ -2110,9 +1899,6 @@ autorif:=10;
 label160.caption:=inttostr(total1);
 label160.refresh;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Analizando órganos y glándulas...';
-PDesarrollo.visible :=true;  thera.refresh;
-PDesarrollo.refresh;
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(5000,555,11111,5,1,1,
@@ -2123,7 +1909,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 astr := Random(5);
 if astr=3 then LSuprarrenales2.enabled:=true;
 astr := Random(5);
@@ -2182,7 +1968,6 @@ astr := Random(5);
 if astr=3 then LGusto2.enabled:=true;
 astr := Random(5);
 if astr=3 then LTacto2.enabled:=true;
-PDesarrollo.Visible := False;
 Button105.Visible := True;
 MyChrono.Stop;
 end;
@@ -2196,115 +1981,14 @@ key:=#0;
 end;
 end;
 
-procedure Tthera.RadioButton8Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton8.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton8.Caption := 'Reacción corregída';
-RadioButton8.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton10Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton10.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton10.Caption := 'Reacción corregída';
-RadioButton10.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton11Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton11.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton11.Caption := 'Reacción corregída';
-RadioButton11.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton12Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton12.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton12.Caption := 'Reacción corregída';
-RadioButton12.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton13Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton13.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton13.Caption := 'Reacción corregída';
-RadioButton13.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton14Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton14.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton14.Caption := 'Reacción corregída';
-RadioButton14.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton15Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton15.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton15.Caption := 'Reacción corregída';
-RadioButton15.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton16Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton16.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton16.Caption := 'Reacción corregída';
-RadioButton16.Enabled := False;
-end;
-end;
-
-procedure Tthera.RadioButton17Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton17.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton17.Caption := 'Reacción corregída';
-RadioButton17.Enabled := False;
-end;
-end;
-
 procedure Tthera.LCerebroClick(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LCerebro.Caption+'...';
 Patricia();
 if rectificado>84 then LCerebro.enabled := false;
 end;
 
 procedure Tthera.LCerebeloClick(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LCerebelo.Caption+'...';
 Patricia();
 if rectificado>84 then LCerebelo.enabled := false;
 end;
@@ -2312,77 +1996,66 @@ end;
 
 procedure Tthera.LHipotalamo2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LHipotalamo2.Caption+'...';
 Patricia();
 if rectificado>84 then LHipotalamo2.enabled := false;
 end;
 
 procedure Tthera.LPituitaria2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LPituitaria2.Caption+'...';
 Patricia();
 if rectificado>84 then LPituitaria2.enabled := false;
 end;
 
 procedure Tthera.LPineal2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LPineal2.Caption+'...';
 Patricia();
 if rectificado>84 then LPineal2.enabled := false;
 end;
 
 procedure Tthera.LParatiroides2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LParatiroides2.Caption+'...';
 Patricia();
 if rectificado>84 then LParatiroides2.enabled := false;
 end;
 
 procedure Tthera.LCorazon2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LCorazon2.Caption+'...';
 Patricia();
 if rectificado>84 then LCorazon2.enabled := false;
 end;
 
 procedure Tthera.LPulmon2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LPulmon2.Caption+'...';
 Patricia();
 if rectificado>84 then LPulmon2.enabled := false;
 end;
 
 procedure Tthera.LTimo2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LTimo2.Caption+'...';
 Patricia();
 if rectificado>84 then LTimo2.enabled := false;
 end;
 
 procedure Tthera.LEstomago2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LEstomago2.Caption+'...';
 Patricia();
 if rectificado>84 then LEstomago2.enabled := false;
 end;
 
 procedure Tthera.LHigado2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LHigado2.Caption+'...';
 Patricia();
 if rectificado>84 then LHigado2.enabled := false;
 end;
 
 procedure Tthera.LVBiliar2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LVBiliar2.Caption+'...';
 Patricia();
 if rectificado>84 then LVBiliar2.enabled := false;
 end;
 
 procedure Tthera.RadioButton31Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LVBiliar2.Caption+'...';
 Patricia();
 if rectificado<85 then LVBiliar2.caption := 'Vesícula biliar no equilibrada'
 else
@@ -2392,42 +2065,36 @@ end;
 
 procedure Tthera.LIDelgadoClick(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LIDelgado.Caption+'...';
 Patricia();
 if rectificado>84 then LIDelgado.enabled := false;
 end;
 
 procedure Tthera.LSuprarrenales2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LSuprarrenales2.Caption+'...';
 Patricia();
 if rectificado>84 then LSuprarrenales2.enabled := false;
 end;
 
 procedure Tthera.LGonadas2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LGonadas2.Caption+'...';
 Patricia();
 if rectificado>84 then LGonadas2.enabled := false;
 end;
 
 procedure Tthera.LHCraneales2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LHCraneales2.Caption+'...';
 Patricia();
 if rectificado>84 then LHCraneales2.enabled := false;
 end;
 
 procedure Tthera.LCervicales2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LCervicales2.Caption+'...';
 Patricia();
 if rectificado>84 then LCervicales2.enabled := false;
 end;
 
 procedure Tthera.LTorax2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LTorax2.Caption+'...';
 Patricia();
 if rectificado>84 then LTorax2.enabled := false;
 end;
@@ -2435,14 +2102,12 @@ end;
 
 procedure Tthera.LLumbares2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LLumbares2.Caption+'...';
 Patricia();
 if rectificado>84 then LLumbares2.enabled := false;
 end;
 
 procedure Tthera.RadioButton41Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LSacro2.Caption+'...';
 Patricia();
 if rectificado<85 then LSacro2.caption := 'Sacro no equilibrado'
 else
@@ -2471,7 +2136,7 @@ procedure Tthera.Button17Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 15+Random(15);
 GProgreso.MaxValue := vtiempo;
@@ -2521,10 +2186,6 @@ LTOseo.color:=clwhite;
 LTHematopoyetico.color:=clwhite;
 LTSanguineo.color:=clwhite;
 LTConjuntivo.color:=clwhite;
-
-PDesarrollo.Caption:='Analizando meridianos...';
-PDesarrollo.visible := true;
-PDesarrollo.refresh;  
 button18.enabled := true;
 button21.enabled :=true;
 repeat
@@ -2547,7 +2208,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
 alg:=random(10);
 if alg>5 then label77.visible:=true;
@@ -2899,7 +2560,7 @@ end;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
 If FMain.shaping>100 Then FMain.shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
+
 DM.Info.first;
 DM.Info.Last;
 no := DM.Info.FieldbyName('no').asInteger;
@@ -2910,10 +2571,9 @@ inc(no); DM.Info.Appendrecord([no,nil,label79.caption ]);
 inc(no); DM.Info.Appendrecord([no,nil,label51.caption ]);
 inc(no); DM.Info.Appendrecord([no,nil,label53.caption ]);
 Dm.Info.FlushBuffers;
-PDesarrollo.Visible:=False;
 FMain.shaping:=random(105);
 If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
+
 Button29.Visible:=True;
 Button58.Enabled:=True;
 MyChrono.Stop;
@@ -2933,7 +2593,7 @@ procedure Tthera.Button19Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.progress:=0;
 riskchart.aler:=riskchart.aler+20;
 autoal:=10;
@@ -2941,22 +2601,11 @@ purt:=60;
 if alg=13 then Espiritus();
 alg:=random(20);
 showmessage('Diga a la persona que relaje la respiración, los músculos y reduzca la tensión antes de empezar.');
-label40.caption := 'Reláje la respiración, los músculos y reduzca la tensión.';
-label40.refresh;
 panel7.refresh;
-PDesarrollo.caption:='Realizando terapia de desensibilización alergénica...';
-If CheckBox32.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Liberando fijación mental.';
-If CheckBox33.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Aliviando inflamación.';
-If CheckBox37.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Reduciendo cascada histamínica.';
-If CheckBox34.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Aliviando rojedad.';
-If CheckBox35.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Aliviando estornudos.';
-If CheckBox38.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' | Equilibrando exceso de células mástil.';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(50000,555,65000,5,1,15+alg,
 '11111111','11111111');
     if contin1=10 then   showmessage('Imagine la primera vez que sintió el alergeno...');
-        label40.caption := 'Imagine la primera vez que sintió el alergeno...';
-label40.refresh;
 z := 1;
 Label41.caption := inttostr (random(100));
 label41.refresh;
@@ -2994,8 +2643,7 @@ br10 := inttostr (rb10);
 label42.caption :=floattostr(  rb10);
 label42.refresh;
  if contin1=10 then   showmessage('¿Qué estrés emocional estaba presente entonces?');
- label40.caption:='¿Qué estrés emocional estaba presente entonces?';
-label40.refresh;
+
 z := 1;    panel7.refresh;
 Label41.caption := inttostr (random(100));
 label41.refresh;
@@ -3036,8 +2684,6 @@ br13 := inttostr (rb13);
         ChangingPulses(5555,555,65000,ena,dir,(7+alg),
 '11111111','11111111');
  if contin1=10 then   showmessage('Sienta el estrés, el miedo, la ansiedad, el deseo y el dolor...');
- label40.caption := 'Sienta el estrés, el miedo, la ansiedad, el deseo y el dolor...';
-label40.refresh;
 z := 1;    panel7.refresh;
 Label41.caption := inttostr (random(100));
 label41.refresh;
@@ -3071,9 +2717,8 @@ rb8 :=(random(1000));
         ChangingPulses(6000,555,65000,ena,dir,(17+alg),
 '11111111','11111111');
      if contin1=10 then   showmessage('Deje ir el estrés, el dolor y perdone a lo que le causa estrés...');
-         label40.caption := 'Deje ir el estrés, el dolor y perdone a lo que le causa estrés...';
-label40.refresh;
-    z := 1;    panel7.refresh;
+z := 1;
+panel7.refresh;
 Label41.caption := inttostr (random(100));
 label41.refresh;
 rb8 :=(random(1000));
@@ -3106,8 +2751,6 @@ rb8 :=(random(1000));
         ChangingPulses(3333,555,65000,ena,dir,(17+alg),
 '11111111','llllllll');
      if contin1=10 then   showmessage('Concéntre su mente en el área de la alergia...');
-         label40.caption := 'Concéntre su mente en el área de la alergia...';
-label40.refresh;
     z := 1;
     panel7.refresh;
 Label41.caption := inttostr (random(100));
@@ -3141,8 +2784,6 @@ rb8 :=(random(1000));
         ChangingPulses(7777,555,65000,ena,dir,(17+alg),
 'llllllll','llllllll');
 if contin1=10 then   showmessage('Deje ir el estrés pasado y presente del área del síntoma...');
-    label40.caption := 'Deje ir el estrés pasado del área del síntoma...';
-label40.refresh;
 z := 1;
 panel7.refresh;
 Label41.caption := inttostr (random(100));
@@ -3177,12 +2818,8 @@ rb8 :=(random(1000));
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
         ChangingPulses(44444,555,65000,ena,dir,(17+alg),
 'llllllll','llllllll');
-     label40.caption :='                                                                              ';
-label40.refresh;
 z:=10;
 if contin1=10 then showmessage('Mentalmete libérese del miedo, la culpa, el dolor, el estrés y toda emoción negativa...');
- label40.caption := 'Mentalmete libérese del miedo, la culpa, el dolor, el estrés y toda emoción negativa...';
-label40.refresh;
 z := 1;
 panel7.refresh;
 Label41.caption := inttostr (random(100));
@@ -3213,14 +2850,8 @@ rb8 :=(random(1000));
     SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
         ChangingPulses(8888,555,65000,ena,dir,(17+alg),
 'llllllll','llllllll');
-label40.caption:='Repíta este ejercicio en casa y tome el alersode recomendado por su terapeuta.';
-label40.refresh;
     Alg:=random(10);
     if alg >8 then Espiritus();
-label43.caption :='Si no hay efecto o reconocimiento repita la terapia en una semana.';
-PDesarrollo.visible:=false;  Fmain.recmain:=Fmain.recmain+1;
-                                                             GProgreso.progress:=95;
-label46.caption :=' No se sugiere más terapia.';
   DM.Info.Open;
   DM.Info.first;
   DM.Info.Last;
@@ -3229,12 +2860,6 @@ label46.caption :=' No se sugiere más terapia.';
           inc(no); DM.Info.Appendrecord([no,nil,'Alersodes: '+edit4.text ]);
          inc(no); DM.Info.Appendrecord([no,nil,'Sarcodes: '+edit5.text]);
          inc(no); DM.Info.Appendrecord([no,nil,'Nosodes: '+edit6.text]);
-
-        ran22:=random(12);
-
-  if   (pn18>1)  or  (cb=6)or (ran22<5) then   SpeachForm.SMessageTalk('Algunas alergias fueron detectadas pero no corregídas totalmente.'+chr(13)+
-                                                        'La terapia se debe repetir dentro de una semana y más veces'+chr(13)+
-                                                        'hasta que se corríja totalmente.');
   Dm.Info.FlushBuffers;
   GProgreso.progress:=100;
   MyChrono.Stop;
@@ -3242,8 +2867,6 @@ end;
 
 procedure Tthera.SpinEdit3Change(Sender: TObject);
 begin
-
-{spinedit3 :=strtoint(max1); }
 max1:=spinedit3.value;
 end;
 
@@ -3279,7 +2902,7 @@ procedure Tthera.Button23Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(60);
@@ -3288,24 +2911,6 @@ GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 Reaccion_Irregular();
 riskchart.emo:=riskchart.emo+20;
-PDesarrollo.Caption:='Realizando terapia de PNL...';
-If RadioButton91.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton91.Caption+'...';
-If RadioButton82.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton82.Caption+'...';
-If RadioButton89.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton89.Caption+'...';
-If RadioButton83.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton83.Caption+'...';
-If RadioButton84.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton84.Caption+'...';
-If RadioButton85.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton85.Caption+'...';
-If RadioButton86.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton86.Caption+'...';
-If RadioButton87.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton87.Caption+'...';
-If RadioButton88.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton88.Caption+'...';
-If RadioButton80.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton80.Caption+'...';
-If RadioButton90.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton90.Caption+'...';
-If RadioButton93.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton93.Caption+'...';
-If RadioButton92.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton92.Caption+'...';
-If RadioButton81.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton81.Caption+'...';
-If RadioButton94.Checked=True Then PDesarrollo.Caption:=PDesarrollo.Caption+' con enfasis en '+RadioButton94.Caption+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 label81.caption:=inttostr(random(9999));
 label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
@@ -3333,8 +2938,6 @@ if oeg=10 then label126.caption:='Deficiencia o exceso nutricional.';
 if oeg=11 then label126.caption:='Ataques psíquicos.';
 if oeg=12 then label126.caption:='Repercusiones kármicas.';
 if oeg=13 then label126.caption:='Opresión espiritual.';
-if alg=13 then PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 if ed<6 then begin
 alg:=3+random(10);
 alg:=random(12)+2;
@@ -3448,8 +3051,6 @@ label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
 Label9.Caption := 'Reláje la respiración, los músculos y reduzca la tensión.';
 panel9.refresh;
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;   PDesarrollo.refresh;
 ena:=random(100)+1;
 dir:=random(100)+1;
 rb9 := random (1000)+5000;
@@ -3554,56 +3155,13 @@ label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
 Label9.Caption:='Hable con la persona sobre el proceso de sanación y desarrollo.';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
 panel9.refresh;
 label81.caption:=inttostr(random(9999));
 label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
 alg:=random(10);
-if alg >7 then PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-oeg:=random(11);
-label126.caption:='Estrés emocional.';
-if oeg=1 then label126.caption:='Estrés.';
-if oeg=2 then label126.caption:='Falta de conciencia.';
-if oeg=3 then label126.caption:='Factores mentales.';
-if oeg=4 then label126.caption:='Factores hereditarios.';
-if oeg=5 then label126.caption:='Alergias.';
-if oeg=6 then label126.caption:='Toxinas.';
-if oeg=7 then label126.caption:='Patógenos.';
-if oeg=8 then label126.caption:='Energías perversas.';
-if oeg=9 then label126.caption:='Trauma o lesión.';
-if oeg=10 then label126.caption:='Deficiencia o exceso nutricional.';
-if pn2>2 then label126.caption:='Medicaciones alopáticas.';
-if pn3>10 then label126.caption:='Tabaquismo.';
-if pn8>5 then label126.caption:='Uso de azúcar refinada.';
-if pn12>10 then label126.caption:='Toxicidad.';
-if pn7>9 then label126.caption:='Estrés.';
-if pn5>8 then label126.caption:='Metales pesados.';
-if pn4>0 then label126.caption:='Supresión alopática.';
-label127.caption:='Homeopatía clásica.';
-oeg:=random(16);
-if oeg=1 then label127.caption:='Reducción del estrés.';
-if oeg=2 then label127.caption:='Falta de conciencia, educación.';
-if oeg=3 then label127.caption:='Factores mentales o imponderables.';
-if oeg=4 then label127.caption:='Homeopatía metabólica o genetica.';
-if oeg=5 then label127.caption:='Alersodes.';
-if oeg=6 then label127.caption:='Isodes o xenobióticos.';
-if oeg=7 then label127.caption:='Nosodes para patógenos.';
-if oeg=9 then label127.caption:='Terapia nutricional.';
-if oeg=8 then label127.caption:='Imponderables para energías perversas.';
-if oeg=9 then label127.caption:='Fitoterapia.';
-if oeg=10 then label127.caption:='Terapia a sarcodes.';
-if oeg>10 then label127.caption:='Combinaciones homeopáticas.';
-if oeg=13 then label127.caption:=' release Karmic repercussion';
-if oeg=16 then label127.caption:='Trate trauma o lesión antígüos.';
-if pn2>2 then label127.caption:='Medicaciones alopáticas.';
-if pn3>30 then label127.caption:='La persona debe dejar de fumar.';
-if pn8>10 then label127.caption:='Terapia para adicciones.';
-if pn12>10 then label127.caption:='Toxicidad.';
-if pn7>11 then label127.caption:='Reducción del estrés.';
-if pn5>18 then label127.caption:='Desintoxicación de metales pesados.';
-if pn4>2 then label127.caption:='Dificultad con la supresión de medicaciones alopáticas.';
+BCausas.Click;
+BToxinas.Click;
 oeg:=random(15);
 oeg:=2771+(random(22));
   DM.Conscida.IndexName := '';
@@ -3619,8 +3177,6 @@ oeg1:=(random(3850));
        label81.caption:=inttostr(random(9999));
   label82.caption:=inttostr (random(9999));
    label83.caption:=inttostr(random(9999));
-if pn20>0 then PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 ed:=random(20);
 Label9.Caption:='Deje ir toda fijación y deseo, de espacio a la moderación y a la flexibilidad.  Pulse ''OK'' cuando se esté listo/a.';
 panel9.refresh;
@@ -3639,7 +3195,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
   DM.Info.Open;
   DM.Info.first;
@@ -3666,64 +3222,9 @@ alg:=random(10);
 label81.caption:=inttostr(random(9999));
 label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
-oeg:=random(21);
-label126.caption:='Estrés emocional.';
-if oeg<2 then label126.caption:='Estrés.';
-if oeg=2 then label126.caption:='Falta de conciencia.';
-if oeg=3 then label126.caption:='Factores mentales.';
-if oeg=4 then label126.caption:='Factores hereditarios.';
-if oeg=5 then label126.caption:='Alergias.';
-if oeg=6 then label126.caption:='Toxinas.';
-if oeg=7 then label126.caption:='Patógenos.';
-if oeg=8 then label126.caption:='Energías perversas.';
-if oeg=9 then label126.caption:='Trauma o lesión.';
-if oeg=10 then label126.caption:='Deficiencia o exceso nutricional.';
-if oeg=11 then label126.caption:='Ataques psíquicos.';
-if oeg=12 then label126.caption:='Repercusiones kármicas.';
-if oeg=13 then label126.caption:='Opresión espiritual.';
-if oeg=14 then label126.caption:='Medicaciones alopáticas.';
-if oeg=15 then label126.caption:='Tabaquismo.';
-if oeg=16 then label126.caption:='Uso de azúcar refinada.';
-if oeg=17 then label126.caption:='Toxicidad.';
-if oeg=18 then label126.caption:='Estrés.';
-if oeg=19 then label126.caption:='Metales pesados.';
-if oeg>19 then label126.caption:='Supresión alopática.';
-label127.caption:='Homeopatía clásica.';
-oeg:=random(19);
-if oeg<2 then label127.caption:='Reducción del estrés.';
-if oeg=2 then label127.caption:='Falta de conciencia, educación.';
-if oeg=3 then label127.caption:='Factores mentales o imponderables.';
-if oeg=4 then label127.caption:='Homeopatía metabólica o genetica.';
-if oeg=5 then label127.caption:='Alersodes.';
-if oeg=6 then label127.caption:='Isodes o xenobióticos.';
-if oeg=7 then label127.caption:='Nosodes para patógenos.';
-if oeg=9 then label127.caption:='Terapia nutricional.';
-if oeg=8 then label127.caption:='Imponderables para energías perversas.';
-if oeg=9 then label127.caption:='Fitoterapia.';
-if oeg=10 then label127.caption:='Terapia a sarcodes.';
-if oeg>11 then label127.caption:='Combinaciones homeopáticas.';
-if oeg>12 then label127.caption:='Medicaciones alopáticas.';
-if oeg>13 then label127.caption:='La persona debe dejar de fumar.';
-if oeg>14 then label127.caption:='Terapia para adicciones.';
-if oeg>15 then label127.caption:='Toxicidad.';
-if oeg>16 then label127.caption:='Reducción del estrés.';
-if oeg>17 then label127.caption:='Desintoxicación de metales pesados.';
-if oeg>17 then label127.caption:='Dificultad con la supresión de medicaciones alopáticas.';
-oeg:=random(14);
-label101.caption:='Estrés emocional.';
-if oeg<2 then label101.caption:='Estrés.';
-if oeg=2 then label101.caption:='Falta de conciencia.';
-if oeg=3 then label101.caption:='Factores mentales.';
-if oeg=4 then label101.caption:='Factores hereditarios.';
-if oeg=5 then label101.caption:='Alergias.';
-if oeg=6 then label101.caption:='Toxinas.';
-if oeg=7 then label101.caption:='Patógenos.';
-if oeg=8 then label101.caption:='Energías perversas.';
-if oeg=9 then label101.caption:='Trauma o lesión.';
-if oeg=10 then label101.caption:='Deficiencia o exceso nutricional.';
-if oeg=11 then label101.caption:='Ataques psíquicos.';
-if oeg=12 then label101.caption:='Repercusiones kármicas.';
-if oeg>12 then label101.caption:='Opresión espiritual.';
+BCausas.Click;
+BToxinas.Click;
+BENegativas.Click;
  label99.caption:='----';
 if oeg>6 then  begin
 label99.caption:='Múltiples ondas cerebrales presentes.';
@@ -3740,16 +3241,11 @@ Label128.Caption:=DM.conscida.Fieldbyname('Name').AsString;
 DM.conscida.FindKey([oeg]);
 Label129.Caption:=DM.conscida.Fieldbyname('Name').AsString;
 panel8.visible:=false;
-PDesarrollo.visible:=false;
-//showmessage('Hable con la persona sobre el proceso de sanación y desarrollo.');
 panel9.refresh;
 label81.caption:=inttostr(random(9999));
 label82.caption:=inttostr (random(9999));
 label83.caption:=inttostr(random(9999));
-//if (ran22<6) then Showmessage( 'Si tiene tiempo, vaya al panel de EEG y ECG.');
 panel9.refresh;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 GProgreso.progress:=100;
 Label9.Caption:='Hable con la persona sobre el proceso de sanación y desarrollo.';
 panel9.refresh;
@@ -3763,7 +3259,6 @@ edit11.text:='¿Está siendo totalmente honesto/a consigo mismo/a?: ';
 edit12.text:='¿Qué puede cambiar?  ¿Qué necesita aceptar?: ';
 edit17.text:='¿Tiene Ud. la sabiduría de saber la diferencia?: ';
 panel8.visible:=false;
-PDesarrollo.visible:=false;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Button23.Click;
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -3797,16 +3292,14 @@ MyChrono.Start;
 Timer2.Enabled:=True;
 GProgreso.progress:=0;
 riskchart.emo:=riskchart.emo+20;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
-vtiempo := 30+Random(90);
+vtiempo := 90+Random(30);
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(55555,666,555,5,55+Random(100),4,
+ChangingPulses(55555,666,555,5,55+Random(100),1,
  'llllllll','llllllll');
 GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
@@ -3814,11 +3307,10 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PDesarrollo.visible:=false;
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
- FRecompensa.label79.caption:=inttostr(shaping);
-rectificado := random(150);
+
+rectificado := random(170);
 if rectificado > 100 Then rectificado := 85+Random(15);
 If rectificado>84 Then Begin
 Gauge1.Progress := 85+Random(15);
@@ -3830,12 +3322,12 @@ Gauge6.Progress := 85+Random(15);
 Gauge7.Progress := 85+Random(15);
 Gauge8.Progress := 85+Random(15);
 Gauge9.Progress := 85+Random(15);
+PEspiritus.Visible := False;
 end;
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Timer2.Enabled:=False;
 MyChrono.Stop;
-If rectificado>84 Then PEspiritus.Visible := False;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then BEspiritus.Click;
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
@@ -3851,7 +3343,7 @@ procedure Tthera.Button26Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(60);
@@ -3887,9 +3379,6 @@ PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
  thera.refresh;
 panel15.visible:=true;
 panel15.refresh;
-PDesarrollo.Caption:='Realizando terapia VARHOpH...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;   
 varhop:=10;
 oeg :=random(5);
 repeat
@@ -3982,11 +3471,10 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 rectificado := random(120);
 if rectificado>100 Then rectificado:=85+Random(15);
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
@@ -4026,8 +3514,6 @@ begin
 Reaccion_Irregular;
 MyChrono.Start;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando Biorresonancia general...';
-PDesarrollo.visible:=true;
 LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
@@ -4051,16 +3537,15 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Rectificado := 70+random(40);
 If Rectificado>100 Then Rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(Rectificado);
 If Rectificado>84 Then Button27.Enabled := False;
-PDesarrollo.visible:=false;
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
+
 MyChrono.Stop;
 If (Rectificado<85) and (CBAutomatico.Checked=True) then Button27.Click;
 if (Rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -4085,8 +3570,6 @@ end;
 procedure Tthera.RadioButton3Click(Sender: TObject);
 begin
 l:=0;
-{ Activate Virtual }
-//testForm1.ActivateVirtual1Click(Sender);
 testForm1.MenuState:=3;
 end;
 
@@ -4096,12 +3579,6 @@ l:=1;
 { Activate all }
 testForm1.ActivateAll1Click(Sender);
 testForm1.Menustate:=2;
-end;
-
-procedure Tthera.Panel11DblClick(Sender: TObject);
-begin
-panel11.visible :=false;
-
 end;
 
 procedure Tthera.Button28Click(Sender: TObject);
@@ -4148,14 +3625,11 @@ begin
 Reaccion_Irregular;
 MyChrono.Start;
 GProgreso.progress:=0;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 FMain.shaping:=random(100);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 panel5.refresh;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Rectificando meridianos...';
-PDesarrollo.visible:=true;
-PDesarrollo.Refresh;
 label104.caption:=inttostr(1+random(13));
 label108.caption:=inttostr(1+random(13));
 //label60.caption:=inttostr(1+random(8));
@@ -4195,8 +3669,7 @@ if LTOseo.enabled= true then BTOseo.Click;
 if LTHematopoyetico.enabled= true then BTHematopoyetico.Click;
 if LTSanguineo.enabled= true then BTSanguineo.Click;
 if LTConjuntivo.enabled= true then BTConjuntivo.Click;
-PDesarrollo.Visible:=False;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 MyChrono.Stop;
 End;
 
@@ -4387,31 +3860,14 @@ Rectificado:=0;
 sci:=0;
 end;
 
-procedure Tthera.Label291Click(Sender: TObject);
-begin
-panel12.visible :=true;
-end;
-
-procedure Tthera.Button39Click(Sender: TObject);
-begin
- MyWinexec('write.exe','afirmaciones.doc');
-end;
-
-procedure Tthera.Memo1Change(Sender: TObject);
-begin
-    panel12.visible:=false;
-end;
-
 procedure Tthera.Button43Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Invirtiendo alergeno desde la bandeja de testado...';
 Desensibilizar();
 Button43.Enabled := False;
 end;
 
 procedure Tthera.Button44Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Amplificando alergeno desde la bandeja de testado...';
 Desensibilizar();
 Button44.Enabled := False;
 end;
@@ -4545,7 +4001,6 @@ If (TSelye.Position >88) and (TSelye.Position<92) Then LFSelye.Caption := 'Croni
 If (TSelye.Position >91) and (TSelye.Position<96) Then LFSelye.Caption := 'Cronicidad severa';
 If TSelye.Position >95 Then LFSelye.Caption := 'Cronicidad muy severa';
 LSelye.Caption := Inttostr(TSelye.Position);
-scioworking.button8.visible:=false;
 image5.picture.loadfromfile('blur10.jpg');
 image6.Picture.loadfromfile('cr6.jpg');;
 image9.picture.loadfromfile('Reloj De Organos.jpg');
@@ -4711,33 +4166,7 @@ oeg:=random(10);  if oeg=6 then button91.enabled:=true;
 oeg:=random(10);  if oeg=6 then button90.enabled:=true;
 sci :=0;
 if patform1.ran44>10 then button68.visible:=true;
-{alg :=random(27);
-if alg < 3 then label46.caption := 'Rife';
-if alg = 3 then label46.caption :='VARHOpH';
-if alg = 4 then label46.caption :='Biorresonancia General';
-if alg = 5 then label46.caption :='Rife';
-if alg = 6 then label46.caption :='Biorresonancia fX';
-if alg = 7 then label46.caption :='ADN / Mejorar frecuencias de estructura del ADN';
-if alg = 8 then label46.caption :='ADN / Explorar y corregir fallo energético en ADN';
-if alg = 9 then label46.caption :='ADN / Corrección eléctrica del ADN';
-if alg = 10 then label46.caption :='ADN / Explorar y equilibrar genes';
-if alg = 11 then label46.caption :='ADN / Reparar telómeros del ADN';
-if alg = 12 then label46.caption :='ADN / Corregir y estabilizar ADN fX';
-if alg = 13 then label46.caption :='ADN / Estimular y estabilicar ADN fX';
-if alg = 14 then label46.caption := 'Biorresonancia Rx';
-if alg = 15 then label46.caption := 'Scalar + Armónicos Básicos';
-if alg = 16 then label46.caption :='ADN / Rejuvenecimiento y carcinogénesis';
-if alg = 17 then label46.caption := 'Meridianos, Tejidos e Hiperreactividad';
-if alg = 18 then label46.caption := 'Lesiones';
-if alg = 19 then label46.caption := 'Cuadrantes';
-if alg = 20 then label46.caption := 'Lesiones';
-if alg = 21 then label46.caption := 'Scalar + Armónicos Básicos / Centros Energéticos';
-if alg = 22 then label46.caption := 'Scalar + Armónicos Básicos / Campos Polimórficos + Campos Trivectoriales';
-if alg = 23 then label46.caption := 'Scalar + Armónicos Básicos / Sistemas y Aparatos Orgánicos';
-if alg = 24 then label46.caption := 'Scalar + Armónicos Básicos / Glándulas';
-if alg = 25 then label46.caption := 'Scalar + Armónicos Básicos / Hormonas';
-if alg > 25 then label46.caption :='PNL / Hiperreactividad';
-}
+
 GProgreso.progress:=0;
 max1 := 50000;
 max2 := 50000;
@@ -4848,40 +4277,18 @@ Time_Crono.Enabled:=True;
   Series1.FillSampleValues(300);
   Series6.FillSampleValues(300);
   Series7.FillSampleValues(300);
- //
-//  Timer2.Enabled:=True;
 end
 else
   Time_Crono.Enabled:=True;
-end;
-
-procedure Tthera.Label14Click(Sender: TObject);
-begin
-memo2.visible:=true;
-end;
-
-procedure Tthera.Memo2Change(Sender: TObject);
-begin
-
-memo2.visible:=false;
-
-end;
-
-procedure Tthera.Memo2DblClick(Sender: TObject);
-begin
- memo2.visible:=false;
 end;
 
 procedure Tthera.Button51Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 riskchart.tra:=riskchart.tra+20;
-PDesarrollo.Caption:='Reparando lesiones...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(30);
 GProgreso.MaxValue := vtiempo;
@@ -4897,11 +4304,10 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 rectificado := random(120);
 If rectificado>100 Then rectificado:=85+Random(15);
 LRectificado.Caption := 'Rectificado | '+Inttostr(Rectificado);
@@ -4918,10 +4324,9 @@ end;
 
 procedure Tthera.PDesarrolloClick(Sender: TObject);
 begin
-PDesarrollo.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 rectificado := random(120);
 If rectificado>100 Then rectificado:=85+Random(15);
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
@@ -4951,15 +4356,13 @@ procedure Tthera.Button58Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 15+Random(15);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-PDesarrollo.Caption:='Revisando cuadrantes físicos...';
-PDesarrollo.visible:=true;
 panel5.refresh;
 LSuperiorD.Enabled:=True;
 LSuperiorI.Enabled:=True;
@@ -4967,9 +4370,7 @@ LInferiorD.Enabled:=True;
 LInferiorI.Enabled:=True;
 LCabeza.Enabled:=True;
 LTodos.Enabled:=True;
-//g1:=0;
 panel5.refresh;
-PDesarrollo.refresh;
 qqq:=qqq+1;
 qur:=random(100);
 qul:=random(100);
@@ -4991,15 +4392,10 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
 If FMain.shaping>100 Then FMain.shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-{rectificado := random(120);
-if rectificado>100 then rectificado:=100;
-LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);  }
            mean33:=round((qur+qul+qlr+qll+qh+qo)/5);
            {qur:=mean33-qur;  }
         //    if (ISum =0) and (g1=0) then begin
@@ -5083,56 +4479,9 @@ If (rectificado<85) and (CBAutomatico.Checked=True) Then Button58.Click;
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
-procedure Tthera.Memo3DblClick(Sender: TObject);
-begin
-If fileExists('ed.d11') then memo3.visible:=false;
-tim7:=tim7+1;
-If tim7>=10 then memo3.visible:=false;
-end;
-
-procedure Tthera.CheckBox26Click(Sender: TObject);
-begin
-resp:=resp+1;
-if  resp>4  then begin
-checkbox23.visible:=false;
-checkbox24.visible:=false;
-checkbox25.visible:=false;
-checkbox26.visible:=false;
-checkbox22.visible:=false;
-end;
-end;
-
 procedure Tthera.CheckBox22Click(Sender: TObject);
 begin
 resp:=resp+1;
-end;
-
-procedure Tthera.CheckBox23Click(Sender: TObject);
-begin
-resp:=resp+1;
-end;
-
-procedure Tthera.CheckBox24Click(Sender: TObject);
-begin
-resp:=resp+1;
-end;
-
-procedure Tthera.CheckBox25Click(Sender: TObject);
-begin
-resp:=resp+1;
-end;
-
-procedure Tthera.Panel14Click(Sender: TObject);
-begin
-panel11.visible:=false;
-end;
-
-procedure Tthera.Edit8Change(Sender: TObject);
-begin
-ed:=ed+1;
-dan:=0;
- if ed >5 then button23.enabled:=true;
- testform1.psych21:=edit8.text;
 end;
 
 procedure Tthera.Edit9Change(Sender: TObject);
@@ -5179,74 +4528,50 @@ Reaccion_Irregular();
 TTendencia.Enabled := True;
 Label179.Visible := True;
 If LCorona.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando corona...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LCorona.Enabled := False;
 End;
 If LCeno.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando ceño...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LCeno.Enabled := False;
 End;
 If LGarganta.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando garganta...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LGarganta.Enabled := False;
 End;
 If LTimo.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando timo...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LTimo.Enabled := False;
 End;
 If LCorazon.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando corazón...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LCorazon.Enabled := False;
 End;
 If LPlexo.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando plexo solar...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LPlexo.Enabled := False;
 End;
 If LEstomago.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando estómago...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LEstomago.Enabled := False;
 End;
 If LBase.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando base...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LBase.Enabled := False;
 End;
 If LChakra1.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando extra chakra 1...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LChakra1.Enabled := False;
 End;
 If LChakra2.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando extra chakra 2...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LChakra2.Enabled := False;
 End;
 If LConexion.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando conexión pasada...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LConexion.Enabled := False;
 End;
 If LProyeccion.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando proyección futura...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LProyeccion.Enabled := False;
 end;
@@ -5262,18 +4587,12 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.visible:=false;
+
 Label179.Visible := False;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button65.Enabled=True) then Button65.Click;
 if (CBTerapiaExtendida.checked=true) and (Button65.Enabled=False) then TerapiaExtendida();
-end;
-
-procedure Tthera.Edit18Change(Sender: TObject);
-begin
-if edit18.text='Soy responsable' then memo3.visible:=false;
 end;
 
 procedure Tthera.Edit11Enter(Sender: TObject);
@@ -5300,7 +4619,7 @@ procedure Tthera.Button66Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 15+Random(15);
@@ -5309,9 +4628,6 @@ GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
  button66.enabled := false;
  Reaccion_Irregular();
-PDesarrollo.Caption:='Analizando '+Edit19.Text+' a Meridianos...';
-PDesarrollo.visible := true;
-PDesarrollo.refresh;
 Label172.Visible := False;
 Label173.Visible := False;
 Label11.Visible := True;
@@ -5349,7 +4665,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 t24:=15;
 t25:=10;
 if (rb16<49)and(rb16<61)then begin
@@ -5601,11 +4917,9 @@ if rb16 > 100-t24 then LTConjuntivo.color  :=clfuchsia;
 if rb16 < t25 then LTConjuntivo.color  :=clwhite;
 if rb16<10 then LTConjuntivo.color:=clyellow;
 if rb16<5 then LTConjuntivo.color:=cllime;
-
-PDesarrollo.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 rectificado := 80+random(20);
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
 Button30.Visible := True;
@@ -5772,60 +5086,7 @@ begin
   label254.caption:='Tierra | '+inttostr((testform1.ac3 )*12);
 
 panel17.visible:=true;
-rb16:=random(28);
-if rb16= 1 then label180.caption:='Sangre deficiente o tóxica.';
-if rb16= 2 then label180.caption:='Yin deficiente en vaso de la concepción.';
-if rb16= 3  then label180.caption:='Yin deficiente en vaso gobernador.';
-if rb16=4 then label180.caption:='Qi deficiente en canal ancestral.';
-if rb16= 5 then  label180.caption:='Yang deficiente en canal de la circulación / sexo.';
-if rb16=6  then  label180.caption:='Debilidad de Qi, Yin.';
-if rb16=7  then  label180.caption:='Exceso de viento en canales deficientes.';
-if rb16=8  then label180.caption:='Exceso de viento en canales.';
-if rb16=9  then  label180.caption:='Frío externo ha afectado los canales.';
-if rb16=10  then label180.caption:='Fuego en intestino delgado.';
-if rb16=11  then  label180.caption:='Debilidad en Qi, Yang.';
-if rb16= 12 then label180.caption:='Deficiencia de Qi en intestino delgado.';
-if rb16=13  then label180.caption:='Deficiencia de Qi en intestino grueso.';
-if rb16= 15 then  label180.caption:='Deficiencia en sangre.';
-if rb16= 16 then  label180.caption:='Deficiencia de Yin.';
-if rb16=17  then  label180.caption:='Deficiencia de Yin.';
-if rb16=18  then  label180.caption:='Deficiencia de Qi.';
-if rb16=19  then  label180.caption:='Deficiencia en Yang.';
-if rb16=20  then  label180.caption:='Debilidad de Qi, Yin.';
-if rb16=21  then  label180.caption:='Exceso de calor en canales deficientes.';
-if rb16=22  then label180.caption:='Exceso de calor seco en canales.';
-if rb16=23  then  label180.caption:='Frío interno en canales.';
-if rb16= 24 then label180.caption:='Fuego en corazón.';
-if rb16=25  then  label180.caption:='Qi, Yang débiles.';
-if rb16=26  then label180.caption:='Deficiencia en el Qi del riñón.';
-if rb16=27  then label180.caption:='Deficiencia en el Qi del riñón.';
-rb16:=random(28);
-if rb16= 1 then  label226.caption:='Sangre deficiente o tóxica.';
-if rb16= 2 then  label226.caption:='Yin deficiente en vaso de la concepción.';
-if rb16= 3 then  label228.caption:='Yin deficiente en vaso gobernador.';
-if rb16=4  then  label226.caption:='Qi deficiente en canal ancestral.';
-if rb16= 5 then  label227.caption:='Yang deficiente en canal de la circulación / sexo.';
-if rb16=6  then  label227.caption:='Debilidad de Qi, Yin.';
-if rb16=7  then  label227.caption:='Exceso de viento en canales deficientes.';
-if rb16=8  then label206.caption:='Exceso de viento en canales.';
-if rb16=9  then  label228.caption:='Frío externo ha afectado los canales.';
-if rb16=10  then label228.caption:='Fuego en intestino delgado.';
-if rb16=11  then  label228.caption:='Debilidad en Qi, Yang.';
-if rb16= 12 then label198.caption:='Deficiencia de Qi en intestino delgado.';
-if rb16=13  then label226.caption:='Deficiencia de Qi en intestino grueso.';
-if rb16= 15 then  label226.caption:='Deficiencia en sangre.';
-if rb16= 16 then  label226.caption:='Deficiencia de Yin.';
-if rb16=17  then  label228.caption:='Deficiencia de Yin.';
-if rb16=18  then  label226.caption:='Deficiencia de Qi.';
-if rb16=19  then  label227.caption:='Deficiencia en Yang.';
-if rb16=20  then  label227.caption:='Debilidad de Qi, Yin.';
-if rb16=21  then  label227.caption:='Exceso de calor en canales deficientes.';
-if rb16=22  then label206.caption:='Exceso de calor seco en canales.';
-if rb16=23  then  label228.caption:='Frío interno en canales.';
-if rb16= 24 then label228.caption:='Fuego en corazón.';
-if rb16=25  then  label228.caption:='Debilidad en Qi, Yang.';
-if rb16=26  then label198.caption:='Deficiencia en el Qi del riñón.';
-if rb16=27  then label226.caption:='Deficiencia en el Qi del riñón.';
+BMeridianos.Click;
 if   (patform1.checkbox218.checked=true)  then   label226.caption:='Deficiencia de Yin.';
 if   (patform1.checkbox212.checked=true) then   label226.caption:='Deficiencia de Yin.';
 if   (patform1.checkbox187.checked=true)  then   label226.caption:='Deficiencia de Qi.';
@@ -7934,12 +7195,9 @@ procedure Tthera.Button70Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-PDesarrollo.Caption := 'Reparando todo...';
 if  pat_form.label16.caption='50' then   rb16:=random(9);            {new}
 if  pat_form.label16.caption='10' then    rb16:=random(5);            {old}
-    PDesarrollo.visible:=true;
-    PDesarrollo.refresh;
-    LRectificado.Caption := 'Rectificado |';
+    LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 60+Random(30);
@@ -7956,7 +7214,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  if rb16>3 then label180.caption:='000';
  if rb16>3 then label181.caption:='000';
  if rb16>3 then label182.caption:='000';
@@ -7982,10 +7240,9 @@ PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
  if rb16>3 then label207.caption:='000';
  if rb16>3 then label208.caption:='000';
  if rb16>3 then label209.caption:='000';
-PDesarrollo.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 rectificado := 70+random(50);
 If rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
@@ -8029,23 +7286,8 @@ Label118.enabled:=false;
  if  label207.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label207.caption ]); end;
  if  label208.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label208.caption ]); end;
  if  label209.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label209.caption ]); end;
- if  label210.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label210.caption ]); end;
  if  label211.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label211.caption ]); end;
  if  label212.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label212.caption ]); end;
-{ if  label213.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label213.caption ]); end;
- if  label214.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label214.caption ]); end;
- if  label215.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label215.caption ]); end;
- if  label216.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label216.caption ]); end;
- if  label217.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label217.caption ]); end;
- if  label218.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label218.caption ]); end;
- if  label219.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label219.caption ]); end;
- if  label220.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label220.caption ]); end;
- if  label221.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label221.caption ]); end;
- if  label222.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label222.caption ]); end;
- if  label223.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label223.caption ]); end;
- if  label224.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label224.caption ]); end;
- if  label225.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label225.caption ]); end;
- if  label226.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label223.caption ]); end; }
  if  label227.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label224.caption ]); end;
  if  label228.caption<>'000' then  begin inc(no); DM.Info.Appendrecord([no,nil,label225.caption ]); end;
      Inc(no);
@@ -8057,40 +7299,8 @@ Label118.enabled:=false;
   ShowMessage('El informe ha sido cargado.');
 end;
 
-procedure Tthera.Button73Click(Sender: TObject);
-begin
- MyWinexec('write.exe','como_redactar_afirmaciones.doc');
-end;
-
 procedure Tthera.FormHide(Sender: TObject);
 begin
-{ss33:=random(10);
-if ss33=5 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+': Dale las gracias al ser delante de tí por brindarte la oportunidad de ayudarlo.');
-
-   if (passworddlg.artif>80) and (passworddlg.artif<111) then begin
-ss33:=random(10);
-if ss33=5 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+': Dale las gracias al ser delante de tí por brindarte la oportunidad de ayudarlo.');
-   end;
-   if (passworddlg.artif>75)  then begin
-ss33:=random(100);
-if ss33=55 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+': El módulo de ''inteligencia artificial'' se está adaptando a tu uso.');
-   end;
-      if (passworddlg.artif>40)  and (passworddlg.artif<100) then begin
-ss33:=random(100);
-if ss33=55 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+': Dale las gracias al ser delante de tí por brindarte la oportunidad de ayudarlo.');
-   end;
-     if (passworddlg.artif>75)  then begin
-ss33:=random(300);
-if ss33=55 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+'Usa los programas de ''Doctor Virtual'' más a menudo.');
-   end;
-     if (passworddlg.artif>75)  then begin
-ss33:=random(300);
-if ss33=55 then SpeachForm.SMessageTalk((Testform1.Label254.Caption)+': Solo quería saludarte porque me pareció que necesitabas un amigo.');
-   end;
-     if (passworddlg.artif>175)  then begin
-ss33:=random(100);
-//if ss33=55 then SpeachForm.SMessageTalk((passworddlg.ownname)+': Hola, soy tu ''gENIO'', me gusta trabajar contígo, así que no solo cuides de tus visitas, también cuida de tí.');
-   end;  }
 if purt>1 then begin
 sci:=random(9);
  calb55:=60;
@@ -8100,7 +7310,6 @@ end;
 
 procedure Tthera.Button75Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Cargando alergias desde informe...';
 Desensibilizar();
 Showmessage('Todas las alergias del informe han sido cargadas.');
 edit4.text:='Introducir todas las alergias conocidas: Todas las alergias del informe han sido cargadas.';
@@ -8537,21 +7746,18 @@ end;
 
 procedure Tthera.Button91Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Reparando desorden de vitalidad celular...';
 Enfoque();
 button91.enabled:=false;
 end;
 
 procedure Tthera.Button90Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Reparando fase discordante presente...';
 Enfoque();
 button90.enabled:=false;
 end;
 
 procedure Tthera.Button92Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Reparando estrés emocional > imbalance eléctrico...';
 Enfoque();
 button92.enabled:=false;
 end;
@@ -8574,113 +7780,74 @@ Reaccion_Irregular();
 TTendencia.Enabled := True;
 Label179.Visible := True;
 If LADigestivo.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Aparato Digestivo...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LADigestivo.Enabled := False;
 End;
 If LARespiratorio.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LARespiratorio.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LARespiratorio.Enabled := False;
 End;
 If LACirculatorio.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LACirculatorio.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LACirculatorio.Enabled := False;
 End;
 If LSCardiovascular.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSCardiovascular.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSCardiovascular.Enabled := False;
 End;
 If LSLinfatico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSLinfatico.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSLinfatico.Enabled := False;
 End;
 If LAGenital.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LAGenital.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAGenital.Enabled := False;
 End;
 If LSEndocrino.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSEndocrino.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSEndocrino.Enabled := False;
 End;
 If LAExcretor.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LAExcretor.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAExcretor.Enabled := False;
 End;
 If LSNervioso.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSNervioso.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSNervioso.Enabled := False;
 End;
 If LSSensorial.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSSensorial.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSSensorial.Enabled := False;
 End;
 If LAFonador.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LAFonador.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAFonador.Enabled := False;
 end;
-
 If LALocomotor.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LALocomotor.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LALocomotor.Enabled := False;
 End;
 If LSEsqueletico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSEsqueletico.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSEsqueletico.Enabled := False;
 end;
-
 If LSMuscular.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSMuscular.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSMuscular.Enabled := False;
 End;
 If LSArticular.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSArticular.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSArticular.Enabled := False;
 end;
-
 If LSInmunitario.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSInmunitario.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSInmunitario.Enabled := False;
 End;
 If LAEstogmatico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LAEstogmatico.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAEstogmatico.Enabled := False;
 end;
 If LSIntegumentario.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando '+LSIntegumentario.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LSIntegumentario.Enabled := False;
 end;
@@ -8699,8 +7866,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.visible:=false;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button94.Enabled=True) then Button94.Click;
@@ -8714,7 +7880,6 @@ end;
 
 procedure Tthera.Button95Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Reparando disfunción inmune de auto agresividad...';
 Enfoque();
 button95.enabled:=false;
 end;
@@ -8727,56 +7892,38 @@ Reaccion_Irregular();
 TTendencia.Enabled := True;
 Label179.Visible := True;
 If LDivino.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Divino o Adico...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LDivino.Enabled := False;
 End;
 If LMonadico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Monádico...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LMonadico.Enabled := False;
 End;
 If LAtmico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Atmico o Nirvánico...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAtmico.Enabled := False;
 End;
 If LBudhico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Búdhico o Intuicional...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LBudhico.Enabled := False;
 End;
 If LMConcreto.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Mental Concreto...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LMConcreto.Enabled := False;
 End;
 If LMAbstracto.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Mental Abstracto...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LMAbstracto.Enabled := False;
 End;
 If LAED.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Astral, Emocional, Deseos...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LAED.Enabled := False;
 End;
 If LFSolido.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Físico: Sólido, Líquido, Gaseoso...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LFSolido.Enabled := False;
 End;
 If LFEterico.Enabled = True Then Begin
-PDesarrollo.Caption:='Testando y equilibrando Campo Polifórmico Físico: Etérico, SuperEtérico, Subatómico, Atómico...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LFEterico.Enabled := False;
 End;
@@ -8790,8 +7937,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.visible:=false;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button96.Enabled=True) then Button96.Click;
@@ -8805,8 +7951,6 @@ MyChrono.Start;
 Reaccion_Irregular();
 TTendencia.Enabled := True;
 Label179.Visible := True;
-PDesarrollo.Caption := 'Estimulando Conciencia + Funciones Psicológicas...';
-PDesarrollo.Visible := True;
 Candy();
 If Rectificado>84 Then BConciencia.Enabled := False;
 TTendencia.Enabled := False;
@@ -8814,8 +7958,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.Visible := False;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (BConciencia.Enabled=True) then BConciencia.Click;
@@ -8909,8 +8052,6 @@ begin
 Reaccion_Irregular;
 MyChrono.Start;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Disipando segunda onda cerebral detectada...';
-PDesarrollo.visible:=true;
 LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
@@ -8928,16 +8069,15 @@ Until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Rectificado := 75+random(30);
 If Rectificado>100 then rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(Rectificado);
 If Rectificado>84 Then Button101.Enabled := False;
-PDesarrollo.visible:=false;
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
+
 If (Rectificado<85) and (CBAutomatico.Checked=True) then Button101.Click;
 MyChrono.Stop;
 if (Rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -8953,10 +8093,10 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 GProgreso.progress:=0;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 button29.enabled:=false;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(shaping);
+
 panel5.refresh;
 label104.caption:=inttostr(1+random(13));
 label108.caption:=inttostr(1+random(13));
@@ -8994,22 +8134,8 @@ if LTacto2.enabled= true then LTacto2Click(sender);
 radbut := Random(100);
 if radbut>95 then Label125.Caption := 'No se pudieron corregír todas las reacciones irregulares'
 else begin
-Label125.Caption := 'Corregídas todas las reacciones irregulares de biorresonancia.';
-radiobutton8.caption:= ' | Resonancia ajustada';
-radiobutton9.caption:= ' | Resonancia ajustada';
-radiobutton10.caption:= ' | Resonancia ajustada';
-radiobutton11.caption:= ' | Resonancia ajustada';
-radiobutton12.caption:= ' | Resonancia ajustada';
-radiobutton13.caption:= ' | Resonancia ajustada';
-radiobutton14.caption:= ' | Resonancia ajustada';
-radiobutton15.caption:= ' | Resonancia ajustada';
-radiobutton16.caption:= ' | Resonancia ajustada';
-radiobutton17.caption:= ' | Resonancia ajustada';
-LABEL125.refresh;
 label125.caption:='Reparación con biorresonancia maximizada.';
-//If label125.caption='Reparación con biorresonancia maximizada.' then Button105.Enabled:=False;
 end;
-PDesarrollo.Visible:=False;
 MyChrono.Stop;
 if (LCerebro.enabled= false) and (LCerebelo.enabled= false)
 and (LTimo2.enabled= false) and (LHipotalamo2.enabled= false)
@@ -9069,44 +8195,30 @@ MyChrono.Start;
 TTendencia.Enabled := True;
 Label179.Visible := True;
 If LPineal.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LPineal.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LPineal.Enabled := False;
 End;
 If LPituitaria.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LPituitaria.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LPituitaria.Enabled := False;
 End;
 If LTiroides.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LTiroides.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LTiroides.Enabled := False;
 End;
 If LParanglios.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LParanglios.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LParanglios.Enabled := False;
 End;
 If LPancreas.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LPancreas.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LPancreas.Enabled := False;
 End;
 If LGonadas.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LGonadas.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LGonadas.Enabled := False;
 End;
 If LCorticoadrenales.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando '+LCorticoadrenales.Caption+'...';
-PDesarrollo.Visible:=True;
 Candy();
 If Rectificado>84 Then LCorticoadrenales.Enabled := False;
 End;
@@ -9119,8 +8231,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.visible:=false;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button106.Enabled=True) then Button106.Click;
@@ -9134,128 +8245,86 @@ MyChrono.Start;
 TTendencia.Enabled := True;
 Label179.Visible := True;
 If LGlucorticoides.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Glucorticoides...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LGlucorticoides.Enabled := False;
 End;
 If LSTH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando STH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LSTH.Enabled := False;
 End;
 If LTSH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando TSH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LTSH.Enabled := False;
 End;
 If LFSH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando FSH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LFSH.Enabled := False;
 End;
 If LLH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando LH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LLH.Enabled := False;
 End;
 If LLTH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando LTH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LLTH.Enabled := False;
 End;
 If LMSH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando MSH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LMSH.Enabled := False;
 End;
 If LAdrenalina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Adrenalina y Noradrenalina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LAdrenalina.Enabled := False;
 End;
 If LADH.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando extra ADH...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LADH.Enabled := False;
 End;
 If LOxitocina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Oxitocina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LOxitocina.Enabled := False;
 End;
 If LRF.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando conexión RF...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LRF.Enabled := False;
 End;
 If LTiroxina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Tiroxina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LTiroxina.Enabled := False;
 end;
 If LTriyodina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Triyodina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LTriyodina.Enabled := False;
 end;
 If LParatormona.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Paratormona...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LParatormona.Enabled := False;
 end;
 If LNoradrenalina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Noradrenalina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LNoradrenalina.Enabled := False;
 end;
 If LHTimica.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hormona Tímica...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LHTimica.Enabled := False;
 end;
 If LInsulina.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Insulina...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LInsulina.Enabled := False;
 end;
 If LGlucagon.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Glucagón...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LGlucagon.Enabled := False;
 end;
 If LEstradiol.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Estradiol y Estrona...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LEstradiol.Enabled := False;
 end;
 If LProgesterona.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Progesterona...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LProgesterona.Enabled := False;
 end;
 If LMineralcorticoides.Enabled = True Then Begin
-PDesarrollo.Caption:='Equilibrando Mineralcorticoides...';
-PDesarrollo.Visible:=True;
 Candelaria();
 If Rectificado>84 Then LMineralcorticoides.Enabled := False;
 end;
@@ -9276,8 +8345,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.visible:=false;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button107.Enabled=True) then Button107.Click;
@@ -9287,7 +8355,6 @@ end;
 procedure Tthera.LSuperiorDClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Realizando terapia a cuadrante superior derecho...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LSuperiorDClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9296,7 +8363,6 @@ end;
 procedure Tthera.LSuperiorIClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Realizando terapia a cuadrante superior izquierdo...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LSuperiorIClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9305,7 +8371,6 @@ end;
 procedure Tthera.LInferiorDClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Realizando terapia a cuadrante inferior derecho...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LInferiorDClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9314,7 +8379,6 @@ end;
 procedure Tthera.LInferiorIClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Realizando terapia a cuadrante inferior izquierdo...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LInferiorIClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9323,7 +8387,6 @@ end;
 procedure Tthera.LCabezaClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Realizando terapia a cabeza...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LCabezaClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9332,7 +8395,6 @@ end;
 procedure Tthera.LTodosClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.caption:='Realizando terapia a todos los cuadrantes...';
 Leticia();
 If (rectificado<85) and (CBAutomatico.Checked=True) Then LTodosClick(Sender);
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -9368,7 +8430,7 @@ procedure Tthera.Vanessa();
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 5+Random(10);
@@ -9385,39 +8447,25 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rectificado := 85+Random(15);
-LRectificado.Caption := 'Rectificado |'+IntToStr(rectificado);
+LRectificado.Caption := 'Rectificado | '+IntToStr(rectificado);
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Vanessa();
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
-procedure Tthera.RadioButton9Click(Sender: TObject);
-begin
-PDesarrollo.Caption := 'Corrigiendo reacción inapropiada...';
-Vanessa();
-If rectificado<85 Then RadioButton9.Caption := 'Reacción inapropiada no corregída';
-If rectificado>84 Then Begin
-RadioButton9.Caption := 'Reacción corregída';
-RadioButton9.Enabled := False;
-end;
-end;
-
 procedure Tthera.Patricia();
 begin
 Reaccion_Irregular();
-PDesarrollo.Refresh;
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 10+Random(5);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(50000,555,11111,2,1,1,
@@ -9432,12 +8480,11 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Fmain.recmain:=Fmain.recmain+1;
 rectificado :=70+random(70);
 if rectificado>100 Then rectificado := 85+Random(15);
-LRectificado.Caption := 'Rectificado |'+IntToStr(rectificado);
+LRectificado.Caption := 'Rectificado | '+IntToStr(rectificado);
 label124.Caption := '||||||';
 label125.Caption := '||||||';
 MyChrono.Stop;
@@ -9446,14 +8493,9 @@ end;
 procedure Tthera.Reaccion_Irregular();
 begin
 alarm := Random(100);
-if (alarm <2) or (alarm > 98) Then Begin
-if alarm < 2 then PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-if alarm > 98 then PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -9468,26 +8510,20 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
-PDesarrollo.Refresh;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
-end;
 End;
 
 procedure Tthera.Leticia();
 begin
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 30+Random(30);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(50000,111,1115,5,1,1,
@@ -9498,8 +8534,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rectificado := 70+random(50);
 if rectificado>100 then rectificado:=85+Random(15);
 LRectificado.Caption := 'Rectificado | '+inttostr(rectificado);
@@ -9922,9 +8957,6 @@ begin
 Reaccion_Irregular();
   MyChrono.Start;
   GProgreso.Progress := 0;
-  PDesarrollo.Caption:='Enviando ELF correspondientes a '+ed_valor.text+' Hz ...';
-  PDesarrollo.Visible:=True;
-  PDesarrollo.Refresh;
   r :=  strtofloat(ed_valor.text);
   ir := round(r);
 
@@ -9937,7 +8969,6 @@ Reaccion_Irregular();
            ChangingPulses(1000,1,2,1,1,7,
                       '11111111','11111111');
   end;
-      PDesarrollo.Visible:=False;
   MyChrono.Stop;
 end;
 
@@ -9948,9 +8979,6 @@ var
 begin
 Reaccion_Irregular();
   MyChrono.Start;
-  PDesarrollo.Caption:='Enviando Frecuencias ELF correspondientes para '+ListBox1.Items[ListBox1.ItemIndex]+' ...';
-  PDesarrollo.visible:=true;
-  PDesarrollo.refresh;
    for i := 0 to ListBox2.Items.count -1 do begin
         if pos('-',ListBox2.Items[i] ) <> 0 then Begin
 
@@ -9995,7 +9023,6 @@ Reaccion_Irregular();
 
        end;
   end;
-  PDesarrollo.Visible:=False;
   MyChrono.Stop;
 end;
 
@@ -10157,8 +9184,7 @@ procedure Tthera.ADN();
 begin
 MyChrono.Start;
 GProgreso.Progress := 0;
-LRectificado.Caption := 'Rectificado |';
-PDesarrollo.visible :=true;
+LRectificado.Caption := 'Rectificado | ';
 dna := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 90+Random(30);
@@ -10176,46 +9202,41 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PDesarrollo.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 Series1.FillSampleValues(24);
  rectificado:=30+random(70);
  LRectificado.caption:='Rectificado | '+inttostr(rectificado);
  LRectificado.Refresh;
- PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+ PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
+
 If (rectificado<85) and (CBAutomatico.Checked=True) Then ADN();
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 End;
 
 procedure Tthera.Label461Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de apoptosis...';
 ADN();
 If Rectificado>84 Then Label461.enabled:=false;
 end;
 
 procedure Tthera.Button8Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Mejorando frecuencias de estructura del ADN...';
 ADN();
 If rectificado > 84 Then Button8.enabled:=false;
 end;
 
 procedure Tthera.Button10Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Explorando y corrigiendo fallo energético en ADN...';
 ADN();
 If rectificado>84 Then Button10.enabled:=false;
 end;
 
 procedure Tthera.Button11Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando corrección eléctrica del ADN...';
 ADN();
 If rectificado>84 Then Button11.enabled:=false;
 end;
@@ -10225,14 +9246,10 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 GProgreso.Progress := 0;
-PDesarrollo.Caption:='Explorando y equilibrando genes...';
-If Button13.Caption='Re-explorar y re-equilibrar genes' Then PDesarrollo.Caption:='Re-explorando y re-equilibrando genes...';
-PDesarrollo.Refresh;
 FMain.button88.enabled:=false;
 FMain.button84.Enabled:=false;
 FMain.button85.Enabled:=false;
 riskchart.inh:=riskchart.inh+20;
-PDesarrollo.visible :=true;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 70+Random(10);
 GProgreso.MaxValue := vtiempo;
@@ -10248,7 +9265,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
    if chro<9 then ch1:=random(10);
     if ch1<1 then  label238.caption:=label238.caption+' | 1';
    if ch1>8 then  label237.caption:=label237.caption+' | 1';
@@ -10321,7 +9338,6 @@ PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
  if chro<9 then ch1:=random(10);
     if ch1<1 then  label238.caption:=label238.caption+' | Extra';
    if ch1>8 then  label237.caption:=label237.caption+' | Extra';
-PDesarrollo.visible:=false;
  Series1.FillSampleValues(24);
  Rectificado:=25+chro+random(55+chro);
  if Rectificado>99 then Rectificado:=100;
@@ -10330,589 +9346,15 @@ PDesarrollo.visible:=false;
  If Rectificado>84 Then Button13.enabled:=false;
  chro:=chro+20;
  oeg:=1+random(14+ran88);
-if oeg=1 then label260.caption:='No olvides beber agua.  Tu cuerpo requiere consumir entre 1.5 y 2 litros de agua por día.';
-if oeg=2 then label260.caption:='Come con moderación: carne magra de pollo (sin piel), de ternera, pescado, clara de huevo, leche y derivados.';
-if oeg=3 then label260.caption:='Aumenta la ingesta de: cereales, fruta, verduras, legumbres, granos, tortilla y pan.';
-if oeg=4 then label260.caption:='Consume en pequeñas cantidades: mantequilla, margarina, aceites, dulces, aderezos, azúcar, chocolates, yema de huevo y refrescos.';
-if oeg=5 then label260.caption:='Aprende a modificar tus hábitos alimentarios, e incluye a tus familiares y amigos en ello.';
-if oeg=6 then label260.caption:='No tomes más de un litro de bebidas con cafeina por día.  El agua es la mejor bebida.';
-if oeg=7 then label260.caption:='Aumenta la ingesta de cereales, fruta, verduras, legumbres, granos, tortilla y pan.';
-if oeg=8 then label260.caption:='Busca que los cereales o el pan sean integrales.  Come más de una fruta por día.';
-if oeg=9 then label260.caption:='Evita el salero en la mesa.  Come 1 o 2 rebanadas de pan al día.  Come una porción de cereal al día.';
-if oeg=10 then label260.caption:='Come despacio y masticando bien.  Mientras comas no hables de asuntos ''delicados'', todo a su hora.';
-if oeg=11 then label260.caption:='Respeta las 4 comidas: desayuno, almuerzo, merienda y cena.';
-if oeg=12 then label260.caption:='Come alimentos con suficiente contenido de fibra: pan, verduras, ensaladas, cereales, legumbres y frutas.';
-if oeg=13 then label260.caption:='Evita el exceso de sal.  Solo después de haber realizado un esfuerzo físico está justificado la ingestión de alimentos salados.';
-if oeg=14 then label260.caption:='Realiza actividades físicas de acuerdo a tu edad, físico y preferencias.  El ejercicio debe ser una actividad agradable.';
-if oeg=15 then label260.caption:='No excedas ni suprimas categorías de alimentos.  Respeta los requirimientos de minerales y vitaminas de tu organismo.';
- oeg:=1+random(14+ran88);
-if oeg=1 then label261.caption:='Come tres vegetales o un plato de verduras diariamente.  Si necesitas usar aceite, utiliza aceite de maíz o de oliva.';
-if oeg=2 then label261.caption:='Consume frutas en la mañana ya que el organismo las digiere mejor.  Comer es un placer, disfruta tus comidas.';
-if oeg=3 then label261.caption:='El pescado y la comida de mar son muy nutritivas, usa sal de mar, evita el exceso de leche y mantequilla.';
-if oeg=4 then label261.caption:='Evita los dulces y los chocolates, en lugar consume más frutas y vegetales frescos y naturales.';
-if oeg=5 then label261.caption:='Mastica bien los alimentos, no tomes los alimentos ni muy calientes ni muy fríos.  Vive feliz y disfruta la vida.';
-if oeg=6 then label261.caption:='La amplia variabilidad personal en cuanto a los requerimientos nutricionales hace necesaria la prescripción de dietas individualizadas.';
-if oeg=7 then label261.caption:='Consume porciones pequeñas de alimentos a intervalos regulares, cambie el azúcar refinada por azúcar de caña.';
-if oeg=8 then label261.caption:='Toma pequeñas y variadas porciones de alimentos, nada en exceso, resistete a comer más de la cuenta.';
-if oeg=9 then label261.caption:='No abuses de bebidas alcohólicas, ni café, ni té.  Ingiere diariamente 1,5 a 2 litros de agua, infusiones, nectares, jugos y caldos.';
-if oeg=10 then Label261.caption:='Realiza ejercicio físico al aire libre para mantener la masa muscular y favorecer la producción de vitamina D.';
-if oeg=11 then label261.caption:='Consume frutas y verduras frescas sin exprimir.  Si están en forma de jugos, consumelas inmediatamente tras su elaboración.';
-if oeg=12 then label261.caption:='Las proteínas vegetales se complementan utilizando mezclas de verduras, legumbres, granos y cereales para suplementar los aminoácidos esenciales.';
-if oeg=13 then label261.caption:='Procura comer gran variedad de alimentos, ya que esto asegura la correcta incorporación de vitaminas y minerales necesarios.';
-if oeg=14 then label261.caption:='Evita el exceso de azúcar. ''Evitar'' no quiere decir ''Suprimir''.';
-if oeg=15 then label261.caption:='El aporte principal de carbohidratos lo obtendrás de: frutas, cereales, arroz, pan, galletas, pastas alimenticias y farináceos.';
- oeg:=1+random(14+ran88);
-if oeg=1 then label262.caption:='Las proteínas animales deben proceder de leche descremada, quesos magros, requesón, pollo sin piel, pescados y 2 a 3 huevos a la semana.';
-if oeg=2 then label262.caption:='Las proteínas deben ser de origen diverso, tanto vegetal como animal.  Complementalas usando mezclas de verduras y cereales.';
-if oeg=3 then label262.caption:='En los alimentos cocidos, ingíere siempre el líquido o caldo, para aprovechar las sales minerales y vitaminas que soltó el alimento.';
-if oeg=4 then label262.caption:='Fracciona tu dieta en 4 ó 5 comidas al día.  Evita los fritos y utiliza los alimentos asados, a la plancha o al vapor.';
-if oeg=5 then label262.caption:='Tu dieta debe ser nutritiva, variada, aceptable y apetitosa.  Tus dietas deben ser sencillas y de fácil preparación.';
-if oeg=6 then label262.caption:='Evita las comidas frecuentes con alimentos grasosos, fritos, o que hacen engordar.  Recuerda no dejar de hacer ninguna comida.';
-if oeg=7 then label262.caption:='Si tienes que consumir comida ''rápida'' o frita, házlo solo una vez por semana.  Incrementa tu actividad física.';
-if oeg=8 then label262.caption:='Quita la grasa de la carne y la piel del pollo.  Consume 200 ml de leche o yogurt por día o, en su caso, 30 gramos de queso bajo en grasa.';
-if oeg=9 then label262.caption:='Come una o dos porciones por día de carne, pollo o pescado, o sus alternativas vegetarianas como tofu, leguminosas, lácteos y derivados.';
-if oeg=10 then label262.caption:='Si necesitas usar aceite, utiliza aceite de maíz.  Evita los aderezos a base de aceites.';
-if oeg=11 then label262.caption:='Trata de mantener tu peso ideal en la medida de lo posible.  Evita las dietas ''milagrosas'', porque no existen.';
-if oeg=12 then label262.caption:='Según tu edad, gustos, condición física, trabajo, horarios y disponibilidad, busca y mantén algún tipo de actividad física.';
-if oeg=13 then label262.caption:='Recuerda que no es aconsejable beber diariamente.  Más de 3 bebidas alcohólicas al día pondrán en serio riesgo tu salud.';
-if oeg=14 then label262.caption:='Procura consumir diariamente alguna porción de pescado, aún cuando sea enlatado.';
-if oeg=15 then label262.caption:='Si intentas bajar de peso es más aconsejable reducir la ingesta de alimentos que saltarse las comidas.';
-if (astr>5)and (ch1=6) then astr:=0;
+ BCNutricionales.Click;
+ if (astr>5)and (ch1=6) then astr:=0;
 if (numbirth>6)and (ch1=6) then numbirth:=0;
 if (numer>6)and (ch1=6) then astr:=0;
-t1:=(astr*numbirth)+(3*numbirth);
-if t1=0 then label270.Caption:='Disfunción en la regulación de la vitamina K.';
-if t1=1 then label270.Caption:='Disfunción en la regulación del triptofan | Control del humor, energía, sanación, sueño.';
-if t1=2 then label270.Caption:='Disfunción en la regulación de la felilalanina | Control del dolor, nervios.';
-if t1=3 then label270.Caption:='Disfunción en la regulación de la alanina | Riñones y nervios.';
-if t1=4 then label270.Caption:='Disfunción en la regulación de la aspartina | Destrucción de tejido nervioso.';
-if t1=5 then label270.Caption:='Disfunción en la regulación de la cisteina | Utilización de los riñones.';
-if t1=6 then label270.Caption:='Disfunción en la regulación de la leucina | Control del humor, emociones.';
-if t1=7 then label270.Caption:='Disfunción en la regulación de la isoleucina | Control emocional, nervios.';
-if t1=8 then label270.Caption:='Disfunción en la regulación de la serinina | Conversión de cargohidratos en energía.';
-if t1=9 then label270.Caption:='Disfunción en la regulación del triptofan | Serotonina y relajación.';
-if t1=10 then label270.Caption:='Disfunción en la regulación de la histidina | Anti inflamatorio, anti alérgico.';
-if t1=11 then label270.Caption:='Disfunción en la regulación de la metinona | Hígado y oxigenación.';
-if t1=12 then label270.Caption:='Disfunción en la regulación de la lisina | Lesiones anti herpes, nervios.';
-if t1=13 then label270.Caption:='Disfunción en la regulación de la treonina | Producción hormonal y energía.';
-if t1=14 then label270.Caption:='Disfunción en la regulación de la tyrosine | Tiroides, funciones de la pituitaria y suprarrenales.';
-if t1=15 then label270.Caption:='Disfunción en la regulación de la valina | Regulación de las células de la sangre.';
-if t1=16 then label270.Caption:='Disfunción en la regulación de la glutamina | Suple de energía al cerebro.';
-if t1=17 then label270.Caption:='Disfunción en la regulación de la prolina | Desórdenes de sulfuro.';
-if t1=18 then label270.Caption:='Disfunción en la regulación de la arginina | Nervios y piel.';
-if t1=19 then label270.Caption:='Disfunción en la regulación del ácido glutamínico | Suple de energía al cerebro.';
-if t1=20 then label270.Caption:='Disfunción en la regulación del ácido aspártico | Destrucción del sistema nervioso.';
-if t1=21 then label270.Caption:='Disfunción en la regulación de la adenosina | Circulación, energía.';
-if t1=22 then label270.Caption:='Disfunción en la regulación del uracil | Funciones del ARN.';
-if t1=23 then label270.Caption:='Disfunción en la regulación de la adenina | Funciones del ADN y ARN.';
-if t1=24 then label270.Caption:='Disfunción en la regulación de la guanina | Funciones del ADN y ARN.';
-if t1=25 then label270.Caption:='Disfunción en la regulación de la citosina | Funciones del ADN y ARN.';
-if t1=26  then label270.Caption:='Disfunción en la regulación de la tiamina | Funciones del ADN y ARN.';
-if t1=27 then label270.Caption:='Disfunción en la regulación del calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label270.Caption:='Disfunción en la regulación del potasio | Fatiga, nervios, energía, corazón.';
-if t1=29 then label270.Caption:='Disfunción en la regulación del sodio | Depresión, nervios, fatiga, digestión.';
-if t1=30 then label270.Caption:='Disfunción en la regulación del cloro | Balance del pH, afección de acidez estomacal, nervios.';
-if t1=31 then label270.Caption:='Disfunción en la regulación del magnesio | Regulación suprarrenal, oxigenación, energía.';
-if t1=32 then label270.Caption:='Disfunción en la regulación del hierro | Anemia, fatiga, oxigenación.';
-if t1=33 then label270.Caption:='Disfunción en la regulación del sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label270.Caption:='Disfunción en la regulación del manganeso | Afecciones de nervios y músculos.';
-if t1=35 then label270.Caption:='Disfunción en la regulación del cromo | Regulación del azúcar, músculos.';
-if t1=36 then label270.Caption:='Disfunción en la regulación del zinc | Sistema inmune, oxigenación, afección metabólica.';
-if t1=37 then label270.Caption:='Disfunción en la regulación del selenio | Desintoxicación, nervios, energía, piel.';
-if t1=38 then label270.Caption:='Disfunción en la regulación del yodo | Función de la tiroides, energía, metabolismo.';
-if t1=39 then label270.Caption:='Disfunción en la regulación del fósforo | funciones celulares, energía, pensamiento.';
-if t1=40 then label270.Caption:='Disfunción en la regulación del boro | Regulación nerviosa, demencia, depresión.';
-if t1=41 then label270.Caption:='Disfunción en la regulación del molidebno | Función de la tiroides, lactación, fatiga.';
-if t1=42 then label270.Caption:='Disfunción en la regulación de la silicona | Huesos, piel, nervios.';
-if t1=43 then label270.Caption:='Disfunción en la regulación del cobalto | Anemia, sistema inmunitario.';
-if t1=44 then label270.Caption:='Disfunción en la regulación de litio | Nervios, pensamiento, energía, función del hipotálamo.';
-if t1=45 then label270.Caption:='Disfunción en la regulación de germanio | nervios, oxigenación, piel, energía.';
-if t1=46 then label270.Caption:='Disfunción en la regulación de arsénico | Energía, sistema nervioso.';
-if t1=47 then label270.Caption:='Disfunción en la regulación de la digestión / absorpción.' ;
-if t1=48 then label270.Caption:='Disfunción en la regulación de sales no específicas en tejidos.' ;
-if t1=49 then label270.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=50 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=51 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=52 then label270.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=53 then label270.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=54 then label270.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=56 then label270.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=57 then label270.Caption:='Disfunción en la regulación de la vitamina E.' ;
-if t1=58 then label270.Caption:='Disfunción en la regulación de la vitamina E1.'  ;
-if t1=59 then label270.Caption:='Disfunción en la regulación de la vitamina E2.' ;
-if t1=60 then label270.Caption:='Disfunción en la regulación de la vitamina E3.';
-if t1=61 then label270.Caption:='Disfunción en la regulación de la vitamina K1.'  ;
-if t1=62 then label270.Caption:='Disfunción en la regulación de la vitamina K3.' ;
-if t1=63 then label270.Caption:='Disfunción en la regulación de todas las vitaminas K.'  ;
-if t1=64 then label270.Caption:='Disfunción en la regulación de la vitamina U / Ubiquinona.' ;
-if t1=65 then label270.Caption:='Disfunción en la regulación del CoQ6.' ;
-if t1=66 then label270.Caption:='Disfunción en la regulación del CoQ7.' ;
-if t1=67 then label270.Caption:='Disfunción en la regulación del CoQ8.' ;
-if t1=68 then label270.Caption:='Disfunción en la regulación del CoQ9.'  ;
-if t1=69 then label270.Caption:='Disfunción en la regulación del CoQ10.' ;
-if t1=70 then label270.Caption:='Disfunción en la regulación de todos los CoQ.' ;
-if t1=71 then label270.Caption:='Disfunción en la regulación del ciclo de la ubiquinona.'  ;
-if t1=72 then label270.Caption:='Disfunción en la regulación de la vitamina C.' ;
-if t1=73 then label270.Caption:='Disfunción en la regulación de los bioflavenoides.'  ;
-if t1=74 then label270.Caption:='Disfunción en la regulación de la rutina.'  ;
-if t1=75 then label270.Caption:='Disfunción en la regulación del ácido hespárico.'  ;
-if t1=76 then label270.Caption:='Disfunción en la regulación de la tirosina.'  ;
-if t1=77 then label270.Caption:='Disfunción en la regulación de la tyrosinase.' ;
-if t1=78 then label270.Caption:='Disfunción en la regulación de la vitamina C ase.' ;
-if t1=79 then label270.Caption:='Disfunción en la regulación del ácido ascórbico.'  ;
-if t1=80 then label270.Caption:='Disfunción en la regulación de la vitamina D.' ;
-if t1=81 then label270.Caption:='Disfunción en la regulación de la vitamina D1.'  ;
-if t1=82 then label270.Caption:='Disfunción en la regulación de la vitamina D2.'  ;
-if t1=83 then label270.Caption:='Disfunción en la regulación de la vitamina D3.'  ;
-if t1=84 then label270.Caption:='Disfunción en la regulación de la vitamina D4.'  ;
-if t1=85 then label270.Caption:='Disfunción en la regulación de la vitamina A.' ;
-if t1=86 then label270.Caption:='Disfunción en la regulación de la beta carotena.'  ;
-if t1=87 then label270.Caption:='Disfunción en la regulación del aceite de pescado.'  ;
-if t1=88 then label270.Caption:='Disfunción en la regulación del retinol.'  ;
-if t1=89 then label270.Caption:='Disfunción en la regulación de los precursores de la vitamina A.';
-if t1=90 then label270.Caption:='Disfunción en la regulación de la vitamina A en cartílagos.' ;
-if t1=91 then label270.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=92 then label270.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=93 then label106.caption:= 'Disfunción en la regulación de las enzimas digestivas hidrolantes.';
-if t1=94 then label270.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=95 then label270.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=96 then label270.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=97 then label270.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=98 then label270.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=99 then label270.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=100 then label270.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=101 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=102 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=103 then label270.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=104 then label270.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=105 then label270.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=106 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=107 then label270.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=108 then label270.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=109 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=110 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=111 then label270.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=112 then label270.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=113 then label270.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=114 then label270.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=115 then label270.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=116 then label270.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=117 then label270.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=118 then label270.Caption:='Disfunción en la regulación de las enzimas de la hidrolización en la digestión.';
-if t1=119 then label270.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=120 then label270.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=121 then label270.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=122 then label270.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=123 then label270.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=124 then label270.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=125 then label270.Caption:='Disfunción en la regulación del antimónio | Piel, desintoxicación, función de la flora intestinal.';
-if t1=126 then label270.Caption:='Disfunción en la regulación del tin | Nervios, músculos.';
-if t1=127 then label270.Caption:='Disfunción en la regulación del carbón | Energía, regulación de la vida.';
-if t1=128 then label270.Caption:='Disfunción en la regulación del vanadio | Función del hígado, músculos del corazón.';
-if t1=129 then label270.Caption:='Disfunción en la regulación del aluminio | Nervios, regulación del pensamiento.';
-if t1=130 then label270.Caption:='Disfunción en la regulación del cobre | Nervios, energía, desintoxicación.';
-t1:=(astr*numbirth)+(3*numer);
-if t1=0 then label271.Caption:='Disfunción en la regulación de la vitamina K.';
-if t1=1 then label273.Caption:='Disfunción en la regulación del triptofan | Control del humor, energía, sanación, sueño.';
-if t1=2 then label273.Caption:='Disfunción en la regulación de la felilalanina | Control del dolor, nervios.';
-if t1=3 then label273.Caption:='Disfunción en la regulación de la alanina | Riñones y nervios.';
-if t1=4 then label273.Caption:='Disfunción en la regulación de la aspartina | Destrucción de tejido nervioso.';
-if t1=5 then label273.Caption:='Disfunción en la regulación de la cisteina | Utilización de los riñones.';
-if t1=6 then label273.Caption:='Disfunción en la regulación de la leucina | Control del humor, emociones.';
-if t1=7 then label273.Caption:='Disfunción en la regulación de la isoleucina | Control emocional, nervios.';
-if t1=8 then label273.Caption:='Disfunción en la regulación de la serinina | Conversión de cargohidratos en energía.';
-if t1=9 then label273.Caption:='Disfunción en la regulación del triptofan | Serotonina y relajación.';
-if t1=10 then label273.Caption:='Disfunción en la regulación de la histidina | Anti inflamatorio, anti alérgico.';
-if t1=11 then label273.Caption:='Disfunción en la regulación de la metinona | Hígado y oxigenación.';
-if t1=12 then label273.Caption:='Disfunción en la regulación de la lisina | Lesiones anti herpes, nervios.';
-if t1=13 then label273.Caption:='Disfunción en la regulación de la treonina | Producción hormonal y energía.';
-if t1=14 then label273.Caption:='Disfunción en la regulación de la tyrosine | Tiroides, funciones de la pituitaria y suprarrenales.';
-if t1=15 then label273.Caption:='Disfunción en la regulación de la valina | Regulación de las células de la sangre.';
-if t1=16 then label273.Caption:='Disfunción en la regulación de la glutamina | Suple de energía al cerebro.';
-if t1=17 then label273.Caption:='Disfunción en la regulación de la prolina | Desórdenes de sulfuro.';
-if t1=18 then label273.Caption:='Disfunción en la regulación de la arginina | Nervios y piel.';
-if t1=19 then label273.Caption:='Disfunción en la regulación del ácido glutamínico | Suple de energía al cerebro.';
-if t1=20 then label273.Caption:='Disfunción en la regulación del ácido aspártico | Destrucción del sistema nervioso.';
-if t1=21 then label273.Caption:='Disfunción en la regulación de la adenosina | Circulación, energía.';
-if t1=22 then label273.Caption:='Disfunción en la regulación del uracil | Funciones del ARN.';
-if t1=23 then label273.Caption:='Disfunción en la regulación de la adenina | Funciones del ADN y ARN.';
-if t1=24 then label273.Caption:='Disfunción en la regulación de la guanina | Funciones del ADN y ARN.';
-if t1=25 then label273.Caption:='Disfunción en la regulación de la citosina | Funciones del ADN y ARN.';
-if t1=26 then label273.Caption:='Disfunción en la regulación de la tiamina | Funciones del ADN y ARN.';
-if t1=27 then label273.Caption:='Disfunción en la regulación del calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label273.Caption:='Disfunción en la regulación del potasio | Fatiga, nervios, energía, corazón.';
-if t1=29 then label273.Caption:='Disfunción en la regulación del sodio | Depresión, nervios, fatiga, digestión.';
-if t1=30 then label273.Caption:='Disfunción en la regulación del cloro | Balance del pH, afección de acidez estomacal, nervios.';
-if t1=31 then label273.Caption:='Disfunción en la regulación del magnesio | Regulación suprarrenal, oxigenación, energía.';
-if t1=32 then label273.Caption:='Disfunción en la regulación del hierro | Anemia, fatiga, oxigenación.';
-if t1=33 then label273.Caption:='Disfunción en la regulación del sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label273.Caption:='Disfunción en la regulación del manganeso | Afecciones de nervios y músculos.';
-if t1=35 then label273.Caption:='Disfunción en la regulación del cromo | Regulación del azúcar, músculos.';
-if t1=36 then label273.Caption:='Disfunción en la regulación del zinc | Sistema inmune, oxigenación, afección metabólica.';
-if t1=37 then label273.Caption:='Disfunción en la regulación del selenio | Desintoxicación, nervios, energía, piel.';
-if t1=38 then label273.Caption:='Disfunción en la regulación del yodo | Función de la tiroides, energía, metabolismo.';
-if t1=39 then label273.Caption:='Disfunción en la regulación del fósforo | funciones celulares, energía, pensamiento.';
-if t1=40 then label273.Caption:='Disfunción en la regulación del boro | Regulación nerviosa, demencia, depresión.';
-if t1=41 then label273.Caption:='Disfunción en la regulación del molidebno | Función de la tiroides, lactación, fatiga.';
-if t1=42 then label273.Caption:='Disfunción en la regulación de la silicona | Huesos, piel, nervios.';
-if t1=43 then label273.Caption:='Disfunción en la regulación del cobalto | Anemia, sistema inmunitario.';
-if t1=44 then label273.Caption:='Disfunción en la regulación de litio | Nervios, pensamiento, energía, función del hipotálamo.';
-if t1=45 then label273.Caption:='Disfunción en la regulación de germanio | nervios, oxigenación, piel, energía.';
-if t1=46 then label273.Caption:='Disfunción en la regulación de arsénico | Energía, sistema nervioso.';
-if t1=47 then label273.Caption:='Disfunción en la regulación de la digestión / absorpción.' ;
-if t1=48 then label273.Caption:='Disfunción en la regulación de sales no específicas en tejidos.' ;
-if t1=49 then label273.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=50 then label273.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=51 then label273.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=52 then label273.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=53 then label273.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=54 then label273.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55 then label273.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=56 then label273.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=57 then label273.Caption:='Disfunción en la regulación de la vitamina E.' ;
-if t1=58 then label273.Caption:='Disfunción en la regulación de la vitamina E1.'  ;
-if t1=59 then label273.Caption:='Disfunción en la regulación de la vitamina E2.' ;
-if t1=60 then label273.Caption:='Disfunción en la regulación de la vitamina E3.';
-if t1=61 then label273.Caption:='Disfunción en la regulación de la vitamina K1.'  ;
-if t1=62 then label273.Caption:='Disfunción en la regulación de la vitamina K3.' ;
-if t1=63 then label273.Caption:='Disfunción en la regulación de todas las vitaminas K.'  ;
-if t1=64 then label273.Caption:='Disfunción en la regulación de la vitamina U / Ubiquinona.' ;
-if t1=65 then label273.Caption:='Disfunción en la regulación del CoQ6.' ;
-if t1=66 then label273.Caption:='Disfunción en la regulación del CoQ7.' ;
-if t1=67 then label273.Caption:='Disfunción en la regulación del CoQ8.' ;
-if t1=68 then label273.Caption:='Disfunción en la regulación del CoQ9.'  ;
-if t1=69 then label273.Caption:='Disfunción en la regulación del CoQ10.' ;
-if t1=70 then label273.Caption:='Disfunción en la regulación de todos los CoQ.' ;
-if t1=71  then label273.Caption:='Disfunción en la regulación del ciclo de la ubiquinona.'  ;
-if t1=72  then label273.Caption:='Disfunción en la regulación de la vitamina C.' ;
-if t1=73  then label273.Caption:='Disfunción en la regulación de los bioflavenoides.'  ;
-if t1=74  then label273.Caption:='Disfunción en la regulación de la rutina.'  ;
-if t1=75  then label273.Caption:='Disfunción en la regulación del ácido hespárico.'  ;
-if t1=76  then label273.Caption:='Disfunción en la regulación de la tirosina.'  ;
-if t1=77  then label273.Caption:='Disfunción en la regulación de la tyrosinase.' ;
-if t1=78  then label273.Caption:='Disfunción en la regulación de la vitamina C ase.' ;
-if t1=79  then label273.Caption:='Disfunción en la regulación del ácido ascórbico.'  ;
-if t1=80  then label273.Caption:='Disfunción en la regulación de la vitamina D.' ;
-if t1=81  then label273.Caption:='Disfunción en la regulación de la vitamina D1.'  ;
-if t1=82  then label273.Caption:='Disfunción en la regulación de la vitamina D2.'  ;
-if t1=83  then label273.Caption:='Disfunción en la regulación de la vitamina D3.'  ;
-if t1=84  then label273.Caption:='Disfunción en la regulación de la vitamina D4.'  ;
-if t1=85  then label273.Caption:='Disfunción en la regulación de la vitamina A.' ;
-if t1=86  then label273.Caption:='Disfunción en la regulación de la beta carotena.'  ;
-if t1=87  then label273.Caption:='Disfunción en la regulación del aceite de pescado.'  ;
-if t1=88  then label273.Caption:='Disfunción en la regulación del retinol.'  ;
-if t1=89  then label273.Caption:='Disfunción en la regulación de los precursores de la vitamina A.';
-if t1=90  then label273.Caption:='Disfunción en la regulación de la vitamina A en cartílagos.' ;
-if t1=91  then label273.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=92  then label273.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=93  then label106.caption:= 'Disfunción en la regulación de las enzimas digestivas hidrolantes.';
-if t1=94  then label273.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=95  then label273.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=96  then label273.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=97  then label273.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=98  then label273.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=99  then label273.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=100  then label273.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=101  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=102  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=103  then label273.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=104  then label273.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=105  then label273.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=106  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=107  then label273.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=108  then label273.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=109  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=110  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=111  then label273.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=112 then label273.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=113 then label273.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=114  then label273.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=115  then label273.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=116  then label273.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=117  then label273.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=118 then label273.Caption:='Disfunción en la regulación de las enzimas de la hidrolización en la digestión.';
-if t1=119  then label273.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=120  then label273.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=121  then label273.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=122  then label273.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=123 then label273.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=124  then label273.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=125 then label273.Caption:='Disfunción en la regulación del antimónio | Piel, desintoxicación, función de la flora intestinal.';
-if t1=126 then label273.Caption:='Disfunción en la regulación del tin | Nervios, músculos.';
-if t1=127 then label273.Caption:='Disfunción en la regulación del carbón | Energía, regulación de la vida.';
-if t1=128 then label273.Caption:='Disfunción en la regulación del vanadio | Función del hígado, músculos del corazón.';
-if t1=129 then label273.Caption:='Disfunción en la regulación del aluminio | Nervios, regulación del pensamiento.';
-if t1=130 then label273.Caption:='Disfunción en la regulación del cobre | Nervios, energía, desintoxicación.';
-t1:=(astr*numer)+(3*numbirth);
-if t1=0 then label272.Caption:='Disfunción en la regulación de la vitamina K.';
-if t1=1 then label272.Caption:='Disfunción en la regulación del triptofan | Control del humor, energía, sanación, sueño.';
-if t1=2  then label272.Caption:='Disfunción en la regulación de la felilalanina | Control del dolor, nervios.';
-if t1=3  then label272.Caption:='Disfunción en la regulación de la alanina | Riñones y nervios.';
-if t1=4  then label272.Caption:='Disfunción en la regulación de la aspartina | Destrucción de tejido nervioso.';
-if t1=5  then label272.Caption:='Disfunción en la regulación de la cisteina | Utilización de los riñones.';
-if t1= 6 then label272.Caption:='Disfunción en la regulación de la leucina | Control del humor, emociones.';
-if t1=7  then label272.Caption:='Disfunción en la regulación de la isoleucina | Control emocional, nervios.';
-if t1=8  then label272.Caption:='Disfunción en la regulación de la serinina | Conversión de cargohidratos en energía.';
-if t1=9  then label272.Caption:='Disfunción en la regulación del triptofan | Serotonina y relajación.';
-if t1=10  then label272.Caption:='Disfunción en la regulación de la histidina | Anti inflamatorio, anti alérgico.';
-if t1=11  then label272.Caption:='Disfunción en la regulación de la metinona | Hígado y oxigenación.';
-if t1=12  then label272.Caption:='Disfunción en la regulación de la lisina | Lesiones anti herpes, nervios.';
-if t1=13  then label272.Caption:='Disfunción en la regulación de la treonina | Producción hormonal y energía.';
-if t1=14  then label272.Caption:='Disfunción en la regulación de la tyrosine | Tiroides, funciones de la pituitaria y suprarrenales.';
-if t1=15  then label272.Caption:='Disfunción en la regulación de la valina | Regulación de las células de la sangre.';
-if t1=16  then label272.Caption:='Disfunción en la regulación de la glutamina | Suple de energía al cerebro.';
-if t1=17  then label272.Caption:='Disfunción en la regulación de la prolina | Desórdenes de sulfuro.';
-if t1=18  then label272.Caption:='Disfunción en la regulación de la arginina | Nervios y piel.';
-if t1=19  then label272.Caption:='Disfunción en la regulación del ácido glutamínico | Suple de energía al cerebro.';
-if t1=20  then label272.Caption:='Disfunción en la regulación del ácido aspártico | Destrucción del sistema nervioso.';
-if t1=21  then label272.Caption:='Disfunción en la regulación de la adenosina | Circulación, energía.';
-if t1=22  then label272.Caption:='Disfunción en la regulación del uracil | Funciones del ARN.';
-if t1=23  then label272.Caption:='Disfunción en la regulación de la adenina | Funciones del ADN y ARN.';
-if t1=24  then label272.Caption:='Disfunción en la regulación de la guanina | Funciones del ADN y ARN.';
-if t1=25  then label272.Caption:='Disfunción en la regulación de la citosina | Funciones del ADN y ARN.';
-if t1=26  then label272.Caption:='Disfunción en la regulación de la tiamina | Funciones del ADN y ARN.';
-if t1=27 then label272.Caption:='Disfunción en la regulación del calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label272.Caption:='Disfunción en la regulación del potasio | Fatiga, nervios, energía, corazón.';
-if t1=29 then label272.Caption:='Disfunción en la regulación del sodio | Depresión, nervios, fatiga, digestión.';
-if t1=30 then label272.Caption:='Disfunción en la regulación del cloro | Balance del pH, afección de acidez estomacal, nervios.';
-if t1=31 then label272.Caption:='Disfunción en la regulación del magnesio | Regulación suprarrenal, oxigenación, energía.';
-if t1=32 then label272.Caption:='Disfunción en la regulación del hierro | Anemia, fatiga, oxigenación.';
-if t1=33 then label272.Caption:='Disfunción en la regulación del sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label272.Caption:='Disfunción en la regulación del manganeso | Afecciones de nervios y músculos.';
-if t1=35 then label272.Caption:='Disfunción en la regulación del cromo | Regulación del azúcar, músculos.';
-if t1=36 then label272.Caption:='Disfunción en la regulación del zinc | Sistema inmune, oxigenación, afección metabólica.';
-if t1=37 then label272.Caption:='Disfunción en la regulación del selenio | Desintoxicación, nervios, energía, piel.';
-if t1=38 then label272.Caption:='Disfunción en la regulación del yodo | Función de la tiroides, energía, metabolismo.';
-if t1=39 then label272.Caption:='Disfunción en la regulación del fósforo | funciones celulares, energía, pensamiento.';
-if t1=40 then label272.Caption:='Disfunción en la regulación del boro | Regulación nerviosa, demencia, depresión.';
-if t1=41 then label272.Caption:='Disfunción en la regulación del molidebno | Función de la tiroides, lactación, fatiga.';
-if t1=42 then label272.Caption:='Disfunción en la regulación de la silicona | Huesos, piel, nervios.';
-if t1=43 then label272.Caption:='Disfunción en la regulación del cobalto | Anemia, sistema inmunitario.';
-if t1=44 then label272.Caption:='Disfunción en la regulación de litio | Nervios, pensamiento, energía, función del hipotálamo.';
-if t1=45 then label272.Caption:='Disfunción en la regulación de germanio | nervios, oxigenación, piel, energía.';
-if t1=46 then label272.Caption:='Disfunción en la regulación de arsénico | Energía, sistema nervioso.';
-if t1=47  then label272.Caption:='Disfunción en la regulación de la digestión / absorpción.' ;
-if t1=48  then label272.Caption:='Disfunción en la regulación de sales no específicas en tejidos.' ;
-if t1=49  then label272.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=50  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=51  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=52  then label272.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=53  then label272.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=54  then label272.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=56  then label272.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=57  then label272.Caption:='Disfunción en la regulación de la vitamina E.' ;
-if t1=58  then label272.Caption:='Disfunción en la regulación de la vitamina E1.'  ;
-if t1=59  then label272.Caption:='Disfunción en la regulación de la vitamina E2.' ;
-if t1=60  then label272.Caption:='Disfunción en la regulación de la vitamina E3.';
-if t1=61  then label272.Caption:='Disfunción en la regulación de la vitamina K1.'  ;
-if t1=62  then label272.Caption:='Disfunción en la regulación de la vitamina K3.' ;
-if t1=63  then label272.Caption:='Disfunción en la regulación de todas las vitaminas K.'  ;
-if t1=64  then label272.Caption:='Disfunción en la regulación de la vitamina U / Ubiquinona.' ;
-if t1=65  then label272.Caption:='Disfunción en la regulación del CoQ6.' ;
-if t1=66  then label272.Caption:='Disfunción en la regulación del CoQ7.' ;
-if t1=67  then label272.Caption:='Disfunción en la regulación del CoQ8.' ;
-if t1=68  then label272.Caption:='Disfunción en la regulación del CoQ9.'  ;
-if t1=69  then label272.Caption:='Disfunción en la regulación del CoQ10.' ;
-if t1=70  then label272.Caption:='Disfunción en la regulación de todos los CoQ.' ;
-if t1=71  then label272.Caption:='Disfunción en la regulación del ciclo de la ubiquinona.'  ;
-if t1=72  then label272.Caption:='Disfunción en la regulación de la vitamina C.' ;
-if t1=73  then label272.Caption:='Disfunción en la regulación de los bioflavenoides.'  ;
-if t1=74  then label272.Caption:='Disfunción en la regulación de la rutina.'  ;
-if t1=75  then label272.Caption:='Disfunción en la regulación del ácido hespárico.'  ;
-if t1=76  then label272.Caption:='Disfunción en la regulación de la tirosina.'  ;
-if t1=77  then label272.Caption:='Disfunción en la regulación de la tyrosinase.' ;
-if t1=78  then label272.Caption:='Disfunción en la regulación de la vitamina C ase.' ;
-if t1=79  then label272.Caption:='Disfunción en la regulación del ácido ascórbico.'  ;
-if t1=80  then label272.Caption:='Disfunción en la regulación de la vitamina D.' ;
-if t1=81  then label272.Caption:='Disfunción en la regulación de la vitamina D1.'  ;
-if t1=82  then label272.Caption:='Disfunción en la regulación de la vitamina D2.'  ;
-if t1=83  then label272.Caption:='Disfunción en la regulación de la vitamina D3.'  ;
-if t1=84  then label272.Caption:='Disfunción en la regulación de la vitamina D4.'  ;
-if t1=85  then label272.Caption:='Disfunción en la regulación de la vitamina A.' ;
-if t1=86  then label272.Caption:='Disfunción en la regulación de la beta carotena.'  ;
-if t1=87  then label272.Caption:='Disfunción en la regulación del aceite de pescado.'  ;
-if t1=88  then label272.Caption:='Disfunción en la regulación del retinol.'  ;
-if t1=89  then label272.Caption:='Disfunción en la regulación de los precursores de la vitamina A.';
-if t1=90  then label272.Caption:='Disfunción en la regulación de la vitamina A en cartílagos.' ;
-if t1=91  then label272.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=92  then label272.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=93  then label106.caption:= 'Disfunción en la regulación de las enzimas digestivas hidrolantes.';
-if t1=94  then label272.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=95  then label272.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=96  then label272.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=97  then label272.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=98  then label272.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=99  then label272.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=100  then label272.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=101  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=102  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=103  then label272.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=104  then label272.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=105  then label272.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=106  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=107  then label272.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=108  then label272.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=109  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=110  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=111  then label272.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=112 then label272.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=113 then label272.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=114  then label272.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=115  then label272.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=116  then label272.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=117  then label272.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=118 then label272.Caption:='Disfunción en la regulación de las enzimas de la hidrolización en la digestión.';
-if t1=119  then label272.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=120  then label272.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=121  then label272.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=122  then label272.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=123 then label272.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=124  then label272.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=125 then label272.Caption:='Disfunción en la regulación del antimónio | Piel, desintoxicación, función de la flora intestinal.';
-if t1=126 then label272.Caption:='Disfunción en la regulación del tin | Nervios, músculos.';
-if t1=127 then label272.Caption:='Disfunción en la regulación del carbón | Energía, regulación de la vida.';
-if t1=128 then label272.Caption:='Disfunción en la regulación del vanadio | Función del hígado, músculos del corazón.';
-if t1=129 then label272.Caption:='Disfunción en la regulación del aluminio | Nervios, regulación del pensamiento.';
-if t1=130 then label272.Caption:='Disfunción en la regulación del cobre | Nervios, energía, desintoxicación.';
-t1:=(astr*numer)+(3*numer);
-if t1=0 then label271.Caption:='Disfunción en la regulación de ácidos grasos.';
-if t1=1 then label271.Caption:='Disfunción en la regulación del triptofan | Control del humor, energía, sanación, sueño.';
-if t1=2 then label271.Caption:='Disfunción en la regulación de la felilalanina | Control del dolor, nervios.';
-if t1=3 then label271.Caption:='Disfunción en la regulación de la alanina | Riñones y nervios.';
-if t1=4 then label271.Caption:='Disfunción en la regulación de la aspartina | Destrucción de tejido nervioso.';
-if t1=5 then label271.Caption:='Disfunción en la regulación de la cisteina | Utilización de los riñones.';
-if t1=6 then label271.Caption:='Disfunción en la regulación de la leucina | Control del humor, emociones.';
-if t1=7 then label271.Caption:='Disfunción en la regulación de la isoleucina | Control emocional, nervios.';
-if t1=8 then label271.Caption:='Disfunción en la regulación de la serinina | Conversión de cargohidratos en energía.';
-if t1=9 then label271.Caption:='Disfunción en la regulación del triptofan | Serotonina y relajación.';
-if t1=10 then label271.Caption:='Disfunción en la regulación de la histidina | Anti inflamatorio, anti alérgico.';
-if t1=11 then label271.Caption:='Disfunción en la regulación de la metinona | Hígado y oxigenación.';
-if t1=12 then label271.Caption:='Disfunción en la regulación de la lisina | Lesiones anti herpes, nervios.';
-if t1=13 then label271.Caption:='Disfunción en la regulación de la treonina | Producción hormonal y energía.';
-if t1=14 then label271.Caption:='Disfunción en la regulación de la tyrosine | Tiroides, funciones de la pituitaria y suprarrenales.';
-if t1=15 then label271.Caption:='Disfunción en la regulación de la valina | Regulación de las células de la sangre.';
-if t1=16 then label271.Caption:='Disfunción en la regulación de la glutamina | Suple de energía al cerebro.';
-if t1=17 then label271.Caption:='Disfunción en la regulación de la prolina | Desórdenes de sulfuro.';
-if t1=18 then label271.Caption:='Disfunción en la regulación de la arginina | Nervios y piel.';
-if t1=19  then label271.Caption:='Disfunción en la regulación del ácido glutamínico | Suple de energía al cerebro.';
-if t1=20  then label271.Caption:='Disfunción en la regulación del ácido aspártico | Destrucción del sistema nervioso.';
-if t1=21  then label271.Caption:='Disfunción en la regulación de la adenosina | Circulación, energía.';
-if t1=22  then label271.Caption:='Disfunción en la regulación del uracil | Funciones del ARN.';
-if t1=23  then label271.Caption:='Disfunción en la regulación de la adenina | Funciones del ADN y ARN.';
-if t1=24  then label271.Caption:='Disfunción en la regulación de la guanina | Funciones del ADN y ARN.';
-if t1=25  then label271.Caption:='Disfunción en la regulación de la citosina | Funciones del ADN y ARN.';
-if t1=26  then label271.Caption:='Disfunción en la regulación de la tiamina | Funciones del ADN y ARN.';
-if t1=27 then label271.Caption:='Disfunción en la regulación del calcio | Osteoporosis, nervios, suprarrenales.';
-if t1=28 then label271.Caption:='Disfunción en la regulación del potasio | Fatiga, nervios, energía, corazón.';
-if t1=29 then label271.Caption:='Disfunción en la regulación del sodio | Depresión, nervios, fatiga, digestión.';
-if t1=30 then label271.Caption:='Disfunción en la regulación del cloro | Balance del pH, afección de acidez estomacal, nervios.';
-if t1=31 then label271.Caption:='Disfunción en la regulación del magnesio | Regulación suprarrenal, oxigenación, energía.';
-if t1=32 then label271.Caption:='Disfunción en la regulación del hierro | Anemia, fatiga, oxigenación.';
-if t1=33 then label271.Caption:='Disfunción en la regulación del sulfúro | Desintoxicación, energía, emociones, falta de concentración.';
-if t1=34 then label271.Caption:='Disfunción en la regulación del manganeso | Afecciones de nervios y músculos.';
-if t1=35 then label271.Caption:='Disfunción en la regulación del cromo | Regulación del azúcar, músculos.';
-if t1=36 then label271.Caption:='Disfunción en la regulación del zinc | Sistema inmune, oxigenación, afección metabólica.';
-if t1=37 then label271.Caption:='Disfunción en la regulación del selenio | Desintoxicación, nervios, energía, piel.';
-if t1=38 then label271.Caption:='Disfunción en la regulación del yodo | Función de la tiroides, energía, metabolismo.';
-if t1=39 then label271.Caption:='Disfunción en la regulación del fósforo | funciones celulares, energía, pensamiento.';
-if t1=40 then label271.Caption:='Disfunción en la regulación del boro | Regulación nerviosa, demencia, depresión.';
-if t1=41 then label271.Caption:='Disfunción en la regulación del molidebno | Función de la tiroides, lactación, fatiga.';
-if t1=42 then label271.Caption:='Disfunción en la regulación de la silicona | Huesos, piel, nervios.';
-if t1=43 then label271.Caption:='Disfunción en la regulación del cobalto | Anemia, sistema inmunitario.';
-if t1=44 then label271.Caption:='Disfunción en la regulación de litio | Nervios, pensamiento, energía, función del hipotálamo.';
-if t1=45 then label271.Caption:='Disfunción en la regulación de germanio | nervios, oxigenación, piel, energía.';
-if t1=46 then label271.Caption:='Disfunción en la regulación de arsénico | Energía, sistema nervioso.';
-if t1=47  then label271.Caption:='Disfunción en la regulación de la digestión / absorpción.' ;
-if t1=48  then label271.Caption:='Disfunción en la regulación de sales no específicas en tejidos.' ;
-if t1=49  then label271.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=50  then label271.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=51  then label271.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=52  then label271.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=53  then label271.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=54  then label271.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=55  then label271.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=56  then label271.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=57 then label271.Caption:='Disfunción en la regulación de la vitamina E.' ;
-if t1=58 then label271.Caption:='Disfunción en la regulación de la vitamina E1.'  ;
-if t1=59 then label271.Caption:='Disfunción en la regulación de la vitamina E2.' ;
-if t1=60 then label271.Caption:='Disfunción en la regulación de la vitamina E3.';
-if t1=61 then label271.Caption:='Disfunción en la regulación de la vitamina K1.'  ;
-if t1=62 then label271.Caption:='Disfunción en la regulación de la vitamina K3.' ;
-if t1=63 then label271.Caption:='Disfunción en la regulación de todas las vitaminas K.'  ;
-if t1=64 then label271.Caption:='Disfunción en la regulación de la vitamina U / Ubiquinona.' ;
-if t1=65 then label271.Caption:='Disfunción en la regulación del CoQ6.' ;
-if t1=66 then label271.Caption:='Disfunción en la regulación del CoQ7.' ;
-if t1=67 then label271.Caption:='Disfunción en la regulación del CoQ8.' ;
-if t1=68 then label271.Caption:='Disfunción en la regulación del CoQ9.'  ;
-if t1=69 then label271.Caption:='Disfunción en la regulación del CoQ10.' ;
-if t1=70 then label271.Caption:='Disfunción en la regulación de todos los CoQ.' ;
-if t1=71 then label271.Caption:='Disfunción en la regulación del ciclo de la ubiquinona.'  ;
-if t1=72 then label271.Caption:='Disfunción en la regulación de la vitamina C.' ;
-if t1=73 then label271.Caption:='Disfunción en la regulación de los bioflavenoides.'  ;
-if t1=74 then label271.Caption:='Disfunción en la regulación de la rutina.'  ;
-if t1=75 then label271.Caption:='Disfunción en la regulación del ácido hespárico.'  ;
-if t1=76 then label271.Caption:='Disfunción en la regulación de la tirosina.'  ;
-if t1=77 then label271.Caption:='Disfunción en la regulación de la tyrosinase.' ;
-if t1=78 then label271.Caption:='Disfunción en la regulación de la vitamina C ase.' ;
-if t1=79 then label271.Caption:='Disfunción en la regulación del ácido ascórbico.'  ;
-if t1=80 then label271.Caption:='Disfunción en la regulación de la vitamina D.' ;
-if t1=81 then label271.Caption:='Disfunción en la regulación de la vitamina D1.'  ;
-if t1=82 then label271.Caption:='Disfunción en la regulación de la vitamina D2.'  ;
-if t1=83 then label271.Caption:='Disfunción en la regulación de la vitamina D3.'  ;
-if t1=84 then label271.Caption:='Disfunción en la regulación de la vitamina D4.'  ;
-if t1=85 then label271.Caption:='Disfunción en la regulación de la vitamina A.' ;
-if t1=86 then label271.Caption:='Disfunción en la regulación de la beta carotena.'  ;
-if t1=87 then label271.Caption:='Disfunción en la regulación del aceite de pescado.'  ;
-if t1=88 then label271.Caption:='Disfunción en la regulación del retinol.'  ;
-if t1=89 then label271.Caption:='Disfunción en la regulación de los precursores de la vitamina A.';
-if t1=90 then label271.Caption:='Disfunción en la regulación de la vitamina A en cartílagos.' ;
-if t1=91 then label271.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=92 then label271.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=93 then label106.caption:= 'Disfunción en la regulación de las enzimas digestivas hidrolantes.';
-if t1=94 then label271.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=95 then label271.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=96 then label271.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=97 then label271.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=98 then label271.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=99 then label271.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=100 then label271.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=101 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=102 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=103 then label271.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=104 then label271.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=105 then label271.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=106 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=107 then label271.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=108 then label271.Caption:='Disfunción en la regulación general de los ácidos grasos.';
-if t1=109 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones bajos en los ácidos grasos.';
-if t1=110 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones medios en los ácidos grasos.';
-if t1=111 then label271.Caption:='Disfunción en la regulación de aracadónicos relacionados a las cadenas de ácidos grasos.';
-if t1=112 then label271.Caption:='Disfunción en la regulación de cadenas mielinas de los ácidos grasos.'  ;
-if t1=113 then label271.Caption:='Disfunción en la regulación de la deficiencia nutricional de todos los ácidos grasos.'  ;
-if t1=114 then label271.Caption:='Disfunción en la regulación de las cadenas de carbones altos en los ácidos grasos.'  ;
-if t1=115 then label271.Caption:='Disfunción en la regulación de los procesos enzimaticos relacionados con los ácidos grasos.'  ;
-if t1=116 then label271.Caption:='Disfunción en la regulación de las enzimas generales.' ;
-if t1=117 then label271.Caption:='Disfunción en la regulación de las enzimas de la reducción de la oxidación.';
-if t1=118 then label271.Caption:='Disfunción en la regulación de las enzimas de la hidrolización en la digestión.';
-if t1=119 then label271.Caption:='Disfunción en la regulación de las enzimas de la fosforilación del pensamiento.';
-if t1=120 then label271.Caption:='Disfunción en la regulación de las enzimas de la decarboxilasa en la respiración.';
-if t1=121 then label271.Caption:='Disfunción en la regulación de las enzimas de la regulación del agua hidrolasa.';
-if t1=122 then label271.Caption:='Disfunción en la regulación de las enzimas de la regulación del ADN.' ;
-if t1=123 then label271.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=124 then label271.Caption:='Disfunción en la regulación de las enzimas de la transmutación de los isómeros de la mutasa.';
-if t1=125 then label271.Caption:='Disfunción en la regulación del antimónio | Piel, desintoxicación, función de la flora intestinal.';
-if t1=126 then label271.Caption:='Disfunción en la regulación del tin | Nervios, músculos.';
-if t1=127 then label271.Caption:='Disfunción en la regulación del carbón | Energía, regulación de la vida.';
-if t1=128 then label271.Caption:='Disfunción en la regulación del vanadio | Función del hígado, músculos del corazón.';
-if t1=129 then label271.Caption:='Disfunción en la regulación del aluminio | Nervios, regulación del pensamiento.';
-if t1=130 then label271.Caption:='Disfunción en la regulación del cobre | Nervios, energía, desintoxicación.';
+BAVM.Click;
 Button13.Caption:='Re-explorar y re-equilibrar genes';
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button13.Enabled=True) then Button13.Click;
 if (CBTerapiaExtendida.checked=true) and (Button13.Enabled=False) then TerapiaExtendida();
@@ -10920,7 +9362,6 @@ end;
 
 procedure Tthera.Button14Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Reparando telómeros del ADN...';
 ADN();
 If Rectificado>84 Then Button14.Enabled := False;
 end;
@@ -10928,9 +9369,6 @@ end;
 procedure Tthera.Button16Click(Sender: TObject);
 begin
  ChangingPulses(1000,1+random(3),10000,1+random(200),1+random(200),1,'11111111','11111111');
-  scioworking.button16.caption:='Detener corrección y estabilización del ADN';
-  scioworking.button15.caption:='Iniciar corrección y estabilización del ADN';
-  scioworking.button2.caption:='Corrección y estabilización del ADN';
   SCIOworking.RadioGroup2.enabled:=true;
   SCIOworking.RadioGroup2.ItemIndex:=7;
   SCIOworking.SC_Command:='';
@@ -10943,9 +9381,6 @@ end;
 procedure Tthera.Button20Click(Sender: TObject);
 begin
  ChangingPulses(1000,1+random(3),10000,1+random(200),1+random(200),1,'11111111','11111111');
-  scioworking.button16.caption:='Detener estimulación y estabilización del ADN';
-  scioworking.button15.caption:='Iniciar estimulación y estabilización del ADN';
-  scioworking.button2.caption:='Estimulación y estabilización del ADN';
    SCIOworking.RadioGroup2.enabled:=true;
   SCIOworking.RadioGroup2.ItemIndex:=7;
   SCIOworking.SC_Command:='';
@@ -10957,105 +9392,90 @@ end;
 
 procedure Tthera.Label486Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de células germinales embrionarias...';
 ADN();
 If Rectificado>84 Then Label486.enabled:=false;
 end;
 
 procedure Tthera.Label487Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de células somáticas...';
 ADN();
 If Rectificado>84 Then Label487.enabled:=false;
 end;
 
 procedure Tthera.Label536Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de mitosis...';
 ADN();
 If Rectificado>84 Then Label536.enabled:=false;
 end;
 
 procedure Tthera.Label569Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de meiosis...';
 ADN();
 If Rectificado>84 Then Label569.enabled:=false;
 end;
 
 procedure Tthera.Label484Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de duplicación de ADN...';
 ADN();
 If Rectificado>84 Then Label484.enabled:=false;
 end;
 
 procedure Tthera.Label483Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de enzima de telomerasa...';
 ADN();
 If Rectificado>84 Then Label483.enabled:=false;
 end;
 
 procedure Tthera.Label462Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de enzimas ADN polimerasa...';
 ADN();
 If Rectificado>84 Then Label462.enabled:=false;
 end;
 
 procedure Tthera.Label428Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de fragmentos de Okasaki...';
 ADN();
 If Rectificado>84 Then Label428.enabled:=false;
 end;
 
 procedure Tthera.Label537Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de nucleótidos...';
 ADN();
 If Rectificado>84 Then Label537.enabled:=false;
 end;
 
 procedure Tthera.Label535Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de timina...';
 ADN();
 If Rectificado>84 Then Label535.enabled:=false;
 end;
 
 procedure Tthera.Label597Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de adenina...';
 ADN();
 If Rectificado>84 Then Label597.enabled:=false;
 end;
 
 procedure Tthera.Label531Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de guanina...';
 ADN();
 If Rectificado>84 Then Label531.enabled:=false;
 end;
 
 procedure Tthera.Label601Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de uracilo...';
 ADN();
 If Rectificado>84 Then Label601.enabled:=false;
 end;
 
 procedure Tthera.Label599Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de citosina...';
 ADN();
 If Rectificado>84 Then Label599.enabled:=false;
 end;
 
 procedure Tthera.Label534Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética de primer de ARN...';
 ADN();
 If Rectificado>84 Then Label534.enabled:=false;
 end;
@@ -11067,392 +9487,336 @@ end;
 
 procedure Tthera.Label532Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ácidos ribonucléicos ribosomales...';
 ADN();
 If Rectificado>84 Then Label532.enabled:=false;
 end;
 
 procedure Tthera.Label530Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ADN centromérico (ADN CEN)...';
 ADN();
 If Rectificado>84 Then Label530.enabled:=false;
 end;
 
 procedure Tthera.Label594Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ADN ligasa...';
 ADN();
 If Rectificado>84 Then Label594.enabled:=false;
 end;
 
 procedure Tthera.Label539Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ADN principal...';
 ADN();
 If Rectificado>84 Then Label539.enabled:=false;
 end;
 
 procedure Tthera.Label544Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ADN satélite...';
 ADN();
 If Rectificado>84 Then Label544.enabled:=false;
 end;
 
 procedure Tthera.Label545Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a anafase mitótica...';
 ADN();
 If Rectificado>84 Then Label545.enabled:=false;
 end;
 
 procedure Tthera.Label543Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a anafase-I de la meiosis...';
 ADN();
 If Rectificado>84 Then Label543.enabled:=false;
 end;
 
 procedure Tthera.Label542Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ARN...';
 ADN();
 If Rectificado>84 Then Label542.enabled:=false;
 end;
 
 procedure Tthera.Label541Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ARN interferente...';
 ADN();
 If Rectificado>84 Then Label541.enabled:=false;
 end;
 
 procedure Tthera.Label540Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cariotipos...';
 ADN();
 If Rectificado>84 Then Label540.enabled:=false;
 end;
 
 procedure Tthera.Label538Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a células eucariotas...';
 ADN();
 If Rectificado>84 Then Label538.enabled:=false;
 end;
 
 procedure Tthera.Label546Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a centrómeros...';
 ADN();
 If Rectificado>84 Then Label546.enabled:=false;
 end;
 
 procedure Tthera.Label550Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ciclo celular...';
 ADN();
 If Rectificado>84 Then Label532.enabled:=false;
 end;
 
 procedure Tthera.Label551Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cinetocoro...';
 ADN();
 If Rectificado>84 Then Label551.enabled:=false;
 end;
 
 procedure Tthera.Label549Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cohesión de las cromátidas hermanas...';
 ADN();
 If Rectificado>84 Then Label549.enabled:=false;
 end;
 
 procedure Tthera.Label548Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a complejos protéicos...';
 ADN();
 If Rectificado>84 Then Label548.enabled:=false;
 end;
 
 procedure Tthera.Label547Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a corpúsculos de Barr...';
 ADN();
 If Rectificado>84 Then Label547.enabled:=false;
 end;
 
 procedure Tthera.Label553Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromátidas...';
 ADN();
 If Rectificado>84 Then Label553.enabled:=false;
 end;
 
 procedure Tthera.Label558Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromatina...';
 ADN();
 If Rectificado>84 Then Label558.enabled:=false;
 end;
 
 procedure Tthera.Label559Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosoma acrocéntrico...';
 ADN();
 If Rectificado>84 Then Label559.enabled:=false;
 end;
 
 procedure Tthera.Label557Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosomas homólogos...';
 ADN();
 If Rectificado>84 Then Label557.enabled:=false;
 end;
 
 procedure Tthera.Label556Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosoma matacéntrico...';
 ADN();
 If Rectificado>84 Then Label556.enabled:=false;
 end;
 
 procedure Tthera.Label555Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosoma submetacéntrico...';
 ADN();
 If Rectificado>84 Then Label555.enabled:=false;
 end;
 
 procedure Tthera.Label554Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosoma subtelocéntrico...';
 ADN();
 If Rectificado>84 Then Label554.enabled:=false;
 end;
 
 procedure Tthera.Label552Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a cromosoma telocéntrico (o telosoma)...';
 ADN();
 If Rectificado>84 Then Label552.enabled:=false;
 end;
 
 procedure Tthera.Label560Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a enzima telomerasa...';
 ADN();
 If Rectificado>84 Then Label560.enabled:=false;
 end;
 
 procedure Tthera.Label564Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a estructura de la cromatina...';
 ADN();
 If Rectificado>84 Then Label564.enabled:=false;
 end;
 
 procedure Tthera.Label565Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a eucarotidas...';
 ADN();
 If Rectificado>84 Then Label565.enabled:=false;
 end;
 
 procedure Tthera.Label563Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a eucromatina...';
 ADN();
 If Rectificado>84 Then Label563.enabled:=false;
 end;
 
 procedure Tthera.Label562Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a fibras de huso acromático...';
 ADN();
 If Rectificado>84 Then Label562.enabled:=false;
 end;
 
 procedure Tthera.Label561Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a heterocromatina constitutiva...';
 ADN();
 If Rectificado>84 Then Label561.enabled:=false;
 end;
 
 procedure Tthera.Label567Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a heterocromatina facultativa...';
 ADN();
 If Rectificado>84 Then Label567.enabled:=false;
 end;
 
 procedure Tthera.Label572Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a histonina...';
 ADN();
 If Rectificado>84 Then Label572.enabled:=false;
 end;
 
 procedure Tthera.Label573Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a histona H3...';
 ADN();
 If Rectificado>84 Then Label573.enabled:=false;
 end;
 
 procedure Tthera.Label571Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a huso mitótico...';
 ADN();
 If Rectificado>84 Then Label571.enabled:=false;
 end;
 
 procedure Tthera.Label570Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a mecanismos epigenéticos...';
 ADN();
 If Rectificado>84 Then Label570.enabled:=false;
 end;
 
 procedure Tthera.Label568Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a microtúbulos...';
 ADN();
 If Rectificado>84 Then Label568.enabled:=false;
 end;
 
 procedure Tthera.Label566Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a neocentrómeros...';
 ADN();
 If Rectificado>84 Then Label566.enabled:=false;
 end;
 
 procedure Tthera.Label574Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a nucleasas...';
 ADN();
 If Rectificado>84 Then Label574.enabled:=false;
 end;
 
 procedure Tthera.Label578Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a núcleo celular...';
 ADN();
 If Rectificado>84 Then Label578.enabled:=false;
 end;
 
 procedure Tthera.Label579Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a nucleosomas...';
 ADN();
 If Rectificado>84 Then Label579.enabled:=false;
 end;
 
 procedure Tthera.Label577Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a procesos de apoptosis...';
 ADN();
 If Rectificado>84 Then Label577.enabled:=false;
 end;
 
 procedure Tthera.Label576Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a prolina...';
 ADN();
 If Rectificado>84 Then Label576.enabled:=false;
 end;
 
 procedure Tthera.Label575Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a proteínas centroméricas...';
 ADN();
 If Rectificado>84 Then Label575.enabled:=false;
 end;
 
 procedure Tthera.Label581Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a proteolósis...';
 ADN();
 If Rectificado>84 Then Label581.enabled:=false;
 end;
 
 procedure Tthera.Label586Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a RNAi...';
 ADN();
 If Rectificado>84 Then Label586.enabled:=false;
 end;
 
 procedure Tthera.Label587Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a replicación de centrómeros...';
 ADN();
 If Rectificado>84 Then Label587.enabled:=false;
 end;
 
 procedure Tthera.Label585Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a replicación de telómeros...';
 ADN();
 If Rectificado>84 Then Label585.enabled:=false;
 end;
 
 procedure Tthera.Label584Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a represión de la expresión genética...';
 ADN();
 If Rectificado>84 Then Label584.enabled:=false;
 end;
 
 procedure Tthera.Label583Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a rubonucleoproteínas...';
 ADN();
 If Rectificado>84 Then Label583.enabled:=false;
 end;
 
 procedure Tthera.Label582Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a telomerasa...';
 ADN();
 If Rectificado>84 Then Label582.enabled:=false;
 end;
 
 procedure Tthera.Label580Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a telomerasa (inhibición)...';
 ADN();
 If Rectificado>84 Then Label580.enabled:=false;
 end;
 
 procedure Tthera.Label588Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a telómeros...';
 ADN();
 If Rectificado>84 Then Label588.enabled:=false;
 end;
 
 procedure Tthera.Label592Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a telosomas (shelterina o comp. protector)...';
 ADN();
 If Rectificado>84 Then Label592.enabled:=false;
 end;
 
 procedure Tthera.Label593Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a traslocación robertsoniana...';
 ADN();
 If Rectificado>84 Then Label593.enabled:=false;
 end;
 
 procedure Tthera.Label591Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando corrección energética a ubiquitina...';
 ADN();
 If Rectificado>84 Then Label591.enabled:=false;
 end;
@@ -11481,11 +9845,6 @@ end;
 procedure Tthera.Panel31Click(Sender: TObject);
 begin
 Panel30.Visible := False;
-end;
-
-procedure Tthera.Panel32Click(Sender: TObject);
-begin
-panel12.visible:=false;
 end;
 
 procedure Tthera.Panel33Click(Sender: TObject);
@@ -11615,7 +9974,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono2.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Rectificado := 80+random(30);
 If Rectificado>100 Then rectificado:=85+Random(15);
 If Rectificado>84 Then Begin
@@ -11660,7 +10019,7 @@ until
 MyChrono2.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono2.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Rectificado := 75+random(30);
 If Rectificado>100 Then rectificado:=85+Random(15);
 If Rectificado>84 Then Begin
@@ -11759,8 +10118,6 @@ MyChrono.Start;
 Reaccion_Irregular();
 TTendencia.Enabled := True;
 Label179.Visible := True;
-PDesarrollo.Caption := 'Estimulando Proyección';
-PDesarrollo.Visible := True;
 Candy();
 If Rectificado>84 Then Button9.Enabled := False;
 TTendencia.Enabled := False;
@@ -11768,8 +10125,7 @@ LimpiaProgressBars();
  Fmain.recmain:=Fmain.recmain+1;
  FMain.shaping:=random(105);
  If FMain.Shaping>100 Then FMain.Shaping:=100;
-FRecompensa.label79.caption:=inttostr(shaping);
-PDesarrollo.Visible := False;
+
 Label179.Visible := False;
 MyChrono.Stop;
 If (CBAutomatico.Checked=True) and (Button9.Enabled=True) then Button9.Click;
@@ -12672,162 +11028,150 @@ end;
 
 procedure Tthera.Espiritus();
 begin
-oeg := Random(21);
+oeg := Random(101);
 If oeg < 2 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus IMPUROS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' IMPUROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus IMPUROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 2 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus LIGEROS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' LIGEROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus LIGEROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 3 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus DE FALSA INSTRUCCIÓN...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' DE FALSA INSTRUCCIÓN'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus DE FALSA INSTRUCCIÓN...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 4 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus NEUTROS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' NEUTROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus NEUTROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 5 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus GOLPEADORES Y PERTURBADORES...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' GOLPEADORES Y PERTURBADORES'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus GOLPEADORES Y PERTURBADORES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 
 If oeg = 6 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus BENÉVOLOS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' BENÉVOLOS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus BENÉVOLOS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 7 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus SABIOS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' SABIOS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus SABIOS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 8 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus PRUDENTES...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' PRUDENTES'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus PRUDENTES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 9 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus SUPERIORES...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' SUPERIORES'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus SUPERIORES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 If oeg = 10 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus PUROS...';
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' PUROS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus PUROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 
-If oeg > 19 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus IMPUROS...';
+If oeg > 99 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' IMPUROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus IMPUROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 19 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus LIGEROS...';
+If oeg = 99 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' LIGEROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus LIGEROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 18 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus DE FALSA INSTRUCCIÓN...';
+If oeg = 98 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' DE FALSA INSTRUCCIÓN'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus DE FALSA INSTRUCCIÓN...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 17 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus NEUTROS...';
+If oeg = 97 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' NEUTROS'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus NEUTROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 16 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus GOLPEADORES Y PERTURBADORES...';
+If oeg = 96 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' GOLPEADORES Y PERTURBADORES'+'...';
 BEspiritus.Caption := 'Liberar vibraciones';
 PEspiritus.Color := clRed;
-PDesarrollo.Caption:='Liberando vibraciones de espíritus GOLPEADORES Y PERTURBADORES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
 
-If oeg = 15 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus BENÉVOLOS...';
+If oeg = 95 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' BENÉVOLOS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus BENÉVOLOS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 14 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus SABIOS...';
+If oeg = 94 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' SABIOS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus SABIOS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 13 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus PRUDENTES...';
+If oeg = 93 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' PRUDENTES'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus PRUDENTES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 12 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus SUPERIORES...';
+If oeg = 92 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' SUPERIORES'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus SUPERIORES...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
-If oeg = 11 Then Begin
-PEspiritus.Caption := 'Se han detectado vibraciones de espíritus PUROS...';
+If oeg = 91 Then Begin
+PEspiritus.Caption := 'Se han detectado vibraciones de espíritus'+' PUROS'+'...';
 BEspiritus.Caption := 'Ampliar vibraciones';
 PEspiritus.Color := clLime;
-PDesarrollo.Caption:='Ampliando vibraciones de espíritus PUROS...';
+PEspiritus.Visible := True;
 PEspiritus.Refresh;
 End;
- PEspiritus.Visible := True;
- PEspiritus.Refresh;
-  end;
-
-procedure Tthera.Label80Click(Sender: TObject);
-begin
-PEspiritus.Height := 581;
-end;
-
-procedure Tthera.Label210Click(Sender: TObject);
-begin
-PEspiritus.Height := 110;
 end;
 
 procedure Tthera.Label85Click(Sender: TObject);
@@ -12863,9 +11207,7 @@ procedure Tthera.Enfoque();
 begin
 MyChrono.Start;
 GProgreso.Progress := 0;
-LRectificado.Caption := 'Rectificado |';
- PDesarrollo.visible:=true;
- PDesarrollo.refresh;
+LRectificado.Caption := 'Rectificado | ';
  If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 30+Random(15);
 GProgreso.MaxValue := vtiempo;
@@ -12881,8 +11223,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
- PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
  Fmain.recmain:=Fmain.recmain+1;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Enfoque();
@@ -12892,10 +11233,8 @@ end;
 procedure Tthera.Desensibilizar();
 begin
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress:=0;
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 10+Random(20);
 GProgreso.MaxValue := vtiempo;
@@ -12911,8 +11250,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Fmain.recmain:=Fmain.recmain+1;
 MyChrono.Stop;
 If CBAutomatico.Checked=True Then Desensibilizar();
@@ -12933,41 +11271,18 @@ end;
 
 procedure Tthera.Ondas();
 begin
-oeg := Random(200);
-if oeg = 5 then PDesarrollo.caption:='Tejido degenerativo detectado, corrigiendo...';
-if oeg = 10 then PDesarrollo.caption:='Error metabólico detectado, corrigiendo...';
-if oeg = 15 then PDesarrollo.caption:='Trauma detectado, corrigiendo...';
-if oeg = 20 then PDesarrollo.caption:='Inflamación detectada, corrigiendo...';
-if oeg = 25 then PDesarrollo.caption:='Contusión detectada, corrigiendo...';
-if oeg = 30 then PDesarrollo.caption:='Tejido cicatrizado detectado, corrigiendo...';
-if oeg = 35 then PDesarrollo.caption:='Tejido oxidado detectado, corrigiendo...';
-if oeg = 40 then PDesarrollo.caption:='Imbalance del pH detectado, corrigiendo...';
-if oeg = 45 then PDesarrollo.caption:='Deshidratación detectada, corrigiendo...';
-if oeg = 50 then PDesarrollo.caption:='Tejido herido detectado, corrigiendo...';
-if oeg = 55 then PDesarrollo.caption:='Epitelio sensorial con trauma detectado, corrigiendo...';
-if oeg = 60 then PDesarrollo.caption:='Epitelio glandular con trauma  detectado, corrigiendo...';
-if oeg = 65 then PDesarrollo.caption:='Epitelio de revestimiento con trauma  detectado, corrigiendo...';
-if oeg = 70 then PDesarrollo.caption:='Tejido adiposo con trauma detectado, corrigiendo...';
-if oeg = 75 then PDesarrollo.caption:='Tejido cartilaginoso con trauma detectado, corrigiendo...';
-if oeg = 80 then PDesarrollo.caption:='Tejido óseo con trauma detectado, corrigiendo...';
-if oeg = 85 then PDesarrollo.caption:='Tejido hematopoyético con trauma detectado, corrigiendo...';
-if oeg = 90 then PDesarrollo.caption:='Tejido sanguíneo con trauma  detectado, corrigiendo...';
-if oeg = 95 then PDesarrollo.caption:='Tejido conjutivo con trauma detectado, corrigiendo...';
 If (oeg=5) or (oeg=10) or (oeg=15) or (oeg=20) or (oeg=25) or
 (oeg=30) or (oeg=35) or (oeg=40) or (oeg=45) or (oeg=50) or
 (oeg=60) or (oeg=65) or (oeg=70) or (oeg=75) or (oeg=80) or
 (oeg=85) or (oeg=90) or (oeg=95) Then Begin
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If SETiempo.Value>2 Then vtiempo := SETiempo.Value*60 Else
 vtiempo := 5+Random(5);
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-PDesarrollo.Color := clYellow;
-PDesarrollo.visible :=true;
-PDesarrollo.refresh;
 repeat
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(50000,555,11111,2,1,1,
@@ -12976,9 +11291,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.visible:=false;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
@@ -13186,14 +11499,12 @@ end;
 
 procedure Tthera.LTiroides2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LTiroides2.Caption+'...';
 Patricia();
 if rectificado>84 then LTiroides2.enabled := false;
 end;
 
 procedure Tthera.LPancreas2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LPancreas2.Caption+'...';
 Patricia();
 if rectificado>84 then LPancreas2.enabled := false;
 end;
@@ -13201,70 +11512,60 @@ end;
 
 procedure Tthera.LIGruesoClick(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LIGrueso.Caption+'...';
 Patricia();
 if rectificado>84 then LIGrueso.enabled := false;
 end;
 
 procedure Tthera.LBazo2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LBazo2.Caption+'...';
 Patricia();
 if rectificado>84 then LBazo2.enabled := false;
 end;
 
 procedure Tthera.LRinon2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LRinon2.Caption+'...';
 Patricia();
 if rectificado>84 then LRinon2.enabled := false;
 end;
 
 procedure Tthera.LSacro2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LSacro2.Caption+'...';
 Patricia();
 if rectificado>84 then LSacro2.enabled := false;
 end;
 
 procedure Tthera.LGarganta2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LGarganta2.Caption+'...';
 Patricia();
 if rectificado>84 then LGarganta2.enabled := false;
 end;
 
 procedure Tthera.LVista2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LVista2.Caption+'...';
 Patricia();
 if rectificado>84 then LVista2.enabled := false;
 end;
 
 procedure Tthera.LOido2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LOido2.Caption+'...';
 Patricia();
 if rectificado>84 then LOido2.enabled := false;
 end;
 
 procedure Tthera.LOlfato2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LOlfato2.Caption+'...';
 Patricia();
 if rectificado>84 then LOlfato2.enabled := false;
 end;
 
 procedure Tthera.LGusto2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LGusto2.Caption+'...';
 Patricia();
 if rectificado>84 then LGusto2.enabled := false;
 end;
 
 procedure Tthera.LTacto2Click(Sender: TObject);
 begin
-PDesarrollo.Caption:='Equilibrando '+LTacto2.Caption+'...';
 Patricia();
 if rectificado>84 then LTacto2.enabled := false;
 end;
@@ -13272,7 +11573,6 @@ end;
 procedure Tthera.BPulmonClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Pulmón...';
 Patricia();
 if rectificado<85 then LPulmon.caption := 'Meridiano de Pulmón no equilibrado';
 if rectificado>84 then begin
@@ -13286,7 +11586,6 @@ end;
 procedure Tthera.BIntestinoGruesoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Intestino Grueso...';
 Patricia();
 if rectificado<85 then LIntestinoGrueso.caption := 'Meridiano de Intestino Grueso no equilibrado';
 if rectificado>84 then begin
@@ -13300,7 +11599,6 @@ end;
 procedure Tthera.BVConcepcionClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Concepción...';
 Patricia();
 if rectificado<85 then LVConcepcion.caption := 'Meridiano de Vaso Concepción no equilibrado';
 if rectificado>84 then begin
@@ -13314,7 +11612,6 @@ end;
 procedure Tthera.BTCalentadorClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Triple Calentador...';
 Patricia();
 if rectificado<85 then LTCalentador.caption := 'Meridiano de Triple Calentador no equilibrado';
 if rectificado>84 then begin
@@ -13328,7 +11625,6 @@ end;
 procedure Tthera.BMCorazonClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Corazón...';
 Patricia();
 if rectificado<85 then LMCorazon.caption := 'Meridiano de Corazón no equilibrado';
 if rectificado>84 then begin
@@ -13342,7 +11638,6 @@ end;
 procedure Tthera.BIntestinoDelgadoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Intestino Delgado...';
 Patricia();
 if rectificado<85 then LIntestinoDelgado.caption := 'Meridiano de Intestino Delgado no equilibrado';
 if rectificado>84 then begin
@@ -13356,7 +11651,6 @@ end;
 procedure Tthera.BNeurogliaClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Neuroglía...';
 Patricia();
 if rectificado<85 then LNeuroglia.caption := 'Neuroglía no equilibrado';
 if rectificado>84 then begin
@@ -13370,7 +11664,6 @@ end;
 procedure Tthera.BMBazoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Bazo / Páncreas...';
 Patricia();
 if rectificado<85 then LMBazo.caption := 'Meridiano de Bazo / Páncreas no equilibrado';
 if rectificado>84 then begin
@@ -13384,7 +11677,6 @@ end;
 procedure Tthera.BHigadoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Hígado...';
 Patricia();
 if rectificado<85 then LHigado.caption := 'Meridiano de Hígado no equilibrado';
 if rectificado>84 then begin
@@ -13398,7 +11690,6 @@ end;
 procedure Tthera.BTMLisoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Muscular Liso...';
 Patricia();
 if rectificado<85 then LTMLiso.caption := 'Tejido Muscular Liso no equilibrado';
 if rectificado>84 then begin
@@ -13412,7 +11703,6 @@ end;
 procedure Tthera.BMEstomagoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Estómago...';
 Patricia();
 if rectificado<85 then LMEstomago.caption := 'Meridiano de Estómago no equilibrado';
 if rectificado>84 then begin
@@ -13426,7 +11716,6 @@ end;
 procedure Tthera.BTMEstriadoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Muscular Estriado o Esquelético...';
 Patricia();
 if rectificado<85 then LTMEstriado.caption := 'Tejido Muscular Estriado o Esquelético no equilibrado';
 if rectificado>84 then begin
@@ -13440,7 +11729,6 @@ end;
 procedure Tthera.BTMCardiacoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Muscular Cardíaco...';
 Patricia();
 if rectificado<85 then LTMCardiaco.caption := 'Tejido Muscular Cardíaco no equilibrado';
 if rectificado>84 then begin
@@ -13454,7 +11742,6 @@ end;
 procedure Tthera.BNeuronasClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Neuronas...';
 Patricia();
 if rectificado<85 then LNeuronas.caption := 'Neuronas no equilibrado';
 if rectificado>84 then begin
@@ -13468,7 +11755,6 @@ end;
 procedure Tthera.BVBClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vesícula Biliar...';
 Patricia();
 if rectificado<85 then LVB.caption := 'Meridiano de Vesícula Biliar no equilibrado';
 if rectificado>84 then begin
@@ -13482,7 +11768,6 @@ end;
 procedure Tthera.BRinonClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Riñón...';
 Patricia();
 if rectificado<85 then LRinon.caption := 'Meridiano de Riñón no equilibrado';
 if rectificado>84 then begin
@@ -13496,7 +11781,6 @@ end;
 procedure Tthera.BVejigaClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vejiga...';
 Patricia();
 if rectificado<85 then LVejiga.caption := 'Meridiano de Vejiga no equilibrado';
 if rectificado>84 then begin
@@ -13535,7 +11819,6 @@ end;
 procedure Tthera.BMPericardioClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Pericardio / Circulación...';
 Patricia();
 if rectificado<85 then LMPericardio.caption := 'Meridiano de Pericardio / Circulación no equilibrado';
 if rectificado>84 then begin
@@ -13549,7 +11832,6 @@ end;
 procedure Tthera.BERevestimientoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Epitelio de revestimiento...';
 Patricia();
 if rectificado<85 then LERevestimiento.caption := 'Epitelio de revestimiento no equilibrado';
 if rectificado>84 then begin
@@ -13563,7 +11845,6 @@ end;
 procedure Tthera.BEGlandularClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Epitelio Glandular...';
 Patricia();
 if rectificado<85 then LEGlandular.caption := 'Epitelio Glandular no equilibrado';
 if rectificado>84 then begin
@@ -13577,7 +11858,6 @@ end;
 procedure Tthera.BESensorialClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Epitelio Sensorial...';
 Patricia();
 if rectificado<85 then LESensorial.caption := 'Epitelio Sensorial no equilibrado';
 if rectificado>84 then begin
@@ -13591,7 +11871,6 @@ end;
 procedure Tthera.BTAdiposoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Adiposo...';
 Patricia();
 if rectificado<85 then LTAdiposo.caption := 'Tejido Adiposo no equilibrado';
 if rectificado>84 then begin
@@ -13605,7 +11884,6 @@ end;
 procedure Tthera.BTCartilaginosoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Cartilaginoso...';
 Patricia();
 if rectificado<85 then LTCartilaginoso.caption := 'Tejido Cartilaginoso no equilibrado';
 if rectificado>84 then begin
@@ -13619,7 +11897,6 @@ end;
 procedure Tthera.BTOseoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Oseo...';
 Patricia();
 if rectificado<85 then LTOseo.caption := 'Tejido Oseo no equilibrado';
 if rectificado>84 then begin
@@ -13633,7 +11910,6 @@ end;
 procedure Tthera.BTHematopoyeticoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Hematopoyético...';
 Patricia();
 if rectificado<85 then LTHematopoyetico.caption := 'Tejido Hematopoyético no equilibrado';
 if rectificado>84 then begin
@@ -13647,7 +11923,6 @@ end;
 procedure Tthera.BTSanguineoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Sanguíneo...';
 Patricia();
 if rectificado<85 then LTSanguineo.caption := 'Tejido Sanguíneo no equilibrado';
 if rectificado>84 then begin
@@ -13661,7 +11936,6 @@ end;
 procedure Tthera.BTConjuntivoClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Tejido Conjuntivo...';
 Patricia();
 if rectificado<85 then LTConjuntivo.caption := 'Tejido Conjuntivo no equilibrado';
 if rectificado>84 then begin
@@ -13675,7 +11949,6 @@ end;
 procedure Tthera.BVGovernadorClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Gobernador (Du Mai)...';
 Patricia();
 if rectificado<85 then LVGovernador.caption := 'Meridiano de Vaso Gobernador (Du Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13689,7 +11962,6 @@ end;
 procedure Tthera.BVPenetranteClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Penetrante (Chong Mai)...';
 Patricia();
 if rectificado<85 then LVPenetrante.caption := 'Meridiano de Vaso Penetrante (Chong Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13703,7 +11975,6 @@ end;
 procedure Tthera.BVCenidorClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Ceñidor (Dai Mai)...';
 Patricia();
 if rectificado<85 then LVCenidor.caption := 'Meridiano de Vaso Ceñidor (Dai Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13717,7 +11988,6 @@ end;
 procedure Tthera.BVCYinClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Conector Yin (Yin Wei Mai)...';
 Patricia();
 if rectificado<85 then LVCYin.caption := 'Meridiano de Vaso Conector Yin (Yin Wei Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13731,7 +12001,6 @@ end;
 procedure Tthera.BVCYangClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Conector Yang (Yang Wei Mai)...';
 Patricia();
 if rectificado<85 then LVCYang.caption := 'Meridiano de Vaso Conector Yang (Yang Wei Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13745,7 +12014,6 @@ end;
 procedure Tthera.BVTYinClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Tacón Yin (Yin Qiao Mai)...';
 Patricia();
 if rectificado<85 then LVTYin.caption := 'Meridiano de Vaso Tacón Yin (Yin Qiao Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13759,7 +12027,6 @@ end;
 procedure Tthera.BVTYangClick(Sender: TObject);
 begin
 Ondas();
-PDesarrollo.Caption:='Equilibrando Meridiano de Vaso Tacón Yang (Yang Qiao Mai)...';
 Patricia();
 if rectificado<85 then LVTYang.caption := 'Meridiano de Vaso Tacón Yang (Yang Qiao Mai) no equilibrado';
 if rectificado>84 then begin
@@ -13768,6 +12035,84 @@ LVTYang.color:=clwhite;
 LVTYang.enabled := false;
 end;
 LVTYang.Refresh;
+end;
+
+procedure Tthera.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+Thera.Label126.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure Tthera.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Thera.Label234.Caption := LBAVM.Items[LBAVM.ItemIndex];
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Thera.Label235.Caption := LBAVM.Items[LBAVM.ItemIndex];
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+Thera.Label236.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure Tthera.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Thera.Label101.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure Tthera.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+Thera.Label227.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure Tthera.BCNutricionalesClick(Sender: TObject);
+begin
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label260.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label261.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+Label262.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
+end;
+
+procedure Tthera.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Label180.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Label206.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Label226.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Label227.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+Label228.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure Tthera.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+thera.Label234.Caption := ' Entrelazado con:'+LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure Tthera.LRepositorioClick(Sender: TObject);
+begin
+ Frecompensa.Showmodal;
 end;
 
 initialization

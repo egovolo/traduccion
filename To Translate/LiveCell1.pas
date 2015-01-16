@@ -77,7 +77,6 @@ type
     RadioButton42: TRadioButton;
     Label24: TLabel;
     RadioButton43: TRadioButton;
-    PDesarrollo: TPanel;
     RadioButton44: TRadioButton;
     Panel7: TPanel;
     Label107: TLabel;
@@ -160,11 +159,8 @@ type
     Label35: TLabel;
     Label36: TLabel;
     Label69: TLabel;
-    Label25: TLabel;
-    Label71: TLabel;
     Label72: TLabel;
     Label73: TLabel;
-    Button19: TButton;
     Image3: TImage;
     Label75: TLabel;
     Button20: TButton;
@@ -190,7 +186,6 @@ type
     Panel8: TPanel;
     Panel9: TPanel;
     Panel12: TPanel;
-    Memo1: TMemo;
     PInmunologia: TPanel;
     Label76: TLabel;
     Label101: TLabel;
@@ -1224,17 +1219,6 @@ type
     PTiempoEstimado: TPanel;
     TTipoParasitos: TTimer;
     TTiposParasitariosX: TTimer;
-    GBInformacionAdicional: TGroupBox;
-    Label254: TLabel;
-    Label255: TLabel;
-    Label256: TLabel;
-    Label257: TLabel;
-    Label258: TLabel;
-    Edit91: TEdit;
-    Edit92: TEdit;
-    Edit93: TEdit;
-    Edit94: TEdit;
-    Edit95: TEdit;
     GroupBox20: TGroupBox;
     CheckBox218: TCheckBox;
     CheckBox219: TCheckBox;
@@ -1330,6 +1314,40 @@ type
     Edit112: TEdit;
     Label415: TLabel;
     Button42: TButton;
+    Label25: TLabel;
+    PBasesDeDatos: TPanel;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    Label71: TLabel;
+    Label254: TLabel;
+    Label255: TLabel;
+    Label256: TLabel;
+    Label257: TLabel;
+    Label258: TLabel;
+    Label416: TLabel;
+    Label417: TLabel;
+    Label418: TLabel;
+    Label419: TLabel;
 
     procedure FormCreate(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
@@ -1345,56 +1363,12 @@ type
     procedure RadioButton5Click(Sender: TObject);
     procedure RadioButton4Click(Sender: TObject);
     procedure RadioButton3Click(Sender: TObject);
+    procedure RadioButton48Click(Sender: TObject);
     procedure BTerapiasClick(Sender: TObject);
     procedure BFactoresClick(Sender: TObject);
-    procedure RadioButton1Click(Sender: TObject);
-    procedure RadioButton2Click(Sender: TObject);
-    procedure RadioButton10Click(Sender: TObject);
-    procedure RadioButton11Click(Sender: TObject);
-    procedure RadioButton12Click(Sender: TObject);
-    procedure RadioButton13Click(Sender: TObject);
-    procedure RadioButton14Click(Sender: TObject);
-    procedure RadioButton15Click(Sender: TObject);
-    procedure RadioButton16Click(Sender: TObject);
-    procedure RadioButton17Click(Sender: TObject);
-    procedure RadioButton18Click(Sender: TObject);
-    procedure RadioButton19Click(Sender: TObject);
-    procedure RadioButton20Click(Sender: TObject);
-    procedure RadioButton21Click(Sender: TObject);
-    procedure RadioButton43Click(Sender: TObject);
-    procedure RadioButton38Click(Sender: TObject);
-    procedure RadioButton39Click(Sender: TObject);
-    procedure RadioButton32Click(Sender: TObject);
-    procedure RadioButton33Click(Sender: TObject);
-    procedure RadioButton34Click(Sender: TObject);
-    procedure RadioButton35Click(Sender: TObject);
-    procedure RadioButton37Click(Sender: TObject);
-    procedure RadioButton36Click(Sender: TObject);
-    procedure RadioButton22Click(Sender: TObject);
-    procedure RadioButton23Click(Sender: TObject);
-    procedure RadioButton24Click(Sender: TObject);
-    procedure RadioButton25Click(Sender: TObject);
-    procedure RadioButton26Click(Sender: TObject);
-    procedure RadioButton27Click(Sender: TObject);
-    procedure RadioButton28Click(Sender: TObject);
-    procedure RadioButton29Click(Sender: TObject);
-    procedure RadioButton30Click(Sender: TObject);
-    procedure RadioButton31Click(Sender: TObject);
-    procedure RadioButton40Click(Sender: TObject);
-    procedure RadioButton41Click(Sender: TObject);
-    procedure RadioButton42Click(Sender: TObject);
-    procedure RadioButton44Click(Sender: TObject);
-    procedure RadioButton48Click(Sender: TObject);
-    procedure Button19Click(Sender: TObject);
     procedure Button20Click(Sender: TObject);
     procedure ListBox1DblClick(Sender: TObject);
     procedure Button26Click(Sender: TObject);
-    procedure Edit91DblClick(Sender: TObject);
-    procedure Edit92DblClick(Sender: TObject);
-    procedure Edit93DblClick(Sender: TObject);
-    procedure Edit95DblClick(Sender: TObject);
-    procedure Edit94DblClick(Sender: TObject);
-    procedure FormHide(Sender: TObject);
     procedure Edit6Click(Sender: TObject);
     procedure BEInmunitariaClick(Sender: TObject);
     procedure BCelulasMadreRxClick(Sender: TObject);
@@ -1609,7 +1583,6 @@ type
     procedure Button153Click(Sender: TObject);
     procedure Button141Click(Sender: TObject);
     procedure TTipoParasitosTimer(Sender: TObject);
-    procedure TTiposParasitariosXTimer(Sender: TObject);
     procedure Button24Click(Sender: TObject);
     procedure Button17Click(Sender: TObject);
     procedure BCelulasMadreClick(Sender: TObject);
@@ -1679,6 +1652,17 @@ type
     procedure B199Click(Sender: TObject);
     procedure B200Click(Sender: TObject);
     procedure Button42Click(Sender: TObject);
+    procedure BCausasClick(Sender: TObject);
+    procedure BOrganosGlandulasClick(Sender: TObject);
+    procedure BAVMClick(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure BSistemasClick(Sender: TObject);
+    procedure BHomeopatiaClick(Sender: TObject);
+    procedure BMeridianosClick(Sender: TObject);
+    procedure BProcesosClick(Sender: TObject);
+    procedure BEPositivasClick(Sender: TObject);
+    procedure BToxinasClick(Sender: TObject);
+    procedure BCNutricionalesClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -1699,6 +1683,7 @@ type
     procedure LimpiaTipoParasitos();
     procedure BotonesVisibles();
     procedure Reaccion_Irregular();
+    procedure EnlaceRadioButtons();
 
   public
     { Public declarations }
@@ -1786,7 +1771,6 @@ Edit6.Text := '';
 edit6.text := DM.Conscida.Fieldbyname('name').asstring;
 end;
 
-
 procedure TLiveCell.FormCreate(Sender: TObject);
 begin
 DoubleBuffered:=true;
@@ -1827,228 +1811,13 @@ begin
 Inicio();
 PInmunologia.Visible := False;
 panel3.visible:=true;
-oeg:=random(110);
-if oeg=0 then oeg21:='| EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then oeg21:='| BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then oeg21:='| BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then oeg21:='| BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then oeg21:='| SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then oeg21:='| ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then oeg21:='| PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then oeg21:='| REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then oeg21:='| REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then oeg21:='| DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then oeg21:='| DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then oeg21:='| EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then oeg21:='| EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then oeg21:='| AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then oeg21:='| PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then oeg21:='| AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then oeg21:='| CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then oeg21:='| CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then oeg21:='| CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then oeg21:='| SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then oeg21:='| ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then oeg21:='| RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then oeg21:='| POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then oeg21:='| SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then oeg21:='| AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then oeg21:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then oeg21:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then oeg21:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then oeg21:='| BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then oeg21:='| BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then oeg21:='| BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then oeg21:='| AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then oeg21:='| AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then oeg21:='| METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then oeg21:='| METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then oeg21:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then oeg21:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then oeg21:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then oeg21:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then oeg21:='| INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then oeg21:='| INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then oeg21:='| LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then oeg21:='| LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then oeg21:='| CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then oeg21:='| AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then oeg21:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then oeg21:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then oeg21:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then oeg21:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then oeg21:='| APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then oeg21:='| NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then oeg21:='| NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then oeg21:='| NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then oeg21:='| NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then oeg21:='| NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then oeg21:='| INFLAMACION CRONICA | Debido a una función anormal neurofila, fármacos anti-inflamatorios esp. los corticosteroides, pobre riego sanguíneo, pobre nutrición general.';
-if oeg=61 then oeg21:='| INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then oeg21:='| INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then oeg21:='| INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then oeg21:='| PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then oeg21:='| HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then oeg21:='| INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then oeg21:='| MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then oeg21:='| NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then oeg21:='| NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then oeg21:='| NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then oeg21:='| ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then oeg21:='| ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then oeg21:='| ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then oeg21:='| ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then oeg21:='| ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then oeg21:='| HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then oeg21:='| HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, Inmune supresión.';
-if oeg=92 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then oeg21:='| HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then oeg21:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then oeg21:='| ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then oeg21:='| ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then oeg21:='| INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then oeg21:='| DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then oeg21:='| LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then oeg21:='| NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then oeg21:='| NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg=109 then oeg21:='| NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
- oeg:=random(110);
-if oeg=0 then oeg22:='| EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then oeg22:='| BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then oeg22:='| BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then oeg22:='| BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then oeg22:='| SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then oeg22:='| ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then oeg22:='| PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then oeg22:='| REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then oeg22:='| REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then oeg22:='| DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then oeg22:='| DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then oeg22:='| EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then oeg22:='| EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then oeg22:='| AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then oeg22:='| PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then oeg22:='| AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then oeg22:='| CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then oeg22:='| CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then oeg22:='| CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then oeg22:='| SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then oeg22:='| ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then oeg22:='| RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then oeg22:='| POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then oeg22:='| SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then oeg22:='| AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then oeg22:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then oeg22:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then oeg22:='| AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then oeg22:='| BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then oeg22:='| BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then oeg22:='| BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then oeg22:='| AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then oeg22:='| AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then oeg22:='| METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then oeg22:='| METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then oeg22:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then oeg22:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then oeg22:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then oeg22:='| LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then oeg22:='| INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then oeg22:='| INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then oeg22:='| LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then oeg22:='| LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then oeg22:='| CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then oeg22:='| AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then oeg22:='| AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then oeg22:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then oeg22:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then oeg22:='| INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then oeg22:='| APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then oeg22:='| NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then oeg22:='| NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then oeg22:='| NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then oeg22:='| NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then oeg22:='| NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then oeg22:='| INFLAMACION CRONICA | Debido a una función anormal neurofila, fármacos anti-inflamatorios esp. los corticosteroides, pobre riego sanguíneo, pobre nutrición general.';
-if oeg=61 then oeg22:='| INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then oeg22:='| INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then oeg22:='| INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then oeg22:='| PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then oeg22:='| HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then oeg22:='| INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then oeg22:='| MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then oeg22:='| NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then oeg22:='| NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then oeg22:='| NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then oeg22:='| ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then oeg22:='| ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then oeg22:='| ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then oeg22:='| ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then oeg22:='| ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then oeg22:='| HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then oeg22:='| HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, Inmune supresión.';
-if oeg=92 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then oeg22:='| HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then oeg22:='| METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then oeg22:='| ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then oeg22:='| ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then oeg22:='| INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then oeg22:='| DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then oeg22:='| LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then oeg22:='| NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then oeg22:='| NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg=109 then oeg22:='| NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
+LRectificado.Caption := 'Rectificado | ';
+GProgreso.Progress := 0;
+button27.enabled:=true;
+lab33:= 1+random(43);
+  ComponentName:='radiobutton'+IntToStr(lab33);
+  Comp:=FindComponent(ComponentName);
+   (Comp as TRadioButton).Color:=clred;
 end;
 
 procedure TLiveCell.Panel9Click(Sender: TObject);
@@ -2293,13 +2062,11 @@ end;
 procedure TLiveCell.BMaestroParasitosClick(Sender: TObject);
 begin
 Reaccion_Irregular(); MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If CBAParasitos.Checked = True Then TParasitos.Enabled := True;
 TCTParasitos.Enabled := True;
 Fmain.recmain:=Fmain.recmain+1;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 90+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -2320,9 +2087,9 @@ Until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 rectificado:= 20+random(90);
 if rectificado>100 then rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado) ;
@@ -2330,7 +2097,6 @@ LRectificado.Refresh;
 TParasitos.Enabled := False;
 LimpiaBParasitos();
 TCTParasitos.Enabled := False;
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then BMaestroParasitosClick(Sender);
 if (rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -2339,14 +2105,25 @@ end;
 procedure TLiveCell.PCerrarParasitosClick(Sender: TObject);
 begin
 PParasitologia.visible:=false;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 LRectificado.refresh;
 end;
 
 procedure TLiveCell.RadioButton8Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a médula ósea ';
-testform1.Edit6.text:= testform1.Edit6.text+'Bone Marrow, ';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Terapia a médula ósea.';
+testform1.EPOrganosAfectados.text:= testform1.EPOrganosAfectados.text+' Médula espinal.';
+begin1:=333+random(33);
+end1:=1111+random(33);
+int1:=1+random(10);
+int2:=5+random(10);
+Button22.Enabled := True;
+end;
+
+procedure TLiveCell.EnlaceRadioButtons();
+begin
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Terapia a sangre.';
+testform1.EPOrganosAfectados.text:= testform1.EPOrganosAfectados.text+' Sangre.';
 begin1:=333+random(33);
 end1:=1111+random(33);
 int1:=1+random(10);
@@ -2356,66 +2133,32 @@ end;
 
 procedure TLiveCell.RadioButton9Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
-Button22.Enabled := True;
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.RadioButton7Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
-Button22.Enabled := True;
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.RadioButton6Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
-Button22.Enabled := True;
-Button22.Enabled := True;
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.RadioButton5Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.RadioButton4Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.RadioButton3Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia a sangre ';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sangre ';
-begin1:=333+random(33);
-end1:=1111+random(33);
-int1:=1+random(10);
-int2:=5+random(10);
+EnlaceRadioButtons();
 end;
 
 procedure TLiveCell.BTerapiasClick(Sender: TObject);
@@ -2553,13 +2296,13 @@ if soc<2 then label120.caption:=inttostr(100-(random(50)));
 if soc<2 then label111.caption:=inttostr(100-(random(50)));
 if soc<2 then label112.caption:=inttostr(100-(random(50)));
 if soc<2 then label113.caption:=inttostr(100-(random(50)));
-if pn2>0 then label174.caption:=' | Medicaciones alopáticas';
-if pn3>0 then label175.caption:=' | Tabaquismo';
-if pn4>0 then label176.caption:=' | Supresión alopática';
-if pn8>0 then label177.caption:=' | Azúcar refinada';
-if pn12>0 then label178.caption:=' | Toxicidad';
-if pn7>0 then label179.caption:=' | Estrés';
-if pn5>0 then label180.caption:=' | Metales pesados';
+if pn2>0 then label174.caption:=' Medicaciones alopáticas.';
+if pn3>0 then label175.caption:=' Tabaquismo.';
+if pn4>0 then label176.caption:=' Supresión alopática.';
+if pn8>0 then label177.caption:=' Azúcar refinada.';
+if pn12>0 then label178.caption:=' Toxicidad.';
+if pn7>0 then label179.caption:=' Estrés.';
+if pn5>0 then label180.caption:=' Metales pesados.';
 
 
 
@@ -2726,533 +2469,6 @@ if pn5>0 then label180.caption:=' | Metales pesados';
         DM.Conscida.last;
 end;
 
-procedure TLiveCell.RadioButton1Click(Sender: TObject);
-begin
-    Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios en glóbulos rojos - C1 - Células objetivo.'+
-' | POSIBLES CAUSAS:'+
-' Bajo 02, B12, ácido fólico, anemia, insuficiencia de bilis, hepatitis obstructiva, hierro bajo o síntesis reducida de hemoglobina,'+
-' menstruación copiosa, úlceras, hipotiroidismo, disfunción del bazo, disbiosis, piel pálida, letargo, viajes aéreos largos de menos de 72'+
-' horas, talasemia, fatiga extrema. | '+
-' | TERAPIAS RECOMENDADAS:'+
-' Enzimas vegetales, hierro, ácido fólico, B16, B12, alimentos verdes, hígado, HCl taurina, n-acetil, cisteína, trigo, cereales, algas marinas,'+
-' rábano negro, pancreatina, colina, inositol, muchokehl con alkala sanuvis, terapia con el sistema usando el programa de ''Sarcodes'' una vez'+
-' a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-
-end;
-
-procedure TLiveCell.RadioButton2Click(Sender: TObject);
-begin
-    Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios en glóbulos rojos - C2 - Inclusiones en glóbulos rojos (Parasitados).'+
-' | POSIBLES CAUSAS:'+
-' Estilo de vida demasiado estresante, aparecen de 18 a 24 meses antes de los síntomas clínicos, infecciones en levadura,'+
-' desequilibrios en la flora intestinal, pH de la saliva, disbiosis acídica, enfermedades agudas y crónicas, afecciones relacionadas a fungosidades en la piel.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Manejo del estrés, inoculación de la flora, 714-X, ácido pantotenico, terapias apropiadas con el sistema, propilis B6, glándulas de bazo,'+
-' vitamina A, vitamina B6, mucokehl & alkala, pH sanguíneo a 7.35.'+
-oeg22+' | '+oeg21;
-
-end;
-
-procedure TLiveCell.RadioButton10Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios en glóbulos rojos - C3 - Glóbulos rojos de apariencia áspera y espinosa (Equinocitos).'+
-' | POSIBLES CAUSAS:'+
-' Aumento de la disbiosis, afecciones relacionadas con el bazo y el hígado, entrega incompleta del 02.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Carroñeros de los radicales libres, selenio, concentrados de higado y bazo fresco, complejo B, PABA, enzimas, vitamina C, amortiguador del pH, '+
-' vitamina E, terapia con el sistema usando el programa de ''Sarcodes'' una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton11Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Formaciones en glóbulos rojos - D1 - Cartúcho.'+
-' | POSIBLES CAUSAS:'+
-' Hiperviscosidad de la sangre, disbiosis, hiperproteinemia, estrés intestinal, mental o físico, mieloma múltiple, congestión, bajo O2,'+
-' digestión pobre, proteína asimetrica en moléculas, se complica si se mezcla con fibrina, deficiencias minerales, estreses geopáticos,'+
-' radiación química, mala circulación, pies y manos frías.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Nutrición adecuada, cuidado de la flora intestinal, equilibramiento del pH, si el estrés es causado por la disbiosis entonces se puede usar'+
-' muchokehl latensin, utilina, pefrakehl, sanuvis, HCl, niacina, enzimas, trazo de minerales de cayena, B3, pancreatina, té, agua con limón, '+
-' drenaje del hígado, sistema linfático, riñones, protocolo para intestinos perforados, calcio proctate, páncreas, Tahebo  '+
-' ozono, repatronamiento del ADN, terapia de ''sarcodes'' con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton12Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Formaciones en glóbulos rojos - D2 - Agregación.'+
-' | POSIBLES CAUSAS:'+
-' Ingestión de grasas saturadas que inhiben el 02 & C02, transferencia inapropiada del pH, electrolitos y trazos de minerales, desequilibrio'+
-' enzimático, excreción pobre, exposición a frecuencias ELF/EMF, metales pesados, ingestión de alimentos tóxicos, condiciones relacionadas'+
-' con el hígado, estrés crónico, estrés extremo para oír, respiración entrecortada, dolor en las articulaciones, pH sanguíneo alcalino,'+
-' riesgo de ''CVA''.'+
-' TERAPIAS RECOMENDADAS:'+
-' Baños con soda caústica, alimentos fermentados con pertin, espirulina, vitaminas B3, B6 & E, Caynne  EFA, alimentos naturales y frescos,'+
-' HCl & pancreatina, alimentos celulares, sales celticas, enzimas, citrato de potasio, diversas terapias con el sistema, niacina,'+
-' reorganización del ADN, trazos de minerales, ozono, quelación, raíz de licorice, alimentos orgánicos, alkala, sanuvis, nigersan, '+
-' mucokehl & HCl en forma IV.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton13Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E1 - Muy pocos.'+
-' | POSIBLES CAUSAS:'+
-' Respuesta inadecuada del sistema inmunitario, radiación, quimioterapia, radicales libres.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Terapia celular, ozono, transfusiones de sangre, terapias diversas con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton14Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E1 - Demasiados.'+
-' | POSIBLES CAUSAS:'+
-' Infección, condiciones digestivas, sospechar de los kioekothecits, alergia, enfermedad de Hodgkin''s, leucemia.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Terapia celular, vitamina C, HCl, pH Sanum, terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton15Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E2 - Vitalidad bajo el 75%.'+
-' | POSIBLES CAUSAS:'+
-' Bacteriales, fungales, infecciones virales, fatiga crónica, fumar, hipoxia, bajo HCl, vitamina C y zinc, aumento del consumo de azúcar,'+
-' candida, fungosidades, insuficiencia del sistema digestivo.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Tomillo fresco, semillas de uvas, vitamina C, terapia de ozono & baños de peroxido, HCl & pepsina con las comidas, protocolo con Sanum'+
-' Candida, dismutasa súper oxido - SOD, trazos de minerales, enzimas, terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton16Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E3 - Glóbulos blancos parasitados (Enderlein).'+
-' | POSIBLES CAUSAS:'+
-' Medicaciones no esteroides, hipoxia de la flora intestinal, empastes metálicos en los dientes, disbiosis, sindrome de intestino agujereado, leucemia,'+
-' infección parasitaria, defensa celular irregular, enfermedad de Hodgkin''s, lunas oscuras bajo los ojos, puntos blancos en las uñas, eczema, retención de fluidos.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Rebas, latensin, recarcin para alimentos, parásitos, BTA, spenglersan,'+
-' testar candida, vitamina A, B6, C, zinc,'+
-' terapia de zap con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton17Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E4 - Glóbulos blancos híper segmentados.'+
-' | POSIBLES CAUSAS:'+
-' HCL, B12, ácido fólico, inmunidad débil, quimioterapia, afecciones crónicas degenerativas,'+
-' mala absorción, glositis, lengua roja-magenta, depresión, temas relacionados con la menopausia, riesgo de'+
-' ataques de corazón.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Dismutasa súper oxido-SOD, análisis mineral de zinc, cobre y manganeso, vegetales'+
-' de hojas frondosas verdas, legumbres, espinaca, vitamina B12, HCl,'+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton18Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Glóbulos blancos - E5 - Glóbulos blancos disueltos.'+
-' | POSIBLES CAUSAS:'+
-' Sistema inmunológico comprometido, cortisona, uso de temas linfáticos, estrés geopático, vitamina B12, ácido fólico,'+
-' desequilibrio en focos dentales, pipas de cobre, asimilación defectuosa de metales pesados y mala digestión.'+
-' | TERAPIAS RECOMENDADAS:'+
-' Enzimas, equilibramiento del pH, terapias de desintoxicación y de sangre'+
-' con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton19Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Fibrina - F1 - Formación de ramilletes espesos en forma de telaraña'+
-' | POSIBLES CAUSAS: Disbiosis, estrés de hígado y riñón, cáncer, afecciones cardíacas, toxicidad en intestinos,'+
-' daño de oxidación en sangre, fatiga, artritis, temas de reumatismo y articulaciones, problemas con tejidos conectivos,'+
-' estrés de la mesenquima, malabsorpción, congestión de O2, flatulencia, hipersensitividad,'+
-' fármacos, antibióticos, uso de antihistamina, dolores de cabeza, tilenol,'+
-' afecciones degenerativas y crónicas, lupus, esclerosis múltiple, MG, ALS (desordenes turberculinos), alcohol, virus.'+
-' | TERAPIAS:'+
-' Equilibramiento del pH, drenaje homeopático, limpieza intestinal, spenglersan, consumir 8 vasos de agua al día,'+
-' HCL, ejercicio y caminatas vigorosas, enzimas, trazos de potasio citrato, minerales, vitaminas B,'+
-' mucokehl, nigersan & atox alkala, sanuvis, tés verdes naturales, bifidus, jugos naturales,'+
-' licorice, aceite de salmón, omega 3, terapias de sarcodes con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton20Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Fibrina - Plaquetas no visibles con NaCl.'+
-' | POSIBLE CAUSAS:'+
-' Estrés, toxicidad.'+
-' | TERAPIAS:'+
-' Terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton21Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Fibrina - G1-G3 - Agregación de plaquetas.'+
-' | POSIBLES CAUSAS: Desequilibrio del pH, exceso de proteínas, alimentos tóxicos, triglicéridos, estrés, extremidades frías,'+
-' O2 incluyendo materiales quelosos, movilidad hacia arriba de la mucosa congestora, diabetes, infecciones virales'+
-' incluyendo la Epstein Barr, herpes, hepatitis C, angina niacina & magnesio, deficiencias por bajas consumiciones de'+
-' frutas & verduras. Alto riesgo de ataque cardiovascular y embolias, estrés del hígado, circulación pobre,'+
-' presión sanguínea alta, arterioesclerosis, degeneración de las paredes arteriales, poca energía, dolor en las'+
-' espinillas al caminar, cáncer progresivo, quelación EDTA presente, ozone, H2O2 que causa enfermedad.'+
-' | TERAPIAS:'+
-' Enzimática, digestiva, apoyo a CBC & HDI, equilibramiento del pH, ozono terapia, GIA, DHA ,lecitina, omega 3,'+
-' vegetales, vitaminas E & C, grasas frescas no saturadas y naturales, l-carnitina, pescado, quelación EFA, n-acetil cisteina,'+
-' potasio magnesio aspartate, B6, 12 Cayena, drenaje homeopático, limpieza del colon,'+
-' Doppler, IV del HCL & Mucokehl, alcalino quelación, mucokehl, sanuvis, terapia con mucokehl milieu,'+
-' enzimas, terapia ''milk thistle'', lipotropicos, vitamina C, B6, E, cromo-terapia.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton43Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Sistatogenia | Unificación de proteína coloide del encobionte en'+
-     ' estados diferentes de desarrollo para obtener una forma estable de múltiples especies.'+
-' | POSIBLES CAUSAS:'+
-' Terreno anaeróbico, fermentación.'+
-' | TERAPIAS: '+
-' Equilibrar el pH, ozono terapia, '+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton38Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Rojo-amarillo.'+
-' | POSIBLES CAUSAS:'+
-' Toxicidad de la flora intestinal e hígado, constipación, infección, presión sanguínea alta, placa,'+
-' arterias bloqueadas, ácido úrico, SIDA, esclerosis múltiple, desordenes del tejido conectivo, tuberculosis,'+
-' fármacos prescritos, erupciones en la piel, alimentos tóxicos, putrefacción en los intestinos, intestinos perforados,'+
-' fatiga crónica, Epstein Barr, herpes, drogadicción, cáncer, comida chatarra, cándida.'+
-' | TERAPIAS:'+
-' Terapias enzimáticas, drenaje de utilina (especialmente en el cuerpo superior), drenaje/desintoxicación de riñones,'+
-' notakehl & nigersan (especialmente en el cuerpo bajo), drenaje del hígado de latensin & taraxecum'+
-' & chelidonum, ozono terapia, nigersan, alimentos frescos y naturales, verdes y bondadosos con el colon,'+
-' enzimas digestivas para regeneración de la flora intestinal, terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton39Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Cristales cuadrados.'+
-' | POSIBLES CAUSAS:'+
-' Problemas neurológicos que impiden la circulación al cerebro y corazón,'+
-' incluyendo toxinas de metales pesados.'+
-' | TERAPIAS:'+
-' Terapias de reparación neurológica con el sistema dos veces por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton32Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales: Blanco y blanco-amarillo.'+
-' | POSIBLES CAUSAS:'+
-' Dificultad circulatoria a cerebro y corazón, incluyendo toxinas de metales pesados y fármacos,'+
-' Estrés de riñones, estrés de hígado, trozos de tejido esclerótico, lipasa inadecuada, dificultades metabólicas,'+
-' proteína no digerida, procesos inflamatorios capaces de desarrollo pleomórfico resistente a un ambiente'+
-' competitivo.'+
-' | TERAPIAS:'+
-' Drenaje homeopático, alimentos frescos y verdes, trazos de minerales, hidratación del organismo, lavado celular,'+
-' concentración de grasas no saturadas animales y vegetales, terapia a hígado y riñones, vitaminas B, ácido fólico C, mezcla de fibras,'+
-' terapias de sarcodes una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton33Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Amarillo-rojo, tuberculosis.'+
-' | POSIBLES CAUSAS:'+
-' Tuberculosis,'+
-' Dificultad circulatoria a cerebro y corazón, incluyendo toxinas de metales pesados y drogas.'+
-' | TERAPIAS:'+
-' Terapias enzimáticas, drenaje de utilina (especialmente en el cuerpo superior), drenaje/desintoxicación de riñones,'+
-' notakehl & nigersan (especialmente en el cuerpo bajo), drenaje del hígado de latensin & taraxecum '+
-' & chelidonum, ozono terapia, Nigersan, alimentos frescos y naturales, verdes y bondadosos con el colon,  '+
-' enzimas digestivas para regeneración de la flora intestinal, terapias zap con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton34Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Trapezoide, cristales rotos.'+
-' | POSIBLES CAUSAS:'+
-' Tuberculosis, infecciones sistémicas,'+
-' dificultad circulatoria a cerebro y corazón, incluyendo toxinas de metales pesados y drogas.'+
-' | TERAPIAS:'+
-' Terapias enzimáticas, drenaje de utilina (especialmente en el cuerpo superior), drenaje/desintoxicación de riñones,'+
-' notakehl & nigersan (especialmente en el cuerpo bajo), drenaje del hígado de latensin & taraxecum '+
-' & chelidonum, ozono terapia, Nigersan, alimentos frescos y naturales, verdes y bondadosos con el colon,  '+
-' enzimas digestivas para regeneración de la flora intestinal, terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton35Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Marrón o marrón-amarillo.'+
-' | POSIBLES CAUSAS:'+
-' Disfunción del abdomen superior, hígado o vesícula biliar.'+
-' | TERAPIAS:'+
-' Masaje del abdomen superior, terapias de limpieza del hígado y vesícula biliar,'+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton37Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Reflección azul, acicano azul.'+
-' | POSIBLES CAUSAS:'+
-' Disturbios metabólicos y/o aspergillus, tiroides y pesticidas.'+
-' | TERAPIAS:'+
-' Terapias de reparación metabólica con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton36Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Amarillo, azul y verde.'+
-' | POSIBLES CAUSAS:'+
-' Temas urogenitales, estado pre-noplástico, tilenol.'+
-' | TERAPIAS:'+
-' Terapia de sarcodes una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton22Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H1 - Muy pocos.'+
-' | POSIBLES CAUSAS:'+
-' Membranas de las células rojas muy gruesas lo que no permite a los somatidos/protitos emerger,'+
-' pH demasiado alcalino, defensas débiles.'+
-' | TERAPIAS:'+
-' Regulación del pH, minerales, sales, vitaminas, hormonas, enzimas, metales,'+
-' Mucokehl & Nigresan,'+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton23Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H1 - Demasiados (Velo Protist).'+
-' | POSIBLES CAUSAS:'+
-' pH ácido en tejido y sangre alcalina durante terapia isopática, abundancia de protones con bajo pH,'+
-' quilomicrones al máximo 2-6 hrs. después de una comida rica en grasas, problemas con los órganos digestivos,'+
-' presión sanguínea alta, digestión pobre de grasas, insuficiencia pancreática, obesidad,'+
-' intestino perforado, grasas altas en la sangre o problemas con el hígado.'+
-' | TERAPIAS:'+
-' pH sanguíneo de 7.35 para formación espermática, Alkala & Sanuvis, regular el pH antes de iniciar'+
-' terapias isopticas u otra terapia de desintoxicación de riñones de metales pesados,'+
-' dieta con comidas frescas y naturales, atención especial a hígado y bazo, vitamina B y ácido fólico, vitamina C, lipotropicos,'+
-' drenaje homeopático, desintoxicación de flora intestinal, enzimas, grasas saturadas, lecitina EFA.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton24Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - Demasiados cilomicrones.'+
-' | POSIBLES CAUSAS:'+
-' quilomicrones al máximo 2-6 hrs. después de una comida rica en grasas, problemas con los órganos digestivos,'+
-' presión sanguínea alta, digestión pobre de grasas, insuficiencia pancreática, obesidad,'+
-' intestino perforado, grasas altas en la sangre o problemas con el hígado.'+
-' | TERAPIAS:'+
-' dieta con comidas frescas y naturales, atención especial a hígado y bazo, vitamina B y ácido fólico, vitamina C, lipotropicos,'+
-' drenaje homeopático, desintoxicación de flora intestinal, enzimas, grasas saturadas, lecitina EFA,'+
-' terapias de sarcodes con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton25Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H2 - Macrosimprotitos (Bacteria embriónica).'+
-' | POSIBLES CAUSAS:'+
-' pH ácido en tejido y alcalinidad en disfunción inmune de la sangre, uso de antibióticos,'+
-' fermentación en el proceso digestivo, condición anaeróbica, SIDA, extremidades frías, circulación pobre,'+
-' depresión, mialgias, dolor abdominal, deficiencias congénitas y de memoria, intestinos perforados,'+
-' flora intestinal inflamada, enterocolitis, enfermedad de Crohn, anquilosis espondolitis, eczema, '+
-' psoriasis, fibrosis cística, afección celiaca, sensibilidad a químicos en los alimentos, uso de antibióticos,'+
-' focos dentales, afecciones medio ambientales, desequilibrio en la flora intestinal, endobiosis alta.'+
-' | TERAPIAS:'+
-' Alkala & Sanuvis, regulación del pH, desintoxicación del hígado, prestar atención a temas digestivos,'+
-' sensitividades de la flora intestinal, repatronamiento del ADN, usar Notakehl para liberar todas las vitaminas B, retinal,'+
-' ascorbate, tocoferol, zinc, selenio, molibdeno, manganeso, magnesio EFA,'+
-' glutamina, glutatione, flavanoides, figer spenglersan, mucokehl, nigersan o sankombi,'+
-' terapias digestivas con el sistema de acuerdo a la gravedad del caso.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton26Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H7 - Pteroharpen (Proteina seca).'+
-' | POSIBLES CAUSAS:'+
-' Exceso de proteínas no digeridas en la sangre y relacionadas a afecciones cardíacas, afección recurrente,'+
-' asma, artritis.'+
-' | TERAPIAS:'+
-' Enzimas, cambios dietéticos, nigersan, equilibriamiento del pH, alimentos frescos y naturales,'+
-' reemplace la proteína animal, citrokehl spenglersan, pancreatina, HCL, '+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton27Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H3 - Formas Naessens como levadura (Célula con membrana deficiente).'+
-' | POSIBLES CAUSAS: Resfriados, dolores de oído, fiebres'+
-' relacionadas con infecciones agudas y crónicas que pueden ser inducidas por luz ultra violeta y penicilina (Si'+
-' el pH es acido esto desarrollará más resistencia a los antibióticos y germicidas),'+
-' terreno anaeróbico, ingestión de aminoácidos, síndrome de intestinos perforados, flora intestinal comprometida,'+
-' terapias antibióticas tóxicas, ácidos nucléicos no digeridos y lípidos, químicos, azúcar alta en la sangre.'+
-' | TERAPIAS:'+
-' Terapias bio-oxidativas, terapias ambientales de flora intestinal, propilis, vitamina A, B, B5, B6, C y D,'+
-' timo, glándulas, zinc, ajo, silver coloidal, drenaje homeopático, limpieza de intestinos,'+
-' extracto de la hoja del olivo, mucokehl & alkala, 714 - X, problemas de absorpción del zinc, equinacea.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton28Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H7 - Coloide (globos transparentes), sin núcleos en mychits 4-7 que'+
-     ' actúa como trombositos & dioekotecitos (2da defensa).'+
-' | POSIBLES CAUSAS:'+
-' Regulación de respuesta inmunitaria para crear lo espermits, coloides y macrosimprotitos.'+
-' | TERAPIAS:'+
-' eL pH de la sangre debe ser 7.35,'+
-' terapias de sangre con el sistema una vez a la semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton29Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H5 - Tecitos con 1-3 o más de 7 núcleos (Bacteria mucor),'+
-     ' llamada  un Ascus (Naessens) es un tecit con más de 9 núcleos.'+
-' | POSIBLES CAUSAS:'+
-' Replica la candida, procesos de fermentación, intestinos perforados, focos en la boca, afecciones crónicas,'+
-' cáncer, sistema linfático congestionado.'+
-' | TERAPIAS:'+
-' Candida: silver coloidal, flora intestinal, utilina, notakehl con alkala, ozono, albicansan,'+
-' fortakehl, focos dentales, pefrakehl, spenglersan, equilibrio del pH,'+
-' terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton30Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H6 Bacterial Rods (A mayor desarrollo mayor la patología).'+
-' | POSIBLES CAUSAS:'+
-' Virus con especies específicas de condritos, tumores, focos dentales, en el abdomen se puede convertir en peritonitis,'+
-' en el estómago se puede convertir en apendicitis, mieloma & diabetes, pensamiento enredado.'+
-' | TERAPIAS:'+
-' Mucokehl, alkala, equilibramiento del pH, terapias de oxigenación, zinc, flora intestinal, spenglersan,'+
-' propilis, timo, vitamina A & C,'+
-' terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton31Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - H6 - Ascitis y Sinascitis (Desde michitos),'+
-     ' que parecen brillar en las células rojas. Cuando se presiona el cristal del microscopio'+
-     'los ascitos emergen si es que están presentes.'+
-' | POSIBLES CAUSAS:'+
-' No se encuentran en sangre saludable, incluso días después de extraída, pre-cancerígeno, patologías orales, plata,'+
-' canales raíz, puentes, coronas, Alzheimer, Parkinson, esclerosis múltiple.'+
-' | TERAPIAS:'+
-' Necesidad de que los espermas copulen con el muclei mucokehl, equilibramiento del pH, enzimas,'+
-' despejar los focos dentales, spenglersan,'+
-' terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton40Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cambios pleomórficos somatidos/protitos - simplastos, protoplastos, coloide.'+
-' | POSIBLES CAUSAS:'+
-' Afecciones degenerativas, toxemia, exceso de coloides, insuficientes reservas nutricionales, toxinas,'+
-' endobiote no regulada, entre más duro el simplasto más difícil el caso.'+
-' | TERAPIAS:'+
-' Terapias de sangre y zap con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton41Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Simplastos / Protoplastos - Trombocitos y Leucocitos de tallo fibroso (Naessens).'+
-' | POSIBLES CAUSAS:'+
-' Patogénico, alta alcalinidad de la sangre debido a la fibrina, liberación excesiva de la hormona del crecimiento'+
-' que genera afecciones crónicas, radiación, quimioterapia.'+
-' | TERAPIAS:'+
-' Disolver con mucokehl & nigersan y/o sankombi, equilibrar el pH, ozono,'+
-' terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton42Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Simplastos / Protoplastos - Protoplasmas (Contorno gris-blanco), con cristales rojos.'+
-' | POSIBLES CAUSAS:'+
-' Células bacteriales & fungales con plasma en la membrana, comprometimiento del sistema inmunitario, dientes,'+
-' condiciones degenerativas, fatiga, disfunción de hígado y de riñones, caldo de cultivo para infecciones bacteriales,'+
-' terreno no regulado, urogenital, resfriados, toxicidad extrema de los intestinos, streptococo mutants.'+
-' | TERAPIAS:'+
-' Pancreatina, terapias colonicas, spenglersan, mucokehl, alkala, nigersan,'+
-' vitamina A, B5, B6, C & D, timo, suprarrenal & bazo, glándulas, zinc, flora intestinal, equinacea,'+
-' terapias de sangre con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
-procedure TLiveCell.RadioButton44Click(Sender: TObject);
-begin
-  Memo1.Lines.Clear;
-     Memo1.Lines[0]:=' | Cristales - Acero azul con un pequeño borde rojo.'+
-' | POSIBLES CAUSAS:'+
-' Tuberculosis, infección sistémica de causas desconocidas.'+
-' | TERAPIAS:'+
-' Aumentar la función de los pulmones con ejercicios de yoga para los pulmones,'+
-' Terapias de sarcodes con el sistema una vez por semana durante un mes.'+
-oeg22+' | '+oeg21;
-end;
-
 procedure TLiveCell.Panel8Click(Sender: TObject);
 begin
 panel7.visible:=false;
@@ -3260,8 +2476,8 @@ end;
 
 procedure TLiveCell.RadioButton48Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' Terapia sanguínea.';
-testform1.Edit6.text:= testform1.Edit6.text+' Sangre.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Terapia sanguínea.';
+testform1.EPOrganosAfectados.text:= testform1.EPOrganosAfectados.text+' Sangre.';
 begin1:=333+random(33);
 end1:=1111+random(33);
 int1:=1+random(10);
@@ -3269,23 +2485,11 @@ int2:=5+random(10);
 Button22.Enabled := True;
 end;
 
-procedure TLiveCell.Button19Click(Sender: TObject);
-begin
-LRectificado.Caption := 'Rectificado |';
-GProgreso.Progress := 0;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo+10);
-button27.enabled:=true;
-lab33:= 1+random(43);
-  ComponentName:='radiobutton'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-   (Comp as TRadioButton).Color:=clred;
-end;
-
 procedure TLiveCell.Button20Click(Sender: TObject);
 VAR
     R1 : Integer;
 begin
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 LRectificado.refresh;
 button28.enabled:=true;
  R1:=Random(listbox1.Items.Count);
@@ -3293,57 +2497,6 @@ button28.enabled:=true;
  ListBox1Click(Sender);
 end;
 
-        {
-procedure TLiveCell.Button23Click(Sender: TObject);
-begin
-button23.enabled:=false;
-label72.caption:=inttostr((pn7*10)-random(30));
-if pn7<2 then  label72.caption:=inttostr(50+random(150));
-DM.Conscida.open; DM.Conscida.IndexName:='';
- DM.Conscida.First;
-DM.Conscida.FindKey([2838]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label1.Caption:=IntToStr(t);
- DM.Conscida.FindKey([2843]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label2.Caption:=IntToStr(t);
- DM.Conscida.FindKey([2855]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label3.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1999]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label4.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1501]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label5.Caption:=IntToStr(t);
- DM.Conscida.FindKey([2348]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label6.Caption:=IntToStr(t);
- DM.Conscida.FindKey([3885]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label7.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1997]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label8.Caption:=IntToStr(t);
- DM.Conscida.FindKey([2065]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label9.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1413]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label10.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1849]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label13.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1848]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label15.Caption:=IntToStr(t);
- DM.Conscida.FindKey([908]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19) ;
- Label14.Caption:=IntToStr(t);
- DM.Conscida.FindKey([1845]);
- t:=DM.Conscidavalue.asinteger +random(20)-random(19);
- Label16.Caption:=IntToStr(t);
-end;   }
 
 procedure TLiveCell.ListBox1DblClick(Sender: TObject);
 begin
@@ -3353,39 +2506,8 @@ end;
 procedure TLiveCell.Button26Click(Sender: TObject);
 begin
 Inicio();
-PDesarrollo.Caption := 'Realizando terapia para '+Button26.Caption+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button26.Enabled := False;
-end;
-
-procedure TLiveCell.Edit91DblClick(Sender: TObject);
-begin
-edit91.text:='';
-end;
-
-procedure TLiveCell.Edit92DblClick(Sender: TObject);
-begin
-edit92.text:='';
-end;
-
-procedure TLiveCell.Edit93DblClick(Sender: TObject);
-begin
-edit93.text:='';
-end;
-
-procedure TLiveCell.Edit95DblClick(Sender: TObject);
-begin
-edit95.text:='';
-end;
-
-procedure TLiveCell.Edit94DblClick(Sender: TObject);
-begin
-edit94.text:='';
-end;
-
-procedure TLiveCell.FormHide(Sender: TObject);
-begin
-SCIOworking.RadioButton5.checked:=True;
 end;
 
 procedure TLiveCell.Edit6Click(Sender: TObject);
@@ -3397,9 +2519,6 @@ procedure TLiveCell.BEInmunitariaClick(Sender: TObject);
 begin
 Inicio();
 PInmunologia.Visible := False;
-  scioworking.button16.caption:='Detener estimulación inmunitaria + Limpieza de sangre';
-  scioworking.button15.caption:='Iniciar estimulación inmunitaria + Limpieza de sangre';
-  scioworking.button2.caption:='Estimulación inmunitaria + Limpieza de sangre';
    SCIOworking.RadioGroup2.enabled:=true;
   SCIOworking.RadioGroup2.ItemIndex:=1;
   SCIOworking.SC_Command:='';
@@ -3413,9 +2532,6 @@ procedure TLiveCell.BCelulasMadreRxClick(Sender: TObject);
 begin
 Inicio();
 PInmunologia.Visible := False;
-  scioworking.button16.caption:='Finalizar estimulación de células madre';
-  scioworking.button15.caption:='Iniciar estimulación de células madre';
-  scioworking.button2.caption:='Estimulación de células madre';
    SCIOworking.RadioGroup2.enabled:=true;
   SCIOworking.RadioGroup2.ItemIndex:=1;
   SCIOworking.SC_Command:='';
@@ -3427,18 +2543,14 @@ end;
 
 procedure TLiveCell.Button28Click(Sender: TObject);
 begin
- PDesarrollo.caption:='Realizando una '+Button28.Caption+'...';
 Francis();
 end;
 
 procedure TLiveCell.Button27Click(Sender: TObject);
 begin
 Reaccion_Irregular(); MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
-PDesarrollo.Caption:='Efectuando terapia a ítem seleccionado...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 90+Random(60);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -3454,11 +2566,21 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rectificado := 60+random(80);
 if rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(rectificado);
-PDesarrollo.visible:=false;
+BCausas.Click;
+BOrganosGlandulas.Click;
+BAVM.Click;
+BMeridianos.Click;
+BProcesos.Click;
+BEPositivas.Click;
+BENegativas.Click;
+BToxinas.Click;
+BSistemas.Click;
+BCNutricionales.Click;
+BHomeopatia.Click;
 MyChrono.stop;
 if (CBAutomatico.checked=true) and (rectificado<85) then Button27.Click;
 if (CBTerapiaExtendida.checked=true) and (rectificado>84) then TerapiaExtendida();
@@ -3474,9 +2596,7 @@ procedure TLiveCell.Francis();
 begin
 Reaccion_Irregular(); MyChrono.Start;
 Fmain.recmain:=Fmain.recmain+1;
-LRectificado.Caption:='Rectificado |';
- PDesarrollo.visible:=true;
- PDesarrollo.refresh;
+LRectificado.Caption:='Rectificado | ';
 GProgreso.progress:=0;
 vtiempo := 90+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -3497,7 +2617,6 @@ rectificado := 40+random(75);
 if rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.visible:=false;
 if (rectificado<85) and (cbautomatico.checked=true) then francis();
 if (rectificado>84) and (cbterapiaextendida.checked=true) then terapiaextendida();
 MyChrono.Stop;
@@ -3539,7 +2658,6 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 Fmain.recmain:=Fmain.recmain+5;
 vtiempo := 45+Random(60);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -3561,7 +2679,6 @@ FMain.shaping:=random(105);
 Rectificado := 50+random(60);
 If Rectificado>100 Then Rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(Rectificado);
-PDesarrollo.visible:=false;
 trayres:=random(120);
 traycap:=random(120);
 traymag:=random(120);
@@ -3574,7 +2691,7 @@ GCapacitancia.Progress := traycap;
 GInductancia.Progress := traymag;
 GConductancia.Progress := traycon;
 GResonancia.Progress := trayres;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.stop;
 if (rectificado<85) and (CBAutomatico.Checked=True) then BMaestroSangre.Click;
 if (rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -3592,7 +2709,6 @@ End;
 
 procedure TLiveCell.Button46Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Tomando muestra de sangre de '+Pat_form.DBEdit1.Text+' desde bandeja o diodo...';
 FrecuenciasSangre();
 button46.Enabled:=False;
 GCapacitancia.Progress := 60+random(50);
@@ -3644,7 +2760,6 @@ end;
 
 procedure TLiveCell.Button52Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Tomando muestra virtual de sangre de '+Pat_form.DBEdit1.Text+'...';
 FrecuenciasSangre();
 Button52.Enabled := False;
 GCapacitancia.Progress := 50+random(50);
@@ -3657,7 +2772,6 @@ procedure TLiveCell.FrecuenciasSangre();
 begin
 Reaccion_Irregular(); MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 vtiempo := 5+Random(15);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -3674,7 +2788,6 @@ Until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PDesarrollo.Visible := False;
 trayres:= 80+random(20);
 traycap:=random(120);
 traymag:=random(120);
@@ -3690,7 +2803,7 @@ ENombre.Text := 'Muestra de sangre de '+Pat_form.DBEdit1.Text;
 Rectificado := 85+Random(15);
 LRectificado.Caption := 'Rectificado | '+IntToStr(Rectificado);
 ActivarBotones();
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then FrecuenciasSangre();
 If (rectificado>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
@@ -3698,112 +2811,96 @@ end;
 
 procedure TLiveCell.Button1Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button1.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button1.Enabled := False;
 end;
 
 procedure TLiveCell.Button68Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button68.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button68.Enabled := False;
 end;
 
 procedure TLiveCell.Button69Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button69.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button69.Enabled := False;
 end;
 
 procedure TLiveCell.Button9Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button9.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button9.Enabled := False;
 end;
 
 procedure TLiveCell.Button70Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button70.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button70.Enabled := False;
 end;
 
 procedure TLiveCell.Button10Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button10.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button10.Enabled := False;
 end;
 
 procedure TLiveCell.Button13Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button13.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button13.Enabled := False;
 end;
 
 procedure TLiveCell.Button84Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button84.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button84.Enabled := False;
 end;
 
 procedure TLiveCell.Button3Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button3.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button3.Enabled := False;
 end;
 
 procedure TLiveCell.Button36Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button36.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button36.Enabled := False;
 end;
 
 procedure TLiveCell.Button14Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button14.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button14.Enabled := False;
 end;
 
 procedure TLiveCell.Button23Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button23.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button23.Enabled := False;
 end;
 
 procedure TLiveCell.Button33Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button33.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button33.Enabled := False;
 end;
 
 procedure TLiveCell.Button50Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button50.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button50.Enabled := False;
 end;
 
 procedure TLiveCell.Button18Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button18.Caption+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button18.Enabled := False;
 end;
 
 procedure TLiveCell.Button71Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Edit9.Text+' con '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button71.Enabled := False;
 end;
@@ -4017,7 +3114,6 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 If CBABiomarcadores.Checked = True Then
 TBiomarcadoresCelulasMadre.Enabled := True;
 vtiempo := 120+Random(120);
@@ -4039,7 +3135,6 @@ GProgreso.Refresh;
 rectificado := 40+random(70);
 If rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(rectificado);
-PDesarrollo.visible:=false;
 trayres:=random(120);
 traycap:=random(120);
 traymag:=random(120);
@@ -4054,7 +3149,7 @@ GConductancia.Progress := traycon;
 GResonancia.Progress := trayres;
 TBiomarcadoresCelulasMadre.Enabled := False;
 LimpiaBiomarcadoresCelulas();
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 if (CBAutomatico.checked=true) and (rectificado<85) then BMaestroCelulasMadre.Click;
 if (CBTerapiaExtendida.checked=true) and (rectificado>84) then TerapiaExtendida();
@@ -4078,105 +3173,90 @@ end;
 
 procedure TLiveCell.Button32Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button32.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button32.Enabled := False;
 end;
 
 procedure TLiveCell.Button15Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button15.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button15.Enabled := False;
 end;
 
 procedure TLiveCell.Button35Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button35.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button35.Enabled := False;
 end;
 
 procedure TLiveCell.Button34Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button34.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button34.Enabled := False;
 end;
 
 procedure TLiveCell.Button25Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button25.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button25.Enabled := False;
 end;
 
 procedure TLiveCell.Button37Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button37.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button37.Enabled := False;
 end;
 
 procedure TLiveCell.Button43Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button43.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button43.Enabled := False;
 end;
 
 procedure TLiveCell.Button44Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button44.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button44.Enabled := False;
 end;
 
 procedure TLiveCell.Button48Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button48.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button48.Enabled := False;
 end;
 
 procedure TLiveCell.Button54Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para anemia '+Button54.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button54.Enabled := False;
 end;
 
 procedure TLiveCell.Button51Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button51.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button51.Enabled := False;
 end;
 
 procedure TLiveCell.Button60Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button60.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button60.Enabled := False;
 end;
 
 procedure TLiveCell.Button61Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button61.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button61.Enabled := False;
 end;
 
 procedure TLiveCell.Button62Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button62.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button62.Enabled := False;
 end;
 
 procedure TLiveCell.Button53Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+ECondicion.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button53.Enabled := False;
 end;
@@ -4184,108 +3264,84 @@ end;
 procedure TLiveCell.Button31Click(Sender: TObject);
 begin
 Inicio();
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button31.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button31.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button31.Enabled := False;
 end;
 
 procedure TLiveCell.Button38Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button38.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button38.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button38.Enabled := False;
 end;
 
 procedure TLiveCell.Button41Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button41.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button41.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button41.Enabled := False;
 end;
 
 procedure TLiveCell.Button40Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button40.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button40.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button40.Enabled := False;
 end;
 
 procedure TLiveCell.Button39Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button39.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button39.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button39.Enabled := False;
 end;
 
 procedure TLiveCell.Button56Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button56.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button56.Enabled := False;
 end;
 
 procedure TLiveCell.Button57Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button57.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button57.Enabled := False;
 end;
 
 procedure TLiveCell.Button58Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button58.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button58.Enabled := False;
 end;
 
 procedure TLiveCell.Button63Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button63.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button63.Enabled := False;
 end;
 
 procedure TLiveCell.Button64Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button64.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button64.Enabled := False;
 end;
 
 procedure TLiveCell.Button65Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button65.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button65.Enabled := False;
 end;
 
 procedure TLiveCell.Button66Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button66.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button66.Enabled := False;
 end;
 
 procedure TLiveCell.Button67Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button67.Caption+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button67.Enabled := False;
 end;
 
 procedure TLiveCell.Button59Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+EClonar.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button59.Enabled := False;
 end;
@@ -4320,14 +3376,12 @@ end;
 
 procedure TLiveCell.Button21Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Invirtiendo sangre de '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button21.Enabled := False;
 end;
 
 procedure TLiveCell.Button45Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Duplicando muestra de sangre de '+ENombre.Text+'...';
 FrecuenciasSangre();
 button45.Enabled:=False;
 end;
@@ -4348,266 +3402,228 @@ end;
 
 procedure TLiveCell.Label91Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+LCelula.Caption+'...';
 francis();
 if rectificado>84 Then label91.enabled := false;
 end;
 
 procedure TLiveCell.Label74Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+LProeritoblasto.Caption+'...';
 francis();
 if rectificado>84 Then label74.enabled := false;
 end;
 
 procedure TLiveCell.Label96Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+LMieloblasto.Caption+'...';
 francis();
 if rectificado>84 Then label96.enabled := false;
 end;
 
 procedure TLiveCell.Label77Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Linfoblasto.Caption+'...';
 francis();
 if rectificado>84 Then label77.enabled := false;
 end;
 
 procedure TLiveCell.Label97Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Monoblasto.Caption+'...';
 francis();
 if rectificado>84 Then label97.enabled := false;
 end;
 
 procedure TLiveCell.Label80Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Megacarioblasto.Caption+'...';
 francis();
 if rectificado>84 Then label80.enabled := false;
 end;
 
 procedure TLiveCell.Label89Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Eritroblasto.Caption+'...';
 francis();
 if rectificado>84 Then label89.enabled := false;
 end;
 
 procedure TLiveCell.Label86Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Progranulocito.Caption+'...';
 francis();
 if rectificado>84 Then label86.enabled := false;
 end;
 
 procedure TLiveCell.Label94Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Linfocito.Caption+'...';
 francis();
 if rectificado>84 Then label94.enabled := false;
 end;
 
 procedure TLiveCell.Label78Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Megacariocito.Caption+'...';
 francis();
 if rectificado>84 Then label78.enabled := false;
 end;
 
 procedure TLiveCell.Label83Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Eritrocitos.Caption+'...';
 francis();
 if rectificado>84 Then label83.enabled := false;
 end;
 
 procedure TLiveCell.Label87Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Basofilo.Caption+'...';
 francis();
 if rectificado>84 Then label87.enabled := false;
 end;
 
 procedure TLiveCell.Label98Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Eosinofilo.Caption+'...';
 francis();
 if rectificado>84 Then label98.enabled := false;
 end;
 
 procedure TLiveCell.Label82Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Neutrofilo.Caption+'...';
 francis();
 if rectificado>84 Then label82.enabled := false;
 end;
 
 procedure TLiveCell.Label85Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+LinfocitoT.Caption+'...';
 francis();
 if rectificado>84 Then label85.enabled := false;
 end;
 
 procedure TLiveCell.Label84Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+LinfocitoB.Caption+'...';
 francis();
 if rectificado>84 Then label84.enabled := false;
 end;
 
 procedure TLiveCell.Label130Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Monocito.Caption+'...';
 francis();
 if rectificado>84 Then label130.enabled := false;
 end;
 
 procedure TLiveCell.Label90Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Trombocitos.Caption+'...';
 francis();
 if rectificado>84 Then label90.enabled := false;
 end;
 
 procedure TLiveCell.Label88Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Granulocitos.Caption+'...';
 francis();
 if rectificado>84 Then label88.enabled := false;
 end;
 
 procedure TLiveCell.Label81Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Agranulocitos.Caption+'...';
 francis();
 if rectificado>84 Then label81.enabled := false;
 end;
 
 procedure TLiveCell.Label99Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Leucocitos.Caption+'...';
 francis();
 if rectificado>84 Then label99.enabled := false;
 end;
 
 procedure TLiveCell.Button72Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label137.Caption+'...';
 francis();
 if rectificado>84 Then Button72.enabled := false;
 end;
 
 procedure TLiveCell.Button85Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label138.Caption+'...';
 francis();
 if rectificado>84 Then Button85.enabled := false;
 end;
 
 procedure TLiveCell.Button83Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label139.Caption+'...';
 francis();
 if rectificado>84 Then Button83.enabled := false;
 end;
 
 procedure TLiveCell.Button82Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label141.Caption+'...';
 francis();
 if rectificado>84 Then Button82.enabled := false;
 end;
 
 procedure TLiveCell.Button81Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label143.Caption+'...';
 francis();
 if rectificado>84 Then Button81.enabled := false;
 end;
 
 procedure TLiveCell.Button80Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label142.Caption+'...';
 francis();
 if rectificado>84 Then Button80.enabled := false;
 end;
 
 procedure TLiveCell.Button79Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label144.Caption+'...';
 francis();
 if rectificado>84 Then Button79.enabled := false;
 end;
 
 procedure TLiveCell.Button78Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label140.Caption+'...';
 francis();
 if rectificado>84 Then Button78.enabled := false;
 end;
 
 procedure TLiveCell.Button77Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label145.Caption+'...';
 francis();
 if rectificado>84 Then Button77.enabled := false;
 end;
 
 procedure TLiveCell.Button76Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label146.Caption+'...';
 francis();
 if rectificado>84 Then Button76.enabled := false;
 end;
 
 procedure TLiveCell.Button75Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label147.Caption+'...';
 francis();
 if rectificado>84 Then Button75.enabled := false;
 end;
 
 procedure TLiveCell.Button74Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label148.Caption+'...';
 francis();
 if rectificado>84 Then Button74.enabled := false;
 end;
 
 procedure TLiveCell.Button73Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label149.Caption+'...';
 francis();
 if rectificado>84 Then Button73.enabled := false;
 end;
 
 procedure TLiveCell.Button86Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label150.Caption+'...';
 francis();
 if rectificado>84 Then Button86.enabled := false;
 end;
 
 procedure TLiveCell.Button87Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label151.Caption+'...';
 francis();
 if rectificado>84 Then Button87.enabled := false;
 end;
 
 procedure TLiveCell.Label135Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label135.Caption+'...';
 francis();
 if rectificado>84 Then Label135.enabled := false;
 end;
 
 procedure TLiveCell.Label136Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Label136.Caption+'...';
 francis();
 if rectificado>84 Then Label136.enabled := false;
 end;
@@ -4678,7 +3694,6 @@ end;
 
 procedure TLiveCell.Button8Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Amplificando sangre de '+ENombre.Text+'...';
 BMaestroSangre.Click();
 If Rectificado>84 Then Button8.Enabled := False;
 end;
@@ -4830,7 +3845,6 @@ end;
 
 procedure TLiveCell.Button93Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button93.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button93.Enabled := False;
 end;
@@ -4839,7 +3853,6 @@ procedure TLiveCell.BMaestroColesterolClick(Sender: TObject);
 begin
 Reaccion_Irregular(); MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 If CBABiomarcadores.Checked = True Then TBColesterol.Enabled := True;
 If CBAColesterol.Checked = True Then TColesterol.Enabled := True;
 vtiempo := 120+Random(120);
@@ -4861,7 +3874,6 @@ GProgreso.Refresh;
 rectificado := 35+random(70);
 If rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+InttoStr(rectificado);
-PDesarrollo.visible:=false;
 trayres:=random(120);
 traycap:=random(120);
 traymag:=random(120);
@@ -4878,7 +3890,7 @@ TBColesterol.Enabled := False;
 TColesterol.Enabled := False;
 LimpiaColesterol();
 LimpiaBColesterol();
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 if (CBAutomatico.checked=true) and (rectificado<85) then BMaestroColesterol.Click;
 if (CBTerapiaExtendida.checked=true) and (rectificado>84) then TerapiaExtendida();
@@ -4892,91 +3904,78 @@ end;
 
 procedure TLiveCell.Button94Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button94.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button94.Enabled := False;
 end;
 
 procedure TLiveCell.Button95Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button95.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button95.Enabled := False;
 end;
 
 procedure TLiveCell.Button96Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button96.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button96.Enabled := False;
 end;
 
 procedure TLiveCell.Button97Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button97.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button97.Enabled := False;
 end;
 
 procedure TLiveCell.Button98Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button98.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button98.Enabled := False;
 end;
 
 procedure TLiveCell.Button99Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button99.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button99.Enabled := False;
 end;
 
 procedure TLiveCell.Button100Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button100.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button100.Enabled := False;
 end;
 
 procedure TLiveCell.Button101Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button101.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button101.Enabled := False;
 end;
 
 procedure TLiveCell.Button102Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button102.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button102.Enabled := False;
 end;
 
 procedure TLiveCell.Button103Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button103.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button103.Enabled := False;
 end;
 
 procedure TLiveCell.Button104Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button104.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button104.Enabled := False;
 end;
 
 procedure TLiveCell.Button105Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button105.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button105.Enabled := False;
 end;
 
 procedure TLiveCell.Button106Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button106.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button106.Enabled := False;
 end;
@@ -5013,7 +4012,6 @@ end;
 
 procedure TLiveCell.Button89Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button99.Caption+'...';
 BMaestroColesterol.Click;
 If rectificado>84 Then Button89.Enabled := False;
 end;
@@ -5143,10 +4141,8 @@ function TLiveCell.CalculaResta():longint;
 var
    ran,total, resta :integer;
 begin
-
-
-   Try
-           resta := round(soc11/10);
+  Try
+  resta := round(soc11/10);
         Except
           on EDivByZero do  resta := 1;
         End; { 0 val valo osztas }
@@ -5197,7 +4193,7 @@ procedure TLiveCell.Button107Click(Sender: TObject);
 begin
 Actualiza_Valores();
     if RadioGroup3.ItemIndex = 0 then    begin
-  if (pn71>10) then diag71.Caption:='Acetona patogénica, decadencia celular, sistema tóxico, envenenamiento.';
+  if (pn71>10) then diag71.Caption:='Acetona patogénica, decadencia celular, sistema tóxico, intolerancia.';
   if (pn70<3)and(pn70>-1)  then diag70.Caption:='Deficiencia de aldolasa, deficiciencia enzimática.';
   if(pn70>8)and(pn70>-1) then diag70.Caption:='Exceso de aldolasa. Desorden enzimático.';
     if (pn72<6)and(pn72>-1)  then diag72.Caption:='Deficiencia de B6.';
@@ -5508,7 +4504,6 @@ begin
    randomize();
    pn18 := random(500);
    randomize();
-
    pn19 := random(500);
    randomize();
    pn20 := random(500);
@@ -5680,7 +4675,7 @@ end;
 procedure TLiveCell.Button92Click(Sender: TObject);
 begin
 Actualiza_Valores();
-  if (pn71>10) then diag71.Caption:='Dolor, temor al dolor, sistema intoxicado, envenenamiento.';
+  if (pn71>10) then diag71.Caption:='Dolor, temor al dolor, sistema intoxicado, intolerancia.';
   if (pn70<3)and(pn70>-1)  then diag70.Caption:='Miedo a la vida, preocupaciones, deficiencia enzimática.';
   if(pn70>8)and(pn70>-1) then diag70.Caption:='Agresión a la vida, desorden enzimático, esconde conflictos internos.';
     if (pn72<6)and(pn72>-1)  then diag72.Caption:='Deficiencia de vitamina B6, temor a los sueños, no puede disfrutar al vida al máximo.';
@@ -5722,14 +4717,12 @@ Actualiza_Valores();
   if(pn39>13)and(pn39>-1) then diag39.Caption:='Problemáticas con el flújo de los problemas de la vida, obedece a la autoridad, uso inadecuado del azúcar refinada.';
     if (pn25<55)and(pn25>-1)  then diag25.Caption:='Falta de fuerza centradora, la avaricia controla los sentimientos más internos.';
   if(pn25>140)and(pn25>-1) then diag25.Caption:='Conflicto con la vida y sí mismo/a, La compasión cubre las desilusiones para consigo mismo/a.';
-
      if (pn32<260)and(pn32>-1)  then diag32.Caption:='Conflicto con la vida y sí mismo/a ocultan al ser más íntimo.';
   if(pn32>400)and(pn32>-1) then diag32.Caption:='Conflicto con la vida y consigo mismo/a, afección del tracto digestivo, siente no conectar con el entorno.';
      if (pn79<6)and(pn79>-1)  then diag79.Caption:='Dieta pobre, no se puede controlar, mal manejo de la energía, fatiga, deficiencia de vitamina B.';
   if(pn79>17)and(pn79>-1) then diag79.Caption:='Dieta pobre, no se puede controlar, tensión neurológica, estrés.';
     if (pn80<6)and(pn80>-1)  then diag80.Caption:='Dieta pobre, no se puede controlar, mal manejo de la energía, fatiga, deficiencia de vitamina B.';
   if(pn80>13)and(pn80>-1) then diag80.Caption:='Dieta pobre, no se puede controlar, tensión neurológica, estrés.';
-
   if(pn36>30)and(pn36>-1) then diag36.Caption:='Conflicto con el entorno, íra, resentimiento, no puede perdonar.';
      if (pn1<1)and(pn1>-1)  then diag1.Caption:='Ningún control sobre los asuntos urgentes o el flujo mental, afección neurológica, desordenes de pensamiento.';
   if(pn1>2)and(pn1>-1) then diag1.Caption:='Ningún control sobre los asuntos urgentes o el flujo mental, afección neurológica, desordenes de pensamiento.';
@@ -5780,7 +4773,6 @@ Actualiza_Valores();
    if(pn43>14)and(pn43>-1) then diag43.Caption:='Exceso de hormona estimulante folicular femenina post menopausia, estrés, incertitud emocional.';
       if (pn42<2)and(pn42>-1)  then diag42.Caption:='Deficiencia de hormona estimulante folicular en fase femenina, sistema sexual débil.';
   if(pn42>8)and(pn42>-1) then diag42.Caption:='Irritación mental, amor no correspondido, irritación por trauma sexual, incertitud emocional.';
-
         if (pn46<2)and(pn46>-1)  then diag46.Caption:='Conflictos con la vida y el amor, la avaricia conduce a la mente a desilusionarse de otros.';
   if(pn46>10)and(pn46>-1) then diag46.Caption:='Sentimientos femeninos reprimidos, problema de identidad sexual, liberación del temor a otros.';
    if(pn48>19)and(pn48>-1) then diag48.Caption:='Conflictos con la vida y el amor, amor no correspondido, estrés, incertitud emocional.';
@@ -5793,12 +4785,10 @@ Actualiza_Valores();
   if(pn59>18)and(pn59>-1) then diag59.Caption:='Necesidad de estabilidad, necesidad de amor incondicional, degeneración, estrés, tensión emocional.';
        if (pn60<12)and(pn60>-1)  then diag60.Caption:='Necesidad de estabilidad, necesidad de amor incondicional, anemia, temor.';
   if(pn60>16)and(pn60>-1) then diag60.Caption:='Necesidad de estabilidad, necesidad de amor incondicional, degeneración, estrés, tensión emocional.';
-
        if (pn52<9)and(pn52>-1)  then diag52.Caption:='Conflictos con la vida y el amor, íra suprimida hacia otros pero en realidad es para consigo mismo/a.';
   if(pn52>30)and(pn52>-1) then diag52.Caption:='Agresión, íra, tensión, temor al demonio interno que cubre el crecimiento interior, perdonar y olvidar.';
        if (pn53<1)and(pn53>-1)  then diag53.Caption:='Conflictos con la vida y el amor, íra suprimida hacia otros pero en realidad es para consigo mismo/a, deseo sexual débil.';
   if(pn53>2)and(pn53>-1) then diag53.Caption:='Temor a la soledad, temor a ser herido/a, íra, personalidad controladora.';
-
       if (pn64<250)and(pn64>-1)  then diag64.Caption:='Tristeza ante la pérdida pero cubierta con un velo de humor o sin mostrar interés.';
        if (pn50<10)and(pn50>-1)  then diag50.Caption:='Falta de voluntad y conflictos con crecimiento de sí mismo/a, rigidez emocional, los conflictos con la perfección enmascaran la vida.';
   if(pn50>63)and(pn50>-1) then diag63.Caption:='Intento de pelear contra el sistema demasiado, necesidad de relajación, huesos débiles, afección de tiroides, tumor.';
@@ -5808,21 +4798,16 @@ Actualiza_Valores();
   if(pn49>2.4)and(pn49>-1) then diag49.Caption:='El sobre control de la voluntad ha alterado el equilibrio, miedo excesivo, desorientación.';
      if (pn14<13)and(pn14>-1)  then diag14.Caption:='Voluntad débil, sentimientos de fatiga, malnutrición, desorden de olfato o gusto.';
   if(pn14>20)and(pn14>-1) then diag14.Caption:='Sobre actividad, confusión con los objetivos de la vida, incapacidad para controlar el metabolismo de la respiración.';
-
       if (pn57<0.4)and(pn57>-1)  then diag57.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
   if(pn57>4)and(pn57>-1) then diag57.Caption:='Mentalidad pendenciera o de dolor, agresión, miedo, afección de tiroides o pituitaria, el conflicto con la perfección enmascara la vida.';
-
      if (pn54<150)and(pn54>-1)  then diag54.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
   if(pn54>680)and(pn54>-1) then diag54.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
       if (pn55<100)and(pn55>-1)  then diag55.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
   if(pn55>500)and(pn55>-1) then diag55.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
-
          if (pn56<150)and(pn56>-1)  then diag56.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debido a agresión dirigida hacia adentro, el conflicto con la perfección enmascara la vida.';
   if(pn56>680)and(pn56>-1) then diag56.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
       if (pn57<100)and(pn57>-1)  then diag57.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
   if(pn57>500)and(pn57>-1) then diag57.Caption:='Conflicto con la madre o con la madre dentro de sí, depresión debida a agresión dirigida hacia adentro.';
-
-  PDesarrollo.Caption := 'Realizando terapia a '+Button12.Caption+'...';
   PDiabetes.Visible := True;
 BMaestro.Click;
 If rectificado>84 Then Button12.Enabled := False;
@@ -5842,7 +4827,7 @@ DM.Conscida.open; DM.Conscida.IndexName:='';
 DM.Conscida.FindKey([3909]);
 ba1:=DM.Conscidavalue.asinteger ;
  ba2:=random(10);
-  if (ba1>cutof)and (ba2>3) then diag71.Caption:='Dolor, temor al dolor, sistema intoxicado, envenenamiento.';
+  if (ba1>cutof)and (ba2>3) then diag71.Caption:='Dolor, temor al dolor, sistema intoxicado, intolerancia.';
  DM.Conscida.FindKey([3910]);
 ba1:=DM.Conscidavalue.asinteger ;
  ba2:=random(10);
@@ -6191,17 +5176,12 @@ cutof:=testform1.cutof;
 if button28.caption='Sensitividad 2'  then  cutof:=cutof-9  ;
 if button28.caption='Sensitividad 1'  then  cutof:=cutof+10 ;
 if button28.caption='Sensitividad 3'  then  cutof:=cutof-27  ;
-{ panel1.visible:=true;
-   panel2.visible:=true;
-    panel3.visible:=true;
-     panel4.visible:=true;}
-         
 DM.Conscida.open; DM.Conscida.IndexName:='';
  DM.Conscida.First;
 DM.Conscida.FindKey([3909]);
 ba1:=DM.Conscidavalue.asinteger ;
  ba2:=random(10);
-  if (ba1>cutof)and (ba2>3) then diag71.Caption:='Acetona patogénica detectada, oxidación celular, sistema intoxicado, envenenamiento.';
+  if (ba1>cutof)and (ba2>3) then diag71.Caption:='Acetona patogénica detectada, oxidación celular, sistema intoxicado, intolerancia.';
  DM.Conscida.FindKey([3910]);
 ba1:=DM.Conscidavalue.asinteger ;
  ba2:=random(10);
@@ -7583,7 +6563,7 @@ begin
 Reaccion_Irregular(); MyChrono.Start;
 If CBAutomaticoEspecifico.Checked = True Then TAutomaticoEspecifico.Enabled := True;
 If CBADiabetes.Checked = True Then TDiabetes.Enabled := True;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 Fmain.recmain:=Fmain.recmain+1;
 begin1:=1;
@@ -7596,8 +6576,6 @@ label18.refresh;
 label20.refresh;
 label22.refresh;
 label24.refresh;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 60+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -7653,19 +6631,18 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 rectificado:= 20+random(90);
 if rectificado>100 then rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado) ;
 LRectificado.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 TAutomaticoEspecifico.Enabled := False;
 TColesterol.Enabled := False;
 TDiabetes.Enabled := False;
 LimpiarEspecificos();
 LimpiaColesterol();
 LimpiaDiabetes();
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then BMaestroClick(Sender);
 if (rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -7694,7 +6671,7 @@ procedure TLiveCell.Button111Click(Sender: TObject);
 begin
 Reaccion_Irregular(); MyChrono.Start;
 If CBAutomaticoEspecifico.Checked = True Then TAutomaticoEspecifico.Enabled := True;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 Fmain.recmain:=Fmain.recmain+1;
 begin1:=1;
@@ -7707,25 +6684,6 @@ label18.refresh;
 label20.refresh;
 label22.refresh;
 label24.refresh;
-If Radiobutton56.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton56.Caption+'...';
-If Radiobutton53.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton53.Caption+'...';
-If Radiobutton57.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton57.Caption+'...';
-If Radiobutton58.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton58.Caption+'...';
-If Radiobutton59.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton59.Caption+'...';
-If Radiobutton55.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton55.Caption+'...';
-If Radiobutton60.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton60.Caption+'...';
-If Radiobutton61.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton61.Caption+'...';
-If Radiobutton63.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton63.Caption+'...';
-If Radiobutton62.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton62.Caption+'...';
-If Radiobutton54.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton54.Caption+'...';
-If Radiobutton64.Checked=True then PDesarrollo.Caption:= 'Realizando terapia a síndrome '+ESindromes.Text+'...';
-
-If Radiobutton17.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton17.Caption+'...';
-If Radiobutton18.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton18.Caption+'...';
-If Radiobutton19.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton19.Caption+'...';
-If Radiobutton20.Checked=True then PDesarrollo.Caption:='Realizando terapia a síndrome '+RadioButton20.Caption+'...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 60+Random(90);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -7781,7 +6739,7 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 rectificado:= 20+random(90);
 if rectificado>100 then rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
@@ -7789,7 +6747,6 @@ If rectificado>84 Then Button22.Enabled := False;
 TAutomaticoEspecifico.Enabled := False;
 LimpiarEspecificos();
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.visible:=false;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then Button111.Click;
 if (rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -7815,7 +6772,6 @@ i : Integer;
 begin
 Reaccion_Irregular(); MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 vtiempo := 180+Random(40);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -7834,19 +6790,23 @@ GProgreso.Refresh;
 rectificado:= 85 +random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 GProgreso.Progress := 0;
 for i:=0 to self.ComponentCount-1 do
  if (self.Components[i] is TButton) then
   if (self.Components[i] as TButton).tag = 8 then begin
    (self.Components[i] as TButton).enabled := false;
+TestForm1.BCausas.Click;
+TestForm1.BOrganosGlandulas.Click;
+TestForm1.BAVM.Click;
+TestForm1.BENegativas.Click;
+TestForm1.BSistemas.Click;
+TestForm1.BHomeopatia.Click;
 end;
 end;
 
 procedure TLiveCell.B76Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label264.Caption+'...';
 TSangre();
 If rectificado>84 Then B76.Enabled := False;
 end;
@@ -7855,7 +6815,6 @@ procedure TLiveCell.TSangre();
 begin
 Reaccion_Irregular(); MyChrono.Start;
 Inicio();
-PDesarrollo.Visible := True;
 vtiempo := 10+Random(5);
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
@@ -7874,7 +6833,6 @@ rectificado:=random(140);
 If rectificado>100 Then rectificado := 85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado);
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then TSangre();
 If (Rectificado>84) and (CBTerapiaExtendida.Checked =True) then TerapiaExtendida();
@@ -7882,7 +6840,6 @@ end;
 
 procedure TLiveCell.B166Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label269.Caption+'...';
 TSangre();
 If rectificado>84 Then B166.Enabled := False;
 end;
@@ -7999,233 +6956,201 @@ end;
 
 procedure TLiveCell.Button131Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button131.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button131.Enabled := False;
 end;
 
 procedure TLiveCell.Button156Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button156.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button156.Enabled := False;
 end;
 
 procedure TLiveCell.Button129Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button129.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button129.Enabled := False;
 end;
 
 procedure TLiveCell.Button142Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button142.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button142.Enabled := False;
 end;
 
 procedure TLiveCell.Button137Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button137.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button137.Enabled := False;
 end;
 
 procedure TLiveCell.Button130Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button130.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button130.Enabled := False;
 end;
 
 procedure TLiveCell.Button149Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button149.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button149.Enabled := False;
 end;
 
 procedure TLiveCell.Button154Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button154.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button154.Enabled := False;
 end;
 
 procedure TLiveCell.Button136Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button136.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button136.Enabled := False;
 end;
 
 procedure TLiveCell.Button147Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button147.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button147.Enabled := False;
 end;
 
 procedure TLiveCell.Button127Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button127.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button127.Enabled := False;
 end;
 
 procedure TLiveCell.Button134Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button134.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button134.Enabled := False;
 end;
 
 procedure TLiveCell.Button135Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button135.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button135.Enabled := False;
 end;
 
 procedure TLiveCell.Button16Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button16.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button16.Enabled := False;
 end;
 
 procedure TLiveCell.Button132Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button132.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button132.Enabled := False;
 end;
 
 procedure TLiveCell.Button140Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button140.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button140.Enabled := False;
 end;
 
 procedure TLiveCell.Button22Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button22.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button22.Enabled := False;
 end;
 
 procedure TLiveCell.Button151Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button151.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button151.Enabled := False;
 end;
 
 procedure TLiveCell.Button128Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button128.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button128.Enabled := False;
 end;
 
 procedure TLiveCell.Button139Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button139.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button139.Enabled := False;
 end;
 
 procedure TLiveCell.Button133Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button133.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button133.Enabled := False;
 end;
 
 procedure TLiveCell.Button138Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Edit108.Text+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button138.Enabled := False;
 end;
 
 procedure TLiveCell.Button145Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button145.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button145.Enabled := False;
 end;
 
 procedure TLiveCell.Button144Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button144.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button144.Enabled := False;
 end;
 
 procedure TLiveCell.Button143Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button143.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button143.Enabled := False;
 end;
 
 procedure TLiveCell.Button148Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button148.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button148.Enabled := False;
 end;
 
 procedure TLiveCell.Button155Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button155.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button155.Enabled := False;
 end;
 
 procedure TLiveCell.Button146Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button146.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button146.Enabled := False;
 end;
 
 procedure TLiveCell.Button152Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button152.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button152.Enabled := False;
 end;
 
 procedure TLiveCell.Button150Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button150.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button150.Enabled := False;
 end;
 
 procedure TLiveCell.Button153Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para '+Button153.Caption+'...';
 BMaestroParasitos.Click;
 If rectificado>84 Then Button153.Enabled := False;
 end;
 
 procedure TLiveCell.Button141Click(Sender: TObject);
 begin
-Reaccion_Irregular(); MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+Reaccion_Irregular();
+MyChrono.Start;
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 If CBAParasitos.Checked = True Then TParasitos.Enabled := True;
 TTipoParasitos.Enabled := True;
 TCTParasitos.Enabled := True;
 TTiposParasitariosX.Enabled := True;
 Fmain.recmain:=Fmain.recmain+1;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 vtiempo := 180+Random(120);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -8246,9 +7171,9 @@ Until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 rectificado:= 20+random(90);
 if rectificado>100 then rectificado:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rectificado) ;
@@ -8259,7 +7184,6 @@ TCTParasitos.Enabled := False;
 TTipoParasitos.Enabled := False;
 LimpiaTipoParasitos();
 TTiposParasitariosX.Enabled := False;
-PDesarrollo.Visible := False;
 MyChrono.Stop;
 If (rectificado<85) and (CBAutomatico.Checked=True) Then BMaestroParasitosClick(Sender);
 if (rectificado>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -8370,21 +7294,6 @@ CheckBox247.Enabled := False;
 CheckBox248.Enabled := False;
 end;
 
-procedure TLiveCell.TTiposParasitariosXTimer(Sender: TObject);
-begin
-oeg := random(10);
-If oeg < 2 Then PDesarrollo.Caption := 'Realizando terapia para '+Button145.Caption+'...';
-If oeg = 2 Then PDesarrollo.Caption := 'Realizando terapia para '+Button144.Caption+'...';
-If oeg = 3 Then PDesarrollo.Caption := 'Realizando terapia para '+Button143.Caption+'...';
-If oeg = 4 Then PDesarrollo.Caption := 'Realizando terapia para '+Button148.Caption+'...';
-If oeg = 5 Then PDesarrollo.Caption := 'Realizando terapia para '+Button155.Caption+'...';
-If oeg = 6 Then PDesarrollo.Caption := 'Realizando terapia para '+Button146.Caption+'...';
-If oeg = 7 Then PDesarrollo.Caption := 'Realizando terapia para '+Button152.Caption+'...';
-If oeg = 8 Then PDesarrollo.Caption := 'Realizando terapia para '+Button150.Caption+'...';
-If oeg > 8 Then PDesarrollo.Caption := 'Realizando terapia para '+Button153.Caption+'...';
-PDesarrollo.Refresh;
-end;
-
 procedure TLiveCell.Button24Click(Sender: TObject);
 begin
 Inicio();
@@ -8410,803 +7319,54 @@ end;
 
 procedure TLiveCell.Button6Click(Sender: TObject);
 begin
-if testform1.pn2>2 then edit92.text:=edit92.text+'| '+'Toxinas alopáticas';
-if testform1.pn3>20 then edit92.text:=edit92.text+'| '+'Tabaco';
-if testform1.pn8>10 then edit92.text:=edit92.text+'| '+'Cafeina o Alcaloides';
-if testform1.pn12>10 then edit92.text:=edit92.text+'| '+'Radiación';
-if testform1.pn7>9 then edit92.text:=edit92.text+'| '+'Estrés, Toxinas propias,';
-if testform1.pn5>6 then edit92.text:=edit92.text+'| '+'Mercurio';
-if testform1.pn4>2 then edit92.text:=edit92.text+'| '+'Toxinas esteroides';
-
-   DM.QueryFilter.Active:=False;
-  QString:='Solvent';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.Last;
- edit92.text:=edit92.text+', '+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-  edit92.text:=edit92.text+', '+DM.QueryFilterName.Value;
-    DM.QueryFilter.prior;
-   edit92.text:=edit92.text+', '+DM.QueryFilterName.Value;
-
-  QString:='toxic';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.Last;
-  edit92.text:=edit92.text+', '+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-edit92.text:=edit92.text+', '+DM.QueryFilterName.Value;
-  QString:='ALR';
-  DM.QueryFilter.SQL.Clear;
-  DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
-  DM.QueryFilter.SQL.Add('WHERE name like ''%'+Qstring+'%''');
-  DM.QueryFilter.SQL.Add('ORDER BY 2 ');
-  DM.QueryFilter.Active:=True;
-  DM.QueryFilter.first;
-  DM.QueryFilter.Last;
-  edit93.text:=edit93.text+', '+DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-   alr11:= DM.QueryFilterName.Value;
-  DM.QueryFilter.prior;
-if alr11<>DM.QueryFilterName.Value then edit93.text:=edit93.text+', '+DM.QueryFilterName.Value;
-if alr11=DM.QueryFilterName.Value then begin
- oeg:=random(6);
-if oeg<3 then edit93.text:=edit93.text+', azúcar refinada.';
-if oeg=3 then edit93.text:=edit93.text+', grano no específico.';
-if oeg=4 then edit93.text:=edit93.text+', toxinas propias, garrapatas.';
-if oeg>3 then edit93.text:=edit93.text+', polen no específico.';
-end;
-edit93.text:=edit93.text+', '+DM.QueryFilterName.Value;
-if testform1.pn3>10 then edit93.text:=edit93.text+', tabaco.';
- DM.QueryFilter.Active:=False;
-if dis=0 then dis:=random(45);
-if homeopa <> nil then
-dis:=homeopa.dis;
-if Dis=0 then  dis:=random(35-(round(soc11/10)));
-if dis<2 then  Edit91.text:=Edit91.text+' | Perspiración, serum en los oídos, complexión fuerte.';
-if dis<2 then  Edit91.text:=Edit91.text+' | Total y completamente, búsque los síntomas emocionales, mentales y físicos.';
-if dis=16 then  Edit91.text:=Edit91.text+' | Furúnculos, eritema, dermatitis, eczema, piodermis, etc.';
-if dis=16 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=31 then  Edit91.text:=Edit91.text+' | Ateromas, verrugas, keratosis, clavi, etc.';
-if dis=46 then  Edit91.text:=Edit91.text+' | Un miasma único domina la condición actual.';
-if dis=46 then  Edit91.text:=Edit91.text+' | Tatuajes, pigmentaciones, etc.';
-if dis=46 then  Edit91.text:=Edit91.text+' | Funciones sistémicas localizadas, síntomas locales simples y desintoxicación.';
-if dis=61 then   Edit91.text:=Edit91.text+' | Dermatosis, lupus vulgaris, lepra.';
-if dis=61 then   Edit91.text:=Edit91.text+' | Iceberg o síntomas funcionales múltiples con cambios multi funcionales.';
-if dis=76 then  Edit91.text:=Edit91.text+' | Ulcus rodens, basalioma.';
-if dis=76 then  Edit91.text:=Edit91.text+' | Tratamiento con medicaciones que ahora se basa en sus antídotos.';
-if dis=2 then  Edit91.text:=Edit91.text+' | Salvia, resfríos, catarros, membranas mucosas, etc.';
-if dis=2 then  Edit91.text:=Edit91.text+' | Total y completamente, búsque los síntomas emocionales, mentales y físicos.';
-if dis=17 then  Edit91.text:=Edit91.text+' | Estomatitis, rinitis, tordo, infección fungal, infección no específica.';
-if dis=17 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=32 then  Edit91.text:=Edit91.text+' | Pólipos nasales, quistes, neoplasma, deposición de tejido, metaplasia.';
-if dis=32 then Edit91.text:=Edit91.text+' | Un miasma único domina la condición actual.';
-if dis=47 then  Edit91.text:=Edit91.text+' | Leucoplaquia, deposición de tejido, etc.';
-if dis=47 then  Edit91.text:=Edit91.text+' | Funciones sistémicas localizadas, síntomas locales simples y desintoxicación.';
-if dis=62 then  Edit91.text:=Edit91.text+' | Rinitis atrófica crónica.';
-if dis=62 then  Edit91.text:=Edit91.text+' | Iceberg o síntomas funcionales múltiples con cambios multi funcionales.';
-if dis=77 then  Edit91.text:=Edit91.text+' | Cáncer de naríz y boca, degeneración no específica.';
-if dis=77 then  Edit91.text:=Edit91.text+' | Tratamiento con medicaciones que ahora se basa en sus antídotos.';
-if dis=3 then  Edit91.text:=Edit91.text+' | Secreción celular neuro-hormonal, disrupción hormonal.';
-if dis=3 then  Edit91.text:=Edit91.text+' | Total y completamente, búsque los síntomas emocionales, mentales y físicos.';
-if dis=18 then  Edit91.text:=Edit91.text+' | Poliomelitis en estado febríl, herpes zoster.';
-if dis=18 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=33 then  Edit91.text:=Edit91.text+' | Neuromas benignos, neuralgias, disfunción neurológica.';
-if dis=33 then  Edit91.text:=Edit91.text+' | Causa única aetiologica, buscar la gran causa de la afección.';
-if dis=48 then  Edit91.text:=Edit91.text+' | Migraña, tic ocular, infección virosa (polio u otro).';
-if dis=48 then  Edit91.text:=Edit91.text+' | Método Sing, miasmas concurrentes y diserasis de drenaje y medicación simples.';
-if dis=63 then  Edit91.text:=Edit91.text+' | Paresis, esclerosis, atrofia del nervio óptico, siringoma.';
-if dis=63 then  Edit91.text:=Edit91.text+' | Iceberg o síntomas funcionales múltiples con cambios multi funcionales.';
-if dis=78 then  Edit91.text:=Edit91.text+' | Neuroma, gliosarcoma.';
-if dis=78 then  Edit91.text:=Edit91.text+' | Tratamiento con medicaciones que ahora se basa en sus antídotos.';
-if dis=4 then  Edit91.text:=Edit91.text+' | Secreción celular neuro hormonal.';
-if dis=4 then  Edit91.text:=Edit91.text+' | Total y completamente, búsque los síntomas emocionales, mentales y físicos.';
-if dis=19 then Edit91.text:=Edit91.text+' | Neuralgias, herpes, afección del nervio vago o el craneal.';
-if dis=19 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=34 then  Edit91.text:=Edit91.text+' | Neuromas benignos, inflamación del nervio vago, afección craneal.';
-if dis=34 then  Edit91.text:=Edit91.text+' | Búsque cambios aislados de funciones en los síntomas.';
-if dis=49 then  Edit91.text:=Edit91.text+' | Asma, úlcera ventriculosa o del duodeno.';
-if dis=49 then  Edit91.text:=Edit91.text+' | Método Sing, miasmas concurrentes y diserasis de drenaje y medicación simples.';
-if dis=64 then Edit91.text:=Edit91.text+' | Neurofibromatosis, etc.';
-if dis=64 then  Edit91.text:=Edit91.text+' | Iceberg o síntomas funcionales múltiples con cambios multi funcionales.';
-if dis=79 then  Edit91.text:=Edit91.text+' | Gliosarcoma, similares.';
-if dis=79 then Edit91.text:=Edit91.text+' | Tratamiento con medicaciones que ahora se basa en sus antídotos.';
-if dis=5 then  Edit91.text:=Edit91.text+' | Secreción del GI, estercobilina CO2, flora tóxica.';
-if dis=5 then  Edit91.text:=Edit91.text+' | Terapia psico-emocional con apoyo a órganos.';
-if dis=20 then  Edit91.text:=Edit91.text+' | Faringitis, laringitis, colitis, enteritis.';
-if dis=20 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=35 then  Edit91.text:=Edit91.text+' | Pólipos en la membrana mucosa, constipación, megacolon.';
-if dis=35 then  Edit91.text:=Edit91.text+' | Búsque cambios aislados de funciones en los síntomas.';
-if dis=50 then  Edit91.text:=Edit91.text+' | Asma, eruptos, ulcus ventriculous, duodeno, chancro, pre-cáncer.';
-if dis=50 then  Edit91.text:=Edit91.text+' | Método Sing, miasmas concurrentes y diserasis de drenaje y medicación simples.';
-if dis=65 then  Edit91.text:=Edit91.text+' | Tuberculosis pulmonar e intestinal, toxicidad.';
-if dis=65 then  Edit91.text:=Edit91.text+' | Iceberg o síntomas funcionales múltiples con cambios multi funcionales.';
-if dis=80 then  Edit91.text:=Edit91.text+' | Cáncer de la laringe, estómago, instestino, recto.';
-if dis=80 then  Edit91.text:=Edit91.text+' | Tratamiento con medicaciones que ahora se basa en sus antídotos.';
-if dis=6 then  Edit91.text:=Edit91.text+' | Bilis, jugos pancreáticos, hormonas de la tiroides.';
-if dis=6 then  Edit91.text:=Edit91.text+' | Terapia psico-emocional con apoyo a órganos.';
-if dis=21 then  Edit91.text:=Edit91.text+' | Parotitis, neumonía, hepatitis, colangitis.';
-if dis=21 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=36 then  Edit91.text:=Edit91.text+' | Silicosis, tiroides agrandada, cálculos vesiculares.';
-if dis=36 then  Edit91.text:=Edit91.text+' | Búsque cambios aislados de funciones en los síntomas.';
-if dis=51 then  Edit91.text:=Edit91.text+' | Afección de hígado enfermo, infiltración pulmonar, virus.';
-if dis=51 then  Edit91.text:=Edit91.text+' | Capas fundamentales antigüas eizayaga, causas múltiples de capas.';
-if dis=66 then  Edit91.text:=Edit91.text+' | Cirrosis del hígado, hipertiroidismo.';
-if dis=66 then  Edit91.text:=Edit91.text+' | Capas antígüas eizayaga, basadas en revertir la supresión alopática actual.';
-if dis=81 then  Edit91.text:=Edit91.text+' | Cáncer de hígado, vesícula, páncreas, tiroides o pulmones.';
-if dis=81 then  Edit91.text:=Edit91.text+' | Soporte al órgano más vulnerable de su función dentro de su sistema orgánico.';
-if dis=7 then  Edit91.text:=Edit91.text+' | Sustancias interstitales, alérgia, ácidos hialónicos.';
-if dis=7 then  Edit91.text:=Edit91.text+' | Terapia psico-emocional con apoyo a órganos.';
-if dis=22 then  Edit91.text:=Edit91.text+' | Abcesos, flegmona, carbúnculos, inflamación aguda del tejido conectivo.';
-if dis=22 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=37 then  Edit91.text:=Edit91.text+' | Obesidad, gota, edemas, eruptos después de comer.';
-if dis=37 then  Edit91.text:=Edit91.text+' | Búsque cambios aislados de funciones en los síntomas.';
-if dis=52 then  Edit91.text:=Edit91.text+' | Edemas, inflamación, elefantitis, virus de la influenza.';
-if dis=52 then  Edit91.text:=Edit91.text+' | Base de capas emocionales antígüas, causas múltiples.';
-if dis=67 then  Edit91.text:=Edit91.text+' | Esclerodermia, cachexia, mal nutrición, desgaste, labia distendida.';
-if dis=67 then  Edit91.text:=Edit91.text+' | Capas emocionales basadas en revertir la supresión de las medicaciones alópatas.';
-if dis=82 then Edit91.text:=Edit91.text+' | Sarcoma en varios lugares.';
-if dis=82 then  Edit91.text:=Edit91.text+' | Soporte al órgano más vulnerable de su función dentro de su sistema orgánico.';
-if dis=8 then  Edit91.text:=Edit91.text+' | Efectos de la hematopoiesis (desarroll de las células de la sangre).';
-if dis=8 then  Edit91.text:=Edit91.text+' | Terapia psico-emocional con apoyo a órganos.';
-if dis=23 then  Edit91.text:=Edit91.text+' | Osteomielitis, inflamación de la médula espinal.';
-if dis=23 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=38 then  Edit91.text:=Edit91.text+' | Exostose, astillas óseas u otros crecimientos anormales.';
-if dis=38 then  Edit91.text:=Edit91.text+' | Terapeutica localizada, concentrárse en la posición y estado de la afección.';
-if dis=53 then  Edit91.text:=Edit91.text+' | Ostemalcia, descomposición de huesos o ablandamiento.';
-if dis=53 then  Edit91.text:=Edit91.text+' | Base de capas emocionales antígüas, causas múltiples.';
-if dis=68 then  Edit91.text:=Edit91.text+' | Espondilitis, inflamación de las vértebras de la columna.';
-if dis=68 then  Edit91.text:=Edit91.text+' | Capas emocionales basadas en revertir la supresión de las medicaciones alópatas.';
-if dis=83 then  Edit91.text:=Edit91.text+' | Cáncer de huesos.';
-if dis=83 then  Edit91.text:=Edit91.text+' | Soporte al órgano más vulnerable de su función dentro de su sistema orgánico.';
-if dis=9 then   Edit91.text:=Edit91.text+' | Flujo menstrual, formación de anticuerpos.';
-if dis=9 then   Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=24 then  Edit91.text:=Edit91.text+' | Endocarditis, fiebre tifoidea, sepsis, embolismo.';
-if dis=24 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=39 then  Edit91.text:=Edit91.text+' | Venas varicosas, trombosis, esclerosis.';
-if dis=39 then  Edit91.text:=Edit91.text+' | Terapeutica localizada, concentrárse en la posición y estado de la afección.';
-if dis=54 then  Edit91.text:=Edit91.text+' | Angina de pecho, miocarditis.';
-if dis=54 then  Edit91.text:=Edit91.text+' | Etiologías múltiples simples, encontrar causas varias recientes o antigüas.';
-if dis=69 then  Edit91.text:=Edit91.text+' | Infarto del miocárdio, infección del corazón, anemia perniciosa.';
-if dis=69 then  Edit91.text:=Edit91.text+' | Capas emocionales basadas en revertir la supresión de las medicaciones alópatas.';
-if dis=84 then  Edit91.text:=Edit91.text+' | Leucemia mieloide, angiosarcoma.';
-if dis=84 then  Edit91.text:=Edit91.text+' | Soporte al órgano más vulnerable de su función dentro de su sistema orgánico.';
-if dis=10 then  Edit91.text:=Edit91.text+' | Formación linfática y anticuerpos.';
-if dis=10 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=25 then  Edit91.text:=Edit91.text+' | Tonsilitis, apendicitis, adenoides.';
-if dis=25 then  Edit91.text:=Edit91.text+' | Bloqueos miasmiaticos múltiples y bloqueos en el drenaje orgánico.';
-if dis=40 then  Edit91.text:=Edit91.text+' | Inflamación linfática de las glándulas.';
-if dis=40 then  Edit91.text:=Edit91.text+' | Terapeutica localizada, concentrárse en la posición y estado de la afección.';
-if dis=55 then  Edit91.text:=Edit91.text+' | Linfatismo.';
-if dis=55 then  Edit91.text:=Edit91.text+' | Etiologías múltiples simples, encontrar causas varias recientes o antigüas.';
-if dis=70 then  Edit91.text:=Edit91.text+' | Linfogranulomatosis.';
-if dis=70 then  Edit91.text:=Edit91.text+' | Estratos emocionales, guiarse por la lesión del estrato y los síntomas primero.';
-if dis=85 then  Edit91.text:=Edit91.text+' | Linfosarcoma, leucemia linfática.';
-if dis=85 then  Edit91.text:=Edit91.text+' | Lesiones degenerativas en varios estratos, guiarse por los síntomas de degeneración.';
-if dis=11 then  Edit91.text:=Edit91.text+' | Fluído sinovial, bilis, urina.';
-if dis=11 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=26 then  Edit91.text:=Edit91.text+' | Poliartritis.';
-if dis=26 then  Edit91.text:=Edit91.text+' | Miasmas múltiples dominan la liberación secuencial.';
-if dis=41 then  Edit91.text:=Edit91.text+' | Hidropesía, fatiga.';
-if dis=41 then  Edit91.text:=Edit91.text+' | Terapeutica localizada, concentrárse en la posición y estado de la afección.';
-if dis=56 then  Edit91.text:=Edit91.text+' | Hidrocefalia.';
-if dis=56 then  Edit91.text:=Edit91.text+' | Etiologías múltiples simples, encontrar causas varias recientes o antigüas.';
-if dis=71 then  Edit91.text:=Edit91.text+' | Coxartrosis, artritis de la cadera.';
-if dis=71 then  Edit91.text:=Edit91.text+' | Estratos emocionales, guiarse por la lesión del estrato y los síntomas primero.';
-if dis=86 then  Edit91.text:=Edit91.text+' | Condrosarcoma, tumor en cartílago.';
-if dis=86 then  Edit91.text:=Edit91.text+' | Lesiones degenerativas en varios estratos, guiarse por los síntomas de degeneración.';
-if dis=12 then  Edit91.text:=Edit91.text+' | Productos de desperdicio de las funciones metabólicas y de orina.';
-if dis=12 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=27 then  Edit91.text:=Edit91.text+' | Cistitis, pielitis, nefritis, inflamación de los riñones.';
-if dis=27 then  Edit91.text:=Edit91.text+' | Miasmas múltiples dominan la liberación secuencial.';
-if dis=42 then  Edit91.text:=Edit91.text+' | Hipertrofía de la próstata, infección de riñones, cálculos en riñones.';
-if dis=42 then  Edit91.text:=Edit91.text+' | Patología sencilla, individualizar una afección simple.';
-if dis=57 then  Edit91.text:=Edit91.text+' | Albuminuria, hidronefrosis.';
-if dis=57 then  Edit91.text:=Edit91.text+' | Etiología secuencial, búsque la secuencia exacta en el historial médico.';
-if dis=72 then  Edit91.text:=Edit91.text+' | Nefrosis, atrofía renal.';
-if dis=72 then  Edit91.text:=Edit91.text+' | Estratos emocionales, guiarse por la lesión del estrato y los síntomas primero.';
-if dis=87 then  Edit91.text:=Edit91.text+' | Cáncer en riñones.';
-if dis=87 then  Edit91.text:=Edit91.text+' | Lesiones degenerativas en varios estratos, guiarse por los síntomas de degeneración.';
-if dis=13 then  Edit91.text:=Edit91.text+' | Secreción de las membranas serosas.';
-if dis=13 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=28 then  Edit91.text:=Edit91.text+' | Pleuritis, pericaditis, peritonitis.';
-if dis=28 then  Edit91.text:=Edit91.text+' | Miasmas múltiples dominan la liberación secuencial.';
-if dis=43 then  Edit91.text:=Edit91.text+' | Exudación pleural, ascitis (Hidropesía del peritoneo).';
-if dis=43 then  Edit91.text:=Edit91.text+' | Patología sencilla, individualizar una afección simple.';
-if dis=58 then  Edit91.text:=Edit91.text+' | Pre-cáncer de las membranas serosas.';
-if dis=58 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=73 then  Edit91.text:=Edit91.text+' | Tuberculosis de las membranas serosas.';
-if dis=73 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=88 then  Edit91.text:=Edit91.text+' | Cáncer de tejido seroso.';
-if dis=88 then  Edit91.text:=Edit91.text+' | Secuencia: método - concurrencia en estados crónicos.';
-if dis=14 then  Edit91.text:=Edit91.text+' | Menstruación, esperma, ovulación, fluído protático.';
-if dis=14 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=29 then  Edit91.text:=Edit91.text+' | Adnexitis, metritis, ovaritis, inflamación de las trompas de falopio, prostatitis.';
-if dis=29 then  Edit91.text:=Edit91.text+' | Miasmas múltiples dominan la liberación secuencial.';
-if dis=44 then  Edit91.text:=Edit91.text+' | Miomas, prostatitis, quistes, quistes en ovarios.';
-if dis=44 then  Edit91.text:=Edit91.text+' | Patología sencilla, individualizar una afección simple.';
-if dis=59 then  Edit91.text:=Edit91.text+' | Pre-cáncer de órganos reproductivos.';
-if dis=59 then  Edit91.text:=Edit91.text+' | Etiología secuencial, búsque la secuencia exacta en el historial médico.';
-if dis=74 then  Edit91.text:=Edit91.text+' | Impotencia, esterilidad, frigidez.';
-if dis=74 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis=89 then  Edit91.text:=Edit91.text+' | Cáncer de órganos reproductivos.';
-if dis=89 then  Edit91.text:=Edit91.text+' | Secuencia: método - concurrencia en estados crónicos.';
-if dis=15 then  Edit91.text:=Edit91.text+' | Acido láctico, andrógenos, liberación del oxígeno.';
-if dis=15 then  Edit91.text:=Edit91.text+' | Esencia psico-espiritual sencilla, buscar profundo bloqueo espiritual.';
-if dis=30 then  Edit91.text:=Edit91.text+' | Myositis múscular, reumatismo.';
-if dis=30 then  Edit91.text:=Edit91.text+' | Miasmas múltiples dominan la liberación secuencial.';
-if dis=45 then  Edit91.text:=Edit91.text+' | Reumatismo crónico y progresivo.';
-if dis=45 then   Edit91.text:=Edit91.text+' | Funciones sistémicas localizadas, síntomas locales simples y desintoxicación.';
-if dis=60 then  Edit91.text:=Edit91.text+' | Inflamación muscular debido a deposición de calcio.';
-if dis=60 then  Edit91.text:=Edit91.text+' | Etiología secuencial, búsque la secuencia exacta en el historial médico.';
-if dis=75 then  Edit91.text:=Edit91.text+' | Distrofia muscular, disfunción muscular.';
-if dis=75 then  Edit91.text:=Edit91.text+' | Función de drenaje de sistema orgánico para la desintoxicación de órganos importantes.';
-if dis>89 then  Edit91.text:=Edit91.text+' | Sarcoma muscular o músculo degenerado y/o patología de tejido conectivo.';
-if dis>89 then  Edit91.text:=Edit91.text+' | Secuencia: método - concurrencia en estados crónicos.';
-if pn2>0 then  Edit91.text:=Edit91.text+' | Medicaciones alopáticas.';
-if pn3>10 then  Edit91.text:=Edit91.text+' | Tabaquismo.';
-if pn4>0 then Edit91.text:=Edit91.text+' | Supresión alopática.';
-if pn8>5 then  Edit91.text:=Edit91.text+' | Toma de azúcar refinada.';
-if pn12>0 then  Edit91.text:=Edit91.text+' | Toxicidad.';
-if pn7>8 then  Edit91.text:=Edit91.text+' | Estrés.';
-if pn5>4 then  Edit91.text:=Edit91.text+' | Metales pesados.';
-    oeg:=random(110);
-if oeg=0 then edit94.text:=edit94.text+' | EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then edit94.text:=edit94.text+' | BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then edit94.text:=edit94.text+' | BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then edit94.text:=edit94.text+' | BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then edit94.text:=edit94.text+' | SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then edit94.text:=edit94.text+' | ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then edit94.text:=edit94.text+' | PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then edit94.text:=edit94.text+' | REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then edit94.text:=edit94.text+' | REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then edit94.text:=edit94.text+' | DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then edit94.text:=edit94.text+' | DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then edit94.text:=edit94.text+' | EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then edit94.text:=edit94.text+' | EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then edit94.text:=edit94.text+' | AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then edit94.text:=edit94.text+' | PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then edit94.text:=edit94.text+' | AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then edit94.text:=edit94.text+' | CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then edit94.text:=edit94.text+' | CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then edit94.text:=edit94.text+' | CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then edit94.text:=edit94.text+' | SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then edit94.text:=edit94.text+' | ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then edit94.text:=edit94.text+' | RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then edit94.text:=edit94.text+' | POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then edit94.text:=edit94.text+' | SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then edit94.text:=edit94.text+' | BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then edit94.text:=edit94.text+' | BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then edit94.text:=edit94.text+' | BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then edit94.text:=edit94.text+' | METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then edit94.text:=edit94.text+' | METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then edit94.text:=edit94.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then edit94.text:=edit94.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then edit94.text:=edit94.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then edit94.text:=edit94.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then edit94.text:=edit94.text+' | INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then edit94.text:=edit94.text+' | INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then edit94.text:=edit94.text+' | LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then edit94.text:=edit94.text+' | LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then edit94.text:=edit94.text+' | CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then edit94.text:=edit94.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then edit94.text:=edit94.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then edit94.text:=edit94.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then edit94.text:=edit94.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then edit94.text:=edit94.text+' | APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then edit94.text:=edit94.text+' | NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then edit94.text:=edit94.text+' | NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then edit94.text:=edit94.text+' | NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then edit94.text:=edit94.text+' | NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then edit94.text:=edit94.text+' | NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then edit94.text:=edit94.text+' | INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=61 then edit94.text:=edit94.text+' | INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then edit94.text:=edit94.text+' | INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then edit94.text:=edit94.text+' | INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then edit94.text:=edit94.text+' | PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then edit94.text:=edit94.text+' | HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then edit94.text:=edit94.text+' | INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then edit94.text:=edit94.text+' | MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then edit94.text:=edit94.text+' | NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then edit94.text:=edit94.text+' | NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then edit94.text:=edit94.text+' | NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then edit94.text:=edit94.text+' | ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then edit94.text:=edit94.text+' | ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then edit94.text:=edit94.text+' | ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then edit94.text:=edit94.text+' | ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then edit94.text:=edit94.text+' | ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then edit94.text:=edit94.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, supresión inmune.';
-if oeg=92 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then edit94.text:=edit94.text+' | HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then edit94.text:=edit94.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then edit94.text:=edit94.text+' | ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then edit94.text:=edit94.text+' | ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then edit94.text:=edit94.text+' | INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then edit94.text:=edit94.text+' | DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then edit94.text:=edit94.text+' | LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then edit94.text:=edit94.text+' | NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then edit94.text:=edit94.text+' | NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg=109 then edit94.text:=edit94.text+' | NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
-
-soc11:=soc;
- if soc11>340 then soc11:=340;
- ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Acetona patogénica, decadencia celular, sistema tóxico, envenamiento.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de aldolasa, deficiciencia enzimática.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de aldolasa.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de B6.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Excluir: afección de riñón, hepatitis, cirrosis, obstructive jaundice, mononucleosis.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de B6+B12, afección extrema del hígado, deficiencia de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Excluir: infarto del miocardio, falla cardíaca, afección hepatico-renal-cerebral, trauma o alcohol.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de amonia, desorden de riñón, disturbio proteínico.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de amonia, toxicidad, envenenamiento, infección del riñón o CSF, infección pulmonar, desorden de úrea.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de amilasa, disfunción del páncreas.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de amilasa, pancreatitis, mal manejo de la energía, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de vitamina C.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de vitamina C.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de bilirubina conjugada, desorden de la flora intestinal.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Afección hepática, jaundice, anemia hemolitica, infarto pulmonar, Dubin Johnson.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de bilirubina total, desorden de la flora intestinal.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de bilirubina total, desorden de flora intestinal, afección de hígado, afección hepática, jaundice, anemia hemolítica, infarto pulmonar, Dubin Johnson disease.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco volumen de sangre, trauma, mal nutrición.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado volumen de sangre, exceso de fluídos, afección de riñon o pituitaria, deficiencia de ácidos grasos.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de vitamina D, sobre hidratación, mala absorpción, fallo renal, hipoparatiroidismo.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hiperparatiroidismo, carcinoma de huesos, mieloma, hipertiroidismo, exceso de vitamina D.');             ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de vitamina D, Sobre hidratación, mala absorpción, fallo renal, hipoparatiroidismo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hiperparatiroidismo, carcinoma de huesos, mieloma, hipertiroidismo, exceso de vitamina D.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco contenido de CO2, hiperventilación, desorden de respiración o en cerebro bajo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado contenido de CO2, falta de oxígeno, desorden respiratorio, anemia.');       ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco cartenoides, deficiencia vitaminica, mala absorpción, sprue, deficiencia enzimatica.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de cartenoides, exceso viatminico.');                        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco cloride, depresión, afección de conductividad neural.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado cloride, depresión, afección de conductividad neural.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hipertiroidismo, infección, mala absorpción, fallo del corazón.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hipotiroidismo, hypothyroidism,obstructive jaundice,nephrosis,diabetes,pancreatitis,');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco HDL en colesterol, dieta equivocada, mala absorpción, deficiencia de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado colesterol LDL, dieta equivocada, mala absorpción, deficiencia de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco cobre, enfermedad de Wilson si se presenta en el hígado.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado cobre, afección de hígado tóxico.');                  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Fallo renal, obstrucción urinaria, deshidratación, hipertitoidismo, deficiencia de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de insulina,insulinoma, Addison''s, myexedema, mala absorción, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Diabetes mellitus, thiazides, esteroides, cerebro, riñón, daño en hígado, Cushings, disfunción de pituitaria, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de insulina, hiperglicemia, diabetes.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de insulina, hipoglicemia, páncreas, hígado, consumo excesivo de azúcar refinada.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de hierro total, anemia.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de hierro total, riesgo de cáncer, deficiencia de ácidos grasos, hígado sobre cargado.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia en la capacidad de ligar el hierro, anemia.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso en la capacidad de ligar el hierro, riesgo de cáncer, hígado sobre cargado, afección de la flora intestinal.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de lactate venosa, mal manejo de la energía, fatiga, deficiencia de vitamina B.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de lactate venosa, tensión neurologica, estrés, deficiencia de ácidos grasos.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de lactate arterial, mal manejo de la energía, fatiga, deficiencia de vitamina B.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de lactate arterial, tensión neurologica, estrés, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de Lead, toxicidad, envenenamiento, afección neurológica.');             ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de litio, afección neurologica, desordenes del pensamiento, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Excsdo de litio, exposición tóxica, afección neurologica, desordenes del pensamiento.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de lactate dehydrogenase, afección muscular, inactividad, deficiencia de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Infarto del miocardio o pulmonar, anemia, leucemia, linfoma, afección hepática, ataques, trauma, sprue.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de magnesio, mal manejo de la energía, fatiga, afección de la regulación muscular, desarrollo de cálculos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de magnesio, hipoadrenia, fatiga, afección de la regulación muscular, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia en la osmolaridad, hiperlipidemea, hiperproteinema, hipotálamo débil.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso en la osmolaridad, envenenamiento, alcohol o solventes, afección del hipotálamo.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de transporte de oxígeno arterial, pulmones, entorno, anemia.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficienia de ácido fosfato, afección el el crecimiento de huesos o debilidad, inactividad.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de ácido fosfato, posible embarazo, bloqueo en el higado, osteomalacia, afección renal.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de ácido fosfato prostático, afección en el desarrollo de los huesos o debilidad, inactividad.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de B12, hipoparatiroidismo, deficiencia de fósforo y ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Crecimiento óseo, enfermedad de Piagets, ricketsia, sanamiento de fracturas, afección de hígado o corazón, embarazo.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hiperparatiroidismo, osteomalacia, ricketsia, hipokalemia, cirrosis, síndrome de Fanconi.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falla renal, hipoparatiroidismo, acidosis diabética, deficiencia de ácidos grasos.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Cirrosis, malnutrición, vómitos, alcalosis, diarrea, nefrosis, diuréticos, hiperadrenalina.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Acidosis hiperkalemia, arritmia cardiaca, acidosis diabética, hipoadrenalismo.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de potasio en toda la sangre, deficiencia de potasio, afección neurológica y del corazón.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de potasio en toda la sangre, afección de regulación del potasio, estrés sobre metabólico.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Quemaduras, cirrosis, mal nutrición, deficiencia de ácidos grasos, sobre hidratación.');       ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Mielona multiple, miexedema, lupus, diabetes, deshidratación, afección de colágeno.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de ácido pirúvico, mal manejo de la energía, fatiga, deficiencia de vitamina B.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de ácido pirúvico, tensión neurológica, estrés.');         ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hormona antidiurética, nefrosis, hipoadrenia, corazón congestivo, vómito.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deshidratación, diabetes, exceso de sal, deficiencia de ácidos grasos.');            ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de sulfato, afección energética, disrupción en la flora intestinal, mal nutrición.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de sulfato, afección de la flora intestinal, afección de la reg. del sistema inmunitario, mal manejo de la energía.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Mal nutrición, mala absorpción, deficiencia de ácidos grasos.');            ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Asunto heredado, nefrosis, colestasis, pancreatitis, cirrosis, diabetes, problema dietético.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Fallo hepático, sobre hidratación, deficiencia de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Afección renal, deshidratación, sangrado en el GI, leucemia, fallo cardíaco.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Medicaciones de uricosurgia, alopurinol, enfermedad de Wilson, exceso de vitamina C.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Gota, fallo renal, leucemia, linfoma, psoriasis, anemia, necrosis.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de vitamina A, mal nutrición, mala absorpción.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de consumo de vitamina A, deficiencia de ácidos grasos.');            ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de vitamina D, mal nutrición, mala absorpción.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de vitamina D, afección de huesos, afección de tiroides.');             ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco cortisol por las mañanas, hipoadrenia, Addison''s, debilidad sistematica.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado cortisol por las mañanas, estrés, enfermedad de Cushing''s, afección suprarrenal.');           ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Poco cortisol por las noches, hipoadrenia, enfermedad de Addison''s, debilidad sistemica.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Demasiado cortisol por las noches, estrés, enfermedad de Cushing''s, afección suprarrenal.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de creatine kinase, hipotiroidismo, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de creatine kinase, trauma, exceso de ejercicio, cirugía, infarto, afección muscular.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona estimulante del folículo en hombres, producción pobre de esperma, deficiencia de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona estimulante del folículo en hombres, trauma sexual, irritación, incertidumbre emocional.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona estimulante del folículo post menopausia, estrés, incertidumbre emocional.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona estimulante de la fase folicular femenina, debilidad en el sistema sexual.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona estimulante de la fase folicular femenina, trauma sexual, irritación, incertidumbre emocional.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona luteinizing masculina, poce producción de esperma.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona luteinizing masculina, problema con la identidad sexual, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona luteinizing femenina post menopausia, estrés, incertidumbre emocional.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiendia de la hormona luteinizing femenina de la fase folicular, ovulación débil, desorden de reg. de la menstruación.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona luteinizing femenina de la fase folicular, estrés, incertidumbre emocional.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona del crecimiento después del azúcar, afección del hígado, regulación metabólica.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona del crecimiento después del estrés, afección del hígado, regulación metabólica.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona del crecimiento después del estrés, afección de hígado, regulación metabólica.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hemoglobina masculina, anemia, deficiencia de ácidos grasos. ');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hemoglobina masculina, degeneración, estrés, tensión emocional.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hemoglobina femenina, anemia, temor.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hemoglobina femenina, degeneración, estrés, tensión emocional.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de testosterone masculina, sistema sexual débil.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de testosterona masculina, agresión, íra, tensión.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de testosterona femenina, sexualidad débil, poco deseo sexual.');         ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de testosterona femenina, síndrome pre-menstrual, ira, personalidad controladora.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de HBD, afección del corazón, infarto, desorden en los músculos del corazón, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona de la paratiroides, afección ósea, rigidez emocional, deficiencia de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona de la paratiroides, debilidad ósea, afección de la tiroides, tumor.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de prolactina, afección pituitaria, exceso de dopamina, problemas de sobre ambición.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de prolactina, afección pituitaria, deficiencia de dopamina, no puede empezar las cosas.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de renina, afección de la presión sanguínea y/o hígado, exceso de temor, desorientación.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de renina, afección de la presión sanguínea y/o hígado, exceso de temor, desorientación.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de zinc, mala absorpción, mal nutrición, desorden de gusto u olfato.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de zinc, exceso dietético, inhabilidad para controlar el metabolismo de la respiración.');         ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona estimulante de la tiroides, depresión, afección de tiroides o pituitaria.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de la hormona estimulante de la tiroides, agresión, temor, afección de tiroides o pituitaria.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T4 total, hipotiroidismo.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T4 total, hipertiroidismo, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T4 libre, hipotiroidismo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T4 libre, hipertiroidismo.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T3 total, hipotiroidismo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T3 total, hipertiroidismo, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T3 libre, hipotiroidismo.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T3 libre, hipertiroidismo, deficiencia de ácidos grasos.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Dolor, miedo al dolor, sistema tóxico, envenenamiento.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la vida, deficiencia de la hormona de la preocupación.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Agresión hacial la vida, desorden enzimático, encubrimiento de conflictos internos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de B6, temor de los sueños, no puede vivir la vida en su extensión.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Enfado hacia Dios, no se puede perdonar, no puede expresar conflicto.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Agresión e ira sin una buena razón.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza excesiva, trauma o alcohol, intento de ser alguien que no se és.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor, reacción de dolor hacia alguien, disturbio proteínico.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor, reacción de dolor hacia alguien, agresión.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No participa de la vida, enmascara sus conflictos internos muy bien.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Trata de controlar la vida, mal manejo de la energía.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de conciencia del cuerpo, trata de cubrir los problemas.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Lo intenta demasiado, excesos de la vida, huye del crecimiento interno.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ira, dolor, temor a fracasar, desorden de la flora intestinal.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ira, dolor, temor a fracasar y a triunfar, desorden de la flora intestinal.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Bloqueo emocional de la vida, temor e ira a los conflictos de la vida.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ira, dolor, temor al fracaso y al éxito, bloqueo emocional hacial la vida y sus conflictos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de conciencia, reacción traumática, desentendimiento de la vida.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de conciencia, reacción traumática, no puede.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Sobre hidratación, mala absorpción, falta de rigidez, inhabilidad para tratar con las cosas graves.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la autoridad paternal, no se puede enfocar o reaccionar a las necesidades propias.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de sentimientos familiares, sobre hidratación, mala absorpción, temor.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la autoridad paternal.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ansiedad, temor, no se puede liberar del dolor.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ansietdad, desilusiones, necesidad de encontrar la paz, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No se puede conectar consigo mismo/a, debe liberarse de la avaricia.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No puede conectarse a sí mismo/a con el Universo.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Depresión, afección de conductividad neural, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Depresión, afección de la conductividad neural.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza, conflicto, mala absorpción, fallo del corazón.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ira, temor a la autoridad, debe dejar la avaricia.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de concientización, conflicto consigo mismo/a y el entorno.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de concientización, conflicto consigo mismo/a y el entorno, dieta equivocada, mala absorpción, def. de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor al fracaso y al éxito, la avaricia detiene el crecimiento interno.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida, daño en cerebro, riñones e hígado, obedece la autoridad, def. de ácidos grasos.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida, la avaricia retrasa el crecimiento, def. de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el flujo de los problemas de la vida, obedece la autoridad, uso de azúcar refinada, def. de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de centro, la avaricia controla los sentimientos íntimos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con la vida y conflictos internos, las desilusiones propias encubren la compasión.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con la vida y conflictos internos, las desilusiones propias encubren la compasión, def. de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con la vida y conflictos internos, afección de la flora, no siente conexión con el entorno.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Dieta deficiente, no se puede controlar, mal manejo de la energía, fatiga, deficiencia de vitamina B.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Dieta deficiente, no se puede controlar, tensión neurológica, estrés, def. de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Dieta deficiente, no se puede controlar, mal manejo de la energía, fatiga, def. de vitamina B.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Dieta deficiente, no se puede controlar, tension neurológica, estrés.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con el entorno, ira, resentimiento, no puede perdonar.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de control de los ''antojos'', afección neurológica, desorden de pensamiento.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de control de lasnecesidades, afección neurológica, desorden de pensamiento.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza incontrolada ocultada con alegría externa, afección muscular, sedentarismo.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza incontrolada ocultada con alegría externa, trauma emocional, estrés familiar.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de concientización, conflictos con la vida, mal manejo de la energía, fatiga, afección de la reg. muscular, desarrollo de cálculos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Sobre ambición sin objetivo, hipoadrenia, fatiga, afección de regulación muscular.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | En contacto con la fuerza pero no se puede defender, debilidad de voluntad, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con el entorno, no puede sanar un herida pasada, no puedo perdonar.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Ansiedad, temor al poder, entorno, anemia, las desilusiones de sí mismo/a afectan las relaciones.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la autoridad y para defenderse, inactividad.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el niño interno, temor, enmascara los sentimientos con humor, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas con el niño interno, temor a la vida o al envejecimiento, sedentarismo.');          ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de sentimientos y vínculo con el poder interno, los secretos cubren la personalidad.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Falta de sentimientos y vínculo con el poder interno, trauma emocional o físico, def. de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hiperparatiroidismo, osteomalacia, ricketsia, hipokalemia, cirrosis, síndrome de Fanconi, def. de ácidos grasos.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Fallo renal, hipoparatiroidismo, acidosis diabética, acromegalia.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Cirrosis, mal nutrición, vómito, alkalosis, diarrea, nefrosis, diuretis, hiperadrenalia.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Acidocis hiperkalemia, arritmia cardiaca, acidosis diabética, hipoadrenalismo.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de potasio total en la sangre, def. de potasio, afección neurológica y de corazón.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de potasio total en la sangre, afección de regulación del potasio, estrés sobre metabólico.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Quemaduras, cirrosis, mal nutrición, sobre hidratación, def. de ácidos grasos.');       ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Mieloma múltiple, miexedema, lupus, diabetes, deshidratación, afección de colágeno.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de ácido pirúvico, mal manejo de la energía, fatiga, def. de vitamina B.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de ácido pirúvico, tensión neurológica, estrés.');         ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Hormona antidiurética, nefrosis, hipoadrenia, corazón congestionado, vómitos, deficiencia de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deshidratación, diabetes, exceso de sal, deficiencia de ácidos grasos.');           ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de sulfato, afección energética, disrupción en la flora intestinal, mal nutrición, def. de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de sulfato, afección de la flora intestinal, afección de la regulación del sistema inmunológico, mal manejo de la energía.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Mal nutrición, mala absorpción, deficiencia de ácidos grasos.');            ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Asunto hereditario, nefrosis, colestasis, pancreatitis, cirrosis, diabetes, fallos dietéticos, def. de ácidos grasos.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Fallo hepático, sobre hidratación, deficiencia de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Afección renal, deshidratación, sangrado GI, leucemia, fallo cardíaco, deficiencia de ácidos grasos.');       ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Medicaciones de uricosurgia, allopurinol, enfermedad de Wilson, exceso de vitamina C.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Gota, fallo renal, leucemia, linfoma, psoriasis, anemia, necrosis.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No se puede conectar con el Universo, los objetivos futuros le producen desiluciones del presente, def. de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No se puede conectar con el Universo, los objetivos futuros le producen desiluciones del presente.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No se puede conectar con el Universo, los objetivos futuros le producen desiluciones del presente.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No se puede conectar con el Universo, los objetivos futuros le producen desiluciones del presente, def. de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con crecimiento interno, mal nutrición, mala absorción.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con crecimiento interno, energía no controlada, excesos consigo mismo/a, def. de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problematicas con la vida y desengaño con las elecciones tomadas.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problematicas con la autoridad, sobre reacción mental, el temor a un demonio interno impide el crecimiento.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problematicas con la vida y desencanto con el camino elegído.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problematicas con la autoridad, sobre reacción mental, los desencantos consigo mismo/a y el exceso de avaricia producen conflictos.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problematicas con la fuerza parental interna, la avaricia conduce la mente a desiluciones de otros.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza cubierta con falsa alegría y la inhabilidad de compartir con otros.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la responsabilidad parental, temor al compromiso, la avaricia conduce a la mente a la desilución de otros.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Irritación mental, amor no correspondido, trauma sexual, incertidumbre emocional.');         ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de la hormona estimuladora del folículo en fase folicular, sistema sexual débil.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Irritación mental, amor incomprendido, trauma sexual, incertidumbre emocional.');      ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Irritación mental, amor incomprendido, trauma sexual, incertidumbre emocional, def. de ácidos grasos.');
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflictos con la vida y el amor, la avaricia conduce la mente a la desilución de otros, def. de ácidos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Sentimientos femeninos descubiertos, problema de identidad sexual, liberación de temor a otros, def. de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la vida y el amor, amor no correspondido, incertidumbre emocional.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la vida y el amor, amor no correspondido, ovulación débil, afección de la regulación de la menstruación.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la vida y el amor, amor no correspondido, estrés, incertidumbre emocional, def. de ácidos grasos.');
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la vida y al crecimiento, afección del hígado, regulación metabólica, la lucha con la perfección enmascara la vida.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | No puede manejar la vida y el crecimiento espiritual, afección del hígado, regulación metabólica.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Inhabilidad para manejar la vida y el crecimiento espiritual, afección del hígado, regulación metabólica.');
- if (ba2=0) then edit95.text:=edit95.text+(' | Necesidad de estabilidad, necesidad de amor incondicional, la lucha con la perfección enmascara la vida.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Necesidad de estabilidad, necesidad de amor incondicional, degeneración, estrés, tensión emocional.');
- if (ba2=0) then edit95.text:=edit95.text+(' | Necesidad de estabilidad, necesidad de amor incondicional, anemia, temor, def. de ácidos grasos.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Necesidad de estabilidad, necesidad de amor incondicional, degeneración, estrés, tensión emocional.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la vida y el amor, ira suprimida hacia otros que es en realidad hacia sí mismo/a.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Agresión, ira, tensión, miedo al demonio interno detiene el crecimiento interno, perdonar y olvidar.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la vida y el amor, ira suprimida hacia otros que es en realidad hacia sí mismo/a, poco deseo sexual.');        ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Temor a la soledad, temor a ser herido/a, rabia, personalidad controladora, def. de ácidos grasos.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Tristeza sobre las pérdidas pero recubiertas con un velo de humor o retiro, def. de ácidos grasos.');    ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Voluntad débil y conflicto con crecimiento interno, rigidez emocional, la lucha por la perfección enmascara la vida.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Trata de luchar contra el sistema muy fuerte, necesidad de relajación, huesos débiles, afección de tiroides, tumor.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas kármicos con la vida, problemas de sobre ambición, la lucha con la perfección enmascara la vida.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Problemas kármicos con la vida, no puede empezar, la lucha con la perfección enmascara la vida.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Inhabilidad para concentrar la fuerza de voluntad, temor excesivo, desorientación, la lucha con la perfección enmascara la vida.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | El sobre control de la fuerza de voluntad ha afectado el equilibrio, exceso de temor, desorientación, def. de ácidos grasos.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Fuerza de voluntad débil, sensación de fatiga, mala nutrición, desorden de gusto u olfato.'); ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Sobre estimulación, confusión con los objetivos de la vida, inhabilidad de control en el metabolismo de la respiración.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de hormona estimulante de la tiroides, depresión, afección de tiroides o pituitaria.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de hormona estimulante de la tiroides, agresión, temor, afección de tiroides o pituitaria, def. de ácidos grasos.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T4 total, hipotiroidismo, deficiencia de ádicos grasos.');   ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exdeso de T4 total, hipertiroidismo, deficiencia de ácidos grasos.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T4 libre, hipotiroidismo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T4 libre, hipertiroidismo.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Deficiencia de T3 total, hipotiroidismo.');  ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Exceso de T3 total, hipertiroidismo, deficiencia de ácidos grasos.');ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Conflicto con la madre o con la madre interna, depresión debido a la agresión dirigida internamente.');     ba2:=random(35-(round(soc11/10)));
- if (ba2=0) then edit95.text:=edit95.text+(' | Revancha o dolor mental, agresión, temor, afección tiroide o pituitaria, la búsqueda de la perfección enmascara la vida, def. de ácidos grasos.');
-    oeg:=random(110);
-if oeg=0 then edit95.text:=edit95.text+' | EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=1 then edit95.text:=edit95.text+' | BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=2 then edit95.text:=edit95.text+' | BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=3 then edit95.text:=edit95.text+' | BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=4 then edit95.text:=edit95.text+' | SODIO FLURACEATE | Bloquea el ciclo de Kreb= fatiga crónica, también causada por una terapia inapropiada de la diabetes, virus o fiebre durante la niñez.';
-if oeg=5 then edit95.text:=edit95.text+' | ENZIMAS VENENOSAS MISCELANEAS | Tales como el cianide sobre el citocroma oxidase, desestabiliza el ciclo de Kreb.';
-if oeg=6 then edit95.text:=edit95.text+' | PARACETAMOL INADECUADO - EXPOSICION A LA ACETAMINOFENA | Produce necrosis del hígado, puede ocasionar necrosis en las células B de la isleta pancreática que causa diabetes o afección de la regulación del azúcar.';
-if oeg=7 then edit95.text:=edit95.text+' | REACCION TARDIA A LESION E INFLAMACION | Incremento en el ingerimiento de oxígeno + temperatura, aumento en la mobilización de ácidos grasos, catabolismo de proteínas y gluconeogénesis desde músculos y amino ácidos.';
-if oeg=8 then edit95.text:=edit95.text+' | REACCION TARDIA A LESION E INFLAMACION | Incremento en la producción de la hormona del crecimiento, la tiroxina, la insulina que estimulará la toma de glucosa y glicógeno, síntesis de proteína y grasas, estrés emocional.';
-if oeg=9 then edit95.text:=edit95.text+' | DISTURBIO DEL BALANCE DEL AGUA | Disminución de toma y absorción, falta de ADH, diabetes, hipercalquemia, hipocalemia,  fallo al reabsorber agua, deshidratación celular que producirá hipotensión + mareos.';
-if oeg=10 then edit95.text:=edit95.text+' | DESORDEN DE REACTIVIDAD | Reacciones impropias que crean dispersión de la información.';
-if oeg=11 then edit95.text:=edit95.text+' | EXPOSICION TOXICA A ALLOXAN | Da pié a la necrosis en las células B de la isleta pancreática.';
-if oeg=12 then edit95.text:=edit95.text+' | EXCESO DE PRODUCCION DE TOXINAS, EXOTOXINAS Y ENDOTOXINAS - LIPO POLISACARIDAS | De fuente infecciosa no conocida, cascada LPS por supresión inapropiada del sistema inmunitario.';
-if oeg=13 then edit95.text:=edit95.text+' | AGENTE INFECCIONSO NO CONOCIDO - COMPETICION POR NUTRIENTES ESENCIALES | Interrupción del metabolismo celular.';
-if oeg=14 then edit95.text:=edit95.text+' | PROVACION DE UNA CELULA INFLAMADA O UNA RESPUESTA INMUNE CAUSADA POR UN AGENTE INFECCIOSO NO CONOCIDO | Inflamación en cascada debido a inadecuada reactividad del sistema inmunitario.';
-if oeg=15 then edit95.text:=edit95.text+' | AFECCIONES AUTO INMUNITARIAS NO DEFINIDAS Y NO REACTIVAS |.';
-if oeg=16 then edit95.text:=edit95.text+' | CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en número - aneuploide, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=17 then edit95.text:=edit95.text+' | CAMBIO EN LA ESTRUCTURA CROMOSOMICA | Alteración en estructura como resultado de una traslocación o supresión de cromosomas, por causa adquirida, radiación, toxinas, químicos o ataques físicos.';
-if oeg=18 then edit95.text:=edit95.text+' | CAMBIO EN EL CODIGO GENETICO | Hereditario p.e. errores congénitos de metabolismo como en la thalassemia.';
-if oeg=19 then edit95.text:=edit95.text+' | SINTESIS REDUCIDA DE FOSFOLIPIDOS & PROTEINAS | Dispersión reducida de grasas conllevando a formación de glóbulos, liberación reducida de grasas de las células como las lipoproteinas que prod. un exceso de almacenamiento de grasa + fatiga crónica.';
-if oeg=20 then edit95.text:=edit95.text+' | ENTRADA EXCESIVA DE FFAs + TRIGLICERIDOS EN LAS CELULAS | Debido a diabetes mellitus, fallo cardiaco congestivo, anemia severa, malnutrición + desperdicio, isquemia p.e. insuficiencia coronaria, infecciones.';
-if oeg=21 then edit95.text:=edit95.text+' | RUPTURA LISOSOMAL | Se cree que es responsable por algunas formas de lesión celular p.e. lesión a los macrofagos alveolares después de la fagocitosis de la silica o toxina.';
-if oeg=22 then edit95.text:=edit95.text+' | POMPE GLICOGENO - TIPO 11 | Afección de almacenamiento, sobrecarga lisosomal causa deposición de toxinas, autotoxinas u otros restos celulares.';
-if oeg=23 then edit95.text:=edit95.text+' | SOBRECARGA LISOSOMAL | Muchos procesos metabólicos dependen de la hidrolisis de intermediarios por enzimas lisosomales, cuando una hidrolasa particular es deficiente o absente los lisosomas se expandiran + desactivaran.';
-if oeg=24 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION DE PROTEINAS | Forma depósitos de hialina en las células túbulo de riñones ocasionando el síndrome nefrótico u otra afección de deposición celular.';
-if oeg=25 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Gaucher (glucoceramida), deposición de regulación de compuestos del azúcar en las células.';
-if oeg=26 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Niemann-Pick (esfingomilina), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=27 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION DE LIPIDOS | Enfermedad de Tay-Sachs (gangliosidas), deposición inadecuada (transferencia) de ácidos grasos en mielina, mielina defectuosa que aparece como demielinización.';
-if oeg=28 then edit95.text:=edit95.text+' | BLOQUEO QUIROPRACTICO | Disturbio en el flujo de energía a través de la espina dorsal, bloqueo de oxigeno y/o nutrición, estancamiento emocional.';
-if oeg=29 then edit95.text:=edit95.text+' | BLOQUEO EN EL FLUJO DE UN MERIDIANO DE ACUPUNTURA | Venénos misceláneos en enzimas, bloqueo de oxigenación y nutrición.';
-if oeg=30 then edit95.text:=edit95.text+' | BLOQUEO DEL FLUJO DEL PRANA | Bloqueo de oxigenación y nutrición.';
-if oeg=31 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION DE MUCOPOLYSACARIDOS | Síndrome de Hurier (gargolismo), puede resultar por el exceso de ejercicio en la presencia de toxinas de aditivos alimentarios.';
-if oeg=32 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION CISTINA | Cistinosis debido a una inadecuada desintoxicación de los riñones, usualmente ocurre por aditivos alimentarios o fármacos.';
-if oeg=33 then edit95.text:=edit95.text+' | METABOLISMO DETERIORADO DE GRASAS | Oxidaxión reducidas de FFAs con aumento en la conversión de triglicéridos, enfermedad de deposición de grasas.';
-if oeg=34 then edit95.text:=edit95.text+' | METABOLISMO DETERIORADO DE GRASAS | Deposición de grasas, síntesis reducida de fosfolípidos + proteínas, ocasiona una dispersión reducida de grasas como la formación de glóbulos o liberación disminuída de grasas desde la lipoproteina celular.';
-if oeg=35 then edit95.text:=edit95.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Pérdida de microbios y expansiones focales del plasma de la membrana.';
-if oeg=36 then edit95.text:=edit95.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Formación de vacuolas al doblarse la membrana del plasma sobre sí misma - vacuolación endocítica.';
-if oeg=37 then edit95.text:=edit95.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Interrupción del RER y pérdida de ribosomas, esto produce la pérdida de basofilia citoplásmica.';
-if oeg=38 then edit95.text:=edit95.text+' | LESION A LAS MEMBRANAS CELULARES Y MITOCONDRIA | Inflamación mitocondrial y pérdida de cresta.';
-if oeg=39 then edit95.text:=edit95.text+' | INFLAMACION NUBLADA - EDEMA INTRACELULAR | Esto resulta de la acumulación de fluído acuoso en los sacos dilatados o cisterna del retículo endoplásmico y mitocondria.';
-if oeg=40 then edit95.text:=edit95.text+' | INFLAMACION NUBLADA - EDEMA INTRACELULAR | Caída en fosforilazión debido a falta de oxígeno, daño a la mitocondria o su pasajes enzimáticos.';
-if oeg=41 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de lactato and piruvato, catabolismo neto de macromoléculas (edema intracelular).';
-if oeg=42 then edit95.text:=edit95.text+' | LESION CELULAR NUCLEAR | Debido a radiación, virus, toxinas, depósitos anormales de glicógeno, cuerpos laminados, etc., ADN anormal, síntesis ARN dependiente que produce células malignas.';
-if oeg=43 then edit95.text:=edit95.text+' | LESION CELULAR NUCLEAR | Lesión latente del ADN que puede resultar en mutación y en el desarrollo de células malignas.';
-if oeg=44 then edit95.text:=edit95.text+' | CASCADA MUCOSA - EXCESO MUCOSO | Debido a desequilibrio nutricional y respuesta inmune inadecuada, una terapia alopática puede ser la causa.';
-if oeg=45 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de cálcio debido a un desequilibrio nutritivo y lesión celular.';
-if oeg=46 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el pigmento celular en proceso de envejecimiento, visto en tejidos ''permanentes'' como el miocardio donde las fibras muestran incremento de pigmentación con la edad.';
-if oeg=47 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | ''Atrofia marrón'', también vista en células del hígado con incremento de edad y ciertos fármacos p.e. fenobarbitona, partes del hígado, tratamiento inadecuado con fármacos anticuados.';
-if oeg=48 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas, como en el pigmento ''ceroide'' en el hígado después de una necrosis y oxidación de lípidos, tratamiento inadecuado con fármacos anticuados.';
-if oeg=49 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en células del hígado en el síndrome de Dubin-Johnson, tratamiento inadecuado con fármacos anticuados.';
-if oeg=50 then edit95.text:=edit95.text+' | AFECCION DE DEPOSICION | Acumulación de lipofuscinas en el síndrome de ''intestino marrón'', la pigmentación de las células de músculo que acompaña varios estados de malabsorpción.';
-if oeg=51 then edit95.text:=edit95.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR DEL CALCIO | Cése de fosforilazion oxidativa en una mitocondria dañada, fallo del bombeo del ATP-dependiente así que más calcio y sodio penetra la célula.';
-if oeg=52 then edit95.text:=edit95.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Desorden de la función del núcleo y una rebaja en el ADN-dependiente de la síntesis del ARN.';
-if oeg=53 then edit95.text:=edit95.text+' | INTERRUPCION DE HOMEOSTASIS INTRACELULAR | Glicosis contínua anaeróbica que lleva a una baja en el pH el cual activa enzimas hidroliticas que escapan de lisosomas dañados y aceleran la autólisis.';
-if oeg=54 then edit95.text:=edit95.text+' | APOPTOSIS | Muerte celular, células individuales son eliminadas de tejido vivo, condensación de cromatina en núcleo, fragmentación del núcleo, contracción del cistosol, exceso de organelles citoplásmicos.';
-if oeg=55 then edit95.text:=edit95.text+' | NECROSIS CELULAR LEVE | Debido a irradiación y quimioterapia aplicada en dosis inferiores a aquellas que causan necrosis franca, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=56 then edit95.text:=edit95.text+' | NECROSIS CELULAR LEVE | Debido a células muertas como resultado de un ataque citotóxico de linfocitos T, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=57 then edit95.text:=edit95.text+' | NECROSIS CELULAR LEVE | Debido a infecciones virales p.e. esas que afectan el hígado, hepatitis viral, fiebre amarilla, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=58 then edit95.text:=edit95.text+' | NECROSIS CELULAR LEVE | Debido a atrofia la cual puede ser psicológica (involución), o patológica, tratamiento inadecuado con fármacos inadecuados.';
-if oeg=59 then edit95.text:=edit95.text+' | NECROSIS COAGULATIVA CELULAR | Con su arquitectura preservada, p.e. infarto renal,  goma sifilítica o arquitectura destruída, p.e. necrosis cásea en tuberculosis.';
-if oeg=60 then edit95.text:=edit95.text+' | INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=61 then edit95.text:=edit95.text+' | INFLAMACION CRONICA | Debido a agente resistente a la fagocitosis y/o destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agente viral o desconocido.';
-if oeg=62 then edit95.text:=edit95.text+' | INFLAMACION CRONICA | Condiciones auto-inmunee comola tiroiditis linfocitica difusa (enfermedad de Hashimoto), gastritis atrófica, atrofia suprarrenal, etc.';
-if oeg=63 then edit95.text:=edit95.text+' | INFLAMACION CRONICA | Reacciones a auto antígenos alterados, ej. dermatitis al contacto con goma, niquel,  osteomielitis crónica & pyelohephritis, brucelosis, colecistitis, tuberculosis, lepra, plaga.';
-if oeg=64 then edit95.text:=edit95.text+' | PATOLOGIA INMUNE | Formación de inmuno-globulinas de defensa humoral, producción de pequeños linfocitos de sensitividad específica que poseen moléculas similares a anticuerpos, reacción inmune irregular, alergia.';
-if oeg=65 then edit95.text:=edit95.text+' | HIPERSENSITIVIDAD | 1) hiper sensibilidad anafilática inmediata, 2) hiper sensibilidad cicotóxica, 3) Hiper sensibilidad mediada compleja, 4) mediación celular retardada, 5) reacción estimulada.';
-if oeg=66 then edit95.text:=edit95.text+' | INMUNO DEFICIENCIA | Conexión congenital sexual, disgamaglobulinanemia, Wiskott-Aldrich & síndrome de ataxia-telangiectasia, defecto en el timo, candidiasis cronico muco-cutáneo, infecciones del tracto respiratorio.';
-if oeg=67 then edit95.text:=edit95.text+' | MUERTE CELULAR - NECROSIS CELULAR COLICUATIVA | Necrosis y licuefacción, p.e. infarto cerebral, tratamiento innadecuado con farmaceuticos anticuados.';
-if oeg=68 then edit95.text:=edit95.text+' | NECROSIS GRASA DE CELULAS | Debido a la liberación de un trauma de lípido de la parte grasa de una célula que provoca una inflamación, gigantesca respuesta celular como se puede ver en la grasa subcutánea de los senos.';
-if oeg=69 then edit95.text:=edit95.text+' | NECROSIS GRASA DE CELULAS | Debido a disfunción enzimática, como ocurre en asociación con la pancreatitis aguda y tratamientos inadecuados con fármacos anticuados.';
-if oeg=70 then edit95.text:=edit95.text+' | NECROSIS FIBRINOIDE | Degeneración fuerte de eosinofilia en colágeno p.e.  of collagen e.g. nódulo reumatoide o en polyarteritis nodosa, deposición de fibrina, necrosis de músculo blando, deposición de anticuerpos antígenos.';
-if oeg=71 then edit95.text:=edit95.text+' | ATROFIA AUTO IMMUNE | Tal como la atrofia suprarrenal en la enfermedad idiopática de Addison, atrofia celular gastrico-parietal en la anemia perniciosa.';
-if oeg=72 then edit95.text:=edit95.text+' | ATROFIA | Debido a desuso, osteoporosis local y atrofía muscular como resultado de una inmovilización o bloqueo de flujo como el bloqueo del ducto salivar puede resultar en atrofia.';
-if oeg=73 then edit95.text:=edit95.text+' | ATROFIA | Debido a isquemia p.e. atrofia cerebral, arteroesclerosis, aunerisma aórtico, huesos erosionados, meningioma causante de atrofia en la capa protectora de la cabeza, hidronefrosis que produce atrofia de los riñones, parénquima.';
-if oeg=74 then edit95.text:=edit95.text+' | ATROFIA | Debido a un cambio hormonal p.e. atrofia endometrial, retracción del estrógeno, atrofia testicular por cirrosis, hipopituarismo, senilidad, mala absorpción y caquexia.';
-if oeg=75 then edit95.text:=edit95.text+' | ATROFIA | Debido a bloqueo en nervio neuropático, atrofia muscular a continuación de la pérdida de un nervio abastecedor, inanición simple, malnutrición severa, incremento sostenido de catabolismo en fiebre después de un trauma sevéro, etc.';
-if oeg=76 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo izquierdo, hipertesión sistémica, afección valvular aórtica, incompetencia mitral (prolapso), estado de altas salida como en la anemia severa, hipercapnia, tirotoxicosis.';
-if oeg=77 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo cardiaco del ventriculo derecho, enfermedad pulmonar crónica - cor pulmonale, stenosis mitral, secundarios a la falla ventricular izquierda, lesiones valvulares pulmonarias o tricúspidas.';
-if oeg=78 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Ejercicio muscular esquelético excesivo, lesion pasada o presente no curada, tratamiento inadecuado con fármacos anticuados.';
-if oeg=79 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, útero - operación, hernia, parto o tirón de músculo de apoyo no curado.';
-if oeg=80 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, arterias - hipertension (hipertrofia), venas o arterias debido a medicación innadecuada como la viagra, medicación para la presión sanguínea, antiinflamatorios.';
-if oeg=81 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, tracto alimentario (usualmente próximo a obstruirse), mayor que un espasmo oesofageal, próximo a carcinoma / espasmo de colon, stenosis / hipertrofia pilórica, constipación.';
-if oeg=82 then edit95.text:=edit95.text+' | HIPERTROFIA - Tejido hinchado | Músculo blando, vejiga (obstrucción de salida), agrandamiento de la próstata y la uretra, fimosis severa, obstrucción del cuello de salida, aguantarse las ganas.';
-if oeg=83 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Cortex suprarrenal, administración del ACTH, adenoma basófilo de la pituitaria, toxina cortisona, abuso de cortisonea, esteroides sintéticos, disrupción del flujo energético.';
-if oeg=84 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Paratiroides primaria (idiopática), hiperplásia secundaria a fallo renal crónico, antipiréticos, bloqueadores de calcio, antidiarreal, uso de antiinflamatorios.';
-if oeg=85 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Tiroides - tirotoxicosis primaria (enfermedad de Graves), estrés emocional no resuelto con madre o la madre dentro, pérdida de energía y/o aumento de peso.';
-if oeg=86 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Pituitaria, hiperplasia acidofila como una causa ocasional de la acromegalia, hiperplasia basofila - síndrome de Cushing, historial de uso de esteroides.';
-if oeg=87 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Isletas pancreáticas, la hiperplásia se encuentra en bebés con madres diabéticas, use anti piréticos, bloqueadores de calcio, anti diarreales, anti inflamatorios.';
-if oeg=88 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Senos - preñez y lactación psicológica - patología en afecciones cistíticas de los senos, antipiréticos, bloqueadores de calcio, uso de antiinflamatorios.';
-if oeg=89 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia cistítica endométrica en respuesta a estimulación estrogénica excesiva, endometriosis, hiperplasia prostática debido al estrés, liberacion hiper/hipotalámico.';
-if oeg=90 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Próstata - inicio de hiperplasia nodular, hiperplasia cistica endométrica debido a mal manejo de estrés.';
-if oeg=91 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia célula espina de piel (acantosis), psoriasis, dermatitis crónica, acantosis nigricans, verruga viral, fungosidades, bacterias, supresión inmune.';
-if oeg=92 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Hiperplasia pseudo-epiteliomato - inflamación crónica & granulación de tejido, kerato-acantoma, tumor dermal superior tal como un mioblastoma granular celular.';
-if oeg=93 then edit95.text:=edit95.text+' | HIPERPLASIA - Células especializadas hinchadas | Médula espinal, comunmente visto donde la demanda de células rojas se incrementa en estados haemolicos, hypoxia.';
-if oeg=94 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, tejido ciliado epitelial en tráquea + bronquios en fumadores, senos nasales o en hipovitaminosis A.';
-if oeg=95 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, endometrio en senilidad, vesícula biliar en colelitiasis, terapia de próstata & estrógenos en los mayores.';
-if oeg=96 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, mucosa endocervical y glándulas asociadas con la ''erosión'' cervical, estrés de huesos sin el tiempo suficiente de sanación.';
-if oeg=97 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, pelvis renal con cálculos renales o irritación debido a los cálculos, vejiga con cistitis crónica o schistosomiasis (parásito).';
-if oeg=98 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, desde mesotelio de la pleura + peritoneum, pluera no curada o afección peritoneal por parásitos, envenenamiento alimentario, bacterias, fungosidades.';
-if oeg=99 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, la ''célula rosa'' vista en la metaplasia apocrina en cistitis, afección del seno, intestino, metaplasia de la mucosa gástrica de gastritis pasada o crónica.';
-if oeg=100 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, cicatrización del tejido conectivo, calcificación inapropiada, fibrosis, bloqueadores de calcio, antidiarréicos, antiinflamatorios.';
-if oeg=101 then edit95.text:=edit95.text+' | METAPLASIA | Conversión / reemplazo de un tipo de célula por otro diferente, metaplasia mieloide, hemopoiesis extra medular en hígado y bazo p.e. en mielofibrosis.';
-if oeg=102 then edit95.text:=edit95.text+' | ENVEJECIMIENTO PREMATURO CELULAR | Tratamiento impropio con fármacos anticuados, el envejecimiento resulta en daño al ADN por mutagenos, radiación, infecciones virales, radicales libres, etc. no curado adecuadamente por el ADN.';
-if oeg=103 then edit95.text:=edit95.text+' | ENVEJECIMIENTO PREMATURO CELULAR | Tratamienot inadecuado con fármaco anticuados, error catastrófico, deterioro en los mecanismos de transcripción e interpretación.';
-if oeg=104 then edit95.text:=edit95.text+' | INFLAMACION CELULAR AGUGA | Reacción de un de un tejido vivo vascularizado a lesiones, desorden en la cascada curativa, tratamientos no propios de medicaciones alopáticas, formación de exudación celular+fluídos, cambios en la microcirculación.';
-if oeg=105 then edit95.text:=edit95.text+' | DESTRUCCION DE TEJIDO | Pérdida de irrigación sanguínea - necrosis isquemica, ej. infarto del miocárdio, agentes inflamatorios, efectos tóxicos de los abscesos, radioterapia, cirugía, reacción a un agente infeccioso.';
-if oeg=106 then edit95.text:=edit95.text+' | LESION REPETITIVA DE HIGADO | Abuso del alcohol, hepatitis crónica,  medicaciones, farmacéuticos, etc., colapso de la reticulina, colágeno producido por las células mesenchymal, regeneración, cirrosis, cicatrices.';
-if oeg=107 then edit95.text:=edit95.text+' | NEOPLASMA | Debido a una función anormal neutrofila, medicaciones anti inflamatorias, especialmente corticosteroides, circulación sanguínea deficiente, nutrición general deficiente, historial de desintoxicación inadecuada.';
-if oeg=108 then edit95.text:=edit95.text+' | NEOPLASMA | Destrucción intracelular, tuberculosis, salmonelosis, brucelosis, agentes virales desconocidos, historial de desintoxicación inadecuada.';
-if oeg=109 then edit95.text:=edit95.text+' | NEOPLASMA AUTO INMUNE | Gastritis atrófica, atrofia suprarrenal, historial de desintoxicación inadecuada, etc.';
-
 PInmunologia.Visible := False;
 PTSangre.Visible := True;
 end;
 
 procedure TLiveCell.BA01Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA01.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA01.Enabled := False;
 end;
 
 procedure TLiveCell.BA02Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA02.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA02.Enabled := False;
 end;
 
 procedure TLiveCell.BA03Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA03.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA03.Enabled := False;
 end;
 
 procedure TLiveCell.BA04Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA04.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA04.Enabled := False;
 end;
 
 procedure TLiveCell.BA05Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA05.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA05.Enabled := False;
 end;
 
 procedure TLiveCell.BA06Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA06.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA06.Enabled := False;
 end;
 
 procedure TLiveCell.BA07Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA07.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA07.Enabled := False;
 end;
 
 procedure TLiveCell.BA08Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+BA08.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then BA08.Enabled := False;
 end;
@@ -9298,7 +7458,6 @@ end;
 procedure TLiveCell.Button117Click(Sender: TObject);
 begin
 PDiabetes.Visible := False;
-PDesarrollo.Caption := 'Realizando terapia a '+Button117.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then Button117.Enabled := False;
 end;
@@ -9306,7 +7465,6 @@ end;
 procedure TLiveCell.Button118Click(Sender: TObject);
 begin
 PDiabetes.Visible := False;
-PDesarrollo.Caption := 'Realizando terapia a '+Button118.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then Button118.Enabled := False;
 end;
@@ -9314,7 +7472,6 @@ end;
 procedure TLiveCell.Button119Click(Sender: TObject);
 begin
 PDiabetes.Visible := False;
-PDesarrollo.Caption := 'Realizando terapia a '+Button119.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then Button119.Enabled := False;
 end;
@@ -9322,7 +7479,6 @@ end;
 procedure TLiveCell.Button120Click(Sender: TObject);
 begin
 PDiabetes.Visible := False;
-PDesarrollo.Caption := 'Realizando terapia a '+Button120.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then Button120.Enabled := False;
 end;
@@ -9330,14 +7486,12 @@ end;
 procedure TLiveCell.Button121Click(Sender: TObject);
 begin
 PDiabetes.Visible := False;
-PDesarrollo.Caption := 'Realizando terapia a '+Button121.Caption+'...';
 BMaestro.Click;
 If rectificado>84 Then Button121.Enabled := False;
 end;
 
 procedure TLiveCell.Button122Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia a '+Button122.Caption+'...';
 PDiabetes.Visible := True;
 BMaestro.Click;
 If rectificado>84 Then Button122.Enabled := False;
@@ -9349,7 +7503,6 @@ begin
 Actualiza_Valores();
 PColesterol.Color := clLime;
 PColesterol.Height := 460;
-  PDesarrollo.Caption := 'Realizando terapia a '+Button123.Caption+'...';
   PColesterol.Visible := True;
 BMaestro.Click;
 If rectificado>84 Then Button123.Enabled := False;
@@ -9371,67 +7524,56 @@ end;
 procedure TLiveCell.RadioButton56Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton56.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton53Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton53.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton57Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton57.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton58Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton58.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton59Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton59.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton55Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton55.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton60Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton60.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton63Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton63.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton61Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton61.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton62Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton62.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton54Click(Sender: TObject);
 begin
 Button111.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para Síndrome '+RadioButton54.Caption+'...';
 end;
 
 procedure TLiveCell.ESindromesChange(Sender: TObject);
@@ -9450,212 +7592,181 @@ end;
 procedure TLiveCell.RadioButton65Click(Sender: TObject);
 begin
 Button112.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para '+RadioButton65.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton66Click(Sender: TObject);
 begin
 Button112.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para '+RadioButton66.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton67Click(Sender: TObject);
 begin
 Button112.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para '+RadioButton67.Caption+'...';
 end;
 
 procedure TLiveCell.RadioButton68Click(Sender: TObject);
 begin
 Button112.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para '+RadioButton68.Caption+'...';
 end;
 
 procedure TLiveCell.B206Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label369.Caption+'...';
 TSangre();
 If rectificado>84 Then B206.Enabled := False;
 end;
 
 procedure TLiveCell.B153Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label273.Caption+'...';
 TSangre();
 If rectificado>84 Then B153.Enabled := False;
 end;
 
 procedure TLiveCell.B154Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label274.Caption+'...';
 TSangre();
 If rectificado>84 Then B154.Enabled := False;
 end;
 
 procedure TLiveCell.B155Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label275.Caption+'...';
 TSangre();
 If rectificado>84 Then B155.Enabled := False;
 end;
 
 procedure TLiveCell.B207Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label386.Caption+'...';
 TSangre();
 If rectificado>84 Then B207.Enabled := False;
 end;
 
 procedure TLiveCell.B156Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label276.Caption+'...';
 TSangre();
 If rectificado>84 Then B156.Enabled := False;
 end;
 
 procedure TLiveCell.B157Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label277.Caption+'...';
 TSangre();
 If rectificado>84 Then B157.Enabled := False;
 end;
 
 procedure TLiveCell.B158Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label278.Caption+'...';
 TSangre();
 If rectificado>84 Then B158.Enabled := False;
 end;
 
 procedure TLiveCell.B201Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label194.Caption+'...';
 TSangre();
 If rectificado>84 Then B201.Enabled := False;
 end;
 
 procedure TLiveCell.B202Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label359.Caption+'...';
 TSangre();
 If rectificado>84 Then B202.Enabled := False;
 end;
 
 procedure TLiveCell.B204Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label360.Caption+'...';
 TSangre();
 If rectificado>84 Then B204.Enabled := False;
 end;
 
 procedure TLiveCell.B205Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label366.Caption+'...';
 TSangre();
 If rectificado>84 Then B205.Enabled := False;
 end;
 
 procedure TLiveCell.B159Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label279.Caption+'...';
 TSangre();
 If rectificado>84 Then B159.Enabled := False;
 end;
 
 procedure TLiveCell.B203Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label335.Caption+'...';
 TSangre();
 If rectificado>84 Then B203.Enabled := False;
 end;
 
 procedure TLiveCell.B160Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label280.Caption+'...';
 TSangre();
 If rectificado>84 Then B160.Enabled := False;
 end;
 
 procedure TLiveCell.B161Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label281.Caption+'...';
 TSangre();
 If rectificado>84 Then B161.Enabled := False;
 end;
 
 procedure TLiveCell.B162Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label282.Caption+'...';
 TSangre();
 If rectificado>84 Then B162.Enabled := False;
 end;
 
 procedure TLiveCell.B163Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label283.Caption+'...';
 TSangre();
 If rectificado>84 Then B163.Enabled := False;
 end;
 
 procedure TLiveCell.B164Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label284.Caption+'...';
 TSangre();
 If rectificado>84 Then B164.Enabled := False;
 end;
 
 procedure TLiveCell.B165Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label286.Caption+'...';
 TSangre();
 If rectificado>84 Then B165.Enabled := False;
 end;
 
 procedure TLiveCell.B186Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label287.Caption+'...';
 TSangre();
 If rectificado>84 Then B186.Enabled := False;
 end;
 
 procedure TLiveCell.B187Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label338.Caption+'...';
 TSangre();
 If rectificado>84 Then B187.Enabled := False;
 end;
 
 procedure TLiveCell.B188Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label319.Caption+'...';
 TSangre();
 If rectificado>84 Then B188.Enabled := False;
 end;
 
 procedure TLiveCell.B197Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label323.Caption+'...';
 TSangre();
 If rectificado>84 Then B197.Enabled := False;
 end;
 
 procedure TLiveCell.B198Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label324.Caption+'...';
 TSangre();
 If rectificado>84 Then B198.Enabled := False;
 end;
 
 procedure TLiveCell.B199Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label325.Caption+'...';
 TSangre();
 If rectificado>84 Then B199.Enabled := False;
 end;
 
 procedure TLiveCell.B200Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando '+Label326.Caption+'...';
 TSangre();
 If rectificado>84 Then B200.Enabled := False;
 end;
@@ -9665,12 +7776,8 @@ begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -9685,21 +7792,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -9714,20 +7814,110 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
 
 procedure TLiveCell.Button42Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button42.Caption+'...';
-If Edit112.Text<>'' Then
-PDesarrollo.Caption := 'Realizando terapia para células madre '+Button42.Caption+' | '+Edit112.Text+'...';
 BMaestroCelulasMadre.Click;
 If rectificado>84 Then Button42.Enabled := False;
+end;
+
+procedure TLiveCell.BCausasClick(Sender: TObject);
+begin
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+LiveCell.Label25.Caption := LBCausas.Items[LBCausas.ItemIndex];
+randomize;
+LBCausas.Itemindex:=Random(LBCausas.Items.Count);
+LiveCell.Label392.Caption := LBCausas.Items[LBCausas.ItemIndex];
+end;
+
+procedure TLiveCell.BOrganosGlandulasClick(Sender: TObject);
+begin
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+LiveCell.Label71.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+randomize;
+LBOrganosGlandulas.Itemindex:=Random(LBOrganosGlandulas.Items.Count);
+LiveCell.Label396.Caption := LBOrganosGlandulas.Items[LBOrganosGlandulas.ItemIndex];
+end;
+
+procedure TLiveCell.BAVMClick(Sender: TObject);
+begin
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+LiveCell.Label254.Caption := LBAVM.Items[LBAVM.ItemIndex];
+randomize;
+LBAVM.Itemindex:=Random(LBAVM.Items.Count);
+LiveCell.Label400.Caption := LBAVM.Items[LBAVM.ItemIndex];
+end;
+
+procedure TLiveCell.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+LiveCell.Label258.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+LiveCell.Label404.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure TLiveCell.BSistemasClick(Sender: TObject);
+begin
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+LiveCell.Label417.Caption := LBSistemas.Items[LBSistemas.ItemIndex];
+randomize;
+LBSistemas.Itemindex:=Random(LBSistemas.Items.Count);
+LiveCell.Label408.Caption := LBSistemas.Items[LBSistemas.ItemIndex];
+end;
+
+procedure TLiveCell.BHomeopatiaClick(Sender: TObject);
+begin
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+LiveCell.Label419.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+randomize;
+LBHomeopatia.Itemindex:=Random(LBHomeopatia.Items.Count);
+LiveCell.Label412.Caption := LBHomeopatia.Items[LBHomeopatia.ItemIndex];
+end;
+
+procedure TLiveCell.BMeridianosClick(Sender: TObject);
+begin
+randomize;
+LBMeridianos.Itemindex:=Random(LBMeridianos.Items.Count);
+LiveCell.Label255.Caption := LBMeridianos.Items[LBMeridianos.ItemIndex];
+end;
+
+procedure TLiveCell.BProcesosClick(Sender: TObject);
+begin
+randomize;
+LBProcesos.Itemindex:=Random(LBProcesos.Items.Count);
+LiveCell.Label256.Caption := LBProcesos.Items[LBProcesos.ItemIndex];
+end;
+
+procedure TLiveCell.BEPositivasClick(Sender: TObject);
+begin
+randomize;
+LBEPositivas.Itemindex:=Random(LBEPositivas.Items.Count);
+LiveCell.Label257.Caption := LBEPositivas.Items[LBEPositivas.ItemIndex];
+end;
+
+procedure TLiveCell.BToxinasClick(Sender: TObject);
+begin
+randomize;
+LBToxinas.Itemindex:=Random(LBToxinas.Items.Count);
+LiveCell.Label416.Caption := LBToxinas.Items[LBToxinas.ItemIndex];
+end;
+
+procedure TLiveCell.BCNutricionalesClick(Sender: TObject);
+begin
+randomize;
+LBCNutricionales.Itemindex:=Random(LBCNutricionales.Items.Count);
+LiveCell.Label418.Caption := LBCNutricionales.Items[LBCNutricionales.ItemIndex];
 end;
 
 end.

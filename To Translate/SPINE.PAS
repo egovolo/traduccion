@@ -9,7 +9,6 @@ uses
   Buttons;
 type
   TSpinal = class(TForm)
-    PDesarrollo: TPanel;
     Button4: TButton;
     Panel6: TPanel;
     Label96: TLabel;
@@ -108,19 +107,12 @@ type
     SpinEdit1: TSpinEdit;
     BMaestro: TButton;
     Label176: TLabel;
-    GroupBox2: TGroupBox;
-    Edit11: TEdit;
-    Edit12: TEdit;
-    Edit13: TEdit;
-    Edit14: TEdit;
-    Edit15: TEdit;
     Button39: TButton;
     Button40: TButton;
     Label189: TLabel;
     Button43: TButton;
     Panel15: TPanel;
     Label219: TLabel;
-    Memo2: TMemo;
     Button56: TButton;
     MediaPlayer1: TMediaPlayer;
     Button57: TButton;
@@ -197,10 +189,6 @@ type
     Shape11: TShape;
     Shape12: TShape;
     Label95: TLabel;
-    Edit26: TEdit;
-    Edit27: TEdit;
-    Edit28: TEdit;
-    Edit29: TEdit;
     Button16: TButton;
     Button23: TButton;
     Panel4: TPanel;
@@ -326,8 +314,6 @@ type
     Image11: TImage;
     CheckBox51: TCheckBox;
     CheckBox201: TCheckBox;
-    Label37: TLabel;
-    Memo5: TMemo;
     CheckBox202: TCheckBox;
     CheckBox203: TCheckBox;
     CheckBox208: TCheckBox;
@@ -462,9 +448,6 @@ type
     Button180: TButton;
     CheckBox217: TCheckBox;
     Label30: TLabel;
-    Panel16: TPanel;
-    Button79: TButton;
-    Button14: TButton;
     Label46: TLabel;
     Label51: TLabel;
     Label82: TLabel;
@@ -614,125 +597,6 @@ type
     LConexion: TLabel;
     Label35: TLabel;
     GroupBox34: TGroupBox;
-    GroupBox36: TGroupBox;
-    CheckBox107: TCheckBox;
-    CheckBox347: TCheckBox;
-    CheckBox358: TCheckBox;
-    CheckBox359: TCheckBox;
-    CheckBox360: TCheckBox;
-    CheckBox361: TCheckBox;
-    GroupBox37: TGroupBox;
-    CheckBox16: TCheckBox;
-    CheckBox19: TCheckBox;
-    CheckBox95: TCheckBox;
-    CheckBox101: TCheckBox;
-    CheckBox103: TCheckBox;
-    CheckBox104: TCheckBox;
-    GroupBox38: TGroupBox;
-    CheckBox26: TCheckBox;
-    CheckBox29: TCheckBox;
-    CheckBox30: TCheckBox;
-    CheckBox31: TCheckBox;
-    CheckBox32: TCheckBox;
-    CheckBox33: TCheckBox;
-    CheckBox36: TCheckBox;
-    CheckBox37: TCheckBox;
-    CheckBox139: TCheckBox;
-    CheckBox145: TCheckBox;
-    CheckBox149: TCheckBox;
-    CheckBox157: TCheckBox;
-    CheckBox158: TCheckBox;
-    CheckBox99: TCheckBox;
-    CheckBox161: TCheckBox;
-    CheckBox24: TCheckBox;
-    CheckBox93: TCheckBox;
-    CheckBox86: TCheckBox;
-    CheckBox237: TCheckBox;
-    CheckBox25: TCheckBox;
-    CheckBox27: TCheckBox;
-    CheckBox28: TCheckBox;
-    CheckBox34: TCheckBox;
-    CheckBox35: TCheckBox;
-    CheckBox38: TCheckBox;
-    CheckBox140: TCheckBox;
-    CheckBox141: TCheckBox;
-    CheckBox142: TCheckBox;
-    CheckBox147: TCheckBox;
-    CheckBox148: TCheckBox;
-    CheckBox151: TCheckBox;
-    CheckBox152: TCheckBox;
-    CheckBox153: TCheckBox;
-    CheckBox156: TCheckBox;
-    CheckBox13: TCheckBox;
-    CheckBox9: TCheckBox;
-    CheckBox17: TCheckBox;
-    CheckBox12: TCheckBox;
-    CheckBox14: TCheckBox;
-    CheckBox143: TCheckBox;
-    CheckBox144: TCheckBox;
-    CheckBox150: TCheckBox;
-    CheckBox154: TCheckBox;
-    CheckBox155: TCheckBox;
-    CheckBox159: TCheckBox;
-    CheckBox160: TCheckBox;
-    CheckBox91: TCheckBox;
-    CheckBox92: TCheckBox;
-    CheckBox4: TCheckBox;
-    CheckBox23: TCheckBox;
-    CheckBox11: TCheckBox;
-    CheckBox220: TCheckBox;
-    CheckBox236: TCheckBox;
-    CheckBox245: TCheckBox;
-    GroupBox39: TGroupBox;
-    CheckBox21: TCheckBox;
-    CheckBox173: TCheckBox;
-    CheckBox174: TCheckBox;
-    CheckBox89: TCheckBox;
-    CheckBox100: TCheckBox;
-    CheckBox94: TCheckBox;
-    CheckBox108: TCheckBox;
-    CheckBox15: TCheckBox;
-    CheckBox18: TCheckBox;
-    CheckBox259: TCheckBox;
-    GroupBox40: TGroupBox;
-    CheckBox90: TCheckBox;
-    CheckBox96: TCheckBox;
-    CheckBox5: TCheckBox;
-    CheckBox6: TCheckBox;
-    CheckBox7: TCheckBox;
-    CheckBox8: TCheckBox;
-    CheckBox22: TCheckBox;
-    CheckBox163: TCheckBox;
-    CheckBox262: TCheckBox;
-    CheckBox266: TCheckBox;
-    CheckBox285: TCheckBox;
-    CheckBox302: TCheckBox;
-    CheckBox314: TCheckBox;
-    CheckBox316: TCheckBox;
-    CheckBox322: TCheckBox;
-    CheckBox330: TCheckBox;
-    CheckBox339: TCheckBox;
-    CheckBox340: TCheckBox;
-    CheckBox350: TCheckBox;
-    CheckBox351: TCheckBox;
-    CheckBox352: TCheckBox;
-    CheckBox353: TCheckBox;
-    CheckBox354: TCheckBox;
-    CheckBox355: TCheckBox;
-    CheckBox356: TCheckBox;
-    CheckBox357: TCheckBox;
-    Label36: TLabel;
-    GroupBox41: TGroupBox;
-    CheckBox87: TCheckBox;
-    CheckBox88: TCheckBox;
-    CheckBox10: TCheckBox;
-    CheckBox111: TCheckBox;
-    CheckBox20: TCheckBox;
-    CheckBox98: TCheckBox;
-    CheckBox97: TCheckBox;
-    CheckBox1: TCheckBox;
-    CheckBox2: TCheckBox;
-    CheckBox3: TCheckBox;
     Image10: TImage;
     Button13: TButton;
     E_Ir: TEdit;
@@ -741,7 +605,6 @@ type
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
-    Panel23: TPanel;
     Panel25: TPanel;
     Panel26: TPanel;
     Panel27: TPanel;
@@ -1312,8 +1175,6 @@ type
     Button482: TButton;
     Button483: TButton;
     Button488: TButton;
-    Edit54: TEdit;
-    Edit55: TEdit;
     Button489: TButton;
     Button490: TButton;
     Button491: TButton;
@@ -1334,8 +1195,6 @@ type
     Edit57: TEdit;
     Button37: TButton;
     Button260: TButton;
-    Edit58: TEdit;
-    Edit59: TEdit;
     BCerrarAreas: TPanel;
     Button261: TButton;
     PVias: TPanel;
@@ -1460,7 +1319,6 @@ type
     Button409: TButton;
     EAPsiquicos: TEdit;
     Label26: TLabel;
-    Memo1: TMemo;
     POjos: TPanel;
     Button377: TButton;
     Button410: TButton;
@@ -1721,7 +1579,6 @@ type
     CheckBox501: TCheckBox;
     Label34: TLabel;
     BMaestroSistemas: TButton;
-    Button84: TButton;
     Button8: TButton;
     Button589: TButton;
     Button590: TButton;
@@ -2017,7 +1874,6 @@ type
     Label302: TLabel;
     Label303: TLabel;
     Label304: TLabel;
-    Label305: TLabel;
     Label275: TLabel;
     Bevel4: TBevel;
     Button91: TButton;
@@ -2055,15 +1911,11 @@ type
     Button103: TButton;
     Button104: TButton;
     Button105: TButton;
-    Button106: TButton;
     Button107: TButton;
     Button108: TButton;
     Button109: TButton;
     Button110: TButton;
     Button111: TButton;
-    Button113: TButton;
-    Memo4: TMemo;
-    Memo3: TMemo;
     Panel7: TPanel;
     Panel12: TPanel;
     GBSLinfatico: TGroupBox;
@@ -2378,65 +2230,6 @@ type
     BTAGRFemenino: TButton;
     LBAGRFemenino: TListBox;
     TSistemas: TTimer;
-    GBAEnfoque: TGroupBox;
-    CheckBox52: TCheckBox;
-    CheckBox129: TCheckBox;
-    CheckBox162: TCheckBox;
-    CheckBox176: TCheckBox;
-    CheckBox186: TCheckBox;
-    CBAreasEnfoque: TCheckBox;
-    CheckBox102: TCheckBox;
-    CheckBox79: TCheckBox;
-    CheckBox179: TCheckBox;
-    CheckBox181: TCheckBox;
-    CheckBox56: TCheckBox;
-    CheckBox175: TCheckBox;
-    CheckBox172: TCheckBox;
-    CheckBox134: TCheckBox;
-    CheckBox42: TCheckBox;
-    CheckBox109: TCheckBox;
-    CheckBox182: TCheckBox;
-    CheckBox178: TCheckBox;
-    CheckBox53: TCheckBox;
-    CheckBox185: TCheckBox;
-    CheckBox187: TCheckBox;
-    CheckBox180: TCheckBox;
-    CheckBox146: TCheckBox;
-    CheckBox130: TCheckBox;
-    CheckBox132: TCheckBox;
-    CheckBox80: TCheckBox;
-    CheckBox110: TCheckBox;
-    CheckBox131: TCheckBox;
-    CheckBox58: TCheckBox;
-    CheckBox55: TCheckBox;
-    CheckBox164: TCheckBox;
-    CheckBox170: TCheckBox;
-    CheckBox54: TCheckBox;
-    CheckBox41: TCheckBox;
-    CheckBox39: TCheckBox;
-    CheckBox82: TCheckBox;
-    CheckBox40: TCheckBox;
-    CheckBox43: TCheckBox;
-    CheckBox189: TCheckBox;
-    CheckBox177: TCheckBox;
-    CheckBox165: TCheckBox;
-    CheckBox166: TCheckBox;
-    CheckBox169: TCheckBox;
-    CheckBox137: TCheckBox;
-    CheckBox188: TCheckBox;
-    CheckBox81: TCheckBox;
-    CheckBox171: TCheckBox;
-    CheckBox167: TCheckBox;
-    CheckBox135: TCheckBox;
-    CheckBox133: TCheckBox;
-    CheckBox168: TCheckBox;
-    CheckBox184: TCheckBox;
-    CheckBox138: TCheckBox;
-    CheckBox57: TCheckBox;
-    CheckBox136: TCheckBox;
-    Button1060: TButton;
-    CheckBox183: TCheckBox;
-    BAreasEnfoque2: TButton;
     Label619: TLabel;
     Label622: TLabel;
     Label624: TLabel;
@@ -2828,7 +2621,6 @@ type
     Label905: TLabel;
     Label906: TLabel;
     Label907: TLabel;
-    Label900: TLabel;
     Label901: TLabel;
     Button7: TButton;
     Button10: TButton;
@@ -3527,6 +3319,229 @@ type
     Label1000: TLabel;
     Label1001: TLabel;
     Label1002: TLabel;
+    Edit26: TEdit;
+    Edit27: TEdit;
+    Edit28: TEdit;
+    Edit29: TEdit;
+    Edit54: TEdit;
+    Edit55: TEdit;
+    Edit58: TEdit;
+    Edit59: TEdit;
+    PBasesDeDatos: TPanel;
+    LBTerapias: TListBox;
+    BTerapias: TButton;
+    LBOrganosGlandulas: TListBox;
+    BOrganosGlandulas: TButton;
+    LBCausas: TListBox;
+    BCausas: TButton;
+    LBMeridianos: TListBox;
+    BMeridianos: TButton;
+    LBENegativas: TListBox;
+    BENegativas: TButton;
+    LBEPositivas: TListBox;
+    BEPositivas: TButton;
+    LBProcesos: TListBox;
+    BProcesos: TButton;
+    LBAfirmaciones: TListBox;
+    BAfirmaciones: TButton;
+    LBAVM: TListBox;
+    BAVM: TButton;
+    LBSistemas: TListBox;
+    BSistemas: TButton;
+    LBToxinas: TListBox;
+    BToxinas: TButton;
+    LBAgendar: TListBox;
+    BAgenda: TButton;
+    LBCNutricionales: TListBox;
+    BCNutricionales: TButton;
+    LBHomeopatia: TListBox;
+    BHomeopatia: TButton;
+    Panel16: TPanel;
+    Label36: TLabel;
+    Button79: TButton;
+    Button14: TButton;
+    GroupBox36: TGroupBox;
+    CheckBox107: TCheckBox;
+    CheckBox347: TCheckBox;
+    CheckBox358: TCheckBox;
+    CheckBox359: TCheckBox;
+    CheckBox360: TCheckBox;
+    CheckBox361: TCheckBox;
+    GroupBox38: TGroupBox;
+    CheckBox26: TCheckBox;
+    CheckBox29: TCheckBox;
+    CheckBox30: TCheckBox;
+    CheckBox31: TCheckBox;
+    CheckBox32: TCheckBox;
+    CheckBox33: TCheckBox;
+    CheckBox36: TCheckBox;
+    CheckBox37: TCheckBox;
+    CheckBox139: TCheckBox;
+    CheckBox145: TCheckBox;
+    CheckBox149: TCheckBox;
+    CheckBox157: TCheckBox;
+    CheckBox158: TCheckBox;
+    CheckBox99: TCheckBox;
+    CheckBox161: TCheckBox;
+    CheckBox24: TCheckBox;
+    CheckBox93: TCheckBox;
+    CheckBox86: TCheckBox;
+    CheckBox237: TCheckBox;
+    CheckBox25: TCheckBox;
+    CheckBox27: TCheckBox;
+    CheckBox28: TCheckBox;
+    CheckBox34: TCheckBox;
+    CheckBox35: TCheckBox;
+    CheckBox38: TCheckBox;
+    CheckBox140: TCheckBox;
+    CheckBox141: TCheckBox;
+    CheckBox142: TCheckBox;
+    CheckBox147: TCheckBox;
+    CheckBox148: TCheckBox;
+    CheckBox151: TCheckBox;
+    CheckBox152: TCheckBox;
+    CheckBox153: TCheckBox;
+    CheckBox156: TCheckBox;
+    CheckBox13: TCheckBox;
+    CheckBox9: TCheckBox;
+    CheckBox17: TCheckBox;
+    CheckBox12: TCheckBox;
+    CheckBox14: TCheckBox;
+    CheckBox143: TCheckBox;
+    CheckBox144: TCheckBox;
+    CheckBox150: TCheckBox;
+    CheckBox154: TCheckBox;
+    CheckBox155: TCheckBox;
+    CheckBox159: TCheckBox;
+    CheckBox160: TCheckBox;
+    CheckBox91: TCheckBox;
+    CheckBox92: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox23: TCheckBox;
+    CheckBox11: TCheckBox;
+    CheckBox220: TCheckBox;
+    CheckBox236: TCheckBox;
+    CheckBox245: TCheckBox;
+    GroupBox40: TGroupBox;
+    CheckBox90: TCheckBox;
+    CheckBox96: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox22: TCheckBox;
+    CheckBox163: TCheckBox;
+    CheckBox262: TCheckBox;
+    CheckBox266: TCheckBox;
+    CheckBox285: TCheckBox;
+    CheckBox302: TCheckBox;
+    CheckBox314: TCheckBox;
+    CheckBox316: TCheckBox;
+    CheckBox322: TCheckBox;
+    CheckBox330: TCheckBox;
+    CheckBox339: TCheckBox;
+    CheckBox340: TCheckBox;
+    CheckBox350: TCheckBox;
+    CheckBox351: TCheckBox;
+    CheckBox352: TCheckBox;
+    CheckBox353: TCheckBox;
+    CheckBox354: TCheckBox;
+    CheckBox355: TCheckBox;
+    CheckBox356: TCheckBox;
+    CheckBox357: TCheckBox;
+    CheckBox125: TCheckBox;
+    Edit11: TEdit;
+    GroupBox41: TGroupBox;
+    CheckBox87: TCheckBox;
+    CheckBox88: TCheckBox;
+    CheckBox10: TCheckBox;
+    CheckBox111: TCheckBox;
+    CheckBox20: TCheckBox;
+    CheckBox98: TCheckBox;
+    CheckBox97: TCheckBox;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    GroupBox39: TGroupBox;
+    CheckBox21: TCheckBox;
+    CheckBox173: TCheckBox;
+    CheckBox174: TCheckBox;
+    CheckBox89: TCheckBox;
+    CheckBox100: TCheckBox;
+    CheckBox94: TCheckBox;
+    CheckBox108: TCheckBox;
+    CheckBox15: TCheckBox;
+    CheckBox18: TCheckBox;
+    CheckBox259: TCheckBox;
+    GroupBox37: TGroupBox;
+    CheckBox16: TCheckBox;
+    CheckBox19: TCheckBox;
+    CheckBox95: TCheckBox;
+    CheckBox101: TCheckBox;
+    CheckBox103: TCheckBox;
+    CheckBox104: TCheckBox;
+    Panel23: TPanel;
+    GBAEnfoque: TGroupBox;
+    CheckBox52: TCheckBox;
+    CheckBox129: TCheckBox;
+    CheckBox162: TCheckBox;
+    CheckBox176: TCheckBox;
+    CheckBox186: TCheckBox;
+    CBAreasEnfoque: TCheckBox;
+    CheckBox102: TCheckBox;
+    CheckBox79: TCheckBox;
+    CheckBox179: TCheckBox;
+    CheckBox181: TCheckBox;
+    CheckBox56: TCheckBox;
+    CheckBox175: TCheckBox;
+    CheckBox172: TCheckBox;
+    CheckBox134: TCheckBox;
+    CheckBox42: TCheckBox;
+    CheckBox109: TCheckBox;
+    CheckBox182: TCheckBox;
+    CheckBox178: TCheckBox;
+    CheckBox53: TCheckBox;
+    CheckBox185: TCheckBox;
+    CheckBox187: TCheckBox;
+    CheckBox180: TCheckBox;
+    CheckBox146: TCheckBox;
+    CheckBox130: TCheckBox;
+    CheckBox132: TCheckBox;
+    CheckBox80: TCheckBox;
+    CheckBox110: TCheckBox;
+    CheckBox131: TCheckBox;
+    CheckBox58: TCheckBox;
+    CheckBox55: TCheckBox;
+    CheckBox164: TCheckBox;
+    CheckBox170: TCheckBox;
+    CheckBox54: TCheckBox;
+    CheckBox41: TCheckBox;
+    CheckBox39: TCheckBox;
+    CheckBox82: TCheckBox;
+    CheckBox40: TCheckBox;
+    CheckBox43: TCheckBox;
+    CheckBox189: TCheckBox;
+    CheckBox177: TCheckBox;
+    CheckBox165: TCheckBox;
+    CheckBox166: TCheckBox;
+    CheckBox169: TCheckBox;
+    CheckBox137: TCheckBox;
+    CheckBox188: TCheckBox;
+    CheckBox81: TCheckBox;
+    CheckBox171: TCheckBox;
+    CheckBox167: TCheckBox;
+    CheckBox135: TCheckBox;
+    CheckBox133: TCheckBox;
+    CheckBox168: TCheckBox;
+    CheckBox184: TCheckBox;
+    CheckBox138: TCheckBox;
+    CheckBox57: TCheckBox;
+    CheckBox136: TCheckBox;
+    CheckBox183: TCheckBox;
+    CheckBox126: TCheckBox;
+    Edit12: TEdit;
+    CheckBox127: TCheckBox;
+    Edit13: TEdit;
 
     procedure Button2Click(Sender: TObject);
     procedure RadioButton28Click(Sender: TObject);
@@ -3577,7 +3592,6 @@ type
     procedure Button12Click(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure Button15Click(Sender: TObject);
-    procedure PDesarrolloClick(Sender: TObject);
     procedure FormDeactivate(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormHide(Sender: TObject);
@@ -3606,7 +3620,6 @@ type
     procedure RadioButton47Click(Sender: TObject);
     procedure Button28Click(Sender: TObject);
     procedure Panel9DblClick(Sender: TObject);
-    procedure Edit3Exit(Sender: TObject);
     procedure Edit3Change(Sender: TObject);
     procedure Edit4Change(Sender: TObject);
     procedure Edit5Change(Sender: TObject);
@@ -3681,11 +3694,6 @@ type
     procedure BRestaurarSaludGralClick(Sender: TObject);
     procedure Button87Click(Sender: TObject);
     procedure Edit19Enter(Sender: TObject);
-    procedure Edit11DblClick(Sender: TObject);
-    procedure Edit12DblClick(Sender: TObject);
-    procedure Edit13DblClick(Sender: TObject);
-    procedure Edit15DblClick(Sender: TObject);
-    procedure Edit14DblClick(Sender: TObject);
     procedure ETransferenciaDblClick(Sender: TObject);
     procedure Button97Click(Sender: TObject);
     procedure Button93Click(Sender: TObject);
@@ -3698,15 +3706,11 @@ type
     procedure Button103Click(Sender: TObject);
     procedure Button104Click(Sender: TObject);
     procedure Button105Click(Sender: TObject);
-    procedure Button106Click(Sender: TObject);
-    procedure Memo3DblClick(Sender: TObject);
     procedure Button107Click(Sender: TObject);
     procedure Button108Click(Sender: TObject);
     procedure Button109Click(Sender: TObject);
     procedure Button110Click(Sender: TObject);
     procedure Button111Click(Sender: TObject);
-    procedure Button113Click(Sender: TObject);
-    procedure Memo4DblClick(Sender: TObject);
     procedure Edit20Enter(Sender: TObject);
     procedure Edit21DblClick(Sender: TObject);
     procedure Edit22DblClick(Sender: TObject);
@@ -3866,7 +3870,6 @@ type
     procedure Label451Click(Sender: TObject);
     procedure Label452Click(Sender: TObject);
     procedure Label453Click(Sender: TObject);
-    procedure Label37Click(Sender: TObject);
     procedure Button180Click(Sender: TObject);
     procedure Label35Click(Sender: TObject);
     procedure Button13Click(Sender: TObject);
@@ -3880,7 +3883,6 @@ type
     procedure Panel27Click(Sender: TObject);
     procedure Panel22Click(Sender: TObject);
     procedure Panel28Click(Sender: TObject);
-    procedure Memo2Click(Sender: TObject);
     procedure BTerapiaEAFClick(Sender: TObject);
     procedure Button151Click(Sender: TObject);
     procedure Button150Click(Sender: TObject);
@@ -3945,7 +3947,6 @@ type
     procedure Button51Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure BReaccionClick(Sender: TObject);
-    procedure Memo5Click(Sender: TObject);
     procedure Label454Click(Sender: TObject);
     procedure Label455Click(Sender: TObject);
     procedure Label456Click(Sender: TObject);
@@ -4502,8 +4503,6 @@ type
     procedure TAGeneralesTimer(Sender: TObject);
     procedure Button188Click(Sender: TObject);
     procedure Label20Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
-    procedure Label26Click(Sender: TObject);
     procedure SOjosMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure SNarizMouseDown(Sender: TObject; Button: TMouseButton;
@@ -4595,8 +4594,6 @@ type
     procedure Button651Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure TAEnfoqueTimer(Sender: TObject);
-    procedure Button84Click(Sender: TObject);
-    procedure Button1060Click(Sender: TObject);
     procedure LBARespiratorioClick(Sender: TObject);
     procedure Edit32Click(Sender: TObject);
     procedure TLimpiaMejoraRendimientoEstimularTimer(Sender: TObject);
@@ -5267,7 +5264,6 @@ type
     procedure Label649Click(Sender: TObject);
     procedure Label897Click(Sender: TObject);
     procedure Label772Click(Sender: TObject);
-    procedure Label900Click(Sender: TObject);
     procedure Label901Click(Sender: TObject);
     procedure Label149Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
@@ -5471,6 +5467,10 @@ type
     procedure Button706Click(Sender: TObject);
     procedure Button707Click(Sender: TObject);
     procedure Label1002Click(Sender: TObject);
+    procedure BENegativasClick(Sender: TObject);
+    procedure Edit11Change(Sender: TObject);
+    procedure Edit12Change(Sender: TObject);
+    procedure Edit13Change(Sender: TObject);
 
   private
     { Private declarations }
@@ -5485,7 +5485,6 @@ type
       Procedure LimpiaEspina();
       procedure pValidaValores();
       procedure Adicional();
-      procedure ProgressBars();
       procedure ConflictosEmocionales();
       procedure RevisarHormonas();
       procedure ResultadosPBs();
@@ -5685,16 +5684,12 @@ MyChrono.Start;
 Panel9.Visible := True;
 If CBPsicologiaPositiva.Checked = True Then TPsicologiaPositiva.Enabled := True;
     PPsicologiaPositiva.Visible := True;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 FMain.button86.Enabled:=false;
 FMain.button85.Enabled:=false;
 riskchart.cnt:=riskchart.cnt+20;
 testform1.autospin:=10;
-PDesarrollo.caption:='Testando flujo de energía...';
-if button2.Caption='Reanalizar flujo de energía'  then
-PDesarrollo.Caption:='Reanalizando flujo de energía...';
-PDesarrollo.visible:=true;
 spinal.refresh;
 spin:=1;
 
@@ -6365,7 +6360,6 @@ begin
   if n10>q then Label116.caption:='Alersode principal: Azúcar usada en exceso.';
  if n10>q then q:=n10;
 DM.Conscida.FindKey([1501]);
-PDesarrollo.Visible:=False;
 Label25.Enabled := True;
 end;
 
@@ -6578,7 +6572,7 @@ end;
 
 procedure TSpinal.Button12Click(Sender: TObject);
 begin
-    Emptytab(DM.AInfo,'------ INFORME DE ALERGIAS ------');
+    Emptytab(DM.AInfo,'------ INFORME DE HIPERREACTIVIDAD ------');
  DM.Conscida.Disablecontrols;
      DM.Conscida.IndexName:='';
  if all1=1 then begin
@@ -6726,12 +6720,8 @@ var react,ren,ner :longint;
         panelCapt:string;
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Efectuando test individual...';
 GProgreso.Progress := 0;
-
 Label117.Caption := '0';
-PDesarrollo.visible :=true;
-   PDesarrollo.refresh;
     l:=1;
      Value:=DM.ConscidaOldValue.AsInteger +15;
    Ren:= value*20;
@@ -6791,25 +6781,13 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
  ChangingPulses(55555,50*ren,51*ren,200,1,2,
  '11111111','11111111');
 GProgreso.Progress := 100;
-
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- PDesarrollo.visible:=false;
- PDesarrollo.Caption:=panelCapt;
  ner :=random(90);
    if ner=66 then  SCIOworking.RadioButton4.checked:=True;
  if ner=66 then button15.enabled:=false;
-  PDesarrollo.visible := false;
-  if ner=66 then  PDesarrollo.visible := true;
    DM.Conscida.enablecontrols;
    react:=random(130);
     if react>100 then react:=100;
    label117.caption:=inttostr(react);
-end;
-
-procedure TSpinal.PDesarrolloClick(Sender: TObject);
-begin
-PDesarrollo.visible:=false;
-
 end;
 
 procedure TSpinal.FormDeactivate(Sender: TObject);
@@ -6923,7 +6901,6 @@ procedure TSpinal.Button16Click(Sender: TObject);
 begin
 extra:=60-extra;
 if extra>600 then extra:=600;
-//label222.caption:='La duración aproximada de la terapia es de | '+inttostr(round(extra/60)-1)+' min.';
 end;
 
 procedure TSpinal.Label237Click(Sender: TObject);
@@ -6941,7 +6918,6 @@ Begin
 end;
 end;
 
-
 procedure TSpinal.Label120Click(Sender: TObject);
 begin
   PanelAllergy.visible:=False;
@@ -6957,8 +6933,7 @@ vsql := ' SELECT * from CONSCIDA ';
 cutof   := testForm1.cutof;
 vorder := ' 2';
 vvalue := 0;
-DM.Bitacora('Carga Espina dorsal y sarcodes');
-  Image10.picture := testForm1.Image2.picture;
+Image10.picture := testForm1.Image2.picture;
 Image11.picture := testForm1.Image2.picture;
 Time_Crono.Enabled:=True;
 VGContadorShape := 0;
@@ -6967,7 +6942,7 @@ button103.enabled:=true;
 button104.enabled:=true;
 button108.enabled:=true;
 button109.enabled:=true;
-button106.enabled:=true;
+
 button107.enabled:=true;
 button903.enabled:=true;
 IColumnaVertebral.picture.loadfromfile('IColumnaVertebral.jpg');
@@ -6981,343 +6956,9 @@ image1.picture.loadfromfile('blur10.jpg');
 IContinuar.picture.loadfromfile('atom.bmp');
 image6.picture.loadfromfile('vitruvian2.jpg');
 Image7.picture.loadfromfile('FocosEnergeticos.jpg');
-oeg:=random(43);
-if oeg<2 then edit11.text:=edit11.text+' | Inflamación';
-if oeg=2 then edit11.text:=edit11.text+' | Cáncer';
-if oeg=3 then edit11.text:=edit11.text+' | Estrés';
-if oeg=4 then edit11.text:=edit11.text+' | Hipoadrenia';
-if oeg=5 then edit11.text:=edit11.text+' | Emociones';
-if oeg=6 then edit11.text:=edit11.text+' | Infección';
-if oeg=7 then edit11.text:=edit11.text+' | Toxicidad';
-if oeg=8 then edit11.text:=edit11.text+' | Trauma';
-if oeg=9 then edit11.text:=edit11.text+' | Factores hereditarios';
-if oeg=10 then edit11.text:=edit11.text+' | Def. o exceso de vitaminas';
-if oeg=11 then edit11.text:=edit11.text+' | Sistema cardiovascular';
-if oeg=12 then edit11.text:=edit11.text+' | Sistema hormonal';
-if oeg=13 then edit11.text:=edit11.text+' | Sistema linfático';
-if oeg=14 then edit11.text:=edit11.text+' | Hígado';
-if oeg=15 then edit11.text:=edit11.text+' | Riñones';
-if oeg=16 then edit11.text:=edit11.text+' | Sistema digestivo';
-if oeg=17 then edit11.text:=edit11.text+' | Tejido conectivo';
-if oeg=18 then edit11.text:=edit11.text+' | Sistema óseo';
-if oeg=19 then edit11.text:=edit11.text+' | Agua - Alcalina o ácida';
-if oeg=20 then edit11.text:=edit11.text+' | Sangre';
-if oeg=21 then edit11.text:=edit11.text+' | Medio ambiental';
-if oeg=22 then edit11.text:=edit11.text+' | Alergias';
-if oeg=23 then edit11.text:=edit11.text+' | Riesgo emocional';
-if oeg=24 then edit11.text:=edit11.text+' | Sistema circulatorio';
-if oeg=25 then edit11.text:=edit11.text+' | Sistema inmune';
-if oeg=26 then edit11.text:=edit11.text+' | Radiación';
-if oeg=27 then edit11.text:=edit11.text+' | Bacterias';
-if oeg=28 then edit11.text:=edit11.text+' | Fungosidades';
-if oeg=29 then edit11.text:=edit11.text+' | Virus';
-if oeg=30 then edit11.text:=edit11.text+' | Parásitos';
-if oeg=31 then edit11.text:=edit11.text+' | Ameba';
-if oeg=32 then edit11.text:=edit11.text+' | Envenamiento alimentario';
-if oeg=33 then edit11.text:=edit11.text+' | Regulación del azúcar';
-if oeg=34 then edit11.text:=edit11.text+' | Sistema neurológico';
-if oeg=35 then edit11.text:=edit11.text+' | Sistema sensorial';
-if oeg=36 then edit11.text:=edit11.text+' | Colesterol';
-if oeg=37 then edit11.text:=edit11.text+' | Sistema respiratorio';
-if oeg=38 then edit11.text:=edit11.text+' | Oxidación';
-if oeg=39 then edit11.text:=edit11.text+' | Hidratación';
-if oeg>39 then edit11.text:=edit11.text+' | Sistema cognictivo';
-oeg:=random(16);
-if oeg=0 then edit11.text:=edit11.text+' | Paso enzimático';
-if oeg=1 then edit11.text:=edit11.text+' | Conexión energética';
-if oeg=2 then edit11.text:=edit11.text+' | Cerebro';
-if oeg=3 then edit11.text:=edit11.text+' | Sistema nervioso';
-if oeg=4 then edit11.text:=edit11.text+' | Paso enzimático';
-if oeg=5 then edit11.text:=edit11.text+' | Sistema hormonal';
-if oeg=6 then edit11.text:=edit11.text+' | Flora intestinal';
-if oeg=7 then edit11.text:=edit11.text+' | Sangre';
-if oeg=8 then edit11.text:=edit11.text+' | Hormonas';
-if oeg=9 then edit11.text:=edit11.text+' | Suprarrenanles';
-if oeg=10 then edit11.text:=edit11.text+' | Pituitaria';
-if oeg=11 then edit11.text:=edit11.text+' | Emociones';
-if oeg=12 then edit11.text:=edit11.text+' | Sangre';
-if oeg=13 then edit11.text:=edit11.text+' | Sistema linfático';
-if oeg=14 then edit11.text:=edit11.text+' | Sistema energético';
-if oeg=15 then edit11.text:=edit11.text+' | Desintoxicación';
-if oeg=16 then edit11.text:=edit11.text+' | Intoxicación';
-
-if riskchart.ims>60 then edit12.text:=edit12.text+' | Sistema inmune';
-if riskchart.emo>60 then edit12.text:=edit12.text+' | Factores emocionales';
-if riskchart.infl>60 then edit12.text:=edit12.text+' | Inflamación';
-if riskchart.can>60 then edit12.text:=edit12.text+' | Cáncer';
-if riskchart.str>60 then edit12.text:=edit12.text+' | Estrés';
-if riskchart.infe>60 then edit12.text:=edit12.text+' | Infección';
-if riskchart.tox>60 then edit12.text:=edit12.text+' | Toxicidad';
-if riskchart.car>60 then edit12.text:=edit12.text+' | Sistema cardiovascular';
-if riskchart.Nut>60 then edit12.text:=edit12.text+' | Nutrientes';
-if riskchart.hor>60 then edit12.text:=edit12.text+' | Sistema hormonal';
-if riskchart.lym>60 then edit12.text:=edit12.text+' | Sistema linfático';
-if riskchart.bld>60 then edit12.text:=edit12.text+' | Sangre';
-if riskchart.cir>60 then edit12.text:=edit12.text+' | Sistema circulatorio';
-if riskchart.cho>60 then edit12.text:=edit12.text+' | Colesterol';
-if riskchart.oxi>60 then edit12.text:=edit12.text+' | Oxidación';
-if riskchart.hyd>60 then edit12.text:=edit12.text+' | Hidratación';
-if riskchart.hypa>60 then edit12.text:=edit12.text+' | Hipoadrenia';
-if riskchart.tra>60 then edit12.text:=edit12.text+' | Trauma/s';
-if riskchart.inh>60 then edit12.text:=edit12.text+' | Factores heredados';
-if riskchart.liv>60 then edit12.text:=edit12.text+' | Hígado';
-if riskchart.kid>60 then edit12.text:=edit12.text+' | Riñones';
-if riskchart.dig>60 then edit12.text:=edit12.text+' | Sistema digestivo';
-if riskchart.cnt>60 then edit12.text:=edit12.text+' | Tejido conectivo';
-if riskchart.bon>60 then edit12.text:=edit12.text+' | Sistema óseo';
-if riskchart.acid>60 then edit12.text:=edit12.text+' | Balance del pH';
-if riskchart.env>60 then edit12.text:=edit12.text+' | Medio ambiente';
-if riskchart.aler>60 then edit12.text:=edit12.text+' | Alergias';
-if riskchart.rad>60 then edit12.text:=edit12.text+' | Radiación';
-if riskchart.bac>60 then edit12.text:=edit12.text+' | Bacterias';
-if riskchart.fun>60 then edit12.text:=edit12.text+' | Fungosidades';
-if riskchart.vir>60 then edit12.text:=edit12.text+' | Virus';
-if riskchart.par>60 then edit12.text:=edit12.text+' | Parásitos';
-if riskchart.ameo>60 then edit12.text:=edit12.text+' | Ameba';
-if riskchart.fdp>60 then edit12.text:=edit12.text+' | Envenenamiento alimentario';
-if riskchart.sug>60 then edit12.text:=edit12.text+' | Regulación del azúcar';
-if riskchart.ner>60 then edit12.text:=edit12.text+' | Sistema neurológico';
-if riskchart.sener>60 then edit12.text:=edit12.text+' | Sistema sensorial';
-if riskchart.res>60 then edit12.text:=edit12.text+' | Sistema respiratorio';
-if riskchart.cog>60 then edit12.text:=edit12.text+' | Cognicción';
-         oeg:=random(32);
-if oeg=0 then edit15.text:=edit15.text+' | Pulmones';
-if oeg=1 then edit15.text:=edit15.text+' | Piel';
-if oeg=2 then edit15.text:=edit15.text+' | Cerebro';
-if oeg=3 then edit15.text:=edit15.text+' | Senos nasales';
-if oeg=4 then edit15.text:=edit15.text+' | Estómago';
-if oeg=5 then edit15.text:=edit15.text+' | Ojos';
-if oeg=6 then edit15.text:=edit15.text+' | Flora intestinal';
-if oeg=7 then edit15.text:=edit15.text+' | Pulmones';
-if oeg=8 then edit15.text:=edit15.text+' | Estómago';
-if oeg=9 then edit15.text:=edit15.text+' | Suprarrenales';
-if oeg=10 then edit15.text:=edit15.text+' | Senos nasales';
-if oeg=11 then edit15.text:=edit15.text+' | Emociones';
-if oeg=12 then edit15.text:=edit15.text+' | Sangre';
-if oeg=13 then edit15.text:=edit15.text+' | Sistema linfático';
-if oeg=14 then edit15.text:=edit15.text+' | Dentadura';
-if oeg=15 then edit15.text:=edit15.text+' | Formación reticular';
-if oeg=16 then edit15.text:=edit15.text+' | Médula oblongata';
-if oeg=17 then edit15.text:=edit15.text+' | Lóbulo frontal del cerebro';
-if oeg=18 then edit15.text:=edit15.text+' | Lóbulo parietal del cerebro';
-if oeg=19 then edit15.text:=edit15.text+' | Lóbulo occipital del cerebro';
-if oeg=20 then edit15.text:=edit15.text+' | Lóbulo temporal del cerebro';
-if oeg=21 then edit15.text:=edit15.text+' | Tiroides';
-if oeg=22 then edit15.text:=edit15.text+' | Timo';
-if oeg=23 then edit15.text:=edit15.text+' | Médula espinal';
-if oeg=24 then edit15.text:=edit15.text+' | Sistema límbico';
-if oeg=25 then edit15.text:=edit15.text+' | Circuitos de la memoria';
-if oeg=26 then edit15.text:=edit15.text+' | Hipotálamo';
-if oeg=27 then edit15.text:=edit15.text+' | Pineal';
-if oeg=28 then edit15.text:=edit15.text+' | Pituitaria';
-if oeg=29 then edit15.text:=edit15.text+' | Paratiroides';
-if oeg=30 then edit15.text:=edit15.text+' | Sangre';
-if oeg=31 then edit15.text:=edit15.text+' | Sistema linfático';
-if oeg=32 then edit15.text:=edit15.text+' | Dentadura';
-if riskchart.ims>110 then edit15.text:=edit15.text+' | Sistema inmune';
-if riskchart.emo>110 then edit15.text:=edit15.text+' | Factores emocionales';
-if riskchart.infl>110 then edit15.text:=edit15.text+' | Inflamación';
-if riskchart.can>110 then edit15.text:=edit15.text+' | Cáncer';
-if riskchart.str>110 then edit15.text:=edit15.text+' | Estrés';
-if riskchart.infe>110 then edit15.text:=edit15.text+' | Infección';
-if riskchart.tox>110 then edit15.text:=edit15.text+' | Toxicidad';
-if riskchart.car>110 then edit15.text:=edit15.text+' | Sistema cardiovascular';
-if riskchart.Nut>110 then edit15.text:=edit15.text+' | Nutrientes';
-if riskchart.hor>110 then edit15.text:=edit15.text+' | Sistema hormonal';
-if riskchart.lym>110 then edit15.text:=edit15.text+' | Sistema linfático';
-if riskchart.bld>110 then edit15.text:=edit15.text+' | Sangre';
-if riskchart.cir>110 then edit15.text:=edit15.text+' | Sistema circulatorio';
-if riskchart.cho>110 then edit15.text:=edit15.text+' | Colesterol';
-if riskchart.oxi>110 then edit15.text:=edit15.text+' | Oxidación';
-if riskchart.hyd>110 then edit15.text:=edit15.text+' | Hidratación';
-if riskchart.hypa>110 then edit15.text:=edit15.text+' | Hipoadrenia';
-if riskchart.tra>110 then edit15.text:=edit15.text+' | Trauma/s';
-if riskchart.inh>110 then edit15.text:=edit15.text+' | Factores heredados';
-if riskchart.liv>110 then edit15.text:=edit15.text+' | Hígado';
-if riskchart.kid>110 then edit15.text:=edit15.text+' | Riñones';
-if riskchart.dig>110 then edit15.text:=edit15.text+' | Sistema digestivo';
-if riskchart.cnt>110 then edit15.text:=edit15.text+' | Tejido conectivo';
-if riskchart.bon>110 then edit15.text:=edit15.text+' | Sistema óseo';
-if riskchart.acid>110 then edit15.text:=edit15.text+' | Balance del pH';
-if riskchart.env>110 then edit15.text:=edit15.text+' | Medio ambiente';
-if riskchart.aler>110 then edit15.text:=edit15.text+' | Alergias';
-if riskchart.rad>110 then edit15.text:=edit15.text+' | Radiación';
-if riskchart.bac>110 then edit15.text:=edit15.text+' | Bacterias';
-if riskchart.fun>110 then edit15.text:=edit15.text+' | Fungosidades';
-if riskchart.vir>110 then edit15.text:=edit15.text+' | Virus';
-if riskchart.par>110 then edit15.text:=edit15.text+' | Parásitos';
-if riskchart.ameo>110 then edit15.text:=edit15.text+' | Ameba';
-if riskchart.fdp>110 then edit15.text:=edit15.text+' | Envenenamiento alimentario';
-if riskchart.sug>110 then edit15.text:=edit15.text+' | Regulación del azúcar';
-if riskchart.ner>110 then edit15.text:=edit15.text+' | Sistema neurológico';
-if riskchart.sener>110 then edit15.text:=edit15.text+' | Sistema sensorial';
-if riskchart.res>110 then edit15.text:=edit15.text+' | Sistema respiratorio';
-if riskchart.cog>110 then edit15.text:=edit15.text+' | Cognicción';
- oeg:=random(2);
- if oeg>0    then  edit14.text:=testform1.psych1;
-  if oeg=2    then  edit14.text:=testform1.psych2+' | '+testform1.psych3+' | '+testform1.psych4;
-oeg:=random(75);
-if oeg<2    then  edit14.text:=edit14.text+' | Regresión';
-if oeg= 2   then  edit14.text:=edit14.text+' | Agresión';
-if oeg=3    then  edit14.text:=edit14.text+' | Ira';
-if oeg=4    then  edit14.text:=edit14.text+' | Ansiedad';
-if oeg=5    then  edit14.text:=edit14.text+' | Conciencia';
-if oeg=6    then  edit14.text:=edit14.text+' | Tristeza';
-if oeg=7    then  edit14.text:=edit14.text+' | Culpa';
-if oeg=8    then  edit14.text:=edit14.text+' | Autismo emocional';
-if oeg=9    then  edit14.text:=edit14.text+' | Negación';
-if oeg=10    then  edit14.text:=edit14.text+' | Descuido';
-if oeg=11    then  edit14.text:=edit14.text+' | Decepción';
-if oeg=12    then  edit14.text:=edit14.text+' | Depresión';
-if oeg=13    then  edit14.text:=edit14.text+' | Poder';
-if oeg=14    then  edit14.text:=edit14.text+' | Duda de sí mismo/a';
-if oeg=15    then  edit14.text:=edit14.text+' | Miedo';
-if oeg=16    then  edit14.text:=edit14.text+' | Confusión';
-if oeg=17    then  edit14.text:=edit14.text+' | Vacilación';
-if oeg=18    then  edit14.text:=edit14.text+' | Celos';
-if oeg=19    then  edit14.text:=edit14.text+' | Alegría';
-if oeg=20    then  edit14.text:=edit14.text+' | Lujuria';
-if oeg=21    then  edit14.text:=edit14.text+' | Codicia';
-if oeg=22    then  edit14.text:=edit14.text+' | Poderes Extra Sensoriales - ESP';
-if oeg=23    then  edit14.text:=edit14.text+' | Dolor psíquico';
-if oeg=24    then  edit14.text:=edit14.text+' | Pasividad';
-if oeg=25    then  edit14.text:=edit14.text+' | Proyección';
-if oeg=26    then  edit14.text:=edit14.text+' | Racionalización';
-if oeg=27    then  edit14.text:=edit14.text+' | Imprudencia';
-if oeg=28    then  edit14.text:=edit14.text+' | Preocupación';
-if oeg=29    then  edit14.text:=edit14.text+' | Abandono';
-if oeg=30    then  edit14.text:=edit14.text+' | Avergonzamiento';
-if oeg=31    then  edit14.text:=edit14.text+' | Traición';
-if oeg=32    then  edit14.text:=edit14.text+' | Malentendimiento';
-if oeg=33    then  edit14.text:=edit14.text+' | Curiosidad';
-if oeg=34    then  edit14.text:=edit14.text+' | Sobrecogimiento';
-if oeg=35    then  edit14.text:=edit14.text+' | Conflicto religioso';
-if oeg=36    then  edit14.text:=edit14.text+' | Conflicto de identidad';
-if oeg=37    then  edit14.text:=edit14.text+' | Resistencia al cambio';
-if oeg=38    then  edit14.text:=edit14.text+' | Nervios';
-if oeg=39    then  edit14.text:=edit14.text+' | Risa';
-if oeg=40    then  edit14.text:=edit14.text+' | Entusiasmo';
-if oeg=41    then  edit14.text:=edit14.text+' | Vanidad';
-if oeg=42    then  edit14.text:=edit14.text+' | Regateo';
-if oeg=43    then  edit14.text:=edit14.text+' | Valentía';
-if oeg=44    then  edit14.text:=edit14.text+' | Vergüenza';
-if oeg=45    then  edit14.text:=edit14.text+' | Monotonía';
-if oeg=46    then  edit14.text:=edit14.text+' | Necesidad de cambio';
-if oeg=47    then  edit14.text:=edit14.text+' | Obsevación';
-if oeg=48    then  edit14.text:=edit14.text+' | Antagonismo';
-if oeg=49    then  edit14.text:=edit14.text+' | Sensualidad';
-if oeg=50    then  edit14.text:=edit14.text+' | Espiritualidad';
-if oeg=51    then  edit14.text:=edit14.text+' | Sexualidad';
-if oeg=52    then  edit14.text:=edit14.text+' | Adicción';
-if oeg=53    then  edit14.text:=edit14.text+' | Juzgamiento';
-if oeg=54    then  edit14.text:=edit14.text+' | Apatía';
-if oeg=55    then  edit14.text:=edit14.text+' | Extasis';
-if oeg=56    then  edit14.text:=edit14.text+' | Inadaptabilidad';
-if oeg=57    then  edit14.text:=edit14.text+' | Deseo de que las cosas sean diferentes';
-if oeg=58    then  edit14.text:=edit14.text+' | Perfeccionismo';
-if oeg=59    then  edit14.text:=edit14.text+' | Desesperación sin esperanza';
-if oeg=60    then  edit14.text:=edit14.text+' | Control';
-if oeg=61    then  edit14.text:=edit14.text+' | Subordinamiento';
-if oeg=62    then  edit14.text:=edit14.text+' | Orgullo';
-if oeg=63    then  edit14.text:=edit14.text+' | Resentimiento';
-if oeg=64    then  edit14.text:=edit14.text+' | Conmoción';
-if oeg=65    then  edit14.text:=edit14.text+' | Inconciencia';
-if oeg=66    then  edit14.text:=edit14.text+' | Obsesividad';
-if oeg=67    then  edit14.text:=edit14.text+' | Compulsividad';
-if oeg=68    then  edit14.text:=edit14.text+' | Manía incontrolable';
-if oeg=69    then  edit14.text:=edit14.text+' | Impulsividad';
-if oeg=70    then  edit14.text:=edit14.text+' | Lealtad inalterable';
-if oeg=71    then  edit14.text:=edit14.text+' | Fácil distracción';
-if oeg=72    then  edit14.text:=edit14.text+' | Enfoque mental';
-if oeg=73    then  edit14.text:=edit14.text+' | Irrealismo';
-if oeg>73    then  edit14.text:=edit14.text+' | Frustración';
-oeg:=random(75);
-if oeg<2    then  edit14.text:=edit14.text+' | Regresión';
-if oeg= 2   then  edit14.text:=edit14.text+' | Agresión';
-if oeg=3    then  edit14.text:=edit14.text+' | Ira';
-if oeg=4    then  edit14.text:=edit14.text+' | Ansiedad';
-if oeg=5    then  edit14.text:=edit14.text+' | Conciencia';
-if oeg=6    then  edit14.text:=edit14.text+' | Tristeza';
-if oeg=7    then  edit14.text:=edit14.text+' | Culpa';
-if oeg=8    then  edit14.text:=edit14.text+' | Autismo emocional';
-if oeg=9    then  edit14.text:=edit14.text+' | Negación';
-if oeg=10    then  edit14.text:=edit14.text+' | Descuido';
-if oeg=11    then  edit14.text:=edit14.text+' | Decepción';
-if oeg=12    then  edit14.text:=edit14.text+' | Depresión';
-if oeg=13    then  edit14.text:=edit14.text+' | Poder';
-if oeg=14    then  edit14.text:=edit14.text+' | Duda de sí mismo/a';
-if oeg=15    then  edit14.text:=edit14.text+' | Miedo';
-if oeg=16    then  edit14.text:=edit14.text+' | Confusión';
-if oeg=17    then  edit14.text:=edit14.text+' | Vacilación';
-if oeg=18    then  edit14.text:=edit14.text+' | Celos';
-if oeg=19    then  edit14.text:=edit14.text+' | Alegría';
-if oeg=20    then  edit14.text:=edit14.text+' | Lujuria';
-if oeg=21    then  edit14.text:=edit14.text+' | Codicia';
-if oeg=22    then  edit14.text:=edit14.text+' | Poderes Extra Sensoriales - ESP';
-if oeg=23    then  edit14.text:=edit14.text+' | Dolor psíquico';
-if oeg=24    then  edit14.text:=edit14.text+' | Pasividad';
-if oeg=25    then  edit14.text:=edit14.text+' | Proyección';
-if oeg=26    then  edit14.text:=edit14.text+' | Racionalización';
-if oeg=27    then  edit14.text:=edit14.text+' | Imprudencia';
-if oeg=28    then  edit14.text:=edit14.text+' | Preocupación';
-if oeg=29    then  edit14.text:=edit14.text+' | Abandono';
-if oeg=30    then  edit14.text:=edit14.text+' | Avergonzamiento';
-if oeg=31    then  edit14.text:=edit14.text+' | Traición';
-if oeg=32    then  edit14.text:=edit14.text+' | Malentendimiento';
-if oeg=33    then  edit14.text:=edit14.text+' | Curiosidad';
-if oeg=34    then  edit14.text:=edit14.text+' | Sobrecogimiento';
-if oeg=35    then  edit14.text:=edit14.text+' | Conflicto religioso';
-if oeg=36    then  edit14.text:=edit14.text+' | Conflicto de identidad';
-if oeg=37    then  edit14.text:=edit14.text+' | Resistencia al cambio';
-if oeg=38    then  edit14.text:=edit14.text+' | Nervios';
-if oeg=39    then  edit14.text:=edit14.text+' | Risa';
-if oeg=40    then  edit14.text:=edit14.text+' | Entusiasmo';
-if oeg=41    then  edit14.text:=edit14.text+' | Vanidad';
-if oeg=42    then  edit14.text:=edit14.text+' | Regateo';
-if oeg=43    then  edit14.text:=edit14.text+' | Valentía';
-if oeg=44    then  edit14.text:=edit14.text+' | Vergüenza';
-if oeg=45    then  edit14.text:=edit14.text+' | Monotonía';
-if oeg=46    then  edit14.text:=edit14.text+' | Necesidad de cambio';
-if oeg=47    then  edit14.text:=edit14.text+' | Obsevación';
-if oeg=48    then  edit14.text:=edit14.text+' | Antagonismo';
-if oeg=49    then  edit14.text:=edit14.text+' | Sensualidad';
-if oeg=50    then  edit14.text:=edit14.text+' | Espiritualidad';
-if oeg=51    then  edit14.text:=edit14.text+' | Sexualidad';
-if oeg=52    then  edit14.text:=edit14.text+' | Adicción';
-if oeg=53     then  edit14.text:=edit14.text+' | Juzgamiento';
-if oeg=54    then  edit14.text:=edit14.text+' | Apatía';
-if oeg=55    then  edit14.text:=edit14.text+' | Extasis';
-if oeg=56    then  edit14.text:=edit14.text+' | Inadaptabilidad';
-if oeg=57    then  edit14.text:=edit14.text+' | Deseo de que las cosas sean diferentes';
-if oeg=58    then  edit14.text:=edit14.text+' | Perfeccionismo';
-if oeg=59    then  edit14.text:=edit14.text+' | Desesperación sin esperanza';
-if oeg=60    then  edit14.text:=edit14.text+' | Control';
-if oeg=61    then  edit14.text:=edit14.text+' | Subordinamiento';
-if oeg=62    then  edit14.text:=edit14.text+' | Orgullo';
-if oeg=63    then  edit14.text:=edit14.text+' | Resentimiento';
-if oeg=64    then  edit14.text:=edit14.text+' | Conmoción';
-if oeg=65    then  edit14.text:=edit14.text+' | Inconciencia';
-if oeg=66    then  edit14.text:=edit14.text+' | Obsesividad';
-if oeg=67    then  edit14.text:=edit14.text+' | Compulsividad';
-if oeg=68    then  edit14.text:=edit14.text+' | Manía incontrolable';
-if oeg=69    then  edit14.text:=edit14.text+' | Impulsividad';
-if oeg=70    then  edit14.text:=edit14.text+' | Lealtad inalterable';
-if oeg=71    then  edit14.text:=edit14.text+' | Fácil distracción';
-if oeg=72    then  edit14.text:=edit14.text+' | Enfoque mental';
-if oeg=73    then  edit14.text:=edit14.text+' | Irrealismo';
-if oeg>73    then  edit14.text:=edit14.text+' | Frustración';
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 button24.visible:=true;
-//button25.visible:=true;
 vart:=1;
-if testform1.pn2>2 then edit13.text:=edit13.text+' | Toxinas de medicaciones alopáticas.';
-if testform1.pn3>20 then edit13.text:=edit13.text+'| Tabaquismo.';
-if testform1.pn8>10 then edit13.text:=edit13.text+' | Cafeína o alcaloides.';
-if testform1.pn12>10 then edit13.text:=edit13.text+' | Radiación.';
-if testform1.pn7>9 then edit13.text:=edit13.text+' | Toxinas de estrés.';
-if testform1.pn5>6 then edit13.text:=edit13.text+' | Mercurio o metales pesados.';
-if testform1.pn4>2 then edit13.text:=edit13.text+' | Toxinas esteroides.';
-
                 DM.QueryFilter.Active:=False;
                 QString:='ALR';
                 DM.QueryFilter.SQL.Clear;
@@ -7334,15 +6975,14 @@ if testform1.pn4>2 then edit13.text:=edit13.text+' | Toxinas esteroides.';
                 DM.QueryFilter.first;
                 DM.QueryFilter.recno := DM.QueryFilter.recordcount-1;
                 DM.QueryFilter.Last;
-                edit13.text:=edit13.text+' | '+DM.QueryFilterName.Value;
+
                 oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                 oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                  oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                   oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                 oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                  oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
-              edit13.text:=edit13.text+' | '+DM.QueryFilterName.Value;
-              if testform1.pn3>10 then edit13.text:=edit13.text+' | Tabaquismo.';
+
                 QString:='Solvent';
                 DM.QueryFilter.SQL.Clear;
                 DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
@@ -7371,7 +7011,7 @@ if testform1.pn4>2 then edit13.text:=edit13.text+' | Toxinas esteroides.';
                  oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                 oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
                  oeg:=random(3); if oeg=1 then DM.QueryFilter.prior;
-               edit13.text:=edit13.text+','+DM.QueryFilterName.Value;
+
                 QString:='toxic';
                 DM.QueryFilter.SQL.Clear;
                 DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
@@ -7404,7 +7044,6 @@ if testform1.pn4>2 then edit13.text:=edit13.text+' | Toxinas esteroides.';
   if oeg=1 then DM.QueryFilter.prior;
   oeg:=random(3);
   if oeg=1 then DM.QueryFilter.prior;
-  edit13.text:=edit13.text+' | '+DM.QueryFilterName.Value;
   DM.QueryFilter.Active:=False;
  oeg:=random(15);
  DM.Conscida.open;
@@ -7505,13 +7144,6 @@ if testform1.pn4>2 then edit13.text:=edit13.text+' | Toxinas esteroides.';
  checkbox103.hint:=checkbox103.hint+' '+'Reactividad: '+inttostr(n)+' / Resonancia: '+inttostr(n+random(20)-random(20));
  if n>99 then checkbox103.color:=clred;
  if n>149 then checkbox103.checked:=true;
-{
- DM.Conscida.FindKey([1219]);
- n:=DM.Conscidavalue.asinteger ;
-// checkbox106.hint:=checkbox106.hint+' '+'Reactividad: '+inttostr(n)+' / Resonancia: '+inttostr(n+random(20)-random(20));
- if n>99 then checkbox108.color:=clred;
- if n>149 then checkbox108.checked:=true;
- }
 DM.Conscida.FindKey([2468]);
 n:=DM.Conscidavalue.asinteger ;
 checkbox19.hint:=checkbox19.hint+' '+'Reactividad: '+inttostr(n)+' / Resonancia: '+inttostr(n+random(20)-random(20));
@@ -7879,75 +7511,9 @@ CheckBox537.Enabled := False;
 CheckBox538.Enabled := False;
 end;
 end;
-
-//if (PatForm1.male>5)  then  radiobutton80.caption:='Próstata';
-//if (PatForm1.female>5)  then  radiobutton79.caption:='Hormonas femeninas';
-{
-lab33:= 30+random(63);
-if (lab33>65) and (lab33<78)then lab33:=33+random(34);
-ComponentName:='radiobutton'+IntToStr(lab33);
-Comp:=FindComponent(ComponentName);
-(Comp as TRadioButton).Checked:=True;
-(Comp as TRadioButton).Color:=clred;
-lab33:= 39+random(7);
-if lab33<44 then begin ComponentName:='checkbox'+IntToStr(lab33);
-Comp:=FindComponent(ComponentName);
-(Comp as Tcheckbox).Checked:=True;
-(Comp as Tcheckbox).Color:=clred;
-end;
-lab33:= 44+random(6);
- if lab33<60 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True; (Comp as Tcheckbox).Color:=clred;
- end;
-lab33:= 61+random(14);
- if lab33<60 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;  (Comp as Tcheckbox).Color:=clred;
- end;
-  lab33:= 61+random(14);
- if lab33<60 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;   (Comp as Tcheckbox).Color:=clred;
- end;
-
- lab33:= 44+random(6);
- if lab33<60 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;  (Comp as Tcheckbox).Color:=clred;
- end;
- lab33:=random(10);  if lab33<4 then begin ComponentName:='checkbox'+IntToStr(77);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;  (Comp as Tcheckbox).Color:=clred;
-   end;
- lab33:=random(10);  if lab33<4 then begin ComponentName:='checkbox'+IntToStr(59);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True; (Comp as Tcheckbox).Color:=clred;
-   end;
-  lab33:=random(10);  if lab33<4 then begin ComponentName:='checkbox'+IntToStr(78);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;   (Comp as Tcheckbox).Color:=clred;
- end;
-  lab33:= 52+random(9);
- if lab33<60 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True; (Comp as Tcheckbox).Color:=clred;
- end;
-
-  lab33:= 79+random(6);
- if lab33<83 then begin ComponentName:='checkbox'+IntToStr(lab33);
-  Comp:=FindComponent(ComponentName);
-  (Comp as Tcheckbox).Checked:=True;     (Comp as Tcheckbox).Color:=clred;
- end;
-   oeg:=random(10); if (oeg>5) then  checkbox129.checked :=true;
-    oeg:=random(10); if (oeg>7) then  checkbox130.checked :=true;
-     oeg:=random(10); if (oeg>7)or(riskchart.emo>160) then  checkbox133.checked :=true;
-PDesarrollo.Caption:=' SISTEMA DE INTERFAZ ACTIVO...';
-}
 if thera.wave3>10 then wave3:=50;
 pname := PatForm1.Edit1.Text;
-// if patform1.c298=1 then radiobutton49.caption:='Bebé sano.';
-  if patform1.ran44>-1 then begin
+if patform1.ran44>-1 then begin
 q1:=patform1.q1 ;
 q2:=patform1.q2 ;
 q3:=patform1.q3 ;
@@ -7988,8 +7554,8 @@ q6:=patform1.q6 ;
      q38:=patform1.q38 ;
      q39:=patform1.q39 ;
      q40:=patform1.q40 ;
-     end;
-  doctor:=passworddlg.label6.Caption;
+end;
+doctor:=passworddlg.label6.Caption;
 
   DM.QueryFilter.Active:=False;
   QString:='ALR';
@@ -8000,7 +7566,6 @@ q6:=patform1.q6 ;
          DM.QueryFilter.SQL.text := testForm1.Q_Filtro_sql2 ;
          DM.QueryFilter.SQL.Add('and name like ''%'+Qstring+'%''');
          vsql :=DM.QueryFilter.SQL.text;
-
   end;
   if vorder = '' then
      vorder := ' 2';
@@ -8029,10 +7594,6 @@ if cb4=1 then phase:=3;
 if cb7=1 then phase:=3;
 if cb5=1 then phase:=4;
 if cb8=1 then phase:=5;
-//if cb11=1 then phase:=4;
-//if cb12=1 then phase:=2;
-//if cb14=1 then phase:=2;
-//if cb3=1 then phase:=6;
 tissue:=1;
 if pn1 >0   then tissue:=24   ;
  if pn2 >1   then tissue:=18   ;
@@ -8054,185 +7615,6 @@ if pn1 >0   then tissue:=24   ;
        if pn8 >4   then tissue:=18   ;
                 phase1:=random(6);
                 tissue1:=random(28);
-                                        {**************************************** }
-{if phase=4   then LCOXIS.color:=clred;
-if phase=6   then LSACRO.color:=clred;
-if phase1=4   then LCOXIS.color:=clred;
-if phase1=6   then LSACRO.color:=clred;}
-{if tissue1=1    then LC4.Color:=clfuchsia;
-if tissue1=2    then LC5.Color:=clfuchsia;
-if tissue1=3    then LC6.Color:=clfuchsia;
-if tissue1=4    then LC7.Color:=clfuchsia;
-if tissue1=5    then LT2.Color:=clfuchsia;
-if tissue1=6    then LT3.Color:=clfuchsia;
-if tissue1=7    then LT5.Color:=clfuchsia;
-if tissue1=8    then LT6.Color:=clfuchsia;
-if tissue1=9    then LT7.Color:=clfuchsia;
-if tissue1=10    then LT8.Color:=clfuchsia;
-if tissue1=11    then LT9.Color:=clfuchsia;
-if tissue1=12    then LT11.Color:=clfuchsia;
-if tissue1=13    then LT12.Color:=clfuchsia;
-if tissue1=14    then LL1.Color:=clfuchsia;
-if tissue1=15    then LL2.Color:=clfuchsia;
-if tissue1=16    then LC1.Color:=clfuchsia;
-if tissue1=17    then LC2.Color:=clfuchsia;
-if tissue1=18    then LC3.Color:=clfuchsia;
-if tissue1=19    then LL3.Color:=clfuchsia;
-if tissue1=20    then LT4.Color:=clfuchsia;
-if tissue1=21    then LT1.Color:=clfuchsia;
-if tissue1=22    then LT10.Color:=clfuchsia;
-if tissue1=23    then LL4.Color:=clfuchsia;
-if tissue1=24    then LL5.Color:=clfuchsia;   }
-{
-if tissue=1    then LC4.Color:=clred;
-if tissue=2    then LC5.Color:=clred;
-if tissue=3    then LC6.Color:=clred;
-if tissue=4    then LC7.Color:=clred;
-if tissue=5    then LT2.Color:=clred;
-if tissue=6    then LT3.Color:=clred;
-if tissue=7    then LT5.Color:=clred;
-if tissue=8    then LT6.Color:=clred;
-if tissue=9    then LT7.Color:=clred;
-if tissue=10    then LT8.Color:=clred;
-if tissue=11    then LT9.Color:=clred;
-if tissue=12    then LT11.Color:=clred;
-if tissue=13    then LT12.Color:=clred;
-if tissue=14    then LL1.Color:=clred;
-if tissue=15    then LL2.Color:=clred;
-if tissue=16    then LC1.Color:=clred;
-if tissue=17    then LC2.Color:=clred;
-if tissue=18    then LC3.Color:=clred;
-if tissue=19    then LL3.Color:=clred;
-if tissue=20    then LT4.Color:=clred;
-if tissue=21    then LT1.Color:=clred;
-if tissue=22    then LT10.Color:=clred;
-if tissue=23    then LL4.Color:=clred;
-if tissue=24    then LL5.Color:=clred;
-
-if phase=4   then SCOXIS.brush.color:=clred;
-if phase=6   then SSACRO.brush.color:=clred;
-if phase1=4   then SCOXIS.brush.color:=clred;
-if phase1=6   then SSACRO.brush.color:=clred; }
-{
-if tissue1=1    then SC4.brush.Color:=clfuchsia;
-if tissue1=2    then SC5.brush.Color:=clfuchsia;
-if tissue1=3    then SC6.brush.Color:=clfuchsia;
-if tissue1=4    then SC7.brush.Color:=clfuchsia;
-if tissue1=5    then ST2.brush.Color:=clfuchsia;
-if tissue1=6    then ST3.brush.Color:=clfuchsia;
-if tissue1=7    then ST5.brush.Color:=clfuchsia;
-if tissue1=8    then ST6.brush.Color:=clfuchsia;
-if tissue1=9    then ST7.brush.Color:=clfuchsia;
-if tissue1=10    then ST8.brush.Color:=clfuchsia;
-if tissue1=11    then ST9.brush.Color:=clfuchsia;
-if tissue1=12    then ST11.brush.Color:=clfuchsia;
-if tissue1=13    then ST12.brush.Color:=clfuchsia;
-if tissue1=14    then SL1.brush.Color:=clfuchsia;
-if tissue1=15    then SL2.brush.Color:=clfuchsia;
-if tissue1=16    then SC1.brush.Color:=clfuchsia;
-if tissue1=17    then SC2.brush.Color:=clfuchsia;
-if tissue1=18    then SC3.brush.Color:=clfuchsia;
-if tissue1=19    then SL3.brush.Color:=clfuchsia;
-if tissue1=20    then ST4.brush.Color:=clfuchsia;
-if tissue1=21    then ST1.brush.Color:=clfuchsia;
-if tissue1=22    then ST10.brush.Color:=clfuchsia;
-if tissue1=23    then SL4.brush.Color:=clfuchsia;
-if tissue1=24    then SL5.brush.Color:=clfuchsia;  }
-{
-if tissue=1    then SC4.brush.Color:=clred;
-if tissue=2    then SC5.brush.Color:=clred;
-if tissue=3    then SC6.brush.Color:=clred;
-if tissue=4    then SC7.brush.Color:=clred;
-if tissue=5    then ST2.brush.Color:=clred;
-if tissue=6    then ST3.brush.Color:=clred;
-if tissue=7    then ST5.brush.Color:=clred;
-if tissue=8    then ST6.brush.Color:=clred;
-if tissue=9    then ST7.brush.Color:=clred;
-if tissue=10    then ST8.brush.Color:=clred;
-if tissue=11    then ST9.brush.Color:=clred;
-if tissue=12    then ST11.brush.Color:=clred;
-if tissue=13    then ST12.brush.Color:=clred;
-if tissue=14    then SL1.brush.Color:=clred;
-if tissue=15    then SL2.brush.Color:=clred;
-if tissue=16    then SC1.brush.Color:=clred;
-if tissue=17    then SC2.brush.Color:=clred;
-if tissue=18    then SC3.brush.Color:=clred;
-if tissue=19    then SL3.brush.Color:=clred;
-if tissue=20    then ST4.brush.Color:=clred;
-if tissue=21    then ST1.brush.Color:=clred;
-if tissue=22    then ST10.brush.Color:=clred;
-if tissue=23    then SL4.brush.Color:=clred;
-if tissue=24    then SL5.brush.Color:=clred;   }
-{//If ExpandButton = False Then Button19Click(Sender);
-LC1.caption := testForm1.pradiobutton1caption ;
-LC2.caption := testForm1.pradiobutton2caption ;
-LC3.caption := testForm1.pradiobutton3caption ;
-LC4.caption := testForm1.pradiobutton4caption;
-LC5.caption :=testForm1.pradiobutton5caption ;
-LC6.caption :=testForm1.pradiobutton6caption;
-LC7.caption :=testForm1.pradiobutton7caption ;
-LT1.caption :=testForm1.pradiobutton8caption ;
-LT2.caption :=testForm1.pradiobutton9caption ;
-LT3.caption :=testForm1.pradiobutton10caption;
-LT4.caption :=testForm1.pradiobutton11caption;
-LT5.caption :=testForm1.pradiobutton12caption;
-LT6.caption :=testForm1.pradiobutton13caption;
-LT7.caption :=testForm1.pradiobutton14caption;
-LT8.caption :=testForm1.pradiobutton15caption;
-LT9.caption :=testForm1.pradiobutton16caption;
-LT10.caption :=testForm1.pradiobutton17caption;
-LT11.caption :=testForm1.pradiobutton18caption;
-LT12.caption :=testForm1.pradiobutton19caption;
-LL1.caption :=testForm1.pradiobutton20caption;
-LL2.caption :=testForm1.pradiobutton21caption;
-LL3.caption :=testForm1.pradiobutton22caption;
-LL4.caption :=testForm1.pradiobutton23caption;
-LL5.caption :=testForm1.pradiobutton24caption;
-//radiobutton25.caption :=testForm1.pradiobutton25caption;
-LSACRO.caption :=testForm1.pradiobutton26caption;
-LCOXIS.caption :=testForm1.pradiobutton27caption;  }
-{
-  if testForm1.pshape3_visible then begin
-      VGContadorShape := 1 ;
-      shape3.visible := testForm1.pshape3_visible;
-      shape3.top     := testForm1.pshape3_top;
-      shape3.height  := testForm1.pshape3_height;
-      shape3.left    := testForm1.pshape3_left;
-      shape3.width   := testForm1.pshape3_width;
-  end;
-  if testForm1.pshape4_visible then begin
-        VGContadorShape := 2 ;
-      shape4.visible := testForm1.pshape4_visible;
-      shape4.top     := testForm1.pshape4_top;
-      shape4.height  := testForm1.pshape4_height;
-      shape4.left    := testForm1.pshape4_left;
-      shape4.width   := testForm1.pshape4_width;
-  end;
-  if testForm1.pshape5_visible then begin
-        VGContadorShape := 3 ;
-      shape5.visible := testForm1.pshape5_visible;
-      shape5.top     := testForm1.pshape5_top;
-      shape5.height  := testForm1.pshape5_height;
-      shape5.left    := testForm1.pshape5_left;
-      shape5.width   := testForm1.pshape5_width;
-  end;
-  if testForm1.pshape6_visible then begin
-        VGContadorShape := 4 ;
-      shape5.visible := testForm1.pshape6_visible;
-      shape5.top     := testForm1.pshape6_top;
-      shape5.height  := testForm1.pshape6_height;
-      shape5.left    := testForm1.pshape6_left;
-      shape5.width   := testForm1.pshape6_width;
-  end;
-  if testForm1.pshape7_visible then begin
-  VGContadorShape := 5 ;
-  shape5.visible := testForm1.pshape7_visible;
-  shape5.top     := testForm1.pshape7_top;
-  shape5.height  := testForm1.pshape7_height;
-  shape5.left    := testForm1.pshape7_left;
-  shape5.width   := testForm1.pshape7_width;
-  end;
-}
   DM.QueryFilter.close;
   DM.QueryFilter.SQL.Clear;
   DM.QueryFilter.SQL.Add('SELECT * from CONSCIDA ');
@@ -8328,7 +7710,6 @@ end;
 
 procedure TSpinal.Button22Click(Sender: TObject);
 Begin
-PDesarrollo.Caption := 'Estimulando deseo de divertirse...';
 Adicional();
 If rec>84 Then Button22.Enabled := False;
 End;
@@ -8359,30 +7740,26 @@ If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 Fmain.recmain:=Fmain.recmain+1;
- PDesarrollo.caption:='Realizando un equilibramiento general...';
- PDesarrollo.visible:=true;
- PDesarrollo.refresh;
 If CBAreas.Checked = True Then TLimpiaMejoraRendimientoAreas.Enabled := True;
 If CBEstimular.Checked = True Then TLimpiaMejoraRendimientoEstimular.Enabled := True;
 If CBPsicologia.Checked = True Then TLimpiaMejoraRendimientoPsicologia.Enabled := True;
 If CBMiscelaneos.Checked = True Then TLimpiaMejoraRendimientoMiscelaneos.Enabled := True;
+If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
 repeat
  begin1:=begin1+random(3);
  end1:=end1+random(3);
  int1:=int1+random(500);
  int2:=int2+random(500);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
- ChangingPulses(5555,555,55555,5,5,1,'11111111','11111111');
+ ChangingPulses(5555,555,55555,5,5,1,
+ '11111111','11111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(50000,begin1,end1,int1,int2,vart,'11111111','01111111');
-   GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
-SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(50000,begin1,end1,int1,int2,vart,'11111111','11111111');
+ChangingPulses(50000,begin1,end1,int1,int2,vart,
+'11111111','01111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 until
@@ -8399,12 +7776,12 @@ rec:= 10+rec1+random(57+rec1+vart);
 if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 If rec>84 Then Button24.Enabled := False;
-PDesarrollo.Visible := False;
 TLimpiaMejoraRendimientoAreas.Enabled := False;
 TLimpiaMejoraRendimientoEstimular.Enabled := False;
 TLimpiaMejoraRendimientoPsicologia.Enabled := False;
 TLimpiaMejoraRendimientoMiscelaneos.Enabled := False;
-Reaccion_Irregular();
+TAEnfoque.Enabled := False;
+LimpiaAEnfoque();
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
     MyChrono.Stop;
   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button24.Click;
@@ -8415,92 +7792,91 @@ end;
 
 procedure TSpinal.tClick(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Aumento de la circulación linfática.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema linfático.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Aumento de la circulación linfática.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema linfático.';
 end;
 
 procedure TSpinal.RadioButton32Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance de las funciones del hígado.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Hígado.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance de las funciones del hígado.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Hígado.';
 end;
 
 procedure TSpinal.RadioButton34Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance de las funciones de la tiroides.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Tiroides.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance de las funciones de la tiroides.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Tiroides.';
 end;
 
 procedure TSpinal.RadioButton35Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance de la digestión.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema digestivo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance de la digestión.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema digestivo.';
 end;
 
 procedure TSpinal.RadioButton36Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Reversión del envejecimiento.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Piel.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Reversión del envejecimiento.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Piel.';
 end;
 
 procedure TSpinal.RadioButton37Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Aumento de la flexibilidad.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Tejido conectivo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Aumento de la flexibilidad.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Tejido conectivo.';
 end;
 
 procedure TSpinal.RadioButton38Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Pronta reparación del sistema neurológico.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema nervioso.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Pronta reparación del sistema neurológico.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema nervioso.';
 end;
 
 procedure TSpinal.RadioButton40Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Estabilización del metabolismo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estabilización del metabolismo.';
 end;
 
 procedure TSpinal.RadioButton41Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Aumento de las funciones del sistema inmunitario.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema inmunitario.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Aumento de las funciones del sistema inmunitario.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema inmunitario.';
 end;
 
 procedure TSpinal.RadioButton31Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance de las funciones de los riñones.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Riñones.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance de las funciones de los riñones.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Riñones.';
 end;
 
 procedure TSpinal.RadioButton44Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance del metabolismo del sistema óseo.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema óseo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance del metabolismo del sistema óseo.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema óseo.';
 end;
 
 procedure TSpinal.RadioButton45Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Balance de la flora intestinal y sus funciones.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema intestinal.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Balance de la flora intestinal y sus funciones.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema intestinal.';
 end;
 
 procedure TSpinal.Button26Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando homeostasis...';
 Adicional();
 If rec>84 Then Button26.Enabled := False;
 end;
 
 procedure TSpinal.RadioButton49Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | El equilibrar las hormonas ayuda al bebé a desarrollarse mejor.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Glándulas endocrinas.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Equilibrar las hormonas ayuda al bebé a desarrollarse mejor.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Glándulas endocrinas.';
 end;
 
 procedure TSpinal.RadioButton47Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Equilibra el sistema sexual.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema sexual.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Equilibra el sistema sexual.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema sexual.';
 end;
 
 procedure TSpinal.Button28Click(Sender: TObject);
@@ -8513,9 +7889,6 @@ If CBPsicologiaPositiva.Checked = True Then TPsicologiaPositiva.Enabled := True;
     Gauge1.progress:=0;
     GProgreso.Progress := 0;
     Label3.Enabled:=True;
-    PDesarrollo.Caption:='Equilibrando Complejo Neuro-Emocional...';
-    PDesarrollo.Visible := True;
-    PDesarrollo.Refresh;
 vtiempo := 90+random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  GProgreso.MaxValue := vtiempo;
@@ -8538,7 +7911,7 @@ repeat
    GProgreso.Refresh;
 dir:=random(600);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-     ChangingPulses(5000,(100+dir),7112,dir,1+random(2),2,
+     ChangingPulses(5000,(100+dir),7112,dir,1+random(2),1,
  '11111111','11111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
@@ -8553,11 +7926,10 @@ ValoresPsicologiaNegativa();
   LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GBAEnfoque.Visible := False;
 TAEnfoque.Enabled := False;
 LimpiaPsicologiaPositiva();
-PDesarrollo.Visible := False;
 PPsicologiaPositiva.Visible := False;
 TPsicologiaPositiva.Enabled := False;
 LimpiaPsicologiaPositiva();
@@ -8579,38 +7951,6 @@ end;
 procedure TSpinal.Panel9DblClick(Sender: TObject);
 begin
 panel9.visible:=false;
-end;
-
-procedure TSpinal.Edit3Exit(Sender: TObject);
-begin
-sen:=1;
-{LC1.caption:='Restablecer';
-LC2.caption:='Restablecer';
-LC3.caption:='Restablecer';
-LC4.caption:='Restablecer';
-LC5.caption:='Restablecer';
-LC6.caption:='Restablecer';
-LC7.caption:='Restablecer';
-radiobutton8.caption:='Restablecer';
-radiobutton9.caption:='Restablecer';
-radiobutton10.caption:='Restablecer';
-radiobutton11.caption:='Restablecer';
-radiobutton12.caption:='Restablecer';
-radiobutton13.caption:='Restablecer';
-radiobutton14.caption:='Restablecer';
-radiobutton15.caption:='Restablecer';
-radiobutton16.caption:='Restablecer';
-radiobutton17.caption:='Restablecer';
-radiobutton18.caption:='Restablecer';
-radiobutton19.caption:='Restablecer';
-radiobutton20.caption:='Restablecer';
-radiobutton21.caption:='Restablecer';
-radiobutton22.caption:='Restablecer';
-radiobutton23.caption:='Restablecer';
-radiobutton24.caption:='Restablecer';
-radiobutton25.caption:='Restablecer';
-radiobutton26.caption:='Restablecer';
-radiobutton27.caption:='Restablecer';  }
 end;
 
 procedure TSpinal.Label2Click(Sender: TObject);
@@ -8676,12 +8016,11 @@ begin
 Reaccion_Irregular();
 MyChrono.Start;
 GProgreso.Progress := 0;
-PDesarrollo.Visible := True;
     vtiempo := 150+Random(30);
     If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
     GBAGenerales.Visible := True;
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
     Fmain.recmain:=Fmain.recmain+1;
     fring:=random(10);
@@ -8761,7 +8100,7 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
@@ -8777,7 +8116,6 @@ Reaccion_Irregular();
   PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
       MyChrono.Stop;
   If (rec<85) and (CBAutomatico.Checked=True) Then BMaestro.Click;
-  PDesarrollo.visible:=false;
   if (rec>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
 end;
 
@@ -8825,28 +8163,9 @@ end;
 
 procedure TSpinal.Button38Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando '+Edit32.Text+'...';
 Adicional();
 If rec>84 Then Button38.Enabled := False;
 end;
-
-{procedure TSpinal.RadioButton58Click(Sender: TObject);
-begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Tonifica pulmones.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Pulmones.';
-end;
-
-procedure TSpinal.RadioButton59Click(Sender: TObject);
-begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Limpieza de membranas.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Membranas mucosas.';
-end;
-
-procedure TSpinal.RadioButton60Click(Sender: TObject);
-begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Limpieza de sinus.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sinus.';
-end; }
 
 procedure TSpinal.Button42Click(Sender: TObject);
 begin
@@ -8859,8 +8178,8 @@ end;
 
 procedure TSpinal.RadioButton78Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Aumento de función pandreática.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Páncreas.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Aumento de función pandreática.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Páncreas.';
 begin1:=32+random(3);
 end1:=1111+random(3);
 int1:=101+random(10);
@@ -8869,8 +8188,8 @@ end;
 
 procedure TSpinal.RadioButton79Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Incremento de fertilidad.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema reproductorio.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Incremento de fertilidad.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema reproductorio.';
 begin1:=32+random(3);
 end1:=1111+random(3);
 int1:=101+random(10);
@@ -8879,8 +8198,8 @@ end;
 
 procedure TSpinal.RadioButton80Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Incremento de fertilidad.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema reproductorio.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Incremento de fertilidad.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema reproductorio.';
 begin1:=32+random(3);
 end1:=1111+random(3);
 int1:=101+random(10);
@@ -8889,8 +8208,8 @@ end;
 
 procedure TSpinal.RadioButton89Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio paratiroidal.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Paratiroides.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio paratiroidal.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Paratiroides.';
 begin1:=200+random(3);
 end1:=250+random(3);
 int1:=1+random(10);
@@ -8899,8 +8218,8 @@ end;
 
 procedure TSpinal.RadioButton82Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del hipotálamo.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Hipotálamo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del hipotálamo.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Hipotálamo.';
 begin1:=1000+random(3);
 end1:=1250+random(3);
 int1:=1+random(10);
@@ -8909,8 +8228,8 @@ end;
 
 procedure TSpinal.RadioButton85Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio pineal.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Pineal.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio pineal.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Pineal.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8919,8 +8238,8 @@ end;
 
 procedure TSpinal.RadioButton86Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio pituitario.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Pituitaria.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio pituitario.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Pituitaria.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8929,8 +8248,8 @@ end;
 
 procedure TSpinal.RadioButton84Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio reticular.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Formación reticular.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio reticular.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Formación reticular.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8939,8 +8258,8 @@ end;
 
 procedure TSpinal.RadioButton83Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del sistema límbico.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Sistema límbico.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del sistema límbico.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Sistema límbico.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8949,8 +8268,8 @@ end;
 
 procedure TSpinal.RadioButton87Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del cerebelo.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Cerebelo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del cerebelo.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Cerebelo.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8959,8 +8278,8 @@ end;
 
 procedure TSpinal.RadioButton88Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio de la médula oblongata.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Médula oblongata.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio de la médula oblongata.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Médula oblongata.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -8969,8 +8288,8 @@ end;
 
 procedure TSpinal.RadioButton90Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del lóbulo frontal.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Lóbulo frontal.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del lóbulo frontal.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Lóbulo frontal.';
 begin1:=1500+random(3);
 end1:=2050+random(3);
 int1:=1+random(10);
@@ -8979,8 +8298,8 @@ end;
 
 procedure TSpinal.RadioButton91Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del lóbulo temporal.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Lóbulo temporal.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del lóbulo temporal.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Lóbulo temporal.';
 begin1:=1500+random(3);
 end1:=2050+random(3);
 int1:=1+random(10);
@@ -8989,8 +8308,8 @@ end;
 
 procedure TSpinal.RadioButton92Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del lóbulo parietal.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Lóbulo parietal.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del lóbulo parietal.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Lóbulo parietal.';
 begin1:=1500+random(3);
 end1:=2050+random(3);
 int1:=1+random(10);
@@ -8999,8 +8318,8 @@ end;
 
 procedure TSpinal.RadioButton93Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Función de equilibrio del lóbulo occipital.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Lóbulo occipital.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Función de equilibrio del lóbulo occipital.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Lóbulo occipital.';
 begin1:=1500+random(3);
 end1:=2050+random(3);
 int1:=1+random(10);
@@ -9012,11 +8331,7 @@ begin
 PMejoraRendimiento.visible:=true;
 BCerrarS.Visible := True;
 panel8.visible:=true;
-end;
-
-procedure TSpinal.Label900Click(Sender: TObject);
-begin
-memo2.visible:=true;
+GBAEnfoque.Visible := True;
 end;
 
 procedure TSpinal.Button44Click(Sender: TObject);
@@ -9025,7 +8340,6 @@ FMain.button81.Enabled:=false;
 FMain.button80.Enabled:=false;
 panel15.visible:=true;
 extra:=1;
-//label222.caption:='Terapia en min. aproximadamente: '+inttostr(round(extra/60)+1);
 end;
 
 procedure TSpinal.Panel15DblClick(Sender: TObject);
@@ -9037,8 +8351,8 @@ procedure TSpinal.RadioButton94Click(Sender: TObject);
 begin
 riskchart.res:=riskchart.res+30;
 riskchart.oxi:=riskchart.oxi+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular oxigenación.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Oxigenación.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular oxigenación.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Oxigenación.';
 begin1:=1110+random(3);
 end1:=2222+random(3);
 int1:=1+random(3);
@@ -9047,8 +8361,8 @@ end;
 
 procedure TSpinal.RadioButton95Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular musculatura.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Musculatura.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular musculatura.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Musculatura.';
 begin1:=333+random(3);
 end1:=677+random(3);
 int1:=10+random(10);
@@ -9057,8 +8371,8 @@ end;
 
 procedure TSpinal.RadioButton96Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular coordinación.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Coordinación.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular coordinación.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Coordinación.';
 begin1:=900+random(3);
 end1:=1050+random(3);
 int1:=1+random(10);
@@ -9068,8 +8382,8 @@ end;
 procedure TSpinal.RadioButton97Click(Sender: TObject);
 begin
 riskchart.cnt:=riskchart.cnt+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular flexibilidad.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Flexibilidad.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular flexibilidad.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Flexibilidad.';
 begin1:=444+random(3);
 end1:=1111+random(3);
 int1:=10+random(10);
@@ -9080,7 +8394,6 @@ procedure TSpinal.Button56Click(Sender: TObject);
 begin
 extra:=60+extra;
 if extra>600 then extra:=600;
-//label222.caption:='La duración aproximada de la terapia es de | '+inttostr(round(extra/60)+1)+' min.';
 end;
 
 procedure TSpinal.CheckBox78Click(Sender: TObject);
@@ -9103,14 +8416,13 @@ end;
 procedure TSpinal.RadioButton99Click(Sender: TObject);
 begin
 riskchart.hor:=riskchart.hor+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular visualización.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Visualización.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular visualización.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Visualización.';
 begin1:=550+random(3);
 end1:=1111+random(333);
 int1:=10+random(10);
 int2:=5+random(10);
-//  label307.visible:=true;
- if testform1.button91.enabled=true then
+if testform1.button91.enabled=true then
 showmessage('Al iniciar, La forma física del atleta dictará el tiempo y la profundidad de la terapia.');
 end;
 
@@ -9131,8 +8443,8 @@ end;
 
 procedure TSpinal.RadioButton100Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Equilibrar glándula mamaria.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Glándulas mamarias.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Equilibrar glándula mamaria.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Glándulas mamarias.';
 begin1:=32+random(3);
 end1:=1111+random(3);
 int1:=101+random(10);
@@ -9151,10 +8463,7 @@ begin
 Reaccion_Irregular;
 MyChrono.Start;
 GProgreso.Progress := 0;
-LRectificado.Caption := 'Rectificado |';
-PDesarrollo.Caption:='Realizando reparación de lesión a través de sonda de punto';
-PDesarrollo.visible:=true;
-PDesarrollo.Refresh;
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 60+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vTiempo;
@@ -9181,7 +8490,6 @@ GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 rec := random (120);
 If rec>100 Then rec := 85+Random(15);
-PDesarrollo.visible:=false;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button65.Click;
@@ -9193,8 +8501,8 @@ end;
 procedure TSpinal.RadioButton102Click(Sender: TObject);
 begin
 riskchart.hor:=riskchart.hor+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular memoria muscular.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Memoria muscular.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular memoria muscular.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Memoria muscular.';
 begin1:=1110+random(3);
 end1:=2222+random(3);
 int1:=1+random(3);
@@ -9204,8 +8512,8 @@ end;
 procedure TSpinal.RadioButton103Click(Sender: TObject);
 begin
 riskchart.hor:=riskchart.hor+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular concentración.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Concentración.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular concentración.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Concentración.';
 begin1:=1110+random(3);
 end1:=2222+random(3);
 int1:=1+random(3);
@@ -9214,14 +8522,12 @@ end;
 
 procedure TSpinal.Button50Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando memoria celular...';
 Adicional();
 If rec>84 Then Button50.Enabled := False;
 end;
 
 procedure TSpinal.Button67Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando polaridad...';
 Adicional();
 If rec>84 Then Button67.Enabled := False;
 end;
@@ -9264,13 +8570,9 @@ end;
 
 procedure TSpinal.Button72Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Equilibrando fenol indicado...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
 ChangingPulses(50000,1+random(60),1111,1+random(6),2+random(6),12+random(6),
  '11111111','11111111');
- PDesarrollo.visible:=false;
 end;
 
 procedure TSpinal.Button74Click(Sender: TObject);
@@ -9491,169 +8793,17 @@ Begin
  else                         (sender as TDBgrid).canvas.brush.color := clteal;
  (sender as TDBgrid).canvas.textrect(rect,rect.left +2,rect.top +2,field.asstring);
 end;
-{@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@}
-
 end;
 
 procedure TSpinal.Button76Click(Sender: TObject);
 begin
 ChangingPulses(5555,5,555,1,1,1,
  '11111111','11111111');
-oeg:=random(75);
-if oeg=1    then  label230.caption:='Regresión';
-if oeg= 2   then  label230.caption:='Agresión';
-if oeg=3    then  label230.caption:='Ira';
-if oeg=4    then  label230.caption:='Ansiedad';
-if oeg=5    then  label230.caption:='Conciencia';
-if oeg=6    then  label230.caption:='Tristeza';
-if oeg=7    then  label230.caption:='Culpa';
-if oeg=8    then  label230.caption:='Autismo emocional';
-if oeg=9    then  label230.caption:='Negación';
-if oeg=10    then  label230.caption:='Descuido';
-if oeg=11    then  label230.caption:='Decepción';
-if oeg=12    then  label230.caption:='Depresión';
-if oeg=13    then  label230.caption:='Poder';
-if oeg=14    then  label230.caption:='Duda de sí mismo/a';
-if oeg=15    then  label230.caption:='Miedo';
-if oeg=16    then  label230.caption:='Confusión';
-if oeg=17    then  label230.caption:='Vacilación';
-if oeg=18    then  label230.caption:='Celos';
-if oeg=19    then  label230.caption:='Alegría';
-if oeg=20    then  label230.caption:='Lujuria';
-if oeg=21    then  label230.caption:='Codicia';
-if oeg=22    then  label230.caption:='Poderes Extra Sensoriales - ESP';
-if oeg=23    then  label230.caption:='Dolor psíquico';
-if oeg=24    then  label230.caption:='Pasividad';
-if oeg=25    then  label230.caption:='Proyección';
-if oeg=26    then  label230.caption:='Racionalización';
-if oeg=27    then  label230.caption:='Imprudencia';
-if oeg=28    then  label230.caption:='Preocupación';
-if oeg=29    then  label230.caption:='Abandono';
-if oeg=30    then  label230.caption:='Avergonzamiento';
-if oeg=31    then  label230.caption:='Traición';
-if oeg=32    then  label230.caption:='Malentendimiento';
-if oeg=33    then  label230.caption:='Curiosidad';
-if oeg=34    then  label230.caption:='Sobrecogimiento';
-if oeg=35    then  label230.caption:='Conflicto religioso';
-if oeg=36    then  label230.caption:='Conflicto de identidad';
-if oeg=37    then  label230.caption:='Resistencia al cambio';
-if oeg=38    then  label230.caption:='Nervios';
-if oeg=39    then  label230.caption:='Risa';
-if oeg=40    then  label230.caption:='Entusiasmo';
-if oeg=41    then  label230.caption:='Vanidad';
-if oeg=42    then  label230.caption:='Regateo';
-if oeg=43    then  label230.caption:='Valentía';
-if oeg=44    then  label230.caption:='Vergüenza';
-if oeg=45    then  label230.caption:='Monotonía';
-if oeg=46    then  label230.caption:='Necesidad de cambio';
-if oeg=47    then  label230.caption:='Obsevación';
-if oeg=48    then  label230.caption:='Antagonismo';
-if oeg=49    then  label230.caption:='Sensualidad';
-if oeg=50    then  label230.caption:='Espiritualidad';
-if oeg=51    then  label230.caption:='Sexualidad';
-if oeg=52    then  label230.caption:='Adicción';
-if oeg=53     then  label230.caption:='Juzgamiento';
-if oeg=54    then  label230.caption:='Apatía';
-if oeg=55    then  label230.caption:='Extasis';
-if oeg=56    then  label230.caption:='Inadaptabilidad';
-if oeg=57    then  label230.caption:='Deseo de que las cosas sean diferentes';
-if oeg=58    then  label230.caption:='Perfeccionismo';
-if oeg=59    then  label230.caption:='Desesperación sin esperanza';
-if oeg=60    then  label230.caption:='Control';
-if oeg=61    then  label230.caption:='Subordinamiento';
-if oeg=62    then  label230.caption:='Orgullo';
-if oeg=63    then  label230.caption:='Resentimiento';
-if oeg=64    then  label230.caption:='Conmoción';
-if oeg=65    then  label230.caption:='Inconciencia';
-if oeg=66    then  label230.caption:='Obsesividad';
-if oeg=67    then  label230.caption:='Compulsividad';
-if oeg=68    then  label230.caption:='Manía incontrolable';
-if oeg=69    then  label230.caption:='Impulsividad';
-if oeg=70    then  label230.caption:='Lealtad inalterable';
-if oeg=71    then  label230.caption:='Fácil distracción';
-if oeg=72    then  label230.caption:='Enfoque mental';
-if oeg=73    then  label230.caption:='Irrealismo';
- if oeg=74    then  label230.caption:='Frustración';
-oeg:=random(75);
-if oeg=1    then  label230.caption:=label230.caption+' | '+'Regresión';
-if oeg= 2   then  label230.caption:=label230.caption+' | '+'Agresión';
-if oeg=3    then  label230.caption:=label230.caption+' | '+'Ira';
-if oeg=4    then  label230.caption:=label230.caption+' | '+'Ansiedad';
-if oeg=5    then  label230.caption:=label230.caption+' | '+'Conciencia';
-if oeg=6    then  label230.caption:=label230.caption+' | '+'Tristeza';
-if oeg=7    then  label230.caption:=label230.caption+' | '+'Culpa';
-if oeg=8    then  label230.caption:=label230.caption+' | '+'Autismo emocional';
-if oeg=9    then  label230.caption:=label230.caption+' | '+'Negación';
-if oeg=10    then  label230.caption:=label230.caption+' | '+'Descuido';
-if oeg=11    then  label230.caption:=label230.caption+' | '+'Decepción';
-if oeg=12    then  label230.caption:=label230.caption+' | '+'Depresión';
-if oeg=13    then  label230.caption:=label230.caption+' | '+'Poder';
-if oeg=14    then  label230.caption:=label230.caption+' | '+'Duda de sí mismo/a';
-if oeg=15    then  label230.caption:=label230.caption+' | '+'Miedo';
-if oeg=16    then  label230.caption:=label230.caption+' | '+'Confusión';
-if oeg=17    then  label230.caption:=label230.caption+' | '+'Vacilación';
-if oeg=18    then  label230.caption:=label230.caption+' | '+'Celos';
-if oeg=19    then  label230.caption:=label230.caption+' | '+'Alegría';
-if oeg=20    then  label230.caption:=label230.caption+' | '+'Lujuria';
-if oeg=21    then  label230.caption:=label230.caption+' | '+'Codicia';
-if oeg=22    then  label230.caption:=label230.caption+' | '+'Poderes Extra Sensoriales - ESP';
-if oeg=23    then  label230.caption:=label230.caption+' | '+'Dolor psíquico';
-if oeg=24    then  label230.caption:=label230.caption+' | '+'Pasividad';
-if oeg=25    then  label230.caption:=label230.caption+' | '+'Proyección';
-if oeg=26    then  label230.caption:=label230.caption+' | '+'Racionalización';
-if oeg=27    then  label230.caption:=label230.caption+' | '+'Imprudencia';
-if oeg=28    then  label230.caption:=label230.caption+' | '+'Preocupación';
-if oeg=29    then  label230.caption:=label230.caption+' | '+'Abandono';
-if oeg=30    then  label230.caption:=label230.caption+' | '+'Avergonzamiento';
-if oeg=31    then  label230.caption:=label230.caption+' | '+'Traición';
-if oeg=32    then  label230.caption:=label230.caption+' | '+'Malentendimiento';
-if oeg=33    then  label230.caption:=label230.caption+' | '+'Curiosidad';
-if oeg=34    then  label230.caption:=label230.caption+' | '+'Sobrecogimiento';
-if oeg=35    then  label230.caption:=label230.caption+' | '+'Conflicto religioso';
-if oeg=36    then  label230.caption:=label230.caption+' | '+'Conflicto de identidad';
-if oeg=37    then  label230.caption:=label230.caption+' | '+'Resistencia al cambio';
-if oeg=38    then  label230.caption:=label230.caption+' | '+'Nervios';
-if oeg=39    then  label230.caption:=label230.caption+' | '+'Risa';
-if oeg=40    then  label230.caption:=label230.caption+' | '+'Entusiasmo';
-if oeg=41    then  label230.caption:=label230.caption+' | '+'Vanidad';
-if oeg=42    then  label230.caption:=label230.caption+' | '+'Regateo';
-if oeg=43    then  label230.caption:=label230.caption+' | '+'Valentía';
-if oeg=44    then  label230.caption:=label230.caption+' | '+'Vergüenza';
-if oeg=45    then  label230.caption:=label230.caption+' | '+'Monotonía';
-if oeg=46    then  label230.caption:=label230.caption+' | '+'Necesidad de cambio';
-if oeg=47    then  label230.caption:=label230.caption+' | '+'Obsevación';
-if oeg=48    then  label230.caption:=label230.caption+' | '+'Antagonismo';
-if oeg=49    then  label230.caption:=label230.caption+' | '+'Sensualidad';
-if oeg=50    then  label230.caption:=label230.caption+' | '+'Espiritualidad';
-if oeg=51    then  label230.caption:=label230.caption+' | '+'Sexualidad';
-if oeg=52    then  label230.caption:=label230.caption+' | '+'Adicción';
-if oeg=53     then  label230.caption:=label230.caption+' | '+'Juzgamiento';
-if oeg=54    then  label230.caption:=label230.caption+' | '+'Apatía';
-if oeg=55    then  label230.caption:=label230.caption+' | '+'Extasis';
-if oeg=56    then  label230.caption:=label230.caption+' | '+'Inadaptabilidad';
-if oeg=57    then  label230.caption:=label230.caption+' | '+'Deseo de que las cosas sean diferentes';
-if oeg=58    then  label230.caption:=label230.caption+' | '+'Perfeccionismo';
-if oeg=59    then  label230.caption:=label230.caption+' | '+'Desesperación sin esperanza';
-if oeg=60    then  label230.caption:=label230.caption+' | '+'Control';
-if oeg=61    then  label230.caption:=label230.caption+' | '+'Subordinamiento';
-if oeg=62    then  label230.caption:=label230.caption+' | '+'Orgullo';
-if oeg=63    then  label230.caption:=label230.caption+' | '+'Resentimiento';
-if oeg=64    then  label230.caption:=label230.caption+' | '+'Conmoción';
-if oeg=65    then  label230.caption:=label230.caption+' | '+'Inconciencia';
-if oeg=66    then  label230.caption:=label230.caption+' | '+'Obsesividad';
-if oeg=67    then  label230.caption:=label230.caption+' | '+'Compulsividad';
-if oeg=68    then  label230.caption:=label230.caption+' | '+'Manía incontrolable';
-if oeg=69    then  label230.caption:=label230.caption+' | '+'Impulsividad';
-if oeg=70    then  label230.caption:=label230.caption+' | '+'Lealtad inalterable';
-if oeg=71    then  label230.caption:=label230.caption+' | '+'Fácil distracción';
-if oeg=72    then  label230.caption:=label230.caption+' | '+'Enfoque mental';
-if oeg=73    then  label230.caption:=label230.caption+' | '+'Irrealismo';
- if oeg=74    then  label230.caption:=label230.caption+' | '+'Frustración';
+FMain.Button42.Click;
 end;
 
 procedure TSpinal.Button79Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para estimular hormonas elegidas...';
 RevisarHormonas();
 end;
 
@@ -9669,8 +8819,8 @@ end;
 
 procedure TSpinal.RadioButton105Click(Sender: TObject);
 begin
-testform1.Edit11.text:= testform1.Edit11.text+' | Equilibrio del nervio vago.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Nervio vago.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Equilibrio del nervio vago.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Nervio vago.';
 begin1:=15+random(3);
 end1:=205+random(3);
 int1:=1 ;
@@ -9805,7 +8955,6 @@ end;
 procedure TSpinal.Button85Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza en racimo...';
 BMaestro.Click;
 If rec>84 Then Button85.Enabled;
 end;
@@ -9813,8 +8962,8 @@ end;
 procedure TSpinal.RadioButton101Click(Sender: TObject);
 begin
 riskchart.emo:=riskchart.emo+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular focalización mente-cuerpo.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Focalización mente-cuerpo.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular focalización mente-cuerpo.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Focalización mente-cuerpo.';
 begin1:=1110+random(3);
 end1:=2222+random(3);
 int1:=1+random(3);
@@ -9970,20 +9119,16 @@ exit;
 End;
 Reaccion_Irregular();
 MyChrono.Start;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
-    PDesarrollo.caption:='Restaurando salud general de órganos...';
-    PDesarrollo.visible:=true;
-    PDesarrollo.refresh;
 GBAEnfoque.Visible := True;
 If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
 If CBSistemas.Checked = True Then TSistemas.Enabled := True;
 BMaestroSistemas.Click;
-GBAEnfoque.Visible := False;
 TAEnfoque.Enabled := False;
 TSistemas.Enabled := False;
 LimpiaSistemas();
-PDesarrollo.Visible := False;
+LimpiaAEnfoque();
   rec1:=rec1+19;
   rec:= 10+rec1+random(57+rec1+vart);
   if rec>100 then rec:=85+Random(15);
@@ -9991,7 +9136,7 @@ PDesarrollo.Visible := False;
   if rec>84 Then BRestaurarSaludGral.Enabled := False;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 MyChrono.Stop;
   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then BRestaurarSaludGral.Click;
   If (rec<85) and (CBAutomatico.Checked=True) Then BRestaurarSaludGral.Click;
@@ -10020,31 +9165,6 @@ begin
 Label21.Enabled := True;
 edit19.text:='';
 ActualizaDBGrid3();
-end;
-
-procedure TSpinal.Edit11DblClick(Sender: TObject);
-begin
-edit11.text:='Nosode:';
-end;
-
-procedure TSpinal.Edit12DblClick(Sender: TObject);
-begin
-edit12.text:='Isode:';
-end;
-
-procedure TSpinal.Edit13DblClick(Sender: TObject);
-begin
-edit13.text:='Alersode:';
-end;
-
-procedure TSpinal.Edit15DblClick(Sender: TObject);
-begin
-edit15.text:='Sarcode:';
-end;
-
-procedure TSpinal.Edit14DblClick(Sender: TObject);
-begin
-edit14.text:='Misceláneos:';
 end;
 
 procedure TSpinal.ETransferenciaDblClick(Sender: TObject);
@@ -10132,113 +9252,113 @@ button71.visible:=true;
 panel17.visible:=true;
 
 rb16:=random(28);
-if rb16= 1 then label241.caption:='| Imbalance de emociones.';
-      if rb16= 2 then label241.caption:='| Exceso de íra interna.';
-  if rb16= 3  then label241.caption:='| Ira no conquistada.';
-         if rb16=4 then label241.caption:='| Falta de foco emocional.';
-      if rb16= 5 then  label241.caption:='| Imbalance del Yo interno Vs. el Yo externo.';
-      if rb16=6  then  label241.caption:='| Conflicto interior no revelado.';
-     if rb16=7  then  label241.caption:='| Exceso de mentiras.';
-     if rb16=8  then label241.caption:='| Exceso de mentirse a sí mismo/a.';
-     if rb16=9  then  label241.caption:='| El conflicto externo guía las emociones ocultas.';
-    if rb16=10  then label241.caption:='| Fuego del espíritu no enfocado.';
-    if rb16=11  then  label241.caption:='| Conflicto del Yo interno Vs. Máscara externa.';
-   if rb16= 12 then label241.caption:='| Deficiencia en censor de acciones.';
-   if rb16=13  then label241.caption:='| Deficiencia de poder interno no revelado.';
-if rb16= 15 then  label241.caption:='| Deficiencia en conocimiento de sí mismo/a.';
-      if rb16= 16 then  label241.caption:='| Leve falta de ubicación.';
-  if rb16=17  then  label241.caption:='| Conflicto sexual';
-         if rb16=18  then  label241.caption:='| Soledad encubierta.';
-      if rb16=19  then  label241.caption:='| Inseguridad encubierta.';
-      if rb16=20  then  label241.caption:='| Temor encubierto.';
-     if rb16=21  then  label241.caption:='| Mentiras encubiertas.';
-     if rb16=22  then label241.caption:='| Avaricia.';
-     if rb16=23  then  label241.caption:='| Inconciencia de necesidades propias que se han encubierto.';
-    if rb16= 24 then label241.caption:='| Deseo/s suprimido/s.';
-    if rb16=25  then  label241.caption:='| Quiere decir algo pero no puede.';
-   if rb16=26  then label241.caption:=' | Acumulacion interna de emociones.';
-   if rb16=27  then label241.caption:='| Quiere decir algo pero no lo hace.';
+if rb16= 1 then label241.caption:=' Imbalance de emociones.';
+      if rb16= 2 then label241.caption:=' Exceso de íra interna.';
+  if rb16= 3  then label241.caption:=' Ira no conquistada.';
+         if rb16=4 then label241.caption:=' Falta de foco emocional.';
+      if rb16= 5 then  label241.caption:=' Imbalance del Yo interno Vs. el Yo externo.';
+      if rb16=6  then  label241.caption:=' Conflicto interior no revelado.';
+     if rb16=7  then  label241.caption:=' Exceso de mentiras.';
+     if rb16=8  then label241.caption:=' Exceso de mentirse a sí mismo/a.';
+     if rb16=9  then  label241.caption:=' El conflicto externo guía las emociones ocultas.';
+    if rb16=10  then label241.caption:=' Fuego del espíritu no enfocado.';
+    if rb16=11  then  label241.caption:=' Conflicto del Yo interno Vs. Máscara externa.';
+   if rb16= 12 then label241.caption:=' Deficiencia en censor de acciones.';
+   if rb16=13  then label241.caption:=' Deficiencia de poder interno no revelado.';
+if rb16= 15 then  label241.caption:=' Deficiencia en conocimiento de sí mismo/a.';
+      if rb16= 16 then  label241.caption:=' Leve falta de ubicación.';
+  if rb16=17  then  label241.caption:=' Conflicto sexual';
+         if rb16=18  then  label241.caption:=' Soledad encubierta.';
+      if rb16=19  then  label241.caption:=' Inseguridad encubierta.';
+      if rb16=20  then  label241.caption:=' Temor encubierto.';
+     if rb16=21  then  label241.caption:=' Mentiras encubiertas.';
+     if rb16=22  then label241.caption:=' Avaricia.';
+     if rb16=23  then  label241.caption:=' Inconciencia de necesidades propias que se han encubierto.';
+    if rb16= 24 then label241.caption:=' Deseo/s suprimido/s.';
+    if rb16=25  then  label241.caption:=' Quiere decir algo pero no puede.';
+   if rb16=26  then label241.caption:=' Acumulacion interna de emociones.';
+   if rb16=27  then label241.caption:=' Quiere decir algo pero no lo hace.';
 rb16:=random(28);
-if rb16= 1 then label244.caption:='| Imbalance de emociones.';
-      if rb16= 2 then label244.caption:='| Exceso de íra interna.';
-  if rb16= 3  then label244.caption:='| Ira no conquistada.';
-         if rb16=4 then label244.caption:='| Falta de foco emocional.';
-      if rb16= 5 then  label244.caption:='| Imbalance del Yo interno Vs. el Yo externo.';
-      if rb16=6  then  label244.caption:='| Conflicto interior no revelado.';
-     if rb16=7  then  label244.caption:='| Exceso de mentiras.';
-     if rb16=8  then label244.caption:='| Exceso de mentirse a sí mismo/a.';
-     if rb16=9  then  label244.caption:='| El conflicto externo guía las emociones ocultas.';
-    if rb16=10  then label244.caption:='| Fuego del espíritu no enfocado.';
-    if rb16=11  then  label244.caption:='| Conflicto del Yo interno Vs. Máscara externa.';
-   if rb16= 12 then label244.caption:='| Deficiencia en censor de acciones.';
-   if rb16=13  then label244.caption:='| Deficiencia de poder interno no revelado.';
-if rb16= 15 then  label244.caption:='| Deficiencia en conocimiento de sí mismo/a.';
-      if rb16= 16 then  label244.caption:='| Leve falta de ubicación.';
-  if rb16=17  then  label244.caption:='| Conflicto sexual';
-         if rb16=18  then  label244.caption:='| Soledad encubierta.';
-      if rb16=19  then  label244.caption:='| Inseguridad encubierta.';
-      if rb16=20  then  label244.caption:='| Temor encubierto.';
-     if rb16=21  then  label244.caption:='| Mentiras encubiertas.';
-     if rb16=22  then label244.caption:='| Avaricia.';
-     if rb16=23  then  label244.caption:='| Inconciencia de necesidades propias que se han encubierto.';
-    if rb16= 24 then label244.caption:='| Deseo/s suprimido/s.';
-    if rb16=25  then  label244.caption:='| Quiere decir algo pero no puede.';
-   if rb16=26  then label244.caption:=' | Acumulacion interna de emociones.';
-   if rb16=27  then label244.caption:='| Quiere decir algo pero no lo hace.';
+if rb16= 1 then label244.caption:=' Imbalance de emociones.';
+      if rb16= 2 then label244.caption:=' Exceso de íra interna.';
+  if rb16= 3  then label244.caption:=' Ira no conquistada.';
+         if rb16=4 then label244.caption:=' Falta de foco emocional.';
+      if rb16= 5 then  label244.caption:=' Imbalance del Yo interno Vs. el Yo externo.';
+      if rb16=6  then  label244.caption:=' Conflicto interior no revelado.';
+     if rb16=7  then  label244.caption:=' Exceso de mentiras.';
+     if rb16=8  then label244.caption:=' Exceso de mentirse a sí mismo/a.';
+     if rb16=9  then  label244.caption:=' El conflicto externo guía las emociones ocultas.';
+    if rb16=10  then label244.caption:=' Fuego del espíritu no enfocado.';
+    if rb16=11  then  label244.caption:=' Conflicto del Yo interno Vs. Máscara externa.';
+   if rb16= 12 then label244.caption:=' Deficiencia en censor de acciones.';
+   if rb16=13  then label244.caption:=' Deficiencia de poder interno no revelado.';
+if rb16= 15 then  label244.caption:=' Deficiencia en conocimiento de sí mismo/a.';
+      if rb16= 16 then  label244.caption:=' Leve falta de ubicación.';
+  if rb16=17  then  label244.caption:=' Conflicto sexual';
+         if rb16=18  then  label244.caption:=' Soledad encubierta.';
+      if rb16=19  then  label244.caption:=' Inseguridad encubierta.';
+      if rb16=20  then  label244.caption:=' Temor encubierto.';
+     if rb16=21  then  label244.caption:=' Mentiras encubiertas.';
+     if rb16=22  then label244.caption:=' Avaricia.';
+     if rb16=23  then  label244.caption:=' Inconciencia de necesidades propias que se han encubierto.';
+    if rb16= 24 then label244.caption:=' Deseo/s suprimido/s.';
+    if rb16=25  then  label244.caption:=' Quiere decir algo pero no puede.';
+   if rb16=26  then label244.caption:=' Acumulacion interna de emociones.';
+   if rb16=27  then label244.caption:=' Quiere decir algo pero no lo hace.';
 rb16:=random(28);
-if rb16= 1 then label242.caption:='| Imbalance de emociones.';
-      if rb16= 2 then label242.caption:='| Exceso de íra interna.';
-  if rb16= 3  then label242.caption:='| Ira no conquistada.';
-         if rb16=4 then label242.caption:='| Falta de foco emocional.';
-      if rb16= 5 then  label242.caption:='| Imbalance del Yo interno Vs. el Yo externo.';
-      if rb16=6  then  label242.caption:='| Conflicto interior no revelado.';
-     if rb16=7  then  label242.caption:='| Exceso de mentiras.';
-     if rb16=8  then label242.caption:='| Exceso de mentirse a sí mismo/a.';
-     if rb16=9  then  label242.caption:='| El conflicto externo guía las emociones ocultas.';
-    if rb16=10  then label242.caption:='| Fuego del espíritu no enfocado.';
-    if rb16=11  then  label242.caption:='| Conflicto del Yo interno Vs. Máscara externa.';
-   if rb16= 12 then label242.caption:='| Deficiencia en censor de acciones.';
-   if rb16=13  then label242.caption:='| Deficiencia de poder interno no revelado.';
-if rb16= 15 then  label242.caption:='| Deficiencia en conocimiento de sí mismo/a.';
-      if rb16= 16 then  label242.caption:='| Leve falta de ubicación.';
-  if rb16=17  then  label242.caption:='| Conflicto sexual';
-         if rb16=18  then  label242.caption:='| Soledad encubierta.';
-      if rb16=19  then  label242.caption:='| Inseguridad encubierta.';
-      if rb16=20  then  label242.caption:='| Temor encubierto.';
-     if rb16=21  then  label242.caption:='| Mentiras encubiertas.';
-     if rb16=22  then label242.caption:='| Avaricia.';
-     if rb16=23  then  label242.caption:='| Inconciencia de necesidades propias que se han encubierto.';
-    if rb16= 24 then label242.caption:='| Deseo/s suprimido/s.';
-    if rb16=25  then  label242.caption:='| Quiere decir algo pero no puede.';
+if rb16= 1 then label242.caption:=' Imbalance de emociones.';
+      if rb16= 2 then label242.caption:=' Exceso de íra interna.';
+  if rb16= 3  then label242.caption:=' Ira no conquistada.';
+         if rb16=4 then label242.caption:=' Falta de foco emocional.';
+      if rb16= 5 then  label242.caption:=' Imbalance del Yo interno Vs. el Yo externo.';
+      if rb16=6  then  label242.caption:=' Conflicto interior no revelado.';
+     if rb16=7  then  label242.caption:=' Exceso de mentiras.';
+     if rb16=8  then label242.caption:=' Exceso de mentirse a sí mismo/a.';
+     if rb16=9  then  label242.caption:=' El conflicto externo guía las emociones ocultas.';
+    if rb16=10  then label242.caption:=' Fuego del espíritu no enfocado.';
+    if rb16=11  then  label242.caption:=' Conflicto del Yo interno Vs. Máscara externa.';
+   if rb16= 12 then label242.caption:=' Deficiencia en censor de acciones.';
+   if rb16=13  then label242.caption:=' Deficiencia de poder interno no revelado.';
+if rb16= 15 then  label242.caption:=' Deficiencia en conocimiento de sí mismo/a.';
+      if rb16= 16 then  label242.caption:=' Leve falta de ubicación.';
+  if rb16=17  then  label242.caption:=' Conflicto sexual.';
+         if rb16=18  then  label242.caption:=' Soledad encubierta.';
+      if rb16=19  then  label242.caption:=' Inseguridad encubierta.';
+      if rb16=20  then  label242.caption:=' Temor encubierto.';
+     if rb16=21  then  label242.caption:=' Mentiras encubiertas.';
+     if rb16=22  then label242.caption:=' Avaricia.';
+     if rb16=23  then  label242.caption:=' Inconciencia de necesidades propias que se han encubierto.';
+    if rb16= 24 then label242.caption:=' Deseo/s suprimido/s.';
+    if rb16=25  then  label242.caption:=' Quiere decir algo pero no puede.';
    if rb16=26  then label242.caption:=' | Acumulacion interna de emociones.';
-   if rb16=27  then label242.caption:='| Quiere decir algo pero no lo hace.';
+   if rb16=27  then label242.caption:=' Quiere decir algo pero no lo hace.';
 rb16:=random(28);
-if rb16= 1 then label243.caption:='| Imbalance de emociones.';
-      if rb16= 2 then label243.caption:='| Exceso de íra interna.';
-  if rb16= 3  then label243.caption:='| Ira no conquistada.';
-         if rb16=4 then label243.caption:='| Falta de foco emocional.';
-      if rb16= 5 then  label243.caption:='| Imbalance del Yo interno Vs. el Yo externo.';
-      if rb16=6  then  label243.caption:='| Conflicto interior no revelado.';
-     if rb16=7  then  label243.caption:='| Exceso de mentiras.';
-     if rb16=8  then label243.caption:='| Exceso de mentirse a sí mismo/a.';
-     if rb16=9  then  label243.caption:='| El conflicto externo guía las emociones ocultas.';
-    if rb16=10  then label243.caption:='| Fuego del espíritu no enfocado.';
-    if rb16=11  then  label243.caption:='| Conflicto del Yo interno Vs. Máscara externa.';
-   if rb16= 12 then label243.caption:='| Deficiencia en censor de acciones.';
-   if rb16=13  then label243.caption:='| Deficiencia de poder interno no revelado.';
-if rb16= 15 then  label243.caption:='| Deficiencia en conocimiento de sí mismo/a.';
-      if rb16= 16 then  label243.caption:='| Leve falta de ubicación.';
-  if rb16=17  then  label243.caption:='| Conflicto sexual';
-         if rb16=18  then  label243.caption:='| Soledad encubierta.';
-      if rb16=19  then  label243.caption:='| Inseguridad encubierta.';
-      if rb16=20  then  label243.caption:='| Temor encubierto.';
-     if rb16=21  then  label243.caption:='| Mentiras encubiertas.';
-     if rb16=22  then label243.caption:='| Avaricia.';
-     if rb16=23  then  label243.caption:='| Inconciencia de necesidades propias que se han encubierto.';
-    if rb16= 24 then label243.caption:='| Deseo/s suprimido/s.';
-    if rb16=25  then  label243.caption:='| Quiere decir algo pero no puede.';
+if rb16= 1 then label243.caption:=' Imbalance de emociones.';
+      if rb16= 2 then label243.caption:=' Exceso de íra interna.';
+  if rb16= 3  then label243.caption:=' Ira no conquistada.';
+         if rb16=4 then label243.caption:=' Falta de foco emocional.';
+      if rb16= 5 then  label243.caption:=' Imbalance del Yo interno Vs. el Yo externo.';
+      if rb16=6  then  label243.caption:=' Conflicto interior no revelado.';
+     if rb16=7  then  label243.caption:=' Exceso de mentiras.';
+     if rb16=8  then label243.caption:=' Exceso de mentirse a sí mismo/a.';
+     if rb16=9  then  label243.caption:=' El conflicto externo guía las emociones ocultas.';
+    if rb16=10  then label243.caption:=' Fuego del espíritu no enfocado.';
+    if rb16=11  then  label243.caption:=' Conflicto del Yo interno Vs. Máscara externa.';
+   if rb16= 12 then label243.caption:=' Deficiencia en censor de acciones.';
+   if rb16=13  then label243.caption:=' Deficiencia de poder interno no revelado.';
+if rb16= 15 then  label243.caption:=' Deficiencia en conocimiento de sí mismo/a.';
+      if rb16= 16 then  label243.caption:=' Leve falta de ubicación.';
+  if rb16=17  then  label243.caption:=' Conflicto sexual';
+         if rb16=18  then  label243.caption:=' Soledad encubierta.';
+      if rb16=19  then  label243.caption:=' Inseguridad encubierta.';
+      if rb16=20  then  label243.caption:=' Temor encubierto.';
+     if rb16=21  then  label243.caption:=' Mentiras encubiertas.';
+     if rb16=22  then label243.caption:=' Avaricia.';
+     if rb16=23  then  label243.caption:=' Inconciencia de necesidades propias que se han encubierto.';
+    if rb16= 24 then label243.caption:=' Deseo/s suprimido/s.';
+    if rb16=25  then  label243.caption:=' Quiere decir algo pero no puede.';
    if rb16=26  then label243.caption:=' | Acumulacion interna de emociones.';
-   if rb16=27  then label243.caption:='| Quiere decir algo pero no lo hace.';
+   if rb16=27  then label243.caption:=' Quiere decir algo pero no lo hace.';
     if   (patform1.checkbox218.checked=true)  then   label242.caption:=label242.caption+' | Deficiencia en el Yin restringe la velocidad.';
     if   (patform1.checkbox212.checked=true) then   label242.caption:=label242.caption+' | Deficiencia en el Yin afecta el equilibrio.';
        if   (patform1.checkbox187.checked=true)  then   label242.caption:=label242.caption+' | Deficiencia en el Qi ocasiona fatiga.';
@@ -10307,402 +9427,402 @@ if (patform1.RadioButton16.checked=true) then  label249.caption:=label249.captio
 if (patform1.RadioButton18.checked=true) then  label249.caption:=label249.caption+' | Qi congestionado en triple calentador.';
 che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if ((testform1.med1+4)<testform1.ac1) then label303.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if ((testform1.med1+4)<testform1.ac1) then label303.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label302.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label302.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label302.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label304.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label304.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label304.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label280.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label280.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label280.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label260.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label260.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label260.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label259.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label259.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label259.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label258.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label258.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label258.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label257.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label257.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label257.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label256.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label256.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label256.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label254.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label254.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label254.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label253.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label253.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label253.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label252.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label252.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label252.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label255.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label255.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label255.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label251.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label251.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label251.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label250.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label250.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label250.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 
      if (label249.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac1) then label249.caption:='| Imbalance en meridianos de riñón y vejiga.';
+  if  ((testform1.med1+4)<testform1.ac1) then label249.caption:=' Imbalance en meridianos de riñón y vejiga.';
   che22:=10;
  end;
 che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label303.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label303.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label302.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label302.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label302.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label304.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label304.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label304.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label280.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label280.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label280.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label260.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label260.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label260.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label259.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label259.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label259.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label258.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label258.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label258.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label257.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label257.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label257.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label256.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label256.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label256.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label254.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label254.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label254.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label253.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label253.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label253.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label252.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label252.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label252.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label255.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label255.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label255.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label251.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label251.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label251.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label250.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label250.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label250.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 
      if (label249.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac5) then  label249.caption:='| Imbalance en meridianos de corazón e intestino delgado.';
+  if  ((testform1.med1+4)<testform1.ac5) then  label249.caption:=' Imbalance en meridianos de corazón e intestino delgado.';
   che22:=10;
  end;
 che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label303.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label303.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label302.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label302.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label302.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label304.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label304.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label304.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label280.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label280.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label280.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label260.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label260.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label260.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label259.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label259.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label259.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label258.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label258.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label258.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label257.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label257.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label257.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label256.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label256.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label256.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label254.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label254.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label254.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label253.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label253.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label253.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label252.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label252.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label252.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label255.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label255.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label255.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label251.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label251.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label251.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label250.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label250.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label250.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 
      if (label249.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac2) then  label249.caption:='| Imbalance en meridianos de hígado y vesícula biliar.';
+  if  ((testform1.med1+4)<testform1.ac2) then  label249.caption:=' Imbalance en meridianos de hígado y vesícula biliar.';
   che22:=10;
  end;
 che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label303.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label303.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label302.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label302.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label302.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label304.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label304.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label304.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label280.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label280.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label280.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label260.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label260.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label260.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label259.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label259.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label259.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label258.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label258.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label258.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label257.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label257.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label257.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label256.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label256.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label256.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label254.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label254.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label254.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label253.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label253.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label253.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label252.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label252.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label252.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label255.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label255.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label255.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label251.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label251.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label251.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label250.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label250.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label250.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 
      if (label249.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac3) then  label249.caption:='| Imbalance en meridianos de bazo, estómago y páncreas.';
+  if  ((testform1.med1+4)<testform1.ac3) then  label249.caption:=' Imbalance en meridianos de bazo, estómago y páncreas.';
   che22:=10;
  end;
 che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label303.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label303.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label302.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label302.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label302.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label304.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label304.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label304.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label280.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label280.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label280.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label260.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label260.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label260.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label259.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label259.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label259.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label258.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label258.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label258.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label257.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label257.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label257.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label256.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label256.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label256.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label254.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label254.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label254.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label253.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label253.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label253.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label252.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label252.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label252.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label255.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label255.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label255.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label251.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label251.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label251.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label250.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label250.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label250.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
      if (label249.caption='000')and (che22<5) then begin
-  if  ((testform1.med1+4)<testform1.ac4) then  label249.caption:='| Imbalance en meridianos de pulmón e intestino grueso.';
+  if  ((testform1.med1+4)<testform1.ac4) then  label249.caption:=' Imbalance en meridianos de pulmón e intestino grueso.';
   che22:=10;
  end;
 
@@ -11573,482 +10693,346 @@ che22:=0;
 
  che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if pn15>10 then  label303.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label303.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label302.caption='000')and (che22<5) then begin
-  if pn15>10 then  label302.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label302.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label304.caption='000')and (che22<5) then begin
-  if pn15>10 then  label304.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label304.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label280.caption='000')and (che22<5) then begin
-  if pn15>10 then  label280.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label280.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label260.caption='000')and (che22<5) then begin
-  if pn15>10 then  label260.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label260.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label259.caption='000')and (che22<5) then begin
-  if pn15>10 then  label259.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label259.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label258.caption='000')and (che22<5) then begin
-  if pn15>10 then  label258.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label258.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label257.caption='000')and (che22<5) then begin
-  if pn15>10 then  label257.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label257.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label256.caption='000')and (che22<5) then begin
-  if pn15>10 then  label256.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label256.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label254.caption='000')and (che22<5) then begin
-  if pn15>10 then  label254.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label254.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label253.caption='000')and (che22<5) then begin
-  if pn15>10 then  label253.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label253.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label252.caption='000')and (che22<5) then begin
-  if pn15>10 then  label252.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label252.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label255.caption='000')and (che22<5) then begin
-  if pn15>10 then  label255.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label255.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label251.caption='000')and (che22<5) then begin
-  if pn15>10 then  label251.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label251.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label250.caption='000')and (che22<5) then begin
-  if pn15>10 then  label250.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label250.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
      if (label249.caption='000')and (che22<5) then begin
-  if pn15>10 then  label249.caption:='| Imbalance no específico del flujo del Qi.';
+  if pn15>10 then  label249.caption:=' Imbalance no específico del flujo del Qi.';
   che22:=10;
  end;
  che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if pn6>1 then  label303.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label303.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label302.caption='000')and (che22<5) then begin
-  if pn6>1 then  label302.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label302.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label304.caption='000')and (che22<5) then begin
-  if pn6>1 then  label304.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label304.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label280.caption='000')and (che22<5) then begin
-  if pn6>1 then  label280.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label280.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label260.caption='000')and (che22<5) then begin
-  if pn6>1 then  label260.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label260.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label259.caption='000')and (che22<5) then begin
-  if pn6>1 then  label259.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label259.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label258.caption='000')and (che22<5) then begin
-  if pn6>1 then  label258.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label258.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label257.caption='000')and (che22<5) then begin
-  if pn6>1 then  label257.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label257.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label256.caption='000')and (che22<5) then begin
-  if pn6>1 then  label256.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label256.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label254.caption='000')and (che22<5) then begin
-  if pn6>1 then  label254.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label254.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label253.caption='000')and (che22<5) then begin
-  if pn6>1 then  label253.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label253.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label252.caption='000')and (che22<5) then begin
-  if pn6>1 then  label252.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label252.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label255.caption='000')and (che22<5) then begin
-  if pn6>1 then  label255.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label255.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label251.caption='000')and (che22<5) then begin
-  if pn6>1 then  label251.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label251.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label250.caption='000')and (che22<5) then begin
-  if pn6>1 then  label250.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label250.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
      if (label249.caption='000')and (che22<5) then begin
-  if pn6>1 then  label249.caption:='| Desregulación del Qi del cerebro.';
+  if pn6>1 then  label249.caption:=' Desregulación del Qi del cerebro.';
   che22:=10;
  end;
  che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if soc>299 then  label303.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label303.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label302.caption='000')and (che22<5) then begin
-  if soc>299 then  label302.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label302.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label304.caption='000')and (che22<5) then begin
-  if soc>299 then  label304.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label304.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label280.caption='000')and (che22<5) then begin
-  if soc>299 then  label280.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label280.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label260.caption='000')and (che22<5) then begin
-  if soc>299 then  label260.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label260.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label259.caption='000')and (che22<5) then begin
-  if soc>299 then  label259.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label259.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label258.caption='000')and (che22<5) then begin
-  if soc>299 then  label258.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label258.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label257.caption='000')and (che22<5) then begin
-  if soc>299 then  label257.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label257.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label256.caption='000')and (che22<5) then begin
-  if soc>299 then  label256.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label256.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label254.caption='000')and (che22<5) then begin
-  if soc>299 then  label254.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label254.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label253.caption='000')and (che22<5) then begin
-  if soc>299 then  label253.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label253.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label252.caption='000')and (che22<5) then begin
-  if soc>299 then  label252.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label252.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label255.caption='000')and (che22<5) then begin
-  if soc>299 then  label255.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label255.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label251.caption='000')and (che22<5) then begin
-  if soc>299 then  label251.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label251.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label250.caption='000')and (che22<5) then begin
-  if soc>299 then  label250.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label250.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;
      if (label249.caption='000')and (che22<5) then begin
-  if soc>299 then  label249.caption:='| Desconexión del Qi Universal.';
+  if soc>299 then  label249.caption:=' Desconexión del Qi Universal.';
   che22:=10;
  end;    
  che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if soc>-5 then  label303.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label303.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label302.caption='000')and (che22<5) then begin
-  if soc>-5 then  label302.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label302.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label304.caption='000')and (che22<5) then begin
-  if soc>-5 then  label304.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label304.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label280.caption='000')and (che22<5) then begin
-  if soc>-5 then  label280.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label280.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label260.caption='000')and (che22<5) then begin
-  if soc>-5 then  label260.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label260.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label259.caption='000')and (che22<5) then begin
-  if soc>-5 then  label259.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label259.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label258.caption='000')and (che22<5) then begin
-  if soc>-5 then  label258.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label258.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label257.caption='000')and (che22<5) then begin
-  if soc>-5 then  label257.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label257.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label256.caption='000')and (che22<5) then begin
-  if soc>-5 then  label256.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label256.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label254.caption='000')and (che22<5) then begin
-  if soc>-5 then  label254.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label254.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label253.caption='000')and (che22<5) then begin
-  if soc>-5 then  label253.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label253.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label252.caption='000')and (che22<5) then begin
-  if soc>-5 then  label252.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label252.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label255.caption='000')and (che22<5) then begin
-  if soc>-5 then  label255.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label255.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label251.caption='000')and (che22<5) then begin
-  if soc>-5 then  label251.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label251.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label250.caption='000')and (che22<5) then begin
-  if soc>-5 then  label250.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label250.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
      if (label249.caption='000')and (che22<5) then begin
-  if soc>-5 then  label249.caption:='| Bloqueo en: '+'Emociones negativas';
+  if soc>-5 then  label249.caption:=' Bloqueo en:'+' Emociones negativas';
   che22:=10;
  end;
  che22:=0;
      if (label303.caption='000')and (che22<5) then begin
-  if soc>-5 then  label303.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label303.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label302.caption='000')and (che22<5) then begin
-  if soc>-5 then  label302.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label302.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label304.caption='000')and (che22<5) then begin
-  if soc>-5 then  label304.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label304.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label280.caption='000')and (che22<5) then begin
-  if soc>-5 then  label280.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label280.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label260.caption='000')and (che22<5) then begin
-  if soc>-5 then  label260.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label260.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label259.caption='000')and (che22<5) then begin
-  if soc>-5 then  label259.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label259.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label258.caption='000')and (che22<5) then begin
-  if soc>-5 then  label258.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label258.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label257.caption='000')and (che22<5) then begin
-  if soc>-5 then  label257.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label257.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label256.caption='000')and (che22<5) then begin
-  if soc>-5 then  label256.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label256.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label254.caption='000')and (che22<5) then begin
-  if soc>-5 then  label254.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label254.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label253.caption='000')and (che22<5) then begin
-  if soc>-5 then  label253.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label253.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label252.caption='000')and (che22<5) then begin
-  if soc>-5 then  label252.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label252.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label255.caption='000')and (che22<5) then begin
-  if soc>-5 then  label255.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label255.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label251.caption='000')and (che22<5) then begin
-  if soc>-5 then  label251.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label251.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label250.caption='000')and (che22<5) then begin
-  if soc>-5 then  label250.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label250.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
      if (label249.caption='000')and (che22<5) then begin
-  if soc>-5 then  label249.caption:='| Bloqueo en: '+'Liberación de emociones negativas';
+  if soc>-5 then  label249.caption:=' Bloqueo en:'+' Liberación de emociones negativas';
   che22:=10;
  end;
  che22:=0;
 
-
-{     if (label303.caption='000')and (che22<5) then begin
-  if soc>-5 then  label303.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-
-     if (label302.caption='000')and (che22<5) then begin
-  if soc>-5 then  label302.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label304.caption='000')and (che22<5) then begin
-  if soc>-5 then  label304.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label280.caption='000')and (che22<5) then begin
-  if soc>-5 then  label280.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label260.caption='000')and (che22<5) then begin
-  if soc>-5 then  label260.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label259.caption='000')and (che22<5) then begin
-  if soc>-5 then  label259.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label258.caption='000')and (che22<5) then begin
-  if soc>-5 then  label258.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label257.caption='000')and (che22<5) then begin
-  if soc>-5 then  label257.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label256.caption='000')and (che22<5) then begin
-  if soc>-5 then  label256.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label254.caption='000')and (che22<5) then begin
-  if soc>-5 then  label254.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label253.caption='000')and (che22<5) then begin
-  if soc>-5 then  label253.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label252.caption='000')and (che22<5) then begin
-  if soc>-5 then  label252.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label255.caption='000')and (che22<5) then begin
-  if soc>-5 then  label255.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label251.caption='000')and (che22<5) then begin
-  if soc>-5 then  label251.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label250.caption='000')and (che22<5) then begin
-  if soc>-5 then  label250.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-     if (label249.caption='000')and (che22<5) then begin
-  if soc>-5 then  label249.caption:='| Bloqueo en: '+label51.caption;
-  che22:=10;
- end;
-
- che22:=0;
-     if (label303.caption='000')and (che22<5) then begin
-  if soc>-5 then  label303.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label302.caption='000')and (che22<5) then begin
-  if soc>-5 then  label302.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label304.caption='000')and (che22<5) then begin
-  if soc>-5 then  label304.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label280.caption='000')and (che22<5) then begin
-  if soc>-5 then  label280.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label260.caption='000')and (che22<5) then begin
-  if soc>-5 then  label260.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label259.caption='000')and (che22<5) then begin
-  if soc>-5 then  label259.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label258.caption='000')and (che22<5) then begin
-  if soc>-5 then  label258.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label257.caption='000')and (che22<5) then begin
-  if soc>-5 then  label257.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label256.caption='000')and (che22<5) then begin
-  if soc>-5 then  label256.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label254.caption='000')and (che22<5) then begin
-  if soc>-5 then  label254.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label253.caption='000')and (che22<5) then begin
-  if soc>-5 then  label253.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label252.caption='000')and (che22<5) then begin
-  if soc>-5 then  label252.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label255.caption='000')and (che22<5) then begin
-  if soc>-5 then  label255.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label251.caption='000')and (che22<5) then begin
-  if soc>-5 then  label251.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label250.caption='000')and (che22<5) then begin
-  if soc>-5 then  label250.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-     if (label249.caption='000')and (che22<5) then begin
-  if soc>-5 then  label249.caption:='| Bloqueo en: '+label53.caption;
-  che22:=10;
- end;
-  }
-   {&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&}
-
-     label275.caption:=testform1.label214.caption;
-      label267.caption:='Reactividad | '+testform1.label126.caption;
-         label268.caption:=testform1.label218.caption;
-        label269.caption:=testform1.label216.caption;
-        label270.caption:=testform1.label217.caption;
-   label271.caption:='Frecuencia resonante | '+testform1.label129.caption;
-     label272.caption:='Voltage | '+testform1.label26.caption;
-    label273.caption:='Amperaje | '+testform1.label25.caption;
-     label274.caption:='Resistencia | '+testform1.label24.caption;
-  label276.caption:='Hidratación | '+testform1.label28.caption;
-      label277.caption:='Oxidación | '+testform1.label27.caption;
-           label278.caption:='Presión protónica | '+testform1.label121.caption;
-
-    label279.caption:=testform1.label215.caption;
-     label281.caption:='Indice ''SOC'' | '+testform1.label22.caption;
-   end;
+label275.caption:=testform1.label214.caption;
+label267.caption:='Reactividad | '+testform1.label126.caption;
+label268.caption:=testform1.label218.caption;
+label269.caption:=testform1.label216.caption;
+label270.caption:=testform1.label217.caption;
+label271.caption:='Frecuencia resonante | '+testform1.label129.caption;
+label272.caption:='Voltage | '+testform1.label26.caption;
+label273.caption:='Amperaje | '+testform1.label25.caption;
+label274.caption:='Resistencia | '+testform1.label24.caption;
+label276.caption:='Hidratación | '+testform1.label28.caption;
+label277.caption:='Oxidación | '+testform1.label27.caption;
+label278.caption:='Presión protónica | '+testform1.label121.caption;
+label279.caption:=testform1.label215.caption;
+label281.caption:='Indice ''SOC'' | '+testform1.label22.caption;
+end;
 end;
 
 procedure TSpinal.Button93Click(Sender: TObject);
@@ -12057,10 +11041,7 @@ Reaccion_Irregular;
 MyChrono.Start;
 GProgreso.Progress := 0;
 button94.enabled:=true;
-PDesarrollo.caption := 'Reparando ítems desequilibrados...';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 60+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -12076,16 +11057,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 
  rec:=35+random(65)+random(1+rec);
  if rec<65 then  rec:=35+random(75);
  if rec<65 then  rec:=35+random(75);
  if rec>100 then  rec:=85+Random(15);
-  PDesarrollo.visible:=false;
- label305.caption:='Rectificado | '+inttostr(rec);
+ LRectificado.caption:='Rectificado | '+inttostr(rec);
  MyChrono.Stop;
-   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button93.Click;
   If (rec<85) and (CBAutomatico.Checked=True) Then Button93.Click;
   If rec>84 Then Button93.Enabled := False;
   if (rec>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
@@ -12137,7 +11116,6 @@ begin
   inc(no); DM.Info.Appendrecord([no,nil,label278.caption]);
     inc(no); DM.Info.Appendrecord([no,nil,label281.caption]);
   inc(no); DM.Info.Appendrecord([no,nil,label279.caption]);
-   inc(no); DM.Info.Appendrecord([no,nil,label305.caption]);
   ShowMessage('El informe ha sido cargado.');
    Dm.Info.FlushBuffers;
 end;
@@ -12147,10 +11125,7 @@ begin
 Reaccion_Irregular;
 MyChrono.Start;
 GProgreso.Progress := 0;
-LRectificado.Caption := 'Rectificado |';
-     PDesarrollo.visible:=true;
-     PDesarrollo.refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 60+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -12167,7 +11142,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
       label284.caption:=inttostr(65+random(27));
             label285.caption:=inttostr(65+random(28));
             label286.caption:=inttostr(65+random(30));
@@ -12221,7 +11196,6 @@ PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
  if rec<65 then  rec:=35+random(75);
  if rec<65 then  rec:=35+random(75);
  if rec>100 then  rec:=85+Random(15);
-  PDesarrollo.visible:=false;  spinal.refresh;
  LRectificado.caption:='Rectificado | '+inttostr(rec);
  MyChrono.Stop;
    If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button99.Click;
@@ -12747,10 +11721,6 @@ begin
 riskchart.xyz:=0;
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
- SCIOworking.button11.caption:='La persona siente';
- SCIOworking.button11.visible:=true;
- SCIOworking.button3.visible:=true;
-showmessage('Gradualmente aumente el voltaje en el panel de controles del sistema hasta que la persona tenga sensibilidad en el cuadrante, entonces pulse el botón ''La persona siente''.');
 repeat
 scioworking.wirequadrant:='R';  { Upper right }
 application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1115,5,1,4,
@@ -12760,10 +11730,10 @@ application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1
  label360.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
 
   showmessage('Cuadrante superior derecho medido.');
-  button106.enabled:=true;
+  
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-  SCIOworking.label9.visible:=false;
+
 end;
 
 procedure TSpinal.Button103Click(Sender: TObject);
@@ -12772,10 +11742,6 @@ riskchart.xyz:=0;
 scioworking.wirequadrant:='Y';
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='La persona siente';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente aumente el voltaje en el panel de controles del sistema hasta que la persona tenga sensibilidad en el cuadrante, entonces pulse el botón ''La persona siente''.');
 repeat
 application.ProcessMessages;
 if riskchart.zyx=0 then ChangingPulses(50000,333,1113,5,1,4,
@@ -12784,10 +11750,10 @@ if riskchart.zyx=0 then ChangingPulses(50000,333,1113,5,1,4,
   until riskchart.xyz=10;
  label361.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
   showmessage('Cuadrante superior izquierdo medido.');
-  button106.enabled:=true;
+  
    scioworking.wirequadrant:='';
    scioworking.radiogroup1.itemindex:=0;
-   SCIOworking.label9.visible:=false;
+ 
 end;
 
 procedure TSpinal.Button104Click(Sender: TObject);
@@ -12796,10 +11762,6 @@ riskchart.xyz:=0;
 scioworking.wirequadrant:='K';
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='La persona siente';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente aumente el voltaje en el panel de controles del sistema hasta que la persona tenga sensibilidad en el cuadrante, entonces pulse el botón ''La persona siente''.') ;
 repeat
 application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1115,5,1,4,
  '00000000','00000010');
@@ -12807,10 +11769,10 @@ application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1
   until riskchart.xyz=10;
  label363.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
   showmessage('Cuadrante inferior derecho medido.');
-  button106.enabled:=true;
+  
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-  SCIOworking.label9.visible:=false;
+
 end;
 
 procedure TSpinal.Button105Click(Sender: TObject);
@@ -12819,10 +11781,6 @@ riskchart.xyz:=0;
 scioworking.wirequadrant:='B';
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='La persona siente';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente aumente el voltaje en el panel de controles del sistema hasta que la persona tenga sensibilidad en el cuadrante, entonces pulse el botón ''La persona siente''.');
 repeat
 application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1155,5,1,4,
  '00000000','00001000');
@@ -12830,10 +11788,10 @@ application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,333,1
   until riskchart.xyz=10;
  label362.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
   showmessage('Cuadrante inferior izquierdo medido.');
-  button106.enabled:=true;
+  
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-  SCIOworking.label9.visible:=false;
+
 end;
 
 Procedure Memocopy(M1,M2 : TMemo);
@@ -12843,46 +11801,6 @@ Begin
   For i:=0 to v do M1.Lines.add(M2.lines[i]);
 End;
 
-procedure TSpinal.Button106Click(Sender: TObject);
-begin
-
-          if  label360.caption = '----' then
-              label360.caption := '0';
-          if  label361.caption = '----' then
-               label361.caption := '0';
-          if  label363.caption = '----' then
-              label363.caption := '0';
-          if  label362.caption = '----' then
-               label362.caption := '0';
-          if  label359.caption = '----' then
-             label359.caption := '0';
-
-
-      memo3.visible:=true;
-      memo3.lines.add('----- INFORME NEUROPATICO DE CUADRANTES PARA: '+testform1.label23.caption+' -----');
-         memo3.lines.add('  ');
-//         memo3.lines.add('Cuadrante de cabeza: '+label312.caption );
-//          memo3.lines.add('Cuadrante superior derecho: '+label308.caption+' | Cuadrante superior izquierdo: '+label309.caption);
-//          memo3.lines.add('Cuadrante inferior derecho: '+label310.caption+' | Cuadrante inferior izquierdo: '+label311.caption);
-          if  strtoint(label360.caption)<10 then memo3.lines.add('Cuadrante superior derecho demasiado sensitivo.');
-          if  strtoint(label361.caption)<10 then memo3.lines.add('Cuadrante superior izquierdo demasiado sensitivo.');
-          if  strtoint(label363.caption)<10 then memo3.lines.add('Cuadrante inferior derecho demasiado sensitivo.');
-          if  strtoint(label362.caption)<10 then memo3.lines.add('Cuadrante inferior izquierso demasiado sensitivo.');
-          if  strtoint(label359.caption)<9 then memo3.lines.add(' Cuadrante de cabeza demasiado sensitivo.');
-               if  strtoint(label360.caption)>35 then memo3.lines.add('Cuadrante superior derecho poco sensitivo.');
-          if  strtoint(label361.caption)>35 then memo3.lines.add('Cuadrante superior izquierdo poco sensitivo.');
-          if  strtoint(label363.caption)>35 then memo3.lines.add('Cuadrante inferior derecho poco sensitivo.');
-          if  strtoint(label362.caption)>35 then memo3.lines.add('Cuadrante inferior izquierdo poco sensitivo.');
-          if  strtoint(label359.caption)>30 then memo3.lines.add('Cuadrante de cabeza poco sensitivo.');
-          memo3.lines.add('  ');
-          button99.enabled:=true;
-end;
-
-procedure TSpinal.Memo3DblClick(Sender: TObject);
-begin
-memo3.visible:=false;
-end;
-
 procedure TSpinal.Button107Click(Sender: TObject);
 begin
 riskchart.xyz:=0;
@@ -12890,10 +11808,6 @@ scioworking.wirequadrant:='';
 scioworking.radiogroup1.itemindex:=0;
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='La persona siente';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente suba el voltaje en el panel de controles del sistema hasta que la persona empiece a sentir cosquilleo en todos los cuadrantes, entonces pulse el botón ''La persona siente''.');
 repeat
 application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,115,1155,5,1,4,
  '11111111','11111111');
@@ -12901,10 +11815,9 @@ application.ProcessMessages;  if riskchart.zyx=0 then ChangingPulses(50000,115,1
   until riskchart.xyz=10;
  label362.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
   showmessage('Sistema total medido.');
-  button106.enabled:=true;
+  
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-SCIOworking.label9.visible:=false;
 end;
 
 procedure TSpinal.Button108Click(Sender: TObject);
@@ -12912,11 +11825,6 @@ begin
 riskchart.xyz:=0;
 SCIOworking.trackbar1.position:=40;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='Detener estimulación de coordinación';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente disminuya el voltaje en el panel de controles del sistema hasta que la persona no sienta nada. Suba el voltaje cada un minuto hasta que la persona sienta en todos los cuadrantes. Pulse ''Detener'' para terminar la terpia.');
-
 repeat
 oeg:=random(2);
 if oeg<2 then begin
@@ -12944,10 +11852,8 @@ if oeg<2 then begin
  end;
   application.ProcessMessages;
   until riskchart.xyz=10;
-
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-SCIOworking.label9.visible:=false;
 end;
 
 procedure TSpinal.Button109Click(Sender: TObject);
@@ -12956,11 +11862,6 @@ riskchart.xyz:=0;
 
 SCIOworking.trackbar1.position:=40;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='Detener estimulación de coordinación';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente disminuya el voltaje en el panel de controles del sistema hasta que la persona no sienta nada. Suba el voltaje cada un minuto hasta que la persona sienta en todos los cuadrantes. Pulse ''Detener'' para terminar la terpia.');
-
 repeat
 oeg:=random(2);
 if oeg<2 then begin
@@ -12988,10 +11889,9 @@ if oeg<2 then begin
   end;
    application.ProcessMessages;
   until riskchart.xyz=10;
-   SCIOworking.label9.visible:=false;
+ 
    scioworking.wirequadrant:='';
    scioworking.radiogroup1.itemindex:=0;
-SCIOworking.label9.visible:=false;
 end;
 
 procedure TSpinal.Button110Click(Sender: TObject);
@@ -13000,10 +11900,6 @@ riskchart.xyz:=0;
 scioworking.wirequadrant:='H';
 SCIOworking.trackbar1.position:=0;
 SCIOworking.radiobutton1.checked:=true;
-SCIOworking.button11.caption:='La persona siente';
-SCIOworking.button11.visible:=true;
-SCIOworking.button3.visible:=true;
-showmessage('Gradualmente aumente el voltaje en el panel de controles del sistema hasta que la persona tenga sensibilidad en el cuadrante, entonces pulse el botón ''La persona siente''.')  ;
 repeat
  application.ProcessMessages;
  if riskchart.zyx=0 then ChangingPulses(50000,333,1115,5,1,4,
@@ -13012,19 +11908,16 @@ repeat
   until riskchart.xyz=10;
  label359.caption:=inttostr(SCIOworking.trackbar1.position+scioworking.nofeel1);
   showmessage('Cuadrante de cabeza medido.');
-  button106.enabled:=true;
+
   scioworking.wirequadrant:='';
   scioworking.radiogroup1.itemindex:=0;
-  SCIOworking.label9.visible:=false;
+
 end;
 
 procedure TSpinal.Button111Click(Sender: TObject);
 begin
 Reaccion_Irregular;
 MyChrono.Start;
-PDesarrollo.caption:='Por favor espere...';
- PDesarrollo.visible:=true;
-PDesarrollo.refresh;  
 GProgreso.progress := 10;
 button58.visible:=true;
  scioworking.wirequadrant:='';
@@ -13152,21 +12045,8 @@ if riskchart.zyx=0 then ChangingPulses(50000,555,11111,5,1,2,
 GProgreso.progress := 100;
 scioworking.wirequadrant:='';
 scioworking.radiogroup1.itemindex:=0;
-SCIOworking.label9.visible:=false;
-PDesarrollo.visible:=false;
-spinal.refresh;
 Fmain.recmain:=Fmain.recmain+1;
 MyChrono.Stop;
-end;
-
-procedure TSpinal.Button113Click(Sender: TObject);
-begin
-memo4.visible:=true;
-end;
-
-procedure TSpinal.Memo4DblClick(Sender: TObject);
-begin
-memo4.visible:=false;
 end;
 
 procedure TSpinal.Edit20Enter(Sender: TObject);
@@ -13205,12 +12085,8 @@ vt1,vt2,vt3,vt4,vt5,vt6,vt7,vt8,vt9,vt10,vt11,vt12,vtiempo : Integer;
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
- begin1:=begin1+random(3);
- end1:=end1+random(3);
- int1:=int1+random(500);
- int2:=int2+random(500);
 If CBAficion.Checked = True Then vt1 := vt1+15
 else vt1 := 0;
 If CBClima.Checked = True Then vt2 := vt2+15
@@ -13239,27 +12115,25 @@ else vt12 := 0;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 Fmain.recmain:=Fmain.recmain+1;
- PDesarrollo.caption:='Realizando reducción general de conflictos...';
- PDesarrollo.visible:=true;
- PDesarrollo.refresh;
 If CBAreas.Checked = True Then TLimpiaMejoraRendimientoAreas.Enabled := True;
 If CBEstimular.Checked = True Then TLimpiaMejoraRendimientoEstimular.Enabled := True;
 If CBPsicologia.Checked = True Then TLimpiaMejoraRendimientoPsicologia.Enabled := True;
 If CBMiscelaneos.Checked = True Then TLimpiaMejoraRendimientoMiscelaneos.Enabled := True;
+If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
  GProgreso.MaxValue := vtiempo;
  GProgreso.Refresh;
  PTiempoEstimado.Caption := 'Tiempo estimado en segs. | '+IntToStr(vtiempo);
 repeat
+ begin1:=begin1+random(3);
+ end1:=end1+random(3);
+ int1:=int1+random(500);
+ int2:=int2+random(500);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
  ChangingPulses(5555,555,55555,5,5,1,'11111111','11111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
-
-ChangingPulses(50000,begin1,end1,int1,int2,vart,'11111111','01111111');
-   GProgreso.progress :=  round(MyChrono.pTEcoule);
-   GProgreso.Refresh;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
-ChangingPulses(50000,begin1,end1,int1,int2,vart,'11111111','11111111');
+ChangingPulses(50000,begin1,end1,int1,int2,vart,'11111111','01111111');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
    ConflictosEmocionales();
@@ -13277,12 +12151,12 @@ rec:= 80+random(30);
 if rec>100 then rec := 85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
 If rec>84 Then Button116.Enabled := False;
-PDesarrollo.Visible := False;
 TLimpiaMejoraRendimientoAreas.Enabled := False;
 TLimpiaMejoraRendimientoEstimular.Enabled := False;
 TLimpiaMejoraRendimientoPsicologia.Enabled := False;
 TLimpiaMejoraRendimientoMiscelaneos.Enabled := False;
-Reaccion_Irregular();
+TAEnfoque.Enabled := False;
+LimpiaAEnfoque();
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
     MyChrono.Stop;
   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button116.Click;
@@ -13293,7 +12167,6 @@ end;
 
 procedure TSpinal.Button117Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando circuitos cerebrales...';
 Adicional();
 If rec>84 Then Button117.Enabled := False;
 end;
@@ -13339,8 +12212,8 @@ procedure TSpinal.Button127Click(Sender: TObject);
 begin
 PMejoraRendimiento.visible:=false;
 Panel8.Visible := True;
-LRectificado.caption:='Rectificado |';
-//BCerrarS.Visible := False;
+LRectificado.caption:='Rectificado | ';
+GBAEnfoque.Visible := True;
 end;
 
 procedure TSpinal.Edit16Click(Sender: TObject);
@@ -13468,32 +12341,9 @@ procedure TSpinal.Button135Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-If Button135.Caption = 'Realizar terapia para hernia' Then
-PDesarrollo.caption:='Realizando terapia para hernia a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para compresión' Then
-PDesarrollo.caption:='Realizando terapia para compresión a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para artrosis' Then
-PDesarrollo.caption:='Realizando terapia para artrosis a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para degeneración' Then
-PDesarrollo.caption:='Realizando terapia para degeneración a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para inflamación' Then
-PDesarrollo.caption:='Realizando terapia para inflamación a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para infección' Then
-PDesarrollo.caption:='Realizando terapia para infección a '+Label448.Caption+' ...'
-else
-If Button135.Caption = 'Realizar terapia para subluxación' Then
-PDesarrollo.caption:='Realizando terapia para subluxación a '+Label448.Caption+' ...';
-PDesarrollo.Refresh;
-
-PDesarrollo.visible:=true;
 GBAEnfoque.Visible := True;
 If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 If Button135.Caption = 'Realizar terapia para subluxación' Then
 vtiempo := 90+Random(30);
@@ -13508,21 +12358,15 @@ repeat
  '11100111','11111000');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
-PDesarrollo.caption:='Realizando terapia de conexión emocional a '+Label448.Caption+' ...';
-PDesarrollo.refresh;
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
      ChangingPulses(5000,(100+dir),1112,dir,1,1+random(5),
  '11100111','11111000');
-PDesarrollo.caption:='Atención específica a tejido sarcode de '+Label448.Caption+' ...';
-PDesarrollo.refresh;
     GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 dir:=random(600);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
      ChangingPulses(5000,(100+dir),1112,dir,1,4+random(10),
  '11100111','11111000');
-  PDesarrollo.caption:='Enfocándose en la conexión emocional a '+Label448.Caption+' ...';
-  PDesarrollo.refresh;
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 dir:=random(600);
@@ -13572,10 +12416,9 @@ PTerapiaVertebra.Visible := False;
 end;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GBAEnfoque.Visible := False;
 TAEnfoque.Enabled := False;
-PDesarrollo.Visible := False;
 Reaccion_Irregular();
     MyChrono.Stop;
   If (rec<85) and (CBTerapiaExtendida.Checked=True) Then Button135.Click;
@@ -14357,7 +13200,7 @@ end;
 procedure TSpinal.Label3Click(Sender: TObject);
 begin
 showmessage('Sitúe la sustancia sobre la bandeja de test y escriba el nombre en el cajetín de edición o escriba el nombre como aparece en la matríz.');
-showmessage('Pulse sobre ''Testar y equilibrar emociones en fase de estabilización'' cuando este listo/a.');
+showmessage('Pulse sobre ''Equilibrar Complejo Neuro-Emocional'' cuando este listo.');
 Edit9.Text:='Introducir substancia: ';
 Edit9.Enabled:=true;
 end;
@@ -15200,7 +14043,6 @@ End;
 procedure TSpinal.BVertebrasClick(Sender: TObject);
 begin
 vert:=vert+1;
-PDesarrollo.visible :=false;
 Fmain.recmain:=Fmain.recmain+1;
 LC1.caption:='Cervical 1 | Rectificada';
 LC2.caption:='Cervical 2 | Rectificada';
@@ -16617,10 +15459,8 @@ if ran <2 then   Gauge1.progress:= random(55); }
       DM.Conscida.IndexName:=index;
       DM.Conscida.first;
       DM.Conscida.last;
-      PDesarrollo.visible:=false;
-
    FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 
 c1.caption:=c1.caption+' | '+LC1.caption;
 c2.caption:=c2.caption+' | '+LC2.caption;
@@ -16855,15 +15695,14 @@ end;
 
 procedure TSpinal.Button14Click(Sender: TObject);
 begin
-PDesarrollo.caption:='Realizando terapia para equilibrar hormonas elegídas...';
 RevisarHormonas();
 end;
 
 procedure TSpinal.RadioButton107Click(Sender: TObject);
 begin
 riskchart.emo:=riskchart.emo+30;
-testform1.Edit11.text:= testform1.Edit11.text+' | Estimular rendimiento.';
-testform1.Edit6.text:= testform1.Edit6.text+' | Rendimiento.';
+TestForm1.ETerapias.Text:= TestForm1.ETerapias.Text+' Estimular rendimiento.';
+TestForm1.EPOrganosAfectados.text:= TestForm1.EPOrganosAfectados.text+' Rendimiento.';
 begin1:=1110+random(3);
 end1:=2222+random(3);
 int1:=1+random(3);
@@ -17073,28 +15912,25 @@ end;
 
 procedure TSpinal.Button21Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando armonía interna...';
 Adicional();
 If rec>84 Then Button21.Enabled := False;
 end;
 
 procedure TSpinal.Button120Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando coordinación...';
 Adicional();
 If rec>84 Then Button120.Enabled := False;
 end;
 
 procedure TSpinal.Button121Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando concentración...';
 Adicional();
 If rec>84 Then Button121.Enabled := False;
 end;
 
 procedure TSpinal.Edit32Change(Sender: TObject);
 begin
-If (Edit32.Text<>'') and (Edit32.Text<>'Introducir otro') Then Begin
+If Edit32.Text<>'' Then Begin
 Button38.Enabled := True;
 CheckBox624.Enabled := True;
 CheckBox624.Checked := True;
@@ -17109,49 +15945,42 @@ end;
 
 procedure TSpinal.Button20Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando deseo de prepararse...';
 Adicional();
 If rec>84 Then Button20.Enabled := False;
 end;
 
 procedure TSpinal.Button119Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando espíritu guerrero...';
 Adicional();
 If rec>84 Then Button119.Enabled := False;
 end;
 
 procedure TSpinal.Button118Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando estabilidad mental...';
 Adicional();
 If rec>84 Then Button118.Enabled := False;
 end;
 
 procedure TSpinal.Button77Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando fuerza de voluntad...';
 Adicional();
 If rec>84 Then Button77.Enabled := False;
 end;
 
 procedure TSpinal.Button62Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando fuerza vital...';
 Adicional();
 If rec>84 Then Button62.Enabled := False;
 end;
 
 procedure TSpinal.Button64Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando positividad...';
 Adicional();
 If rec>84 Then Button64.Enabled := False;
 end;
 
 procedure TSpinal.Button54Click(Sender: TObject);
 begin
-PDesarrollo.Caption := 'Estimulando sudoración...';
 Adicional();
 If rec>84 Then Button54.Enabled := False;
 end;
@@ -17160,9 +15989,7 @@ procedure TSpinal.Adicional();
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -17180,14 +16007,13 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rec := rec+random(120);
 if rec>100 then rec:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec) ;
-PDesarrollo.visible:=false;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(100);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 dir1:=dir1+1;
 MyChrono.Stop;
   If (rec<85) and (CBAutomatico.Checked=True) Then Adicional();
@@ -17707,46 +16533,15 @@ Label453.Caption := 'Calcium sulfuricum';
  Label540.Caption := 'Inflamación en nódulos linfáticos';
  Label573.Caption := 'Reumatismo crónico';
  Label580.Caption := 'Sudoración excesiva';
- Label583.Caption := 'Trastornos de crecimiento';  
-end;
-
-procedure TSpinal.Label37Click(Sender: TObject);
-begin
-Memo5.Visible := True;
+ Label583.Caption := 'Trastornos de crecimiento';
 end;
 
 procedure TSpinal.Button180Click(Sender: TObject);
 begin
 Reaccion_Irregular();
 MyChrono.Start;
-
-{If (CheckBox125.Checked = False) and (CheckBox126.Checked = False) and
-(CheckBox127.Checked = False) and (CheckBox128.Checked = False) and
-(CheckBox403.Checked = False) and (CheckBox404.Checked = False) and
-(CheckBox405.Checked = False) and (CheckBox406.Checked = False) and
-(CheckBox407.Checked = False) and (CheckBox408.Checked = False) and
-(CheckBox409.Checked = False) and (CheckBox410.Checked = False)
-Then Begin
-Randomize;
-oeg := Random(13);
-if oeg < 2 Then CheckBox125.Checked := True;
-if oeg = 2 Then CheckBox126.Checked := True;
-if oeg = 3 Then CheckBox127.Checked := True;
-if oeg = 4 Then CheckBox128.Checked := True;
-if oeg = 5 Then CheckBox403.Checked := True;
-if oeg = 6 Then CheckBox404.Checked := True;
-if oeg = 7 Then CheckBox405.Checked := True;
-if oeg = 8 Then CheckBox406.Checked := True;
-if oeg = 9 Then CheckBox407.Checked := True;
-if oeg = 10 Then CheckBox408.Checked := True;
-if oeg = 11 Then CheckBox409.Checked := True;
-if oeg > 11 Then CheckBox410.Checked := True;
-end;
-}
-LRectificado.Caption := 'Rectificado |';
-
+LRectificado.Caption := 'Rectificado | ';
 If CheckBox331.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Acné facial por metabolismo...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label454.Enabled:=false;
@@ -17755,7 +16550,6 @@ End;
 End;
 
 If CheckBox251.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Agitación...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label455.Enabled:=false;
@@ -17764,7 +16558,6 @@ End;
 End;
 
 If CheckBox249.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Agitación nerviosa...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label456.Enabled:=false;
@@ -17773,7 +16566,6 @@ End;
 End;
 
 If CheckBox278.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Agotamiento emocional...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label457.Enabled:=false;
@@ -17782,7 +16574,6 @@ End;
 End;
 
 If CheckBox306.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Agotamiento físico...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label458.Enabled:=false;
@@ -17791,7 +16582,6 @@ End;
 End;
 
 If CheckBox284.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Agotamiento mental...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label459.Enabled:=false;
@@ -17800,7 +16590,6 @@ End;
 End;
 
 If CheckBox348.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Alteración en funciones hepáticas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label460.Enabled:=false;
@@ -17809,7 +16598,6 @@ End;
 End;
 
 If CheckBox303.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Alteración en crecimiento de piel, cabello y uñas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label461.Enabled:=false;
@@ -17818,7 +16606,6 @@ End;
 End;
 
 If CheckBox312.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Alteración en metabolismo del hierro...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label462.Enabled:=false;
@@ -17827,7 +16614,6 @@ End;
 End;
 
 If CheckBox271.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Alopecia...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label463.Enabled:=false;
@@ -17836,7 +16622,6 @@ End;
 End;
 
 If CheckBox290.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Amigdalitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label464.Enabled:=false;
@@ -17845,7 +16630,6 @@ End;
 End;
 
 If CheckBox263.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Ansiedad...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label465.Enabled:=false;
@@ -17854,7 +16638,6 @@ End;
 End;
 
 If CheckBox334.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Ardor estomacal y acidez...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label466.Enabled:=false;
@@ -17863,7 +16646,6 @@ End;
 End;
 
 If CheckBox204.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Arrugas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label467.Enabled:=false;
@@ -17872,7 +16654,6 @@ End;
 End;
 
 If CheckBox286.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Artritis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label468.Enabled:=false;
@@ -17881,7 +16662,6 @@ End;
 End;
 
 If CheckBox255.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Asma...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label469.Enabled:=false;
@@ -17890,7 +16670,6 @@ End;
 End;
 
 If CheckBox258.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Ataque de tos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label470.Enabled:=false;
@@ -17899,7 +16678,6 @@ End;
 End;
 
 If CheckBox289.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Bronquitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label471.Enabled:=false;
@@ -17908,7 +16686,6 @@ End;
 End;
 
 If CheckBox305.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Bursitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label472.Enabled:=false;
@@ -17917,7 +16694,6 @@ End;
 End;
 
 If CheckBox344.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Caída de vello genial...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label473.Enabled:=false;
@@ -17926,7 +16702,6 @@ End;
 End;
 
 If CheckBox272.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Calambres...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label474.Enabled:=false;
@@ -17935,7 +16710,6 @@ End;
 End;
 
 If CheckBox228.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Callos excesivos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label475.Enabled:=false;
@@ -17944,7 +16718,6 @@ End;
 End;
 
 If CheckBox231.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Cicatrices desfiguradas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label476.Enabled:=false;
@@ -17953,7 +16726,6 @@ End;
 End;
 
 If CheckBox254.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Cólicos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label477.Enabled:=false;
@@ -17962,7 +16734,6 @@ End;
 End;
 
 If CheckBox310.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Congestión nasal...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label478.Enabled:=false;
@@ -17971,7 +16742,6 @@ End;
 End;
 
 If CheckBox309.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Conjuntivitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label479.Enabled:=false;
@@ -17980,7 +16750,6 @@ End;
 End;
 
 If CheckBox283.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Corazón débil...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label480.Enabled:=false;
@@ -17989,7 +16758,6 @@ End;
 End;
 
 If CheckBox301.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Debilidad (después de estrés)...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label481.Enabled:=false;
@@ -17998,7 +16766,6 @@ End;
 End;
 
 If CheckBox202.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Debilidad general...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label482.Enabled:=false;
@@ -18007,7 +16774,6 @@ End;
 End;
 
 If CheckBox227.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dedos de pie en forma de martillo...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label483.Enabled:=false;
@@ -18016,7 +16782,6 @@ End;
 End;
 
 If CheckBox212.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Crecimiento alterado de dentadura...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label484.Enabled:=false;
@@ -18025,7 +16790,6 @@ End;
 End;
 
 If CheckBox277.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dermatitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label485.Enabled:=false;
@@ -18034,7 +16798,6 @@ End;
 End;
 
 If CheckBox269.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Depresión...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label486.Enabled:=false;
@@ -18043,7 +16806,6 @@ End;
 End;
 
 If CheckBox203.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Depresión con llantos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label487.Enabled:=false;
@@ -18052,7 +16814,6 @@ End;
 End;
 
 If CheckBox273.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Desánimo...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label488.Enabled:=false;
@@ -18061,7 +16822,6 @@ End;
 End;
 
 If CheckBox300.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Desequilibrios en hígado...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label489.Enabled:=false;
@@ -18070,7 +16830,6 @@ End;
 End;
 
 If CheckBox323.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Diabetes...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label490.Enabled:=false;
@@ -18079,7 +16838,6 @@ End;
 End;
 
 If CheckBox288.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Diarrea...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label491.Enabled:=false;
@@ -18088,7 +16846,6 @@ End;
 End;
 
 If CheckBox242.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Diarrea acuosa...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label492.Enabled:=false;
@@ -18097,7 +16854,6 @@ End;
 End;
 
 If CheckBox328.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dificultad para digerir grasas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label493.Enabled:=false;
@@ -18106,7 +16862,6 @@ End;
 End;
 
 If CheckBox317.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Discos vertebrales transtornados...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label494.Enabled:=false;
@@ -18115,7 +16870,6 @@ End;
 End;
 
 If CheckBox260.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de cabeza...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label495.Enabled:=false;
@@ -18124,7 +16878,6 @@ End;
 End;
 
 If CheckBox218.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de crecimiento...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label496.Enabled:=false;
@@ -18133,7 +16886,6 @@ End;
 End;
 
 If CheckBox256.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de dientes...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label497.Enabled:=false;
@@ -18142,7 +16894,6 @@ End;
 End;
 
 If CheckBox210.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de muelas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label498.Enabled:=false;
@@ -18151,7 +16902,6 @@ End;
 End;
 
 If CheckBox247.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de riñón...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label499.Enabled:=false;
@@ -18160,7 +16910,6 @@ End;
 End;
 
 If CheckBox246.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de vesícula biliar...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label500.Enabled:=false;
@@ -18169,7 +16918,6 @@ End;
 End;
 
 If CheckBox338.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolores digestivos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label501.Enabled:=false;
@@ -18178,7 +16926,6 @@ End;
 End;
 
 If CheckBox308.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolores musculares...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label502.Enabled:=false;
@@ -18187,7 +16934,6 @@ End;
 End;
 
 If CheckBox248.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolores reumáticos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label503.Enabled:=false;
@@ -18196,7 +16942,6 @@ End;
 End;
 
 If CheckBox295.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor reumático no localizado...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label504.Enabled:=false;
@@ -18205,7 +16950,6 @@ End;
 End;
 
 If CheckBox281.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Eczemas (erupciones cutáneas)...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label505.Enabled:=false;
@@ -18214,7 +16958,6 @@ End;
 End;
 
 If CheckBox205.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Edemas / Hinchazón...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label506.Enabled:=false;
@@ -18223,7 +16966,6 @@ End;
 End;
 
 If CheckBox222.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Elasticidad...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label507.Enabled:=false;
@@ -18232,7 +16974,6 @@ End;
 End;
 
 If CheckBox348.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Enuresis nocturna...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label508.Enabled:=false;
@@ -18241,7 +16982,6 @@ End;
 End;
 
 If CheckBox209.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Erupciones con ampollitas acuosas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label511.Enabled:=false;
@@ -18250,7 +16990,6 @@ End;
 End;
 
 If CheckBox282.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Erupciones con pus...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label512.Enabled:=false;
@@ -18259,7 +16998,6 @@ End;
 End;
 
 If CheckBox234.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Esmalte dental...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label513.Enabled:=false;
@@ -18268,7 +17006,6 @@ End;
 End;
 
 If CheckBox241.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Estreñimiento...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label514.Enabled:=false;
@@ -18277,7 +17014,6 @@ End;
 End;
 
 If CheckBox261.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Espasmos musculares...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label515.Enabled:=false;
@@ -18286,7 +17022,6 @@ End;
 End;
 
 If CheckBox223.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Espolones óseos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label516.Enabled:=false;
@@ -18295,7 +17030,6 @@ End;
 End;
 
 If CheckBox329.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Estreñimiento...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label517.Enabled:=false;
@@ -18304,7 +17038,6 @@ End;
 End;
 
 If CheckBox341.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Eyaculación precoz o tardía...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label518.Enabled:=false;
@@ -18313,7 +17046,6 @@ End;
 End;
 
 If CheckBox274.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Falta de energía...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label519.Enabled:=false;
@@ -18322,7 +17054,6 @@ End;
 End;
 
 If CheckBox313.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Fiebre (cualquiera)...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label520.Enabled:=false;
@@ -18331,7 +17062,6 @@ End;
 End;
 
 If CheckBox318.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Fístulas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label521.Enabled:=false;
@@ -18340,7 +17070,6 @@ End;
 End;
 
 If CheckBox216.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Fractuas óseas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label522.Enabled:=false;
@@ -18349,7 +17078,6 @@ End;
 End;
 
 If CheckBox319.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Furúnculos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label523.Enabled:=false;
@@ -18358,7 +17086,6 @@ End;
 End;
 
 If CheckBox275.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Gastritis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label524.Enabled:=false;
@@ -18367,7 +17094,6 @@ End;
 End;
 
 If CheckBox240.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Gastritis con vómito...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label525.Enabled:=false;
@@ -18376,7 +17102,6 @@ End;
 End;
 
 If CheckBox332.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Gota...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label526.Enabled:=false;
@@ -18385,7 +17110,6 @@ End;
 End;
 
 If CheckBox327.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Heces de color claro...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label527.Enabled:=false;
@@ -18393,8 +17117,7 @@ CheckBox327.Enabled := False;
 End;
 End;
 
- If CheckBox215.Checked = True Then Begin
- PDesarrollo.Caption:='Equilibrando Hemorragias nasales...';
+If CheckBox215.Checked = True Then Begin
 BReaccion.Click;
 if reaction>84 then Begin
 Label528.Enabled:=false;
@@ -18403,7 +17126,6 @@ End;
 End;
 
 If CheckBox206.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hemorroides...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label529.Enabled:=false;
@@ -18412,7 +17134,6 @@ End;
 End;
 
 If CheckBox229.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hendiduras en boca...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label530.Enabled:=false;
@@ -18421,7 +17142,6 @@ End;
 End;
 
 If CheckBox304.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Heridas lentas en curación...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label531.Enabled:=false;
@@ -18430,7 +17150,6 @@ End;
 End;
 
 If CheckBox279.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Herpes Zóster...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label532.Enabled:=false;
@@ -18438,8 +17157,7 @@ CheckBox279.Enabled := False;
 End;
 End;
 
- If CheckBox298.Checked = True Then Begin
- PDesarrollo.Caption:='Equilibrando Hígado intoxicado...';
+If CheckBox298.Checked = True Then Begin
 BReaccion.Click;
 if reaction>84 then Begin
 Label533.Enabled:=false;
@@ -18448,7 +17166,6 @@ End;
 End;
 
 If CheckBox270.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hiperactividad...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label534.Enabled:=false;
@@ -18457,7 +17174,6 @@ End;
 End;
 
 If CheckBox230.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hongos en uñas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label535.Enabled:=false;
@@ -18466,7 +17182,6 @@ End;
 End;
 
 If CheckBox219.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Hormigueo en extremidades...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label536.Enabled:=false;
@@ -18475,7 +17190,6 @@ End;
 End;
 
 If CheckBox343.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Impotencia...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label537.Enabled:=false;
@@ -18484,7 +17198,6 @@ End;
 End;
 
 If CheckBox307.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Infección en vaina de tendón...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label538.Enabled:=false;
@@ -18493,7 +17206,6 @@ End;
 End;
 
 If CheckBox299.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Inflamación mucosa estomacal e intestinal...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label539.Enabled:=false;
@@ -18502,7 +17214,6 @@ End;
 End;
 
 If CheckBox320.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Inflamación en nódulos linfáticos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label540.Enabled:=false;
@@ -18511,7 +17222,6 @@ End;
 End;
 
 If CheckBox291.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Inflamación nasal...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label541.Enabled:=false;
@@ -18520,7 +17230,6 @@ End;
 End;
 
 If CheckBox253.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Insomnio...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label542.Enabled:=false;
@@ -18529,7 +17238,6 @@ End;
 End;
 
 If CheckBox276.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Insomnio (por nervios)...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label543.Enabled:=false;
@@ -18538,7 +17246,6 @@ End;
 End;
 
 If CheckBox238.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Lagrimeo imprevisto en ojos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label544.Enabled:=false;
@@ -18547,7 +17254,6 @@ End;
 End;
 
 If CheckBox294.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Lesiones internas/externas (pequeñas)...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label545.Enabled:=false;
@@ -18556,7 +17262,6 @@ End;
 End;
 
 If CheckBox311.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Mala circulación...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label546.Enabled:=false;
@@ -18565,7 +17270,6 @@ End;
 End;
 
 If CheckBox324.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Melancolía...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label547.Enabled:=false;
@@ -18574,7 +17278,6 @@ End;
 End;
 
 If CheckBox297.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Membrana mucosa inflamada...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label548.Enabled:=false;
@@ -18583,7 +17286,6 @@ End;
 End;
 
 If CheckBox243.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Resequedad en membranas mucosas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label549.Enabled:=false;
@@ -18592,7 +17294,6 @@ End;
 End;
 
 If CheckBox257.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Menstruación dolorosa...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label550.Enabled:=false;
@@ -18601,7 +17302,6 @@ End;
 End;
 
 If CheckBox211.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Dolor de muelas con producción de saliva...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label551.Enabled:=false;
@@ -18610,7 +17310,6 @@ End;
 End;
 
 If CheckBox268.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Músculos débiles...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label552.Enabled:=false;
@@ -18619,7 +17318,6 @@ End;
 End;
 
 If CheckBox221.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Nerviosismo...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label553.Enabled:=false;
@@ -18628,7 +17326,6 @@ End;
 End;
 
 If CheckBox225.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Organismo débil...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label554.Enabled:=false;
@@ -18637,7 +17334,6 @@ End;
 End;
 
 If CheckBox315.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Osteoporosis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label555.Enabled:=false;
@@ -18646,7 +17342,6 @@ End;
 End;
 
 If CheckBox250.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Pánico escénico...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label556.Enabled:=false;
@@ -18655,7 +17350,6 @@ End;
 End;
 
 If CheckBox267.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Parálisis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label557.Enabled:=false;
@@ -18664,7 +17358,6 @@ End;
 End;
 
 If CheckBox201.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Pérdida de fuerza...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label558.Enabled:=false;
@@ -18673,7 +17366,6 @@ End;
 End;
 
 If CheckBox217.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando pH...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label509.Enabled:=false;
@@ -18682,7 +17374,6 @@ End;
 End;
 
 If CheckBox213.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Picores en piel...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label559.Enabled:=false;
@@ -18691,7 +17382,6 @@ End;
 End;
 
 If CheckBox226.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Piel agrietada...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label560.Enabled:=false;
@@ -18700,7 +17390,6 @@ End;
 End;
 
 If CheckBox244.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Piel reseca...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label561.Enabled:=false;
@@ -18709,7 +17398,6 @@ End;
 End;
 
 If CheckBox342.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Problemas de erección...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label562.Enabled:=false;
@@ -18718,7 +17406,6 @@ End;
 End;
 
 If CheckBox292.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Problemas de memoria y concentración...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label563.Enabled:=false;
@@ -18727,7 +17414,6 @@ End;
 End;
 
 If CheckBox333.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Problemas respiratorios...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label564.Enabled:=false;
@@ -18736,7 +17422,6 @@ End;
 End;
 
 If CheckBox214.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Producción ósea lenta...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label565.Enabled:=false;
@@ -18745,7 +17430,6 @@ End;
 End;
 
 If CheckBox264.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Psoriasis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label566.Enabled:=false;
@@ -18754,7 +17438,6 @@ End;
 End;
 
 If CheckBox235.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Pústulas de acné endurecidas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label567.Enabled:=false;
@@ -18763,7 +17446,6 @@ End;
 End;
 
 If CheckBox293.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Quemaduras...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label568.Enabled:=false;
@@ -18772,7 +17454,6 @@ End;
 End;
 
 If CheckBox224.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Rasguños...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label569.Enabled:=false;
@@ -18781,7 +17462,6 @@ End;
 End;
 
 If CheckBox335.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Reflújo ácido...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label570.Enabled:=false;
@@ -18790,7 +17470,6 @@ End;
 End;
 
 If CheckBox325.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Resfriado con mucosidades...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label571.Enabled:=false;
@@ -18799,7 +17478,6 @@ End;
 End;
 
 If CheckBox346.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Reumatismo crónico...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label573.Enabled:=false;
@@ -18808,7 +17486,6 @@ End;
 End;
 
 If CheckBox208.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Rigidez en extremidades...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label575.Enabled:=false;
@@ -18817,7 +17494,6 @@ End;
 End;
 
 If CheckBox296.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Rinitis crónica...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label576.Enabled:=false;
@@ -18826,7 +17502,6 @@ End;
 End;
 
 If CheckBox239.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Secresión nasal abundante...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label577.Enabled:=false;
@@ -18835,7 +17510,6 @@ End;
 End;
 
 If CheckBox287.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Sistema inmunológico débil...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label578.Enabled:=false;
@@ -18844,7 +17518,6 @@ End;
 End;
 
 If CheckBox252.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Sobre excitación...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label579.Enabled:=false;
@@ -18853,7 +17526,6 @@ End;
 End;
 
 If CheckBox349.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Sudoración excesiva...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label580.Enabled:=false;
@@ -18862,7 +17534,6 @@ End;
 End;
 
 If CheckBox362.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Sudoración insuficiente...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label32.Enabled:=false;
@@ -18871,7 +17542,6 @@ End;
 End;
 
 If CheckBox265.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Supuraciones en piel...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label581.Enabled:=false;
@@ -18880,7 +17550,6 @@ End;
 End;
 
 If CheckBox345.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Tendinitis...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label582.Enabled:=false;
@@ -18889,7 +17558,6 @@ End;
 End;
 
 If CheckBox321.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Transtornos de crecimiento...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label583.Enabled:=false;
@@ -18898,7 +17566,6 @@ End;
 End;
 
 If CheckBox337.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Transtornos digestivos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label584.Enabled:=false;
@@ -18907,7 +17574,6 @@ End;
 End;
 
 If CheckBox280.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Tos...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label585.Enabled:=false;
@@ -18916,7 +17582,6 @@ End;
 End;
 
 If CheckBox207.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Várices...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label586.Enabled:=false;
@@ -18925,7 +17590,6 @@ End;
 End;
 
 If CheckBox233.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Verrugas duras...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label587.Enabled:=false;
@@ -18934,7 +17598,6 @@ End;
 End;
 
 If CheckBox336.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Vómitos con sabor ácido...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label588.Enabled:=false;
@@ -18943,18 +17606,13 @@ End;
 End;
 
 If CheckBox232.Checked = True Then Begin
-PDesarrollo.Caption:='Equilibrando Crecimiento irregular de uñas...';
 BReaccion.Click;
 if reaction>84 then Begin
 Label589.Enabled:=false;
 CheckBox232.Enabled := False;
 End;
 End;
-
-PDesarrollo.Visible := False;
 GProgreso.Progress := 0;
-
-
 oeg:=random(41);
 if oeg<2 then LConexion.Caption := 'Conexión general a: Inflamación.';
 if oeg=2 then LConexion.Caption := 'Conexión general a: Cáncer.';
@@ -18987,7 +17645,7 @@ if oeg=28 then LConexion.Caption := 'Conexión general a: Fungosidades.';
 if oeg=29 then LConexion.Caption := 'Conexión general a: Virus.';
 if oeg=30 then LConexion.Caption := 'Conexión general a: Parásitos.';
 if oeg=31 then LConexion.Caption := 'Conexión general a: Ameba.';
-if oeg=32 then LConexion.Caption := 'Conexión general a: Envenenamiento alimentario.';
+if oeg=32 then LConexion.Caption := 'Conexión general a: Intolerancia alimentaria.';
 if oeg=33 then LConexion.Caption := 'Conexión general a: Regulación del azúcar.';
 if oeg=34 then LConexion.Caption := 'Conexión general a: Sistema neurológico.';
 if oeg=35 then LConexion.Caption := 'Conexión general a: Sistema sensorial.';
@@ -18998,10 +17656,6 @@ if oeg=39 then LConexion.Caption := 'Conexión general a: Hidratación.';
 if oeg>39 then LConexion.Caption := 'Conexión general a: Cognicción.';
 LConexion.Refresh;
 MyChrono.Stop;
-//  If (reaction<85) and (CBTerapiaExtendida.Checked=True) Then Button180.Click;
-//  If (reaction<85) and (CBAutomatico.Checked=True) Then Button180.Click;
-//  If reaction>84 Then Button180.Enabled := False;
-//  if (reaction>84) and (CBTerapiaExtendida.checked=true) then TerapiaExtendida();
 end;
 
 procedure TSpinal.BReaccionClick(Sender: TObject);
@@ -19009,8 +17663,6 @@ begin
 GProgreso.Progress := 0;
 LRectificado.caption:='Rectificado | ';
 Fmain.recmain:=Fmain.recmain+1;
-PDesarrollo.Visible := True;
-PDesarrollo.Refresh;
 vtiempo := 20+Random(10);
 //If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 GProgreso.MaxValue := vtiempo;
@@ -19027,14 +17679,11 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 rec:= 80+random(25);
 if rec>100 then reaction:=85+Random(15);
 LRectificado.caption:='Rectificado | '+inttostr(rec);
 LRectificado.Refresh;
-PDesarrollo.Visible := False;
-//If (rec<85) and (CBAutomatico.Checked=True) Then BReaccion.Click;
-//If (rec>84) and (CBTerapiaExtendida.Checked=True) Then TerapiaExtendida();
 end;
 
 procedure TSpinal.Mensaje();
@@ -19076,17 +17725,14 @@ End;
 
 procedure TSpinal.BMRendimientoClick(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 PMejoraRendimiento.visible:=true;
 BCerrarS.Visible := True;
 end;
 
 procedure TSpinal.Label35Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
-PDesarrollo.caption:='Repitiendo búsqueda súperconciente...';
- PDesarrollo.visible:=true;
- PDesarrollo.refresh;
+LRectificado.caption:='Rectificado | ';
  ChangingPulses(50000,111,1111,33,3+random(10),2+random(4),
  '11111111','11111111');
  lab33:= 30+random(63);
@@ -19141,7 +17787,6 @@ PDesarrollo.caption:='Repitiendo búsqueda súperconciente...';
   Comp:=FindComponent(ComponentName);
   (Comp as Tcheckbox).Checked:=True; (Comp as Tcheckbox).Color:=clred;
  end;
-    PDesarrollo.visible:=false;
   lab33:= 79+random(6);
  if lab33<83 then begin ComponentName:='checkbox'+IntToStr(lab33);
   Comp:=FindComponent(ComponentName);
@@ -19186,9 +17831,8 @@ end;
 
 procedure TSpinal.Panel25Click(Sender: TObject);
 begin
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 PMejoraRendimiento.visible :=false;
-BCerrarS.Visible := False;
 panel8.visible :=false;
 oeg:=random(6);
 end;
@@ -19206,7 +17850,7 @@ end;
 procedure TSpinal.Panel22Click(Sender: TObject);
 begin
 panel10.visible:=false;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 edit19.text:='Introducir ítem a buscar en matriz: ';
 label178.caption:='---';
@@ -19216,11 +17860,6 @@ end;
 procedure TSpinal.Panel28Click(Sender: TObject);
 begin
 P_Filtros.Visible := False;
-end;
-
-procedure TSpinal.ProgressBars();
-begin
-//
 end;
 
 procedure TSpinal.ActualizaDBGrids();
@@ -19250,11 +17889,6 @@ begin
   DBGrid4.columns[3].visible := false;
   DBGrid4.refresh;
   end;
-
-procedure TSpinal.Memo2Click(Sender: TObject);
-begin
-memo2.visible:=false;
-end;
 
 procedure TSpinal.BTerapiaEAFClick(Sender: TObject);
 begin
@@ -19779,7 +18413,7 @@ and (CheckBox19.Checked = False) and (CheckBox104.Checked = False) and (CheckBox
 and (CheckBox87.Checked = False) and (CheckBox111.Checked = False) and (CheckBox88.Checked = False)
 and (CheckBox10.Checked = False) and (CheckBox98.Checked = False) and (CheckBox3.Checked = False)
 and (CheckBox2.Checked = False) and (CheckBox97.Checked = False) and (CheckBox1.Checked = False)
-and (CheckBox20.Checked = False)
+and (CheckBox20.Checked = False) and (CheckBox125.Checked = False)
 and (CheckBox107.Checked = False) and (CheckBox360.Checked = False)
 and (CheckBox358.Checked = False) and (CheckBox359.Checked = False) and (CheckBox347.Checked = False)
 and (CheckBox361.Checked = False) Then Begin
@@ -19788,11 +18422,7 @@ exit;
 End;
 Reaccion_Irregular();
 MyChrono.Start;
-GProgreso.Progress := 0;
-LRectificado.Caption := 'Rectificado |';
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -19810,12 +18440,11 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 dir1:=dir1+1;
-PDesarrollo.visible :=false;
 rec1:=rec1+19;
 rec:= 10+rec1+random(57+rec1+vart);
 if rec>100 then Rec := 85+Random(15);
@@ -19863,11 +18492,6 @@ LEscenario.Refresh;
 LFamilia.Refresh;
 LPareja.Refresh;
 LGeneral.Refresh;
-end;
-
-procedure TSpinal.Memo5Click(Sender: TObject);
-begin
-Memo5.Visible := False;
 end;
 
 procedure TSpinal.Label454Click(Sender: TObject);
@@ -20546,8 +19170,6 @@ Reaccion_Irregular();
 MyChrono.Start;
 GProgreso.Progress := 0;
 LRectificado.Caption := 'Rectificado | ';
-PDesarrollo.Caption := 'Realizando terapia general automática...';
-PDesarrollo.Visible := True;
  vtiempo := 150 + random(30);
  If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
  TSales.Enabled := True;
@@ -20571,7 +19193,6 @@ GProgreso.Refresh;
 TSales.Enabled := False;
 rec := 80+Random(20);
 LRectificado.Caption := 'Rectificado | '+Inttostr(rec);
-PDesarrollo.Visible := False;
 Limpieza();
 MyChrono.Stop;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
@@ -20975,12 +19596,8 @@ begin
 alarm := Random(100);
 if alarm < 2 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hipoactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -20995,21 +19612,14 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end ;
 
 if alarm > 98 then Begin
 GProgreso.Progress := 0;
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clYellow;
 MyChrono.Start;
-PDesarrollo.Visible := True;
-PDesarrollo.Caption := 'Corrigiendo reacción irregular de hiperactividad...';
-PDesarrollo.Refresh;
-LRectificado.Caption := 'Rectificado |';
+LRectificado.Caption := 'Rectificado | ';
 vtiempo := 5;
 GProgreso.MaxValue := vtiempo;
 GProgreso.Refresh;
@@ -21024,9 +19634,7 @@ until
 MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
-PTiempoEstimado.Caption := 'Tiempo estimado en segs. |';
-PDesarrollo.Visible := False;
-PDesarrollo.Color := clLime;
+PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
 MyChrono.Stop;
 end;
 end;
@@ -21034,7 +19642,6 @@ end;
 procedure TSpinal.Button187Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura o luxación...';
 BMaestro.Click;
 If rec>84 Then Button187.Enabled := False;
 end;
@@ -21142,7 +19749,6 @@ end;
 procedure TSpinal.Button185Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Miohiperplasia hemifasial...';
 BMaestro.Click;
 If rec>84 Then Button185.Enabled := False;
 end;
@@ -21150,7 +19756,6 @@ end;
 procedure TSpinal.Button183Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Parálisis del nervio facial...';
 BMaestro.Click;
 If rec>84 Then Button183.Enabled := False;
 end;
@@ -21158,7 +19763,6 @@ end;
 procedure TSpinal.Button182Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Parálisis facial...';
 BMaestro.Click;
 If rec>84 Then Button182.Enabled := False;
 end;
@@ -21166,7 +19770,6 @@ end;
 procedure TSpinal.Button178Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cefaleas sinusales...';
 BMaestro.Click;
 If rec>84 Then Button178.Enabled := False;
 end;
@@ -21174,7 +19777,6 @@ end;
 procedure TSpinal.Button176Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Rinitis alergica...';
 BMaestro.Click;
 If rec>84 Then Button176.Enabled := False;
 end;
@@ -21182,7 +19784,6 @@ end;
 procedure TSpinal.Button186Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Forúnculos...';
 BMaestro.Click;
 If rec>84 Then Button186.Enabled := False;
 end;
@@ -21190,7 +19791,6 @@ end;
 procedure TSpinal.Button184Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Absceso dental...';
 BMaestro.Click;
 If rec>84 Then Button184.Enabled := False;
 end;
@@ -21198,7 +19798,6 @@ end;
 procedure TSpinal.Button181Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Herpes zóster...';
 BMaestro.Click;
 If rec>84 Then Button181.Enabled := False;
 end;
@@ -21206,7 +19805,6 @@ end;
 procedure TSpinal.Button179Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Migraña...';
 BMaestro.Click;
 If rec>84 Then Button179.Enabled := False;
 end;
@@ -21214,7 +19812,6 @@ end;
 procedure TSpinal.Button177Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibromialgia...';
 BMaestro.Click;
 If rec>84 Then Button177.Enabled := False;
 end;
@@ -21222,7 +19819,6 @@ end;
 procedure TSpinal.Button175Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ECara.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button175.Enabled := False;
 end;
@@ -21361,7 +19957,6 @@ end;
 procedure TSpinal.Button205Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cefaleas tensionales...';
 BMaestro.Click;
 If rec>84 Then Button205.Enabled := False;
 end;
@@ -21369,7 +19964,6 @@ end;
 procedure TSpinal.Button204Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Jaquecas...';
 BMaestro.Click;
 If rec>84 Then Button204.Enabled := False;
 end;
@@ -21377,7 +19971,6 @@ end;
 procedure TSpinal.Button203Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dolores de cabeza ''De rebote''...';
 BMaestro.Click;
 If rec>84 Then Button203.Enabled := False;
 end;
@@ -21385,7 +19978,6 @@ end;
 procedure TSpinal.Button202Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cefaleas en brotes...';
 BMaestro.Click;
 If rec>84 Then Button202.Enabled := False;
 end;
@@ -21393,7 +19985,6 @@ end;
 procedure TSpinal.Button201Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cefaleas sinusales...';
 BMaestro.Click;
 If rec>84 Then Button201.Enabled := False;
 end;
@@ -21401,7 +19992,6 @@ end;
 procedure TSpinal.Button200Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gripe, fiebre o SPM...';
 BMaestro.Click;
 If rec>84 Then Button200.Enabled := False;
 end;
@@ -21409,7 +19999,6 @@ end;
 procedure TSpinal.Button211Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Arteritis temporal...';
 BMaestro.Click;
 If rec>84 Then Button211.Enabled := False;
 end;
@@ -21417,7 +20006,6 @@ end;
 procedure TSpinal.Button210Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Altitud...';
 BMaestro.Click;
 If rec>84 Then Button210.Enabled := False;
 end;
@@ -21425,7 +20013,6 @@ end;
 procedure TSpinal.Button209Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Esfuerzo...';
 BMaestro.Click;
 If rec>84 Then Button209.Enabled := False;
 end;
@@ -21433,7 +20020,6 @@ end;
 procedure TSpinal.Button208Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Post-Trauma...';
 BMaestro.Click;
 If rec>84 Then Button208.Enabled := False;
 end;
@@ -21441,7 +20027,6 @@ end;
 procedure TSpinal.Button207Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hipertensión...';
 BMaestro.Click;
 If rec>84 Then Button207.Enabled := False;
 end;
@@ -21449,7 +20034,6 @@ end;
 procedure TSpinal.Button220Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Unión Temporomandibular...';
 BMaestro.Click;
 If rec>84 Then Button220.Enabled := False;
 end;
@@ -21457,7 +20041,6 @@ end;
 procedure TSpinal.Button214Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Migrañas...';
 BMaestro.Click;
 If rec>84 Then Button214.Enabled := False;
 end;
@@ -21465,7 +20048,6 @@ end;
 procedure TSpinal.Button213Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tensión crónica...';
 BMaestro.Click;
 If rec>84 Then Button213.Enabled := False;
 end;
@@ -21473,7 +20055,6 @@ end;
 procedure TSpinal.Button212Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Abstinencia...';
 BMaestro.Click;
 If rec>84 Then Button212.Enabled := False;
 end;
@@ -21481,7 +20062,6 @@ end;
 procedure TSpinal.Button169Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Alergias...';
 BMaestro.Click;
 If rec>84 Then Button169.Enabled := False;
 end;
@@ -21489,7 +20069,6 @@ end;
 procedure TSpinal.Button98Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza Episódicos...';
 BMaestro.Click;
 If rec>84 Then Button98.Enabled := False;
 end;
@@ -21497,7 +20076,6 @@ end;
 procedure TSpinal.Button219Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Fatiga...';
 BMaestro.Click;
 If rec>84 Then Button219.Enabled := False;
 end;
@@ -21505,7 +20083,6 @@ end;
 procedure TSpinal.Button218Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Meningitis...';
 BMaestro.Click;
 If rec>84 Then Button218.Enabled := False;
 end;
@@ -21513,7 +20090,6 @@ end;
 procedure TSpinal.Button217Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Tumores cerebrales...';
 BMaestro.Click;
 If rec>84 Then Button217.Enabled := False;
 end;
@@ -21521,7 +20097,6 @@ end;
 procedure TSpinal.Button216Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Infecciones varias...';
 BMaestro.Click;
 If rec>84 Then Button216.Enabled := False;
 end;
@@ -21529,7 +20104,6 @@ end;
 procedure TSpinal.Button215Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Sinusitis...';
 BMaestro.Click;
 If rec>84 Then Button215.Enabled := False;
 end;
@@ -21537,7 +20111,6 @@ end;
 procedure TSpinal.Button221Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a dolores de cabeza por Convulsiones...';
 BMaestro.Click;
 If rec>84 Then Button221.Enabled := False;
 end;
@@ -21545,7 +20118,6 @@ end;
 procedure TSpinal.Button193Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Calambre muscular...';
 BMaestro.Click;
 If rec>84 Then Button193.Enabled := False;
 end;
@@ -21560,7 +20132,6 @@ end;
 procedure TSpinal.Button192Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contractura cérvico-dorsal...';
 BMaestro.Click;
 If rec>84 Then Button192.Enabled := False;
 end;
@@ -21568,7 +20139,6 @@ end;
 procedure TSpinal.Button189Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome cervical por tensión...';
 BMaestro.Click;
 If rec>84 Then Button189.Enabled := False;
 end;
@@ -21576,7 +20146,6 @@ end;
 procedure TSpinal.Button231Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Latigazo cervical...';
 BMaestro.Click;
 If rec>84 Then Button231.Enabled := False;
 end;
@@ -21584,7 +20153,6 @@ end;
 procedure TSpinal.Button230Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Discos y articulaciones...';
 BMaestro.Click;
 If rec>84 Then Button230.Enabled := False;
 end;
@@ -21592,7 +20160,6 @@ end;
 procedure TSpinal.Button229Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis inflamatoria...';
 BMaestro.Click;
 If rec>84 Then Button229.Enabled := False;
 end;
@@ -21600,7 +20167,6 @@ end;
 procedure TSpinal.Button234Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis reumatoide...';
 BMaestro.Click;
 If rec>84 Then Button234.Enabled := False;
 end;
@@ -21608,7 +20174,6 @@ end;
 procedure TSpinal.Button233Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Espondilitis anquilosante...';
 BMaestro.Click;
 If rec>84 Then Button233.Enabled := False;
 end;
@@ -21616,7 +20181,6 @@ end;
 procedure TSpinal.Button232Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Poliartritis juvenil...';
 BMaestro.Click;
 If rec>84 Then Button232.Enabled := False;
 end;
@@ -21624,7 +20188,6 @@ end;
 procedure TSpinal.Button442Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Forúnculos...';
 BMaestro.Click;
 If rec>84 Then Button442.Enabled := False;
 end;
@@ -21639,7 +20202,6 @@ end;
 procedure TSpinal.Button385Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis...';
 BMaestro.Click;
 If rec>84 Then Button385.Enabled := False;
 end;
@@ -21647,7 +20209,6 @@ end;
 procedure TSpinal.Button384Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Manguito de los rotadores supraespinoso...';
 BMaestro.Click;
 If rec>84 Then Button384.Enabled := False;
 end;
@@ -21655,7 +20216,6 @@ end;
 procedure TSpinal.Button383Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis aguda...';
 BMaestro.Click;
 If rec>84 Then Button383.Enabled := False;
 end;
@@ -21663,7 +20223,6 @@ end;
 procedure TSpinal.Button382Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis crónica del manguito de los rotadores...';
 BMaestro.Click;
 If rec>84 Then Button382.Enabled := False;
 end;
@@ -21671,7 +20230,6 @@ end;
 procedure TSpinal.Button381Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contusión muscular...';
 BMaestro.Click;
 If rec>84 Then Button381.Enabled := False;
 end;
@@ -21679,7 +20237,6 @@ end;
 procedure TSpinal.Button380Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis crónica...';
 BMaestro.Click;
 If rec>84 Then Button380.Enabled := False;
 end;
@@ -21687,7 +20244,6 @@ end;
 procedure TSpinal.Button391Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Desgarro de tendones...';
 BMaestro.Click;
 If rec>84 Then Button391.Enabled := False;
 end;
@@ -21695,7 +20251,6 @@ end;
 procedure TSpinal.Button390Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Osteoartritis...';
 BMaestro.Click;
 If rec>84 Then Button390.Enabled := False;
 end;
@@ -21703,7 +20258,6 @@ end;
 procedure TSpinal.Button389Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inestabilidad...';
 BMaestro.Click;
 If rec>84 Then Button389.Enabled := False;
 end;
@@ -21711,7 +20265,6 @@ end;
 procedure TSpinal.Button388Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Compresión...';
 BMaestro.Click;
 If rec>84 Then Button388.Enabled := False;
 end;
@@ -21719,7 +20272,6 @@ end;
 procedure TSpinal.Button387Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura de clavícula...';
 BMaestro.Click;
 If rec>84 Then Button387.Enabled := False;
 end;
@@ -21734,7 +20286,6 @@ end;
 procedure TSpinal.Button338Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EEspalda.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button338.Enabled := False;
 end;
@@ -21742,7 +20293,6 @@ end;
 procedure TSpinal.Button386Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Edit50.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button386.Enabled := False;
 end;
@@ -21750,7 +20300,6 @@ end;
 procedure TSpinal.Button507Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artrosis de la columna...';
 BMaestro.Click;
 If rec>84 Then Button507.Enabled := False;
 end;
@@ -21758,7 +20307,6 @@ end;
 procedure TSpinal.Button335Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis isquioglútea...';
 BMaestro.Click;
 If rec>84 Then Button335.Enabled := False;
 end;
@@ -21766,7 +20314,6 @@ end;
 procedure TSpinal.Button336Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Calambre muscular...';
 BMaestro.Click;
 If rec>84 Then Button336.Enabled := False;
 end;
@@ -21774,7 +20321,6 @@ end;
 procedure TSpinal.Button337Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contractura lumbar (lumbalgia)...';
 BMaestro.Click;
 If rec>84 Then Button337.Enabled := False;
 end;
@@ -21782,7 +20328,6 @@ end;
 procedure TSpinal.Button504Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Entesitis...';
 BMaestro.Click;
 If rec>84 Then Button504.Enabled := False;
 end;
@@ -21790,7 +20335,6 @@ end;
 procedure TSpinal.Button341Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Paget u Ostitis deforme...';
 BMaestro.Click;
 If rec>84 Then Button341.Enabled := False;
 end;
@@ -21798,7 +20342,6 @@ end;
 procedure TSpinal.Button343Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguinces o Distensiones...';
 BMaestro.Click;
 If rec>84 Then Button343.Enabled := False;
 end;
@@ -21806,7 +20349,6 @@ end;
 procedure TSpinal.Button333Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hernia de discos...';
 BMaestro.Click;
 If rec>84 Then Button333.Enabled := False;
 end;
@@ -21814,7 +20356,6 @@ end;
 procedure TSpinal.Button340Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Sacroileítis...';
 BMaestro.Click;
 If rec>84 Then Button340.Enabled := False;
 end;
@@ -21822,7 +20363,6 @@ end;
 procedure TSpinal.Button334Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome cervical por tensión...';
 BMaestro.Click;
 If rec>84 Then Button334.Enabled := False;
 end;
@@ -21830,7 +20370,6 @@ end;
 procedure TSpinal.Button506Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de dolor miofascial...';
 BMaestro.Click;
 If rec>84 Then Button506.Enabled := False;
 end;
@@ -21838,7 +20377,6 @@ end;
 procedure TSpinal.Button332Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Torceduras...';
 BMaestro.Click;
 If rec>84 Then Button332.Enabled := False;
 end;
@@ -21846,7 +20384,6 @@ end;
 procedure TSpinal.Button505Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pinzamiento vertebral o de columna...';
 BMaestro.Click;
 If rec>84 Then Button505.Enabled := False;
 end;
@@ -21854,7 +20391,6 @@ end;
 procedure TSpinal.Button339Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Vertebras fracturadas...';
 BMaestro.Click;
 If rec>84 Then Button339.Enabled := False;
 end;
@@ -21862,7 +20398,6 @@ end;
 procedure TSpinal.Button342Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contusión miocardíaca...';
 BMaestro.Click;
 If rec>84 Then Button342.Enabled := False;
 end;
@@ -21870,7 +20405,6 @@ end;
 procedure TSpinal.Button516Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contusión muscular...';
 BMaestro.Click;
 If rec>84 Then Button516.Enabled := False;
 end;
@@ -21878,7 +20412,6 @@ end;
 procedure TSpinal.Button521Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Contusiones o hematomas en pared torácica...';
 BMaestro.Click;
 If rec>84 Then Button521.Enabled := False;
 end;
@@ -21886,7 +20419,6 @@ end;
 procedure TSpinal.Button509Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Desgarros traqueobronquiales...';
 BMaestro.Click;
 If rec>84 Then Button509.Enabled := False;
 end;
@@ -21894,7 +20426,6 @@ end;
 procedure TSpinal.Button510Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura de costillas...';
 BMaestro.Click;
 If rec>84 Then Button510.Enabled := False;
 end;
@@ -21902,7 +20433,6 @@ end;
 procedure TSpinal.Button518Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura de la clavícula...';
 BMaestro.Click;
 If rec>84 Then Button518.Enabled := False;
 end;
@@ -21910,7 +20440,6 @@ end;
 procedure TSpinal.Button512Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fracturas esternales...';
 BMaestro.Click;
 If rec>84 Then Button512.Enabled := False;
 end;
@@ -21918,7 +20447,6 @@ end;
 procedure TSpinal.Button515Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hemoneumotórax...';
 BMaestro.Click;
 If rec>84 Then Button515.Enabled := False;
 end;
@@ -21926,7 +20454,6 @@ end;
 procedure TSpinal.Button517Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Laceración pulmonar...';
 BMaestro.Click;
 If rec>84 Then Button517.Enabled := False;
 end;
@@ -21934,7 +20461,6 @@ end;
 procedure TSpinal.Button522Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lesiones del diafragma...';
 BMaestro.Click;
 If rec>84 Then Button522.Enabled := False;
 end;
@@ -21942,7 +20468,6 @@ end;
 procedure TSpinal.Button514Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lesiones esofágicas...';
 BMaestro.Click;
 If rec>84 Then Button514.Enabled := False;
 end;
@@ -21950,7 +20475,6 @@ end;
 procedure TSpinal.Button508Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Neumotórax...';
 BMaestro.Click;
 If rec>84 Then Button508.Enabled := False;
 end;
@@ -21958,7 +20482,6 @@ end;
 procedure TSpinal.Button519Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Rotura traumática de la aorta...';
 BMaestro.Click;
 If rec>84 Then Button519.Enabled := False;
 end;
@@ -21966,7 +20489,6 @@ end;
 procedure TSpinal.Button520Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Taponamiento cardíaco...';
 BMaestro.Click;
 If rec>84 Then Button520.Enabled := False;
 end;
@@ -21974,7 +20496,6 @@ end;
 procedure TSpinal.Button511Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tórax inestable...';
 BMaestro.Click;
 If rec>84 Then Button511.Enabled := False;
 end;
@@ -21982,7 +20503,6 @@ end;
 procedure TSpinal.Button462Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tumores de las células Leydig...';
 BMaestro.Click;
 If rec>84 Then Button462.Enabled := False;
 end;
@@ -21990,7 +20510,6 @@ end;
 procedure TSpinal.Button475Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Adenomas protáticos...';
 BMaestro.Click;
 If rec>84 Then Button475.Enabled := False;
 end;
@@ -21998,7 +20517,6 @@ end;
 procedure TSpinal.Button466Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alteraciones anatómicas...';
 BMaestro.Click;
 If rec>84 Then Button466.Enabled := False;
 end;
@@ -22006,7 +20524,6 @@ end;
 procedure TSpinal.Button455Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alteraciones hormonales...';
 BMaestro.Click;
 If rec>84 Then Button455.Enabled := False;
 end;
@@ -22014,7 +20531,6 @@ end;
 procedure TSpinal.Button464Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ansiedad...';
 BMaestro.Click;
 If rec>84 Then Button464.Enabled := False;
 end;
@@ -22022,7 +20538,6 @@ end;
 procedure TSpinal.Button457Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inflamación de los intestinos...';
 BMaestro.Click;
 If rec>84 Then Button457.Enabled := False;
 end;
@@ -22030,7 +20545,6 @@ end;
 procedure TSpinal.Button463Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cálculos renales...';
 BMaestro.Click;
 If rec>84 Then Button463.Enabled := False;
 end;
@@ -22038,7 +20552,6 @@ end;
 procedure TSpinal.Button465Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Causas vinculantes...';
 BMaestro.Click;
 If rec>84 Then Button465.Enabled := False;
 end;
@@ -22046,7 +20559,6 @@ end;
 procedure TSpinal.Button476Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dispareunia...';
 BMaestro.Click;
 If rec>84 Then Button476.Enabled := False;
 end;
@@ -22054,7 +20566,6 @@ end;
 procedure TSpinal.Button472Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distensión muscular...';
 BMaestro.Click;
 If rec>84 Then Button472.Enabled := False;
 end;
@@ -22062,7 +20573,6 @@ end;
 procedure TSpinal.Button459Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epidimitis...';
 BMaestro.Click;
 If rec>84 Then Button459.Enabled := False;
 end;
@@ -22070,7 +20580,6 @@ end;
 procedure TSpinal.Button458Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hernia...';
 BMaestro.Click;
 If rec>84 Then Button458.Enabled := False;
 end;
@@ -22078,7 +20587,6 @@ end;
 procedure TSpinal.Button467Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hinchazón del escroto...';
 BMaestro.Click;
 If rec>84 Then Button467.Enabled := False;
 end;
@@ -22086,7 +20594,6 @@ end;
 procedure TSpinal.Button470Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infección cutánea...';
 BMaestro.Click;
 If rec>84 Then Button470.Enabled := False;
 end;
@@ -22094,7 +20601,6 @@ end;
 procedure TSpinal.Button468Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infección urinaria...';
 BMaestro.Click;
 If rec>84 Then Button468.Enabled := False;
 end;
@@ -22102,7 +20608,6 @@ end;
 procedure TSpinal.Button473Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infección por agresiones a la piel...';
 BMaestro.Click;
 If rec>84 Then Button473.Enabled := False;
 end;
@@ -22110,7 +20615,6 @@ end;
 procedure TSpinal.Button474Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infecciones por parásitos...';
 BMaestro.Click;
 If rec>84 Then Button474.Enabled := False;
 end;
@@ -22118,7 +20622,6 @@ end;
 procedure TSpinal.Button477Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infecciones por transmisión sexual...';
 BMaestro.Click;
 If rec>84 Then Button477.Enabled := False;
 end;
@@ -22126,7 +20629,6 @@ end;
 procedure TSpinal.Button460Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inflamación de ganglios linfáticos...';
 BMaestro.Click;
 If rec>84 Then Button460.Enabled := False;
 end;
@@ -22134,7 +20636,6 @@ end;
 procedure TSpinal.Button471Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Orquitis...';
 BMaestro.Click;
 If rec>84 Then Button471.Enabled := False;
 end;
@@ -22142,7 +20643,6 @@ end;
 procedure TSpinal.Button456Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Procesos...';
 BMaestro.Click;
 If rec>84 Then Button456.Enabled := False;
 end;
@@ -22150,7 +20650,6 @@ end;
 procedure TSpinal.Button469Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Torsión testicular...';
 BMaestro.Click;
 If rec>84 Then Button469.Enabled := False;
 end;
@@ -22170,7 +20669,6 @@ end;
 procedure TSpinal.Button454Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alteraciones anatómicas...';
 BMaestro.Click;
 If rec>84 Then Button454.Enabled := False;
 end;
@@ -22178,7 +20676,6 @@ end;
 procedure TSpinal.Button443Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alteraciones hormonales...';
 BMaestro.Click;
 If rec>84 Then Button443.Enabled := False;
 end;
@@ -22186,7 +20683,6 @@ end;
 procedure TSpinal.Button452Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ansiedad...';
 BMaestro.Click;
 If rec>84 Then Button452.Enabled := False;
 end;
@@ -22194,7 +20690,6 @@ end;
 procedure TSpinal.Button446Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Candidiasis...';
 BMaestro.Click;
 If rec>84 Then Button446.Enabled := False;
 end;
@@ -22202,7 +20697,6 @@ end;
 procedure TSpinal.Button453Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Causas vinculares...';
 BMaestro.Click;
 If rec>84 Then Button453.Enabled := False;
 end;
@@ -22210,7 +20704,6 @@ end;
 procedure TSpinal.Button479Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Clamidias...';
 BMaestro.Click;
 If rec>84 Then Button479.Enabled := False;
 end;
@@ -22218,7 +20711,6 @@ end;
 procedure TSpinal.Button447Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dispareunia...';
 BMaestro.Click;
 If rec>84 Then Button447.Enabled := False;
 end;
@@ -22226,7 +20718,6 @@ end;
 procedure TSpinal.Button481Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Estreptococos del grupo B...';
 BMaestro.Click;
 If rec>84 Then Button481.Enabled := False;
 end;
@@ -22234,7 +20725,6 @@ end;
 procedure TSpinal.Button478Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gardnella...';
 BMaestro.Click;
 If rec>84 Then Button478.Enabled := False;
 end;
@@ -22242,7 +20732,6 @@ end;
 procedure TSpinal.Button488Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gonorrea...';
 BMaestro.Click;
 If rec>84 Then Button488.Enabled := False;
 end;
@@ -22250,7 +20739,6 @@ end;
 procedure TSpinal.Button450Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Herpes...';
 BMaestro.Click;
 If rec>84 Then Button450.Enabled := False;
 end;
@@ -22258,7 +20746,6 @@ end;
 procedure TSpinal.Button482Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infecciones por agresiones a la piel...';
 BMaestro.Click;
 If rec>84 Then Button482.Enabled := False;
 end;
@@ -22266,7 +20753,6 @@ end;
 procedure TSpinal.Button483Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infecciones por parásitos...';
 BMaestro.Click;
 If rec>84 Then Button483.Enabled := False;
 end;
@@ -22274,7 +20760,6 @@ end;
 procedure TSpinal.Button451Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infección urinaria...';
 BMaestro.Click;
 If rec>84 Then Button451.Enabled := False;
 end;
@@ -22282,7 +20767,6 @@ end;
 procedure TSpinal.Button444Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Procesos...';
 BMaestro.Click;
 If rec>84 Then Button444.Enabled := False;
 end;
@@ -22290,7 +20774,6 @@ end;
 procedure TSpinal.Button445Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Resequedad vaginal...';
 BMaestro.Click;
 If rec>84 Then Button445.Enabled := False;
 end;
@@ -22298,7 +20781,6 @@ end;
 procedure TSpinal.Button480Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tricomoniasis...';
 BMaestro.Click;
 If rec>84 Then Button480.Enabled := False;
 end;
@@ -22306,7 +20788,6 @@ end;
 procedure TSpinal.Button448Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Vaginismo...';
 BMaestro.Click;
 If rec>84 Then Button448.Enabled := False;
 end;
@@ -22326,7 +20807,6 @@ end;
 procedure TSpinal.Button449Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Edit52.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button449.Enabled := False;
 end;
@@ -22334,7 +20814,6 @@ end;
 procedure TSpinal.Button461Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Edit53.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button461.Enabled := False;
 end;
@@ -22342,7 +20821,6 @@ end;
 procedure TSpinal.Button435Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Forúnculos...';
 BMaestro.Click;
 If rec>84 Then Button435.Enabled := False;
 end;
@@ -22350,7 +20828,6 @@ end;
 procedure TSpinal.Button434Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del glúteo mayor...';
 BMaestro.Click;
 If rec>84 Then Button434.Enabled := False;
 end;
@@ -22358,7 +20835,6 @@ end;
 procedure TSpinal.Button433Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del piramidal o piriforme...';
 BMaestro.Click;
 If rec>84 Then Button433.Enabled := False;
 end;
@@ -22366,7 +20842,6 @@ end;
 procedure TSpinal.Button432Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Implantes y Otros...';
 BMaestro.Click;
 If rec>84 Then Button432.Enabled := False;
 end;
@@ -22374,7 +20849,6 @@ end;
 procedure TSpinal.Button431Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inyecciones médicas...';
 BMaestro.Click;
 If rec>84 Then Button431.Enabled := False;
 end;
@@ -22382,7 +20856,6 @@ end;
 procedure TSpinal.Button430Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inyecciones estéticas...';
 BMaestro.Click;
 If rec>84 Then Button430.Enabled := False;
 end;
@@ -22390,7 +20863,6 @@ end;
 procedure TSpinal.Button441Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Circulación / Vasos sanguíneos...';
 BMaestro.Click;
 If rec>84 Then Button441.Enabled := False;
 end;
@@ -22398,7 +20870,6 @@ end;
 procedure TSpinal.Button440Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Músculos...';
 BMaestro.Click;
 If rec>84 Then Button440.Enabled := False;
 end;
@@ -22406,7 +20877,6 @@ end;
 procedure TSpinal.Button439Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Nervio ciático...';
 BMaestro.Click;
 If rec>84 Then Button439.Enabled := False;
 end;
@@ -22414,7 +20884,6 @@ end;
 procedure TSpinal.Button438Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Articulación sacro-ilíaca...';
 BMaestro.Click;
 If rec>84 Then Button438.Enabled := False;
 end;
@@ -22422,7 +20891,6 @@ end;
 procedure TSpinal.Button437Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ligamento iliolumbar...';
 BMaestro.Click;
 If rec>84 Then Button437.Enabled := False;
 end;
@@ -22430,7 +20898,6 @@ end;
 procedure TSpinal.Button436Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Edit51.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button436.Enabled := False;
 end;
@@ -22465,7 +20932,6 @@ end;
 procedure TSpinal.Button306Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis...';
 BMaestro.Click;
 If rec>84 Then Button306.Enabled := False;
 end;
@@ -22473,7 +20939,6 @@ end;
 procedure TSpinal.Button302Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ECodo.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button302.Enabled := False;
 end;
@@ -22481,7 +20946,6 @@ end;
 procedure TSpinal.Button307Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis...';
 BMaestro.Click;
 If rec>84 Then Button307.Enabled := False;
 end;
@@ -22489,7 +20953,6 @@ end;
 procedure TSpinal.Button300Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epicondilitis lateral...';
 BMaestro.Click;
 If rec>84 Then Button300.Enabled := False;
 end;
@@ -22497,7 +20960,6 @@ end;
 procedure TSpinal.Button298Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epicondilitis media...';
 BMaestro.Click;
 If rec>84 Then Button298.Enabled := False;
 end;
@@ -22505,7 +20967,6 @@ end;
 procedure TSpinal.Button299Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epitrocleitis...';
 BMaestro.Click;
 If rec>84 Then Button299.Enabled := False;
 end;
@@ -22513,7 +20974,6 @@ end;
 procedure TSpinal.Button305Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura de cabeza de radio...';
 BMaestro.Click;
 If rec>84 Then Button305.Enabled := False;
 end;
@@ -22521,7 +20981,6 @@ end;
 procedure TSpinal.Button304Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura de olecranon...';
 BMaestro.Click;
 If rec>84 Then Button304.Enabled := False;
 end;
@@ -22529,7 +20988,6 @@ end;
 procedure TSpinal.Button301Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Higroma crónico del codo...';
 BMaestro.Click;
 If rec>84 Then Button301.Enabled := False;
 end;
@@ -22537,7 +20995,6 @@ end;
 procedure TSpinal.Button303Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lesión del ligamento lateral externo...';
 BMaestro.Click;
 If rec>84 Then Button303.Enabled := False;
 end;
@@ -22545,7 +21002,6 @@ end;
 procedure TSpinal.Button486Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lesión del ligamento lateral interno...';
 BMaestro.Click;
 If rec>84 Then Button486.Enabled := False;
 end;
@@ -22553,7 +21009,6 @@ end;
 procedure TSpinal.Button485Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Rotura de bíceps...';
 BMaestro.Click;
 If rec>84 Then Button485.Enabled := False;
 end;
@@ -22561,7 +21016,6 @@ end;
 procedure TSpinal.Button328Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome compartimental por esfuerzo...';
 BMaestro.Click;
 If rec>84 Then Button328.Enabled := False;
 end;
@@ -22569,7 +21023,6 @@ end;
 procedure TSpinal.Button297Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del túnel cubital...';
 BMaestro.Click;
 If rec>84 Then Button297.Enabled := False;
 end;
@@ -22577,7 +21030,6 @@ end;
 procedure TSpinal.Button487Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis bíceps distal...';
 BMaestro.Click;
 If rec>84 Then Button487.Enabled := False;
 end;
@@ -22585,7 +21037,6 @@ end;
 procedure TSpinal.Button327Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis de inserción del tríceps...';
 BMaestro.Click;
 If rec>84 Then Button327.Enabled := False;
 end;
@@ -22605,7 +21056,6 @@ end;
 procedure TSpinal.Button324Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis retrocalcánea...';
 BMaestro.Click;
 If rec>84 Then Button324.Enabled := False;
 end;
@@ -22613,7 +21063,6 @@ end;
 procedure TSpinal.Button322Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Entorsis...';
 BMaestro.Click;
 If rec>84 Then Button322.Enabled := False;
 end;
@@ -22621,7 +21070,6 @@ end;
 procedure TSpinal.Button325Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguince grado 1...';
 BMaestro.Click;
 If rec>84 Then Button325.Enabled := False;
 end;
@@ -22629,7 +21077,6 @@ end;
 procedure TSpinal.Button321Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguince grado 2...';
 BMaestro.Click;
 If rec>84 Then Button321.Enabled := False;
 end;
@@ -22637,7 +21084,6 @@ end;
 procedure TSpinal.Button320Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguince grado 3...';
 BMaestro.Click;
 If rec>84 Then Button320.Enabled := False;
 end;
@@ -22645,7 +21091,6 @@ end;
 procedure TSpinal.Button323Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fracturas maleolares...';
 BMaestro.Click;
 If rec>84 Then Button323.Enabled := False;
 end;
@@ -22653,7 +21098,6 @@ end;
 procedure TSpinal.Button331Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Luxo-fractura tipo A...';
 BMaestro.Click;
 If rec>84 Then Button331.Enabled := False;
 end;
@@ -22661,7 +21105,6 @@ end;
 procedure TSpinal.Button330Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Luxo-fractura tipo B...';
 BMaestro.Click;
 If rec>84 Then Button330.Enabled := False;
 end;
@@ -22669,7 +21112,6 @@ end;
 procedure TSpinal.Button329Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Luxo-fractura tipo C...';
 BMaestro.Click;
 If rec>84 Then Button329.Enabled := False;
 end;
@@ -22677,7 +21119,6 @@ end;
 procedure TSpinal.Button422Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ardor...';
 BMaestro.Click;
 If rec>84 Then Button422.Enabled := False;
 end;
@@ -22685,7 +21126,6 @@ end;
 procedure TSpinal.Button418Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Aumento de acidez gástrica...';
 BMaestro.Click;
 If rec>84 Then Button418.Enabled := False;
 end;
@@ -22693,7 +21133,6 @@ end;
 procedure TSpinal.Button532Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Carcinoma...';
 BMaestro.Click;
 If rec>84 Then Button532.Enabled := False;
 end;
@@ -22701,7 +21140,6 @@ end;
 procedure TSpinal.Button428Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Estrés emocional...';
 BMaestro.Click;
 If rec>84 Then Button428.Enabled := False;
 end;
@@ -22709,7 +21147,6 @@ end;
 procedure TSpinal.Button419Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Eructos frecuentes...';
 BMaestro.Click;
 If rec>84 Then Button419.Enabled := False;
 end;
@@ -22717,7 +21154,6 @@ end;
 procedure TSpinal.Button420Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hemorragias...';
 BMaestro.Click;
 If rec>84 Then Button420.Enabled := False;
 end;
@@ -22725,7 +21161,6 @@ end;
 procedure TSpinal.Button427Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis aguda erosiva o ulcerada...';
 BMaestro.Click;
 If rec>84 Then Button427.Enabled := False;
 end;
@@ -22733,7 +21168,6 @@ end;
 procedure TSpinal.Button530Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis crónica atrófica...';
 BMaestro.Click;
 If rec>84 Then Button530.Enabled := False;
 end;
@@ -22741,7 +21175,6 @@ end;
 procedure TSpinal.Button296Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis crónica atrófica multifocal antral y corporal...';
 BMaestro.Click;
 If rec>84 Then Button296.Enabled := False;
 end;
@@ -22749,7 +21182,6 @@ end;
 procedure TSpinal.Button523Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis crónica de predominio antral...';
 BMaestro.Click;
 If rec>84 Then Button523.Enabled := False;
 end;
@@ -22757,7 +21189,6 @@ end;
 procedure TSpinal.Button524Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis crónica atrófica de predominio corporal...';
 BMaestro.Click;
 If rec>84 Then Button524.Enabled := False;
 end;
@@ -22765,7 +21196,6 @@ end;
 procedure TSpinal.Button426Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis corrosiva...';
 BMaestro.Click;
 If rec>84 Then Button426.Enabled := False;
 end;
@@ -22773,7 +21203,6 @@ end;
 procedure TSpinal.Button425Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gastritis crónica superficial...';
 BMaestro.Click;
 If rec>84 Then Button425.Enabled := False;
 end;
@@ -22781,7 +21210,6 @@ end;
 procedure TSpinal.Button531Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Linfoma...';
 BMaestro.Click;
 If rec>84 Then Button531.Enabled := False;
 end;
@@ -22789,7 +21217,6 @@ end;
 procedure TSpinal.Button429Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pesadez estomacal...';
 BMaestro.Click;
 If rec>84 Then Button429.Enabled := False;
 end;
@@ -22797,7 +21224,6 @@ end;
 procedure TSpinal.Button533Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pólipo hiperplásico...';
 BMaestro.Click;
 If rec>84 Then Button533.Enabled := False;
 end;
@@ -22805,7 +21231,6 @@ end;
 procedure TSpinal.Button423Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ulcera gástrica aguda...';
 BMaestro.Click;
 If rec>84 Then Button423.Enabled := False;
 end;
@@ -22813,7 +21238,6 @@ end;
 procedure TSpinal.Button534Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ulcera gástrica crónica (péptica)...';
 BMaestro.Click;
 If rec>84 Then Button534.Enabled := False;
 end;
@@ -22821,7 +21245,6 @@ end;
 procedure TSpinal.Button421Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Vómitos...';
 BMaestro.Click;
 If rec>84 Then Button421.Enabled := False;
 end;
@@ -22841,7 +21264,6 @@ end;
 procedure TSpinal.Button424Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EEstomago.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button424.Enabled := False;
 end;
@@ -22849,7 +21271,6 @@ end;
 procedure TSpinal.Button245Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EEstomago.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button424.Enabled := False;
 end;
@@ -22869,7 +21290,6 @@ end;
 procedure TSpinal.Button237Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis...';
 BMaestro.Click;
 If rec>84 Then Button237.Enabled := False;
 end;
@@ -22877,7 +21297,6 @@ end;
 procedure TSpinal.Button241Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ECadera.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button241.Enabled := False;
 end;
@@ -22885,7 +21304,6 @@ end;
 procedure TSpinal.Button244Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Choque femoroacetabular...';
 BMaestro.Click;
 If rec>84 Then Button244.Enabled := False;
 end;
@@ -22893,7 +21311,6 @@ end;
 procedure TSpinal.Button239Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dislocaciones...';
 BMaestro.Click;
 If rec>84 Then Button239.Enabled := False;
 end;
@@ -22901,7 +21318,6 @@ end;
 procedure TSpinal.Button236Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distensiones...';
 BMaestro.Click;
 If rec>84 Then Button236.Enabled := False;
 end;
@@ -22909,7 +21325,6 @@ end;
 procedure TSpinal.Button246Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Espondilitis anquilosante...';
 BMaestro.Click;
 If rec>84 Then Button246.Enabled := False;
 end;
@@ -22917,7 +21332,6 @@ end;
 procedure TSpinal.Button243Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibromialgia...';
 BMaestro.Click;
 If rec>84 Then Button243.Enabled := False;
 end;
@@ -22925,7 +21339,6 @@ end;
 procedure TSpinal.Button238Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fracturas...';
 BMaestro.Click;
 If rec>84 Then Button238.Enabled := False;
 end;
@@ -22933,7 +21346,6 @@ end;
 procedure TSpinal.Button240Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Osteoartritis...';
 BMaestro.Click;
 If rec>84 Then Button240.Enabled := False;
 end;
@@ -22941,7 +21353,6 @@ end;
 procedure TSpinal.Button235Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Osteocondrosis femoral...';
 BMaestro.Click;
 If rec>84 Then Button235.Enabled := False;
 end;
@@ -22949,7 +21360,6 @@ end;
 procedure TSpinal.Button535Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Puvalgia u Osteopatía de pubis...';
 BMaestro.Click;
 If rec>84 Then Button535.Enabled := False;
 end;
@@ -22957,7 +21367,6 @@ end;
 procedure TSpinal.Button242Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Sobrecarga muscular...';
 BMaestro.Click;
 If rec>84 Then Button242.Enabled := False;
 end;
@@ -22965,7 +21374,6 @@ end;
 procedure TSpinal.Button367Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ampollas...';
 BMaestro.Click;
 If rec>84 Then Button367.Enabled := False;
 end;
@@ -22973,7 +21381,6 @@ end;
 procedure TSpinal.Button361Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis traumáticas de los dedos...';
 BMaestro.Click;
 If rec>84 Then Button361.Enabled := False;
 end;
@@ -22981,7 +21388,6 @@ end;
 procedure TSpinal.Button539Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cubierta cutánea...';
 BMaestro.Click;
 If rec>84 Then Button539.Enabled := False;
 end;
@@ -22989,7 +21395,6 @@ end;
 procedure TSpinal.Button365Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dedo en martillo...';
 BMaestro.Click;
 If rec>84 Then Button365.Enabled := False;
 end;
@@ -22997,7 +21402,6 @@ end;
 procedure TSpinal.Button359Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Dupuytren...';
 BMaestro.Click;
 If rec>84 Then Button359.Enabled := False;
 end;
@@ -23005,7 +21409,6 @@ end;
 procedure TSpinal.Button366Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura...';
 BMaestro.Click;
 If rec>84 Then Button366.Enabled := False;
 end;
@@ -23013,7 +21416,6 @@ end;
 procedure TSpinal.Button541Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gangliones...';
 BMaestro.Click;
 If rec>84 Then Button541.Enabled := False;
 end;
@@ -23021,7 +21423,6 @@ end;
 procedure TSpinal.Button536Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Huesos, Articulaciones y Ligamentos...';
 BMaestro.Click;
 If rec>84 Then Button536.Enabled := False;
 end;
@@ -23029,7 +21430,6 @@ end;
 procedure TSpinal.Button540Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Osteoartritis...';
 BMaestro.Click;
 If rec>84 Then Button540.Enabled := False;
 end;
@@ -23037,7 +21437,6 @@ end;
 procedure TSpinal.Button364Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pulgar del esquiador...';
 BMaestro.Click;
 If rec>84 Then Button364.Enabled := False;
 end;
@@ -23045,7 +21444,6 @@ end;
 procedure TSpinal.Button538Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tejidos blandos: músculos, tejido alveolar...';
 BMaestro.Click;
 If rec>84 Then Button538.Enabled := False;
 end;
@@ -23053,7 +21451,6 @@ end;
 procedure TSpinal.Button363Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis...';
 BMaestro.Click;
 If rec>84 Then Button363.Enabled := False;
 end;
@@ -23061,7 +21458,6 @@ end;
 procedure TSpinal.Button358Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tenosinovitis de Quervain...';
 BMaestro.Click;
 If rec>84 Then Button358.Enabled := False;
 end;
@@ -23069,7 +21465,6 @@ end;
 procedure TSpinal.Button357Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tenosinovitis estenosante de los flexores...';
 BMaestro.Click;
 If rec>84 Then Button357.Enabled := False;
 end;
@@ -23077,7 +21472,6 @@ end;
 procedure TSpinal.Button360Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del canal de Guyón...';
 BMaestro.Click;
 If rec>84 Then Button360.Enabled := False;
 end;
@@ -23085,7 +21479,6 @@ end;
 procedure TSpinal.Button356Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del túnel carpiano...';
 BMaestro.Click;
 If rec>84 Then Button356.Enabled := False;
 end;
@@ -23093,7 +21486,6 @@ end;
 procedure TSpinal.Button537Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Vasos y Nervios...';
 BMaestro.Click;
 If rec>84 Then Button537.Enabled := False;
 end;
@@ -23101,7 +21493,6 @@ end;
 procedure TSpinal.Button362Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EMano.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button362.Enabled := False;
 end;
@@ -23109,7 +21500,6 @@ end;
 procedure TSpinal.Button542Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Raynaud...';
 BMaestro.Click;
 If rec>84 Then Button542.Enabled := False;
 end;
@@ -23117,7 +21507,6 @@ end;
 procedure TSpinal.Button373Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguince...';
 BMaestro.Click;
 If rec>84 Then Button373.Enabled := False;
 end;
@@ -23125,7 +21514,6 @@ end;
 procedure TSpinal.Button372Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ganglión...';
 BMaestro.Click;
 If rec>84 Then Button372.Enabled := False;
 end;
@@ -23133,7 +21521,6 @@ end;
 procedure TSpinal.Button371Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Kiemböck...';
 BMaestro.Click;
 If rec>84 Then Button371.Enabled := False;
 end;
@@ -23141,7 +21528,6 @@ end;
 procedure TSpinal.Button370Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome del túnel carpiano...';
 BMaestro.Click;
 If rec>84 Then Button370.Enabled := False;
 end;
@@ -23149,7 +21535,6 @@ end;
 procedure TSpinal.Button369Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tenosinovitis de Quervain...';
 BMaestro.Click;
 If rec>84 Then Button369.Enabled := False;
 end;
@@ -23157,7 +21542,6 @@ end;
 procedure TSpinal.Button368Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura...';
 BMaestro.Click;
 If rec>84 Then Button368.Enabled := False;
 end;
@@ -23165,7 +21549,6 @@ end;
 procedure TSpinal.Button379Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura del hueso escafoides...';
 BMaestro.Click;
 If rec>84 Then Button379.Enabled := False;
 end;
@@ -23173,7 +21556,6 @@ end;
 procedure TSpinal.Button378Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artrosis...';
 BMaestro.Click;
 If rec>84 Then Button378.Enabled := False;
 end;
@@ -23188,7 +21570,6 @@ end;
 procedure TSpinal.Button374Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EMuneca.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button374.Enabled := False;
 end;
@@ -23196,7 +21577,6 @@ end;
 procedure TSpinal.Button313Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis traumática de los dedos...';
 BMaestro.Click;
 If rec>84 Then Button313.Enabled := False;
 end;
@@ -23204,7 +21584,6 @@ end;
 procedure TSpinal.Button312Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Talalgia...';
 BMaestro.Click;
 If rec>84 Then Button312.Enabled := False;
 end;
@@ -23212,7 +21591,6 @@ end;
 procedure TSpinal.Button311Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fascitis plantar...';
 BMaestro.Click;
 If rec>84 Then Button311.Enabled := False;
 end;
@@ -23220,7 +21598,6 @@ end;
 procedure TSpinal.Button310Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis retrocalcánea...';
 BMaestro.Click;
 If rec>84 Then Button310.Enabled := False;
 end;
@@ -23228,7 +21605,6 @@ end;
 procedure TSpinal.Button309Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis aquílea...';
 BMaestro.Click;
 If rec>84 Then Button309.Enabled := False;
 end;
@@ -23236,7 +21612,6 @@ end;
 procedure TSpinal.Button308Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Metatarsalgia...';
 BMaestro.Click;
 If rec>84 Then Button308.Enabled := False;
 end;
@@ -23244,7 +21619,6 @@ end;
 procedure TSpinal.Button319Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Metatarsalgia de Morton...';
 BMaestro.Click;
 If rec>84 Then Button319.Enabled := False;
 end;
@@ -23252,7 +21626,6 @@ end;
 procedure TSpinal.Button318Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ampollas...';
 BMaestro.Click;
 If rec>84 Then Button318.Enabled := False;
 end;
@@ -23260,7 +21633,6 @@ end;
 procedure TSpinal.Button317Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura...';
 BMaestro.Click;
 If rec>84 Then Button317.Enabled := False;
 end;
@@ -23268,7 +21640,6 @@ end;
 procedure TSpinal.Button316Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de Raynaud...';
 BMaestro.Click;
 If rec>84 Then Button316.Enabled := False;
 end;
@@ -23288,7 +21659,6 @@ end;
 procedure TSpinal.Button314Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EPie.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button314.Enabled := False;
 end;
@@ -23296,7 +21666,6 @@ end;
 procedure TSpinal.Button347Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis...';
 BMaestro.Click;
 If rec>84 Then Button347.Enabled := False;
 end;
@@ -23304,7 +21673,6 @@ end;
 procedure TSpinal.Button345Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bursitis crónica...';
 BMaestro.Click;
 If rec>84 Then Button345.Enabled := False;
 end;
@@ -23312,7 +21680,6 @@ end;
 procedure TSpinal.Button349Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esguince de los ligamentos laterales...';
 BMaestro.Click;
 If rec>84 Then Button349.Enabled := False;
 end;
@@ -23320,7 +21687,6 @@ end;
 procedure TSpinal.Button355Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura...';
 BMaestro.Click;
 If rec>84 Then Button355.Enabled := False;
 end;
@@ -23328,7 +21694,6 @@ end;
 procedure TSpinal.Button348Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lesiones meniscales...';
 BMaestro.Click;
 If rec>84 Then Button348.Enabled := False;
 end;
@@ -23336,7 +21701,6 @@ end;
 procedure TSpinal.Button344Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Osteoartritis...';
 BMaestro.Click;
 If rec>84 Then Button344.Enabled := False;
 end;
@@ -23344,7 +21708,6 @@ end;
 procedure TSpinal.Button354Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Rupturas meniscales...';
 BMaestro.Click;
 If rec>84 Then Button354.Enabled := False;
 end;
@@ -23352,7 +21715,6 @@ end;
 procedure TSpinal.Button346Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis rotuliana...';
 BMaestro.Click;
 If rec>84 Then Button346.Enabled := False;
 end;
@@ -23360,7 +21722,6 @@ end;
 procedure TSpinal.Button353Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Torsiones...';
 BMaestro.Click;
 If rec>84 Then Button353.Enabled := False;
 end;
@@ -23368,7 +21729,6 @@ end;
 procedure TSpinal.Button352Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Triada...';
 BMaestro.Click;
 If rec>84 Then Button352.Enabled := False;
 end;
@@ -23376,7 +21736,6 @@ end;
 procedure TSpinal.Button350Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ERodilla.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button350.Enabled := False;
 end;
@@ -23396,7 +21755,6 @@ end;
 procedure TSpinal.Button286Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Articulaciones...';
 BMaestro.Click;
 If rec>84 Then Button286.Enabled := False;
 end;
@@ -23404,7 +21762,6 @@ end;
 procedure TSpinal.Button290Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EEInferiores.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button290.Enabled := False;
 end;
@@ -23424,7 +21781,6 @@ end;
 procedure TSpinal.Button285Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distensión del aductor...';
 BMaestro.Click;
 If rec>84 Then Button285.Enabled := False;
 end;
@@ -23432,7 +21788,6 @@ end;
 procedure TSpinal.Button284Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distensión del músculo iliopsoas...';
 BMaestro.Click;
 If rec>84 Then Button284.Enabled := False;
 end;
@@ -23440,7 +21795,6 @@ end;
 procedure TSpinal.Button295Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distensión del músculo recto abdominal...';
 BMaestro.Click;
 If rec>84 Then Button295.Enabled := False;
 end;
@@ -23448,7 +21802,6 @@ end;
 procedure TSpinal.Button287Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Heridas...';
 BMaestro.Click;
 If rec>84 Then Button287.Enabled := False;
 end;
@@ -23456,7 +21809,6 @@ end;
 procedure TSpinal.Button289Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Priostitis tibial...';
 BMaestro.Click;
 If rec>84 Then Button289.Enabled := False;
 end;
@@ -23464,7 +21816,6 @@ end;
 procedure TSpinal.Button288Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Varices...';
 BMaestro.Click;
 If rec>84 Then Button288.Enabled := False;
 end;
@@ -23472,7 +21823,6 @@ end;
 procedure TSpinal.Button293Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Disyucción acromioclavicular...';
 BMaestro.Click;
 If rec>84 Then Button293.Enabled := False;
 end;
@@ -23480,7 +21830,6 @@ end;
 procedure TSpinal.Button292Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artrosis glenohumeral...';
 BMaestro.Click;
 If rec>84 Then Button292.Enabled := False;
 end;
@@ -23488,7 +21837,6 @@ end;
 procedure TSpinal.Button291Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tendinitis cálcica del manguito rotador...';
 BMaestro.Click;
 If rec>84 Then Button291.Enabled := False;
 end;
@@ -23496,7 +21844,6 @@ end;
 procedure TSpinal.Button545Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pinzamiento subacromial del manguito rotador...';
 BMaestro.Click;
 If rec>84 Then Button545.Enabled := False;
 end;
@@ -23516,7 +21863,6 @@ end;
 procedure TSpinal.Button543Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EESuperiores.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button543.Enabled := False;
 end;
@@ -23524,7 +21870,6 @@ end;
 procedure TSpinal.Button351Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fractura proximal del húmero...';
 BMaestro.Click;
 If rec>84 Then Button351.Enabled := False;
 end;
@@ -23532,7 +21877,6 @@ end;
 procedure TSpinal.Button315Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Laceraciones...';
 BMaestro.Click;
 If rec>84 Then Button315.Enabled := False;
 end;
@@ -23540,7 +21884,6 @@ end;
 procedure TSpinal.Button294Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Quemaduras...';
 BMaestro.Click;
 If rec>84 Then Button294.Enabled := False;
 end;
@@ -23548,7 +21891,6 @@ end;
 procedure TSpinal.Button544Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Inflamación por inyecciones...';
 BMaestro.Click;
 If rec>84 Then Button544.Enabled := False;
 end;
@@ -23556,7 +21898,6 @@ end;
 procedure TSpinal.Button266Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis...';
 BMaestro.Click;
 If rec>84 Then Button266.Enabled := False;
 end;
@@ -23564,7 +21905,6 @@ end;
 procedure TSpinal.Button265Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis reumatoide...';
 BMaestro.Click;
 If rec>84 Then Button265.Enabled := False;
 end;
@@ -23572,7 +21912,6 @@ end;
 procedure TSpinal.Button264Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis psoriásica...';
 BMaestro.Click;
 If rec>84 Then Button264.Enabled := False;
 end;
@@ -23580,7 +21919,6 @@ end;
 procedure TSpinal.Button263Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lupus...';
 BMaestro.Click;
 If rec>84 Then Button263.Enabled := False;
 end;
@@ -23588,7 +21926,6 @@ end;
 procedure TSpinal.Button262Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Gota...';
 BMaestro.Click;
 If rec>84 Then Button262.Enabled := False;
 end;
@@ -23596,7 +21933,6 @@ end;
 procedure TSpinal.Button247Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Kawasaki...';
 BMaestro.Click;
 If rec>84 Then Button544.Enabled := False;
 end;
@@ -23604,7 +21940,6 @@ end;
 procedure TSpinal.Button278Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis reumatoide juvenil...';
 BMaestro.Click;
 If rec>84 Then Button278.Enabled := False;
 end;
@@ -23612,7 +21947,6 @@ end;
 procedure TSpinal.Button271Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Artritis infecciosa...';
 BMaestro.Click;
 If rec>84 Then Button271.Enabled := False;
 end;
@@ -23632,7 +21966,6 @@ end;
 procedure TSpinal.Button484Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ETics.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button484.Enabled := False;
 end;
@@ -23640,7 +21973,6 @@ end;
 procedure TSpinal.Button225Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Agudo...';
 BMaestro.Click;
 If rec>84 Then Button225.Enabled := False;
 end;
@@ -23648,7 +21980,6 @@ end;
 procedure TSpinal.Button227Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Motor crónico...';
 BMaestro.Click;
 If rec>84 Then Button227.Enabled := False;
 end;
@@ -23656,7 +21987,6 @@ end;
 procedure TSpinal.Button528Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Motor complejo...';
 BMaestro.Click;
 If rec>84 Then Button528.Enabled := False;
 end;
@@ -23664,7 +21994,6 @@ end;
 procedure TSpinal.Button529Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Motor simple...';
 BMaestro.Click;
 If rec>84 Then Button529.Enabled := False;
 end;
@@ -23672,7 +22001,6 @@ end;
 procedure TSpinal.Button224Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic No especificado...';
 BMaestro.Click;
 If rec>84 Then Button224.Enabled := False;
 end;
@@ -23680,7 +22008,6 @@ end;
 procedure TSpinal.Button228Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Tourette...';
 BMaestro.Click;
 If rec>84 Then Button228.Enabled := False;
 end;
@@ -23688,7 +22015,6 @@ end;
 procedure TSpinal.Button525Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Transitorio...';
 BMaestro.Click;
 If rec>84 Then Button525.Enabled := False;
 end;
@@ -23696,7 +22022,6 @@ end;
 procedure TSpinal.Button527Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Vocal simple...';
 BMaestro.Click;
 If rec>84 Then Button527.Enabled := False;
 end;
@@ -23704,7 +22029,6 @@ end;
 procedure TSpinal.Button526Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Vocal complejo...';
 BMaestro.Click;
 If rec>84 Then Button526.Enabled := False;
 end;
@@ -23712,7 +22036,6 @@ end;
 procedure TSpinal.Button226Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tic Vocal crónico...';
 BMaestro.Click;
 If rec>84 Then Button226.Enabled := False;
 end;
@@ -23720,7 +22043,6 @@ end;
 procedure TSpinal.Button393Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Congestión nasal...';
 BMaestro.Click;
 If rec>84 Then Button393.Enabled := False;
 end;
@@ -23728,7 +22050,6 @@ end;
 procedure TSpinal.Button392Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tos / Estornudos...';
 BMaestro.Click;
 If rec>84 Then Button392.Enabled := False;
 end;
@@ -23736,7 +22057,6 @@ end;
 procedure TSpinal.Button283Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fatiga / Fatiga crónica...';
 BMaestro.Click;
 If rec>84 Then Button283.Enabled := False;
 end;
@@ -23744,7 +22064,6 @@ end;
 procedure TSpinal.Button282Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Náuseas / Mareo / Diarreas...';
 BMaestro.Click;
 If rec>84 Then Button282.Enabled := False;
 end;
@@ -23752,7 +22071,6 @@ end;
 procedure TSpinal.Button281Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Lagrimeos / Ardor / Enrojecimiento...';
 BMaestro.Click;
 If rec>84 Then Button281.Enabled := False;
 end;
@@ -23760,7 +22078,6 @@ end;
 procedure TSpinal.Button280Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Prurito / Ronchas / Hinchazón...';
 BMaestro.Click;
 If rec>84 Then Button280.Enabled := False;
 end;
@@ -23768,7 +22085,6 @@ end;
 procedure TSpinal.Button400Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Congestión en pecho...';
 BMaestro.Click;
 If rec>84 Then Button400.Enabled := False;
 end;
@@ -23776,7 +22092,6 @@ end;
 procedure TSpinal.Button399Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Choque anafiláctico...';
 BMaestro.Click;
 If rec>84 Then Button399.Enabled := False;
 end;
@@ -23784,7 +22099,6 @@ end;
 procedure TSpinal.Button394Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EHipersensibilidad.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button394.Enabled := False;
 end;
@@ -23811,7 +22125,6 @@ end;
 procedure TSpinal.Button408Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EQSolares.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button408.Enabled := False;
 end;
@@ -23819,7 +22132,6 @@ end;
 procedure TSpinal.Button407Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Náuseas...';
 BMaestro.Click;
 If rec>84 Then Button407.Enabled := False;
 end;
@@ -23827,7 +22139,6 @@ end;
 procedure TSpinal.Button406Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Escalofríos...';
 BMaestro.Click;
 If rec>84 Then Button406.Enabled := False;
 end;
@@ -23835,7 +22146,6 @@ end;
 procedure TSpinal.Button405Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fiebre...';
 BMaestro.Click;
 If rec>84 Then Button405.Enabled := False;
 end;
@@ -23843,7 +22153,6 @@ end;
 procedure TSpinal.Button404Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Desvanecimiento...';
 BMaestro.Click;
 If rec>84 Then Button404.Enabled := False;
 end;
@@ -23851,7 +22160,6 @@ end;
 procedure TSpinal.Button403Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ampollas muy extendidas...';
 BMaestro.Click;
 If rec>84 Then Button403.Enabled := False;
 end;
@@ -23859,7 +22167,6 @@ end;
 procedure TSpinal.Button402Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Debilidad general...';
 BMaestro.Click;
 If rec>84 Then Button402.Enabled := False;
 end;
@@ -23867,7 +22174,6 @@ end;
 procedure TSpinal.Button413Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Comezón interno...';
 BMaestro.Click;
 If rec>84 Then Button413.Enabled := False;
 end;
@@ -23875,7 +22181,6 @@ end;
 procedure TSpinal.Button412Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Manchas de decoloración púrpura...';
 BMaestro.Click;
 If rec>84 Then Button412.Enabled := False;
 end;
@@ -23883,7 +22188,6 @@ end;
 procedure TSpinal.Button411Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ardor por infección...';
 BMaestro.Click;
 If rec>84 Then Button411.Enabled := False;
 end;
@@ -23896,7 +22200,6 @@ end;
 procedure TSpinal.Button253Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibras A Alfa...';
 BMaestro.Click;
 If rec>84 Then Button253.Enabled := False;
 end;
@@ -23904,7 +22207,6 @@ end;
 procedure TSpinal.Button252Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibras A Beta...';
 BMaestro.Click;
 If rec>84 Then Button252.Enabled := False;
 end;
@@ -23912,7 +22214,6 @@ end;
 procedure TSpinal.Button251Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibras A Gamma...';
 BMaestro.Click;
 If rec>84 Then Button251.Enabled := False;
 end;
@@ -23920,7 +22221,6 @@ end;
 procedure TSpinal.Button250Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibras A Delta...';
 BMaestro.Click;
 If rec>84 Then Button250.Enabled := False;
 end;
@@ -23928,7 +22228,6 @@ end;
 procedure TSpinal.Button249Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Fibras C...';
 BMaestro.Click;
 If rec>84 Then Button249.Enabled := False;
 end;
@@ -23936,7 +22235,6 @@ end;
 procedure TSpinal.Button248Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Glutamato...';
 BMaestro.Click;
 If rec>84 Then Button248.Enabled := False;
 end;
@@ -23944,7 +22242,6 @@ end;
 procedure TSpinal.Button259Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Potasio...';
 BMaestro.Click;
 If rec>84 Then Button259.Enabled := False;
 end;
@@ -23952,7 +22249,6 @@ end;
 procedure TSpinal.Button258Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Serotonina...';
 BMaestro.Click;
 If rec>84 Then Button258.Enabled := False;
 end;
@@ -23960,7 +22256,6 @@ end;
 procedure TSpinal.Button257Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Bradquinina...';
 BMaestro.Click;
 If rec>84 Then Button257.Enabled := False;
 end;
@@ -23968,7 +22263,6 @@ end;
 procedure TSpinal.Button256Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Histamina...';
 BMaestro.Click;
 If rec>84 Then Button256.Enabled := False;
 end;
@@ -23976,7 +22270,6 @@ end;
 procedure TSpinal.Button255Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a ATP...';
 BMaestro.Click;
 If rec>84 Then Button255.Enabled := False;
 end;
@@ -23984,7 +22277,6 @@ end;
 procedure TSpinal.Button493Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a H+...';
 BMaestro.Click;
 If rec>84 Then Button493.Enabled := False;
 end;
@@ -23992,7 +22284,6 @@ end;
 procedure TSpinal.Button492Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Prostaglandinas...';
 BMaestro.Click;
 If rec>84 Then Button492.Enabled := False;
 end;
@@ -24000,7 +22291,6 @@ end;
 procedure TSpinal.Button491Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Leucotrienos...';
 BMaestro.Click;
 If rec>84 Then Button491.Enabled := False;
 end;
@@ -24008,7 +22298,6 @@ end;
 procedure TSpinal.Button490Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Sustancia P...';
 BMaestro.Click;
 If rec>84 Then Button490.Enabled := False;
 end;
@@ -24016,7 +22305,6 @@ end;
 procedure TSpinal.Button489Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a CGRP...';
 BMaestro.Click;
 If rec>84 Then Button489.Enabled := False;
 end;
@@ -24024,7 +22312,6 @@ end;
 procedure TSpinal.Button499Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amígdala...';
 BMaestro.Click;
 If rec>84 Then Button499.Enabled := False;
 end;
@@ -24032,7 +22319,6 @@ end;
 procedure TSpinal.Button502Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cortex de la ínsula...';
 BMaestro.Click;
 If rec>84 Then Button502.Enabled := False;
 end;
@@ -24040,7 +22326,6 @@ end;
 procedure TSpinal.Button498Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cortex singular anterior (CCA)...';
 BMaestro.Click;
 If rec>84 Then Button498.Enabled := False;
 end;
@@ -24048,7 +22333,6 @@ end;
 procedure TSpinal.Button416Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cortex sensorial primario (S1)...';
 BMaestro.Click;
 If rec>84 Then Button416.Enabled := False;
 end;
@@ -24056,7 +22340,6 @@ end;
 procedure TSpinal.Button414Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cortex cerebral...';
 BMaestro.Click;
 If rec>84 Then Button414.Enabled := False;
 end;
@@ -24064,7 +22347,6 @@ end;
 procedure TSpinal.Button501Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Diencéfalo...';
 BMaestro.Click;
 If rec>84 Then Button501.Enabled := False;
 end;
@@ -24072,7 +22354,6 @@ end;
 procedure TSpinal.Button273Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Formación reticulada...';
 BMaestro.Click;
 If rec>84 Then Button273.Enabled := False;
 end;
@@ -24080,7 +22361,6 @@ end;
 procedure TSpinal.Button275Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Haz espinobraquial amigdalino (SPA)...';
 BMaestro.Click;
 If rec>84 Then Button275.Enabled := False;
 end;
@@ -24088,7 +22368,6 @@ end;
 procedure TSpinal.Button274Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Haz espinobraquial hipotalámico (SPH)...';
 BMaestro.Click;
 If rec>84 Then Button274.Enabled := False;
 end;
@@ -24096,7 +22375,6 @@ end;
 procedure TSpinal.Button500Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hipotálamo)...';
 BMaestro.Click;
 If rec>84 Then Button500.Enabled := False;
 end;
@@ -24104,7 +22382,6 @@ end;
 procedure TSpinal.Button497Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Locus coeruleus...';
 BMaestro.Click;
 If rec>84 Then Button497.Enabled := False;
 end;
@@ -24112,7 +22389,6 @@ end;
 procedure TSpinal.Button277Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Médula espinal...';
 BMaestro.Click;
 If rec>84 Then Button277.Enabled := False;
 end;
@@ -24120,7 +22396,6 @@ end;
 procedure TSpinal.Button494Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Núcleo ventral posterolateral (VPL)...';
 BMaestro.Click;
 If rec>84 Then Button494.Enabled := False;
 end;
@@ -24128,7 +22403,6 @@ end;
 procedure TSpinal.Button496Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Téctum...';
 BMaestro.Click;
 If rec>84 Then Button496.Enabled := False;
 end;
@@ -24136,7 +22410,6 @@ end;
 procedure TSpinal.Button276Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tracto espinotalámico (STT)...';
 BMaestro.Click;
 If rec>84 Then Button276.Enabled := False;
 end;
@@ -24144,7 +22417,6 @@ end;
 procedure TSpinal.Button495Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Sustancia gris periacueductal...';
 BMaestro.Click;
 If rec>84 Then Button495.Enabled := False;
 end;
@@ -24363,17 +22635,6 @@ begin
   ondas.ondas_frm.Free;
  end;
 
-procedure TSpinal.Memo1Click(Sender: TObject);
-begin
-Memo1.Visible := False;
-end;
-
-procedure TSpinal.Label26Click(Sender: TObject);
-begin
-Memo1.Visible := True;
-Memo1.BringToFront();
-end;
-
 procedure TSpinal.SOjosMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
@@ -24430,7 +22691,6 @@ end;
 procedure TSpinal.Button375Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Actitudes negativas...';
 BMaestro.Click;
 If rec>84 Then Button375.Enabled := False;
 end;
@@ -24438,7 +22698,6 @@ end;
 procedure TSpinal.Button197Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Adicciones...';
 BMaestro.Click;
 If rec>84 Then Button197.Enabled := False;
 end;
@@ -24446,7 +22705,6 @@ end;
 procedure TSpinal.Button191Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Agotamiento contínuo...';
 BMaestro.Click;
 If rec>84 Then Button191.Enabled := False;
 end;
@@ -24454,7 +22712,6 @@ end;
 procedure TSpinal.Button409Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Animos nostálgicos...';
 BMaestro.Click;
 If rec>84 Then Button409.Enabled := False;
 end;
@@ -24462,7 +22719,6 @@ end;
 procedure TSpinal.Button199Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ansiedad aguda...';
 BMaestro.Click;
 If rec>84 Then Button199.Enabled := False;
 end;
@@ -24470,7 +22726,6 @@ end;
 procedure TSpinal.Button395Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Desasosiego...';
 BMaestro.Click;
 If rec>84 Then Button395.Enabled := False;
 end;
@@ -24478,7 +22733,6 @@ end;
 procedure TSpinal.Button269Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dolor mental...';
 BMaestro.Click;
 If rec>84 Then Button269.Enabled := False;
 end;
@@ -24486,7 +22740,6 @@ end;
 procedure TSpinal.Button398Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Estados mentales negativos...';
 BMaestro.Click;
 If rec>84 Then Button398.Enabled := False;
 end;
@@ -24494,7 +22747,6 @@ end;
 procedure TSpinal.Button397Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a ''Mala suerte''...';
 BMaestro.Click;
 If rec>84 Then Button397.Enabled := False;
 end;
@@ -24502,7 +22754,6 @@ end;
 procedure TSpinal.Button198Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Obsesiones...';
 BMaestro.Click;
 If rec>84 Then Button198.Enabled := False;
 end;
@@ -24510,7 +22761,6 @@ end;
 procedure TSpinal.Button376Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pesimismo...';
 BMaestro.Click;
 If rec>84 Then Button376.Enabled := False;
 end;
@@ -24518,7 +22768,6 @@ end;
 procedure TSpinal.Button195Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Perturbación mental...';
 BMaestro.Click;
 If rec>84 Then Button195.Enabled := False;
 end;
@@ -24526,7 +22775,6 @@ end;
 procedure TSpinal.Button190Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Problemas severos de sueño...';
 BMaestro.Click;
 If rec>84 Then Button190.Enabled := False;
 end;
@@ -24534,7 +22782,6 @@ end;
 procedure TSpinal.Button268Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Sufrimiento psíquico...';
 BMaestro.Click;
 If rec>84 Then Button268.Enabled := False;
 end;
@@ -24542,7 +22789,6 @@ end;
 procedure TSpinal.Button548Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alergias oculares...';
 BMaestro.Click;
 If rec>84 Then Button548.Enabled := False;
 end;
@@ -24550,7 +22796,6 @@ end;
 procedure TSpinal.Button596Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Astigmatismo...';
 BMaestro.Click;
 If rec>84 Then Button596.Enabled := False;
 end;
@@ -24558,7 +22803,6 @@ end;
 procedure TSpinal.Button564Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Atrofia del nervio óptico...';
 BMaestro.Click;
 If rec>84 Then Button564.Enabled := False;
 end;
@@ -24566,7 +22810,6 @@ end;
 procedure TSpinal.Button377Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Cataratas...';
 BMaestro.Click;
 If rec>84 Then Button377.Enabled := False;
 end;
@@ -24574,7 +22817,6 @@ end;
 procedure TSpinal.Button559Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Coloboma de íris...';
 BMaestro.Click;
 If rec>84 Then Button559.Enabled := False;
 end;
@@ -24582,7 +22824,6 @@ end;
 procedure TSpinal.Button547Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Conjuntivitis...';
 BMaestro.Click;
 If rec>84 Then Button547.Enabled := False;
 end;
@@ -24590,7 +22831,6 @@ end;
 procedure TSpinal.Button556Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Degeneración macular...';
 BMaestro.Click;
 If rec>84 Then Button556.Enabled := False;
 end;
@@ -24598,7 +22838,6 @@ end;
 procedure TSpinal.Button554Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Distrofias coroideas...';
 BMaestro.Click;
 If rec>84 Then Button554.Enabled := False;
 end;
@@ -24606,7 +22845,6 @@ end;
 procedure TSpinal.Button410Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Enfermedad de la retina...';
 BMaestro.Click;
 If rec>84 Then Button410.Enabled := False;
 end;
@@ -24614,7 +22852,6 @@ end;
 procedure TSpinal.Button565Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esclerosis...';
 BMaestro.Click;
 If rec>84 Then Button565.Enabled := False;
 end;
@@ -24622,7 +22859,6 @@ end;
 procedure TSpinal.Button553Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ectopión...';
 BMaestro.Click;
 If rec>84 Then Button553.Enabled := False;
 end;
@@ -24630,7 +22866,6 @@ end;
 procedure TSpinal.Button552Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Entropión...';
 BMaestro.Click;
 If rec>84 Then Button552.Enabled := False;
 end;
@@ -24638,7 +22873,6 @@ end;
 procedure TSpinal.Button549Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epiescleritis...';
 BMaestro.Click;
 If rec>84 Then Button549.Enabled := False;
 end;
@@ -24646,7 +22880,6 @@ end;
 procedure TSpinal.Button546Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Glaucoma...';
 BMaestro.Click;
 If rec>84 Then Button546.Enabled := False;
 end;
@@ -24654,7 +22887,6 @@ end;
 procedure TSpinal.Button560Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Hemorragia subconjuntival...';
 BMaestro.Click;
 If rec>84 Then Button560.Enabled := False;
 end;
@@ -24662,7 +22894,6 @@ end;
 procedure TSpinal.Button566Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Heterocomía...';
 BMaestro.Click;
 If rec>84 Then Button566.Enabled := False;
 end;
@@ -24670,7 +22901,6 @@ end;
 procedure TSpinal.Button562Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Miopía / Hipermetropía...';
 BMaestro.Click;
 If rec>84 Then Button562.Enabled := False;
 end;
@@ -24678,7 +22908,6 @@ end;
 procedure TSpinal.Button555Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Neuritis óptica o papilitis...';
 BMaestro.Click;
 If rec>84 Then Button555.Enabled := False;
 end;
@@ -24686,7 +22915,6 @@ end;
 procedure TSpinal.Button558Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Neuritis retrobulbar...';
 BMaestro.Click;
 If rec>84 Then Button558.Enabled := False;
 end;
@@ -24694,7 +22922,6 @@ end;
 procedure TSpinal.Button593Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ojos rojos y Resequedad ocular...';
 BMaestro.Click;
 If rec>84 Then Button593.Enabled := False;
 end;
@@ -24702,7 +22929,6 @@ end;
 procedure TSpinal.Button561Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ojos saltones...';
 BMaestro.Click;
 If rec>84 Then Button561.Enabled := False;
 end;
@@ -24710,7 +22936,6 @@ end;
 procedure TSpinal.Button551Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Orzuelo...';
 BMaestro.Click;
 If rec>84 Then Button551.Enabled := False;
 end;
@@ -24718,7 +22943,6 @@ end;
 procedure TSpinal.Button563Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Papiloedema...';
 BMaestro.Click;
 If rec>84 Then Button563.Enabled := False;
 end;
@@ -24726,7 +22950,6 @@ end;
 procedure TSpinal.Button595Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Presbicia...';
 BMaestro.Click;
 If rec>84 Then Button595.Enabled := False;
 end;
@@ -24734,7 +22957,6 @@ end;
 procedure TSpinal.Button567Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Pinguécula...';
 BMaestro.Click;
 If rec>84 Then Button567.Enabled := False;
 end;
@@ -24742,7 +22964,6 @@ end;
 procedure TSpinal.Button557Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Simbléfaron...';
 BMaestro.Click;
 If rec>84 Then Button557.Enabled := False;
 end;
@@ -24750,7 +22971,6 @@ end;
 procedure TSpinal.Button592Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Visión borrosa...';
 BMaestro.Click;
 If rec>84 Then Button592.Enabled := False;
 end;
@@ -24758,7 +22978,6 @@ end;
 procedure TSpinal.Button270Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EAPsiquicos.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button270.Enabled := False;
 end;
@@ -24790,7 +23009,6 @@ end;
 procedure TSpinal.Button45Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Neuralgia del trigémino...';
 BMaestro.Click;
 If rec>84 Then Button45.Enabled := False;
 end;
@@ -24798,7 +23016,6 @@ end;
 procedure TSpinal.Button61Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dolor Extra-Sensorial...';
 BMaestro.Click;
 If rec>84 Then Button61.Enabled := False;
 end;
@@ -24806,7 +23023,6 @@ end;
 procedure TSpinal.Button49Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Dolor físico...';
 BMaestro.Click;
 If rec>84 Then Button49.Enabled := False;
 end;
@@ -24814,7 +23030,6 @@ end;
 procedure TSpinal.Button46Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Conexión mente-cuerpo...';
 BMaestro.Click;
 If rec>84 Then Button46.Enabled := False;
 end;
@@ -24822,7 +23037,6 @@ end;
 procedure TSpinal.Button55Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Equilibrar pineal...';
 BMaestro.Click;
 If rec>84 Then Button55.Enabled := False;
 end;
@@ -24830,7 +23044,6 @@ end;
 procedure TSpinal.Button48Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ataques de pánico...';
 BMaestro.Click;
 If rec>84 Then Button48.Enabled := False;
 end;
@@ -24838,7 +23051,6 @@ end;
 procedure TSpinal.Button573Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Voces perturbadoras...';
 BMaestro.Click;
 If rec>84 Then Button573.Enabled := False;
 end;
@@ -24846,7 +23058,6 @@ end;
 procedure TSpinal.Button575Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Ansiedad crónica...';
 BMaestro.Click;
 If rec>84 Then Button575.Enabled := False;
 end;
@@ -24854,7 +23065,6 @@ end;
 procedure TSpinal.Button578Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Tristeza no justificada...';
 BMaestro.Click;
 If rec>84 Then Button578.Enabled := False;
 end;
@@ -24862,7 +23072,6 @@ end;
 procedure TSpinal.Button581Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Alucinaciones...';
 BMaestro.Click;
 If rec>84 Then Button581.Enabled := False;
 end;
@@ -24870,7 +23079,6 @@ end;
 procedure TSpinal.Button582Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Crisis por ruido repetitivos...';
 BMaestro.Click;
 If rec>84 Then Button582.Enabled := False;
 end;
@@ -24878,7 +23086,6 @@ end;
 procedure TSpinal.Button584Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Miedo constante...';
 BMaestro.Click;
 If rec>84 Then Button584.Enabled := False;
 end;
@@ -24895,7 +23102,7 @@ PGeneralSistemas.Visible := True;
 GBSEndocrino.Visible := True;
 GBSEndocrino.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button650Click(Sender: TObject);
@@ -24907,7 +23114,7 @@ PGeneralSistemas.Visible := True;
 GBSIntegumentario.Visible := True;
 GBSIntegumentario.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button649Click(Sender: TObject);
@@ -24917,7 +23124,7 @@ PGeneralSistemas.Visible := True;
 GBAEstomatognatico.Visible := True;
 GBAEstomatognatico.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button648Click(Sender: TObject);
@@ -24927,7 +23134,7 @@ PGeneralSistemas.Visible := True;
 GBSInmunitario.Visible := True;
 GBSInmunitario.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button647Click(Sender: TObject);
@@ -24937,7 +23144,7 @@ PGeneralSistemas.Visible := True;
 GBSArticular.Visible := True;
 GBSArticular.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button646Click(Sender: TObject);
@@ -24947,7 +23154,7 @@ PGeneralSistemas.Visible := True;
 GBSMuscular.Visible := True;
 GBSMuscular.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button644Click(Sender: TObject);
@@ -24957,7 +23164,7 @@ PGeneralSistemas.Visible := True;
 GBSEsqueletico.Visible := True;
 GBSEsqueletico.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button637Click(Sender: TObject);
@@ -24967,7 +23174,7 @@ PGeneralSistemas.Visible := True;
 GBALocomotor.Visible := True;
 GBALocomotor.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button633Click(Sender: TObject);
@@ -24977,7 +23184,7 @@ PGeneralSistemas.Visible := True;
 GBAFonador.Visible := True;
 GBAFonador.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button591Click(Sender: TObject);
@@ -24987,7 +23194,7 @@ PGeneralSistemas.Visible := True;
 GBSSensorial.Visible := True;
 GBSSensorial.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button590Click(Sender: TObject);
@@ -24997,7 +23204,7 @@ PGeneralSistemas.Visible := True;
 GBSNervioso.Visible := True;
 GBSNervioso.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button589Click(Sender: TObject);
@@ -25007,7 +23214,7 @@ PGeneralSistemas.Visible := True;
 GBAExcretor.Visible := True;
 GBAExcretor.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button656Click(Sender: TObject);
@@ -25017,7 +23224,7 @@ PGeneralSistemas.Visible := True;
 GBARMasculino.Visible := True;
 GBARMasculino.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button655Click(Sender: TObject);
@@ -25027,7 +23234,7 @@ PGeneralSistemas.Visible := True;
 GBAGFemenino.Visible := True;
 GBAGFemenino.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button654Click(Sender: TObject);
@@ -25037,7 +23244,7 @@ PGeneralSistemas.Visible := True;
 GBSLinfatico.Visible := True;
 GBSLinfatico.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button653Click(Sender: TObject);
@@ -25048,7 +23255,7 @@ PGeneralSistemas.Visible := True;
 GBSCardiovascular.Visible := True;
 GBSCardiovascular.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button652Click(Sender: TObject);
@@ -25058,7 +23265,7 @@ PGeneralSistemas.Visible := True;
 GBACirculatorio.Visible := True;
 GBACirculatorio.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button651Click(Sender: TObject);
@@ -25068,7 +23275,7 @@ PGeneralSistemas.Visible := True;
 GBARespiratorio.Visible := True;
 GBARespiratorio.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.Button8Click(Sender: TObject);
@@ -25078,7 +23285,7 @@ PGeneralSistemas.Visible := True;
 GBADigestivo.Visible := True;
 GBADigestivo.BringToFront;
 PCerrarGeneral.BringToFront;
-BAreasEnfoque2.BringToFront;
+
 end;
 
 procedure TSpinal.TAEnfoqueTimer(Sender: TObject);
@@ -25253,17 +23460,6 @@ CheckBox184.Checked := False;
 CheckBox138.Checked := False;
 CheckBox57.Checked := False;
 CheckBox136.Checked := False;
-end;
-
-procedure TSpinal.Button84Click(Sender: TObject);
-begin
-LimpiaAEnfoque();
-GBAEnfoque.Visible := True;
-end;
-
-procedure TSpinal.Button1060Click(Sender: TObject);
-begin
-GBAEnfoque.Visible := False;
 end;
 
 procedure TSpinal.LBARespiratorioClick(Sender: TObject);
@@ -25707,7 +23903,6 @@ end;
 procedure TSpinal.Button624Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amigdalitis...';
 BMaestro.Click;
 If rec>84 Then Button624.Enabled := False;
 end;
@@ -25715,7 +23910,6 @@ end;
 procedure TSpinal.Button631Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Absceso retrogaríngeo...';
 BMaestro.Click;
 If rec>84 Then Button631.Enabled := False;
 end;
@@ -25723,7 +23917,6 @@ end;
 procedure TSpinal.Button634Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Amígdalitis estreptocócica...';
 BMaestro.Click;
 If rec>84 Then Button634.Enabled := False;
 end;
@@ -25731,7 +23924,6 @@ end;
 procedure TSpinal.Button598Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Crup...';
 BMaestro.Click;
 If rec>84 Then Button598.Enabled := False;
 end;
@@ -25739,7 +23931,6 @@ end;
 procedure TSpinal.Button640Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Escarlatina...';
 BMaestro.Click;
 If rec>84 Then Button640.Enabled := False;
 end;
@@ -25747,7 +23938,6 @@ end;
 procedure TSpinal.Button628Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Epiglotis...';
 BMaestro.Click;
 If rec>84 Then Button628.Enabled := False;
 end;
@@ -25755,7 +23945,6 @@ end;
 procedure TSpinal.Button645Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Faringitis...';
 BMaestro.Click;
 If rec>84 Then Button645.Enabled := False;
 end;
@@ -25763,7 +23952,6 @@ end;
 procedure TSpinal.Button620Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Faringitis estreptocócica...';
 BMaestro.Click;
 If rec>84 Then Button620.Enabled := False;
 end;
@@ -25771,7 +23959,6 @@ end;
 procedure TSpinal.Button621Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Infección por estreptococos...';
 BMaestro.Click;
 If rec>84 Then Button621.Enabled := False;
 end;
@@ -25779,7 +23966,6 @@ end;
 procedure TSpinal.Button626Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Laringitis...';
 BMaestro.Click;
 If rec>84 Then Button626.Enabled := False;
 end;
@@ -25787,7 +23973,6 @@ end;
 procedure TSpinal.Button630Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Obstrucción aguda de la vías respiratorias altas...';
 BMaestro.Click;
 If rec>84 Then Button630.Enabled := False;
 end;
@@ -25795,7 +23980,6 @@ end;
 procedure TSpinal.Button635Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EGarganta.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button635.Enabled := False;
 end;
@@ -26198,11 +24382,8 @@ end;
 procedure TSpinal.BMaestroSistemas2Click(Sender: TObject);
 begin
 MyChrono.Start;
-PDesarrollo.visible:=true;
-PDesarrollo.refresh;
-GBAEnfoque.Visible := True;
 If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 vtiempo := 90+random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
@@ -26238,11 +24419,8 @@ MyChrono.TimeElapsed > vtiempo;
 
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
-GBAEnfoque.Visible := False;
 TAEnfoque.Enabled := False;
 LimpiaAEnfoque();
-PDesarrollo.Visible := False;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
     MyChrono.Stop;
   If (rec<85) and (CBAutomatico.Checked=True) Then BMaestroSistemas2.Click;
@@ -26257,7 +24435,6 @@ end;
 procedure TSpinal.BTSEndocrinoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESEndocrino.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSEndocrino.Enabled := False;
 end;
@@ -26270,7 +24447,6 @@ end;
 procedure TSpinal.BTSIntegumentarioClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESIntegumentario.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSIntegumentario.Enabled := False;
 end;
@@ -26319,7 +24495,6 @@ end;
 procedure TSpinal.BTADigestivoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EADigestivo.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTADigestivo.Enabled := False;
 end;
@@ -26339,7 +24514,6 @@ end;
 procedure TSpinal.BTARespiratorioClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EARespiratorio.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTARespiratorio.Enabled := False;
 end;
@@ -26369,7 +24543,6 @@ end;
 procedure TSpinal.BTSLinfaticoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESLinfatico.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSLinfatico.Enabled := False;
 end;
@@ -26394,7 +24567,6 @@ end;
 procedure TSpinal.BTACirculatorioClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EACirculatorio.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTACirculatorio.Enabled := False;
 end;
@@ -26407,7 +24579,6 @@ end;
 procedure TSpinal.BTAEstomatognaticoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EAEstomatognatico.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTAEstomatognatico.Enabled := False;
 end;
@@ -26444,7 +24615,6 @@ end;
 procedure TSpinal.BTSInmunitarioClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESInmunitario.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSInmunitario.Enabled := False;
 end;
@@ -26469,7 +24639,6 @@ end;
 procedure TSpinal.BTSArticularClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESArticular.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSArticular.Enabled := False;
 end;
@@ -26494,7 +24663,6 @@ end;
 procedure TSpinal.BTSMuscularClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESMuscular.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSMuscular.Enabled := False;
 end;
@@ -26519,7 +24687,6 @@ end;
 procedure TSpinal.BTSEsqueleticoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESEsqueletico.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSEsqueletico.Enabled := False;
 end;
@@ -26544,7 +24711,6 @@ end;
 procedure TSpinal.BTALocomotorClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EALocomotor.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTALocomotor.Enabled := False;
 end;
@@ -26569,7 +24735,6 @@ end;
 procedure TSpinal.BTAFonadorClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EAFonador.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTAFonador.Enabled := False;
 end;
@@ -26594,7 +24759,6 @@ end;
 procedure TSpinal.BTSSensorialClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESSensorial.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSSensorial.Enabled := False;
 end;
@@ -26619,7 +24783,6 @@ end;
 procedure TSpinal.BTSNerviosoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESNervioso.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSNervioso.Enabled := False;
 end;
@@ -26644,7 +24807,6 @@ end;
 procedure TSpinal.BTAGRMasculinoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EAGRMasculino.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTAGRMasculino.Enabled := False;
 end;
@@ -26669,7 +24831,6 @@ end;
 procedure TSpinal.BTAExcretorClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EAExcretor.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTAExcretor.Enabled := False;
 end;
@@ -26694,7 +24855,6 @@ end;
 procedure TSpinal.BTSCardiovascularClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+ESCardiovascular.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTSCardiovascular.Enabled := False;
 end;
@@ -26719,7 +24879,6 @@ end;
 procedure TSpinal.BTAGRFemeninoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+EAGRFemenino.Text+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then BTAGRFemenino.Enabled := False;
 end;
@@ -26785,7 +24944,6 @@ procedure TSpinal.Shape7MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area específica de dolor / inflamación / degeneración...';
 BMaestroSistemas2.Click;
 if rec>84 Then Shape7.Visible := False;
 end;
@@ -26794,7 +24952,6 @@ procedure TSpinal.Shape3MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area específica de dolor / inflamación / degeneración...';
 BMaestroSistemas2.Click;
 if rec>84 Then Shape3.Visible := False;
 end;
@@ -26803,7 +24960,6 @@ procedure TSpinal.Shape4MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area específica de dolor / inflamación / degeneración...';
 BMaestroSistemas2.Click;
 if rec>84 Then Shape4.Visible := False;
 end;
@@ -26812,7 +24968,6 @@ procedure TSpinal.Shape5MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area específica de dolor / inflamación / degeneración...';
 BMaestroSistemas2.Click;
 if rec>84 Then Shape5.Visible := False;
 end;
@@ -26821,7 +24976,6 @@ procedure TSpinal.Shape6MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area específica de dolor / inflamación / degeneración...';
 BMaestroSistemas2.Click;
 if rec>84 Then Shape6.Visible := False;
 end;
@@ -26829,7 +24983,6 @@ end;
 procedure TSpinal.Label807Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Olfatorio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label807.Enabled := False;
@@ -26840,7 +24993,6 @@ end;
 procedure TSpinal.Label806Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Optico...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label806.Enabled := False;
@@ -26851,7 +25003,6 @@ end;
 procedure TSpinal.Label812Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Oculomotor...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label812.Enabled := False;
@@ -26862,7 +25013,6 @@ end;
 procedure TSpinal.Label811Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Trigémino...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label811.Enabled := False;
@@ -26873,7 +25023,6 @@ end;
 procedure TSpinal.Label810Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Facial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label810.Enabled := False;
@@ -26884,7 +25033,6 @@ end;
 procedure TSpinal.Label809Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Hipogloso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label809.Enabled := False;
@@ -26895,7 +25043,6 @@ end;
 procedure TSpinal.Label808Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Accesorio espinal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label808.Enabled := False;
@@ -26906,7 +25053,6 @@ end;
 procedure TSpinal.Label805Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Vago...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label805.Enabled := False;
@@ -26917,7 +25063,6 @@ end;
 procedure TSpinal.Label804Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Glosofaríngeo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label804.Enabled := False;
@@ -26928,7 +25073,6 @@ end;
 procedure TSpinal.Label803Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Acústico o Vestibular...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label803.Enabled := False;
@@ -26939,7 +25083,6 @@ end;
 procedure TSpinal.Label840Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label840.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label840.Enabled := False;
 end;
@@ -26947,7 +25090,6 @@ end;
 procedure TSpinal.Label814Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label814.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label814.Enabled := False;
 end;
@@ -26955,7 +25097,6 @@ end;
 procedure TSpinal.Label839Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label839.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label839.Enabled := False;
 end;
@@ -26963,7 +25104,6 @@ end;
 procedure TSpinal.Label438Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre las apófisis articulares (sinovial)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label438.Enabled := False;
 end;
@@ -26971,7 +25111,6 @@ end;
 procedure TSpinal.Label324Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre los cuerpos (cartilaginosa y sinovial)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label324.Enabled := False;
 end;
@@ -26979,7 +25118,6 @@ end;
 procedure TSpinal.Label801Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label801.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label801.Enabled := False;
 end;
@@ -26987,7 +25125,6 @@ end;
 procedure TSpinal.Label826Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre los cuerpos (sinovial)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label826.Enabled := False;
 end;
@@ -26995,7 +25132,6 @@ end;
 procedure TSpinal.Label818Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre los cuerpos (cartilaginosa)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label818.Enabled := False;
 end;
@@ -27003,7 +25139,6 @@ end;
 procedure TSpinal.Label118Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label118.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label118.Enabled := False;
 end;
@@ -27011,7 +25146,6 @@ end;
 procedure TSpinal.Label306Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label306.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label306.Enabled := False;
 end;
@@ -27019,7 +25153,6 @@ end;
 procedure TSpinal.Label309Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label309.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label309.Enabled := False;
 end;
@@ -27027,7 +25160,6 @@ end;
 procedure TSpinal.Label308Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre las apófisis articulares (sinovial)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label308.Enabled := False;
 end;
@@ -27035,7 +25167,6 @@ end;
 procedure TSpinal.Label265Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulación entre los cuerpos (cartilaginosa)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label265.Enabled := False;
 end;
@@ -27043,7 +25174,6 @@ end;
 procedure TSpinal.Label837Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label837.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label837.Enabled := False;
 end;
@@ -27051,7 +25181,6 @@ end;
 procedure TSpinal.Label836Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label836.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label836.Enabled := False;
 end;
@@ -27059,7 +25188,6 @@ end;
 procedure TSpinal.Label834Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label834.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label834.Enabled := False;
 end;
@@ -27067,7 +25195,6 @@ end;
 procedure TSpinal.Label816Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label816.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label816.Enabled := False;
 end;
@@ -27075,7 +25202,6 @@ end;
 procedure TSpinal.Label802Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label802.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label802.Enabled := False;
 end;
@@ -27083,7 +25209,6 @@ end;
 procedure TSpinal.Label815Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label815.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label815.Enabled := False;
 end;
@@ -27091,7 +25216,6 @@ end;
 procedure TSpinal.Label833Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label833.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label833.Enabled := False;
 end;
@@ -27099,7 +25223,6 @@ end;
 procedure TSpinal.Label813Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label813.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label813.Enabled := False;
 end;
@@ -27107,7 +25230,6 @@ end;
 procedure TSpinal.Label825Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Foramen intervertebral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label825.Enabled := False;
 end;
@@ -27115,7 +25237,6 @@ end;
 procedure TSpinal.Label821Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label821.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label821.Enabled := False;
 end;
@@ -27123,7 +25244,6 @@ end;
 procedure TSpinal.Label820Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ligamento longitudinal posterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label820.Enabled := False;
 end;
@@ -27131,7 +25251,6 @@ end;
 procedure TSpinal.Label819Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label819.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label819.Enabled := False;
 end;
@@ -27139,7 +25258,6 @@ end;
 procedure TSpinal.Label817Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label817.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label817.Enabled := False;
 end;
@@ -27147,7 +25265,6 @@ end;
 procedure TSpinal.Label831Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label831.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label831.Enabled := False;
 end;
@@ -27155,7 +25272,6 @@ end;
 procedure TSpinal.Label830Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ligamento longitudinal anterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label830.Enabled := False;
 end;
@@ -27163,7 +25279,6 @@ end;
 procedure TSpinal.Label824Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label824.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label824.Enabled := False;
 end;
@@ -27171,7 +25286,6 @@ end;
 procedure TSpinal.Label841Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ligamento interespinoso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label841.Enabled := False;
 end;
@@ -27179,7 +25293,6 @@ end;
 procedure TSpinal.Label829Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label829.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label829.Enabled := False;
 end;
@@ -27187,7 +25300,6 @@ end;
 procedure TSpinal.Label832Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ligamento supraespinoso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label832.Enabled := False;
 end;
@@ -27195,7 +25307,6 @@ end;
 procedure TSpinal.Label315Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Apófisis articular superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label315.Enabled := False;
 end;
@@ -27203,7 +25314,6 @@ end;
 procedure TSpinal.Label316Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label316.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label316.Enabled := False;
 end;
@@ -27211,7 +25321,6 @@ end;
 procedure TSpinal.Label317Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label317.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label317.Enabled := False;
 end;
@@ -27219,7 +25328,6 @@ end;
 procedure TSpinal.Label323Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tubérculos de la apófisis transversa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label323.Enabled := False;
 end;
@@ -27227,7 +25335,6 @@ end;
 procedure TSpinal.Label318Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label318.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label318.Enabled := False;
 end;
@@ -27235,7 +25342,6 @@ end;
 procedure TSpinal.Label838Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Hiato del conducto sacro...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label838.Enabled := False;
 end;
@@ -27243,7 +25349,6 @@ end;
 procedure TSpinal.Label319Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Agujero sacro dorsal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label319.Enabled := False;
 end;
@@ -27260,15 +25365,12 @@ end;
 procedure TSpinal.BMaestroDermatomasClick(Sender: TObject);
 begin
 MyChrono.Start;
-PDesarrollo.caption:='Realizando terapia específica a Dermatoma '+LMaestra.Caption+' ...';
-PDesarrollo.refresh;
-PDesarrollo.visible:=true;
 L_Conexion_Emocional.Visible := True;
 L_Nuevo_Patron_Pensamiento.Visible := True;
 PDermatomasCorporales.Refresh;
 GBAEnfoque.Visible := True;
 If CBAreasEnfoque.Checked = True Then TAEnfoque.Enabled := True;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
 GProgreso.Progress := 0;
 Reaccion_Irregular();
 vtiempo := 90+random(30);
@@ -27283,21 +25385,18 @@ dir:=random(400);
  '11100111','11111000');
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
-PDesarrollo.caption:='Realizando terapia de conexión emocional a Dermatoma '+LMaestra.Caption+' ...';
-PDesarrollo.refresh;
+
  SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
      ChangingPulses(5000,(100+dir),1112,dir,1,1+random(5),
  '11100111','11111000');
-PDesarrollo.caption:='Atención específica a tejido sarcode de Dermatoma '+LMaestra.Caption+' ...';
-PDesarrollo.refresh;
+
     GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 dir:=random(600);
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
      ChangingPulses(5000,(100+dir),1112,dir,1,4+random(10),
  '11100111','11111000');
-  PDesarrollo.caption:='Enfocándose en la conexión emocional a Dermatoma '+LMaestra.Caption+' ...';
-  PDesarrollo.refresh;
+
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
 dir:=random(600);
@@ -27316,10 +25415,9 @@ MyChrono.TimeElapsed > vtiempo;
 If rec>84 Then PTerapiaVertebra.Visible := False;
 Fmain.recmain:=Fmain.recmain+1;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 GBAEnfoque.Visible := False;
 TAEnfoque.Enabled := False;
-PDesarrollo.Visible := False;
 L_Conexion_Emocional.Visible := False;
 L_Nuevo_Patron_Pensamiento.Visible := False;
 PTiempoEstimado.Caption := 'Tiempo estimado en segs. | ';
@@ -28098,7 +26196,6 @@ begin
 procedure TSpinal.Label94Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label94.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label94.Enabled := False;
 end;
@@ -28106,7 +26203,6 @@ end;
 procedure TSpinal.Label177Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label177.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label177.Enabled := False;
 end;
@@ -28114,7 +26210,6 @@ end;
 procedure TSpinal.Label175Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label175.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label175.Enabled := False;
 end;
@@ -28122,7 +26217,6 @@ end;
 procedure TSpinal.Label174Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label174.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label174.Enabled := False;
 end;
@@ -28130,7 +26224,6 @@ end;
 procedure TSpinal.Label119Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label119.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label119.Enabled := False;
 end;
@@ -28138,7 +26231,6 @@ end;
 procedure TSpinal.Label125Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label125.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label125.Enabled := False;
 end;
@@ -28146,7 +26238,6 @@ end;
 procedure TSpinal.Label129Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label129.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label129.Enabled := False;
 end;
@@ -28154,7 +26245,6 @@ end;
 procedure TSpinal.Label789Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label789.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label789.Enabled := False;
 end;
@@ -28162,7 +26252,6 @@ end;
 procedure TSpinal.Label790Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label790.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label790.Enabled := False;
 end;
@@ -28170,7 +26259,6 @@ end;
 procedure TSpinal.Label791Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label791.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label791.Enabled := False;
 end;
@@ -28178,7 +26266,6 @@ end;
 procedure TSpinal.Label792Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label792.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label792.Enabled := False;
 end;
@@ -28186,7 +26273,6 @@ end;
 procedure TSpinal.Label794Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label794.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label794.Enabled := False;
 end;
@@ -28194,7 +26280,6 @@ end;
 procedure TSpinal.Label795Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label795.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label795.Enabled := False;
 end;
@@ -28202,7 +26287,6 @@ end;
 procedure TSpinal.Label796Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label796.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label796.Enabled := False;
 end;
@@ -28210,7 +26294,6 @@ end;
 procedure TSpinal.Label179Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label179.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label179.Enabled := False;
 end;
@@ -28218,7 +26301,6 @@ end;
 procedure TSpinal.Label182Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label182.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label182.Enabled := False;
 end;
@@ -28226,7 +26308,6 @@ end;
 procedure TSpinal.Label190Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label190.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label190.Enabled := False;
 end;
@@ -28234,7 +26315,6 @@ end;
 procedure TSpinal.Label181Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label181.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label181.Enabled := False;
 end;
@@ -28242,7 +26322,6 @@ end;
 procedure TSpinal.Label187Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label187.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label187.Enabled := False;
 end;
@@ -28250,7 +26329,6 @@ end;
 procedure TSpinal.Label197Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Orificio abdominal de la trompa de falopio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label197.Enabled := False;
 end;
@@ -28258,7 +26336,6 @@ end;
 procedure TSpinal.Label196Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label196.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label196.Enabled := False;
 end;
@@ -28266,7 +26343,6 @@ end;
 procedure TSpinal.Label195Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label195.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label195.Enabled := False;
 end;
@@ -28274,7 +26350,6 @@ end;
 procedure TSpinal.Label180Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label180.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label180.Enabled := False;
 end;
@@ -28282,7 +26357,6 @@ end;
 procedure TSpinal.Label198Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label198.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label198.Enabled := False;
 end;
@@ -28290,7 +26364,6 @@ end;
 procedure TSpinal.Label193Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label193.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label193.Enabled := False;
 end;
@@ -28298,7 +26371,6 @@ end;
 procedure TSpinal.Label192Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a '+Label192.Caption+'...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label192.Enabled := False;
 end;
@@ -28306,7 +26378,6 @@ end;
 procedure TSpinal.Label194Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Orificio cervical externo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label194.Enabled := False;
 end;
@@ -28314,7 +26385,6 @@ end;
 procedure TSpinal.Label191Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuello o cérvix...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label796.Enabled := False;
 end;
@@ -28322,7 +26392,6 @@ end;
 procedure TSpinal.Label610Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cabeza...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label610.Enabled := False;
 end;
@@ -28330,7 +26399,6 @@ end;
 procedure TSpinal.Label656Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Miembros superiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label656.Enabled := False;
 end;
@@ -28338,7 +26406,6 @@ end;
 procedure TSpinal.Label657Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label657.Enabled := False;
 end;
@@ -28346,7 +26413,6 @@ end;
 procedure TSpinal.Label870Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label870.Enabled := False;
 end;
@@ -28354,7 +26420,6 @@ end;
 procedure TSpinal.Label871Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Aurícula derecha...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label871.Enabled := False;
 end;
@@ -28362,7 +26427,6 @@ end;
 procedure TSpinal.Label868Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ventrículo derecho...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label868.Enabled := False;
 end;
@@ -28370,7 +26434,6 @@ end;
 procedure TSpinal.Label869Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label869.Enabled := False;
 end;
@@ -28378,7 +26441,6 @@ end;
 procedure TSpinal.Label866Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena hepática...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label866.Enabled := False;
 end;
@@ -28386,7 +26448,6 @@ end;
 procedure TSpinal.Label867Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena porta...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label867.Enabled := False;
 end;
@@ -28394,7 +26455,6 @@ end;
 procedure TSpinal.Label872Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena renal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label872.Enabled := False;
 end;
@@ -28402,7 +26462,6 @@ end;
 procedure TSpinal.Label653Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria carótida...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label653.Enabled := False;
 end;
@@ -28410,7 +26469,6 @@ end;
 procedure TSpinal.Label859Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label859.Enabled := False;
 end;
@@ -28418,7 +26476,6 @@ end;
 procedure TSpinal.Label858Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena aorta...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label858.Enabled := False;
 end;
@@ -28426,7 +26483,6 @@ end;
 procedure TSpinal.Label861Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Aurícula izquierda...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label861.Enabled := False;
 end;
@@ -28434,7 +26490,6 @@ end;
 procedure TSpinal.Label860Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ventrículo izquierdo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label860.Enabled := False;
 end;
@@ -28442,7 +26497,6 @@ end;
 procedure TSpinal.Label863Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria hepática...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label863.Enabled := False;
 end;
@@ -28450,7 +26504,6 @@ end;
 procedure TSpinal.Label862Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria mesentérica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label862.Enabled := False;
 end;
@@ -28458,7 +26511,6 @@ end;
 procedure TSpinal.Label865Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria renal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label865.Enabled := False;
 end;
@@ -28466,7 +26518,6 @@ end;
 procedure TSpinal.Label864Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tronco y miembros inferiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label864.Enabled := False;
 end;
@@ -28474,7 +26525,6 @@ end;
 procedure TSpinal.Label608Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label608.Enabled := False;
 end;
@@ -28482,7 +26532,6 @@ end;
 procedure TSpinal.Label607Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Válvula aórtica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label607.Enabled := False;
 end;
@@ -28490,7 +26539,6 @@ end;
 procedure TSpinal.Label613Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas pulmonares derechas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label613.Enabled := False;
 end;
@@ -28498,7 +26546,6 @@ end;
 procedure TSpinal.Label605Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Aurícula derecha...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label605.Enabled := False;
 end;
@@ -28506,7 +26553,6 @@ end;
 procedure TSpinal.Label604Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Válvula tricúspida...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label604.Enabled := False;
 end;
@@ -28514,7 +26560,6 @@ end;
 procedure TSpinal.Label602Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label602.Enabled := False;
 end;
@@ -28522,7 +26567,6 @@ end;
 procedure TSpinal.Label603Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ventrículo derecho...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label603.Enabled := False;
 end;
@@ -28530,7 +26574,6 @@ end;
 procedure TSpinal.Label615Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Aorta...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label615.Enabled := False;
 end;
@@ -28538,7 +26581,6 @@ end;
 procedure TSpinal.Label614Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label614.Enabled := False;
 end;
@@ -28546,7 +26588,6 @@ end;
 procedure TSpinal.Label612Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Aurícula izquierda...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label612.Enabled := False;
 end;
@@ -28554,7 +26595,6 @@ end;
 procedure TSpinal.Label606Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas pulmonares izquierdas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label606.Enabled := False;
 end;
@@ -28562,7 +26602,6 @@ end;
 procedure TSpinal.Label611Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Válvula mitral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label611.Enabled := False;
 end;
@@ -28570,7 +26609,6 @@ end;
 procedure TSpinal.Label609Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ventrículo izquierdo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label609.Enabled := False;
 end;
@@ -28578,7 +26616,6 @@ end;
 procedure TSpinal.Label84Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Riñón...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label84.Enabled := False;
 end;
@@ -28586,7 +26623,6 @@ end;
 procedure TSpinal.Label86Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pelvis renal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label86.Enabled := False;
 end;
@@ -28594,7 +26630,6 @@ end;
 procedure TSpinal.Label87Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Uréter...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label87.Enabled := False;
 end;
@@ -28602,7 +26637,6 @@ end;
 procedure TSpinal.Label92Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vejiga urinaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label92.Enabled := False;
 end;
@@ -28610,7 +26644,6 @@ end;
 procedure TSpinal.Label93Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Uretra...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label93.Enabled := False;
 end;
@@ -28618,7 +26651,6 @@ end;
 procedure TSpinal.Label616Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándulas sudoriparas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label616.Enabled := False;
 end;
@@ -28626,7 +26658,6 @@ end;
 procedure TSpinal.Label618Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Hígado...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label618.Enabled := False;
 end;
@@ -28634,7 +26665,6 @@ end;
 procedure TSpinal.Label617Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pulmones...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label617.Enabled := False;
 end;
@@ -28642,7 +26672,6 @@ end;
 procedure TSpinal.Label630Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Uretra...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label630.Enabled := False;
 end;
@@ -28650,7 +26679,6 @@ end;
 procedure TSpinal.Label625Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pene...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label625.Enabled := False;
 end;
@@ -28658,7 +26686,6 @@ end;
 procedure TSpinal.Label621Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto eyaculador...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label621.Enabled := False;
 end;
@@ -28666,7 +26693,6 @@ end;
 procedure TSpinal.Label632Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vesícula seminal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label632.Enabled := False;
 end;
@@ -28674,7 +26700,6 @@ end;
 procedure TSpinal.Label620Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Próstata...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label620.Enabled := False;
 end;
@@ -28682,7 +26707,6 @@ end;
 procedure TSpinal.Label623Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándula de Cowper...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label623.Enabled := False;
 end;
@@ -28690,7 +26714,6 @@ end;
 procedure TSpinal.Label627Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto deferente...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label627.Enabled := False;
 end;
@@ -28698,7 +26721,6 @@ end;
 procedure TSpinal.Label626Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Epidídimo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label626.Enabled := False;
 end;
@@ -28706,7 +26728,6 @@ end;
 procedure TSpinal.Label628Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Testículo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label628.Enabled := False;
 end;
@@ -28714,7 +26735,6 @@ end;
 procedure TSpinal.Label629Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Escroto...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label629.Enabled := False;
 end;
@@ -28722,7 +26742,6 @@ end;
 procedure TSpinal.Label633Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cerebro...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label633.Enabled := False;
 end;
@@ -28730,7 +26749,6 @@ end;
 procedure TSpinal.Label636Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bulbo raquídeo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label636.Enabled := False;
 end;
@@ -28738,7 +26756,6 @@ end;
 procedure TSpinal.Label645Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Plexo braquial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label645.Enabled := False;
 end;
@@ -28746,7 +26763,6 @@ end;
 procedure TSpinal.Label644Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervios torácicos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label644.Enabled := False;
 end;
@@ -28754,7 +26770,6 @@ end;
 procedure TSpinal.Label643Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Plexo sacro-coxígeo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label643.Enabled := False;
 end;
@@ -28762,7 +26777,6 @@ end;
 procedure TSpinal.Label639Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio saferno...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label639.Enabled := False;
 end;
@@ -28770,7 +26784,6 @@ end;
 procedure TSpinal.Label642Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio femoro-cutáneo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label642.Enabled := False;
 end;
@@ -28778,7 +26791,6 @@ end;
 procedure TSpinal.Label640Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio cutaneo-medial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label640.Enabled := False;
 end;
@@ -28786,7 +26798,6 @@ end;
 procedure TSpinal.Label641Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio tibial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label641.Enabled := False;
 end;
@@ -28794,7 +26805,6 @@ end;
 procedure TSpinal.Label634Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Rama plantar lateral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label634.Enabled := False;
 end;
@@ -28802,7 +26812,6 @@ end;
 procedure TSpinal.Label646Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Rama plantar medial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label646.Enabled := False;
 end;
@@ -28810,7 +26819,6 @@ end;
 procedure TSpinal.Label849Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cerebelo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label849.Enabled := False;
 end;
@@ -28818,7 +26826,6 @@ end;
 procedure TSpinal.Label850Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Plexo cervical...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label850.Enabled := False;
 end;
@@ -28826,7 +26833,6 @@ end;
 procedure TSpinal.Label855Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio frénico...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label855.Enabled := False;
 end;
@@ -28834,7 +26840,6 @@ end;
 procedure TSpinal.Label854Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio radial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label854.Enabled := False;
 end;
@@ -28842,7 +26847,6 @@ end;
 procedure TSpinal.Label853Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Plexo lumbar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label853.Enabled := False;
 end;
@@ -28850,7 +26854,6 @@ end;
 procedure TSpinal.Label851Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio cubital...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label851.Enabled := False;
 end;
@@ -28858,7 +26861,6 @@ end;
 procedure TSpinal.Label852Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio ciático...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label852.Enabled := False;
 end;
@@ -28866,7 +26868,6 @@ end;
 procedure TSpinal.Label638Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio peroneo común...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label638.Enabled := False;
 end;
@@ -28874,7 +26875,6 @@ end;
 procedure TSpinal.Label635Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio cutaneo lateral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label635.Enabled := False;
 end;
@@ -28882,7 +26882,6 @@ end;
 procedure TSpinal.Label637Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio sura...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label637.Enabled := False;
 end;
@@ -28890,7 +26889,6 @@ end;
 procedure TSpinal.Label659Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area motora del lenguaje hablado...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label659.Enabled := False;
 end;
@@ -28898,7 +26896,6 @@ end;
 procedure TSpinal.Label647Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area premotora...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label647.Enabled := False;
 end;
@@ -28906,7 +26903,6 @@ end;
 procedure TSpinal.Label650Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area motora primaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label650.Enabled := False;
 end;
@@ -28914,7 +26910,6 @@ end;
 procedure TSpinal.Label652Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area sensitiva primaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label652.Enabled := False;
 end;
@@ -28922,7 +26917,6 @@ end;
 procedure TSpinal.Label651Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area de asociación sensitiva...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label651.Enabled := False;
 end;
@@ -28930,7 +26924,6 @@ end;
 procedure TSpinal.Label658Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Gyrus angularis (lenguaje visual)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label658.Enabled := False;
 end;
@@ -28938,7 +26931,6 @@ end;
 procedure TSpinal.Label660Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area de asociación auditiva...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label660.Enabled := False;
 end;
@@ -28946,7 +26938,6 @@ end;
 procedure TSpinal.Label648Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area auditiva primaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label648.Enabled := False;
 end;
@@ -28954,7 +26945,6 @@ end;
 procedure TSpinal.Label655Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area visual primaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label655.Enabled := False;
 end;
@@ -28962,7 +26952,6 @@ end;
 procedure TSpinal.Label654Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Area visual secundaria...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label654.Enabled := False;
 end;
@@ -28970,7 +26959,6 @@ end;
 procedure TSpinal.Label663Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fosas nasales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label663.Enabled := False;
 end;
@@ -28978,7 +26966,6 @@ end;
 procedure TSpinal.Label665Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Orificios nasales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label665.Enabled := False;
 end;
@@ -28986,7 +26973,6 @@ end;
 procedure TSpinal.Label666Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lengua...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label666.Enabled := False;
 end;
@@ -28994,7 +26980,6 @@ end;
 procedure TSpinal.Label669Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Boca...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label669.Enabled := False;
 end;
@@ -29002,7 +26987,6 @@ end;
 procedure TSpinal.Label662Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tráquea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label662.Enabled := False;
 end;
@@ -29010,7 +26994,6 @@ end;
 procedure TSpinal.Label664Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pulmones...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label664.Enabled := False;
 end;
@@ -29018,7 +27001,6 @@ end;
 procedure TSpinal.Label661Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pleuras...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label661.Enabled := False;
 end;
@@ -29026,7 +27008,6 @@ end;
 procedure TSpinal.Label672Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cavidad torácica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label672.Enabled := False;
 end;
@@ -29034,7 +27015,6 @@ end;
 procedure TSpinal.Label673Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Músculos intercostales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label673.Enabled := False;
 end;
@@ -29042,7 +27022,6 @@ end;
 procedure TSpinal.Label671Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Costillas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label671.Enabled := False;
 end;
@@ -29050,7 +27029,6 @@ end;
 procedure TSpinal.Label667Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Diafragma...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label667.Enabled := False;
 end;
@@ -29058,7 +27036,6 @@ end;
 procedure TSpinal.Label674Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label674.Enabled := False;
 end;
@@ -29066,7 +27043,6 @@ end;
 procedure TSpinal.Label668Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Epiglotis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label668.Enabled := False;
 end;
@@ -29074,7 +27050,6 @@ end;
 procedure TSpinal.Label670Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Laringe...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label670.Enabled := False;
 end;
@@ -29082,7 +27057,6 @@ end;
 procedure TSpinal.Label797Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuerdas vocales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label797.Enabled := False;
 end;
@@ -29090,7 +27064,6 @@ end;
 procedure TSpinal.Label622Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cartílago tiroide...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label622.Enabled := False;
 end;
@@ -29098,7 +27071,6 @@ end;
 procedure TSpinal.Label624Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esófago...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label624.Enabled := False;
 end;
@@ -29106,7 +27078,6 @@ end;
 procedure TSpinal.Label619Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label619.Enabled := False;
 end;
@@ -29114,7 +27085,6 @@ end;
 procedure TSpinal.Label799Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label799.Enabled := False;
 end;
@@ -29122,7 +27092,6 @@ end;
 procedure TSpinal.Label800Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquios...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label800.Enabled := False;
 end;
@@ -29130,7 +27099,6 @@ end;
 procedure TSpinal.Label798Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquiolos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label798.Enabled := False;
 end;
@@ -29138,7 +27106,6 @@ end;
 procedure TSpinal.Label631Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cavidad del corazón...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label631.Enabled := False;
 end;
@@ -29146,7 +27113,6 @@ end;
 procedure TSpinal.Label687Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esternocleidomastoideo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label687.Enabled := False;
 end;
@@ -29154,7 +27120,6 @@ end;
 procedure TSpinal.Label675Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pectorales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label675.Enabled := False;
 end;
@@ -29162,7 +27127,6 @@ end;
 procedure TSpinal.Label686Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bíceps...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label686.Enabled := False;
 end;
@@ -29170,7 +27134,6 @@ end;
 procedure TSpinal.Label681Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Supinador largo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label681.Enabled := False;
 end;
@@ -29178,14 +27141,12 @@ end;
 procedure TSpinal.Label685Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Oblícuo externo...';
 if rec>84 Then Label685.Enabled := False;
 end;
 
 procedure TSpinal.Label684Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Recto del abdomen...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label684.Enabled := False;
 end;
@@ -29193,7 +27154,6 @@ end;
 procedure TSpinal.Label682Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Recto anterior del muslo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label682.Enabled := False;
 end;
@@ -29201,7 +27161,6 @@ end;
 procedure TSpinal.Label676Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Sartorio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label676.Enabled := False;
 end;
@@ -29209,7 +27168,6 @@ end;
 procedure TSpinal.Label683Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuadriceps...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label683.Enabled := False;
 end;
@@ -29217,7 +27175,6 @@ end;
 procedure TSpinal.Label680Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Extensor común de los dedos del pie...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label680.Enabled := False;
 end;
@@ -29225,7 +27182,6 @@ end;
 procedure TSpinal.Label688Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tibial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label688.Enabled := False;
 end;
@@ -29233,7 +27189,6 @@ end;
 procedure TSpinal.Label677Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Maxilar superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label677.Enabled := False;
 end;
@@ -29241,7 +27196,6 @@ end;
 procedure TSpinal.Label679Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Mandíbula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label679.Enabled := False;
 end;
@@ -29249,7 +27203,6 @@ end;
 procedure TSpinal.Label678Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Clavícula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label678.Enabled := False;
 end;
@@ -29257,7 +27210,6 @@ end;
 procedure TSpinal.Label873Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Húmero...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label873.Enabled := False;
 end;
@@ -29265,7 +27217,6 @@ end;
 procedure TSpinal.Label875Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Costillas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label875.Enabled := False;
 end;
@@ -29273,7 +27224,6 @@ end;
 procedure TSpinal.Label874Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esternón...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label874.Enabled := False;
 end;
@@ -29281,7 +27231,6 @@ end;
 procedure TSpinal.Label876Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Radio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label876.Enabled := False;
 end;
@@ -29289,7 +27238,6 @@ end;
 procedure TSpinal.Label878Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cúbito...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label878.Enabled := False;
 end;
@@ -29297,7 +27245,6 @@ end;
 procedure TSpinal.Label877Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pelvis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label877.Enabled := False;
 end;
@@ -29305,7 +27252,6 @@ end;
 procedure TSpinal.Label879Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fémur...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label879.Enabled := False;
 end;
@@ -29313,7 +27259,6 @@ end;
 procedure TSpinal.Label881Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Rótula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label881.Enabled := False;
 end;
@@ -29321,7 +27266,6 @@ end;
 procedure TSpinal.Label880Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tibia...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label880.Enabled := False;
 end;
@@ -29329,7 +27273,6 @@ end;
 procedure TSpinal.Label882Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Peroné...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label882.Enabled := False;
 end;
@@ -29337,7 +27280,6 @@ end;
 procedure TSpinal.Label689Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cráneo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label689.Enabled := False;
 end;
@@ -29345,7 +27287,6 @@ end;
 procedure TSpinal.Label694Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Columna vertebral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label694.Enabled := False;
 end;
@@ -29353,7 +27294,6 @@ end;
 procedure TSpinal.Label700Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Omóplato...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label700.Enabled := False;
 end;
@@ -29361,7 +27301,6 @@ end;
 procedure TSpinal.Label692Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esternón...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label692.Enabled := False;
 end;
@@ -29369,7 +27308,6 @@ end;
 procedure TSpinal.Label693Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Costillas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label693.Enabled := False;
 end;
@@ -29377,7 +27315,6 @@ end;
 procedure TSpinal.Label691Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Húmero...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label691.Enabled := False;
 end;
@@ -29385,7 +27322,6 @@ end;
 procedure TSpinal.Label697Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cúbito...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label697.Enabled := False;
 end;
@@ -29393,7 +27329,6 @@ end;
 procedure TSpinal.Label690Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Radio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label690.Enabled := False;
 end;
@@ -29401,7 +27336,6 @@ end;
 procedure TSpinal.Label702Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pelvis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label702.Enabled := False;
 end;
@@ -29409,7 +27343,6 @@ end;
 procedure TSpinal.Label699Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fémur...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label699.Enabled := False;
 end;
@@ -29417,7 +27350,6 @@ end;
 procedure TSpinal.Label696Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Rótula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label696.Enabled := False;
 end;
@@ -29425,7 +27357,6 @@ end;
 procedure TSpinal.Label701Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tibia...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label701.Enabled := False;
 end;
@@ -29433,7 +27364,6 @@ end;
 procedure TSpinal.Label695Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Peroné...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label695.Enabled := False;
 end;
@@ -29441,7 +27371,6 @@ end;
 procedure TSpinal.Label705Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Frontal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label705.Enabled := False;
 end;
@@ -29449,7 +27378,6 @@ end;
 procedure TSpinal.Label703Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Risorio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label703.Enabled := False;
 end;
@@ -29457,7 +27385,6 @@ end;
 procedure TSpinal.Label715Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bíceps...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label715.Enabled := False;
 end;
@@ -29465,7 +27392,6 @@ end;
 procedure TSpinal.Label708Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Serrato anterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label708.Enabled := False;
 end;
@@ -29473,7 +27399,6 @@ end;
 procedure TSpinal.Label713Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Temporal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label713.Enabled := False;
 end;
@@ -29481,7 +27406,6 @@ end;
 procedure TSpinal.Label712Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Orbicular de ojos y labios...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label712.Enabled := False;
 end;
@@ -29489,7 +27413,6 @@ end;
 procedure TSpinal.Label884Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esternocleidomastoideo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label884.Enabled := False;
 end;
@@ -29497,7 +27420,6 @@ end;
 procedure TSpinal.Label707Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pectorales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label707.Enabled := False;
 end;
@@ -29505,7 +27427,6 @@ end;
 procedure TSpinal.Label698Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Recto del abdomen...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label698.Enabled := False;
 end;
@@ -29513,7 +27434,6 @@ end;
 procedure TSpinal.Label890Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Trapecio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label890.Enabled := False;
 end;
@@ -29521,7 +27441,6 @@ end;
 procedure TSpinal.Label886Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Extensores de carpo y dedos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label886.Enabled := False;
 end;
@@ -29529,7 +27448,6 @@ end;
 procedure TSpinal.Label716Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Oblícuo del abdomen...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label716.Enabled := False;
 end;
@@ -29537,7 +27455,6 @@ end;
 procedure TSpinal.Label889Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Sartorio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label889.Enabled := False;
 end;
@@ -29545,7 +27462,6 @@ end;
 procedure TSpinal.Label709Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuadriceps femoral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label709.Enabled := False;
 end;
@@ -29553,7 +27469,6 @@ end;
 procedure TSpinal.Label704Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Peroneo largo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label704.Enabled := False;
 end;
@@ -29561,7 +27476,6 @@ end;
 procedure TSpinal.Label892Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Gemelos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label892.Enabled := False;
 end;
@@ -29569,7 +27483,6 @@ end;
 procedure TSpinal.Label714Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tibial anterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label714.Enabled := False;
 end;
@@ -29577,7 +27490,6 @@ end;
 procedure TSpinal.Label885Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tensores y extensores de los dedos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label885.Enabled := False;
 end;
@@ -29585,7 +27497,6 @@ end;
 procedure TSpinal.Label887Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Deltoide...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label887.Enabled := False;
 end;
@@ -29593,7 +27504,6 @@ end;
 procedure TSpinal.Label883Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Dorsal ancho...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label883.Enabled := False;
 end;
@@ -29601,7 +27511,6 @@ end;
 procedure TSpinal.Label706Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tríceps...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label706.Enabled := False;
 end;
@@ -29609,7 +27518,6 @@ end;
 procedure TSpinal.Label711Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Extensores de los dedos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label711.Enabled := False;
 end;
@@ -29617,7 +27525,6 @@ end;
 procedure TSpinal.Label891Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fimbrias...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label891.Enabled := False;
 end;
@@ -29625,7 +27532,6 @@ end;
 procedure TSpinal.Label710Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Solear...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label710.Enabled := False;
 end;
@@ -29633,7 +27539,6 @@ end;
 procedure TSpinal.Label888Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tendón de Aquiles...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label888.Enabled := False;
 end;
@@ -29641,7 +27546,6 @@ end;
 procedure TSpinal.Label724Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulaciones de Fosa y Bola...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label724.Enabled := False;
 end;
@@ -29649,7 +27553,6 @@ end;
 procedure TSpinal.Label717Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulaciones de Pivote...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label717.Enabled := False;
 end;
@@ -29657,7 +27560,6 @@ end;
 procedure TSpinal.Label729Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulaciones de Bisagra...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label729.Enabled := False;
 end;
@@ -29665,7 +27567,6 @@ end;
 procedure TSpinal.Label720Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Articulaciones Elipsoidales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label720.Enabled := False;
 end;
@@ -29673,7 +27574,6 @@ end;
 procedure TSpinal.Label730Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Rodilla...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label730.Enabled := False;
 end;
@@ -29681,7 +27581,6 @@ end;
 procedure TSpinal.Label718Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cadera...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label718.Enabled := False;
 end;
@@ -29689,7 +27588,6 @@ end;
 procedure TSpinal.Label734Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Amígdalas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label734.Enabled := False;
 end;
@@ -29697,7 +27595,6 @@ end;
 procedure TSpinal.Label731Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Adenoides...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label731.Enabled := False;
 end;
@@ -29705,7 +27602,6 @@ end;
 procedure TSpinal.Label736Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Timo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label736.Enabled := False;
 end;
@@ -29713,7 +27609,6 @@ end;
 procedure TSpinal.Label742Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto torácico...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label742.Enabled := False;
 end;
@@ -29721,7 +27616,6 @@ end;
 procedure TSpinal.Label741Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bazo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label741.Enabled := False;
 end;
@@ -29729,7 +27623,6 @@ end;
 procedure TSpinal.Label738Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vasos linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label738.Enabled := False;
 end;
@@ -29737,7 +27630,6 @@ end;
 procedure TSpinal.Label743Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Placas de Peyer (en la pared intestinal)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label743.Enabled := False;
 end;
@@ -29745,7 +27637,6 @@ end;
 procedure TSpinal.Label737Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Apéndice (pequeño sáculo del tracto intestinal)...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label737.Enabled := False;
 end;
@@ -29753,7 +27644,6 @@ end;
 procedure TSpinal.Label740Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglios linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label740.Enabled := False;
 end;
@@ -29761,7 +27651,6 @@ end;
 procedure TSpinal.Label739Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Médula ósea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label739.Enabled := False;
 end;
@@ -29769,7 +27658,6 @@ end;
 procedure TSpinal.Label745Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arcada dental superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label745.Enabled := False;
 end;
@@ -29777,7 +27665,6 @@ end;
 procedure TSpinal.Label757Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Uvula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label757.Enabled := False;
 end;
@@ -29785,7 +27672,6 @@ end;
 procedure TSpinal.Label758Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label727.Enabled := False;
@@ -29797,7 +27683,6 @@ end;
 procedure TSpinal.Label755Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lengua...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label755.Enabled := False;
 end;
@@ -29805,7 +27690,6 @@ end;
 procedure TSpinal.Label750Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Labio superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label750.Enabled := False;
 end;
@@ -29813,7 +27697,6 @@ end;
 procedure TSpinal.Label747Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Paladar duro...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label747.Enabled := False;
 end;
@@ -29821,7 +27704,6 @@ end;
 procedure TSpinal.Label749Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Frenillo del labio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label749.Enabled := False;
 end;
@@ -29829,7 +27711,6 @@ end;
 procedure TSpinal.Label748Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Velo palatino...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label748.Enabled := False;
 end;
@@ -29837,7 +27718,6 @@ end;
 procedure TSpinal.Label723Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Maxilar superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label723.Enabled := False;
 end;
@@ -29845,7 +27725,6 @@ end;
 procedure TSpinal.Label746Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pilar posterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label746.Enabled := False;
 end;
@@ -29853,7 +27732,6 @@ end;
 procedure TSpinal.Label753Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Pilar anterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label753.Enabled := False;
 end;
@@ -29861,7 +27739,6 @@ end;
 procedure TSpinal.Label752Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Amígdala...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label752.Enabled := False;
 end;
@@ -29869,7 +27746,6 @@ end;
 procedure TSpinal.Label722Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Paladar blando...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label722.Enabled := False;
 end;
@@ -29877,7 +27753,6 @@ end;
 procedure TSpinal.Label732Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Maxilar inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label732.Enabled := False;
 end;
@@ -29885,7 +27760,6 @@ end;
 procedure TSpinal.Label733Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe nasal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label733.Enabled := False;
 end;
@@ -29893,7 +27767,6 @@ end;
 procedure TSpinal.Label735Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe bucal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label735.Enabled := False;
 end;
@@ -29901,7 +27774,6 @@ end;
 procedure TSpinal.Label744Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Itsmo de las fauces...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label744.Enabled := False;
 end;
@@ -29909,7 +27781,6 @@ end;
 procedure TSpinal.Label721Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Hueso hioides...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label721.Enabled := False;
 end;
@@ -29917,7 +27788,6 @@ end;
 procedure TSpinal.Label719Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Epiglotis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label719.Enabled := False;
 end;
@@ -29926,7 +27796,6 @@ end;
 procedure TSpinal.Label728Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tráquea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label728.Enabled := False;
 end;
@@ -29934,7 +27803,6 @@ end;
 procedure TSpinal.Label726Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esófago...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label726.Enabled := False;
 end;
@@ -29942,7 +27810,6 @@ end;
 procedure TSpinal.Label754Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arcada inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label754.Enabled := False;
 end;
@@ -29950,7 +27817,6 @@ end;
 procedure TSpinal.Label751Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Labio inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label751.Enabled := False;
 end;
@@ -29958,7 +27824,6 @@ end;
 procedure TSpinal.Label373Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria subclavia...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label373.Enabled := False;
 end;
@@ -29966,7 +27831,6 @@ end;
 procedure TSpinal.Label372Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena subclavia...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label372.Enabled := False;
 end;
@@ -29974,7 +27838,6 @@ end;
 procedure TSpinal.Label404Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cefálica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label404.Enabled := False;
 end;
@@ -29982,7 +27845,6 @@ end;
 procedure TSpinal.Label428Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena axilar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label428.Enabled := False;
 end;
@@ -29990,7 +27852,6 @@ end;
 procedure TSpinal.Label426Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria axilar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label426.Enabled := False;
 end;
@@ -29998,7 +27859,6 @@ end;
 procedure TSpinal.Label417Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria aorta...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label417.Enabled := False;
 end;
@@ -30006,7 +27866,6 @@ end;
 procedure TSpinal.Label429Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label429.Enabled := False;
 end;
@@ -30014,7 +27873,6 @@ end;
 procedure TSpinal.Label427Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cava inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label427.Enabled := False;
 end;
@@ -30022,7 +27880,6 @@ end;
 procedure TSpinal.Label402Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria aorta descendente...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label402.Enabled := False;
 end;
@@ -30030,7 +27887,6 @@ end;
 procedure TSpinal.Label405Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria braquial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label405.Enabled := False;
 end;
@@ -30038,7 +27894,6 @@ end;
 procedure TSpinal.Label406Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena basílica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label406.Enabled := False;
 end;
@@ -30046,7 +27901,6 @@ end;
 procedure TSpinal.Label407Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cubital mediana...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label407.Enabled := False;
 end;
@@ -30054,7 +27908,6 @@ end;
 procedure TSpinal.Label412Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena cefálica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label412.Enabled := False;
 end;
@@ -30062,7 +27915,6 @@ end;
 procedure TSpinal.Label413Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria cubital...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label413.Enabled := False;
 end;
@@ -30070,7 +27922,6 @@ end;
 procedure TSpinal.Label414Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria radial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label414.Enabled := False;
 end;
@@ -30078,7 +27929,6 @@ end;
 procedure TSpinal.Label421Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas digitales palmares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label421.Enabled := False;
 end;
@@ -30086,7 +27936,6 @@ end;
 procedure TSpinal.Label420Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria digital...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label420.Enabled := False;
 end;
@@ -30094,7 +27943,6 @@ end;
 procedure TSpinal.Label339Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria basilar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label339.Enabled := False;
 end;
@@ -30102,7 +27950,6 @@ end;
 procedure TSpinal.Label415Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria dorsal metatarsiana...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label415.Enabled := False;
 end;
@@ -30110,7 +27957,6 @@ end;
 procedure TSpinal.Label416Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias digitales dorsales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label416.Enabled := False;
 end;
@@ -30118,7 +27964,6 @@ end;
 procedure TSpinal.Label371Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria carótida interna...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label371.Enabled := False;
 end;
@@ -30126,7 +27971,6 @@ end;
 procedure TSpinal.Label374Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria carótida externa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label374.Enabled := False;
 end;
@@ -30134,7 +27978,6 @@ end;
 procedure TSpinal.Label376Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena yugular externa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label376.Enabled := False;
 end;
@@ -30142,7 +27985,6 @@ end;
 procedure TSpinal.Label399Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena yugular interna...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label399.Enabled := False;
 end;
@@ -30150,7 +27992,6 @@ end;
 procedure TSpinal.Label401Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias carótidas comunes...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label401.Enabled := False;
 end;
@@ -30158,7 +27999,6 @@ end;
 procedure TSpinal.Label400Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias vertebrales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label400.Enabled := False;
 end;
@@ -30166,7 +28006,6 @@ end;
 procedure TSpinal.Label365Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias pulmonares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label365.Enabled := False;
 end;
@@ -30174,7 +28013,6 @@ end;
 procedure TSpinal.Label367Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas pulmonares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label367.Enabled := False;
 end;
@@ -30182,7 +28020,6 @@ end;
 procedure TSpinal.Label368Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Corazón...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label368.Enabled := False;
 end;
@@ -30190,7 +28027,6 @@ end;
 procedure TSpinal.Label369Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tronco celíaco...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label369.Enabled := False;
 end;
@@ -30198,7 +28034,6 @@ end;
 procedure TSpinal.Label370Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas suprahepáticas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label370.Enabled := False;
 end;
@@ -30206,7 +28041,6 @@ end;
 procedure TSpinal.Label329Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas renales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label329.Enabled := False;
 end;
@@ -30214,7 +28048,6 @@ end;
 procedure TSpinal.Label330Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias renales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label330.Enabled := False;
 end;
@@ -30222,7 +28055,6 @@ end;
 procedure TSpinal.Label331Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas gonadales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label331.Enabled := False;
 end;
@@ -30230,7 +28062,6 @@ end;
 procedure TSpinal.Label332Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arterias gonadales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label332.Enabled := False;
 end;
@@ -30238,7 +28069,6 @@ end;
 procedure TSpinal.Label333Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena ilíaca común...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label333.Enabled := False;
 end;
@@ -30246,7 +28076,6 @@ end;
 procedure TSpinal.Label334Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria ilíaca común...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label334.Enabled := False;
 end;
@@ -30254,7 +28083,6 @@ end;
 procedure TSpinal.Label335Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria ilíaca interna...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label335.Enabled := False;
 end;
@@ -30262,7 +28090,6 @@ end;
 procedure TSpinal.Label336Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena ilíaca interna...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label336.Enabled := False;
 end;
@@ -30270,7 +28097,6 @@ end;
 procedure TSpinal.Label337Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena ilíaca externa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label337.Enabled := False;
 end;
@@ -30278,7 +28104,6 @@ end;
 procedure TSpinal.Label338Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria ilíaca externa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label338.Enabled := False;
 end;
@@ -30286,7 +28111,6 @@ end;
 procedure TSpinal.Label358Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena saferna mayor...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label358.Enabled := False;
 end;
@@ -30294,7 +28118,6 @@ end;
 procedure TSpinal.Label348Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria femoral superficial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label348.Enabled := False;
 end;
@@ -30302,7 +28125,6 @@ end;
 procedure TSpinal.Label347Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena femoral superficial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label347.Enabled := False;
 end;
@@ -30310,7 +28132,6 @@ end;
 procedure TSpinal.Label346Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria poplítea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label346.Enabled := False;
 end;
@@ -30318,7 +28139,6 @@ end;
 procedure TSpinal.Label345Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena poplítea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label345.Enabled := False;
 end;
@@ -30326,7 +28146,6 @@ end;
 procedure TSpinal.Label344Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena safena menor...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label344.Enabled := False;
 end;
@@ -30334,7 +28153,6 @@ end;
 procedure TSpinal.Label343Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria tibial anterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label343.Enabled := False;
 end;
@@ -30342,7 +28160,6 @@ end;
 procedure TSpinal.Label342Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria tibial posterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label342.Enabled := False;
 end;
@@ -30350,7 +28167,6 @@ end;
 procedure TSpinal.Label341Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteria peroneal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label341.Enabled := False;
 end;
@@ -30358,7 +28174,6 @@ end;
 procedure TSpinal.Label340Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas tibiales anterior y posterior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label340.Enabled := False;
 end;
@@ -30366,7 +28181,6 @@ end;
 procedure TSpinal.Label378Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arco venoso dorsal metatarsial...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label378.Enabled := False;
 end;
@@ -30374,7 +28188,6 @@ end;
 procedure TSpinal.Label377Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Venas digitales dorsales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label377.Enabled := False;
 end;
@@ -30382,7 +28195,6 @@ end;
 procedure TSpinal.Label425Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Amígdala palatina...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label425.Enabled := False;
 end;
@@ -30390,7 +28202,6 @@ end;
 procedure TSpinal.Label424Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio submaxilar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label424.Enabled := False;
 end;
@@ -30398,7 +28209,6 @@ end;
 procedure TSpinal.Label423Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio cervical...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label423.Enabled := False;
 end;
@@ -30406,7 +28216,6 @@ end;
 procedure TSpinal.Label422Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena yugular interna derecha...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label422.Enabled := False;
 end;
@@ -30414,7 +28223,6 @@ end;
 procedure TSpinal.Label403Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto linfático derecho...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label403.Enabled := False;
 end;
@@ -30422,7 +28230,6 @@ end;
 procedure TSpinal.Label431Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena subclavia derecha...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label431.Enabled := False;
 end;
@@ -30430,7 +28237,6 @@ end;
 procedure TSpinal.Label432Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Timo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label432.Enabled := False;
 end;
@@ -30438,7 +28244,6 @@ end;
 procedure TSpinal.Label433Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vasos linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label433.Enabled := False;
 end;
@@ -30446,7 +28251,6 @@ end;
 procedure TSpinal.Label434Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto torácico...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label434.Enabled := False;
@@ -30457,7 +28261,6 @@ end;
 procedure TSpinal.Label435Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Sistema del quilo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label435.Enabled := False;
 end;
@@ -30465,7 +28268,6 @@ end;
 procedure TSpinal.Label436Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio intestinal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label463.Enabled := False;
 end;
@@ -30473,7 +28275,6 @@ end;
 procedure TSpinal.Label437Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Intestino grueso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label437.Enabled := False;
 end;
@@ -30481,7 +28282,6 @@ end;
 procedure TSpinal.Label592Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Apendice...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label592.Enabled := False;
 end;
@@ -30489,7 +28289,6 @@ end;
 procedure TSpinal.Label594Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Médula ósea roja...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label594.Enabled := False;
 end;
@@ -30497,7 +28296,6 @@ end;
 procedure TSpinal.Label595Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vasos linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label595.Enabled := False;
 end;
@@ -30505,7 +28303,6 @@ end;
 procedure TSpinal.Label430Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena yugular interna izquierda...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label430.Enabled := False;
 end;
@@ -30513,7 +28310,6 @@ end;
 procedure TSpinal.Label591Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vena subclavia izquierda...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label591.Enabled := False;
 end;
@@ -30521,7 +28317,6 @@ end;
 procedure TSpinal.Label599Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio axilar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label599.Enabled := False;
 end;
@@ -30529,7 +28324,6 @@ end;
 procedure TSpinal.Label597Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bazo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label597.Enabled := False;
 end;
@@ -30537,7 +28331,6 @@ end;
 procedure TSpinal.Label590Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Intestino delgado...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label590.Enabled := False;
 end;
@@ -30545,7 +28338,6 @@ end;
 procedure TSpinal.Label600Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conglomerado de folículos linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label600.Enabled := False;
 end;
@@ -30553,7 +28345,6 @@ end;
 procedure TSpinal.Label598Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio ilíaco...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label598.Enabled := False;
 end;
@@ -30561,7 +28352,6 @@ end;
 procedure TSpinal.Label596Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Ganglio inguinal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label596.Enabled := False;
 end;
@@ -30569,7 +28359,6 @@ end;
 procedure TSpinal.Label201Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Seno frontal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label201.Enabled := False;
 end;
@@ -30577,7 +28366,6 @@ end;
 procedure TSpinal.Label200Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Seno esfenoides...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label200.Enabled := False;
 end;
@@ -30585,7 +28373,6 @@ end;
 procedure TSpinal.Label199Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fosas nasales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label199.Enabled := False;
 end;
@@ -30593,7 +28380,6 @@ end;
 procedure TSpinal.Label223Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vestíbulo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label223.Enabled := False;
 end;
@@ -30601,7 +28387,6 @@ end;
 procedure TSpinal.Label224Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cavidad oral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label224.Enabled := False;
 end;
@@ -30609,7 +28394,6 @@ end;
 procedure TSpinal.Label225Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label225.Enabled := False;
 end;
@@ -30617,7 +28401,6 @@ end;
 procedure TSpinal.Label226Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Epiglotis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label226.Enabled := False;
 end;
@@ -30625,7 +28408,6 @@ end;
 procedure TSpinal.Label227Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuerdas vocales...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label227.Enabled := False;
 end;
@@ -30633,7 +28415,6 @@ end;
 procedure TSpinal.Label228Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cartílagos tiroides...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label228.Enabled := False;
 end;
@@ -30641,7 +28422,6 @@ end;
 procedure TSpinal.Label238Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tráquea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label238.Enabled := False;
 end;
@@ -30649,7 +28429,6 @@ end;
 procedure TSpinal.Label231Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Anillo cartilaginoso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label231.Enabled := False;
 end;
@@ -30657,7 +28436,6 @@ end;
 procedure TSpinal.Label239Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo superior / Bronquios lobulares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label239.Enabled := False;
 end;
@@ -30665,7 +28443,6 @@ end;
 procedure TSpinal.Label240Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo superior / Bronquios lobulares superiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label240.Enabled := False;
 end;
@@ -30673,7 +28450,6 @@ end;
 procedure TSpinal.Label320Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo superior / Bronquios lobulares medios...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label320.Enabled := False;
 end;
@@ -30681,7 +28457,6 @@ end;
 procedure TSpinal.Label321Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo superior / Bronquios lobulares inferiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label321.Enabled := False;
 end;
@@ -30689,7 +28464,6 @@ end;
 procedure TSpinal.Label207Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquios principales / Bronquios lobulares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label207.Enabled := False;
 end;
@@ -30697,7 +28471,6 @@ end;
 procedure TSpinal.Label206Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquios principales / Bronquios lobulares superiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label206.Enabled := False;
 end;
@@ -30705,7 +28478,6 @@ end;
 procedure TSpinal.Label205Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquios principales / Bronquios lobulares inferiores...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label205.Enabled := False;
 end;
@@ -30713,7 +28485,6 @@ end;
 procedure TSpinal.Label322Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cisura horizontal...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label322.Enabled := False;
 end;
@@ -30721,7 +28492,6 @@ end;
 procedure TSpinal.Label325Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cisura oblícua...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label325.Enabled := False;
 end;
@@ -30729,7 +28499,6 @@ end;
 procedure TSpinal.Label326Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo medio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label326.Enabled := False;
 end;
@@ -30737,7 +28506,6 @@ end;
 procedure TSpinal.Label327Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Begin
 Label211.Enabled := False;
@@ -30748,7 +28516,6 @@ end;
 procedure TSpinal.Label328Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Diafragma...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label328.Enabled := False;
 end;
@@ -30756,7 +28523,6 @@ end;
 procedure TSpinal.Label222Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Capilares sanguíneos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label222.Enabled := False;
 end;
@@ -30764,7 +28530,6 @@ end;
 procedure TSpinal.Label221Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tejido conjuntivo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label221.Enabled := False;
 end;
@@ -30772,7 +28537,6 @@ end;
 procedure TSpinal.Label220Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Sacos alveolares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label220.Enabled := False;
 end;
@@ -30780,7 +28544,6 @@ end;
 procedure TSpinal.Label218Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Conducto alveolar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label218.Enabled := False;
 end;
@@ -30788,7 +28551,6 @@ end;
 procedure TSpinal.Label217Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glande mucoso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label217.Enabled := False;
 end;
@@ -30796,7 +28558,6 @@ end;
 procedure TSpinal.Label216Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Mucus...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label216.Enabled := False;
 end;
@@ -30804,7 +28565,6 @@ end;
 procedure TSpinal.Label215Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Arteriola pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label215.Enabled := False;
 end;
@@ -30812,7 +28572,6 @@ end;
 procedure TSpinal.Label214Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vénula pulmonar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label214.Enabled := False;
 end;
@@ -30820,7 +28579,6 @@ end;
 procedure TSpinal.Label212Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Alvéolo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label212.Enabled := False;
 end;
@@ -30828,7 +28586,6 @@ end;
 procedure TSpinal.Label213Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Atrium...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label213.Enabled := False;
 end;
@@ -30836,7 +28593,6 @@ end;
 procedure TSpinal.Label202Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lóbulo superior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label202.Enabled := False;
 end;
@@ -30844,7 +28600,6 @@ end;
 procedure TSpinal.Label203Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bronquios segmentarios...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label203.Enabled := False;
 end;
@@ -30852,7 +28607,6 @@ end;
 procedure TSpinal.Label204Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Recubrimiento de la tráquea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label204.Enabled := False;
 end;
@@ -30860,7 +28614,6 @@ end;
 procedure TSpinal.Label208Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cisura oblícua...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label208.Enabled := False;
 end;
@@ -30868,7 +28621,6 @@ end;
 procedure TSpinal.Label209Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Incisura cardíaca...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label209.Enabled := False;
 end;
@@ -30876,7 +28628,6 @@ end;
 procedure TSpinal.Label210Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Língula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label210.Enabled := False;
 end;
@@ -30884,7 +28635,6 @@ end;
 procedure TSpinal.Label773Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cavidad oral...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label773.Enabled := False;
 end;
@@ -30892,7 +28642,6 @@ end;
 procedure TSpinal.Label774Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Esófago...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label774.Enabled := False;
 end;
@@ -30900,7 +28649,6 @@ end;
 procedure TSpinal.Label785Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Hígado y Vesícula biliar...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label785.Enabled := False;
 end;
@@ -30908,7 +28656,6 @@ end;
 procedure TSpinal.Label779Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Intestino grueso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label779.Enabled := False;
 end;
@@ -30916,7 +28663,6 @@ end;
 procedure TSpinal.Label781Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Páncreas...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label781.Enabled := False;
 end;
@@ -30924,7 +28670,6 @@ end;
 procedure TSpinal.Label778Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Faringe...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label778.Enabled := False;
 end;
@@ -30932,7 +28677,6 @@ end;
 procedure TSpinal.Label776Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Lengua...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label776.Enabled := False;
 end;
@@ -30940,7 +28684,6 @@ end;
 procedure TSpinal.Label782Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándulas salivares...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label782.Enabled := False;
 end;
@@ -30948,7 +28691,6 @@ end;
 procedure TSpinal.Label786Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Estómago...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label786.Enabled := False;
 end;
@@ -30956,7 +28698,6 @@ end;
 procedure TSpinal.Label780Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Intestino delgado...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label780.Enabled := False;
 end;
@@ -30964,7 +28705,6 @@ end;
 procedure TSpinal.Label777Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Matríz...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label777.Enabled := False;
 end;
@@ -30972,7 +28712,6 @@ end;
 procedure TSpinal.Label783Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Raíz...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label783.Enabled := False;
 end;
@@ -30980,7 +28719,6 @@ end;
 procedure TSpinal.Label784Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Capa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label784.Enabled := False;
 end;
@@ -30988,7 +28726,6 @@ end;
 procedure TSpinal.Label893Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Eponiquio o cutícula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label893.Enabled := False;
 end;
@@ -30996,7 +28733,6 @@ end;
 procedure TSpinal.Label775Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cuerpo de la uña...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label775.Enabled := False;
 end;
@@ -31004,7 +28740,6 @@ end;
 procedure TSpinal.Label894Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Capa inferior...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label894.Enabled := False;
 end;
@@ -31012,7 +28747,6 @@ end;
 procedure TSpinal.Label895Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Extremo libre...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label895.Enabled := False;
 end;
@@ -31020,7 +28754,6 @@ end;
 procedure TSpinal.Label896Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Falange...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label896.Enabled := False;
 end;
@@ -31028,7 +28761,6 @@ end;
 procedure TSpinal.PielClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Piel...';
 BMaestroSistemas2.Click;
 if rec>84 Then Piel.Enabled := False;
 end;
@@ -31036,7 +28768,6 @@ end;
 procedure TSpinal.Label767Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vello...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label767.Enabled := False;
 end;
@@ -31044,7 +28775,6 @@ end;
 procedure TSpinal.Label760Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándula sebácea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label760.Enabled := False;
 end;
@@ -31052,7 +28782,6 @@ end;
 procedure TSpinal.Label766Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Terminaciones nerviosas aferentes...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label766.Enabled := False;
 end;
@@ -31060,7 +28789,6 @@ end;
 procedure TSpinal.Label768Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Epidermis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label768.Enabled := False;
 end;
@@ -31068,7 +28796,6 @@ end;
 procedure TSpinal.Label762Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label762.Enabled := False;
 end;
@@ -31076,7 +28803,6 @@ end;
 procedure TSpinal.Label761Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Dermis...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label761.Enabled := False;
 end;
@@ -31084,7 +28810,6 @@ end;
 procedure TSpinal.Label759Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Folículo piloso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label759.Enabled := False;
 end;
@@ -31092,7 +28817,6 @@ end;
 procedure TSpinal.Label763Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tejido subcutáneo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label763.Enabled := False;
 end;
@@ -31100,7 +28824,6 @@ end;
 procedure TSpinal.Label771Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Fascia profunda...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label771.Enabled := False;
 end;
@@ -31108,7 +28831,6 @@ end;
 procedure TSpinal.Label770Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vasos sanguíneos y linfáticos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label770.Enabled := False;
 end;
@@ -31116,7 +28838,6 @@ end;
 procedure TSpinal.Label764Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Grasa, colágeno, microblastos...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label764.Enabled := False;
 end;
@@ -31124,7 +28845,6 @@ end;
 procedure TSpinal.Label765Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Músculo pilo-erector...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label765.Enabled := False;
 end;
@@ -31132,7 +28852,6 @@ end;
 procedure TSpinal.Label769Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándula sudorípara...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label769.Enabled := False;
 end;
@@ -31140,7 +28859,6 @@ end;
 procedure TSpinal.Label906Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vaina radicula externa...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label906.Enabled := False;
 end;
@@ -31148,7 +28866,6 @@ end;
 procedure TSpinal.Label907Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Corteza...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label907.Enabled := False;
 end;
@@ -31156,7 +28873,6 @@ end;
 procedure TSpinal.Label904Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Médula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label904.Enabled := False;
 end;
@@ -31164,7 +28880,6 @@ end;
 procedure TSpinal.Label905Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Cutícula...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label905.Enabled := False;
 end;
@@ -31172,7 +28887,6 @@ end;
 procedure TSpinal.Label898Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Tallo...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label898.Enabled := False;
 end;
@@ -31180,7 +28894,6 @@ end;
 procedure TSpinal.Label899Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Vaina radicular interna...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label899.Enabled := False;
 end;
@@ -31188,7 +28901,6 @@ end;
 procedure TSpinal.Label902Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Matriz...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label902.Enabled := False;
 end;
@@ -31196,7 +28908,6 @@ end;
 procedure TSpinal.Label903Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Papila dérmica...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label903.Enabled := False;
 end;
@@ -31204,7 +28915,6 @@ end;
 procedure TSpinal.Label649Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Bulbo piloso...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label649.Enabled := False;
 end;
@@ -31212,7 +28922,6 @@ end;
 procedure TSpinal.Label897Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Músculo pilo-erector...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label897.Enabled := False;
 end;
@@ -31220,7 +28929,6 @@ end;
 procedure TSpinal.Label772Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Glándula sebácea...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label772.Enabled := False;
 end;
@@ -31235,7 +28943,6 @@ end;
 procedure TSpinal.Button7Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando un equilibramiento general...';
 BMaestroSistemas2.Click;
 if rec>84 Then Button7.Enabled := False;
 end;
@@ -31243,7 +28950,6 @@ end;
 procedure TSpinal.Button9Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando un equilibramiento general...';
 BMaestroSistemas2.Click;
 if rec>84 Then Button9.Enabled := False;
 end;
@@ -31251,7 +28957,6 @@ end;
 procedure TSpinal.Button10Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando un equilibramiento general...';
 BMaestroSistemas2.Click;
 if rec>84 Then Button10.Enabled := False;
 end;
@@ -31259,7 +28964,6 @@ end;
 procedure TSpinal.Button641Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EBoca.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button641.Enabled := False;
 end;
@@ -31267,7 +28971,6 @@ end;
 procedure TSpinal.Button611Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ENariz.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button611.Enabled := False;
 end;
@@ -31299,7 +29002,6 @@ end;
 procedure TSpinal.Button415Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EVias.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button415.Enabled := False;
 end;
@@ -31307,7 +29009,6 @@ end;
 procedure TSpinal.Button254Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EFibras.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button254.Enabled := False;
 end;
@@ -31320,7 +29021,6 @@ end;
 procedure TSpinal.Button267Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EArticulaciones.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button267.Enabled := False;
 end;
@@ -31340,7 +29040,6 @@ end;
 procedure TSpinal.Button513Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EPecho.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button513.Enabled := False;
 end;
@@ -31360,7 +29059,6 @@ end;
 procedure TSpinal.Button503Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ECuello.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button503.Enabled := False;
 end;
@@ -31373,7 +29071,6 @@ end;
 procedure TSpinal.Button206Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+ECabeza.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button206.Enabled := False;
 end;
@@ -31398,23 +29095,21 @@ end;
 procedure TSpinal.BSMFantasmaClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de miembro fantásma...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
 MyChrono.Start;
     GBAGenerales.Visible := True;
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
     Fmain.recmain:=Fmain.recmain+1;
     GProgreso.Progress := 0;
     fring:=random(10);
-    if fring=3 then LDetectado.caption:='| Cuadrantes despejados.';
-    if fring>7 then LDetectado.caption:='| Inflamación o desorden metabólico detectado.';
-    if fring<3 then LDetectado.caption:='| Desorden de lesión detectado.';
-    if (fring>3)and(fring<6) then LDetectado.caption:='| Desorden armónico de cuadrante detectado.';
-    if (fring>5)and(fring<8) then LDetectado.caption:='| Desorden de infección detectado.';
+    if fring=3 then LDetectado.caption:=' Cuadrantes despejados.';
+    if fring>7 then LDetectado.caption:=' Inflamación o desorden metabólico detectado.';
+    if fring<3 then LDetectado.caption:=' Desorden de lesión detectado.';
+    if (fring>3)and(fring<6) then LDetectado.caption:=' Desorden armónico de cuadrante detectado.';
+    if (fring>5)and(fring<8) then LDetectado.caption:=' Desorden de infección detectado.';
        DM.Conscida.Disablecontrols;
        DM.Conscida.IndexName:='byValue';
        Value3:=DM.ConscidaValue.AsInteger +1;
@@ -31425,42 +29120,42 @@ LRectificado.caption:='Rectificado |';
             if reaction2>110 then
                fring:=random(10);
             if fring=3 then
-               LDetectado.caption:='| Músculos despejados.';
+               LDetectado.caption:=' Músculos despejados.';
             if fring>7 then
-               LDetectado.caption:='| Desorden de fibra muscular detectado.';
+               LDetectado.caption:=' Desorden de fibra muscular detectado.';
             if fring<3 then
-               LDetectado.caption:='| Desorden de nervio muscular detectado.';
+               LDetectado.caption:=' Desorden de nervio muscular detectado.';
             if (fring>3)and(fring<6) then
-               LDetectado.caption:='| Desorden armónico de múculo detectado.';
+               LDetectado.caption:=' Desorden armónico de múculo detectado.';
             if (fring>5)and(fring<8) then
-               LDetectado.caption:='| Desorden de tejido muscular detectado.';
+               LDetectado.caption:=' Desorden de tejido muscular detectado.';
        end;
        if  ((value4>3550)and (value4<3581)) then  begin
             if reaction2>110 then fring:=random(10);
             if fring<3 then
-               LDetectado.caption:='| Desorden de alimentación nerviosa detectado.';
+               LDetectado.caption:=' Desorden de alimentación nerviosa detectado.';
             if fring=3 then
-               LDetectado.caption:='| Huesos craneales despejados.';
+               LDetectado.caption:=' Huesos craneales despejados.';
             if fring>7 then
-               LDetectado.caption:='| Desorden de fibra conectiva detectado.';
+               LDetectado.caption:=' Desorden de fibra conectiva detectado.';
             if (fring>3)and(fring<6) then
-               LDetectado.caption:='| Desorden armónico craneal detectado.';
+               LDetectado.caption:=' Desorden armónico craneal detectado.';
             if (fring>5)and(fring<8) then
-               LDetectado.caption:='| Desorden de subluxación detectado';
+               LDetectado.caption:=' Desorden de subluxación detectado';
        end;
        if  ((value4>3582)and (value4<3612)) then  begin
            if reaction2>110 then
               fring:=random(10);
            if fring=3 then
-              LDetectado.caption:='| Vertebras despejadas.';
+              LDetectado.caption:=' Vertebras despejadas.';
            if fring>7 then
-              LDetectado.caption:='| Desorden de fibra conectiva detectado.';
+              LDetectado.caption:=' Desorden de fibra conectiva detectado.';
            if fring<3 then
-              LDetectado.caption:='| Desorden de alimentación de nervio vertebral detectado.';
+              LDetectado.caption:=' Desorden de alimentación de nervio vertebral detectado.';
            if (fring>3)and(fring<6) then
-              LDetectado.caption:='| Desorden armónico de vertebra detectado.';
+              LDetectado.caption:=' Desorden armónico de vertebra detectado.';
            if (fring>5)and(fring<8) then
-              LDetectado.caption:='| Desorden de tejido detectado.';
+              LDetectado.caption:=' Desorden de tejido detectado.';
      end;
 
      l:=1;
@@ -31483,27 +29178,21 @@ red1:=Random(9000)+1000;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Equilibrando ilusión desadaptativa...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Eliminando circuitos neurológicos...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Reorganizando forma maladaptativa...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Mejorando ilusión perceptiva...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Mejorando la reorganización cerebral adaptativa...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Aliviando dolor regional tipo I...';
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
     until
@@ -31511,12 +29200,10 @@ PDesarrollo.Caption:='Aliviando dolor regional tipo I...';
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-//     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -31544,8 +29231,6 @@ procedure TSpinal.BFibromialgiaClick(Sender: TObject);
 begin
 TFMitigantes.Enabled := True;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a fibromialgia...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -31565,27 +29250,21 @@ red1:=Random(9000)+1000;
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Equilibrando trastorno psicosomático...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Mejorando circuitos de la memoria...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Equilbrando funcionamiento de Sistema Nervioso Central...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Mejorando percepción de sí mismo/a...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Desintoxicando organismo de conservantes alimentarios...';
 SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Random(10);
   ChangingPulses(red1,red2,red3,red4,red5,8,
 '11111111','11111111');
-PDesarrollo.Caption:='Mejorando oxigenación e hidratación a nivel celular...';
    GProgreso.progress :=  round(MyChrono.pTEcoule);
    GProgreso.Refresh;
     until
@@ -31593,12 +29272,10 @@ PDesarrollo.Caption:='Mejorando oxigenación e hidratación a nivel celular...';
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-//     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -31695,7 +29372,6 @@ end;
 procedure TSpinal.Button47Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Limpiando pulmón, riñón e hígado más profundamente...';
 BMaestro.Click;
 If rec>84 Then Button47.Enabled := False;
 end;
@@ -31772,8 +29448,6 @@ end;
 procedure TSpinal.BSGorhamStoutClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Gorham-Stout...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -31800,12 +29474,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-//     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -31840,8 +29512,6 @@ end;
 procedure TSpinal.BSMoebiusSClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Moebius...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -31868,12 +29538,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-//     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -31956,15 +29624,15 @@ end;
 
 procedure TSpinal.Desordenes();
 begin
-LRectificado.caption:='Rectificado |';
+LRectificado.caption:='Rectificado | ';
     Fmain.recmain:=Fmain.recmain+1;
     GProgreso.Progress := 0;
     fring:=random(10);
-    if fring=3 then LDetectado.caption:='| Cuadrantes despejados.';
-    if fring>7 then LDetectado.caption:='| Inflamación o desorden metabólico detectado.';
-    if fring<3 then LDetectado.caption:='| Desorden de lesión detectado.';
-    if (fring>3)and(fring<6) then LDetectado.caption:='| Desorden armónico de cuadrante detectado.';
-    if (fring>5)and(fring<8) then LDetectado.caption:='| Desorden de infección detectado.';
+    if fring=3 then LDetectado.caption:=' Cuadrantes despejados.';
+    if fring>7 then LDetectado.caption:=' Inflamación o desorden metabólico detectado.';
+    if fring<3 then LDetectado.caption:=' Desorden de lesión detectado.';
+    if (fring>3)and(fring<6) then LDetectado.caption:=' Desorden armónico de cuadrante detectado.';
+    if (fring>5)and(fring<8) then LDetectado.caption:=' Desorden de infección detectado.';
        DM.Conscida.Disablecontrols;
        DM.Conscida.IndexName:='byValue';
        Value3:=DM.ConscidaValue.AsInteger +1;
@@ -31975,44 +29643,43 @@ LRectificado.caption:='Rectificado |';
             if reaction2>110 then
                fring:=random(10);
             if fring=3 then
-               LDetectado.caption:='| Músculos despejados.';
+               LDetectado.caption:=' Músculos despejados.';
             if fring>7 then
-               LDetectado.caption:='| Desorden de fibra muscular detectado.';
+               LDetectado.caption:=' Desorden de fibra muscular detectado.';
             if fring<3 then
-               LDetectado.caption:='| Desorden de nervio muscular detectado.';
+               LDetectado.caption:=' Desorden de nervio muscular detectado.';
             if (fring>3)and(fring<6) then
-               LDetectado.caption:='| Desorden armónico de múculo detectado.';
+               LDetectado.caption:=' Desorden armónico de múculo detectado.';
             if (fring>5)and(fring<8) then
-               LDetectado.caption:='| Desorden de tejido muscular detectado.';
+               LDetectado.caption:=' Desorden de tejido muscular detectado.';
        end;
        if  ((value4>3550)and (value4<3581)) then  begin
             if reaction2>110 then fring:=random(10);
             if fring<3 then
-               LDetectado.caption:='| Desorden de alimentación nerviosa detectado.';
+               LDetectado.caption:=' Desorden de alimentación nerviosa detectado.';
             if fring=3 then
-               LDetectado.caption:='| Huesos craneales despejados.';
+               LDetectado.caption:=' Huesos craneales despejados.';
             if fring>7 then
-               LDetectado.caption:='| Desorden de fibra conectiva detectado.';
+               LDetectado.caption:=' Desorden de fibra conectiva detectado.';
             if (fring>3)and(fring<6) then
-               LDetectado.caption:='| Desorden armónico craneal detectado.';
+               LDetectado.caption:=' Desorden armónico craneal detectado.';
             if (fring>5)and(fring<8) then
-               LDetectado.caption:='| Desorden de subluxación detectado';
+               LDetectado.caption:=' Desorden de subluxación detectado';
        end;
        if  ((value4>3582)and (value4<3612)) then  begin
            if reaction2>110 then
               fring:=random(10);
            if fring=3 then
-              LDetectado.caption:='| Vertebras despejadas.';
+              LDetectado.caption:=' Vertebras despejadas.';
            if fring>7 then
-              LDetectado.caption:='| Desorden de fibra conectiva detectado.';
+              LDetectado.caption:=' Desorden de fibra conectiva detectado.';
            if fring<3 then
-              LDetectado.caption:='| Desorden de alimentación de nervio vertebral detectado.';
+              LDetectado.caption:=' Desorden de alimentación de nervio vertebral detectado.';
            if (fring>3)and(fring<6) then
-              LDetectado.caption:='| Desorden armónico de vertebra detectado.';
+              LDetectado.caption:=' Desorden armónico de vertebra detectado.';
            if (fring>5)and(fring<8) then
-              LDetectado.caption:='| Desorden de tejido detectado.';
+              LDetectado.caption:=' Desorden de tejido detectado.';
      end;
-
      l:=1;
      m:=1;
      n:=1;
@@ -32026,8 +29693,6 @@ end;
 procedure TSpinal.BELAClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Esclerosis Lateral Amiotrófica...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32054,12 +29719,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-//     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32192,8 +29855,6 @@ end;
 procedure TSpinal.BSPraderWilliIniciarClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Prader-Willi...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32220,12 +29881,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32309,8 +29968,6 @@ end;
 procedure TSpinal.BProgeriaClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Progeria de Hutchinson-Gilford...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32337,12 +29994,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32371,8 +30026,6 @@ end;
 procedure TSpinal.BSMarfanClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Marfan...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32399,12 +30052,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32558,8 +30209,6 @@ end;
 procedure TSpinal.BCIPAClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Insensibilidad congénita al dolor...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32586,12 +30235,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32754,8 +30401,6 @@ end;
 procedure TSpinal.BSXFragilClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Insensibilidad congénita al dolor...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32782,12 +30427,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -32815,8 +30458,6 @@ end;
 procedure TSpinal.BSGTClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Insensibilidad congénita al dolor...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -32843,12 +30484,10 @@ MyChrono.TimeElapsed > vtiempo;
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-FRecompensa.label79.caption:=inttostr(FMain.shaping);
+
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -33296,16 +30935,11 @@ If (CheckBox982.Checked = False) and (CheckBox1017.Checked = False) and
 (CBCicatrizacion.Checked = False)
 Then
 Begin
-ShowMessage('Debe seleccionar algún ítem para focalizar la terapia o elegír la opción ''Automática''.');
+ShowMessage('Debe seleccionar algún ítem para focalizar la terapia o seleccionar la opción ''Automática''.');
 exit;
 End;
 GBAGenerales.Visible := False;
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a cicatrización...';
-If RBHCronica.Checked = True Then PDesarrollo.Caption := 'Realizando terapia a cicatrización | Herida crónica...';
-If RBHTraumatica.Checked = True Then PDesarrollo.Caption := 'Realizando terapia a cicatrización | Herida traumatica...';
-If RBLQueloide.Checked = True Then PDesarrollo.Caption := 'Realizando terapia a cicatrización | Lesión queloide...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -33339,12 +30973,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-     
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -33377,8 +31009,6 @@ end;
 procedure TSpinal.BSSchonleinHechochClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Síndrome de Schönlein-Henoch...';
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -33405,12 +31035,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
 Reaccion_Irregular();
    DM.Conscida.enablecontrols;
    if vart=1 then
-
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -33521,7 +31149,6 @@ end;
 procedure TSpinal.Button583Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EOido.Text+'...';
 BMaestro.Click;
 If rec>84 Then Button583.Enabled := False;
 end;
@@ -33556,7 +31183,6 @@ end;
 procedure TSpinal.Button568Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button568.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button568.Enabled := False;
 end;
@@ -33564,7 +31190,6 @@ end;
 procedure TSpinal.Button579Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button579.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button579.Enabled := False;
 end;
@@ -33572,7 +31197,6 @@ end;
 procedure TSpinal.Button572Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button572.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button572.Enabled := False;
 end;
@@ -33580,7 +31204,6 @@ end;
 procedure TSpinal.Button576Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button576.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button576.Enabled := False;
 end;
@@ -33588,7 +31211,6 @@ end;
 procedure TSpinal.Button570Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button570.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button570.Enabled := False;
 end;
@@ -33596,7 +31218,6 @@ end;
 procedure TSpinal.Button571Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button571.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button571.Enabled := False;
 end;
@@ -33604,7 +31225,6 @@ end;
 procedure TSpinal.Button577Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button577.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button577.Enabled := False;
 end;
@@ -33612,7 +31232,6 @@ end;
 procedure TSpinal.Button588Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button588.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button588.Enabled := False;
 end;
@@ -33620,7 +31239,6 @@ end;
 procedure TSpinal.Button574Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button574.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button574.Enabled := False;
 end;
@@ -33628,7 +31246,6 @@ end;
 procedure TSpinal.Button569Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button569.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button569.Enabled := False;
 end;
@@ -33636,7 +31253,6 @@ end;
 procedure TSpinal.Button580Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button580.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button580.Enabled := False;
 end;
@@ -33644,7 +31260,6 @@ end;
 procedure TSpinal.Button586Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button586.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button586.Enabled := False;
 end;
@@ -33652,7 +31267,6 @@ end;
 procedure TSpinal.Button585Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button585.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button585.Enabled := False;
 end;
@@ -33660,7 +31274,6 @@ end;
 procedure TSpinal.Button632Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button632.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button632.Enabled := False;
 end;
@@ -33668,7 +31281,6 @@ end;
 procedure TSpinal.Button638Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button638.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button638.Enabled := False;
 end;
@@ -33676,7 +31288,6 @@ end;
 procedure TSpinal.Button639Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button639.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button639.Enabled := False;
 end;
@@ -33684,7 +31295,6 @@ end;
 procedure TSpinal.Button625Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button625.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button625.Enabled := False;
 end;
@@ -33692,7 +31302,6 @@ end;
 procedure TSpinal.Button642Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button642.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button642.Enabled := False;
 end;
@@ -33700,7 +31309,6 @@ end;
 procedure TSpinal.Button636Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button636.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button636.Enabled := False;
 end;
@@ -33708,7 +31316,6 @@ end;
 procedure TSpinal.Button643Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button643.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button643.Enabled := False;
 end;
@@ -33716,7 +31323,6 @@ end;
 procedure TSpinal.Button627Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button627.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button627.Enabled := False;
 end;
@@ -33724,16 +31330,13 @@ end;
 procedure TSpinal.Button629Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button629.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button629.Enabled := False;
 end;
 
-
 procedure TSpinal.Button600Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button600.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button600.Enabled := False;
 end;
@@ -33741,7 +31344,6 @@ end;
 procedure TSpinal.Button623Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button623.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button623.Enabled := False;
 end;
@@ -33749,7 +31351,6 @@ end;
 procedure TSpinal.Button607Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button607.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button607.Enabled := False;
 end;
@@ -33757,7 +31358,6 @@ end;
 procedure TSpinal.Button610Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button610.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button610.Enabled := False;
 end;
@@ -33765,7 +31365,6 @@ end;
 procedure TSpinal.Button594Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button594.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button594.Enabled := False;
 end;
@@ -33773,7 +31372,6 @@ end;
 procedure TSpinal.Button604Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button604.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button604.Enabled := False;
 end;
@@ -33781,7 +31379,6 @@ end;
 procedure TSpinal.Button599Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button599.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button599.Enabled := False;
 end;
@@ -33789,7 +31386,6 @@ end;
 procedure TSpinal.Button606Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button606.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button606.Enabled := False;
 end;
@@ -33797,7 +31393,6 @@ end;
 procedure TSpinal.Button616Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button616.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button616.Enabled := False;
 end;
@@ -33805,7 +31400,6 @@ end;
 procedure TSpinal.Button602Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button602.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button602.Enabled := False;
 end;
@@ -33813,7 +31407,6 @@ end;
 procedure TSpinal.Button597Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button597.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button597.Enabled := False;
 end;
@@ -33821,7 +31414,6 @@ end;
 procedure TSpinal.Button612Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button612.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button612.Enabled := False;
 end;
@@ -33829,7 +31421,6 @@ end;
 procedure TSpinal.Button615Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button615.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button615.Enabled := False;
 end;
@@ -33837,7 +31428,6 @@ end;
 procedure TSpinal.Button608Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button608.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button608.Enabled := False;
 end;
@@ -33845,7 +31435,6 @@ end;
 procedure TSpinal.Button619Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button619.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button619.Enabled := False;
 end;
@@ -33853,7 +31442,6 @@ end;
 procedure TSpinal.Button614Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button614.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button614.Enabled := False;
 end;
@@ -33861,7 +31449,6 @@ end;
 procedure TSpinal.Button613Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button613.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button613.Enabled := False;
 end;
@@ -33869,7 +31456,6 @@ end;
 procedure TSpinal.Button601Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button601.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button601.Enabled := False;
 end;
@@ -33877,7 +31463,6 @@ end;
 procedure TSpinal.Button622Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button622.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button622.Enabled := False;
 end;
@@ -33885,7 +31470,6 @@ end;
 procedure TSpinal.Button605Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button605.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button605.Enabled := False;
 end;
@@ -33893,7 +31477,6 @@ end;
 procedure TSpinal.Button609Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button609.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button609.Enabled := False;
 end;
@@ -33901,7 +31484,6 @@ end;
 procedure TSpinal.Button618Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button618.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button618.Enabled := False;
 end;
@@ -33909,7 +31491,6 @@ end;
 procedure TSpinal.Button603Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button603.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button603.Enabled := False;
 end;
@@ -33917,7 +31498,6 @@ end;
 procedure TSpinal.Button617Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button617.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button617.Enabled := False;
 end;
@@ -33945,7 +31525,6 @@ end;
 procedure TSpinal.Button659Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button659.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button659.Enabled := False;
 end;
@@ -33953,7 +31532,6 @@ end;
 procedure TSpinal.BPielClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+EPiel.Text+'...';
 BMaestro.Click;
 If rec>84 Then EPiel.Enabled := False;
 end;
@@ -33961,7 +31539,6 @@ end;
 procedure TSpinal.Button680Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button680.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button680.Enabled := False;
 end;
@@ -33969,7 +31546,6 @@ end;
 procedure TSpinal.Button669Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button669.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button669.Enabled := False;
 end;
@@ -33977,7 +31553,6 @@ end;
 procedure TSpinal.Button168Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button168.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button168.Enabled := False;
 end;
@@ -33985,7 +31560,6 @@ end;
 procedure TSpinal.Button663Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button663.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button663.Enabled := False;
 end;
@@ -33993,7 +31567,6 @@ end;
 procedure TSpinal.Button658Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button658.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button658.Enabled := False;
 end;
@@ -34001,7 +31574,6 @@ end;
 procedure TSpinal.Button665Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button665.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button665.Enabled := False;
 end;
@@ -34009,7 +31581,6 @@ end;
 procedure TSpinal.Button675Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button675.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button675.Enabled := False;
 end;
@@ -34017,7 +31588,6 @@ end;
 procedure TSpinal.Button661Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button661.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button661.Enabled := False;
 end;
@@ -34025,7 +31595,6 @@ end;
 procedure TSpinal.Button587Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button587.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button587.Enabled := False;
 end;
@@ -34033,7 +31602,6 @@ end;
 procedure TSpinal.Button671Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button671.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button671.Enabled := False;
 end;
@@ -34041,7 +31609,6 @@ end;
 procedure TSpinal.Button684Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button684.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button684.Enabled := False;
 end;
@@ -34049,7 +31616,6 @@ end;
 procedure TSpinal.Button687Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button687.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button687.Enabled := False;
 end;
@@ -34057,7 +31623,6 @@ end;
 procedure TSpinal.Button681Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button681.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button681.Enabled := False;
 end;
@@ -34065,7 +31630,6 @@ end;
 procedure TSpinal.Button670Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button670.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button670.Enabled := False;
 end;
@@ -34073,7 +31637,6 @@ end;
 procedure TSpinal.Button686Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button686.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button686.Enabled := False;
 end;
@@ -34081,7 +31644,6 @@ end;
 procedure TSpinal.Button690Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button690.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button690.Enabled := False;
 end;
@@ -34089,7 +31651,6 @@ end;
 procedure TSpinal.Button674Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button674.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button674.Enabled := False;
 end;
@@ -34097,7 +31658,6 @@ end;
 procedure TSpinal.Button667Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button667.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button667.Enabled := False;
 end;
@@ -34105,7 +31665,6 @@ end;
 procedure TSpinal.Button678Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button678.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button678.Enabled := False;
 end;
@@ -34113,7 +31672,6 @@ end;
 procedure TSpinal.Button673Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button673.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button673.Enabled := False;
 end;
@@ -34121,7 +31679,6 @@ end;
 procedure TSpinal.Button672Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button672.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button672.Enabled := False;
 end;
@@ -34129,7 +31686,6 @@ end;
 procedure TSpinal.Button660Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button660.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button660.Enabled := False;
 end;
@@ -34137,7 +31693,6 @@ end;
 procedure TSpinal.Button679Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button679.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button679.Enabled := False;
 end;
@@ -34145,7 +31700,6 @@ end;
 procedure TSpinal.Button664Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button664.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button664.Enabled := False;
 end;
@@ -34153,7 +31707,6 @@ end;
 procedure TSpinal.Button668Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button668.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button668.Enabled := False;
 end;
@@ -34161,7 +31714,6 @@ end;
 procedure TSpinal.Button677Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button677.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button677.Enabled := False;
 end;
@@ -34169,7 +31721,6 @@ end;
 procedure TSpinal.Button662Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button662.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button662.Enabled := False;
 end;
@@ -34177,7 +31728,6 @@ end;
 procedure TSpinal.Button676Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button676.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button676.Enabled := False;
 end;
@@ -34185,7 +31735,6 @@ end;
 procedure TSpinal.Button683Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button683.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button683.Enabled := False;
 end;
@@ -34193,7 +31742,6 @@ end;
 procedure TSpinal.Button685Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button685.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button685.Enabled := False;
 end;
@@ -34201,7 +31749,6 @@ end;
 procedure TSpinal.Button689Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button689.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button689.Enabled := False;
 end;
@@ -34209,7 +31756,6 @@ end;
 procedure TSpinal.Button682Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button682.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button682.Enabled := False;
 end;
@@ -34217,7 +31763,6 @@ end;
 procedure TSpinal.Button688Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button688.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button688.Enabled := False;
 end;
@@ -34225,7 +31770,6 @@ end;
 procedure TSpinal.Button691Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Button691.Caption+'...';
 BMaestro.Click;
 If rec>84 Then Button691.Enabled := False;
 end;
@@ -34282,7 +31826,6 @@ end;
 procedure TSpinal.BTSomatoformosClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno de somatización...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34294,7 +31837,6 @@ end;
 
 procedure TSpinal.TSomatoformos();
 begin
-PDesarrollo.Visible := True;
 vtiempo := 150+Random(30);
 If SETiempo.Value>3 Then vtiempo := SETiempo.Value*60;
 ValoracionDolor();
@@ -34319,11 +31861,10 @@ SCIOWorking.TrackBar1.Position := SCIOWorking.TrackBar1.Position+Random(10)-Rand
 GProgreso.Progress := round(MyChrono.pTEcoule);
 GProgreso.Refresh;
 FMain.shaping:=random(105);
-   FRecompensa.label79.caption:=inttostr(FMain.shaping);
+   
    DM.Conscida.enablecontrols;
    if vart=1 then
  Reaccion_Irregular();
-   PDesarrollo.visible:=false;
    frang:=frang+random(28)-ping+spinedit1.value+(spinedit1.value);
    if frang>105 then
      frang:=100;
@@ -34358,7 +31899,6 @@ end;
 procedure TSpinal.BConversionClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno de conversión...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34371,7 +31911,6 @@ end;
 procedure TSpinal.BHipocondriaClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a hipocondría...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34384,7 +31923,6 @@ end;
 procedure TSpinal.BDismorficoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno dismórfico corporal...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34397,7 +31935,6 @@ end;
 procedure TSpinal.BDolorClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno por dolor...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34410,7 +31947,6 @@ end;
 procedure TSpinal.BIndiferenciadoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno somatoformo indiferenciado...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34423,7 +31959,6 @@ end;
 procedure TSpinal.BFEmbarazoClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno de falso embarazo...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34436,7 +31971,6 @@ end;
 procedure TSpinal.BIncontinenciaClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno de incontinencia urinaria psicógena...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34449,7 +31983,6 @@ end;
 procedure TSpinal.BPMasivaClick(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a Trastorno de psicogénia masiva...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34469,7 +32002,6 @@ end;
 procedure TSpinal.Button693Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption:='Realizando terapia a '+Edit66.Text+'...';
 If CBAGenerales.Checked = True Then TAGenerales.Enabled := True;
 If CBTSomatomorfos.Checked = True Then TTSomatomorfos.Enabled := True;
 TSomatoformos();
@@ -34565,7 +32097,6 @@ If (RadioButton1.Checked=False) and (RadioButton2.Checked=False) and
 (RadioButton5.Checked=False) and (RadioButton6.Checked=False) Then
 TTartamudeo2.Enabled := True;
 If CBTartamudeo.Checked = True Then TTartamudeo.Enabled := True;
-PDesarrollo.Caption := 'Realizando terapia para tartamudeo...';
 BMaestroSistemas2.Click;
 TTartamudeo.Enabled := False;
 TTartamudeo2.Enabled := False;
@@ -34583,8 +32114,6 @@ Else
 CBAutomatico.Checked := False;
 end;
 
-
-
 procedure TSpinal.Panel35Click(Sender: TObject);
 begin
 PPCraneales.Visible := False;
@@ -34598,7 +32127,6 @@ end;
 procedure TSpinal.Label1000Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Troclear...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label1000.Enabled := False;
 end;
@@ -34606,7 +32134,6 @@ end;
 procedure TSpinal.Label1001Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Nervio Abducens...';
 BMaestroSistemas2.Click;
 if rec>84 Then Label1001.Enabled := False;
 end;
@@ -34674,7 +32201,6 @@ end;
 procedure TSpinal.Button707Click(Sender: TObject);
 begin
 Reaccion_Irregular();
-PDesarrollo.Caption := 'Realizando terapia a Par Craneal Cero..';
 BMaestroSistemas2.Click;
 if rec>84 Then Button707.Enabled := False;
 end;
@@ -34689,20 +32215,32 @@ TBEntorno1.Position := 4+Random(6);
 TBEntorno2.Position := 4+Random(6);
 end;
 
-END.
-{
-  if MessageDlg( '¿Desea usar las preguntas? '  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then
-    begin
-      me22:=10;
-      end;
- if me22= 10 then begin
-   if MessageDlg( '¿Tiene demasiado estrés o dolores de cabeza?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      ve1:=10;  ve8:=ve8+5; ;
-       end;
-          if MessageDlg( '¿Hay exceso de tejido graso alrededor del estómago?'  ,
-    mtInformation, [mbYes, mbNo], 0) = mrYes then begin
-      ve2:=10; ve8:=ve8+5; ;
-       end;
-}
+procedure TSpinal.BENegativasClick(Sender: TObject);
+begin
+randomize;
+LBENegativas.Itemindex:=Random(LBENegativas.Items.Count);
+Spinal.Label230.Caption := LBENegativas.Items[LBENegativas.ItemIndex];
+end;
+
+procedure TSpinal.Edit11Change(Sender: TObject);
+begin
+If Edit11.Text<>'' Then CheckBox125.Checked := True
+Else
+CheckBox125.Checked := False;
+end;
+
+procedure TSpinal.Edit12Change(Sender: TObject);
+begin
+If Edit12.Text<>'' Then CheckBox126.Checked := True
+Else
+CheckBox126.Checked := False;
+end;
+
+procedure TSpinal.Edit13Change(Sender: TObject);
+begin
+If Edit13.Text<>'' Then CheckBox127.Checked := True
+Else
+CheckBox127.Checked := False;
+end;
+
+End.
